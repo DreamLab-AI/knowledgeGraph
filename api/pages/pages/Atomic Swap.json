@@ -7,18 +7,18 @@
   ],
   "wiki_links": [
     "Hash Time-Locked Contract",
-    "Polkadot",
-    "Decentralized Exchange",
-    "Litecoin",
-    "Ethereum",
     "Blockchain",
-    "ERC-20 Token",
+    "Litecoin",
     "Lightning Network",
-    "Payment Channel",
     "Cross-Chain Bridge",
+    "Payment Channel",
+    "Ethereum",
+    "Polkadot",
     "Hash Function",
-    "Bitcoin",
-    "Cross-Chain Interoperability"
+    "Decentralized Exchange",
+    "ERC-20 Token",
+    "Cross-Chain Interoperability",
+    "Bitcoin"
   ],
   "ontology": {
     "term_id": "BC-8002",

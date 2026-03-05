@@ -6,18 +6,18 @@
     "Cross-Platform Interoperability"
   ],
   "wiki_links": [
-    "Scalability Solutions",
-    "Polkadot",
-    "Monolithic Blockchain",
-    "Blockchain Architecture",
     "Blockchain",
-    "Layer 1",
     "Shared Security",
-    "Cosmos",
-    "Avalanche",
-    "Consensus Mechanism",
     "Cross-Chain Bridge",
-    "Interoperability"
+    "Cosmos",
+    "Consensus Mechanism",
+    "Polkadot",
+    "Interoperability",
+    "Scalability Solutions",
+    "Blockchain Architecture",
+    "Monolithic Blockchain",
+    "Layer 1",
+    "Avalanche"
   ],
   "ontology": {
     "term_id": "BC-8008",

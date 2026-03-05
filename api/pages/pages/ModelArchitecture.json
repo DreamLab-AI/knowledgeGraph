@@ -10,10 +10,10 @@
     "TrainingDatasetMetadata"
   ],
   "wiki_links": [
-    "NeuralNetworkArchitecture",
-    "Deep Learning",
-    "Artificial Intelligence",
     "MachineLearning",
+    "Artificial Intelligence",
+    "Deep Learning",
+    "NeuralNetworkArchitecture",
     "TrainingMethod"
   ],
   "ontology": {

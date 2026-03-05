@@ -7,21 +7,21 @@
     "Process"
   ],
   "wiki_links": [
-    "BDI Model",
-    "Artificial Intelligence",
-    "Synchronous Execution",
-    "Event",
     "Process",
-    "Digital Twin",
-    "Time Interval",
-    "Transition",
-    "State",
+    "Artificial Intelligence",
     "Time Point",
-    "Temporal Dynamics",
-    "State Machine",
     "Temporal Concept",
-    "Cross-Domain Meta-Structure",
-    "Transformation"
+    "State",
+    "Time Interval",
+    "BDI Model",
+    "Digital Twin",
+    "State Machine",
+    "Transformation",
+    "Event",
+    "Transition",
+    "Temporal Dynamics",
+    "Synchronous Execution",
+    "Cross-Domain Meta-Structure"
   ],
   "ontology": {
     "term_id": "AI-8056",

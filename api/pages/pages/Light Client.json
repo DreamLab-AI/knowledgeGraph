@@ -8,12 +8,12 @@
   ],
   "wiki_links": [
     "Blockchain",
+    "Cross-Chain Bridge",
+    "Relayer",
+    "SPV (Simplified Payment Verification)",
+    "State Proof",
     "Full Node",
     "Merkle Tree",
-    "Relayer",
-    "State Proof",
-    "Cross-Chain Bridge",
-    "SPV (Simplified Payment Verification)",
     "Interoperability Protocol"
   ],
   "ontology": {

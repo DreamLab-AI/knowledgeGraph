@@ -9,11 +9,11 @@
     "Boosting"
   ],
   "wiki_links": [
-    "Random Forest",
-    "Gradient Boosting",
+    "Generalization",
     "Model Combination",
     "Machine Learning",
-    "Generalization"
+    "Random Forest",
+    "Gradient Boosting"
   ],
   "ontology": {
     "term_id": "AI-1014",

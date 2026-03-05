@@ -22,16 +22,16 @@
   ],
   "wiki_links": [
     "Blockchain",
-    "Peer-to-Peer Network",
-    "Blockchain Node",
-    "Web3 Infrastructure",
-    "Cryptography",
     "Distributed Systems Infrastructure",
-    "Consensus Mechanism",
+    "Cryptography",
     "Cross-Chain Bridge",
-    "Blockchain Application",
+    "Consensus Mechanism",
+    "Smart Contracts",
     "Layer 2 Scaling",
-    "Smart Contracts"
+    "Blockchain Node",
+    "Peer-to-Peer Network",
+    "Blockchain Application",
+    "Web3 Infrastructure"
   ],
   "ontology": {
     "term_id": "BC-7003",

@@ -6,14 +6,14 @@
     "ETSI_Domain_Creative_Media"
   ],
   "wiki_links": [
-    "Cross-Platform Assets",
-    "Format Compliance",
-    "Tool Interoperability",
-    "Conversion Tools",
-    "Validation Systems",
-    "Content Portability",
     "metaverse",
-    "Technical Standards"
+    "Format Compliance",
+    "Technical Standards",
+    "Content Portability",
+    "Tool Interoperability",
+    "Cross-Platform Assets",
+    "Conversion Tools",
+    "Validation Systems"
   ],
   "ontology": {
     "term_id": "MV-9780",

@@ -11,11 +11,11 @@
   ],
   "wiki_links": [
     "AI Alignment",
-    "AI Governance",
-    "Adversarial Robustness",
     "Artificial Intelligence",
+    "Value Alignment",
     "Interpretability",
-    "Value Alignment"
+    "AI Governance",
+    "Adversarial Robustness"
   ],
   "ontology": {
     "term_id": "AI-4009",

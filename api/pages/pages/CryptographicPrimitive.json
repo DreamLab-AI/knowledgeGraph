@@ -29,12 +29,12 @@
     "BC-0033-zero-knowledge-proof"
   ],
   "wiki_links": [
-    "Digital Signature",
-    "Blockchain",
-    "Symmetric Encryption",
     "Cryptography",
+    "Blockchain",
     "Cryptographic Protocol",
+    "Symmetric Encryption",
     "Hash Function",
+    "Digital Signature",
     "Asymmetric Encryption"
   ],
   "ontology": {

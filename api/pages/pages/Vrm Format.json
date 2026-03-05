@@ -6,9 +6,9 @@
   "wiki_links": [
     "Avatar",
     "metaverse",
-    "glTF",
     "Interoperability",
-    "3D File Format"
+    "3D File Format",
+    "glTF"
   ],
   "ontology": {
     "term_id": "MV-10164",

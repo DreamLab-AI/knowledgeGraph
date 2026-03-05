@@ -7,20 +7,20 @@
     "RB-1006-inverse-kinematics"
   ],
   "wiki_links": [
-    "Transformation Matrix",
     "Robotics",
-    "Kinematic Model",
-    "Robot Simulation",
-    "Joint Parameters",
-    "Motion Visualization",
-    "Computability",
-    "RB-1006-inverse-kinematics",
     "Homogeneous Coordinates",
-    "Denavit-Hartenberg Parameters",
     "RB-0003-manipulator",
-    "Uniqueness",
+    "Computability",
+    "Transformation Matrix",
+    "Joint Parameters",
+    "Robot Simulation",
     "End-Effector Pose",
-    "Kinematics"
+    "Motion Visualization",
+    "RB-1006-inverse-kinematics",
+    "Denavit-Hartenberg Parameters",
+    "Uniqueness",
+    "Kinematics",
+    "Kinematic Model"
   ],
   "ontology": {
     "term_id": "RB-1005",

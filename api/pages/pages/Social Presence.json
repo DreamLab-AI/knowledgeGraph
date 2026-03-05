@@ -9,10 +9,10 @@
     "Communication Theory"
   ],
   "wiki_links": [
-    "TelecollaborationDomain",
-    "Presence Research",
     "Telecollaboration",
-    "Presence"
+    "Presence Research",
+    "Presence",
+    "TelecollaborationDomain"
   ],
   "ontology": {
     "term_id": "TC-9004",

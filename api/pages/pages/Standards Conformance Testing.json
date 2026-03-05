@@ -8,11 +8,11 @@
     "Compatibility Process"
   ],
   "wiki_links": [
-    "Standards",
-    "Standards Validation",
-    "Standards Conformance",
     "metaverse",
-    "Interoperability"
+    "Standards",
+    "Interoperability",
+    "Standards Validation",
+    "Standards Conformance"
   ],
   "ontology": {
     "term_id": "MV-10072",

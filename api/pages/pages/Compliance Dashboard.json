@@ -9,17 +9,17 @@
     "Cross-Platform Compliance Hub"
   ],
   "wiki_links": [
-    "Real-Time Monitoring",
     "Compliance Monitoring",
-    "RegTech",
-    "Audit Trail",
-    "Regulatory Technology",
     "metaverse",
-    "Blockchain Network",
-    "Regulatory Reporting",
-    "Risk Visualization",
+    "Data Integration",
     "Analytics Engine",
-    "Data Integration"
+    "Regulatory Technology",
+    "Real-Time Monitoring",
+    "Risk Visualization",
+    "Audit Trail",
+    "Regulatory Reporting",
+    "RegTech",
+    "Blockchain Network"
   ],
   "ontology": {
     "term_id": "MV-9827",

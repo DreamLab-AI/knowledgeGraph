@@ -8,16 +8,16 @@
   ],
   "wiki_links": [
     "Virtual Avatars",
-    "3D Modeling Software",
-    "Game Characters",
-    "Texture Mapping",
     "metaverse",
-    "Topology Design",
-    "Character Rigging",
     "Mesh Topology",
+    "Character Rigging",
     "Avatar System",
     "3D Model",
-    "Character Animation"
+    "Character Animation",
+    "3D Modeling Software",
+    "Texture Mapping",
+    "Topology Design",
+    "Game Characters"
   ],
   "ontology": {
     "term_id": "MV-9818",

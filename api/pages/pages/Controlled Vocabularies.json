@@ -8,17 +8,17 @@
     "Semantic Metadata Registry"
   ],
   "wiki_links": [
-    "Ontology",
-    "Semantic Interoperability",
-    "Knowledge Organization",
-    "Consistent Indexing",
-    "Metadata Standards",
     "metaverse",
-    "Governance Process",
-    "Information Retrieval",
+    "Ontology",
+    "Knowledge Organization",
+    "Taxonomy Development",
     "Thesaurus",
+    "Metadata Standards",
+    "Semantic Interoperability",
+    "Consistent Indexing",
     "Taxonomy",
-    "Taxonomy Development"
+    "Governance Process",
+    "Information Retrieval"
   ],
   "ontology": {
     "term_id": "MV-9832",

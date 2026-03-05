@@ -6,12 +6,12 @@
   "wiki_links": [
     "ComfyUI",
     "Knowledge Graphing",
-    "Python and PyTorch",
+    "Open Webui and Pipelines",
+    "Agents",
     "Function Calling",
     "Llama",
-    "Open Webui and Pipelines",
     "Prompt Engineering",
-    "Ollama",
-    "Agents"
+    "Python and PyTorch",
+    "Ollama"
   ]
 }

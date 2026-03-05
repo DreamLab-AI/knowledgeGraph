@@ -14,12 +14,12 @@
     "Identity Graph"
   ],
   "wiki_links": [
-    "Cryptographic Key Management",
-    "Digital Signature",
     "Random Number Generation",
-    "Symmetric Encryption",
-    "Key Derivation Function",
     "Cryptography",
+    "Cryptographic Key Management",
+    "Symmetric Encryption",
+    "Digital Signature",
+    "Key Derivation Function",
     "Asymmetric Encryption"
   ],
   "ontology": {
