@@ -7,13 +7,13 @@
     "Fuzzy Logic"
   ],
   "wiki_links": [
-    "Inference Engine",
-    "Decision Support",
-    "Knowledge Representation",
     "Rule-Based Systems",
-    "Knowledge Base",
     "Artificial Intelligence",
-    "Fuzzy Logic"
+    "Fuzzy Logic",
+    "Knowledge Base",
+    "Knowledge Representation",
+    "Decision Support",
+    "Inference Engine"
   ],
   "ontology": {
     "term_id": "AI-1002",

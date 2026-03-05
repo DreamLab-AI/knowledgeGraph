@@ -8,17 +8,17 @@
     "Visualization Layer"
   ],
   "wiki_links": [
-    "Immersive Visualization",
-    "Spatial Computing",
-    "Hardware",
-    "metaverse",
-    "Optical Systems",
-    "VR Headset",
     "Graphics Processing",
+    "metaverse",
+    "Hardware",
+    "VR Headset",
     "AR Glasses",
-    "Display Technology",
+    "Optical Systems",
     "HMD",
-    "Mixed Reality"
+    "Display Technology",
+    "Immersive Visualization",
+    "Mixed Reality",
+    "Spatial Computing"
   ],
   "ontology": {
     "term_id": "MV-9882",

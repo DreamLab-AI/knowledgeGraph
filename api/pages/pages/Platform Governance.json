@@ -12,13 +12,13 @@
     "Content Moderation Standards"
   ],
   "wiki_links": [
-    "Consensus Mechanisms",
-    "Smart Contracts",
     "Voting Mechanisms",
-    "Decentralised Decision-Making",
     "Blockchain",
+    "Consensus Mechanisms",
     "Token Economy",
-    "DAO Governance"
+    "DAO Governance",
+    "Decentralised Decision-Making",
+    "Smart Contracts"
   ],
   "ontology": {
     "term_id": "NGM-7037",

@@ -12,17 +12,17 @@
     "Data Provenance"
   ],
   "wiki_links": [
-    "Data Discovery",
     "FAIR Data Principles",
+    "Data Standard",
+    "Data Interoperability",
+    "Data Discovery",
+    "JSON-LD",
+    "Ontology",
+    "Data Catalogue",
+    "Knowledge Graph",
     "Semantic Web",
     "Dublin Core",
     "Schema.org",
-    "Knowledge Graph",
-    "Ontology",
-    "Data Standard",
-    "Data Catalogue",
-    "JSON-LD",
-    "Data Interoperability",
     "Data Governance"
   ],
   "ontology": {

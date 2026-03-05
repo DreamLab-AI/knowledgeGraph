@@ -8,15 +8,15 @@
     "CryptographicPrimitive"
   ],
   "wiki_links": [
-    "Confidential Transactions",
     "Hybrid Encryption",
-    "Asymmetric Encryption",
-    "Key Derivation Function",
-    "Digital Signature",
-    "Hash Function",
     "Blockchain",
+    "Digital Signature",
+    "Cryptography",
+    "Asymmetric Encryption",
     "Random Number Generation",
-    "Cryptography"
+    "Hash Function",
+    "Key Derivation Function",
+    "Confidential Transactions"
   ],
   "ontology": {
     "term_id": "BC-8018",

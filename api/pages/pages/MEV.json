@@ -14,12 +14,12 @@
   ],
   "wiki_links": [
     "Consensus Security",
-    "Front-Running",
-    "Mempool",
-    "Transaction Ordering",
-    "Blockchain",
-    "DeFi Ecosystem",
     "Proposer-Builder Separation",
+    "Blockchain",
+    "Mempool",
+    "Front-Running",
+    "Transaction Ordering",
+    "DeFi Ecosystem",
     "BlockchainDomain"
   ],
   "ontology": {

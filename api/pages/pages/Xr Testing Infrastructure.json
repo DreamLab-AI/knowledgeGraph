@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-testing-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10174\n\t- source-domain:: mv\n\t- preferred-term:: XR Testing Infrastructure\n\t- status:: active\n\t- definition:: The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.\n\t- owl:class:: mv:XrTestingInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Testing Infrastructure]]\n\t\t- related-to:: [[Quality Assurance]]\n\t\t- related-to:: [[XR Hardware]]\n\t\t- related-to:: [[Performance Testing]]\n\t  id:: xr-testing-infrastructure-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR testing infrastructure addresses unique validation challenges including performance profiling, motion sickness assessment, tracking accuracy verification, and accessibility compliance. Automated testing tools simulate user interactions for regression testing. User testing labs with eye tracking and biometric sensors capture comfort and usability metrics. Performance testing ensures consistent frame rates critical for immersive experiences.\n- ## Technical Details\n\t- ### Testing Categories\n\t\t- **Performance Testing**: Frame rate, latency, and thermal analysis\n\t\t- **Tracking Validation**: Positional accuracy and drift measurement\n\t\t- **User Experience Testing**: Comfort, presence, and usability evaluation\n\t\t- **Accessibility Testing**: Compliance with XR accessibility standards\n\t- ### Testing Tools\n\t\t- **Unity Test Framework**: Automated XR application testing\n\t\t- **Unreal Automation System**: Engine-integrated testing\n\t\t- **Platform Tools**: Meta Quest Developer Hub, SteamVR testing\n\t\t- **Custom Rigs**: Motion capture validation setups\n\t- ### Metrics and KPIs\n\t\t- Frame timing consistency (target 90+ FPS)\n\t\t- Motion-to-photon latency (sub-20ms)\n\t\t- Tracking accuracy (sub-millimeter positioning)\n\t\t- Simulator sickness questionnaire scores\n- ## Applications\n\t- XR application quality assurance\n\t- Platform certification testing\n\t- Accessibility compliance validation\n\t- Performance optimization verification\n\t- Enterprise deployment readiness testing",
   "backlinks": [],
   "wiki_links": [
+    "metaverse",
     "XR Hardware",
-    "Performance Testing",
     "Quality Assurance",
-    "Testing Infrastructure",
-    "metaverse"
+    "Performance Testing",
+    "Testing Infrastructure"
   ],
   "ontology": {
     "term_id": "MV-10174",

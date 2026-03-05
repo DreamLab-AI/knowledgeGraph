@@ -9,11 +9,11 @@
     "Game Engine"
   ],
   "wiki_links": [
-    "AutoML",
-    "Model Optimization",
     "owl:Thing",
+    "Neural Network Library",
+    "AutoML",
     "Deep Learning Framework",
-    "Neural Network Library"
+    "Model Optimization"
   ],
   "ontology": {
     "term_id": "AI-9005",

@@ -7,17 +7,17 @@
   ],
   "wiki_links": [
     "Layer 1",
-    "Polkadot",
-    "Shared Security",
-    "Consensus Mechanism",
-    "Cross-Chain Bridge",
-    "Blockchain Architecture",
-    "Scalability Solutions",
-    "Monolithic Blockchain",
+    "Cosmos",
     "Interoperability",
+    "Scalability Solutions",
     "Blockchain",
+    "Consensus Mechanism",
+    "Monolithic Blockchain",
     "Avalanche",
-    "Cosmos"
+    "Shared Security",
+    "Cross-Chain Bridge",
+    "Polkadot",
+    "Blockchain Architecture"
   ],
   "ontology": {
     "term_id": "BC-8008",

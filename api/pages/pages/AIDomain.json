@@ -10,13 +10,13 @@
     "Virtual Production"
   ],
   "wiki_links": [
-    "Robotics Systems",
-    "Technology Domain",
-    "Metaverse Technology",
-    "Blockchain Technology",
     "Artificial Intelligence",
     "Telecollaboration",
-    "ArtificialIntelligenceDomain"
+    "ArtificialIntelligenceDomain",
+    "Robotics Systems",
+    "Metaverse Technology",
+    "Blockchain Technology",
+    "Technology Domain"
   ],
   "ontology": {
     "term_id": "AI-7017",

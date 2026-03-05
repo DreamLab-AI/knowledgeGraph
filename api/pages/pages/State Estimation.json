@@ -10,11 +10,11 @@
   ],
   "wiki_links": [
     "Robotics Systems",
-    "Particle Filter",
-    "Kalman Filter",
     "Sensor Fusion",
     "Bayes Filter",
-    "Localization"
+    "Localization",
+    "Kalman Filter",
+    "Particle Filter"
   ],
   "ontology": {
     "term_id": "RB-0604",

@@ -4,12 +4,12 @@
   "content": "- ### OntologyBlock\n  id:: training-methods-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0601\n\t- preferred-term:: Training Methods\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Training Methods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data. These methods include supervised learning, unsupervised learning, reinforcement learning, transfer learning, fine-tuning, and curriculum learning approaches.\n\t- owl:class:: ai:TrainingMethod\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: training-methods-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- is-parent-of:: [[Fine-Tuning]]\n\t\t- is-parent-of:: [[Transfer Learning]]\n\t\t- is-parent-of:: [[Curriculum Learning]]\n\t\t- is-parent-of:: [[Reinforcement Learning]]",
   "backlinks": [],
   "wiki_links": [
-    "Transfer Learning",
-    "Curriculum Learning",
-    "Fine-Tuning",
     "Artificial Intelligence",
-    "Reinforcement Learning",
-    "Machine Learning"
+    "Transfer Learning",
+    "Machine Learning",
+    "Fine-Tuning",
+    "Curriculum Learning",
+    "Reinforcement Learning"
   ],
   "ontology": {
     "term_id": "AI-0601",

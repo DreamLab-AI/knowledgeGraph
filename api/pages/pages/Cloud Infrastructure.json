@@ -12,22 +12,22 @@
     "Computing Infrastructure"
   ],
   "wiki_links": [
-    "Container Orchestration",
     "Distributed Computing",
-    "Technology Domain",
-    "Elasticity",
-    "Microsoft Azure",
-    "Google Cloud Platform",
-    "Microservices Architecture",
     "Virtualization Technology",
-    "Computing Infrastructure",
-    "Database System",
-    "InfrastructureDomain",
     "Network Protocol",
+    "Google Cloud Platform",
+    "Self-Service Provisioning",
+    "Computing Infrastructure",
+    "InfrastructureDomain",
     "Scalability",
+    "Database System",
+    "Container Orchestration",
+    "Technology Domain",
+    "Microsoft Azure",
     "AWS",
     "ETSI_Domain_Infrastructure",
-    "Self-Service Provisioning"
+    "Microservices Architecture",
+    "Elasticity"
   ],
   "ontology": {
     "term_id": "NGM-7032",

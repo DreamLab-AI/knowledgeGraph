@@ -8,17 +8,17 @@
     "Virtualeconomydomain"
   ],
   "wiki_links": [
-    "Smart Contracts",
     "Virtual Commerce",
-    "Metaverse Commerce",
+    "metaverse",
     "Digital Value Exchange",
     "NFT Market",
+    "Token Economics",
     "Crypto Economy",
     "Digital Payments",
-    "Economic Systems",
-    "Token Economics",
-    "metaverse",
-    "Blockchain Infrastructure"
+    "Metaverse Commerce",
+    "Blockchain Infrastructure",
+    "Smart Contracts",
+    "Economic Systems"
   ],
   "ontology": {
     "term_id": "MV-9856",

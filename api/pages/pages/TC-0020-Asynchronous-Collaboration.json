@@ -7,22 +7,22 @@
     "TC-0001-telecollaboration-domain"
   ],
   "wiki_links": [
-    "Deep Work",
     "TC-0024-Project-Management-System",
-    "Flexible Scheduling",
-    "TC-0021-Collaborative-Document-Editing",
-    "TC-0023-Shared-Repository",
     "TC-0022-Version-Control",
     "TC-0025-Issue-Tracking",
-    "TC-0080-Team-Coordination",
-    "Documentation Systems",
-    "TC-0001-telecollaboration-domain",
-    "TC-0026-Code-Review",
-    "Shared Artifacts",
     "Documentation Culture",
-    "Knowledge Graph",
+    "Global Accessibility",
+    "TC-0080-Team-Coordination",
+    "Deep Work",
+    "Shared Artifacts",
     "TC-0010-Synchronous-Collaboration",
-    "Global Accessibility"
+    "TC-0001-telecollaboration-domain",
+    "TC-0021-Collaborative-Document-Editing",
+    "TC-0023-Shared-Repository",
+    "Flexible Scheduling",
+    "Knowledge Graph",
+    "Documentation Systems",
+    "TC-0026-Code-Review"
   ],
   "ontology": {
     "term_id": "TC-0020",

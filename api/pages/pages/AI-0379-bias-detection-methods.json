@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE P7003-2021",
-    "ConceptualLayer",
-    "NIST SP 1270",
     "ISO/IEC TR 24027",
-    "AIEthicsDomain"
+    "ConceptualLayer",
+    "AIEthicsDomain",
+    "NIST SP 1270"
   ],
   "ontology": {
     "term_id": "AI-0379",

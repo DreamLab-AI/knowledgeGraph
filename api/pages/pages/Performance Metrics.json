@@ -12,12 +12,12 @@
     "Telemetry & Analytics"
   ],
   "wiki_links": [
-    "F1 Score",
     "Precision",
-    "AUC",
     "Artificial Intelligence",
-    "Accuracy",
+    "AUC",
     "Machine Learning",
+    "F1 Score",
+    "Accuracy",
     "Recall"
   ],
   "ontology": {

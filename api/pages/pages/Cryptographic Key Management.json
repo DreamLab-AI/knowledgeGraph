@@ -10,11 +10,11 @@
     "Transaction Standard"
   ],
   "wiki_links": [
-    "Key Derivation Function",
-    "Digital Signature",
     "Security Architecture",
-    "Random Number Generation",
+    "Digital Signature",
     "Cryptography",
+    "Random Number Generation",
+    "Key Derivation Function",
     "Private Key",
     "Cryptographic Keys"
   ],

@@ -10,12 +10,12 @@
     "AIRisk"
   ],
   "wiki_links": [
-    "Value Alignment",
     "Interpretability",
-    "AI Alignment",
-    "AI Governance",
     "Artificial Intelligence",
-    "Adversarial Robustness"
+    "Value Alignment",
+    "AI Governance",
+    "Adversarial Robustness",
+    "AI Alignment"
   ],
   "ontology": {
     "term_id": "AI-4009",

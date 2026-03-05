@@ -10,13 +10,13 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
-    "Hierarchical Deterministic Wallet",
-    "Asymmetric Encryption",
-    "Password Hashing",
-    "Hash Function",
     "Blockchain",
     "Mnemonic Phrase",
+    "Password Hashing",
     "Cryptography",
+    "Hierarchical Deterministic Wallet",
+    "Asymmetric Encryption",
+    "Hash Function",
     "Private Key"
   ],
   "ontology": {

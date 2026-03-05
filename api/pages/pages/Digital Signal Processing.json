@@ -6,17 +6,17 @@
     "Procedural Audio Generator"
   ],
   "wiki_links": [
-    "Audio Processing",
+    "metaverse",
     "Audio Enhancement",
+    "Video Processing",
+    "Signal Processing",
     "Spatial Audio",
     "Real-Time Systems",
-    "Algorithms",
-    "Video Processing",
     "Computer Vision",
-    "DSP Hardware",
+    "Audio Processing",
+    "Algorithms",
     "Sensors",
-    "metaverse",
-    "Signal Processing"
+    "DSP Hardware"
   ],
   "ontology": {
     "term_id": "MV-9870",

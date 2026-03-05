@@ -7,13 +7,13 @@
     "Deterministic Finality"
   ],
   "wiki_links": [
-    "Proof of Work",
-    "Transaction Finality",
-    "Consensus Mechanism",
-    "Transaction Confirmation",
-    "Deterministic Finality",
     "Blockchain",
     "Longest Chain Rule",
+    "Consensus Mechanism",
+    "Transaction Confirmation",
+    "Transaction Finality",
+    "Deterministic Finality",
+    "Proof of Work",
     "51% Attack",
     "BlockchainDomain"
   ],

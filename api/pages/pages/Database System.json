@@ -15,23 +15,23 @@
     "Data Storage Layer"
   ],
   "wiki_links": [
-    "NoSQL Database",
-    "Relational Database",
-    "Application Development",
+    "Query Processing",
     "Distributed Computing",
-    "Technology Domain",
-    "Data Persistence",
-    "ACID Transactions",
     "Transaction Management",
+    "BASE Consistency",
+    "ACID Transactions",
+    "Machine Learning",
+    "Data Persistence",
+    "ETSI_Domain_Data_Management",
+    "Relational Database",
     "Data Analytics",
     "Computing Infrastructure",
     "InfrastructureDomain",
     "Graph Database",
-    "Query Processing",
+    "Technology Domain",
+    "Application Development",
     "Cloud Infrastructure",
-    "BASE Consistency",
-    "ETSI_Domain_Data_Management",
-    "Machine Learning"
+    "NoSQL Database"
   ],
   "ontology": {
     "term_id": "NGM-7022",

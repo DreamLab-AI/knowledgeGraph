@@ -9,11 +9,11 @@
     "Digital Ontology Repository"
   ],
   "wiki_links": [
-    "Schema Evolution",
-    "Data Management",
-    "Event Streaming",
-    "API Contracts",
     "metaverse",
+    "Schema Evolution",
+    "Event Streaming",
+    "Data Management",
+    "API Contracts",
     "Data Governance"
   ],
   "ontology": {
