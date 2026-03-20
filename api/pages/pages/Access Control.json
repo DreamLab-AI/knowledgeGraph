@@ -28,16 +28,16 @@
     "Authentication Service"
   ],
   "wiki_links": [
-    "Security Mechanism",
-    "Identity Management",
-    "Core Technology",
-    "Security Policy",
-    "System Security",
-    "Authentication Service",
-    "Authorisation",
-    "Permission Management",
     "Data Protection",
-    "Compliance"
+    "Security Policy",
+    "Authorisation",
+    "Compliance",
+    "Authentication Service",
+    "Core Technology",
+    "Security Mechanism",
+    "System Security",
+    "Permission Management",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7003",

@@ -12,18 +12,18 @@
     "Asset Trading"
   ],
   "wiki_links": [
+    "FinancialDomain",
     "Market Maker",
-    "Price Transparency",
     "Fair Valuation",
+    "Price Transparency",
+    "Spot Markets",
+    "Futures Markets",
+    "Order Book",
+    "Arbitrage",
     "MEV",
     "Liquidity",
-    "Spot Markets",
-    "Market Microstructure",
-    "Order Book",
-    "FinancialDomain",
-    "Arbitrage",
-    "Futures Markets",
     "Market Efficiency",
+    "Market Microstructure",
     "DEX"
   ],
   "ontology": {

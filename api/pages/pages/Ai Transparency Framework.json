@@ -4,14 +4,14 @@
   "content": "- ### OntologyBlock\n  id:: ai-transparency-framework-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9764\n\t- source-domain:: mv\n\t- preferred-term:: Ai Transparency Framework\n\t- status:: active\n\t- definition:: AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential impacts.\n\t- owl:class:: mv:AiTransparencyFramework\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[AI Governance]]\n\t- enables:: [[Algorithmic Accountability]], [[Explainable AI]], [[Regulatory Compliance]]\n\t- requires:: [[Audit Mechanisms]], [[Documentation Standards]], [[Stakeholder Communication]]\n\t- #### Relationships\n\t  id:: ai-transparency-framework-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Explainability**: Plain-language explanations of AI logic and decision-making processes\n- **Interpretability**: Ability for AI systems to be understood by humans in non-technical language\n- **Accountability**: Traceability mechanisms assigning clear responsibility for AI decisions and errors\n- **Algorithmic Audits**: Independent technical review of AI system behavior and outcomes\n\n### Regulatory Framework\n- **EU AI Act**: Effective August 2024, compliance required by August 2026, with penalties up to 35M EUR or 7% global turnover\n- **OECD AI Principles**: Values-based principles for trustworthy, transparent AI adopted across G7 and six continents\n- **NIST Trustworthy AI**: Attributes including validity, safety, security, privacy, explainability, and fairness",
   "backlinks": [],
   "wiki_links": [
-    "metaverse",
-    "Regulatory Compliance",
-    "Documentation Standards",
     "Explainable AI",
+    "metaverse",
+    "Documentation Standards",
     "Algorithmic Accountability",
     "Audit Mechanisms",
+    "Stakeholder Communication",
     "AI Governance",
-    "Stakeholder Communication"
+    "Regulatory Compliance"
   ],
   "ontology": {
     "term_id": "MV-9764",

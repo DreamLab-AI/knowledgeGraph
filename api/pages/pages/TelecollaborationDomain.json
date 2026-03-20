@@ -13,12 +13,12 @@
   ],
   "wiki_links": [
     "TC-0001-telecollaboration-domain",
+    "RB Domain",
     "Technology Domain",
+    "BC Domain",
     "Telecollaboration",
     "MV Domain",
-    "RB Domain",
-    "AI Domain",
-    "BC Domain"
+    "AI Domain"
   ],
   "ontology": {
     "term_id": "AI-7016",

@@ -10,11 +10,11 @@
     "tc-0002-collaborative-document-editing"
   ],
   "wiki_links": [
-    "Collaborative Editing",
+    "Real-Time Collaboration",
+    "Virtual Meeting",
     "Shared Workspace",
     "Telecollaboration",
-    "Real-Time Collaboration",
-    "Virtual Meeting"
+    "Collaborative Editing"
   ],
   "ontology": {
     "term_id": "TC-0603",

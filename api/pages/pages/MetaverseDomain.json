@@ -322,22 +322,22 @@
     "National Competent Authority"
   ],
   "wiki_links": [
-    "WebXR",
-    "ExtendedRealityXR",
-    "HapticFeedback",
+    "AugmentedReality",
+    "VirtualEconomies",
+    "DigitalTwin",
     "ArtificialIntelligence",
     "BlockchainTechnology",
     "DecentralizedTechnologies",
-    "AugmentedReality",
-    "VirtualReality",
-    "AvatarSystems",
-    "Interoperability",
-    "CloudComputing",
-    "VirtualEconomies",
     "ExtendedReality",
+    "WebXR",
+    "Interoperability",
+    "HapticFeedback",
+    "ExtendedRealityXR",
+    "CloudComputing",
+    "AvatarSystems",
     "SpatialComputing",
-    "TechnologyDomain",
-    "DigitalTwin"
+    "VirtualReality",
+    "TechnologyDomain"
   ],
   "ontology": {
     "term_id": "MV-7000",

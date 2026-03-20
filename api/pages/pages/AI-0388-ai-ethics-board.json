@@ -6,9 +6,9 @@
   "wiki_links": [
     "IEEE P7000",
     "EU HLEG AI",
+    "ConceptualLayer",
     "ISO/IEC 42001:2023",
-    "AIEthicsDomain",
-    "ConceptualLayer"
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0388",

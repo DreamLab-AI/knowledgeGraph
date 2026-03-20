@@ -8,12 +8,12 @@
     "Spatial Index"
   ],
   "wiki_links": [
-    "metaverse",
-    "PostGIS",
-    "OGC Standards",
     "GIS Technology",
+    "OGC Standards",
+    "Geospatial Data Management",
     "Database System",
-    "Geospatial Data Management"
+    "PostGIS",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10058",

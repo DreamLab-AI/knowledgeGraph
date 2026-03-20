@@ -13,11 +13,11 @@
     "Global Metaverse Operations"
   ],
   "wiki_links": [
-    "metaverse",
     "OpenXR Standard",
-    "Cross-Platform Compatibility",
+    "metaverse",
+    "Interface Standards",
     "Technical Standard",
-    "Interface Standards"
+    "Cross-Platform Compatibility"
   ],
   "ontology": {
     "term_id": "MV-9935",

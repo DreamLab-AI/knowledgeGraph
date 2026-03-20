@@ -27,16 +27,16 @@
   "wiki_links": [
     "Contextual Information Display",
     "Computer Vision",
-    "Metaverse",
-    "Extended Reality",
-    "Spatial Computing",
-    "Apple Vision Pro",
-    "Meta Ray-Ban Smart Glasses",
-    "Immersive Experiences",
-    "Microsoft HoloLens",
     "Remote Assistance",
     "Virtual Reality",
-    "Mixed Reality"
+    "Mixed Reality",
+    "Microsoft HoloLens",
+    "Meta Ray-Ban Smart Glasses",
+    "Extended Reality",
+    "Spatial Computing",
+    "Immersive Experiences",
+    "Apple Vision Pro",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "NGM-7031",

@@ -11,9 +11,9 @@
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "Optimization",
-    "Graph Theory",
     "Planning and Scheduling",
+    "Graph Theory",
+    "Optimization",
     "Pathfinding"
   ],
   "ontology": {

@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "DSP Hardware",
-    "metaverse",
-    "Audio Enhancement",
     "Computer Vision",
-    "Audio Processing",
-    "Video Processing",
-    "Spatial Audio",
-    "Signal Processing",
-    "Sensors",
     "Real-Time Systems",
-    "Algorithms"
+    "Algorithms",
+    "metaverse",
+    "Audio Processing",
+    "Signal Processing",
+    "Audio Enhancement",
+    "Video Processing",
+    "Sensors",
+    "Spatial Audio"
   ],
   "ontology": {
     "term_id": "MV-9870",

@@ -9,15 +9,15 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
+    "Cryptographic Protocol",
+    "Asymmetric Encryption",
+    "Verifiable Random Function",
     "Cryptography",
+    "Hash Function",
     "Zero-Knowledge Proof",
     "Blockchain",
-    "Cryptographic Protocol",
-    "Hash Function",
-    "Key Derivation Function",
     "Commitment Scheme",
-    "Asymmetric Encryption",
-    "Verifiable Random Function"
+    "Key Derivation Function"
   ],
   "ontology": {
     "term_id": "BC-8014",

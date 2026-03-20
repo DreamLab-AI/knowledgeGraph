@@ -6,13 +6,13 @@
     "Digital Identity Framework"
   ],
   "wiki_links": [
-    "Phishing Resistance",
-    "metaverse",
     "Security Standards",
     "Secure Platform Access",
+    "Client Implementation",
+    "Phishing Resistance",
+    "metaverse",
     "Public Key Cryptography",
     "Passwordless Authentication",
-    "Client Implementation",
     "Hardware Authenticators"
   ],
   "ontology": {

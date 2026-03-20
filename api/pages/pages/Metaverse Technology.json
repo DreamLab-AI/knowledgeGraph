@@ -14,21 +14,21 @@
     "Data Management"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
     "Robotics Systems",
-    "Avatar System",
     "Augmented Reality",
-    "Metaverse Technology",
-    "Technology Domain",
-    "Blockchain Technology",
-    "Spatial Computing",
-    "Digital Asset",
     "Virtual Economy",
-    "Immersive Experience",
-    "Metaverse",
-    "Telecollaboration",
+    "Technology Domain",
     "Metaverse Infrastructure",
-    "Virtual World"
+    "Blockchain Technology",
+    "Metaverse Technology",
+    "Virtual World",
+    "Telecollaboration",
+    "Spatial Computing",
+    "Avatar System",
+    "Digital Asset",
+    "Immersive Experience",
+    "Artificial Intelligence",
+    "Metaverse"
   ],
   "ontology": {
     "term_id": "MV-0001",

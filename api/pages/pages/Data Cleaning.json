@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Data Preprocessing",
-    "ETL",
     "Machine Learning",
+    "ETL",
     "Data Engineering",
-    "Data Analysis",
     "Feature Engineering",
+    "Data Analysis",
     "Data Quality"
   ],
   "ontology": {

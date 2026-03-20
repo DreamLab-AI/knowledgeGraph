@@ -6,14 +6,14 @@
     "Digital Asset Workflow"
   ],
   "wiki_links": [
-    "metaverse",
-    "Digital Repository",
-    "Storage Infrastructure",
-    "Content Reuse",
-    "Cross-Platform Interoperability",
-    "Standardized Formats",
     "Metadata Management",
-    "Asset Preservation"
+    "Content Reuse",
+    "metaverse",
+    "Standardized Formats",
+    "Storage Infrastructure",
+    "Asset Preservation",
+    "Digital Repository",
+    "Cross-Platform Interoperability"
   ],
   "ontology": {
     "term_id": "MV-9779",

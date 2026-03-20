@@ -10,12 +10,12 @@
     "Transaction Standard"
   ],
   "wiki_links": [
-    "Random Number Generation",
-    "Private Key",
     "Cryptography",
-    "Security Architecture",
-    "Cryptographic Keys",
     "Digital Signature",
+    "Private Key",
+    "Security Architecture",
+    "Random Number Generation",
+    "Cryptographic Keys",
     "Key Derivation Function"
   ],
   "ontology": {
