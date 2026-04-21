@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: xr-device-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10169\n\t- source-domain:: mv\n\t- preferred-term:: XR Device\n\t- status:: active\n\t- definition:: Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.\n\t- owl:class:: mv:XrDevice\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[XR Hardware]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Augmented Reality]]\n\t\t- related-to:: [[Motion Tracking]]\n\t  id:: xr-device-relationships\n\t  collapsed:: true\n- ## Overview\n\t- XR devices span the reality-virtuality continuum from fully immersive VR headsets to see-through AR glasses. XR headset shipments increased by 3.9 million units in 2024 with high double-digit year-over-year growth. Meta Quest holds 64% market share, Apple Vision Pro captured 16% in Q1 2024, and PICO has 7%. The market includes consumer entertainment, enterprise training, and industrial applications.\n- ## Technical Details\n\t- ### Device Categories\n\t\t- **VR Headsets**: Fully immersive displays (Meta Quest 3, PlayStation VR2)\n\t\t- **AR Glasses**: See-through displays overlaying digital content\n\t\t- **MR Headsets**: Spatial computing with passthrough (Apple Vision Pro)\n\t\t- **Haptic Devices**: Controllers, gloves, and body suits\n\t- ### Key Specifications\n\t\t- **Display Resolution**: Up to 4K per eye (Vision Pro)\n\t\t- **Refresh Rate**: 90-120Hz for comfort\n\t\t- **Field of View**: 90-120 degrees typical\n\t\t- **Tracking**: 6DoF inside-out or external sensors\n\t- ### Major Platforms (2024)\n\t\t- **Meta Quest 3**: $499, Snapdragon XR2 Gen 2, mixed reality\n\t\t- **Meta Quest 3S**: $299, entry-level mixed reality\n\t\t- **Apple Vision Pro**: $3,499, M2+R1 chips, micro-OLED displays\n\t\t- **PSVR2**: PlayStation 5 tethered VR system\n- ## Applications\n\t- Consumer VR gaming and entertainment\n\t- Enterprise training and simulation\n\t- Metaverse access and social presence\n\t- Industrial AR maintenance guidance\n\t- Medical and therapeutic applications",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Reality VR",
-    "Augmented Reality",
     "metaverse",
+    "XR Hardware",
+    "Augmented Reality",
     "Motion Tracking",
-    "XR Hardware"
+    "Virtual Reality VR"
   ],
   "ontology": {
     "term_id": "MV-10169",

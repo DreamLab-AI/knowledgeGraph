@@ -3,12 +3,12 @@
   "title": "Cryptographic Protocol",
   "content": "- ### OntologyBlock\n  id:: mv9542-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9542\n\t- preferred-term:: Cryptographic Protocol\n\t- source-domain:: mv\n\t- owl:class:: mv:CryptographicProtocol\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Cryptographic Protocol is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nCryptographic Protocol represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "BC-BlockchainProtocol",
-    "Quantum Network Node",
     "CryptographicPrimitive",
     "Secure Multi Party Computation",
-    "Random Number Generation",
-    "Central Bank Digital Currency (CBDC)"
+    "BC-BlockchainProtocol",
+    "Quantum Network Node",
+    "Central Bank Digital Currency (CBDC)",
+    "Random Number Generation"
   ],
   "wiki_links": [
     "owl:Thing"

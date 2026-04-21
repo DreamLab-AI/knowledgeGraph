@@ -3,17 +3,17 @@
   "title": "Spatial Database",
   "content": "- ### OntologyBlock\n  id:: spatial-database-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10058\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Database\n\t- status:: active\n\t- definition:: A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.\n\t- owl:class:: mv:SpatialDatabase\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-database-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Database System]]\n\t\t- related-to:: [[GIS Technology]]\n\t\t- related-to:: [[PostGIS]]\n\t\t- related-to:: [[OGC Standards]]\n\t\t- enables:: [[Geospatial Data Management]]\n\t- #### Key Implementations\n\t  collapsed:: true\n\t\t- PostGIS (PostgreSQL extension)\n\t\t- Oracle Spatial\n\t\t- Microsoft SQL Server Spatial\n\t\t- MySQL Spatial Extensions\n\t\t- Esri Geodatabase\n\t- #### Spatial Query Types\n\t  collapsed:: true\n\t\t- Containment queries (does A contain B)\n\t\t- Intersection queries (does A intersect B)\n\t\t- Proximity queries (what is near A)\n\t\t- Adjacency queries (what is next to A)\n\t\t- Distance and area calculations",
   "backlinks": [
-    "Spatial Queries",
     "Spatial Computing Layer",
-    "Spatial Index"
+    "Spatial Index",
+    "Spatial Queries"
   ],
   "wiki_links": [
-    "GIS Technology",
-    "OGC Standards",
     "Geospatial Data Management",
+    "metaverse",
+    "OGC Standards",
     "Database System",
     "PostGIS",
-    "metaverse"
+    "GIS Technology"
   ],
   "ontology": {
     "term_id": "MV-10058",

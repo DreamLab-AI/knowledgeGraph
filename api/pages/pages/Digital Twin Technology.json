@@ -3,9 +3,9 @@
   "title": "Digital Twin Technology",
   "content": "- ### OntologyBlock\n  id:: mv9593-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9593\n\t- preferred-term:: Digital Twin Technology\n\t- source-domain:: mv\n\t- owl:class:: mv:DigitalTwinTechnology\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Digital Twin Technology is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nDigital Twin Technology represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Robot-Control",
+    "Cross Platform Digital Twins",
     "Real Time Digital Twin Synchronization",
-    "Cross Platform Digital Twins"
+    "Robot-Control"
   ],
   "wiki_links": [
     "owl:Thing"

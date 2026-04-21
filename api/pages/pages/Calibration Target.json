@@ -3,22 +3,22 @@
   "title": "Calibration Target",
   "content": "- ### OntologyBlock\n  id:: calibration-target-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9805\n\t- source-domain:: mv\n\t- preferred-term:: Calibration Target\n\t- definition:: A physical or displayed reference pattern with precisely known geometric, photometric, or colorimetric properties used to determine camera intrinsic and extrinsic parameters, enabling accurate lens distortion correction, spatial measurement, and color reproduction in imaging systems.\n\t- status:: active\n\t- owl:class:: mv:CalibrationTarget\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: calibration-target-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Reference Standard]]\n\t\t- enables:: [[Camera Calibration]], [[Lens Distortion Correction]], [[Color Accuracy]]\n\t\t- requires:: [[Precision Manufacturing]], [[Pattern Definition]], [[Flatness Control]]\n\t\t- related-to:: [[Camera Parameters]], [[Computer Vision]], [[Photogrammetry]]\n- ## Technical Details\n\t- **Common Pattern Types**:\n\t\t- **Checkerboard (Chessboard)**: Most common; corners provide invariant reference points\n\t\t- **Circle Grid**: Robust against noise/blur; suitable for high-accuracy applications\n\t\t- **ChArUco Board**: Hybrid combining checkerboard with ArUco fiducial markers for error correction\n\t\t- **Asymmetric Patterns**: Enhanced pose estimation and orientation detection\n\t- **Material Requirements**:\n\t\t- Matte surface (avoid specular highlights)\n\t\t- Absolute flatness (no bending or folding)\n\t\t- Precision printing (laser preferred over inkjet)\n\t\t- Ceramic targets for ultimate accuracy (low thermal expansion)\n\t- **Best Practices**:\n\t\t- Diffuse lighting without shadows\n\t\t- Rigid mounting to flat surface\n\t\t- Multiple viewing angles during capture\n\t\t- Professional manufacturing for production use\n- ## Applications\n\t- OpenCV camera calibration\n\t- MATLAB Computer Vision Toolbox\n\t- Photogrammetry and 3D scanning\n\t- Augmented reality system setup\n\t- Machine vision quality inspection",
   "backlinks": [
-    "Motion Capture Rig",
     "Calibration Standards",
+    "Motion Capture Rig",
     "Camera Parameters"
   ],
   "wiki_links": [
     "Precision Manufacturing",
-    "Computer Vision",
     "Camera Parameters",
     "Pattern Definition",
     "Color Accuracy",
     "Photogrammetry",
-    "Reference Standard",
-    "metaverse",
-    "Flatness Control",
     "Lens Distortion Correction",
-    "Camera Calibration"
+    "Flatness Control",
+    "Camera Calibration",
+    "Reference Standard",
+    "Computer Vision",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9805",

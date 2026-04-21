@@ -4,15 +4,15 @@
   "content": "- ### OntologyBlock\n  id:: virtual-classroom-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10107\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Classroom\n\t- status:: active\n\t- definition:: An online learning environment that replicates a traditional classroom's interactive experience without physical boundaries, leveraging education technology to connect students and instructors through real-time engagement, collaboration tools, and shared learning materials.\n\t- owl:class:: mv:VirtualClassroom\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Distance Learning]]\n\t\t- related-to:: [[Learning Management System]]\n\t\t- related-to:: [[Educational Technology]]\n\t  id:: virtual-classroom-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual classrooms are synchronous online learning environments where teachers and learners engage via videoconferencing. Unlike asynchronous coursework with pre-recorded material, virtual classrooms involve live, real-time learning with active engagement between instructors and participants. As of 2024, 74% of US school districts meet the FCC's internet connectivity goal, enabling widespread virtual learning access.\n- ## Technical Details\n\t- ### Core Technologies\n\t\t- **Video Conferencing**: Real-time audio-visual communication between educators and students\n\t\t- **Learning Management Systems (LMS)**: Centralized platforms for course management, assignments, and progress tracking\n\t\t- **Digital Whiteboards**: Interactive surfaces for writing, drawing, and highlighting content\n\t\t- **Screen Sharing**: Real-time sharing of learning resources and demonstrations\n\t- ### Key Features\n\t\t- Live synchronous sessions with real-time interaction\n\t\t- Breakout rooms for group collaboration\n\t\t- Interactive polls and assessments\n\t\t- Recording and playback capabilities\n\t\t- Chat and Q&A functionality\n\t- ### Platform Examples\n\t\t- Engageli virtual classroom platform\n\t\t- Microsoft Teams for Education\n\t\t- Google Classroom with Meet integration\n\t\t- Zoom for Education\n- ## Applications\n\t- K-12 remote and hybrid education\n\t- Higher education distance learning\n\t- Corporate training and professional development\n\t- Language learning and tutoring\n\t- Skills-based workshops and seminars",
   "backlinks": [
     "Education Metaverse",
-    "Educational Technology",
-    "ETSI_Domain_Application___Education"
+    "ETSI_Domain_Application___Education",
+    "Educational Technology"
   ],
   "wiki_links": [
     "Virtual Environment",
-    "metaverse",
-    "Learning Management System",
+    "Educational Technology",
     "Distance Learning",
-    "Educational Technology"
+    "Learning Management System",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10107",

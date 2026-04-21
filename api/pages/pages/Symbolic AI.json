@@ -3,17 +3,17 @@
   "title": "Symbolic AI",
   "content": "- ### OntologyBlock\n  id:: AI-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9001\n\t- source-domain:: ai\n\t- preferred-term:: Symbolic AI\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).\n\t- source:: [[Academic AI Research]], [[AAAI]]\n\t- maturity:: mature\n\t- owl:class:: ai:SymbolicAI\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- hasSubclass:: [[Expert Systems]], [[Logic Programming]], [[Knowledge Representation]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [
-    "Logic Programming",
-    "Programming Paradigm"
+    "Programming Paradigm",
+    "Logic Programming"
   ],
   "wiki_links": [
-    "AAAI",
-    "Expert Systems",
-    "Logic Programming",
-    "Academic AI Research",
+    "Artificial Intelligence",
     "ArtificialIntelligenceDomain",
+    "Academic AI Research",
+    "Logic Programming",
+    "AAAI",
     "Knowledge Representation",
-    "Artificial Intelligence"
+    "Expert Systems"
   ],
   "ontology": {
     "term_id": "AI-9001",

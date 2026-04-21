@@ -3,17 +3,17 @@
   "title": "Infrared Camera",
   "content": "- ### OntologyBlock\n  id:: infrared-camera-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9928\n\t- source-domain:: mv\n\t- preferred-term:: Infrared Camera\n\t- status:: active\n\t- owl:class:: mv:InfraredCamera\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.\n\t- #### Relationships\n\t  id:: infrared-camera-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Tracking Hardware]]\n\t\t- related-to:: [[Infrared Illuminator]]\n\t\t- related-to:: [[Eye Tracking System]]\n\t\t- enables:: [[Motion Tracking]]\n\n## Tracking Technology\n\n### Eye Tracking Systems\n- Infrared camera sensors capture light reflections\n- Dedicated algorithms determine gaze direction\n- Enables foveated rendering technology\n- Reduces GPU and computing demands\n- Renders high resolution in direct field of vision\n\n### Position and Movement Tracking\n- Multiple IR LEDs create light dot patterns\n- Camera registers and tracks IR patterns\n- Determines user position and movements\n- Integrates movements into VR action\n- 6DoF (degrees of freedom) tracking\n\n## Inside-Out Tracking\n\n### Mechanism\n- Cameras mounted on headset device\n- Identifies fiducial markers and patterns\n- Analyses marker position, size, orientation\n- Calculates device pose relative to markers\n- No external sensor requirement\n\n### Applications\n- Meta Quest headset tracking\n- Apple Vision Pro spatial awareness\n- PSVR2 controller detection\n- Hand tracking in low light\n\n## Metaverse Integration\n\n### Virtual Hand Tracking\n- Real-world hand posture acquisition\n- Infrared-based sensor mapping\n- Natural interaction achievement\n- Meta Quest 2 pilot testing\n- Retopology process integration\n\n### Professional Solutions\n- Antilatency high-precision tracking\n- Location-based entertainment (LBE)\n- Warehouse-scale tracking capability\n- Multi-user environment support\n- 6DoF for dynamic environments\n\n## 2024 Developments\n\n### Enhanced Capabilities\n- Refined hand/controller tracking\n- Eye tracking integration\n- Facial tracking systems\n- Full body tracking solutions\n\n### Essential Technologies\n- Motion sensing advancement\n- Pose estimation improvement\n- 3D mapping capabilities\n- Scene understanding enhancement\n\n## Hardware Examples\n\n### Consumer Headsets\n- Meta Quest 3 IR camera array\n- Apple Vision Pro spatial cameras\n- PSVR2 tracking cameras\n- HTC Vive Pro sensors\n\n### Research Systems\n- Multi-camera tracking arrays\n- CAVE environment systems\n- Large-scale VR installations\n- Motion capture integration\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Infrared Light Source",
-    "Infrared Led Illuminator",
     "Infrared Illuminator",
-    "Eye Tracking"
+    "Infrared Light Source",
+    "Eye Tracking",
+    "Infrared Led Illuminator"
   ],
   "wiki_links": [
+    "Tracking Hardware",
     "Eye Tracking System",
-    "Infrared Illuminator",
-    "metaverse",
     "Motion Tracking",
-    "Tracking Hardware"
+    "Infrared Illuminator",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9928",

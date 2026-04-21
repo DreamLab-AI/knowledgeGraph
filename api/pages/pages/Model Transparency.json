@@ -5,16 +5,16 @@
   "backlinks": [
     "Intrinsic Interpretability",
     "Model Interpretability",
-    "AI Model Card",
     "Interpretable AI",
-    "Global Explanation"
+    "Global Explanation",
+    "AI Model Card"
   ],
   "wiki_links": [
-    "Explainable AI",
+    "AI Governance",
     "Trustworthy AI Systems",
     "AI Ethics",
-    "metaverse",
-    "AI Governance"
+    "Explainable AI",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9969",

@@ -6,11 +6,11 @@
     "6G Network Slice"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "metaverse",
-    "5G Network Slice",
     "Network Infrastructure",
-    "Software Defined Networking"
+    "Cloud Computing",
+    "Software Defined Networking",
+    "5G Network Slice",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10133",

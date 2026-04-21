@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE P7003-2021",
-    "Buolamwini and Gebru (2018)",
-    "ConceptualLayer",
     "Crenshaw (1989)",
-    "AIEthicsDomain"
+    "Buolamwini and Gebru (2018)",
+    "AIEthicsDomain",
+    "ConceptualLayer"
   ],
   "ontology": {
     "term_id": "AI-0384",

@@ -5,9 +5,9 @@
   "backlinks": [],
   "wiki_links": [
     "Social Robotics",
-    "RoboticsDomain",
     "Robotics",
-    "HRI"
+    "HRI",
+    "RoboticsDomain"
   ],
   "ontology": {
     "term_id": "RB-9007",

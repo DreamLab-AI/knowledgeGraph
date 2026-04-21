@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: vr-controllers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10162\n\t- source-domain:: mv\n\t- preferred-term:: VR Controllers\n\t- status:: active\n\t- definition:: Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.\n\t- owl:class:: mv:VrControllers\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[XR Hardware]]\n\t\t- related-to:: [[Haptic Feedback]]\n\t\t- related-to:: [[Motion Tracking]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t  id:: vr-controllers-relationships\n\t  collapsed:: true\n- ## Overview\n\t- VR controllers translate physical hand movements into virtual interactions, serving as the primary interface for metaverse experiences. The global haptic feedback VR controller market was valued at $1.2 billion in 2023, projected to reach $3.8 billion by 2028. 6DoF (six degrees of freedom) controllers have become the industry standard, with specifications requiring tracking accuracy of plus or minus 1mm positional error and latency under 20ms.\n- ## Technical Details\n\t- ### Key Specifications\n\t\t- **Tracking**: 6DoF positional and rotational tracking\n\t\t- **Haptic Feedback**: Vibration frequency range 100-500Hz\n\t\t- **Latency**: Under 20ms for responsive interaction\n\t\t- **Battery Life**: 8+ hours continuous use\n\t- ### Controller Types\n\t\t- **Standard Controllers**: Meta Touch, Valve Index Controllers, PlayStation VR2 Sense\n\t\t- **Haptic Gloves**: Sharp prototype with multi-segmented tactile elements\n\t\t- **Hand Tracking**: Camera-based gesture recognition without physical controllers\n\t\t- **Full-Body Trackers**: Extended tracking for immersive experiences\n\t- ### Haptic Technologies\n\t\t- **Mechanical Actuators**: Vibration motors and linear resonant actuators\n\t\t- **Electro-Tactile Feedback**: Electrical stimulation for texture sensation\n\t\t- **Force Feedback**: Resistance simulation for object interaction\n\t\t- **Thermal Feedback**: Temperature sensation for enhanced immersion\n- ## Applications\n\t- VR gaming and entertainment\n\t- Virtual training simulations\n\t- Metaverse social interactions\n\t- Industrial design and prototyping\n\t- Medical and surgical simulation",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Reality VR",
-    "Haptic Feedback",
     "metaverse",
+    "XR Hardware",
+    "Haptic Feedback",
     "Motion Tracking",
-    "XR Hardware"
+    "Virtual Reality VR"
   ],
   "ontology": {
     "term_id": "MV-10162",

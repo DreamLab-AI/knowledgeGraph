@@ -3,20 +3,20 @@
   "title": "Semantic Web Standards",
   "content": "- ### OntologyBlock\n  id:: semantic-web-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10037\n\t- source-domain:: mv\n\t- preferred-term:: Semantic Web Standards\n\t- status:: active\n\t- definition:: A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.\n\t- owl:class:: mv:SemanticWebStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: semantic-web-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Web Standards]]\n\t\t- related-to:: [[Knowledge Representation]]\n\t\t- related-to:: [[Ontology Engineering]]\n\t\t- related-to:: [[Linked Data]]\n\t\t- enables:: [[Data Interoperability]]\n\t- #### Core Standards\n\t  collapsed:: true\n\t\t- RDF - Resource Description Framework for data interchange\n\t\t- RDF Schema (RDFS) for vocabulary definition\n\t\t- OWL - Web Ontology Language for knowledge representation\n\t\t- SPARQL - query language for semantic data\n\t\t- RIF - Rule Interchange Format for web rules\n\t- #### OWL 2 Profiles\n\t  collapsed:: true\n\t\t- OWL2 EL - polynomial time reasoning complexity\n\t\t- OWL2 QL - database query optimization\n\t\t- OWL2 RL - rule-based subset\n\t\t- Tools: Apache Jena, OpenLink Virtuoso",
   "backlinks": [
-    "Sparql Query Engine",
-    "Intelligent Virtual Entity",
-    "Namespace Declarations",
     "Provenance Ontology (PROV-O)",
     "Shared Knowledge Base",
+    "Sparql Query Engine",
+    "Namespace Declarations",
+    "Intelligent Virtual Entity",
     "Skos Vocabulary"
   ],
   "wiki_links": [
-    "metaverse",
-    "Data Interoperability",
     "Web Standards",
-    "Knowledge Representation",
+    "Data Interoperability",
     "Ontology Engineering",
-    "Linked Data"
+    "Linked Data",
+    "Knowledge Representation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10037",

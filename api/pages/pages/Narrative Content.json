@@ -3,17 +3,17 @@
   "title": "Narrative Content",
   "content": "- ### OntologyBlock\n  id:: narrative-content-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9979\n\t- source-domain:: mv\n\t- preferred-term:: Narrative Content\n\t- status:: active\n\t- definition:: Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.\n\t- owl:class:: mv:NarrativeContent\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: narrative-content-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Content]]\n\t\t- related-to:: [[Interactive Storytelling]]\n\t\t- related-to:: [[Digital Media]]\n\t\t- related-to:: [[Narrative Arc]]\n\t\t- enables:: [[Personalized Virtual Experiences]]\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Digital storytelling market valued at USD 10 billion in 2024\n\t\t- Projected to reach USD 30 billion by 2032 at 15% CAGR\n\t\t- Unity merged with Genvid Technologies for real-time interactive storytelling\n\t\t- Interactive videos among top video trends of 2024\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- VR, AR, and MR for immersive narrative experiences\n\t\t- Choose-your-own-adventure style branching narratives\n\t\t- Clickable hotspots for interactive engagement\n\t\t- AI-assisted content creation and personalization\n\t\t- Platforms like Klynt and Vimeo interactive features",
   "backlinks": [
-    "Narrative Arc",
     "Emotional Immersion",
-    "Narrative Theme"
+    "Narrative Theme",
+    "Narrative Arc"
   ],
   "wiki_links": [
-    "Personalized Virtual Experiences",
     "Interactive Storytelling",
-    "metaverse",
+    "Digital Content",
+    "Personalized Virtual Experiences",
     "Narrative Arc",
     "Digital Media",
-    "Digital Content"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9979",

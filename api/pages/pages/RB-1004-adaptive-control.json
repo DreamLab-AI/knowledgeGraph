@@ -3,27 +3,27 @@
   "title": "Adaptive Control",
   "content": "- ### OntologyBlock\n  id:: adaptive-control-ontology\n  collapsed:: true\n  - ontology:: true\n  - term-id:: RB-1004\n  - preferred-term:: Adaptive Control\n  - source-domain:: rb\n  - status:: complete\n  - public-access:: true\n  - version:: 1.0.0\n  - last-updated:: 2025-11-24\n\n- **Definition**\n  - definition:: A control strategy that automatically adjusts its parameters in real-time to maintain desired performance as system dynamics change or uncertainties are encountered. The controller learns and adapts to variations in the system or environment.\n  - maturity:: mature\n  - source:: [[Control Theory]], [[Adaptive Systems]]\n  - authority-score:: 0.95\n\n- **Semantic Classification**\n  - owl:class:: rb:AdaptiveControl\n  - owl:role:: Method\n  - belongsToDomain:: [[Robotics]], [[Control Theory]], [[Machine Learning]]\n\n- #### OWL Restrictions\n  - is-subclass-of:: [[RB-1002-closed-loop-control]]\n  - requires:: [[Parameter Adaptation Mechanism]]\n  - requires:: [[System Identification]]\n  - adaptsTo some SystemVariation\n  - learns some SystemParameters\n  - characterizedBy:: [[Self-Tuning]], [[Robustness]], [[Learning]]\n\n- #### Relationships\n  id:: rb-1004-relationships\n  - is-subclass-of:: [[RB-1002-closed-loop-control]]\n  - skos:related:: [[RB-1003-optimal-control]], [[Machine Learning]]\n  - uses:: [[System Identification]], [[Parameter Estimation]]\n  - enables:: [[Robust Control]], [[Self-Tuning Systems]]\n  - applied-in:: [[RB-1011-cobot-safety-levels]], [[Autonomous Systems]]\n\n- **Types of Adaptive Control**\n  - Model Reference Adaptive Control (MRAC)\n  - Self-Tuning Regulators (STR)\n  - Gain Scheduling\n  - Dual Control\n  - Neural Network Adaptive Control\n  - Fuzzy Adaptive Control\n\n- **Key Components**\n  - Parameter Adjustment Mechanism\n  - Identification Algorithm\n  - Control Law Modification\n  - Stability Monitor\n  - Performance Evaluator\n\n- **Adaptation Strategies**\n  - Direct Adaptive Control (adjusts controller parameters)\n  - Indirect Adaptive Control (identifies system, then designs controller)\n  - Hybrid Adaptive Control (combines both approaches)\n\n- **Applications**\n  - Robot manipulators with varying payloads\n  - Aircraft control under changing flight conditions\n  - Process control with parameter drift\n  - Collaborative robots adapting to human interaction\n  - Mobile robots in changing terrain\n  - Prosthetic devices adapting to user\n\n- **Advantages**\n  - Handles system uncertainties\n  - Adapts to changing conditions\n  - Maintains performance over time\n  - Reduces need for precise modeling\n  - Self-tuning capability\n\n- **Challenges**\n  - Stability guarantees during adaptation\n  - Convergence speed vs stability trade-off\n  - Parameter drift in steady-state\n  - Computational requirements\n  - Need for persistent excitation\n\n- **Stability Considerations**\n  - Lyapunov stability analysis\n  - Persistent excitation requirement\n  - Bounded-input bounded-output (BIBO) stability\n  - Parameter convergence conditions\n\n- **Quality Metrics**\n  - authority-score:: 0.95\n  - completeness:: 0.91\n  - accuracy:: 0.93\n\n\n<!-- Merged from Adaptive Control.md: RoboticsDomain -->",
   "backlinks": [
-    "RB-1002-closed-loop-control",
-    "RB-1011-cobot-safety-levels",
-    "RB-1003-optimal-control"
-  ],
-  "wiki_links": [
-    "Learning",
-    "Control Theory",
-    "Robotics",
-    "RB-1002-closed-loop-control",
-    "Adaptive Systems",
-    "System Identification",
-    "Self-Tuning",
-    "Parameter Estimation",
-    "Robust Control",
-    "Robustness",
-    "Self-Tuning Systems",
-    "Autonomous Systems",
     "RB-1003-optimal-control",
     "RB-1011-cobot-safety-levels",
+    "RB-1002-closed-loop-control"
+  ],
+  "wiki_links": [
+    "Robust Control",
+    "RB-1002-closed-loop-control",
+    "Self-Tuning Systems",
+    "RB-1003-optimal-control",
+    "Parameter Estimation",
     "Machine Learning",
-    "Parameter Adaptation Mechanism"
+    "Robotics",
+    "Robustness",
+    "RB-1011-cobot-safety-levels",
+    "System Identification",
+    "Adaptive Systems",
+    "Self-Tuning",
+    "Control Theory",
+    "Parameter Adaptation Mechanism",
+    "Learning",
+    "Autonomous Systems"
   ],
   "ontology": {
     "term_id": "RB-1004",

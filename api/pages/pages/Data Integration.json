@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: mv9552-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9552\n\t- preferred-term:: Data Integration\n\t- source-domain:: mv\n\t- owl:class:: mv:DataIntegration\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Data Integration is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nData Integration represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Compliance Dashboard",
-    "Data Virtualization",
+    "Cross Platform Digital Twins",
     "Semantic Metadata Registry",
-    "Cross Platform Digital Twins"
+    "Data Virtualization"
   ],
   "wiki_links": [
     "owl:Thing"

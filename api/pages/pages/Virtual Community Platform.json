@@ -3,15 +3,15 @@
   "title": "Virtual Community Platform",
   "content": "- ### OntologyBlock\n  id:: virtual-community-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10112\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Community Platform\n\t- status:: active\n\t- definition:: Spatial computing platforms that enable users to create and interact within immersive 3D virtual environments as digital avatars, supporting social interaction, community building, collaborative activities, and shared experiences across geographic boundaries.\n\t- owl:class:: mv:VirtualCommunityPlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Metaverse]]\n\t\t- related-to:: [[Social VR]]\n\t\t- related-to:: [[Avatar]]\n\t\t- related-to:: [[Virtual World]]\n\t  id:: virtual-community-platform-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual community platforms are metaverse social spaces where users participate as digital avatars in shared virtual environments. VRChat has 8.2 million users worldwide (2024), emphasizing user-created avatars and virtual worlds. AI integration has become prominent in 2024, enabling realistic avatars, intelligent virtual assistants, and enhanced user experiences.\n- ## Technical Details\n\t- ### Platform Categories\n\t\t- **Social VR Platforms**: VRChat, Horizon Worlds, Rec Room\n\t\t- **Gaming Metaverses**: Roblox, Fortnite, Decentraland\n\t\t- **Enterprise Platforms**: Microsoft Mesh, Horizon Workrooms\n\t\t- **Creator Platforms**: Spatial, Mozilla Hubs\n\t- ### Key Features\n\t\t- User-created worlds and content\n\t\t- Customizable avatar systems\n\t\t- Voice and text communication\n\t\t- Virtual events and gatherings\n\t\t- Cross-platform accessibility\n\t- ### AI Integration (2024)\n\t\t- Intelligent virtual assistants\n\t\t- Realistic avatar animation\n\t\t- Content moderation systems\n\t\t- Personalized experience algorithms\n- ## Applications\n\t- Social gatherings and virtual hangouts\n\t- Virtual events and conferences\n\t- Community-driven content creation\n\t- Remote work collaboration spaces\n\t- Educational and training environments",
   "backlinks": [
-    "Virtual Community Practice",
-    "Community Governance Model"
+    "Community Governance Model",
+    "Virtual Community Practice"
   ],
   "wiki_links": [
-    "metaverse",
-    "Social VR",
-    "Virtual World",
     "Avatar",
-    "Metaverse"
+    "Social VR",
+    "Metaverse",
+    "metaverse",
+    "Virtual World"
   ],
   "ontology": {
     "term_id": "MV-10112",

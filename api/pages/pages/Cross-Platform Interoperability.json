@@ -3,22 +3,22 @@
   "title": "Cross-Platform Interoperability",
   "content": "- ### OntologyBlock\n  id:: cross-platform-interoperability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7015\n\t- preferred-term:: Cross-Platform Interoperability\n\t- source-domain:: ngm\n\t- definition:: The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries. In blockchain, protocols like IBC (Inter-Blockchain Communication) connect 115+ chains enabling trustless cross-chain transactions verified through light client proofs rather than trusted third parties.\n\t- status:: active\n\t- maturity:: reviewed\n\t- public-access:: true\n\t- belongsToDomain:: [[Next Generation Mobile]]\n\t- owl:class:: ngm:CrossPlatformInteroperability\n\t- owl:role:: Concept\n\n---\nid: NGM-7015\ntitle: Cross-Platform Interoperability\ntype: ConceptNode\ndomain: Next Generation Mobile\ncreated: 2025-11-24\nstatus: active\n---\n\n# Cross-Platform Interoperability\n\n## Definition\n**Cross-Platform Interoperability** refers to the capability for heterogeneous systems, blockchain networks, and software platforms to communicate, exchange data, and coordinate operations seamlessly. In blockchain contexts, this enables trustless asset transfers and message passing between distinct networks using cryptographic verification rather than centralized intermediaries.\n\n## Blockchain Interoperability Landscape (2025)\n- Total Value Locked across 43 interoperability protocols: $8 billion\n- IBC Protocol connects 115+ chains\n- LayerZero supports 93 connected chains\n- Monthly active addresses: 1.5M+ (Circle CCTP and IBC each)\n- IBC v2 launched March 2025 with improved protocol design\n\n## Key Interoperability Protocols\n\n### IBC (Inter-Blockchain Communication)\n- De facto standard for blockchain interoperability\n- Light client-based verification eliminates trusted third parties\n- Zero exploits since launch, securing billions in transfers\n- Expanding beyond Cosmos to EVM chains via ibc-solidity\n- Connections to Base, Arbitrum, Solana in development\n\n### Chainlink CCIP\n- Cross-Chain Interoperability Protocol\n- Oracle-grade verification for enterprise use\n- Token transfers and arbitrary messaging\n- Risk management network for security\n\n### LayerZero\n- Omnichain messaging protocol\n- Ultra-light nodes with oracle/relayer verification\n- 93 connected chains\n- Intent-based routing optimization\n\n### Axelar\n- Trust-minimized cross-chain communication\n- Validator-secured framework\n- General Message Passing (GMP)\n- Connects 50+ blockchain networks\n\n## Technical Architecture\n\n### Light Client Verification\n- Each chain maintains light client of counterparty\n- Cryptographic proof verification on-chain\n- No centralized intermediaries required\n- Finality guarantees through consensus proofs\n\n### Relayer Infrastructure\n- Monitors source chain events\n- Submits proofs to destination chain\n- Non-custodial operation\n- Permissionless participation\n\n### Message Passing\n- Arbitrary data transfer between chains\n- Cross-chain smart contract calls\n- Interchain account management\n- Event-driven execution\n\n## Bridge Types\n\n### Trust-Minimized Bridges\n- IBC light client verification\n- ZK-proof based bridges\n- Optimistic rollup bridges with fraud proofs\n\n### Federated Bridges\n- Multi-signature validation\n- Threshold cryptography\n- Validator committee consensus\n\n### Centralized Bridges\n- Single custodian model\n- Fastest but highest trust assumptions\n- Regulatory compliance advantages\n\n## Security Considerations\n- Bridge exploits historically largest DeFi hacks\n- Light client security assumptions\n- Validator set decentralization\n- Finality timing across chains\n- MEV extraction in cross-chain transactions\n\n## Cross-Platform Beyond Blockchain\n- API standardization (REST, GraphQL, gRPC)\n- Data format interoperability (JSON-LD, Protocol Buffers)\n- Identity federation (OAuth, SAML, DID)\n- Mobile-web-desktop synchronization\n- IoT device communication protocols\n\n## Relationships\n- is-subclass-of:: [[Next Generation Mobile]]\n- enables:: [[Cross-Chain Bridge]]\n- implements:: [[Light Client]]\n- uses:: [[Relayer]]\n- related-to:: [[Layer 0]]\n- component-of:: [[DeFi]]\n\n## Standards and Frameworks\n- IBC Protocol specification\n- Chainlink CCIP standard\n- ERC-5164 (Cross-Chain Execution)\n- W3C DID interoperability\n- IEEE blockchain interoperability standards\n\n## Future Developments\n- Multi-layer interoperability frameworks\n- Protocol-to-protocol communication\n- ZK-based universal verification\n- Intent-based cross-chain routing\n- Atomic cross-chain transactions\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **References**: 7 pages reference this concept\n\n#interoperability #cross-chain #IBC #blockchain #bridges",
   "backlinks": [
-    "Conversion Pipeline",
+    "Asset Archive",
     "Distributed Authentication Architecture",
     "Digital Goods Registry",
-    "Asset Archive",
-    "Interface Standards",
+    "Conversion Pipeline",
     "Semantic Metadata Registry",
-    "Application Layer",
-    "Compatibility Process"
+    "Interface Standards",
+    "Compatibility Process",
+    "Application Layer"
   ],
   "wiki_links": [
+    "Next Generation Mobile",
     "Light Client",
     "Cross-Chain Bridge",
-    "Layer 0",
-    "DeFi",
     "Relayer",
-    "Next Generation Mobile"
+    "Layer 0",
+    "DeFi"
   ],
   "ontology": {
     "term_id": "NGM-7015",

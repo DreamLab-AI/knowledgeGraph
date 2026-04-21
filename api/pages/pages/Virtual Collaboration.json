@@ -3,16 +3,16 @@
   "title": "Virtual Collaboration",
   "content": "- ### OntologyBlock\n  id:: virtual-collaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10109\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Collaboration\n\t- status:: active\n\t- definition:: A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.\n\t- owl:class:: mv:VirtualCollaboration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Workspace]]\n\t\t- related-to:: [[Remote Work]]\n\t\t- related-to:: [[Digital Workplace]]\n\t\t- related-to:: [[Avatar]]\n\t  id:: virtual-collaboration-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual collaboration in the metaverse enables teams to meet in fully immersive 3D environments, providing a sense of presence and interaction similar to physical offices. Employees can create digital avatars that allow real-time interactions, navigate virtual offices and meeting rooms, approach virtual help desks, deliver live presentations, and socialize in networking lounges. Airbus technicians halved training time and boosted performance by 20% using VR collaboration.\n- ## Technical Details\n\t- ### Collaboration Tools\n\t\t- **Interactive Whiteboards**: Real-time brainstorming with drawing and annotation\n\t\t- **Document Co-Editing**: Synchronized editing with instant updates\n\t\t- **Project Management**: Task organization, role assignment, and progress tracking\n\t\t- **Shared Calendars**: Team-visible scheduling in virtual environments\n\t- ### Access Methods\n\t\t- Desktop computer access via browser\n\t\t- Mobile device applications\n\t\t- VR headset immersion\n\t\t- AR overlay integration\n\t- ### Key Features\n\t\t- 3D spatial audio for natural conversation\n\t\t- Avatar customization and expression\n\t\t- Virtual room persistence\n\t\t- Cross-platform interoperability\n- ## Applications\n\t- Remote team meetings and standups\n\t- Virtual brainstorming and design sessions\n\t- Employee onboarding and training\n\t- Cross-functional project collaboration\n\t- Global team building and social events",
   "backlinks": [
+    "Participant Coordination",
     "Xr Meeting Space",
     "Knowledge Sharing",
-    "Participant Coordination",
     "Metaverse"
   ],
   "wiki_links": [
     "metaverse",
     "Avatar",
-    "Digital Workplace",
     "Virtual Workspace",
+    "Digital Workplace",
     "Remote Work"
   ],
   "ontology": {

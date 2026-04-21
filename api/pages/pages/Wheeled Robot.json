@@ -3,8 +3,8 @@
   "title": "Wheeled Robot",
   "content": "- ### OntologyBlock\n  id:: rb9536-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9536\n\t- preferred-term:: Wheeled Robot\n\t- source-domain:: rb\n\t- owl:class:: rb:WheeledRobot\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Wheeled Robot is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nWheeled Robot represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Omnidirectional Robot",
-    "Differential Drive Robot"
+    "Differential Drive Robot",
+    "Omnidirectional Robot"
   ],
   "wiki_links": [
     "owl:Thing"

@@ -3,24 +3,24 @@
   "title": "MEV",
   "content": "- ### OntologyBlock\n  id:: mev-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8012\n\t- preferred-term:: MEV\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.\n\t- maturity:: reviewed\n\t- owl:class:: bc:Mev\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n---\nid: BC-1017\ntitle: MEV\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# MEV (Maximal Extractable Value)\n\n## Definition\n- Profit extractable by block producers through strategic transaction ordering, inclusion, and exclusion\n- Arises from block producers' privileged position to control transaction sequencing\n- Represents market inefficiency where intermediaries capture value from users' transactions\n\n## Core Concepts\n- **Transaction Ordering Control**: Block producers determine execution sequence\n- **Value Extraction**: Profit beyond standard block rewards and fees\n- **Front-Running**: Executing transaction before observed user transaction\n- **Back-Running**: Executing transaction immediately after target transaction\n\n## MEV Categories\n### Arbitrage MEV\n- Exploiting price differences across DEXs\n- Sandwich trading around large swaps\n- Cross-DEX arbitrage opportunities\n\n### Liquidation MEV\n- Capturing liquidation rewards in lending protocols\n- Racing to liquidate undercollateralized positions\n- Priority gas auctions for liquidation rights\n\n### Sandwich Attacks\n1. Front-run: Buy before victim's trade\n2. Victim trade executes at worse price\n3. Back-run: Sell after victim's trade\n- Profit from induced slippage\n\n### Time-Bandit Attacks\n- Reorganizing blockchain history for MEV\n- Only profitable when MEV > block reward\n- Threatens consensus security\n\n## Technical Mechanisms\n### Mempool Observation\n- Monitoring pending transactions\n- Identifying profitable opportunities\n- Calculating optimal extraction strategy\n\n### Gas Price Manipulation\n- Priority Gas Auctions (PGAs)\n- Bidding wars for transaction ordering\n- Failed transaction costs\n\n### Transaction Bundling\n- Atomic multi-transaction bundles\n- Conditional execution dependencies\n- Flashbots-style private relay\n\n## MEV Infrastructure\n### Flashbots\n- Private transaction relay\n- MEV-Boost for Ethereum PoS\n- Separates proposer/builder roles (PBS)\n\n### MEV-Boost Architecture\n```\nSearchers -> Builders -> Relays -> Validators\n```\n- **Searchers**: Find MEV opportunities\n- **Builders**: Construct optimal blocks\n- **Relays**: Trusted intermediaries\n- **Validators**: Choose highest-value block\n\n### Eden Network\n- Priority ordering for stakers\n- Network-level protection against sandwich attacks\n- Alternative to Flashbots\n\n## Relationships\n- exploits:: [[Transaction Ordering]]\n- threatens:: [[Consensus Security]]\n- uses:: [[Front-Running]]\n- mitigated-by:: [[Proposer-Builder Separation]]\n- component-of:: [[DeFi Ecosystem]]\n\n## Economic Impact\n- **User Value Loss**: Estimated billions in extracted value\n- **Network Congestion**: PGAs increase gas costs\n- **Protocol Revenue**: Portion flows back to validators\n- **Market Efficiency**: Can improve price discovery\n\n## Security Implications\n- Validator centralization incentive\n- Consensus instability from chain reorgs\n- Cartel formation among block producers\n- Censorship through transaction suppression\n\n## Mitigation Strategies\n### Protocol-Level\n- **Encrypted Mempools**: Hide transaction contents until inclusion\n- **Fair Ordering Services**: Decentralized sequencing\n- **Threshold Encryption**: Time-locked transaction revelation\n- **Account Abstraction**: User-defined execution rules\n\n### Application-Level\n- **MEV Protection DEXs**: CoW Swap, CowSwap\n- **Private Transactions**: Direct submission to validators\n- **Slippage Limits**: Protect against sandwich attacks\n- **Commit-Reveal Schemes**: Hide trade intentions\n\n### Proposer-Builder Separation (PBS)\n- Separate block production from block proposal\n- Democratize MEV extraction\n- Reduce validator centralization\n\n## MEV Types by Blockchain\n| Blockchain | Primary MEV | Characteristics |\n|------------|-------------|-----------------|\n| Ethereum | Arbitrage, liquidations, sandwiches | High DeFi activity |\n| Bitcoin | Fee sniping, RBF conflicts | Limited smart contracts |\n| Solana | Front-running, arbitrage | Parallel execution reduces some MEV |\n| Layer 2s | Sequencer MEV | Centralized sequencers control ordering |\n\n## Quantification\n- **Realized MEV**: Actual extracted value (observable)\n- **Total MEV**: All extractable value (includes unsuccessful attempts)\n- **MEV per Block**: Average extraction rate\n- **Failed MEV**: Wasted gas on unsuccessful attempts\n\n## Ethical Considerations\n- Extractive vs productive MEV debate\n- User value alignment\n- Protocol fairness\n- Regulatory implications\n\n## Future Directions\n- Encrypted mempools (threshold encryption)\n- Fair sequencing services\n- MEV redistribution to users\n- Cross-domain MEV (cross-chain)\n\n## Tools and Analysis\n- **Flashbots Data**: Public MEV dashboards\n- **MEV-Inspect**: Historical MEV analysis\n- **Zeromev**: MEV monitoring\n- **EigenPhi**: MEV profit tracking\n\n## Related Concepts\n- [[Front-Running]]\n- [[Transaction Ordering]]\n- [[Proposer-Builder Separation]]\n- [[Mempool]]\n\n#blockchain #mev #defi #security #transaction-ordering\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
-    "Layer2",
     "Proof Of Work",
-    "Decentralized Finance",
-    "Smart Contract Platform",
+    "Layer2",
     "TokenEconomics",
+    "Smart Contract Platform",
+    "Decentralized Finance",
+    "Price Discovery",
     "Oracle",
-    "AI Model Card",
-    "Price Discovery"
+    "AI Model Card"
   ],
   "wiki_links": [
+    "Blockchain",
+    "Front-Running",
     "Transaction Ordering",
     "BlockchainDomain",
-    "Mempool",
-    "Blockchain",
-    "DeFi Ecosystem",
-    "Consensus Security",
     "Proposer-Builder Separation",
-    "Front-Running"
+    "Consensus Security",
+    "DeFi Ecosystem",
+    "Mempool"
   ],
   "ontology": {
     "term_id": "BC-8012",

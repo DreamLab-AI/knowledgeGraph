@@ -6,11 +6,11 @@
     "ComputerVision"
   ],
   "wiki_links": [
-    "Deep Learning",
-    "ComputerVision",
     "MachineLearning",
+    "Artificial Intelligence",
     "NeuralNetworkArchitecture",
-    "Artificial Intelligence"
+    "ComputerVision",
+    "Deep Learning"
   ],
   "ontology": {
     "term_id": "NGM-7007",

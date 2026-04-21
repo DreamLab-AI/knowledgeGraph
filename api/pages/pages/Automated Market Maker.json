@@ -3,22 +3,22 @@
   "title": "Automated Market Maker",
   "content": "- ### OntologyBlock\n  id:: automated-market-maker-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9786\n\t- source-domain:: mv\n\t- preferred-term:: Automated Market Maker\n\t- status:: active\n\t- definition:: Automated Market Maker (AMM) is a decentralized exchange protocol that uses algorithmic pricing mechanisms and liquidity pools instead of traditional order books, enabling permissionless token swaps where prices adjust automatically based on supply and demand within smart contract-managed reserves.\n\t- owl:class:: mv:AutomatedMarketMaker\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[DeFi Protocol]]\n\t- enables:: [[Permissionless Trading]], [[Liquidity Provision]], [[Token Swaps]]\n\t- requires:: [[Liquidity Pools]], [[Smart Contracts]], [[Pricing Algorithms]]\n\t- #### Relationships\n\t  id:: automated-market-maker-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Constant Product Formula**: x * y = k pricing mechanism where token quantities maintain constant product\n- **Liquidity Pools**: Smart contracts holding paired token reserves deposited by liquidity providers\n- **LP Tokens**: Receipts representing liquidity provider shares and earning trading fees\n- **Slippage**: Price impact from large trades relative to pool size\n\n### Major Protocols\nUniswap (Ethereum), SushiSwap, Curve Finance (stablecoins), PancakeSwap (BNB Chain), and Balancer (weighted pools).\n\n### Advantages and Risks\nAdvantages include 24/7 liquidity, permissionless access, and decentralization. Risks include impermanent loss for LPs, smart contract vulnerabilities, and slippage on large trades.\n\n### Metaverse Applications\nAMMs enable trading of virtual land tokens, in-game assets, and metaverse project governance tokens.",
   "backlinks": [
-    "Smart Contracts",
-    "Token Bonding Curve",
-    "AI Agent System",
-    "Decentralized Exchange (DEX)",
     "Liquidity Pool",
-    "BC-0096-token"
+    "Decentralized Exchange (DEX)",
+    "AI Agent System",
+    "Token Bonding Curve",
+    "BC-0096-token",
+    "Smart Contracts"
   ],
   "wiki_links": [
-    "Liquidity Provision",
-    "metaverse",
     "Permissionless Trading",
-    "DeFi Protocol",
-    "Liquidity Pools",
+    "Token Swaps",
+    "Liquidity Provision",
     "Smart Contracts",
+    "Liquidity Pools",
     "Pricing Algorithms",
-    "Token Swaps"
+    "DeFi Protocol",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9786",

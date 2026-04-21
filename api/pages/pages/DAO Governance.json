@@ -3,24 +3,24 @@
   "title": "DAO Governance",
   "content": "- ### OntologyBlock\n  id:: dao-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7016\n\t- preferred-term:: DAO Governance\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes. DAOs are non-hierarchical organisations that perform and record routine tasks on peer-to-peer, cryptographically secure networks, with governance rules encoded as smart contracts that automatically execute approved decisions.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:DaoGovernance\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Blockchain]]\n\n### Relationships\n\t- relatedTo:: [[Platform Governance]]\n\t- relatedTo:: [[Smart Contracts]]\n\t- relatedTo:: [[Token Economy]]\n\t- implementedBy:: [[Voting Mechanisms]]\n\t- enables:: [[Decentralised Decision-Making]]\n\t- subclassOf:: [[Decentralised Governance]]\n\n## Overview\n\nDecentralised Autonomous Organisations (DAOs) represent an extreme example of decentralised governance, fundamentally altering how organisations are created, managed, and operated. As of 2025, over 13,000 DAOs manage $24.5 billion in combined treasuries with 11.1 million governance token holders collectively making decisions about protocol upgrades, grant funding, and partnerships.\n\n## Voting Mechanisms\n\n### Token-Based Voting\n- Most common mechanism where one token equals one vote\n- Creates plutocratic systems where large holders wield significant influence\n- Simple to implement but susceptible to wealth concentration\n\n### Quadratic Voting\n- Cost of votes increases quadratically: buying N votes costs N squared tokens\n- Reduces whale influence whilst empowering smaller community members\n- Encourages broader participation in governance decisions\n\n### Conviction Voting\n- Vote weight increases the longer a vote remains unchanged\n- Changing votes is possible but sacrifices accumulated weight\n- Eliminates last-minute vote manipulation\n- Encourages long-term thinking over short-term speculation\n\n### Delegated Voting\n- Token holders transfer voting rights to delegates who vote on their behalf\n- Form of liquid democracy blending direct and representative democracy\n- Delegation can be revoked or reassigned at any time\n- Addresses voter apathy whilst maintaining decentralisation principles\n\n### Holographic Consensus\n- Designed to screen and focus attention on proposals most likely to pass\n- Members predict whether proposals will pass or fail using tokens\n- Solves governance scalability-resilience problem in decentralised organisations\n- Prioritises high-value proposals whilst filtering low-priority items\n\n## Governance Challenges\n\n### Whale Influence\n- Large token holders can dominate governance outcomes\n- Concentrated ownership creates unique agency problems\n- Interests of whales may diverge from smaller token holders (users)\n- Results in governance vulnerabilities and potential cartel formation\n\n### Centralisation Concerns\n- DAOs are neither perfectly decentralised nor completely autonomous in practice\n- Off-chain governance solutions still require trusted parties\n- Non-algorithmic off-chain voting leads to substantial discount in DAO value\n- Critical decisions often rely on centralised bodies despite decentralisation aspirations\n\n### Participation Rates\n- Voter apathy affects all DAO governance systems\n- Token holders often prefer passive holding over active participation\n- Solutions include delegation, reduced quorum requirements, and participation incentives\n\n## Emerging Innovations\n\n### Reputation-Based Governance\n- Voting power earned through contribution rather than token purchase\n- Contributors gain influence by completing bounties and demonstrating expertise\n- Meritocratic approach rewards value creation\n- Requires complex tracking systems for reputation management\n\n### Weighted Delegation Constraints\n- Limits on how much voting power can be delegated to single delegates\n- Prevents concentration of delegated power\n- Maintains distributed decision-making even with delegation\n\n### Soulbound Tokens\n- Non-transferable tokens representing credentials or achievements\n- Provides governance rights based on participation rather than wealth\n- Addresses plutocracy concerns in token-based systems\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Comprehensive review completed\n- **References**: 7 pages reference this concept",
   "backlinks": [
-    "AI Agent System",
-    "Platform Governance",
-    "Democratic Participation",
-    "Account Abstraction",
     "Separation Of Powers",
-    "Digital Citizens' Assembly",
+    "AI Agent System",
+    "Account Abstraction",
     "Blockchain Governance",
+    "Governance Board",
     "Civic Participation",
-    "Governance Board"
+    "Digital Citizens' Assembly",
+    "Platform Governance",
+    "Democratic Participation"
   ],
   "wiki_links": [
-    "Decentralised Decision-Making",
-    "Token Economy",
     "Blockchain",
-    "Decentralised Governance",
+    "Token Economy",
     "Voting Mechanisms",
     "Smart Contracts",
-    "Platform Governance"
+    "Platform Governance",
+    "Decentralised Governance",
+    "Decentralised Decision-Making"
   ],
   "ontology": {
     "term_id": "NGM-7016",

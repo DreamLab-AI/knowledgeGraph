@@ -3,16 +3,16 @@
   "title": "Virtual World Platform",
   "content": "- ### OntologyBlock\n  id:: virtual-world-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10156\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Platform\n\t- status:: active\n\t- definition:: A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital assets and governance.\n\t- owl:class:: mv:VirtualWorldPlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Platform]]\n\t\t- related-to:: [[Metaverse]]\n\t\t- related-to:: [[Virtual Environment]]\n\t\t- related-to:: [[Social VR]]\n\t  id:: virtual-world-platform-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual world platforms enable immersive 3D experiences across gaming, social interaction, and commerce. The metaverse market is valued at $103.6 billion, projected to reach $507.8 billion by 2030 at 37.43% CAGR. Roblox leads with 214 million monthly active users. In October 2024, Decentraland launched \"Decentraland 2.0\" with a Unity-powered desktop client. Platforms fall into centralized (Roblox, Fortnite) and blockchain-based (Decentraland, The Sandbox) categories.\n- ## Technical Details\n\t- ### Platform Types\n\t\t- **Centralized Metaverses**: Roblox, Fortnite, Minecraft - company-controlled\n\t\t- **Blockchain Metaverses**: Decentraland, The Sandbox - user-owned assets\n\t\t- **Social VR Platforms**: VRChat, Rec Room - social interaction focus\n\t\t- **Enterprise Platforms**: Horizon Workrooms, Virbela - business collaboration\n\t- ### Major Platforms\n\t\t- **Roblox**: 214M MAU, community gaming, Nike partnership\n\t\t- **Decentraland**: Ethereum-based, MANA token, virtual land NFTs\n\t\t- **VRChat**: Social VR, avatar customization, user-created worlds\n\t\t- **The Sandbox**: SAND token, voxel-based creation, gaming focus\n\t- ### Common Features\n\t\t- User-generated content creation tools\n\t\t- Avatar customization and representation\n\t\t- Virtual economy and transactions\n\t\t- Social interaction and communication\n\t\t- Persistent world state\n\t- ### Technical Capabilities\n\t\t- Real-time 3D rendering engines\n\t\t- Cross-platform accessibility\n\t\t- Content moderation systems\n\t\t- Developer SDKs and APIs\n- ## Applications\n\t- Gaming and entertainment experiences\n\t- Social networking and community building\n\t- Virtual events and concerts\n\t- Digital commerce and NFT trading\n\t- Enterprise collaboration and training",
   "backlinks": [
+    "Virtual Society Regulations",
     "Digital Ritual",
-    "Digital Citizens' Assembly",
-    "Virtual Society Regulations"
+    "Digital Citizens' Assembly"
   ],
   "wiki_links": [
     "Virtual Environment",
-    "metaverse",
     "Social VR",
     "Digital Platform",
-    "Metaverse"
+    "Metaverse",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10156",

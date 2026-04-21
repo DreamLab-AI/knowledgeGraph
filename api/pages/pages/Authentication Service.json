@@ -3,28 +3,28 @@
   "title": "Authentication Service",
   "content": "- ### OntologyBlock\n  id:: authentication-service-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7010\n\t- preferred-term:: Authentication Service\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources. It validates credentials against stored identity information and issues tokens or assertions that enable authorised access across applications and services, forming the foundation of secure identity management in enterprise systems.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:AuthenticationService\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Core Technology]]\n\n### Relationships\n- is-subclass-of:: [[Security Service]]\n- related-to:: [[Access Control]], [[Cross-Platform Identity]], [[Identity Management]]\n- enables:: [[Single Sign-On]], [[Authorisation]], [[Session Management]]\n- implements:: [[Identity Verification]], [[Credential Validation]]\n\n## Components\n\n### Core Authentication Protocols\n\n#### SAML (Security Assertion Markup Language)\nXML-based open standard for exchanging authentication and authorisation data between identity providers (IdP) and service providers (SP). Enables enterprise single sign-on where users authenticate once to access multiple applications.\n\n#### OAuth 2.0\nAuthorisation framework that allows third-party applications to obtain limited access to user resources without sharing credentials. Uses access tokens for delegated authorisation.\n\n#### OpenID Connect (OIDC)\nIdentity layer built on OAuth 2.0 that adds authentication capabilities. Provides user identity verification through ID tokens containing user claims.\n\n#### LDAP (Lightweight Directory Access Protocol)\nProtocol for accessing and maintaining distributed directory information services. Commonly used for centralised authentication against Active Directory.\n\n### Authentication Factors\n- **Knowledge Factors**: Passwords, PINs, security questions\n- **Possession Factors**: Hardware tokens, smart cards, mobile devices\n- **Inherence Factors**: Biometrics (fingerprint, facial recognition, voice)\n- **Location Factors**: Geolocation, IP address verification\n- **Behavioural Factors**: Typing patterns, device usage patterns\n\n### Service Components\n- **Identity Provider (IdP)**: Central authority that authenticates users and issues tokens\n- **Service Provider (SP)**: Applications that rely on IdP for authentication\n- **Token Service**: Issues and validates authentication tokens (JWT, SAML assertions)\n- **Credential Store**: Secure storage for user credentials and identity data\n\n## Implementation\n\n### Single Sign-On (SSO) Architecture\n1. User requests access to application\n2. Application redirects to identity provider\n3. IdP authenticates user (if not already authenticated)\n4. IdP issues authentication token/assertion\n5. Application validates token and grants access\n\n### Enterprise Deployment\n- **Federated Identity**: Trust relationships between organisations for cross-domain authentication\n- **Multi-Factor Authentication (MFA)**: Combining multiple authentication factors for stronger security\n- **Passwordless Authentication**: Using biometrics, hardware keys, or magic links\n- **Adaptive Authentication**: Risk-based authentication adjusting requirements dynamically\n\n### Best Practices\n- Use HTTPS for all authentication traffic\n- Implement PKCE (Proof Key for Code Exchange) for OAuth flows\n- Store credentials using secure hashing algorithms\n- Enforce password complexity and rotation policies\n- Monitor for credential stuffing and brute force attacks\n- Regular token expiration and refresh cycles\n\n### Technology Stack\n- Identity providers: Okta, Azure AD, Auth0, Keycloak\n- Protocols: SAML 2.0, OAuth 2.0, OIDC, FIDO2\n- Token formats: JWT, SAML assertions\n- Directory services: Active Directory, OpenLDAP\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from stub\n- **References**: 8 pages reference this concept",
   "backlinks": [
-    "Virtual World",
-    "Collective Memory Archive",
-    "Access Control",
-    "Cross-Platform Identity",
+    "Digital Taxonomy Registry",
     "Cultural Provenance Record",
     "Digital Goods Registry",
-    "Digital Curation Platform",
+    "Access Control",
+    "Virtual World",
+    "Collective Memory Archive",
+    "Cross-Platform Identity",
     "Security Layer",
-    "Digital Taxonomy Registry",
-    "Digital Ontology Repository"
+    "Digital Ontology Repository",
+    "Digital Curation Platform"
   ],
   "wiki_links": [
-    "Single Sign-On",
-    "Session Management",
-    "Authorisation",
-    "Identity Verification",
-    "Access Control",
     "Core Technology",
+    "Authorisation",
+    "Identity Management",
+    "Single Sign-On",
+    "Identity Verification",
+    "Credential Validation",
+    "Access Control",
     "Cross-Platform Identity",
     "Security Service",
-    "Identity Management",
-    "Credential Validation"
+    "Session Management"
   ],
   "ontology": {
     "term_id": "NGM-7010",

@@ -3,14 +3,14 @@
   "title": "Universal Avatar",
   "content": "- ### OntologyBlock\n  id:: Universal Avatar\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10094\n\t- preferred-term:: Universal Avatar\n\t- source-domain:: mv\n\t- owl:class:: mv:UniversalAvatar\n\t- status:: active\n\t- definition:: A cross-platform digital representation of a user that maintains consistent identity, appearance, and customizations across multiple metaverse applications, games, and virtual environments through interoperability standards and shared formats.\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Avatar]]\n\t\t- related-to:: [[Interoperability]]\n\t\t- related-to:: [[Digital Identity]]\n\t\t- related-to:: [[3D Models]]\n- ## Overview\n\t- Universal avatars address the fragmentation of user identity across virtual worlds by enabling a single avatar to work across 1,000+ applications. Ready Player Me leads this space with AI-powered avatar creation and cross-platform compatibility, backed by $56M in funding from Andreessen Horowitz.\n- ## Technical Details\n\t- ### Interoperability Standards\n\t\t- **glTF**: Standard 3D model format for avatars\n\t\t- **FBX**: Animation and model interchange\n\t\t- **VRM**: VR-optimized humanoid avatar format\n\t\t- **JSON/XML Metadata**: Avatar customization data\n\t- ### Ready Player Me Technology\n\t\t- AI selfie-to-avatar creation\n\t\t- SDKs for Unity and Unreal Engine\n\t\t- REST API for integration\n\t\t- Cross-engine translation and optimization\n\t- ### Avatar API Features\n\t\t- Technical compatibility across platforms\n\t\t- Visual consistency across games\n\t\t- Performance optimization per platform\n\t\t- Asset portability (skins, accessories)\n- ## Applications\n\t- Cross-game avatar identity\n\t- VR social platform presence\n\t- Enterprise metaverse profiles\n\t- Gaming character consistency\n\t- Virtual meeting avatars",
   "backlinks": [
-    "Avatar Interoperability",
-    "Multiverse"
+    "Multiverse",
+    "Avatar Interoperability"
   ],
   "wiki_links": [
-    "Interoperability",
     "3D Models",
+    "Digital Identity",
     "Avatar",
-    "Digital Identity"
+    "Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10094",

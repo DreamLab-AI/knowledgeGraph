@@ -3,16 +3,16 @@
   "title": "Spatial Anchoring",
   "content": "- ### OntologyBlock\n  id:: spatial-anchoring-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10050\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Anchoring\n\t- status:: active\n\t- definition:: A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud-synchronized anchor data.\n\t- owl:class:: mv:SpatialAnchoring\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-anchoring-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[World Locking]]\n\t\t- related-to:: [[SLAM Technology]]\n\t\t- related-to:: [[Persistent AR Content]]\n\t\t- enables:: [[Location Based AR]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- SLAM environmental mapping\n\t\t- Feature descriptor extraction\n\t\t- Cloud anchor synchronization\n\t\t- World map persistence\n\t\t- Multi-device coordinate sharing\n\t- #### Applications\n\t  collapsed:: true\n\t\t- AR gaming location-based experiences\n\t\t- Indoor navigation and wayfinding\n\t\t- Industrial training overlays\n\t\t- Architectural visualization\n\t\t- Multi-user collaborative AR",
   "backlinks": [
-    "Ar Overlay",
-    "Augmented Reality (AR)"
+    "Augmented Reality (AR)",
+    "Ar Overlay"
   ],
   "wiki_links": [
     "Location Based AR",
-    "World Locking",
-    "metaverse",
-    "Persistent AR Content",
     "Spatial Computing",
-    "SLAM Technology"
+    "Persistent AR Content",
+    "World Locking",
+    "SLAM Technology",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10050",

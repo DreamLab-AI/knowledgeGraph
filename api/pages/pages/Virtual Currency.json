@@ -3,16 +3,16 @@
   "title": "Virtual Currency",
   "content": "- ### OntologyBlock\n  id:: virtual-currency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10115\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Currency\n\t- status:: active\n\t- definition:: A digital representation of value that is typically unregulated, issued and controlled by its developers, used and accepted electronically among members of a specific virtual community, including in-game currencies, platform tokens, and convertible digital currencies.\n\t- owl:class:: mv:VirtualCurrency\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Asset]]\n\t\t- related-to:: [[Cryptocurrency]]\n\t\t- related-to:: [[In-Game Currency]]\n\t\t- related-to:: [[Virtual Economy]]\n\t  id:: virtual-currency-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual currency is digital money used within virtual communities and economies. The European Banking Authority (2014) defined it as a digital representation of value not issued by central banks but accepted as payment and tradeable electronically. The global mobile gaming market using virtual currencies is projected to generate over $98 billion in 2024.\n- ## Technical Details\n\t- ### Currency Types\n\t\t- **Closed/Fictional Currency**: No real-world exchange (World of Warcraft gold, Simoleons)\n\t\t- **Hybrid Currency**: Purchasable but not cashable (Robux, V-Bucks)\n\t\t- **Convertible Currency**: Exchangeable for fiat (Linden Dollars, cryptocurrencies)\n\t\t- **Decentralized Currency**: Blockchain-based (Bitcoin, Ethereum)\n\t- ### Flow Systems\n\t\t- Closed flow: Internal use only, no external value\n\t\t- Hybrid flow: Purchasable but not redeemable\n\t\t- Open flow: Two-way exchange with fiat currency\n\t- ### Gaming Examples\n\t\t- V-Bucks (Fortnite)\n\t\t- Robux (Roblox)\n\t\t- Linden Dollars (Second Life)\n\t\t- MANA (Decentraland)\n- ## Applications\n\t- In-game purchases and upgrades\n\t- Virtual goods and cosmetics\n\t- Premium content access\n\t- Play-to-earn gaming economies\n\t- Metaverse commerce transactions",
   "backlinks": [
-    "Creator Economy",
     "Loyalty Token",
-    "Stablecoin"
+    "Stablecoin",
+    "Creator Economy"
   ],
   "wiki_links": [
+    "Digital Asset",
     "Virtual Economy",
     "Cryptocurrency",
-    "metaverse",
-    "Digital Asset",
-    "In-Game Currency"
+    "In-Game Currency",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10115",

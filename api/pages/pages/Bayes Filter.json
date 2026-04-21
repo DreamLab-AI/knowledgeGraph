@@ -3,8 +3,8 @@
   "title": "Bayes Filter",
   "content": "- ### OntologyBlock\n  id:: rb9501-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9501\n\t- preferred-term:: Bayes Filter\n\t- source-domain:: rb\n\t- owl:class:: rb:BayesFilter\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Bayes Filter is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nBayes Filter represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "RB-1014-monte-carlo-localization",
     "RB-1015-kalman-filter",
+    "RB-1014-monte-carlo-localization",
     "State Estimation"
   ],
   "wiki_links": [

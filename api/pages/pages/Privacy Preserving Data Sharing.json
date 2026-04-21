@@ -3,16 +3,16 @@
   "title": "Privacy Preserving Data Sharing",
   "content": "- ### OntologyBlock\n  id:: privacy-preserving-data-sharing-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10011\n\t- source-domain:: mv\n\t- preferred-term:: Privacy Preserving Data Sharing\n\t- status:: active\n\t- definition:: Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.\n\t- owl:class:: mv:PrivacyPreservingDataSharing\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: privacy-preserving-data-sharing-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Sharing]]\n\t\t- related-to:: [[Secure Multi Party Computation]]\n\t\t- related-to:: [[Federated Learning]]\n\t\t- related-to:: [[Differential Privacy]]\n\t\t- enables:: [[Collaborative Analytics]]\n\t- #### Techniques\n\t  collapsed:: true\n\t\t- Differential privacy adding statistical noise\n\t\t- Secure multi-party computation (SMPC)\n\t\t- Federated learning for distributed training\n\t\t- Homomorphic encryption for encrypted computation\n\t\t- Synthetic data generation for testing\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Healthcare research without exposing patient data\n\t\t- Financial fraud detection across institutions\n\t\t- Cross-organization AI model training\n\t\t- Regulatory reporting with data confidentiality",
   "backlinks": [
-    "Secure Data Sharing",
-    "Secure Multi Party Computation"
+    "Secure Multi Party Computation",
+    "Secure Data Sharing"
   ],
   "wiki_links": [
+    "Federated Learning",
     "Differential Privacy",
     "Data Sharing",
-    "metaverse",
     "Collaborative Analytics",
     "Secure Multi Party Computation",
-    "Federated Learning"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10011",

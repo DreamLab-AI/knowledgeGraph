@@ -3,23 +3,23 @@
   "title": "Digital Signatures",
   "content": "- ### OntologyBlock\n  id:: digital-signatures-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9872\n\t- source-domain:: mv\n\t- preferred-term:: Digital Signatures\n\t- definition:: Cryptographic seals that confirm the authenticity and integrity of digital data using public-key cryptography, enabling transaction authorization on blockchain networks, document authentication, and non-repudiation in metaverse and decentralized systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalSignatures\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-signatures-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptography]]\n\t\t- enables:: [[Authentication]], [[Data Integrity]], [[Non-Repudiation]]\n\t\t- requires:: [[Private Key]], [[Hash Function]], [[Signature Algorithm]]\n\t\t- related-to:: [[Public Key Infrastructure]], [[Blockchain Security]], [[Smart Contracts]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- Private key: Creates signature (kept secret)\n\t\t- Public key: Verifies signature (shared openly)\n\t\t- Hash function: Produces message digest\n\t\t- Signature algorithm: Generates cryptographic proof\n\t- **Signature Algorithms**:\n\t\t- ECDSA: Bitcoin, Ethereum standard\n\t\t- EdDSA: Fast, constant-time signatures\n\t\t- BLS: 50% smaller, aggregatable\n\t\t- Schnorr: Native multi-signature support\n\t- **Blockchain Role**:\n\t\t- Transaction authorization\n\t\t- Wallet ownership proof\n\t\t- Smart contract execution\n\t\t- Consensus participation\n\t- **2024 Developments**: Post-quantum algorithms (ML-DSA, Mayo), AI-enhanced fraud detection, blockchain-anchored document signing\n- ## Applications\n\t- Cryptocurrency transaction signing\n\t- Document authentication\n\t- Code signing and software verification\n\t- Email security (S/MIME, PGP)\n\t- Metaverse identity verification",
   "backlinks": [
-    "Post-Quantum Cryptography",
     "Audit Trail",
+    "Digital Signature Verification",
     "Provenance Verification",
-    "Digital Signature Verification"
+    "Post-Quantum Cryptography"
   ],
   "wiki_links": [
-    "Blockchain Security",
-    "Cryptography",
-    "Signature Algorithm",
-    "Hash Function",
-    "metaverse",
-    "Authentication",
     "Private Key",
-    "Data Integrity",
-    "Non-Repudiation",
+    "Cryptography",
     "Public Key Infrastructure",
-    "Smart Contracts"
+    "Hash Function",
+    "Authentication",
+    "Signature Algorithm",
+    "Blockchain Security",
+    "Data Integrity",
+    "Smart Contracts",
+    "Non-Repudiation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9872",

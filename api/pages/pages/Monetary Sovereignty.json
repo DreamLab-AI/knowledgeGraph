@@ -3,15 +3,15 @@
   "title": "Monetary Sovereignty",
   "content": "- ### OntologyBlock\n  id:: monetary-sovereignty-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9970\n\t- source-domain:: mv\n\t- preferred-term:: Monetary Sovereignty\n\t- status:: active\n\t- owl:class:: mv:MonetarySovereignty\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.\n\t- #### Relationships\n\t  id:: monetary-sovereignty-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Economic Governance]]\n\t\t- related-to:: [[Central Bank Digital Currency]]\n\t\t- related-to:: [[Digital Currency]]\n\t\t- enables:: [[National Financial Control]]\n\n## Global CBDC Landscape\n\n### Adoption Statistics\n- 137 countries exploring CBDCs\n- 98% of global GDP represented\n- 72 countries in advanced phase\n- 49 pilot projects worldwide\n- 3 fully launched (Bahamas, Jamaica, Nigeria)\n\n### Growth Projections\n- 307.1 million payments in 2024\n- 7.8 billion projected by 2031\n- Card network competition\n- Stablecoin response\n- Digital transformation\n\n## Major CBDC Initiatives\n\n### Digital Yuan (e-CNY)\n- World's largest pilot\n- 7 trillion e-CNY transactions\n- $986 billion volume (June 2024)\n- 17 provincial regions\n- Strategic hedge against dollar\n\n### Digital Euro\n- ECB preparation phase (October 2023)\n- European monetary sovereignty\n- Reduced US provider reliance\n- Payment system independence\n- Cross-border efficiency\n\n### Digital Rupee (India)\n- Second-largest pilot\n- 334% growth in circulation\n- Retail and wholesale expansion\n- Offline functionality\n- Broader participation\n\n## Sovereignty Motivations\n\n### State Control\n- Currency substitution defence\n- Informal economy formalisation\n- Banking system reach\n- Economic territory assertion\n- Financial system stability\n\n### Strategic Benefits\n- Payment system independence\n- Cross-border transaction control\n- Sanctions resistance\n- Trade facilitation\n- Geopolitical positioning\n\n## Technology Integration\n\n### Blockchain Applications\n- Immutable records\n- Decentralised ledger option\n- Transaction transparency\n- Smart contract capability\n- Programmable money\n\n### Design Considerations\n- Centralised control\n- Privacy balance\n- Interoperability\n- Scalability\n- Security\n\n## Policy Implications\n\n### Privacy Concerns\n- Transaction traceability\n- Real-time monitoring\n- Programmable restrictions\n- Government surveillance\n- Civil liberties balance\n\n### Regulatory Framework\n- AML compliance\n- KYC requirements\n- Cross-border regulations\n- Consumer protection\n- Financial stability\n\n## US Position\n\n### Policy Stance\n- 2025 Executive Order halt\n- Retail CBDC opposition\n- Only country to cease work\n- Privacy concerns cited\n- Private sector preference\n\n### Global Outlier\n- Central bank divergence\n- Dollar dominance reliance\n- Alternative approaches\n- Regulatory uncertainty\n- Market-driven solutions\n\n## Future Outlook\n\n### Emerging Trends\n- Programmable money expansion\n- Cross-border CBDC systems\n- Multi-CBDC bridges\n- Tokenised deposits\n- Hybrid architectures\n\n### Challenges\n- Privacy preservation\n- Interoperability standards\n- Technical scalability\n- Political acceptance\n- International coordination\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Bitcoin Value Proposition",
-    "Bitcoin"
+    "Bitcoin",
+    "Bitcoin Value Proposition"
   ],
   "wiki_links": [
     "Digital Currency",
-    "metaverse",
-    "National Financial Control",
     "Economic Governance",
-    "Central Bank Digital Currency"
+    "Central Bank Digital Currency",
+    "National Financial Control",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9970",

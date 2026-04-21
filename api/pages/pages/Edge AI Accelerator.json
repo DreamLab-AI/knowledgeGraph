@@ -4,10 +4,10 @@
   "content": "- ### OntologyBlock\n  id:: AI-9007\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9007\n\t- source-domain:: ai\n\t- preferred-term:: Edge AI Accelerator\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Specialized hardware designed to run AI inference workloads locally on edge devices, optimized for low power consumption and real-time performance without cloud connectivity.\n\t- source:: [[Edge Computing]], [[AI Hardware]]\n\t- maturity:: emerging\n\t- owl:class:: ai:EdgeAIAccelerator\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
   "backlinks": [],
   "wiki_links": [
-    "AI Hardware",
     "ArtificialIntelligenceDomain",
-    "Edge Computing",
-    "Artificial Intelligence"
+    "AI Hardware",
+    "Artificial Intelligence",
+    "Edge Computing"
   ],
   "ontology": {
     "term_id": "AI-9007",

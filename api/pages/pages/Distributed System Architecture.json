@@ -3,16 +3,16 @@
   "title": "Distributed System Architecture",
   "content": "- ### OntologyBlock\n  id:: distributed-system-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9884\n\t- source-domain:: mv\n\t- preferred-term:: Distributed System Architecture\n\t- status:: active\n\t- owl:class:: mv:DistributedSystemArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: An architectural paradigm for metaverse systems that distributes computing resources, data storage, and processing across multiple interconnected nodes to achieve scalability, fault tolerance, and low-latency experiences whilst supporting millions of concurrent users.\n\t- #### Relationships\n\t  id:: distributed-system-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Edge Computing Architecture]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- enables:: [[Metaverse Infrastructure]]\n\n## Technical Details\n\n### Infrastructure Layers\n- **Distributed Computing Layer**: Provides local access to data and replication for fault tolerance\n- **Edge Computing Integration**: Brings computational resources closer to end devices (VR headsets, AR glasses) to reduce latency\n- **Cloud-Edge Hybrid**: Balances performance with scalability, processing basic tasks on user devices whilst offloading complex tasks to distributed servers\n- **Blockchain Storage**: Distributed database offering decentralisation and security for large-scale metaverse data\n\n### Key Technologies\n- AI-based distributed computing and task offloading in edge and cloud-integrated systems\n- Enhanced Mobile Broadband (eMBB), Massive Machine-type Communications (mMTC), and Ultra-Reliable Low-Latency Communications (URLLCs) via 5G/6G networks\n- Self-sovereign identity (SSI) principles and blockchain technology for secure interoperability\n\n### Performance Requirements\n- Sub-20ms roundtrip latency to prevent cybersickness in immersive experiences\n- Scalability to support millions of concurrent users across the metaverse\n- High-speed networks with advanced bandwidth provisioning\n\n## Applications\n\n### Platform Categories\n- **Gaming Metaverses**: Entertainment and socialisation among peers\n- **Social Media Metaverses**: Digital social interaction spaces\n- **Open Platforms**: Developer-accessible environments for new application creation\n\n### Smart City Integration\n- IoT convergence enables manipulation and management of real-world objects within virtual environments\n- Digital twins for intelligent transformation of urban areas\n- Real-time interoperability between physical and virtual worlds\n\n## Market Context\n\n- Industry estimations project the metaverse industry growing from $500 million (2020) to $800 billion by 2024\n- Major technology corporations including Meta, Microsoft, NVIDIA, and Unity have committed to metaverse development\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "State Synchronization",
     "Event Driven Architecture",
+    "State Synchronization",
     "Edge Computing Architecture"
   ],
   "wiki_links": [
-    "Edge Computing Architecture",
     "Cloud Computing",
-    "metaverse",
     "System Architecture",
-    "Metaverse Infrastructure"
+    "Edge Computing Architecture",
+    "Metaverse Infrastructure",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9884",

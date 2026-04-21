@@ -7,11 +7,11 @@
     "tc-0003-telepresence-robot"
   ],
   "wiki_links": [
-    "Virtual Reality VR",
-    "Enterprise Learning",
     "Workforce Development",
     "metaverse",
-    "Simulation"
+    "Enterprise Learning",
+    "Simulation",
+    "Virtual Reality VR"
   ],
   "ontology": {
     "term_id": "MV-10151",

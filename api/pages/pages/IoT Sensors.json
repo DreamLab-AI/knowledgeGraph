@@ -4,18 +4,18 @@
   "content": "- ### OntologyBlock\n  id:: iot-sensors-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-7002\n\t- preferred-term:: IoT Sensors\n\t- source-domain:: rb\n\t- definition:: IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis. Modern IoT sensors increasingly incorporate on-device AI/ML accelerators enabling local inference, predictive analytics, and autonomous decision-making without cloud dependency.\n\t- status:: active\n\t- public-access:: true\n\t- maturity:: reviewed\n\t- belongsToDomain:: [[Internet of Things]]\n\t- owl:class:: rb:IotSensors\n\t- owl:role:: Hardware\n\n## Market Overview\n\t- Global IoT sensors market valued at US$21.5 billion in 2025\n\t- Projected to reach US$120.3 billion by 2032 (CAGR 27.9%)\n\t- 18 billion IoT devices expected worldwide by end of 2025\n\t- Pressure sensors segment fastest growing at 39.1% CAGR (2025-2034)\n\n## Key Technology Trends (2025)\n\t- **AIoT Integration**: On-device machine learning processors enabling real-time local inference\n\t- **Edge AI Chips**: Specialised neural network accelerators for IoT endpoints\n\t- **Smart Vibration Sensors**: Machine health monitoring for predictive maintenance\n\t- **Low-Power Operation**: Energy-efficient designs for extended deployment\n\t- **Industrial Automation**: Integration with smart factory systems for quality assurance\n\n## Edge Computing Integration\n\t- Edge computing market valued at USD 10 billion, projected to reach USD 182 billion by 2030 (38.2% CAGR)\n\t- Local data processing reduces latency, bandwidth usage, and security risks\n\t- Edge-capable gateways and smart sensors becoming central to IoT architecture\n\t- AI-driven predictive maintenance reducing costs by 10-40% and downtime by up to 50%\n\n## Application Domains\n\t- **Industrial Manufacturing**: Equipment monitoring, quality control, predictive maintenance\n\t- **Smart Cities**: Traffic management, environmental monitoring, resource optimisation\n\t- **Healthcare**: Patient monitoring, asset tracking, environmental controls\n\t- **Agriculture**: Soil moisture, weather conditions, crop health monitoring\n\t- **Automotive**: Connected vehicles, autonomous driving, fleet management\n\n### Relationships\n- is-subclass-of:: [[Internet of Things]]\n- relatedTo:: [[Edge Computing]]\n- relatedTo:: [[Digital Twin]]\n- relatedTo:: [[Industrial Automation]]\n- enables:: [[Predictive Maintenance]]\n- enables:: [[Smart Manufacturing]]\n- dependsOn:: [[5G Networks]]\n- hasApplication:: [[Smart Cities]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 research\n- **References**: 5+ pages reference this concept\n- **Regional Context**: UK/North England where applicable",
   "backlinks": [
     "Context Awareness System",
-    "Robotics",
-    "Digital Twin Construction"
+    "Digital Twin Construction",
+    "Robotics"
   ],
   "wiki_links": [
-    "Industrial Automation",
-    "Smart Cities",
+    "5G Networks",
+    "Edge Computing",
+    "Predictive Maintenance",
     "Digital Twin",
+    "Industrial Automation",
     "Internet of Things",
     "Smart Manufacturing",
-    "5G Networks",
-    "Predictive Maintenance",
-    "Edge Computing"
+    "Smart Cities"
   ],
   "ontology": {
     "term_id": "RB-7002",

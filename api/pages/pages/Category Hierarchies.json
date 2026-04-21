@@ -6,17 +6,17 @@
     "Glossary Index"
   ],
   "wiki_links": [
-    "Knowledge Organization System",
+    "Content Classification",
     "Classification Rules",
+    "Faceted Classification",
+    "Knowledge Organization System",
+    "Semantic Organization",
+    "Navigation Structure",
     "Term Relationships",
     "Ontology",
-    "Controlled Vocabularies",
-    "metaverse",
-    "Faceted Classification",
-    "Semantic Organization",
     "Taxonomy Design",
-    "Navigation Structure",
-    "Content Classification"
+    "metaverse",
+    "Controlled Vocabularies"
   ],
   "ontology": {
     "term_id": "MV-9816",

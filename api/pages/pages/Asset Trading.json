@@ -3,23 +3,23 @@
   "title": "Asset Trading",
   "content": "- ### OntologyBlock\n  id:: asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7030\n\t- preferred-term:: Asset Trading\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:AssetTrading\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Financial Technology]]\n\t- belongsToDomain:: [[Decentralized Finance]]\n\t- belongsToDomain:: [[Cryptocurrency]]\n\n## Trading Mechanisms\n- **Centralized Exchanges (CEXs)**: Traditional order book matching with custodial asset holding\n- **Decentralized Exchanges (DEXs)**: Smart contract-based swaps enabling self-custody trading\n- **Automated Market Makers (AMMs)**: Algorithmic liquidity pools replacing order books\n- **Aggregators**: Cross-platform routing for optimal trade execution\n\n## DEX Characteristics\n- Self-custody: Users retain complete control of their funds via wallet connections\n- Enhanced privacy: Minimal or no KYC verification requirements\n- Global accessibility: No regional restrictions on participation\n- Wide token availability: Including new and niche projects not listed on CEXs\n- Immutable transactions: Executed through audited smart contracts\n\n## Market Scale (2025)\n- Total Value Locked (TVL) in DeFi exceeds $100 billion\n- Weekly DEX trading volume averages $18.6 billion\n- Over 1,127 tracked decentralized exchanges\n- 24-hour DEX trading volume of $5.4 billion\n- Leading platforms: Uniswap, PancakeSwap, SushiSwap, Jupiter, Hyperliquid\n\n## Key Trends\n- Cross-chain interoperability enabling seamless asset swaps across blockchain networks\n- Decentralized derivatives markets attracting institutional investors\n- Layer 3 scaling solutions improving transaction throughput\n- Privacy-preserving technologies including zero-knowledge rollups\n- Institutional-grade compliance tooling and real-time settlement layers\n\n## Relationships\n- is-subclass-of:: [[Financial Services]]\n- uses:: [[Smart Contract]]\n- uses:: [[Liquidity Pool]]\n- enables:: [[Decentralized Exchange]]\n- related-to:: [[Asset Management]]\n- related-to:: [[Market Making]]\n- supports:: [[Price Discovery]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 5 pages reference this concept",
   "backlinks": [
-    "Tokenization",
-    "Marketplace",
+    "Digital Goods",
     "Non-Fungible Token (NFT)",
     "Digital Asset",
-    "Digital Goods"
+    "Marketplace",
+    "Tokenization"
   ],
   "wiki_links": [
+    "Price Discovery",
+    "Liquidity Pool",
+    "Cryptocurrency",
+    "Market Making",
     "Decentralized Finance",
+    "Asset Management",
     "Financial Services",
     "Financial Technology",
-    "Decentralized Exchange",
-    "Cryptocurrency",
     "Smart Contract",
-    "Asset Management",
-    "Price Discovery",
-    "Market Making",
-    "Liquidity Pool"
+    "Decentralized Exchange"
   ],
   "ontology": {
     "term_id": "NGM-7030",

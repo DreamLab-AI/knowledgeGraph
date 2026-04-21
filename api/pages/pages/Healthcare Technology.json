@@ -3,9 +3,9 @@
   "title": "Healthcare Technology",
   "content": "- ### OntologyBlock\n  id:: mv9627-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9627\n\t- preferred-term:: Healthcare Technology\n\t- source-domain:: mv\n\t- owl:class:: mv:HealthcareTechnology\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Healthcare Technology is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nHealthcare Technology represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Healthcare Application Classification",
     "MedicalAI",
-    "Therapeutic Vr"
+    "Therapeutic Vr",
+    "Healthcare Application Classification"
   ],
   "wiki_links": [
     "owl:Thing"

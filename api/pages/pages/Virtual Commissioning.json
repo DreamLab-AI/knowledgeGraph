@@ -3,16 +3,16 @@
   "title": "Virtual Commissioning",
   "content": "- ### OntologyBlock\n  id:: virtual-commissioning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10111\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Commissioning\n\t- status:: active\n\t- definition:: The simulation and testing of manufacturing systems in a virtual environment before physical implementation, using digital twins and real-time simulation to validate control algorithms, robot motion, and process sequences, reducing commissioning time and costs during development.\n\t- owl:class:: mv:VirtualCommissioning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Twin]]\n\t\t- related-to:: [[Industrial Automation]]\n\t\t- related-to:: [[PLC Programming]]\n\t\t- related-to:: [[Manufacturing Simulation]]\n\t  id:: virtual-commissioning-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual commissioning (VC) evaluates control algorithms on simulation models that replicate actual plant dynamics, saving significant time and cost during development. Automotive OEMs, integrators, and line builders lead in using digital twins for production and virtual commissioning, with many manufacturers standardizing on tools like Siemens Tecnomatix Process Simulate for digital twin operations.\n- ## Technical Details\n\t- ### Implementation Methods\n\t\t- **Software in the Loop (SiL)**: Control hardware emulated with simulated process, no physical hardware required\n\t\t- **Hardware in the Loop (HiL)**: Real control hardware linked to real-time simulation of virtual devices\n\t\t- **Hybrid Commissioning (HC)**: Reality in the loop combining physical and virtual components\n\t- ### Key Capabilities\n\t\t- PLC code validation and testing\n\t\t- Robot motion and logic verification\n\t\t- Mechatronic component simulation (clamps, conveyors)\n\t\t- Collision-free robotic motion planning\n\t\t- Offline programming and sequence validation\n\t- ### Leading Platforms\n\t\t- Siemens Tecnomatix Process Simulate\n\t\t- Siemens TIA Portal with Step7\n\t\t- Nvidia Omniverse for digital twins\n\t\t- MATLAB/Simulink integration\n- ## Applications\n\t- Automotive assembly line validation\n\t- Industrial robot cell commissioning\n\t- Factory layout planning and optimization\n\t- Control system error detection\n\t- Industry 4.0 smart manufacturing development",
   "backlinks": [
-    "Virtual Factory",
     "Digital Twin",
-    "Industrial Metaverse"
+    "Industrial Metaverse",
+    "Virtual Factory"
   ],
   "wiki_links": [
-    "Industrial Automation",
+    "PLC Programming",
     "Manufacturing Simulation",
     "Digital Twin",
-    "metaverse",
-    "PLC Programming"
+    "Industrial Automation",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10111",

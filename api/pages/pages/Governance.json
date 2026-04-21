@@ -3,13 +3,13 @@
   "title": "Governance",
   "content": "- ### OntologyBlock\n  id:: mv9621-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9621\n\t- preferred-term:: Governance\n\t- source-domain:: mv\n\t- owl:class:: mv:Governance\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Governance is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nGovernance represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Transparent Decision Making",
-    "Transparency Metrics",
+    "Transparent Governance",
+    "BC-0096-token",
     "ETSI_Domain_Governance_&_Compliance",
     "ETSI_Domain_Governance_&_Ethics",
-    "Transparent Governance",
     "Social Contract",
-    "BC-0096-token"
+    "Transparent Decision Making",
+    "Transparency Metrics"
   ],
   "wiki_links": [
     "owl:Thing"

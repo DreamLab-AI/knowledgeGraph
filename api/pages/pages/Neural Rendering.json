@@ -3,8 +3,8 @@
   "title": "Neural Rendering",
   "content": "- ### OntologyBlock\n  id:: tc9506-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9506\n\t- preferred-term:: Neural Rendering\n\t- source-domain:: tc\n\t- owl:class:: tc:NeuralRendering\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Neural Rendering is a concept within the telecollaboration domain. Further enrichment pending.\n\n## Overview\n\nNeural Rendering represents an abstract concept in the telecollaboration ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Deepfakes",
-    "Perception System"
+    "Perception System",
+    "Deepfakes"
   ],
   "wiki_links": [
     "owl:Thing"

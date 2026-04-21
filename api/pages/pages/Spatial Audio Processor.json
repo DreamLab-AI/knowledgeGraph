@@ -3,16 +3,16 @@
   "title": "Spatial Audio Processor",
   "content": "- ### OntologyBlock\n  id:: spatial-audio-processor-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10052\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Audio Processor\n\t- status:: active\n\t- definition:: Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive audio experiences.\n\t- owl:class:: mv:SpatialAudioProcessor\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-audio-processor-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Audio Processing System]]\n\t\t- related-to:: [[HRTF Processing]]\n\t\t- related-to:: [[Binaural Audio]]\n\t\t- related-to:: [[Dolby Atmos]]\n\t\t- enables:: [[3D Sound Rendering]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Head-Related Transfer Function application\n\t\t- Binaural synthesis algorithms\n\t\t- Room acoustics simulation\n\t\t- Object-based audio rendering\n\t\t- Head tracking integration\n\t- #### Platform Support\n\t  collapsed:: true\n\t\t- Windows Sonic for Headphones\n\t\t- Dolby Atmos spatial audio\n\t\t- DTS Headphone:X technology\n\t\t- Apple Spatial Audio\n\t\t- Meta Quest audio system",
   "backlinks": [
-    "Spatial Audio Scene Description",
-    "Compute Layer"
+    "Compute Layer",
+    "Spatial Audio Scene Description"
   ],
   "wiki_links": [
-    "HRTF Processing",
-    "Dolby Atmos",
-    "metaverse",
-    "Audio Processing System",
     "Binaural Audio",
-    "3D Sound Rendering"
+    "HRTF Processing",
+    "Audio Processing System",
+    "3D Sound Rendering",
+    "Dolby Atmos",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10052",

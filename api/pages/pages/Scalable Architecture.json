@@ -3,16 +3,16 @@
   "title": "Scalable Architecture",
   "content": "- ### OntologyBlock\n  id:: scalable-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10027\n\t- source-domain:: mv\n\t- preferred-term:: Scalable Architecture\n\t- status:: active\n\t- definition:: System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.\n\t- owl:class:: mv:ScalableArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: scalable-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[Distributed Systems]]\n\t\t- related-to:: [[Microservices]]\n\t\t- enables:: [[High Availability]]\n\t- #### Scaling Patterns\n\t  collapsed:: true\n\t\t- Horizontal scaling (adding instances)\n\t\t- Vertical scaling (upgrading resources)\n\t\t- Auto-scaling based on demand\n\t\t- Sharding for data distribution\n\t\t- Edge computing for latency reduction\n\t- #### Technologies\n\t  collapsed:: true\n\t\t- Kubernetes container orchestration\n\t\t- Serverless computing functions\n\t\t- Content delivery networks (CDN)\n\t\t- Message queuing systems\n\t\t- Database replication strategies",
   "backlinks": [
-    "Metaverse Architecture Stack",
-    "Interoperability Framework"
+    "Interoperability Framework",
+    "Metaverse Architecture Stack"
   ],
   "wiki_links": [
     "Cloud Computing",
-    "metaverse",
-    "Microservices",
-    "High Availability",
     "Distributed Systems",
-    "System Architecture"
+    "High Availability",
+    "System Architecture",
+    "Microservices",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10027",

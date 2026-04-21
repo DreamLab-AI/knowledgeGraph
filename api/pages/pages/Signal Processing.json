@@ -3,11 +3,11 @@
   "title": "Signal Processing",
   "content": "- ### OntologyBlock\n  id:: mv9684-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9684\n\t- preferred-term:: Signal Processing\n\t- source-domain:: mv\n\t- owl:class:: mv:SignalProcessing\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Signal Processing is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nSignal Processing represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "RB-1015-kalman-filter",
-    "Digital Signal Processing",
-    "Deep Learning",
-    "Parameter Modulation System",
     "Upscaling",
+    "Digital Signal Processing",
+    "RB-1015-kalman-filter",
+    "Parameter Modulation System",
+    "Deep Learning",
     "Admittance Control"
   ],
   "wiki_links": [

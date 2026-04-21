@@ -3,23 +3,23 @@
   "title": "Digital Payments",
   "content": "- ### OntologyBlock\n  id:: digital-payments-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9865\n\t- source-domain:: mv\n\t- preferred-term:: Digital Payments\n\t- definition:: Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalPayments\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-payments-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Transactions]]\n\t\t- enables:: [[E-Commerce]], [[Virtual Purchases]], [[Cross-Border Transfer]]\n\t\t- requires:: [[Payment Processor]], [[Digital Wallet]], [[Network Infrastructure]]\n\t\t- related-to:: [[Mobile Payments]], [[Cryptocurrency]], [[CBDC]]\n- ## Technical Details\n\t- **Payment Technologies**:\n\t\t- Blockchain-based transactions\n\t\t- Mobile payment apps (Apple Pay, Google Pay)\n\t\t- QR code payments\n\t\t- Contactless NFC transactions\n\t- **Metaverse Integration**:\n\t\t- Virtual goods purchasing\n\t\t- In-game currency exchanges\n\t\t- NFT marketplace payments\n\t\t- Subscription-based services\n\t- **Key Trends (2024)**:\n\t\t- AI-powered fraud detection\n\t\t- Personalized payment recommendations\n\t\t- Stablecoin adoption for stability\n\t\t- Cross-chain payment interoperability\n\t- **Challenges**: Cryptocurrency volatility, regulatory compliance, user adoption, security concerns\n- ## Applications\n\t- Virtual reality commerce\n\t- Gaming microtransactions\n\t- Creator economy payments\n\t- International remittances\n\t- Decentralized finance services",
   "backlinks": [
-    "Central Bank Digital Currency",
-    "Digital Economy",
     "Digital Currency",
-    "Central Bank Digital Currency (CBDC)"
+    "Central Bank Digital Currency",
+    "Central Bank Digital Currency (CBDC)",
+    "Digital Economy"
   ],
   "wiki_links": [
-    "Cross-Border Transfer",
-    "CBDC",
-    "Cryptocurrency",
-    "metaverse",
-    "Virtual Purchases",
-    "Financial Transactions",
     "Network Infrastructure",
+    "Virtual Purchases",
+    "Cryptocurrency",
+    "E-Commerce",
+    "Cross-Border Transfer",
+    "Financial Transactions",
+    "Payment Processor",
     "Digital Wallet",
     "Mobile Payments",
-    "E-Commerce",
-    "Payment Processor"
+    "CBDC",
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-9865",

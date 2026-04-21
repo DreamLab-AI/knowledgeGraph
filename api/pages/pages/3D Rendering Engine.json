@@ -5,25 +5,25 @@
   "backlinks": [
     "Education Metaverse",
     "Tourism Metaverse",
+    "Avatar",
+    "Virtual Performance Space",
     "Virtual World",
     "Avatar System",
-    "Avatar",
-    "Cultural Heritage XR Experience",
-    "Virtual Performance Space"
+    "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
-    "Metaverse",
-    "Real-time Visualisation",
-    "Unity",
-    "Digital Twin",
+    "Computer Graphics",
     "Augmented Reality",
-    "Blender",
-    "Unreal Engine",
     "Game Development",
-    "Virtual Reality",
     "Immersive Experiences",
     "XR Applications",
-    "Computer Graphics"
+    "Virtual Reality",
+    "Metaverse",
+    "Digital Twin",
+    "Blender",
+    "Real-time Visualisation",
+    "Unreal Engine",
+    "Unity"
   ],
   "ontology": {
     "term_id": "NGM-7009",

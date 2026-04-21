@@ -3,15 +3,15 @@
   "title": "Verification Standard",
   "content": "- ### OntologyBlock\n  id:: verification-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10102\n\t- source-domain:: mv\n\t- preferred-term:: Verification Standard\n\t- status:: active\n\t- definition:: Specifications and protocols that define how digital identities, credentials, and claims are validated and authenticated in metaverse environments, ensuring trust and security through cryptographic proofs and standardized verification processes.\n\t- owl:class:: mv:VerificationStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Verifiable Credentials]]\n\t\t- related-to:: [[Authentication]]\n\t\t- related-to:: [[Digital Identity]]\n\t  id:: verification-standard-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Verification standards define how claims and credentials are validated in digital environments. This includes cryptographic verification of signatures, issuer validation, revocation checking, and schema conformance testing.\n- ## Technical Details\n\t- ### Verification Components\n\t\t- **Signature Verification**: Cryptographic proof validation\n\t\t- **Issuer Resolution**: DID and public key lookup\n\t\t- **Revocation Check**: Status confirmation\n\t\t- **Schema Validation**: Structure and format verification\n\t- ### Key Standards\n\t\t- W3C Verifiable Credentials verification algorithm\n\t\t- W3C DID Resolution specification\n\t\t- JSON Schema validation\n\t\t- Linked Data Proofs specification\n\t- ### Security Properties\n\t\t- Non-repudiation of issuance\n\t\t- Tamper-evidence detection\n\t\t- Selective disclosure support\n\t\t- Privacy-preserving verification (ZKP)\n- ## Applications\n\t- Metaverse access control\n\t- Age verification for content\n\t- Professional credential validation\n\t- Digital asset authenticity verification\n\t- Cross-platform identity verification",
   "backlinks": [
-    "Carbon Credit Token",
-    "Carbon Neutrality Verification"
+    "Carbon Neutrality Verification",
+    "Carbon Credit Token"
   ],
   "wiki_links": [
     "Standards",
     "Authentication",
-    "metaverse",
+    "Digital Identity",
     "Verifiable Credentials",
-    "Digital Identity"
+    "metaverse"
   ],
   "ontology": {
     "term_id": "MV-10102",

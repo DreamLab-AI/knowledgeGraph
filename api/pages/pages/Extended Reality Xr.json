@@ -3,17 +3,17 @@
   "title": "Extended Reality Xr",
   "content": "- ### OntologyBlock\n  id:: Extended Reality Xr\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9900\n  - preferred-term:: Extended Reality Xr\n  - source-domain:: mv\n  - owl:class:: mv:ExtendedRealityXr\n  - status:: active\n  - definition:: An umbrella term encompassing virtual reality (VR), augmented reality (AR), and mixed reality (MR) technologies that combine or mirror the physical world with digital environments, enabling immersive experiences through spatial computing, 3D visualisation, and interactive digital overlays.\n\n### Relationships\n- is-subclass-of:: [[Immersive Technology]]\n- related-to:: [[Virtual Reality]]\n- related-to:: [[Augmented Reality]]\n- includes:: [[Mixed Reality]]\n\n## Core Technologies\n\n### Virtual Reality (VR)\n- Completely immerses users in virtual environments\n- Disconnects users from physical world\n- Headsets: Meta Quest, HTC Vive, PlayStation VR\n- Applications: gaming, design reviews, training, virtual tours\n\n### Augmented Reality (AR)\n- Overlays digital content onto real world\n- Enhances perception of physical surroundings\n- Devices: smartphones, tablets, AR glasses\n- Applications: navigation, retail, industrial maintenance\n\n### Mixed Reality (MR)\n- Convergence of physical and virtual worlds\n- Digital objects interact with physical environment\n- Spatial mapping and sensor integration\n- Applications: industrial design, training, collaboration\n\n## Market Context\n\n### 2024 Growth Projections\n- Global XR market: USD 183.96 billion (2024)\n- Projected: USD 1,706.96 billion by 2032\n- CAGR: 32.1%\n\n### Recent Device Releases\n- Ray-Ban Meta Smart Glasses\n- Amazon Echo Frames\n- Meta Orion smartglasses\n- Apple Vision Pro\n\n## Applications\n\n### Healthcare\n- Medical training and surgical planning\n- 3D anatomical visualisations\n- Therapeutic applications\n\n### Retail\n- Virtual product try-on\n- AR apps for furniture placement (IKEA)\n- Enhanced shopping experiences\n\n### Manufacturing\n- Virtual schematics overlaid on components\n- Assembly and maintenance guidance\n- Digital twin integration\n\n### Military\n- Battlefield simulation training\n- Skills development in controlled environments\n- Tactical planning\n\n### Entertainment\n- Gaming and immersive experiences\n- Virtual concerts and events\n- Interactive storytelling\n\n## Challenges\n\n### Technical\n- Hardware bulk and comfort\n- Limited battery life\n- High performance requirements\n- Low latency requirements\n\n### Content\n- Complex creation processes\n- Resource-intensive development\n- Cross-platform compatibility\n\n### User Experience\n- Learning curve for interfaces\n- Data privacy and security\n- Accessibility requirements\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
   "backlinks": [
-    "Healthcare Application Classification",
     "Etsi Domain Immersive",
-    "Immersive Experiences",
     "Immersive Entertainment",
-    "Immersive Technology",
-    "Driver Software"
+    "Immersive Experiences",
+    "Driver Software",
+    "Healthcare Application Classification",
+    "Immersive Technology"
   ],
   "wiki_links": [
+    "Immersive Technology",
     "Augmented Reality",
     "Mixed Reality",
-    "Immersive Technology",
     "Virtual Reality"
   ],
   "ontology": {

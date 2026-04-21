@@ -4,9 +4,9 @@
   "content": "- ### OntologyBlock\n  id:: mv9701-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9701\n\t- preferred-term:: System Integration\n\t- source-domain:: mv\n\t- owl:class:: mv:SystemIntegration\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: System Integration is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nSystem Integration represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
     "Digital Twin Ecosystem",
-    "System Interoperability",
     "Wearable Device Integration",
-    "Compatibility Process"
+    "Compatibility Process",
+    "System Interoperability"
   ],
   "wiki_links": [
     "owl:Thing"

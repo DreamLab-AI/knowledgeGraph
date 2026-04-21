@@ -3,23 +3,23 @@
   "title": "State Channel",
   "content": "- ### OntologyBlock\n  id:: state-channel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8017\n\t- preferred-term:: State Channel\n\t- status:: active\n\t- public-access:: true\n\t- definition:: State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.\n\t- maturity:: reviewed\n\t- owl:class:: bc:StateChannel\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n---\nid: BC-1004\ntitle: State Channel\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# State Channel\n\n## Definition\n- Off-chain interaction protocol where participants exchange signed state updates without blockchain transactions\n- Requires on-chain setup and settlement transactions with dispute resolution mechanism\n- Enables instant, high-frequency interactions with minimal blockchain footprint\n\n## Core Components\n- **Opening Transaction**: On-chain channel initialization with locked funds\n- **State Updates**: Off-chain signed messages representing state transitions\n- **Dispute Resolution**: Challenge period for fraudulent state submission\n- **Closing Transaction**: Final state settlement on-chain\n\n## Technical Characteristics\n- **Instant Finality**: State updates immediate between participants\n- **Privacy**: Only opening and closing states published on-chain\n- **Cost Efficiency**: Fixed on-chain cost regardless of interaction count\n- **Bi-directional**: Both parties can initiate state updates\n\n## Channel Types\n- **Payment Channel**: Simple value transfers (e.g., Bitcoin Lightning)\n- **State Channel**: General state machine execution\n- **Virtual Channel**: Multi-hop channels without intermediate on-chain transactions\n- **Multi-Party Channel**: More than two participants\n\n## Protocol Flow\n1. **Setup**: Deploy channel contract and deposit collateral\n2. **Operation**: Exchange signed state updates off-chain\n3. **Dispute**: Submit latest state if counterparty unresponsive\n4. **Settlement**: Finalize state and withdraw funds after timeout\n\n## Use Cases\n- Micropayment streaming\n- High-frequency trading\n- Gaming state updates\n- IoT machine-to-machine payments\n- Real-time bidirectional communication\n\n## Examples\n- [[Lightning Network]]: Bitcoin payment channels\n- [[Raiden Network]]: Ethereum token payment channels\n- [[Connext]]: Cross-chain state channel network\n- [[Perun]]: Generalized state channel framework\n\n## Relationships\n- child-of:: [[Layer 2]]\n- implements:: [[Off-Chain Scaling]]\n- requires:: [[Digital Signature]]\n- enables:: [[Micropayments]]\n- contrasts-with:: [[Rollup]]\n\n## Security Model\n- Cryptographic signing for state authenticity\n- Timeout-based dispute resolution\n- Collateral requirements for liveness guarantees\n- Watchtower services for offline participant protection\n\n## Advantages\n- Instant transaction finality\n- Near-zero marginal transaction cost\n- Strong privacy guarantees\n- No third-party trust requirements\n\n## Limitations\n- Liquidity lockup during channel lifetime\n- Online requirement for security\n- Limited to predetermined participants\n- Capital inefficiency for sporadic interactions\n\n## Performance Metrics\n- Update frequency (transactions per second)\n- Channel opening/closing cost\n- Dispute resolution time\n- Capital efficiency ratio\n\n## Design Considerations\n- Optimal channel topology for routing\n- Rebalancing strategies for liquidity\n- Griefing attack prevention\n- Force-close timeout parameters\n\n## Related Concepts\n- [[Payment Channel]]\n- [[Lightning Network]]\n- [[Off-Chain Scaling]]\n- [[Optimistic Rollup]]\n\n#blockchain #state-channel #layer-2 #off-chain\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
   "backlinks": [
-    "Sidechain",
     "Layer 3",
-    "Blockchain Scalability"
+    "Blockchain Scalability",
+    "Sidechain"
   ],
   "wiki_links": [
-    "BlockchainDomain",
+    "Lightning Network",
+    "Payment Channel",
+    "Blockchain",
+    "Micropayments",
     "Perun",
     "Optimistic Rollup",
-    "Micropayments",
-    "Off-Chain Scaling",
     "Digital Signature",
-    "Blockchain",
-    "Connext",
-    "Raiden Network",
-    "Payment Channel",
-    "Lightning Network",
+    "Off-Chain Scaling",
+    "BlockchainDomain",
     "Rollup",
+    "Raiden Network",
+    "Connext",
     "Layer 2"
   ],
   "ontology": {

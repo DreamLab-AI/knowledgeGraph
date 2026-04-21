@@ -3,11 +3,11 @@
   "title": "User Safety",
   "content": "- ### OntologyBlock\n  id:: mv9717-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9717\n\t- preferred-term:: User Safety\n\t- source-domain:: mv\n\t- owl:class:: mv:UserSafety\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: User Safety is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nUser Safety represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Participant Protection",
-    "Metaverse Safety Protocol",
     "Community Standards",
     "Safe Immersive Experience",
-    "Content Moderation Standards"
+    "Metaverse Safety Protocol",
+    "Content Moderation Standards",
+    "Participant Protection"
   ],
   "wiki_links": [
     "owl:Thing"

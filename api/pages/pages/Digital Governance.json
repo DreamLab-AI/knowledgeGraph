@@ -3,9 +3,9 @@
   "title": "Digital Governance",
   "content": "- ### OntologyBlock\n  id:: mv9578-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9578\n\t- preferred-term:: Digital Governance\n\t- source-domain:: mv\n\t- owl:class:: mv:DigitalGovernance\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Digital Governance is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nDigital Governance represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
+    "Virtual Society Regulations",
     "Virtual Nation State",
-    "Democratic Participation",
-    "Virtual Society Regulations"
+    "Democratic Participation"
   ],
   "wiki_links": [
     "owl:Thing"

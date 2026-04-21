@@ -3,14 +3,14 @@
   "title": "Virtual Meeting",
   "content": "- ### OntologyBlock\n  id:: virtual-meeting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-0602\n\t- preferred-term:: Virtual Meeting\n\t- source-domain:: tc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely. This encompasses traditional video conferencing platforms, virtual whiteboards, screen sharing capabilities, and emerging 3D virtual meeting spaces.\n\t- owl:class:: tc:VirtualMeeting\n\t- belongsToDomain:: [[Telecollaboration]]\n\t- #### Relationships\n\t  id:: virtual-meeting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Telecollaboration]]\n\t\t- is-parent-of:: [[Video Conference]]\n\t\t- is-parent-of:: [[Virtual Whiteboard]]\n\t\t- is-parent-of:: [[Screen Sharing]]\n\t\t- related-to:: [[Remote Collaboration]]",
   "backlinks": [
-    "Communication Theory",
-    "Remote Collaboration"
+    "Remote Collaboration",
+    "Communication Theory"
   ],
   "wiki_links": [
-    "Virtual Whiteboard",
+    "Telecollaboration",
     "Screen Sharing",
     "Video Conference",
-    "Telecollaboration",
+    "Virtual Whiteboard",
     "Remote Collaboration"
   ],
   "ontology": {

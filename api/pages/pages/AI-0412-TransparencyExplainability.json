@@ -6,10 +6,10 @@
   "wiki_links": [
     "SHAP",
     "EU AI Act Article 13",
-    "LIME",
-    "ConceptualLayer",
     "AIEthicsDomain",
-    "Model Cards"
+    "ConceptualLayer",
+    "Model Cards",
+    "LIME"
   ],
   "ontology": {
     "term_id": "AI-0412",

@@ -3,10 +3,10 @@
   "title": "Cryptographic Security",
   "content": "- ### OntologyBlock\n  id:: mv9543-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9543\n\t- preferred-term:: Cryptographic Security\n\t- source-domain:: mv\n\t- owl:class:: mv:CryptographicSecurity\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Cryptographic Security is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nCryptographic Security represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Mathematical Hard Problems",
-    "Bitcoin Value Proposition",
     "AI Risks",
-    "Digital Wallet"
+    "Digital Wallet",
+    "Mathematical Hard Problems",
+    "Bitcoin Value Proposition"
   ],
   "wiki_links": [
     "owl:Thing"

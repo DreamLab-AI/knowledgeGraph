@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "IEEE P7003-2021",
-    "AIF360",
-    "ConceptualLayer",
     "Fairlearn",
-    "AIEthicsDomain"
+    "AIEthicsDomain",
+    "ConceptualLayer",
+    "AIF360"
   ],
   "ontology": {
     "term_id": "AI-0380",

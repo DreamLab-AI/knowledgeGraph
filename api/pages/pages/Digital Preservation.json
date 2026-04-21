@@ -3,9 +3,9 @@
   "title": "Digital Preservation",
   "content": "- ### OntologyBlock\n  id:: mv9586-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9586\n\t- preferred-term:: Digital Preservation\n\t- source-domain:: mv\n\t- owl:class:: mv:DigitalPreservation\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Digital Preservation is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nDigital Preservation represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
   "backlinks": [
-    "Long Term Archival",
     "Virtual Museum Tour",
     "Digital Archive",
+    "Long Term Archival",
     "Digital Repository"
   ],
   "wiki_links": [
