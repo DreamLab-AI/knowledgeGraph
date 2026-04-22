@@ -12,18 +12,18 @@
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
-    "JSON-LD",
-    "Data Discovery",
-    "Data Standard",
-    "Semantic Web",
-    "Data Catalogue",
-    "Data Interoperability",
-    "Ontology",
-    "Dublin Core",
     "Data Governance",
-    "FAIR Data Principles",
+    "JSON-LD",
+    "Dublin Core",
+    "Data Discovery",
+    "Schema.org",
+    "Ontology",
+    "Semantic Web",
+    "Data Interoperability",
+    "Data Standard",
+    "Data Catalogue",
     "Knowledge Graph",
-    "Schema.org"
+    "FAIR Data Principles"
   ],
   "ontology": {
     "term_id": "NGM-8001",

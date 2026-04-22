@@ -8,12 +8,12 @@
     "Privacy-Enhancing Computation (PEC)"
   ],
   "wiki_links": [
-    "Confidential Collaboration",
-    "Access Control",
     "Privacy Preserving Data Sharing",
     "Encryption",
+    "Confidential Collaboration",
     "metaverse",
-    "Data Security"
+    "Data Security",
+    "Access Control"
   ],
   "ontology": {
     "term_id": "MV-10034",

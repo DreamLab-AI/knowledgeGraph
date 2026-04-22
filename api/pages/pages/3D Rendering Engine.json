@@ -12,18 +12,18 @@
     "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
-    "Computer Graphics",
-    "Augmented Reality",
-    "Game Development",
-    "Immersive Experiences",
-    "XR Applications",
-    "Virtual Reality",
-    "Metaverse",
+    "Unity",
     "Digital Twin",
+    "Augmented Reality",
     "Blender",
-    "Real-time Visualisation",
+    "Immersive Experiences",
+    "Virtual Reality",
+    "XR Applications",
+    "Metaverse",
+    "Computer Graphics",
+    "Game Development",
     "Unreal Engine",
-    "Unity"
+    "Real-time Visualisation"
   ],
   "ontology": {
     "term_id": "NGM-7009",

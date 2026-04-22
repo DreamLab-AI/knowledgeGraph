@@ -16,10 +16,10 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "Reasoning Systems",
-    "Semantic Web",
     "owl:Thing",
     "Ontology",
+    "Semantic Web",
+    "Reasoning Systems",
     "Knowledge Graph"
   ],
   "ontology": {

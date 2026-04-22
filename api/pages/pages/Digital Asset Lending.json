@@ -7,16 +7,16 @@
   ],
   "wiki_links": [
     "Yield Farming",
-    "DeFi Services",
-    "Flash Loans",
-    "Yield Generation",
-    "Liquidity Provision",
-    "Smart Contracts",
     "Collateral Management",
     "Credit Protocols",
+    "Yield Generation",
     "Leverage Trading",
-    "Liquidation Systems",
-    "metaverse"
+    "Flash Loans",
+    "DeFi Services",
+    "metaverse",
+    "Smart Contracts",
+    "Liquidity Provision",
+    "Liquidation Systems"
   ],
   "ontology": {
     "term_id": "MV-9849",

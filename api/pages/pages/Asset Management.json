@@ -16,15 +16,15 @@
     "Standardized Asset Classification"
   ],
   "wiki_links": [
-    "Risk Management",
     "Custody",
-    "Decentralized Finance",
-    "Financial Services",
-    "Financial Technology",
-    "Tokenization",
     "Traditional Finance",
-    "Portfolio Management",
-    "Institutional Investment"
+    "Financial Technology",
+    "Risk Management",
+    "Financial Services",
+    "Decentralized Finance",
+    "Tokenization",
+    "Institutional Investment",
+    "Portfolio Management"
   ],
   "ontology": {
     "term_id": "NGM-7014",

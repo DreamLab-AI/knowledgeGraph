@@ -28,16 +28,16 @@
     "Digital Evidence Chain of Custody"
   ],
   "wiki_links": [
-    "Core Technology",
-    "Authorisation",
     "Permission Management",
-    "Authentication Service",
-    "Identity Management",
+    "Security Policy",
+    "Core Technology",
+    "System Security",
+    "Data Protection",
     "Compliance",
     "Security Mechanism",
-    "Security Policy",
-    "Data Protection",
-    "System Security"
+    "Authorisation",
+    "Authentication Service",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "NGM-7003",

@@ -8,11 +8,11 @@
     "Service Layer"
   ],
   "wiki_links": [
-    "Scalable Applications",
-    "System Architecture",
     "API Design",
     "Container Technology",
-    "metaverse"
+    "metaverse",
+    "Scalable Applications",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-9967",

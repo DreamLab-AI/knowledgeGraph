@@ -22,17 +22,17 @@
     "Virtual Property Right"
   ],
   "wiki_links": [
-    "Authorization",
     "Avatar",
-    "Identity",
-    "Self-Sovereign Identity",
-    "Identity Verification",
-    "Authentication",
-    "Privacy Controls",
-    "Digital Presence",
     "Decentralized Identifiers",
+    "Identity",
+    "Authorization",
+    "Privacy Controls",
     "metaverse",
-    "Credential Storage"
+    "Self-Sovereign Identity",
+    "Authentication",
+    "Digital Presence",
+    "Credential Storage",
+    "Identity Verification"
   ],
   "ontology": {
     "term_id": "MV-9860",

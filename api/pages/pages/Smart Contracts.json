@@ -40,16 +40,16 @@
     "Platform Governance"
   ],
   "wiki_links": [
-    "Automated Market Maker",
     "Decentralized Application",
+    "Automated Market Maker",
     "Blockchain",
-    "Ethereum",
-    "Cryptographic Hash Function",
-    "Distributed Systems",
     "Decentralized Finance",
-    "Digital Signature",
+    "Ethereum",
+    "Distributed Systems",
+    "Distributed Computing",
     "Tokenization",
-    "Distributed Computing"
+    "Cryptographic Hash Function",
+    "Digital Signature"
   ],
   "ontology": {
     "term_id": "BC-7013",

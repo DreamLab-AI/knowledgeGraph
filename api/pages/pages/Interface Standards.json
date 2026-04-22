@@ -9,11 +9,11 @@
     "Metaverse Architecture Stack"
   ],
   "wiki_links": [
-    "OpenXR Standard",
     "Technical Standard",
-    "Interoperability Standard",
     "Cross-Platform Interoperability",
-    "metaverse"
+    "OpenXR Standard",
+    "metaverse",
+    "Interoperability Standard"
   ],
   "ontology": {
     "term_id": "MV-9933",

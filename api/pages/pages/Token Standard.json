@@ -22,12 +22,12 @@
     "Tokenization"
   ],
   "wiki_links": [
-    "Blockchain",
-    "NFT",
-    "Smart Contract",
     "Fungibility",
+    "Blockchain",
+    "DeFi",
+    "NFT",
     "Decentralized Exchange",
-    "DeFi"
+    "Smart Contract"
   ],
   "ontology": {
     "term_id": "BC-7005",

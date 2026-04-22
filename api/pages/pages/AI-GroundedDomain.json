@@ -16,11 +16,11 @@
     "A-Star Algorithm"
   ],
   "wiki_links": [
-    "Performance Metrics",
     "Artificial Intelligence",
-    "ArtificialIntelligenceDomain",
     "Theoretical AI",
-    "Empirical Evaluation"
+    "Empirical Evaluation",
+    "ArtificialIntelligenceDomain",
+    "Performance Metrics"
   ],
   "ontology": {
     "term_id": "AI-7021",

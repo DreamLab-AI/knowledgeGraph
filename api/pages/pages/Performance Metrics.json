@@ -12,13 +12,13 @@
     "AI Model Card"
   ],
   "wiki_links": [
-    "AUC",
-    "Precision",
-    "Artificial Intelligence",
-    "F1 Score",
-    "Machine Learning",
     "Accuracy",
-    "Recall"
+    "Artificial Intelligence",
+    "AUC",
+    "F1 Score",
+    "Recall",
+    "Machine Learning",
+    "Precision"
   ],
   "ontology": {
     "term_id": "AI-0602",

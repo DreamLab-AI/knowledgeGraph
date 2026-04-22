@@ -8,11 +8,11 @@
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Interactive Storytelling",
-    "Educational Narrative",
-    "Dynamic Character Animation",
     "Immersive Gaming Experiences",
-    "metaverse"
+    "Educational Narrative",
+    "metaverse",
+    "Dynamic Character Animation",
+    "Interactive Storytelling"
   ],
   "ontology": {
     "term_id": "MV-9903",

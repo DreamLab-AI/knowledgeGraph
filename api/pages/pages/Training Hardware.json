@@ -7,11 +7,11 @@
     "Inference Hardware"
   ],
   "wiki_links": [
-    "Distributed Training",
-    "AI Hardware",
-    "High-Performance Computing",
-    "Tensor Processing Unit",
     "Large Language Models",
+    "High-Performance Computing",
+    "Distributed Training",
+    "Tensor Processing Unit",
+    "AI Hardware",
     "Deep Learning",
     "GPU",
     "Neural Network Training"

@@ -8,16 +8,16 @@
   ],
   "wiki_links": [
     "Rapid Prototyping",
-    "Machine Learning",
-    "3D Capture",
-    "Automated Modeling",
-    "NVIDIA Omniverse",
-    "AI Training",
-    "Synthetic Data",
     "Generative AI",
-    "Computer Vision",
+    "Automated Modeling",
     "Mass Digitization",
-    "metaverse"
+    "3D Capture",
+    "Computer Vision",
+    "AI Training",
+    "metaverse",
+    "Synthetic Data",
+    "NVIDIA Omniverse",
+    "Machine Learning"
   ],
   "ontology": {
     "term_id": "MV-9879",

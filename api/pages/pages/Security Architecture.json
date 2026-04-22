@@ -9,12 +9,12 @@
     "Zero-Trust Architecture (ZTA)"
   ],
   "wiki_links": [
+    "System Architecture",
+    "Secure Systems",
     "Threat Detection",
     "Zero Trust Security",
-    "Secure Systems",
-    "System Architecture",
-    "Identity Management",
-    "metaverse"
+    "metaverse",
+    "Identity Management"
   ],
   "ontology": {
     "term_id": "MV-10036",

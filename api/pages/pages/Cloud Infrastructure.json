@@ -12,22 +12,22 @@
     "Digital Twin of Society (DToS)"
   ],
   "wiki_links": [
+    "Scalability",
+    "Computing Infrastructure",
     "Self-Service Provisioning",
+    "InfrastructureDomain",
+    "Database System",
+    "Microservices Architecture",
     "Google Cloud Platform",
     "AWS",
-    "Elasticity",
-    "Network Protocol",
-    "Microsoft Azure",
     "Virtualization Technology",
-    "InfrastructureDomain",
-    "Scalability",
-    "Microservices Architecture",
-    "Database System",
     "Technology Domain",
-    "Container Orchestration",
-    "ETSI_Domain_Infrastructure",
     "Distributed Computing",
-    "Computing Infrastructure"
+    "Elasticity",
+    "Microsoft Azure",
+    "ETSI_Domain_Infrastructure",
+    "Container Orchestration",
+    "Network Protocol"
   ],
   "ontology": {
     "term_id": "NGM-7032",

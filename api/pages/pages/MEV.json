@@ -13,13 +13,13 @@
     "AI Model Card"
   ],
   "wiki_links": [
-    "Blockchain",
     "Front-Running",
+    "Proposer-Builder Separation",
+    "DeFi Ecosystem",
     "Transaction Ordering",
     "BlockchainDomain",
-    "Proposer-Builder Separation",
+    "Blockchain",
     "Consensus Security",
-    "DeFi Ecosystem",
     "Mempool"
   ],
   "ontology": {

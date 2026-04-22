@@ -8,11 +8,11 @@
     "Edge Computing Architecture"
   ],
   "wiki_links": [
-    "Cloud Computing",
-    "System Architecture",
     "Edge Computing Architecture",
     "Metaverse Infrastructure",
-    "metaverse"
+    "metaverse",
+    "Cloud Computing",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-9884",

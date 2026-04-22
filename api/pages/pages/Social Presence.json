@@ -9,10 +9,10 @@
     "TC-0010-Synchronous-Collaboration"
   ],
   "wiki_links": [
-    "TelecollaborationDomain",
-    "Telecollaboration",
     "Presence",
-    "Presence Research"
+    "Telecollaboration",
+    "Presence Research",
+    "TelecollaborationDomain"
   ],
   "ontology": {
     "term_id": "TC-9004",

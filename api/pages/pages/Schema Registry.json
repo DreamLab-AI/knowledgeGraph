@@ -9,12 +9,12 @@
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
-    "metaverse",
-    "Schema Evolution",
-    "Event Streaming",
     "Data Governance",
+    "Event Streaming",
+    "API Contracts",
     "Data Management",
-    "API Contracts"
+    "metaverse",
+    "Schema Evolution"
   ],
   "ontology": {
     "term_id": "MV-10028",

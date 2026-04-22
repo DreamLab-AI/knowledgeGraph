@@ -8,12 +8,12 @@
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Interactive Storytelling",
-    "Narrative Content",
     "Storytelling Structure",
-    "Narrative Theme",
+    "Interactive Storytelling",
     "Non Linear Narrative",
-    "metaverse"
+    "Narrative Content",
+    "metaverse",
+    "Narrative Theme"
   ],
   "ontology": {
     "term_id": "MV-9978",

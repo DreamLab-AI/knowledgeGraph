@@ -7,12 +7,12 @@
     "Communication Theory"
   ],
   "wiki_links": [
-    "Telecollaboration",
+    "Spatial Audio",
+    "Spatial Computing",
     "AR Collaboration",
     "Telepresence",
-    "Spatial Computing",
-    "VR Meeting",
-    "Spatial Audio"
+    "Telecollaboration",
+    "VR Meeting"
   ],
   "ontology": {
     "term_id": "TC-0605",

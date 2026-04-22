@@ -34,13 +34,13 @@
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
+    "Compliance Verification",
     "KYC/AML Requirements",
-    "Blockchain",
     "Cryptography",
-    "Self-Sovereign Identity",
-    "Privacy",
+    "Blockchain",
     "Verifiable Credentials",
-    "Compliance Verification"
+    "Privacy",
+    "Self-Sovereign Identity"
   ],
   "ontology": {
     "term_id": "NGM-7002",

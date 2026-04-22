@@ -6,12 +6,12 @@
     "Networking Layer"
   ],
   "wiki_links": [
-    "Internet Architecture",
     "Network Protocols",
     "Network Interoperability",
     "Telecommunications",
-    "Technical Standards",
-    "metaverse"
+    "metaverse",
+    "Internet Architecture",
+    "Technical Standards"
   ],
   "ontology": {
     "term_id": "MV-9983",

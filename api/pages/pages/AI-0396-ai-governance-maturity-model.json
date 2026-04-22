@@ -5,10 +5,10 @@
   "backlinks": [],
   "wiki_links": [
     "Singapore Model AI Governance Framework",
-    "AIEthicsDomain",
-    "ConceptualLayer",
     "CMMI Institute",
-    "ISO 21827"
+    "ISO 21827",
+    "ConceptualLayer",
+    "AIEthicsDomain"
   ],
   "ontology": {
     "term_id": "AI-0396",

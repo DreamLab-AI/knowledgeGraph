@@ -14,13 +14,13 @@
     "Tokenization"
   ],
   "wiki_links": [
-    "Symmetric Encryption",
+    "Random Number Generation",
+    "Asymmetric Encryption",
     "Cryptography",
     "Cryptographic Key Management",
-    "Random Number Generation",
-    "Digital Signature",
-    "Asymmetric Encryption",
-    "Key Derivation Function"
+    "Key Derivation Function",
+    "Symmetric Encryption",
+    "Digital Signature"
   ],
   "ontology": {
     "term_id": "BC-7006",

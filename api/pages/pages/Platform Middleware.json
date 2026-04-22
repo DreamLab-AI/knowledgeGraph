@@ -6,12 +6,12 @@
     "Platform Layer"
   ],
   "wiki_links": [
-    "API Management",
     "Software Infrastructure",
     "Enterprise Service Bus",
-    "System Interoperability",
     "metaverse",
-    "Integration Platform"
+    "Integration Platform",
+    "API Management",
+    "System Interoperability"
   ],
   "ontology": {
     "term_id": "MV-10008",

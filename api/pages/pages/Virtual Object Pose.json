@@ -6,11 +6,11 @@
     "Spatial Anchor"
   ],
   "wiki_links": [
-    "Virtual Objects",
     "3D Transformation",
-    "Motion Tracking",
     "Spatial Computing",
-    "metaverse"
+    "metaverse",
+    "Motion Tracking",
+    "Virtual Objects"
   ],
   "ontology": {
     "term_id": "MV-10134",

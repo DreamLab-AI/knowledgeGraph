@@ -12,13 +12,13 @@
     "Participant Protection"
   ],
   "wiki_links": [
-    "Blockchain",
-    "Token Economy",
     "Voting Mechanisms",
+    "Decentralised Decision-Making",
+    "Blockchain",
     "Smart Contracts",
     "Consensus Mechanisms",
-    "DAO Governance",
-    "Decentralised Decision-Making"
+    "Token Economy",
+    "DAO Governance"
   ],
   "ontology": {
     "term_id": "NGM-7037",

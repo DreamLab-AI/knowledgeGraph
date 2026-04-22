@@ -5,13 +5,13 @@
   "backlinks": [],
   "wiki_links": [
     "Mixed Reality Interaction",
-    "Augmented Reality Experiences",
-    "Optical Systems",
     "Spatial Computing",
-    "Display Hardware",
-    "Pose Tracking",
     "Display Technology",
-    "metaverse"
+    "Optical Systems",
+    "metaverse",
+    "Augmented Reality Experiences",
+    "Display Hardware",
+    "Pose Tracking"
   ],
   "ontology": {
     "term_id": "MV-9769",

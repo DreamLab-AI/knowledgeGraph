@@ -13,16 +13,16 @@
     "Metaverse Architecture Stack"
   ],
   "wiki_links": [
-    "Core Technology",
-    "System Integration",
-    "Standard Protocols",
-    "Common Data Formats",
     "Data Exchange",
+    "Common Data Formats",
+    "System Integration",
     "Technical Standard",
-    "Data Sharing",
+    "Standard Protocols",
+    "Core Technology",
     "System Capability",
+    "Enterprise Connectivity",
     "Cross-Platform Identity",
-    "Enterprise Connectivity"
+    "Data Sharing"
   ],
   "ontology": {
     "term_id": "NGM-7039",

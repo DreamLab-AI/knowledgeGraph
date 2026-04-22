@@ -22,17 +22,17 @@
     "Democratic Participation"
   ],
   "wiki_links": [
-    "Core Technology",
     "Technical Standard",
-    "Risk Management",
-    "Performance Management",
-    "Policy Enforcement",
-    "Strategic Alignment",
+    "Core Technology",
     "Legal Framework",
     "Compliance",
-    "Organisational Framework",
+    "Risk Management",
+    "Performance Management",
     "Decision Rights",
-    "Accountability"
+    "Organisational Framework",
+    "Accountability",
+    "Policy Enforcement",
+    "Strategic Alignment"
   ],
   "ontology": {
     "term_id": "NGM-7023",

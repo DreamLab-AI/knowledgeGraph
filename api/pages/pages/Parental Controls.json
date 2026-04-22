@@ -7,12 +7,12 @@
     "Digital Well-Being Index"
   ],
   "wiki_links": [
-    "Content Filtering",
     "Child Safety",
-    "Digital Safety",
-    "Safe Online Environment",
     "Screen Time Management",
-    "metaverse"
+    "Safe Online Environment",
+    "metaverse",
+    "Content Filtering",
+    "Digital Safety"
   ],
   "ontology": {
     "term_id": "MV-9993",

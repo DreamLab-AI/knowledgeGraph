@@ -10,15 +10,15 @@
     "Symmetric Encryption"
   ],
   "wiki_links": [
-    "Information Security",
-    "Symmetric Encryption",
-    "Blockchain",
-    "Cryptography",
-    "Hash Function",
-    "Digital Signature",
-    "Key Derivation Function",
     "Elliptic Curve Cryptography",
-    "Public Key Infrastructure"
+    "Public Key Infrastructure",
+    "Cryptography",
+    "Blockchain",
+    "Information Security",
+    "Hash Function",
+    "Key Derivation Function",
+    "Symmetric Encryption",
+    "Digital Signature"
   ],
   "ontology": {
     "term_id": "BC-8001",

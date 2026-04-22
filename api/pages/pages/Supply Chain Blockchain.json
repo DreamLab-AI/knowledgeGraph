@@ -9,10 +9,10 @@
     "Hyperledger Fabric",
     "Blockchain",
     "Provenance Verification",
-    "IoT Integration",
-    "Enterprise Blockchain",
     "Smart Contracts",
-    "Product Traceability"
+    "Product Traceability",
+    "IoT Integration",
+    "Enterprise Blockchain"
   ],
   "ontology": {
     "term_id": "BC-7002",

@@ -7,12 +7,12 @@
     "ModelArchitecture"
   ],
   "wiki_links": [
-    "MachineLearning",
     "Artificial Intelligence",
-    "DPO",
-    "NeuralNetworkArchitecture",
+    "MachineLearning",
     "ModelArchitecture",
-    "Model Training"
+    "Model Training",
+    "NeuralNetworkArchitecture",
+    "DPO"
   ],
   "ontology": {
     "term_id": "AI-7005",

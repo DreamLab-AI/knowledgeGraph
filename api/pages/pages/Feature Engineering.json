@@ -7,12 +7,12 @@
     "Data Cleaning"
   ],
   "wiki_links": [
-    "Feature Selection",
-    "Machine Learning",
-    "Dimensionality Reduction",
     "Data Preprocessing",
+    "Dimensionality Reduction",
     "Model Training",
+    "Feature Selection",
     "Model Performance",
+    "Machine Learning",
     "Data Cleaning"
   ],
   "ontology": {

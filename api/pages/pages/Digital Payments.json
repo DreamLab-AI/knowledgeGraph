@@ -9,17 +9,17 @@
     "Digital Economy"
   ],
   "wiki_links": [
-    "Network Infrastructure",
-    "Virtual Purchases",
     "Cryptocurrency",
-    "E-Commerce",
+    "Network Infrastructure",
+    "Mobile Payments",
+    "Payment Processor",
+    "CBDC",
+    "metaverse",
     "Cross-Border Transfer",
     "Financial Transactions",
-    "Payment Processor",
-    "Digital Wallet",
-    "Mobile Payments",
-    "CBDC",
-    "metaverse"
+    "Virtual Purchases",
+    "E-Commerce",
+    "Digital Wallet"
   ],
   "ontology": {
     "term_id": "MV-9865",

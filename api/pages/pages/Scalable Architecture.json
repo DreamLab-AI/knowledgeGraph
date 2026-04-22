@@ -7,12 +7,12 @@
     "Metaverse Architecture Stack"
   ],
   "wiki_links": [
-    "Cloud Computing",
     "Distributed Systems",
-    "High Availability",
-    "System Architecture",
     "Microservices",
-    "metaverse"
+    "metaverse",
+    "High Availability",
+    "Cloud Computing",
+    "System Architecture"
   ],
   "ontology": {
     "term_id": "MV-10027",

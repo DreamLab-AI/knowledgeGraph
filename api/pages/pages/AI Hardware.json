@@ -14,15 +14,15 @@
     "TPU"
   ],
   "wiki_links": [
-    "Computer Hardware",
     "Artificial Intelligence",
-    "Machine Learning",
-    "Neural Networks",
-    "AI Infrastructure",
-    "High-Performance Computing",
     "Large Language Models",
+    "High-Performance Computing",
+    "AI Infrastructure",
     "AI Training",
-    "Deep Learning"
+    "Deep Learning",
+    "Machine Learning",
+    "Computer Hardware",
+    "Neural Networks"
   ],
   "ontology": {
     "term_id": "AI-7020",

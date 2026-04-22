@@ -16,13 +16,13 @@
     "Digital Ritual"
   ],
   "wiki_links": [
-    "Social Interaction",
-    "3D Rendering Engine",
-    "Animation Controller",
+    "User Representation",
     "Embodied Presence",
     "Input Processing",
+    "3D Rendering Engine",
+    "Social Interaction",
     "Virtual Character System",
-    "User Representation"
+    "Animation Controller"
   ],
   "ontology": {
     "term_id": "MV-9792",

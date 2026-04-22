@@ -322,22 +322,22 @@
     "Clinical Decision Support"
   ],
   "wiki_links": [
+    "WebXR",
     "VirtualEconomies",
     "SpatialComputing",
     "ArtificialIntelligence",
-    "AvatarSystems",
-    "WebXR",
-    "HapticFeedback",
+    "ExtendedRealityXR",
     "BlockchainTechnology",
+    "HapticFeedback",
     "CloudComputing",
     "DigitalTwin",
     "DecentralizedTechnologies",
+    "AugmentedReality",
+    "Interoperability",
+    "TechnologyDomain",
     "VirtualReality",
     "ExtendedReality",
-    "Interoperability",
-    "AugmentedReality",
-    "ExtendedRealityXR",
-    "TechnologyDomain"
+    "AvatarSystems"
   ],
   "ontology": {
     "term_id": "MV-7000",

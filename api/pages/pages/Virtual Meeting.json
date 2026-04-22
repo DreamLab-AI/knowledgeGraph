@@ -7,11 +7,11 @@
     "Communication Theory"
   ],
   "wiki_links": [
-    "Telecollaboration",
-    "Screen Sharing",
+    "Remote Collaboration",
     "Video Conference",
+    "Screen Sharing",
     "Virtual Whiteboard",
-    "Remote Collaboration"
+    "Telecollaboration"
   ],
   "ontology": {
     "term_id": "TC-0602",

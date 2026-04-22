@@ -15,19 +15,19 @@
     "Spatial Tracking System"
   ],
   "wiki_links": [
-    "Pose Estimation",
-    "Eye Tracking",
+    "User Identification",
     "Head-Mounted Displays",
-    "Augmented Reality",
-    "Hand Controllers",
     "Motion Capture Systems",
-    "XR Input Technologies",
-    "Virtual Reality",
-    "Embodied Presence",
-    "Metaverse",
-    "Gesture Control",
     "Avatar Animation",
-    "User Identification"
+    "Augmented Reality",
+    "Pose Estimation",
+    "Hand Controllers",
+    "Embodied Presence",
+    "Virtual Reality",
+    "Metaverse",
+    "Eye Tracking",
+    "Gesture Control",
+    "XR Input Technologies"
   ],
   "ontology": {
     "term_id": "NGM-7036",

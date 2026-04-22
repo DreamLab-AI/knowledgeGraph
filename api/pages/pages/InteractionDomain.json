@@ -38,22 +38,22 @@
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
-    "NaturalLanguageInterface",
-    "UXON",
-    "HumanComputerInteraction",
-    "VoiceInteraction",
     "HCI-ON",
     "AdaptiveInterfaces",
-    "InteractionPatterns",
-    "UserModeling",
-    "UserExperience",
-    "HCIO",
     "GestureRecognition",
-    "UserInterfaceDesign",
-    "AccessibilityDomain",
+    "VoiceInteraction",
+    "HCIO",
+    "HumanComputerInteraction",
+    "PervasiveComputing",
     "HapticInteraction",
+    "InteractionPatterns",
+    "NaturalLanguageInterface",
+    "UserModeling",
+    "UserInterfaceDesign",
     "TechnologyDomain",
-    "PervasiveComputing"
+    "UserExperience",
+    "UXON",
+    "AccessibilityDomain"
   ],
   "ontology": {
     "term_id": "AI-7010",

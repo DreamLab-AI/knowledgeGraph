@@ -9,10 +9,10 @@
   ],
   "wiki_links": [
     "Human-Computer Interface",
-    "Gesture Recognition",
-    "Hardware Acceleration",
     "Natural VR Interaction",
-    "metaverse"
+    "metaverse",
+    "Hardware Acceleration",
+    "Gesture Recognition"
   ],
   "ontology": {
     "term_id": "MV-9925",

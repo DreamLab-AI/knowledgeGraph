@@ -12,19 +12,19 @@
     "Marketplace"
   ],
   "wiki_links": [
-    "Futures Markets",
-    "Spot Markets",
-    "DEX",
+    "Market Efficiency",
+    "Market Maker",
     "Market Microstructure",
-    "Order Book",
+    "Spot Markets",
+    "MEV",
+    "Fair Valuation",
     "Arbitrage",
     "Price Transparency",
-    "Fair Valuation",
-    "Market Maker",
-    "MEV",
     "Liquidity",
-    "Market Efficiency",
-    "FinancialDomain"
+    "FinancialDomain",
+    "Order Book",
+    "Futures Markets",
+    "DEX"
   ],
   "ontology": {
     "term_id": "NGM-7038",

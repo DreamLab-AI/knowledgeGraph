@@ -12,13 +12,13 @@
     "Voice Memo"
   ],
   "wiki_links": [
-    "Telecollaboration",
     "MV Domain",
+    "BC Domain",
+    "Technology Domain",
     "AI Domain",
     "RB Domain",
-    "BC Domain",
-    "TC-0001-telecollaboration-domain",
-    "Technology Domain"
+    "Telecollaboration",
+    "TC-0001-telecollaboration-domain"
   ],
   "ontology": {
     "term_id": "AI-7016",

@@ -1,7 +1,7 @@
 public:: true
 
 	- #Public page automatically published
-- ![image.png](../assets/image_1711141602756_0.png){:height 336, :width 1067}
+- ![image.png](../assets/image_1711141602756_0.png){:height 344, :width 802}
   id:: 661d5f74-f334-4872-ba92-51244c2fb490
 -
 - ## Dreamlab

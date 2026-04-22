@@ -7,11 +7,11 @@
   ],
   "wiki_links": [
     "Coordinate System",
-    "3D Positioning",
     "Reference Frame",
-    "GeoPose Standard",
+    "Object Positioning",
+    "3D Positioning",
     "metaverse",
-    "Object Positioning"
+    "GeoPose Standard"
   ],
   "ontology": {
     "term_id": "MV-10057",

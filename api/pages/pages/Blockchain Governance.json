@@ -4,11 +4,11 @@
   "content": "- ### OntologyBlock\n  id:: blockchain-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0603\n\t- preferred-term:: Blockchain Governance\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.\n\t- owl:class:: bc:BlockchainGovernance\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: blockchain-governance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[DAO Governance]]\n\t\t- is-parent-of:: [[On-Chain Governance]]\n\t\t- is-parent-of:: [[Voting Mechanism]]\n\t\t- related-to:: [[Token Economics]]",
   "backlinks": [],
   "wiki_links": [
-    "Token Economics",
     "Voting Mechanism",
+    "Token Economics",
+    "Blockchain Technology",
     "Blockchain Entity",
     "On-Chain Governance",
-    "Blockchain Technology",
     "DAO Governance"
   ],
   "ontology": {

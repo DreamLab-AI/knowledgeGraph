@@ -10,12 +10,12 @@
     "Deep Learning"
   ],
   "wiki_links": [
-    "Adversarial Robustness",
     "Artificial Intelligence",
-    "Interpretability",
+    "Value Alignment",
     "AI Governance",
+    "Adversarial Robustness",
     "AI Alignment",
-    "Value Alignment"
+    "Interpretability"
   ],
   "ontology": {
     "term_id": "AI-4009",

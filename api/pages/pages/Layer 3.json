@@ -8,18 +8,18 @@
     "Agentic Internet"
   ],
   "wiki_links": [
-    "Blockchain",
+    "Immutable X",
     "State Channel",
     "Scalability Solutions",
-    "General-Purpose Smart Contract Platform",
-    "dYdX v4",
-    "Application-Specific Blockchain",
-    "Rollup",
     "Arbitrum Orbit",
-    "Custom Execution Environment",
-    "Layer 2",
+    "General-Purpose Smart Contract Platform",
+    "Blockchain",
     "Layer 1",
-    "Immutable X"
+    "dYdX v4",
+    "Layer 2",
+    "Custom Execution Environment",
+    "Rollup",
+    "Application-Specific Blockchain"
   ],
   "ontology": {
     "term_id": "BC-8009",

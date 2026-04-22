@@ -10,11 +10,11 @@
     "A-Star Algorithm"
   ],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Optimization",
     "Pathfinding",
-    "Planning and Scheduling",
-    "Graph Theory"
+    "Artificial Intelligence",
+    "Graph Theory",
+    "Optimization",
+    "Planning and Scheduling"
   ],
   "ontology": {
     "term_id": "AI-4000",

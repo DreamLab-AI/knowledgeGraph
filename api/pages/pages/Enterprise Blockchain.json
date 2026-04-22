@@ -9,11 +9,11 @@
   "wiki_links": [
     "Regulatory Compliance",
     "Hyperledger Fabric",
-    "Blockchain",
-    "Business Process Automation",
-    "Smart Contracts",
+    "Supply Chain Blockchain",
     "Permissioned Networks",
-    "Supply Chain Blockchain"
+    "Blockchain",
+    "Smart Contracts",
+    "Business Process Automation"
   ],
   "ontology": {
     "term_id": "BC-7007",

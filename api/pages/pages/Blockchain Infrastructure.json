@@ -21,17 +21,17 @@
     "Digital Real Estate"
   ],
   "wiki_links": [
-    "Distributed Systems Infrastructure",
-    "Blockchain",
-    "Cryptography",
-    "Web3 Infrastructure",
-    "Blockchain Node",
-    "Peer-to-Peer Network",
-    "Smart Contracts",
-    "Blockchain Application",
-    "Consensus Mechanism",
     "Layer 2 Scaling",
-    "Cross-Chain Bridge"
+    "Consensus Mechanism",
+    "Blockchain Application",
+    "Peer-to-Peer Network",
+    "Blockchain Node",
+    "Cross-Chain Bridge",
+    "Web3 Infrastructure",
+    "Cryptography",
+    "Blockchain",
+    "Distributed Systems Infrastructure",
+    "Smart Contracts"
   ],
   "ontology": {
     "term_id": "BC-7003",
