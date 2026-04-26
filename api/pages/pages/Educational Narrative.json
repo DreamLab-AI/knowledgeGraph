@@ -1,39 +1,47 @@
 {
-  "id": "Educational Narrative",
+  "id": "educational-narrative",
   "title": "Educational Narrative",
-  "content": "- ### OntologyBlock\n  id:: educational-narrative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9891\n\t- source-domain:: mv\n\t- preferred-term:: Educational Narrative\n\t- status:: active\n\t- owl:class:: mv:EducationalNarrative\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.\n\t- #### Relationships\n\t  id:: educational-narrative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Immersive Learning]]\n\t\t- related-to:: [[Game Narratives]]\n\t\t- related-to:: [[Digital Storytelling]]\n\t\t- enables:: [[Personalised Learning]]\n\n## Technical Details\n\n### Narrative Transportation\n- Places learners within engaging storylines\n- Makes complex concepts more approachable\n- Learners become active participants shaping the narrative\n- Strengthens connection to subject matter through agency\n\n### Digital Storytelling Techniques\n- Interactive content with user-influenced story progression\n- VR and AR for full immersion and heightened emotional impact\n- Non-Player Characters (NPCs) delivering educational content\n- Scenario-based learning with choice consequences\n\n### Platform Implementation\n- **Classlet**: Metaverse platform designed for immersive learning experiences\n- NPC integration for varied educational tasks\n- Educator customisation of content mapped to characters\n- Question-answering and scenario-based decision-making\n\n## Applications\n\n### History Education\n- Social VR and interactive storytelling tools enhance historical understanding\n- Participatory exploration of historical events\n- Increased student engagement, interaction, and autonomy\n- Empathetic connection to historical figures and events\n\n### Language Learning\n- Digital storytelling for language acquisition\n- Creative and interactive techniques in metaverse environments\n- Contextual learning through narrative immersion\n\n### STEM Education\n- Complex scientific concepts made accessible through narrative\n- Simulation-based learning with story frameworks\n- Collaborative problem-solving narratives\n\n## Pedagogical Framework\n\n### Immersion Types\n- **Narrative Immersion**: Simulations and role-play\n- **Ludic Immersion**: Challenge-based, exploratory projects, games\n- **Environmental Immersion**: Realistic virtual contexts\n\n### Design Considerations\n- Accessibility and inclusivity requirements\n- Long-term integration strategies\n- Assessment alignment with narrative learning objectives\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:EducationalNarrative\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Immersive Learning]]\n  - enables:: [[Personalised Learning]]\n\n- ### Content\n\n  ## Technical Details\n\n  ### Narrative Transportation\n  - Places learners within engaging storylines\n  - Makes complex concepts more approachable\n  - Learners become active participants shaping the narrative\n  - Strengthens connection to subject matter through agency\n\n  ### Digital Storytelling Techniques\n  - Interactive content with user-influenced story progression\n  - VR and AR for full immersion and heightened emotional impact\n  - Non-Player Characters (NPCs) delivering educational content\n  - Scenario-based learning with choice consequences\n\n  ### Platform Implementation\n  - **Classlet**: Metaverse platform designed for immersive learning experiences\n  - NPC integration for varied educational tasks\n  - Educator customisation of content mapped to characters\n  - Question-answering and scenario-based decision-making\n\n  ## Applications\n\n  ### History Education\n  - Social VR and interactive storytelling tools enhance historical understanding\n  - Participatory exploration of historical events\n  - Increased student engagement, interaction, and autonomy\n  - Empathetic connection to historical figures and events\n\n  ### Language Learning\n  - Digital storytelling for language acquisition\n  - Creative and interactive techniques in metaverse environments\n  - Contextual learning through narrative immersion\n\n  ### STEM Education\n  - Complex scientific concepts made accessible through narrative\n  - Simulation-based learning with story frameworks\n  - Collaborative problem-solving narratives\n\n  ## Pedagogical Framework\n\n  ### Immersion Types\n  - **Narrative Immersion**: Simulations and role-play\n  - **Ludic Immersion**: Challenge-based, exploratory projects, games\n  - **Environmental Immersion**: Realistic virtual contexts\n\n  ### Design Considerations\n  - Accessibility and inclusivity requirements\n  - Long-term integration strategies\n  - Assessment alignment with narrative learning objectives\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Game Narratives",
     "Cultural Heritage XR Experience"
   ],
   "wiki_links": [
+    "Immersive Learning",
     "Personalised Learning",
-    "Game Narratives",
-    "Digital Storytelling",
-    "metaverse",
-    "Immersive Learning"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:educational-narrative",
+    "iri": "http://narrativegoldmine.com/spatial-computing#EducationalNarrative",
+    "content_hash": "sha256-12-78b93c49ddb2",
+    "legacy_term_id": "MV-9891",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:educational-narrative",
+    "schema_version": "v2",
     "term_id": "MV-9891",
     "preferred_term": "Educational Narrative",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#EducationalNarrative",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:EducationalNarrative",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:EducationalNarrative",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Immersive Learning"
@@ -48,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Game Narratives",
-        "Digital Storytelling"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

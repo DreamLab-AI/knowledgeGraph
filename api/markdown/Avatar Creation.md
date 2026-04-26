@@ -1,31 +1,56 @@
-id:: avatar-creation-ontology
+iri:: http://narrativegoldmine.com/spatial-computing#AvatarCreation
+uri:: urn:visionclaw:concept:spatial-computing:avatar-creation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:avatar-creation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Avatar Creation
+content-hash:: sha256-12-e39b3369ae8e
+legacy-term-id:: MV-9788
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-- ### OntologyBlock
-  id:: Avatar Creation
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9788
-  - preferred-term:: Avatar Creation
-  - source-domain:: mv
-  - owl:class:: mv:AvatarCreation
-  - status:: active
-  - definition:: Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.
+- ### Definition
+  - Avatar Creation is the process of designing and generating 3D digital representations of users for metaverse environments, encompassing selfie-based AI generation, manual customization tools, full-body scanning, and procedural generation techniques that enable personalized virtual identities.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:AvatarCreation
+  - owl-role:: Concept
+
+- ### Relationships
+  - bridges-to:: [[DID Nostr Identity]] (ngm)
   - is-subclass-of:: [[Digital Identity Creation]]
-  - enables:: [[Virtual Self-Expression]], [[Metaverse Participation]], [[Digital Persona Management]]
   - requires:: [[3D Modeling Tools]], [[AI Generation Systems]], [[Customization Interfaces]]
+  - enables:: [[Virtual Self-Expression]], [[Metaverse Participation]], [[Digital Persona Management]]
 
-### Technical Details
-Key technologies include:
-- **AI-Powered Generation**: Single selfie to fully customizable 3D avatar transformation (MetaPerson Creator, Avatar SDK)
-- **Real-Time 3D Engines**: Unity and Unreal Engine for avatar rendering and interaction
-- **Full-Body Scanning**: Photogrammetry and depth sensors for realistic body capture
-- **Procedural Generation**: Algorithmic creation of avatar variations and accessories
+- ### Content
 
-### Avatar Types
-- **2D Avatars**: Simple profile representations for social platforms
-- **3D Cartoon Avatars**: Stylized characters for casual metaverse applications
-- **Photorealistic Avatars**: Lifelike representations using advanced rendering
-- **AI Avatars**: ML-driven animations from video data with motion prints
+  ### Technical Details
+  Key technologies include:
+  - **AI-Powered Generation**: Single selfie to fully customizable 3D avatar transformation (MetaPerson Creator, Avatar SDK)
+  - **Real-Time 3D Engines**: Unity and Unreal Engine for avatar rendering and interaction
+  - **Full-Body Scanning**: Photogrammetry and depth sensors for realistic body capture
+  - **Procedural Generation**: Algorithmic creation of avatar variations and accessories
 
-### 2024 Developments
-Meta introducing enhanced customization with intricate facial features, expanded clothing options, and branded items for Connect 2024. Cross-platform platforms like Ready Player Me support 1000+ compatible applications.
+  ### Avatar Types
+  - **2D Avatars**: Simple profile representations for social platforms
+  - **3D Cartoon Avatars**: Stylized characters for casual metaverse applications
+  - **Photorealistic Avatars**: Lifelike representations using advanced rendering
+  - **AI Avatars**: ML-driven animations from video data with motion prints
+
+  ### 2024 Developments
+  Meta introducing enhanced customization with intricate facial features, expanded clothing options, and branded items for Connect 2024. Cross-platform platforms like Ready Player Me support 1000+ compatible applications.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

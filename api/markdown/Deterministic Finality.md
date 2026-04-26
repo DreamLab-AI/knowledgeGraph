@@ -1,164 +1,178 @@
-- ### OntologyBlock
-  id:: deterministic-finality-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8004
-	- preferred-term:: Deterministic Finality
-	- status:: active
-	- public-access:: true
-	- definition:: Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.
-	- belongsToDomain:: [[Blockchain]]
-	- owl:class:: bc:DeterministicFinality
+iri:: http://narrativegoldmine.com/blockchain#DeterministicFinality
+uri:: urn:visionclaw:concept:blockchain:deterministic-finality
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:deterministic-finality
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Deterministic Finality
+content-hash:: sha256-12-9372123862a4
+legacy-term-id:: BC-8004
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1016
-title: Deterministic Finality
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted. Requires supermajority validator agreement (typically 2/3+) and delivers instant certainty without probabilistic confirmation waiting.
 
-# Deterministic Finality
+- ### Semantic Classification
+  - owl-class:: blockchain:DeterministicFinality
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-## Definition
-- Transaction finality achieved through explicit protocol mechanism guaranteeing irreversibility
-- Provides absolute certainty that finalized blocks cannot be reverted
-- Characteristic of Byzantine Fault Tolerant (BFT) consensus mechanisms
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - requires:: [[Validator Set]]
+  - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
 
-## Core Principles
-- **Instant Finality**: Transactions finalized upon block inclusion or shortly after
-- **Absolute Guarantee**: No probabilistic element, mathematically guaranteed
-- **Explicit Checkpoint**: Protocol-level finalization event
-- **Validator Agreement**: Requires supermajority (typically 2/3+) consensus
+- ### Content
 
-## Technical Characteristics
-- **Finalization Mechanism**: Validators explicitly vote on finality
-- **Safety Guarantee**: Conflicting blocks cannot both be finalized
-- **Liveness Trade-off**: May halt if insufficient validators participate
-- **No Chain Reorgs**: Finalized blocks never change position
+  ## Definition
+  - Transaction finality achieved through explicit protocol mechanism guaranteeing irreversibility
+  - Provides absolute certainty that finalized blocks cannot be reverted
+  - Characteristic of Byzantine Fault Tolerant (BFT) consensus mechanisms
 
-## Finalization Methods
-### Vote-Based Finality
-- Validators vote on blocks to finalize
-- Supermajority threshold (e.g., 2/3) triggers finalization
-- Examples: Tendermint, Casper FFG
+  ## Core Principles
+  - **Instant Finality**: Transactions finalized upon block inclusion or shortly after
+  - **Absolute Guarantee**: No probabilistic element, mathematically guaranteed
+  - **Explicit Checkpoint**: Protocol-level finalization event
+  - **Validator Agreement**: Requires supermajority (typically 2/3+) consensus
 
-### Signature Aggregation
-- BLS signatures combined into single proof
-- Compact finality proofs for light clients
-- Examples: Ethereum Beacon Chain, Aptos
+  ## Technical Characteristics
+  - **Finalization Mechanism**: Validators explicitly vote on finality
+  - **Safety Guarantee**: Conflicting blocks cannot both be finalized
+  - **Liveness Trade-off**: May halt if insufficient validators participate
+  - **No Chain Reorgs**: Finalized blocks never change position
 
-### Threshold Signatures
-- Distributed key generation among validators
-- M-of-N signature shares finalize block
-- Examples: DFINITY Consensus
+  ## Finalization Methods
+  ### Vote-Based Finality
+  - Validators vote on blocks to finalize
+  - Supermajority threshold (e.g., 2/3) triggers finalization
+  - Examples: Tendermint, Casper FFG
 
-### Two-Phase Commit
-- Prepare phase: validators vote on block
-- Commit phase: sufficient votes trigger finalization
-- Based on classical BFT algorithms
+  ### Signature Aggregation
+  - BLS signatures combined into single proof
+  - Compact finality proofs for light clients
+  - Examples: Ethereum Beacon Chain, Aptos
 
-## Blockchain Examples
-### Tendermint/Cosmos
-- Instant finality upon block commit
-- ~6 second finality
-- 2/3+ validator signatures required
+  ### Threshold Signatures
+  - Distributed key generation among validators
+  - M-of-N signature shares finalize block
+  - Examples: DFINITY Consensus
 
-### Algorand
-- Pure Proof-of-Stake with instant finality
-- ~4 second block time with immediate finality
-- Cryptographic sortition for validator selection
+  ### Two-Phase Commit
+  - Prepare phase: validators vote on block
+  - Commit phase: sufficient votes trigger finalization
+  - Based on classical BFT algorithms
 
-### Ethereum (Post-Merge)
-- Casper FFG finality gadget
-- ~13 minute finality (2 epochs)
-- LMD GHOST fork choice + FFG finalization
+  ## Blockchain Examples
+  ### Tendermint/Cosmos
+  - Instant finality upon block commit
+  - ~6 second finality
+  - 2/3+ validator signatures required
 
-### Polkadot
-- GRANDPA finality protocol
-- Finalizes chains rather than individual blocks
-- Can finalize multiple blocks simultaneously
+  ### Algorand
+  - Pure Proof-of-Stake with instant finality
+  - ~4 second block time with immediate finality
+  - Cryptographic sortition for validator selection
 
-## Relationships
-- type-of:: [[Transaction Finality]]
-- used-by:: [[Byzantine Fault Tolerance]]
-- contrasts-with:: [[Probabilistic Finality]]
-- requires:: [[Validator Set]]
-- provides:: [[Absolute Transaction Guarantee]]
+  ### Ethereum (Post-Merge)
+  - Casper FFG finality gadget
+  - ~13 minute finality (2 epochs)
+  - LMD GHOST fork choice + FFG finalization
 
-## Security Model
-### Safety
-- Cannot finalize conflicting blocks
-- Requires 2/3+ honest validators
-- Slashing penalties for equivocation
+  ### Polkadot
+  - GRANDPA finality protocol
+  - Finalizes chains rather than individual blocks
+  - Can finalize multiple blocks simultaneously
 
-### Liveness
-- May halt if <2/3 validators participate
-- Trade-off: safety prioritized over liveness
-- Weak subjectivity for long offline periods
+  ## Relationships
+  - type-of:: [[Transaction Finality]]
+  - used-by:: [[Byzantine Fault Tolerance]]
+  - contrasts-with:: [[Probabilistic Finality]]
+  - requires:: [[Validator Set]]
+  - provides:: [[Absolute Transaction Guarantee]]
 
-## Advantages
-- Immediate transaction certainty
-- Ideal for real-time applications
-- No waiting for confirmations
-- Suitable for regulated environments
-- Cross-chain bridges more efficient
+  ## Security Model
+  ### Safety
+  - Cannot finalize conflicting blocks
+  - Requires 2/3+ honest validators
+  - Slashing penalties for equivocation
 
-## Limitations
-- Requires known validator set
-- Vulnerable to <2/3 validator censorship
-- May halt under adverse conditions
-- Higher complexity than longest-chain
-- Weaker subjectivity assumptions
+  ### Liveness
+  - May halt if <2/3 validators participate
+  - Trade-off: safety prioritized over liveness
+  - Weak subjectivity for long offline periods
 
-## Economic Finality Variant
-- Hybrid approach (Ethereum PoS)
-- Probabilistic short-term, deterministic long-term
-- Economic penalties (slashing) for violating finality
-- Combines benefits of both models
+  ## Advantages
+  - Immediate transaction certainty
+  - Ideal for real-time applications
+  - No waiting for confirmations
+  - Suitable for regulated environments
+  - Cross-chain bridges more efficient
 
-## Practical Implications
-### For Users
-- Instant confidence in transaction settlement
-- No need to wait for confirmations
-- Better UX for time-sensitive operations
+  ## Limitations
+  - Requires known validator set
+  - Vulnerable to <2/3 validator censorship
+  - May halt under adverse conditions
+  - Higher complexity than longest-chain
+  - Weaker subjectivity assumptions
 
-### For DeFi
-- Reduced liquidation risk
-- More efficient collateral usage
-- Safer cross-chain interactions
-- Synchronous composability
+  ## Economic Finality Variant
+  - Hybrid approach (Ethereum PoS)
+  - Probabilistic short-term, deterministic long-term
+  - Economic penalties (slashing) for violating finality
+  - Combines benefits of both models
 
-### For Enterprises
-- Meets regulatory requirements for settlement
-- Integration with traditional finance systems
-- Audit-friendly transaction finality
+  ## Practical Implications
+  ### For Users
+  - Instant confidence in transaction settlement
+  - No need to wait for confirmations
+  - Better UX for time-sensitive operations
 
-## Performance Metrics
-- **Time to Finality (TTF)**: Duration from block production to finalization
-- **Finality Rate**: Percentage of blocks successfully finalized
-- **Validator Participation**: Active validator ratio
+  ### For DeFi
+  - Reduced liquidation risk
+  - More efficient collateral usage
+  - Safer cross-chain interactions
+  - Synchronous composability
 
-## Attack Vectors
-- **Long-Range Attacks**: Rewriting history from genesis (weak subjectivity)
-- **Validator Collusion**: 2/3+ validators collude to finalize conflicting blocks
-- **Censorship**: 1/3+ validators can halt finality
-- **Safety Violations**: Result in catastrophic slashing of validator stake
+  ### For Enterprises
+  - Meets regulatory requirements for settlement
+  - Integration with traditional finance systems
+  - Audit-friendly transaction finality
 
-## Checkpointing
-- Periodic finalization of earlier blocks
-- Reduces weak subjectivity period
-- Light client security without full history
+  ## Performance Metrics
+  - **Time to Finality (TTF)**: Duration from block production to finalization
+  - **Finality Rate**: Percentage of blocks successfully finalized
+  - **Validator Participation**: Active validator ratio
 
-## Related Concepts
-- [[Probabilistic Finality]]
-- [[Byzantine Fault Tolerance]]
-- [[Consensus Mechanism]]
-- [[Validator]]
+  ## Attack Vectors
+  - **Long-Range Attacks**: Rewriting history from genesis (weak subjectivity)
+  - **Validator Collusion**: 2/3+ validators collude to finalize conflicting blocks
+  - **Censorship**: 1/3+ validators can halt finality
+  - **Safety Violations**: Result in catastrophic slashing of validator stake
 
-#blockchain #finality #deterministic #bft
+  ## Checkpointing
+  - Periodic finalization of earlier blocks
+  - Reduces weak subjectivity period
+  - Light client security without full history
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Probabilistic Finality]]
+  - [[Byzantine Fault Tolerance]]
+  - [[Consensus Mechanism]]
+  - [[Validator]]
+
+  #blockchain #finality #deterministic #bft
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

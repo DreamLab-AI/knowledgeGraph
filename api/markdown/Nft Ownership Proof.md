@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: nftownershipproof-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#NFTOwnershipProof
+uri:: urn:visionclaw:concept:blockchain:nft-ownership-proof
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:nft-ownership-proof
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: NFT Ownership Proof
+content-hash:: sha256-12-0c917e8ccfd7
+legacy-term-id:: BC-0571
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0571
-    - filename-history:: ["BC-0571-nftownershipproof.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0571
-    - preferred-term:: NFT Ownership Proof
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Cryptographic proof of NFT ownership.
 
-  - **Definition**
-    - definition:: Cryptographic proof of NFT ownership.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:NftOwnershipProof
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:NftOwnershipProof
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  NFT Ownership Proof — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NftOwnershipProof))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NftOwnershipProof "NFT Ownership Proof"@en)
-      (AnnotationAssertion rdfs:comment :NftOwnershipProof
-        "Cryptographic proof of NFT ownership."@en)
-      ```
-
-- ## About NFT Ownership Proof
-  Cryptographic proof of NFT ownership.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

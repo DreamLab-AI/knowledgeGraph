@@ -1,23 +1,41 @@
-- ### OntologyBlock
-  id:: immersive-workspaces-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0011
-	- preferred-term:: Immersive Workspaces
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:ImmersiveWorkspaces
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Spatial & Immersive
+iri:: http://narrativegoldmine.com/spatial-computing#ImmersiveWorkspaces
+uri:: urn:visionclaw:concept:spatial-computing:immersive-workspaces
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:immersive-workspaces
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Immersive Workspaces
+content-hash:: sha256-12-8faf243dc026
+legacy-term-id:: ME-0011
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ImmersiveWorkspaces
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- #ImmersiveWorkspaces
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  - #ImmersiveWorkspaces
   - ## Definition
     - An immersive workspace is a physical or virtual environment enhanced with spatial and immersive technologies—such as augmented reality (AR), virtual reality (VR), mixed reality (MR), and advanced sensor systems—to enable users to interact intuitively with digital content and each other in three-dimensional space, fostering a sense of presence and deep engagement (Igloo Vision, 2021; Treeview Studio, 2023).
     - These workspaces integrate spatial computing principles, allowing for real-time manipulation of data, collaborative visualisation, and seamless transitions between physical and digital environments (Varjo, 2023; Reworked, 2024).
@@ -29,8 +47,9 @@
       - Integration with digital twin technology for real-time monitoring and simulation of physical assets.
       - Adoption of haptic feedback and user tracking systems to enhance realism and interaction fidelity (XR Today, 2024).
     - Platforms such as Igloo Core Engine and Varjo’s XR solutions enable scalable deployment across diverse workspace configurations.
-  - ## UK Context and Examples (North England Focus)
-    - The UK has seen growing investment in immersive workspaces, particularly in technology hubs such as Manchester, Leeds, and Newcastle.
+
+  #### UK Context
+  - The UK has seen growing investment in immersive workspaces, particularly in technology hubs such as Manchester, Leeds, and Newcastle.
     - Notable examples:
       - **Igloo Vision (Manchester):** Provides immersive rooms for businesses and universities, supporting collaborative design, training, and data visualisation. Their technology is used by organisations including the NHS and local councils for immersive training and scenario planning.
       - **Digital Catapult (Newcastle):** Supports immersive technology adoption through its North East Digital Innovation Hub, offering access to XR hardware and expertise for SMEs and public sector organisations.
@@ -54,20 +73,6 @@
       - Greater emphasis on user experience, accessibility, and inclusivity in workspace design.
     - In the UK, continued government and private sector investment—especially in the North—will likely accelerate adoption and innovation in immersive workspace technologies.
 
-
-## UK Context
-
-- British contributions and implementations
-  - Research institutions and programmes
-  - Industry adoption
-  - North England innovation (where relevant)
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Spatial & Immersive
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

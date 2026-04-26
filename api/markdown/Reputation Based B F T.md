@@ -1,45 +1,36 @@
-- ### OntologyBlock
-  id:: reputationbasedbft-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#ReputationBasedBFT
+uri:: urn:visionclaw:concept:blockchain:reputation-based-bft
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:reputation-based-bft
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Reputation-Based BFT
+content-hash:: sha256-12-db153f0920ef
+legacy-term-id:: BC-0562
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0562
-    - filename-history:: ["BC-0562-reputationbasedbft.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0562
-    - preferred-term:: Reputation-Based BFT
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
 
-  - **Definition**
-    - definition:: A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:ReputationBasedBFT
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:ReputationBasedBFT
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Byzantine Fault Tolerance]]
-    - also-known-as:: RBFT
+- ### Content
+  Reputation-Based BFT — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ReputationBasedBFT))
-      (SubClassOf :ReputationBasedBFT :ByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ReputationBasedBFT "Reputation-Based BFT"@en)
-      (AnnotationAssertion rdfs:comment :ReputationBasedBFT
-        "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior."@en)
-      ```
-
-- ## About Reputation-Based BFT
-  A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

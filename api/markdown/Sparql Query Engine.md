@@ -1,36 +1,52 @@
-- ### OntologyBlock
-  id:: sparql-query-engine-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10049
-	- source-domain:: mv
-	- preferred-term:: Sparql Query Engine
-	- status:: active
-	- definition:: A processor implementing the SPARQL Protocol and RDF Query Language (W3C standard) for retrieving, manipulating, and joining data stored in Resource Description Framework graphs, enabling semantic web queries through pattern matching of subject-predicate-object triples with support for filtering, aggregation, and federated queries.
-	- owl:class:: mv:SparqlQueryEngine
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: sparql-query-engine-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Query Processor]]
-		- related-to:: [[RDF Database]]
-		- related-to:: [[Semantic Web Standards]]
-		- related-to:: [[Knowledge Graph]]
-		- enables:: [[Semantic Data Retrieval]]
-	- #### Key Implementations
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#SparqlQueryEngine
+uri:: urn:visionclaw:concept:spatial-computing:sparql-query-engine
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:sparql-query-engine
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Sparql Query Engine
+content-hash:: sha256-12-cd608b16c2cf
+legacy-term-id:: MV-10049
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - A processor implementing the SPARQL Protocol and RDF Query Language (W3C standard) for retrieving, manipulating, and joining data stored in Resource Description Framework graphs, enabling semantic web queries through pattern matching of subject-predicate-object triples with support for filtering, aggregation, and federated queries.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:SparqlQueryEngine
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Query Processor]]
+  - enables:: [[Semantic Data Retrieval]]
+
+- ### Content
+
+  - #### Key Implementations
 		- Apache Jena ARQ engine
 		- AllegroGraph triple store
 		- Ontotext GraphDB
 		- Oxford Semantic RDFox
 		- Comunica modular engine
-	- #### Query Capabilities
-	  collapsed:: true
+  - #### Query Capabilities
 		- Triple pattern matching
 		- Optional and negation queries
 		- Aggregation and grouping functions
 		- Federated queries across endpoints
 		- SPARQL Update for data modification
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

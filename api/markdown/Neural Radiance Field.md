@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: neuralradiancefield-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralRadianceField
+uri:: urn:visionclaw:concept:artificial-intelligence:neural-radiance-field
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:neural-radiance-field
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Neural Radiance Field
+content-hash:: sha256-12-4720c82845f2
+legacy-term-id:: AI-0812
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0812
-    - filename-history:: ["AI-0812-neuralradiancefield.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0812
-    - preferred-term:: Neural Radiance Field
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - NeRF - neural representation for 3D scene synthesis.
 
-  - **Definition**
-    - definition:: NeRF - neural representation for 3D scene synthesis.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:NeuralRadianceField
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:NeuralRadianceField
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - bridges-to:: [[Autonomous Robot]]
 
-  - #### Relationships
+- ### Content
+  Neural Radiance Field — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NeuralRadianceField))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NeuralRadianceField "Neural Radiance Field"@en)
-      (AnnotationAssertion rdfs:comment :NeuralRadianceField
-        "NeRF - neural representation for 3D scene synthesis."@en)
-      ```
-
-- ## About Neural Radiance Field
-  NeRF - neural representation for 3D scene synthesis.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

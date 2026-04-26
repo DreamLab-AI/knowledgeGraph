@@ -1,0 +1,77 @@
+{
+  "id": "data-structure",
+  "title": "Data Structure",
+  "content": "- ### Definition\n  - Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:DataStructure\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Optimized for parallel processing on GPUs and TPUs\n  - Supports efficient indexing and retrieval operations\n  - Enables memory-efficient representation of sparse data\n  - Facilitates vectorized operations and SIMD instructions\n  - Incorporates cache-friendly layouts for performance\n\n  ## Overview\n\n  Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.\n\n  #### Related Concepts\n  - [[Tensor Operations]]\n  - [[Graph Neural Networks]]\n  - [[Sparse Matrices]]\n  - [[Memory Optimization]]\n\n  #### References\n  - Cormen, T. et al. (2022). Introduction to Algorithms (4th ed.). MIT Press.\n  - Nickolls, J. & Dally, W. (2010). The GPU Computing Era. IEEE Micro, 30(2), 56-69.\n  - Kipf, T. & Welling, M. (2017). Semi-Supervised Classification with Graph Convolutional Networks. ICLR 2017.\n\n- ### Provenance\n  - sources:: [[IEEE Micro]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Binary Buffer",
+    "Distributeddatastructure",
+    "ONTOLOGY_TECHNICAL_DETAILS",
+    "Spatial Index",
+    "Distributed Ledger",
+    "Distributed Ledger (BC-0002)",
+    "Search Index"
+  ],
+  "wiki_links": [
+    "Graph Neural Networks",
+    "IEEE Micro",
+    "Memory Optimization",
+    "Sparse Matrices",
+    "Tensor Operations",
+    "Virtual Workspace"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:data-structure",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#DataStructure",
+    "content_hash": "sha256-12-69cf2ae3e36f",
+    "legacy_term_id": "AI-9012",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:data-structure",
+    "schema_version": "v2",
+    "term_id": "AI-9012",
+    "preferred_term": "Data Structure",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms. Key structures include tensors (multi-dimensional arrays for neural networks), graphs (for knowledge graphs and GNNs), trees (decision trees, search trees), hash tables (for feature indexing), and specialized structures like attention mechanisms' key-value stores. Efficient data structures are crucial for algorithmic complexity, memory utilization, and computational performance in AI systems. Modern implementations leverage GPU-optimized data layouts and distributed data structures for large-scale ML.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:DataStructure",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "IEEE Micro"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

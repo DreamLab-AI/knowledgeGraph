@@ -1,41 +1,57 @@
 {
-  "id": "Documentation Standards",
+  "id": "documentation-standards",
   "title": "Documentation Standards",
-  "content": "- ### OntologyBlock\n  id:: documentation-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9885\n\t- source-domain:: mv\n\t- preferred-term:: Documentation Standards\n\t- status:: active\n\t- owl:class:: mv:DocumentationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.\n\t- #### Relationships\n\t  id:: documentation-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standards]]\n\t\t- related-to:: [[Interoperability Standard]]\n\t\t- related-to:: [[Interface Standards]]\n\t\t- governed-by:: [[Metaverse Standards Forum]]\n\n## Key Standards Organisations\n\n### Metaverse Standards Forum (MSF)\n- Founded June 2022 to foster interoperability standards development\n- 1,800+ members including Google, Meta, Microsoft, Nvidia, Adobe, Autodesk, Epic Games\n- Provides venue for cooperation between standards organisations and companies\n- Focus on pragmatic, action-based projects for open and inclusive metaverse\n\n### IEEE Standards\n- **IEEE 7014-2024**: Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems\n- **IEEE 3079-2020**: Standard for Head Mounted Display Based VR Sickness Reduction Technology\n- **IEEE 2048.101-2023**: Standard for Augmented Reality on Mobile Devices\n- **IEEE P2048**: Standard for Metaverse Terminology, Definitions, and Taxonomy\n- **IEEE P7016**: Ethically Aligned Design and Operation of Metaverse Systems\n\n### ISO/IEC Standards\n- **ISO/IEC 18039:2019**: Defines scope and key concepts of mixed and augmented reality, including terms, definitions, and generalised system architecture\n\n### ITU Focus Group\n- Established late 2022 with first meeting March 2023\n- Develops roadmap for technical standards ensuring metaverse service interoperability\n- Focus on high-quality user experience, security, and personal data protection\n\n## Technical Scope\n\n### Coverage Areas\n- Terminology and taxonomy definitions\n- Data format specifications\n- Interface protocols\n- Ethical design guidelines\n- Accessibility requirements\n- Security and privacy standards\n\n## Market Projections\n\n- Estimated 1.7 billion mobile AR user devices worldwide by 2024\n- AR market estimated to exceed $50 billion in 2024\n- Interoperability identified as bedrock requirement for open metaverse\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.\n\n- ### Bridge-To\n  - bridges-to:: [[Autonomous Robot]] (rb)\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DocumentationStandards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Technical Standards]]\n\n- ### Content\n\n  ## Key Standards Organisations\n\n  ### Metaverse Standards Forum (MSF)\n  - Founded June 2022 to foster interoperability standards development\n  - 1,800+ members including Google, Meta, Microsoft, Nvidia, Adobe, Autodesk, Epic Games\n  - Provides venue for cooperation between standards organisations and companies\n  - Focus on pragmatic, action-based projects for open and inclusive metaverse\n\n  ### IEEE Standards\n  - **IEEE 7014-2024**: Standard for Ethical Considerations in Emulated Empathy in Autonomous and Intelligent Systems\n  - **IEEE 3079-2020**: Standard for Head Mounted Display Based VR Sickness Reduction Technology\n  - **IEEE 2048.101-2023**: Standard for Augmented Reality on Mobile Devices\n  - **IEEE P2048**: Standard for Metaverse Terminology, Definitions, and Taxonomy\n  - **IEEE P7016**: Ethically Aligned Design and Operation of Metaverse Systems\n\n  ### ISO/IEC Standards\n  - **ISO/IEC 18039:2019**: Defines scope and key concepts of mixed and augmented reality, including terms, definitions, and generalised system architecture\n\n  ### ITU Focus Group\n  - Established late 2022 with first meeting March 2023\n  - Develops roadmap for technical standards ensuring metaverse service interoperability\n  - Focus on high-quality user experience, security, and personal data protection\n\n  ## Technical Scope\n\n  ### Coverage Areas\n  - Terminology and taxonomy definitions\n  - Data format specifications\n  - Interface protocols\n  - Ethical design guidelines\n  - Accessibility requirements\n  - Security and privacy standards\n\n  ## Market Projections\n\n  - Estimated 1.7 billion mobile AR user devices worldwide by 2024\n  - AR market estimated to exceed $50 billion in 2024\n  - Interoperability identified as bedrock requirement for open metaverse\n\n- ### Provenance\n  - sources:: [[IEEE 7014-2024]], [[IEEE 3079-2020]], [[IEEE 2048.101-2023]], [[IEEE P2048]], [[IEEE P7016]], [[ISO/IEC 18039:2019]], [[ITU]], [[Metaverse Standards Forum]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Etsi Domain Immersive",
     "Algorithmic Transparency Index",
     "Ai Transparency Framework",
     "AI Model Card"
   ],
   "wiki_links": [
+    "Autonomous Robot",
+    "IEEE 2048.101-2023",
+    "IEEE 3079-2020",
+    "IEEE 7014-2024",
+    "IEEE P2048",
+    "IEEE P7016",
+    "ISO/IEC 18039:2019",
+    "ITU",
     "Metaverse Standards Forum",
-    "Interface Standards",
-    "metaverse",
     "Technical Standards",
-    "Interoperability Standard"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:documentation-standards",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DocumentationStandards",
+    "content_hash": "sha256-12-54b79932e9ca",
+    "legacy_term_id": "MV-9885",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:documentation-standards",
+    "schema_version": "v2",
     "term_id": "MV-9885",
     "preferred_term": "Documentation Standards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DocumentationStandards",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ethical considerations for immersive technology development.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DocumentationStandards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DocumentationStandards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Technical Standards"
@@ -48,28 +64,24 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Interoperability Standard",
-        "Interface Standards"
-      ],
-      "governed-by": [
-        "Metaverse Standards Forum"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "IEEE 7014-2024",
+      "IEEE 3079-2020",
+      "IEEE 2048.101-2023",
+      "IEEE P2048",
+      "IEEE P7016",
+      "ISO/IEC 18039:2019",
+      "ITU",
+      "Metaverse Standards Forum"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

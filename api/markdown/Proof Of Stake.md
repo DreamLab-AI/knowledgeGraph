@@ -1,53 +1,36 @@
-- ### OntologyBlock
-  id:: proofofstake-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#ProofOfStake
+uri:: urn:visionclaw:concept:blockchain:proof-of-stake
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:proof-of-stake
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Proof of Stake
+content-hash:: sha256-12-db214c5a19be
+legacy-term-id:: BC-0546
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0546
-    - filename-history:: ["BC-0546-proofofstake.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0546
-    - preferred-term:: Proof of Stake
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Formally, a consensus model where the blockchain network is secured by users locking cryptocurrency into the blockchain network through a process called staking.
 
-  - **Definition**
-    - definition:: A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Formally, a consensus model where the blockchain network is secured by users locking cryptocurrency into the blockchain network through a process called staking.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:ProofOfStake
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:ProofOfStake
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Proof Based Consensus]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Proof Based Consensus]]
-    - also-known-as:: PoS
+- ### Content
+  Proof of Stake — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ProofOfStake))
-      (SubClassOf :ProofOfStake :ProofBasedConsensus)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ProofOfStake "Proof of Stake"@en)
-      (AnnotationAssertion rdfs:comment :ProofOfStake
-        "A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Formally, a consensus model where the blockchain network is secured by users locking cryptocurrency into the blockchain network through a process called staking."@en)
-      ```
-
-- ## About Proof of Stake
-  A consensus mechanism allowing blockchains to validate transactions and create new blocks based on the number of tokens held or staked by network participants. Formally, a consensus model where the blockchain network is secured by users locking cryptocurrency into the blockchain network through a process called staking.
-  
-  Uses 99% less energy than PoW. Economic security achieved through slashing (penalties for misbehavior like double-signing or being offline). High cost of attack requires controlling >33% of stake. Provides finality guarantees - cannot revert blocks without majority slashing.
-  
-  ### Examples
-  - Ethereum post-Merge (Gasper), Cardano (Ouroboros), Polkadot (NPoS)
-  
-  ### Historical Context
-  - Concept introduced by Sunny King and Scott Nadal in Peercoin (2012).
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

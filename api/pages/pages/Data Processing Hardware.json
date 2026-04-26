@@ -1,44 +1,53 @@
 {
-  "id": "Data Processing Hardware",
+  "id": "data-processing-hardware",
   "title": "Data Processing Hardware",
-  "content": "- ### OntologyBlock\n  id:: data-processing-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9839\n\t- source-domain:: mv\n\t- preferred-term:: Data Processing Hardware\n\t- definition:: The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.\n\t- status:: active\n\t- owl:class:: mv:DataProcessingHardware\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: data-processing-hardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Computing Infrastructure]]\n\t\t- enables:: [[Real-Time Rendering]], [[AI Processing]], [[Immersive Computing]]\n\t\t- requires:: [[High-Bandwidth Memory]], [[Power Infrastructure]], [[Cooling Systems]]\n\t\t- related-to:: [[GPU Computing]], [[Edge Computing]], [[VR Hardware]]\n- ## Technical Details\n\t- **Key Hardware Providers**:\n\t\t- **NVIDIA**: L40 GPU (48GB GDDR6, 90.5 TFLOPs FP32), OVX servers for Omniverse\n\t\t- **AMD**: Radeon GPUs for VR/AR applications\n\t\t- **Intel**: Next-gen XR headset processors\n\t\t- **Qualcomm**: Snapdragon XR2 Gen 2 for Quest 3 headsets\n\t- **Performance Requirements**:\n\t\t- Intel estimates 1,000x increase in processing power needed over current state\n\t\t- DDR5 SO-DIMM offering 6.4 Gbit/s data rates (2x DDR4)\n\t- **Edge Computing**:\n\t\t- Processing data near generation source minimizes latency\n\t\t- Distributed data centers in proximity to users\n\t\t- Cloud providers connecting dozens of edge locations per city\n\t- **VR Market 2024**: Meta Quest (70% share), Sony PS VR, Apple Vision Pro (6% projected)\n- ## Applications\n\t- VR/AR headset processing\n\t- Metaverse server infrastructure\n\t- Digital twin simulation\n\t- AI-powered content generation\n\t- Real-time 3D rendering",
+  "content": "- ### Definition\n  - The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DataProcessingHardware\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Computing Infrastructure]]\n  - requires:: [[High-Bandwidth Memory]], [[Power Infrastructure]], [[Cooling Systems]]\n  - enables:: [[Real-Time Rendering]], [[AI Processing]], [[Immersive Computing]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Key Hardware Providers**:\n\t\t- **NVIDIA**: L40 GPU (48GB GDDR6, 90.5 TFLOPs FP32), OVX servers for Omniverse\n\t\t- **AMD**: Radeon GPUs for VR/AR applications\n\t\t- **Intel**: Next-gen XR headset processors\n\t\t- **Qualcomm**: Snapdragon XR2 Gen 2 for Quest 3 headsets\n  - **Performance Requirements**:\n\t\t- Intel estimates 1,000x increase in processing power needed over current state\n\t\t- DDR5 SO-DIMM offering 6.4 Gbit/s data rates (2x DDR4)\n  - **Edge Computing**:\n\t\t- Processing data near generation source minimizes latency\n\t\t- Distributed data centers in proximity to users\n\t\t- Cloud providers connecting dozens of edge locations per city\n  - **VR Market 2024**: Meta Quest (70% share), Sony PS VR, Apple Vision Pro (6% projected)\n  - ## Applications\n  - VR/AR headset processing\n  - Metaverse server infrastructure\n  - Digital twin simulation\n  - AI-powered content generation\n  - Real-time 3D rendering\n\n- ### Provenance\n  - bridges-to:: [[Sensor Input]] (rb)\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Reality Capture System"
   ],
   "wiki_links": [
+    "AI Processing",
     "Computing Infrastructure",
+    "Cooling Systems",
+    "High-Bandwidth Memory",
     "Immersive Computing",
     "Power Infrastructure",
-    "AI Processing",
-    "High-Bandwidth Memory",
-    "Cooling Systems",
-    "metaverse",
-    "GPU Computing",
     "Real-Time Rendering",
-    "Edge Computing",
-    "VR Hardware"
+    "Sensor Input",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:data-processing-hardware",
+    "iri": "http://narrativegoldmine.com/infrastructure#DataProcessingHardware",
+    "content_hash": "sha256-12-27eea360ff5a",
+    "legacy_term_id": "MV-9839",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:data-processing-hardware",
+    "schema_version": "v2",
     "term_id": "MV-9839",
     "preferred_term": "Data Processing Hardware",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DataProcessingHardware",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and distributed computing.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DataProcessingHardware",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DataProcessingHardware",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Computing Infrastructure"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "GPU Computing",
-        "Edge Computing",
-        "VR Hardware"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,63 +1,82 @@
 {
-  "id": "Ar Experiences",
+  "id": "ar-experiences",
   "title": "Ar Experiences",
-  "content": "- ### OntologyBlock\n  id:: ar-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9770\n\t- source-domain:: mv\n\t- preferred-term:: Ar Experiences\n\t- status:: active\n\t- definition:: AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.\n\t- owl:class:: mv:ArExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Immersive Technology Applications]]\n\t- enables:: [[Enhanced Visualization]], [[Contextual Information]], [[Interactive Learning]]\n\t- requires:: [[AR Display Devices]], [[Computer Vision]], [[Spatial Mapping]]\n\t- #### Relationships\n\t  id:: ar-experiences-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Environment Capture**: Cameras and sensors compiling real-world surrounding data\n- **Computer Vision**: AI analyzing captured data to understand physical space and position\n- **Object Recognition**: Identifying physical triggers like QR codes or image markers\n- **Content Overlay**: Rendering images and video onto real-world view via device screen or headset\n\n### Experience Types\n- **Marker-Based AR**: Digital content triggered by physical markers (QR codes, images)\n- **Marker-less AR**: Using GPS, accelerometers, and cameras for spontaneous experiences\n- **Hand/Eye Tracking**: Natural gesture and gaze-based interaction (HoloLens 2)\n\n### Market Context\nAR user penetration reached 81% in 2024, expected to rise to 83.3% by 2029.\n\n### Industry Applications\nManufacturing visualization, healthcare training, retail product preview, navigation, and Industry 4.0 interactive environments.",
+  "content": "- ### Definition\n  - AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ArExperiences\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Immersive Technology Applications]]\n  - requires:: [[AR Display Devices]], [[Computer Vision]], [[Spatial Mapping]]\n  - enables:: [[Enhanced Visualization]], [[Contextual Information]], [[Interactive Learning]]\n  - bridges-to:: [[Sensor Input]] (rb)\n\n- ### Content\n\n  ### Technical Details\n  Key components include:\n  - **Environment Capture**: Cameras and sensors compiling real-world surrounding data\n  - **Computer Vision**: AI analyzing captured data to understand physical space and position\n  - **Object Recognition**: Identifying physical triggers like QR codes or image markers\n  - **Content Overlay**: Rendering images and video onto real-world view via device screen or headset\n\n  ### Experience Types\n  - **Marker-Based AR**: Digital content triggered by physical markers (QR codes, images)\n  - **Marker-less AR**: Using GPS, accelerometers, and cameras for spontaneous experiences\n  - **Hand/Eye Tracking**: Natural gesture and gaze-based interaction (HoloLens 2)\n\n  ### Market Context\n  AR user penetration reached 81% in 2024, expected to rise to 83.3% by 2029.\n\n  ### Industry Applications\n  Manufacturing visualization, healthcare training, retail product preview, navigation, and Industry 4.0 interactive environments.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Contextual Information",
-    "Immersive Technology Applications",
-    "Computer Vision",
-    "Spatial Mapping",
-    "Interactive Learning",
-    "metaverse",
     "AR Display Devices",
-    "Enhanced Visualization"
+    "Computer Vision",
+    "Contextual Information",
+    "Enhanced Visualization",
+    "Immersive Technology Applications",
+    "Interactive Learning",
+    "Sensor Input",
+    "Spatial Mapping",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:ar-experiences",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ArExperiences",
+    "content_hash": "sha256-12-edf218af0bce",
+    "legacy_term_id": "MV-9770",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:ar-experiences",
+    "schema_version": "v2",
     "term_id": "MV-9770",
     "preferred_term": "Ar Experiences",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ArExperiences",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in real environments.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ArExperiences",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ArExperiences",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Immersive Technology Applications"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "AR Display Devices",
+      "Computer Vision",
+      "Spatial Mapping"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Enhanced Visualization",
+      "Contextual Information",
+      "Interactive Learning"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Sensor Input"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: qualitystandard-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#QualityStandard
+uri:: urn:visionclaw:concept:robotics:quality-standard
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:quality-standard
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Quality Standard
+content-hash:: sha256-12-71308608a21e
+legacy-term-id:: RB-0192
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0192
-    - filename-history:: ["RB-0192-qualitystandard.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0192
-    - preferred-term:: Quality Standard
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Quality standard defines requirements for quality management in robot manufacturing and deployment.
 
-  - **Definition**
-    - definition:: Quality standard defines requirements for quality management in robot manufacturing and deployment.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:QualityStandard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:QualityStandard
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Robot Standard]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Robot Standard]]
+- ### Content
+  Quality Standard — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :QualityStandard))
-      (SubClassOf :QualityStandard :RobotStandard)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :QualityStandard "Quality Standard"@en)
-      (AnnotationAssertion rdfs:comment :QualityStandard
-        "Quality standard defines requirements for quality management in robot manufacturing and deployment."@en)
-      ```
-
-- ## About Quality Standard
-  Quality standard defines requirements for quality management in robot manufacturing and deployment.
-  
-  A standard for quality management systems.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

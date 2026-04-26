@@ -1,42 +1,32 @@
-- ### OntologyBlock
-  id:: technique-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Technique
+uri:: urn:visionclaw:concept:artificial-intelligence:technique
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:technique
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Technique
+content-hash:: sha256-12-771662fbaf50
+legacy-term-id:: AI-0832
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0832
-    - filename-history:: ["AI-0832-technique.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0832
-    - preferred-term:: Technique
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
-
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
-
-  - **Semantic Classification**
-    - owl:class:: ai:Technique
-    - belongsToDomain:: [[Artificial Intelligence]]
-
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
-
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Technique))
-      (SubClassOf :Technique :ArtificialIntelligence)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Technique "Technique"@en)
-      ```
-
-- ## About Technique
-  
+- ### Definition
+  - Technique is a concept within the ai domain.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Technique
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+- ### Content
+  Technique — content pending enrichment.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9620-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9620
-	- preferred-term:: Geospatial Technology
-	- source-domain:: mv
-	- owl:class:: mv:GeospatialTechnology
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Geospatial Technology is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#GeospatialTechnology
+uri:: urn:visionclaw:concept:spatial-computing:geospatial-technology
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:geospatial-technology
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Geospatial Technology
+content-hash:: sha256-12-1bac0758c9eb
+legacy-term-id:: MV-9620
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Geospatial Technology is a concept within the metaverse domain. Further enrichment pending.
 
-Geospatial Technology represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:GeospatialTechnology
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Geospatial Technology represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

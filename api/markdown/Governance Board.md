@@ -1,111 +1,122 @@
-- ### OntologyBlock
-  id:: governance-board-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9910
-	- source-domain:: mv
-	- preferred-term:: Governance Board
-	- status:: active
-	- owl:class:: mv:GovernanceBoard
-	- belongsToDomain:: [[metaverse]]
-	- definition:: An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.
-	- #### Relationships
-	  id:: governance-board-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Governance Architecture]]
-		- related-to:: [[Governance Token]]
-		- related-to:: [[DAO Governance]]
-		- enables:: [[Collective Decision Making]]
+iri:: http://narrativegoldmine.com/metaverse#GovernanceBoard
+uri:: urn:visionclaw:concept:artificial-intelligence:governance-board
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:governance-board
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Governance Board
+content-hash:: sha256-12-46df149afb83
+legacy-term-id:: MV-9910
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Traditional vs DAO Governance
+- ### Definition
+  - An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting mechanisms.
 
-### Corporate Board Model
-- Small group elected by shareholders
-- Centralised decision-making
-- Board meeting voting
-- Fiduciary duty to shareholders
-- Decision protocols not always visible
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:GovernanceBoard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### DAO Governance Model
-- Token holder voting rights
-- Proportional voting power
-- Direct participation in decisions
-- Transparent on-chain processes
-- Smart contract enforcement
+- ### Relationships
+  - is-subclass-of:: [[Governance Architecture]]
+  - enables:: [[Collective Decision Making]]
 
-## 2024 Scale
+- ### Content
 
-### DAO Ecosystem
-- 13,000+ active DAOs (2024)
-- USD 24.5 billion total treasury
-- 11.1 million governance token holders
-- Collective decision management
+  ## Traditional vs DAO Governance
 
-### Governance Evolution
-- Hybrid model emergence
-- Centralised accountability components
-- Decentralised oversight mechanisms
-- Risk mitigation structures
+  ### Corporate Board Model
+  - Small group elected by shareholders
+  - Centralised decision-making
+  - Board meeting voting
+  - Fiduciary duty to shareholders
+  - Decision protocols not always visible
 
-## Voting Mechanisms
+  ### DAO Governance Model
+  - Token holder voting rights
+  - Proportional voting power
+  - Direct participation in decisions
+  - Transparent on-chain processes
+  - Smart contract enforcement
 
-### On-Chain Governance
-- Tally platform for blockchain voting
-- Immutable vote recording
-- Verifiable decision audit trail
-- Security and accountability focus
+  ## 2024 Scale
 
-### Off-Chain Governance
-- Snapshot voting platform
-- Gas-free voting operations
-- Cost-effective governance
-- Regular proposal creation
+  ### DAO Ecosystem
+  - 13,000+ active DAOs (2024)
+  - USD 24.5 billion total treasury
+  - 11.1 million governance token holders
+  - Collective decision management
 
-## Oversight Challenges
+  ### Governance Evolution
+  - Hybrid model emergence
+  - Centralised accountability components
+  - Decentralised oversight mechanisms
+  - Risk mitigation structures
 
-### Whale Influence
-- Large token holder concentration
-- Divergent interests from small holders
-- Governance vulnerability creation
-- Agency problem emergence
+  ## Voting Mechanisms
 
-### Centralisation Tensions
-- Associated entity influence (e.g., Uniswap Labs)
-- Trusted parties for vote verification
-- Protocol development control
-- Decentralisation rhetoric vs reality
+  ### On-Chain Governance
+  - Tally platform for blockchain voting
+  - Immutable vote recording
+  - Verifiable decision audit trail
+  - Security and accountability focus
 
-## Hybrid Approaches
+  ### Off-Chain Governance
+  - Snapshot voting platform
+  - Gas-free voting operations
+  - Cost-effective governance
+  - Regular proposal creation
 
-### Benefits
-- Enhanced accountability
-- Community oversight maintenance
-- Expertise access for complex decisions
-- Decision paralysis mitigation
+  ## Oversight Challenges
 
-### Implementation
-- Centralized bodies with defined responsibilities
-- Decentralised voting on key decisions
-- Graduated autonomy models
-- Emergency intervention protocols
+  ### Whale Influence
+  - Large token holder concentration
+  - Divergent interests from small holders
+  - Governance vulnerability creation
+  - Agency problem emergence
 
-## Applications
+  ### Centralisation Tensions
+  - Associated entity influence (e.g., Uniswap Labs)
+  - Trusted parties for vote verification
+  - Protocol development control
+  - Decentralisation rhetoric vs reality
 
-### Protocol Governance
-- DeFi protocol management
-- Infrastructure decisions
-- Treasury allocation
-- Partnership approvals
+  ## Hybrid Approaches
 
-### Metaverse Platforms
-- Virtual world policy
-- Economic parameter setting
-- Content moderation rules
-- Platform development direction
+  ### Benefits
+  - Enhanced accountability
+  - Community oversight maintenance
+  - Expertise access for complex decisions
+  - Decision paralysis mitigation
 
-## Metadata
+  ### Implementation
+  - Centralized bodies with defined responsibilities
+  - Decentralised voting on key decisions
+  - Graduated autonomy models
+  - Emergency intervention protocols
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Applications
+
+  ### Protocol Governance
+  - DeFi protocol management
+  - Infrastructure decisions
+  - Treasury allocation
+  - Partnership approvals
+
+  ### Metaverse Platforms
+  - Virtual world policy
+  - Economic parameter setting
+  - Content moderation rules
+  - Platform development direction
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

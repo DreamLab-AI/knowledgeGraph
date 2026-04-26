@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9695-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9695
-	- preferred-term:: Standards Organization
-	- source-domain:: mv
-	- owl:class:: mv:StandardsOrganization
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Standards Organization is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/metaverse#StandardsOrganization
+uri:: urn:visionclaw:concept:artificial-intelligence:standards-organization
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:standards-organization
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Standards Organization
+content-hash:: sha256-12-f65d4dd1993d
+legacy-term-id:: MV-9695
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Standards Organization is a concept within the metaverse domain. Further enrichment pending.
 
-Standards Organization represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:StandardsOrganization
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Standards Organization represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

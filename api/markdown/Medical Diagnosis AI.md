@@ -1,154 +1,88 @@
-- ### OntologyBlock
-  id:: medical-diagnosis-ai-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0343
-	- preferred-term:: Medical Diagnosis AI
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
+iri:: http://narrativegoldmine.com/metaverse#MedicalDiagnosisAI
+uri:: urn:visionclaw:concept:artificial-intelligence:medical-diagnosis-ai
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:medical-diagnosis-ai
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Medical Diagnosis AI
+content-hash:: sha256-12-6bc396e4754a
+legacy-term-id:: AI-0343
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MedicalDiagnosisAI
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :MedicalDiagnosisAi))
+- ### Content
+  - Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :MedicalDiagnosisAi "Medical Diagnosis AI"@en)
-(AnnotationAssertion rdfs:comment :MedicalDiagnosisAi "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance."@en)
+  ## Core Characteristics
 
-;; Semantic Relationships
-(SubClassOf :MedicalDiagnosisAi
-  (ObjectSomeValuesFrom :relatedTo :TreatmentPlanningAi))
-(SubClassOf :MedicalDiagnosisAi
-  (ObjectSomeValuesFrom :relatedTo :MedicalAi))
-(SubClassOf :MedicalDiagnosisAi
-  (ObjectSomeValuesFrom :relatedTo :ClinicalDecisionSupport))
+  - **Differential Diagnosis Generation**: Ranked list of possible diagnoses
+  - **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
+  - **Evidence-Based Reasoning**: Clinical guideline adherence
+  - **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
+  - **Explainable Outputs**: Clinically interpretable diagnostic reasoning
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :MedicalDiagnosisAi "AI-0343"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :MedicalDiagnosisAi "true"^^xsd:boolean)
-```
+  ## Relationships
 
-## Core Characteristics
+  - **Superclass**: Medical AI
+  - **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
+  - **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
 
-- **Differential Diagnosis Generation**: Ranked list of possible diagnoses
-- **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
-- **Evidence-Based Reasoning**: Clinical guideline adherence
-- **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
-- **Explainable Outputs**: Clinically interpretable diagnostic reasoning
+  ## Key Literature
 
-## Relationships
+  1. Rajkomar, A., Dean, J., & Kohane, I. (2019). "Machine learning in medicine." *New England Journal of Medicine*, 380(14), 1347-1358.
 
-- **Superclass**: Medical AI
-- **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
-- **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
+  2. Jiang, F., et al. (2017). "Artificial intelligence in healthcare: past, present and future." *Stroke and Vascular Neurology*, 2(4), 230-243.
 
-## Key Literature
+  ## See Also
 
-1. Rajkomar, A., Dean, J., & Kohane, I. (2019). "Machine learning in medicine." *New England Journal of Medicine*, 380(14), 1347-1358.
+  - [[Medical AI]]
+  - [[Clinical Decision Support]]
+  - [[Treatment Planning AI]]
 
-2. Jiang, F., et al. (2017). "Artificial intelligence in healthcare: past, present and future." *Stroke and Vascular Neurology*, 2(4), 230-243.
+  ## Core Characteristics
 
-## See Also
+  - **Differential Diagnosis Generation**: Ranked list of possible diagnoses
+  - **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
+  - **Evidence-Based Reasoning**: Clinical guideline adherence
+  - **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
+  - **Explainable Outputs**: Clinically interpretable diagnostic reasoning
 
-- [[Medical AI]]
-- [[Clinical Decision Support]]
-- [[Treatment Planning AI]]
+  ## Relationships
 
-## Metadata
+  - **Superclass**: Medical AI
+  - **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
+  - **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
 
-- **Domain**: Medical Diagnosis, Clinical Medicine
-- **Maturity**: Clinical deployment and validation
-	- maturity:: draft
-	- owl:class:: mv:MedicalDiagnosisAI
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: medical-diagnosis-ai-relationships
-- ## About Medical Diagnosis AI
-	- Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
+  ## Key Literature
 
-## Core Characteristics
+  1. Rajkomar, A., Dean, J., & Kohane, I. (2019). "Machine learning in medicine." *New England Journal of Medicine*, 380(14), 1347-1358.
 
-- **Differential Diagnosis Generation**: Ranked list of possible diagnoses
-- **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
-- **Evidence-Based Reasoning**: Clinical guideline adherence
-- **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
-- **Explainable Outputs**: Clinically interpretable diagnostic reasoning
+  2. Jiang, F., et al. (2017). "Artificial intelligence in healthcare: past, present and future." *Stroke and Vascular Neurology*, 2(4), 230-243.
 
-## Relationships
+  ## See Also
 
-- **Superclass**: Medical AI
-- **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
-- **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
+  - [[Medical AI]]
+  - [[Clinical Decision Support]]
+  - [[Treatment Planning AI]]
 
-## Key Literature
-
-1. Rajkomar, A., Dean, J., & Kohane, I. (2019). "Machine learning in medicine." *New England Journal of Medicine*, 380(14), 1347-1358.
-
-2. Jiang, F., et al. (2017). "Artificial intelligence in healthcare: past, present and future." *Stroke and Vascular Neurology*, 2(4), 230-243.
-
-## See Also
-
-- [[Medical AI]]
-- [[Clinical Decision Support]]
-- [[Treatment Planning AI]]
-
-## Metadata
-
-- **Domain**: Medical Diagnosis, Clinical Medicine
-- **Maturity**: Clinical deployment and validation
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Medical Diagnosis AI
-		  
-		  **Term ID**: AI-0343
-		  **Category**: Domain Applications → Medical AI
-		  **Status**: Stable
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic recommendations. These systems employ machine learning, knowledge representation, and clinical reasoning algorithms validated against expert physician performance.
-		  
-		  ## Core Characteristics
-		  
-		  - **Differential Diagnosis Generation**: Ranked list of possible diagnoses
-		  - **Multi-Modal Data Integration**: Symptoms, labs, imaging, history synthesis
-		  - **Evidence-Based Reasoning**: Clinical guideline adherence
-		  - **Uncertainty Quantification**: Confidence scores and diagnostic uncertainty
-		  - **Explainable Outputs**: Clinically interpretable diagnostic reasoning
-		  
-		  ## Relationships
-		  
-		  - **Superclass**: Medical AI
-		  - **Related**: Clinical Decision Support, Medical Imaging AI, Clinical Reasoning
-		  - **Utilises**: Deep Learning, Knowledge Graphs, Probabilistic Reasoning
-		  
-		  ## Key Literature
-		  
-		  1. Rajkomar, A., Dean, J., & Kohane, I. (2019). "Machine learning in medicine." *New England Journal of Medicine*, 380(14), 1347-1358.
-		  
-		  2. Jiang, F., et al. (2017). "Artificial intelligence in healthcare: past, present and future." *Stroke and Vascular Neurology*, 2(4), 230-243.
-		  
-		  ## See Also
-		  
-		  - [[Medical AI]]
-		  - [[Clinical Decision Support]]
-		  - [[Treatment Planning AI]]
-		  
-		  ## Metadata
-		  
-		  - **Domain**: Medical Diagnosis, Clinical Medicine
-		  - **Maturity**: Clinical deployment and validation
-		  
-		  ```
-
-    - application-of:: [[Medical AI]], [[Clinical Decision Support]]
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

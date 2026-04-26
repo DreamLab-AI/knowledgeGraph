@@ -1,76 +1,82 @@
 {
-  "id": "Token Economics",
+  "id": "token-economics",
   "title": "Token Economics",
-  "content": "- ### OntologyBlock\n  id:: token-economics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0601\n\t- preferred-term:: Token Economics\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Token Economics (Tokenomics) is the study and design of economic models and incentive mechanisms surrounding digital tokens on blockchain networks. It encompasses token supply dynamics, distribution mechanisms, staking rewards, governance rights, and the economic incentives that drive participant behaviour within decentralised ecosystems.\n\t- owl:class:: bc:TokenEconomics\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: token-economics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[Token]]\n\t\t- is-parent-of:: [[Staking Rewards]]\n\t\t- is-parent-of:: [[Governance Token]]\n\t\t- related-to:: [[Decentralized Finance]]",
+  "content": "- ### Definition\n  - Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Tokeneconomics\n  - owl-role:: Concept\n  - belongs-to-domain:: [[BlockchainDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Economics]]\n  - enables:: [[Decentralised Governance]], [[Network Incentives]], [[Value Capture]]\n\n- ### Content\n\n  ## Core Components\n\n  ### Supply Mechanics\n  - **Maximum Supply**: Total tokens that will ever exist (e.g., Bitcoin's 21 million cap)\n  - **Circulating Supply**: Tokens currently available in the market\n  - **Inflation Rate**: Rate of new token creation (staking rewards, mining)\n  - **Deflation Mechanisms**: Token burns reducing total supply over time\n\n  ### Token Distribution\n  - **Initial Distribution**: ICO, IDO, airdrops, fair launch\n  - **Vesting Schedules**: Time-locked release for team and investors\n  - **Treasury Allocation**: Tokens reserved for ecosystem development\n  - **Community Allocation**: Distribution to users and contributors\n\n  ### Utility and Demand Drivers\n  - **Transaction Fees**: Gas payment for network usage\n  - **Staking Requirements**: Lock-up for network security or governance\n  - **Access Rights**: Token-gated features or content\n  - **Governance Participation**: Voting on protocol decisions\n\n  ## Token Types\n\n  ### Utility Tokens\n  - Provide access to platform services or features\n  - Value tied to network usage and demand\n  - Examples: ETH (gas), LINK (oracle payment), FIL (storage)\n\n  ### Governance Tokens\n  - Grant voting rights on protocol decisions\n  - Value reflects influence over treasury and parameters\n  - Examples: UNI, AAVE, MKR, COMP\n\n  ### Security Tokens\n  - Represent ownership in real-world assets\n  - Subject to securities regulations\n  - Tokenised equity, debt, or real estate\n\n  ### Hybrid Models\n  - Combine multiple functions (utility + governance)\n  - Evolving classification as protocols mature\n  - Examples: ETH (utility + staking), SNX (staking + governance)\n\n  ## Economic Design Principles\n\n  ### Value Accrual Mechanisms\n  - **Fee Burns**: Transaction fees permanently removed (EIP-1559)\n  - **Revenue Distribution**: Protocol revenue shared with stakers\n  - **Buyback Programs**: Treasury purchases from open market\n  - **Yield Generation**: Staking rewards from inflation or fees\n\n  ### Incentive Alignment\n  - **Staking Penalties**: Slashing for malicious behaviour\n  - **Lock-up Periods**: Reduce short-term speculation\n  - **Reward Vesting**: Align long-term incentives\n  - **Liquidity Mining**: Bootstrap network effects\n\n  ### Sustainability Considerations\n  - Balance between inflation rewards and dilution\n  - Fee structure supporting validator economics\n  - Treasury runway for continued development\n  - Avoid death spiral scenarios (UST/LUNA)\n\n  ## Market Dynamics (2025)\n\n  #### Current Landscape\n  - Over $2.4 trillion in crypto market capitalisation\n  - More than 23,000 active tokens circulating\n  - AI tokens surged 400% year-over-year\n  - Real World Asset (RWA) tokenisation exceeds $9 billion on-chain\n\n  ### Regulatory Environment\n  - MiCA regulation in Europe establishing framework\n  - SEC scrutiny in United States for securities classification\n  - Compliance-driven frameworks emerging in Asia\n  - KYC/AML requirements affecting token design\n\n  ## Tokenomics Analysis Framework\n\n  ### Supply Analysis\n  - Fully diluted valuation vs market cap ratio\n  - Emission schedule and unlock events\n  - Historical burn rates and supply changes\n\n  ### Demand Analysis\n  - Active addresses and transaction volume\n  - Staking participation rate\n  - Governance activity levels\n  - Integration with other protocols\n\n  ### Distribution Analysis\n  - Gini coefficient of token holdings\n  - Whale concentration risk\n  - Exchange vs wallet distribution\n\n  ### Economic Security\n  - Cost of attack analysis\n  - Incentive compatibility assessment\n  - Game-theoretic vulnerability review\n\n  ## Common Pitfalls\n\n  ### Inflationary Death Spirals\n  - High inflation without sufficient demand\n  - Sell pressure exceeding buy pressure\n  - Ponzi-like yield structures\n\n  ### Concentration Risks\n  - Excessive team/investor allocation\n  - Low float manipulation vulnerability\n  - Governance capture by whales\n\n  ### Misaligned Incentives\n  - Short-term speculation over long-term holding\n  - Mercenary liquidity providers\n  - Governance apathy from utility-only design\n\n  ## Case Studies\n\n  ### Bitcoin (BTC)\n  - Fixed 21 million supply with halving schedule\n  - Deflationary monetary policy\n  - Store of value narrative drives demand\n\n  ### Ethereum (ETH)\n  - Dynamic supply with EIP-1559 burn mechanism\n  - Staking yield from PoS consensus\n  - Utility demand from smart contract execution\n\n  ### Uniswap (UNI)\n  - Governance token with treasury control\n  - No direct fee accrual to holders\n  - Value from governance rights and potential fee switch\n\n  #### Related Concepts\n  - [[Cryptocurrency]]\n  - [[Smart Contract]]\n  - [[DeFi]]\n  - [[Staking]]\n  - [[Governance Token]]\n  - [[MEV]]\n\n  #blockchain #tokenomics #cryptocurrency #economics #defi\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Loyalty Token",
-    "Blockchain Governance",
-    "Digital Economy"
+    "Digital Economy",
+    "Proof Of Stake Sustainability",
+    "Blockchain"
   ],
   "wiki_links": [
-    "Blockchain Technology",
-    "Blockchain Entity",
+    "Blockchain Economics",
+    "BlockchainDomain",
+    "Cryptocurrency",
+    "DeFi",
+    "Decentralised Governance",
     "Governance Token",
-    "Token",
-    "Decentralized Finance",
-    "Staking Rewards"
+    "MEV",
+    "Network Incentives",
+    "Smart Contract",
+    "Staking",
+    "Value Capture"
   ],
   "ontology": {
-    "term_id": "BC-0601",
+    "uri": "urn:visionclaw:concept:blockchain:token-economics",
+    "iri": "http://narrativegoldmine.com/blockchain#TokenEconomics",
+    "content_hash": "sha256-12-bd19c4076f51",
+    "legacy_term_id": "BC-7009",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:token-economics",
+    "schema_version": "v2",
+    "term_id": "BC-7009",
     "preferred_term": "Token Economics",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#TokenEconomics",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
-    "definition": "Token Economics (Tokenomics) is the study and design of economic models and incentive mechanisms surrounding digital tokens on blockchain networks. It encompasses token supply dynamics, distribution mechanisms, staking rewards, governance rights, and the economic incentives that drive participant behaviour within decentralised ecosystems.",
+    "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable ecosystem growth.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "reviewed",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:TokenEconomics",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Tokeneconomics",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Blockchain Entity"
+      "Blockchain Economics"
     ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Decentralised Governance",
+      "Network Incentives",
+      "Value Capture"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
-      "Blockchain Technology"
+      "BlockchainDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "Token",
-        "Staking Rewards",
-        "Governance Token"
-      ],
-      "related-to": [
-        "Decentralized Finance"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

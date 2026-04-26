@@ -1,44 +1,53 @@
 {
-  "id": "Barter System",
+  "id": "barter-system",
   "title": "Barter System",
-  "content": "- ### OntologyBlock\n  id:: barter-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9794\n\t- source-domain:: mv\n\t- preferred-term:: Barter System\n\t- definition:: A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.\n\t- status:: active\n\t- owl:class:: mv:BarterSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: barter-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Exchange Mechanism]]\n\t\t- enables:: [[Peer-to-Peer Trading]], [[Asset Exchange]], [[Virtual Economy]]\n\t\t- requires:: [[Matching Algorithm]], [[Smart Contracts]], [[Trust Mechanism]]\n\t\t- related-to:: [[Digital Currency]], [[Blockchain]], [[Decentralized Exchange]]\n- ## Technical Details\n\t- **Core Architecture**: Modern digital barter systems use intelligent matching algorithms powered by blockchain technology to facilitate multi-party exchanges without traditional currency\n\t- **Key Components**:\n\t\t- Trustless transaction infrastructure\n\t\t- Double coincidence resolution algorithms\n\t\t- Multi-party exchange coordination\n\t\t- Value equivalence computation\n\t- **Market Context**: The bartering platform market grew from USD 1.04 billion in 2024 to an expected USD 1.49 billion by 2030 (6.10% CAGR)\n\t- **Metaverse Integration**: Barter represents 30-40% of global transactions in virtual economies, enabling exchange of virtual products, currencies, and digital assets\n- ## Applications\n\t- Peer-to-peer skill and resource exchange\n\t- Virtual asset trading in metaverse environments\n\t- Business-to-business countertrade\n\t- Community barter networks for local economies",
+  "content": "- ### Definition\n  - A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:BarterSystem\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Exchange Mechanism]]\n  - requires:: [[Matching Algorithm]], [[Smart Contracts]], [[Trust Mechanism]]\n  - enables:: [[Peer-to-Peer Trading]], [[Asset Exchange]], [[Virtual Economy]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Architecture**: Modern digital barter systems use intelligent matching algorithms powered by blockchain technology to facilitate multi-party exchanges without traditional currency\n  - **Key Components**:\n\t\t- Trustless transaction infrastructure\n\t\t- Double coincidence resolution algorithms\n\t\t- Multi-party exchange coordination\n\t\t- Value equivalence computation\n  - **Market Context**: The bartering platform market grew from USD 1.04 billion in 2024 to an expected USD 1.49 billion by 2030 (6.10% CAGR)\n  - **Metaverse Integration**: Barter represents 30-40% of global transactions in virtual economies, enabling exchange of virtual products, currencies, and digital assets\n  - ## Applications\n  - Peer-to-peer skill and resource exchange\n  - Virtual asset trading in metaverse environments\n  - Business-to-business countertrade\n  - Community barter networks for local economies\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Value Transfer"
   ],
   "wiki_links": [
-    "Trust Mechanism",
+    "Asset Exchange",
+    "Blockchain",
     "Exchange Mechanism",
     "Matching Algorithm",
     "Peer-to-Peer Trading",
-    "Asset Exchange",
-    "Digital Currency",
-    "Blockchain",
-    "metaverse",
     "Smart Contracts",
-    "Decentralized Exchange",
-    "Virtual Economy"
+    "Trust Mechanism",
+    "Virtual Economy",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:barter-system",
+    "iri": "http://narrativegoldmine.com/metaverse#BarterSystem",
+    "content_hash": "sha256-12-37c5ead91a7d",
+    "legacy_term_id": "MV-9794",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:barter-system",
+    "schema_version": "v2",
     "term_id": "MV-9794",
     "preferred_term": "Barter System",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#BarterSystem",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:BarterSystem",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:BarterSystem",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Exchange Mechanism"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Digital Currency",
-        "Blockchain",
-        "Decentralized Exchange"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

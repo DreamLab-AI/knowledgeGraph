@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9535-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9535
-	- preferred-term:: Configuration Setting
-	- source-domain:: mv
-	- owl:class:: mv:ConfigurationSetting
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Configuration Setting is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#ConfigurationSetting
+uri:: urn:visionclaw:concept:spatial-computing:configuration-setting
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:configuration-setting
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Configuration Setting
+content-hash:: sha256-12-713ef6983bed
+legacy-term-id:: MV-9535
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Configuration Setting is a concept within the metaverse domain. Further enrichment pending.
 
-Configuration Setting represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ConfigurationSetting
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Computer Vision]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Configuration Setting represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

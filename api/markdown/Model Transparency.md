@@ -1,160 +1,170 @@
-- ### OntologyBlock
-  id:: model-transparency-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9969
-	- source-domain:: ai
-	- preferred-term:: Model Transparency
-	- status:: active
-	- owl:class:: ai:ModelTransparency
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.
-	- #### Relationships
-	  id:: model-transparency-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[AI Ethics]]
-		- related-to:: [[Explainable AI]]
-		- related-to:: [[AI Governance]]
-		- enables:: [[Trustworthy AI Systems]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#ModelTransparency
+uri:: urn:visionclaw:concept:artificial-intelligence:model-transparency
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:model-transparency
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Model Transparency
+content-hash:: sha256-12-7e7b7d4a4e0f
+legacy-term-id:: MV-9969
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Core Concepts
+- ### Definition
+  - The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.
 
-### Key Requirements
-- Explainability
-- Interpretability
-- Accountability
-- Auditability
-- Reproducibility
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ModelTransparency
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Definitions
+- ### Relationships
+  - is-subclass-of:: [[AI Ethics]]
+  - enables:: [[Trustworthy AI Systems]]
 
-#### Interpretability
-- Understanding model logic
-- Decision process clarity
-- Human comprehension
-- Internal mechanics
-- Feature importance
+- ### Content
 
-#### Explainability
-- Post-decision reasoning
-- Clear justifications
-- Understandable outputs
-- Stakeholder communication
-- Decision rationale
+  ## Core Concepts
 
-## The Black Box Challenge
+  ### Key Requirements
+  - Explainability
+  - Interpretability
+  - Accountability
+  - Auditability
+  - Reproducibility
 
-### Complex Models
-- Deep neural networks
-- Ensemble methods
-- Large language models
-- Generative AI
-- Multi-modal systems
+  ### Definitions
 
-### Transparency Issues
-- Hidden decision paths
-- Opaque reasoning
-- Bias potential
-- Unpredictable behaviour
-- Audit difficulty
+  #### Interpretability
+  - Understanding model logic
+  - Decision process clarity
+  - Human comprehension
+  - Internal mechanics
+  - Feature importance
 
-## XAI Techniques
+  #### Explainability
+  - Post-decision reasoning
+  - Clear justifications
+  - Understandable outputs
+  - Stakeholder communication
+  - Decision rationale
 
-### LIME
-- Local explanations
-- Model-agnostic
-- Feature perturbation
-- Interpretable approximations
-- Instance-level analysis
+  ## The Black Box Challenge
 
-### SHAP
-- Shapley values
-- Feature attribution
-- Consistent explanations
-- Global and local
-- Mathematical foundation
+  ### Complex Models
+  - Deep neural networks
+  - Ensemble methods
+  - Large language models
+  - Generative AI
+  - Multi-modal systems
 
-### Saliency Maps
-- Visual representation
-- Input influence
-- Attention visualisation
-- Neural network focus
-- Image analysis
+  ### Transparency Issues
+  - Hidden decision paths
+  - Opaque reasoning
+  - Bias potential
+  - Unpredictable behaviour
+  - Audit difficulty
 
-### Counterfactual Explanations
-- Alternative scenarios
-- What-if analysis
-- Decision boundaries
-- Minimal changes
-- Actionable insights
+  ## XAI Techniques
 
-## Regulatory Compliance
+  ### LIME
+  - Local explanations
+  - Model-agnostic
+  - Feature perturbation
+  - Interpretable approximations
+  - Instance-level analysis
 
-### GDPR Requirements
-- Right to explanation
-- Automated decisions
-- Human oversight
-- Data subject rights
-- Accountability proof
+  ### SHAP
+  - Shapley values
+  - Feature attribution
+  - Consistent explanations
+  - Global and local
+  - Mathematical foundation
 
-### Industry Standards
-- Finance regulations
-- Healthcare requirements
-- Critical infrastructure
-- Government mandates
-- Ethical guidelines
+  ### Saliency Maps
+  - Visual representation
+  - Input influence
+  - Attention visualisation
+  - Neural network focus
+  - Image analysis
 
-## Business Benefits
+  ### Counterfactual Explanations
+  - Alternative scenarios
+  - What-if analysis
+  - Decision boundaries
+  - Minimal changes
+  - Actionable insights
 
-### Trust Building
-- Stakeholder confidence
-- Customer acceptance
-- Regulatory approval
-- Risk mitigation
-- Brand reputation
+  ## Regulatory Compliance
 
-### Operational Value
-- Debugging support
-- Model improvement
-- Bias detection
-- Performance validation
-- Quality assurance
+  ### GDPR Requirements
+  - Right to explanation
+  - Automated decisions
+  - Human oversight
+  - Data subject rights
+  - Accountability proof
 
-## Implementation Approach
+  ### Industry Standards
+  - Finance regulations
+  - Healthcare requirements
+  - Critical infrastructure
+  - Government mandates
+  - Ethical guidelines
 
-### Multi-disciplinary Teams
-- Data scientists
-- Domain experts
-- Legal advisors
-- Ethics specialists
-- End users
+  ## Business Benefits
 
-### Best Practices
-- Documentation standards
-- Testing protocols
-- Audit trails
-- Version control
-- Continuous monitoring
+  ### Trust Building
+  - Stakeholder confidence
+  - Customer acceptance
+  - Regulatory approval
+  - Risk mitigation
+  - Brand reputation
 
-## Future Directions
+  ### Operational Value
+  - Debugging support
+  - Model improvement
+  - Bias detection
+  - Performance validation
+  - Quality assurance
 
-### Evolving Technologies
-- Advanced interpretability tools
-- Real-time auditing
-- Continuous monitoring
-- Automated explanations
-- Regulatory automation
+  ## Implementation Approach
 
-### Emerging Standards
-- Industry frameworks
-- Certification programmes
-- Benchmark datasets
-- Evaluation metrics
-- Compliance tools
+  ### Multi-disciplinary Teams
+  - Data scientists
+  - Domain experts
+  - Legal advisors
+  - Ethics specialists
+  - End users
 
-## Metadata
+  ### Best Practices
+  - Documentation standards
+  - Testing protocols
+  - Audit trails
+  - Version control
+  - Continuous monitoring
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  #### Future Directions
+  ### Evolving Technologies
+  - Advanced interpretability tools
+  - Real-time auditing
+  - Continuous monitoring
+  - Automated explanations
+  - Regulatory automation
+
+  ### Emerging Standards
+  - Industry frameworks
+  - Certification programmes
+  - Benchmark datasets
+  - Evaluation metrics
+  - Compliance tools
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

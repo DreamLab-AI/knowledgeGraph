@@ -1,50 +1,37 @@
-- ### OntologyBlock
-  id:: delegatedproofofstake-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#DelegatedProofOfStake
+uri:: urn:visionclaw:concept:blockchain:delegated-proof-of-stake
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:delegated-proof-of-stake
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Delegated Proof of Stake
+content-hash:: sha256-12-d11836e156ec
+legacy-term-id:: BC-0550
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0550
-    - filename-history:: ["BC-0550-delegatedproofofstake.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0550
-    - preferred-term:: Delegated Proof of Stake
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.
 
-  - **Definition**
-    - definition:: A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:DelegatedProofOfStake
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:DelegatedProofOfStake
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Proof Of Stake]]
+  - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Proof Of Stake]]
-    - also-known-as:: DPoS
+- ### Content
+  Delegated Proof of Stake — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DelegatedProofOfStake))
-      (SubClassOf :DelegatedProofOfStake :ProofOfStake)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DelegatedProofOfStake "Delegated Proof of Stake"@en)
-      (AnnotationAssertion rdfs:comment :DelegatedProofOfStake
-        "A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens."@en)
-      ```
-
-- ## About Delegated Proof of Stake
-  A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.
-  
-  Provides higher throughput than pure PoS but somewhat more centralized due to limited validator set.
-  
-  ### Examples
-  - EOS, TRON, BitShares
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

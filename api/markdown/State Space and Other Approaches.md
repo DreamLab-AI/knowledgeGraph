@@ -1,6 +1,34 @@
+iri:: http://narrativegoldmine.com/infrastructure#StateSpaceAndOtherApproaches
+uri:: urn:visionclaw:concept:infrastructure:state-space-and-other-approaches
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:state-space-and-other-approaches
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: State Space and Other Approaches
+content-hash:: sha256-12-013eca4033c1
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+bridges-to:: [[AI Agent System]], [[Blockchain]]
 public:: true
 
-	- # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
+- ### Definition
+  - State Space and Other Approaches is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:StateSpaceAndOtherApproaches
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
 		- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
 		- **Research Design & Rationale**: The study introduces a new architecture, Mamba, which incorporates a selection mechanism and hardware-aware computation into structured state space models.
 		- **Significance**: Addresses the inefficiency of Transformer models with a novel architecture that scales linearly and achieves superior performance.
@@ -11,7 +39,6 @@ public:: true
 		- **Abstract in a nutshell**: Mamba is a novel architecture for sequence modeling that enhances structured state space models (SSMs) with selective mechanisms and hardware-aware algorithms, achieving superior performance and efficiency.
 		- **Gap/Need**: Traditional Transformer models have significant computational inefficiency, especially for long sequences. Mamba addresses this by incorporating a selection mechanism and hardware-aware computation in SSMs.
 		- **Innovation**: Introduces a selection mechanism in SSMs, allowing input-dependent parameterization and a simplified architecture without attention or MLP blocks, enabling linear-time computation with maintained or enhanced performance.
-		- ### Key Quotes
 		- "Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences."
 		- **"This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length."**
 		- "Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences."
@@ -21,30 +48,24 @@ public:: true
 		- Mamba outperforms Transformers of the same size in language modelling and matches Transformers twice its size both in pretraining and downstream evaluation, demonstrating its efficiency and effectiveness.
 		- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
 		- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
-- ## Quick lit survey.  (based on [Mamba-Palooza](https://www.youtube.com/watch?v=Bg1LQ_jWliU))
-	- Over 30 new papers and projects since original Mamba paper, with new ones coming out every 1-2 days
-	- 60% of papers address vision/image processing, 25% natural language, and the rest cover various applications
-	- 80% of papers modified the original Mamba architecture in some way
-	- 73% of papers reported state-of-the-art results (though not independently verified yet)
-	- Handling of state in Mamba architecture is not always clear in papers, more research needed
-	- Swapping out selective state space portion of Mamba in MoE architectures could be an interesting avenue to explore
-	- Infrastructure and capital advantages for big tech incumbents in deploying large-scale MoE models
-	- ## Mamba Learning Theory and Interpretability
-		- ### In-Context Learning (Is Mamba Capable of In-Context Learning?)
+  - Over 30 new papers and projects since original Mamba paper, with new ones coming out every 1-2 days
+  - 60% of papers address vision/image processing, 25% natural language, and the rest cover various applications
+  - 80% of papers modified the original Mamba architecture in some way
+  - 73% of papers reported state-of-the-art results (though not independently verified yet)
+  - Handling of state in Mamba architecture is not always clear in papers, more research needed
+  - Swapping out selective state space portion of Mamba in MoE architectures could be an interesting avenue to explore
+  - Infrastructure and capital advantages for big tech incumbents in deploying large-scale MoE models
 			- Mamba can do in-context learning, gradually optimizing internal representations through layers
 			- Similar pattern to Transformers: elevation of concepts and more accurate activations through layers, then collapse at final prediction
-		- ### Learning Rules from Sequences (Othello Mamba)
 			- Mamba learns rules of Othello from just a sequence of moves, achieving higher board accuracy than OthelloGPT
 			- More data efficient, but becomes less accurate as game progresses and requires longer training than same-sized Transformer
-		- ### Strengths and Weaknesses (Can Mamba Learn How to Learn?)
 			- Mamba outperforms Transformers on tasks with irrelevance and noise
 			- Mamba struggles with high-precision memory recall compared to Transformers
 			- Hybrid MambaFormer model outperforms both Transformer and Mamba on various evaluation tasks
-	- ## Mixture of Experts (MoE) Architectures
 		- Major force driving frontier models (e.g., GPT-4, Gemini 1.5)
 		- MoE-Mamba (MoE-Mamba) achieved same loss as original Mamba with 2.2x less training steps, scaling up to 32 experts
 		- BlackMamba scaled up to 2.8B parameters and 8 experts, with generation latency well below Transformer, Transformer MoE, and Mamba
-	- # Vision Mamba
+  - # Vision Mamba
 		- Majority of Mamba papers (over 60%) address vision/image processing, especially biomedical image segmentation
 		- Key themes:
 			- Representing data as sequences is crucial
@@ -70,20 +91,19 @@ public:: true
 			- Turning images into sequences is crucial, can be done through multi-scan approaches
 			- Combining scans sequentially may be more effective than parallel
 			- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
-	- # Mixture of Experts (MoE) Architectures
+  - # Mixture of Experts (MoE) Architectures
 		- Major force in frontier models (GPT-4, Gemini 1.5)
 		- MoE-Mamba and BlackMamba demonstrate MoE's effectiveness with Mamba
 		- Open questions around scaling and infrastructure requirements for large-scale MoE-Mamba models
 		- [Introducing Jamba: AI21's Groundbreaking SSM-Transformer Model](https://www.ai21.com/blog/announcing-jamba)
-	- # Long Context Modeling
+  - # Long Context Modeling
 		- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on "needle in a haystack" task
 		- Evo: Models long DNA sequences, learning a "cell model" analogous to language models' "world model"
 		- Potential challenges:
 			- Eventual "rotting" of internal states with extreme context lengths
 			- Need for state regularization or "pruning" to maintain performance
 		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
-	- # Potential Applications
-		- ## Climate Science?
+  - # Potential Applications
 			- To approach the problem of using Mamba to analyze space-acquired time series image-based climate data from multi-spectrum sensors, we can draw upon several techniques and architectures discussed in the Mamba literature. Here's a proposed approach:
 				- Data Preprocessing:
 					- Combine multi-spectrum sensor data:
@@ -113,48 +133,37 @@ public:: true
 			  graph TD
 			      A[Multi-spectrum Sensor Data] --> B{Data Preprocessing}
 			      C[Historical Data] --> B
-			      
 			      subgraph Data Preprocessing
 			          B --> D[Combine Multi-spectrum Data]
 			          B --> E[Temporal Alignment]
 			          B --> F[Incorporate Historical Data]
-			          
 			          D --> G[MambaMorph for Alignment]
 			          D --> H[Generate Deformation Fields]
 			          D --> I[Normalize Data]
-			          
 			          E --> J[Dynamic Time Warping]
 			          E --> K[Handle Missing Data]
 			          E --> L[Create Unified Temporal Grid]
-			          
 			          F --> M[Align Historical Records]
 			          F --> N[Transfer Learning/Domain Adaptation]
 			      end
-			      
 			      B --> O{Mamba Architecture}
-			      
 			      subgraph Mamba Architecture
 			          O --> P[Multi-dimensional Sequencing]
 			          O --> Q[Cross-scanning]
 			          O --> R[Hybrid Architectures]
-			          
 			          P --> S[Mamba-ND]
 			          P --> T[Capture Dependencies Across Dimensions]
-			          
 			          Q --> U[VMamba/SegMamba]
 			          Q --> V[Multi-directional Scans]
 			          Q --> W[Combine Scan Representations]
-			          
 			          R --> X[U-Mamba/Swin-UMamba]
 			          R --> Y[Convolutional Layers for Local Features]
 			          R --> Z[Mamba Layers for Long-range Dependencies]
 			          R --> AA[Pre-training on Large-scale Datasets]
 			      end
-			      
 			      O --> AB[Comprehensive Data Representation]
 			      AB --> AC[Predictive Component]
 			      AB --> AD[Up-to-date Data vs. Historical Context]
-			      
 			      subgraph Additional Considerations
 			          AE[Handle Data Quality Issues]
 			          AF[Incorporate Domain Knowledge]
@@ -162,18 +171,63 @@ public:: true
 			          AH[Evaluate Model Performance]
 			          AI[Interpret and Visualize Representations]
 			      end
-			      
 			      AC --> AJ{Output Formats}
 			      AJ --> AK[Short-term Forecasts]
 			      AJ --> AL[Long-term Projections]
-			      
 			      AE --> AB
 			      AF --> AB
 			      AG --> AB
 			      AH --> AB
 			      AI --> AB
+			   ```
+				- TODO What are the specific ontologies being used (e.g., RDF, OWL)?
+				- TODO Are there any domain-specific requirements or constraints to consider?
+				- TODO What are the desired output tasks (e.g., ontology alignment, knowledge graph completion, semantic similarity)?
+				- TODO How large and complex are the ontological graphs being analyzed?
+				- TODO Handling scalability issues for large-scale ontological graphs
+				- TODO Incorporating domain knowledge and ontology-specific constraints
+				- TODO Leveraging transfer learning from pre-trained models on similar ontological graphs
+				- TODO Evaluating the model's performance using appropriate graph-based metrics and validation techniques
+				- TODO Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
+  - https://www.statespace.info/  Lots of tracked projects here. This is the best place.
+  - Can use the https://huggingface.co/docs/accelerate/usage_guides/fsdp for sharded training
+  - [[2401.04081] MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts (arxiv.org)](https://arxiv.org/abs/2401.04081)
+  - [havenhq/mamba-chat: Mamba-Chat: A chat LLM based on the state-space model architecture 🐍 (github.com)](https://github.com/havenhq/mamba-chat)
+  - [[2401.13660] MambaByte: Token-free Selective State Space Model (arxiv.org)](https://arxiv.org/abs/2401.13660) doesn't need tokens!!
+  - # Kolmogorov-Arnold Networks (KANs)
+  - A novel type of neural network architecture that has recently gained attention in the field of artificial intelligence. Here are the key points about KANs:
+  - Inspiration and design:
+		- KANs are inspired by the Kolmogorov-Arnold representation theorem from the 1950s[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/)[](https://arxiv.org/html/2404.19756v4).
+		- Unlike traditional Multi-Layer Perceptrons (MLPs) that have fixed activation functions on nodes, KANs have learnable activation functions on edges[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/)[](https://arxiv.org/html/2404.19756v4).
+  - Key differences from MLPs:
+		- KANs replace linear weights with univariate functions parametrized as splines[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+		- They have no linear weights at all - every weight parameter is a learnable univariate function[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+  - Potential advantages:
+		- Improved accuracy: Smaller KANs can achieve comparable or better accuracy than larger MLPs in data fitting and PDE solving[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+		- Better interpretability: KANs can be intuitively visualized and easily interact with human users[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+		- Faster neural scaling laws: KANs potentially scale better than traditional neural networks[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/)[](https://arxiv.org/html/2404.19756v4).
+  - Applications:
+		- KANs show promise in image processing, speech recognition, and financial modeling[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
+		- They have been used to help scientists (re)discover mathematical and physical laws[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+  - Challenges:
+		- KANs are more complex to design and implement than traditional neural networks[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
+		- They require specialized knowledge and are not yet widely adopted[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
+		- Training speed is currently slower (about 10 times) compared to MLPs of the same size[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
+  - Implementation:
+		- A Python library called "pykan" is available for implementing KANs[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/)
+		  4
+		  .
+		  While KANs show promising results and potential advantages over traditional neural networks, they are still in the early stages of development and research. Further studies and real-world applications are needed to fully understand their capabilities and limitations compared to established neural network architectures.
+
+  - ### Key Quotes
+  - ## Quick lit survey.  (based on [Mamba-Palooza](https://www.youtube.com/watch?v=Bg1LQ_jWliU))
+  - ## Mamba Learning Theory and Interpretability
+		- ### In-Context Learning (Is Mamba Capable of In-Context Learning?)
+		- ### Learning Rules from Sequences (Othello Mamba)
+		- ### Strengths and Weaknesses (Can Mamba Learn How to Learn?)
+  - ## Mixture of Experts (MoE) Architectures
+		- ## Climate Science?
 			  ```
-		-
 			- # Mamba2: A Deep Dive into Enhanced Efficiency and Scalability
 				- [Mamba2](https://arxiv.org/abs/2405.21060) represents a significant advancement in the realm of structured state space models (SSMs), cleverly marrying theoretical elegance with practical efficiency. Building upon the foundation laid by its predecessor, Mamba, this architecture tackles the inherent computational challenges of sequence modelling, particularly for long sequences, by introducing a series of innovations that leverage the power of modern hardware. This section delves into the technical intricacies of Mamba2, guided by the insights from the paper "Transformers are SSMs: Generalised Models and Efficient Algorithms Through Structured State Space Duality".
 				- ## Bridging the Gap: SSMs, Attention, and Structured Matrices
@@ -199,7 +253,6 @@ public:: true
 					- While Mamba2 excels in training efficiency, its impact on inference speed remains an open question. This aspect is particularly crucial for real-world applications where fast inference is paramount. Further research is needed to investigate how to optimise Mamba2 specifically for inference, potentially through state size adjustments or by leveraging specialised hardware.
 					- The reduced expressivity of the SSD layer, a consequence of its chunking strategy, is an area that demands deeper understanding. While the paper offers a compelling argument for this as a form of inductive bias, a more detailed analysis is needed to ascertain its impact on specific tasks. Exploring whether this trade-off consistently yields benefits across diverse sequence modelling problems is a crucial direction for future research.
 					- The paper hints at the potential of hybrid architectures that combine the strengths of both SSD layers and attention mechanisms. Initial results suggest that a judicious blend of these two paradigms can lead to models that outperform both pure Transformer and pure Mamba2 architectures. Further research into the optimal balance and placement of these layers within a hybrid architecture is a promising avenue for achieving even better performance and efficiency.
-			-
 			- # Things to do
 				- TODO What is the spatial and temporal resolution of the space-acquired data?
 				- TODO How far back does the historical data go, and at what resolution?
@@ -236,8 +289,6 @@ public:: true
 			- Hybrid Architectures:
 				- Combine Graph-Mamba with other graph neural network architectures (e.g., GCNs, GraphSAGE)
 				- Leverage the strengths of both approaches to capture local and global patterns in the ontological graphs
-				-
-				-
 			- ```mermaid
 			  graph TD
 			   A[Ontological Graphs] --> B(Data Preprocessing)
@@ -251,48 +302,8 @@ public:: true
 			   G --> H[Ontology Alignment]
 			   G --> I[Knowledge Graph Completion]
 			   G --> J[Semantic Similarity]
-			   ```
-				-
-				- TODO What are the specific ontologies being used (e.g., RDF, OWL)?
-				- TODO Are there any domain-specific requirements or constraints to consider?
-				- TODO What are the desired output tasks (e.g., ontology alignment, knowledge graph completion, semantic similarity)?
-				- TODO How large and complex are the ontological graphs being analyzed?
-				- TODO Handling scalability issues for large-scale ontological graphs
-				- TODO Incorporating domain knowledge and ontology-specific constraints
-				- TODO Leveraging transfer learning from pre-trained models on similar ontological graphs
-				- TODO Evaluating the model's performance using appropriate graph-based metrics and validation techniques
-				- TODO Interpreting and visualizing the learned graph representations for ontology engineers and domain experts
-- ## Implementations
-	- https://www.statespace.info/  Lots of tracked projects here. This is the best place.
-	- Can use the https://huggingface.co/docs/accelerate/usage_guides/fsdp for sharded training
-	- [[2401.04081] MoE-Mamba: Efficient Selective State Space Models with Mixture of Experts (arxiv.org)](https://arxiv.org/abs/2401.04081)
-	- [havenhq/mamba-chat: Mamba-Chat: A chat LLM based on the state-space model architecture 🐍 (github.com)](https://github.com/havenhq/mamba-chat)
-	- [[2401.13660] MambaByte: Token-free Selective State Space Model (arxiv.org)](https://arxiv.org/abs/2401.13660) doesn't need tokens!!
--
-- # Kolmogorov-Arnold Networks (KANs)
-	- A novel type of neural network architecture that has recently gained attention in the field of artificial intelligence. Here are the key points about KANs:
-	- Inspiration and design:
-		- KANs are inspired by the Kolmogorov-Arnold representation theorem from the 1950s[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/)[](https://arxiv.org/html/2404.19756v4).
-		- Unlike traditional Multi-Layer Perceptrons (MLPs) that have fixed activation functions on nodes, KANs have learnable activation functions on edges[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/)[](https://arxiv.org/html/2404.19756v4).
-	- Key differences from MLPs:
-		- KANs replace linear weights with univariate functions parametrized as splines[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-		- They have no linear weights at all - every weight parameter is a learnable univariate function[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-	- Potential advantages:
-		- Improved accuracy: Smaller KANs can achieve comparable or better accuracy than larger MLPs in data fitting and PDE solving[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-		- Better interpretability: KANs can be intuitively visualized and easily interact with human users[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-		- Faster neural scaling laws: KANs potentially scale better than traditional neural networks[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/)[](https://arxiv.org/html/2404.19756v4).
-	- Applications:
-		- KANs show promise in image processing, speech recognition, and financial modeling[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
-		- They have been used to help scientists (re)discover mathematical and physical laws[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-	- Challenges:
-		- KANs are more complex to design and implement than traditional neural networks[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
-		- They require specialized knowledge and are not yet widely adopted[](https://theaiinsider.tech/2024/05/27/what-are-kolmogorov-arnold-networks-a-guide-to-what-might-be-the-next-big-thing-in-artificial-intelligence/).
-		- Training speed is currently slower (about 10 times) compared to MLPs of the same size[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/).
-	- Implementation:
-		- A Python library called "pykan" is available for implementing KANs[](https://www.reddit.com/r/MachineLearning/comments/1chrafb/r_kan_kolmogorovarnold_networks/)
-		  
-		  4
-		  
-		  .
-		  
-		  While KANs show promising results and potential advantages over traditional neural networks, they are still in the early stages of development and research. Further studies and real-world applications are needed to fully understand their capabilities and limitations compared to established neural network architectures.
+  - ## Implementations
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

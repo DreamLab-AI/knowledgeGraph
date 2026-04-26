@@ -1,225 +1,238 @@
-- ### OntologyBlock
-  id:: metadata-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9962
-	- source-domain:: mv
-	- preferred-term:: Metadata Standards
-	- status:: active
-	- owl:class:: mv:MetadataStandards
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.
-	- #### Relationships
-	  id:: metadata-standards-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Standards]]
-		- related-to:: [[Digital Asset Management]]
-		- related-to:: [[Interoperability]]
-		- enables:: [[Cross-System Data Exchange]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetadataStandards
+uri:: urn:visionclaw:concept:spatial-computing:metadata-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metadata-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metadata Standards
+content-hash:: sha256-12-bf5e298b76fc
+legacy-term-id:: MV-9962
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Dublin Core Standard
+- ### Definition
+  - Established frameworks and specifications such as Dublin Core, IPTC, and XMP that define how descriptive information about digital assets should be structured, enabling interoperability, discoverability, and consistent management across systems.
 
-### Overview
-- 15 metadata terms
-- Web resource description
-- SEO improvement
-- Standards combination
-- Powerful cataloguing
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetadataStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Core Elements
-- Title
-- Creator
-- Subject
-- Description
-- Publisher
-- Contributor
-- Date
-- Type
-- Format
-- Identifier
-- Source
-- Language
-- Relation
-- Coverage
-- Rights
+- ### Relationships
+  - is-subclass-of:: [[Data Standards]]
+  - enables:: [[Cross-System Data Exchange]]
 
-## Dublin Core Benefits
+- ### Content
 
-### DAM Integration
-- Consistent metadata
-- Interoperable format
-- Searchable content
-- Cross-industry recognition
-- Platform sharing
+  ## Dublin Core Standard
 
-### Wide Recognition
-- Multi-industry use
-- Standardised approach
-- Easy understanding
-- System sharing
-- Application support
+  ### Overview
+  - 15 metadata terms
+  - Web resource description
+  - SEO improvement
+  - Standards combination
+  - Powerful cataloguing
 
-## Dublin Core Initiative (DCMI)
+  ### Core Elements
+  - Title
+  - Creator
+  - Subject
+  - Description
+  - Publisher
+  - Contributor
+  - Date
+  - Type
+  - Format
+  - Identifier
+  - Source
+  - Language
+  - Relation
+  - Coverage
+  - Rights
 
-### Organisation
-- Open forum
-- Metadata innovation
-- Interoperability support
-- Standard development
-- Business model support
+  ## Dublin Core Benefits
 
-### 2025 Conference
-- Barcelona, Spain
-- October 22-25
-- International gathering
-- Open Metadata Clinic
-- Document Society events
+  ### DAM Integration
+  - Consistent metadata
+  - Interoperable format
+  - Searchable content
+  - Cross-industry recognition
+  - Platform sharing
 
-## Linked Data Principles
+  ### Wide Recognition
+  - Multi-industry use
+  - Standardised approach
+  - Easy understanding
+  - System sharing
+  - Application support
 
-### Semantic Web Design
-- URI identifiers
-- Global identification
-- Vocabulary terms
-- Web principles
-- Linked data support
+  ## Dublin Core Initiative (DCMI)
 
-### Interoperability
-- Cross-system exchange
-- Standard vocabularies
-- Relationship expression
-- Machine-readable
-- Web-compatible
+  ### Organisation
+  - Open forum
+  - Metadata innovation
+  - Interoperability support
+  - Standard development
+  - Business model support
 
-## Related Standards
+  ### 2025 Conference
+  - Barcelona, Spain
+  - October 22-25
+  - International gathering
+  - Open Metadata Clinic
+  - Document Society events
 
-### IPTC Metadata
-- Dublin Core elements
-- Compatibility demonstration
-- Flexibility showcase
-- System enhancement
-- Platform integration
+  ## Linked Data Principles
 
-### XMP (Extensible Metadata Platform)
-- Adobe development
-- File embedding
-- Preservation support
-- Creative workflows
-- Asset tracking
+  ### Semantic Web Design
+  - URI identifiers
+  - Global identification
+  - Vocabulary terms
+  - Web principles
+  - Linked data support
 
-### Schema.org
-- Structured data
-- Search engine support
-- Web content
-- Rich snippets
-- SEO enhancement
+  ### Interoperability
+  - Cross-system exchange
+  - Standard vocabularies
+  - Relationship expression
+  - Machine-readable
+  - Web-compatible
 
-## Metadata Crosswalks
+  ## Related Standards
 
-### Purpose
-- Element translation
-- Value mapping
-- Schema interoperability
-- Harvesting support
-- Record exchange
+  ### IPTC Metadata
+  - Dublin Core elements
+  - Compatibility demonstration
+  - Flexibility showcase
+  - System enhancement
+  - Platform integration
 
-### Implementation
-- Field mapping
-- Value conversion
-- Relationship preservation
-- Quality maintenance
-- Automation support
+  ### XMP (Extensible Metadata Platform)
+  - Adobe development
+  - File embedding
+  - Preservation support
+  - Creative workflows
+  - Asset tracking
 
-## Qualified Dublin Core
+  ### Schema.org
+  - Structured data
+  - Search engine support
+  - Web content
+  - Rich snippets
+  - SEO enhancement
 
-### Enhanced Features
-- Encoding schemes
-- Enumerated lists
-- Processing elements
-- Increased specificity
-- Refinement terms
+  ## Metadata Crosswalks
 
-### Complexity Trade-offs
-- Interoperability challenges
-- Implementation complexity
-- Precision benefits
-- Standardisation needs
-- Tool support
+  ### Purpose
+  - Element translation
+  - Value mapping
+  - Schema interoperability
+  - Harvesting support
+  - Record exchange
 
-## Governance Foundation
+  ### Implementation
+  - Field mapping
+  - Value conversion
+  - Relationship preservation
+  - Quality maintenance
+  - Automation support
 
-### Strategy Support
-- Consistency enabling
-- Data sharing support
-- Quality improvement
-- Compliance facilitation
-- Discovery enhancement
+  ## Qualified Dublin Core
 
-### Best Practices
-- Standard adoption
-- Consistent application
-- Quality monitoring
-- Regular updates
-- Training programmes
+  ### Enhanced Features
+  - Encoding schemes
+  - Enumerated lists
+  - Processing elements
+  - Increased specificity
+  - Refinement terms
 
-## Industry Applications
+  ### Complexity Trade-offs
+  - Interoperability challenges
+  - Implementation complexity
+  - Precision benefits
+  - Standardisation needs
+  - Tool support
 
-### Libraries and Archives
-- Collection cataloguing
-- Discovery systems
-- Preservation metadata
-- Access provision
-- Research support
+  ## Governance Foundation
 
-### Digital Asset Management
-- Asset description
-- Search optimisation
-- Rights tracking
-- Workflow support
-- Distribution management
+  ### Strategy Support
+  - Consistency enabling
+  - Data sharing support
+  - Quality improvement
+  - Compliance facilitation
+  - Discovery enhancement
 
-### Government
-- Open data initiatives
-- Transparency support
-- Citizen services
-- Cross-agency sharing
-- Compliance requirements
+  ### Best Practices
+  - Standard adoption
+  - Consistent application
+  - Quality monitoring
+  - Regular updates
+  - Training programmes
 
-## Implementation Approach
+  ## Industry Applications
 
-### Selection Criteria
-- Use case alignment
-- Industry adoption
-- Tool support
-- Extensibility needs
-- Interoperability requirements
+  ### Libraries and Archives
+  - Collection cataloguing
+  - Discovery systems
+  - Preservation metadata
+  - Access provision
+  - Research support
 
-### Application Guidelines
-- Element selection
-- Value formatting
-- Vocabulary usage
-- Quality assurance
-- Documentation
+  ### Digital Asset Management
+  - Asset description
+  - Search optimisation
+  - Rights tracking
+  - Workflow support
+  - Distribution management
 
-## Future Directions
+  ### Government
+  - Open data initiatives
+  - Transparency support
+  - Citizen services
+  - Cross-agency sharing
+  - Compliance requirements
 
-### Emerging Trends
-- AI-assisted tagging
-- Automated extraction
-- Semantic enrichment
-- Graph integration
-- Real-time metadata
+  ## Implementation Approach
 
-### Evolution Areas
-- Metaverse assets
-- 3D content
-- Interactive media
-- Cross-platform identity
-- Decentralised systems
+  ### Selection Criteria
+  - Use case alignment
+  - Industry adoption
+  - Tool support
+  - Extensibility needs
+  - Interoperability requirements
 
-## Metadata
+  ### Application Guidelines
+  - Element selection
+  - Value formatting
+  - Vocabulary usage
+  - Quality assurance
+  - Documentation
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  #### Future Directions
+  ### Emerging Trends
+  - AI-assisted tagging
+  - Automated extraction
+  - Semantic enrichment
+  - Graph integration
+  - Real-time metadata
+
+  ### Evolution Areas
+  - Metaverse assets
+  - 3D content
+  - Interactive media
+  - Cross-platform identity
+  - Decentralised systems
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

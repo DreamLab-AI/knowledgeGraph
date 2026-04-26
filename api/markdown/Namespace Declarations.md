@@ -1,35 +1,52 @@
-- ### OntologyBlock
-  id:: namespace-declarations-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9977
-	- source-domain:: mv
-	- preferred-term:: Namespace Declarations
-	- status:: active
-	- definition:: XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.
-	- owl:class:: mv:NamespaceDeclarations
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: namespace-declarations-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Semantic Web Standards]]
-		- related-to:: [[RDF]]
-		- related-to:: [[XML]]
-		- related-to:: [[Semantic Web]]
-		- enables:: [[Ontology Interoperability]]
-	- #### Technical Details
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#NamespaceDeclarations
+uri:: urn:visionclaw:concept:spatial-computing:namespace-declarations
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:namespace-declarations
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Namespace Declarations
+content-hash:: sha256-12-8247a6f5114b
+legacy-term-id:: MV-9977
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:NamespaceDeclarations
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Semantic Web Standards]]
+  - enables:: [[Ontology Interoperability]]
+
+- ### Content
+
+  - #### Technical Details
 		- Declared using xmlns:prefix syntax in XML documents
 		- RDF namespace IRI: http://www.w3.org/1999/02/22-rdf-syntax-ns#
 		- QNames consist of namespace prefix and local name
 		- Prefixed Names (PNames) extend QNames with more flexible abbreviation
 		- INamespaceMapper interface manages prefix-to-URI mappings
-	- #### Standard Namespaces
-	  collapsed:: true
+  - #### Standard Namespaces
 		- rdf: for RDF syntax elements
 		- rdfs: for RDF Schema vocabulary
 		- owl: for OWL ontology language
 		- xsd: for XML Schema datatypes
 		- Custom namespaces for domain-specific vocabularies
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

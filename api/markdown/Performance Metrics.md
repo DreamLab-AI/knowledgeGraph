@@ -1,22 +1,41 @@
-- ### OntologyBlock
-  id:: performance-metrics-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0602
-	- preferred-term:: Performance Metrics
-	- source-domain:: ai
-	- status:: active
-	- public-access:: true
-	- definition:: Performance Metrics are quantitative measures used to evaluate and compare the effectiveness, accuracy, and efficiency of AI and machine learning systems. These metrics provide standardised ways to assess model quality including accuracy, precision, recall, F1-score, AUC-ROC, and task-specific evaluation criteria.
-	- owl:class:: ai:PerformanceMetric
-	- belongsToDomain:: [[Artificial Intelligence]]
-	- #### Relationships
-	  id:: performance-metrics-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Artificial Intelligence]]
-		- related-to:: [[Machine Learning]]
-		- is-parent-of:: [[Accuracy]]
-		- is-parent-of:: [[Precision]]
-		- is-parent-of:: [[Recall]]
-		- is-parent-of:: [[F1 Score]]
-		- is-parent-of:: [[AUC]]
+iri:: http://narrativegoldmine.com/infrastructure#PerformanceMetrics
+uri:: urn:visionclaw:concept:infrastructure:performance-metrics
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:performance-metrics
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Performance Metrics
+content-hash:: sha256-12-e2c0647ed554
+legacy-term-id:: MV-9182
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - PerformanceMetrics is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:PerformanceMetrics
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  # PerformanceMetrics
+  PerformanceMetrics represents a key component in Metaverse infrastructure and technology. Research: PerformanceMetrics - FPS tracking, latency measurement, performance analysis
+  - https://www.khronos.org/ - Industry standards
+  - https://www.w3.org/TR/ - Web standards
+  - https://developer.mozilla.org/ - Technical documentation
+
+  ## Sources
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: manipulatorrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#ManipulatorRobot
+uri:: urn:visionclaw:concept:robotics:manipulator-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:manipulator-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Manipulator Robot
+content-hash:: sha256-12-2f1582884c57
+legacy-term-id:: RB-0108
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0108
-    - filename-history:: ["RB-0108-manipulatorrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0108
-    - preferred-term:: Manipulator Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.
 
-  - **Definition**
-    - definition:: Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:ManipulatorRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:ManipulatorRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Robot]]
+- ### Content
+  Manipulator Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ManipulatorRobot))
-      (SubClassOf :ManipulatorRobot :Robot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ManipulatorRobot "Manipulator Robot"@en)
-      (AnnotationAssertion rdfs:comment :ManipulatorRobot
-        "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks."@en)
-      ```
-
-- ## About Manipulator Robot
-  Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.
-  
-  A robot designed primarily for manipulation tasks, typically with a multi-joint arm structure.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

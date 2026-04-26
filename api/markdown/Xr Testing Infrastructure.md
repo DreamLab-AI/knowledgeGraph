@@ -1,45 +1,60 @@
-- ### OntologyBlock
-  id:: xr-testing-infrastructure-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10174
-	- source-domain:: mv
-	- preferred-term:: XR Testing Infrastructure
-	- status:: active
-	- definition:: The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.
-	- owl:class:: mv:XrTestingInfrastructure
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Testing Infrastructure]]
-		- related-to:: [[Quality Assurance]]
-		- related-to:: [[XR Hardware]]
-		- related-to:: [[Performance Testing]]
-	  id:: xr-testing-infrastructure-relationships
-	  collapsed:: true
-- ## Overview
-	- XR testing infrastructure addresses unique validation challenges including performance profiling, motion sickness assessment, tracking accuracy verification, and accessibility compliance. Automated testing tools simulate user interactions for regression testing. User testing labs with eye tracking and biometric sensors capture comfort and usability metrics. Performance testing ensures consistent frame rates critical for immersive experiences.
-- ## Technical Details
-	- ### Testing Categories
+iri:: http://narrativegoldmine.com/infrastructure#XRTestingInfrastructure
+uri:: urn:visionclaw:concept:infrastructure:xr-testing-infrastructure
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:xr-testing-infrastructure
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: XR Testing Infrastructure
+content-hash:: sha256-12-6ee7af58f7ae
+legacy-term-id:: MV-10174
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - The hardware, software, and methodological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:XrTestingInfrastructure
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Testing Infrastructure]]
+
+- ### Content
+
+  - ## Overview
+  - XR testing infrastructure addresses unique validation challenges including performance profiling, motion sickness assessment, tracking accuracy verification, and accessibility compliance. Automated testing tools simulate user interactions for regression testing. User testing labs with eye tracking and biometric sensors capture comfort and usability metrics. Performance testing ensures consistent frame rates critical for immersive experiences.
+  - ## Technical Details
+  - ### Testing Categories
 		- **Performance Testing**: Frame rate, latency, and thermal analysis
 		- **Tracking Validation**: Positional accuracy and drift measurement
 		- **User Experience Testing**: Comfort, presence, and usability evaluation
 		- **Accessibility Testing**: Compliance with XR accessibility standards
-	- ### Testing Tools
+  - ### Testing Tools
 		- **Unity Test Framework**: Automated XR application testing
 		- **Unreal Automation System**: Engine-integrated testing
 		- **Platform Tools**: Meta Quest Developer Hub, SteamVR testing
 		- **Custom Rigs**: Motion capture validation setups
-	- ### Metrics and KPIs
+  - ### Metrics and KPIs
 		- Frame timing consistency (target 90+ FPS)
 		- Motion-to-photon latency (sub-20ms)
 		- Tracking accuracy (sub-millimeter positioning)
 		- Simulator sickness questionnaire scores
-- ## Applications
-	- XR application quality assurance
-	- Platform certification testing
-	- Accessibility compliance validation
-	- Performance optimization verification
-	- Enterprise deployment readiness testing
+  - ## Applications
+  - XR application quality assurance
+  - Platform certification testing
+  - Accessibility compliance validation
+  - Performance optimization verification
+  - Enterprise deployment readiness testing
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

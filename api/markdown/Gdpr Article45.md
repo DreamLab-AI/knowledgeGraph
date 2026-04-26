@@ -1,101 +1,114 @@
-- ### OntologyBlock
-  id:: gdpr-article45-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9905
-	- source-domain:: mv
-	- preferred-term:: Gdpr Article45
-	- status:: active
-	- owl:class:: mv:GdprArticle45
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The General Data Protection Regulation provision empowering the European Commission to determine whether third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms operating across international boundaries.
-	- #### Relationships
-	  id:: gdpr-article45-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Protection Regulation]]
-		- related-to:: [[International Data Transfer]]
-		- related-to:: [[Privacy Framework]]
-		- governs:: [[Cross-Border Metaverse Operations]]
+iri:: http://narrativegoldmine.com/spatial-computing#GdprArticle45
+uri:: urn:visionclaw:concept:spatial-computing:gdpr-article45
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:gdpr-article45
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Gdpr Article45
+content-hash:: sha256-12-7a08dc24a5cb
+legacy-term-id:: MV-9905
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Legal Framework
+- ### Definition
+  - The General Data Protection Regulation provision empowering the European Commission to determine whether third countries provide adequate data protection levels, enabling personal data transfers from the EU to approved jurisdictions without additional safeguards, critical for metaverse platforms operating across international boundaries.
 
-### Article 45 Provisions
-- European Commission determines adequate protection levels
-- Transfers to adequate countries treated like intra-EU transmissions
-- No specific authorisation required for transfers
-- Periodic review mechanism (at least every four years)
+- ### Semantic Classification
+  - owl-class:: spatial-computing:GdprArticle45
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Assessment Criteria
-- Laws and respect for human rights
-- National security considerations
-- Data protection rules and enforcement
-- Existence of data protection authority
-- Binding international commitments
+- ### Relationships
+  - is-subclass-of:: [[Data Protection Regulation]]
 
-## Adequacy Decisions
+- ### Content
 
-### Approved Countries (as of 2024)
-Fifteen third countries with adequacy decisions:
-- Andorra
-- Argentina
-- Canada (commercial organisations)
-- Faroe Islands
-- Guernsey
-- Israel
-- Isle of Man
-- Japan
-- Jersey
-- New Zealand
-- Republic of Korea
-- Switzerland
-- United Kingdom
-- United States (EU-US Data Privacy Framework)
-- Uruguay
+  ## Legal Framework
 
-## 2024 Developments
+  ### Article 45 Provisions
+  - European Commission determines adequate protection levels
+  - Transfers to adequate countries treated like intra-EU transmissions
+  - No specific authorisation required for transfers
+  - Periodic review mechanism (at least every four years)
 
-### Key Events
-- **January 15, 2024**: Commission report on eleven Directive 95/46/EC adequacy decisions
-- **March 4, 2024**: First high-level meeting on safe data flows with 15 countries
-- **October 9, 2024**: First review report on EU-US Data Privacy Framework
+  ### Assessment Criteria
+  - Laws and respect for human rights
+  - National security considerations
+  - Data protection rules and enforcement
+  - Existence of data protection authority
+  - Binding international commitments
 
-### EU-US Data Privacy Framework
-- Adopted July 10, 2023
-- Addresses CJEU concerns on government surveillance
-- Self-certification mechanism for US businesses
-- Annual certification renewal requirement
-- Binding US government commitments on data access limits
+  ## Adequacy Decisions
 
-## Impact on Metaverse
+  ### Approved Countries (as of 2024)
+  Fifteen third countries with adequacy decisions:
+  - Andorra
+  - Argentina
+  - Canada (commercial organisations)
+  - Faroe Islands
+  - Guernsey
+  - Israel
+  - Isle of Man
+  - Japan
+  - Jersey
+  - New Zealand
+  - Republic of Korea
+  - Switzerland
+  - United Kingdom
+  - United States (EU-US Data Privacy Framework)
+  - Uruguay
 
-### Cross-Border Operations
-- User data flows between jurisdictions
-- Avatar and identity data transfers
-- Transaction records and virtual asset data
-- Behavioural and preference data
+  ## 2024 Developments
 
-### Compliance Requirements
-- Data localisation considerations
-- Transfer impact assessments for non-adequate countries
-- Standard contractual clauses where needed
-- Binding corporate rules for multinationals
+  ### Key Events
+  - **January 15, 2024**: Commission report on eleven Directive 95/46/EC adequacy decisions
+  - **March 4, 2024**: First high-level meeting on safe data flows with 15 countries
+  - **October 9, 2024**: First review report on EU-US Data Privacy Framework
 
-## Adequacy Decision Characteristics
+  ### EU-US Data Privacy Framework
+  - Adopted July 10, 2023
+  - Addresses CJEU concerns on government surveillance
+  - Self-certification mechanism for US businesses
+  - Annual certification renewal requirement
+  - Binding US government commitments on data access limits
 
-### Effect
-- Personal data flows without additional safeguards
-- Assimilated to intra-EU data transmissions
-- Reduced compliance burden
+  ## Impact on Metaverse
 
-### Limitations
-- Not permanent - subject to review and revocation
-- Commission monitors third country developments
-- Can be suspended if protection no longer adequate
-- Subject to CJEU judicial review
+  ### Cross-Border Operations
+  - User data flows between jurisdictions
+  - Avatar and identity data transfers
+  - Transaction records and virtual asset data
+  - Behavioural and preference data
 
-## Metadata
+  ### Compliance Requirements
+  - Data localisation considerations
+  - Transfer impact assessments for non-adequate countries
+  - Standard contractual clauses where needed
+  - Binding corporate rules for multinationals
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Adequacy Decision Characteristics
+
+  ### Effect
+  - Personal data flows without additional safeguards
+  - Assimilated to intra-EU data transmissions
+  - Reduced compliance burden
+
+  ### Limitations
+  - Not permanent - subject to review and revocation
+  - Commission monitors third country developments
+  - Can be suspended if protection no longer adequate
+  - Subject to CJEU judicial review
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

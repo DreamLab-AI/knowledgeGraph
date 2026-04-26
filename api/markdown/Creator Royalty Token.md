@@ -1,422 +1,48 @@
-- ### OntologyBlock
-  id:: creatorroyaltytoken-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: bc-20132
-	- source-domain:: bc
-	- preferred-term:: Creator Royalty Token
-	- definition:: Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.
-	- maturity:: mature
-	- source:: [[OMA3 Media WG]], [[ISO 24165]], [[OECD Creative Economy]]
-	- owl:class:: bc:CreatorRoyaltyToken
-	- owl:role:: Object
-	- owl:inferred-class:: mv:VirtualObject
-	- owl:functional-syntax:: true
-	- belongsToDomain:: [[BlockchainDomain]], [[VirtualEconomyDomain]], [[CreativeMediaDomain]]
-	- implementedInLayer:: [[SmartContractLayer]], [[DataLayer]]
-	- #### Relationships
-	  id:: creatorroyaltytoken-relationships
-		- has-part:: [[Royalty Smart Contract]], [[Revenue Distribution Logic]], [[Ownership Record]], [[IP Rights Metadata]]
-		- is-part-of:: [[Virtual Economy]], [[Creator Economy]], [[Intellectual Property System]]
-		- requires:: [[Blockchain]], [[Smart Contract]], [[Digital Wallet]], [[Royalty Tracking System]]
-		- depends-on:: [[NFT Standard]], [[Payment Gateway]], [[Revenue Monitoring Service]]
-		- enables:: [[Automated Royalty Distribution]], [[Creator Compensation]], [[Revenue Sharing]], [[IP Monetization]], [[Fan Investment]]
-	- #### OWL Axioms
-	  id:: creatorroyaltytoken-owl-axioms
-	  collapsed:: true
-		- ```clojure
-		  Declaration(Class(mv:CreatorRoyaltyToken))
+iri:: http://narrativegoldmine.com/blockchain#CreatorRoyaltyToken
+uri:: urn:visionclaw:concept:blockchain:creator-royalty-token
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:creator-royalty-token
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Creator Royalty Token
+content-hash:: sha256-12-fba672c06249
+legacy-term-id:: bc-20132
+status:: draft
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.65
+version:: 2.1.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-		  # Classification
-		  SubClassOf(mv:CreatorRoyaltyToken mv:VirtualEntity)
-		  SubClassOf(mv:CreatorRoyaltyToken mv:Object)
-		  SubClassOf(mv:CreatorRoyaltyToken mv:DigitalAsset)
+- ### Definition
+  - Token granting its holder a share of ongoing revenue from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.
 
-		  # A Creator Royalty Token must have royalty distribution logic
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:hasPart mv:RoyaltySmartContract)
-		  )
+- ### Semantic Classification
+  - owl-class:: blockchain:CreatorRoyaltyToken
+  - owl-role:: Object
+  - owl-inferred:: mv:VirtualObject
+  - belongs-to-domain:: [[BlockchainDomain]], [[VirtualEconomyDomain]], [[CreativeMediaDomain]]
+  - implemented-in-layer:: [[SmartContractLayer]], [[DataLayer]]
 
-		  # A Creator Royalty Token must represent revenue share
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:represents mv:RevenueShare)
-		  )
+- ### Relationships
+  - has-part:: [[Royalty Smart Contract]], [[Revenue Distribution Logic]], [[Ownership Record]], [[IP Rights Metadata]]
+  - is-part-of:: [[Virtual Economy]], [[Creator Economy]], [[Intellectual Property System]]
+  - requires:: [[Blockchain]], [[Smart Contract]], [[Digital Wallet]], [[Royalty Tracking System]]
+  - enables:: [[Automated Royalty Distribution]], [[Creator Compensation]], [[Revenue Sharing]], [[IP Monetization]], [[Fan Investment]]
+  - depends-on:: [[NFT Standard]], [[Payment Gateway]], [[Revenue Monitoring Service]]
 
-		  # A Creator Royalty Token must be linked to creative work
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:linkedTo mv:CreativeWork)
-		  )
+  - bridges-to:: [[AI Agent System]] (ai)
+- ### Content
 
-		  # A Creator Royalty Token enables automated distribution
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:enables mv:AutomatedRoyaltyDistribution)
-		  )
+  Creator Royalty Tokens tokenise intellectual property income streams, enabling creators to receive upfront capital whilst granting token holders ongoing revenue participation. Each token represents a proportional claim to future royalties from creative works—musical compositions, written content, or artistic creations. Smart contracts automatically distribute revenue proportional to token holdings whenever sales or licensing payments occur.
 
-		  # A Creator Royalty Token requires blockchain for transparency
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:requires mv:Blockchain)
-		  )
+  Token economics enable fractional ownership where fans purchase tokens to support creators whilst receiving financial participation. Creators conduct token offerings raising capital for production costs, marketing, or personal needs, establishing ongoing alignment between creator and community interests. Secondary markets enable token trading, establishing price discovery reflecting community valuation of creator output.
 
-		  # Domain classification
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:VirtualEconomyDomain)
-		  )
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:belongsToDomain mv:CreativeMediaDomain)
-		  )
-		  SubClassOf(mv:CreatorRoyaltyToken
-		    ObjectSomeValuesFrom(mv:implementedInLayer mv:SmartContractLayer)
-		  )
+  Compared to traditional royalty assignments through intermediaries (record labels, publishers), blockchain-based royalty tokens eliminate intermediaries reducing fees, provide transparent payment tracking enabling creators to understand revenue sources, and enable global participation without geographical or institutional restrictions. Challenges include regulatory classification (securities classification may restrict distribution) and establishing verifiable revenue sources triggering distributions.
 
-		  # Supporting classes
-		  Declaration(Class(mv:RoyaltySmartContract))
-		  SubClassOf(mv:RoyaltySmartContract mv:VirtualObject)
-
-		  Declaration(Class(mv:RevenueShare))
-		  SubClassOf(mv:RevenueShare mv:VirtualObject)
-
-		  Declaration(Class(mv:CreativeWork))
-		  SubClassOf(mv:CreativeWork mv:VirtualObject)
-
-		  Declaration(Class(mv:AutomatedRoyaltyDistribution))
-		  SubClassOf(mv:AutomatedRoyaltyDistribution mv:VirtualProcess)
-
-  # Property characteristics
-  TransitiveObjectProperty(dt:ispartof)
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:requires)
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:dependson)
-
-  # Property characteristics
-  AsymmetricObjectProperty(dt:enables)
-```
-- ## About Creator Royalty Tokens
-  id:: creatorroyaltytoken-about
-	- Creator Royalty Tokens are **programmable financial instruments** that represent fractional ownership of ongoing revenue streams generated by creative works such as music, art, video, literature, virtual goods, and other intellectual property. These tokens enable creators to raise capital by selling future royalty rights to fans, investors, or collectors while automating payment distribution through smart contracts. Creator Royalty Tokens democratize access to intellectual property investment, allowing supporters to participate in the economic success of creators they believe in.
-	- Traditional royalty systems in creative industries suffer from opacity, delayed payments, complex accounting, and high intermediary costs. Music artists wait months for streaming royalties passing through labels, publishers, and collection societies. Visual artists rarely receive secondary market compensation. Creator Royalty Tokens address these inefficiencies by encoding royalty terms directly into blockchain-based smart contracts that automatically distribute payments whenever revenue is generated. This creates transparent, instant, and programmable revenue sharing aligned with creator and holder interests.
-	- The tokenization of creative royalties represents a fundamental shift in intellectual property financing and creator economics. Rather than selling exclusive rights to publishers or labels, creators can fractionalize ownership across thousands of token holders while retaining creative control. Fans become stakeholders with aligned incentives to promote works. Secondary markets provide liquidity for royalty investments. As the metaverse and creator economy expand, Creator Royalty Tokens are emerging as essential infrastructure for sustainable creator livelihoods and participatory culture.
-	- ### Key Characteristics
-	  id:: creatorroyaltytoken-characteristics
-		- Blockchain-based representation of revenue share rights
-		- Automated royalty distribution via smart contracts
-		- Fractional ownership enabling micro-investment
-		- Transparent on-chain payment records and audit trails
-		- Secondary market liquidity for royalty positions
-		- Programmable rules for revenue splits and waterfall distributions
-		- Real-time payment settlement eliminating collection society delays
-		- Global accessibility without geographic restrictions
-		- Perpetual or time-limited revenue sharing arrangements
-		- Integration with streaming platforms, NFT marketplaces, and payment processors
-		- Composability with DeFi protocols for lending and derivatives
-		- Creator retention of creative control and moral rights
-	- ### Technical Components
-	  id:: creatorroyaltytoken-components
-		- [[Royalty Smart Contract]] - ERC-20/721/1155 contract governing token distribution and revenue splits
-		- [[Revenue Distribution Logic]] - Automated payment waterfall calculating holder shares
-		- [[Ownership Record]] - Blockchain ledger tracking token holders and fractional ownership percentages
-		- [[IP Rights Metadata]] - On-chain or IPFS-stored information about creative work, terms, and licensing
-		- [[Blockchain]] - Distributed ledger providing transparency and immutable payment records
-		- [[Smart Contract]] - Self-executing code automating royalty calculations and distributions
-		- [[Digital Wallet]] - Storage for tokens and receipt of royalty payments
-		- [[Royalty Tracking System]] - Oracle or API monitoring revenue sources (streaming, sales, licensing)
-		- [[Payment Gateway]] - Integration with fiat and crypto payment processors
-		- [[Revenue Monitoring Service]] - Third-party data feeds providing revenue information
-		- [[Token Standard]] - ERC-20 for fungible shares, ERC-721 for unique royalty positions
-		- [[Multi-signature Governance]] - Safeguards for contract upgrades and parameter changes
-	- ### Functional Capabilities
-	  id:: creatorroyaltytoken-capabilities
-		- **Automated Royalty Distribution**: Smart contracts instantly distribute revenue to all token holders proportionally to their ownership
-		- **Creator Compensation**: Enable creators to raise upfront capital by selling future royalty streams while retaining creative control
-		- **Revenue Sharing**: Transparent, programmable splits between creators, collaborators, labels, and investors
-		- **IP Monetization**: Unlock liquidity from intellectual property without selling exclusive rights
-		- **Fan Investment**: Allow supporters to invest in creators they believe in and share in financial success
-		- **Secondary Market Trading**: Token holders can sell royalty positions to other investors at market-determined prices
-		- **Fractional Ownership**: Divide expensive royalty streams into affordable micro-shares accessible to small investors
-		- **Transparent Accounting**: All revenue flows and distributions visible on-chain eliminating accounting disputes
-		- **Programmable Terms**: Encode complex waterfall structures, time limits, recoupment, and vesting schedules
-		- **Cross-Platform Aggregation**: Consolidate royalties from multiple platforms (Spotify, YouTube, NFT marketplaces) into single distribution
-		- **Lending and Collateral**: Use royalty tokens as collateral in DeFi lending protocols for additional liquidity
-		- **Royalty Derivatives**: Create futures, options, and structured products based on expected royalty streams
-	- ### Token Standards
-	  id:: creatorroyaltytoken-standards-tech
-		- **ERC-20**: Fungible tokens representing equal shares of royalty pool (common for large collections)
-		- **ERC-721**: Unique NFTs representing specific royalty positions with distinct terms
-		- **ERC-1155**: Hybrid standard enabling multiple royalty classes in single contract
-		- **ERC-2981**: NFT Royalty Standard for automatic secondary market royalties
-		- **Revenue Split Smart Contract**: Custom logic for waterfall distributions, recoupment, and conditional payments
-		- **Tokenized Rights Metadata**: JSON schema describing creative work, licensing terms, revenue sources
-		- **Oracle Integration**: Chainlink or custom oracles feeding revenue data to smart contracts
-		- **Multi-token Royalty Pools**: Separate tokens for mechanical, performance, sync, and other right types
-	- ### Use Cases
-	  id:: creatorroyaltytoken-use-cases
-		- **Music Streaming Royalties**: Artists tokenize Spotify, Apple Music, and YouTube revenue sharing earnings with fans (Royal, Audius)
-		- **NFT Secondary Royalties**: NFT creators receive perpetual resale commissions programmed into smart contracts (OpenSea, Foundation)
-		- **Virtual World Creator Monetization**: Metaverse content creators tokenize revenue from virtual goods, wearables, and experiences (Decentraland, Roblox)
-		- **Gaming Item Royalties**: Game developers share revenue from in-game purchases and marketplace transactions with early supporters
-		- **Film and TV Residuals**: Filmmakers tokenize streaming residuals and licensing revenue, allowing fan co-investment
-		- **Publishing Royalties**: Authors fractionalize book sales and subsidiary rights enabling reader investment in favorite writers
-		- **Visual Art Resale Rights**: Artists capture droit de suite (resale royalty) on secondary market NFT and physical art sales
-		- **Software License Revenue**: Open-source developers monetize through tokenized revenue from commercial licenses
-		- **Podcast Sponsorships**: Podcasters share advertising and sponsorship revenue with token-holding supporters
-		- **Virtual Real Estate**: Metaverse landowners distribute rental income from virtual properties to token holders
-		- **Collaborative Works**: Multi-creator projects automatically split revenue according to contribution percentages
-		- **Catalog Acquisition**: Investors buy tokenized royalty streams from existing music catalogs previously sold to labels
-	- ### Revenue Sources
-	  id:: creatorroyaltytoken-revenue
-		- **Streaming Platforms**: Spotify, Apple Music, YouTube, Tidal paying per-stream royalties
-		- **NFT Sales**: Primary mints and secondary marketplace commissions (OpenSea, Blur, Magic Eden)
-		- **Virtual Goods**: In-game items, metaverse wearables, avatar accessories
-		- **Licensing**: Sync licenses for film/TV, commercial use, sampling rights
-		- **Physical Sales**: Vinyl records, CDs, merchandise, art prints
-		- **Live Performance**: Concert revenue, virtual concert ticket sales
-		- **Subscription Services**: Patreon, Substack, OnlyFans, membership platforms
-		- **Advertising**: YouTube ads, podcast sponsorships, branded content
-		- **Derivative Works**: Remixes, covers, adaptations paying mechanical royalties
-		- **Publishing Rights**: Sheet music, book sales, translation rights
-		- **Broadcast**: Radio airplay, TV/film usage, public performance royalties
-		- **Gaming Revenue**: Game sales, DLC, microtransactions tied to creator content
-	- ### Creator Platforms and Protocols
-	  id:: creatorroyaltytoken-platforms
-		- **Royal.io**: Music royalty tokenization platform backed by 3LAU and a16z
-		- **Audius**: Decentralized streaming protocol with native royalty distribution
-		- **Sound.xyz**: Music NFT platform with revenue sharing and artist support
-		- **Catalog**: NFT marketplace for unique music ownership with embedded royalties
-		- **AnotherBlock**: Fractionalized music rights marketplace for investors
-		- **Pianity**: Limited-edition music NFTs with royalty mechanisms
-		- **Vezt**: Platform for buying and selling royalty shares in music
-		- **Opulous**: DeFi music platform enabling NFT-backed loans against royalties
-		- **Rocki**: Music streaming with royalty-sharing tokens for rights holders
-		- **Zora**: Decentralized NFT marketplace protocol with programmable royalties
-		- **Foundation**: Creator-centric NFT platform with 10% perpetual royalties
-		- **SuperRare**: High-end digital art platform with secondary royalty support
-	- ### Economic Models
-	  id:: creatorroyaltytoken-economics
-		- **Perpetual Revenue Share**: Token holders receive ongoing payments forever (common in NFT royalties)
-		- **Time-Limited Share**: Royalty rights expire after specified period, reverting to creator
-		- **Recoupment Model**: Investors recoup initial purchase price plus return before creator receives full share
-		- **Waterfall Distribution**: Priority payments to different stakeholder classes (labels, producers, artists, fans)
-		- **Participation Rights**: Tokens provide revenue share only after specified revenue threshold reached
-		- **Hybrid Ownership**: Combination of upfront payment and ongoing royalty participation
-		- **Buyback Options**: Creators can repurchase tokens at predetermined price or market rate
-		- **Staking Rewards**: Additional tokens distributed to holders who stake for extended periods
-		- **Revenue-Based Valuation**: Token prices reflect expected future revenue streams discounted to present value
-		- **Dutch Auction Issuance**: Initial sale price determined by descending auction mechanism
-		- **Bonding Curve**: Continuous token issuance with price algorithmically determined by supply
-		- **Governance Rights**: Token holders vote on licensing decisions, collaboration approvals, or creative direction
-	- ### Legal and Regulatory Considerations
-	  id:: creatorroyaltytoken-legal
-		- **Securities Regulation**: Royalty tokens may qualify as securities requiring registration (Howey test)
-		- **Investment Contract Analysis**: Revenue share tokens often considered investment contracts under US law
-		- **Intellectual Property Law**: Tokens must respect existing copyrights, trademarks, and moral rights
-		- **Contract Enforceability**: Smart contract royalty terms must align with off-chain legal agreements
-		- **Cross-Border Compliance**: International royalty collection navigating multiple jurisdictions
-		- **Tax Treatment**: Capital gains, ordinary income, or royalty income classification varies by jurisdiction
-		- **Accredited Investor Requirements**: Some platforms restrict token purchases to qualified investors
-		- **Anti-Money Laundering**: KYC requirements for large token purchases and transactions
-		- **Consumer Protection**: Disclosure requirements for speculative nature of royalty investments
-		- **Copyright Collective Management**: Traditional societies (ASCAP, BMI, PRS) relationship with tokenized royalties
-		- **Estate and Inheritance**: Rights transfer upon creator death or incapacity
-		- **Bankruptcy Protection**: Token holder rights in creator insolvency scenarios
-	- ### Benefits for Creators
-	  id:: creatorroyaltytoken-creator-benefits
-		- **Upfront Capital**: Raise funds without taking on debt or selling full ownership
-		- **Retain Creative Control**: Unlike traditional label deals, creators maintain artistic freedom
-		- **Fan Engagement**: Deepen connection with supporters who have financial stake in success
-		- **Marketing Leverage**: Token holders incentivized to promote works for personal gain
-		- **Price Discovery**: Market valuation of creative works through token trading
-		- **Reduced Intermediaries**: Eliminate collection societies, labels, and publishers capturing revenue
-		- **Transparent Accounting**: On-chain records eliminating disputes over payments
-		- **Global Access**: Reach investors and fans worldwide without geographic restrictions
-		- **Flexible Financing**: Choose percentage of royalties to tokenize and retention period
-		- **Composability**: Integrate royalty tokens with other DeFi and metaverse applications
-		- **Brand Building**: Token as status symbol and community membership credential
-		- **Estate Planning**: Clear succession and transferability of intellectual property rights
-	- ### Benefits for Token Holders
-	  id:: creatorroyaltytoken-holder-benefits
-		- **Economic Participation**: Share in creator success beyond consumption
-		- **Portfolio Diversification**: Access to alternative asset class uncorrelated with traditional markets
-		- **Cultural Investment**: Support favorite artists while potentially profiting
-		- **Liquidity**: Secondary markets enable exit without waiting for royalty term expiration
-		- **Fractional Ownership**: Affordable access to high-value intellectual property
-		- **Passive Income**: Recurring revenue stream from popular creative works
-		- **Transparent Returns**: Real-time visibility into royalty generation and distributions
-		- **Community Membership**: Exclusive access, governance rights, or perks for token holders
-		- **Speculation Opportunities**: Trade based on expectations of creative work success
-		- **Utility Integration**: Royalty tokens granting access to metaverse experiences or events
-		- **Composable Finance**: Use tokens as collateral, in liquidity pools, or derivative products
-		- **Early Access**: Presale opportunities for token holders on new releases
-	- ### Challenges and Risks
-	  id:: creatorroyaltytoken-challenges
-		- **Revenue Uncertainty**: Future earnings unpredictable making valuation difficult
-		- **Regulatory Risk**: Evolving securities laws could restrict token trading or issuance
-		- **Technical Complexity**: Smart contract bugs or oracle failures disrupting payments
-		- **Platform Dependence**: Reliance on centralized streaming platforms for revenue data
-		- **Liquidity Risk**: Limited secondary market depth for less popular tokens
-		- **Copyright Complexity**: Navigating co-ownership, samples, and derivative work rights
-		- **Tax Complexity**: Uncertain treatment of distributions, capital gains, and international income
-		- **Creator Risk**: Artists failing to generate expected revenue or abandoning projects
-		- **Smart Contract Immutability**: Inability to adjust terms after deployment without governance
-		- **Oracle Manipulation**: Potential for fake revenue reporting to smart contracts
-		- **Competitive Landscape**: New platforms fragmenting liquidity and creator attention
-		- **Traditional Industry Resistance**: Labels and publishers pushing back against disintermediation
-	- ### Integration with Metaverse
-	  id:: creatorroyaltytoken-metaverse
-		- **Virtual Goods Royalties**: Creators of metaverse wearables, accessories, and assets tokenize sales revenue
-		- **Virtual World Content**: UGC creators share revenue from virtual experiences, games, and environments
-		- **Avatar Economy**: Fashion designers and 3D artists tokenize avatar customization item royalties
-		- **Virtual Real Estate Rent**: Landowners distribute rental income from virtual properties via tokens
-		- **In-World Music**: Musicians tokenize performance and streaming royalties from metaverse venues
-		- **NFT Gallery Commissions**: Virtual art galleries split sales commissions with curators and artists
-		- **Game Modding Royalties**: Mod creators receive ongoing revenue from usage and sales
-		- **Virtual Event Ticketing**: Event organizers share ticket and sponsorship revenue with token holders
-		- **Metaverse Advertising**: Revenue from virtual billboards and branded experiences distributed to creators
-		- **Social Token Integration**: Creator coins combined with royalty rights for comprehensive fan investment
-		- **Interoperable Royalty Tracking**: Cross-platform royalty aggregation as assets move between metaverses
-		- **DAO Treasury Revenue**: Decentralized autonomous organizations distributing community-owned IP royalties
-	- ### Standards & References
-	  id:: creatorroyaltytoken-standards
-		- [[OMA3 Media WG]] - Open Metaverse Alliance media working group standards
-		- [[ISO 24165]] - Digital token identifier standard for creative tokens
-		- [[OECD Creative Economy]] - Economic framework for creator monetization
-		- [[ERC-2981]] - NFT Royalty Standard for automated secondary market royalties
-		- [[ERC-20]] - Fungible token standard for royalty shares
-		- [[ERC-721]] - Non-fungible token standard for unique royalty positions
-		- [[W3C Verifiable Credentials]] - Identity and rights verification framework
-		- [[ISRC]] - International Standard Recording Code for music identification
-		- [[ISWC]] - International Standard Musical Work Code for compositions
-		- [[DDEX]] - Digital Data Exchange standards for music supply chain
-		- [[CISAC]] - International Confederation of Societies of Authors and Composers
-		- [[IPF Standards]] - Intellectual Property Framework for tokenized rights
-	- ### Related Concepts
-	  id:: creatorroyaltytoken-related
-		- [[VirtualObject]] - Inferred parent class as digital token
-		- [[Digital Asset]] - Direct parent class representing economic value
-		- [[NFT]] - Related technology for unique creative work tokenization
-		- [[Smart Contract]] - Enabling technology for automated royalty distribution
-		- [[Blockchain]] - Infrastructure providing transparency and immutability
-		- [[Intellectual Property]] - Legal framework governing creative work rights
-		- [[Revenue Stream]] - Financial flows represented by tokens
-		- [[Creator Token]] - Broader category including social and utility tokens
-		- [[Cryptocurrency]] - Related asset class with trading parallels
-		- [[Virtual Economy]] - Economic system within which tokens circulate
-		- [[Royalty Tracking System]] - Infrastructure monitoring revenue sources
-		- [[Payment Gateway]] - Integration enabling fiat and crypto distributions
-	- ### Technology Trends
-	  id:: creatorroyaltytoken-trends
-		- **AI-Generated Content Royalties**: Tokenized revenue from AI-created music, art, and text (co-ownership with AI)
-		- **Dynamic Royalty Rates**: Smart contracts adjusting percentages based on performance milestones
-		- **Cross-Chain Royalties**: Interoperable tokens distributing payments across multiple blockchains
-		- **Decentralized Streaming**: Protocols like Audius eliminating platform intermediaries entirely
-		- **Royalty-Backed Loans**: DeFi lending using expected future royalties as collateral
-		- **Synthetic Royalty Derivatives**: Tokenized exposure to creator earnings without direct ownership
-		- **Fractional Catalog Ownership**: Major music catalogs tokenized for retail investor access
-		- **Real-World Asset Integration**: Bridging physical music rights with on-chain representations
-		- **Quadratic Funding**: Community matching pools amplifying fan support for creators
-		- **Zero-Knowledge Royalty Accounting**: Privacy-preserving revenue reporting to smart contracts
-		- **DAO-Governed Record Labels**: Decentralized labels with tokenized A&R and marketing decisions
-		- **Metaverse-Native Royalties**: Standards for tracking and distributing royalties across interoperable virtual worlds
-- ## Metadata
-  id:: creatorroyaltytoken-metadata
-	- imported-from:: [[Metaverse Glossary Excel]]
-	- import-date:: [[2025-01-15]]
-	- ontology-status:: migrated
-- migration-date:: [[2025-10-14]]
-	- classification-rationale:: Virtual (digital token) + Object (revenue-sharing instrument) → VirtualObject
-
-- public-access:: true
-	- migration-date:: [[2025-10-14]]
-	- classification-rationale:: Virtual (digital token) + Object (revenue-sharing instrument) → VirtualObject
-
-
-## Academic Context
-
-- Brief contextual overview
-	- Creator royalty tokens represent a novel intersection of blockchain technology and intellectual property rights, enabling automated, transparent, and fractional distribution of revenue from creative works
-	- The concept builds upon earlier models of digital rights management and smart contracts, but introduces decentralised, programmable ownership of income streams
-- Key developments and current state
-	- The field has matured beyond experimental prototypes, with several platforms and standards now supporting real-world deployment of royalty tokens
-	- Academic interest has grown, particularly in the areas of digital economics, blockchain governance, and creative industries
-- Academic foundations
-	- Rooted in distributed ledger theory, smart contract design, and digital asset management
-	- Draws from interdisciplinary research in law, economics, and computer science
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
-	- Creator royalty tokens are increasingly used in music, visual arts, and digital collectibles, with platforms such as Audius, Opulous, and Royal leading the way
-	- The model is gaining traction among independent artists and collectives seeking greater control over their revenue streams
-- Notable organisations and platforms
-	- Audius: Music streaming and royalty distribution platform
-	- Opulous: Music rights tokenization and investment platform
-	- Royal: Music NFT and royalty sharing platform
-- UK and North England examples where relevant
-	- Manchester-based artists and collectives have begun experimenting with royalty tokens for music and digital art, leveraging local blockchain expertise
-	- Leeds and Newcastle have seen the emergence of small-scale projects exploring the use of royalty tokens in community-driven creative initiatives
-	- Sheffield’s digital arts scene has hosted workshops and exhibitions focused on the practical applications of royalty tokens
-- Technical capabilities and limitations
-	- Capabilities include automated royalty distribution, fractional ownership, and transparent tracking of revenue streams
-	- Limitations include regulatory uncertainty, technical complexity, and the need for robust legal frameworks to support tokenised rights
-- Standards and frameworks
-	- ERC-721 and ERC-1155 standards are commonly used for NFT-based royalty tokens
-	- Emerging standards for royalty distribution and smart contract governance are being developed by industry consortia and academic institutions
-
-## Research & Literature
-
-- Key academic papers and sources
-	- Buterin, V., et al. (2014). "A Next-Generation Smart Contract and Decentralized Application Platform." Ethereum White Paper. https://ethereum.org/en/whitepaper/
-	- Tapscott, D., & Tapscott, A. (2016). "Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World." Penguin Books.
-	- Zyskind, G., et al. (2015). "Decentralizing Privacy: Using Blockchain to Protect Personal Data." IEEE Security and Privacy Workshops. https://doi.org/10.1109/SPW.2015.27
-	- Swan, M. (2015). "Blockchain: Blueprint for a New Economy." O'Reilly Media.
-- Ongoing research directions
-	- Exploring the legal and regulatory implications of tokenised intellectual property
-	- Investigating the impact of royalty tokens on artist income and creative industry dynamics
-	- Developing more user-friendly interfaces and tools for managing royalty tokens
-
-## UK Context
-
-- British contributions and implementations
-	- The UK has been at the forefront of blockchain innovation, with several universities and research institutions contributing to the development of royalty token standards and frameworks
-	- Government initiatives and funding have supported pilot projects in the creative industries, particularly in the North of England
-- North England innovation hubs (if relevant)
-	- Manchester, Leeds, Newcastle, and Sheffield have established themselves as regional innovation hubs, hosting blockchain meetups, hackathons, and collaborative projects focused on creative industries
-	- Local universities and tech incubators have played a key role in fostering a supportive ecosystem for royalty token experimentation
-- Regional case studies
-	- Manchester’s Digital Arts Festival featured a showcase of royalty token projects, highlighting the potential for community-driven creative economies
-	- Leeds-based startup, ArtChain, has developed a platform for tokenising and distributing royalties from digital art sales
-	- Newcastle’s Creative Industries Network has supported several small-scale royalty token initiatives, focusing on music and visual arts
-
-## Future Directions
-
-- Emerging trends and developments
-	- Increased adoption of royalty tokens in mainstream creative industries
-	- Development of more sophisticated smart contract frameworks for royalty distribution
-	- Integration of royalty tokens with other blockchain-based services, such as digital identity and reputation systems
-- Anticipated challenges
-	- Regulatory hurdles and legal uncertainties
-	- Technical barriers to widespread adoption
-	- Ensuring fair and equitable distribution of royalties
-- Research priorities
-	- Investigating the long-term impact of royalty tokens on artist income and creative industry sustainability
-	- Exploring the potential for cross-border royalty token systems
-	- Developing best practices for legal and regulatory compliance
-
-## References
-
-1. Buterin, V., et al. (2014). "A Next-Generation Smart Contract and Decentralized Application Platform." Ethereum White Paper. https://ethereum.org/en/whitepaper/
-2. Tapscott, D., & Tapscott, A. (2016). "Blockchain Revolution: How the Technology Behind Bitcoin Is Changing Money, Business, and the World." Penguin Books.
-3. Zyskind, G., et al. (2015). "Decentralizing Privacy: Using Blockchain to Protect Personal Data." IEEE Security and Privacy Workshops. https://doi.org/10.1109/SPW.2015.27
-4. Swan, M. (2015). "Blockchain: Blueprint for a New Economy." O'Reilly Media.
-5. ArtChain. (2025). "Tokenising Digital Art Royalties." ArtChain Platform. https://artchain.io/
-6. Creative Industries Network. (2025). "Royalty Token Initiatives in Newcastle." Creative Industries Network. https://creativeindustriesnetwork.org.uk/
-7. Manchester Digital Arts Festival. (2025). "Royalty Token Showcase." Manchester Digital Arts Festival. https://manchesterdigitalartsfestival.org.uk/
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+- ### Provenance
+  - sources:: [[OMA3 Media WG]], [[ISO 24165]], [[OECD Creative Economy]]
+  - migration-date:: 2026-04-26T00:00:00Z

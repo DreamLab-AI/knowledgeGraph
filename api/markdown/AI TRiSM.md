@@ -1,23 +1,38 @@
-- ### OntologyBlock
-  id:: ai-trism-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0002
-	- preferred-term:: AI TRiSM
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:AITRiSM
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: AI & Autonomy
+iri:: http://narrativegoldmine.com/metaverse#AITRiSM
+uri:: urn:visionclaw:concept:artificial-intelligence:ai-trism
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:ai-trism
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: AI TRiSM
+content-hash:: sha256-12-793c3bf133dc
+legacy-term-id:: ME-0002
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AITRiSM
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- AI TRiSM (Artificial Intelligence Trust, Risk, and Security Management)
+- ### Relationships
+  - bridges-to:: [[AI Agent System]]
+
+- ### Content
+
+  ## Overview
+
+  - AI TRiSM (Artificial Intelligence Trust, Risk, and Security Management)
   - Precise technical definition
     - AI TRiSM is a comprehensive framework for managing the governance, security, and ethical risks associated with artificial intelligence systems, ensuring model trustworthiness, fairness, reliability, robustness, efficacy, and data protection throughout their lifecycle (Gartner, 2023).
     - It integrates technical, organisational, and regulatory controls to address challenges such as algorithmic bias, explainability, data privacy, and compliance in AI and autonomous systems.
@@ -44,20 +59,13 @@
     - Advances in explainable AI, automated bias detection, and runtime security will further enhance the effectiveness of AI TRiSM frameworks.
     - In the UK, continued investment in AI research and regional innovation hubs will support the development and adoption of AI TRiSM, particularly in sectors such as healthcare, transport, and smart cities.
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: AI & Autonomy
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources:: [[EU AI Act]]
+  - migration-date:: 2026-04-26T00:00:00Z
+  - modified:: 2026-04-26T15:00:00Z

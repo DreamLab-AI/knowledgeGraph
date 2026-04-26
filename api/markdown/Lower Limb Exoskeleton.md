@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: lowerlimbexoskeleton-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#LowerLimbExoskeleton
+uri:: urn:visionclaw:concept:robotics:lower-limb-exoskeleton
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:lower-limb-exoskeleton
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Lower Limb Exoskeleton
+content-hash:: sha256-12-5c158a758d92
+legacy-term-id:: RB-0140
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0140
-    - filename-history:: ["RB-0140-lowerlimbexoskeleton.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0140
-    - preferred-term:: Lower Limb Exoskeleton
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Lower limb exoskeleton assists or augments walking and leg movements.
 
-  - **Definition**
-    - definition:: Lower limb exoskeleton assists or augments walking and leg movements.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:LowerLimbExoskeleton
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:LowerLimbExoskeleton
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Exoskeleton Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Exoskeleton Robot]]
+- ### Content
+  Lower Limb Exoskeleton — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :LowerLimbExoskeleton))
-      (SubClassOf :LowerLimbExoskeleton :ExoskeletonRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :LowerLimbExoskeleton "Lower Limb Exoskeleton"@en)
-      (AnnotationAssertion rdfs:comment :LowerLimbExoskeleton
-        "Lower limb exoskeleton assists or augments walking and leg movements."@en)
-      ```
-
-- ## About Lower Limb Exoskeleton
-  Lower limb exoskeleton assists or augments walking and leg movements.
-  
-  An exoskeleton for legs and hips.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

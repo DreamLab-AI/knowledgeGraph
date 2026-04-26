@@ -1,18 +1,38 @@
+iri:: http://narrativegoldmine.com/ontology#BitcoinAsMoney
+uri:: urn:visionclaw:concept:blockchain:bitcoin-as-money
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:bitcoin-as-money
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Bitcoin As Money
+content-hash:: sha256-12-c8c2fb39f2e5
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
-termID:: bitcoin-as-money-001
-qualityScore:: 0.94
-bitcoinSpecific:: true
-lastUpdated:: 2025-11-14
-tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSystems
 
-- #Public page automatically published
-- ### [[Bitcoin]] as [[Money]]
-	- **Characteristics of [[Digital Money]]**: Nwosu, cofounder of [[Coinfloor]] exchange in the UK and cofounder of [[Fedimint]], identifies four essential characteristics for [[digital money]]:
+- ### Definition
+  - Bitcoin As Money is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: blockchain:BitcoinAsMoney
+  - owl-role:: Concept
+
+- ### Relationships
+  - bridges-to:: [[Blockchain]]
+
+- ### Content
+  - #Public page automatically published
+  - **Characteristics of [[Digital Money]]**: Nwosu, cofounder of [[Coinfloor]] exchange in the UK and cofounder of [[Fedimint]], identifies four essential characteristics for [[digital money]]:
 		- **[[Technical Maturity]]**: The [[protocol]] must be battle-tested, secure, and reliable with proven [[network stability]]
 		- **[[Network Effect]]** and [[Community Support]]: Strong [[adoption]] patterns and [[social consensus]] around the [[monetary]] properties
 		- **[[Regulatory Clarity]]**: Clear legal frameworks, though [[Bitcoin]] continues navigating evolving [[regulatory]] landscapes globally as of 2025
 		- **[[Store of Value]]** functionality: Core [[monetary property]], though [[volatility]] remains a contested characteristic in [[Bitcoin]]'s monetary role
-	- #### [[Spending]] [[Bitcoin]] as [[Medium of Exchange]]
 		- Since this book seeks to examine [[transfer of value]] within a purely [[digital environment]], it is necessary to ask the question of whether [[Bitcoin]] is [[money]]. This short [narrative excerpt titled "Duality" purportedly by Satoshi Nakamoto](https://bitcoin-zar.blogspot.com/2018/07/duality-excerpt-by-satoshi-nakomoto.html) is a fabulous look at the [[monetary values]] of the technology, irrespective of its provenance. In it is the following text:
 			- "Here, for once, was this idea that you could generate your own form of [[money]]. That's the primary and sole reason, is because it was related to this thing called money. It wasn't about the proficiency of the code or the novelty, it was because it had to do with money. It centred around money. That is something people cared about. After all, plenty of projects on [[Sourceforge]] at the time were just as well coded, well maintained, if not better, by teams, and even if someone else had created the [[blockchain]] before me, had it been used for something else beyond [[currency]], it probably would not have had much of an outcome."
 		- Again, irrespective of the author here, this point seems to ring true. The [[memetic power]] of [[Bitcoin]] is in its proximity to [[money]], and the potential of the [[separation of money and state]].
@@ -37,10 +57,9 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 		- **[[Lyn Alden]]** on [[Lightning Network]] developments: In her [analysis of Strike and Lightning adoption](https://twitter.com/LynAldenContact/status/1512188883101966351), [[Alden]] observes: "Some people naturally dismiss [[Strike]] because they don't want to spend their BTC; they want to save it. However, the more places that accepted BTC at [[point of sale]] ([[on-chain]] or [[Lightning]] or otherwise), the more [[permissionless]] the whole [[network]] is. This is because, if all you can do with BTC is convert it back into [[fiat]] on a major [[exchange]], then it's easy to isolate it, effectively [[blacklist]] addresses, etc. But if you can directly spend it on goods and services across companies and jurisdictions, it's harder to isolate. There are now plenty of [[vendors]] that make this easy for [[merchants]] to implement, and the merchant can still receive [[dollars]] if they want (rather than BTC), or can decide their % split. Since it's an [[open network]], anyone can build on it, globally. And then when you add [[fiat-to-BTC-to-fiat]] payments over [[Lightning]], it gets even more interesting because it doesn't necessarily need to be a [[taxable event]]. [[Lightning wallets]] with a BTC balance and a [[USD]]/[[stablecoin]] balance. Lower fees than [[Visa]] and others."
 		- ##### [[African Bitcoin Adoption]] (2025)
 			- [[Africa]] has one of the most fragmented [[banking]], [[payment]], and [[currency systems]] in the world, which makes simple [[financial tasks]] like paying a bill, sending money, or accepting money extremely difficult. Over half of Africa does not have access to a [[bank account]], so people hold and save everything in [[cash]], which is often stolen and loses value due to [[inflation]]. It is also difficult to get money in and out of many African countries because only about 40% of people have active [[internet access]], and must rely on [[financial institutions]]. [[Bitcoin]] is being used in [[Africa]] as an alternative form of [[money]] that resolves these issues. It is being taught in [[education centers]] in underdeveloped areas, giving children the opportunity to learn about and use [[Bitcoin]] as a way to access [[financial services]] that have been unavailable to them for generations. However, the rest of the country may have difficulty implementing the use of [[Bitcoin]] due to issues such as a lack of [[electricity]] and [[internet access]], as well as [[government policies]] that centralize power. As of 2025, [[peer-to-peer]] [[Bitcoin trading]] volumes in Africa have grown 400% since 2021, with [[Nigeria]], [[Kenya]], and [[South Africa]] leading [[adoption]].{{[[cite]]}} [Chainalysis Geography of Cryptocurrency 2025]
-	- ##### [[Bitcoin-backed Fiat]] and [[Dollar-denominated Payments]]
+  - ##### [[Bitcoin-backed Fiat]] and [[Dollar-denominated Payments]]
 		- More interestingly for [[metaverse]] applications, [[Mallers]] has opened this section of the company to interact with the public [[Lightning Network]], allowing people with a [[self-hosted wallet]] or [[node]] to pay directly for goods across America, settling immediately in [[Dollars]], using their [[Bitcoin]], at zero cost. **This opens the possibility to buy from US-based ([[Dollar]]-denominated) [[metaverse]] stores, using the capabilities of the stack assembled at the end of the book**. The implications globally are unclear at this time.
 		- **[[Stablesats]]**: [Stablesats](https://stablesats.com/) is another approach which uses exclusively [[Lightning]] [[Bitcoin]] but makes the value stable against the [[US dollar]] using an [[algorithm]]. This [[synthetic stablecoin]] mechanism provides [[dollar stability]] while maintaining [[Bitcoin]] settlement rails. This is a very interesting option providing [[USD-denominated]] accounts on the [[Lightning Network]] without requiring traditional [[stablecoins]].
-	- #### [[Saving]] with [[Bitcoin]]
 		- The [[Bitcoin community]] believes that [Bitcoin is the ultimate money (Svetski analysis)](https://svetski.medium.com/why-bitcoin-not-shitcoin-6cc826f4fa52), a [store of value according to JPMorgan analysis (updated 2025)](https://www.coindesk.com/business/2022/01/07/jpmorgan-sees-more-crypto-adoption-in-2022-debates-bitcoins-status-as-store-of-value/), chance to [separate money from state (Forbes)](https://www.forbes.com/sites/leeorshimron/2020/06/30/bitcoin-is-the-separation-of-money-and-state/?sh=49294a8356db), increase [equality of opportunity through cryptocurrency access (Washington Post)](https://www.washingtonpost.com/national/locked-out-of-traditional-financial-industry-more-people-of-color-are-turning-to-cryptocurrency/2021/12/01/a21df3fa-37fe-11ec-9bc4-86107e7b0ab1_story.html) and [ubiquity of access (IAI Institute)](https://iai.tv/articles/the-rich-get-richer-the-poor-get-bitcoin-auid-1766), while others view it as [rat poison (CNBC survey)](https://www.cnbc.com/2021/06/22/a-third-of-investors-think-bitcoin-is-rat-poison-jpmorgan-survey-says.html), or a [fraudulent Ponzi scheme (Jacobin Magazine)](https://jacobinmag.com/2022/01/cryptocurrency-scam-blockchain-bitcoin-economy-decentralization).[[ponzi2021alden]] A notable exclusion from the negative rhetoric is [[Fidelity]], the global [[investment manager]], who have always been positive and have [stated in their digital assets research](https://www.fidelitydigitalassets.com/articles/bitcoin-first?sf253214177=1): "[[Bitcoin]] is best understood as a [[monetary good]], and one of the primary [[investment theses]] for [[Bitcoin]] is as the [[store of value]] asset in an increasingly [[digital world]]."
 		- **[[Eric Yakes]]** on [[Sound Money]]**: The following paraphrases [[Eric Yakes]], author of [The 7th Property (comprehensive analysis of Bitcoin's monetary properties)](https://yakes.io/book/). Again, this is an [[Austrian economics]] perspective, and like much [[economic theory]] the underlying premise [is contested between Austrian and Keynesian frameworks](https://medium.datadriveninvestor.com/do-you-understand-the-austrian-vs-keynesian-economic-debate-2f4b152c6a6b)[[maurel2012keynesian]]: "[[Paper money]] became [[money]] because it was superior to [[gold]] in terms of [[divisibility]] and [[portability]] BUT it lacked [[scarcity]]. People reasoned that we could benefit from the greater [[divisibility]]/[[portability]] of [[paper money]] as long as it was redeemable in a form of [[money]] that was [[scarce]]. This is when [[money]] needed to be '[[backed]]' by something. Since we changed [[money]] to [[paper money]] that wasn't [[scarce]], it needed to be [[backed]] by something that was. Since the repeal of the [[gold standard]], politicians have retarded the meaning of the word because our [[money]] is no longer [[backed]] by something [[scarce]]. So, what is [[Bitcoin]] [[backed]] by? Nothing. [[Sound money]], like [[gold]], isn't '[[backed]]'. Only [[money]] that lacks inherent [[monetary properties]] must be [[backed]] by another [[money]] that maintains those properties. The idea that our [[base layer]] [[money]] needs to be [[backed]] by something is thinking from the era of [[paper money]]. [[Bitcoin]] does not require [[backing]], it has inherent [[monetary properties]] superior to any other form of [[money]] that has ever existed."
 		- **[[ARK Invest]] Market Analysis (2025 Update)**: The 2025 [[ARK]] Big Ideas report provides useful market insight. They posit that demand for the [[money]] features of [[Bitcoin]] could drive the price of the [[capped supply]] tokens to around 1M pounds per [[Bitcoin]] as in Figure 4.5. Take this with the usual pinch of salt, as [[ARK]] projections should be viewed as speculative long-term scenarios rather than predictions.
@@ -72,7 +91,6 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 		- **[[Bitcoin]] as [[Bearer Instrument]]**: Fundamentally, [[Bitcoin]] isn't [[money]] (in the traditional sense) because it's not an [[IOU]], which [[money]] certainly is. It's a [[bearer instrument]], novel [[asset class]], with [[money-like properties]], as identified above. As said again and again it functions most like a '[[property]]' which can be invested in by anyone, with all the attendant risks of that [[property class]] to the holder. [[Lyn Alden]] says it sits [somewhere between savings and investment: "What is Money?"](https://www.lynalden.com/what-is-money/) a [[saving tool]], and an [[investment]], acting as "[[programmable commodity money]]".
 		- **[[Andrew M. Bailey]]** on [[Bitcoin]] value proposition: [Andrew M. Bailey, philosopher](https://andrewmbailey.com/) says "in an ideal world where governments honour the rights of citizens, they don't spy, they don't prohibit transactions, they manage a [[sound money]] supply, and they make sound decisions, the value of [[Bitcoin]] is very low; we're just not in an ideal world"
 		- **[[Layered Bitcoin Architecture]]**: Another potentially important differentiating affordance is [[censorship resistance]]. There's really nothing else like it for that one feature. With that said [[Bitcoin]] is only a viable '[[money-like thing]]' when viewed in the [[layers]] described in this book, [and elsewhere in Giacomo Zucco's "Discovering Bitcoin" series](https://giacomozucco.com/layers-before-bitcoin)[[Bhatia2021]]. The [[base chain]] layer is an apex secure [[store of value]]. Whatever [[Layer 2]] ultimately emerges is the [[transactional layer]] which could replace day to day [[cash money]], while the hypothetical [[Layer 3]] might be useful for complex [[financial mechanisms]] and [[contracts]] operating automatically, and also provides the opportunity for using the [[security model]] of the chain to support other [[digital assets]], including [[government currencies]] through [[stablecoins]]. All these things have a natural home in [[borderless]] social spaces.
-	- ### [[Bitcoin as Legal Tender]]: [[El Salvador]] 2025 Update
 		- **[[El Salvador Bitcoin Adoption]] Status (2025)**: [[El Salvador]] made history in September 2021 by becoming the first country to adopt [[Bitcoin]] as [[legal tender]] alongside the [[US Dollar]]. As of 2025, the experiment has evolved significantly:
 			- **[[Chivo Wallet]]** usage has stabilized with approximately 2.1 million active users (about 30% of the population) using [[Bitcoin]] for daily [[transactions]]{{[[cite]]}} [IMF El Salvador Article IV Consultation 2025]
 			- [[Merchant acceptance]] remains around 20% of businesses, primarily in urban centers like [[San Salvador]] and tourist areas
@@ -82,7 +100,6 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 		- **[[Tourism]] and [[Digital Nomads]]**: [[El Salvador]]'s [[Bitcoin Beach]] in [[El Zonte]] has become a hub for [[Bitcoin]] [[tourism]], attracting [[digital nomads]] and [[cryptocurrency]] enthusiasts. The government's [[Bitcoin visa program]] has granted residency to over 1,500 [[Bitcoin]] holders investing minimum $100,000 in the country.
 		- **[[Regulatory Challenges]]**: The [[IMF]] and [[World Bank]] continue expressing concerns about [[financial stability]] and [[consumer protection]], though [[El Salvador]] has implemented improved [[KYC]]/[[AML]] frameworks for [[Bitcoin transactions]] while maintaining [[optional]] [[Bitcoin]] use for citizens.
 		- **[[Other Nations Watching]]**: [[Paraguay]], [[Panama]], and several [[African nations]] have explored similar [[legal tender]] proposals, though none have fully implemented as of 2025. [[Central African Republic]] briefly adopted [[Bitcoin]] as legal tender in 2022 but reversed the decision in 2023.
-	- ### [[L402]] and [[X402]]: [[Micropayments]] for the [[Internet]]
 		- **[[HTTP 402 Payment Required]]**: The [[L402 protocol]] (formerly LSAT - Lightning Service Authentication Token) and its evolution [[X402]] represent a revolutionary approach to [[internet micropayments]] using [[Bitcoin]] and the [[Lightning Network]]. These [[protocols]] finally make the long-dormant [[HTTP 402]] status code functional for [[digital commerce]].
 		- **[[L402 Protocol]] Architecture**: [[L402]] combines [[Lightning Network]] [[invoices]] with [[macaroon]]-based [[authentication tokens]] to enable [[pay-per-use]] [[APIs]], [[content]], and [[services]]. The protocol flow:
 			- Client requests a [[resource]] from a [[server]]
@@ -102,7 +119,6 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 			- **[[Bandwidth metering]]**: [[ISPs]] and [[VPNs]] can offer [[pay-per-byte]] [[pricing]] for [[data transmission]]
 			- **[[IoT payments]]**: [[Devices]] pay [[machines]] for [[services]] ([[electric vehicle charging]], [[sensor data]], [[compute resources]]){{[[cite]]}} [Lightning Labs L402 Protocol Specification 2025]
 		- **[[Market Adoption]] (2025)**: Over 2,800 [[services]] now support [[L402]]/[[X402]], including major [[AI APIs]], [[content platforms]], and [[developer tools]]. [[Monthly transaction volume]] has reached 45 million [[micropayments]], with average [[payment size]] of 250 [[satoshis]] (approximately $0.25 at 2025 valuations).{{[[cite]]}} [Amboss L402 Network Statistics 2025]
-	- ### [[Bitcoin]] and [[Artificial Intelligence]]: [[Agent-to-Agent Payments]]
 		- **[[Programmable Money]] for [[AI Agents]]**: The convergence of [[Bitcoin]], [[Lightning Network]], and [[artificial intelligence]] creates a new paradigm: [[autonomous agents]] that can transact value without human intermediation. [[Bitcoin]] functions as "[[programmable money]]" enabling [[AI-to-AI commerce]].
 		- **[[AI Agent]] [[Payment Architecture]]**:
 			- **[[Lightning wallets]]** for [[AI agents]]: [[Autonomous agents]] maintain their own [[Lightning nodes]] or use [[custodial services]] with [[API access]]
@@ -135,7 +151,6 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 			- **[[Payment ML models]]**: [[AI agents]] optimizing [[Lightning routing]], [[fee]] [[estimation]], and [[channel management]]
 			- **[[Decentralized AI training]]**: [[Bitcoin]]-incentivized [[federated learning]] where [[agents]] earn [[sats]] for contributing [[compute]] or [[data]]
 			- **[[AI DAOs]]**: [[Decentralized autonomous organizations]] where [[AI agents]] coordinate via [[Bitcoin]] [[multi-sig]] and [[governance tokens]]{{[[cite]]}} [Bitcoin AI Research Consortium 2025]
-	- ### [[Conclusion]]: [[Bitcoin]]'s [[Monetary Future]]
 		- **[[Multi-faceted Monetary Role]]**: As of 2025, [[Bitcoin]] functions simultaneously as:
 			- **[[Digital gold]]**: [[Store of value]] and [[hedge]] against [[monetary debasement]]
 			- **[[Payment rail]]**: [[Lightning Network]] enabling instant, low-cost [[global transactions]]
@@ -153,34 +168,46 @@ tags:: #Bitcoin #Money #Economics #MonetaryTheory #LightningNetwork #PaymentSyst
 			- Competition from [[CBDCs]] and other [[digital currencies]]
 			- [[Energy]] sustainability and [[environmental]] concerns
 		- The journey of [[Bitcoin]] from [[peer-to-peer]] [[electronic cash]] to [[multi-layered]] [[monetary network]] supporting [[human]] and [[machine commerce]] represents one of the most significant [[monetary experiments]] in history. Whether [[Bitcoin]] ultimately succeeds as [[money]] depends not just on [[technology]], but on [[social consensus]], [[regulatory evolution]], and [[economic utility]] across diverse [[use cases]].{{[[cite]]}} [Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System]
-- ### [[References]] and [[Citations]]
-	- **Primary Sources**:
+  - **Primary Sources**:
 		- [[Nakamoto, S.]] (2008). [[Bitcoin]]: A [[Peer-to-Peer]] [[Electronic Cash System]]. https://bitcoin.org/bitcoin.pdf
 		- [[Lightning Network]] White Paper (2016). Poon, J. & Dryja, T. The [[Bitcoin]] [[Lightning Network]]: Scalable Off-Chain Instant Payments. https://lightning.network/lightning-network-paper.pdf
 		- [[RGB Protocol]] Documentation (2025). RGB Smart Contracts on Bitcoin. https://rgb.tech
 		- [[Lightning Labs]] [[L402 Protocol Specification]] (2025). HTTP 402 Payment Required for Bitcoin Lightning. https://docs.lightning.engineering/the-lightning-network/l402
-	- **Economic Analysis**:
+  - **Economic Analysis**:
 		- [[Alden, Lyn]] (2025). "What is Money?" - Comprehensive analysis of monetary properties. https://www.lynalden.com/what-is-money/
 		- [[Yakes, Eric]] (2024). "The 7th Property: Bitcoin and the Monetary Revolution". https://yakes.io/book/
 		- [[Svetski, Aleksandar]] (2023). "Why Bitcoin, Not Shitcoin". https://svetski.medium.com/why-bitcoin-not-shitcoin-6cc826f4fa52
 		- [[ARK Invest]] (2025). "Big Ideas 2025: Bitcoin as Monetary Network". ARK Investment Management.
-	- **Institutional Research**:
+  - **Institutional Research**:
 		- [[Fidelity Digital Assets]] (2025). "Bitcoin First: Why Bitcoin is a Unique Monetary Good". https://www.fidelitydigitalassets.com/articles/bitcoin-first
 		- [[Deloitte]] (2025). "Merchants Getting Ready for Crypto: Cryptocurrency Payment Adoption Study". Deloitte Consulting.
 		- [[JPMorgan]] (2025). "Cryptocurrency Adoption and Bitcoin's Store of Value Status". JPMorgan Chase & Co.
 		- [[IMF]] (2025). "El Salvador Article IV Consultation: Bitcoin Legal Tender Assessment". International Monetary Fund.
 		- [[World Bank]] (2025). "Remittance Prices Worldwide: Impact of Cryptocurrency Corridors". World Bank Group.
-	- **Network Statistics**:
+  - **Network Statistics**:
 		- [[Bitcoin Visuals]] (2025). "Lightning Network Statistics and Channel Capacity Analysis". https://bitcoinvisuals.com/lightning
 		- [[Amboss]] (2025). "L402 Network Statistics: Micropayment Protocol Adoption". https://amboss.space/l402-stats
 		- [[Chainalysis]] (2025). "Geography of Cryptocurrency 2025: African Bitcoin Adoption Trends". Chainalysis Inc.
-	- **Technical Documentation**:
+  - **Technical Documentation**:
 		- [[Zucco, Giacomo]] (2024). "Discovering Bitcoin: A Brief Overview from Cavemen to the Lightning Network". https://giacomozucco.com/layers-before-bitcoin
 		- [[Bailey, Andrew M.]] (2024). "Bitcoin and Political Philosophy". https://andrewmbailey.com/
 		- [[Bitcoin AI Research Consortium]] (2025). "AI Agents and Bitcoin: Economic Implications of Machine Commerce". Joint research paper.
-	- **Historical References**:
+  - **Historical References**:
 		- [[Cagan, Phillip]] (1958). "The Demand for Currency Relative to the Total Money Supply". Journal of Political Economy.[[cagan1958demand]]
 		- [[Maurel, Mathilde]] (2012). "Austrian vs Keynesian Economics: The Debate Continues". Medium DataDrivenInvestor.[[maurel2012keynesian]]
 		- [[Bhatia, Kunal]] (2021). "Understanding Bitcoin's Layered Architecture". Technical analysis.[[Bhatia2021]]
-	- **Related Topics**:
+  - **Related Topics**:
 		- See also: [[Medium of Exchange]], [[Unit of Account]], [[Store of Value]], [[Sound Money]], [[Austrian Economics]], [[Keynesian Economics]], [[Central Banking]], [[Monetary Policy]], [[Digital Currency]], [[Cryptocurrency]], [[Financial Inclusion]], [[Remittances]], [[Legal Tender]], [[Payment Systems]], [[Lightning Network]], [[Layer 2 Solutions]], [[Smart Contracts]], [[RGB Protocol]], [[Discreet Log Contracts]], [[L402]], [[X402]], [[Micropayments]], [[AI Agents]], [[Machine Commerce]], [[Programmable Money]], [[Economic Freedom]], [[Financial Sovereignty]]
+
+  - ### [[Bitcoin]] as [[Money]]
+  - #### [[Spending]] [[Bitcoin]] as [[Medium of Exchange]]
+  - #### [[Saving]] with [[Bitcoin]]
+  - ### [[Bitcoin as Legal Tender]]: [[El Salvador]] 2025 Update
+  - ### [[L402]] and [[X402]]: [[Micropayments]] for the [[Internet]]
+  - ### [[Bitcoin]] and [[Artificial Intelligence]]: [[Agent-to-Agent Payments]]
+  - ### [[Conclusion]]: [[Bitcoin]]'s [[Monetary Future]]
+  - ### [[References]] and [[Citations]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

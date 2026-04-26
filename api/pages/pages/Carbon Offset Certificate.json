@@ -1,45 +1,53 @@
 {
-  "id": "Carbon Offset Certificate",
+  "id": "carbon-offset-certificate",
   "title": "Carbon Offset Certificate",
-  "content": "- ### OntologyBlock\n  id:: carbon-offset-certificate-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9813\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Offset Certificate\n\t- definition:: A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.\n\t- status:: active\n\t- owl:class:: mv:CarbonOffsetCertificate\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-offset-certificate-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Certificate]]\n\t\t- enables:: [[Carbon Neutrality]], [[Emissions Compensation]], [[Climate Investment]]\n\t\t- requires:: [[Project Verification]], [[Registry Issuance]], [[Third Party Validation]]\n\t\t- related-to:: [[Carbon Credit Tracking]], [[Carbon Registry]], [[Verified Carbon Standard]]\n- ## Technical Details\n\t- **Major Certification Standards**:\n\t\t- **Verra VCS**: 80% of VCM market share, 2,300+ projects, 1.3B credits issued\n\t\t- **Gold Standard**: WWF-founded, emphasis on sustainable development co-benefits\n\t\t- **American Carbon Registry (ACR)**: Oldest voluntary offset program\n\t\t- **Climate Action Reserve (CAR)**: North America focused\n\t- **Credit Properties**:\n\t\t- Real and measurable emission reductions\n\t\t- Additional (beyond business-as-usual)\n\t\t- Permanent or long-term\n\t\t- Independently verified\n\t\t- Uniquely numbered for tracking\n\t\t- Conservatively estimated\n\t- **Project Types**: AFOLU (forestry, land use), renewable energy, energy efficiency, waste management, transport\n\t- **Vintage Requirements**: Credits must represent reductions within 4 years of emissions year\n\t- **2024 Issues**: Some Brazilian Amazon projects suspended due to land-grabbing concerns\n- ## Applications\n\t- Corporate carbon neutrality claims\n\t- Voluntary emissions compensation\n\t- CORSIA aviation offset compliance\n\t- ESG portfolio enhancement\n\t- Climate impact investment",
+  "content": "- ### Definition\n  - A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CarbonOffsetCertificate\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Environmental Certificate]]\n  - requires:: [[Project Verification]], [[Registry Issuance]], [[Third Party Validation]]\n  - enables:: [[Carbon Neutrality]], [[Emissions Compensation]], [[Climate Investment]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Major Certification Standards**:\n\t\t- **Verra VCS**: 80% of VCM market share, 2,300+ projects, 1.3B credits issued\n\t\t- **Gold Standard**: WWF-founded, emphasis on sustainable development co-benefits\n\t\t- **American Carbon Registry (ACR)**: Oldest voluntary offset program\n\t\t- **Climate Action Reserve (CAR)**: North America focused\n  - **Credit Properties**:\n\t\t- Real and measurable emission reductions\n\t\t- Additional (beyond business-as-usual)\n\t\t- Permanent or long-term\n\t\t- Independently verified\n\t\t- Uniquely numbered for tracking\n\t\t- Conservatively estimated\n  - **Project Types**: AFOLU (forestry, land use), renewable energy, energy efficiency, waste management, transport\n  - **Vintage Requirements**: Credits must represent reductions within 4 years of emissions year\n  - **2024 Issues**: Some Brazilian Amazon projects suspended due to land-grabbing concerns\n  - ## Applications\n  - Corporate carbon neutrality claims\n  - Voluntary emissions compensation\n  - CORSIA aviation offset compliance\n  - ESG portfolio enhancement\n  - Climate impact investment\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Carbon Neutrality Verification",
     "Carbon Credit Token"
   ],
   "wiki_links": [
-    "Carbon Credit Tracking",
-    "Climate Investment",
-    "Registry Issuance",
+    "Blockchain",
     "Carbon Neutrality",
-    "Project Verification",
-    "Environmental Certificate",
-    "metaverse",
-    "Carbon Registry",
-    "Third Party Validation",
+    "Climate Investment",
     "Emissions Compensation",
-    "Verified Carbon Standard"
+    "Environmental Certificate",
+    "Project Verification",
+    "Registry Issuance",
+    "Third Party Validation",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:carbon-offset-certificate",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CarbonOffsetCertificate",
+    "content_hash": "sha256-12-e617917167b8",
+    "legacy_term_id": "MV-9813",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:carbon-offset-certificate",
+    "schema_version": "v2",
     "term_id": "MV-9813",
     "preferred_term": "Carbon Offset Certificate",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CarbonOffsetCertificate",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CarbonOffsetCertificate",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CarbonOffsetCertificate",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Environmental Certificate"
@@ -58,28 +66,19 @@
       "Climate Investment"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Carbon Credit Tracking",
-        "Carbon Registry",
-        "Verified Carbon Standard"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: lidar2d-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#2DLiDAR
+uri:: urn:visionclaw:concept:robotics:2d-lidar
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:2d-lidar
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: 2D LiDAR
+content-hash:: sha256-12-67838868691d
+legacy-term-id:: RB-0162
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0162
-    - filename-history:: ["RB-0162-lidar2d.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0162
-    - preferred-term:: 2D LiDAR
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - 2D LiDAR scans single horizontal or vertical plane for obstacle detection.
 
-  - **Definition**
-    - definition:: 2D LiDAR scans single horizontal or vertical plane for obstacle detection.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:Lidar2d
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:Lidar2d
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Lidar]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Lidar]]
+- ### Content
+  2D LiDAR — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Lidar2d))
-      (SubClassOf :Lidar2d :Lidar)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Lidar2d "2D LiDAR"@en)
-      (AnnotationAssertion rdfs:comment :Lidar2d
-        "2D LiDAR scans single horizontal or vertical plane for obstacle detection."@en)
-      ```
-
-- ## About 2D LiDAR
-  2D LiDAR scans single horizontal or vertical plane for obstacle detection.
-  
-  A LiDAR scanning in single plane.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

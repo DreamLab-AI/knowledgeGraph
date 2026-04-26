@@ -1,44 +1,53 @@
 {
-  "id": "Behavioral Learning",
+  "id": "behavioral-learning",
   "title": "Behavioral Learning",
-  "content": "- ### OntologyBlock\n  id:: behavioral-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9795\n\t- source-domain:: mv\n\t- preferred-term:: Behavioral Learning\n\t- definition:: An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.\n\t- status:: active\n\t- owl:class:: mv:BehavioralLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: behavioral-learning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Machine Learning]]\n\t\t- enables:: [[Personalization]], [[Predictive Analytics]], [[User Experience Optimization]]\n\t\t- requires:: [[Data Collection]], [[Pattern Recognition]], [[Machine Learning Models]]\n\t\t- related-to:: [[Internet of Behaviors]], [[User Analytics]], [[Recommendation Systems]]\n- ## Technical Details\n\t- **Core Components**:\n\t\t- Pose estimation and facial recognition\n\t\t- Emotion recognition systems\n\t\t- Sequential behavior analysis\n\t\t- Context modeling and prediction\n\t- **Data Sources**: Digital behavioral data including clicks, browsing patterns, movement trajectories, gaze tracking, and interaction sequences\n\t- **Analytics Types**:\n\t\t- Descriptive analytics (historical behavior)\n\t\t- Predictive analytics (future behavior forecasting)\n\t\t- Prescriptive analytics (action recommendations)\n\t- **Implementation Approaches**: Classical ML algorithms (43.5%), reinforcement learning (34.8%), natural language understanding (34.8%), conversational AI (21.7%)\n- ## Applications\n\t- Cybersecurity threat detection through anomaly identification\n\t- Personalized learning in educational platforms\n\t- Digital behavior change interventions for health\n\t- Mobile app optimization and user experience enhancement\n\t- Virtual environment interaction prediction",
+  "content": "- ### Definition\n  - An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:BehavioralLearning\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Machine Learning]]\n  - requires:: [[Data Collection]], [[Pattern Recognition]], [[Machine Learning Models]]\n  - enables:: [[Personalization]], [[Predictive Analytics]], [[User Experience Optimization]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Components**:\n\t\t- Pose estimation and facial recognition\n\t\t- Emotion recognition systems\n\t\t- Sequential behavior analysis\n\t\t- Context modeling and prediction\n  - **Data Sources**: Digital behavioral data including clicks, browsing patterns, movement trajectories, gaze tracking, and interaction sequences\n  - **Analytics Types**:\n\t\t- Descriptive analytics (historical behavior)\n\t\t- Predictive analytics (future behavior forecasting)\n\t\t- Prescriptive analytics (action recommendations)\n  - **Implementation Approaches**: Classical ML algorithms (43.5%), reinforcement learning (34.8%), natural language understanding (34.8%), conversational AI (21.7%)\n  - ## Applications\n  - Cybersecurity threat detection through anomaly identification\n  - Personalized learning in educational platforms\n  - Digital behavior change interventions for health\n  - Mobile app optimization and user experience enhancement\n  - Virtual environment interaction prediction\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Behavioural Feedback Loop"
   ],
   "wiki_links": [
-    "Recommendation Systems",
-    "User Analytics",
-    "Personalization",
+    "Computer Vision",
     "Data Collection",
-    "Machine Learning Models",
-    "metaverse",
-    "User Experience Optimization",
-    "Internet of Behaviors",
-    "Pattern Recognition",
     "Machine Learning",
-    "Predictive Analytics"
+    "Machine Learning Models",
+    "Pattern Recognition",
+    "Personalization",
+    "Predictive Analytics",
+    "User Experience Optimization",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:behavioral-learning",
+    "iri": "http://narrativegoldmine.com/spatial-computing#BehavioralLearning",
+    "content_hash": "sha256-12-41dc83209514",
+    "legacy_term_id": "MV-9795",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:behavioral-learning",
+    "schema_version": "v2",
     "term_id": "MV-9795",
     "preferred_term": "Behavioral Learning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#BehavioralLearning",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:BehavioralLearning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:BehavioralLearning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Machine Learning"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Internet of Behaviors",
-        "User Analytics",
-        "Recommendation Systems"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

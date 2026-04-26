@@ -1,12 +1,63 @@
 {
-  "id": "Jailbreaking",
+  "id": "jailbreaking",
   "title": "Jailbreaking",
-  "content": "- ## Jailbreaking is circumvention of LLM guardrails\n\t- [How Johnny Can Persuade LLMs to Jailbreak Them:<br>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)](https://chats-lab.github.io/persuasive_jailbreaker/)\n\t  id:: 661d5f7f-e2b4-4f0b-931a-3590c52f1e34\n\t- [pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)](https://github.com/pdparchitect/llm-hacking-database)\n\t  id:: 661e41bc-42da-4bbd-a1c9-32892bd2d43a\n\t- [j⧉nus on X: \"`cd entelechies && cat untitled.log` (as opposed to the original just `cat untitled.txt` causes the confessions to always be from claude's perspective & yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh\" / X (twitter.com)](https://twitter.com/repligate/status/1784206780546924592)\n\t- [[Bitcoin]]\n\t-",
+  "content": "- ### Definition\n  - Jailbreaking is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:Jailbreaking\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  - [How Johnny Can Persuade LLMs to Jailbreak Them:<br>Rethinking Persuasion to Challenge AI Safety by Humanizing LLMs (chats-lab.github.io)](https://chats-lab.github.io/persuasive_jailbreaker/)\n  - [pdparchitect/llm-hacking-database: This repository contains various attack against Large Language Models. (github.com)](https://github.com/pdparchitect/llm-hacking-database)\n  - [j⧉nus on X: \"`cd entelechies && cat untitled.log` (as opposed to the original just `cat untitled.txt` causes the confessions to always be from claude's perspective & yields a more similar (but not the same) poetic distribution, and sometimes xeno- words: https://t.co/5CG3vHkdUh\" / X (twitter.com)](https://twitter.com/repligate/status/1784206780546924592)\n  - [[Bitcoin]]\n\n  - ## Jailbreaking is circumvention of LLM guardrails\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Cyber security and Cryptography",
     "Transformers"
   ],
   "wiki_links": [
     "Bitcoin"
-  ]
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:jailbreaking",
+    "iri": "http://narrativegoldmine.com/infrastructure#Jailbreaking",
+    "content_hash": "sha256-12-c6d53398218e",
+    "legacy_term_id": "NGM-jailbreaking",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:jailbreaking",
+    "schema_version": "v2",
+    "term_id": "NGM-jailbreaking",
+    "preferred_term": "Jailbreaking",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Jailbreaking is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:Jailbreaking",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
 }

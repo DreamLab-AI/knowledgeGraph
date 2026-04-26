@@ -1,44 +1,53 @@
 {
-  "id": "Data Replication",
+  "id": "data-replication",
   "title": "Data Replication",
-  "content": "- ### OntologyBlock\n  id:: data-replication-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9840\n\t- source-domain:: mv\n\t- preferred-term:: Data Replication\n\t- definition:: The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.\n\t- status:: active\n\t- owl:class:: mv:DataReplication\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: data-replication-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Distributed Systems]]\n\t\t- enables:: [[Fault Tolerance]], [[Data Availability]], [[Consistency Guarantees]]\n\t\t- requires:: [[Consensus Algorithm]], [[Network Infrastructure]], [[Storage Systems]]\n\t\t- related-to:: [[Blockchain Consensus]], [[Distributed Database]], [[Edge Computing]]\n- ## Technical Details\n\t- **Core Consensus Algorithms**:\n\t\t- **Paxos**: Ensures single value chosen even with simultaneous proposals\n\t\t- **Raft**: Simplified leader election, log replication, and safety\n\t\t- **PBFT**: Practical Byzantine Fault Tolerance for state machine replication\n\t- **Blockchain Applications**:\n\t\t- Bitcoin: Proof of Work consensus\n\t\t- Ethereum: Proof of Stake consensus\n\t\t- Distributed ledger transaction ordering and validation\n\t- **2024 Research**:\n\t\t- \"Bedrock of Byzantine Fault Tolerance\" (NSDI 2024)\n\t\t- \"SpotLess: Concurrent Rotational Consensus\" (ICDE 2024)\n\t\t- Edge-cloud and blockchain system applications\n\t- **Key Properties**: Consistency across distributed nodes, reliable synchronized replication, fault tolerance in cloud computing\n- ## Applications\n\t- Blockchain transaction synchronization\n\t- Distributed database consistency\n\t- Cloud storage redundancy\n\t- Metaverse state management\n\t- Edge computing data sync",
+  "content": "- ### Definition\n  - The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DataReplication\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Distributed Systems]]\n  - requires:: [[Consensus Algorithm]], [[Network Infrastructure]], [[Storage Systems]]\n  - enables:: [[Fault Tolerance]], [[Data Availability]], [[Consistency Guarantees]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Consensus Algorithms**:\n\t\t- **Paxos**: Ensures single value chosen even with simultaneous proposals\n\t\t- **Raft**: Simplified leader election, log replication, and safety\n\t\t- **PBFT**: Practical Byzantine Fault Tolerance for state machine replication\n  - **Blockchain Applications**:\n\t\t- Bitcoin: Proof of Work consensus\n\t\t- Ethereum: Proof of Stake consensus\n\t\t- Distributed ledger transaction ordering and validation\n  - **2024 Research**:\n\t\t- \"Bedrock of Byzantine Fault Tolerance\" (NSDI 2024)\n\t\t- \"SpotLess: Concurrent Rotational Consensus\" (ICDE 2024)\n\t\t- Edge-cloud and blockchain system applications\n  - **Key Properties**: Consistency across distributed nodes, reliable synchronized replication, fault tolerance in cloud computing\n  - ## Applications\n  - Blockchain transaction synchronization\n  - Distributed database consistency\n  - Cloud storage redundancy\n  - Metaverse state management\n  - Edge computing data sync\n\n- ### Provenance\n  - bridges-to:: [[Blockchain]] (bc)\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Distributed Ledger Technology (DLT)"
   ],
   "wiki_links": [
+    "Blockchain",
     "Consensus Algorithm",
-    "Network Infrastructure",
-    "Data Availability",
-    "Blockchain Consensus",
     "Consistency Guarantees",
-    "Storage Systems",
+    "Data Availability",
     "Distributed Systems",
-    "Distributed Database",
-    "metaverse",
-    "Edge Computing",
-    "Fault Tolerance"
+    "Fault Tolerance",
+    "Network Infrastructure",
+    "Storage Systems",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:data-replication",
+    "iri": "http://narrativegoldmine.com/infrastructure#DataReplication",
+    "content_hash": "sha256-12-364ca4aa14cc",
+    "legacy_term_id": "MV-9840",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:data-replication",
+    "schema_version": "v2",
     "term_id": "MV-9840",
     "preferred_term": "Data Replication",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DataReplication",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized networks.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DataReplication",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DataReplication",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Distributed Systems"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Blockchain Consensus",
-        "Distributed Database",
-        "Edge Computing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

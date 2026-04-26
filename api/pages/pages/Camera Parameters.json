@@ -1,46 +1,53 @@
 {
-  "id": "Camera Parameters",
+  "id": "camera-parameters",
   "title": "Camera Parameters",
-  "content": "- ### OntologyBlock\n  id:: camera-parameters-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9806\n\t- source-domain:: mv\n\t- preferred-term:: Camera Parameters\n\t- definition:: The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.\n\t- status:: active\n\t- owl:class:: mv:CameraParameters\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: camera-parameters-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Imaging Parameters]]\n\t\t- enables:: [[3D Reconstruction]], [[Object Measurement]], [[Scene Localization]]\n\t\t- requires:: [[Camera Calibration]], [[Calibration Target]], [[Optimization Algorithm]]\n\t\t- related-to:: [[Photogrammetry]], [[Computer Vision]], [[SLAM]]\n- ## Technical Details\n\t- **Intrinsic Parameters** (3x3 Matrix K):\n\t\t- fx, fy: Focal lengths in pixel units\n\t\t- cx, cy: Principal point (optical center) coordinates\n\t\t- s: Skew coefficient (usually zero)\n\t\t- Maps 3D camera coordinates to 2D image coordinates\n\t- **Extrinsic Parameters** (4x4 Matrix):\n\t\t- R: 3x3 rotation matrix\n\t\t- t: 3x1 translation vector\n\t\t- Transforms world coordinates to camera coordinates\n\t- **Camera Matrix**: M = K[R | -RT] combines both for complete projection\n\t- **Lens Distortion** (nonlinear):\n\t\t- Radial distortion: Light bends more at lens edges\n\t\t- Tangential distortion: Lens not perfectly parallel to sensor\n\t- **Calibration Methods**:\n\t\t- Zhang's method (checkerboard patterns)\n\t\t- Homography-based estimation\n\t\t- Bundle adjustment optimization\n- ## Applications\n\t- Autonomous vehicle perception\n\t- Augmented reality overlay alignment\n\t- Robotic vision and navigation\n\t- 3D scanning and reconstruction\n\t- Machine vision inspection systems",
+  "content": "- ### Definition\n  - The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CameraParameters\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Imaging Parameters]]\n  - requires:: [[Camera Calibration]], [[Calibration Target]], [[Optimization Algorithm]]\n  - enables:: [[3D Reconstruction]], [[Object Measurement]], [[Scene Localization]]\n  - bridges-to:: [[Computer Vision]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Intrinsic Parameters** (3x3 Matrix K):\n\t\t- fx, fy: Focal lengths in pixel units\n\t\t- cx, cy: Principal point (optical center) coordinates\n\t\t- s: Skew coefficient (usually zero)\n\t\t- Maps 3D camera coordinates to 2D image coordinates\n  - **Extrinsic Parameters** (4x4 Matrix):\n\t\t- R: 3x3 rotation matrix\n\t\t- t: 3x1 translation vector\n\t\t- Transforms world coordinates to camera coordinates\n  - **Camera Matrix**: M = K[R | -RT] combines both for complete projection\n  - **Lens Distortion** (nonlinear):\n\t\t- Radial distortion: Light bends more at lens edges\n\t\t- Tangential distortion: Lens not perfectly parallel to sensor\n  - **Calibration Methods**:\n\t\t- Zhang's method (checkerboard patterns)\n\t\t- Homography-based estimation\n\t\t- Bundle adjustment optimization\n  - ## Applications\n  - Autonomous vehicle perception\n  - Augmented reality overlay alignment\n  - Robotic vision and navigation\n  - 3D scanning and reconstruction\n  - Machine vision inspection systems\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Calibration Target",
-    "Calibration Standards",
     "Neural 3D Generation"
   ],
   "wiki_links": [
     "3D Reconstruction",
-    "Computer Vision",
-    "Object Measurement",
-    "SLAM",
-    "Imaging Parameters",
-    "Camera Calibration",
-    "metaverse",
     "Calibration Target",
-    "Photogrammetry",
+    "Camera Calibration",
+    "Computer Vision",
+    "Imaging Parameters",
+    "Object Measurement",
+    "Optimization Algorithm",
     "Scene Localization",
-    "Optimization Algorithm"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:camera-parameters",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CameraParameters",
+    "content_hash": "sha256-12-dd46e36bb0c0",
+    "legacy_term_id": "MV-9806",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:camera-parameters",
+    "schema_version": "v2",
     "term_id": "MV-9806",
     "preferred_term": "Camera Parameters",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CameraParameters",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The intrinsic and extrinsic mathematical values that define a camera's optical characteristics and spatial positioning, comprising focal length, optical center, distortion coefficients (intrinsic) and rotation/translation relative to world coordinates (extrinsic), essential for 3D reconstruction and photogrammetry.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CameraParameters",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CameraParameters",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Imaging Parameters"
@@ -59,28 +66,19 @@
       "Scene Localization"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Computer Vision"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Photogrammetry",
-        "Computer Vision",
-        "SLAM"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

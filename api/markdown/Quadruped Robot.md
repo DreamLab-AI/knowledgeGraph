@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: quadrupedrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#QuadrupedRobot
+uri:: urn:visionclaw:concept:robotics:quadruped-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:quadruped-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Quadruped Robot
+content-hash:: sha256-12-26d2f0afed1d
+legacy-term-id:: RB-0119
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0119
-    - filename-history:: ["RB-0119-quadrupedrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0119
-    - preferred-term:: Quadruped Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.
 
-  - **Definition**
-    - definition:: Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:QuadrupedRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:QuadrupedRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Legged Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Legged Robot]]
+- ### Content
+  Quadruped Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :QuadrupedRobot))
-      (SubClassOf :QuadrupedRobot :LeggedRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :QuadrupedRobot "Quadruped Robot"@en)
-      (AnnotationAssertion rdfs:comment :QuadrupedRobot
-        "Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats."@en)
-      ```
-
-- ## About Quadruped Robot
-  Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.
-  
-  A legged robot with four legs.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

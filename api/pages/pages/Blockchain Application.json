@@ -1,77 +1,95 @@
 {
-  "id": "Blockchain Application",
+  "id": "blockchain-application",
   "title": "Blockchain Application",
-  "content": "- ### OntologyBlock\n  id:: blockchain-application-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-7010\n\t- preferred-term:: Blockchain Application\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.\n\t- maturity:: production\n\t- belongsToDomain:: [[Blockchain]]\n\t- owl:class:: bc:BlockchainApplication\n\t- owl:role:: Concept\n\n---\nid: BC-7010\ntitle: Blockchain Application\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-12-29\nstatus: active\n---\n\n# Blockchain Application\n\n## Definition\n- Decentralized application (dApp) running on peer-to-peer blockchain networks rather than centralized servers\n- Combines smart contract backend logic with frontend user interfaces for distributed execution\n- Provides enhanced security, transparency, censorship resistance, and continuous availability\n\n## Core Characteristics\n- **Open Source**: Codebase available for evaluation; changes require consensus\n- **Decentralized Storage**: Data stored across distributed blockchain blocks\n- **Cryptographic Validation**: Blocks validated and proven true via cryptographic mechanisms\n- **Immutability**: Data written to blockchain cannot be easily altered or deleted\n- **Smart Contract Automation**: Self-executing agreements enforce rules without intermediaries\n\n## Architecture Components\n\n### Frontend Interface\n- User-facing component resembling traditional applications\n- Web3 wallet integration (MetaMask, WalletConnect)\n- Transaction signing and state display\n- Can be built with any frontend technology (React, Vue, etc.)\n\n### Smart Contracts\n- Backend logic stored and executed on blockchain\n- Written in Solidity, Vyper, Rust, or chain-specific languages\n- Compiled to bytecode executed by virtual machine (EVM, SVM)\n- Immutable once deployed; upgrades require proxy patterns\n\n### Decentralized Storage\n- Data distributed across network nodes\n- Solutions: IPFS, Arweave, Filecoin\n- Off-chain storage for large data with on-chain references\n- Content-addressed data retrieval\n\n### Blockchain Network\n- Infrastructure validating transactions and maintaining consensus\n- Node network propagating state changes\n- Finality mechanisms ensuring transaction permanence\n\n### Supporting Components\n- **Oracles**: Bridge external real-world data to smart contracts\n- **Indexers**: The Graph, SubQuery for efficient data querying\n- **Wallets**: Private key management and transaction signing\n- **Backend Services**: Off-chain computation for complex operations\n\n## Relationships\n- is-subclass-of:: [[Distributed Application]]\n- related-to:: [[Smart Contracts]]\n- related-to:: [[Decentralized Finance]]\n- uses:: [[Blockchain Infrastructure]]\n- enables:: [[Web3]]\n- requires:: [[Cryptocurrency Wallet]]\n- depends-on:: [[Consensus Mechanism]]\n\n## Technical Details\n\n### Execution Model\n1. **Trigger Event**: External transaction invokes contract\n2. **Condition Verification**: Contract logic validates request\n3. **Automatic Execution**: Valid requests execute instantly\n4. **State Settlement**: Blockchain records new state permanently\n\n### Development Stack\n- **Languages**: Solidity, Vyper (Ethereum); Rust (Solana, Near); Move (Aptos, Sui)\n- **Frameworks**: Hardhat, Foundry, Truffle, Anchor\n- **Testing**: Unit tests, integration tests, formal verification\n- **Deployment**: Mainnet, testnet, local development networks\n\n### Gas and Transaction Costs\n- Computational resources measured in gas units\n- Users pay gas fees in native cryptocurrency\n- Cost optimization through efficient contract design\n- Layer 2 solutions for reduced transaction costs\n\n## Implementations\n\n### DeFi (Decentralized Finance)\n- [[Uniswap]]: Automated market maker DEX\n- [[Aave]]: Lending and borrowing protocol\n- [[Compound]]: Algorithmic money markets\n- [[MakerDAO]]: Decentralized stablecoin system\n\n### NFT Platforms\n- [[OpenSea]]: NFT marketplace\n- [[Blur]]: NFT trading platform\n- [[Rarible]]: Creator-focused NFT marketplace\n\n### Gaming and Metaverse\n- [[Axie Infinity]]: Play-to-earn gaming\n- [[The Sandbox]]: Virtual world platform\n- [[Decentraland]]: Decentralized virtual reality\n\n### Infrastructure\n- [[ENS]]: Ethereum Name Service\n- [[Chainlink]]: Decentralized oracle network\n- [[The Graph]]: Indexing protocol\n\n## Advantages\n- **Zero Downtime**: Network always serves clients; no single point of failure\n- **Censorship Resistance**: No entity can block users or transactions\n- **Data Integrity**: Immutable records via cryptographic primitives\n- **Transparency**: Open audit trail of all transactions\n- **Trustless Operation**: No intermediary required for execution\n\n## Limitations\n- **User Experience**: Requires wallet setup, gas management, key security\n- **Maintenance Difficulty**: Immutable contracts harder to update/fix\n- **Scalability**: Base layer throughput constraints\n- **Storage Costs**: On-chain storage expensive\n- **Latency**: Transaction confirmation delays\n\n## Performance Considerations\n- Transaction throughput varies by chain (7 TPS Bitcoin, 30 TPS Ethereum L1, 65K+ TPS Solana)\n- Block confirmation times affect user experience\n- Layer 2 solutions (rollups) provide scaling\n- Indexing services improve read performance\n\n## Security Model\n- Smart contract audits before deployment\n- Bug bounty programs\n- Formal verification for critical contracts\n- Upgradeable proxy patterns with governance\n- Multi-signature controls for admin functions\n\n## Related Concepts\n- [[Smart Contracts]]\n- [[Decentralized Finance]]\n- [[Web3]]\n- [[Blockchain Infrastructure]]\n- [[Cryptocurrency Wallet]]\n\n#blockchain #dapp #decentralized-application #web3",
+  "content": "- ### Definition\n  - A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:BlockchainApplication\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Distributed Application]]\n  - requires:: [[Cryptocurrency Wallet]]\n  - enables:: [[Web3]]\n  - depends-on:: [[Consensus Mechanism]]\n\n- ### Content\n\n  ## Definition\n  - Decentralized application (dApp) running on peer-to-peer blockchain networks rather than centralized servers\n  - Combines smart contract backend logic with frontend user interfaces for distributed execution\n  - Provides enhanced security, transparency, censorship resistance, and continuous availability\n\n  ## Core Characteristics\n  - **Open Source**: Codebase available for evaluation; changes require consensus\n  - **Decentralized Storage**: Data stored across distributed blockchain blocks\n  - **Cryptographic Validation**: Blocks validated and proven true via cryptographic mechanisms\n  - **Immutability**: Data written to blockchain cannot be easily altered or deleted\n  - **Smart Contract Automation**: Self-executing agreements enforce rules without intermediaries\n\n  ## Architecture Components\n\n  ### Frontend Interface\n  - User-facing component resembling traditional applications\n  - Web3 wallet integration (MetaMask, WalletConnect)\n  - Transaction signing and state display\n  - Can be built with any frontend technology (React, Vue, etc.)\n\n  ### Smart Contracts\n  - Backend logic stored and executed on blockchain\n  - Written in Solidity, Vyper, Rust, or chain-specific languages\n  - Compiled to bytecode executed by virtual machine (EVM, SVM)\n  - Immutable once deployed; upgrades require proxy patterns\n\n  ### Decentralized Storage\n  - Data distributed across network nodes\n  - Solutions: IPFS, Arweave, Filecoin\n  - Off-chain storage for large data with on-chain references\n  - Content-addressed data retrieval\n\n  ### Blockchain Network\n  - Infrastructure validating transactions and maintaining consensus\n  - Node network propagating state changes\n  - Finality mechanisms ensuring transaction permanence\n\n  ### Supporting Components\n  - **Oracles**: Bridge external real-world data to smart contracts\n  - **Indexers**: The Graph, SubQuery for efficient data querying\n  - **Wallets**: Private key management and transaction signing\n  - **Backend Services**: Off-chain computation for complex operations\n\n  ## Relationships\n  - is-subclass-of:: [[Distributed Application]]\n  - related-to:: [[Smart Contracts]]\n  - related-to:: [[Decentralized Finance]]\n  - uses:: [[Blockchain Infrastructure]]\n  - enables:: [[Web3]]\n  - requires:: [[Cryptocurrency Wallet]]\n  - depends-on:: [[Consensus Mechanism]]\n  - bridges-to:: [[AI Agent System]]\n\n  ## Technical Details\n\n  ### Execution Model\n  1. **Trigger Event**: External transaction invokes contract\n  2. **Condition Verification**: Contract logic validates request\n  3. **Automatic Execution**: Valid requests execute instantly\n  4. **State Settlement**: Blockchain records new state permanently\n\n  ### Development Stack\n  - **Languages**: Solidity, Vyper (Ethereum); Rust (Solana, Near); Move (Aptos, Sui)\n  - **Frameworks**: Hardhat, Foundry, Truffle, Anchor\n  - **Testing**: Unit tests, integration tests, formal verification\n  - **Deployment**: Mainnet, testnet, local development networks\n\n  ### Gas and Transaction Costs\n  - Computational resources measured in gas units\n  - Users pay gas fees in native cryptocurrency\n  - Cost optimization through efficient contract design\n  - Layer 2 solutions for reduced transaction costs\n\n  ## Implementations\n\n  ### DeFi (Decentralized Finance)\n  - [[Uniswap]]: Automated market maker DEX\n  - [[Aave]]: Lending and borrowing protocol\n  - [[Compound]]: Algorithmic money markets\n  - [[MakerDAO]]: Decentralized stablecoin system\n\n  ### NFT Platforms\n  - [[OpenSea]]: NFT marketplace\n  - [[Blur]]: NFT trading platform\n  - [[Rarible]]: Creator-focused NFT marketplace\n\n  ### Gaming and Metaverse\n  - [[Axie Infinity]]: Play-to-earn gaming\n  - [[The Sandbox]]: Virtual world platform\n  - [[Decentraland]]: Decentralized virtual reality\n\n  ### Infrastructure\n  - [[ENS]]: Ethereum Name Service\n  - [[Chainlink]]: Decentralized oracle network\n  - [[The Graph]]: Indexing protocol\n\n  ## Advantages\n  - **Zero Downtime**: Network always serves clients; no single point of failure\n  - **Censorship Resistance**: No entity can block users or transactions\n  - **Data Integrity**: Immutable records via cryptographic primitives\n  - **Transparency**: Open audit trail of all transactions\n  - **Trustless Operation**: No intermediary required for execution\n\n  ## Limitations\n  - **User Experience**: Requires wallet setup, gas management, key security\n  - **Maintenance Difficulty**: Immutable contracts harder to update/fix\n  - **Scalability**: Base layer throughput constraints\n  - **Storage Costs**: On-chain storage expensive\n  - **Latency**: Transaction confirmation delays\n\n  ## Performance Considerations\n  - Transaction throughput varies by chain (7 TPS Bitcoin, 30 TPS Ethereum L1, 65K+ TPS Solana)\n  - Block confirmation times affect user experience\n  - Layer 2 solutions (rollups) provide scaling\n  - Indexing services improve read performance\n\n  ## Security Model\n  - Smart contract audits before deployment\n  - Bug bounty programs\n  - Formal verification for critical contracts\n  - Upgradeable proxy patterns with governance\n  - Multi-signature controls for admin functions\n\n  #### Related Concepts\n  - [[Smart Contracts]]\n  - [[Decentralized Finance]]\n  - [[Web3]]\n  - [[Blockchain Infrastructure]]\n  - [[Cryptocurrency Wallet]]\n\n  #blockchain #dapp #decentralized-application #web3\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Blockchain Infrastructure"
+    "Decentralized Exchange",
+    "Blockchain Infrastructure",
+    "Asset Registry"
   ],
   "wiki_links": [
-    "Chainlink",
-    "Blockchain Infrastructure",
-    "Decentraland",
-    "Rarible",
-    "Axie Infinity",
-    "Consensus Mechanism",
+    "AI Agent System",
     "Aave",
-    "The Graph",
-    "Web3",
-    "Smart Contracts",
-    "The Sandbox",
-    "Blur",
-    "Distributed Application",
-    "Uniswap",
-    "ENS",
+    "Axie Infinity",
     "Blockchain",
-    "Decentralized Finance",
-    "OpenSea",
-    "MakerDAO",
+    "Blockchain Infrastructure",
+    "Blur",
+    "Chainlink",
+    "Compound",
+    "Consensus Mechanism",
     "Cryptocurrency Wallet",
-    "Compound"
+    "Decentraland",
+    "Decentralized Finance",
+    "Distributed Application",
+    "ENS",
+    "MakerDAO",
+    "OpenSea",
+    "Rarible",
+    "Smart Contracts",
+    "The Graph",
+    "The Sandbox",
+    "Uniswap",
+    "Web3"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:blockchain-application",
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainApplication",
+    "content_hash": "sha256-12-df381b9fa4a5",
+    "legacy_term_id": "BC-7010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:blockchain-application",
+    "schema_version": "v2",
     "term_id": "BC-7010",
     "preferred_term": "Blockchain Application",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#BlockchainApplication",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.",
     "scope_note": null,
     "status": "active",
     "maturity": "production",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:BlockchainApplication",
-    "owl_physicality": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:BlockchainApplication",
     "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Distributed Application"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "requires": [
+      "Cryptocurrency Wallet"
+    ],
+    "depends_on": [
+      "Consensus Mechanism"
+    ],
+    "enables": [
+      "Web3"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,37 +1,50 @@
 {
-  "id": "TPU",
+  "id": "tpu",
   "title": "TPU",
-  "content": "- ### OntologyBlock\n  id:: AI-9004\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9004\n\t- source-domain:: ai\n\t- preferred-term:: TPU\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.\n\t- source:: [[Google Cloud]], [[AI Hardware]]\n\t- maturity:: mature\n\t- owl:class:: ai:TPU\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
+  "content": "- ### Definition\n  - Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:TPU\n  - owl-role:: Object\n  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n\n- ### Content\n  TPU — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[Google Cloud]], [[AI Hardware]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
     "AI Hardware",
+    "Artificial Intelligence",
     "ArtificialIntelligenceDomain",
-    "Google Cloud",
-    "Artificial Intelligence"
+    "Google Cloud"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:tpu",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#TPU",
+    "content_hash": "sha256-12-9fb5da32a2ad",
+    "legacy_term_id": "AI-9004",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:tpu",
+    "schema_version": "v2",
     "term_id": "AI-9004",
     "preferred_term": "TPU",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#TPU",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Tensor Processing Unit, Google's custom-developed application-specific integrated circuit (ASIC) optimized for neural network machine learning workloads.",
     "scope_note": null,
     "status": "draft",
     "maturity": "mature",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:TPU",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:TPU",
     "owl_role": "Object",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -40,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "ArtificialIntelligenceDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Google Cloud",
       "AI Hardware"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: handtracking-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#HandTracking
+uri:: urn:visionclaw:concept:artificial-intelligence:hand-tracking
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:hand-tracking
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Hand Tracking
+content-hash:: sha256-12-349ca505d239
+legacy-term-id:: AI-0852
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0852
-    - filename-history:: ["AI-0852-handtracking.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0852
-    - preferred-term:: Hand Tracking
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Hand Tracking is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:HandTracking
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:HandTracking
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Computer Vision]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Computer Vision]]
+- ### Content
+  Hand Tracking — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :HandTracking))
-      (SubClassOf :HandTracking :ComputerVision)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :HandTracking "Hand Tracking"@en)
-      ```
-
-- ## About Hand Tracking
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

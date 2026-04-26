@@ -1,43 +1,49 @@
 {
-  "id": "AI Safety",
+  "id": "ai-safety",
   "title": "AI Safety",
-  "content": "- ### OntologyBlock\n  id:: ai-safety-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-4009\n\t- preferred-term:: AI Safety\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.\n\t- owl:class:: ai:AISafety\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-safety-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[AI Governance]]\n\t\t- related-to:: [[AI Alignment]]\n\t\t- is-parent-of:: [[Adversarial Robustness]]\n\t\t- is-parent-of:: [[Interpretability]]\n\t\t- is-parent-of:: [[Value Alignment]]",
+  "content": "- ### Definition\n  - AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AISafety\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - bridges-to:: [[Autonomous Robot]] (domain: rb), [[Smart Contract]] (domain: bc)\n\n- ### Content\n  AI Safety — content pending enrichment.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "AI Risks",
-    "AIRiskManagement",
     "AIRisk",
-    "Transformers",
-    "Deep Learning"
+    "Transformers"
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "Value Alignment",
-    "AI Governance",
-    "Adversarial Robustness",
-    "AI Alignment",
-    "Interpretability"
+    "Autonomous Robot",
+    "Smart Contract"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-safety",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#AISafety",
+    "content_hash": "sha256-12-277c1bfd8f56",
+    "legacy_term_id": "AI-4009",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-safety",
+    "schema_version": "v2",
     "term_id": "AI-4009",
     "preferred_term": "AI Safety",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#AISafety",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:AISafety",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AISafety",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Artificial Intelligence"
@@ -48,32 +54,20 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Autonomous Robot",
+      "Smart Contract"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "AI Governance",
-        "AI Alignment"
-      ],
-      "is-parent-of": [
-        "Adversarial Robustness",
-        "Interpretability",
-        "Value Alignment"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

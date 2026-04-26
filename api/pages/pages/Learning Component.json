@@ -1,39 +1,47 @@
 {
-  "id": "Learning Component",
+  "id": "learning-component",
   "title": "Learning Component",
-  "content": "- ### OntologyBlock\n  id:: learning-component-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9942\n\t- source-domain:: mv\n\t- preferred-term:: Learning Component\n\t- status:: active\n\t- owl:class:: mv:LearningComponent\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.\n\t- #### Relationships\n\t  id:: learning-component-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Educational Technology]]\n\t\t- related-to:: [[Learning Module]]\n\t\t- related-to:: [[Immersive Learning]]\n\t\t- enables:: [[Customised Training]]\n\n## Meta for Education Program\n\n### Program Launch\n- Spring 2024 announcement\n- US and UK rollout\n- Teacher and school focus\n- Training institution support\n- Gradual implementation\n\n### Beta Testing (November 2024)\n- 12+ universities participating\n- US and UK institutions\n- VR/XR prototype trials\n- Classroom integration testing\n- Feedback collection\n\n### Partnership Institutions\n- University of Basque Country (Spain)\n- University of Hannover (Germany)\n- Leeds University (UK)\n- VictoryXR collaboration\n- Digital twin metaversities\n\n## 2024 Technology Trends\n\n### AI Integration\n- Natural language processing\n- Computer vision enhancement\n- Spatial experience improvement\n- Adaptive learning support\n- Personalised feedback\n\n### Platform Flexibility\n- No-code/low-code solutions\n- LMS integration capability\n- Pre-built blocks available\n- Component combination\n- Custom content creation\n\n## University Implementations\n\n### University of Miami\n- ENGAGE XR platform adoption\n- Spatial computing technology\n- 40 different courses\n- Teaching enhancement\n- Training improvement\n\n### Digital Twin Metaversities\n- Campus ground virtualisation\n- VR headset access\n- Browser accessibility\n- Hyper-realistic spaces\n- 3D model precision\n\n## Academic Research\n\n### Technology Convergence\n- AI advancement integration\n- VR/AR/MR combination\n- XR and IoT convergence\n- Immersive personalisation\n- Interactive experiences\n\n### Educational Potential\n- Experiential learning delivery\n- Classroom boundary transcendence\n- Meaningful situation creation\n- Learner relevance\n- Life application\n\n## Industry Partnerships\n\n### Metaverse Learning\n- XR technology leadership\n- VR environment creation\n- AR integration\n- Industry collaboration\n- Government partnership\n\n### Skills Gap Focus\n- Real-world skill addressing\n- Bespoke programme creation\n- Education provider collaboration\n- Immersive delivery\n- Practical application\n\n## Component Types\n\n### Interactive Elements\n- 3D simulations\n- Virtual laboratories\n- Collaborative spaces\n- Assessment tools\n- Feedback systems\n\n### Content Formats\n- Video integration\n- Audio components\n- Text overlays\n- Interactive quizzes\n- Progress trackers\n\n## Platform Capabilities\n\n### XR Features\n- Spatial interaction\n- Object manipulation\n- Environment exploration\n- Peer collaboration\n- Instructor guidance\n\n### Customisation Options\n- Branding integration\n- Content adaptation\n- Scenario modification\n- Difficulty scaling\n- Personalisation settings\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:LearningComponent\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Educational Technology]]\n  - enables:: [[Customised Training]]\n\n- ### Content\n\n  ## Meta for Education Program\n\n  ### Program Launch\n  - Spring 2024 announcement\n  - US and UK rollout\n  - Teacher and school focus\n  - Training institution support\n  - Gradual implementation\n\n  ### Beta Testing (November 2024)\n  - 12+ universities participating\n  - US and UK institutions\n  - VR/XR prototype trials\n  - Classroom integration testing\n  - Feedback collection\n\n  ### Partnership Institutions\n  - University of Basque Country (Spain)\n  - University of Hannover (Germany)\n  - Leeds University (UK)\n  - VictoryXR collaboration\n  - Digital twin metaversities\n\n  ## 2024 Technology Trends\n\n  ### AI Integration\n  - Natural language processing\n  - Computer vision enhancement\n  - Spatial experience improvement\n  - Adaptive learning support\n  - Personalised feedback\n\n  ### Platform Flexibility\n  - No-code/low-code solutions\n  - LMS integration capability\n  - Pre-built blocks available\n  - Component combination\n  - Custom content creation\n\n  ## University Implementations\n\n  ### University of Miami\n  - ENGAGE XR platform adoption\n  - Spatial computing technology\n  - 40 different courses\n  - Teaching enhancement\n  - Training improvement\n\n  ### Digital Twin Metaversities\n  - Campus ground virtualisation\n  - VR headset access\n  - Browser accessibility\n  - Hyper-realistic spaces\n  - 3D model precision\n\n  ## Academic Research\n\n  ### Technology Convergence\n  - AI advancement integration\n  - VR/AR/MR combination\n  - XR and IoT convergence\n  - Immersive personalisation\n  - Interactive experiences\n\n  ### Educational Potential\n  - Experiential learning delivery\n  - Classroom boundary transcendence\n  - Meaningful situation creation\n  - Learner relevance\n  - Life application\n\n  ## Industry Partnerships\n\n  ### Metaverse Learning\n  - XR technology leadership\n  - VR environment creation\n  - AR integration\n  - Industry collaboration\n  - Government partnership\n\n  ### Skills Gap Focus\n  - Real-world skill addressing\n  - Bespoke programme creation\n  - Education provider collaboration\n  - Immersive delivery\n  - Practical application\n\n  ## Component Types\n\n  ### Interactive Elements\n  - 3D simulations\n  - Virtual laboratories\n  - Collaborative spaces\n  - Assessment tools\n  - Feedback systems\n\n  ### Content Formats\n  - Video integration\n  - Audio components\n  - Text overlays\n  - Interactive quizzes\n  - Progress trackers\n\n  ## Platform Capabilities\n\n  ### XR Features\n  - Spatial interaction\n  - Object manipulation\n  - Environment exploration\n  - Peer collaboration\n  - Instructor guidance\n\n  ### Customisation Options\n  - Branding integration\n  - Content adaptation\n  - Scenario modification\n  - Difficulty scaling\n  - Personalisation settings\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Autonomous Agent",
-    "Learning Module"
+    "Autonomous Agent"
   ],
   "wiki_links": [
     "Customised Training",
-    "Learning Module",
     "Educational Technology",
-    "metaverse",
-    "Immersive Learning"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:learning-component",
+    "iri": "http://narrativegoldmine.com/spatial-computing#LearningComponent",
+    "content_hash": "sha256-12-5d53a234a4ce",
+    "legacy_term_id": "MV-9942",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:learning-component",
+    "schema_version": "v2",
     "term_id": "MV-9942",
     "preferred_term": "Learning Component",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#LearningComponent",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:LearningComponent",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:LearningComponent",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Educational Technology"
@@ -48,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Learning Module",
-        "Immersive Learning"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

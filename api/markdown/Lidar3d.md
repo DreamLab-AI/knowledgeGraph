@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: lidar3d-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#3DLiDAR
+uri:: urn:visionclaw:concept:robotics:3d-lidar
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:3d-lidar
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: 3D LiDAR
+content-hash:: sha256-12-136180a4de72
+legacy-term-id:: RB-0163
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0163
-    - filename-history:: ["RB-0163-lidar3d.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0163
-    - preferred-term:: 3D LiDAR
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - 3D LiDAR generates three-dimensional point cloud of environment.
 
-  - **Definition**
-    - definition:: 3D LiDAR generates three-dimensional point cloud of environment.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:Lidar3d
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:Lidar3d
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Lidar]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Lidar]]
+- ### Content
+  3D LiDAR — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Lidar3d))
-      (SubClassOf :Lidar3d :Lidar)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Lidar3d "3D LiDAR"@en)
-      (AnnotationAssertion rdfs:comment :Lidar3d
-        "3D LiDAR generates three-dimensional point cloud of environment."@en)
-      ```
-
-- ## About 3D LiDAR
-  3D LiDAR generates three-dimensional point cloud of environment.
-  
-  A LiDAR creating 3D point clouds.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

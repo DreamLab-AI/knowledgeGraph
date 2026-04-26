@@ -1,49 +1,63 @@
 {
-  "id": "Sidechain",
+  "id": "sidechain",
   "title": "Sidechain",
-  "content": "- ### OntologyBlock\n  id:: sidechain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8016\n\t- preferred-term:: Sidechain\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.\n\t- belongsToDomain:: [[Blockchain]]\n\t- owl:class:: bc:Sidechain\n\n---\nid: BC-1003\ntitle: Sidechain\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Sidechain\n\n## Definition\n- Independent blockchain connected to parent blockchain via two-way peg\n- Operates with own consensus mechanism and validation rules\n- Enables asset transfer between main chain and sidechain while maintaining separate security model\n\n## Core Components\n- **Two-Way Peg**: Mechanism for locking assets on main chain and issuing on sidechain\n- **Federated Validators**: Custodians managing cross-chain asset transfers\n- **Consensus Layer**: Independent block production and finalization\n- **Bridge Contract**: Smart contract coordinating asset transfers\n\n## Technical Characteristics\n- **Independent Security**: Own validator set and consensus rules\n- **Flexible Design**: Custom block time, transaction format, and VM\n- **Asset Portability**: Native token representation across chains\n- **Scalability**: Parallel transaction processing off main chain\n\n## Peg Mechanisms\n- **Symmetric Peg**: Equal value representation on both chains\n- **Asymmetric Peg**: Different tokenomics on sidechain\n- **SPV Proof**: Simplified payment verification for cross-chain validation\n- **Federated Signatures**: Multi-sig control of locked assets\n\n## Use Cases\n- High-throughput transaction processing\n- Experimental feature deployment\n- Privacy-enhanced transactions\n- Gaming and microtransaction platforms\n\n## Examples\n- [[Polygon PoS]]: Ethereum sidechain with plasma bridge\n- [[Liquid Network]]: Bitcoin sidechain for fast settlement\n- [[Ronin]]: Gaming-focused Ethereum sidechain\n- [[Gnosis Chain]]: Prediction market sidechain\n\n## Relationships\n- connected-to:: [[Layer 1]]\n- implements:: [[Two-Way Peg]]\n- uses:: [[Cross-Chain Bridge]]\n- contrasts-with:: [[Rollup]]\n- alternative-to:: [[State Channel]]\n\n## Security Model\n- Trust assumptions in bridge validators\n- Economic security independent from main chain\n- Potential centralization in federated pegs\n- Reorganization risks with different finality guarantees\n\n## Advantages\n- No parent chain throughput constraints\n- Flexible consensus and execution rules\n- Lower transaction costs\n- Isolated security incidents\n\n## Limitations\n- Weaker security guarantees than main chain\n- Bridge vulnerability attack surface\n- Asset liquidity fragmentation\n- Validator set trust requirements\n\n## Performance Metrics\n- Cross-chain transfer latency\n- Bridge validator decentralization\n- Transaction throughput vs main chain\n- Asset lock duration requirements\n\n## Related Concepts\n- [[Cross-Chain Bridge]]\n- [[Scalability Solutions]]\n- [[Two-Way Peg]]\n- [[Federated Byzantine Agreement]]\n\n#blockchain #sidechain #scalability #bridge\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "content": "- ### Definition\n  - Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Sidechain\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n  - implements:: [[Two-Way Peg]]\n\n- ### Content\n\n  ## Definition\n  - Independent blockchain connected to parent blockchain via two-way peg\n  - Operates with own consensus mechanism and validation rules\n  - Enables asset transfer between main chain and sidechain while maintaining separate security model\n\n  ## Core Components\n  - **Two-Way Peg**: Mechanism for locking assets on main chain and issuing on sidechain\n  - **Federated Validators**: Custodians managing cross-chain asset transfers\n  - **Consensus Layer**: Independent block production and finalization\n  - **Bridge Contract**: Smart contract coordinating asset transfers\n\n  ## Technical Characteristics\n  - **Independent Security**: Own validator set and consensus rules\n  - **Flexible Design**: Custom block time, transaction format, and VM\n  - **Asset Portability**: Native token representation across chains\n  - **Scalability**: Parallel transaction processing off main chain\n\n  ## Peg Mechanisms\n  - **Symmetric Peg**: Equal value representation on both chains\n  - **Asymmetric Peg**: Different tokenomics on sidechain\n  - **SPV Proof**: Simplified payment verification for cross-chain validation\n  - **Federated Signatures**: Multi-sig control of locked assets\n\n  ## Use Cases\n  - High-throughput transaction processing\n  - Experimental feature deployment\n  - Privacy-enhanced transactions\n  - Gaming and microtransaction platforms\n\n  ## Examples\n  - [[Polygon PoS]]: Ethereum sidechain with plasma bridge\n  - [[Liquid Network]]: Bitcoin sidechain for fast settlement\n  - [[Ronin]]: Gaming-focused Ethereum sidechain\n  - [[Gnosis Chain]]: Prediction market sidechain\n\n  ## Relationships\n  - connected-to:: [[Layer 1]]\n  - implements:: [[Two-Way Peg]]\n  - uses:: [[Cross-Chain Bridge]]\n  - contrasts-with:: [[Rollup]]\n  - alternative-to:: [[State Channel]]\n\n  ## Security Model\n  - Trust assumptions in bridge validators\n  - Economic security independent from main chain\n  - Potential centralization in federated pegs\n  - Reorganization risks with different finality guarantees\n\n  ## Advantages\n  - No parent chain throughput constraints\n  - Flexible consensus and execution rules\n  - Lower transaction costs\n  - Isolated security incidents\n\n  ## Limitations\n  - Weaker security guarantees than main chain\n  - Bridge vulnerability attack surface\n  - Asset liquidity fragmentation\n  - Validator set trust requirements\n\n  ## Performance Metrics\n  - Cross-chain transfer latency\n  - Bridge validator decentralization\n  - Transaction throughput vs main chain\n  - Asset lock duration requirements\n\n  #### Related Concepts\n  - [[Cross-Chain Bridge]]\n  - [[Scalability Solutions]]\n  - [[Two-Way Peg]]\n  - [[Federated Byzantine Agreement]]\n\n  #blockchain #sidechain #scalability #bridge\n\n  ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Layer2",
-    "Proof Of Authority",
+    "Lightning and Similar L2",
+    "Telecollaboration and Telepresence",
     "Layer2Scaling"
   ],
   "wiki_links": [
-    "Ronin",
-    "State Channel",
-    "Scalability Solutions",
-    "Polygon PoS",
-    "Liquid Network",
-    "Cross-Chain Bridge",
     "Blockchain",
-    "Layer 1",
+    "Cross-Chain Bridge",
     "Federated Byzantine Agreement",
-    "Rollup",
     "Gnosis Chain",
+    "Layer 1",
+    "Liquid Network",
+    "Polygon PoS",
+    "Rollup",
+    "Ronin",
+    "Scalability Solutions",
+    "State Channel",
     "Two-Way Peg"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:sidechain",
+    "iri": "http://narrativegoldmine.com/blockchain#Sidechain",
+    "content_hash": "sha256-12-e1c2edb76d01",
+    "legacy_term_id": "BC-8016",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:sidechain",
+    "schema_version": "v2",
     "term_id": "BC-8016",
     "preferred_term": "Sidechain",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#Sidechain",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:Sidechain",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Sidechain",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Blockchain"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -52,20 +66,20 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+    "other_relationships": {
+      "implements": [
+        "Two-Way Peg"
       ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
     }
   }
 }

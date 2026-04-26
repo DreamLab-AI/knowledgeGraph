@@ -1,0 +1,82 @@
+{
+  "id": "consensus-mechanism-bc-0051",
+  "title": "Consensus Mechanism",
+  "content": "- ### Definition\n  - A consensus mechanism is a fault-tolerant protocol that enables distributed network nodes to agree on a single, consistent state of a distributed ledger despite the presence of faulty or malicious nodes, ensuring all valid transactions are recorded in the same order across all nodes without requiring a trusted central authority.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:ConsensusMechanism\n  - owl-role:: Object\n  - owl-inferred:: blockchain:VirtualObject\n  - belongs-to-domain:: [[ConsensusDomain]]\n  - implemented-in-layer:: [[ProtocolLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Distributed Protocol]], [[Agreement Protocol]], [[Fault Tolerance System]]\n\n  - bridges-to:: [[AI Agent System]] (ai)\n- ### Content\n\n  ## Class Declaration\n  Declaration(Class(:ConsensusMechanism))\n\n  ## Subclass Relationships\n  SubClassOf(:ConsensusMechanism :DistributedProtocol)\n  SubClassOf(:ConsensusMechanism :AgreementProtocol)\n  SubClassOf(:ConsensusMechanism :FaultToleranceSystem)\n\n  ## Essential Properties\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :achieves :ConsensusState))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :tolerates :ByzantineFault))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :validates :Transaction))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectSomeValuesFrom :usedBy :Blockchain))\n\n  SubClassOf(:ConsensusMechanism\n    (DataSomeValuesFrom :hasSafetyProperty xsd:boolean))\n\n  SubClassOf(:ConsensusMechanism\n    (DataSomeValuesFrom :hasLivenessProperty xsd:boolean))\n\n  ## Consensus Properties\n  SubClassOf(:ConsensusMechanism\n    (ObjectExactCardinality 1 :hasValidationFunction :ValidationFunction))\n\n  SubClassOf(:ConsensusMechanism\n    (ObjectExactCardinality 1 :hasAgreementProtocol :AgreementProtocol))\n\n  ## Data Properties\n  DataPropertyAssertion(:faultToleranceThreshold :ConsensusMechanism xsd:decimal)\n  DataPropertyAssertion(:finalityTime :ConsensusMechanism xsd:duration)\n  DataPropertyAssertion(:throughput :ConsensusMechanism xsd:decimal)\n  DataPropertyAssertion(:energyEfficiency :ConsensusMechanism xsd:string)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:implementedBy :ConsensusMechanism :Blockchain)\n  ObjectPropertyAssertion(:requires :ConsensusMechanism :NetworkCondition)\n  ObjectPropertyAssertion(:produces :ConsensusMechanism :ConsensusState)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :ConsensusMechanism \"Consensus Mechanism\"@en)\n  AnnotationAssertion(rdfs:comment :ConsensusMechanism\n    \"Protocol enabling distributed nodes to agree on ledger state\"@en)\n  AnnotationAssertion(:termID :ConsensusMechanism \"BC-0051\")\n\n  ## Subclasses\n  Declaration(Class(:ProofOfWork))\n  SubClassOf(:ProofOfWork :ConsensusMechanism)\n\n  Declaration(Class(:ProofOfStake))\n  SubClassOf(:ProofOfStake :ConsensusMechanism)\n\n  Declaration(Class(:ByzantineFaultTolerance))\n  SubClassOf(:ByzantineFaultTolerance :ConsensusMechanism)\n\n  Declaration(Class(:ProofOfAuthority))\n  SubClassOf(:ProofOfAuthority :ConsensusMechanism)\n  )\n      ```\n\n  - ## About Consensus Mechanism\n\n  - A consensus mechanism is a fault-tolerant protocol that enables distributed network nodes to agree on a single, consistent state of a distributed ledger despite the presence of faulty or malicious nodes, ensuring all valid transactions are recorded in the same order across all nodes without requiring a trusted central authority.\n  - ### Key Characteristics\n    - 1. **Agreement**: All honest nodes reach same state\n    - 2. **Validity**: Only valid transactions included\n    - 3. **Termination**: Protocol eventually completes\n    - 4. **Fault Tolerance**: Operates despite Byzantine failures\n    - 5. **Decentralization**: No single point of control\n  - ### Use Cases\n    - **1. Proof of Work (Bitcoin)**\n    - **Mechanism**: SHA-256 hash puzzle solving\n    - **Security**: 51% attack threshold\n    - **Finality**: Probabilistic (~6 confirmations)\n    - **Throughput**: ~7 TPS\n    - **Energy**: High (hash rate competition)\n  - ### Standards & References\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[ITU-T Y.3051]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n\n\n  <!-- Merged from ConsensusMechanism.md: BlockchainDomain -->\n\n- ### Provenance\n  - sources:: [[ISO/IEC 23257:2021]], [[ITU-T Y.3051]], [[IEEE 2418.1]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Agent System",
+    "Agreement Protocol",
+    "ConsensusDomain",
+    "Distributed Protocol",
+    "Fault Tolerance System",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "ITU-T Y.3051",
+    "ProtocolLayer"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:consensus-mechanism-bc-0051",
+    "iri": "http://narrativegoldmine.com/blockchain#ConsensusMechanism",
+    "content_hash": "sha256-12-def42c51ee73",
+    "legacy_term_id": "BC-0051",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:consensus-mechanism-bc-0051",
+    "schema_version": "v2",
+    "term_id": "BC-0051",
+    "preferred_term": "Consensus Mechanism",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "A consensus mechanism is a fault-tolerant protocol that enables distributed network nodes to agree on a single, consistent state of a distributed ledger despite the presence of faulty or malicious nodes, ensuring all valid transactions are recorded in the same order across all nodes without requiring a trusted central authority.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 1.0,
+    "created": "2025-10-28T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:ConsensusMechanism",
+    "owl_role": "Object",
+    "owl_inferred_class": "blockchain:VirtualObject",
+    "is_subclass_of": [
+      "Distributed Protocol",
+      "Agreement Protocol",
+      "Fault Tolerance System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "ConsensusDomain"
+    ],
+    "implemented_in_layer": [
+      "ProtocolLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ISO/IEC 23257:2021",
+      "ITU-T Y.3051",
+      "IEEE 2418.1"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

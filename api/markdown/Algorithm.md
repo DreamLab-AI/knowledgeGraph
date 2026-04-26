@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: algorithm-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Algorithm
+uri:: urn:visionclaw:concept:artificial-intelligence:algorithm
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:algorithm
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Algorithm
+content-hash:: sha256-12-cc9af1a10061
+legacy-term-id:: AI-0830
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0830
-    - filename-history:: ["AI-0830-algorithm.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0830
-    - preferred-term:: Algorithm
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Algorithm is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Algorithm
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:Algorithm
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+  - bridges-to:: [[Blockchain]] (domain: bc)
 
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
+- ### Content
+  Algorithm — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Algorithm))
-      (SubClassOf :Algorithm :ArtificialIntelligence)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Algorithm "Algorithm"@en)
-      ```
-
-- ## About Algorithm
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

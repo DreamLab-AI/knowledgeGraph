@@ -1,63 +1,82 @@
 {
-  "id": "Analog To Digital Converter",
+  "id": "analog-to-digital-converter",
   "title": "Analog To Digital Converter",
-  "content": "- ### OntologyBlock\n  id:: analog-to-digital-converter-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9765\n\t- source-domain:: mv\n\t- preferred-term:: Analog To Digital Converter\n\t- status:: active\n\t- definition:: Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.\n\t- owl:class:: mv:AnalogToDigitalConverter\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Signal Processing Hardware]]\n\t- enables:: [[Digital Audio Recording]], [[Digital Imaging]], [[Sensor Data Processing]]\n\t- requires:: [[Sampling Rate]], [[Resolution Bits]], [[Signal Conditioning]]\n\t- #### Relationships\n\t  id:: analog-to-digital-converter-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Sampling**: Measuring analog signals at specific intervals (sampling rate must meet Nyquist criterion: 2x highest frequency)\n- **Quantization**: Determining resolution by mapping continuous values to discrete levels\n- **Encoding**: Converting quantized values to binary digital representations\n- **ADC Types**: Flash, Pipeline, Dual Slope, SAR (Successive Approximation), and Delta-Sigma architectures\n\n### Audio Applications\nMusic production ADCs sample at rates up to 192 kHz, with recording studios using 24-bit 96 kHz PCM before downsampling to 44.1 kHz (CD) or 48 kHz (broadcast).\n\n### Metaverse Relevance\nADCs are essential for capturing real-world audio, video, and sensor data for integration into virtual environments and digital twin applications.",
+  "content": "- ### Definition\n  - Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:AnalogToDigitalConverter\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Signal Processing Hardware]]\n  - requires:: [[Sampling Rate]], [[Resolution Bits]], [[Signal Conditioning]]\n  - enables:: [[Digital Audio Recording]], [[Digital Imaging]], [[Sensor Data Processing]]\n  - bridges-to:: [[Sensor Input]] (rb)\n\n- ### Content\n\n  ### Technical Details\n  Key components include:\n  - **Sampling**: Measuring analog signals at specific intervals (sampling rate must meet Nyquist criterion: 2x highest frequency)\n  - **Quantization**: Determining resolution by mapping continuous values to discrete levels\n  - **Encoding**: Converting quantized values to binary digital representations\n  - **ADC Types**: Flash, Pipeline, Dual Slope, SAR (Successive Approximation), and Delta-Sigma architectures\n\n  ### Audio Applications\n  Music production ADCs sample at rates up to 192 kHz, with recording studios using 24-bit 96 kHz PCM before downsampling to 44.1 kHz (CD) or 48 kHz (broadcast).\n\n  ### Metaverse Relevance\n  ADCs are essential for capturing real-world audio, video, and sensor data for integration into virtual environments and digital twin applications.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Signal Conditioning",
-    "Resolution Bits",
     "Digital Audio Recording",
     "Digital Imaging",
+    "Resolution Bits",
     "Sampling Rate",
-    "metaverse",
+    "Sensor Data Processing",
+    "Sensor Input",
+    "Signal Conditioning",
     "Signal Processing Hardware",
-    "Sensor Data Processing"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:analog-to-digital-converter",
+    "iri": "http://narrativegoldmine.com/spatial-computing#AnalogToDigitalConverter",
+    "content_hash": "sha256-12-ea756ed029b0",
+    "legacy_term_id": "MV-9765",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:analog-to-digital-converter",
+    "schema_version": "v2",
     "term_id": "MV-9765",
     "preferred_term": "Analog To Digital Converter",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AnalogToDigitalConverter",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world signals.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:AnalogToDigitalConverter",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T20:30:00Z",
+    "last_updated": "2026-04-26T20:30:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:AnalogToDigitalConverter",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Signal Processing Hardware"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Sampling Rate",
+      "Resolution Bits",
+      "Signal Conditioning"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Digital Audio Recording",
+      "Digital Imaging",
+      "Sensor Data Processing"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Sensor Input"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

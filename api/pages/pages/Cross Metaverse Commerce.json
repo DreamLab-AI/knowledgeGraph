@@ -1,66 +1,82 @@
 {
-  "id": "Cross Metaverse Commerce",
+  "id": "cross-metaverse-commerce",
   "title": "Cross Metaverse Commerce",
-  "content": "- ### OntologyBlock\n  id:: Cross Metaverse Commerce\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9835\n\t- preferred-term:: Cross Metaverse Commerce\n\t- source-domain:: mv\n\t- owl:class:: mv:CrossMetaverseCommerce\n\t- status:: active\n\t- definition:: Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.\n\t- belongsToDomain:: [[metaverse]]\n- ### Relationships\n\t- is-subclass-of:: [[Virtual Economy]]\n\t- enables:: [[Asset Portability]], [[Cross-Platform Trading]], [[Virtual Market Integration]]\n\t- requires:: [[Interoperability Standards]], [[Digital Wallet]], [[Blockchain Infrastructure]]\n\t- related-to:: [[NFT Marketplace]], [[Virtual Commerce]], [[Digital Asset Trading]]\n- ## Technical Details\n\t- **Market Projections**: Metaverse market to reach $861.77B by 2030 (2024 report)\n\t- **Enabling Technologies**:\n\t\t- Blockchain for decentralized virtual economies and NFT ownership\n\t\t- Cryptocurrencies for seamless cross-platform transactions\n\t\t- Digital wallets for secure asset management\n\t\t- Interoperable digital identity systems\n\t- **Interoperability Benefits**:\n\t\t- Users move identity, preferences, digital assets across platforms\n\t\t- Cross-chain NFT transactions via interoperability networks\n\t\t- DMA regulation as test case for digital commerce governance\n\t- **Challenges**:\n\t\t- Data interoperability across wide range of formats\n\t\t- Universal data standards development\n\t\t- Security, scalability, and regulation concerns\n- ## Applications\n\t- Virtual real estate transactions\n\t- Cross-platform NFT trading\n\t- Virtual goods marketplaces\n\t- Digital fashion and wearables\n\t- Gaming asset exchanges",
+  "content": "- ### Definition\n  - Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CrossMetaverseCommerce\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]]\n  - is-subclass-of:: [[Virtual Economy]]\n  - requires:: [[Interoperability Standards]], [[Digital Wallet]], [[Blockchain Infrastructure]]\n  - enables:: [[Asset Portability]], [[Cross-Platform Trading]], [[Virtual Market Integration]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Market Projections**: Metaverse market to reach $861.77B by 2030 (2024 report)\n  - **Enabling Technologies**:\n\t\t- Blockchain for decentralized virtual economies and NFT ownership\n\t\t- Cryptocurrencies for seamless cross-platform transactions\n\t\t- Digital wallets for secure asset management\n\t\t- Interoperable digital identity systems\n  - **Interoperability Benefits**:\n\t\t- Users move identity, preferences, digital assets across platforms\n\t\t- Cross-chain NFT transactions via interoperability networks\n\t\t- DMA regulation as test case for digital commerce governance\n  - **Challenges**:\n\t\t- Data interoperability across wide range of formats\n\t\t- Universal data standards development\n\t\t- Security, scalability, and regulation concerns\n  - ## Applications\n  - Virtual real estate transactions\n  - Cross-platform NFT trading\n  - Virtual goods marketplaces\n  - Digital fashion and wearables\n  - Gaming asset exchanges\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Cross-Platform Trading",
-    "Virtual Market Integration",
-    "NFT Marketplace",
     "Asset Portability",
+    "Blockchain",
     "Blockchain Infrastructure",
-    "metaverse",
-    "Digital Asset Trading",
+    "Cross-Platform Trading",
     "Digital Wallet",
-    "Virtual Commerce",
     "Interoperability Standards",
-    "Virtual Economy"
+    "Virtual Economy",
+    "Virtual Market Integration",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:cross-metaverse-commerce",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CrossMetaverseCommerce",
+    "content_hash": "sha256-12-119a8109abc5",
+    "legacy_term_id": "MV-9835",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:cross-metaverse-commerce",
+    "schema_version": "v2",
     "term_id": "MV-9835",
     "preferred_term": "Cross Metaverse Commerce",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CrossMetaverseCommerce",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual environments.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CrossMetaverseCommerce",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CrossMetaverseCommerce",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Virtual Economy"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Interoperability Standards",
+      "Digital Wallet",
+      "Blockchain Infrastructure"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Asset Portability",
+      "Cross-Platform Trading",
+      "Virtual Market Integration"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,20 +1,47 @@
-- ### OntologyBlock
-  id:: mv9002-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9002
-	- domain:: mv
-	- owl:class:: mv:3DAsset
-	- public-access:: true
+iri:: http://narrativegoldmine.com/infrastructure#3DAsset
+uri:: urn:visionclaw:concept:infrastructure:3dasset
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:3dasset
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: 3DAsset
+content-hash:: sha256-12-bff0d068fc2c
+legacy-term-id:: MV-9002
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[Blockchain]]
 
-## Definition
+- ### Definition
+  - 3DAsset is a concept within the ngm domain.
 
-3D Assets are digital representations of objects, environments, characters, and effects used within metaverse experiences, comprising geometric meshes, textures, materials, animations, and metadata. These assets follow standardized formats including glTF, FBX, OBJ, and USD to ensure interoperability across platforms. A comprehensive 3D asset includes multiple levels of detail (LOD), physically-based rendering (PBR) materials with albedo, metallic, roughness, and normal maps, skeletal rigs for animation, and collision meshes for physics simulation. Modern metaverse platforms implement asset optimization pipelines featuring automatic UV unwrapping, texture compression (BC7, ASTC), mesh decimation, and procedural generation techniques. Asset management systems incorporate version control, digital rights management (DRM), blockchain-based provenance tracking via NFTs, and quality assurance workflows ensuring performance compliance across diverse hardware configurations from mobile devices to high-end VR headsets.
+- ### Semantic Classification
+  - owl-class:: infrastructure:3DAsset
+  - owl-role:: Concept
 
-## References
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- Khronos Group. (2024). "glTF Asset Delivery Best Practices." https://www.khronos.org/gltf/
-- Meta. (2024). "3D Asset Guidelines for Horizon Worlds." https://developer.oculus.com/horizon/
-- W3C. (2024). "WebGL Asset Delivery Recommendations." https://www.w3.org/TR/webgl/
-- Epic Games. (2024). "Unreal Engine Asset Creation Guidelines." https://docs.unrealengine.com/
-- NVIDIA. (2024). "Omniverse Asset Standards and Interoperability." https://docs.omniverse.nvidia.com/
+- ### Content
+
+  ## Definition
+
+  3D Assets are digital representations of objects, environments, characters, and effects used within metaverse experiences, comprising geometric meshes, textures, materials, animations, and metadata. These assets follow standardized formats including glTF, FBX, OBJ, and USD to ensure interoperability across platforms. A comprehensive 3D asset includes multiple levels of detail (LOD), physically-based rendering (PBR) materials with albedo, metallic, roughness, and normal maps, skeletal rigs for animation, and collision meshes for physics simulation. Modern metaverse platforms implement asset optimization pipelines featuring automatic UV unwrapping, texture compression (BC7, ASTC), mesh decimation, and procedural generation techniques. Asset management systems incorporate version control, digital rights management (DRM), blockchain-based provenance tracking via NFTs, and quality assurance workflows ensuring performance compliance across diverse hardware configurations from mobile devices to high-end VR headsets.
+
+  #### References
+  - Khronos Group. (2024). "glTF Asset Delivery Best Practices." https://www.khronos.org/gltf/
+  - Meta. (2024). "3D Asset Guidelines for Horizon Worlds." https://developer.oculus.com/horizon/
+  - W3C. (2024). "WebGL Asset Delivery Recommendations." https://www.w3.org/TR/webgl/
+  - Epic Games. (2024). "Unreal Engine Asset Creation Guidelines." https://docs.unrealengine.com/
+  - NVIDIA. (2024). "Omniverse Asset Standards and Interoperability." https://docs.omniverse.nvidia.com/
+
+- ### Provenance
+  - sources:: [[W3C]]
+  - migration-date:: 2026-04-26T00:00:00Z
+  - modified:: 2026-04-26T15:00:00Z

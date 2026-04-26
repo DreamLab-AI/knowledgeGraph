@@ -1,34 +1,43 @@
 {
-  "id": "Scene Graph Format",
+  "id": "scene-graph-format",
   "title": "Scene Graph Format",
-  "content": "- ### OntologyBlock\n  id:: mv9680-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9680\n\t- preferred-term:: Scene Graph Format\n\t- source-domain:: mv\n\t- owl:class:: mv:SceneGraphFormat\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Scene Graph Format is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nScene Graph Format represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - SceneGraphFormat is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SceneGraphFormat\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  # SceneGraphFormat\n  SceneGraphFormat defines structured representations organizing 3D scenes as directed acyclic graphs (DAGs) where nodes represent spatial entities, transformations, geometry, materials, lights, cameras, and behaviors with parent-child relationships encoding spatial hierarchies. Nodes maintain local transformation matrices composed from position, rotation, and scale, with world transforms computed by concatenating ancestor transformations enabling efficient hierarchical animation and instancing. Common formats include X3D (ISO standard) for web-based 3D with declarative scene description, Collada (COL LAborative Design Activity) supporting digital content creation tool interchange, USD (Universal Scene Description) from Pixar providing powerful composition and layering for complex pipelines, glTF optimized for efficient transmission and runtime loading, and FBX widely used for animation and model exchange. Scene graphs enable efficient spatial culling by testing bounding volumes hierarchically, allow property inheritance where children adopt parent characteristics unless overridden, support instancing where multiple references share underlying data, and facilitate level streaming for large environments. Modern formats embed metadata including physics properties, navigation hints, interaction behaviors, and custom application data.\n  - https://www.web3d.org/specifications/X3D - X3D ISO standard for web3D\n  - https://www.khronos.org/collada/ - Collada 3D asset exchange schema\n  - https://openusd.org/release/index.html - USD comprehensive documentation\n  - https://www.khronos.org/gltf/ - glTF runtime 3D asset delivery\n\n  ## Sources\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "3D Scene Exchange Protocol (SXP)"
   ],
-  "wiki_links": [
-    "owl:Thing"
-  ],
+  "wiki_links": [],
   "ontology": {
-    "term_id": "MV-9680",
+    "uri": "urn:visionclaw:concept:spatial-computing:scene-graph-format",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SceneGraphFormat",
+    "content_hash": "sha256-12-958efc8f3eed",
+    "legacy_term_id": "MV-9134",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:scene-graph-format",
+    "schema_version": "v2",
+    "term_id": "MV-9134",
     "preferred_term": "Scene Graph Format",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SceneGraphFormat",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "Scene Graph Format is a concept within the metaverse domain. Further enrichment pending.",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "SceneGraphFormat is a concept within the ngm domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SceneGraphFormat",
-    "owl_physicality": "abstract",
-    "owl_role": "concept",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SceneGraphFormat",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -39,16 +48,13 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

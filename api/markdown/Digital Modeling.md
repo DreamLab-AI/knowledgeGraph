@@ -1,21 +1,46 @@
-- ### OntologyBlock
-  id:: mv9584-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9584
-	- preferred-term:: Digital Modeling
-	- source-domain:: mv
-	- owl:class:: mv:DigitalModeling
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Digital Modeling is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#DigitalModeling
+uri:: urn:visionclaw:concept:spatial-computing:digital-modeling
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:digital-modeling
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Digital Modeling
+content-hash:: sha256-12-b293f882024b
+legacy-term-id:: MV-9584
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Digital Modelling is a concept within the metaverse domain. Further enrichment pending.
 
-Digital Modeling represents an abstract concept in the metaverse ontology hierarchy.
+bridges-to:: [[Computer Vision]]
 
-## Related Concepts
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DigitalModeling
+  - owl-role:: concept
 
-- [[owl:Thing]]
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  Digital Modeling represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

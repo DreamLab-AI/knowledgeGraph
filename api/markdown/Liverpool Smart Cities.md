@@ -1,24 +1,38 @@
-- ### OntologyBlock
-  id:: liverpool-smart-cities-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-1003
-	- preferred-term:: Liverpool Smart Cities
-	- source-domain:: uk-regional
-	- status:: active
-    - public-access:: true
-	- definition:: Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
-	- maturity:: established
-	- region:: Merseyside
-	- focus-areas:: Smart Cities, IoT, Urban Tech
-	- owl:class:: ngm:LiverpoolSmartCities
-	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+iri:: http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities
+uri:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Liverpool Smart Cities
+content-hash:: sha256-12-62a2c1e95fc0
+legacy-term-id:: NGM-1003
+status:: active
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Liverpool's smart cities initiative and technology sector focusing on Internet of Things, urban technology, and digital infrastructure.
 
-## Regional Technology Hub
+- ### Semantic Classification
+  - owl-class:: infrastructure:LiverpoolSmartCities
+  - owl-role:: RegionalEcosystem
+  - belongs-to-domain:: [[UKTechEcosystem]]
 
-- Liverpool Smart Cities in Merseyside, North England
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Regional Technology Hub
+
+  - Liverpool Smart Cities in Merseyside, North England
 
   - Overview
     - Brief history and development
@@ -82,34 +96,25 @@
       - Government funding mechanisms like the UK Shared Prosperity Fund provide critical financial backing for innovation programmes[3].
 
 
-## Related Hubs
+  ## Related Hubs
 
-- [[North England Innovation Corridor]]
-- [[Northern Powerhouse]]
-- [[UK Tech Ecosystem]]
+  - [[North England Innovation Corridor]]
+  - [[Northern Powerhouse]]
+  - [[UK Tech Ecosystem]]
 
+  #### References
+  1. [https://en.wikipedia.org/wiki/Merseyside_Development_Corporation](https://en.wikipedia.org/wiki/Merseyside_Development_Corporation)
 
-## References
+  2. [https://www.bdp.com/us/ideas/a-city-transformed-celebrating-15-years-of-liverpool-one](https://www.bdp.com/us/ideas/a-city-transformed-celebrating-15-years-of-liverpool-one)
 
-1. [https://en.wikipedia.org/wiki/Merseyside_Development_Corporation](https://en.wikipedia.org/wiki/Merseyside_Development_Corporation)
+  3. [https://lcrhorizons.co.uk/history-of-innovation-across-the-liverpool-city-region/](https://lcrhorizons.co.uk/history-of-innovation-across-the-liverpool-city-region/)
 
-2. [https://www.bdp.com/us/ideas/a-city-transformed-celebrating-15-years-of-liverpool-one](https://www.bdp.com/us/ideas/a-city-transformed-celebrating-15-years-of-liverpool-one)
+  4. [https://www.itu.int/en/ITU-T/ssc/resources/Documents/Huawei_2nd_Smart_Cities_Index_2017_FINAL.pdf](https://www.itu.int/en/ITU-T/ssc/resources/Documents/Huawei_2nd_Smart_Cities_Index_2017_FINAL.pdf)
 
-3. [https://lcrhorizons.co.uk/history-of-innovation-across-the-liverpool-city-region/](https://lcrhorizons.co.uk/history-of-innovation-across-the-liverpool-city-region/)
+  5. [https://www.liverpoolworldheritage.com/wp-content/uploads/2021/06/Liverpool-World-Heritage-City.pdf](https://www.liverpoolworldheritage.com/wp-content/uploads/2021/06/Liverpool-World-Heritage-City.pdf)
 
-4. [https://www.itu.int/en/ITU-T/ssc/resources/Documents/Huawei_2nd_Smart_Cities_Index_2017_FINAL.pdf](https://www.itu.int/en/ITU-T/ssc/resources/Documents/Huawei_2nd_Smart_Cities_Index_2017_FINAL.pdf)
+  6. [https://www.tandfonline.com/doi/abs/10.1080/02665433.2020.1804989](https://www.tandfonline.com/doi/abs/10.1080/02665433.2020.1804989)
 
-5. [https://www.liverpoolworldheritage.com/wp-content/uploads/2021/06/Liverpool-World-Heritage-City.pdf](https://www.liverpoolworldheritage.com/wp-content/uploads/2021/06/Liverpool-World-Heritage-City.pdf)
-
-6. [https://www.tandfonline.com/doi/abs/10.1080/02665433.2020.1804989](https://www.tandfonline.com/doi/abs/10.1080/02665433.2020.1804989)
-
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Region**: Merseyside, North England
-- **Category**: Regional Technology Ecosystem
-- **Status**: Active
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

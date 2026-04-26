@@ -1,134 +1,146 @@
-- ### OntologyBlock
-  id:: light-client-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8010
-	- preferred-term:: Light Client
-	- definition:: Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.
-	- status:: active
-	- maturity:: reviewed
-	- public-access:: true
-	- belongsToDomain:: [[Blockchain]]
-	- owl:class:: bc:LightClient
+iri:: http://narrativegoldmine.com/blockchain#LightClient
+uri:: urn:visionclaw:concept:blockchain:light-client
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:light-client
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Light Client
+content-hash:: sha256-12-28dfb5c104e8
+legacy-term-id:: BC-8010
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1011
-title: Light Client
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state. Light clients enable trustless interaction from mobile devices, browsers, and IoT systems while requiring only megabytes of storage versus gigabytes for full nodes.
 
-# Light Client
+- ### Semantic Classification
+  - owl-class:: blockchain:LightClient
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-## Definition
-- Blockchain client that downloads and verifies only block headers rather than full transaction history
-- Uses cryptographic proofs to verify transaction inclusion without storing entire blockchain state
-- Enables resource-constrained devices to interact trustlessly with blockchain networks
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - enables:: [[Cross-Chain Bridge]]
 
-## Core Components
-- **Header Chain**: Sequential block headers with cryptographic linkage
-- **Merkle Proofs**: Compact proof of transaction inclusion in block
-- **State Proofs**: Verification of account/contract state without full state tree
-- **Consensus Verification**: Validates block finality using header signatures
+- ### Content
 
-## Technical Characteristics
-- **Storage Efficiency**: Stores megabytes vs gigabytes/terabytes of full nodes
-- **Bandwidth Efficiency**: Minimal data synchronization requirements
-- **Verification Security**: Cryptographically verifies data authenticity
-- **Synchronization Speed**: Fast initial sync (minutes vs days/weeks)
+  ## Definition
+  - Blockchain client that downloads and verifies only block headers rather than full transaction history
+  - Uses cryptographic proofs to verify transaction inclusion without storing entire blockchain state
+  - Enables resource-constrained devices to interact trustlessly with blockchain networks
 
-## Verification Methods
-### SPV (Simplified Payment Verification)
-- Bitcoin-style header chain verification
-- Merkle proof for transaction confirmation
-- Assumes majority hash power honesty
+  ## Core Components
+  - **Header Chain**: Sequential block headers with cryptographic linkage
+  - **Merkle Proofs**: Compact proof of transaction inclusion in block
+  - **State Proofs**: Verification of account/contract state without full state tree
+  - **Consensus Verification**: Validates block finality using header signatures
 
-### State Proofs
-- Merkle Patricia proofs for Ethereum state
-- Verkle tree proofs (upcoming Ethereum upgrade)
-- Zero-knowledge proofs for compact state verification
+  ## Technical Characteristics
+  - **Storage Efficiency**: Stores megabytes vs gigabytes/terabytes of full nodes
+  - **Bandwidth Efficiency**: Minimal data synchronization requirements
+  - **Verification Security**: Cryptographically verifies data authenticity
+  - **Synchronization Speed**: Fast initial sync (minutes vs days/weeks)
 
-### Consensus Proofs
-- BLS signature aggregation (Ethereum beacon chain)
-- Validator committee signatures (Tendermint)
-- SNARK/STARK proofs of consensus validity
+  ## Verification Methods
+  ### SPV (Simplified Payment Verification)
+  - Bitcoin-style header chain verification
+  - Merkle proof for transaction confirmation
+  - Assumes majority hash power honesty
 
-## Use Cases
-- Mobile wallet applications
-- Browser extensions (MetaMask)
-- IoT device blockchain interaction
-- Cross-chain bridges (trustless verification)
-- Resource-constrained embedded systems
+  ### State Proofs
+  - Merkle Patricia proofs for Ethereum state
+  - Verkle tree proofs (upcoming Ethereum upgrade)
+  - Zero-knowledge proofs for compact state verification
 
-## Blockchain Examples
-- **Bitcoin SPV**: Original light client design (Nakamoto 2008)
-- **Ethereum Light Client**: Header-based with state proofs
-- **Tendermint/Cosmos**: Validator set tracking and signatures
-- **Polkadot Light Client**: GRANDPA finality proofs
+  ### Consensus Proofs
+  - BLS signature aggregation (Ethereum beacon chain)
+  - Validator committee signatures (Tendermint)
+  - SNARK/STARK proofs of consensus validity
 
-## Relationships
-- contrasts-with:: [[Full Node]]
-- uses:: [[Merkle Tree]]
-- enables:: [[Cross-Chain Bridge]]
-- component-of:: [[Interoperability Protocol]]
-- used-by:: [[Relayer]]
+  ## Use Cases
+  - Mobile wallet applications
+  - Browser extensions (MetaMask)
+  - IoT device blockchain interaction
+  - Cross-chain bridges (trustless verification)
+  - Resource-constrained embedded systems
 
-## Security Model
-- **Trust Assumptions**: Honest majority of hash power/validators
-- **Attack Vectors**: Eclipse attacks, long-range attacks
-- **Mitigation**: Multiple peer connections, checkpoints, fraud proofs
-- **Trade-off**: Security vs resource efficiency
+  ## Blockchain Examples
+  - **Bitcoin SPV**: Original light client design (Nakamoto 2008)
+  - **Ethereum Light Client**: Header-based with state proofs
+  - **Tendermint/Cosmos**: Validator set tracking and signatures
+  - **Polkadot Light Client**: GRANDPA finality proofs
 
-## Advantages
-- Minimal hardware requirements
-- Fast synchronization
-- Privacy-preserving (selective queries)
-- Suitable for mobile and embedded devices
+  ## Relationships
+  - contrasts-with:: [[Full Node]]
+  - uses:: [[Merkle Tree]]
+  - enables:: [[Cross-Chain Bridge]]
+  - component-of:: [[Interoperability Protocol]]
+  - used-by:: [[Relayer]]
 
-## Limitations
-- Cannot validate transaction validity rules (only inclusion)
-- Vulnerable to withholding attacks (unconfirmed invalid transactions)
-- Relies on network assumptions (connectivity to honest nodes)
-- Limited query capabilities compared to full nodes
+  ## Security Model
+  - **Trust Assumptions**: Honest majority of hash power/validators
+  - **Attack Vectors**: Eclipse attacks, long-range attacks
+  - **Mitigation**: Multiple peer connections, checkpoints, fraud proofs
+  - **Trade-off**: Security vs resource efficiency
 
-## Performance Characteristics
-- **Storage**: ~100 MB for header chain (Bitcoin, Ethereum)
-- **Bandwidth**: KB/s for header updates
-- **Sync Time**: Minutes for initial synchronization
-- **Verification Time**: Milliseconds per transaction proof
+  ## Advantages
+  - Minimal hardware requirements
+  - Fast synchronization
+  - Privacy-preserving (selective queries)
+  - Suitable for mobile and embedded devices
 
-## Advanced Techniques
-### Zero-Knowledge Light Clients
-- zk-SNARKs proving consensus validity
-- Constant-size proofs regardless of chain length
-- Near-instant synchronization
+  ## Limitations
+  - Cannot validate transaction validity rules (only inclusion)
+  - Vulnerable to withholding attacks (unconfirmed invalid transactions)
+  - Relies on network assumptions (connectivity to honest nodes)
+  - Limited query capabilities compared to full nodes
 
-### Verkle Trees
-- Smaller proof sizes than Merkle Patricia trees
-- Enables stateless clients
-- Planned for Ethereum post-Merge upgrades
+  ## Performance Characteristics
+  - **Storage**: ~100 MB for header chain (Bitcoin, Ethereum)
+  - **Bandwidth**: KB/s for header updates
+  - **Sync Time**: Minutes for initial synchronization
+  - **Verification Time**: Milliseconds per transaction proof
 
-### Committee-Based Light Clients
-- Randomly selected validator committees
-- BLS signature aggregation
-- Used in Ethereum Altair upgrade
+  ## Advanced Techniques
+  ### Zero-Knowledge Light Clients
+  - zk-SNARKs proving consensus validity
+  - Constant-size proofs regardless of chain length
+  - Near-instant synchronization
 
-## Implementation Considerations
-- Checkpoint hardcoding for long-range attack prevention
-- Peer diversity for eclipse attack resistance
-- Proof request strategies (bandwidth vs latency)
-- Caching for frequently accessed data
+  ### Verkle Trees
+  - Smaller proof sizes than Merkle Patricia trees
+  - Enables stateless clients
+  - Planned for Ethereum post-Merge upgrades
 
-## Related Concepts
-- [[Merkle Tree]]
-- [[SPV (Simplified Payment Verification)]]
-- [[State Proof]]
-- [[Cross-Chain Bridge]]
+  ### Committee-Based Light Clients
+  - Randomly selected validator committees
+  - BLS signature aggregation
+  - Used in Ethereum Altair upgrade
 
-#blockchain #light-client #verification #efficiency
+  ## Implementation Considerations
+  - Checkpoint hardcoding for long-range attack prevention
+  - Peer diversity for eclipse attack resistance
+  - Proof request strategies (bandwidth vs latency)
+  - Caching for frequently accessed data
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Merkle Tree]]
+  - [[SPV (Simplified Payment Verification)]]
+  - [[State Proof]]
+  - [[Cross-Chain Bridge]]
+
+  #blockchain #light-client #verification #efficiency
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,44 +1,53 @@
 {
-  "id": "Category Hierarchies",
+  "id": "category-hierarchies",
   "title": "Category Hierarchies",
-  "content": "- ### OntologyBlock\n  id:: category-hierarchies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9816\n\t- source-domain:: mv\n\t- preferred-term:: Category Hierarchies\n\t- definition:: A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.\n\t- status:: active\n\t- owl:class:: mv:CategoryHierarchies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: category-hierarchies-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Organization System]]\n\t\t- enables:: [[Content Classification]], [[Navigation Structure]], [[Semantic Organization]]\n\t\t- requires:: [[Taxonomy Design]], [[Term Relationships]], [[Classification Rules]]\n\t\t- related-to:: [[Controlled Vocabularies]], [[Ontology]], [[Faceted Classification]]\n- ## Technical Details\n\t- **Hierarchy Types**:\n\t\t- **Linnaean System**: Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species\n\t\t- **Library Classification**: Dewey Decimal, Library of Congress, Universal Decimal\n\t\t- **Faceted Taxonomy**: Independent filters combining to narrow results\n\t- **Design Principles**:\n\t\t- Terms arranged in parent-child relationships\n\t\t- Focus on terms needed for content coverage rather than abstract domain division\n\t\t- Avoid overly strict level definitions\n\t\t- Named levels (Domain, Category, Subcategory) are cautioned against\n\t- **Taxonomies vs. Ontologies**: Taxonomies are narrower, using hierarchical relationships; ontologies apply a larger variety of relation types\n\t- **Modern Applications**: Knowledge bases use hybrid taxonomy combining hierarchical navigation with intelligent tagging for multiple pathways to information\n- ## Applications\n\t- Content management system organization\n\t- E-commerce product categorization\n\t- Library and archive classification\n\t- Search and navigation optimization\n\t- Knowledge graph construction",
+  "content": "- ### Definition\n  - A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CategoryHierarchies\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Knowledge Organization System]]\n  - requires:: [[Taxonomy Design]], [[Term Relationships]], [[Classification Rules]]\n  - enables:: [[Content Classification]], [[Navigation Structure]], [[Semantic Organization]]\n  - bridges-to:: [[Computer Vision]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Hierarchy Types**:\n\t\t- **Linnaean System**: Domain, Kingdom, Phylum, Class, Order, Family, Genus, Species\n\t\t- **Library Classification**: Dewey Decimal, Library of Congress, Universal Decimal\n\t\t- **Faceted Taxonomy**: Independent filters combining to narrow results\n  - **Design Principles**:\n\t\t- Terms arranged in parent-child relationships\n\t\t- Focus on terms needed for content coverage rather than abstract domain division\n\t\t- Avoid overly strict level definitions\n\t\t- Named levels (Domain, Category, Subcategory) are cautioned against\n  - **Taxonomies vs. Ontologies**: Taxonomies are narrower, using hierarchical relationships; ontologies apply a larger variety of relation types\n  - **Modern Applications**: Knowledge bases use hybrid taxonomy combining hierarchical navigation with intelligent tagging for multiple pathways to information\n  - ## Applications\n  - Content management system organization\n  - E-commerce product categorization\n  - Library and archive classification\n  - Search and navigation optimization\n  - Knowledge graph construction\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Glossary Index"
   ],
   "wiki_links": [
-    "Controlled Vocabularies",
-    "Navigation Structure",
-    "Content Classification",
-    "Semantic Organization",
     "Classification Rules",
-    "Faceted Classification",
+    "Computer Vision",
+    "Content Classification",
+    "Knowledge Organization System",
+    "Navigation Structure",
+    "Semantic Organization",
     "Taxonomy Design",
     "Term Relationships",
-    "Ontology",
-    "metaverse",
-    "Knowledge Organization System"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:category-hierarchies",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CategoryHierarchies",
+    "content_hash": "sha256-12-2847af6be2a5",
+    "legacy_term_id": "MV-9816",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:category-hierarchies",
+    "schema_version": "v2",
     "term_id": "MV-9816",
     "preferred_term": "Category Hierarchies",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CategoryHierarchies",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CategoryHierarchies",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CategoryHierarchies",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Knowledge Organization System"
@@ -57,28 +66,19 @@
       "Semantic Organization"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Computer Vision"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Controlled Vocabularies",
-        "Ontology",
-        "Faceted Classification"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

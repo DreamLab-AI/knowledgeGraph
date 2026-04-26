@@ -1,20 +1,46 @@
-- ### OntologyBlock
-  id:: remote-collaboration-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: TC-0603
-	- preferred-term:: Remote Collaboration
-	- source-domain:: tc
-	- status:: active
-	- public-access:: true
-	- definition:: Remote Collaboration encompasses the tools, platforms, and methodologies that enable distributed teams to work together effectively across geographic distances. This includes collaborative editing systems, shared workspaces, real-time co-creation tools, and asynchronous collaboration platforms that facilitate productive teamwork without physical co-location.
-	- owl:class:: tc:RemoteCollaboration
-	- belongsToDomain:: [[Telecollaboration]]
-	- #### Relationships
-	  id:: remote-collaboration-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Telecollaboration]]
-		- is-parent-of:: [[Collaborative Editing]]
-		- is-parent-of:: [[Shared Workspace]]
-		- is-parent-of:: [[Real-Time Collaboration]]
-		- related-to:: [[Virtual Meeting]]
+iri:: http://narrativegoldmine.com/infrastructure#RemoteCollaboration
+uri:: urn:visionclaw:concept:infrastructure:remote-collaboration
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:remote-collaboration
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Remote Collaboration
+content-hash:: sha256-12-f6e6d3df9a69
+legacy-term-id:: TC-9019
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+bridges-to:: [[AI Agent System]], [[Blockchain]]
+public:: true
+
+- ### Definition
+  - RemoteCollaboration is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:RemoteCollaboration
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Definition
+
+  Remote Collaboration represents work practices, tools, and methodologies enabling geographically distributed teams to coordinate effectively without physical co-location. This domain encompasses synchronous collaboration through video conferencing, screen sharing, and real-time co-editing, alongside asynchronous coordination via email, project management platforms, and version control systems. Essential capabilities include high-quality audio/video for natural communication, low-latency screen sharing for interactive demonstrations, collaborative document editing with operational transformation or CRDTs, and persistent chat threads maintaining conversation history. Modern remote collaboration integrates AI-powered features including automatic transcription with speaker identification, intelligent meeting summaries, action item extraction, and sentiment analysis. Advanced implementations employ spatial audio creating directional sound cues, background replacement for privacy and professionalism, bandwidth adaptation ensuring connectivity on limited networks, and end-to-end encryption protecting sensitive discussions. The evolution toward immersive collaboration introduces VR/AR interfaces providing spatial presence, digital whiteboards with infinite canvas for visual thinking, and breakout rooms enabling small-group discussions within larger meetings. Key challenges include maintaining team cohesion, managing time zone differences, ensuring equitable participation, and preventing remote work fatigue through thoughtful tool design and organizational culture.
+
+  #### References
+  - IEEE Computer Society. (2024). "Remote Collaboration Technologies and Best Practices." https://www.computer.org/
+  - ACM CSCW. (2024). "Research on Computer-Supported Cooperative Work." https://cscw.acm.org/
+  - Microsoft Research. (2024). "Future of Remote Work and Collaboration." https://www.microsoft.com/research/
+  - MIT Work of the Future. (2024). "Remote Collaboration and Workforce Transformation." https://workofthefuture.mit.edu/
+  - Gartner. (2024). "Remote Collaboration Platform Market Guide." https://www.gartner.com/
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

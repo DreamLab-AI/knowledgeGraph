@@ -1,20 +1,45 @@
-- ### OntologyBlock
-  id:: tc9022-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: TC-9022
-	- domain:: tc
-	- owl:class:: tc:TELE002telecollaboration
-	- public-access:: true
+iri:: http://narrativegoldmine.com/infrastructure#TELE002telecollaboration
+uri:: urn:visionclaw:concept:infrastructure:tele002telecollaboration
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:tele002telecollaboration
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: TELE002telecollaboration
+content-hash:: sha256-12-106dd4c246a0
+legacy-term-id:: TC-9022
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Definition
+- ### Definition
+  - TELE002telecollaboration is a concept within the ngm domain.
 
-Telecollaboration represents the systematic use of information and communication technologies to enable effective teamwork, knowledge sharing, and coordinated activities among geographically dispersed participants. This interdisciplinary domain synthesizes insights from computer science, organizational psychology, human-computer interaction, and communication theory to design systems supporting distributed work. Foundational concepts include awareness mechanisms (presence indicators, activity streams) maintaining team cohesion, coordination protocols (meeting schedules, handoff procedures) managing interdependencies, and communication channels (synchronous video, asynchronous messaging) matching task requirements. Modern telecollaboration platforms integrate video conferencing for face-to-face communication, collaborative documents for shared artifacts, project management tools for task coordination, and social features for informal interaction. Technical architectures employ real-time synchronization protocols (WebSocket, WebRTC), distributed state management (CRDTs, operational transformation), and scalable media infrastructure (WebRTC SFUs, media servers) supporting thousands of concurrent users. Research directions include measuring and improving team effectiveness, designing equitable hybrid work experiences, preventing digital fatigue, and leveraging AI for intelligent meeting assistance. The evolution toward immersive telecollaboration introduces spatial computing, holographic telepresence, and brain-computer interfaces creating unprecedented collaboration capabilities transcending physical limitations.
+- ### Semantic Classification
+  - owl-class:: infrastructure:TELE002telecollaboration
+  - owl-role:: Concept
 
-## References
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- ACM CSCW Conference. (2024). "Computer-Supported Cooperative Work and Social Computing." https://cscw.acm.org/
-- IEEE Transactions on Professional Communication. (2024). "Telecollaboration Research." https://procomm.ieee.org/
-- International Journal of Computer-Supported Collaborative Learning. (2024). "CSCL Research and Practice." https://www.springer.com/journal/11412
-- MIT Center for Collective Intelligence. (2024). "Distributed Collaboration Research." https://cci.mit.edu/
-- Stanford Virtual Human Interaction Lab. (2024). "Immersive Collaboration Research." https://vhil.stanford.edu/
+- ### Content
+
+  ## Definition
+
+  Telecollaboration represents the systematic use of information and communication technologies to enable effective teamwork, knowledge sharing, and coordinated activities among geographically dispersed participants. This interdisciplinary domain synthesizes insights from computer science, organizational psychology, human-computer interaction, and communication theory to design systems supporting distributed work. Foundational concepts include awareness mechanisms (presence indicators, activity streams) maintaining team cohesion, coordination protocols (meeting schedules, handoff procedures) managing interdependencies, and communication channels (synchronous video, asynchronous messaging) matching task requirements. Modern telecollaboration platforms integrate video conferencing for face-to-face communication, collaborative documents for shared artifacts, project management tools for task coordination, and social features for informal interaction. Technical architectures employ real-time synchronization protocols (WebSocket, WebRTC), distributed state management (CRDTs, operational transformation), and scalable media infrastructure (WebRTC SFUs, media servers) supporting thousands of concurrent users. Research directions include measuring and improving team effectiveness, designing equitable hybrid work experiences, preventing digital fatigue, and leveraging AI for intelligent meeting assistance. The evolution toward immersive telecollaboration introduces spatial computing, holographic telepresence, and brain-computer interfaces creating unprecedented collaboration capabilities transcending physical limitations.
+
+  #### References
+  - ACM CSCW Conference. (2024). "Computer-Supported Cooperative Work and Social Computing." https://cscw.acm.org/
+  - IEEE Transactions on Professional Communication. (2024). "Telecollaboration Research." https://procomm.ieee.org/
+  - International Journal of Computer-Supported Collaborative Learning. (2024). "CSCL Research and Practice." https://www.springer.com/journal/11412
+  - MIT Center for Collective Intelligence. (2024). "Distributed Collaboration Research." https://cci.mit.edu/
+  - Stanford Virtual Human Interaction Lab. (2024). "Immersive Collaboration Research." https://vhil.stanford.edu/
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

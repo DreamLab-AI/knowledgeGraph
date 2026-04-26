@@ -1,227 +1,241 @@
-- ### OntologyBlock
-  id:: metadata-repository-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9961
-	- source-domain:: mv
-	- preferred-term:: Metadata Repository
-	- status:: active
-	- owl:class:: mv:MetadataRepository
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.
-	- #### Relationships
-	  id:: metadata-repository-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Management]]
-		- related-to:: [[Data Catalog]]
-		- related-to:: [[Metadata Management]]
-		- enables:: [[Data Discovery]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetadataRepository
+uri:: urn:visionclaw:concept:spatial-computing:metadata-repository
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metadata-repository
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metadata Repository
+content-hash:: sha256-12-63fc4f8c06ce
+legacy-term-id:: MV-9961
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Core Concept
+- ### Definition
+  - Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.
 
-### Definition
-- Centralised metadata storage
-- Unified access provision
-- Searchable repository
-- Discovery enablement
-- Understanding support
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetadataRepository
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Repository vs Catalog
-- Repository is engine
-- Catalog is front door
-- Together reduce time-to-insight
-- Enable reliable AI
-- Cut data risks
+- ### Relationships
+  - is-subclass-of:: [[Data Management]]
+  - enables:: [[Data Discovery]]
 
-## Forrester Definition
+- ### Content
 
-### Enterprise Data Catalog
-- Centralised repository
-- Metadata organisation
-- Lineage information
-- Quality information
-- Unified access
+  ## Core Concept
 
-### Market Evolution
-- Established market
-- Surging demand
-- Governance focus
-- Compliance requirements
-- Self-service needs
+  ### Definition
+  - Centralised metadata storage
+  - Unified access provision
+  - Searchable repository
+  - Discovery enablement
+  - Understanding support
 
-## Core Capabilities
+  ### Repository vs Catalog
+  - Repository is engine
+  - Catalog is front door
+  - Together reduce time-to-insight
+  - Enable reliable AI
+  - Cut data risks
 
-### Metadata Management
-- Storage and organisation
-- Discovery enablement
-- Source tracking
-- Format documentation
-- Relationship mapping
+  ## Forrester Definition
 
-### Data Discovery
-- Keyword search
-- Tag-based search
-- Content search
-- Faceted filtering
-- AI-powered suggestions
+  ### Enterprise Data Catalog
+  - Centralised repository
+  - Metadata organisation
+  - Lineage information
+  - Quality information
+  - Unified access
 
-### Governance Support
-- Compliance information
-- Standard enforcement
-- Policy tracking
-- Access control
-- Audit trails
+  ### Market Evolution
+  - Established market
+  - Surging demand
+  - Governance focus
+  - Compliance requirements
+  - Self-service needs
 
-### Lineage Tracking
-- Origin documentation
-- Transformation history
-- Quality insights
-- Trust enhancement
-- Reliability assurance
+  ## Core Capabilities
 
-## Leading Platforms (2024)
+  ### Metadata Management
+  - Storage and organisation
+  - Discovery enablement
+  - Source tracking
+  - Format documentation
+  - Relationship mapping
 
-### Atlan
-- Unified metadata
-- Multiple source support
-- Single truth source
-- Discovery features
-- Governance tools
+  ### Data Discovery
+  - Keyword search
+  - Tag-based search
+  - Content search
+  - Faceted filtering
+  - AI-powered suggestions
 
-### Collibra
-- Data intelligence cloud
-- Enterprise cataloguing
-- Advanced governance
-- Centralised platform
-- Policy enforcement
+  ### Governance Support
+  - Compliance information
+  - Standard enforcement
+  - Policy tracking
+  - Access control
+  - Audit trails
 
-### Informatica EDC
-- Automatic scanning
-- Unified inventory
-- Technical metadata
-- Business metadata
-- Usage metadata
+  ### Lineage Tracking
+  - Origin documentation
+  - Transformation history
+  - Quality insights
+  - Trust enhancement
+  - Reliability assurance
 
-### Progress Semaphore
-- #1 Info-Tech ranking
-- Metadata management
-- 2024 recognition
-- Enterprise focus
-- Comprehensive features
+  ## Leading Platforms (2024)
 
-## Technical Architecture
+  ### Atlan
+  - Unified metadata
+  - Multiple source support
+  - Single truth source
+  - Discovery features
+  - Governance tools
 
-### Storage Layer
-- Scalable database
-- Graph capabilities
-- Search indexing
-- Caching layer
-- Backup systems
+  ### Collibra
+  - Data intelligence cloud
+  - Enterprise cataloguing
+  - Advanced governance
+  - Centralised platform
+  - Policy enforcement
 
-### Processing Layer
-- Metadata ingestion
-- Transformation rules
-- Quality checks
-- Lineage computation
-- Relationship inference
+  ### Informatica EDC
+  - Automatic scanning
+  - Unified inventory
+  - Technical metadata
+  - Business metadata
+  - Usage metadata
 
-### Access Layer
-- REST APIs
-- Search interface
-- Admin console
-- Reporting tools
-- Integration connectors
+  ### Progress Semaphore
+  - #1 Info-Tech ranking
+  - Metadata management
+  - 2024 recognition
+  - Enterprise focus
+  - Comprehensive features
 
-## Metadata Types
+  ## Technical Architecture
 
-### Technical Metadata
-- Schema information
-- Data types
-- Column definitions
-- Table relationships
-- Index details
+  ### Storage Layer
+  - Scalable database
+  - Graph capabilities
+  - Search indexing
+  - Caching layer
+  - Backup systems
 
-### Business Metadata
-- Business definitions
-- Domain classification
-- Owner information
-- Sensitivity labels
-- Usage context
+  ### Processing Layer
+  - Metadata ingestion
+  - Transformation rules
+  - Quality checks
+  - Lineage computation
+  - Relationship inference
 
-### Operational Metadata
-- Access logs
-- Query statistics
-- Performance metrics
-- Change history
-- Job execution
+  ### Access Layer
+  - REST APIs
+  - Search interface
+  - Admin console
+  - Reporting tools
+  - Integration connectors
 
-## Modern Features
+  ## Metadata Types
 
-### AI Enhancement
-- Active metadata
-- Continuous capture
-- Real-time analysis
-- Orchestration
-- Automation
+  ### Technical Metadata
+  - Schema information
+  - Data types
+  - Column definitions
+  - Table relationships
+  - Index details
 
-### Self-Service
-- User-friendly interface
-- No-code access
-- Business user support
-- Collaborative features
-- Knowledge sharing
+  ### Business Metadata
+  - Business definitions
+  - Domain classification
+  - Owner information
+  - Sensitivity labels
+  - Usage context
 
-## Enterprise Benefits
+  ### Operational Metadata
+  - Access logs
+  - Query statistics
+  - Performance metrics
+  - Change history
+  - Job execution
 
-### Productivity
-- Faster discovery
-- Reduced search time
-- Improved understanding
-- Better collaboration
-- Knowledge preservation
+  ## Modern Features
 
-### Governance
-- Consistent definitions
-- Compliance support
-- Quality monitoring
-- Risk reduction
-- Audit readiness
+  ### AI Enhancement
+  - Active metadata
+  - Continuous capture
+  - Real-time analysis
+  - Orchestration
+  - Automation
 
-## Implementation Strategy
+  ### Self-Service
+  - User-friendly interface
+  - No-code access
+  - Business user support
+  - Collaborative features
+  - Knowledge sharing
 
-### Planning Phase
-- Scope definition
-- Source inventory
-- Stakeholder engagement
-- Tool evaluation
-- Success metrics
+  ## Enterprise Benefits
 
-### Execution Phase
-- Connector setup
-- Ingestion configuration
-- Quality rules
-- Access controls
-- User training
+  ### Productivity
+  - Faster discovery
+  - Reduced search time
+  - Improved understanding
+  - Better collaboration
+  - Knowledge preservation
 
-## Future Trends
+  ### Governance
+  - Consistent definitions
+  - Compliance support
+  - Quality monitoring
+  - Risk reduction
+  - Audit readiness
 
-### Active Repositories
-- Living metadata
-- Real-time updates
-- AI-driven insights
-- Automated governance
-- Predictive analytics
+  ## Implementation Strategy
 
-### Convergence
-- Unified platforms
-- Data and AI focus
-- Agent-based automation
-- Knowledge graphs
-- Semantic capabilities
+  ### Planning Phase
+  - Scope definition
+  - Source inventory
+  - Stakeholder engagement
+  - Tool evaluation
+  - Success metrics
 
-## Metadata
+  ### Execution Phase
+  - Connector setup
+  - Ingestion configuration
+  - Quality rules
+  - Access controls
+  - User training
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Trends
+
+  ### Active Repositories
+  - Living metadata
+  - Real-time updates
+  - AI-driven insights
+  - Automated governance
+  - Predictive analytics
+
+  ### Convergence
+  - Unified platforms
+  - Data and AI focus
+  - Agent-based automation
+  - Knowledge graphs
+  - Semantic capabilities
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

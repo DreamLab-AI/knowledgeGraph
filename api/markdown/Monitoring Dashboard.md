@@ -1,165 +1,176 @@
-- ### OntologyBlock
-  id:: monitoring-dashboard-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9972
-	- source-domain:: mv
-	- preferred-term:: Monitoring Dashboard
-	- status:: active
-	- owl:class:: mv:MonitoringDashboard
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.
-	- #### Relationships
-	  id:: monitoring-dashboard-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Visualisation]]
-		- related-to:: [[Observability Platform]]
-		- related-to:: [[System Monitoring]]
-		- enables:: [[Operational Intelligence]]
+iri:: http://narrativegoldmine.com/metaverse#MonitoringDashboard
+uri:: urn:visionclaw:concept:artificial-intelligence:monitoring-dashboard
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:monitoring-dashboard
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Monitoring Dashboard
+content-hash:: sha256-12-42cad7cbaaae
+legacy-term-id:: MV-9972
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Leading Platforms
+- ### Definition
+  - Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.
 
-### Grafana
-- Open-source visualisation
-- Gartner Magic Quadrant Leader
-- 150+ data source plugins
-- Time series to 3D charts
-- Unified dashboard creation
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MonitoringDashboard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Datadog
-- Cloud-based monitoring
-- Application performance
-- Infrastructure visibility
-- Network monitoring
-- Real-time alerts
+- ### Relationships
+  - is-subclass-of:: [[Data Visualisation]]
+  - enables:: [[Operational Intelligence]]
 
-### Dynatrace
-- Built-in dashboard app
-- Data visualisation
-- Real-time insights
-- Flexible presentation
-- Quick setup
+- ### Content
 
-### OpenSearch Dashboards
-- Log visualisation
-- Trace exploration
-- Metrics analysis
-- Piped Processing Language
-- OpenSearch integration
+  ## Leading Platforms
 
-## 2024 Observability Trends
+  ### Grafana
+  - Open-source visualisation
+  - Gartner Magic Quadrant Leader
+  - 150+ data source plugins
+  - Time series to 3D charts
+  - Unified dashboard creation
 
-### AI Integration
-- Anomaly detection (76% interest)
-- Predictive insights
-- Dashboard generation
-- Query assistance
-- Automated summaries
+  ### Datadog
+  - Cloud-based monitoring
+  - Application performance
+  - Infrastructure visibility
+  - Network monitoring
+  - Real-time alerts
 
-### Industry Adoption
-- Integral to operations
-- Performance improvement
-- Toil reduction
-- Cost optimisation
-- Resource efficiency
+  ### Dynatrace
+  - Built-in dashboard app
+  - Data visualisation
+  - Real-time insights
+  - Flexible presentation
+  - Quick setup
 
-## Dashboard Best Practices
+  ### OpenSearch Dashboards
+  - Log visualisation
+  - Trace exploration
+  - Metrics analysis
+  - Piped Processing Language
+  - OpenSearch integration
 
-### Design Principles
-- Clear visual hierarchy
-- Meaningful metrics
-- Actionable insights
-- Consistent layouts
-- User-appropriate views
+  ## 2024 Observability Trends
 
-### Common Mistakes
-- Information overload
-- Too many visualisations
-- Cognitive overwhelm
-- Irrelevant metrics
-- Poor organisation
+  ### AI Integration
+  - Anomaly detection (76% interest)
+  - Predictive insights
+  - Dashboard generation
+  - Query assistance
+  - Automated summaries
 
-## Key Metrics
+  ### Industry Adoption
+  - Integral to operations
+  - Performance improvement
+  - Toil reduction
+  - Cost optimisation
+  - Resource efficiency
 
-### System Health
-- Latency measurements
-- Error rates
-- Throughput levels
-- Resource utilisation
-- Availability status
+  ## Dashboard Best Practices
 
-### Correlation Capabilities
-- Incident-deployment links
-- Version tracking
-- Infrastructure changes
-- Root cause analysis
-- Trend identification
+  ### Design Principles
+  - Clear visual hierarchy
+  - Meaningful metrics
+  - Actionable insights
+  - Consistent layouts
+  - User-appropriate views
 
-## Visualisation Types
+  ### Common Mistakes
+  - Information overload
+  - Too many visualisations
+  - Cognitive overwhelm
+  - Irrelevant metrics
+  - Poor organisation
 
-### Time Series
-- Line charts
-- Area graphs
-- Stacked views
-- Historical trends
-- Forecasting
+  ## Key Metrics
 
-### Status Displays
-- Gauge charts
-- Heatmaps
-- Status indicators
-- Progress bars
-- Alert panels
+  ### System Health
+  - Latency measurements
+  - Error rates
+  - Throughput levels
+  - Resource utilisation
+  - Availability status
 
-### Comparative Views
-- Bar charts
-- Tables
-- Comparison panels
-- Ranking displays
-- Distribution charts
+  ### Correlation Capabilities
+  - Incident-deployment links
+  - Version tracking
+  - Infrastructure changes
+  - Root cause analysis
+  - Trend identification
 
-## Implementation
+  ## Visualisation Types
 
-### Data Sources
-- Prometheus metrics
-- Application logs
-- Distributed traces
-- Custom metrics
-- Third-party APIs
+  ### Time Series
+  - Line charts
+  - Area graphs
+  - Stacked views
+  - Historical trends
+  - Forecasting
 
-### Alert Configuration
-- Threshold alerts
-- Anomaly detection
-- Escalation rules
-- Notification channels
-- On-call integration
+  ### Status Displays
+  - Gauge charts
+  - Heatmaps
+  - Status indicators
+  - Progress bars
+  - Alert panels
 
-## Use Cases
+  ### Comparative Views
+  - Bar charts
+  - Tables
+  - Comparison panels
+  - Ranking displays
+  - Distribution charts
 
-### DevOps
-- CI/CD monitoring
-- Deployment tracking
-- Service health
-- Container metrics
-- Kubernetes clusters
+  ## Implementation
 
-### Business Intelligence
-- KPI tracking
-- Revenue metrics
-- User engagement
-- Conversion rates
-- Growth indicators
+  ### Data Sources
+  - Prometheus metrics
+  - Application logs
+  - Distributed traces
+  - Custom metrics
+  - Third-party APIs
 
-### Infrastructure
-- Server monitoring
-- Network traffic
-- Database performance
-- Cloud resources
-- Security events
+  ### Alert Configuration
+  - Threshold alerts
+  - Anomaly detection
+  - Escalation rules
+  - Notification channels
+  - On-call integration
 
-## Metadata
+  ## Use Cases
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### DevOps
+  - CI/CD monitoring
+  - Deployment tracking
+  - Service health
+  - Container metrics
+  - Kubernetes clusters
+
+  ### Business Intelligence
+  - KPI tracking
+  - Revenue metrics
+  - User engagement
+  - Conversion rates
+  - Growth indicators
+
+  ### Infrastructure
+  - Server monitoring
+  - Network traffic
+  - Database performance
+  - Cloud resources
+  - Security events
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

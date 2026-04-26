@@ -1,56 +1,38 @@
-- ### OntologyBlock
-  id:: proof-of-work-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#ProofOfWork
+uri:: urn:visionclaw:concept:blockchain:proof-of-work
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:proof-of-work
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Proof Of Work
+content-hash:: sha256-12-a40df8434a0d
+legacy-term-id:: BC-0052
+status:: complete
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
+- ### Definition
+  - [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.
 
-    - domain-prefix:: BC
+- ### Semantic Classification
+  - owl-class:: blockchain:ProofOfWork
+  - owl-role:: Object
+  - owl-inferred:: blockchain:VirtualObject
+  - belongs-to-domain:: [[BlockchainDomain]]
+  - implemented-in-layer:: [[ProtocolLayer]]
 
-    - sequence-number:: 0052
+- ### Relationships
+  - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
 
-    - filename-history:: ["BC-0052-proof-of-work.md", "ProofOfWork.md", "Proof of Work.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0052
-    - preferred-term:: Proof Of Work
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.1
-    - last-updated:: 2025-11-13
+- ### Content
 
-  - **Definition**
-    - definition:: [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.
-    - maturity:: mature
-    - source:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
-    - authority-score:: 0.95
-
-  - **Semantic Classification**
-    - owl:class:: bc:ProofOfWork
-    - owl:role:: Object
-    - owl:inferred-class:: bc:VirtualObject
-    - belongsToDomain:: [[BlockchainDomain]]
-    - implementedInLayer:: [[ProtocolLayer]]
-
-  - #### Relationships
-    id:: proof-of-work-relationships
-    - is-subclass-of:: [[Blockchain Entity]], [[ConsensusProtocol]]
-
-  - #### OWL Axioms
-    id:: proof-of-work-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-      Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-      Prefix(dct:=<http://purl.org/dc/terms/>)
-
-      Ontology(<http://metaverse-ontology.org/blockchain/BC-0052>
-        Import(<http://metaverse-ontology.org/blockchain/core>)
-
-        ## Class Declaration
+  ## Class Declaration
         Declaration(Class(:ProofOfWork))
 
         ## Subclass Relationships
@@ -85,43 +67,32 @@
       )
       ```
 
-- ## About Proof Of Work
-  id:: proof-of-work-about
+  - ## About Proof Of Work
 
   - [[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.
-  -
   - ### Key Characteristics
-    id:: proof-of-work-characteristics
     - 1. **Definitional Property**: Core defining characteristic - requires [[Mining|miners]] to solve [[CryptographicHash|cryptographic hash]] puzzles
     - 2. **Functional Property**: Operational behavior - validates [[transactions]] and secures the [[blockchain]]
     - 3. **Structural Property**: Compositional elements - [[Mining|mining hardware]], [[Network Hash Rate|hash power]], [[difficulty adjustment]]
     - 4. **Security Property**: Security guarantees provided - resistance to [[51% attack]], [[double-spending]] prevention
     - 5. **Performance Property**: Efficiency considerations - [[energy consumption]], [[transaction throughput]], [[block time]]
-  -
   - ### Technical Components
-    id:: proof-of-work-components
     - **Implementation**: How concept is realized technically through [[ASIC]] miners, [[Mining Pool|mining pools]], [[Network Hash Rate|hash rate]]
     - **Verification**: Methods for validating correctness via [[nonce]], [[block hash]], [[difficulty target]]
     - **Interaction**: Relationships with other components - [[Block Reward (Mining Incentive)|block reward]], [[transaction fees]], [[halving events]]
     - **Constraints**: Technical limitations and requirements - [[energy requirements]], [[hardware costs]], [[geographic distribution]]
-  -
   - ### Use Cases
-    id:: proof-of-work-use-cases
     - **1. Core Blockchain Operation**
     - **Application**: Fundamental blockchain functionality for [[Bitcoin]], [[Litecoin]], [[Monero]]
     - **Example**: Practical implementation in major blockchains securing hundreds of billions in value
     - **Requirements**: Technical prerequisites - [[ASIC]] hardware, [[electricity]], [[internet connectivity]]
     - **Benefits**: Value provided to blockchain systems - [[decentralization]], [[security]], [[immutability]]
-  -
   - ### Standards & References
-    id:: proof-of-work-standards
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies
     - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies
     - [[NIST NISTIR]] - Blockchain and distributed ledger technologies
-  -
 
-- ## 2024-2025: Network Growth, Efficiency Gains, and the Ongoing Energy Debate [Updated 2025]
-  id:: proof-of-work-recent-developments
+  - ## 2024-2025: Network Growth, Efficiency Gains, and the Ongoing Energy Debate [Updated 2025]
 
   The years 2024 and 2025 witnessed **dramatic growth in Bitcoin's computational power** alongside **significant efficiency improvements** in mining hardware, even as **the energy consumption debate intensified**. [[Bitcoin]]'s network [[Network Hash Rate|hash rate]] reached unprecedented levels exceeding **1.4 ZH/s (zettahash per second)**, whilst **next-generation 3nm ASIC chips** improved efficiency to **2.5-3.0 J/TH** (joules per terahash), and [[Ethereum]]'s successful [[Proof of Stake]] transition continued to vindicate alternative consensus mechanisms—crystallising a **bifurcated consensus landscape** where Proof of Work persists primarily within Bitcoin's specific security model.
 
@@ -324,8 +295,7 @@
 
   The 2024-2025 period crystallized Proof of Work's **bifurcated future**—vindicated [[Proof of Stake]] for new deployments, resilient but contested PoW for Bitcoin specifically—whilst leaving unresolved whether PoW represents a thermodynamically necessary security innovation or an energy-profligate dead end awaiting inevitable obsolescence.
 
-- ## Academic Context
-  id:: proof-of-work-academic-context
+  - ## Academic Context
 
   - [[Proof of Work]] (PoW) is a [[consensus mechanism]] originally conceptualized in 1993 by [[Cynthia Dwork]] and [[Moni Naor]] to combat email spam ([[Hashcash]]) and later adapted to secure [[blockchain]] networks by requiring participants ([[Mining|miners]]) to expend computational effort to validate [[transactions]].
   - It underpins the security and [[decentralization]] of early and prominent blockchains, most notably [[Bitcoin]] ([[Satoshi Nakamoto]], 2008).
@@ -347,8 +317,7 @@
     - [[Gallersdörfer, U., Klaaßen, L., & Stoll, C. (2020)]]. "Energy Consumption of Cryptocurrencies Beyond Bitcoin." *Joule*, 4(9). DOI: 10.1016/j.joule.2020.07.013
     - [[Cambridge Centre for Alternative Finance (2019-2025)]]. "Cambridge Bitcoin Electricity Consumption Index (CBECI)." Ongoing monitoring of network energy use
 
-- ## Current Landscape (2025) [Updated 2025]
-  id:: proof-of-work-current-landscape
+  - ## Current Landscape (2025) [Updated 2025]
 
   - PoW remains the [[consensus mechanism]] securing [[Bitcoin]] and several other cryptocurrencies such as [[Litecoin]] and [[Monero]], though [[Ethereum]] transitioned away from PoW to [[Proof of Stake]] in September 2022 ([[The Merge]]) to address energy and scalability concerns.
   - [[Mining|Miners]] compete by solving complex mathematical puzzles ([[CryptographicHash|cryptographic hash]] functions) using specialized hardware ([[ASIC]] miners), earning [[Block Reward (Mining Incentive)|block rewards]] and [[transaction fees]] upon success.
@@ -383,8 +352,7 @@
     - **Geographic bans**: China (2021 ban maintained), Kuwait (2025), seasonal restrictions in Russia
     - **Tax treatment**: Abandonment of proposed 30% [[DAME tax]] in U.S.; taxation as income (mining rewards) or capital gains (sales)
 
-- ## UK Context [Updated 2025]
-  id:: proof-of-work-uk-context
+  - ## UK Context [Updated 2025]
 
   - The United Kingdom has contributed to [[blockchain]] research and development, with academic institutions in Manchester, Leeds, Edinburgh, and London exploring [[distributed ledger technologies]] and [[consensus mechanisms]].
   - **North England innovation hubs**: Sheffield, Newcastle, and Manchester host startups and research groups investigating blockchain scalability and sustainability.
@@ -404,8 +372,7 @@
     - [[Imperial College London]]: Economic analysis of cryptocurrency markets and PoW incentives
     - [[University of Edinburgh]]: [[Blockchain Technology Laboratory]] studying distributed systems
 
-- ## Future Directions [Updated 2025]
-  id:: proof-of-work-future-directions
+  - ## Future Directions [Updated 2025]
 
   - Emerging trends include the development of more energy-efficient PoW algorithms and [[hybrid consensus mechanisms]] combining PoW with [[Proof of Stake]] or other protocols.
   - Anticipated challenges:
@@ -419,8 +386,7 @@
     - **Energy source optimization**: Advanced grid integration and renewable energy partnerships
     - **Cross-chain security**: PoW-secured checkpoints for lighter consensus mechanisms
 
-- ## Related Concepts
-  id:: proof-of-work-related-concepts
+  - ## Related Concepts
 
   - [[Proof of Stake]]
   - [[Mining]]
@@ -442,8 +408,7 @@
   - [[Selfish Mining]]
   - [[MEV]]
 
-- ## References
-  id:: proof-of-work-references
+  - ## References
 
   1. Dwork, C., & Naor, M. (1993). Pricing via Processing or Combatting Junk Mail. *Advances in Cryptology — CRYPTO '92*, Lecture Notes in Computer Science, vol 740. Springer. DOI: 10.1007/3-540-48071-4_27
   2. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System.
@@ -464,20 +429,23 @@
   17. JPMorgan Bitcoin Hashrate Report (October 2025)
   18. Nature Communications (May 2025). PM2.5 Pollution from Bitcoin Mining Facilities.
 
-- ## Metadata
-  id:: proof-of-work-metadata
+  - ## Metadata
 
   - **Migration Status**: Merged from 3 duplicate files with casing corrections
   - **Merged Files**: ProofOfWork.md (mv+bc domains), Proof of Work.md, BC-0052-proof-of-work.md
   - **Last Updated**: 2025-11-13
   - **Review Status**: Comprehensive deduplication and casing fix
-  - **Casing Fixed**: bc:ProofofWork → bc:ProofOfWork (capital O in Of, capital W in Work)
-  - **Domain Corrected**: Removed mv:ProofOfWork, retained bc:ProofOfWork
+  - **Casing Fixed**: blockchain:ProofofWork → blockchain:ProofOfWork (capital O in Of, capital W in Work)
+  - **Domain Corrected**: Removed mv:ProofOfWork, retained blockchain:ProofOfWork
   - **BelongsToDomain**: Changed ConsensusDomain → BlockchainDomain
   - **Content Source**: Best content from all 3 files merged
   - **Quality Improvements**:
-    - Casing consistency: 100% (bc:ProofOfWork)
-    - Domain purity: 100% (bc: only, mv: removed)
+    - Casing consistency: 100% (blockchain:ProofOfWork)
+    - Domain purity: 100% (blockchain: only, mv: removed)
     - Deduplication: 3 files → 1 canonical file
     - Authority score: 0.95 maintained
     - 2024-2025 content: Latest updates preserved
+
+- ### Provenance
+  - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]
+  - migration-date:: 2026-04-26T00:00:00Z

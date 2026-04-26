@@ -1,39 +1,47 @@
 {
-  "id": "Spatial Computing System",
+  "id": "spatial-computing-system",
   "title": "Spatial Computing System",
-  "content": "- ### OntologyBlock\n  id:: spatial-computing-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10056\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Computing System\n\t- status:: active\n\t- definition:: An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positioning awareness.\n\t- owl:class:: mv:SpatialComputingSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-computing-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Mixed Reality Platform]]\n\t\t- related-to:: [[Apple Vision Pro]]\n\t\t- related-to:: [[Eye Tracking]]\n\t\t- related-to:: [[Hand Gesture Recognition]]\n\t\t- enables:: [[Spatial Interface]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- Micro-OLED high-resolution displays\n\t\t- Dedicated spatial computing processors\n\t\t- Multi-sensor environmental understanding\n\t\t- Hand and eye tracking input\n\t\t- Spatial audio integration\n\t- #### Apple Vision Pro Specs\n\t  collapsed:: true\n\t\t- M2 chip for visionOS and graphics\n\t\t- R1 chip for sensor processing\n\t\t- 23 million pixels total (4K+ per eye)\n\t\t- Launched February 2, 2024\n\t\t- Starting price $3,499",
+  "content": "- ### Definition\n  - An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positioning awareness.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SpatialComputingSystem\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Mixed Reality Platform]]\n  - enables:: [[Spatial Interface]]\n\n- ### Content\n\n  - #### Key Technologies\n\t\t- Micro-OLED high-resolution displays\n\t\t- Dedicated spatial computing processors\n\t\t- Multi-sensor environmental understanding\n\t\t- Hand and eye tracking input\n\t\t- Spatial audio integration\n  - #### Apple Vision Pro Specs\n\t\t- M2 chip for visionOS and graphics\n\t\t- R1 chip for sensor processing\n\t\t- 23 million pixels total (4K+ per eye)\n\t\t- Launched February 2, 2024\n\t\t- Starting price $3,499\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Spatial Anchor"
   ],
   "wiki_links": [
     "Mixed Reality Platform",
-    "Hand Gesture Recognition",
-    "metaverse",
-    "Apple Vision Pro",
     "Spatial Interface",
-    "Eye Tracking"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:spatial-computing-system",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SpatialComputingSystem",
+    "content_hash": "sha256-12-774e39d6612e",
+    "legacy_term_id": "MV-10056",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:spatial-computing-system",
+    "schema_version": "v2",
     "term_id": "MV-10056",
     "preferred_term": "Spatial Computing System",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SpatialComputingSystem",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positioning awareness.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SpatialComputingSystem",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SpatialComputingSystem",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Mixed Reality Platform"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Apple Vision Pro",
-        "Eye Tracking",
-        "Hand Gesture Recognition"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

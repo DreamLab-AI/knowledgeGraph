@@ -1,11 +1,34 @@
+iri:: http://narrativegoldmine.com/ontology#ProprietaryImageGeneration
+uri:: urn:visionclaw:concept:artificial-intelligence:proprietary-image-generation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:proprietary-image-generation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Proprietary Image Generation
+content-hash:: sha256-12-756004f55dda
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
+- ### Definition
+  - Proprietary Image Generation is a concept within the ngm domain.
 
-#Public page
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ProprietaryImageGeneration
+  - owl-role:: Concept
 
-	- automatically published
-- ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
-	- ### MidJourney v5&6
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  #Public page
+  - automatically published
 		- [twitter link to the render loading below](https://twitter.com/LibertyRPF/status/1737848545657618873)
 		  {{twitter https://twitter.com/LibertyRPF/status/1737848545657618873}}
 		- Super popular San Francisco-based MidJourney, Inc.
@@ -15,13 +38,11 @@ public:: true
 			- **Weaknesses**: Discord not user-friendly for image generation, prompting rules change per model.
 			- **Skill Level**: Suitable for beginners and intermediates, the mainstay of creatives.
 			- [TechHalla on X: "🆕 Version 6 of MidJourney is here! 😱 What's new? How can I use it? All the updates here with prompt examples 👇 #PromptShare #MidJourney #AIArtCommunity https://t.co/ZJJCxXkIpb" / X (twitter.com)](https://twitter.com/techhalla/status/1737761999981838379)
-	- ### Adobe
 		- Developed by Adobe, Firefly claims ethical training practices.
 			- **Cost**: "Generative cred* system starting from $4.99/month for 100 credits.
 			- **User Interface**: Clean, simple web interface, now integrated fully into Photoshop for free.
 			- **Strengths**: User-friendly, good for everyday photorealistic images, legal protection.
 			- {{video https://www.youtube.com/watch?v=VNs1lW8t4hw}}
-	- ### DALL·E 3
 		- From [[OpenAI]] , integrated with ChatGPT pro, [integrated with Bing](https://www.bing.com/images/create), built into Swiftkey [[android]] keyboard.
 			- ![image.png](../assets/image_1704230683869_0.png){:height 700, :width 300}
 			- **Cost**: Free on Microsoft’s Bing Image Creator; some free credits. $20 pcm for ChatGPT.
@@ -36,8 +57,17 @@ public:: true
 				- ![spider.png](../assets/spider_1705315548949_0.png)
 				- ![slices.png](../assets/slices_1705349018973_0.png)
 			- ![image.png](../assets/image_1704791221902_0.png){:width 600}
-	- ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
 		- [[Landscape]] contains some maps of more products.
-- This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
+  - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
+
+  - ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
+  - ### MidJourney v5&6
+  - ### Adobe
+  - ### DALL·E 3
+  - ### Magnific AI
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

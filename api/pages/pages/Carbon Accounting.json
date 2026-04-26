@@ -1,49 +1,56 @@
 {
-  "id": "Carbon Accounting",
+  "id": "carbon-accounting",
   "title": "Carbon Accounting",
-  "content": "- ### OntologyBlock\n  id:: carbon-accounting-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9807\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Accounting\n\t- definition:: The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.\n\t- status:: active\n\t- owl:class:: mv:CarbonAccounting\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-accounting-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Accounting]]\n\t\t- enables:: [[Emissions Reporting]], [[Climate Action Planning]], [[Regulatory Compliance]]\n\t\t- requires:: [[Data Collection]], [[Emission Factors]], [[Verification Process]]\n\t\t- related-to:: [[Carbon Footprint Assessment]], [[Carbon Calculator]], [[GHG Protocol]]\n- ## Technical Details\n\t- **Emissions Scopes**:\n\t\t- **Scope 1**: Direct emissions from owned sources (vehicles, on-site combustion)\n\t\t- **Scope 2**: Indirect emissions from purchased electricity, steam, heating, cooling\n\t\t- **Scope 3**: Value chain emissions (suppliers, business travel, product use) - typically 80%+ of total\n\t- **Key Standards**:\n\t\t- **GHG Protocol**: Used by 97% of disclosing S&P 500 companies\n\t\t- **ISO 14064**: International GHG accounting standard\n\t\t- **ISSB IFRS S2**: Voluntary reporting standard (mandatory in some countries)\n\t- **Regulatory Landscape (2024)**:\n\t\t- EU CSRD: Mandatory for 50,000+ companies starting 2025\n\t\t- SEC Climate Rule: Scope 1 and 2 disclosure for large US companies (2026)\n\t\t- California SB 253: State-level emissions tracking requirements\n\t- **Measurement Unit**: CO2e (carbon dioxide equivalent) - converts all GHGs using global warming potential\n- ## Applications\n\t- Corporate sustainability reporting\n\t- Regulatory compliance documentation\n\t- Climate target setting and tracking\n\t- Supply chain emissions management\n\t- ESG investor disclosures",
+  "content": "- ### Definition\n  - The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CarbonAccounting\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Environmental Accounting]]\n  - requires:: [[Data Collection]], [[Emission Factors]], [[Verification Process]]\n  - enables:: [[Emissions Reporting]], [[Climate Action Planning]], [[Regulatory Compliance]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Emissions Scopes**:\n\t\t- **Scope 1**: Direct emissions from owned sources (vehicles, on-site combustion)\n\t\t- **Scope 2**: Indirect emissions from purchased electricity, steam, heating, cooling\n\t\t- **Scope 3**: Value chain emissions (suppliers, business travel, product use) - typically 80%+ of total\n  - **Key Standards**:\n\t\t- **GHG Protocol**: Used by 97% of disclosing S&P 500 companies\n\t\t- **ISO 14064**: International GHG accounting standard\n\t\t- **ISSB IFRS S2**: Voluntary reporting standard (mandatory in some countries)\n  - **Regulatory Landscape (2024)**:\n\t\t- EU CSRD: Mandatory for 50,000+ companies starting 2025\n\t\t- SEC Climate Rule: Scope 1 and 2 disclosure for large US companies (2026)\n\t\t- California SB 253: State-level emissions tracking requirements\n  - **Measurement Unit**: CO2e (carbon dioxide equivalent) - converts all GHGs using global warming potential\n  - ## Applications\n  - Corporate sustainability reporting\n  - Regulatory compliance documentation\n  - Climate target setting and tracking\n  - Supply chain emissions management\n  - ESG investor disclosures\n\n- ### Provenance\n  - sources:: [[ISO (International Organization for Standardization)]], [[SEC (Securities and Exchange Commission)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Carbon Neutrality Verification",
-    "Carbon Calculator",
     "Environmental Sustainability Label",
-    "Carbon Neutrality Planning",
-    "Carbon Footprint Assessment",
-    "Carbon Footprint Indicator"
+    "Carbon Footprint Measurement"
   ],
   "wiki_links": [
-    "Regulatory Compliance",
-    "Emission Factors",
-    "GHG Protocol",
-    "Environmental Accounting",
+    "Blockchain",
     "Climate Action Planning",
-    "Emissions Reporting",
     "Data Collection",
+    "Emission Factors",
+    "Emissions Reporting",
+    "Environmental Accounting",
+    "ISO (International Organization for Standardization)",
+    "Regulatory Compliance",
+    "SEC (Securities and Exchange Commission)",
     "Verification Process",
-    "Carbon Calculator",
-    "metaverse",
-    "Carbon Footprint Assessment"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:carbon-accounting",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CarbonAccounting",
+    "content_hash": "sha256-12-670d36d0d4c7",
+    "legacy_term_id": "MV-9807",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:carbon-accounting",
+    "schema_version": "v2",
     "term_id": "MV-9807",
     "preferred_term": "Carbon Accounting",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CarbonAccounting",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CarbonAccounting",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T17:00:00Z",
+    "last_updated": "2026-04-26T17:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CarbonAccounting",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Environmental Accounting"
@@ -62,28 +69,22 @@
       "Regulatory Compliance"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Carbon Footprint Assessment",
-        "Carbon Calculator",
-        "GHG Protocol"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "ISO (International Organization for Standardization)",
+      "SEC (Securities and Exchange Commission)"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

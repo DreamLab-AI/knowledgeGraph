@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: neuralnetworkcomponent-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralNetworkComponent
+uri:: urn:visionclaw:concept:artificial-intelligence:neural-network-component
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:neural-network-component
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Neural Network Component
+content-hash:: sha256-12-04aeebaf4d97
+legacy-term-id:: AI-0805
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0805
-    - filename-history:: ["AI-0805-neuralnetworkcomponent.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0805
-    - preferred-term:: Neural Network Component
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A component or building block of neural networks.
 
-  - **Definition**
-    - definition:: A component or building block of neural networks.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:NeuralNetworkComponent
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:NeuralNetworkComponent
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Neural Network Component — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NeuralNetworkComponent))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NeuralNetworkComponent "Neural Network Component"@en)
-      (AnnotationAssertion rdfs:comment :NeuralNetworkComponent
-        "A component or building block of neural networks."@en)
-      ```
-
-- ## About Neural Network Component
-  A component or building block of neural networks.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

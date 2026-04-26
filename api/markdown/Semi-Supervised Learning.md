@@ -1,87 +1,105 @@
-- ### OntologyBlock
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-1011
-  - preferred-term:: Semi-Supervised Learning
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:SemiSupervisedLearning
+iri:: http://narrativegoldmine.com/artificial-intelligence#SemiSupervisedLearning
+uri:: urn:visionclaw:concept:artificial-intelligence:semi-supervised-learning
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:semi-supervised-learning
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Semi-Supervised Learning
+content-hash:: sha256-12-d32f04afc823
+legacy-term-id:: AI-1011
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[Machine Learning]]
-- skos:related:: [[Supervised Learning]]
-- skos:related:: [[Unsupervised Learning]]
-- skos:related:: [[Active Learning]]
-- uses:: [[Self-Training]]
-- uses:: [[Co-Training]]
-- enables:: [[Data-Efficient Learning]]
+- ### Definition
+  - Semi-Supervised Learning is a concept within the ai domain.
 
-### Definition
-Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:SemiSupervisedLearning
+  - owl-role:: Concept
 
-### Core Assumptions
-**Smoothness Assumption:**
-- Points close together likely share same label
-- Decision boundaries in low-density regions
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]]
+  - enables:: [[Data-Efficient Learning]]
 
-**Cluster Assumption:**
-- Data forms distinct clusters
-- Points in same cluster share labels
+- ### Content
 
-**Manifold Assumption:**
-- High-dimensional data lies on lower-dimensional manifold
-- Learn manifold structure from unlabeled data
+  ### Definition
+  Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.
 
-### Common Techniques
-**Self-Training:**
-1. Train on labeled data
-2. Predict labels for unlabeled data
-3. Add high-confidence predictions to training set
-4. Retrain iteratively
+  ### Core Assumptions
+  **Smoothness Assumption:**
+  - Points close together likely share same label
+  - Decision boundaries in low-density regions
 
-**Co-Training:**
-- Split features into independent views
-- Train separate classifiers on each view
-- Exchange high-confidence predictions
-- Effective when views are conditionally independent
+  **Cluster Assumption:**
+  - Data forms distinct clusters
+  - Points in same cluster share labels
 
-**Graph-Based Methods:**
-- Represent data as graph
-- Propagate labels through edges
-- Label spreading/propagation algorithms
+  **Manifold Assumption:**
+  - High-dimensional data lies on lower-dimensional manifold
+  - Learn manifold structure from unlabeled data
 
-**Generative Models:**
-- Model joint distribution P(X,Y)
-- Use unlabeled data to improve P(X)
-- Examples: Gaussian mixture models, VAEs
+  ### Common Techniques
+  **Self-Training:**
+  1. Train on labeled data
+  2. Predict labels for unlabeled data
+  3. Add high-confidence predictions to training set
+  4. Retrain iteratively
 
-**Consistency Regularization:**
-- Model should give consistent predictions for perturbed versions of same input
-- Used in modern deep learning (MixMatch, FixMatch)
+  **Co-Training:**
+  - Split features into independent views
+  - Train separate classifiers on each view
+  - Exchange high-confidence predictions
+  - Effective when views are conditionally independent
 
-### Modern Deep Learning Approaches
-- Pseudo-labeling
-- Mean Teacher
-- MixMatch / FixMatch / FlexMatch
-- Contrastive learning with labels
-- Pre-training + fine-tuning
+  **Graph-Based Methods:**
+  - Represent data as graph
+  - Propagate labels through edges
+  - Label spreading/propagation algorithms
 
-### Applications
-- Text classification (limited labeled documents)
-- Image recognition (few labeled images)
-- Speech recognition
-- Medical diagnosis (limited expert annotations)
-- Natural language processing
-- Computer vision
+  **Generative Models:**
+  - Model joint distribution P(X,Y)
+  - Use unlabeled data to improve P(X)
+  - Examples: Gaussian mixture models, VAEs
 
-### Advantages
-- Reduces labeling costs dramatically
-- Improves performance with limited labels
-- Leverages abundant unlabeled data
-- Practical for real-world scenarios
+  **Consistency Regularization:**
+  - Model should give consistent predictions for perturbed versions of same input
+  - Used in modern deep learning (MixMatch, FixMatch)
 
-### Challenges
-- Risk of confirmation bias in self-training
-- Quality depends on initial labeled data
-- Can amplify errors if assumptions violated
-- Computational cost of iterative methods
+  ### Modern Deep Learning Approaches
+  - Pseudo-labeling
+  - Mean Teacher
+  - MixMatch / FixMatch / FlexMatch
+  - Contrastive learning with labels
+  - Pre-training + fine-tuning
+
+  ### Applications
+  - Text classification (limited labeled documents)
+  - Image recognition (few labeled images)
+  - Speech recognition
+  - Medical diagnosis (limited expert annotations)
+  - Natural language processing
+  - Computer vision
+
+  ### Advantages
+  - Reduces labeling costs dramatically
+  - Improves performance with limited labels
+  - Leverages abundant unlabeled data
+  - Practical for real-world scenarios
+
+  ### Challenges
+  - Risk of confirmation bias in self-training
+  - Quality depends on initial labeled data
+  - Can amplify errors if assumptions violated
+  - Computational cost of iterative methods
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

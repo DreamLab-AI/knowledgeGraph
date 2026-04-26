@@ -1,143 +1,153 @@
-- ### OntologyBlock
-  id:: price-discovery-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7038
-	- preferred-term:: Price Discovery
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.
-	- maturity:: reviewed
-	- owl:class:: ngm:PriceDiscovery
-	- owl:role:: Concept
-	- belongsToDomain:: [[FinancialDomain]]
+iri:: http://narrativegoldmine.com/ontology#PriceDiscovery
+uri:: urn:visionclaw:concept:blockchain:price-discovery
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:price-discovery
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Price Discovery
+content-hash:: sha256-12-d2006f8afc59
+legacy-term-id:: NGM-7038
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[Market Microstructure]]
-- related-to:: [[Order Book]], [[Liquidity]], [[Market Maker]], [[Arbitrage]]
-- enables:: [[Fair Valuation]], [[Market Efficiency]], [[Price Transparency]]
-- used-by:: [[Futures Markets]], [[Spot Markets]], [[DEX]]
+- ### Definition
+  - Price discovery is the market mechanism through which asset prices are determined via the continuous interaction of buyers and sellers, incorporating supply/demand dynamics, order flow analysis, bid-ask spread formation, and arbitrage across venues to establish fair market value in real-time.
 
-## Core Mechanisms
+- ### Semantic Classification
+  - owl-class:: blockchain:PriceDiscovery
+  - owl-role:: Concept
+  - belongs-to-domain:: [[FinancialDomain]]
 
-### Bid-Ask Spread Formation
-- The difference between highest buyer price (bid) and lowest seller price (ask)
-- Reflects immediate supply-demand balance and market maker compensation
-- Tighter spreads indicate higher liquidity and more efficient price discovery
+- ### Relationships
+  - is-subclass-of:: [[Market Microstructure]]
+  - enables:: [[Fair Valuation]], [[Market Efficiency]], [[Price Transparency]]
 
-### Order Book Dynamics
-- Aggregation of limit orders at various price levels
-- Depth reveals support/resistance and potential price movements
-- Market orders consume liquidity and trigger price adjustments
+- ### Content
 
-### Auction Mechanisms
-- Opening/closing auctions establish reference prices
-- Continuous double auctions for intraday trading
-- Call auctions concentrate liquidity at specific times
+  ## Core Mechanisms
 
-## Key Factors Affecting Price Discovery
+  ### Bid-Ask Spread Formation
+  - The difference between highest buyer price (bid) and lowest seller price (ask)
+  - Reflects immediate supply-demand balance and market maker compensation
+  - Tighter spreads indicate higher liquidity and more efficient price discovery
 
-### Supply and Demand
-- Fundamental forces driving price determination
-- Imbalances create directional price pressure
-- Elasticity affects magnitude of price adjustments
+  ### Order Book Dynamics
+  - Aggregation of limit orders at various price levels
+  - Depth reveals support/resistance and potential price movements
+  - Market orders consume liquidity and trigger price adjustments
 
-### Information Asymmetry
-- Informed traders drive prices toward fair value
-- Market makers widen spreads when information asymmetry increases
-- Regulation attempts to level the playing field (insider trading rules)
+  ### Auction Mechanisms
+  - Opening/closing auctions establish reference prices
+  - Continuous double auctions for intraday trading
+  - Call auctions concentrate liquidity at specific times
 
-### Market Liquidity
-- Higher liquidity enables more efficient price discovery
-- Illiquid markets exhibit larger price gaps and delayed adjustments
-- Liquidity providers extract compensation for immediacy services
+  ## Key Factors Affecting Price Discovery
 
-### Market Structure
-- Exchange vs OTC markets have different discovery characteristics
-- Fragmentation across venues affects consolidated price formation
-- High-frequency trading accelerates information incorporation
+  ### Supply and Demand
+  - Fundamental forces driving price determination
+  - Imbalances create directional price pressure
+  - Elasticity affects magnitude of price adjustments
 
-## Price Discovery in Different Markets
+  ### Information Asymmetry
+  - Informed traders drive prices toward fair value
+  - Market makers widen spreads when information asymmetry increases
+  - Regulation attempts to level the playing field (insider trading rules)
 
-### Equity Markets
-- Continuous auction with market makers and limit order books
-- Pre-market and after-hours discovery with reduced liquidity
-- Index arbitrage links individual stocks to derivatives
+  ### Market Liquidity
+  - Higher liquidity enables more efficient price discovery
+  - Illiquid markets exhibit larger price gaps and delayed adjustments
+  - Liquidity providers extract compensation for immediacy services
 
-### Futures Markets
-- Often lead spot markets in price discovery
-- Leverage enables greater participation with less capital
-- Basis relationships link futures to underlying assets
+  ### Market Structure
+  - Exchange vs OTC markets have different discovery characteristics
+  - Fragmentation across venues affects consolidated price formation
+  - High-frequency trading accelerates information incorporation
 
-### Cryptocurrency Markets
-- 24/7 trading across fragmented global venues
-- DEX automated market makers (AMMs) use algorithmic pricing
-- Cross-exchange arbitrage maintains price consistency
-- Oracle networks bring off-chain price discovery on-chain
+  ## Price Discovery in Different Markets
 
-### Fixed Income Markets
-- Dealer-driven OTC markets with less transparency
-- Benchmark rates (SOFR, SONIA) serve as reference prices
-- Credit spread discovery reflects issuer risk assessment
+  ### Equity Markets
+  - Continuous auction with market makers and limit order books
+  - Pre-market and after-hours discovery with reduced liquidity
+  - Index arbitrage links individual stocks to derivatives
 
-## Efficiency Measures
+  ### Futures Markets
+  - Often lead spot markets in price discovery
+  - Leverage enables greater participation with less capital
+  - Basis relationships link futures to underlying assets
 
-### Informational Efficiency
-- Speed of price adjustment to new information
-- Measured through event studies and variance ratios
-- Strong-form efficiency implies all information reflected instantly
+  ### Cryptocurrency Markets
+  - 24/7 trading across fragmented global venues
+  - DEX automated market makers (AMMs) use algorithmic pricing
+  - Cross-exchange arbitrage maintains price consistency
+  - Oracle networks bring off-chain price discovery on-chain
 
-### Allocative Efficiency
-- Resources directed to highest-value uses
-- Price signals guide capital allocation decisions
-- Distortions from manipulation reduce efficiency
+  ### Fixed Income Markets
+  - Dealer-driven OTC markets with less transparency
+  - Benchmark rates (SOFR, SONIA) serve as reference prices
+  - Credit spread discovery reflects issuer risk assessment
 
-## Challenges and Distortions
+  ## Efficiency Measures
 
-### Market Manipulation
-- Spoofing, layering, and wash trading distort prices
-- Pump-and-dump schemes exploit illiquid markets
-- Regulatory surveillance monitors for manipulation patterns
+  ### Informational Efficiency
+  - Speed of price adjustment to new information
+  - Measured through event studies and variance ratios
+  - Strong-form efficiency implies all information reflected instantly
 
-### Information Delays
-- Geographic and technological latency creates arbitrage opportunities
-- Flash crashes occur when liquidity evaporates suddenly
-- Circuit breakers pause trading during extreme movements
+  ### Allocative Efficiency
+  - Resources directed to highest-value uses
+  - Price signals guide capital allocation decisions
+  - Distortions from manipulation reduce efficiency
 
-### Structural Fragmentation
-- Multiple venues may show different prices temporarily
-- Best execution requirements attempt to address fragmentation
-- Consolidated tape aggregates price information
+  ## Challenges and Distortions
 
-## Blockchain and Decentralised Price Discovery
+  ### Market Manipulation
+  - Spoofing, layering, and wash trading distort prices
+  - Pump-and-dump schemes exploit illiquid markets
+  - Regulatory surveillance monitors for manipulation patterns
 
-### Automated Market Makers (AMMs)
-- Constant function market makers (e.g., x*y=k) provide algorithmic pricing
-- Liquidity pools replace traditional order books
-- Slippage increases with trade size relative to pool depth
+  ### Information Delays
+  - Geographic and technological latency creates arbitrage opportunities
+  - Flash crashes occur when liquidity evaporates suddenly
+  - Circuit breakers pause trading during extreme movements
 
-### Oracle Networks
-- Bridge off-chain price data to smart contracts
-- Chainlink, Pyth, and other oracle providers aggregate price feeds
-- Manipulation resistance through decentralisation and aggregation
+  ### Structural Fragmentation
+  - Multiple venues may show different prices temporarily
+  - Best execution requirements attempt to address fragmentation
+  - Consolidated tape aggregates price information
 
-### MEV and Price Discovery
-- Block producers can extract value through transaction ordering
-- Front-running affects effective execution prices
-- Solutions like Flashbots attempt to mitigate extraction
+  ## Blockchain and Decentralised Price Discovery
 
-## Related Concepts
-- [[Market Microstructure]]
-- [[Liquidity]]
-- [[Order Book]]
-- [[Arbitrage]]
-- [[MEV]]
+  ### Automated Market Makers (AMMs)
+  - Constant function market makers (e.g., x*y=k) provide algorithmic pricing
+  - Liquidity pools replace traditional order books
+  - Slippage increases with trade size relative to pool depth
 
-#finance #markets #price-discovery #market-microstructure
+  ### Oracle Networks
+  - Bridge off-chain price data to smart contracts
+  - Chainlink, Pyth, and other oracle providers aggregate price feeds
+  - Manipulation resistance through decentralisation and aggregation
 
-## Metadata
+  ### MEV and Price Discovery
+  - Block producers can extract value through transaction ordering
+  - Front-running affects effective execution prices
+  - Solutions like Flashbots attempt to mitigate extraction
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Comprehensive review completed
-- **References**: 5 pages reference this concept
+  #### Related Concepts
+  - [[Market Microstructure]]
+  - [[Liquidity]]
+  - [[Order Book]]
+  - [[Arbitrage]]
+  - [[MEV]]
+
+  #finance #markets #price-discovery #market-microstructure
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,38 +1,46 @@
 {
-  "id": "Virtual World Creation",
+  "id": "virtual-world-creation",
   "title": "Virtual World Creation",
-  "content": "- ### OntologyBlock\n  id:: virtual-world-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10154\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Creation\n\t- status:: active\n\t- definition:: The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.\n\t- owl:class:: mv:VirtualWorldCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Content Creation]]\n\t\t- related-to:: [[Procedural Generation]]\n\t\t- related-to:: [[Game Engine]]\n\t\t- related-to:: [[Terrain Generation]]\n\t  id:: virtual-world-creation-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual world creation spans from procedural terrain generation to full game world development. World Machine has been the preferred terrain solution for AAA studios for over a decade. World Creator 2024.3 introduced enhanced procedural terrain generation optimized for Unreal Engine and Unity. Procedural Worlds serves 150,000+ Unity customers. Dreamteck completed innovative procedural level generation technology in April 2024.\n- ## Technical Details\n\t- ### Procedural Generation Techniques\n\t\t- **Perlin/Simplex Noise**: Natural terrain textures and heightmaps\n\t\t- **Cellular Automata**: Organic cave systems and growth patterns\n\t\t- **L-Systems**: Fractal-like plant and vegetation structures\n\t\t- **Markov Chains**: Text, music, and level layout generation\n\t- ### Terrain Generation Tools\n\t\t- **World Machine**: Industry-standard fractal-based terrain\n\t\t- **World Creator**: Real-time GPU terrain generation\n\t\t- **Procedural Worlds Storm**: Unity terrain and biome platform\n\t\t- **Gaea**: Erosion simulation and realistic landscapes\n\t- ### Game Engine Capabilities\n\t\t- Unreal Engine Blueprint visual scripting\n\t\t- Unity procedural generation tools\n\t\t- Large-scale environment handling\n\t\t- Real-time rendering optimization\n\t- ### Key Benefits\n\t\t- **Infinite Replayability**: New content per playthrough\n\t\t- **Reduced Development Cost**: Automated content creation\n\t\t- **Smaller File Sizes**: Algorithmic rather than stored content\n\t\t- **Seed-Based Generation**: Repeatable worlds for testing\n- ## Applications\n\t- Open world game development\n\t- Metaverse platform environments\n\t- VFX environment creation\n\t- Simulation training worlds\n\t- Procedural landscape visualization",
+  "content": "- ### Definition\n  - The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualWorldCreation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Content Creation]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual world creation spans from procedural terrain generation to full game world development. World Machine has been the preferred terrain solution for AAA studios for over a decade. World Creator 2024.3 introduced enhanced procedural terrain generation optimized for Unreal Engine and Unity. Procedural Worlds serves 150,000+ Unity customers. Dreamteck completed innovative procedural level generation technology in April 2024.\n  - ## Technical Details\n  - ### Procedural Generation Techniques\n\t\t- **Perlin/Simplex Noise**: Natural terrain textures and heightmaps\n\t\t- **Cellular Automata**: Organic cave systems and growth patterns\n\t\t- **L-Systems**: Fractal-like plant and vegetation structures\n\t\t- **Markov Chains**: Text, music, and level layout generation\n  - ### Terrain Generation Tools\n\t\t- **World Machine**: Industry-standard fractal-based terrain\n\t\t- **World Creator**: Real-time GPU terrain generation\n\t\t- **Procedural Worlds Storm**: Unity terrain and biome platform\n\t\t- **Gaea**: Erosion simulation and realistic landscapes\n  - ### Game Engine Capabilities\n\t\t- Unreal Engine Blueprint visual scripting\n\t\t- Unity procedural generation tools\n\t\t- Large-scale environment handling\n\t\t- Real-time rendering optimization\n  - ### Key Benefits\n\t\t- **Infinite Replayability**: New content per playthrough\n\t\t- **Reduced Development Cost**: Automated content creation\n\t\t- **Smaller File Sizes**: Algorithmic rather than stored content\n\t\t- **Seed-Based Generation**: Repeatable worlds for testing\n  - ## Applications\n  - Open world game development\n  - Metaverse platform environments\n  - VFX environment creation\n  - Simulation training worlds\n  - Procedural landscape visualization\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Game Engine"
   ],
   "wiki_links": [
-    "Procedural Generation",
     "Digital Content Creation",
-    "Terrain Generation",
-    "Game Engine",
     "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-world-creation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualWorldCreation",
+    "content_hash": "sha256-12-add951dbb3c3",
+    "legacy_term_id": "MV-10154",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-world-creation",
+    "schema_version": "v2",
     "term_id": "MV-10154",
     "preferred_term": "Virtual World Creation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualWorldCreation",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The comprehensive process of designing, developing, and deploying immersive 3D virtual environments using game engines, procedural generation algorithms, and specialized terrain tools, encompassing everything from initial concept to fully realized interactive digital worlds for games, metaverse platforms, and simulations.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualWorldCreation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualWorldCreation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Content Creation"
@@ -45,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Procedural Generation",
-        "Game Engine",
-        "Terrain Generation"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

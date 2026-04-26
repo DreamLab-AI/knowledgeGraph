@@ -1,0 +1,69 @@
+{
+  "id": "virtual-labor",
+  "title": "Virtual Labor",
+  "content": "- ### Definition\n  - Virtual Labor is a concept within the mv domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualLabor\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n\n  #### Key Characteristics\n  - **Compensated Activities**: Direct monetary payment for virtual services\n  - **Value Creation**: Production of digital goods, experiences, or services\n  - **Platform Dependency**: Labor tied to specific virtual world infrastructures\n  - **Skill Requirements**: Technical, creative, and social competencies\n  - **Precarity Issues**: Often informal, contract-based, or platform-mediated\n\n  ## Economic Models\n\n  - **Commission-Based**: Payment per completed virtual item or service\n  - **Subscription Services**: Recurring fees for ongoing virtual labor\n  - **Revenue Sharing**: Percentage of sales from user-generated content\n  - **Platform Wages**: Direct employment by metaverse operators\n  - **Tip/Donation Systems**: Voluntary compensation from beneficiaries\n\n  ## Definition\n\n  Work performed in virtual environments that generates economic value, spanning content creation, service provision, virtual construction, platform governance, and social labor.\n\n  #### Related Concepts\n  - [[Virtual Economy]]\n  - [[Land Economics]]\n  - [[Digital Asset]]\n  - [[Virtual Currency]]\n  - [[User-Generated Content]]\n\n  ## Applications\n\n  - Virtual architecture and construction\n  - Digital fashion design\n  - Virtual event hosting and entertainment\n  - In-world moderation and community management\n  - Avatar customization services\n  - Virtual tutoring and education\n\n  ## Challenges\n\n  - Labor rights and protections in virtual spaces\n  - Taxation of cross-border virtual income\n  - Platform monopolies and exploitation\n  - Work-life boundary dissolution\n  - Skill transferability to physical economy\n\n  #### References\n  - Fairfield, J. (2021). *Owned: Property, Privacy, and the New Digital Serfdom*\n  - Lehdonvirta, V. (2018). \"Flexibility in the Gig Economy\"\n  - Taylor, T. L. (2006). *Play Between Worlds: Exploring Online Game Culture*\n\n  ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Land Economics"
+  ],
+  "wiki_links": [
+    "Digital Asset",
+    "Land Economics",
+    "Metaverse",
+    "User-Generated Content",
+    "Virtual Currency",
+    "Virtual Economy"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-labor",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualLabor",
+    "content_hash": "sha256-12-1364990eb843",
+    "legacy_term_id": "MV-virtual-labor",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-labor",
+    "schema_version": "v2",
+    "term_id": "MV-virtual-labor",
+    "preferred_term": "Virtual Labor",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Virtual Labor is a concept within the mv domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualLabor",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

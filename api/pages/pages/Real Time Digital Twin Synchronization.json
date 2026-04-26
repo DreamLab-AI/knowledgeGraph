@@ -1,37 +1,45 @@
 {
-  "id": "Real Time Digital Twin Synchronization",
+  "id": "real-time-digital-twin-synchronization",
   "title": "Real Time Digital Twin Synchronization",
-  "content": "- ### OntologyBlock\n  id:: real-time-digital-twin-synchronization-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10017\n\t- source-domain:: mv\n\t- preferred-term:: Real Time Digital Twin Synchronization\n\t- status:: active\n\t- definition:: The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.\n\t- owl:class:: mv:RealTimeDigitalTwinSynchronization\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: real-time-digital-twin-synchronization-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Twin Technology]]\n\t\t- related-to:: [[Industrial Metaverse]]\n\t\t- related-to:: [[IoT Integration]]\n\t\t- related-to:: [[Predictive Maintenance]]\n\t\t- enables:: [[Virtual Real Interaction]]\n\t- #### Key Technologies\n\t  collapsed:: true\n\t\t- IoT sensor networks for data capture\n\t\t- Cloud rendering for visualization\n\t\t- Big data analytics for processing\n\t\t- 5G connectivity for low latency\n\t\t- AI for predictive analytics\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Industrial metaverse valued at $34.44B in 2024\n\t\t- Projected growth to $181.04B by 2030\n\t\t- 32% expected growth rate\n\t\t- Industry 4.0 transformation driver\n\t\t- Virtual factory displays and remote control",
+  "content": "- ### Definition\n  - The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:RealTimeDigitalTwinSynchronization\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Twin Technology]]\n  - enables:: [[Virtual Real Interaction]]\n\n- ### Content\n\n  - #### Key Technologies\n\t\t- IoT sensor networks for data capture\n\t\t- Cloud rendering for visualization\n\t\t- Big data analytics for processing\n\t\t- 5G connectivity for low latency\n\t\t- AI for predictive analytics\n  - #### Market Context\n\t\t- Industrial metaverse valued at $34.44B in 2024\n\t\t- Projected growth to $181.04B by 2030\n\t\t- 32% expected growth rate\n\t\t- Industry 4.0 transformation driver\n\t\t- Virtual factory displays and remote control\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Industrial Metaverse",
-    "Virtual Real Interaction",
-    "metaverse",
-    "Predictive Maintenance",
     "Digital Twin Technology",
-    "IoT Integration"
+    "Virtual Real Interaction",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:real-time-digital-twin-synchronization",
+    "iri": "http://narrativegoldmine.com/spatial-computing#RealTimeDigitalTwinSynchronization",
+    "content_hash": "sha256-12-fc4594cb4aec",
+    "legacy_term_id": "MV-10017",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:real-time-digital-twin-synchronization",
+    "schema_version": "v2",
     "term_id": "MV-10017",
     "preferred_term": "Real Time Digital Twin Synchronization",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#RealTimeDigitalTwinSynchronization",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:RealTimeDigitalTwinSynchronization",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:RealTimeDigitalTwinSynchronization",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Twin Technology"
@@ -46,26 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Industrial Metaverse",
-        "IoT Integration",
-        "Predictive Maintenance"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

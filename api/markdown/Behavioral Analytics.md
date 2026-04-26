@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: behavioralanalytics-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#BehavioralAnalytics
+uri:: urn:visionclaw:concept:artificial-intelligence:behavioral-analytics
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:behavioral-analytics
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Behavioral Analytics
+content-hash:: sha256-12-5bd05ff43762
+legacy-term-id:: AI-0873
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[Telecollaboration]]
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0873
-    - filename-history:: ["AI-0873-behavioralanalytics.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0873
-    - preferred-term:: Behavioral Analytics
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Behavioral Analytics is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:BehavioralAnalytics
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:BehavioralAnalytics
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Machine Learning]]
+- ### Content
+  Behavioral Analytics — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :BehavioralAnalytics))
-      (SubClassOf :BehavioralAnalytics :MachineLearning)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :BehavioralAnalytics "Behavioral Analytics"@en)
-      ```
-
-- ## About Behavioral Analytics
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

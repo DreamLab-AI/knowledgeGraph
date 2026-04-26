@@ -1,63 +1,65 @@
 {
-  "id": "Fuzzy Logic",
+  "id": "fuzzy-logic",
   "title": "Fuzzy Logic",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1010\n  - preferred-term:: Fuzzy Logic\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:FuzzyLogic\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]\n- skos:related:: [[Expert Systems]]\n- skos:related:: [[Knowledge Representation]]\n- skos:related:: [[Soft Computing]]\n- skos:related:: [[Approximate Reasoning]]\n- enables:: [[Control Systems]]\n- enables:: [[Decision Making]]\n\n### Definition\nFuzzy logic is a form of multi-valued logic that deals with approximate rather than precise reasoning. Unlike classical Boolean logic with binary true/false values, fuzzy logic allows variables to have degrees of truth between 0 and 1, enabling computers to handle the kind of imprecise, qualitative information humans use naturally in everyday reasoning.\n\n### Core Concepts\n**Membership Functions:**\n- Map values to degrees of membership [0,1]\n- Triangular, trapezoidal, Gaussian shapes\n- Example: temperature \"hot\" gradually increases from 0 at 20°C to 1 at 35°C\n\n**Linguistic Variables:**\n- Variables with fuzzy values\n- Example: Temperature = {cold, cool, warm, hot}\n- Height = {short, medium, tall}\n\n**Fuzzy Sets:**\n- Elements have partial membership\n- Example: 28°C might be 0.6 \"warm\" and 0.4 \"hot\"\n\n### Fuzzy Inference Process\n1. **Fuzzification**: Convert crisp inputs to fuzzy values\n2. **Rule Evaluation**: Apply IF-THEN rules\n3. **Aggregation**: Combine rule outputs\n4. **Defuzzification**: Convert to crisp output\n\n### Fuzzy Rules Example\n```\nIF temperature is hot AND humidity is high\n  THEN fan_speed is fast\n\nIF temperature is cool OR humidity is low\n  THEN fan_speed is slow\n```\n\n### Fuzzy Operations\n- AND: minimum (T-norm)\n- OR: maximum (T-conorm)\n- NOT: 1 - membership\n\n### Applications\n**Control Systems:**\n- Washing machines\n- Air conditioning\n- Automotive cruise control\n- Camera autofocus\n\n**Decision Support:**\n- Medical diagnosis\n- Risk assessment\n- Pattern recognition\n- Image processing\n\n**Industrial:**\n- Quality control\n- Process optimization\n- Robotics\n\n### Advantages\n- Handles imprecise information\n- Mimics human reasoning\n- Simple rule-based structure\n- Robust to noise and uncertainty\n\n### Historical Note\nIntroduced by Lotfi Zadeh in 1965, initially controversial but widely adopted in Japanese consumer electronics and industrial control by the 1980s.",
-  "backlinks": [
-    "Expert Systems"
-  ],
+  "content": "- ### Definition\n  - Fuzzy Logic is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:FuzzyLogic\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - enables:: [[Control Systems]]\n\n- ### Content\n\n  ### Definition\n  Fuzzy logic is a form of multi-valued logic that deals with approximate rather than precise reasoning. Unlike classical Boolean logic with binary true/false values, fuzzy logic allows variables to have degrees of truth between 0 and 1, enabling computers to handle the kind of imprecise, qualitative information humans use naturally in everyday reasoning.\n\n  ### Core Concepts\n  **Membership Functions:**\n  - Map values to degrees of membership [0,1]\n  - Triangular, trapezoidal, Gaussian shapes\n  - Example: temperature \"hot\" gradually increases from 0 at 20°C to 1 at 35°C\n\n  **Linguistic Variables:**\n  - Variables with fuzzy values\n  - Example: Temperature = {cold, cool, warm, hot}\n  - Height = {short, medium, tall}\n\n  **Fuzzy Sets:**\n  - Elements have partial membership\n  - Example: 28°C might be 0.6 \"warm\" and 0.4 \"hot\"\n\n  ### Fuzzy Inference Process\n  1. **Fuzzification**: Convert crisp inputs to fuzzy values\n  2. **Rule Evaluation**: Apply IF-THEN rules\n  3. **Aggregation**: Combine rule outputs\n  4. **Defuzzification**: Convert to crisp output\n\n  ### Fuzzy Rules Example\n  ```\n  IF temperature is hot AND humidity is high\n  THEN fan_speed is fast\n\n  IF temperature is cool OR humidity is low\n  THEN fan_speed is slow\n  ```\n\n  ### Fuzzy Operations\n  - AND: minimum (T-norm)\n  - OR: maximum (T-conorm)\n  - NOT: 1 - membership\n\n  ### Applications\n  **Control Systems:**\n  - Washing machines\n  - Air conditioning\n  - Automotive cruise control\n  - Camera autofocus\n\n  **Decision Support:**\n  - Medical diagnosis\n  - Risk assessment\n  - Pattern recognition\n  - Image processing\n\n  **Industrial:**\n  - Quality control\n  - Process optimization\n  - Robotics\n\n  ### Advantages\n  - Handles imprecise information\n  - Mimics human reasoning\n  - Simple rule-based structure\n  - Robust to noise and uncertainty\n\n  ### Historical Note\n  Introduced by Lotfi Zadeh in 1965, initially controversial but widely adopted in Japanese consumer electronics and industrial control by the 1980s.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
     "Artificial Intelligence",
-    "Soft Computing",
-    "Knowledge Representation",
-    "Approximate Reasoning",
-    "Expert Systems",
-    "Control Systems",
-    "Decision Making"
+    "Control Systems"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:fuzzy-logic",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#FuzzyLogic",
+    "content_hash": "sha256-12-de3908a082b0",
+    "legacy_term_id": "AI-1010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:fuzzy-logic",
+    "schema_version": "v2",
     "term_id": "AI-1010",
     "preferred_term": "Fuzzy Logic",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#FuzzyLogic",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Fuzzy Logic is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:FuzzyLogic",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:FuzzyLogic",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Control Systems"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

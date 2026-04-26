@@ -1,108 +1,121 @@
-id:: etsi-metaverse-domain-model-ontology
+iri:: http://narrativegoldmine.com/spatial-computing#EtsiMetaverseDomainModel
+uri:: urn:visionclaw:concept:spatial-computing:etsi-metaverse-domain-model
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:etsi-metaverse-domain-model
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Etsi Metaverse Domain Model
+content-hash:: sha256-12-6d0dca2e8bf4
+legacy-term-id:: MV-9897
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-- ### OntologyBlock
-  id:: Etsi Metaverse Domain Model
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9897
-  - preferred-term:: Etsi Metaverse Domain Model
-  - source-domain:: mv
-  - owl:class:: mv:EtsiMetaverseDomainModel
-  - status:: active
-  - definition:: A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.
+- ### Definition
+  - A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.
 
-### Relationships
-- is-subclass-of:: [[Domain Model]]
-- related-to:: [[Etsi Domain Immersive]]
-- related-to:: [[Metaverse Architecture]]
-- defines:: [[Metaverse Reference Architecture]]
+- ### Semantic Classification
+  - owl-class:: spatial-computing:EtsiMetaverseDomainModel
+  - owl-role:: Concept
 
-## Domain Model Structure
+- ### Relationships
+  - is-subclass-of:: [[Domain Model]]
 
-### Core Components
-- **User Domain**: End-user devices, interfaces, and identity management
-- **Application Domain**: Virtual worlds, services, and content delivery
-- **Infrastructure Domain**: Networks, compute, and storage resources
-- **Management Domain**: Orchestration, security, and governance
+- ### Content
 
-### Functional Layers
-- Presentation layer (XR rendering)
-- Session layer (user sessions, state management)
-- Service layer (metaverse applications)
-- Platform layer (compute, storage, networking)
+  ## Domain Model Structure
 
-## Technical Architecture
+  ### Core Components
+  - **User Domain**: End-user devices, interfaces, and identity management
+  - **Application Domain**: Virtual worlds, services, and content delivery
+  - **Infrastructure Domain**: Networks, compute, and storage resources
+  - **Management Domain**: Orchestration, security, and governance
 
-### Network Infrastructure
-- 5G/6G core network integration
-- Edge computing nodes
-- Content delivery networks
-- Distributed storage systems
+  ### Functional Layers
+  - Presentation layer (XR rendering)
+  - Session layer (user sessions, state management)
+  - Service layer (metaverse applications)
+  - Platform layer (compute, storage, networking)
 
-### Compute Distribution
-- Cloud computing backend
-- Edge processing nodes
-- Device-local computation
-- Hybrid processing models
+  ## Technical Architecture
 
-### Data Management
-- Real-time synchronisation
-- State persistence
-- Asset management
-- Identity federation
+  ### Network Infrastructure
+  - 5G/6G core network integration
+  - Edge computing nodes
+  - Content delivery networks
+  - Distributed storage systems
 
-## Interoperability Framework
+  ### Compute Distribution
+  - Cloud computing backend
+  - Edge processing nodes
+  - Device-local computation
+  - Hybrid processing models
 
-### Cross-Platform Standards
-- Avatar interoperability
-- Asset portability
-- Identity federation
-- Session continuity
+  ### Data Management
+  - Real-time synchronisation
+  - State persistence
+  - Asset management
+  - Identity federation
 
-### Protocol Specifications
-- Signalling protocols
-- Media transport
-- Synchronisation mechanisms
-- Security protocols
+  ## Interoperability Framework
 
-## Quality of Experience
+  ### Cross-Platform Standards
+  - Avatar interoperability
+  - Asset portability
+  - Identity federation
+  - Session continuity
 
-### Metrics Framework
-- Visual quality indicators
-- Audio fidelity measures
-- Interaction latency metrics
-- Presence and immersion scores
+  ### Protocol Specifications
+  - Signalling protocols
+  - Media transport
+  - Synchronisation mechanisms
+  - Security protocols
 
-### Performance Requirements
-- Motion-to-photon latency targets
-- Frame rate specifications
-- Resolution standards
-- Spatial audio requirements
+  ## Quality of Experience
 
-## Implementation Guidance
+  ### Metrics Framework
+  - Visual quality indicators
+  - Audio fidelity measures
+  - Interaction latency metrics
+  - Presence and immersion scores
 
-### Deployment Models
-- Private metaverse environments
-- Public metaverse platforms
-- Hybrid configurations
-- Federated metaverses
+  ### Performance Requirements
+  - Motion-to-photon latency targets
+  - Frame rate specifications
+  - Resolution standards
+  - Spatial audio requirements
 
-### Security Considerations
-- Authentication mechanisms
-- Data protection frameworks
-- Privacy preservation
-- Content moderation
+  ## Implementation Guidance
 
-## Coordination with Standards Bodies
+  ### Deployment Models
+  - Private metaverse environments
+  - Public metaverse platforms
+  - Hybrid configurations
+  - Federated metaverses
 
-### ETSI Coordination
-- ITU Focus Group on Metaverse
-- Metaverse Standards Forum
-- 3GPP for network specifications
-- IEEE for device standards
+  ### Security Considerations
+  - Authentication mechanisms
+  - Data protection frameworks
+  - Privacy preservation
+  - Content moderation
 
-## Metadata
+  ## Coordination with Standards Bodies
 
-- **Migration Status**: Enriched via domain knowledge 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### ETSI Coordination
+  - ITU Focus Group on Metaverse
+  - Metaverse Standards Forum
+  - 3GPP for network specifications
+  - IEEE for device standards
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

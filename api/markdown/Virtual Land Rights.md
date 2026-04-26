@@ -1,45 +1,63 @@
-- ### OntologyBlock
-  id:: virtual-land-rights-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10128
-	- source-domain:: mv
-	- preferred-term:: Virtual Land Rights
-	- status:: active
-	- definition:: Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.
-	- owl:class:: mv:VirtualLandRights
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Digital Property Rights]]
-		- related-to:: [[NFT]]
-		- related-to:: [[Virtual Real Estate]]
-		- related-to:: [[Blockchain]]
-	  id:: virtual-land-rights-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual land rights are NFT-based ownership claims to metaverse real estate. Land ownership is represented by unique blockchain tokens acting as digital deeds. Decentraland has 90,601 fixed land parcels while The Sandbox has 166,464 LAND tokens. Major brands including HSBC, Samsung, and Nike have invested in virtual properties. Market growth is predicted at 37.73% CAGR from 2024 to 2030.
-- ## Technical Details
-	- ### Ownership Mechanisms
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualLandRights
+uri:: urn:visionclaw:concept:spatial-computing:virtual-land-rights
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-land-rights
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Land Rights
+content-hash:: sha256-12-87ec61187ab3
+legacy-term-id:: MV-10128
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualLandRights
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Digital Property Rights]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual land rights are NFT-based ownership claims to metaverse real estate. Land ownership is represented by unique blockchain tokens acting as digital deeds. Decentraland has 90,601 fixed land parcels while The Sandbox has 166,464 LAND tokens. Major brands including HSBC, Samsung, and Nike have invested in virtual properties. Market growth is predicted at 37.73% CAGR from 2024 to 2030.
+  - ## Technical Details
+  - ### Ownership Mechanisms
 		- **NFT Deeds**: Unique tokens proving ownership on blockchain
 		- **Smart Contracts**: Automated transfer and rights management
 		- **On-Chain Records**: Immutable ownership history
 		- **Wallet Storage**: Secure custody of land NFTs
-	- ### Rights Included
+  - ### Rights Included
 		- Development and building rights
 		- Rental and lease agreements
 		- Commercial usage permissions
 		- Resale and transfer rights
-	- ### Major Platforms
+  - ### Major Platforms
 		- Decentraland (MANA/LAND tokens)
 		- The Sandbox (SAND/LAND tokens)
 		- Otherside (Otherdeed NFTs)
 		- Somnium Space, Cryptovoxels
-- ## Applications
-	- Virtual real estate investment
-	- Commercial space development
-	- Event venue creation
-	- Brand flagship store locations
-	- Gaming and entertainment destinations
+  - ## Applications
+  - Virtual real estate investment
+  - Commercial space development
+  - Event venue creation
+  - Brand flagship store locations
+  - Gaming and entertainment destinations
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

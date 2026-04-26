@@ -1,66 +1,103 @@
 {
-  "id": "Cosmos IBC",
+  "id": "cosmos-ibc",
   "title": "Cosmos IBC",
-  "content": "- ### OntologyBlock\n  id:: BC-9001\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-9001\n\t- source-domain:: bc\n\t- preferred-term:: Cosmos IBC\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.\n\t- source:: [[Cosmos Network]], [[IBC Protocol]]\n\t- maturity:: emerging\n\t- owl:class:: bc:CosmosIBC\n\t- owl:role:: Process\n\t- belongsToDomain:: [[BlockchainDomain]]\n\t- isSubclassOf:: [[Layer 0 Protocol]], [[Interoperability Protocol]]\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "content": "- ### Definition\n  - Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:CosmosIBC\n  - owl-role:: Process\n  - belongs-to-domain:: [[BlockchainDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Interoperability Protocol]], [[Cross-Chain Communication]]\n  - requires:: [[Blockchain Light Client]], [[Merkle Proof]], [[Packet Authentication]]\n  - enables:: [[Inter-Chain Value Transfer]], [[Cross-Chain Contracts]], [[Cosmos Ecosystem]]\n  - has-part:: [[Connection Protocol]], [[Channel Protocol]], [[Packet System]]\n  - bridges-to:: [[Polkadot XCM]], [[Layer 2 Interop]]\n\n- ### Content\n\n  Inter-Blockchain Communication (IBC) protocol enables trustless communication between independent Cosmos SDK blockchains without centralised intermediaries. Each chain maintains light clients of counterparty chains, verifying state through Merkle proofs rather than trusting external validators. IBC establishes bidirectional \"channels\" enabling packet relay at the application layer.\n\n  The protocol operates in three layers: connection layer managing cryptographic proofs between chains, channel layer establishing virtual communication paths for specific applications, and packet layer transferring serialised data with timeout and acknowledgement mechanisms. Tokens transfer through fungible token transfers (ICS-20) creating wrapped representations on destination chains whilst burning originals.\n\n  IBC enables the Cosmos \"Internet of Blockchains\" vision—a network of independent chains maintaining sovereignty whilst achieving interoperability. Application-specific blockchains optimise for particular use cases (identity, payments, DeFi), then connect through IBC enabling users and value to flow seamlessly across the ecosystem.\n\n- ### Provenance\n  - sources:: [[Cosmos Network]], [[IBC Protocol]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Value Transfer",
     "Interoperability"
   ],
   "wiki_links": [
-    "Layer 0 Protocol",
-    "IBC Protocol",
+    "AI Agent System",
+    "Blockchain Light Client",
     "BlockchainDomain",
-    "Blockchain",
+    "Channel Protocol",
+    "Connection Protocol",
+    "Cosmos Ecosystem",
+    "Cosmos Network",
+    "Cross-Chain Communication",
+    "Cross-Chain Contracts",
+    "IBC Protocol",
+    "Inter-Chain Value Transfer",
     "Interoperability Protocol",
-    "Cosmos Network"
+    "Layer 2 Interop",
+    "Merkle Proof",
+    "Packet Authentication",
+    "Packet System",
+    "Polkadot XCM",
+    "Virtual Economy"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:cosmos-ibc",
+    "iri": "http://narrativegoldmine.com/blockchain#CosmosIBC",
+    "content_hash": "sha256-12-cf092a0261a4",
+    "legacy_term_id": "BC-9001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:cosmos-ibc",
+    "schema_version": "v2",
     "term_id": "BC-9001",
     "preferred_term": "Cosmos IBC",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#CosmosIBC",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.1.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:CosmosIBC",
-    "owl_physicality": null,
+    "quality_score": 0.5,
+    "authority_score": 0.65,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:CosmosIBC",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
-    "has_part": [],
+    "is_subclass_of": [
+      "Interoperability Protocol",
+      "Cross-Chain Communication"
+    ],
+    "has_part": [
+      "Connection Protocol",
+      "Channel Protocol",
+      "Packet System"
+    ],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Blockchain Light Client",
+      "Merkle Proof",
+      "Packet Authentication"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Inter-Chain Value Transfer",
+      "Cross-Chain Contracts",
+      "Cosmos Ecosystem"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Polkadot XCM",
+      "Layer 2 Interop"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "BlockchainDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Cosmos Network",
       "IBC Protocol"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

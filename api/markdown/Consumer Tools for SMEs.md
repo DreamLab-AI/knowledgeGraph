@@ -1,8 +1,34 @@
+iri:: http://narrativegoldmine.com/infrastructure#ConsumerToolsForSMEs
+uri:: urn:visionclaw:concept:infrastructure:consumer-tools-for-smes
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:consumer-tools-for-smes
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Consumer Tools for SMEs
+content-hash:: sha256-12-5cf41a885850
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- # Business Functions
-	- collapsed:: true
-	  
+- ### Definition
+  - Consumer Tools for SMEs is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:ConsumerToolsForSMEs
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
+  - # Business Functions
 	  **AI Technology & Concepts**
 		- LLMs (Large Language Models)
 		- Automation
@@ -10,8 +36,6 @@ public:: true
 		- Agents
 		- Avatars
 		- Tech & Infrastructure
-	- collapsed:: true
-	  
 	  **Business Functions & Roles**
 		- Business
 		- Marketing
@@ -24,8 +48,6 @@ public:: true
 		- Small Business
 		- Entrepreneurs
 		- Solopreneurs
-	- collapsed:: true
-	  
 	  **Creative & Media**
 		- Creativity
 		- Design
@@ -35,8 +57,6 @@ public:: true
 		- Audio
 		- Music
 		- Creators
-	- collapsed:: true
-	  
 	  **Skills, Learning & Productivity**
 		- Coding
 		- Productivity
@@ -44,12 +64,10 @@ public:: true
 		- Education
 		- Professional Development
 		- Personal Growth
-- # Selected Consumer Tools
-	- Search
+  - # Selected Consumer Tools
+  - Search
 		- [Perplexity](https://www.perplexity.ai/)
 		- Deep research.
-		-
-	- ### DONE Task & Project Management / Organisation
 		- *Task:* Organise work, manage tasks and projects, and improve personal or team productivity.
 		- **BeforeSunset**
 			- *Description:* AI-powered planner/assistant designed to help manage tasks, to-do lists, and daily goals more effectively. May offer analytics or time planning features.
@@ -63,9 +81,6 @@ public:: true
 			- *Description:* AI feature within Twitter/X that helps automatically categorise bookmarked tweets.
 			- *Cost:* Included with Twitter/X usage (potentially requires Premium subscription for full features).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Twitter / X](https://twitter.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## Marketing and Sales
-		- ### DONE Market Analysis & Research
-		  collapsed:: true
 			- **Claude 3 (Opus/Sonnet/Haiku)**
 				- *Description:* Advanced large language model capable of analysing large datasets, generating detailed reports, summarising information, and performing complex reasoning tasks like market analysis through structured prompts (including 'subagents' approach in Opus).
 				- *Cost:* Offers free tier (Haiku via API/claude.ai). Paid API access based on usage (tokens). Claude Pro subscription (~$20 USD/month) for priority access & higher limits.
@@ -82,8 +97,6 @@ public:: true
 				- *Description:* All-in-one B2B sales suite using AI for market research, identifying relevant prospects, and customising value propositions using natural language.
 				- *Cost:* Likely subscription-based; requires checking website or contacting sales.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Aomni](https://www.google.com/search?q=https://www.aomni.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### DONE Lead Generation & Sales Outreach
-		  collapsed:: true
 			- **Run.Reply.io (with Jason AI)**
 				- *Description:* Sales engagement platform automating multi-channel outreach (email, etc.). Jason AI component helps generate and draft emails for cold outreach.
 				- *Cost:* Subscription-based, plans often start from $60-$90 USD/user/month.
@@ -100,8 +113,6 @@ public:: true
 				- *Description:* AI tool for creating personalised cold-outreach videos at scale. Record once, then use AI to customise for individual prospects.
 				- *Cost:* Check website for pricing details (likely subscription/usage-based).
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Dopplio](https://www.dopplio.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### DONE Logo Design & Branding
-		  collapsed:: true
 			- *Task:* Create a professional logo and develop a visual identity for the business.
 			- **Looka**
 				- *Description:* AI-powered platform that generates logo ideas based on business name and industry preferences. Also offers brand kit creation (social media assets, business cards).
@@ -119,8 +130,6 @@ public:: true
 				- *Description:* AI tool for generating professional colour palettes from images or natural language prompts. Useful for establishing website/brand colours.
 				- *Cost:* Check website for pricing.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Deblank](https://deblank.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> (*Note: URL is .com not .net*)
-		- ### Social Media Marketing
-		  collapsed:: true
 			- **Gemini / ChatGPT**
 				- *Description:* Can be used to brainstorm post ideas, draft copy, refine messaging, generate hashtags, and adhere to character limits for platforms like Twitter/X.
 				- *Cost:* Free versions available. Paid subscriptions (~$20 USD/month or £18.99 GBP for Gemini) offer enhanced capabilities.
@@ -153,8 +162,6 @@ public:: true
 				- *Description:* Use Browse AI to monitor websites and extract specific data (e.g., news items). Use Zapier to automate posting this extracted content to social media platforms like Instagram.
 				- *Cost:* Browse AI: Free plan, paid plans based on usage. Zapier: Free plan, paid plans based on task volume/features.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Browse.ai](https://www.browse.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> / <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Zapier](https://zapier.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### Writing Assistance & Enhancement
-		  collapsed:: true
 			- *Task:* Improve the quality, clarity, tone, and efficiency of written communications (emails, reports, marketing copy, etc.).
 			- **Grammarly**
 				- *Description:* AI-powered writing assistant for improving grammar, spelling, style, and tone. Helps strike the right professional tone in emails and documents.
@@ -168,8 +175,6 @@ public:: true
 				- *Description:* AI assistant integrated into Microsoft 365 suite (including Outlook, Word, PowerPoint). Helps draft emails, summarise documents, create presentations from prompts.
 				- *Cost:* Requires Microsoft 365 Business Standard/Premium subscription + Copilot add-on (approx. £24.70 GBP/user/month).
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Microsoft Copilot](https://www.microsoft.com/en-gb/microsoft-copilot)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### Search Engine Optimisation (SEO)
-		  collapsed:: true
 			- **SEO.ai**
 				- *Description:* Platform focused on using AI to help build, write, and optimise website articles for better search engine ranking.
 				- *Cost:* Offers various plans, often starting around $49 USD/month. Free trial may be available.
@@ -178,8 +183,6 @@ public:: true
 				- *Description:* Content intelligence tool that helps plan, write, and optimise content to rank higher. Analyses top pages and provides guidelines.
 				- *Cost:* Plans typically start from around $89 USD/month.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Surfer SEO](https://surferseo.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### Video Creation & Editing
-		  collapsed:: true
 			- *Task:* Produce videos for marketing, training, communication, or social media without extensive equipment or editing skills.
 			- **Synthesia**
 				- *Description:* AI video generation platform using stock or custom AI avatars to create videos from text scripts. Good for training, onboarding, marketing updates, and personalised videos at scale.
@@ -213,8 +216,6 @@ public:: true
 				- *Description:* A custom GPT designed to generate short videos based on natural language prompts (likely leveraging underlying text-to-video models).
 				- *Cost:* Requires ChatGPT Plus subscription ($20 USD/month) for custom GPT access. Underlying video generation might have separate costs/limits.
 				- *Website:* (Accessed via ChatGPT GPT Store)
-		- ### Presentation Creation
-		  collapsed:: true
 			- *Task:* Design and build professional presentations and pitch decks more efficiently.
 			- **Gamma**
 				- *Description:* Creates presentations, documents, and basic websites from a single text prompt. Focuses on dynamic and visually appealing layouts.
@@ -232,8 +233,6 @@ public:: true
 				- *Description:* Can generate entire PowerPoint presentations from prompts or Word documents. (See Writing Assistance).
 				- *Cost:* See Writing Assistance.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Microsoft Copilot for M365](https://www.microsoft.com/en-gb/microsoft-copilot/microsoft-copilot-for-microsoft-365)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-		- ### Image Generation & Editing
-		  collapsed:: true
 			- *Task:* Create unique images, enhance product photos, generate backgrounds, or design visual assets for marketing and branding.
 			- **Midjourney**
 				- *Description:* High-quality AI image generator accessed via Discord. Known for artistic and detailed outputs. V6 includes text generation within images, 'Vary Region' for inpainting/product placement.
@@ -267,7 +266,6 @@ public:: true
 				- *Description:* No-code platform for building automated image processing workflows using AI. Useful for repetitive tasks without needing to write code.
 				- *Cost:* Check website for pricing structure.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[ML Blocks](https://mlblocks.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-			- ### Audio & Voice Generation
 				- *Task:* Create voiceovers, audio content like podcasts, or clone voices for various applications.
 				- **ElevenLabs**
 					- *Description:* High-quality text-to-speech and voice cloning AI. Offers a library of voices (Community Voices), can create a synthetic version of your own voice, and provide audio narration for websites (Audio Native). Used for audiobooks, podcasts, voiceovers.
@@ -277,9 +275,6 @@ public:: true
 					- *Description:* AI text-to-voice generator with a large library of voices and languages. Suitable for creating audiobooks, podcasts, and voiceovers.
 					- *Cost:* Free plan available. Paid plans based on word count/features, starting around $30 USD/month (billed annually).
 					- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[PlayHT](https://play.ht/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## Operations & Productivity
-	  collapsed:: true
-		- ### Workflow Automation
 			- Planning applications processing
 			- *Task:* Connect different apps and services to automate repetitive tasks, saving time and reducing errors.
 			- **Zapier**
@@ -294,7 +289,6 @@ public:: true
 				- *Description:* Provides no-code AI workflows specifically for image processing tasks. (See Image Generation).
 				- *Cost:* Check website.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[ML Blocks](https://mlblocks.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ### Email Management & Communication
 		- *Task:* Handle email more efficiently, improve communication quality, and automate email-related tasks.
 		- **Grammarly**
 			- *Description:* Improves email writing quality and tone. (See Content Creation).
@@ -320,16 +314,11 @@ public:: true
 			- *Description:* Email marketing platform focused on beautiful design. Can be used for welcome emails, email campaigns, and automating email receipts (integrates with Stripe/Zapier for e-commerce).
 			- *Cost:* Subscription-based, often starting around $38 USD/month (unlimited subscribers model).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Flodesk](https://flodesk.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	-
-	- ### Scheduling
 		- *Task:* Automate the process of scheduling meetings or appointments.
 		- **Reclaim.ai**
 			- *Description:* AI scheduling tool that automatically finds the best time for meetings, tasks, and habits in your calendar based on priorities. Useful for coordinating schedules (e.g., house viewings).
 			- *Cost:* Free plan available. Paid plans add features, starting around $8 USD/user/month (billed annually).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Reclaim.ai](https://reclaim.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## Web Design & Development
-	-
-	- ### Website Builders & Landing Pages
 		- *Task:* Create websites or landing pages quickly, often with AI assistance and without extensive coding knowledge.
 		- **Wegic**
 			- *Description:* AI-powered website builder using natural language chat prompts to generate multi-page websites in various languages. Allows editing and section redesign via chat.
@@ -367,8 +356,6 @@ public:: true
 			- *Description:* Other AI-powered website builders mentioned in comparisons, focused on rapidly generating sites from prompts.
 			- *Cost:* Mixo: Starts free, paid plans ~$9 USD/month. Durable: Starts ~$12 USD/month.
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Mixo](https://www.mixo.io/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Durable](https://durable.co/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	-
-	- ### UI/UX Design Assistance
 		- *Task:* Designing user interfaces (UI) and user experiences (UX) for websites or applications.
 		- **Galileo.AI**
 			- *Description:* AI tool that generates user interface designs (for websites, mobile apps) from text prompts. Aims to speed up the initial design phase (no-code).
@@ -378,8 +365,6 @@ public:: true
 			- *Description:* Figma is a leading UI/UX design tool. The Landify plugin allows creating web design elements or landing pages within Figma using simple text prompts.
 			- *Cost:* Figma has free starter plans. Paid plans for teams/pro features. Plugin costs vary (Landify may have its own pricing).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Figma](https://www.figma.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> / (Search Figma Community for Landify)
-	-
-	- ### Coding Assistance (Learning & Development)
 		- *Task:* Learning to code or speeding up development processes with AI help.
 		- **OpenAI (GPT-4/API)**
 			- *Description:* Can explain code, generate code snippets, debug errors, and help learn programming concepts. Used in 'Learning to Code with AI' series for understanding and implementation (e.g., adding a chatbot via API).
@@ -389,21 +374,16 @@ public:: true
 			- *Description:* AI-powered code editor (fork of VS Code) designed for pair-programming with AI. Helps write, edit, and understand code faster.
 			- *Cost:* Free tier available. Pro plans offer more features/higher AI usage limits, starting around $20 USD/month.
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Cursor](https://www.google.com/search?q=https://cursor.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----> (*Note: URL updated from .sh to .com*)
-	- ## Customer Interaction & Support
-	- ### Website Chatbots
 		- *Task:* Provide instant responses to customer queries on a website, offer support, or capture leads.
 		- **Wonderchat**
 			- *Description:* AI tool for creating and customising chatbots for websites, trained on website content or provided documents.
 			- *Cost:* Check website for pricing (likely subscription based on features/usage).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Wonderchat](https://wonderchat.io/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ### Analysing Customer Feedback
 		- *Task:* Extract insights from customer interactions (like sales calls or support tickets) to understand needs and improve products/services.
 		- **Buildbetter.ai**
 			- *Description:* AI platform that analyses customer call recordings to generate reports, extract key insights, and create detailed user personas based on actual feedback.
 			- *Cost:* Check website for pricing details (likely subscription).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[BuildBetter.ai](https://buildbetter.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## HR & Onboarding
-	- ### Onboarding Automation
 		- *Task:* Streamline the process of welcoming and integrating new employees or clients.
 		- **Synthesia + Zapier**
 			- *Description:* Automate sending personalised welcome or training videos to new hires/clients using Synthesia for video creation and Zapier for triggering based on HR system events or form submissions.
@@ -417,15 +397,11 @@ public:: true
 			- *Description:* Create quick explainer videos for software or processes, useful for employee training during onboarding. (See Video Creation).
 			- *Cost:* Free and paid plans.
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Guidde](https://www.guidde.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## E-commerce & Physical Products
-	- ### E-commerce Workflow Automation
 		- *Task:* Streamline online sales processes, particularly for digital or physical goods.
 		- **Flodesk + Stripe (+ Zapier/Shipday)**
 			- *Description:* Set up workflows combining Flodesk (email/checkout pages), Stripe (payments), Zapier (connecting apps), and potentially Shipday (delivery management for physical items) to automate order processing, shipping logistics, and customer communication (receipts).
 			- *Cost:* Flodesk (~$38/mo), Stripe (per transaction fees), Zapier (free/paid), Shipday (free/paid).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Flodesk](https://flodesk.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Stripe UK](https://stripe.com/gb)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Zapier](https://zapier.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Shipday](https://shipday.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	-
-	- ### Product Visualisation & Photography
 		- *Task:* Create appealing images of products for online stores and marketing materials.
 		- **AI HomeDesign** (*Formerly listed as HomeDesigns AI*)
 			- *Description:* Primarily for real estate, but can enhance images by removing clutter, virtually staging (adding furniture), or modifying spaces – potentially useful for certain product settings.
@@ -435,20 +411,50 @@ public:: true
 			- *Description:* Tools to create professional product photos by removing/generating backgrounds, placing products in scenes, or creating custom backdrops. (See Image Generation).
 			- *Cost:* Varying free/paid plans.
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Flair.ai](https://flair.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Photoroom](https://www.photoroom.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Patterned AI](https://patterned.ai/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->, <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Canva](https://www.canva.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	-
-	- ### Inventory Management (via Automation)
 		- *Task:* Track and manage stock levels.
 		- **Zapier (Webhook + QR Code)**
 			- *Description:* Set up a system where scanning a QR code triggers a Zapier webhook, which can then update an inventory count in a connected spreadsheet or database (requires setup).
 			- *Cost:* Requires Zapier paid plan likely for webhooks.
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Zapier](https://zapier.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-	- ## Data Management
-	-
-	- ### Table Creation & Data Handling
 		- *Task:* Organising information into tables and integrating with spreadsheet software.
 		- **Gemini Advanced**
 			- *Description:* Can generate tables based on prompts and directly export them to Google Sheets.
 			- *Cost:* Requires Gemini Advanced subscription (~£18.99 GBP/month).
 			- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[Google Gemini](https://gemini.google.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
-			  
 			  <!--EndFragment-->
+
+  - ### DONE Task & Project Management / Organisation
+  - ## Marketing and Sales
+		- ### DONE Market Analysis & Research
+		- ### DONE Lead Generation & Sales Outreach
+		- ### DONE Logo Design & Branding
+		- ### Social Media Marketing
+		- ### Writing Assistance & Enhancement
+		- ### Search Engine Optimisation (SEO)
+		- ### Video Creation & Editing
+		- ### Presentation Creation
+		- ### Image Generation & Editing
+			- ### Audio & Voice Generation
+  - ## Operations & Productivity
+		- ### Workflow Automation
+  - ### Email Management & Communication
+  - ### Scheduling
+  - ## Web Design & Development
+  - ### Website Builders & Landing Pages
+  - ### UI/UX Design Assistance
+  - ### Coding Assistance (Learning & Development)
+  - ## Customer Interaction & Support
+  - ### Website Chatbots
+  - ### Analysing Customer Feedback
+  - ## HR & Onboarding
+  - ### Onboarding Automation
+  - ## E-commerce & Physical Products
+  - ### E-commerce Workflow Automation
+  - ### Product Visualisation & Photography
+  - ### Inventory Management (via Automation)
+  - ## Data Management
+  - ### Table Creation & Data Handling
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

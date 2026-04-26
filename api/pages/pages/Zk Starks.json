@@ -1,36 +1,44 @@
 {
-  "id": "Zk Starks",
+  "id": "zk-starks",
   "title": "ZK-STARKs",
-  "content": "- ### OntologyBlock\n  id:: zk-starks-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10176\n\t- source-domain:: mv\n\t- preferred-term:: ZK-STARKs\n\t- status:: active\n\t- definition:: Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.\n\t- owl:class:: mv:ZKSTARKs\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Zero Knowledge Proof]]\n\t\t- related-to:: [[Blockchain Scalability]]\n\t\t- related-to:: [[Layer 2]]\n\t\t- related-to:: [[StarkNet]]\n\t  id:: zk-starks-relationships\n\t  collapsed:: true\n- ## Overview\n\t- ZK-STARKs provide zero-knowledge proofs without trusted setup requirements, offering transparency and quantum resistance. StarkWare pioneered STARK technology powering StarkEx and Starknet, a permissionless Ethereum validity rollup. The zero-knowledge proof market was valued at $1.28 billion in 2024, projected to reach $7.59 billion by 2033. Over $28 billion sits in ZK-based rollups, with Starknet processing over 10 million transactions monthly.\n- ## Technical Details\n\t- ### Key Properties\n\t\t- **Scalable**: Off-chain computation with exponential verification cost reduction\n\t\t- **Transparent**: No trusted setup or cryptographic toxic waste\n\t\t- **Quantum-Resistant**: Secure against quantum computing attacks\n\t\t- **Large Witness Efficiency**: Cost-effective for big data proofs\n\t- ### StarkWare Ecosystem\n\t\t- **StarkEx**: Scaling solution for specific applications\n\t\t- **Starknet**: Permissionless validity rollup on Ethereum\n\t\t- **Cairo**: Programming language for STARK-based computation\n\t\t- **Graphics Delivery Network**: Proof generation infrastructure\n\t- ### Comparison to ZK-SNARKs\n\t\t- No trusted setup required (more transparent)\n\t\t- Larger proof sizes than SNARKs\n\t\t- Higher verification overhead\n\t\t- Better scalability for large witnesses\n\t- ### Layer 2 Applications\n\t\t- Transaction batching and rollup validation\n\t\t- Reduced Ethereum mainnet gas costs\n\t\t- Faster transaction finality\n\t\t- Maintained security of settlement layer\n- ## Applications\n\t- Ethereum Layer 2 scaling (Starknet)\n\t- Decentralized exchange infrastructure (dYdX)\n\t- Gaming and NFT platform scaling\n\t- Enterprise blockchain solutions\n\t- Privacy-preserving data verification",
+  "content": "- ### Definition\n  - Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ZKSTARKs\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Zero Knowledge Proof]]\n\n- ### Content\n\n  - ## Overview\n  - ZK-STARKs provide zero-knowledge proofs without trusted setup requirements, offering transparency and quantum resistance. StarkWare pioneered STARK technology powering StarkEx and Starknet, a permissionless Ethereum validity rollup. The zero-knowledge proof market was valued at $1.28 billion in 2024, projected to reach $7.59 billion by 2033. Over $28 billion sits in ZK-based rollups, with Starknet processing over 10 million transactions monthly.\n  - ## Technical Details\n  - ### Key Properties\n\t\t- **Scalable**: Off-chain computation with exponential verification cost reduction\n\t\t- **Transparent**: No trusted setup or cryptographic toxic waste\n\t\t- **Quantum-Resistant**: Secure against quantum computing attacks\n\t\t- **Large Witness Efficiency**: Cost-effective for big data proofs\n  - ### StarkWare Ecosystem\n\t\t- **StarkEx**: Scaling solution for specific applications\n\t\t- **Starknet**: Permissionless validity rollup on Ethereum\n\t\t- **Cairo**: Programming language for STARK-based computation\n\t\t- **Graphics Delivery Network**: Proof generation infrastructure\n  - ### Comparison to ZK-SNARKs\n\t\t- No trusted setup required (more transparent)\n\t\t- Larger proof sizes than SNARKs\n\t\t- Higher verification overhead\n\t\t- Better scalability for large witnesses\n  - ### Layer 2 Applications\n\t\t- Transaction batching and rollup validation\n\t\t- Reduced Ethereum mainnet gas costs\n\t\t- Faster transaction finality\n\t\t- Maintained security of settlement layer\n  - ## Applications\n  - Ethereum Layer 2 scaling (Starknet)\n  - Decentralized exchange infrastructure (dYdX)\n  - Gaming and NFT platform scaling\n  - Enterprise blockchain solutions\n  - Privacy-preserving data verification\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Blockchain Scalability",
-    "StarkNet",
-    "metaverse",
-    "Layer 2",
-    "Zero Knowledge Proof"
+    "Zero Knowledge Proof",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:zk-starks",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ZKSTARKs",
+    "content_hash": "sha256-12-b344f1b0522b",
+    "legacy_term_id": "MV-10176",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:zk-starks",
+    "schema_version": "v2",
     "term_id": "MV-10176",
     "preferred_term": "ZK-STARKs",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ZKSTARKs",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes, making it ideal for blockchain Layer 2 scaling solutions.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ZKSTARKs",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ZKSTARKs",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Zero Knowledge Proof"
@@ -43,26 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Blockchain Scalability",
-        "Layer 2",
-        "StarkNet"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

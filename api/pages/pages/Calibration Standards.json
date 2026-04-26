@@ -1,44 +1,53 @@
 {
-  "id": "Calibration Standards",
+  "id": "calibration-standards",
   "title": "Calibration Standards",
-  "content": "- ### OntologyBlock\n  id:: calibration-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9804\n\t- source-domain:: mv\n\t- preferred-term:: Calibration Standards\n\t- definition:: Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.\n\t- status:: active\n\t- owl:class:: mv:CalibrationStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: calibration-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Measurement Accuracy]], [[Device Alignment]], [[Quality Assurance]]\n\t\t- requires:: [[Reference Materials]], [[Traceability Chain]], [[Validation Procedures]]\n\t\t- related-to:: [[Calibration Target]], [[Camera Parameters]], [[Display Testing]]\n- ## Technical Details\n\t- **VR/AR/MR Calibration Requirements**:\n\t\t- Camera and IMU module alignment\n\t\t- Display luminance and chromaticity measurement\n\t\t- Lens distortion characterization\n\t\t- Field of view (10-50 degrees AR, 100-120 degrees VR)\n\t- **Key Metrology Factors**:\n\t\t- Photometric imaging accuracy\n\t\t- Optical aperture matching human eye pupil\n\t\t- Sensor resolution for defect detection\n\t\t- System MTF (Modulation Transfer Function)\n\t\t- Distortion calibration for wide FOV\n\t- **Traceability**: Results traceable to national standards eliminate need for golden sample calibration\n\t- **2024 Research Advances**:\n\t\t- Meta-Calib framework using ArUco-encoded meta-boards\n\t\t- Global correction frameworks for video see-through AR\n\t\t- Multi-configuration camera calibration solutions\n- ## Applications\n\t- AR/VR headset display quality assurance\n\t- Computer vision camera alignment\n\t- Autonomous vehicle sensor calibration\n\t- SLAM system accuracy verification\n\t- 3D reconstruction quality control",
+  "content": "- ### Definition\n  - Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CalibrationStandards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Technical Standard]]\n  - requires:: [[Reference Materials]], [[Traceability Chain]], [[Validation Procedures]]\n  - enables:: [[Measurement Accuracy]], [[Device Alignment]], [[Quality Assurance]]\n\n- ### Content\n\n  - ## Technical Details\n  - **VR/AR/MR Calibration Requirements**:\n\t\t- Camera and IMU module alignment\n\t\t- Display luminance and chromaticity measurement\n\t\t- Lens distortion characterization\n\t\t- Field of view (10-50 degrees AR, 100-120 degrees VR)\n  - **Key Metrology Factors**:\n\t\t- Photometric imaging accuracy\n\t\t- Optical aperture matching human eye pupil\n\t\t- Sensor resolution for defect detection\n\t\t- System MTF (Modulation Transfer Function)\n\t\t- Distortion calibration for wide FOV\n  - **Traceability**: Results traceable to national standards eliminate need for golden sample calibration\n  - **2024 Research Advances**:\n\t\t- Meta-Calib framework using ArUco-encoded meta-boards\n\t\t- Global correction frameworks for video see-through AR\n\t\t- Multi-configuration camera calibration solutions\n  - ## Applications\n  - AR/VR headset display quality assurance\n  - Computer vision camera alignment\n  - Autonomous vehicle sensor calibration\n  - SLAM system accuracy verification\n  - 3D reconstruction quality control\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Display Metrology"
   ],
   "wiki_links": [
+    "Device Alignment",
+    "Measurement Accuracy",
+    "Quality Assurance",
     "Reference Materials",
+    "Sensor Input",
     "Technical Standard",
     "Traceability Chain",
-    "Device Alignment",
-    "metaverse",
-    "Calibration Target",
-    "Display Testing",
-    "Quality Assurance",
     "Validation Procedures",
-    "Camera Parameters",
-    "Measurement Accuracy"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:calibration-standards",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CalibrationStandards",
+    "content_hash": "sha256-12-68c955765413",
+    "legacy_term_id": "MV-9804",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:calibration-standards",
+    "schema_version": "v2",
     "term_id": "MV-9804",
     "preferred_term": "Calibration Standards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CalibrationStandards",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CalibrationStandards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CalibrationStandards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Technical Standard"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Calibration Target",
-        "Camera Parameters",
-        "Display Testing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

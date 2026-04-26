@@ -1,0 +1,111 @@
+{
+  "id": "network-layer",
+  "title": "Network Layer",
+  "content": "- ### Definition\n  - Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:NetworkLayer\n  - owl-role:: Object\n  - belongs-to-domain:: [[Narrative Gold Mine]]\n\n- ### Relationships\n  - is-subclass-of:: [[ArchitecturalLayer]]\n  - has-part:: [[Protocol Stack]], [[Routing Engine]], [[Congestion Control]], [[QoS Manager]], [[Network Topology]]\n  - enables:: [[Message Delivery]], [[Network Resilience]], [[Latency Management]], [[Bandwidth Allocation]]\n  - bridges-to:: [[Physical Layer]], [[Middleware Layer]] (domain: ngm)\n  - depends-on:: [[Physical Layer]], [[Infrastructure Layer]]\n\n- ### Content\n  The Network Layer provides the communication backbone for distributed narrative systems. It abstracts physical network heterogeneity and provides reliable, ordered delivery of messages across potentially unreliable and latency-prone physical networks. Through sophisticated routing and congestion control, it maintains performance and resilience.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Distributed Architecture",
+    "Latency Management Protocol",
+    "Edge Computing",
+    "Content Delivery Network (CDN)",
+    "Networking Layer",
+    "Storage Infrastructure",
+    "Fault Tolerance",
+    "Metaverse Safety Protocol",
+    "Data Layer",
+    "Latency",
+    "Post-Quantum Cryptography",
+    "Trust Infrastructure",
+    "Human Interface Layer (HIL)",
+    "Hardware Abstraction Layer (HAL)",
+    "Metaverse Architecture Stack",
+    "Physical Layer"
+  ],
+  "wiki_links": [
+    "ArchitecturalLayer",
+    "Bandwidth Allocation",
+    "Congestion Control",
+    "Infrastructure Layer",
+    "Latency Management",
+    "Message Delivery",
+    "Middleware Layer",
+    "Narrative Gold Mine",
+    "Network Resilience",
+    "Network Topology",
+    "Physical Layer",
+    "Protocol Stack",
+    "QoS Manager",
+    "Routing Engine"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:network-layer",
+    "iri": "http://narrativegoldmine.com/infrastructure#NetworkLayer",
+    "content_hash": "sha256-12-000000000000",
+    "legacy_term_id": "NGM-network-layer",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:network-layer",
+    "schema_version": "v2",
+    "term_id": "NGM-network-layer",
+    "preferred_term": "Network Layer",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T14:00:00Z",
+    "last_updated": "2026-04-26T14:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:NetworkLayer",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArchitecturalLayer"
+    ],
+    "has_part": [
+      "Protocol Stack",
+      "Routing Engine",
+      "Congestion Control",
+      "QoS Manager",
+      "Network Topology"
+    ],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [
+      "Physical Layer",
+      "Infrastructure Layer"
+    ],
+    "enables": [
+      "Message Delivery",
+      "Network Resilience",
+      "Latency Management",
+      "Bandwidth Allocation"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Physical Layer",
+      "Middleware Layer"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Narrative Gold Mine"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

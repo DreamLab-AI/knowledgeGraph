@@ -1,251 +1,195 @@
-- ### OntologyBlock
-  id:: roberta-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0217
-	- preferred-term:: RoBERTa
-	- source-domain:: mv
-	- status:: draft
-- definition:: Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
+iri:: http://narrativegoldmine.com/artificial-intelligence#Roberta
+uri:: urn:visionclaw:concept:artificial-intelligence:roberta
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:roberta
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: RoBERTa
+content-hash:: sha256-12-7e38af1dded5
+legacy-term-id:: AI-0217
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:RoBERTa
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :Roberta))
+- ### Content
+  - Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :Roberta "RoBERTa"@en)
-(AnnotationAssertion rdfs:comment :Roberta "Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance."@en)
+  ## Characteristics
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Roberta "AI-0217"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :Roberta "true"^^xsd:boolean)
-```
+  - **Improved Training**: Longer training with larger batches
+  - **Dynamic Masking**: Changes masked tokens across epochs
+  - **No NSP**: Removes next sentence prediction objective
+  - **Larger Dataset**: Trained on more data than original BERT
 
-## Characteristics
+  ## Academic Foundations
 
-- **Improved Training**: Longer training with larger batches
-- **Dynamic Masking**: Changes masked tokens across epochs
-- **No NSP**: Removes next sentence prediction objective
-- **Larger Dataset**: Trained on more data than original BERT
+  **Primary Source**: Liu et al., "RoBERTa: A Robustly Optimized BERT Pretraining Approach", arXiv:1907.11692 (2019)
 
-## Academic Foundations
+  **Key Findings**: Demonstrates that BERT was significantly undertrained and that careful hyperparameter tuning and training procedure choices matter substantially.
 
-**Primary Source**: Liu et al., "RoBERTa: A Robustly Optimized BERT Pretraining Approach", arXiv:1907.11692 (2019)
+  ## Technical Context
 
-**Key Findings**: Demonstrates that BERT was significantly undertrained and that careful hyperparameter tuning and training procedure choices matter substantially.
+  RoBERTa shows that BERT's training can be substantially improved by removing the next sentence prediction task, training with dynamic masking, using larger mini-batches and learning rates, and training on more data for longer.
 
-## Technical Context
+  ## Ontological Relationships
 
-RoBERTa shows that BERT's training can be substantially improved by removing the next sentence prediction task, training with dynamic masking, using larger mini-batches and learning rates, and training on more data for longer.
+  - **Broader Term**: Pre-trained Language Model
+  - **Related Terms**: BERT, ALBERT, DeBERTa
+  - **Base Architecture**: BERT with training optimisations
 
-## Ontological Relationships
+  ## Usage Context
 
-- **Broader Term**: Pre-trained Language Model
-- **Related Terms**: BERT, ALBERT, DeBERTa
-- **Base Architecture**: BERT with training optimisations
+  "RoBERTa achieves state-of-the-art results on GLUE, SQuAD, and RACE benchmarks by optimising BERT's pre-training procedure."
 
-## Usage Context
+  ## Characteristics
 
-"RoBERTa achieves state-of-the-art results on GLUE, SQuAD, and RACE benchmarks by optimising BERT's pre-training procedure."
+  - **Improved Training**: Longer training with larger batches
+  - **Dynamic Masking**: Changes masked tokens across epochs
+  - **No NSP**: Removes next sentence prediction objective
+  - **Larger Dataset**: Trained on more data than original BERT
 
-## References
+  ## Academic Foundations
 
-- Liu, Y., et al. (2019). "RoBERTa: A Robustly Optimized BERT Pretraining Approach". arXiv:1907.11692
+  **Primary Source**: Liu et al., "RoBERTa: A Robustly Optimized BERT Pretraining Approach", arXiv:1907.11692 (2019)
 
----
+  **Key Findings**: Demonstrates that BERT was significantly undertrained and that careful hyperparameter tuning and training procedure choices matter substantially.
 
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:RoBERTa
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About RoBERTa
-	- Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
+  ## Technical Context
 
-## Characteristics
+  RoBERTa shows that BERT's training can be substantially improved by removing the next sentence prediction task, training with dynamic masking, using larger mini-batches and learning rates, and training on more data for longer.
 
-- **Improved Training**: Longer training with larger batches
-- **Dynamic Masking**: Changes masked tokens across epochs
-- **No NSP**: Removes next sentence prediction objective
-- **Larger Dataset**: Trained on more data than original BERT
+  ## Ontological Relationships
 
-## Academic Foundations
+  - **Broader Term**: Pre-trained Language Model
+  - **Related Terms**: BERT, ALBERT, DeBERTa
+  - **Base Architecture**: BERT with training optimisations
 
-**Primary Source**: Liu et al., "RoBERTa: A Robustly Optimized BERT Pretraining Approach", arXiv:1907.11692 (2019)
+  ## Usage Context
 
-**Key Findings**: Demonstrates that BERT was significantly undertrained and that careful hyperparameter tuning and training procedure choices matter substantially.
+  "RoBERTa achieves state-of-the-art results on GLUE, SQuAD, and RACE benchmarks by optimising BERT's pre-training procedure."
 
-## Technical Context
+  #### References
+  - Liu, Y., et al. (2019). "RoBERTa: A Robustly Optimized BERT Pretraining Approach". arXiv:1907.11692
 
-RoBERTa shows that BERT's training can be substantially improved by removing the next sentence prediction task, training with dynamic masking, using larger mini-batches and learning rates, and training on more data for longer.
-
-## Ontological Relationships
-
-- **Broader Term**: Pre-trained Language Model
-- **Related Terms**: BERT, ALBERT, DeBERTa
-- **Base Architecture**: BERT with training optimisations
-
-## Usage Context
-
-"RoBERTa achieves state-of-the-art results on GLUE, SQuAD, and RACE benchmarks by optimising BERT's pre-training procedure."
-
-## References
-
-- Liu, Y., et al. (2019). "RoBERTa: A Robustly Optimized BERT Pretraining Approach". arXiv:1907.11692
-
----
-
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# RoBERTa
-		  
-		  **Term ID**: AI-0217
-		  **Category**: Architecture
-		  **Ontology Version**: 1.0
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
-		  
-		  ## Characteristics
-		  
-		  - **Improved Training**: Longer training with larger batches
-		  - **Dynamic Masking**: Changes masked tokens across epochs
-		  - **No NSP**: Removes next sentence prediction objective
-		  - **Larger Dataset**: Trained on more data than original BERT
-		  
-		  ## Academic Foundations
-		  
-		  **Primary Source**: Liu et al., "RoBERTa: A Robustly Optimized BERT Pretraining Approach", arXiv:1907.11692 (2019)
-		  
-		  **Key Findings**: Demonstrates that BERT was significantly undertrained and that careful hyperparameter tuning and training procedure choices matter substantially.
-		  
-		  ## Technical Context
-		  
-		  RoBERTa shows that BERT's training can be substantially improved by removing the next sentence prediction task, training with dynamic masking, using larger mini-batches and learning rates, and training on more data for longer.
-		  
-		  ## Ontological Relationships
-		  
-		  - **Broader Term**: Pre-trained Language Model
-		  - **Related Terms**: BERT, ALBERT, DeBERTa
-		  - **Base Architecture**: BERT with training optimisations
-		  
-		  ## Usage Context
-		  
-		  "RoBERTa achieves state-of-the-art results on GLUE, SQuAD, and RACE benchmarks by optimising BERT's pre-training procedure."
-		  
-		  ## References
-		  
-		  - Liu, Y., et al. (2019). "RoBERTa: A Robustly Optimized BERT Pretraining Approach". arXiv:1907.11692
-		  
 		  ---
-		  
+
 		  *Ontology Term managed by AI-Grounded Ontology Working Group*
 		  *UK English Spelling Standards Applied*
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
+  - public-access:: true
+  - definition:: Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.
 
 
 
 
-# RoBERTa Ontology Entry – Revised
+  # RoBERTa Ontology Entry – Revised
 
-## Academic Context
+  ## Academic Context
 
-- RoBERTa (Robustly Optimised BERT Pretraining Approach) represents a methodological refinement of BERT rather than an architectural innovation
+  - RoBERTa (Robustly Optimised BERT Pretraining Approach) represents a methodological refinement of BERT rather than an architectural innovation
   - Maintains identical transformer encoder architecture to its predecessor
   - Demonstrates that systematic optimisation of training procedures yields substantial performance improvements without requiring structural redesign
   - Emerged during a period of intense competition among BERT refinements, each pursuing different philosophical approaches to language model improvement
 
-- The model exemplifies a crucial insight in transformer development: that pretraining methodology matters as profoundly as model architecture itself
+  - The model exemplifies a crucial insight in transformer development: that pretraining methodology matters as profoundly as model architecture itself
   - Contrasts with contemporaneous approaches like XLNet (which questioned masked language modelling as an objective) and ALBERT (which prioritised architectural efficiency)
   - Established that training rigour could unlock considerable headroom for improvement within the pretrained transformer paradigm[1][2]
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Technical specifications and training innovations
+  - Technical specifications and training innovations
   - Employs dynamic masking rather than static masking, varying which tokens are masked across training epochs
   - Trained on 160GB of text data (ten times BERT's 16GB corpus), enabling richer linguistic representations[1]
   - Utilises substantially larger batch sizes (up to 8,000 versus BERT's 256), facilitating more stable gradient estimates
   - Removes the Next Sentence Prediction (NSP) objective, which BERT research subsequently revealed as largely redundant
   - Implements contextual word embeddings that vary based on surrounding context—the word "bank" receives distinct representations in "river bank" versus "financial bank"[1]
 
-- Contemporary applications and deployment
+  - Contemporary applications and deployment
   - Demonstrates particular efficacy in fake news detection tasks, outperforming lighter alternatives such as DistilBERT, especially in recall metrics for misinformation classification[5]
   - Employed in sophisticated neuroscience applications: researchers utilised RoBERTa-large in "mind captioning" systems that decode visual perception and imagination from functional MRI brain activity, generating natural language descriptions of what subjects observe or mentally recall[3][4]
   - Remains widely adopted across sentiment analysis, question-answering systems, and machine translation pipelines where contextual understanding proves essential[1]
 
-- Comparative positioning
+  - Comparative positioning
   - Outperforms BERT on most downstream tasks whilst maintaining computational efficiency relative to larger models
   - Represents a pragmatic middle ground: more capable than distilled variants, more efficient than subsequent larger models
 
-## Research & Literature
+  ## Research & Literature
 
-- Foundational work and technical documentation
+  - Foundational work and technical documentation
   - Liu, Y., Ott, M., Goyal, N., Du, J., Joshi, M., Chen, D., ... & Stoyanov, V. (2019). "RoBERTa: A Robustly Optimized BERT Pretraining Approach." *arXiv preprint arXiv:1907.11692*. This seminal paper established the systematic optimisation framework that defines the model[1][2]
 
-- Contemporary applications in neuroscience
+  - Contemporary applications in neuroscience
   - Horikawa, T. (2025). "Mind captioning: Evolving descriptive text of mental content from human brain activity." *Nature*, 641. Demonstrates RoBERTa's utility in decoding semantic features from neural activity patterns, representing a novel intersection of NLP and cognitive neuroscience[3][4]
 
-- Comparative analyses
+  - Comparative analyses
   - Brenndörfer, M. "XLNet, RoBERTa, ALBERT: Refining BERT with Permutation Language Modeling." *History of Language AI*. Contextualises RoBERTa within the broader ecosystem of BERT refinements, illustrating how different models pursued divergent optimisation philosophies[2]
 
-## UK Context
+  ## UK Context
 
-- British research contributions remain somewhat limited in RoBERTa's direct development, though UK institutions participate actively in downstream applications
+  - British research contributions remain somewhat limited in RoBERTa's direct development, though UK institutions participate actively in downstream applications
   - UK universities employ RoBERTa extensively in NLP research programmes, particularly within computational linguistics departments
   - Applications in British healthcare and financial services sectors utilise RoBERTa for document classification and risk assessment, though specific case studies remain proprietary
 
-- North England considerations
+  - North England considerations
   - Manchester and Leeds host significant AI research clusters with active NLP programmes, though RoBERTa implementation details remain largely unpublished in regional contexts
   - The model's efficiency relative to larger alternatives makes it particularly suitable for resource-constrained research environments common in regional universities
 
-## Future Directions
+  ## Future Directions
 
-- Emerging developments and refinements
+  - Emerging developments and refinements
   - Hybrid approaches combining RoBERTa's training methodology with more recent architectural innovations (such as efficient attention mechanisms)
   - Integration with multimodal systems, extending beyond text-only applications as demonstrated in neuroscience applications
   - Continued exploration of domain-specific pretraining using RoBERTa's optimised training framework
 
-- Anticipated challenges
+  - Anticipated challenges
   - Computational requirements remain substantial for organisations with limited infrastructure, despite efficiency gains over larger models
   - Contextual limitations persist in highly specialised domains requiring domain-specific pretraining
   - Interpretability challenges inherent to transformer-based approaches remain largely unresolved
 
-- Research priorities
+  - Research priorities
   - Systematic investigation of RoBERTa's performance across non-English languages and low-resource linguistic communities
   - Exploration of knowledge distillation techniques to further reduce computational footprint without substantial performance degradation
   - Development of more rigorous evaluation frameworks for assessing model robustness across diverse downstream tasks
 
-## References
+  ## References
 
-[1] GeeksforGeeks. (2025, July 23). "Overview of RoBERTa model." Retrieved from geeksforgeeks.org/machine-learning/overview-of-roberta-model/
+  [1] GeeksforGeeks. (2025, July 23). "Overview of RoBERTa model." Retrieved from geeksforgeeks.org/machine-learning/overview-of-roberta-model/
 
-[2] Brenndörfer, M. "XLNet, RoBERTa, ALBERT: Refining BERT with Permutation Language Modeling." *History of Language AI*. Retrieved from mbrenndoerfer.com/writing/xlnet-roberta-albert-bert-refinements
+  [2] Brenndörfer, M. "XLNet, RoBERTa, ALBERT: Refining BERT with Permutation Language Modeling." *History of Language AI*. Retrieved from mbrenndoerfer.com/writing/xlnet-roberta-albert-bert-refinements
 
-[3] Horikawa, T. (2025). "Mind captioning: Evolving descriptive text of mental content from human brain activity." *Nature*, 641. DOI: 10.1038/s41586-025-07664-x
+  [3] Horikawa, T. (2025). "Mind captioning: Evolving descriptive text of mental content from human brain activity." *Nature*, 641. DOI: 10.1038/s41586-025-07664-x
 
-[4] PsyPost. (2025). "Mind captioning: This scientist just used AI to translate brain activity into text." Retrieved from psypost.org/mind-captioning-this-scientist-just-used-ai-to-translate-brain-activity-into-text/
+  [4] PsyPost. (2025). "Mind captioning: This scientist just used AI to translate brain activity into text." Retrieved from psypost.org/mind-captioning-this-scientist-just-used-ai-to-translate-brain-activity-into-text/
 
-[5] Nature. (2025). "Emotion-Aware RoBERTa enhanced with emotion-specific attention mechanisms." *Scientific Reports*, 15. DOI: 10.1038/s41598-025-99515-6
+  [5] Nature. (2025). "Emotion-Aware RoBERTa enhanced with emotion-specific attention mechanisms." *Scientific Reports*, 15. DOI: 10.1038/s41598-025-99515-6
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

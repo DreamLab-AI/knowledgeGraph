@@ -1,46 +1,56 @@
 {
-  "id": "Community Standards",
+  "id": "community-standards",
   "title": "Community Standards",
-  "content": "- ### OntologyBlock\n  id:: community-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9825\n\t- source-domain:: mv\n\t- preferred-term:: Community Standards\n\t- definition:: The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.\n\t- status:: active\n\t- owl:class:: mv:CommunityStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: community-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Platform Governance]]\n\t\t- enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]\n\t\t- requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]\n\t\t- related-to:: [[Content Moderation Standards]], [[Digital Ethics]], [[Platform Policy]]\n- ## Technical Details\n\t- **Standards Organizations**:\n\t\t- Metaverse Standards Forum: 2,600+ member organizations promoting interoperability and inclusivity\n\t\t- IEEE Standards: P2048 Metaverse Terminology, P7016 Ethically Aligned Design\n\t\t- World Economic Forum \"Defining and Building the Metaverse\" initiative\n\t- **Key Principles**:\n\t\t- Plurality, inclusivity, openness, transparency, decision-making by consensus\n\t\t- Decentralized platforms based on community protocols via blockchain\n\t\t- Technical standards enabling compatibility and security across platforms\n\t- **Human Rights Considerations**:\n\t\t- Virtual environments enable free expression but risk bullying, harassment, and hate speech\n\t\t- Behavioral moderation needed in addition to content moderation\n\t\t- Immersive nature intensifies perception of threats and psychological effects\n\t- **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)\n- ## Applications\n\t- Virtual world governance policies\n\t- User behavior guidelines enforcement\n\t- Content creation standards\n\t- Community safety protocols\n\t- Cross-platform interoperability standards",
+  "content": "- ### Definition\n  - The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CommunityStandards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Platform Governance]]\n  - requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]\n  - enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]\n  - bridges-to:: [[Telecollaboration]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Standards Organizations**:\n\t\t- Metaverse Standards Forum: 2,600+ member organizations promoting interoperability and inclusivity\n\t\t- IEEE Standards: P2048 Metaverse Terminology, P7016 Ethically Aligned Design\n\t\t- World Economic Forum \"Defining and Building the Metaverse\" initiative\n  - **Key Principles**:\n\t\t- Plurality, inclusivity, openness, transparency, decision-making by consensus\n\t\t- Decentralized platforms based on community protocols via blockchain\n\t\t- Technical standards enabling compatibility and security across platforms\n  - **Human Rights Considerations**:\n\t\t- Virtual environments enable free expression but risk bullying, harassment, and hate speech\n\t\t- Behavioral moderation needed in addition to content moderation\n\t\t- Immersive nature intensifies perception of threats and psychological effects\n  - **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)\n  - ## Applications\n  - Virtual world governance policies\n  - User behavior guidelines enforcement\n  - Content creation standards\n  - Community safety protocols\n  - Cross-platform interoperability standards\n\n- ### Provenance\n  - sources:: [[EU AI Act]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Content Moderation",
-    "Content Moderation Standards",
-    "Digital Ritual"
+    "Content Moderation"
   ],
   "wiki_links": [
-    "Moderation Tools",
-    "User Safety",
-    "Content Moderation Standards",
-    "Platform Governance",
-    "Digital Ethics",
-    "Platform Policy",
-    "Governance Framework",
     "Content Moderation",
-    "metaverse",
+    "EU AI Act",
+    "GDPR (General Data Protection Regulation)",
+    "Governance Framework",
+    "IEEE (Institute of Electrical and Electronics Engineers)",
+    "Moderation Tools",
+    "Platform Governance",
     "Reporting Mechanisms",
-    "Trust Building"
+    "Telecollaboration",
+    "Trust Building",
+    "User Safety",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:community-standards",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CommunityStandards",
+    "content_hash": "sha256-12-f825c133e9d4",
+    "legacy_term_id": "MV-9825",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:community-standards",
+    "schema_version": "v2",
     "term_id": "MV-9825",
     "preferred_term": "Community Standards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CommunityStandards",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CommunityStandards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T17:00:00Z",
+    "last_updated": "2026-04-26T17:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CommunityStandards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Platform Governance"
@@ -59,28 +69,23 @@
       "Trust Building"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Telecollaboration"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Content Moderation Standards",
-        "Digital Ethics",
-        "Platform Policy"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "EU AI Act",
+      "GDPR (General Data Protection Regulation)",
+      "IEEE (Institute of Electrical and Electronics Engineers)"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

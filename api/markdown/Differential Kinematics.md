@@ -1,46 +1,45 @@
-- ### OntologyBlock
-  id:: differentialkinematics-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#DifferentialKinematics
+uri:: urn:visionclaw:concept:robotics:differential-kinematics
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:differential-kinematics
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Differential Kinematics
+content-hash:: sha256-12-d63fbc7c2828
+legacy-term-id:: RB-0183
+status:: complete
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0183
-    - filename-history:: ["RB-0183-differentialkinematics.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0183
-    - preferred-term:: Differential Kinematics
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators. The Jacobian provides the linear relationship between joint angular velocities and end-effector Cartesian velocities, forming the foundation for [[Velocity Control]], [[Singularity Analysis]], and [[Numerical Inverse Kinematics]] algorithms.
 
-  - **Definition**
-    - definition:: Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:DifferentialKinematics
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:DifferentialKinematics
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - bridges-to:: [[Spatial Computing]]
+  - is-subclass-of:: [[Robot Kinematics]], [[Motion Mathematics]]
+  - has-part:: [[Jacobian Matrix]], [[Velocity Transformation]], [[Singularity Condition]]
+  - requires:: [[Position Kinematics]], [[Joint Configuration]], [[Velocity Inputs]]
+  - enables:: [[End-Effector Velocity Control]], [[Singularity Detection]], [[Inverse Kinematics]], [[Force/Torque Transformation]]
+  - depends-on:: [[Forward Kinematics]], [[Geometric Relationships]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Robot Kinematics]]
+- ### Content
+  The Jacobian matrix J encodes how small changes in joint angles produce corresponding changes in end-effector position and orientation. Mathematically, the differential relationship is expressed as: v_e = J * ω_j, where v_e denotes end-effector Cartesian velocity, ω_j denotes joint angular velocities, and J is the Jacobian. The Jacobian's rank, column space, and singular values characterise robot dexterity and ability to achieve arbitrary end-effector velocities.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DifferentialKinematics))
-      (SubClassOf :DifferentialKinematics :RobotKinematics)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DifferentialKinematics "Differential Kinematics"@en)
-      (AnnotationAssertion rdfs:comment :DifferentialKinematics
-        "Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities."@en)
-      ```
+  Singularities occur where the Jacobian loses rank, causing infinite joint velocities to be required for finite end-effector velocities. Near singularities, the robot exhibits reduced control authority in certain directions and amplified joint accelerations. [[Singularity Avoidance]] becomes critical for smooth trajectory tracking, and damped least-squares methods approximate inverse Jacobians whilst maintaining numerical stability near singularities. The Jacobian transpose relationship v = J^T * f directly relates end-effector forces to joint torques, essential for [[Force Control]] and [[Impedance Control]].
 
-- ## About Differential Kinematics
-  Differential kinematics uses Jacobian matrix to relate joint and Cartesian velocities.
-  
-  Relationship between joint velocities and end-effector velocities.
+  Applications of differential kinematics span velocity-level trajectory tracking where computed velocities feed into [[PID]] joint controllers, real-time singularity detection during runtime, redundant robot control exploiting null-space movements, and deformable robot mechanics where the Jacobian captures elastic deformations. Modern approaches incorporate differential kinematics within [[Model Predictive Control]] frameworks to compute optimal joint trajectories satisfying velocity and acceleration limits, and in [[Learning-Based Control]] where neural networks implicitly learn Jacobian-like mappings from data.
+
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

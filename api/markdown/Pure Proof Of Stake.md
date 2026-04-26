@@ -1,47 +1,36 @@
-- ### OntologyBlock
-  id:: pureproofofstake-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#PureProofOfStake
+uri:: urn:visionclaw:concept:blockchain:pure-proof-of-stake
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:pure-proof-of-stake
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Pure Proof of Stake
+content-hash:: sha256-12-85f9da35551c
+legacy-term-id:: BC-0549
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0549
-    - filename-history:: ["BC-0549-pureproofofstake.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0549
-    - preferred-term:: Pure Proof of Stake
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
 
-  - **Definition**
-    - definition:: A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:PureProofOfStake
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:PureProofOfStake
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Proof Of Stake]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Proof Of Stake]]
+- ### Content
+  Pure Proof of Stake — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PureProofOfStake))
-      (SubClassOf :PureProofOfStake :ProofOfStake)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PureProofOfStake "Pure Proof of Stake"@en)
-      (AnnotationAssertion rdfs:comment :PureProofOfStake
-        "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms."@en)
-      ```
-
-- ## About Pure Proof of Stake
-  A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.
-  
-  ### Examples
-  - Algorand
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

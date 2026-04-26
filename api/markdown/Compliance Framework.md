@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9529-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9529
-	- preferred-term:: Compliance Framework
-	- source-domain:: mv
-	- owl:class:: mv:ComplianceFramework
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Compliance Framework is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/metaverse#ComplianceFramework
+uri:: urn:visionclaw:concept:artificial-intelligence:compliance-framework
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:compliance-framework
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Compliance Framework
+content-hash:: sha256-12-83780d7331aa
+legacy-term-id:: MV-9529
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Compliance Framework is a concept within the metaverse domain. Further enrichment pending.
 
-Compliance Framework represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ComplianceFramework
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Blockchain]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Compliance Framework represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

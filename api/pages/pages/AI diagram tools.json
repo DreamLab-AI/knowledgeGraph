@@ -1,0 +1,62 @@
+{
+  "id": "ai-diagram-tools",
+  "title": "AI diagram tools",
+  "content": "- ### Definition\n  - AI diagram tools is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AIDiagramTools\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[Digital Twin]]\n\n- ### Content\n  - Sure, I can help you with that! Here's an example of how you can create a mermaid diagram in code to plan a 2-month project scoping out a music app:\n  :LOGBOOK:\n  CLOCK: [2024-01-17 Wed 11:21:05]--[2024-01-17 Wed 11:21:08] =>  00:00:03\n  :END:\n  This diagram represents the typical flow of tasks involved in the project scoping phase for a music app. Feel free to customize it according to the specific requirements of your project.\n  Is there anything specific you would like to add or modify in this diagram?\n  make a gantt chart\n  - make me a mermaid diagram as code for a 6 month 2 person development epic to create an LLM based educational app\n  - Sure! Here is a mermaid diagram as code for a 6 month 2 person development epic to create an LLM based educational app: ```mermaid graph TD A[Research and Planning] --> B[Design UI/UX] B --> C[Develop Backend] C --> D[Implement Features] D --> E[Test and Debug] E --> F[Refine and Optimize] F --> G[Deploy and Launch] ``` Please let me know if you have any additional information or if there's anything specific you would like to add to the diagram!\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Digital Twin"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-diagram-tools",
+    "iri": "http://narrativegoldmine.com/ontology#AIDiagramTools",
+    "content_hash": "sha256-12-65e833c2e6b9",
+    "legacy_term_id": "AI-ai-diagram-tools",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-diagram-tools",
+    "schema_version": "v2",
+    "term_id": "AI-ai-diagram-tools",
+    "preferred_term": "AI diagram tools",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI diagram tools is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AIDiagramTools",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Digital Twin"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

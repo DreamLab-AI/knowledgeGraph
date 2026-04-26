@@ -1,44 +1,63 @@
-- ### OntologyBlock
-  id:: transparent-decision-making-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10088
-	- source-domain:: mv
-	- preferred-term:: Transparent Decision Making
-	- status:: active
-	- definition:: Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.
-	- owl:class:: mv:TransparentDecisionMaking
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Governance]]
-		- related-to:: [[DAO]]
-		- related-to:: [[On-Chain Voting]]
-		- related-to:: [[Tokenomics Governance]]
-	  id:: transparent-decision-making-relationships
-	  collapsed:: true
-- ## Overview
-	- Transparent decision-making ensures that governance processes are visible and accountable. In blockchain contexts, on-chain voting provides immutable records of proposals, votes, and outcomes. This approach builds trust and enables stakeholder participation.
-- ## Technical Details
-	- ### On-Chain Mechanisms
+iri:: http://narrativegoldmine.com/spatial-computing#TransparentDecisionMaking
+uri:: urn:visionclaw:concept:spatial-computing:transparent-decision-making
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:transparent-decision-making
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Transparent Decision Making
+content-hash:: sha256-12-3607a1d2f267
+legacy-term-id:: MV-10088
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - Governance processes where decisions, their rationale, and the factors influencing outcomes are openly visible and accessible to stakeholders, often implemented through on-chain voting, public proposals, and documented deliberations in DAOs and digital platforms.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:TransparentDecisionMaking
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Governance]]
+
+- ### Content
+
+  - ## Overview
+  - Transparent decision-making ensures that governance processes are visible and accountable. In blockchain contexts, on-chain voting provides immutable records of proposals, votes, and outcomes. This approach builds trust and enables stakeholder participation.
+  - ## Technical Details
+  - ### On-Chain Mechanisms
 		- **Proposal Systems**: Public submission and discussion of changes
 		- **Voting Records**: Immutable blockchain records of all votes
 		- **Execution Transparency**: Automated smart contract execution of approved proposals
 		- **Delegation Tracking**: Visible delegation chains for representative voting
-	- ### Transparency Components
+  - ### Transparency Components
 		- Clear proposal documentation and rationale
 		- Open discussion forums and deliberation
 		- Real-time voting progress visibility
 		- Post-decision outcome reporting
-	- ### Challenges and Solutions
+  - ### Challenges and Solutions
 		- **Privacy vs Transparency**: Use of privacy-preserving voting mechanisms
 		- **Plutocracy**: Quadratic voting and reputation systems
 		- **Low Participation**: Incentivized voting and delegation
 		- **Information Asymmetry**: Standardized proposal formats
-- ## Applications
-	- DAO governance and treasury management
-	- Protocol upgrade decisions
-	- Community fund allocation
-	- Metaverse rule-making
-	- Digital commons governance
+  - ## Applications
+  - DAO governance and treasury management
+  - Protocol upgrade decisions
+  - Community fund allocation
+  - Metaverse rule-making
+  - Digital commons governance
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

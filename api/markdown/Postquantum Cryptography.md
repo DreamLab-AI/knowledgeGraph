@@ -1,23 +1,38 @@
-- ### OntologyBlock
-  id:: postquantum-cryptography-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0019
-	- preferred-term:: Postquantum Cryptography
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:PostquantumCryptography
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Security & Trust
+iri:: http://narrativegoldmine.com/infrastructure#PostquantumCryptography
+uri:: urn:visionclaw:concept:infrastructure:postquantum-cryptography
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:postquantum-cryptography
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Postquantum Cryptography
+content-hash:: sha256-12-559eac483919
+legacy-term-id:: ME-0019
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: infrastructure:PostquantumCryptography
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- Post-Quantum Cryptography (PQC)
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  - Post-Quantum Cryptography (PQC)
   - Precise technical definition
     - Post-quantum cryptography refers to cryptographic algorithms designed to be secure against attacks from both classical and quantum computers, particularly targeting the vulnerabilities of current public-key cryptosystems such as RSA, Diffie-Hellman, and Elliptic Curve Cryptography when faced with quantum algorithms like Shor’s algorithm.
     - These algorithms are typically based on mathematical problems believed to be hard for quantum computers to solve, such as lattice-based, hash-based, code-based, multivariate, and isogeny-based problems.
@@ -43,20 +58,12 @@
     - Ongoing research will focus on improving the efficiency, scalability, and practicality of PQC algorithms, as well as addressing implementation challenges such as side-channel attacks and interoperability.
     - The UK is likely to play a leading role in PQC adoption and research, with continued investment in quantum technologies and cybersecurity infrastructure.
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Security & Trust
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

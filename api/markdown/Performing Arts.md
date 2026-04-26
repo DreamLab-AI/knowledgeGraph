@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9661-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9661
-	- preferred-term:: Performing Arts
-	- source-domain:: mv
-	- owl:class:: mv:PerformingArts
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Performing Arts is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#PerformingArts
+uri:: urn:visionclaw:concept:spatial-computing:performing-arts
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:performing-arts
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Performing Arts
+content-hash:: sha256-12-1bc079b31bf5
+legacy-term-id:: MV-9661
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Performing Arts is a concept within the metaverse domain. Further enrichment pending.
 
-Performing Arts represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:PerformingArts
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Performing Arts represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

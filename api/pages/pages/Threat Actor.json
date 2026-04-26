@@ -1,0 +1,70 @@
+{
+  "id": "threat-actor",
+  "title": "Threat Actor",
+  "content": "- ### Definition\n  - Threat Actor is a concept within the bc domain.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:ThreatActor\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n\n- ### Content\n\n  ## Definition\n\n  A **Threat Actor** is an individual, group, organization, or nation-state with the intent, capability, and opportunity to exploit vulnerabilities and conduct attacks against systems, networks, or organizations.\n\n  ## Threat Actor Taxonomy\n\n  ### By Motivation\n\n  #### Financial\n  - **Cybercriminals**: Profit-driven attacks (ransomware, theft, fraud)\n  - **Organized Crime**: Sophisticated criminal enterprises\n  - **Fraud Operators**: Scams, Ponzi schemes, fake services\n  - **Insider Traders**: Exploiting information asymmetry\n\n  #### Ideological\n  - **Hacktivists**: Political/social cause-driven attacks\n  - **Terrorists**: Disruption and intimidation campaigns\n  - **Extremists**: Ideologically motivated destruction\n  - **Protestors**: Virtual sit-ins and disruption\n\n  #### Strategic\n  - **Nation-States**: Geopolitical and military objectives\n  - **Corporate Espionage**: Competitive intelligence gathering\n  - **Industrial Spies**: Stealing trade secrets and IP\n  - **Military Units**: Cyber warfare operations\n\n  #### Personal\n  - **Disgruntled Insiders**: Revenge against employers\n  - **Griefers**: Causing disruption for entertainment\n  - **Trolls**: Harassment and social disruption\n  - **Script Kiddies**: Learning and reputation building\n\n  ### By Sophistication\n\n  #### Tier 1: Low Sophistication\n  - **Script Kiddies**: Using pre-built tools without understanding\n  - **Opportunistic Attackers**: Exploiting widely-known vulnerabilities\n  - **Automated Bots**: Mass scanning and exploitation\n  - **Characteristics**: High volume, low targeting, easily detected\n\n  #### Tier 2: Moderate Sophistication\n  - **Skilled Hackers**: Understanding vulnerabilities and tools\n  - **Organized Crime Groups**: Coordinated multi-stage attacks\n  - **Hacktivist Collectives**: Planned ideological campaigns\n  - **Characteristics**: Selective targeting, moderate stealth, adaptable\n\n  #### Tier 3: High Sophistication\n  - **Advanced Persistent Threats (APTs)**: Long-term stealthy campaigns\n  - **Nation-State Actors**: State-sponsored cyber operations\n  - **Elite Cybercrime Groups**: Highly skilled criminal enterprises\n  - **Characteristics**: Strategic targeting, advanced techniques, well-resourced\n\n  #### Tier 4: Elite/Zero-Day\n  - **Nation-State Intelligence**: Top-tier government agencies\n  - **Zero-Day Brokers**: Discovering and selling unknown vulnerabilities\n  - **Advanced Research Teams**: Creating novel attack techniques\n  - **Characteristics**: Custom tools, previously unknown methods, near-undetectable\n\n  ## Cross-Domain Actor Profiles\n\n  ### Artificial Intelligence Domain\n\n  #### Model Thieves\n  - **Profile**: Competitors or adversaries stealing proprietary AI models\n  - **Methods**: API abuse, membership inference, model extraction\n  - **Targets**: Commercial AI services, research organizations\n  - **Impact**: IP theft, competitive disadvantage, privacy violations\n\n  #### Data Poisoners\n  - **Profile**: Actors manipulating training data or feedback systems\n  - **Methods**: Injecting malicious data, label flipping, backdoor insertion\n  - **Targets**: Public datasets, crowdsourced labeling, federated learning\n  - **Impact**: Model corruption, biased outputs, hidden backdoors\n\n  #### Adversarial Researchers\n  - **Profile**: Ethical hackers or malicious actors testing model robustness\n  - **Methods**: Adversarial perturbations, prompt injection, jailbreaking\n  - **Targets**: LLMs, computer vision systems, autonomous decision systems\n  - **Impact**: Model failure, safety violations, unintended behavior\n\n  ### Blockchain Domain\n\n  #### Cryptocurrency Thieves\n  - **Profile**: Criminals stealing digital assets through exploits\n  - **Methods**: Smart contract exploits, private key theft, bridge hacks\n  - **Targets**: DeFi protocols, exchanges, individual wallets\n  - **Impact**: Financial loss, protocol insolvency, market instability\n\n  #### 51% Attackers\n  - **Profile**: Well-resourced actors controlling consensus mechanisms\n  - **Methods**: Hash power concentration, validator coordination\n  - **Targets**: Smaller proof-of-work or proof-of-stake networks\n  - **Impact**: Double-spending, chain reorganization, network trust loss\n\n  #### Front-Runners\n  - **Profile**: Traders exploiting transaction ordering for profit\n  - **Methods**: MEV extraction, sandwich attacks, transaction reordering\n  - **Targets**: DEX trades, NFT mints, time-sensitive transactions\n  - **Impact**: User value extraction, market inefficiency\n\n  ### Robotics Domain\n\n  #### Industrial Saboteurs\n  - **Profile**: Actors disrupting manufacturing or critical infrastructure\n  - **Methods**: Control system compromise, sensor manipulation, firmware attacks\n  - **Targets**: Factory automation, power grids, transportation systems\n  - **Impact**: Production loss, safety incidents, economic damage\n\n  #### Robotics Researchers (Malicious)\n  - **Profile**: Individuals exploiting research robots for demonstrations\n  - **Methods**: Sensor spoofing, command injection, physical tampering\n  - **Targets**: Academic research labs, prototype systems\n  - **Impact**: Safety concerns, research disruption, reputation damage\n\n  ### Metaverse Domain\n\n  #### Virtual Griefers\n  - **Profile**: Individuals disrupting immersive social experiences\n  - **Methods**: Harassment, virtual property destruction, exploit abuse\n  - **Targets**: Virtual communities, social VR spaces, gaming environments\n  - **Impact**: User experience degradation, community exodus\n\n  #### NFT/Property Thieves\n  - **Profile**: Criminals stealing valuable virtual assets\n  - **Methods**: Account compromise, smart contract exploits, phishing\n  - **Targets**: High-value virtual property, rare NFTs, virtual currencies\n  - **Impact**: Financial loss, market manipulation, trust erosion\n\n  ### Telecommunications Domain\n\n  #### Meeting Bombers (Zoombombers)\n  - **Profile**: Disruptors joining video conferences uninvited\n  - **Methods**: Shared link exploitation, weak authentication bypass\n  - **Targets**: Public meetings, educational sessions, corporate calls\n  - **Impact**: Disruption, harassment, privacy violations\n\n  #### VoIP Fraudsters\n  - **Profile**: Criminals conducting toll fraud and service abuse\n  - **Methods**: PBX hacking, SIP trunk exploitation, caller ID spoofing\n  - **Targets**: Business phone systems, telecommunications providers\n  - **Impact**: Financial loss, service abuse, reputation damage\n\n  ## Threat Actor Attribution\n\n  ### Attribution Challenges\n  - **Anonymity Technologies**: VPNs, Tor, proxies obscuring origin\n  - **False Flags**: Deliberate misdirection and planted evidence\n  - **Infrastructure Sharing**: Multiple actors using same tools/servers\n  - **Proxy Actors**: State-sponsored groups operating under cover\n\n  ### Attribution Indicators\n  - **Tactics, Techniques, Procedures (TTPs)**: Characteristic methods\n  - **Infrastructure**: Command and control server patterns\n  - **Targeting**: Victim selection and objectives\n  - **Timing**: Operational hours and campaign schedules\n  - **Language**: Code comments, malware strings, communications\n  - **Capabilities**: Tool sophistication and technical knowledge\n\n  ## Defensive Strategies by Actor Type\n\n  ### Against Low-Sophistication Actors\n  - **Basic Security Hygiene**: Patching, strong passwords, MFA\n  - **Network Filtering**: Blocking known bad IPs and signatures\n  - **User Awareness**: Training against common attacks\n  - **Automated Detection**: IDS/IPS with signature-based detection\n\n  ### Against Moderate-Sophistication Actors\n  - **Defense in Depth**: Multiple security layers\n  - **Behavioral Analysis**: Detecting anomalous activities\n  - **Threat Intelligence**: Leveraging known actor TTPs\n  - **Incident Response**: Prepared procedures for breach containment\n\n  ### Against High-Sophistication Actors\n  - **Advanced Threat Hunting**: Proactive adversary search\n  - **Zero Trust Architecture**: Assume breach mentality\n  - **Deception Technologies**: Honeypots and canary tokens\n  - **Intelligence Sharing**: Collaboration with peers and government\n  - **Continuous Monitoring**: 24/7 SOC operations\n\n  ### Against Nation-State Actors\n  - **Assume Breach**: Plan for compromise inevitability\n  - **Critical Asset Isolation**: Air-gapped sensitive systems\n  - **Supply Chain Security**: Rigorous vendor vetting\n  - **Government Cooperation**: CISA, FBI, IC coordination\n  - **Resilience Focus**: Recovery over prevention\n\n  #### Related Concepts\n  - [[Attack Vector]]: Methods threat actors use to exploit systems\n  - [[Vulnerability]]: Weaknesses threat actors exploit\n  - [[Resilience]]: System ability to withstand threat actor activities\n  - [[Security]]: Overall framework for defending against threat actors\n  - [[Risk]]: Potential impact of threat actor success\n\n  #### References\n  - MITRE ATT&CK: Threat actor tactics and techniques catalog\n  - Diamond Model of Intrusion Analysis: Threat actor analysis framework\n  - Lockheed Martin Cyber Kill Chain: Attack lifecycle model\n  - Mandiant APT Reports: Nation-state threat actor intelligence\n  - CISA: Government threat actor alerts and advisories\n\n  ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Vulnerability",
+    "Attack Vector"
+  ],
+  "wiki_links": [
+    "Attack Vector",
+    "Blockchain",
+    "Resilience",
+    "Risk",
+    "Security",
+    "Vulnerability"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:threat-actor",
+    "iri": "http://narrativegoldmine.com/blockchain#ThreatActor",
+    "content_hash": "sha256-12-7a58cce28d78",
+    "legacy_term_id": "BC-threat-actor",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:threat-actor",
+    "schema_version": "v2",
+    "term_id": "BC-threat-actor",
+    "preferred_term": "Threat Actor",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "Threat Actor is a concept within the bc domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:ThreatActor",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Blockchain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

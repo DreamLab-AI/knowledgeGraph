@@ -1,0 +1,129 @@
+{
+  "id": "adapter-slot",
+  "title": "Adapter Slot",
+  "content": "- ### Definition\n  - A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:AdapterSlot\n  - owl-role:: Process\n  - belongs-to-domain:: [[AgenticSystemsDomain]], [[ArchitectureDomain]]\n  - implemented-in-layer:: [[InfrastructureLayer]], [[AdapterLayer]]\n\n- ### Relationships\n  - has-part:: [[Pod Adapter]], [[Memory Adapter]], [[Event Adapter]], [[Bead Adapter]], [[Orchestrator Adapter]]\n  - requires:: [[Manifest Declaration]], [[Interface Specification]], [[Runtime Initialization]]\n  - enables:: [[Pluggable Storage]], [[Pluggable Memory]], [[Pluggable Telemetry]], [[Pluggable Work Distribution]], [[Deployment Flexibility]]\n  - implements:: [[Strategy Pattern]], [[Adapter Pattern]], [[Dependency Injection]]\n  - bridges-to:: [[Containerisation]] (domain: ngm), [[Microservices Architecture]] (domain: ngm)\n\n- ### Content\n\n  The Adapter Slot architecture is the isolation boundary between agent logic and the underlying infrastructure. It allows agents to be deployed in diverse environments (local development, cloud, edge, distributed mesh) without code changes, by swapping adapter implementations at runtime.\n\n  #### Five Slots\n\n  **1. Pod Adapter**\n  - **Purpose**: Persistent storage of agent state, credentials, and artefacts.\n  - **Interface**: Standard CRUD operations (Create, Read, Update, Delete) and query methods.\n  - **Built-In Implementations**:\n    - **[[Solid Pod Storage|Solid Pod]]**: Stores data in a remote Solid-compliant pod (e.g., a Solid server or SPARQL backend).\n    - **Local Filesystem**: Stores data in a local directory (for single-agent deployments).\n    - **S3-Compatible**: Stores data in cloud object storage (AWS S3, MinIO, etc.).\n    - **RDF Triple Store**: Stores data as RDF triples in a SPARQL endpoint.\n  - **Manifest Specification**:\n    ```yaml\n    adapters:\n      pod: solid-pod\n      pod_config:\n        url: https://solid.example.com/alice/\n        token: <access_token>\n    ```\n\n  **2. Memory Adapter**\n  - **Purpose**: Agent episodic memory (recent tasks, observations) and semantic memory (learned patterns, world models).\n  - **Interface**: Store(key, value), Retrieve(key), Search(query), Forget(key).\n  - **Built-In Implementations**:\n    - **In-Process**: Memory stored in agent process RAM (fast, volatile).\n    - **Redis**: External in-memory store (persistent, shareable across agent instances).\n    - **RuVector**: Semantic memory with HNSW-indexed embeddings (vector search enabled).\n    - **SQLite**: Local database with schema constraints.\n  - **Manifest Specification**:\n    ```yaml\n    adapters:\n      memory: ruvector\n      memory_config:\n        host: ruvector-postgres:5432\n        database: agent-memory\n        embedding_model: all-MiniLM-L6-v2\n    ```\n\n  **3. Event Adapter**\n  - **Purpose**: Emit telemetry events (agent birth, activity, completion, errors, termination).\n  - **Interface**: Emit(eventType, payload), Subscribe(eventType, callback).\n  - **Built-In Implementations**:\n    - **Nostr Relay**: Publishes events to [[Nostr Relay|Nostr relays]].\n    - **WebSocket Server**: Streams events over WebSocket to a local or remote listener.\n    - **Message Queue** (RabbitMQ, Kafka): Publishes to a message broker.\n    - **Stdout**: Logs events to standard output (for container-based observability).\n  - **Manifest Specification**:\n    ```yaml\n    adapters:\n      events: nostr-relay\n      events_config:\n        relays:\n          - wss://relay.damus.io\n          - wss://relay.local:8008\n    ```\n\n  **4. Bead Adapter**\n  - **Purpose**: Receive work units ([[Agent Bead|beads]]) and track completion.\n  - **Interface**: FetchBead(filter), AcknowledgeBead(beadId), CompleteBead(beadId, result).\n  - **Built-In Implementations**:\n    - **[[Nostr Relay|Nostr Relay]]**: Beads are published as Nostr events tagged with the agent's DID.\n    - **HTTP Polling**: Agent polls a work queue endpoint (e.g., a REST API) for pending beads.\n    - **Message Queue**: Agent consumes beads from a RabbitMQ or Kafka queue.\n    - **[[Solid Pod Storage|Solid Pod]]**: Beads are stored as RDF resources in the agent's pod.\n  - **Manifest Specification**:\n    ```yaml\n    adapters:\n      beads: nostr-relay\n      beads_config:\n        relays:\n          - wss://relay.damus.io\n    ```\n\n  **5. Orchestrator Adapter**\n  - **Purpose**: Control signals (pause, resume, terminate, policy changes) and resource constraints (CPU, memory, timeout).\n  - **Interface**: SetPolicy(policy), GetPolicy(), SetResourceLimit(resource, limit), IsShuttingDown().\n  - **Built-In Implementations**:\n    - **Management API**: Remote control via HTTP endpoints.\n    - **Local Control**: Command-line interface or environment variable control.\n    - **Kubernetes**: Integration with Kubernetes resource limits and probes.\n    - **[[Nostr Relay|Nostr Relay]]**: Control signals published as tagged Nostr events.\n  - **Manifest Specification**:\n    ```yaml\n    adapters:\n      orchestrator: management-api\n      orchestrator_config:\n        control_endpoint: https://agentbox.local/control\n        api_key: <key>\n    ```\n\n  #### Adapter Initialization\n\n  The agent's manifest declares which adapters to use. On startup, the [[VisionClaw Agentic Container|VisionClaw runtime]]:\n\n  1. **Reads the manifest**.\n  2. **Instantiates each adapter** from a registry of available implementations.\n  3. **Injects adapters into the agent** via dependency injection.\n  4. **Agent logic uses adapters** through abstract interfaces, never knowing which concrete implementation is loaded.\n\n  This design means that the agent code is completely decoupled from the infrastructure choices.\n\n  #### Example: Multi-Adapter Deployment\n\n  A single agent can use different adapters in different environments:\n\n  **Development**:\n  ```yaml\n  adapters:\n    pod: local-filesystem\n    memory: in-process\n    events: stdout\n    beads: local-polling\n    orchestrator: cli\n  ```\n\n  **Production**:\n  ```yaml\n  adapters:\n    pod: solid-pod\n    memory: ruvector\n    events: nostr-relay\n    beads: nostr-relay\n    orchestrator: management-api\n  ```\n\n  The agent code is identical in both cases.\n\n  #### Failure Isolation\n\n  If a Pod Adapter is slow (e.g., the remote Solid server is unreachable), the agent doesn't block. Instead:\n\n  - Agent logic continues executing (using in-memory copies of recent data).\n  - Pod writes are queued locally.\n  - When the pod becomes reachable, queued writes are flushed.\n\n  Similarly, if the Event Adapter is unavailable, the agent buffers events locally until the adapter recovers. This isolation ensures that infrastructure failures don't cascade to agent logic.\n\n  #### Custom Adapters\n\n  Operators can implement custom adapters. For example:\n\n  - **Custom Pod Adapter**: Stores agent state in a proprietary ledger system.\n  - **Custom Memory Adapter**: Uses a specialised vector database optimised for agent patterns.\n  - **Custom Event Adapter**: Publishes to an operator's custom telemetry service.\n\n  The only requirement is that the custom adapter implements the abstract interface. Once implemented, it can be registered and used by any agent.\n\n- ### Provenance\n  - sources:: [[ADR-005]], [[Design Patterns - Gang of Four]], [[Dependency Injection Principles]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "VisionClaw Agentic Container"
+  ],
+  "wiki_links": [
+    "ADR-005",
+    "Adapter Pattern",
+    "AdapterLayer",
+    "Agent Bead",
+    "Agent Event Stream",
+    "Agent Memory",
+    "AgenticSystemsDomain",
+    "ArchitectureDomain",
+    "Bead Adapter",
+    "Containerisation",
+    "Dependency Injection",
+    "Dependency Injection Principles",
+    "Deployment Flexibility",
+    "Design Patterns - Gang of Four",
+    "Event Adapter",
+    "InfrastructureLayer",
+    "Interface Specification",
+    "Manifest Declaration",
+    "Memory Adapter",
+    "Microservices Architecture",
+    "Nostr Relay",
+    "Orchestration Interface",
+    "Orchestrator Adapter",
+    "Pluggable Memory",
+    "Pluggable Storage",
+    "Pluggable Telemetry",
+    "Pluggable Work Distribution",
+    "Pod Adapter",
+    "Runtime Initialization",
+    "Solid Pod Storage",
+    "Strategy Pattern",
+    "VisionClaw Agentic Container"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:adapter-slot",
+    "iri": "http://narrativegoldmine.com/infrastructure#AdapterSlot",
+    "content_hash": "sha256-12-b8c9dae0f1a2",
+    "legacy_term_id": "NGM-adapter-slot",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:adapter-slot",
+    "schema_version": "v2",
+    "term_id": "NGM-adapter-slot",
+    "preferred_term": "Adapter Slot",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Events (telemetry)]], [[Agent Bead|Beads (work units)]], and [[Orchestration Interface|Orchestrator (control)]], each replaceable at runtime without modifying agent code.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.89,
+    "authority_score": 0.91,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:AdapterSlot",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [
+      "Pod Adapter",
+      "Memory Adapter",
+      "Event Adapter",
+      "Bead Adapter",
+      "Orchestrator Adapter"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "Manifest Declaration",
+      "Interface Specification",
+      "Runtime Initialization"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Pluggable Storage",
+      "Pluggable Memory",
+      "Pluggable Telemetry",
+      "Pluggable Work Distribution",
+      "Deployment Flexibility"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Containerisation",
+      "Microservices Architecture"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AgenticSystemsDomain",
+      "ArchitectureDomain"
+    ],
+    "implemented_in_layer": [
+      "InfrastructureLayer",
+      "AdapterLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ADR-005",
+      "Design Patterns - Gang of Four",
+      "Dependency Injection Principles"
+    ],
+    "other_relationships": {
+      "implements": [
+        "Strategy Pattern",
+        "Adapter Pattern",
+        "Dependency Injection"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

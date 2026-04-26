@@ -1,44 +1,36 @@
-- ### OntologyBlock
-  id:: modelops-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#ModelOps
+uri:: urn:visionclaw:concept:artificial-intelligence:modelops
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:modelops
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: ModelOps
+content-hash:: sha256-12-531a1276657d
+legacy-term-id:: AI-0861
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0861
-    - filename-history:: ["AI-0861-modelops.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0861
-    - preferred-term:: ModelOps
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - End-to-end governance and lifecycle management of AI models.
 
-  - **Definition**
-    - definition:: End-to-end governance and lifecycle management of AI models.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ModelOps
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:ModelOps
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Ai Engineering]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Ai Engineering]]
+- ### Content
+  ModelOps — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ModelOps))
-      (SubClassOf :ModelOps :AiEngineering)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ModelOps "ModelOps"@en)
-      (AnnotationAssertion rdfs:comment :ModelOps
-        "End-to-end governance and lifecycle management of AI models."@en)
-      ```
-
-- ## About ModelOps
-  End-to-end governance and lifecycle management of AI models.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

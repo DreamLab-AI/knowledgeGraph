@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9621-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9621
-	- preferred-term:: Governance
-	- source-domain:: mv
-	- owl:class:: mv:Governance
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Governance is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/metaverse#Governance
+uri:: urn:visionclaw:concept:artificial-intelligence:governance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:governance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Governance
+content-hash:: sha256-12-0e94ea901f59
+legacy-term-id:: MV-9621
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Governance is a concept within the metaverse domain. Further enrichment pending.
 
-Governance represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Governance
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Governance represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

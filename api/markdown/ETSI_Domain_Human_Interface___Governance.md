@@ -1,55 +1,56 @@
-- ### OntologyBlock
-  id:: etsi_domain_human_interface___governance-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-2001
-	- preferred-term:: ETSI_Domain_Human_Interface___Governance
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Human_Interface___Governance
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/metaverse#ETSIDomainHumanInterfaceGovernance
+uri:: urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomainhumaninterfacegovernance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: ETSI_Domain_Human_Interface___Governance
+content-hash:: sha256-12-3ece9f33ad4f
+legacy-term-id:: MV-2001
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## OWL Formal Semantics
+- ### Definition
+  - An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]]. This specialised domain combines [[DecentralisedGovernance]], [[RoleBasedAccess]], [[ConsentManagement]], and [[PolicyEnforcement]] to establish accountable, transparent participation structures.
 
-```clojure
-;; OWL Functional Syntax
+- ### Bridge-To
+  - bridges-to:: [[Blockchain]] (bc)
 
-(Declaration (Class :Etsidomainhumaninterfacegovernance))
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ETSI_Domain_Human_Interface___Governance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-;; Annotations
-(AnnotationAssertion rdfs:label :Etsidomainhumaninterfacegovernance "ETSI_Domain_Human_Interface___Governance"@en)
-(AnnotationAssertion rdfs:comment :Etsidomainhumaninterfacegovernance "A component of the metaverse ecosystem."@en)
+- ### Relationships
+  - <!-- No relationships defined -->
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Etsidomainhumaninterfacegovernance "mv-1761742247920"^^xsd:string)
-```
-
-- ## About ETSI_Domain_Human_Interface___Governance
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Content
+  - The ETSI Human Interface Governance domain addresses governance mechanisms and policies governing human interaction systems in virtual environments.
+  - ### Original Content
 		- ```
-# ETSI_Domain_Human_Interface___Governance
-		  
+  # ETSI_Domain_Human_Interface___Governance
+
 		  **ID:** 20356
 		  **Classification:** VirtualObject
 		  **Stage:** Defined
 		  **Domain:** InfrastructureDomain
 		  **Layer:** ApplicationLayer
-		  
+
 		  ## Overview
-		  
+
 		  ETSI Domain categorization representing the crossover between HumanInterface and Governance domains, addressing interface governance policies, accessibility compliance, and user interaction regulation.
-		  
+
 		  ## Formal Characteristics
-		  
+
 		  ### SubClassOf Axioms
-		  
+
 		  1. **SubClassOf**: VirtualObject
 		  2. **SubClassOf**: hasDomain some InfrastructureDomain
 		  3. **SubClassOf**: operatesInLayer some ApplicationLayer
@@ -59,99 +60,101 @@
 		  7. **SubClassOf**: providesUserInteractionRegulation some InterfaceGovernanceService
 		  8. **SubClassOf**: hasStandardsReference value "WCAG_2.1_and_ISO_23257"
 		  9. **SubClassOf**: bridgesDomains exactly 2 (HumanInterfaceDomain and GovernanceDomain)
-		  
+
 		  ## Domain Context
-		  
+
 		  - **Primary Domain**: HumanInterface + Governance crossover
 		  - **Standards Alignment**: ETSI GR MEC 032, WCAG 2.1, ISO 23257
 		  - **Functional Role**: Interface governance and accessibility compliance
 		  - **Integration Pattern**: User interaction regulation and accessibility oversight
-		  
-		  ## Related Concepts
-		  
-		  - ETSI_Domain_Human_Interface
+
+  #### Related Concepts
+  - ETSI_Domain_Human_Interface
 		  - ETSI_Domain_Governance_Compliance
 		  - ETSI_Domain_Accessibility
 		  - AccessibilityComplianceFramework
-		  
-		  ## References
-		  
-		  - ETSI GR MEC 032 (Metaverse Architectural Framework)
+
+  #### References
+  - ETSI GR MEC 032 (Metaverse Architectural Framework)
 		  - WCAG 2.1 (Web Content Accessibility Guidelines)
 		  - ISO 23257 (Metaverse Governance)
-		  
+
 		  ```
 
-## Academic Context
+  ## Academic Context
 
-- The ETSI Domain Human Interface — Governance forms a critical component within the broader metaverse ecosystem, focusing on the governance aspects of human interfaces in virtual environments.
+  - The ETSI Domain Human Interface — Governance forms a critical component within the broader metaverse ecosystem, focusing on the governance aspects of human interfaces in virtual environments.
   - It builds on foundational research in virtual worlds, augmented reality, and human-computer interaction, integrating governance frameworks to ensure ethical, interoperable, and user-centric design.
   - Key developments include the articulation of standards and policy recommendations that address interoperability, data protection, and inclusive design within immersive digital spaces.
   - Academic foundations draw from interdisciplinary fields such as computer science, digital ethics, and social informatics, emphasising the socio-technical challenges of virtual world governance.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption of governance frameworks for human interfaces in the metaverse is accelerating, with ETSI and other standards bodies actively developing interoperable standards.
+  - Industry adoption of governance frameworks for human interfaces in the metaverse is accelerating, with ETSI and other standards bodies actively developing interoperable standards.
   - Notable organisations include ETSI’s Industry Specification Group on Augmented Reality Framework (ISG ARF), the ITU-T Focus Group on Metaverse (FG-MV), and the Metaverse Standards Forum, all contributing to governance and interoperability standards.
   - UK and North England examples:
     - Manchester and Leeds universities are engaged in research on ethical AI and user interface governance in virtual environments.
     - Newcastle’s digital innovation hubs are piloting governance models for immersive experiences in public services.
     - Sheffield’s tech clusters focus on accessibility and inclusivity standards for human interfaces in virtual worlds.
-- Technical capabilities have matured to support secure, interoperable human interfaces, but challenges remain in privacy protection, user identity governance, and cross-platform consistency.
-- Standards and frameworks currently emphasise:
+  - Technical capabilities have matured to support secure, interoperable human interfaces, but challenges remain in privacy protection, user identity governance, and cross-platform consistency.
+  - Standards and frameworks currently emphasise:
   - Ethical and inclusive design principles
   - Data privacy and personally identifiable information (PII) protection
   - Interoperability across devices and platforms
   - Governance structures that balance innovation with user rights and societal impact
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources include:
+  - Key academic papers and sources include:
   - Runde, C. (2025). *ETSI Augmented Reality Framework (ARF): Virtual World Standards Recommendations Report*. ETSI. Available at Figshare. DOI: 10.6084/m9.figshare.30444941.v1
   - ITU-T Focus Group on Metaverse (2024). *Metaverse Standards and Governance Frameworks*. International Telecommunication Union. URL: https://www.itu.int/en/ITU-T/focusgroups/mv/
   - Metaverse Standards Forum (2025). *Towards Interoperable Anchoring for XR*. April 2025. URL: https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf
-- Ongoing research directions focus on:
+  - Ongoing research directions focus on:
   - Enhancing interoperability of governance mechanisms across heterogeneous platforms
   - Developing scalable privacy-preserving identity management
   - Embedding ethical AI governance in human interface design
   - Addressing regulatory challenges in cross-jurisdictional virtual environments
 
-## UK Context
+  ## UK Context
 
-- The UK is a significant contributor to metaverse governance research and standardisation, with government-backed initiatives supporting ethical digital innovation.
-- North England innovation hubs:
+  - The UK is a significant contributor to metaverse governance research and standardisation, with government-backed initiatives supporting ethical digital innovation.
+  - North England innovation hubs:
   - Manchester’s Digital Futures Institute leads projects on user-centric governance models for immersive technologies.
   - Leeds Digital Hub collaborates with industry partners to pilot governance frameworks ensuring accessibility and data protection.
   - Newcastle’s Centre for Digital Innovation explores regulatory compliance and governance in public sector metaverse applications.
   - Sheffield’s Advanced Manufacturing Research Centre integrates human interface governance into industrial metaverse use cases.
-- Regional case studies demonstrate practical governance implementations balancing user experience with regulatory compliance, often with a dash of northern wit to keep things lively.
+  - Regional case studies demonstrate practical governance implementations balancing user experience with regulatory compliance, often with a dash of northern wit to keep things lively.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends include:
+  - Emerging trends include:
   - Greater emphasis on decentralised governance models leveraging blockchain and distributed ledgers
   - Integration of AI-driven governance assistants to support real-time compliance and ethical decision-making
   - Expansion of governance frameworks to cover emerging modalities such as brain-computer interfaces and haptic feedback systems
-- Anticipated challenges:
+  - Anticipated challenges:
   - Harmonising international governance standards with local legal frameworks, especially post-Brexit UK
   - Ensuring inclusivity without stifling innovation or user freedom
   - Managing the complexity of multi-stakeholder governance in rapidly evolving virtual environments
-- Research priorities:
+  - Research priorities:
   - Developing robust, transparent governance mechanisms that are user-friendly and adaptable
   - Investigating socio-technical impacts of governance decisions on diverse user populations
   - Creating educational resources and best practices to support governance adoption across sectors
 
-## References
+  ## References
 
-1. Runde, C. (2025). *ETSI Augmented Reality Framework (ARF): Virtual World Standards Recommendations Report*. ETSI. Available at Figshare. DOI: 10.6084/m9.figshare.30444941.v1  
-2. ITU-T Focus Group on Metaverse (2024). *Metaverse Standards and Governance Frameworks*. International Telecommunication Union. URL: https://www.itu.int/en/ITU-T/focusgroups/mv/  
-3. Metaverse Standards Forum (2025). *Towards Interoperable Anchoring for XR*. April 2025. URL: https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf  
-4. ETSI Portal (2025). Work Item Reports on Virtual Worlds and Human Interface Governance. URL: https://portal.etsi.org/webapp/workprogram/Report_WorkItem.asp?WKI_ID=73721
+  1. Runde, C. (2025). *ETSI Augmented Reality Framework (ARF): Virtual World Standards Recommendations Report*. ETSI. Available at Figshare. DOI: 10.6084/m9.figshare.30444941.v1  
+  2. ITU-T Focus Group on Metaverse (2024). *Metaverse Standards and Governance Frameworks*. International Telecommunication Union. URL: https://www.itu.int/en/ITU-T/focusgroups/mv/  
+  3. Metaverse Standards Forum (2025). *Towards Interoperable Anchoring for XR*. April 2025. URL: https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf  
+  4. ETSI Portal (2025). Work Item Reports on Virtual Worlds and Human Interface Governance. URL: https://portal.etsi.org/webapp/workprogram/Report_WorkItem.asp?WKI_ID=73721
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[ETSI GR MEC 032]], [[WCAG 2.1]], [[ISO 23257]]
+  - migration-date:: 2026-04-26T00:00:00Z

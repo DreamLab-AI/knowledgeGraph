@@ -1,37 +1,50 @@
 {
-  "id": "Proxemics",
+  "id": "proxemics",
   "title": "Proxemics",
-  "content": "- ### OntologyBlock\n  id:: RB-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9006\n\t- source-domain:: rb\n\t- preferred-term:: Proxemics\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.\n\t- source:: [[HRI]], [[Social Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:Proxemics\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
+  "content": "- ### Definition\n  - Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.\n\n- ### Semantic Classification\n  - owl-class:: robotics:Proxemics\n  - owl-role:: Process\n  - belongs-to-domain:: [[RoboticsDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Robotics]]\n\n- ### Content\n  Proxemics — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[HRI]], [[Social Robotics]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
     "HRI",
     "Robotics",
+    "RoboticsDomain",
     "Social Robotics"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:proxemics",
+    "iri": "http://narrativegoldmine.com/robotics#Proxemics",
+    "content_hash": "sha256-12-cd77f4a56880",
+    "legacy_term_id": "RB-9006",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:proxemics",
+    "schema_version": "v2",
     "term_id": "RB-9006",
     "preferred_term": "Proxemics",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#Proxemics",
-    "source_domain": "rb",
     "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
     "domain_full_name": "Robotics",
     "definition": "Study and application of spatial relationships between humans and robots, including personal space, social distance, and comfort zones for effective human-robot interaction.",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:Proxemics",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:Proxemics",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Robotics"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -40,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "RoboticsDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "HRI",
       "Social Robotics"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

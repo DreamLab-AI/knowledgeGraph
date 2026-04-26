@@ -1,45 +1,54 @@
 {
-  "id": "Digital Twin Generation",
+  "id": "digital-twin-generation",
   "title": "Digital Twin Generation",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-generation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9879\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Generation\n\t- definition:: The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinGeneration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-generation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Automated Modeling]]\n\t\t- enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]\n\t\t- requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning]]\n\t\t- related-to:: [[NVIDIA Omniverse]], [[Computer Vision]], [[Synthetic Data]]\n- ## Technical Details\n\t- **AI-Powered Platforms**:\n\t\t- NVIDIA Omniverse: USD-based real-time 3D workflows with AI\n\t\t- Ansys TwinAI: Physics models integrated with real-world data\n\t\t- Blackshark.AI: Satellite imagery to 3D globe reconstruction\n\t- **Automated Generation Approaches**:\n\t\t- Deep reinforcement learning for smart manufacturing\n\t\t- Gaussian splats for reduced image requirements\n\t\t- AI-based semantic segmentation and labeling\n\t\t- Photogrammetric 3D reconstruction automation\n\t- **Generative AI Synergies**:\n\t\t- Gen AI structures inputs and synthesizes outputs\n\t\t- Digital twins provide test-and-learn environments for AI\n\t\t- Combined approach reduces costs and accelerates deployment\n\t- **Auto Digital Twins Project**: AI and Big Data for accurate industrial models, solving 3D labeling cost bottleneck\n- ## Applications\n\t- Automated factory floor digitization\n\t- Globe-scale 3D model creation\n\t- AI training data generation\n\t- Industrial asset inventory\n\t- Real-time simulation model updates",
+  "content": "- ### Definition\n  - The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.\n\nbridges-to:: [[Computer Vision]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalTwinGeneration\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Automated Modeling]]\n  - requires:: [[Generative AI]], [[3D Capture]], [[Machine Learning]]\n  - enables:: [[Rapid Prototyping]], [[Mass Digitization]], [[AI Training]]\n\n- ### Content\n\n  - ## Technical Details\n  - **AI-Powered Platforms**:\n\t\t- NVIDIA Omniverse: USD-based real-time 3D workflows with AI\n\t\t- Ansys TwinAI: Physics models integrated with real-world data\n\t\t- Blackshark.AI: Satellite imagery to 3D globe reconstruction\n  - **Automated Generation Approaches**:\n\t\t- Deep reinforcement learning for smart manufacturing\n\t\t- Gaussian splats for reduced image requirements\n\t\t- AI-based semantic segmentation and labeling\n\t\t- Photogrammetric 3D reconstruction automation\n  - **Generative AI Synergies**:\n\t\t- Gen AI structures inputs and synthesizes outputs\n\t\t- Digital twins provide test-and-learn environments for AI\n\t\t- Combined approach reduces costs and accelerates deployment\n  - **Auto Digital Twins Project**: AI and Big Data for accurate industrial models, solving 3D labeling cost bottleneck\n  - ## Applications\n  - Automated factory floor digitization\n  - Globe-scale 3D model creation\n  - AI training data generation\n  - Industrial asset inventory\n  - Real-time simulation model updates\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Human Capture & Recognition",
     "Neural 3D Generation"
   ],
   "wiki_links": [
-    "Rapid Prototyping",
-    "Generative AI",
-    "Automated Modeling",
-    "Mass Digitization",
     "3D Capture",
-    "Computer Vision",
     "AI Training",
-    "metaverse",
-    "Synthetic Data",
-    "NVIDIA Omniverse",
-    "Machine Learning"
+    "Automated Modeling",
+    "Computer Vision",
+    "Generative AI",
+    "Machine Learning",
+    "Mass Digitization",
+    "Rapid Prototyping",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-twin-generation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalTwinGeneration",
+    "content_hash": "sha256-12-146debfe4011",
+    "legacy_term_id": "MV-9879",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-twin-generation",
+    "schema_version": "v2",
     "term_id": "MV-9879",
     "preferred_term": "Digital Twin Generation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalTwinGeneration",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalTwinGeneration",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalTwinGeneration",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Automated Modeling"
@@ -60,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "NVIDIA Omniverse",
-        "Computer Vision",
-        "Synthetic Data"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

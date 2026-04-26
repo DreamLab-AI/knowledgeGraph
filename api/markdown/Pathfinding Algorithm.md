@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: pathfindingalgorithm-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#PathfindingAlgorithm
+uri:: urn:visionclaw:concept:artificial-intelligence:pathfinding-algorithm
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:pathfinding-algorithm
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Pathfinding Algorithm
+content-hash:: sha256-12-6cf2c303a967
+legacy-term-id:: AI-0851
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0851
-    - filename-history:: ["AI-0851-pathfindingalgorithm.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0851
-    - preferred-term:: Pathfinding Algorithm
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Pathfinding Algorithm is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:PathfindingAlgorithm
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:PathfindingAlgorithm
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Algorithm]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Algorithm]]
+- ### Content
+  Pathfinding Algorithm — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PathfindingAlgorithm))
-      (SubClassOf :PathfindingAlgorithm :Algorithm)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PathfindingAlgorithm "Pathfinding Algorithm"@en)
-      ```
-
-- ## About Pathfinding Algorithm
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

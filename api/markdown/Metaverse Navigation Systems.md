@@ -1,90 +1,93 @@
-- ### OntologyBlock
-  id:: metaverse-navigation-systems-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0010
-	- preferred-term:: Metaverse Navigation Systems
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:MetaverseNavigationSystems
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Spatial & Immersive
+iri:: http://narrativegoldmine.com/spatial-computing#MetaverseNavigationSystems
+uri:: urn:visionclaw:concept:spatial-computing:metaverse-navigation-systems
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metaverse-navigation-systems
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metaverse Navigation Systems
+content-hash:: sha256-12-5ab4eeb7ff8f
+legacy-term-id:: ME-0010
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetaverseNavigationSystems
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-# Metaverse Navigation Systems: A Comprehensive Overview
+- ### Relationships
+  - bridges-to:: [[Telecollaboration]]
 
-## Technical Definition
+- ### Content
 
-Metaverse navigation systems are **spatially-embedded interaction mechanisms** that enable users to traverse and orient themselves within synchronously shared, persistent three-dimensional virtual environments through immersive techniques such as gaze-based controls, hand-tracking, spatial overlays, and locomotion methods (joystick, teleportation, redirected walking).[1][2][5] These systems integrate environmental awareness, wayfinding cues, and presence-based coordination to facilitate seamless movement across interconnected virtual worlds whilst maintaining spatial cognition and user experience quality.[1][5]
+  ## Overview
 
-## Current State and Implementations (2024–2025)
+  # Metaverse Navigation Systems: A Comprehensive Overview
 
-**Navigation Interface Paradigms**
+  ## Technical Definition
 
-Contemporary metaverse navigation employs multiple interaction modalities:
+  Metaverse navigation systems are **spatially-embedded interaction mechanisms** that enable users to traverse and orient themselves within synchronously shared, persistent three-dimensional virtual environments through immersive techniques such as gaze-based controls, hand-tracking, spatial overlays, and locomotion methods (joystick, teleportation, redirected walking).[1][2][5] These systems integrate environmental awareness, wayfinding cues, and presence-based coordination to facilitate seamless movement across interconnected virtual worlds whilst maintaining spatial cognition and user experience quality.[1][5]
 
-- **Gaze-based and hand-tracked menus** for intuitive movement selection
-- **Spatial augmentation** including mini-maps, augmented compasses, and proximity sensors
-- **Visual overlays** such as directional arrows, street nomenclature in AR, and AI-guided notifications[1]
+  ## Current State and Implementations (2024–2025)
 
-**Locomotion Techniques**
+  **Navigation Interface Paradigms**
 
-Research identifies three predominant locomotion approaches: joystick-based continuous movement, instantaneous teleportation for long-range traversal, and redirected walking (RDW)—which approximates natural ambulation within constrained physical spaces.[5] Studies demonstrate that environmental dynamics (static versus dynamic obstacle scenarios) significantly influence spatial knowledge acquisition, task performance, and user experience across these techniques.[5]
+  Contemporary metaverse navigation employs multiple interaction modalities:
 
-**Social and Presence-Aware Navigation**
+  - **Gaze-based and hand-tracked menus** for intuitive movement selection
+  - **Spatial augmentation** including mini-maps, augmented compasses, and proximity sensors
+  - **Visual overlays** such as directional arrows, street nomenclature in AR, and AI-guided notifications[1]
 
-Contemporary implementations increasingly incorporate **presence-based systems** enabling users to follow acquaintances across virtual worlds, visualise proximity of known contacts, coordinate real-time co-navigation, and receive AI-companion-initiated nudges when deviating from intended paths.[1] This represents a paradigm shift from purely geographic wayfinding towards **intention-aware, socially-embedded navigation**.[1]
+  **Locomotion Techniques**
 
-## UK Context and North England Examples
+  Research identifies three predominant locomotion approaches: joystick-based continuous movement, instantaneous teleportation for long-range traversal, and redirected walking (RDW)—which approximates natural ambulation within constrained physical spaces.[5] Studies demonstrate that environmental dynamics (static versus dynamic obstacle scenarios) significantly influence spatial knowledge acquisition, task performance, and user experience across these techniques.[5]
 
-The search results provided do not contain specific information regarding UK implementations or North England case studies of metaverse navigation systems. To provide accurate, contextualised examples from these regions, additional sources focusing on UK-based metaverse development initiatives, academic research institutions, or commercial deployments would be required.
+  **Social and Presence-Aware Navigation**
 
-## Key Research and Sources
+  Contemporary implementations increasingly incorporate **presence-based systems** enabling users to follow acquaintances across virtual worlds, visualise proximity of known contacts, coordinate real-time co-navigation, and receive AI-companion-initiated nudges when deviating from intended paths.[1] This represents a paradigm shift from purely geographic wayfinding towards **intention-aware, socially-embedded navigation**.[1]
 
-The search results reference the following scholarly work:
+  #### UK Context
+  The search results provided do not contain specific information regarding UK implementations or North England case studies of metaverse navigation systems. To provide accurate, contextualised examples from these regions, additional sources focusing on UK-based metaverse development initiatives, academic research institutions, or commercial deployments would be required.
 
-- **IEEE Transactions on Visualization and Computer Graphics**: Comparative study examining effects of environmental dynamics and locomotion techniques on spatial knowledge, task performance, and user experience in VR navigation.[5]
+  ## Key Research and Sources
 
-However, comprehensive full citations with publication dates, author names, and DOI identifiers are not available within the provided search results. For rigorous academic referencing, consultation of the original IEEE publication and the Duality AI framework documentation would be necessary.
+  The search results reference the following scholarly work:
 
-## Future Outlook
+  - **IEEE Transactions on Visualization and Computer Graphics**: Comparative study examining effects of environmental dynamics and locomotion techniques on spatial knowledge, task performance, and user experience in VR navigation.[5]
 
-**Interoperability and Open Standards**
+  However, comprehensive full citations with publication dates, author names, and DOI identifiers are not available within the provided search results. For rigorous academic referencing, consultation of the original IEEE publication and the Duality AI framework documentation would be necessary.
 
-The metaverse navigation landscape is anticipated to transition from **closed, proprietary ecosystems** towards **interoperable, standardised systems**.[1] Historical precedent suggests that once dominant platforms emerge, competing systems will adopt compatible standards—analogous to how corporate entities integrated into the broader internet rather than constructing isolated networks.[1]
+  ## Future Outlook
 
-**Mixed Reality Integration**
+  **Interoperability and Open Standards**
 
-Navigation will increasingly blur physical and digital domains through **ambient, spatially-embedded AR overlays**—including sidewalk arrows, room labels, and contextual information seamlessly integrated into users' visual fields.[1]
+  The metaverse navigation landscape is anticipated to transition from **closed, proprietary ecosystems** towards **interoperable, standardised systems**.[1] Historical precedent suggests that once dominant platforms emerge, competing systems will adopt compatible standards—analogous to how corporate entities integrated into the broader internet rather than constructing isolated networks.[1]
 
-**Safeguarding and Cognitive Load Management**
+  **Mixed Reality Integration**
 
-Future systems will incorporate **home beacons** for familiar return points, auto-timeout prompts to prevent overstimulation in infinite virtual spaces, bookmarked destinations, and companion-initiated course-correction mechanisms.[1]
+  Navigation will increasingly blur physical and digital domains through **ambient, spatially-embedded AR overlays**—including sidewalk arrows, room labels, and contextual information seamlessly integrated into users' visual fields.[1]
 
-**Persistent, Synchronised Environments**
+  **Safeguarding and Cognitive Load Management**
 
-The metaverse will operate as a **continuously persistent, synchronously shared context** independent of individual user presence, requiring sophisticated backend synchronisation architectures and collaborative governance frameworks.[2][3]
+  Future systems will incorporate **home beacons** for familiar return points, auto-timeout prompts to prevent overstimulation in infinite virtual spaces, bookmarked destinations, and companion-initiated course-correction mechanisms.[1]
 
+  **Persistent, Synchronised Environments**
 
-## UK Context
+  The metaverse will operate as a **continuously persistent, synchronously shared context** independent of individual user presence, requiring sophisticated backend synchronisation architectures and collaborative governance frameworks.[2][3]
 
-- British contributions and implementations
-  - Research institutions and programmes
-  - Industry adoption
-  - North England innovation (where relevant)
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Spatial & Immersive
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

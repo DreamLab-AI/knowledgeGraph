@@ -1,39 +1,46 @@
 {
-  "id": "Virtual Concerts",
+  "id": "virtual-concerts",
   "title": "Virtual Concerts",
-  "content": "- ### OntologyBlock\n  id:: virtual-concerts-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10114\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Concerts\n\t- status:: active\n\t- definition:: Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.\n\t- owl:class:: mv:VirtualConcerts\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Event]]\n\t\t- related-to:: [[Music Entertainment]]\n\t\t- related-to:: [[Live Streaming]]\n\t\t- related-to:: [[Immersive Experience]]\n\t  id:: virtual-concerts-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual concerts are performances in metaverse environments where avatar likenesses perform on virtual stages. In 2024, artists including Doja Cat, Jack Harlow, Jung Kook, and Jorja Smith offered VR concert experiences. Marshmello's 2019 Fortnite concert attracted over 10 million attendees, while Travis Scott's Astronomical had over 12 million concurrent players.\n- ## Technical Details\n\t- ### Platform Types\n\t\t- **Gaming Platforms**: Fortnite, Roblox, Minecraft\n\t\t- **VR Concert Platforms**: Soundscape, Wave, Meta venues\n\t\t- **Social VR**: VRChat, Horizon Worlds Music Valley\n\t\t- **Dedicated Concert Apps**: Artist-specific VR experiences\n\t- ### Technical Components\n\t\t- Real-time 3D rendering and streaming\n\t\t- Motion capture for avatar performance\n\t\t- Spatial audio and immersive sound\n\t\t- Interactive audience participation features\n\t- ### 2024 Highlights\n\t\t- Doja Cat \"The Scarlet Tour in VR\" announcement\n\t\t- Sabrina Carpenter Meta Music Valley concert (July 2024)\n\t\t- Soundscape debut at CES 2024\n- ## Applications\n\t- Global audience accessibility\n\t- Interactive fan experiences\n\t- Virtual meet-and-greets\n\t- Merchandise and NFT sales\n\t- Concert archival and replay",
+  "content": "- ### Definition\n  - Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualConcerts\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Event]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual concerts are performances in metaverse environments where avatar likenesses perform on virtual stages. In 2024, artists including Doja Cat, Jack Harlow, Jung Kook, and Jorja Smith offered VR concert experiences. Marshmello's 2019 Fortnite concert attracted over 10 million attendees, while Travis Scott's Astronomical had over 12 million concurrent players.\n  - ## Technical Details\n  - ### Platform Types\n\t\t- **Gaming Platforms**: Fortnite, Roblox, Minecraft\n\t\t- **VR Concert Platforms**: Soundscape, Wave, Meta venues\n\t\t- **Social VR**: VRChat, Horizon Worlds Music Valley\n\t\t- **Dedicated Concert Apps**: Artist-specific VR experiences\n  - ### Technical Components\n\t\t- Real-time 3D rendering and streaming\n\t\t- Motion capture for avatar performance\n\t\t- Spatial audio and immersive sound\n\t\t- Interactive audience participation features\n  - ### 2024 Highlights\n\t\t- Doja Cat \"The Scarlet Tour in VR\" announcement\n\t\t- Sabrina Carpenter Meta Music Valley concert (July 2024)\n\t\t- Soundscape debut at CES 2024\n  - ## Applications\n  - Global audience accessibility\n  - Interactive fan experiences\n  - Virtual meet-and-greets\n  - Merchandise and NFT sales\n  - Concert archival and replay\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Virtual Performance Space",
-    "Virtual Event Platform"
+    "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Immersive Experience",
-    "metaverse",
     "Virtual Event",
-    "Live Streaming",
-    "Music Entertainment"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-concerts",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualConcerts",
+    "content_hash": "sha256-12-e52e07a3f0db",
+    "legacy_term_id": "MV-10114",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-concerts",
+    "schema_version": "v2",
     "term_id": "MV-10114",
     "preferred_term": "Virtual Concerts",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualConcerts",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualConcerts",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualConcerts",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Event"
@@ -46,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Music Entertainment",
-        "Live Streaming",
-        "Immersive Experience"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,0 +1,101 @@
+{
+  "id": "haptic-feedback",
+  "title": "Haptic Feedback",
+  "content": "- ### Definition\n  - Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:HapticFeedback\n  - owl-role:: Concept\n  - belongs-to-domain:: [[MetaverseDomain]]\n\n- ### Relationships\n  - enhances:: [[VirtualReality]] (domain: metaverse, type: sensory)\n  - uses:: [[TactileActuator]] (domain: metaverse→robotics, type: hardware)\n\n- ### Content\n  - Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].\n  - ### Original Content\n\t\t- ```\n  - # Ontology Block\n\t\t    - **Class:** HapticFeedback\n\t\t    - **IRI:** https://metaverse-ontology.org/HapticFeedback\n\t\t    - **SubClassOf:** SensoryFeedback\n\t\t    - **Source Domain:** metaverse\n\t\t    - **Source File:** metaverse-ontology-combined-refactored.ttl\n\t\t    - **Integration Date:** 2025-10-28\n\t\t    - **TRL:** 7\n\t\t    - **Quality Score:** 0.95\n\t\t    - ```turtle\n\t\t      spatial-computing:HapticFeedback rdf:type owl:Class ;\n\t\t          rdfs:label \"Haptic Feedback\"@en ;\n\t\t          rdfs:comment \"Tactile sensory feedback technology that provides physical sensations to enhance virtual experiences.\"@en ;\n\t\t          rdfs:subClassOf spatial-computing:SensoryFeedback ;\n\t\t          meta:sourceOntology \"spatial-computing:\" ;\n\t\t          meta:technologyDomain \"metaverse\" ;\n\t\t          meta:disruptiveTechCategory \"virtual-immersive-systems\" ;\n\t\t          meta:technologyReadinessLevel \"7\"^^xsd:integer ;\n\t\t          meta:qualityScore \"0.95\"^^xsd:float .\n\t\t      ```\n\n\t\t  - ## Description\n\t\t    - Provides tactile sensations in virtual experiences\n\t\t    - Simulates touch, texture, and force feedback\n\t\t    - Enhances immersion through physical sensations\n\t\t    - Integrated into controllers, gloves, and suits\n\t\t    - Enables realistic interaction with virtual objects\n\n\t\t  - ## Properties\n\t\t    - Object properties\n\t\t      - [[usesActuator]] - Haptic actuator devices\n\t\t      - [[simulatesSensation]] - Types of sensations simulated\n\t\t      - [[enhancesExperience]] - Experiences enhanced by haptics\n\t\t      - [[integratsWith]] - Compatible VR/AR systems\n\t\t    - Data properties\n\t\t      - responseTime - Latency of haptic response\n\t\t      - resolutionQuality - Spatial resolution of feedback\n\t\t      - forceRange - Range of force feedback\n\t\t      - batteryLife - Device battery duration\n\n\t\t  - ## Cross-Domain Relationships\n    - bridges-to:: [[Haptics]] (domain: robotics→metaverse, type: enhancement)\n\t\t    - [[dt:enhances]] → [[VirtualReality]] - Enhanced VR immersion\n\t\t    - [[dt:controlledBy]] → [[AISystem]] - Adaptive haptic feedback\n\t\t    - [[dt:integratedWith]] → [[RoboticSystem]] - Physical-virtual integration\n\t\t    - [[dt:calibratedBy]] → [[SensorFusion]] - Multi-sensor calibration\n\t\t    - [[dt:optimizedBy]] → [[MachineLearning]] - Personalized feedback\n\n\t\t  - ## Related Concepts\n\t\t    - [[SensoryImmersion]]\n\t\t    - [[ForceFeedback]]\n\t\t    - [[TactileActuator]]\n\t\t    - [[WearableHaptics]]\n\t\t    - [[TouchSimulation]]\n\n\t\t  - ## Use Cases\n\t\t    - VR gaming experiences\n\t\t    - Surgical training simulators\n\t\t    - Virtual product prototyping\n\t\t    - Accessibility interfaces\n\t\t    - Remote robotic control\n\n\t\t  ```\n\n  #### Current Landscape\n  - Industry adoption and implementations\n  - HapticFeedback is widely integrated into VR/AR headsets, gloves, and full-body suits, with applications spanning gaming, remote collaboration, education, healthcare, and digital commerce\n  - Notable organisations and platforms\n\t\t- Meta (Reality Labs) continues to advance haptic glove prototypes and hand-tracking integration for immersive work and social experiences\n\t\t- Antier Solutions and similar development studios offer end-to-end haptic integration for metaverse platforms, including customisable feedback profiles and biometric syncing\n\t\t- UK and North England examples where relevant\n\t\t\t- The University of Manchester’s Human-Computer Interaction Lab explores haptic interfaces for remote collaboration and assistive technologies\n\t\t\t- Leeds-based startups are piloting haptic-enabled training simulations for healthcare and engineering education\n\t\t\t- Newcastle University’s Digital Interaction Group investigates haptic feedback in mixed reality for public engagement and cultural heritage\n  - Technical capabilities and limitations\n\t\t- Modern haptic systems can simulate a range of sensations, including pressure, texture, temperature, and even emotional gestures (e.g., handshakes, pats)\n\t\t- Limitations include the challenge of replicating fine tactile detail, power consumption, and the need for precise calibration across diverse body types\n  - Standards and frameworks\n\t\t- The IEEE and ISO are developing standards for haptic feedback interoperability and safety, with growing emphasis on ethical design and user well-being\n\n  #### Academic Context\n  - Brief contextual overview\n  - HapticFeedback refers to technologies that simulate the sense of touch in digital environments, enabling users to perceive tactile sensations such as pressure, texture, and resistance during interactions with virtual objects or avatars\n  - Key developments and current state\n\t\t- HapticFeedback is now a foundational element in immersive computing, particularly in virtual reality (VR), augmented reality (AR), and the metaverse, where it bridges the gap between digital and physical experiences\n\t\t- The technology has evolved from simple vibration feedback to sophisticated distributed systems capable of rendering nuanced tactile cues across the body\n  - Academic foundations\n\t\t- Rooted in human-computer interaction, biomechanics, and sensory neuroscience, with ongoing research into how tactile feedback enhances presence, engagement, and learning in digital spaces\n\n  #### UK Context\n  - British contributions and implementations\n  - The UK is a leader in haptic research, with strong academic-industry collaboration in cities like Manchester, Leeds, Newcastle, and Sheffield\n  - British companies and universities are developing haptic solutions for healthcare, education, and digital heritage, often with a focus on accessibility and inclusivity\n  - North England innovation hubs (if relevant)\n  - Manchester’s Graphene Engineering Innovation Centre is exploring novel materials for haptic wearables\n  - Leeds and Sheffield are home to several startups specialising in haptic-enabled training and simulation tools\n  - Newcastle’s Digital Interaction Group is pioneering haptic feedback in public engagement and cultural heritage projects\n  - Regional case studies\n  - A Manchester-based project uses haptic gloves to enable remote collaboration in engineering design, allowing teams to \"feel\" virtual prototypes\n  - In Leeds, haptic feedback is being trialled in medical training simulations, improving both engagement and skill retention\n\n  #### Future Directions\n  - Emerging trends and developments\n  - Integration of haptics with AI-driven avatars and digital humans for more natural and emotionally engaging interactions\n  - Expansion into everyday digital experiences, such as online shopping, remote learning, and smart home interfaces\n  - Development of lightweight, energy-efficient haptic wearables for broader consumer adoption\n  - Anticipated challenges\n  - Ensuring equitable access to haptic technology across different socioeconomic groups\n  - Addressing ethical concerns around data privacy, consent, and the psychological impact of immersive haptic experiences\n  - Overcoming technical hurdles in replicating fine tactile detail and achieving seamless integration with other sensory modalities\n  - Research priorities\n  - Advancing the realism and emotional expressiveness of haptic feedback\n  - Investigating the long-term effects of haptic immersion on user well-being\n  - Developing robust standards and ethical guidelines for haptic technology deployment\n\n  #### Research & Literature\n  - Key academic papers and sources\n  - Culbertson, H., et al. (2025). \"Wearable Haptic Systems for Social Interaction in Virtual Reality.\" *arXiv preprint arXiv:2409.00615v1*. https://arxiv.org/html/2409.00615v1\n  - Zinin, A., & Lock, L. (2025). \"New Haptic Technology Adds the Sense of Touch to Virtual Reality.\" *TechXplore*. https://techxplore.com/news/2025-07-haptic-technology-virtual-reality.html\n  - Stanford University (2023). \"Emotional Engagement and Recall in Haptic-Enhanced VR Training.\" *Journal of Virtual Reality and Education*, 12(3), 45–62. https://doi.org/10.1016/j.jvre.2023.04.003\n  - Ongoing research directions\n  - Improving the realism and emotional expressiveness of haptic feedback\n  - Exploring the role of haptics in remote healthcare, education, and social connection\n  - Investigating ethical considerations, such as privacy, consent, and the psychological impact of prolonged haptic immersion\n\n  #### References\n  1. Culbertson, H., et al. (2025). \"Wearable Haptic Systems for Social Interaction in Virtual Reality.\" *arXiv preprint arXiv:2409.00615v1*. https://arxiv.org/html/2409.00615v1\n  2. Zinin, A., & Lock, L. (2025). \"New Haptic Technology Adds the Sense of Touch to Virtual Reality.\" *TechXplore*. https://techxplore.com/news/2025-07-haptic-technology-virtual-reality.html\n  3. Stanford University (2023). \"Emotional Engagement and Recall in Haptic-Enhanced VR Training.\" *Journal of Virtual Reality and Education*, 12(3), 45–62. https://doi.org/10.1016/j.jvre.2023.04.003\n  4. Antier Solutions. (2025). \"How Haptic Suits Are Redefining Player Immersion in Metaverse Games.\" https://www.antiersolutions.com/blogs/how-haptic-suits-are-redefining-player-immersion-in-metaverse-games/\n  5. Meta for Work. (2025). \"Hand Tracking Technology & Haptic Feedback.\" https://forwork.meta.com/blog/hand-tracking-technology-and-haptic-feedback-mr/\n  6. InairSpace. (2025). \"Metaverse Virtual Reality Developments 2025: The Year Digital and Physical Realities Converge.\" https://inairspace.com/blogs/learn-with-inair/metaverse-virtual-reality-developments-2025-the-year-digital-and-physical-realities-converge\n  7. FTSG. (2025). \"Metaverse & New Realities: 2025 Tech Trends Report.\" https://ftsg.com/wp-content/uploads/2025/03/Metaverse-New-Realities_FINAL_LINKED.pdf\n  8. Smart Liquidity. (2025). \"Applications of Haptic Feedback in the Metaverse.\" https://smartliquidity.info/2025/02/21/applications-of-haptic-feedback-in-the-metaverse/\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Human Interface Device",
+    "metaverse-core-concepts",
+    "Virtual Reality (VR)",
+    "tc-0003-telepresence-robot",
+    "Immersion",
+    "3D User Interface",
+    "Experience Layer",
+    "Telecollaboration and Telepresence",
+    "Telepresence (RB-1010)"
+  ],
+  "wiki_links": [
+    "AISystem",
+    "AugmentedReality",
+    "ForceFeedback",
+    "Haptics",
+    "MachineLearning",
+    "MetaverseDomain",
+    "RoboticSystem",
+    "SensorFusion",
+    "SensoryImmersion",
+    "TactileActuator",
+    "TouchSimulation",
+    "VirtualReality",
+    "WearableHaptics",
+    "dt:calibratedBy",
+    "dt:controlledBy",
+    "dt:enhances",
+    "dt:integratedWith",
+    "dt:optimizedBy",
+    "enhancesExperience",
+    "integratsWith",
+    "simulatesSensation",
+    "usesActuator"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:haptic-feedback",
+    "iri": "http://narrativegoldmine.com/spatial-computing#HapticFeedback",
+    "content_hash": "sha256-12-1b30bb682082",
+    "legacy_term_id": "MV-3055",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:haptic-feedback",
+    "schema_version": "v2",
+    "term_id": "MV-3055",
+    "preferred_term": "Haptic Feedback",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits. Haptic feedback simulates touch, pressure, texture, and force feedback by translating digital signals into mechanical vibrations and force responses, enabling users to feel virtual objects and interactions with realistic tactile cues. The technology bridges [[VirtualReality]] and [[AugmentedReality]] systems with [[SensoryImmersion]] through [[TactileActuator|tactile actuators]] calibrated via [[SensorFusion]].",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.4,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:HapticFeedback",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "other_relationships": {
+      "enhances": [
+        "VirtualReality"
+      ],
+      "uses": [
+        "TactileActuator"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

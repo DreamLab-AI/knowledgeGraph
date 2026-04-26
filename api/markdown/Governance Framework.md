@@ -1,88 +1,99 @@
-- ### OntologyBlock
-  id:: governance-framework-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7023
-	- preferred-term:: Governance Framework
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.
-	- maturity:: reviewed
-	- owl:class:: ngm:GovernanceFramework
-	- owl:role:: Concept
-	- belongsToDomain:: [[Core Technology]]
+iri:: http://narrativegoldmine.com/ontology#GovernanceFramework
+uri:: urn:visionclaw:concept:artificial-intelligence:governance-framework
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:governance-framework
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Governance Framework
+content-hash:: sha256-12-6bae3d1fbd50
+legacy-term-id:: NGM-7023
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[Organisational Framework]]
-- related-to:: [[Legal Framework]], [[Technical Standard]], [[Compliance]]
-- enables:: [[Strategic Alignment]], [[Risk Management]], [[Performance Management]]
-- implements:: [[Policy Enforcement]], [[Accountability]], [[Decision Rights]]
+- ### Definition
+  - A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives. It provides the foundation for strategic decision-making, risk management, resource optimisation, performance measurement, and compliance, ensuring that technology investments deliver value while maintaining accountability and transparency.
 
-## Components
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:GovernanceFramework
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Core Technology]]
 
-### Five Pillars of IT Governance
-1. **Strategic Alignment**: Ensuring IT initiatives support business objectives and priorities
-2. **Value Delivery**: Maximising return on investment from technology expenditures
-3. **Risk Management**: Identifying, assessing, and mitigating technology-related risks
-4. **Resource Management**: Optimising allocation of human, financial, and technical resources
-5. **Performance Measurement**: Establishing metrics and KPIs for continuous improvement
+- ### Relationships
+  - is-subclass-of:: [[Organisational Framework]]
+  - enables:: [[Strategic Alignment]], [[Risk Management]], [[Performance Management]]
+  - implements:: [[Policy Enforcement]], [[Accountability]], [[Decision Rights]]
 
-### Major Governance Frameworks
+- ### Content
 
-#### COBIT (Control Objectives for Information and Related Technologies)
-Developed by ISACA, COBIT provides a comprehensive framework for IT governance and management. COBIT 2019 introduces six governance principles and design factors for tailoring the framework to organisational needs. Focuses on what needs to be done for effective governance.
+  ## Components
 
-#### ITIL (Information Technology Infrastructure Library)
-Framework of best practices for IT service management (ITSM). ITIL 4 introduces the Service Value System (SVS) model covering four dimensions: organisations and people, information and technology, partners and suppliers, and value streams and processes. Focuses on how to deliver IT services effectively.
+  ### Five Pillars of IT Governance
+  1. **Strategic Alignment**: Ensuring IT initiatives support business objectives and priorities
+  2. **Value Delivery**: Maximising return on investment from technology expenditures
+  3. **Risk Management**: Identifying, assessing, and mitigating technology-related risks
+  4. **Resource Management**: Optimising allocation of human, financial, and technical resources
+  5. **Performance Measurement**: Establishing metrics and KPIs for continuous improvement
 
-#### ISO/IEC 38500
-International standard for corporate governance of information technology. Provides principles and guidance for governing bodies on the effective, efficient, and acceptable use of IT.
+  ### Major Governance Frameworks
 
-#### TOGAF (The Open Group Architecture Framework)
-Framework for enterprise architecture governance, providing methods and tools for architecture development, implementation, and management.
+  #### COBIT (Control Objectives for Information and Related Technologies)
+  Developed by ISACA, COBIT provides a comprehensive framework for IT governance and management. COBIT 2019 introduces six governance principles and design factors for tailoring the framework to organisational needs. Focuses on what needs to be done for effective governance.
 
-### Governance Components
-- **Governance Bodies**: Steering committees, architecture review boards
-- **Policies and Standards**: Documented rules and guidelines
-- **Processes and Procedures**: Standardised workflows and practices
-- **Controls**: Mechanisms for monitoring and enforcement
-- **Metrics and Reporting**: Performance indicators and dashboards
+  #### ITIL (Information Technology Infrastructure Library)
+  Framework of best practices for IT service management (ITSM). ITIL 4 introduces the Service Value System (SVS) model covering four dimensions: organisations and people, information and technology, partners and suppliers, and value streams and processes. Focuses on how to deliver IT services effectively.
 
-## Implementation
+  #### ISO/IEC 38500
+  International standard for corporate governance of information technology. Provides principles and guidance for governing bodies on the effective, efficient, and acceptable use of IT.
 
-### Framework Integration Strategy
-Many organisations implement hybrid governance approaches:
-- COBIT for overall governance structure
-- ITIL for service management operations
-- TOGAF for enterprise architecture
-- Industry-specific frameworks for compliance (NIST, ISO 27001)
+  #### TOGAF (The Open Group Architecture Framework)
+  Framework for enterprise architecture governance, providing methods and tools for architecture development, implementation, and management.
 
-### Governance Deployment Steps
-1. **Assessment**: Evaluate current governance maturity and gaps
-2. **Design**: Select and adapt frameworks to organisational context
-3. **Implementation**: Deploy governance structures, processes, and tools
-4. **Operationalisation**: Embed governance into daily operations
-5. **Continuous Improvement**: Regular review and optimisation
+  ### Governance Components
+  - **Governance Bodies**: Steering committees, architecture review boards
+  - **Policies and Standards**: Documented rules and guidelines
+  - **Processes and Procedures**: Standardised workflows and practices
+  - **Controls**: Mechanisms for monitoring and enforcement
+  - **Metrics and Reporting**: Performance indicators and dashboards
 
-### Key Success Factors
-- Executive sponsorship and commitment
-- Clear roles, responsibilities, and accountability
-- Integration with existing management systems
-- Balance between control and agility
-- Regular communication and training
-- Measurable outcomes and regular reporting
+  ## Implementation
 
-### Best Practices
-- Start with high-priority governance areas
-- Adapt frameworks to organisational culture and size
-- Establish governance champions across the organisation
-- Use automation for compliance monitoring
-- Conduct regular governance effectiveness reviews
-- Link governance to business outcomes
+  ### Framework Integration Strategy
+  Many organisations implement hybrid governance approaches:
+  - COBIT for overall governance structure
+  - ITIL for service management operations
+  - TOGAF for enterprise architecture
+  - Industry-specific frameworks for compliance (NIST, ISO 27001)
 
-## Metadata
+  ### Governance Deployment Steps
+  1. **Assessment**: Evaluate current governance maturity and gaps
+  2. **Design**: Select and adapt frameworks to organisational context
+  3. **Implementation**: Deploy governance structures, processes, and tools
+  4. **Operationalisation**: Embed governance into daily operations
+  5. **Continuous Improvement**: Regular review and optimisation
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched from stub
-- **References**: 6 pages reference this concept
+  ### Key Success Factors
+  - Executive sponsorship and commitment
+  - Clear roles, responsibilities, and accountability
+  - Integration with existing management systems
+  - Balance between control and agility
+  - Regular communication and training
+  - Measurable outcomes and regular reporting
+
+  ### Best Practices
+  - Start with high-priority governance areas
+  - Adapt frameworks to organisational culture and size
+  - Establish governance champions across the organisation
+  - Use automation for compliance monitoring
+  - Conduct regular governance effectiveness reviews
+  - Link governance to business outcomes
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

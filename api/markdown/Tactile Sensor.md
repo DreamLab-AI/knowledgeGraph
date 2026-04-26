@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: tactilesensor-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#TactileSensor
+uri:: urn:visionclaw:concept:robotics:tactile-sensor
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:tactile-sensor
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Tactile Sensor
+content-hash:: sha256-12-e5d1c91662cb
+legacy-term-id:: RB-0164
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0164
-    - filename-history:: ["RB-0164-tactilesensor.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0164
-    - preferred-term:: Tactile Sensor
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Tactile sensor provides touch sensing capability similar to human fingertips.
 
-  - **Definition**
-    - definition:: Tactile sensor provides touch sensing capability similar to human fingertips.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:TactileSensor
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:TactileSensor
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Exteroceptive Sensor]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Exteroceptive Sensor]]
+- ### Content
+  Tactile Sensor — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :TactileSensor))
-      (SubClassOf :TactileSensor :ExteroceptiveSensor)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :TactileSensor "Tactile Sensor"@en)
-      (AnnotationAssertion rdfs:comment :TactileSensor
-        "Tactile sensor provides touch sensing capability similar to human fingertips."@en)
-      ```
-
-- ## About Tactile Sensor
-  Tactile sensor provides touch sensing capability similar to human fingertips.
-  
-  A sensor measuring contact forces and textures.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

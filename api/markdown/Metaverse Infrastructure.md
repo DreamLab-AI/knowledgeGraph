@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: metaverseinfrastructure-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/infrastructure#MetaverseInfrastructure
+uri:: urn:visionclaw:concept:infrastructure:metaverse-infrastructure
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:metaverse-infrastructure
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Metaverse Infrastructure
+content-hash:: sha256-12-a40beedc1dac
+legacy-term-id:: MV-0004
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: MV
-    - sequence-number:: 0004
-    - filename-history:: ["MV-0004-metaverseinfrastructure.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: MV-0004
-    - preferred-term:: Metaverse Infrastructure
-    - source-domain:: mv
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Technical infrastructure supporting metaverse platforms.
 
-  - **Definition**
-    - definition:: Technical infrastructure supporting metaverse platforms.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: infrastructure:MetaverseInfrastructure
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Metaverse]]
 
-  - **Semantic Classification**
-    - owl:class:: mv:MetaverseInfrastructure
-    - belongsToDomain:: [[Metaverse]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Metaverse Infrastructure — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :MetaverseInfrastructure))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :MetaverseInfrastructure "Metaverse Infrastructure"@en)
-      (AnnotationAssertion rdfs:comment :MetaverseInfrastructure
-        "Technical infrastructure supporting metaverse platforms."@en)
-      ```
-
-- ## About Metaverse Infrastructure
-  Technical infrastructure supporting metaverse platforms.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

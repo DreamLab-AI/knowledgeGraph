@@ -1,0 +1,65 @@
+{
+  "id": "training-method",
+  "title": "Training Method",
+  "content": "- ### Definition\n  - Training methods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates. The core approach combines backpropagation (computing gradients via the chain rule) with gradient descent optimization (adjusting weights in the direction that reduces loss), with variants including stochastic gradient descent (SGD), Adam, RMSprop, and AdaGrad offering different convergence properties.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:Trainingmethod\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[MachineLearning]]\n\n- ### Content\n\n  ### Core Algorithms\n  - **Backpropagation**: Computes gradients of loss function with respect to weights using chain rule, propagating errors backward through network layers\n  - **Gradient Descent**: Optimization algorithm that iteratively updates weights by moving in the direction of steepest descent\n  - **Stochastic Gradient Descent (SGD)**: Updates weights using single samples or mini-batches\n  - **Adam**: Adaptive learning rates with momentum, combining RMSprop and momentum benefits\n  - **RMSprop**: Adapts learning rate based on running average of recent gradients\n  - **AdaGrad**: Adapts learning rate per-parameter based on historical gradients\n\n  ### Key Challenges\n  - **Vanishing Gradients**: Gradients become very small in deep networks, especially with sigmoid/tanh activations\n  - **Exploding Gradients**: Gradients grow excessively large, causing divergence\n  - **Dying ReLU**: ReLU units stuck at zero output, solved by LeakyReLU variants\n\n  ### Advanced Techniques\n  - Learning rate scheduling and warm-up\n  - Gradient clipping for stability\n  - Mixed-precision training for efficiency\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Artificial Intelligence",
+    "MachineLearning"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:training-method",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#TrainingMethod",
+    "content_hash": "sha256-12-8b1ddcff541b",
+    "legacy_term_id": "AI-7005",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:training-method",
+    "schema_version": "v2",
+    "term_id": "AI-7005",
+    "preferred_term": "Training Method",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Training methods in machine learning are algorithms and techniques used to optimize model parameters by minimizing a loss function through iterative weight updates. The core approach combines backpropagation (computing gradients via the chain rule) with gradient descent optimization (adjusting weights in the direction that reduces loss), with variants including stochastic gradient descent (SGD), Adam, RMSprop, and AdaGrad offering different convergence properties.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "reviewed",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:Trainingmethod",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "MachineLearning"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

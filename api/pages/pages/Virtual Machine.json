@@ -1,0 +1,72 @@
+{
+  "id": "virtual-machine",
+  "title": "Virtual Machine",
+  "content": "- ### Definition\n  - A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation, executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations for specific use cases. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualMachine\n  - owl-role:: Concept\n  - belongs-to-domain:: [[MetaverseDomain]]\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  - Runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.\n  - ### Original Content\n\t\t- ```\n  # Virtual Machine\n\n\t\t  ## Definition\n\t\t  A deterministic computation environment that executes smart contract bytecode on blockchain nodes, providing isolated, sandboxed execution with metered gas/resource consumption and ensuring consistent state transitions across the distributed network.\n\n\t\t  ## OWL Functional Syntax\n\n\n\t\t  ## Properties\n\n\t\t  ### Object Properties\n\t\t  - **executes**: VirtualMachine → Bytecode (required)\n\t\t  - **providesIsolation**: VirtualMachine → SandboxedExecution (required)\n\t\t  - **meters**: VirtualMachine → ComputationalResources (required)\n\t\t  - **compiles**: VirtualMachine → SourceLanguage (0..*)\n\t\t  - **usedBy**: VirtualMachine → BlockchainPlatform (1..*)\n\t\t  - **implementsOpcodes**: VirtualMachine → OpcodeSet (required)\n\t\t  - **hasMemoryModel**: VirtualMachine → MemoryModel (required)\n\n\t\t  ### Data Properties\n\t\t  - **deterministic**: xsd:boolean (always true)\n\t\t  - **turingComplete**: xsd:boolean (typically true)\n\t\t  - **gasLimit**: xsd:decimal (> 0)\n\t\t  - **stackSize**: xsd:integer (≥ 256)\n\t\t  - **wordSize**: xsd:integer (bits, typically 256)\n\t\t  - **maxCallDepth**: xsd:integer (e.g., 1024 for EVM)\n\n\t\t  ## Axioms\n\n\n\t\t  ## Subclass Hierarchy\n\n\n\t\t  ## Programming Languages\n\n\n\t\t  ## Resource Metering\n\n\n\t\t  ## Inference Rules\n\n\t\t  ```sparql\n\t\t  # Rule: Stack-based VM for Ethereum platform\n\t\t  [EVMInference:\n\t\t    (?vm rdf:type :VirtualMachine)\n\t\t    (?vm :usedBy :EthereumBlockchain)\n\t\t    (?vm :compiles :Solidity)\n\t\t    ->\n\t\t    (?vm rdf:type :EVM)\n\t\t    (?vm rdf:type :StackBasedVM)\n\t\t  ]\n\n\t\t  # Rule: High TPS implies register-based\n\t\t  [RegisterVMInference:\n\t\t    (?vm rdf:type :VirtualMachine)\n\t\t    (?vm :transactionsPerSecond ?tps)\n\t\t    greaterThan(?tps, 10000)\n\t\t    ->\n\t\t    (?vm rdf:type :RegisterBasedVM)\n\t\t  ]\n\n\t\t  # Rule: Turing completeness requires halting problem solution\n\t\t  [TuringCompleteInference:\n\t\t    (?vm rdf:type :VirtualMachine)\n\t\t    (?vm :turingComplete \"true\"^^xsd:boolean)\n\t\t    ->\n\t\t    (?vm :requiresMechanism :GasMetering)\n\t\t  ]\n\t\t  ```\n\n\t\t  ## Security Properties\n\n\n\t\t  ## Examples\n\t\t  - **EVM** (Ethereum Virtual Machine) - Ethereum, BSC, Polygon\n\t\t  - **WASM** (WebAssembly) - NEAR, Polkadot, Cosmos\n\t\t  - **Move VM** - Aptos, Sui\n\t\t  - **Solana VM** - Solana\n\t\t  - **Cairo VM** - StarkNet\n\n\t\t  ## Related Terms\n\t\t  - SmartContract\n\t\t  - Bytecode\n\t\t  - Solidity\n\t\t  - GasLimit\n\t\t  - Opcodes\n\t\t  - Sandboxing\n\t\t  - Determinism\n\t\t  - BlockchainPlatform\n\n\t\t  ```\n  I appreciate the detailed request, but I must clarify an important limitation: the search results provided discuss the metaverse as a concept and ecosystem, but they do not contain substantive information about \"VirtualMachine\" as a specific ontological entity or technical component within that ecosystem.\n\n  The search results define the metaverse itself—describing it as a shared, immersive 3D digital universe enabled by VR, AR, blockchain, and AI technologies—but they do not address what a \"VirtualMachine\" constitutes within metaverse architecture, its technical specifications, current implementations, or academic literature specifically examining virtual machines in this context.\n\n  To provide the comprehensive ontology entry you've requested with the rigour you've specified, I would need search results that specifically address:\n\n  - Virtual machine architecture and specifications within metaverse systems\n  - Technical implementations and standards (e.g., containerisation, hypervisors, resource allocation)\n  - Academic literature on virtual machines in immersive environments\n  - UK-based research institutions or organisations working on metaverse infrastructure\n  - Current 2025 developments in virtual machine technology for distributed immersive systems\n\n  **What I can confirm from the available results:** The metaverse does rely on advanced technologies including cloud computing and distributed systems, which would logically involve virtual machine infrastructure, but the search results do not provide the technical depth needed to construct an accurate, well-cited ontology entry.\n\n  I'd recommend providing search results that specifically address virtual machine implementations, metaverse infrastructure standards, or relevant academic papers on this topic. This would enable me to deliver the precise, well-sourced entry you require.\n\n\n  ## Metadata\n\n  - **Last Updated**: 2025-11-11\n  - **Review Status**: Comprehensive editorial review\n  - **Verification**: Academic sources verified\n  - **Regional Context**: UK/North England where applicable\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "BC-BlockchainProtocol",
+    "Smart Contract"
+  ],
+  "wiki_links": [
+    "CairoVM",
+    "EVM",
+    "MetaverseDomain",
+    "MoveVM",
+    "SmartContract",
+    "SolanaSVM",
+    "Solidity",
+    "WASM"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-machine",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualMachine",
+    "content_hash": "sha256-12-b68663c1e455",
+    "legacy_term_id": "MV-3042",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-machine",
+    "schema_version": "v2",
+    "term_id": "MV-3042",
+    "preferred_term": "Virtual Machine",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications. The [[EVM|Ethereum Virtual Machine]] dominates as the reference implementation, executing [[Solidity|Solidity]] bytecode across thousands of nodes globally, with alternatives including [[WASM|WebAssembly]]-based [[SolanaSVM|Solana's Sealevel VM]], [[MoveVM|Move VM]], and [[CairoVM|Cairo VM]] providing specialised optimisations for specific use cases. Deterministic execution is paramount—identical contract invocations across decentralised networks must produce identical results, enabling consensus formation without relying on centralised authorities.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.4,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualMachine",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "MetaverseDomain"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,48 +1,63 @@
 {
-  "id": "Central Bank Digital Currency",
+  "id": "central-bank-digital-currency",
   "title": "Central Bank Digital Currency",
-  "content": "- ### OntologyBlock\n  id:: central-bank-digital-currency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9817\n\t- source-domain:: mv\n\t- preferred-term:: Central Bank Digital Currency\n\t- definition:: A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.\n\t- status:: active\n\t- owl:class:: mv:CentralBankDigitalCurrency\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: central-bank-digital-currency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Currency]]\n\t\t- enables:: [[Digital Payments]], [[Financial Inclusion]], [[Monetary Policy Transmission]]\n\t\t- requires:: [[Central Bank Infrastructure]], [[Digital Identity]], [[Payment Network]]\n\t\t- related-to:: [[CBDC Frameworks]], [[Digital Money]], [[Payment System]]\n- ## Technical Details\n\t- **Global Status** (2024): 134 countries (98% of world GDP) researching CBDCs; Bahamas, Jamaica, Nigeria have launched; China's digital RMB first major economy issuance\n\t- **Types**:\n\t\t- **Retail CBDC**: For households and businesses, everyday transactions\n\t\t- **Wholesale CBDC**: For financial institutions, similar to reserves\n\t- **Monetary Policy Implications**:\n\t\t- Can strengthen policy transmission if appropriately designed\n\t\t- May increase competition for bank deposits\n\t\t- Non-remunerated CBDC could harden zero lower bound\n\t\t- Affects reserve management and liquidity forecasting\n\t- **Design Considerations**:\n\t\t- Privacy vs. AML/CFT compliance\n\t\t- Token-based vs. account-based\n\t\t- Anonymity limitations for illicit activity prevention\n\t- **US Position** (2025): Executive Order 14178 prohibits federal agencies from establishing or promoting CBDC\n- ## Applications\n\t- Retail payment modernization\n\t- Financial inclusion for unbanked populations\n\t- Cross-border payment efficiency\n\t- Monetary policy implementation\n\t- Government benefit distribution",
+  "content": "- ### Definition\n  - A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:CentralBankDigitalCurrency\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Currency]]\n  - requires:: [[Central Bank Infrastructure]], [[Digital Identity]], [[Payment Network]]\n  - enables:: [[Digital Payments]], [[Financial Inclusion]], [[Monetary Policy Transmission]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Global Status** (2024): 134 countries (98% of world GDP) researching CBDCs; Bahamas, Jamaica, Nigeria have launched; China's digital RMB first major economy issuance\n  - **Types**:\n\t\t- **Retail CBDC**: For households and businesses, everyday transactions\n\t\t- **Wholesale CBDC**: For financial institutions, similar to reserves\n  - **Monetary Policy Implications**:\n\t\t- Can strengthen policy transmission if appropriately designed\n\t\t- May increase competition for bank deposits\n\t\t- Non-remunerated CBDC could harden zero lower bound\n\t\t- Affects reserve management and liquidity forecasting\n  - **Design Considerations**:\n\t\t- Privacy vs. AML/CFT compliance\n\t\t- Token-based vs. account-based\n\t\t- Anonymity limitations for illicit activity prevention\n  - **US Position** (2025): Executive Order 14178 prohibits federal agencies from establishing or promoting CBDC\n  - ## Applications\n  - Retail payment modernization\n  - Financial inclusion for unbanked populations\n  - Cross-border payment efficiency\n  - Monetary policy implementation\n  - Government benefit distribution\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Monetary Sovereignty",
+    "Hyperledger Iroha",
+    "Bitcoin Centralisation Risks",
     "Value Transfer",
-    "Stablecoin",
+    "Asia Pacific Regulation",
+    "CBDC Frameworks",
     "Micropayment",
-    "Money"
+    "R3 Corda",
+    "Bitcoin ETF",
+    "Money",
+    "Quorum Blockchain",
+    "Enterprise Smart Contracts"
   ],
   "wiki_links": [
-    "Digital Money",
-    "CBDC Frameworks",
-    "Financial Inclusion",
-    "Digital Payments",
+    "Blockchain",
     "Central Bank Infrastructure",
-    "Digital Identity",
     "Digital Currency",
-    "metaverse",
+    "Digital Identity",
+    "Digital Payments",
+    "Financial Inclusion",
     "Monetary Policy Transmission",
     "Payment Network",
-    "Payment System"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:central-bank-digital-currency",
+    "iri": "http://narrativegoldmine.com/infrastructure#CentralBankDigitalCurrency",
+    "content_hash": "sha256-12-a9f6c9dcd14f",
+    "legacy_term_id": "MV-9817",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:central-bank-digital-currency",
+    "schema_version": "v2",
     "term_id": "MV-9817",
     "preferred_term": "Central Bank Digital Currency",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CentralBankDigitalCurrency",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CentralBankDigitalCurrency",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:CentralBankDigitalCurrency",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Currency"
@@ -61,28 +76,19 @@
       "Monetary Policy Transmission"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "CBDC Frameworks",
-        "Digital Money",
-        "Payment System"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

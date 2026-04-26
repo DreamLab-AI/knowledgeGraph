@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: proportionalcontrol-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#ProportionalControl
+uri:: urn:visionclaw:concept:robotics:proportional-control
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:proportional-control
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Proportional Control
+content-hash:: sha256-12-e2c761e1ec80
+legacy-term-id:: RB-0146
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0146
-    - filename-history:: ["RB-0146-proportionalcontrol.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0146
-    - preferred-term:: Proportional Control
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Proportional control applies gain to current error signal.
 
-  - **Definition**
-    - definition:: Proportional control applies gain to current error signal.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:ProportionalControl
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:ProportionalControl
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Feedback Control]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Feedback Control]]
+- ### Content
+  Proportional Control — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ProportionalControl))
-      (SubClassOf :ProportionalControl :FeedbackControl)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ProportionalControl "Proportional Control"@en)
-      (AnnotationAssertion rdfs:comment :ProportionalControl
-        "Proportional control applies gain to current error signal."@en)
-      ```
-
-- ## About Proportional Control
-  Proportional control applies gain to current error signal.
-  
-  A control system with output proportional to error.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

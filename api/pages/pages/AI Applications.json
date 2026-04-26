@@ -1,37 +1,46 @@
 {
-  "id": "AI Applications",
+  "id": "ai-applications",
   "title": "AI Applications",
-  "content": "- ### OntologyBlock\n  id:: ai-applications-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0604\n\t- preferred-term:: AI Applications\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.\n\t- owl:class:: ai:AIApplications\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-applications-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- is-parent-of:: [[Medical AI]]\n\t\t- is-parent-of:: [[Autonomous Vehicles]]\n\t\t- is-parent-of:: [[AI Assistant]]\n\t\t- is-parent-of:: [[Industrial AI]]\n\t\t- related-to:: [[AI Deployment]]",
+  "content": "- ### Definition\n  - AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AIApplications\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - bridges-to:: [[Autonomous Robot]] (domain: rb), [[Digital Asset]] (domain: mv), [[Smart Contract]] (domain: bc)\n\n- ### Content\n  AI Applications — content pending enrichment.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
     "Artificial Intelligence",
-    "AI Deployment",
-    "Medical AI",
-    "Autonomous Vehicles",
-    "AI Assistant",
-    "Industrial AI"
+    "Autonomous Robot",
+    "Digital Asset",
+    "Smart Contract"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-applications",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#AIApplications",
+    "content_hash": "sha256-12-dd2fda52275f",
+    "legacy_term_id": "AI-0604",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-applications",
+    "schema_version": "v2",
     "term_id": "AI-0604",
     "preferred_term": "AI Applications",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#AIApplications",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases. This category encompasses practical deployments of AI in healthcare, autonomous vehicles, personal assistants, industrial automation, financial services, and other sectors where AI delivers tangible value.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:AIApplications",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AIApplications",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Artificial Intelligence"
@@ -42,32 +51,21 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Autonomous Robot",
+      "Digital Asset",
+      "Smart Contract"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "Medical AI",
-        "Autonomous Vehicles",
-        "AI Assistant",
-        "Industrial AI"
-      ],
-      "related-to": [
-        "AI Deployment"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

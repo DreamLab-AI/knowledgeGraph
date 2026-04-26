@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: taskadaptation-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#TaskAdaptation
+uri:: urn:visionclaw:concept:artificial-intelligence:task-adaptation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:task-adaptation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Task Adaptation
+content-hash:: sha256-12-2bf911d858b0
+legacy-term-id:: AI-0819
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0819
-    - filename-history:: ["AI-0819-taskadaptation.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0819
-    - preferred-term:: Task Adaptation
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Adaptation of models to new tasks.
 
-  - **Definition**
-    - definition:: Adaptation of models to new tasks.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:TaskAdaptation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:TaskAdaptation
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Task Adaptation — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :TaskAdaptation))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :TaskAdaptation "Task Adaptation"@en)
-      (AnnotationAssertion rdfs:comment :TaskAdaptation
-        "Adaptation of models to new tasks."@en)
-      ```
-
-- ## About Task Adaptation
-  Adaptation of models to new tasks.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,45 +1,54 @@
 {
-  "id": "Digital Payment System",
+  "id": "digital-payment-system",
   "title": "Digital Payment System",
-  "content": "- ### OntologyBlock\n  id:: digital-payment-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9864\n\t- source-domain:: mv\n\t- preferred-term:: Digital Payment System\n\t- definition:: The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services.\n\t- status:: active\n\t- owl:class:: mv:DigitalPaymentSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-payment-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Infrastructure]]\n\t\t- enables:: [[Virtual Transactions]], [[Cross-Border Payments]], [[Micropayments]]\n\t\t- requires:: [[Blockchain Network]], [[Digital Wallet]], [[Payment Gateway]]\n\t\t- related-to:: [[Cryptocurrency]], [[Stablecoin]], [[DeFi]]\n- ## Technical Details\n\t- **Payment Ecosystem Clusters**:\n\t\t- Metaverse reality integration\n\t\t- Blockchain and NFT infrastructure\n\t\t- Data analytics and fraud detection\n\t\t- Token economics and stablecoins\n\t- **Payment Methods**:\n\t\t- PayPal and traditional fiat gateways\n\t\t- Cryptocurrencies (BTC, ETH, platform tokens)\n\t\t- Stablecoins (USDT, USDC, DAI)\n\t\t- Platform-specific tokens (MANA, SAND)\n\t- **Models**:\n\t\t- Centralized: Roblox, Second Life (platform-controlled)\n\t\t- Decentralized: MANA, SAND (user-controlled, blockchain-based)\n\t\t- Hybrid: Fiat on-ramps to crypto payments\n\t- **Benefits**: Lower transaction fees, faster processing, 24/7 availability, global access\n- ## Applications\n\t- Metaverse virtual commerce\n\t- NFT marketplace transactions\n\t- Cross-border remittances\n\t- Subscription and micropayments\n\t- Play-to-earn game economies",
+  "content": "- ### Definition\n  - The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services.\n\nbridges-to:: [[Blockchain]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalPaymentSystem\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Financial Infrastructure]]\n  - requires:: [[Blockchain Network]], [[Digital Wallet]], [[Payment Gateway]]\n  - enables:: [[Virtual Transactions]], [[Cross-Border Payments]], [[Micropayments]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Payment Ecosystem Clusters**:\n\t\t- Metaverse reality integration\n\t\t- Blockchain and NFT infrastructure\n\t\t- Data analytics and fraud detection\n\t\t- Token economics and stablecoins\n  - **Payment Methods**:\n\t\t- PayPal and traditional fiat gateways\n\t\t- Cryptocurrencies (BTC, ETH, platform tokens)\n\t\t- Stablecoins (USDT, USDC, DAI)\n\t\t- Platform-specific tokens (MANA, SAND)\n  - **Models**:\n\t\t- Centralized: Roblox, Second Life (platform-controlled)\n\t\t- Decentralized: MANA, SAND (user-controlled, blockchain-based)\n\t\t- Hybrid: Fiat on-ramps to crypto payments\n  - **Benefits**: Lower transaction fees, faster processing, 24/7 availability, global access\n  - ## Applications\n  - Metaverse virtual commerce\n  - NFT marketplace transactions\n  - Cross-border remittances\n  - Subscription and micropayments\n  - Play-to-earn game economies\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Micropayment",
     "Digital Tax Compliance Node"
   ],
   "wiki_links": [
-    "Virtual Transactions",
-    "Financial Infrastructure",
-    "Cryptocurrency",
-    "Cross-Border Payments",
-    "Micropayments",
+    "Blockchain",
     "Blockchain Network",
-    "metaverse",
+    "Cross-Border Payments",
+    "Digital Wallet",
+    "Financial Infrastructure",
+    "Micropayments",
     "Payment Gateway",
-    "DeFi",
-    "Stablecoin",
-    "Digital Wallet"
+    "Virtual Transactions",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-payment-system",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalPaymentSystem",
+    "content_hash": "sha256-12-110a6592a9e9",
+    "legacy_term_id": "MV-9864",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-payment-system",
+    "schema_version": "v2",
     "term_id": "MV-9864",
     "preferred_term": "Digital Payment System",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalPaymentSystem",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and services.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalPaymentSystem",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalPaymentSystem",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Financial Infrastructure"
@@ -60,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Cryptocurrency",
-        "Stablecoin",
-        "DeFi"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

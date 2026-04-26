@@ -1,75 +1,89 @@
-- ### OntologyBlock
-  id:: educational-narrative-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9891
-	- source-domain:: mv
-	- preferred-term:: Educational Narrative
-	- status:: active
-	- owl:class:: mv:EducationalNarrative
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.
-	- #### Relationships
-	  id:: educational-narrative-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Immersive Learning]]
-		- related-to:: [[Game Narratives]]
-		- related-to:: [[Digital Storytelling]]
-		- enables:: [[Personalised Learning]]
+iri:: http://narrativegoldmine.com/spatial-computing#EducationalNarrative
+uri:: urn:visionclaw:concept:spatial-computing:educational-narrative
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:educational-narrative
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Educational Narrative
+content-hash:: sha256-12-78b93c49ddb2
+legacy-term-id:: MV-9891
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Technical Details
+- ### Definition
+  - Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.
 
-### Narrative Transportation
-- Places learners within engaging storylines
-- Makes complex concepts more approachable
-- Learners become active participants shaping the narrative
-- Strengthens connection to subject matter through agency
+- ### Semantic Classification
+  - owl-class:: spatial-computing:EducationalNarrative
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Digital Storytelling Techniques
-- Interactive content with user-influenced story progression
-- VR and AR for full immersion and heightened emotional impact
-- Non-Player Characters (NPCs) delivering educational content
-- Scenario-based learning with choice consequences
+- ### Relationships
+  - is-subclass-of:: [[Immersive Learning]]
+  - enables:: [[Personalised Learning]]
 
-### Platform Implementation
-- **Classlet**: Metaverse platform designed for immersive learning experiences
-- NPC integration for varied educational tasks
-- Educator customisation of content mapped to characters
-- Question-answering and scenario-based decision-making
+- ### Content
 
-## Applications
+  ## Technical Details
 
-### History Education
-- Social VR and interactive storytelling tools enhance historical understanding
-- Participatory exploration of historical events
-- Increased student engagement, interaction, and autonomy
-- Empathetic connection to historical figures and events
+  ### Narrative Transportation
+  - Places learners within engaging storylines
+  - Makes complex concepts more approachable
+  - Learners become active participants shaping the narrative
+  - Strengthens connection to subject matter through agency
 
-### Language Learning
-- Digital storytelling for language acquisition
-- Creative and interactive techniques in metaverse environments
-- Contextual learning through narrative immersion
+  ### Digital Storytelling Techniques
+  - Interactive content with user-influenced story progression
+  - VR and AR for full immersion and heightened emotional impact
+  - Non-Player Characters (NPCs) delivering educational content
+  - Scenario-based learning with choice consequences
 
-### STEM Education
-- Complex scientific concepts made accessible through narrative
-- Simulation-based learning with story frameworks
-- Collaborative problem-solving narratives
+  ### Platform Implementation
+  - **Classlet**: Metaverse platform designed for immersive learning experiences
+  - NPC integration for varied educational tasks
+  - Educator customisation of content mapped to characters
+  - Question-answering and scenario-based decision-making
 
-## Pedagogical Framework
+  ## Applications
 
-### Immersion Types
-- **Narrative Immersion**: Simulations and role-play
-- **Ludic Immersion**: Challenge-based, exploratory projects, games
-- **Environmental Immersion**: Realistic virtual contexts
+  ### History Education
+  - Social VR and interactive storytelling tools enhance historical understanding
+  - Participatory exploration of historical events
+  - Increased student engagement, interaction, and autonomy
+  - Empathetic connection to historical figures and events
 
-### Design Considerations
-- Accessibility and inclusivity requirements
-- Long-term integration strategies
-- Assessment alignment with narrative learning objectives
+  ### Language Learning
+  - Digital storytelling for language acquisition
+  - Creative and interactive techniques in metaverse environments
+  - Contextual learning through narrative immersion
 
-## Metadata
+  ### STEM Education
+  - Complex scientific concepts made accessible through narrative
+  - Simulation-based learning with story frameworks
+  - Collaborative problem-solving narratives
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Pedagogical Framework
+
+  ### Immersion Types
+  - **Narrative Immersion**: Simulations and role-play
+  - **Ludic Immersion**: Challenge-based, exploratory projects, games
+  - **Environmental Immersion**: Realistic virtual contexts
+
+  ### Design Considerations
+  - Accessibility and inclusivity requirements
+  - Long-term integration strategies
+  - Assessment alignment with narrative learning objectives
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

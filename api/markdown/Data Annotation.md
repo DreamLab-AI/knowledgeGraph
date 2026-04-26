@@ -1,244 +1,264 @@
-- ### OntologyBlock
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-1020
-  - preferred-term:: Data Annotation
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:DataAnnotation
+iri:: http://narrativegoldmine.com/artificial-intelligence#DataAnnotation
+uri:: urn:visionclaw:concept:artificial-intelligence:data-annotation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:data-annotation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Data Annotation
+content-hash:: sha256-12-7a6724a90858
+legacy-term-id:: AI-1020
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[Telecollaboration]]
 
-### Relationships
-- is-subclass-of:: [[Data Engineering]]
-- is-subclass-of:: [[Machine Learning Pipeline]]
-- skos:related:: [[Supervised Learning]]
-- skos:related:: [[Active Learning]]
-- skos:related:: [[Human-in-the-Loop]]
-- enables:: [[Training Data]]
-- required-for:: [[Supervised Learning]]
+- ### Definition
+  - Data Annotation is a concept within the ai domain.
 
-### Definition
-Data annotation is the process of labeling or tagging raw data (images, text, audio, video) with meaningful, informative labels that provide context and ground truth for supervised machine learning models. It involves human annotators or semi-automated systems identifying and marking features, objects, sentiments, entities, or other attributes in data to create training datasets that algorithms can learn from.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:DataAnnotation
+  - owl-role:: Concept
 
-### Importance
-- Foundation of supervised learning
-- Quality determines model ceiling
-- Often the bottleneck in AI projects
-- Expensive and time-consuming (50-70% of project cost)
-- Critical for model accuracy and reliability
-- Enables evaluation and validation
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning Pipeline]]
+  - enables:: [[Training Data]]
 
-### Annotation Types by Data Modality
-**Image Annotation:**
-- Bounding boxes (object detection)
-- Polygons/polylines (precise boundaries)
-- Semantic segmentation (pixel-level classes)
-- Instance segmentation (individual objects)
-- Keypoint annotation (landmarks, poses)
-- Image classification tags
-- 3D cuboids (depth/orientation)
+- ### Content
 
-**Text Annotation:**
-- Named Entity Recognition (NER) tags
-- Part-of-speech tagging
-- Sentiment labels (positive/negative/neutral)
-- Intent classification
-- Topic/category labels
-- Text span highlighting
-- Relation extraction
-- Coreference resolution
+  ### Definition
+  Data annotation is the process of labeling or tagging raw data (images, text, audio, video) with meaningful, informative labels that provide context and ground truth for supervised machine learning models. It involves human annotators or semi-automated systems identifying and marking features, objects, sentiments, entities, or other attributes in data to create training datasets that algorithms can learn from.
 
-**Audio Annotation:**
-- Speech transcription
-- Speaker diarization (who spoke when)
-- Emotion labeling
-- Sound event detection
-- Music instrument tagging
-- Acoustic scene classification
+  ### Importance
+  - Foundation of supervised learning
+  - Quality determines model ceiling
+  - Often the bottleneck in AI projects
+  - Expensive and time-consuming (50-70% of project cost)
+  - Critical for model accuracy and reliability
+  - Enables evaluation and validation
 
-**Video Annotation:**
-- Frame-by-frame object tracking
-- Action recognition labels
-- Event temporal boundaries
-- Scene segmentation
-- Pose tracking over time
-- Crowd counting
+  ### Annotation Types by Data Modality
+  **Image Annotation:**
+  - Bounding boxes (object detection)
+  - Polygons/polylines (precise boundaries)
+  - Semantic segmentation (pixel-level classes)
+  - Instance segmentation (individual objects)
+  - Keypoint annotation (landmarks, poses)
+  - Image classification tags
+  - 3D cuboids (depth/orientation)
 
-### Annotation Methods
-**Manual Annotation:**
-- Human annotators label data
-- Highest quality but expensive
-- Domain expertise may be required
-- Inter-annotator agreement crucial
+  **Text Annotation:**
+  - Named Entity Recognition (NER) tags
+  - Part-of-speech tagging
+  - Sentiment labels (positive/negative/neutral)
+  - Intent classification
+  - Topic/category labels
+  - Text span highlighting
+  - Relation extraction
+  - Coreference resolution
 
-**Semi-Automated:**
-- Pre-labeling with models
-- Human review and correction
-- Active learning loops
-- Faster and cheaper
+  **Audio Annotation:**
+  - Speech transcription
+  - Speaker diarization (who spoke when)
+  - Emotion labeling
+  - Sound event detection
+  - Music instrument tagging
+  - Acoustic scene classification
 
-**Crowdsourcing:**
-- Distributed to many workers
-- Platforms: Amazon MTurk, Labelbox, Scale AI
-- Requires quality control
-- Good for simple tasks
+  **Video Annotation:**
+  - Frame-by-frame object tracking
+  - Action recognition labels
+  - Event temporal boundaries
+  - Scene segmentation
+  - Pose tracking over time
+  - Crowd counting
 
-**Programmatic (Weak Supervision):**
-- Labeling functions/rules
-- Heuristics and patterns
-- Knowledge bases
-- Snorkel framework
+  ### Annotation Methods
+  **Manual Annotation:**
+  - Human annotators label data
+  - Highest quality but expensive
+  - Domain expertise may be required
+  - Inter-annotator agreement crucial
 
-**Transfer/Self-Supervised:**
-- Use pre-trained models
-- Synthetic data generation
-- Data augmentation with labels
+  **Semi-Automated:**
+  - Pre-labeling with models
+  - Human review and correction
+  - Active learning loops
+  - Faster and cheaper
 
-### Annotation Tools
-**Image/Video:**
-- CVAT (Computer Vision Annotation Tool)
-- LabelImg
-- VGG Image Annotator (VIA)
-- Labelbox
-- V7 Darwin
-- Supervisely
+  **Crowdsourcing:**
+  - Distributed to many workers
+  - Platforms: Amazon MTurk, Labelbox, Scale AI
+  - Requires quality control
+  - Good for simple tasks
 
-**Text:**
-- Prodigy
-- Label Studio
-- Doccano
-- Brat
-- Tagtog
+  **Programmatic (Weak Supervision):**
+  - Labeling functions/rules
+  - Heuristics and patterns
+  - Knowledge bases
+  - Snorkel framework
 
-**Multi-Modal:**
-- Amazon SageMaker Ground Truth
-- Scale AI
-- Labelbox
-- Supervisely
+  **Transfer/Self-Supervised:**
+  - Use pre-trained models
+  - Synthetic data generation
+  - Data augmentation with labels
 
-### Quality Assurance
-**Inter-Annotator Agreement:**
-- Cohen's Kappa
-- Fleiss' Kappa (3+ annotators)
-- Krippendorff's Alpha
-- Percentage agreement
+  ### Annotation Tools
+  **Image/Video:**
+  - CVAT (Computer Vision Annotation Tool)
+  - LabelImg
+  - VGG Image Annotator (VIA)
+  - Labelbox
+  - V7 Darwin
+  - Supervisely
 
-**Consensus Methods:**
-- Majority voting (multiple annotators)
-- Expert adjudication
-- Weighted voting
-- Expectation-maximization
+  **Text:**
+  - Prodigy
+  - Label Studio
+  - Doccano
+  - Brat
+  - Tagtog
 
-**Quality Control:**
-- Gold standard test sets
-- Random audits
-- Attention checks
-- Training and guidelines
-- Feedback loops
+  **Multi-Modal:**
+  - Amazon SageMaker Ground Truth
+  - Scale AI
+  - Labelbox
+  - Supervisely
 
-### Annotation Guidelines
-**Essential Components:**
-- Clear definitions of labels
-- Edge case handling
-- Examples (positive and negative)
-- Decision trees for ambiguity
-- Consistency rules
-- Iterative refinement
+  ### Quality Assurance
+  **Inter-Annotator Agreement:**
+  - Cohen's Kappa
+  - Fleiss' Kappa (3+ annotators)
+  - Krippendorff's Alpha
+  - Percentage agreement
 
-**Best Practices:**
-- Pilot annotation phase
-- Regular calibration sessions
-- Version control for guidelines
-- FAQ for common issues
-- Visual examples
+  **Consensus Methods:**
+  - Majority voting (multiple annotators)
+  - Expert adjudication
+  - Weighted voting
+  - Expectation-maximization
 
-### Challenges
-**Subjectivity:**
-- Ambiguous cases
-- Annotator bias
-- Inconsistent interpretations
+  **Quality Control:**
+  - Gold standard test sets
+  - Random audits
+  - Attention checks
+  - Training and guidelines
+  - Feedback loops
 
-**Scalability:**
-- Millions of examples needed
-- High cost per example
-- Time constraints
+  ### Annotation Guidelines
+  **Essential Components:**
+  - Clear definitions of labels
+  - Edge case handling
+  - Examples (positive and negative)
+  - Decision trees for ambiguity
+  - Consistency rules
+  - Iterative refinement
 
-**Quality vs. Cost:**
-- Expert annotators expensive
-- Crowdworkers variable quality
-- Balance needed
+  **Best Practices:**
+  - Pilot annotation phase
+  - Regular calibration sessions
+  - Version control for guidelines
+  - FAQ for common issues
+  - Visual examples
 
-**Privacy:**
-- Sensitive data (medical, financial)
-- Regulatory compliance (GDPR, HIPAA)
-- Anonymization required
+  ### Challenges
+  **Subjectivity:**
+  - Ambiguous cases
+  - Annotator bias
+  - Inconsistent interpretations
 
-**Class Imbalance:**
-- Rare events expensive to find
-- Biased training data
-- Active learning helps
+  **Scalability:**
+  - Millions of examples needed
+  - High cost per example
+  - Time constraints
 
-### Cost Optimization Strategies
-1. **Active learning:** Annotate most informative examples
-2. **Transfer learning:** Use pre-trained models
-3. **Weak supervision:** Programmatic labeling
-4. **Data augmentation:** Multiply labeled examples
-5. **Semi-supervised learning:** Leverage unlabeled data
-6. **Crowdsourcing:** Scale with many workers
-7. **Pre-labeling:** Model-assisted annotation
+  **Quality vs. Cost:**
+  - Expert annotators expensive
+  - Crowdworkers variable quality
+  - Balance needed
 
-### Ethical Considerations
-- Fair compensation for annotators
-- Working conditions (gig economy issues)
-- Exposure to disturbing content (moderation)
-- Cultural sensitivity
-- Bias in annotations (reflects annotator demographics)
-- Privacy of data subjects
+  **Privacy:**
+  - Sensitive data (medical, financial)
+  - Regulatory compliance (GDPR, HIPAA)
+  - Anonymization required
 
-### Emerging Trends
-**Foundation Models:**
-- Reduce annotation needs
-- Few-shot learning
-- Zero-shot capabilities
+  **Class Imbalance:**
+  - Rare events expensive to find
+  - Biased training data
+  - Active learning helps
 
-**Synthetic Data:**
-- Generative models create labeled data
-- Simulation environments (robotics)
-- Reduced cost
+  ### Cost Optimization Strategies
+  1. **Active learning:** Annotate most informative examples
+  2. **Transfer learning:** Use pre-trained models
+  3. **Weak supervision:** Programmatic labeling
+  4. **Data augmentation:** Multiply labeled examples
+  5. **Semi-supervised learning:** Leverage unlabeled data
+  6. **Crowdsourcing:** Scale with many workers
+  7. **Pre-labeling:** Model-assisted annotation
 
-**Interactive Annotation:**
-- Human-AI collaboration
-- Iterative refinement
-- Real-time feedback
+  ### Ethical Considerations
+  - Fair compensation for annotators
+  - Working conditions (gig economy issues)
+  - Exposure to disturbing content (moderation)
+  - Cultural sensitivity
+  - Bias in annotations (reflects annotator demographics)
+  - Privacy of data subjects
 
-**Annotation as a Service:**
-- Managed platforms (Scale AI, Labelbox)
-- End-to-end pipelines
-- Quality guarantees
+  ### Emerging Trends
+  **Foundation Models:**
+  - Reduce annotation needs
+  - Few-shot learning
+  - Zero-shot capabilities
 
-### Impact on Model Performance
-- **Quantity:** More data generally helps (diminishing returns)
-- **Quality:** Clean, consistent labels critical
-- **Coverage:** Diverse examples improve generalization
-- **Balance:** Class distribution affects metrics
-- **Granularity:** Label detail matches task needs
+  **Synthetic Data:**
+  - Generative models create labeled data
+  - Simulation environments (robotics)
+  - Reduced cost
 
-### Annotation Project Workflow
-1. **Define task and labels**
-2. **Create annotation guidelines**
-3. **Pilot annotation (small batch)**
-4. **Measure inter-annotator agreement**
-5. **Refine guidelines**
-6. **Scale annotation**
-7. **Quality assurance checks**
-8. **Model training and evaluation**
-9. **Identify errors, re-annotate**
-10. **Iterate**
+  **Interactive Annotation:**
+  - Human-AI collaboration
+  - Iterative refinement
+  - Real-time feedback
 
-### Metrics
-- Annotations per hour (productivity)
-- Cost per annotation
-- Inter-annotator agreement
-- Accuracy vs. gold standard
-- Coverage (% of data annotated)
+  **Annotation as a Service:**
+  - Managed platforms (Scale AI, Labelbox)
+  - End-to-end pipelines
+  - Quality guarantees
 
-Data annotation bridges raw data and intelligent systems, transforming unstructured information into structured knowledge that powers supervised machine learning across computer vision, NLP, speech recognition, and beyond.
+  ### Impact on Model Performance
+  - **Quantity:** More data generally helps (diminishing returns)
+  - **Quality:** Clean, consistent labels critical
+  - **Coverage:** Diverse examples improve generalization
+  - **Balance:** Class distribution affects metrics
+  - **Granularity:** Label detail matches task needs
+
+  ### Annotation Project Workflow
+  1. **Define task and labels**
+  2. **Create annotation guidelines**
+  3. **Pilot annotation (small batch)**
+  4. **Measure inter-annotator agreement**
+  5. **Refine guidelines**
+  6. **Scale annotation**
+  7. **Quality assurance checks**
+  8. **Model training and evaluation**
+  9. **Identify errors, re-annotate**
+  10. **Iterate**
+
+  ### Metrics
+  - Annotations per hour (productivity)
+  - Cost per annotation
+  - Inter-annotator agreement
+  - Accuracy vs. gold standard
+  - Coverage (% of data annotated)
+
+  Data annotation bridges raw data and intelligent systems, transforming unstructured information into structured knowledge that powers supervised machine learning across computer vision, NLP, speech recognition, and beyond.
+
+- ### Provenance
+  - sources:: [[GDPR]], [[HIPAA]], [[Snorkel]], [[Cohen's Kappa]]
+  - migration-date:: 2026-04-26T00:00:00Z
+  - modified:: 2026-04-26T14:15:00Z

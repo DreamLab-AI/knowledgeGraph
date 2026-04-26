@@ -1,94 +1,105 @@
-- ### OntologyBlock
-  id:: system-interoperability-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7039
-	- preferred-term:: System Interoperability
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.
-	- maturity:: reviewed
-	- owl:class:: ngm:SystemInteroperability
-	- owl:role:: Concept
-	- belongsToDomain:: [[Core Technology]]
+iri:: http://narrativegoldmine.com/infrastructure#SystemInteroperability
+uri:: urn:visionclaw:concept:infrastructure:system-interoperability
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:system-interoperability
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: System Interoperability
+content-hash:: sha256-12-c73a81b025f5
+legacy-term-id:: NGM-7039
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[System Capability]]
-- related-to:: [[Technical Standard]], [[Cross-Platform Identity]], [[Data Exchange]]
-- enables:: [[System Integration]], [[Data Sharing]], [[Enterprise Connectivity]]
-- implements:: [[Standard Protocols]], [[Common Data Formats]]
+- ### Definition
+  - System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware. It enables diverse systems to communicate and work together seamlessly through adherence to common standards, protocols, and data formats, facilitating efficient information flow across organisational and technical boundaries.
 
-## Components
+- ### Semantic Classification
+  - owl-class:: infrastructure:SystemInteroperability
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Core Technology]]
 
-### Types of Interoperability
+- ### Relationships
+  - is-subclass-of:: [[System Capability]]
+  - enables:: [[System Integration]], [[Data Sharing]], [[Enterprise Connectivity]]
+  - implements:: [[Standard Protocols]], [[Common Data Formats]]
 
-#### Technical Interoperability
-The foundation for data exchange, encompassing connection services, middleware, security, and communication protocols. Ensures all system members can access platforms and exchange information securely and efficiently.
+- ### Content
 
-#### Semantic Interoperability
-The ability to automatically interpret exchanged information meaningfully and accurately. Requires common information exchange reference models and shared vocabularies to ensure what is sent is exactly what is understood.
+  ## Components
 
-#### Syntactic Interoperability
-Agreement on data formats and encoding for exchange. Ensures systems can parse and process messages correctly using standard formats like XML, JSON, or protocol buffers.
+  ### Types of Interoperability
 
-#### Organisational Interoperability
-Alignment of business processes, workflows, and governance across organisations. Addresses the human and procedural aspects of cross-system collaboration.
+  #### Technical Interoperability
+  The foundation for data exchange, encompassing connection services, middleware, security, and communication protocols. Ensures all system members can access platforms and exchange information securely and efficiently.
 
-### Interoperability vs Integration
-- **Integration**: Systems connected to operate as a single unified system
-- **Interoperability**: Separate systems that can securely share data in real time through standard interfaces
-- Interoperable systems speak the same language without requiring connectors or middleware
+  #### Semantic Interoperability
+  The ability to automatically interpret exchanged information meaningfully and accurately. Requires common information exchange reference models and shared vocabularies to ensure what is sent is exactly what is understood.
 
-### Standards and Protocols
-- **Data Formats**: XML, JSON, CSV, Protocol Buffers
-- **Web Services**: REST, SOAP, GraphQL
-- **Messaging**: AMQP, MQTT, Kafka
-- **APIs**: OpenAPI/Swagger, AsyncAPI
-- **Identity**: SAML, OAuth, OIDC, SCIM
+  #### Syntactic Interoperability
+  Agreement on data formats and encoding for exchange. Ensures systems can parse and process messages correctly using standard formats like XML, JSON, or protocol buffers.
 
-### Architecture Components
-- **API Gateways**: Central points for API management and routing
-- **Integration Platforms**: iPaaS solutions for connecting systems
-- **Message Brokers**: Asynchronous communication infrastructure
-- **Data Transformation**: ETL/ELT tools for format conversion
-- **Service Mesh**: Microservices communication layer
+  #### Organisational Interoperability
+  Alignment of business processes, workflows, and governance across organisations. Addresses the human and procedural aspects of cross-system collaboration.
 
-## Implementation
+  ### Interoperability vs Integration
+  - **Integration**: Systems connected to operate as a single unified system
+  - **Interoperability**: Separate systems that can securely share data in real time through standard interfaces
+  - Interoperable systems speak the same language without requiring connectors or middleware
 
-### Enterprise Application Integration (EAI) Approaches
-1. **Point-to-Point**: Direct connections between systems (limited scalability)
-2. **Hub-and-Spoke**: Central integration hub managing connections
-3. **Enterprise Service Bus (ESB)**: Middleware layer for routing and transformation
-4. **API-Led Connectivity**: APIs as the primary integration mechanism
-5. **Event-Driven Architecture**: Loose coupling through event streams
+  ### Standards and Protocols
+  - **Data Formats**: XML, JSON, CSV, Protocol Buffers
+  - **Web Services**: REST, SOAP, GraphQL
+  - **Messaging**: AMQP, MQTT, Kafka
+  - **APIs**: OpenAPI/Swagger, AsyncAPI
+  - **Identity**: SAML, OAuth, OIDC, SCIM
 
-### Modern Integration Trends
-- **Hybrid Integration Platforms (HIP)**: Unified management of on-premises and cloud integrations
-- **Low-Code/No-Code Platforms**: Enable non-technical users to build integrations
-- **API Ecosystems**: Open standards promoting broad compatibility
-- **Microservices Architecture**: Decomposed services with well-defined interfaces
-- **iPaaS (Integration Platform as a Service)**: Cloud-based integration services
+  ### Architecture Components
+  - **API Gateways**: Central points for API management and routing
+  - **Integration Platforms**: iPaaS solutions for connecting systems
+  - **Message Brokers**: Asynchronous communication infrastructure
+  - **Data Transformation**: ETL/ELT tools for format conversion
+  - **Service Mesh**: Microservices communication layer
 
-### Standards Adoption Strategy
-1. Identify applicable industry and technical standards
-2. Assess current systems against interoperability requirements
-3. Develop roadmap for standards implementation
-4. Implement API-first design principles
-5. Establish governance for API and interface management
-6. Monitor and measure interoperability metrics
+  ## Implementation
 
-### Best Practices
-- Adopt open standards to avoid vendor lock-in
-- Design APIs for extensibility and versioning
-- Implement robust error handling and retry logic
-- Use asynchronous patterns where appropriate
-- Document interfaces comprehensively
-- Test interoperability scenarios thoroughly
-- Plan for backward compatibility
+  ### Enterprise Application Integration (EAI) Approaches
+  1. **Point-to-Point**: Direct connections between systems (limited scalability)
+  2. **Hub-and-Spoke**: Central integration hub managing connections
+  3. **Enterprise Service Bus (ESB)**: Middleware layer for routing and transformation
+  4. **API-Led Connectivity**: APIs as the primary integration mechanism
+  5. **Event-Driven Architecture**: Loose coupling through event streams
 
-## Metadata
+  ### Modern Integration Trends
+  - **Hybrid Integration Platforms (HIP)**: Unified management of on-premises and cloud integrations
+  - **Low-Code/No-Code Platforms**: Enable non-technical users to build integrations
+  - **API Ecosystems**: Open standards promoting broad compatibility
+  - **Microservices Architecture**: Decomposed services with well-defined interfaces
+  - **iPaaS (Integration Platform as a Service)**: Cloud-based integration services
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched from stub
-- **References**: 5 pages reference this concept
+  ### Standards Adoption Strategy
+  1. Identify applicable industry and technical standards
+  2. Assess current systems against interoperability requirements
+  3. Develop roadmap for standards implementation
+  4. Implement API-first design principles
+  5. Establish governance for API and interface management
+  6. Monitor and measure interoperability metrics
+
+  ### Best Practices
+  - Adopt open standards to avoid vendor lock-in
+  - Design APIs for extensibility and versioning
+  - Implement robust error handling and retry logic
+  - Use asynchronous patterns where appropriate
+  - Document interfaces comprehensively
+  - Test interoperability scenarios thoroughly
+  - Plan for backward compatibility
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

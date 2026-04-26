@@ -1,40 +1,48 @@
 {
-  "id": "Personalized Virtual Experiences",
+  "id": "personalized-virtual-experiences",
   "title": "Personalized Virtual Experiences",
-  "content": "- ### OntologyBlock\n  id:: personalized-virtual-experiences-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10004\n\t- source-domain:: mv\n\t- preferred-term:: Personalized Virtual Experiences\n\t- status:: active\n\t- definition:: AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.\n\t- owl:class:: mv:PersonalizedVirtualExperiences\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: personalized-virtual-experiences-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Experience]]\n\t\t- related-to:: [[AI Personalization]]\n\t\t- related-to:: [[Avatar Customization]]\n\t\t- related-to:: [[Content Recommendation]]\n\t\t- enables:: [[User Engagement]]\n\t- #### Personalization Methods\n\t  collapsed:: true\n\t\t- AI algorithms analyzing user behavior and preferences\n\t\t- Customizable avatars with hyper-realistic features\n\t\t- Interactive storytelling with user-driven paths\n\t\t- Content distribution tailored to interests\n\t\t- Learning paths adapted to individual pace\n\t- #### Market Context\n\t  collapsed:: true\n\t\t- Metaverse market projected at $1.3 trillion by 2033\n\t\t- XR enabling blend of real and virtual personalization\n\t\t- Retail leveraging AR for personalized shopping\n\t\t- Enterprise meetings in 2D or immersive formats",
+  "content": "- ### Definition\n  - AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:PersonalizedVirtualExperiences\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Experience]]\n  - enables:: [[User Engagement]]\n\n- ### Content\n\n  - #### Personalization Methods\n\t\t- AI algorithms analyzing user behavior and preferences\n\t\t- Customizable avatars with hyper-realistic features\n\t\t- Interactive storytelling with user-driven paths\n\t\t- Content distribution tailored to interests\n\t\t- Learning paths adapted to individual pace\n  - #### Market Context\n\t\t- Metaverse market projected at $1.3 trillion by 2033\n\t\t- XR enabling blend of real and virtual personalization\n\t\t- Retail leveraging AR for personalized shopping\n\t\t- Enterprise meetings in 2D or immersive formats\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Narrative Content",
     "Metaverse Psychology Profile"
   ],
   "wiki_links": [
-    "AI Personalization",
-    "Avatar Customization",
+    "User Engagement",
     "Virtual Experience",
-    "Content Recommendation",
-    "metaverse",
-    "User Engagement"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:personalized-virtual-experiences",
+    "iri": "http://narrativegoldmine.com/spatial-computing#PersonalizedVirtualExperiences",
+    "content_hash": "sha256-12-99d815f8b0e6",
+    "legacy_term_id": "MV-10004",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:personalized-virtual-experiences",
+    "schema_version": "v2",
     "term_id": "MV-10004",
     "preferred_term": "Personalized Virtual Experiences",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#PersonalizedVirtualExperiences",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:PersonalizedVirtualExperiences",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:PersonalizedVirtualExperiences",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Experience"
@@ -49,26 +57,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "AI Personalization",
-        "Avatar Customization",
-        "Content Recommendation"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

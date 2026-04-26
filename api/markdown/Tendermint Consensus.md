@@ -1,49 +1,36 @@
-- ### OntologyBlock
-  id:: tendermintconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#TendermintConsensus
+uri:: urn:visionclaw:concept:blockchain:tendermint-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:tendermint-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Tendermint Consensus
+content-hash:: sha256-12-d771ce3dba47
+legacy-term-id:: BC-0557
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0557
-    - filename-history:: ["BC-0557-tendermintconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0557
-    - preferred-term:: Tendermint Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput.
 
-  - **Definition**
-    - definition:: A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:TendermintConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:TendermintConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Byzantine Fault Tolerance]]
-    - is-subclass-of:: [[Hybrid Consensus]]
+- ### Content
+  Tendermint Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :TendermintConsensus))
-      (SubClassOf :TendermintConsensus :ByzantineFaultTolerance)
-      (SubClassOf :TendermintConsensus :HybridConsensus)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :TendermintConsensus "Tendermint Consensus"@en)
-      (AnnotationAssertion rdfs:comment :TendermintConsensus
-        "A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput."@en)
-      ```
-
-- ## About Tendermint Consensus
-  A BFT consensus engine combining PBFT with PoS, providing instant finality and supporting high transaction throughput.
-  
-  ### Examples
-  - Cosmos Hub, Binance Chain
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

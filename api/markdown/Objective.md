@@ -1,40 +1,36 @@
-- ### OntologyBlock
-  id:: objective-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Objective
+uri:: urn:visionclaw:concept:artificial-intelligence:objective
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:objective
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Objective
+content-hash:: sha256-12-0bb6c66e639b
+legacy-term-id:: AI-0835
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0835
-    - filename-history:: ["AI-0835-objective.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0835
-    - preferred-term:: Objective
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Objective is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Objective
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:Objective
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Objective — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Objective))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Objective "Objective"@en)
-      ```
-
-- ## About Objective
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

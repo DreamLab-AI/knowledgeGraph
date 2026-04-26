@@ -1,38 +1,50 @@
 {
-  "id": "Inflation Control",
+  "id": "inflation-control",
   "title": "Inflation Control",
-  "content": "- ### OntologyBlock\n  id:: MV-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-4010\n\t- source-domain:: mv\n\t- preferred-term:: Inflation Control\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.\n\t- source:: [[Virtual Economics]], [[Game Economics]]\n\t- maturity:: mature\n\t- owl:class:: mv:InflationControl\n\t- owl:role:: Process\n\t- belongsToDomain:: [[MetaverseDomain]]\n\t- isSubclassOf:: [[Virtual Economy]]\n\n### Relationships\n- is-subclass-of:: [[Metaverse]]",
+  "content": "- ### Definition\n  - Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:InflationControl\n  - owl-role:: Process\n  - belongs-to-domain:: [[MetaverseDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n  Inflation Control — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[Virtual Economics]], [[Game Economics]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Virtual Economics",
-    "MetaverseDomain",
     "Game Economics",
     "Metaverse",
-    "Virtual Economy"
+    "MetaverseDomain",
+    "Virtual Economics"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:inflation-control",
+    "iri": "http://narrativegoldmine.com/spatial-computing#InflationControl",
+    "content_hash": "sha256-12-9481edc18334",
+    "legacy_term_id": "MV-4010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:inflation-control",
+    "schema_version": "v2",
     "term_id": "MV-4010",
     "preferred_term": "Inflation Control",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#InflationControl",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.",
     "scope_note": null,
     "status": "draft",
     "maturity": "mature",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:InflationControl",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:InflationControl",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Metaverse"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -41,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "MetaverseDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Virtual Economics",
       "Game Economics"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

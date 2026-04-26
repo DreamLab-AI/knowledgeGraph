@@ -1,38 +1,46 @@
 {
-  "id": "Virtual Theater",
+  "id": "virtual-theater",
   "title": "Virtual Theater",
-  "content": "- ### OntologyBlock\n  id:: virtual-theater-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10148\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Theater\n\t- status:: active\n\t- definition:: A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.\n\t- owl:class:: mv:VirtualTheater\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Performing Arts]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t\t- related-to:: [[Immersive Experience]]\n\t\t- related-to:: [[Interactive Narrative]]\n\t  id:: virtual-theater-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual theater represents an emerging art form combining centuries of traditional theater with VR technology affordances. SIGGRAPH 2024 VR Theater featured world-class virtual reality storytelling with the Best in Show award going to \"Emperor\" by Oriane Hurard. The 2024 PXR Conference showcased VR productions including \"Journey to Octopulis: Improv or Die\" and \"Mary Shelley Lives Here.\" The EU immersive technology market is predicted to reach $108 billion by 2030.\n- ## Technical Details\n\t- ### Experience Types\n\t\t- **Seated Panoramic**: Multi-viewer immersive spaces with approximately one-hour programs\n\t\t- **Interactive VR**: Audience controls avatar and influences narrative\n\t\t- **360-Degree Video**: Captured performances with viewer-controlled perspective\n\t\t- **Mixed Reality Lobby**: New 2024 feature for pre-experience engagement\n\t- ### Unique Characteristics\n\t\t- **Immersive**: Blurs line between fiction and reality\n\t\t- **Interactive**: Stories change based on audience decisions\n\t\t- **Inclusive**: Global access with VR headset from anywhere\n\t\t- **Experimental**: New form of audience-performer relationship\n\t- ### Accessibility Benefits\n\t\t- Overcomes geographic restrictions for live performances\n\t\t- Enables attendance for those with mobility limitations\n\t\t- Age-related accessibility accommodations\n\t\t- Disability-friendly immersive experiences\n\t- ### Technical Requirements\n\t\t- VR headsets for immersive viewing\n\t\t- Spatial audio for theatrical atmosphere\n\t\t- Avatar systems for interactive productions\n\t\t- Real-time rendering for live performances\n- ## Applications\n\t- Immersive theatrical productions\n\t- Interactive narrative experiences\n\t- Accessible performance viewing\n\t- Educational theater experiences\n\t- Experimental performing arts",
+  "content": "- ### Definition\n  - A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualTheater\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Performing Arts]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual theater represents an emerging art form combining centuries of traditional theater with VR technology affordances. SIGGRAPH 2024 VR Theater featured world-class virtual reality storytelling with the Best in Show award going to \"Emperor\" by Oriane Hurard. The 2024 PXR Conference showcased VR productions including \"Journey to Octopulis: Improv or Die\" and \"Mary Shelley Lives Here.\" The EU immersive technology market is predicted to reach $108 billion by 2030.\n  - ## Technical Details\n  - ### Experience Types\n\t\t- **Seated Panoramic**: Multi-viewer immersive spaces with approximately one-hour programs\n\t\t- **Interactive VR**: Audience controls avatar and influences narrative\n\t\t- **360-Degree Video**: Captured performances with viewer-controlled perspective\n\t\t- **Mixed Reality Lobby**: New 2024 feature for pre-experience engagement\n  - ### Unique Characteristics\n\t\t- **Immersive**: Blurs line between fiction and reality\n\t\t- **Interactive**: Stories change based on audience decisions\n\t\t- **Inclusive**: Global access with VR headset from anywhere\n\t\t- **Experimental**: New form of audience-performer relationship\n  - ### Accessibility Benefits\n\t\t- Overcomes geographic restrictions for live performances\n\t\t- Enables attendance for those with mobility limitations\n\t\t- Age-related accessibility accommodations\n\t\t- Disability-friendly immersive experiences\n  - ### Technical Requirements\n\t\t- VR headsets for immersive viewing\n\t\t- Spatial audio for theatrical atmosphere\n\t\t- Avatar systems for interactive productions\n\t\t- Real-time rendering for live performances\n  - ## Applications\n  - Immersive theatrical productions\n  - Interactive narrative experiences\n  - Accessible performance viewing\n  - Educational theater experiences\n  - Experimental performing arts\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Virtual Performance Space"
   ],
   "wiki_links": [
-    "Interactive Narrative",
-    "Immersive Experience",
     "Performing Arts",
-    "metaverse",
-    "Virtual Reality VR"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-theater",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualTheater",
+    "content_hash": "sha256-12-344049ddf95f",
+    "legacy_term_id": "MV-10148",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-theater",
+    "schema_version": "v2",
     "term_id": "MV-10148",
     "preferred_term": "Virtual Theater",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualTheater",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A form of immersive performing arts that uses VR headsets and virtual environments to present theatrical productions, enabling audiences to experience performances as silent observers within the scene, with some productions featuring interactive narratives where story outcomes depend on audience decisions.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualTheater",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualTheater",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Performing Arts"
@@ -45,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Virtual Reality VR",
-        "Immersive Experience",
-        "Interactive Narrative"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

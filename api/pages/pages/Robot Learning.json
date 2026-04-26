@@ -1,0 +1,107 @@
+{
+  "id": "robot-learning",
+  "title": "Robot Learning",
+  "content": "- ### Definition\n  - The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.\n\n- ### Semantic Classification\n  - owl-class:: robotics:RobotLearning\n  - owl-role:: TechnicalDiscipline\n  - belongs-to-domain:: [[RoboticsDomain]], [[AIDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[MachineLearning]], [[ArtificialIntelligence]], [[Robotics]]\n  - has-part:: [[ImitationLearning]], [[ReinforcementLearning]], [[SelfSupervisedLearning]], [[TransferLearning]]\n  - requires:: [[SensorData]], [[TrainingData]], [[SimulationEnvironment]], [[ComputeResources]]\n  - enables:: [[AdaptiveControl]], [[SkillAcquisition]], [[AutonomousNavigation]], [[Manipulation]]\n\n- ### Content\n  - Robot Learning represents the convergence of robotics and machine learning, enabling autonomous systems to acquire skills through data-driven methods rather than explicit programming. In 2026, robot learning has evolved from laboratory research to industrial deployment, with foundation models (RT-2, PaLM-E), sim-to-real transfer techniques, and large-scale robotic datasets (Open X-Embodiment) accelerating the path from data collection to real-world performance.\n  - ### Learning Paradigms\n\n\t  #### Supervised Learning\n\t  - **Imitation Learning (Learning from Demonstration)**:\n\t    - Behavioral cloning: Direct policy learning from expert demonstrations\n\t    - Inverse reinforcement learning (IRL): Inferring reward functions from demonstrations\n\t    - Applications: Robotic assembly, surgical robotics, warehouse picking\n\t    - Challenge: Distribution shift when robot encounters unseen states\n\t    - Example: Google's RT-1 (Robotics Transformer 1) trained on 130k demonstrations\n\n\t  - **Learning from Human Feedback (RLHF for Robotics)**:\n\t    - Humans provide preference rankings of robot behaviors\n\t    - Policy optimization based on learned reward model\n\t    - Applications: Social robots, assistive robotics, human-robot collaboration\n\n\t  #### Reinforcement Learning (RL)\n\t  - **Model-Free RL**:\n\t    - Q-learning, Deep Q-Networks (DQN), Actor-Critic methods (A3C, SAC, PPO)\n\t    - Trial-and-error learning through reward signals\n\t    - Applications: Drone racing, robotic soccer, game-playing robots\n\t    - Challenge: Sample inefficiency (requires millions of interactions)\n\n\t  - **Model-Based RL**:\n\t    - Learns dynamics model of environment\n\t    - Plans using learned model (reduces sample complexity)\n\t    - Applications: Robotic manipulation, legged locomotion\n\t    - Examples: PETS (Probabilistic Ensembles with Trajectory Sampling), MBPO (Model-Based Policy Optimization)\n\n\t  - **Offline RL (Batch RL)**:\n\t    - Learns from pre-collected datasets (no environment interaction during training)\n\t    - Safety-critical applications where exploration is risky\n\t    - Examples: Conservative Q-Learning (CQL), Implicit Q-Learning (IQL)\n\n\t  #### Self-Supervised Learning\n\t  - **Representation Learning**:\n\t    - Learns low-dimensional features from high-dimensional sensory data (images, point clouds)\n\t    - Contrastive learning (SimCLR, MoCo), masked autoencoders\n\t    - Applications: Object recognition, scene understanding, tactile sensing\n\n\t  - **World Models**:\n\t    - Learns predictive model of environment dynamics\n\t    - Enables mental simulation for planning\n\t    - Examples: DreamerV3 (imagination-based RL), World Models (Ha & Schmidhuber)\n\n\t  #### Transfer Learning\n\t  - **Sim-to-Real Transfer**:\n\t    - Train in simulation (infinite data, safe exploration)\n\t    - Transfer to real robot (domain adaptation, domain randomization)\n\t    - Applications: Quadruped locomotion (ANYmal, Spot), manipulation (NVIDIA Isaac Gym)\n\n\t  - **Multi-Task Learning**:\n\t    - Single policy for multiple tasks (shared representations)\n\t    - Few-shot adaptation to new tasks\n\t    - Examples: MT-Opt (Google), Octo (Open X-Embodiment)\n  - ### Key Techniques and Algorithms\n\n\t  #### Deep Reinforcement Learning\n\t  - **Proximal Policy Optimization (PPO)**: Stable, sample-efficient policy gradient method\n\t  - **Soft Actor-Critic (SAC)**: Maximum entropy RL for robustness\n\t  - **Twin Delayed DDPG (TD3)**: Continuous control with reduced overestimation\n\n\t  #### Vision-Based Learning\n\t  - **Visual Servoing**: Direct policy learning from camera pixels to control commands\n\t  - **Object-Centric Representations**: Segmenting scenes into objects for manipulation\n\t  - **Affordance Learning**: Predicting action possibilities from visual input\n\n\t  #### Tactile and Multi-Modal Learning\n\t  - **Tactile Sensing**: Learning from force/torque sensors, fingertip tactile arrays\n\t  - **Visuo-Tactile Fusion**: Combining vision and touch for dexterous manipulation\n\t  - **Audio-Visual Learning**: Using sound for contact detection, material classification\n\n\t  #### Hierarchical Learning\n\t  - **Options Framework**: Temporal abstraction (skills as reusable sub-policies)\n\t  - **Goal-Conditioned RL**: Learning to reach arbitrary goals\n\t  - **Skill Chaining**: Composing learned primitives into complex behaviors\n  - ### Foundation Models for Robotics (2024-2026 Breakthrough)\n\n\t  #### Vision-Language-Action Models (VLAs)\n\t  - **RT-2 (Robotic Transformer 2)**: Google DeepMind's VLA trained on web data + robotic demonstrations\n\t    - Enables natural language robot control (\"Pick up the blue cube\")\n\t    - Zero-shot generalization to new objects and tasks\n\t    - Architecture: Vision Transformer (ViT) + PaLI language model\n\n\t  - **PaLM-E (Embodied Language Model)**: 562B parameter multimodal model\n\t    - Combines vision, language, and robotic state\n\t    - Applications: Mobile manipulation, long-horizon planning\n\n\t  - **RoboCat**: Meta-learning for robotics (DeepMind)\n\t    - Self-improving agent (learns from own experience)\n\t    - Adapts to new tasks, robots, and environments with minimal data\n\n\t  #### Large-Scale Robotic Datasets\n\t  - **Open X-Embodiment**: Coalition of 34 research labs, 22 robot platforms\n\t    - 1M+ demonstrations across 150+ tasks\n\t    - Enables cross-robot, cross-domain learning\n\n\t  - **RT-X Dataset**: Google's multi-robot training corpus\n\t    - Demonstrates positive transfer across robot morphologies\n\n\t  #### Simulation Platforms\n\t  - **NVIDIA Isaac Sim/Gym**: GPU-accelerated physics simulation, 10,000+ parallel environments\n\t  - **MuJoCo**: Contact-rich physics engine (acquired by DeepMind, now open-source)\n\t  - **PyBullet**: Python bindings for Bullet physics\n\t  - **Gazebo/Ignition**: ROS-integrated simulation\n\n  #### Current Landscape\n  #### Industry Adoption\n\t  - **Manufacturing**: ABB YuMi collaborative robot (learns assembly tasks from demonstration), FANUC CR series (reinforcement learning for bin picking)\n\t  - **Logistics**: Boston Dynamics Stretch (learned palletizing), Agility Robotics Digit (locomotion via RL)\n\t  - **Agriculture**: FarmWise Titan (weed recognition via supervised learning), John Deere See & Spray (adaptive spraying)\n\t  - **Healthcare**: Intuitive Surgical (surgeon skill modeling), Diligent Robotics Moxi (hospital navigation via RL)\n\t  - **Domestic Robots**: iRobot Roomba j7+ (obstacle recognition via deep learning), Dyson 360 Vis Nav (visual SLAM)\n\n\t  #### Technical Capabilities 2026\n\t  - **Real-world RL**: Stable learning directly on hardware (no simulation required) for low-risk tasks\n\t  - **Few-shot adaptation**: 10-100 demonstrations for new task acquisition (vs 1M+ in 2020)\n\t  - **Sim-to-real gap**: <10% performance degradation (vs 30-50% in 2020) via domain randomization, adversarial training\n\t  - **Edge deployment**: 1-10 TOPS sufficient for learned policies (quantized neural networks, knowledge distillation)\n\n\t  #### Standards and Frameworks\n\t  - **ROS 2 Learning Packages**: `ros2_control`, `moveit2`, `nav2` with learned components\n\t  - **Deep Learning Frameworks**: PyTorch (dominant in research), TensorFlow/JAX (Google Robotics)\n\t  - **RL Libraries**: Stable-Baselines3, RLlib (Ray), Tianshou, CleanRL\n\t  - **Emerging Standards**: IEEE P2817 (Reinforcement Learning for Robotics), ISO/TR 20218-2 (Safety of collaborative robots)\n\n  #### Academic Context\n  Robot learning emerged in the 1990s with reinforcement learning applied to pole balancing and robotic soccer. Key theoretical developments include:\n\n\t  - **Markov Decision Processes (MDPs)**: Formal framework for sequential decision-making (Bellman, 1957; Sutton & Barto, 1998)\n\t  - **Function approximation**: Using neural networks for value functions and policies (Tesauro's TD-Gammon, 1995)\n\t  - **Policy gradient methods**: REINFORCE (Williams, 1992), Natural Policy Gradient (Kakade, 2001)\n\t  - **Deep RL revolution**: DQN (Mnih et al., 2015), AlphaGo (Silver et al., 2016)\n\n\t  Contemporary research (2024-2026) focuses on:\n\t  - **Data-efficient learning**: Reducing sample complexity through model-based RL, meta-learning, offline RL\n\t  - **Generalization**: Cross-task, cross-domain, cross-embodiment transfer\n\t  - **Safety and robustness**: Constrained RL, risk-sensitive policies, robust MDPs\n\t  - **Human-robot collaboration**: Interactive learning, shared autonomy, preference learning\n\n  #### UK Context\n  #### North England Innovation Hubs\n\n\t  **Manchester**\n\t  - University of Manchester: Robotics and AI convergence research\n\t  - Manufacturer: Tharsus Group (integrating learned vision systems for warehouse robots)\n\n\t  **Leeds**\n\t  - University of Leeds IRASS: Agricultural robot learning (crop/weed classification)\n\t  - Leeds Institute for Data Analytics (LIDA): Data-efficient robot learning\n\n\t  **Sheffield**\n\t  - Sheffield Robotics: UK's largest robotics group, RL for autonomous inspection\n\t  - Autonomous Systems Laboratory: Learning-based control for underground robots\n\n\t  **Newcastle**\n\t  - Newcastle University: Assistive robotics with preference learning (elderly care robots)\n\t  - Research focus: Human-in-the-loop learning, safe RL\n\n\t  #### UK Commercial Sector\n\t  - **Ocado Technology** (Hatfield): Robotic warehouse picking via imitation learning\n\t  - **Wayve** (London): End-to-end learned driving (camera-to-control with transformers)\n\t  - **Oxbotica** (Oxford): Universal autonomy software (learned perception and planning)\n\t  - **CMR Surgical** (Cambridge): Surgeon skill transfer to Versius robot via demonstration learning\n\n\t  #### Regional Case Studies\n\t  - **Ocado Andover CFC**: 1,000+ robots coordinate via multi-agent RL for optimal routing\n\t  - **Rolls-Royce (Derby)**: Inspection robots learning defect detection from human experts\n\t  - **JCB (Staffordshire)**: Autonomous construction equipment with learned terrain navigation\n\n  #### Future Directions\n  #### Emerging Trends (2026-2030)\n\t  - **Foundation models ubiquity**: Pre-trained VLAs becoming standard for robot control\n\t  - **Continual learning**: Robots learning continuously throughout deployment (no separate training phase)\n\t  - **Causal reasoning**: Moving beyond correlation to understand cause-effect for robust generalization\n\t  - **Swarm learning**: Distributed learning across robot fleets (federated RL)\n\t  - **Neurosymbolic approaches**: Combining learned perception with symbolic planning\n\n\t  #### Anticipated Challenges\n\t  - **Safety certification**: Validating learned policies for safety-critical applications (medical, automotive)\n\t  - **Explainability**: Interpreting neural network decisions for human trust and regulatory compliance\n\t  - **Data scarcity**: Limited real-world data for niche applications (space, deep sea, hazardous environments)\n\t  - **Computational costs**: Training large models (PaLM-E scale) requires massive GPU clusters\n\n\t  #### Research Priorities\n\t  - **Sample efficiency**: Learning from minimal data (meta-learning, model-based RL, offline RL)\n\t  - **Sim-to-real**: Closing reality gap for complex contact-rich tasks\n\t  - **Compositional learning**: Combining learned skills into novel behaviors\n\t  - **Human-robot co-learning**: Bidirectional learning between humans and robots\n\n  #### Research & Literature\n  #### Foundational Works\n\t  - Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. http://incompleteideas.net/book/the-book-2nd.html\n\t  - Kober, J., Bagnell, J. A., & Peters, J. (2013). \"Reinforcement Learning in Robotics: A Survey.\" *International Journal of Robotics Research*, 32(11), 1238-1274. DOI: 10.1177/0278364913495721\n\t  - Levine, S., Pastor, P., Krizhevsky, A., et al. (2016). \"Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection.\" *International Journal of Robotics Research*, 37(4-5), 421-436. DOI: 10.1177/0278364917710318\n\n\t  #### Contemporary Research (2024-2026)\n\t  - Brohan, A., Brown, N., Carbajal, J., et al. (2023). \"RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control.\" *arXiv:2307.15818*\n\t  - Padalkar, A., Pooley, A., Jain, A., et al. (2023). \"Open X-Embodiment: Robotic Learning Datasets and RT-X Models.\" *arXiv:2310.08864*\n\t  - Hafner, D., Pasukonis, J., Ba, J., et al. (2023). \"Mastering Diverse Domains through World Models.\" *arXiv:2301.04104* (DreamerV3)\n\t  - Mees, O., Ebert, F., Dasari, S., et al. (2024). \"Octo: An Open-Source Generalist Robot Policy.\" *arXiv:2405.12213*\n\n\t  #### UK Academic Contributions\n\t  - Imperial College London: Reinforcement learning for autonomous systems (Prof. Filip De Turck)\n\t  - University of Edinburgh: Probabilistic robotics and Bayesian learning (School of Informatics)\n\t  - University of Oxford: Multi-agent RL, robot learning from demonstration (Oxford Robotics Institute)\n\t  - University of Cambridge: Machine Learning Group (Prof. Carl Edward Rasmussen)\n\n  #### References\n  1. Sutton, R. S., & Barto, A. G. (2018). *Reinforcement Learning: An Introduction* (2nd ed.). MIT Press. http://incompleteideas.net/book/the-book-2nd.html\n\t  2. Kober, J., Bagnell, J. A., & Peters, J. (2013). Reinforcement Learning in Robotics: A Survey. *International Journal of Robotics Research*, 32(11), 1238-1274. https://doi.org/10.1177/0278364913495721\n\t  3. Levine, S., Pastor, P., Krizhevsky, A., et al. (2016). Learning Hand-Eye Coordination for Robotic Grasping with Deep Learning and Large-Scale Data Collection. *International Journal of Robotics Research*, 37(4-5), 421-436. https://doi.org/10.1177/0278364917710318\n\t  4. Brohan, A., Brown, N., Carbajal, J., et al. (2023). RT-2: Vision-Language-Action Models Transfer Web Knowledge to Robotic Control. *arXiv:2307.15818*. https://arxiv.org/abs/2307.15818\n\t  5. Padalkar, A., Pooley, A., Jain, A., et al. (2023). Open X-Embodiment: Robotic Learning Datasets and RT-X Models. *arXiv:2310.08864*. https://arxiv.org/abs/2310.08864\n\t  6. Hafner, D., Pasukonis, J., Ba, J., et al. (2023). Mastering Diverse Domains through World Models. *arXiv:2301.04104*. https://arxiv.org/abs/2301.04104\n\t  7. Mees, O., Ebert, F., Dasari, S., et al. (2024). Octo: An Open-Source Generalist Robot Policy. *arXiv:2405.12213*. https://arxiv.org/abs/2405.12213\n\t  8. IEEE P2817 - Standard for Framework of Reinforcement Learning for Robotics. https://standards.ieee.org/ieee/2817/10552/\n\t  9. ISO/TR 20218-2:2024 - Robotics — Safety design for industrial robot systems — Part 2: Collaborative robots. https://www.iso.org/standard/78954.html\n\t  10. Open X-Embodiment Project. https://robotics-transformer-x.github.io/\n\n- ### Provenance\n  - sources:: [[IEEE Robotics and Automation]], [[Association for the Advancement of Artificial Intelligence (AAAI)]], [[Conference on Robot Learning (CoRL)]], [[International Conference on Learning Representations (ICLR)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AIDomain",
+    "AdaptiveControl",
+    "ArtificialIntelligence",
+    "Association for the Advancement of Artificial Intelligence (AAAI)",
+    "AutonomousNavigation",
+    "ComputeResources",
+    "Conference on Robot Learning (CoRL)",
+    "IEEE Robotics and Automation",
+    "ImitationLearning",
+    "International Conference on Learning Representations (ICLR)",
+    "MachineLearning",
+    "Manipulation",
+    "ReinforcementLearning",
+    "Robotics",
+    "RoboticsDomain",
+    "SelfSupervisedLearning",
+    "SensorData",
+    "SimulationEnvironment",
+    "SkillAcquisition",
+    "TrainingData",
+    "TransferLearning"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:robot-learning",
+    "iri": "http://narrativegoldmine.com/robotics#RobotLearning",
+    "content_hash": "sha256-12-0162b1e2f132",
+    "legacy_term_id": "RB-3000",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:robot-learning",
+    "schema_version": "v2",
+    "term_id": "RB-3000",
+    "preferred_term": "Robot Learning",
+    "alt_terms": [],
+    "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
+    "domain_full_name": "Robotics",
+    "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforcement learning (policy optimization, reward-based training), and self-supervised learning (representation learning, world models) for perception, control, planning, and human-robot interaction.",
+    "scope_note": null,
+    "status": "mature",
+    "maturity": "production-ready",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.89,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:RobotLearning",
+    "owl_role": "TechnicalDiscipline",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "MachineLearning",
+      "ArtificialIntelligence",
+      "Robotics"
+    ],
+    "has_part": [
+      "ImitationLearning",
+      "ReinforcementLearning",
+      "SelfSupervisedLearning",
+      "TransferLearning"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "SensorData",
+      "TrainingData",
+      "SimulationEnvironment",
+      "ComputeResources"
+    ],
+    "depends_on": [],
+    "enables": [
+      "AdaptiveControl",
+      "SkillAcquisition",
+      "AutonomousNavigation",
+      "Manipulation"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "RoboticsDomain",
+      "AIDomain"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "IEEE Robotics and Automation",
+      "Association for the Advancement of Artificial Intelligence (AAAI)",
+      "Conference on Robot Learning (CoRL)",
+      "International Conference on Learning Representations (ICLR)"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

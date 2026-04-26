@@ -1,45 +1,54 @@
 {
-  "id": "Digital Repository",
+  "id": "digital-repository",
   "title": "Digital Repository",
-  "content": "- ### OntologyBlock\n  id:: digital-repository-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9866\n\t- source-domain:: mv\n\t- preferred-term:: Digital Repository\n\t- definition:: A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardized ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.\n\t- status:: active\n\t- owl:class:: mv:DigitalRepository\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-repository-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Management]]\n\t\t- enables:: [[Digital Preservation]], [[Content Access]], [[Metadata Management]]\n\t\t- requires:: [[Storage Infrastructure]], [[Metadata Standards]], [[Access Controls]]\n\t\t- related-to:: [[Digital Archive]], [[IPFS]], [[Institutional Repository]]\n- ## Technical Details\n\t- **Core Functions**:\n\t\t- Ingest: Accepting and validating digital objects\n\t\t- Storage: Secure, redundant data persistence\n\t\t- Management: Metadata cataloging and organization\n\t\t- Access: Discovery and retrieval interfaces\n\t\t- Preservation: Long-term viability assurance\n\t- **Metadata Standards**:\n\t\t- PREMIS: Preservation metadata implementation strategies\n\t\t- Dublin Core: General descriptive metadata\n\t\t- METS: Metadata encoding and transmission\n\t\t- OAIS: Open Archival Information System reference model\n\t- **TRUST Principles**:\n\t\t- Transparency, Responsibility, User focus\n\t\t- Sustainability, Technology\n\t- **2024 Developments**: Harvard DRS Futures project, AI-assisted cataloging, decentralized storage integration\n- ## Applications\n\t- Academic research archives\n\t- Cultural heritage preservation\n\t- Corporate records management\n\t- Metaverse asset storage\n\t- Government document repositories",
+  "content": "- ### Definition\n  - A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.\n\nbridges-to:: [[Blockchain]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalRepository\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Data Management]]\n  - requires:: [[Storage Infrastructure]], [[Metadata Standards]], [[Access Controls]]\n  - enables:: [[Digital Preservation]], [[Content Access]], [[Metadata Management]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Functions**:\n\t\t- Ingest: Accepting and validating digital objects\n\t\t- Storage: Secure, redundant data persistence\n\t\t- Management: Metadata cataloging and organization\n\t\t- Access: Discovery and retrieval interfaces\n\t\t- Preservation: Long-term viability assurance\n  - **Metadata Standards**:\n\t\t- PREMIS: Preservation metadata implementation strategies\n\t\t- Dublin Core: General descriptive metadata\n\t\t- METS: Metadata encoding and transmission\n\t\t- OAIS: Open Archival Information System reference model\n  - **TRUST Principles**:\n\t\t- Transparency, Responsibility, User focus\n\t\t- Sustainability, Technology\n  - **2024 Developments**: Harvard DRS Futures project, AI-assisted cataloging, decentralized storage integration\n  - ## Applications\n  - Academic research archives\n  - Cultural heritage preservation\n  - Corporate records management\n  - Metaverse asset storage\n  - Government document repositories\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Asset Archive",
     "Collective Memory Archive"
   ],
   "wiki_links": [
-    "IPFS",
-    "Content Access",
-    "Metadata Standards",
-    "Data Management",
     "Access Controls",
-    "metaverse",
-    "Storage Infrastructure",
-    "Digital Archive",
+    "Blockchain",
+    "Content Access",
+    "Data Management",
     "Digital Preservation",
-    "Institutional Repository",
-    "Metadata Management"
+    "Metadata Management",
+    "Metadata Standards",
+    "Storage Infrastructure",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-repository",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalRepository",
+    "content_hash": "sha256-12-a48f9562f16f",
+    "legacy_term_id": "MV-9866",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-repository",
+    "schema_version": "v2",
     "term_id": "MV-9866",
     "preferred_term": "Digital Repository",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalRepository",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardized ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalRepository",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalRepository",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Data Management"
@@ -60,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Digital Archive",
-        "IPFS",
-        "Institutional Repository"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

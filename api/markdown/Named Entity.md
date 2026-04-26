@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: namedentity-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#NamedEntity
+uri:: urn:visionclaw:concept:artificial-intelligence:named-entity
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:named-entity
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Named Entity
+content-hash:: sha256-12-6f1c7c0cbbb6
+legacy-term-id:: AI-0814
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0814
-    - filename-history:: ["AI-0814-namedentity.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0814
-    - preferred-term:: Named Entity
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Person, organization, location, or other named entity.
 
-  - **Definition**
-    - definition:: Person, organization, location, or other named entity.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:NamedEntity
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:NamedEntity
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Named Entity — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NamedEntity))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NamedEntity "Named Entity"@en)
-      (AnnotationAssertion rdfs:comment :NamedEntity
-        "Person, organization, location, or other named entity."@en)
-      ```
-
-- ## About Named Entity
-  Person, organization, location, or other named entity.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

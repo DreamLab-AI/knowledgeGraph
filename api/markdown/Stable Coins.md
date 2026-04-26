@@ -1,10 +1,36 @@
+iri:: http://narrativegoldmine.com/infrastructure#StableCoins
+uri:: urn:visionclaw:concept:infrastructure:stable-coins
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:stable-coins
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Stable Coins
+content-hash:: sha256-12-34f5e6f2a8c5
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- ![stablecoinRelativeVolume.png](../assets/stablecoinRelativeVolume_1721858969653_0.png)
-- [Stablecoins Circulating - DefiLlama](https://defillama.com/stablecoins)
-- <iframe src="https://defillama.com/stablecoins" style="width: 100%; height: 600px"></iframe>
-- ## Stable-coins
-	- [Jeremy Allaire](https://x.com/jerallaire/status/1803432989113593890)
+- ### Definition
+  - Stable Coins is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:StableCoins
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - ![stablecoinRelativeVolume.png](../assets/stablecoinRelativeVolume_1721858969653_0.png)
+  - [Stablecoins Circulating - DefiLlama](https://defillama.com/stablecoins)
+  - <iframe src="https://defillama.com/stablecoins" style="width: 100%; height: 600px"></iframe>
+  - [Jeremy Allaire](https://x.com/jerallaire/status/1803432989113593890)
 		- ```
 		  What does it look like when 10% of global economic money is stablecoins, 
 		  and when credit intermediation moves from fractional reserve lending to 
@@ -16,46 +42,48 @@ public:: true
 		  The time goes by fast, but when you zoom out and look at what has
 		  been accomplished and how that sets us up for the future, 
 		  it’s hard not to be insanely optimistic right now.
+
+  - ## Stable-coins
 		  ```
-	- Stable Coins are ‘crypto like’ instruments which are ‘pegged’ at a 1:1ratio with nationally issued Fiat currencies. In fact they usually correspond to units of privately issued debt underwritten by a variety of different assets. This is (depending on the issuing company’s model)a [far morerisky](https://www.americanbanker.com/opinion/ststablecoins-are-backed-by-reserves-give-us-a-break)unit of money than the nominal currency that they represent, but they offer significant utility. They allow the user to self custody the cryptographic bearer instrument representing the money themselves, as with blockchain. This may afford the user less friction in that they can transmit the instrument through the newer financial rails which are emerging. Once again, this is likely a product most useful to [emergingmarkets](https://www.cigionline.org/articles/the-future-of-fintech-is-unfolding-in-africa/?),those living under oppressive regimes, currencies [suffering from highinflation](https://www.bloomberg.com/news/articles/2022-07-03/argentines-seek-hedging-in-crypto-after-economy-minister-resigns),and countries who rely on the dollar as their currency, and within digitally native metaverse applications. These are enormous global uses though. The use in the west is prominently for ‘traders’ on exchanges at this time. /par The caveat of such products is that such ‘units’ of money can be frozen by the issuer, and they are subject to the third party risk of the issuer defaulting on the underlying instrument, instantly wiping out the value.
-	- <iframe src="https://medium.com/@nic__carter/five-perspectives-on-stablecoins-5bc20076270a" style="width: 100%; height: 600px"></iframe>
-	- [Five perspectives on stablecoins. Evaluating the state of the academic… | by Nic Carter | May, 2024 | Medium](https://medium.com/@nic__carter/five-perspectives-on-stablecoins-5bc20076270a)
-	- Klages-Mundt et al. wrote a paper in 2020, which explains the details ofthe different mechanisms and risks.
-	- The following text paraphrases Spencer noon of on-chain analytics company “OurNetwork”, who provides an [usefulsummary](https://twitter.com/spencernoon/status/1524752048121466883) of the paper.
-	- There are two major classes of stablecoins:
+  - Stable Coins are ‘crypto like’ instruments which are ‘pegged’ at a 1:1ratio with nationally issued Fiat currencies. In fact they usually correspond to units of privately issued debt underwritten by a variety of different assets. This is (depending on the issuing company’s model)a [far morerisky](https://www.americanbanker.com/opinion/ststablecoins-are-backed-by-reserves-give-us-a-break)unit of money than the nominal currency that they represent, but they offer significant utility. They allow the user to self custody the cryptographic bearer instrument representing the money themselves, as with blockchain. This may afford the user less friction in that they can transmit the instrument through the newer financial rails which are emerging. Once again, this is likely a product most useful to [emergingmarkets](https://www.cigionline.org/articles/the-future-of-fintech-is-unfolding-in-africa/?),those living under oppressive regimes, currencies [suffering from highinflation](https://www.bloomberg.com/news/articles/2022-07-03/argentines-seek-hedging-in-crypto-after-economy-minister-resigns),and countries who rely on the dollar as their currency, and within digitally native metaverse applications. These are enormous global uses though. The use in the west is prominently for ‘traders’ on exchanges at this time. /par The caveat of such products is that such ‘units’ of money can be frozen by the issuer, and they are subject to the third party risk of the issuer defaulting on the underlying instrument, instantly wiping out the value.
+  - <iframe src="https://medium.com/@nic__carter/five-perspectives-on-stablecoins-5bc20076270a" style="width: 100%; height: 600px"></iframe>
+  - [Five perspectives on stablecoins. Evaluating the state of the academic… | by Nic Carter | May, 2024 | Medium](https://medium.com/@nic__carter/five-perspectives-on-stablecoins-5bc20076270a)
+  - Klages-Mundt et al. wrote a paper in 2020, which explains the details ofthe different mechanisms and risks.
+  - The following text paraphrases Spencer noon of on-chain analytics company “OurNetwork”, who provides an [usefulsummary](https://twitter.com/spencernoon/status/1524752048121466883) of the paper.
+  - There are two major classes of stablecoins:
 		- Custodial: entrusted by off-chain collateral assets like fiat dollars that sit in a bank. Requires trust in third party.
 		- Non-custodial (aka decentralized): fully on-chain and backed by smart contracts & economics. No trusted parties.
-	- In custodial stablecoins, custodians hold a combination of assets(currencies, bonds, commodities, etc.) off-chain, allowing issuers(possibly the same entity) to offer digital tokens of an reserve asset.The top 2 custodial stablecoins today are USDT and USDC. There are 3types of custodial stablecoins.
+  - In custodial stablecoins, custodians hold a combination of assets(currencies, bonds, commodities, etc.) off-chain, allowing issuers(possibly the same entity) to offer digital tokens of an reserve asset.The top 2 custodial stablecoins today are USDT and USDC. There are 3types of custodial stablecoins.
 		- Reserve Fund: 100% reserve ratio. Each stablecoin is backed by a unit of the reserve asset held by the custodian. A useful example of this the [USDF banking consortium](https://www.americanbanker.com/news/bank-stablecoin-consortium-usdf-gets-a-ceo-grows-to-9-members).
 		- Fractional Reserve Fund: The stablecoin is backed by a mix of both reserve assets and other capital assets.
 		- Central Bank Digital Currency (CBDC): A digital form of central bank money that is widely available to the general public. CBDCs are in their nascency as today only 9 countries/territories have launched them, many of them small.
-	- Custodial stablecoins have three major risks:
+  - Custodial stablecoins have three major risks:
 		- Counterparty Risk (fraud, theft, govt seizure, etc.)
 		- Censorship Risk (operations blocked by regulators, etc.)
 		- Economic Risk (off-chain assets go down in value)
-	- Each can result in the stablecoin value going to zero.
-	- [Stablecoins and national security: Learning the lessons of Eurodollars | Brookings](https://www.brookings.edu/articles/stablecoins-and-national-security-learning-the-lessons-of-eurodollars/)
-	- They are collectively likely to outstrip VISA this year
+  - Each can result in the stablecoin value going to zero.
+  - [Stablecoins and national security: Learning the lessons of Eurodollars | Brookings](https://www.brookings.edu/articles/stablecoins-and-national-security-learning-the-lessons-of-eurodollars/)
+  - They are collectively likely to outstrip VISA this year
 		- ![Image](https://pbs.twimg.com/media/GCAQhOBaoAAqs-D?format=jpg&name=medium)
-	- Over 1/3 Made a Purchase in Stablecoins in Latin America, Says Latest MasterCard New Payments Index 2022: Reporting on Fintech,
-	- Crypto, and Blockchain Activity in Africa<https://bitcoinke.io/2022/07/latin-america-in-mastercard-new-payments-index-2022/>
-	- According to the latest MasterCard New Payments Index 2022, over one third of people in Latin America made a purchase using
-	- stablecoins in the past year.
+  - Over 1/3 Made a Purchase in Stablecoins in Latin America, Says Latest MasterCard New Payments Index 2022: Reporting on Fintech,
+  - Crypto, and Blockchain Activity in Africa<https://bitcoinke.io/2022/07/latin-america-in-mastercard-new-payments-index-2022/>
+  - According to the latest MasterCard New Payments Index 2022, over one third of people in Latin America made a purchase using
+  - stablecoins in the past year.
 	      *  https://bitcoinmagazine.com/legal/u-s-treasury-introduces-cbdc-digital-dollar-working-group
 	      rbi monetary museum: India's e-rupee unpopular as central banks push digital currency
 		- The Economic Times https://economictimes.indiatimes.com/industry/banking/finance/banking/indias-e-rupee-unpopular-as-central-banks-push-digital-currency/articleshow/99049236.cms?from=mdr
-- ## Stripe Acquires Bridge
-	- **Stripe Acquisition**
+  - ## Stripe Acquires Bridge
+  - **Stripe Acquisition**
 		- On October 22nd, fintech giant Stripe acquired stablecoin infrastructure firm Bridge for $1.1 billion, marking the largest acquisition in crypto history and Stripe's most significant purchase to date.
 		- Bridge provides business-facing software that enables companies to accept stablecoin payments, enhancing Stripe's capabilities in the stablecoin payments sector.
 		- At the time of acquisition, Bridge was last valued at $200 million during their Series A funding, representing a substantial markup and a significant exit for founders and investors.
-	- **Stripe's Strategic Intent**
+  - **Stripe's Strategic Intent**
 		- The acquisition underscores Stripe's commitment to stablecoins as the future of payments, signaling their intention to double down on stablecoin infrastructure.
 		- Patrick Collison, CEO of Stripe, stated, "Stable coins are room temperature superconductors for financial services. Thanks to stable coins, businesses around the world will benefit from significant speed, coverage, and cost improvements in the coming years."\r\n
 		- Stripe aims to build the world's best stablecoin infrastructure, integrating multiple stablecoins and partnering with firms like Paxos for backend infrastructure.
 		- Bridge's platform facilitates stablecoin payments across 70 countries, with impressive early adoption metrics reported by Stripe.
 		- The integration of Bridge enhances Stripe's ability to provide instant, global, dollar-based payment rails, reducing crypto complexity for businesses.
-	- **Positive Endorsements**
+  - **Positive Endorsements**
 		- Simon Taylor of fintech Brain Fruit praised the acquisition, likening it to an "Instagram-like all-time great acquisition" that addresses long-term challenges for Stripe.
 		- Overdraft's head of macro at Lightspeed Ventures highlighted the shift from crypto being price-centric to focusing on business value.
 		- Jeremy Black, principal at fintech firm Kinvey, noted that Stripe's $1 billion investment communicates a strong market signal to customers and partners, discouraging competitors.
@@ -63,16 +91,16 @@ public:: true
 		- Jacob Horn, co-founder of LER 2 Zora, indicated that Bridge and Stripe's collaboration will enable any app to have stablecoin on-ramps and off-ramps similar to Coinbase, with enhanced regional support.
 		- Chia Wang of Alliance Dow suggested that the acquisition signals to venture capitalists that stablecoin startups have clearer paths to significant exits, potentially leading to increased funding and entrepreneurial activity in the stablecoin space.
 		- Nick Carter of Castle Island predicted that the Bridge acquisition would "turbocharge" the stablecoin market, aligning with broader industry enthusiasm.
-	- **Stablecoins in Financial Infrastructure**
+  - **Stablecoins in Financial Infrastructure**
 		- Stablecoins are increasingly recognized as essential to future financial infrastructure, especially in regions with limited access to traditional banking.
 		- The acquisition by Stripe reflects a broader industry acknowledgment of stablecoins' role in facilitating seamless, global transactions.\r\n
-	- **Market Trends and Adoption**
+  - **Market Trends and Adoption**
 		- Stablecoins have maintained a steady ascent, becoming integral to various financial services beyond speculative trading, including payments, remittances, and decentralized finance (DeFi).
 		- Institutional interest in stablecoins is growing, driven by their potential to enhance payment speed, reduce costs, and provide stable value storage.
 		- As stablecoins become more embedded in the financial system, regulatory frameworks will likely evolve to address associated risks and ensure compliance.
 		- The ongoing collaboration between traditional financial institutions and blockchain-based firms like Stripe and Bridge suggests a converging future for fintech and crypto sectors.
-- ## By the numbers
-	- It’s worth taking a look at these tokens individually, to get a feel forthe trade-offs, and figure out how they might be useful for us in our proposed metaverse applications. It’s important to know that these tokenised dollars and/or other currencies are issued on top of the public blockchains we have been detailing throughout. Which tokens areon what blockchains is constantly evolving, so it’s not really worth enumerating specifics. In a metaverse application it would be necessary to manage both the underlying public blockchain and the stablecoin issued on top of it, making the interaction with the global financial system perversely more not less complex. In the following list of a fewof the major coins, the first hyperlink is the whitepaper if it’s available.
+  - ## By the numbers
+  - It’s worth taking a look at these tokens individually, to get a feel forthe trade-offs, and figure out how they might be useful for us in our proposed metaverse applications. It’s important to know that these tokenised dollars and/or other currencies are issued on top of the public blockchains we have been detailing throughout. Which tokens areon what blockchains is constantly evolving, so it’s not really worth enumerating specifics. In a metaverse application it would be necessary to manage both the underlying public blockchain and the stablecoin issued on top of it, making the interaction with the global financial system perversely more not less complex. In the following list of a fewof the major coins, the first hyperlink is the whitepaper if it’s available.
 		- [USDC](https://f.hubspotusercontent30.net/hubfs/9304636/PDF/centre-whitepaper.pdf) is a dollar and Euro backed coin issued by a consortium of major players in the space, most notably Circle, and Coinbase. It’s has a better transparency record than tether but is still not backed 1:1 by actual dollars in reserve. It may or may not be a fractional reserve asset. It’s well positioned to take advantage of regulatory changes in the USA, and seems to be quietly lobbying to be the choice of a government endorsed digital dollar, at least a significant part of a central bank digital currency initiative. It’s too early to tell how this will work out, but it has [substantial ‘legacy finance backing’](https://www.forbes.com/sites/ninabambysheva/2022/04/13/blackrocks-newest-investment-paves-the-way-for-digital-assets-on-wall-street/?). It is the only stablecoin to increase slightly in value (depegging upward) in the wake of the UST implosion. This ‘flight to quality’ shows the advantage of the work that CENTRE put into regulatory compliance. It runs on Ethereum, Algorand, Solana, Stellar, Tron, Hedera, Avalanche and Flow blockchains. At this time USDC may be [under speculative attack](https://twitter.com/Excellion/status/1567472488589963264) by Chinese exchange Binance, in favour of their own offering BUSD, and is losing market share. Payment provider Stripe supports USDC as of 2024.
 		- Circle has received a major boost as the [only stablecoin allowed in the EU.](https://www.circle.com/en/pressroom/circle-is-first-global-stablecoin-issuer-to-comply-with-mica-eus-landmark-crypto-law)
 			- https://twitter.com/collision/status/1783559623511011535
@@ -91,5 +119,7 @@ public:: true
 				- Tether as a company makes billions of dollars of profit per year and has global adoption and network effect. The company has around 20 employees. They will likely remain pre-eminent in the synthetic dollar market.
 				- The USA is positioning to exclude USDT within it's borders, by capping such assets at $10B for [National security reasons.](https://www.brookings.edu/articles/stablecoins-and-national-security-learning-the-lessons-of-eurodollars/)
 				- Tether is potentially the natural inheritor of the global [[Eurodollar]] system.
--
--
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

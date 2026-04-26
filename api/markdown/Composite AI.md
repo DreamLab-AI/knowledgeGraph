@@ -1,23 +1,38 @@
-- ### OntologyBlock
-  id:: composite-ai-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0004
-	- preferred-term:: Composite AI
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:CompositeAI
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: AI & Autonomy
+iri:: http://narrativegoldmine.com/metaverse#CompositeAI
+uri:: urn:visionclaw:concept:artificial-intelligence:composite-ai
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:composite-ai
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Composite AI
+content-hash:: sha256-12-0acaa480c8f7
+legacy-term-id:: ME-0004
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:CompositeAI
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- Composite AI
+- ### Relationships
+  - bridges-to:: [[Computer Vision]]
+
+- ### Content
+
+  ## Overview
+
+  - Composite AI
   - Precise technical definition
     - Composite AI is an advanced artificial intelligence paradigm that integrates multiple AI techniques—such as machine learning, natural language processing, computer vision, symbolic reasoning, and knowledge graphs—into a unified, hierarchical system to solve complex problems more effectively than any single approach alone.
     - It enables synergistic collaboration between diverse AI models and analytical methods, enhancing contextual understanding, adaptability, and decision-making precision in autonomous systems.
@@ -44,20 +59,12 @@
     - Future developments will focus on improving interoperability, explainability, and ethical governance, with growing emphasis on human-AI collaboration and adaptive learning.
     - In the UK, continued investment in regional innovation hubs and academic-industry partnerships will drive the adoption of composite AI in autonomy, particularly in smart cities, healthcare, and sustainable manufacturing.
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: AI & Autonomy
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

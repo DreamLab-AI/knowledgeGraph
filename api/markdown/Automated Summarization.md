@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: automatedsummarization-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#AutomatedSummarization
+uri:: urn:visionclaw:concept:artificial-intelligence:automated-summarization
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:automated-summarization
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Automated Summarization
+content-hash:: sha256-12-ed33b0cc7c98
+legacy-term-id:: AI-0856
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0856
-    - filename-history:: ["AI-0856-automatedsummarization.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0856
-    - preferred-term:: Automated Summarization
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Automated Summarization is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AutomatedSummarization
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:AutomatedSummarization
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Natural Language Processing]]
+  - bridges-to:: [[Telecollaboration]] (domain: tc)
 
-  - #### Relationships
-    - is-subclass-of:: [[Natural Language Processing]]
+- ### Content
+  Automated Summarization — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :AutomatedSummarization))
-      (SubClassOf :AutomatedSummarization :NaturalLanguageProcessing)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :AutomatedSummarization "Automated Summarization"@en)
-      ```
-
-- ## About Automated Summarization
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

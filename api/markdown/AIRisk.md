@@ -1,202 +1,134 @@
-- ### OntologyBlock
-  id:: airisk-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: AI-0076
-	- preferred-term:: AI Risk
-	- source-domain:: ai
-	- status:: active
-	- definition:: The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation. AI risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.
-	- maturity:: mature
-	- authority-score:: 0.95
-	- owl:class:: ai:AIRisk
-	- owl:role:: Concept
-	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
-	- #### Relationships
-	  id:: airisk-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Risk Management]]
-		- related-to:: [[AI Safety]]
-		- related-to:: [[AISecurity]]
-		- related-to:: [[AIGovernance]]
-		- related-to:: [[AIRiskManagement]]
-		- related-to:: [[AI Ethics]]
-		- related-to:: [[AI Trustworthiness]]
-		- enables:: [[AI Risk Assessment]]
-		- managed-by:: [[AI Risk Management]]
-		- assessed-through:: [[Risk Assessment]]
-		- mitigated-by:: [[Risk Mitigation]]
-		- manifests-as:: [[AI Incident]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#AIRisk
+uri:: urn:visionclaw:concept:artificial-intelligence:ai-risk
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:ai-risk
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: AI Risk
+content-hash:: sha256-12-0f7fcc3a5548
+legacy-term-id:: AI-0076
+status:: active
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-- ## Definition and Scope
+- ### Definition
+  - The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation. AI risks span from immediate operational failures to long-term catastrophic scenarios requiring proactive identification, assessment, and mitigation strategies.
 
-Artificial Intelligence Risk refers to the potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society at large. These risks arise from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences during AI system design, deployment, or operation.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AIRisk
+  - owl-role:: Concept
+  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
-The academic foundations of AI risk management draw from computer science, ethics, cybersecurity, and social sciences, emphasizing interdisciplinary approaches to understand and mitigate harm. According to the NIST AI Risk Management Framework (AI RMF 1.0, January 2023), AI risk is defined as the composite measure of an event's probability of occurring and the magnitude or degree of the consequences of the corresponding event.
+- ### Relationships
+  - is-subclass-of:: [[Risk Management]]
+  - enables:: [[AI Risk Assessment]]
+  - bridges-to:: [[Smart Contract]] (domain: bc)
 
-- ## Formal Ontological Structure
+- ### Content
 
-### Core Components
-- **Likelihood**: Probability of risk occurring (0.0 to 1.0)
-- **Impact**: Severity of consequences (0.0 to 1.0)
-- **Context**: Domain and stakeholders affected
-- **Risk Types**: Technical, ethical, social, legal, security, operational, safety
+  - ## Definition and Scope
 
-### Ontological Classes
-```clojure
-(Declaration (Class :AIRisk))
-(SubClassOf :AIRisk :Risk)
+  Artificial Intelligence Risk refers to the potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society at large. These risks arise from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences during AI system design, deployment, or operation.
 
-;; Risk types
-(Declaration (Class :TechnicalRisk))
-(Declaration (Class :EthicalRisk))
-(Declaration (Class :SocialRisk))
-(Declaration (Class :LegalRisk))
-(Declaration (Class :SecurityRisk))
-(Declaration (Class :OperationalRisk))
-(Declaration (Class :SafetyRisk))
+  The academic foundations of AI risk management draw from computer science, ethics, cybersecurity, and social sciences, emphasizing interdisciplinary approaches to understand and mitigate harm. According to the NIST AI Risk Management Framework (AI RMF 1.0, January 2023), AI risk is defined as the composite measure of an event's probability of occurring and the magnitude or degree of the consequences of the corresponding event.
 
-(SubClassOf :TechnicalRisk :AIRisk)
-(SubClassOf :EthicalRisk :AIRisk)
-(SubClassOf :SocialRisk :AIRisk)
-(SubClassOf :LegalRisk :AIRisk)
-(SubClassOf :SecurityRisk :AIRisk)
-(SubClassOf :OperationalRisk :AIRisk)
-(SubClassOf :SafetyRisk :AIRisk)
+  - ## Formal Ontological Structure
 
-;; Core properties
-(Declaration (ObjectProperty :posesRiskTo))
-(Declaration (ObjectProperty :hasLikelihood))
-(Declaration (ObjectProperty :hasImpact))
-(Declaration (ObjectProperty :managedBy))
-(Declaration (ObjectProperty :manifestsAs))
-(Declaration (ObjectProperty :assessedBy))
-(Declaration (ObjectProperty :mitigatedBy))
+  ### Core Components
+  - **Likelihood**: Probability of risk occurring (0.0 to 1.0)
+  - **Impact**: Severity of consequences (0.0 to 1.0)
+  - **Context**: Domain and stakeholders affected
+  - **Risk Types**: Technical, ethical, social, legal, security, operational, safety
 
-;; Risk components
-(Declaration (Class :RiskLikelihood))
-(Declaration (Class :RiskImpact))
-(Declaration (Class :RiskContext))
+  ### Ontological Classes
 
-;; Risk requirements
-(SubClassOf :AIRisk
-  (ObjectIntersectionOf
-    (ObjectSomeValuesFrom :posesRiskTo :Stakeholder)
-    (ObjectSomeValuesFrom :hasLikelihood :RiskLikelihood)
-    (ObjectSomeValuesFrom :hasImpact :RiskImpact)))
+  - ## Risk Categories
 
-;; Property characteristics
-(ObjectPropertyDomain :posesRiskTo :AIRisk)
-(ObjectPropertyRange :posesRiskTo :Stakeholder)
-(ObjectPropertyDomain :managedBy :AIRisk)
-(ObjectPropertyRange :managedBy :RiskManagement)
-(ObjectPropertyDomain :manifestsAs :AIRisk)
-(ObjectPropertyRange :manifestsAs :AIIncident)
+  ### 1. Technical Risks
+  - **Performance Failures**: Inaccurate predictions, system errors
+  - **Robustness Issues**: Failure under distribution shift, adversarial examples
+  - **Security Vulnerabilities**: Adversarial attacks, data poisoning, model theft
+  - **Reliability Problems**: Inconsistent behavior, system downtime
 
-;; Data properties for risk assessment
-(Declaration (DataProperty :riskScore))
-(DataPropertyDomain :riskScore :AIRisk)
-(DataPropertyRange :riskScore xsd:float)
-(AnnotationAssertion rdfs:comment :riskScore
-  "Composite risk score from 0.0 (no risk) to 1.0 (critical risk)"^^xsd:string)
+  ### 2. Ethical and Social Risks
+  - **Bias and Discrimination**: Unfair outcomes for protected groups
+  - **Privacy Violations**: Unauthorized data disclosure, surveillance
+  - **Lack of Transparency**: Opaque decision-making processes
+  - **Accountability Gaps**: Unclear responsibility for AI decisions
 
-(Declaration (DataProperty :likelihoodProbability))
-(DataPropertyDomain :likelihoodProbability :RiskLikelihood)
-(DataPropertyRange :likelihoodProbability xsd:float)
+  ### 3. Safety Risks
+  - **Unintended Behaviors**: Systems acting outside design parameters
+  - **Reliability Failures**: Critical system malfunctions
+  - **Physical Safety**: Risks in autonomous vehicles, robotics, medical AI
 
-(Declaration (DataProperty :impactSeverity))
-(DataPropertyDomain :impactSeverity :RiskImpact)
-(DataPropertyRange :impactSeverity xsd:float)
+  ### 4. Security Risks
+  - **Adversarial Attacks**: Manipulation of inputs to cause misclassification
+  - **Data Breaches**: Unauthorized access to training data or model parameters
+  - **Model Theft**: Extraction of proprietary AI models
 
-(Declaration (DataProperty :riskLevel))
-(DataPropertyDomain :riskLevel :AIRisk)
-(DataPropertyRange :riskLevel xsd:string)
-(AnnotationAssertion rdfs:comment :riskLevel
-  "Risk level: unacceptable, high, limited, or minimal"^^xsd:string)
-```
+  ### 5. Societal Risks
+  - **Job Displacement**: Automation replacing human workers
+  - **Misinformation**: AI-generated deepfakes and false content
+  - **Concentration of Power**: AI capabilities controlled by few entities
 
-- ## Risk Categories
+  ### 6. Operational Risks
+  - **Deployment Failures**: Incorrect system implementation
+  - **Human-AI Interaction**: Misuse, over-reliance, automation bias
+  - **Maintenance Issues**: Outdated models, concept drift
 
-### 1. Technical Risks
-- **Performance Failures**: Inaccurate predictions, system errors
-- **Robustness Issues**: Failure under distribution shift, adversarial examples
-- **Security Vulnerabilities**: Adversarial attacks, data poisoning, model theft
-- **Reliability Problems**: Inconsistent behavior, system downtime
+  ### 7. Legal and Regulatory Risks
+  - **Non-Compliance**: Violation of regulations (GDPR, EU AI Act)
+  - **Liability**: Legal responsibility for AI-caused harms
+  - **Intellectual Property**: Copyright infringement, patent violations
 
-### 2. Ethical and Social Risks
-- **Bias and Discrimination**: Unfair outcomes for protected groups
-- **Privacy Violations**: Unauthorized data disclosure, surveillance
-- **Lack of Transparency**: Opaque decision-making processes
-- **Accountability Gaps**: Unclear responsibility for AI decisions
+  ### 8. Existential Risks (X-risks)
+  - **FOOM Risk**: Rapid, uncontrollable advancement in AI capabilities
+  - **Rogue AIs**: Systems behaving in unintended or uncontrollable ways
+  - **Accumulative Risks**: Social harms compounding into systemic threats
+  - **Civilizational Risks**: Potential outcomes causing extinction or unrecoverable decline
 
-### 3. Safety Risks
-- **Unintended Behaviors**: Systems acting outside design parameters
-- **Reliability Failures**: Critical system malfunctions
-- **Physical Safety**: Risks in autonomous vehicles, robotics, medical AI
+  ### 9. Dual-Use and Malicious Use Risks
+  - **Cyberattacks**: AI-powered hacking and network intrusion
+  - **Disinformation Campaigns**: Large-scale manipulation via AI-generated content
+  - **Harmful Content Generation**: Dangerous or illegal content creation
+  - **AI Races**: Competitive pressures reducing safety standards
 
-### 4. Security Risks
-- **Adversarial Attacks**: Manipulation of inputs to cause misclassification
-- **Data Breaches**: Unauthorized access to training data or model parameters
-- **Model Theft**: Extraction of proprietary AI models
+  - ## Risk Assessment Framework
 
-### 5. Societal Risks
-- **Job Displacement**: Automation replacing human workers
-- **Misinformation**: AI-generated deepfakes and false content
-- **Concentration of Power**: AI capabilities controlled by few entities
+  **Risk = Likelihood × Impact × Context**
 
-### 6. Operational Risks
-- **Deployment Failures**: Incorrect system implementation
-- **Human-AI Interaction**: Misuse, over-reliance, automation bias
-- **Maintenance Issues**: Outdated models, concept drift
+  ### Likelihood Factors
+  - Technical maturity of the AI system
+  - Operational environment complexity
+  - Human factors and user behavior
+  - External threats and adversarial actors
 
-### 7. Legal and Regulatory Risks
-- **Non-Compliance**: Violation of regulations (GDPR, EU AI Act)
-- **Liability**: Legal responsibility for AI-caused harms
-- **Intellectual Property**: Copyright infringement, patent violations
+  ### Impact Factors
+  - **Severity of Harm**: Physical, psychological, financial, reputational damage
+  - **Scale**: Number of individuals or entities affected
+  - **Reversibility**: Ability to undo or remediate the harm
+  - **Duration**: Temporary vs. permanent consequences
 
-### 8. Existential Risks (X-risks)
-- **FOOM Risk**: Rapid, uncontrollable advancement in AI capabilities
-- **Rogue AIs**: Systems behaving in unintended or uncontrollable ways
-- **Accumulative Risks**: Social harms compounding into systemic threats
-- **Civilizational Risks**: Potential outcomes causing extinction or unrecoverable decline
+  ### Contextual Factors
+  - **Application Domain**: Healthcare, finance, law enforcement, entertainment
+  - **User Vulnerability**: Children, elderly, disadvantaged populations
+  - **Societal Implications**: Democracy, human rights, social equity
 
-### 9. Dual-Use and Malicious Use Risks
-- **Cyberattacks**: AI-powered hacking and network intrusion
-- **Disinformation Campaigns**: Large-scale manipulation via AI-generated content
-- **Harmful Content Generation**: Dangerous or illegal content creation
-- **AI Races**: Competitive pressures reducing safety standards
+  ### Risk Levels (EU AI Act Framework)
 
-- ## Risk Assessment Framework
-
-**Risk = Likelihood × Impact × Context**
-
-### Likelihood Factors
-- Technical maturity of the AI system
-- Operational environment complexity
-- Human factors and user behavior
-- External threats and adversarial actors
-
-### Impact Factors
-- **Severity of Harm**: Physical, psychological, financial, reputational damage
-- **Scale**: Number of individuals or entities affected
-- **Reversibility**: Ability to undo or remediate the harm
-- **Duration**: Temporary vs. permanent consequences
-
-### Contextual Factors
-- **Application Domain**: Healthcare, finance, law enforcement, entertainment
-- **User Vulnerability**: Children, elderly, disadvantaged populations
-- **Societal Implications**: Democracy, human rights, social equity
-
-### Risk Levels (EU AI Act Framework)
-
-1. **Unacceptable Risk**: Prohibited AI practices
+  1. **Unacceptable Risk**: Prohibited AI practices
    - Social scoring by governments
    - Subliminal manipulation causing harm
    - Exploitation of vulnerable groups
    - Real-time biometric identification in public spaces (with exceptions)
 
-2. **High Risk**: Stringent requirements apply
+  2. **High Risk**: Stringent requirements apply
    - Critical infrastructure (transport, energy)
    - Educational or vocational training
    - Employment and worker management
@@ -205,195 +137,192 @@ The academic foundations of AI risk management draw from computer science, ethic
    - Migration and border control
    - Biometric identification and categorization
 
-3. **Limited Risk**: Transparency obligations
+  3. **Limited Risk**: Transparency obligations
    - Chatbots and conversational AI
    - Emotion recognition systems
    - Deepfakes and synthetic media
 
-4. **Minimal Risk**: No specific obligations
+  4. **Minimal Risk**: No specific obligations
    - Spam filters
    - Video games
    - Inventory management
 
-- ## 2025 AI Safety Index Findings
+  - ## 2025 AI Safety Index Findings
 
-### Industry Assessment (2025)
-- **None** of the leading AI companies have adequate guardrails for catastrophic misuse prevention
-- **Massive gap** between top three companies (Anthropic, OpenAI, Google DeepMind) and others (xAI, Meta, DeepSeek)
-- Companies claim AGI within a decade but score **D or below** on Existential Safety planning
-- Anthropic and OpenAI score **A's and B's** on risk assessment and governance
-- Other companies lag significantly in safety preparedness
+  ### Industry Assessment (2025)
+  - **None** of the leading AI companies have adequate guardrails for catastrophic misuse prevention
+  - **Massive gap** between top three companies (Anthropic, OpenAI, Google DeepMind) and others (xAI, Meta, DeepSeek)
+  - Companies claim AGI within a decade but score **D or below** on Existential Safety planning
+  - Anthropic and OpenAI score **A's and B's** on risk assessment and governance
+  - Other companies lag significantly in safety preparedness
 
-### Key Safety Challenges
-- Inadequate testing for catastrophic scenarios
-- Insufficient governance structures
-- Limited external oversight
-- Competitive pressures undermining safety
-- Lack of standardized safety benchmarks
+  ### Key Safety Challenges
+  - Inadequate testing for catastrophic scenarios
+  - Insufficient governance structures
+  - Limited external oversight
+  - Competitive pressures undermining safety
+  - Lack of standardized safety benchmarks
 
-- ## Risk Mitigation Approaches
+  - ## Risk Mitigation Approaches
 
-### 1. Red Teaming
-- Adversarial testing to identify failure modes
-- Simulated attacks to assess vulnerabilities
-- Stress testing under edge conditions
+  ### 1. Red Teaming
+  - Adversarial testing to identify failure modes
+  - Simulated attacks to assess vulnerabilities
+  - Stress testing under edge conditions
 
-### 2. Safety Culture Development
-- Organizational commitment to AI safety
-- Training and awareness programs
-- Incident reporting and learning systems
+  ### 2. Safety Culture Development
+  - Organizational commitment to AI safety
+  - Training and awareness programs
+  - Incident reporting and learning systems
 
-### 3. Transparency and Interpretability
-- Explainable AI (XAI) methods
-- Model cards and documentation
-- Audit trails for AI decisions
+  ### 3. Transparency and Interpretability
+  - Explainable AI (XAI) methods
+  - Model cards and documentation
+  - Audit trails for AI decisions
 
-### 4. Multi-Layered Defense (Swiss Cheese Model)
-- Multiple independent safety mechanisms
-- Redundancy and fail-safes
-- Defense in depth
+  ### 4. Multi-Layered Defense (Swiss Cheese Model)
+  - Multiple independent safety mechanisms
+  - Redundancy and fail-safes
+  - Defense in depth
 
-### 5. Proactive Governance
-- Ethics review boards
-- Impact assessments before deployment
-- Stakeholder engagement
+  ### 5. Proactive Governance
+  - Ethics review boards
+  - Impact assessments before deployment
+  - Stakeholder engagement
 
-### 6. Specialized Regulatory Institutions
-- AI safety oversight bodies
-- Technical standards organizations
-- International coordination mechanisms
+  ### 6. Specialized Regulatory Institutions
+  - AI safety oversight bodies
+  - Technical standards organizations
+  - International coordination mechanisms
 
-- ## Authoritative Standards and Frameworks
+  - ## Authoritative Standards and Frameworks
 
-### ISO/IEC 23894:2023 - AI Risk Management
-Published February 2023, this comprehensive international standard for [[AI Risk Management]] adapts traditional risk management practices (ISO 31000) to AI's unique characteristics including opacity, complexity, autonomy, and data dependency. The standard gained widespread adoption throughout 2024-2025 as organizations sought structured risk management methodologies. Implementation requires cross-functional collaboration between data scientists, security professionals, legal counsel, and business leaders.
+  ### ISO/IEC 23894:2023 - AI Risk Management
+  Published February 2023, this comprehensive international standard for [[AI Risk Management]] adapts traditional risk management practices (ISO 31000) to AI's unique characteristics including opacity, complexity, autonomy, and data dependency. The standard gained widespread adoption throughout 2024-2025 as organizations sought structured risk management methodologies. Implementation requires cross-functional collaboration between data scientists, security professionals, legal counsel, and business leaders.
 
-**Key Features**:
-- Alignment with ISO 31000:2018
-- AI-specific risk categories and assessment methods
-- Lifecycle risk management (design, development, deployment, operation)
-- Stakeholder engagement requirements
+  **Key Features**:
+  - Alignment with ISO 31000:2018
+  - AI-specific risk categories and assessment methods
+  - Lifecycle risk management (design, development, deployment, operation)
+  - Stakeholder engagement requirements
 
-### NIST AI Risk Management Framework (AI RMF 1.0)
-Released January 2023, updated with **Generative AI Profile (NIST-AI-600-1)** on July 26, 2024. The Profile added over 200 specific actions addressing unique risks including:
-- CBRN (Chemical, Biological, Radiological, Nuclear) information risks
-- Confabulation (hallucinations) in generative models
-- Dangerous or hateful content generation
-- Data privacy violations
-- Information integrity issues (deepfakes)
-- Intellectual property infringement
-- Obscene content generation
+  ### NIST AI Risk Management Framework (AI RMF 1.0)
+  Released January 2023, updated with **Generative AI Profile (NIST-AI-600-1)** on July 26, 2024. The Profile added over 200 specific actions addressing unique risks including:
+  - CBRN (Chemical, Biological, Radiological, Nuclear) information risks
+  - Confabulation (hallucinations) in generative models
+  - Dangerous or hateful content generation
+  - Data privacy violations
+  - Information integrity issues (deepfakes)
+  - Intellectual property infringement
+  - Obscene content generation
 
-This framework became essential for organizations deploying [[Large Language Models]], image generators, and multimodal systems.
+  This framework became essential for organizations deploying [[Large Language Models]], image generators, and multimodal systems.
 
-**Core Functions**:
-1. **GOVERN**: Establish governance and oversight
-2. **MAP**: Identify and document AI risks
-3. **MEASURE**: Assess and benchmark risks
-4. **MANAGE**: Implement mitigation strategies
+  **Core Functions**:
+  1. **GOVERN**: Establish governance and oversight
+  2. **MAP**: Identify and document AI risks
+  3. **MEASURE**: Assess and benchmark risks
+  4. **MANAGE**: Implement mitigation strategies
 
-### EU AI Act (Regulation 2024/1689)
-Finalized June 2024, entered into force August 1, 2024. The risk-based regulatory framework categorizes AI systems and establishes the global template for risk-proportionate regulation.
+  ### EU AI Act (Regulation 2024/1689)
+  Finalized June 2024, entered into force August 1, 2024. The risk-based regulatory framework categorizes AI systems and establishes the global template for risk-proportionate regulation.
 
-**Implementation Timeline [Updated 2025]**:
-- **February 2, 2025**: Prohibited practices became effective
-- **August 2, 2025**: GPAI models, governance, and penalties apply
-- **August 2, 2026**: Full high-risk AI system requirements take effect
+  **Implementation Timeline [Updated 2025]**:
+  - **February 2, 2025**: Prohibited practices became effective
+  - **August 2, 2025**: GPAI models, governance, and penalties apply
+  - **August 2, 2026**: Full high-risk AI system requirements take effect
 
-**Non-Compliance Penalties**:
-- Up to **€35 million** or **7% of worldwide annual turnover**, whichever is higher
-- Tiered penalties based on violation severity
+  **Non-Compliance Penalties**:
+  - Up to **€35 million** or **7% of worldwide annual turnover**, whichever is higher
+  - Tiered penalties based on violation severity
 
-**Key Requirements for High-Risk Systems**:
-- Risk management system throughout lifecycle
-- Data governance and quality requirements
-- Technical documentation and record-keeping
-- Transparency and user information
-- Human oversight mechanisms
-- Accuracy, robustness, and cybersecurity standards
+  **Key Requirements for High-Risk Systems**:
+  - Risk management system throughout lifecycle
+  - Data governance and quality requirements
+  - Technical documentation and record-keeping
+  - Transparency and user information
+  - Human oversight mechanisms
+  - Accuracy, robustness, and cybersecurity standards
 
-- ## Best Practices for AI Risk Management
+  - ## Best Practices for AI Risk Management
 
-### 1. Systematic Risk Identification
-- Use structured frameworks (NIST AI RMF, ISO 23894)
-- Conduct comprehensive threat modeling
-- Engage domain experts and stakeholders
+  ### 1. Systematic Risk Identification
+  - Use structured frameworks (NIST AI RMF, ISO 23894)
+  - Conduct comprehensive threat modeling
+  - Engage domain experts and stakeholders
 
-### 2. Continuous Risk Monitoring
-- AI risks evolve with system updates and environmental changes
-- Implement real-time monitoring and alerting
-- Regular reassessment of risk profiles
+  ### 2. Continuous Risk Monitoring
+  - AI risks evolve with system updates and environmental changes
+  - Implement real-time monitoring and alerting
+  - Regular reassessment of risk profiles
 
-### 3. Stakeholder Engagement
-- Include affected parties in risk assessment
-- Consider diverse perspectives and impacts
-- Transparent communication about risks
+  ### 3. Stakeholder Engagement
+  - Include affected parties in risk assessment
+  - Consider diverse perspectives and impacts
+  - Transparent communication about risks
 
-### 4. Context-Specific Analysis
-- Risks vary by domain and application
-- Tailor risk assessments to specific use cases
-- Account for local regulations and cultural factors
+  ### 4. Context-Specific Analysis
+  - Risks vary by domain and application
+  - Tailor risk assessments to specific use cases
+  - Account for local regulations and cultural factors
 
-### 5. Documentation and Communication
-- Maintain comprehensive risk registers
-- Document risk treatment decisions
-- Communicate risks clearly to stakeholders
+  ### 5. Documentation and Communication
+  - Maintain comprehensive risk registers
+  - Document risk treatment decisions
+  - Communicate risks clearly to stakeholders
 
-### 6. Test Before Deployment
-- Extensive testing in controlled environments
-- Pilot programs with limited scope
-- Gradual rollout with monitoring
+  ### 6. Test Before Deployment
+  - Extensive testing in controlled environments
+  - Pilot programs with limited scope
+  - Gradual rollout with monitoring
 
-### 7. Incident Response Planning
-- Prepare for potential AI failures
-- Establish clear escalation procedures
-- Practice incident response scenarios
+  ### 7. Incident Response Planning
+  - Prepare for potential AI failures
+  - Establish clear escalation procedures
+  - Practice incident response scenarios
 
-- ## Applications of AI Risk Frameworks
+  - ## Applications of AI Risk Frameworks
 
-### Enterprise AI Risk Assessment
-- Pre-deployment risk evaluation
-- Ongoing monitoring and adjustment
-- Compliance verification
+  ### Enterprise AI Risk Assessment
+  - Pre-deployment risk evaluation
+  - Ongoing monitoring and adjustment
+  - Compliance verification
 
-### Regulatory Compliance Evaluation
-- EU AI Act conformity assessment
-- GDPR compliance for AI systems
-- Industry-specific regulations (healthcare, finance)
+  ### Regulatory Compliance Evaluation
+  - EU AI Act conformity assessment
+  - GDPR compliance for AI systems
+  - Industry-specific regulations (healthcare, finance)
 
-### Insurance and Liability Determination
-- AI liability insurance underwriting
-- Risk-based pricing models
-- Claims assessment
+  ### Insurance and Liability Determination
+  - AI liability insurance underwriting
+  - Risk-based pricing models
+  - Claims assessment
 
-### Investment and Due Diligence
-- AI startup evaluation
-- Merger and acquisition risk analysis
-- Portfolio risk management
+  ### Investment and Due Diligence
+  - AI startup evaluation
+  - Merger and acquisition risk analysis
+  - Portfolio risk management
 
-### Policy Development and Advocacy
-- Evidence-based AI regulation
-- International standards development
-- Public policy recommendations
+  ### Policy Development and Advocacy
+  - Evidence-based AI regulation
+  - International standards development
+  - Public policy recommendations
 
-- ## See Also
-- [[AI Risk Management]]
-- [[AI Safety]]
-- [[AISecurity]]
-- [[AIGovernance]]
-- [[NIST AI RMF]]
-- [[EU AI Act]]
-- [[ISO/IEC 23894]]
-- [[Algorithmic Bias]]
-- [[AI Ethics]]
-- [[AI Trustworthiness]]
-- [[AI Incident]]
-- [[High-Risk AI System]]
+  - ## See Also
+  - [[AI Risk Management]]
+  - [[AI Safety]]
+  - [[AISecurity]]
+  - [[AIGovernance]]
+  - [[NIST AI RMF]]
+  - [[EU AI Act]]
+  - [[ISO/IEC 23894]]
+  - [[Algorithmic Bias]]
+  - [[AI Ethics]]
+  - [[AI Trustworthiness]]
+  - [[AI Incident]]
+  - [[High-Risk AI System]]
 
-## Metadata
-
-- **Last Updated**: 2025-01-23
-- **Review Status**: Comprehensive merge with 2025 safety data
-- **Verification**: ISO, NIST, and EU AI Act sources verified
-- **Regional Context**: Global AI risk landscape
-- **Authority Score**: 0.95 (high-authority comprehensive coverage)
+- ### Provenance
+  - sources:: [[EU AI Act]], [[GDPR]], [[ISO/IEC 23894]]
+  - migration-date:: 2026-04-26T00:00:00Z
+  - modified:: 2026-04-26T15:00:00Z

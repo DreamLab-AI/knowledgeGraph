@@ -1,0 +1,39 @@
+iri:: http://narrativegoldmine.com/artificial-intelligence#EdgeCloudCollaboration
+uri:: urn:visionclaw:concept:artificial-intelligence:edge-cloud-collaboration
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:edge-cloud-collaboration
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Edge-Cloud Collaboration
+content-hash:: sha256-12-e052c7161ec7
+legacy-term-id:: AI-0436
+status:: draft
+maturity:: mature
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-10-29T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting, and hierarchical inference. This approach implements collaboration patterns including model splitting where neural networks are partitioned across edge and cloud with early layers on edge extracting features and final layers in cloud for classification enabling bandwidth reduction through compressed intermediate representations, early exit where models have multiple exit points enabling confident predictions to terminate early on edge while uncertain cases escalate to cloud balancing accuracy and latency, cascaded inference deploying lightweight model on edge as first-stage filter with complex model in cloud for challenging instances providing 60-80% latency reduction for common cases, and federated learning where edge devices collaboratively train shared model through local training and gradient aggregation without centralizing raw data. Optimization objectives balance competing goals including end-to-end latency minimization considering network roundtrip, cloud queueing, and processing times, bandwidth reduction limiting data transmission through selective offloading and compression, energy efficiency managing device battery consumption from computation versus transmission, and accuracy preservation ensuring collaborative inference maintains performance comparable to cloud-only deployment. Implementation challenges include network variability requiring adaptive policies responding to changing bandwidth and latency conditions, workload partitioning decisions determining optimal split points based on model architecture and runtime conditions, synchronization overhead coordinating state between edge and cloud components, and failure handling maintaining availability when connectivity degrades or cloud services become unavailable through graceful degradation to edge-only operation. The 2024-2025 period demonstrated viability through deployments in autonomous vehicles processing sensor fusion on-vehicle with cloud-based planning and mapping, augmented reality offloading object detection to edge with scene understanding in cloud achieving sub-50ms total latency, and industrial IoT combining edge anomaly detection with cloud predictive maintenance enabling 90% bandwidth reduction while improving accuracy 15% versus edge-only deployment, implemented through frameworks including AWS IoT Greengrass, Azure IoT Edge, and Google Cloud IoT enabling seamless edge-cloud orchestration.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:EdgeCloudCollaboration
+  - owl-role:: Process
+  - owl-inferred:: ai:VirtualProcess
+  - belongs-to-domain:: [[AIEthicsDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]]
+
+- ### Relationships
+  - <!-- No relationships defined -->
+  - bridges-to:: [[Blockchain]], [[Digital Twin]]
+
+- ### Content
+  Edge-Cloud Collaboration (AI-0436) — content pending enrichment.
+
+- ### Provenance
+  - sources:: [[AWS IoT Greengrass]], [[Azure IoT Edge]], [[ETSI MEC]]
+  - migration-date:: 2026-04-26T00:00:00Z

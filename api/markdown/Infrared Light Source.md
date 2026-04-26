@@ -1,121 +1,135 @@
-- ### OntologyBlock
-  id:: infrared-light-source-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9931
-	- source-domain:: mv
-	- preferred-term:: Infrared Light Source
-	- status:: active
-	- owl:class:: mv:InfraredLightSource
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.
-	- #### Relationships
-	  id:: infrared-light-source-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Tracking Hardware]]
-		- related-to:: [[Infrared Camera]]
-		- related-to:: [[Eye Tracking System]]
-		- enables:: [[Foveated Rendering]]
+iri:: http://narrativegoldmine.com/spatial-computing#InfraredLightSource
+uri:: urn:visionclaw:concept:spatial-computing:infrared-light-source
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:infrared-light-source
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Infrared Light Source
+content-hash:: sha256-12-8d2f260852e0
+legacy-term-id:: MV-9931
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Eye Tracking Technology
+- ### Definition
+  - Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.
 
-### Infrared LED Requirements
-- Wavelengths around 850nm targeted
-- Multiple LEDs illuminate user eyes
-- Light reflection captured by sensors
-- Pupil position computation
-- Gaze direction determination
+- ### Semantic Classification
+  - owl-class:: spatial-computing:InfraredLightSource
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Component Miniaturisation
-- Osram Firefly dimensions
-- 1.0 x 0.325 x 0.55 millimetres
-- Fits around eyepieces
-- Glasses-compatible form factor
-- Compact headset integration
+- ### Relationships
+  - is-subclass-of:: [[Tracking Hardware]]
+  - enables:: [[Foveated Rendering]]
 
-## ams OSRAM FIREFLY (2025)
+- ### Content
 
-### New Generation IREDs
-- SFH 4030B model
-- SFH 4060B model
-- New standards for AR/VR
-- Compact and energy-efficient
-- Biometric feature support
+  ## Eye Tracking Technology
 
-### Industry Drivers
-- Lighter headset demand
-- Wireless operation priority
-- Eye tracking standardisation
-- Intuitive interface enablement
-- Advanced analytics capability
+  ### Infrared LED Requirements
+  - Wavelengths around 850nm targeted
+  - Multiple LEDs illuminate user eyes
+  - Light reflection captured by sensors
+  - Pupil position computation
+  - Gaze direction determination
 
-## Foveated Rendering Benefits
+  ### Component Miniaturisation
+  - Osram Firefly dimensions
+  - 1.0 x 0.325 x 0.55 millimetres
+  - Fits around eyepieces
+  - Glasses-compatible form factor
+  - Compact headset integration
 
-### Computing Efficiency
-- Significantly reduced GPU demands
-- Lower graphic card requirements
-- User gaze point tracking
-- High resolution in direct vision
-- Lower resolution in periphery
+  ## ams OSRAM FIREFLY (2025)
 
-### Technology Implementation
-- Point of gaze information
-- Dynamic resolution adjustment
-- Real-time rendering optimisation
-- Extended battery life benefit
-- Improved thermal management
+  ### New Generation IREDs
+  - SFH 4030B model
+  - SFH 4060B model
+  - New standards for AR/VR
+  - Compact and energy-efficient
+  - Biometric feature support
 
-## Position Tracking Systems
+  ### Industry Drivers
+  - Lighter headset demand
+  - Wireless operation priority
+  - Eye tracking standardisation
+  - Intuitive interface enablement
+  - Advanced analytics capability
 
-### Osram SFH 4253 TOPLEDs
-- Multiple LEDs on headset
-- IR light dot pattern creation
-- Camera registration and tracking
-- User movement determination
-- 850nm emission wavelength
+  ## Foveated Rendering Benefits
 
-### Spectral Sensitivity
-- Matches photo sensor sensitivity
-- Optimised detection accuracy
-- Consistent tracking performance
-- Environmental interference reduction
-- Camera compatibility assured
+  ### Computing Efficiency
+  - Significantly reduced GPU demands
+  - Lower graphic card requirements
+  - User gaze point tracking
+  - High resolution in direct vision
+  - Lower resolution in periphery
 
-## Consumer Applications
+  ### Technology Implementation
+  - Point of gaze information
+  - Dynamic resolution adjustment
+  - Real-time rendering optimisation
+  - Extended battery life benefit
+  - Improved thermal management
 
-### VR Headset Enhancement
-- Quest 3, Quest 2, Quest support
-- Vision Pro compatibility
-- PSVR2 integration
-- Hand/body tracking elevation
-- Tracking glitch elimination
+  ## Position Tracking Systems
 
-### Environment Adaptation
-- Dimly-lit environment operation
-- Dark room VR capability
-- Tracking precision enhancement
-- Play area flexibility
-- Night-time gaming support
+  ### Osram SFH 4253 TOPLEDs
+  - Multiple LEDs on headset
+  - IR light dot pattern creation
+  - Camera registration and tracking
+  - User movement determination
+  - 850nm emission wavelength
 
-## Research Applications
+  ### Spectral Sensitivity
+  - Matches photo sensor sensitivity
+  - Optimised detection accuracy
+  - Consistent tracking performance
+  - Environmental interference reduction
+  - Camera compatibility assured
 
-### Large-Scale Environments
-- CAVE immersive systems
-- User head position tracking
-- Retro-reflective marker arrays
-- 3D structure tracking
-- Real-time 25Hz operation
+  ## Consumer Applications
 
-### 6DoF Tracking
-- Six degrees of freedom
-- Position and orientation
-- AR/VR environment support
-- Research-grade accuracy
-- Multi-marker capability
+  ### VR Headset Enhancement
+  - Quest 3, Quest 2, Quest support
+  - Vision Pro compatibility
+  - PSVR2 integration
+  - Hand/body tracking elevation
+  - Tracking glitch elimination
 
-## Metadata
+  ### Environment Adaptation
+  - Dimly-lit environment operation
+  - Dark room VR capability
+  - Tracking precision enhancement
+  - Play area flexibility
+  - Night-time gaming support
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Research Applications
+
+  ### Large-Scale Environments
+  - CAVE immersive systems
+  - User head position tracking
+  - Retro-reflective marker arrays
+  - 3D structure tracking
+  - Real-time 25Hz operation
+
+  ### 6DoF Tracking
+  - Six degrees of freedom
+  - Position and orientation
+  - AR/VR environment support
+  - Research-grade accuracy
+  - Multi-marker capability
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

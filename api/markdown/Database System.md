@@ -1,76 +1,85 @@
-- ### OntologyBlock
-  id:: database-system-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7022
-	- preferred-term:: Database System
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.
-	- maturity:: reviewed
-	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Data_Management]]
-	- owl:class:: ngm:DatabaseSystem
-	- owl:role:: Technology
+iri:: http://narrativegoldmine.com/infrastructure#DatabaseSystem
+uri:: urn:visionclaw:concept:infrastructure:database-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:database-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Database System
+content-hash:: sha256-12-8dec103538c0
+legacy-term-id:: NGM-7022
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Relationships
-- relatedTo:: [[Distributed Computing]], [[Cloud Infrastructure]], [[Computing Infrastructure]]
-- enables:: [[Data Persistence]], [[Query Processing]], [[Transaction Management]]
-- typeOf:: [[Relational Database]], [[NoSQL Database]], [[Graph Database]]
-- supports:: [[ACID Transactions]], [[BASE Consistency]]
-- usedBy:: [[Application Development]], [[Data Analytics]], [[Machine Learning]]
+- ### Definition
+  - A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data. Modern database systems encompass relational databases using SQL for structured table-based data, and NoSQL databases supporting flexible schemas for document, key-value, graph, and wide-column data models.
 
-## Relational Databases (SQL/RDBMS)
+- ### Semantic Classification
+  - owl-class:: infrastructure:DatabaseSystem
+  - owl-role:: Technology
+  - belongs-to-domain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Data_Management]]
 
-### Characteristics
-- **Structure**: Highly structured with predefined schema (tables, columns, data types)
-- **Language**: SQL (Structured Query Language) for data manipulation
-- **Scaling**: Primarily vertical (scale up with more CPU, RAM, SSD)
-- **Transactions**: ACID properties ensure data integrity
-- **History**: Industry standard since 1970 (Edgar Codd)
+- ### Relationships
+  - enables:: [[Data Persistence]], [[Query Processing]], [[Transaction Management]]
 
-### Popular RDBMS
-- Oracle Database
-- MySQL
-- Microsoft SQL Server
-- PostgreSQL
-- IBM Db2
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
 
-## NoSQL Databases
+  ## Relational Databases (SQL/RDBMS)
 
-### Characteristics
-- **Structure**: Dynamic schemas for unstructured/semi-structured data
-- **Scaling**: Primarily horizontal (scale out with more nodes)
-- **Flexibility**: No fixed schema required
-- **Trade-offs**: BASE consistency (Basically Available, Soft state, Eventually consistent)
+  ### Characteristics
+  - **Structure**: Highly structured with predefined schema (tables, columns, data types)
+  - **Language**: SQL (Structured Query Language) for data manipulation
+  - **Scaling**: Primarily vertical (scale up with more CPU, RAM, SSD)
+  - **Transactions**: ACID properties ensure data integrity
+  - **History**: Industry standard since 1970 (Edgar Codd)
 
-### Types of NoSQL Databases
+  ### Popular RDBMS
+  - Oracle Database
+  - MySQL
+  - Microsoft SQL Server
+  - PostgreSQL
+  - IBM Db2
 
-| Type | Data Model | Use Cases | Examples |
-|------|------------|-----------|----------|
-| Document Store | JSON-like documents | CMS, catalogs, user profiles | MongoDB, CouchDB |
-| Key-Value Store | Attribute-value pairs | Caching, sessions, real-time data | Redis, Memcached, DynamoDB |
-| Wide-Column Store | Column families | Analytics, time-series, data warehousing | Cassandra, HBase |
-| Graph Database | Nodes and edges | Social networks, recommendations | Neo4j, Amazon Neptune |
+  ## NoSQL Databases
 
-## Architectural Comparison
+  ### Characteristics
+  - **Structure**: Dynamic schemas for unstructured/semi-structured data
+  - **Scaling**: Primarily horizontal (scale out with more nodes)
+  - **Flexibility**: No fixed schema required
+  - **Trade-offs**: BASE consistency (Basically Available, Soft state, Eventually consistent)
 
-| Aspect | Relational (SQL) | NoSQL |
-|--------|------------------|-------|
-| Schema | Predefined, rigid | Dynamic, flexible |
-| Scaling | Vertical | Horizontal |
-| Transactions | Multi-row ACID | Document-level, eventual consistency |
-| Query Language | SQL | Varies by type |
-| Data Model | Tabular | Document, key-value, graph, columnar |
+  ### Types of NoSQL Databases
 
-## 2024 Database Landscape
-- Top databases (DB-Engines Ranking): Oracle, MySQL, Microsoft SQL Server, PostgreSQL
-- Growing demand for NoSQL (MongoDB, Redis) for high-traffic applications
-- Hybrid approaches combining SQL and NoSQL strengths
-- Cloud-native databases gaining adoption
+  | Type | Data Model | Use Cases | Examples |
+  |------|------------|-----------|----------|
+  | Document Store | JSON-like documents | CMS, catalogs, user profiles | MongoDB, CouchDB |
+  | Key-Value Store | Attribute-value pairs | Caching, sessions, real-time data | Redis, Memcached, DynamoDB |
+  | Wide-Column Store | Column families | Analytics, time-series, data warehousing | Cassandra, HBase |
+  | Graph Database | Nodes and edges | Social networks, recommendations | Neo4j, Amazon Neptune |
 
-## Metadata
+  ## Architectural Comparison
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with technical content
-- **References**: 6 pages reference this concept
+  | Aspect | Relational (SQL) | NoSQL |
+  |--------|------------------|-------|
+  | Schema | Predefined, rigid | Dynamic, flexible |
+  | Scaling | Vertical | Horizontal |
+  | Transactions | Multi-row ACID | Document-level, eventual consistency |
+  | Query Language | SQL | Varies by type |
+  | Data Model | Tabular | Document, key-value, graph, columnar |
+
+  ## 2024 Database Landscape
+  - Top databases (DB-Engines Ranking): Oracle, MySQL, Microsoft SQL Server, PostgreSQL
+  - Growing demand for NoSQL (MongoDB, Redis) for high-traffic applications
+  - Hybrid approaches combining SQL and NoSQL strengths
+  - Cloud-native databases gaining adoption
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

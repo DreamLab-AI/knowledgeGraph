@@ -1,44 +1,66 @@
-- ### OntologyBlock
-  id:: digital-transformation-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9873
-	- source-domain:: mv
-	- preferred-term:: Digital Transformation
-	- definition:: The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organizations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.
-	- status:: active
-	- owl:class:: mv:DigitalTransformation
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: digital-transformation-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Organizational Change]]
-		- enables:: [[Business Innovation]], [[Operational Efficiency]], [[Customer Experience]]
-		- requires:: [[Cloud Computing]], [[Data Analytics]], [[Change Management]]
-		- related-to:: [[Enterprise Metaverse]], [[Digital Twin]], [[Industry 4.0]]
-- ## Technical Details
-	- **Enterprise Metaverse Applications**:
+iri:: http://narrativegoldmine.com/spatial-computing#DigitalTransformation
+uri:: urn:visionclaw:concept:spatial-computing:digital-transformation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:digital-transformation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Digital Transformation
+content-hash:: sha256-12-2a9d0d7bb0c0
+legacy-term-id:: MV-9873
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.
+
+bridges-to:: [[Computer Vision]]
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DigitalTransformation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Organizational Change]]
+  - requires:: [[Cloud Computing]], [[Data Analytics]], [[Change Management]]
+  - enables:: [[Business Innovation]], [[Operational Efficiency]], [[Customer Experience]]
+
+- ### Content
+
+  - ## Technical Details
+  - **Enterprise Metaverse Applications**:
 		- Training and simulation: Most prevalent enterprise use case
 		- Digital twins: Real-time asset replication and simulation
 		- Collaboration tools: Microsoft Mesh for Teams (GA January 2024)
 		- Virtual environments for professional use
-	- **Market Size (2024)**:
+  - **Market Size (2024)**:
 		- Enterprise metaverse: $340M (projected $860M by 2032, CAGR 12.3%)
 		- 62% of Fortune 500 companies have initiated metaverse pilots
 		- $18B+ invested in immersive technologies in US enterprises
-	- **Key Technologies**:
+  - **Key Technologies**:
 		- AI and generative AI for content creation
 		- Blockchain and robotics integration
 		- AR/VR/MR immersive interfaces
 		- 5G hyperconnected networks
 		- Cloud computing for processing and storage
-	- **Challenges**: Metaverse development stalled as focus shifted to generative AI; $45B+ Meta Reality Labs losses (2020-2024)
-- ## Applications
-	- Employee training and onboarding
-	- Virtual collaboration and meetings
-	- Digital twin operations and simulation
-	- Customer engagement in virtual environments
-	- Smart manufacturing and Industry 4.0
+  - **Challenges**: Metaverse development stalled as focus shifted to generative AI; $45B+ Meta Reality Labs losses (2020-2024)
+  - ## Applications
+  - Employee training and onboarding
+  - Virtual collaboration and meetings
+  - Digital twin operations and simulation
+  - Customer engagement in virtual environments
+  - Smart manufacturing and Industry 4.0
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,73 @@
+{
+  "id": "cloud-computing",
+  "title": "Cloud Computing",
+  "content": "- ### Definition\n  - Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:CloudComputing\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Offers on-demand access to GPUs, TPUs, and distributed clusters\n  - Provides managed ML platforms for end-to-end workflows\n  - Enables horizontal and vertical scaling for training and inference\n  - Supports multi-region deployment and edge computing\n  - Includes pre-trained models and AutoML capabilities\n\n  ## Overview\n\n  Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms.\n\n  #### Related Concepts\n  - [[Distributed Computing]]\n  - [[MLOps]]\n  - [[Edge AI]]\n  - [[Infrastructure as a Service]]\n\n  #### References\n  - Amazon Web Services (2023). AWS Machine Learning Services Documentation.\n  - Google Cloud (2023). Vertex AI: Unified AI Platform. Technical Documentation.\n  - Armbrust, M. et al. (2010). A View of Cloud Computing. Communications of the ACM, 53(4), 50-58.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "System Architecture",
+    "Infrastructure Layer",
+    "Metaverse",
+    "Machine Learning Platform",
+    "Internet Infrastructure",
+    "Digital Transformation"
+  ],
+  "wiki_links": [
+    "Distributed Computing",
+    "Edge AI",
+    "Infrastructure as a Service",
+    "MLOps",
+    "Virtual Workspace"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:cloud-computing",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#CloudComputing",
+    "content_hash": "sha256-12-645cdbc9b568",
+    "legacy_term_id": "AI-9009",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:cloud-computing",
+    "schema_version": "v2",
+    "term_id": "AI-9009",
+    "preferred_term": "Cloud Computing",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Cloud Computing in the AI context refers to the on-demand delivery of computational resources, storage, and AI/ML services over the internet. Cloud platforms (AWS, Azure, Google Cloud, Alibaba Cloud) provide scalable infrastructure for training large-scale models, distributed computing frameworks, pre-trained AI APIs, and managed ML services. Cloud-based AI enables pay-as-you-go pricing, elastic resource allocation, global deployment, and access to specialized hardware (GPUs, TPUs, quantum processors). Key services include SageMaker, Azure ML, Vertex AI, and serverless ML inference platforms.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:CloudComputing",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,44 +1,53 @@
 {
-  "id": "Customer Rewards",
+  "id": "customer-rewards",
   "title": "Customer Rewards",
-  "content": "- ### OntologyBlock\n  id:: customer-rewards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9837\n\t- source-domain:: mv\n\t- preferred-term:: Customer Rewards\n\t- definition:: Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.\n\t- status:: active\n\t- owl:class:: mv:CustomerRewards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: customer-rewards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Loyalty Programs]]\n\t\t- enables:: [[Customer Retention]], [[Token Trading]], [[Cross-Platform Rewards]]\n\t\t- requires:: [[Blockchain Infrastructure]], [[Digital Wallet]], [[Smart Contracts]]\n\t\t- related-to:: [[Tokenization]], [[NFT Rewards]], [[DeFi Integration]]\n- ## Technical Details\n\t- **Tokenization Benefits**:\n\t\t- Loyalty points converted to tradeable digital tokens\n\t\t- Smart contracts eliminate intermediaries and reduce costs\n\t\t- Real-time tracking on blockchain for instant balance visibility\n\t\t- Secondary markets for trading, selling, or renting rewards\n\t- **Real-World Examples**:\n\t\t- **Singapore Airlines KrisPay**: Miles converted to spendable tokens\n\t\t- **Yuga Labs**: $150M in tokenized loyalty royalties\n\t\t- **Rakuten**: Loyalty points convertible to cryptocurrency\n\t\t- **Visa Web3 Loyalty**: Interactive digital treasure hunts\n\t- **Consumer Demand**:\n\t\t- 76% of millennials, 71% of Gen Z consider loyalty vital\n\t\t- 41% of Gen Z dissatisfied with current programs\n\t\t- 96% of millennials want program refresh\n\t- **Future Trends**: DeFi integration, DAO governance, staking yields, cross-chain functionality\n- ## Applications\n\t- Retail loyalty programs\n\t- Travel rewards tokenization\n\t- Gaming achievement rewards\n\t- Brand engagement incentives\n\t- Cross-merchant reward networks",
+  "content": "- ### Definition\n  - Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CustomerRewards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Loyalty Programs]]\n  - requires:: [[Blockchain Infrastructure]], [[Digital Wallet]], [[Smart Contracts]]\n  - enables:: [[Customer Retention]], [[Token Trading]], [[Cross-Platform Rewards]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Tokenization Benefits**:\n\t\t- Loyalty points converted to tradeable digital tokens\n\t\t- Smart contracts eliminate intermediaries and reduce costs\n\t\t- Real-time tracking on blockchain for instant balance visibility\n\t\t- Secondary markets for trading, selling, or renting rewards\n  - **Real-World Examples**:\n\t\t- **Singapore Airlines KrisPay**: Miles converted to spendable tokens\n\t\t- **Yuga Labs**: $150M in tokenized loyalty royalties\n\t\t- **Rakuten**: Loyalty points convertible to cryptocurrency\n\t\t- **Visa Web3 Loyalty**: Interactive digital treasure hunts\n  - **Consumer Demand**:\n\t\t- 76% of millennials, 71% of Gen Z consider loyalty vital\n\t\t- 41% of Gen Z dissatisfied with current programs\n\t\t- 96% of millennials want program refresh\n  - **Future Trends**: DeFi integration, DAO governance, staking yields, cross-chain functionality\n  - ## Applications\n  - Retail loyalty programs\n  - Travel rewards tokenization\n  - Gaming achievement rewards\n  - Brand engagement incentives\n  - Cross-merchant reward networks\n\n- ### Provenance\n  - bridges-to:: [[Blockchain]] (bc)\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Loyalty Token"
   ],
   "wiki_links": [
-    "Customer Retention",
-    "Loyalty Programs",
-    "Cross-Platform Rewards",
+    "Blockchain",
     "Blockchain Infrastructure",
-    "metaverse",
-    "Tokenization",
-    "NFT Rewards",
-    "Token Trading",
-    "DeFi Integration",
+    "Cross-Platform Rewards",
+    "Customer Retention",
+    "Digital Wallet",
+    "Loyalty Programs",
     "Smart Contracts",
-    "Digital Wallet"
+    "Token Trading",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:customer-rewards",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CustomerRewards",
+    "content_hash": "sha256-12-3cdc07f9d0a9",
+    "legacy_term_id": "MV-9837",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:customer-rewards",
+    "schema_version": "v2",
     "term_id": "MV-9837",
     "preferred_term": "Customer Rewards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CustomerRewards",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective incentive mechanisms.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CustomerRewards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CustomerRewards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Loyalty Programs"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Tokenization",
-        "NFT Rewards",
-        "DeFi Integration"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

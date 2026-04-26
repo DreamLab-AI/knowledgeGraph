@@ -1,0 +1,109 @@
+{
+  "id": "physical-layer",
+  "title": "Physical Layer",
+  "content": "- ### Definition\n  - Foundational layer encompassing hardware, networking infrastructure, and physical computing resources. Provides the tangible substrate upon which all higher-level software layers execute, including processors, memory, storage devices, and communication channels.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:PhysicalLayer\n  - owl-role:: Object\n  - belongs-to-domain:: [[Narrative Gold Mine]]\n\n- ### Relationships\n  - is-subclass-of:: [[ArchitecturalLayer]]\n  - has-part:: [[Processing Hardware]], [[Memory Systems]], [[Storage Devices]], [[Network Hardware]], [[Power Distribution]]\n  - enables:: [[Computation]], [[Data Storage]], [[Signal Transmission]], [[Resource Provisioning]]\n  - bridges-to:: [[Infrastructure Layer]], [[Network Layer]] (domain: ngm)\n  - implements:: [[Infrastructure Layer]]\n\n- ### Content\n  The Physical Layer represents the tangible hardware substrate of narrative systems. It encompasses all physical computing devices, networking equipment, and storage infrastructure that provide the computational power and connectivity required by higher-level layers. Physical constraints such as latency, bandwidth, and power consumption are primary concerns at this layer.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Latency Management Protocol",
+    "Content Delivery Network (CDN)",
+    "Infrastructure Layer",
+    "Network Layer",
+    "Quantum Network Node",
+    "Storage Infrastructure",
+    "Data Layer",
+    "Latency",
+    "Post-Quantum Cryptography",
+    "Trust Infrastructure",
+    "Edge Orchestration",
+    "Hardware Abstraction Layer (HAL)",
+    "Metaverse Architecture Stack"
+  ],
+  "wiki_links": [
+    "ArchitecturalLayer",
+    "Computation",
+    "Data Storage",
+    "Infrastructure Layer",
+    "Memory Systems",
+    "Narrative Gold Mine",
+    "Network Hardware",
+    "Network Layer",
+    "Power Distribution",
+    "Processing Hardware",
+    "Resource Provisioning",
+    "Signal Transmission",
+    "Storage Devices"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:physical-layer",
+    "iri": "http://narrativegoldmine.com/infrastructure#PhysicalLayer",
+    "content_hash": "sha256-12-000000000000",
+    "legacy_term_id": "NGM-physical-layer",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:physical-layer",
+    "schema_version": "v2",
+    "term_id": "NGM-physical-layer",
+    "preferred_term": "Physical Layer",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Foundational layer encompassing hardware, networking infrastructure, and physical computing resources. Provides the tangible substrate upon which all higher-level software layers execute, including processors, memory, storage devices, and communication channels.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T14:00:00Z",
+    "last_updated": "2026-04-26T14:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:PhysicalLayer",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArchitecturalLayer"
+    ],
+    "has_part": [
+      "Processing Hardware",
+      "Memory Systems",
+      "Storage Devices",
+      "Network Hardware",
+      "Power Distribution"
+    ],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "Computation",
+      "Data Storage",
+      "Signal Transmission",
+      "Resource Provisioning"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Infrastructure Layer",
+      "Network Layer"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Narrative Gold Mine"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "other_relationships": {
+      "implements": [
+        "Infrastructure Layer"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

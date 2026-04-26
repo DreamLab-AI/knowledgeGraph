@@ -1,23 +1,41 @@
-- ### OntologyBlock
-  id:: sustainable-technology-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0017
-	- preferred-term:: Sustainable Technology
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:SustainableTechnology
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Infrastructure & Cloud
+iri:: http://narrativegoldmine.com/spatial-computing#SustainableTechnology
+uri:: urn:visionclaw:concept:spatial-computing:sustainable-technology
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:sustainable-technology
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Sustainable Technology
+content-hash:: sha256-12-c7686df303ed
+legacy-term-id:: ME-0017
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: spatial-computing:SustainableTechnology
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- Sustainable Technology in Infrastructure & Cloud
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  - Sustainable Technology in Infrastructure & Cloud
   - **Technical Definition**
     - Sustainable Technology in the context of infrastructure and cloud computing refers to the design, deployment, and operation of IT systems and cloud services that minimise environmental impact through energy efficiency, use of renewable energy, waste reduction, and responsible lifecycle management of hardware and software[1][4][5].
     - It encompasses sustainable IT infrastructure practices such as energy-efficient data centres, virtualisation, and sustainable software development aimed at reducing carbon footprint and resource consumption while maintaining operational performance[1][2][4].
@@ -53,20 +71,12 @@
     - Development of circular economy models for IT hardware to minimise e-waste and resource extraction.
     - Enhanced use of cloud computing as a platform for sustainability analytics and smart infrastructure management across industries[1][4][7][5].
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Infrastructure & Cloud
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

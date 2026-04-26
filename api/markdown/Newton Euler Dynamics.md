@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: newtoneulerdynamics-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#NewtonEulerDynamics
+uri:: urn:visionclaw:concept:robotics:newton-euler-dynamics
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:newton-euler-dynamics
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Newton-Euler Dynamics
+content-hash:: sha256-12-dbc7b2548f2a
+legacy-term-id:: RB-0184
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0184
-    - filename-history:: ["RB-0184-newtoneulerdynamics.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0184
-    - preferred-term:: Newton-Euler Dynamics
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Newton-Euler method applies F=ma and τ=Iα to each link recursively.
 
-  - **Definition**
-    - definition:: Newton-Euler method applies F=ma and τ=Iα to each link recursively.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:NewtonEulerDynamics
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:NewtonEulerDynamics
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Robot Dynamics]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Robot Dynamics]]
+- ### Content
+  Newton-Euler Dynamics — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NewtonEulerDynamics))
-      (SubClassOf :NewtonEulerDynamics :RobotDynamics)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NewtonEulerDynamics "Newton-Euler Dynamics"@en)
-      (AnnotationAssertion rdfs:comment :NewtonEulerDynamics
-        "Newton-Euler method applies F=ma and τ=Iα to each link recursively."@en)
-      ```
-
-- ## About Newton-Euler Dynamics
-  Newton-Euler method applies F=ma and τ=Iα to each link recursively.
-  
-  Dynamics formulation using Newton's and Euler's equations.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

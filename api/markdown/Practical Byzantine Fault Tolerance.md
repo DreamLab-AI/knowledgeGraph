@@ -1,53 +1,36 @@
-- ### OntologyBlock
-  id:: practicalbyzantinefaulttolerance-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#PracticalByzantineFaultTolerance
+uri:: urn:visionclaw:concept:blockchain:practical-byzantine-fault-tolerance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:practical-byzantine-fault-tolerance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Practical Byzantine Fault Tolerance
+content-hash:: sha256-12-09a3da4e96f3
+legacy-term-id:: BC-0555
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0555
-    - filename-history:: ["BC-0555-practicalbyzantinefaulttolerance.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0555
-    - preferred-term:: Practical Byzantine Fault Tolerance
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.
 
-  - **Definition**
-    - definition:: A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:PracticalByzantineFaultTolerance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:PracticalByzantineFaultTolerance
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Byzantine Fault Tolerance]]
-    - also-known-as:: PBFT
+- ### Content
+  Practical Byzantine Fault Tolerance — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PracticalByzantineFaultTolerance))
-      (SubClassOf :PracticalByzantineFaultTolerance :ByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PracticalByzantineFaultTolerance "Practical Byzantine Fault Tolerance"@en)
-      (AnnotationAssertion rdfs:comment :PracticalByzantineFaultTolerance
-        "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization."@en)
-      ```
-
-- ## About Practical Byzantine Fault Tolerance
-  A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.
-  
-  Introduced by Castro and Liskov (1999). Functions when malicious nodes < 1/3 of total. Three-phase protocol: pre-prepare, prepare, commit.
-  
-  ### Examples
-  - Hyperledger Fabric (option), Zilliqa
-  
-  ### Historical Context
-  - Seminal paper at OSDI 1999 made BFT practical for real-world systems.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

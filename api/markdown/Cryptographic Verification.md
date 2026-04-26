@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9544-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9544
-	- preferred-term:: Cryptographic Verification
-	- source-domain:: mv
-	- owl:class:: mv:CryptographicVerification
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/infrastructure#CryptographicVerification
+uri:: urn:visionclaw:concept:infrastructure:cryptographic-verification
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:cryptographic-verification
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Cryptographic Verification
+content-hash:: sha256-12-c9554550b1bb
+legacy-term-id:: MV-9544
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Cryptographic Verification is a concept within the metaverse domain. Further enrichment pending.
 
-Cryptographic Verification represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: infrastructure:CryptographicVerification
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Blockchain]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Cryptographic Verification represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

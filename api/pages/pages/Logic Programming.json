@@ -1,41 +1,50 @@
 {
-  "id": "Logic Programming",
+  "id": "logic-programming",
   "title": "Logic Programming",
-  "content": "- ### OntologyBlock\n  id:: AI-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9003\n\t- source-domain:: ai\n\t- preferred-term:: Logic Programming\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.\n\t- source:: [[Academic AI Research]], [[Prolog]]\n\t- maturity:: mature\n\t- owl:class:: ai:LogicProgramming\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[Symbolic AI]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
-  "backlinks": [
-    "Symbolic AI",
-    "STRIPS"
-  ],
+  "content": "- ### Definition\n  - Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:LogicProgramming\n  - owl-role:: Process\n  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n\n- ### Content\n  Logic Programming — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[Academic AI Research]], [[Prolog]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
+    "Academic AI Research",
     "Artificial Intelligence",
     "ArtificialIntelligenceDomain",
-    "Academic AI Research",
-    "Prolog",
-    "Symbolic AI"
+    "Prolog"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:logic-programming",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#LogicProgramming",
+    "content_hash": "sha256-12-629e1ac5af97",
+    "legacy_term_id": "AI-9003",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:logic-programming",
+    "schema_version": "v2",
     "term_id": "AI-9003",
     "preferred_term": "Logic Programming",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#LogicProgramming",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.",
     "scope_note": null,
     "status": "draft",
     "maturity": "mature",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:LogicProgramming",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:LogicProgramming",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -44,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "ArtificialIntelligenceDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Academic AI Research",
       "Prolog"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

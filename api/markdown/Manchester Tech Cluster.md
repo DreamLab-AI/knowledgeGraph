@@ -1,24 +1,38 @@
-- ### OntologyBlock
-  id:: manchester-tech-cluster-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-1002
-	- preferred-term:: Manchester Tech Cluster
-	- source-domain:: uk-regional
-	- status:: active
-    - public-access:: true
-	- definition:: Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.
-	- maturity:: established
-	- region:: Greater Manchester
-	- focus-areas:: Digital, AI, FinTech
-	- owl:class:: ngm:ManchesterTechCluster
-	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+iri:: http://narrativegoldmine.com/infrastructure#ManchesterTechCluster
+uri:: urn:visionclaw:concept:infrastructure:manchester-tech-cluster
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:manchester-tech-cluster
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Manchester Tech Cluster
+content-hash:: sha256-12-40ed9372596b
+legacy-term-id:: NGM-1002
+status:: active
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Manchester's thriving technology ecosystem centred on MediaCityUK, including AI, digital innovation, and financial technology sectors.
 
-## Regional Technology Hub
+- ### Semantic Classification
+  - owl-class:: infrastructure:ManchesterTechCluster
+  - owl-role:: RegionalEcosystem
+  - belongs-to-domain:: [[UKTechEcosystem]]
 
-- **Overview**
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Regional Technology Hub
+
+  - **Overview**
   - *Brief history and development*
     - Manchester evolved from a 19th-century industrial powerhouse, known as the world's first industrial city, into a leading UK tech hub[1][8].
     - The Manchester Science Park (established 1987) and MediaCityUK were pivotal in transitioning Manchester into the digital era, attracting major media and tech companies like BBC, ITV, and global brands[1].
@@ -34,7 +48,7 @@
     - Greater Manchester Combined Authority (GMCA), driving digital strategy and investment[5]
     - Bruntwood SciTech, a major developer of innovation spaces[7]
 
-- **Technology Focus**
+  - **Technology Focus**
   - *Primary technology sectors*
     - Digital technology broadly, including eCommerce, cyber security, Internet of Things (IoT), and data analytics[4].
     - Artificial Intelligence (AI), with Manchester outperforming other UK cities in AI and data research[4].
@@ -51,7 +65,7 @@
     - Innovation clusters supported by Innovation Greater Manchester, including ID Manchester innovation district[7].
     - Digital City Festival and Digital City Awards, promoting sector collaboration and visibility[5].
 
-- **Economic Impact**
+  - **Economic Impact**
   - *Employment and growth*
     - The tech sector employs tens of thousands, with rapid growth in digital and creative companies (70% increase since 2011)[1].
     - Manchester is recognised as the UK’s most entrepreneurial city outside London, fostering startups and scaleups[4][2].
@@ -63,7 +77,7 @@
     - The £5 billion digital ecosystem contributes substantially to Greater Manchester’s economy.
     - The tech cluster supports broader economic diversification from traditional industries to knowledge-based sectors[1][4].
 
-- **Notable Projects**
+  - **Notable Projects**
   - *Specific examples of innovation*
     - Development of AI and data-driven solutions, with Manchester leading UK cities in these fields[4].
     - ID Manchester innovation district, a £1.5 billion project fostering collaboration between academia and industry[7].
@@ -76,7 +90,7 @@
     - Digital City Festival fostering networking and knowledge exchange[5].
     - Partnerships between University of Manchester, Bruntwood SciTech, and industry in innovation districts[7].
 
-- **Future Development**
+  - **Future Development**
   - *Growth plans and strategies*
     - Continued implementation of the Greater Manchester Digital Blueprint focusing on digital infrastructure, skills, and innovation[5].
     - Expansion of innovation districts like ID Manchester to attract global talent and companies[7].
@@ -88,38 +102,29 @@
     - Supportive entrepreneurial climate enhanced by academic-industry collaboration and investment incentives[2][4].
 
 
-## Related Hubs
+  ## Related Hubs
 
-- [[North England Innovation Corridor]]
-- [[Northern Powerhouse]]
-- [[UK Tech Ecosystem]]
+  - [[North England Innovation Corridor]]
+  - [[Northern Powerhouse]]
+  - [[UK Tech Ecosystem]]
 
+  #### References
+  1. [https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories](https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories)
 
-## References
+  2. [https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf](https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf)
 
-1. [https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories](https://www.nucamp.co/blog/coding-bootcamp-united-kingdom-igbr-inside-manchesters-thriving-tech-hub-startups-and-success-stories)
+  3. [https://sistermanchester.com/our-heritage](https://sistermanchester.com/our-heritage)
 
-2. [https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf](https://gmbusinessboard.com/wp-content/uploads/2021/04/Unicorns-Whitepaper-compressed.final_-1.pdf)
+  4. [https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/](https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/)
 
-3. [https://sistermanchester.com/our-heritage](https://sistermanchester.com/our-heritage)
+  5. [https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/](https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/)
 
-4. [https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/](https://www.investinmanchester.com/why-manchester/industry-expertise/digital-and-technology/)
+  6. [https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west](https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west)
 
-5. [https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/](https://www.greatermanchester-ca.gov.uk/news/greater-manchester-celebrates-digital-milestones/)
+  7. [https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/](https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/)
 
-6. [https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west](https://www.manchesterdigital.com/post/manchester-digital/12-clusters-of-tech-north-west)
+  8. [https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city](https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city)
 
-7. [https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/](https://www.innovationgreatermanchester.com/about-innovation-greater-manchester/innovation-clusters/)
-
-8. [https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city](https://www.scienceandindustrymuseum.org.uk/objects-and-stories/worlds-first-industrial-city)
-
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Region**: Greater Manchester, North England
-- **Category**: Regional Technology Ecosystem
-- **Status**: Active
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

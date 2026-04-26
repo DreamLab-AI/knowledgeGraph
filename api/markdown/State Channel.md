@@ -1,114 +1,129 @@
-- ### OntologyBlock
-  id:: state-channel-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8017
-	- preferred-term:: State Channel
-	- status:: active
-	- public-access:: true
-	- definition:: State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.
-	- maturity:: reviewed
-	- owl:class:: bc:StateChannel
-	- belongsToDomain:: [[BlockchainDomain]]
+iri:: http://narrativegoldmine.com/blockchain#StateChannel
+uri:: urn:visionclaw:concept:blockchain:state-channel
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:state-channel
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: State Channel
+content-hash:: sha256-12-3e1aa0fc1512
+legacy-term-id:: BC-8017
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1004
-title: State Channel
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.
 
-# State Channel
+- ### Semantic Classification
+  - owl-class:: blockchain:StateChannel
+  - owl-role:: Concept
+  - belongs-to-domain:: [[BlockchainDomain]]
 
-## Definition
-- Off-chain interaction protocol where participants exchange signed state updates without blockchain transactions
-- Requires on-chain setup and settlement transactions with dispute resolution mechanism
-- Enables instant, high-frequency interactions with minimal blockchain footprint
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - requires:: [[Digital Signature]]
+  - enables:: [[Micropayments]]
+  - implements:: [[Off-Chain Scaling]]
+  - bridges-to:: [[Digital Twin]]
 
-## Core Components
-- **Opening Transaction**: On-chain channel initialization with locked funds
-- **State Updates**: Off-chain signed messages representing state transitions
-- **Dispute Resolution**: Challenge period for fraudulent state submission
-- **Closing Transaction**: Final state settlement on-chain
+- ### Content
 
-## Technical Characteristics
-- **Instant Finality**: State updates immediate between participants
-- **Privacy**: Only opening and closing states published on-chain
-- **Cost Efficiency**: Fixed on-chain cost regardless of interaction count
-- **Bi-directional**: Both parties can initiate state updates
+  ## Definition
+  - Off-chain interaction protocol where participants exchange signed state updates without blockchain transactions
+  - Requires on-chain setup and settlement transactions with dispute resolution mechanism
+  - Enables instant, high-frequency interactions with minimal blockchain footprint
 
-## Channel Types
-- **Payment Channel**: Simple value transfers (e.g., Bitcoin Lightning)
-- **State Channel**: General state machine execution
-- **Virtual Channel**: Multi-hop channels without intermediate on-chain transactions
-- **Multi-Party Channel**: More than two participants
+  ## Core Components
+  - **Opening Transaction**: On-chain channel initialization with locked funds
+  - **State Updates**: Off-chain signed messages representing state transitions
+  - **Dispute Resolution**: Challenge period for fraudulent state submission
+  - **Closing Transaction**: Final state settlement on-chain
 
-## Protocol Flow
-1. **Setup**: Deploy channel contract and deposit collateral
-2. **Operation**: Exchange signed state updates off-chain
-3. **Dispute**: Submit latest state if counterparty unresponsive
-4. **Settlement**: Finalize state and withdraw funds after timeout
+  ## Technical Characteristics
+  - **Instant Finality**: State updates immediate between participants
+  - **Privacy**: Only opening and closing states published on-chain
+  - **Cost Efficiency**: Fixed on-chain cost regardless of interaction count
+  - **Bi-directional**: Both parties can initiate state updates
 
-## Use Cases
-- Micropayment streaming
-- High-frequency trading
-- Gaming state updates
-- IoT machine-to-machine payments
-- Real-time bidirectional communication
+  ## Channel Types
+  - **Payment Channel**: Simple value transfers (e.g., Bitcoin Lightning)
+  - **State Channel**: General state machine execution
+  - **Virtual Channel**: Multi-hop channels without intermediate on-chain transactions
+  - **Multi-Party Channel**: More than two participants
 
-## Examples
-- [[Lightning Network]]: Bitcoin payment channels
-- [[Raiden Network]]: Ethereum token payment channels
-- [[Connext]]: Cross-chain state channel network
-- [[Perun]]: Generalized state channel framework
+  ## Protocol Flow
+  1. **Setup**: Deploy channel contract and deposit collateral
+  2. **Operation**: Exchange signed state updates off-chain
+  3. **Dispute**: Submit latest state if counterparty unresponsive
+  4. **Settlement**: Finalize state and withdraw funds after timeout
 
-## Relationships
-- child-of:: [[Layer 2]]
-- implements:: [[Off-Chain Scaling]]
-- requires:: [[Digital Signature]]
-- enables:: [[Micropayments]]
-- contrasts-with:: [[Rollup]]
+  ## Use Cases
+  - Micropayment streaming
+  - High-frequency trading
+  - Gaming state updates
+  - IoT machine-to-machine payments
+  - Real-time bidirectional communication
 
-## Security Model
-- Cryptographic signing for state authenticity
-- Timeout-based dispute resolution
-- Collateral requirements for liveness guarantees
-- Watchtower services for offline participant protection
+  ## Examples
+  - [[Lightning Network]]: Bitcoin payment channels
+  - [[Raiden Network]]: Ethereum token payment channels
+  - [[Connext]]: Cross-chain state channel network
+  - [[Perun]]: Generalized state channel framework
 
-## Advantages
-- Instant transaction finality
-- Near-zero marginal transaction cost
-- Strong privacy guarantees
-- No third-party trust requirements
+  ## Relationships
+  - child-of:: [[Layer 2]]
+  - implements:: [[Off-Chain Scaling]]
+  - requires:: [[Digital Signature]]
+  - enables:: [[Micropayments]]
+  - contrasts-with:: [[Rollup]]
 
-## Limitations
-- Liquidity lockup during channel lifetime
-- Online requirement for security
-- Limited to predetermined participants
-- Capital inefficiency for sporadic interactions
+  ## Security Model
+  - Cryptographic signing for state authenticity
+  - Timeout-based dispute resolution
+  - Collateral requirements for liveness guarantees
+  - Watchtower services for offline participant protection
 
-## Performance Metrics
-- Update frequency (transactions per second)
-- Channel opening/closing cost
-- Dispute resolution time
-- Capital efficiency ratio
+  ## Advantages
+  - Instant transaction finality
+  - Near-zero marginal transaction cost
+  - Strong privacy guarantees
+  - No third-party trust requirements
 
-## Design Considerations
-- Optimal channel topology for routing
-- Rebalancing strategies for liquidity
-- Griefing attack prevention
-- Force-close timeout parameters
+  ## Limitations
+  - Liquidity lockup during channel lifetime
+  - Online requirement for security
+  - Limited to predetermined participants
+  - Capital inefficiency for sporadic interactions
 
-## Related Concepts
-- [[Payment Channel]]
-- [[Lightning Network]]
-- [[Off-Chain Scaling]]
-- [[Optimistic Rollup]]
+  ## Performance Metrics
+  - Update frequency (transactions per second)
+  - Channel opening/closing cost
+  - Dispute resolution time
+  - Capital efficiency ratio
 
-#blockchain #state-channel #layer-2 #off-chain
+  ## Design Considerations
+  - Optimal channel topology for routing
+  - Rebalancing strategies for liquidity
+  - Griefing attack prevention
+  - Force-close timeout parameters
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Payment Channel]]
+  - [[Lightning Network]]
+  - [[Off-Chain Scaling]]
+  - [[Optimistic Rollup]]
+
+  #blockchain #state-channel #layer-2 #off-chain
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

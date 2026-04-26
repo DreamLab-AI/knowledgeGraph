@@ -1,102 +1,52 @@
-- ### OntologyBlock
-  id:: image-classification-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0357
-	- preferred-term:: Image Classification
-	- source-domain:: mv
-	- status:: draft
-- definition:: Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
+iri:: http://narrativegoldmine.com/metaverse#ImageClassification
+uri:: urn:visionclaw:concept:artificial-intelligence:image-classification
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:image-classification
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Image Classification
+content-hash:: sha256-12-a6462e8711c9
+legacy-term-id:: AI-0357
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ImageClassification
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :ImageClassification))
+- ### Content
+  - Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :ImageClassification "Image Classification"@en)
-(AnnotationAssertion rdfs:comment :ImageClassification "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks."@en)
-
-;; Taxonomic Relationships
-(SubClassOf :ImageClassification :ComputerVision)
-
-;; Semantic Relationships
-(SubClassOf :ImageClassification
-  (ObjectSomeValuesFrom :relatedTo :ConvolutionalNeuralNetwork))
-(SubClassOf :ImageClassification
-  (ObjectSomeValuesFrom :relatedTo :ComputerVision))
-(SubClassOf :ImageClassification
-  (ObjectSomeValuesFrom :relatedTo :TransferLearning))
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :ImageClassification "AI-0357"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :ImageClassification "true"^^xsd:boolean)
-```
-
-## Core Characteristics
-
-- **Single-Label or Multi-Label**: Assign one or multiple categories
-- **End-to-End Learning**: Direct mapping from pixels to class probabilities
-- **Transfer Learning**: Pre-training on ImageNet for domain adaptation
-- **Hierarchical Features**: Learning from low-level to high-level visual features
-- **Probabilistic Outputs**: Class probability distributions
-
-## Relationships
-
-- **Subclass**: Computer Vision
-- **Related**: Convolutional Neural Network, Transfer Learning, Feature Extraction
-- **Architectures**: ResNet, VGG, EfficientNet, Vision Transformer
-- **Datasets**: ImageNet, CIFAR, MNIST
-
-## Key Literature
-
-1. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). "ImageNet classification with deep convolutional neural networks." *NeurIPS*, 1097-1105.
-
-2. He, K., et al. (2016). "Deep residual learning for image recognition." *CVPR*, 770-778.
-
-3. Tan, M., & Le, Q. (2019). "EfficientNet: Rethinking model scaling for convolutional neural networks." *ICML*, 6105-6114.
-
-## See Also
-
-- [[Computer Vision]]
-- [[Convolutional Neural Network]]
-- [[Transfer Learning]]
-
-## Metadata
-
-- **Domain**: Computer Vision, Deep Learning
-- **Maturity**: Mature, widely deployed
-	- maturity:: draft
-	- owl:class:: mv:ImageClassification
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: image-classification-relationships
-- ## About Image Classification
-	- Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
-
-- # What is Bitcoin, what does it do?
-	- Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
-	- ![image.png](assets/image_1731265799346_0.png)
-- ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
--
-- These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
+  - # What is Bitcoin, what does it do?
+  - Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
+  - ![image.png](assets/image_1731265799346_0.png)
+  - ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
+  - These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
 
 		- ### Inspired by 2016 work from Prof Rob Aspin
 		- ![OctaveBigData.mp4](assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
-		-
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
 		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
-		-
 
 				- ### Uses Microsoft GraphRAG for deep document understanding
 					- ![image.png](assets/image_1759159517520_0.png){:height 798, :width 708}
 
-	- ## World Class Immersive System Quote
+  - ## World Class Immersive System Quote
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
@@ -112,39 +62,34 @@
 
 			- ### Automated course material with diagrams based on audio recordings
 			- ![image.png](assets/image_1759158570382_0.png)
-			-
 
-	- ### AI's Performance: Surpassing Humans in Specific Domains
+  - ### AI's Performance: Surpassing Humans in Specific Domains
 		- AI systems have outperformed human capabilities in tasks such as image classification, visual reasoning, and English comprehension. However, they continue to lag in complex areas like advanced mathematics and strategic planning.  ([Stanford AI Index Report 2024: Key Insights & Trends](https://guptadeepak.com/unveiling-the-ai-landscape-insights-from-the-2024-stanford-ai-index-report/?utm_source=chatgpt.com))
 		- This dichotomy underscores AI's proficiency in pattern recognition while highlighting its limitations in abstract reasoning and adaptability.
 
-- # Research and Papers
-	- [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
-	- [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
-	- [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
--
-- ![image.png](assets/image_1710879269775_0.png)
--
--
+  - # Research and Papers
+  - [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
+  - [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
+  - [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
+  - ![image.png](assets/image_1710879269775_0.png)
 
-- # AnimateDiff
-- AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
+  - # AnimateDiff
+  - AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
 
-	- ### Models and Examples
+  - ### Models and Examples
 		- [Hugging Face - AnimateDiff](https://huggingface.co/guoyww/animatediff) - A framework designed to animate static images generated by text-to-image models, providing pre-trained motion modules, [[documentation]], and resources to lower the barrier to entry for creating animated content from text prompts with customisable artistic styles
 		- [Civitai - AnimateDiff](https://civitai.com/models/372584/ipivs-morph-img2vid-animatediff-lcm-hyper-sd) - IPIVS Morph model designed to enhance image-to-video generation using Animatediff, LCM, and Hypernetworks for smoother transitions and improved aesthetic quality through [[automation]], [[optimization]], and [[machine learning]] techniques within the [[computer vision]] ecosystem
 
-- # What is Bitcoin, what does it do?
-	- Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
-	- ![image.png](assets/image_1731265799346_0.png)
-- ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
--
-- These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
+  - # What is Bitcoin, what does it do?
+  - Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
+  - ![image.png](assets/image_1731265799346_0.png)
+  - ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
+  - These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
 
-	- ### Core Assumptions
+  - ### Core Assumptions
 		- Figure<a href="#fig:Framework" data-reference-type="ref" data-reference="fig:Framework">[fig:Framework]</a>shows the interlocking relationships between baseline communicationwhere the participants are present, and technology which attempts tosupport across distance.
 		  ![image](./assets/ecf58d485742c10a034d96c07588c28542b21b85.png)
-	- Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
+  - Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
 
 		- ### Rehypothecation
 			- It’s vulnerable to rehypothecation (paper bitcoin managed by centralisedentities running a fractional reserve).
@@ -152,14 +97,14 @@
 			   ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)
 			   Nassim Taleb’s Turkey Problem
 
-- # Global politics & digital society
-	- ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
+  - # Global politics & digital society
+  - ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
 
-	- ### Magnific AI
+  - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
 		- [[Landscape]] contains some maps of more products.
-- This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
+  - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income
 			- ![image.png](assets/image_1734796224681_0.png)
@@ -173,15 +118,13 @@
 		- ### Inspired by 2016 work from Prof Rob Aspin
 		- ![OctaveBigData.mp4](assets/OctaveBigData_1759325311429_0.mp4)
 		- ![groupOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/groupOctave.jpg?raw=true){:height 659, :width 1158}
-		-
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
 		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
-		-
 
 				- ### Uses Microsoft GraphRAG for deep document understanding
 					- ![image.png](assets/image_1759159517520_0.png){:height 798, :width 708}
 
-	- ## World Class Immersive System Quote
+  - ## World Class Immersive System Quote
 		- Three tier quote in 4 hours.
 		- 300 pages
 		- Selected the team and branding guidelines from the DreamLab website
@@ -197,39 +140,34 @@
 
 			- ### Automated course material with diagrams based on audio recordings
 			- ![image.png](assets/image_1759158570382_0.png)
-			-
 
-	- ### AI's Performance: Surpassing Humans in Specific Domains
+  - ### AI's Performance: Surpassing Humans in Specific Domains
 		- AI systems have outperformed human capabilities in tasks such as image classification, visual reasoning, and English comprehension. However, they continue to lag in complex areas like advanced mathematics and strategic planning.  ([Stanford AI Index Report 2024: Key Insights & Trends](https://guptadeepak.com/unveiling-the-ai-landscape-insights-from-the-2024-stanford-ai-index-report/?utm_source=chatgpt.com))
 		- This dichotomy underscores AI's proficiency in pattern recognition while highlighting its limitations in abstract reasoning and adaptability.
 
-- # Research and Papers
-	- [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
-	- [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
-	- [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
--
-- ![image.png](assets/image_1710879269775_0.png)
--
--
+  - # Research and Papers
+  - [SHOW-1 and Showrunner Agents in Multi-Agent Simulations](https://fablestudio.github.io/showrunner-agents)
+  - [Fuyu-8B: A Multimodal Architecture for AI Agents](https://www.adept.ai/blog/fuyu-8b)
+  - [[2402.05120] More Agents Is All You Need](https://arxiv.org/abs/2402.05120)
+  - ![image.png](assets/image_1710879269775_0.png)
 
-- # AnimateDiff
-- AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
+  - # AnimateDiff
+  - AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
 
-	- ### Models and Examples
+  - ### Models and Examples
 		- [Hugging Face - AnimateDiff](https://huggingface.co/guoyww/animatediff) - A framework designed to animate static images generated by text-to-image models, providing pre-trained motion modules, [[documentation]], and resources to lower the barrier to entry for creating animated content from text prompts with customisable artistic styles
 		- [Civitai - AnimateDiff](https://civitai.com/models/372584/ipivs-morph-img2vid-animatediff-lcm-hyper-sd) - IPIVS Morph model designed to enhance image-to-video generation using Animatediff, LCM, and Hypernetworks for smoother transitions and improved aesthetic quality through [[automation]], [[optimization]], and [[machine learning]] techniques within the [[computer vision]] ecosystem
 
-- # What is Bitcoin, what does it do?
-	- Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
-	- ![image.png](assets/image_1731265799346_0.png)
-- ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
--
-- These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
+  - # What is Bitcoin, what does it do?
+  - Bitcoin isn’t simply "magic internet money" anymore. It’s a swarm of open-source tools which can (in theory) accomplish a great many things.
+  - ![image.png](assets/image_1731265799346_0.png)
+  - ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
+  - These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
 
-	- ### Core Assumptions
+  - ### Core Assumptions
 		- Figure<a href="#fig:Framework" data-reference-type="ref" data-reference="fig:Framework">[fig:Framework]</a>shows the interlocking relationships between baseline communicationwhere the participants are present, and technology which attempts tosupport across distance.
 		  ![image](./assets/ecf58d485742c10a034d96c07588c28542b21b85.png)
-	- Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
+  - Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
 
 		- ### Rehypothecation
 			- It’s vulnerable to rehypothecation (paper bitcoin managed by centralisedentities running a fractional reserve).
@@ -237,14 +175,14 @@
 			   ![](./assets/38ea50962c15ec244e6f6b69d4f506f4e836b575.png)
 			   Nassim Taleb’s Turkey Problem
 
-- # Global politics & digital society
-	- ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
+  - # Global politics & digital society
+  - ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
 
-	- ### Magnific AI
+  - ### Magnific AI
 		- [Magnific AI — The magic image Upscaler & Enhancer](https://magnific.ai/)
 		- {{tweet https://twitter.com/LinusEkenstam/status/1744431726443614539?}}
 		- [[Landscape]] contains some maps of more products.
-- This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
+  - This is a [[presentation]] slide and the next slide is [[Proprietary Video]]
 
 		- ## AI and Universal Basic Income
 			- ![image.png](assets/image_1734796224681_0.png)
@@ -258,34 +196,29 @@
 		- ### Inspired by 2016 work from Prof Rob Aspin
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
 		- ![image.png](assets/image_1759318149292_0.png){:height 1804, :width 1167}
-		-
 
-- # AnimateDiff
-- AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
+  - # AnimateDiff
+  - AnimateDiff is a framework that can generate animated videos from a single static image and a text prompt. It is a powerful tool for creating AI-generated animations and has become very popular in the AI art community.
 
-	- ### Models and Examples
+  - ### Models and Examples
 		- [Hugging Face - AnimateDiff](https://huggingface.co/guoyww/animatediff) - A framework designed to animate static images generated by text-to-image models, providing pre-trained motion modules, [[documentation]], and resources to lower the barrier to entry for creating animated content from text prompts with customisable artistic styles
 		- [Civitai - AnimateDiff](https://civitai.com/models/372584/ipivs-morph-img2vid-animatediff-lcm-hyper-sd) - IPIVS Morph model designed to enhance image-to-video generation using Animatediff, LCM, and Hypernetworks for smoother transitions and improved aesthetic quality through [[automation]], [[optimization]], and [[machine learning]] techniques within the [[computer vision]] ecosystem
 
-- # Why is this section here?
-	- Bitcoin allows value and ideas to be transmitted over the internet, gaining the moniker "magic internet money".
-	- This feature set is scalable and open-source.
-- ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
--
-- These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
+  - # Why is this section here?
+  - Bitcoin allows value and ideas to be transmitted over the internet, gaining the moniker "magic internet money".
+  - This feature set is scalable and open-source.
+  - ![image](./assets/ed9e1ee6cabd689fbe9c3ca7df3659939ec7a18f.jpg)
+  - These newer, ancillary elements to Bitcoin are emergent right now. Some of them won’t be around until next year, and it’s questionable whether they will even work out. With that said, we aren’t convinced by the value proposition of Ethereum, and there’s enough Bitcoin tooling for us to cherry-pick useful components.
 
-- # Global politics & digital society
-	- ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
+  - # Global politics & digital society
+  - ![Image](https://pbs.twimg.com/media/GJH5Y5MX0AAzkNu?format=png&name=900x900)
 
-	- ### Practical Implementation
+  - ### Practical Implementation
 		- MCP servers can provide:
 			- Tools for specific actions
--
-- [SLOP - Join the Revolution](https://i-love-slop.com/)
-- [agnt-gg/slop: The place for SLOP](https://github.com/agnt-gg/slop)
--
-- ![image.png](assets/image_1741526343816_0.png)
--
+  - [SLOP - Join the Revolution](https://i-love-slop.com/)
+  - [agnt-gg/slop: The place for SLOP](https://github.com/agnt-gg/slop)
+  - ![image.png](assets/image_1741526343816_0.png)
 
 		- ##### 4️⃣ Logistic Regression
 		- **Description**: Used for binary classification problems.
@@ -309,216 +242,114 @@
 		- **Explain Like I'm New**: Like organizing similar things into different groups.
 		- **Paper**: [Comparative performance analysis of K-nearest neighbour (KNN)](https://www.nature.com/articles/s41598-022-10358-x)
 
-	- ## VisionFlow Built Itself (100k ish lines of code)
+  - ## VisionFlow Built Itself (100k ish lines of code)
 		- ![ChloeOctave.jpg](https://github.com/DreamLab-AI/VisionFlow/blob/main/ChloeOctave.jpg?raw=true)
 		- ![image.png](assets/image_1759158174647_0.png)
-		-
 		- ![4eb58299-ce01-43db-8160-327452d85402.jpg](assets/4eb58299-ce01-43db-8160-327452d85402_1759152268830_0.jpg)
 		- ![AIinARCHITECTURE.pdf](assets/AIinARCHITECTURE_1759152504700_0.pdf)
 
-- ## What’s this for sorry?
-	- In principle blockchains provide a **differentiated trust model**. With a properly distributed system a blockchain can be considered “trust-minimised”, though certainly not risk minimised. This is important for some, but not all people. There is not much emboldening of text within this book. If you start to question the whole reason for this ‘global technology revolution’ then it always comes back to those three words. Put more crispy it’s been hiding in plain sight since 20008as ‘Magic Internet Money’. Perhaps the lack of a trusted third party, and the potential for instant final settlement will be most important for machine to machine (AI) systems, and that is the primary focus of this book.
+  - ## What’s this for sorry?
+  - In principle blockchains provide a **differentiated trust model**. With a properly distributed system a blockchain can be considered “trust-minimised”, though certainly not risk minimised. This is important for some, but not all people. There is not much emboldening of text within this book. If you start to question the whole reason for this ‘global technology revolution’ then it always comes back to those three words. Put more crispy it’s been hiding in plain sight since 20008as ‘Magic Internet Money’. Perhaps the lack of a trusted third party, and the potential for instant final settlement will be most important for machine to machine (AI) systems, and that is the primary focus of this book.
 		- Argentina occupies the fourth position with an ownership and usage rate of 35% in 2022, representing almost 16 million people.
 		- United Arab Emirates has 34% of the population owning or using cryptocurrency in 2022, representing almost 10 million people.
 		- Philippines is ranked sixth with a 29% adoption rate.
 		- ![image](./assets/78d091423a60bbb19d0d5b70d6f756dea814671b.jpg){:width 600}
-		-
-	- Gladstein’s is a carefully developed and well researched book, but is [written from the western perspective](https://bitcoinmagazine.com/culture/imf-world-bank-repress-poor-countries)of (just) Bitcoin ‘being the raft’. Later in this book we will consider if it might be the iceberg, but this is not the domain expertise weoffer in this book. It is crucial to note that Gladstein has vociferous detractors within Africa. It seems entirely possible he’s anothergrifter as suggested by Kimani:
+  - Gladstein’s is a carefully developed and well researched book, but is [written from the western perspective](https://bitcoinmagazine.com/culture/imf-world-bank-repress-poor-countries)of (just) Bitcoin ‘being the raft’. Later in this book we will consider if it might be the iceberg, but this is not the domain expertise weoffer in this book. It is crucial to note that Gladstein has vociferous detractors within Africa. It seems entirely possible he’s anothergrifter as suggested by Kimani:
 		- Gladstein is a charlatan who makes his living by selling the image of a global south that is corrupt, entirely lacking in rational thinking and needing a saviour, like him to swoop in and save us from our floundering selves. He exploits on tired and unproven stereotypes, cherry picks data while ignoring mountains of evidence that disprove him. Because he knows that as the perceived “morally superior” “right thinking” western superior coming to save, he will mostly go unchallenged. It’s a grift, an old grift that many like him have turned into an industry. Where they earn tax free income by selling a delusion and fetish to their western audience who need to think the global south is a failure of the human experience. He is trying to set himself up as some gate keeper and king maker in the Global South. He knows that the next phase of growth is. So he wants to make sure that westerners looking to invest in the global south see him as some “expert” and ask for his unfounded opinions. People like him run global morality extortion rings. How so? Simple: By purporting to know and be the keeper of global south morality, he will use his words to bless or curse your business, well, unless you make a generous donation to his foundation. These are scare tactics employed by charlatans to run tax-evading PR entities, thinly veiled as “human rights” organisations. If you are not on his side, he will slander you and your organisation. If you ensure you promote him and his ambitions, he anoints you as the good guy! He is trying to play the role that the Vatican and other corrupt religious organisations played in the 1800. Turning morality into a commodity that can be purchased from his market place: We decide who is good and who is bad and who can do business and who can’t. For a“ donation”. He is not the first and he will not be the last. It’s a growing industry, driven by shrewd westerners who know that they can sell racial stereotypes back home, but as long as they claim they are the one’s helping or saving the coloured peoples from themselves.”
-	- [Raoul Pal of RealVision](https://dailyhodl.com/2022/05/04/crypto-winter-unlikely-as-astonishing-user-growth-dwarfs-internet-adoption-rate-macro-guru-raoul-pal/) says:
+  - [Raoul Pal of RealVision](https://dailyhodl.com/2022/05/04/crypto-winter-unlikely-as-astonishing-user-growth-dwarfs-internet-adoption-rate-macro-guru-raoul-pal/) says:
 		- Crypto adoption is now massively outperforming the internet. It’s been growing at about 165% a year versus 85% for the internet for the same period of time now. According to analytics company Chainalysis; growth is fastest in the Middle east and North Africa.
 		- ![image](./assets/4f2b5f5a0b5a45bfd512d93df8887d7bf26ef8cf.png){:width 600}
-	- Thanks to a natural fit with strong encryption, and innate resistance to censorship by external parties, these systems do lend themselves well to ‘borderless’ applications, and are somewhat resistant to global regulation (for good or ill). Given the rates of adoption, it seems that this stuff is coming regardless of their usefulness to the developed world. If we are to take this as a given then we can perhaps logically infer that finding a use case for the technology is important, somewhat irrespective of other arguments.
+  - Thanks to a natural fit with strong encryption, and innate resistance to censorship by external parties, these systems do lend themselves well to ‘borderless’ applications, and are somewhat resistant to global regulation (for good or ill). Given the rates of adoption, it seems that this stuff is coming regardless of their usefulness to the developed world. If we are to take this as a given then we can perhaps logically infer that finding a use case for the technology is important, somewhat irrespective of other arguments.
 
-- ## Rationalle
-	- ![image](./assets/c5efbdb4f93ab63a4fbbf12aba053d2194959850.png)
-	-
+  - ## Rationalle
+  - ![image](./assets/c5efbdb4f93ab63a4fbbf12aba053d2194959850.png)
 
-- ## Download links
-	- https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe
-	- https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
+  - ## Download links
+  - https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe
+  - https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
 
-- ## Image Denoising
-	- **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
-	- **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
-	- **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
-	- **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
+  - ## Image Denoising
+  - **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
+  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
+  - **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
+  - **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
 
-- ## A Simple Example: Image Classification
-- **Process:** The first step is to break down that image into its individual pixels. This raw pixel data is then fed through layers of the AI system. Each layer processes the information, learning patterns and features.
-- **Goal:** The ultimate goal is for the neuron representing the correct digit (in this case, "7") to have the highest activation. If the system successfully identifies the digit, it effectively "understands" what it's looking at.
+  - ## A Simple Example: Image Classification
+  - **Process:** The first step is to break down that image into its individual pixels. This raw pixel data is then fed through layers of the AI system. Each layer processes the information, learning patterns and features.
+  - **Goal:** The ultimate goal is for the neuron representing the correct digit (in this case, "7") to have the highest activation. If the system successfully identifies the digit, it effectively "understands" what it's looking at.
 
-- ## Download links
-	- https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe
-	- https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
+  - ## Download links
+  - https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-win.exe
+  - https://install.launcher.omniverse.nvidia.com/installers/omniverse-launcher-linux.AppImage
 
-- ## Image Denoising
-	- **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
-	- **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
-	- **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
-	- **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
+  - ## Image Denoising
+  - **Method:** This technique allows us to leverage the vast amount of image data available on the web. Imagine having access to millions, even billions of images.
+  - **Process:** Instead of relying on labeled datasets, we intentionally degrade images by adding noise. This could be random pixels, blurring, or other forms of distortion. The AI's task is to learn to reverse this degradation, reconstructing the original, pristine image.
+  - **Concept:** By learning to remove noise, the AI learns to identify the fundamental features and patterns within an image. It becomes better at distinguishing between real details and random noise. This process is similar to how our own brains filter out distractions to focus on relevant information.
+  - **Significance:** This approach opens up a vast new world of possibilities for training AI systems, enabling them to learn from unlabeled image data.
 
-- ## A Simple Example: Image Classification
-- **Process:** The first step is to break down that image into its individual pixels. This raw pixel data is then fed through layers of the AI system. Each layer processes the information, learning patterns and features.
-- **Goal:** The ultimate goal is for the neuron representing the correct digit (in this case, "7") to have the highest activation. If the system successfully identifies the digit, it effectively "understands" what it's looking at.
+  - ## A Simple Example: Image Classification
+  - **Process:** The first step is to break down that image into its individual pixels. This raw pixel data is then fed through layers of the AI system. Each layer processes the information, learning patterns and features.
+  - **Goal:** The ultimate goal is for the neuron representing the correct digit (in this case, "7") to have the highest activation. If the system successfully identifies the digit, it effectively "understands" what it's looking at.
 
-## Core Characteristics
+  ## Core Characteristics
 
-- **Single-Label or Multi-Label**: Assign one or multiple categories
-- **End-to-End Learning**: Direct mapping from pixels to class probabilities
-- **Transfer Learning**: Pre-training on ImageNet for domain adaptation
-- **Hierarchical Features**: Learning from low-level to high-level visual features
-- **Probabilistic Outputs**: Class probability distributions
+  - **Single-Label or Multi-Label**: Assign one or multiple categories
+  - **End-to-End Learning**: Direct mapping from pixels to class probabilities
+  - **Transfer Learning**: Pre-training on ImageNet for domain adaptation
+  - **Hierarchical Features**: Learning from low-level to high-level visual features
+  - **Probabilistic Outputs**: Class probability distributions
 
-## Relationships
+  ## Relationships
 
-- **Subclass**: Computer Vision
-- **Related**: Convolutional Neural Network, Transfer Learning, Feature Extraction
-- **Architectures**: ResNet, VGG, EfficientNet, Vision Transformer
-- **Datasets**: ImageNet, CIFAR, MNIST
+  - **Subclass**: Computer Vision
+  - **Related**: Convolutional Neural Network, Transfer Learning, Feature Extraction
+  - **Architectures**: ResNet, VGG, EfficientNet, Vision Transformer
+  - **Datasets**: ImageNet, CIFAR, MNIST
 
-## Key Literature
+  ## Key Literature
 
-1. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). "ImageNet classification with deep convolutional neural networks." *NeurIPS*, 1097-1105.
+  1. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). "ImageNet classification with deep convolutional neural networks." *NeurIPS*, 1097-1105.
 
-2. He, K., et al. (2016). "Deep residual learning for image recognition." *CVPR*, 770-778.
+  2. He, K., et al. (2016). "Deep residual learning for image recognition." *CVPR*, 770-778.
 
-3. Tan, M., & Le, Q. (2019). "EfficientNet: Rethinking model scaling for convolutional neural networks." *ICML*, 6105-6114.
+  3. Tan, M., & Le, Q. (2019). "EfficientNet: Rethinking model scaling for convolutional neural networks." *ICML*, 6105-6114.
 
-## See Also
+  ## See Also
 
-- [[Computer Vision]]
-- [[Convolutional Neural Network]]
-- [[Transfer Learning]]
+  - [[Computer Vision]]
+  - [[Convolutional Neural Network]]
+  - [[Transfer Learning]]
 
-## Metadata
+  ## Core Characteristics
 
-- **Domain**: Computer Vision, Deep Learning
-- **Maturity**: Mature, widely deployed
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Image Classification
-		  
-		  **Term ID**: AI-0357
-		  **Category**: Domain Applications → Computer Vision
-		  **Status**: Stable
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
-		  
-		  ## Core Characteristics
-		  
-		  - **Single-Label or Multi-Label**: Assign one or multiple categories
-		  - **End-to-End Learning**: Direct mapping from pixels to class probabilities
-		  - **Transfer Learning**: Pre-training on ImageNet for domain adaptation
-		  - **Hierarchical Features**: Learning from low-level to high-level visual features
-		  - **Probabilistic Outputs**: Class probability distributions
-		  
-		  ## Relationships
-		  
-		  - **Subclass**: Computer Vision
-		  - **Related**: Convolutional Neural Network, Transfer Learning, Feature Extraction
-		  - **Architectures**: ResNet, VGG, EfficientNet, Vision Transformer
-		  - **Datasets**: ImageNet, CIFAR, MNIST
-		  
-		  ## Key Literature
-		  
-		  1. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). "ImageNet classification with deep convolutional neural networks." *NeurIPS*, 1097-1105.
-		  
-		  2. He, K., et al. (2016). "Deep residual learning for image recognition." *CVPR*, 770-778.
-		  
-		  3. Tan, M., & Le, Q. (2019). "EfficientNet: Rethinking model scaling for convolutional neural networks." *ICML*, 6105-6114.
-		  
-		  ## See Also
-		  
-		  - [[Computer Vision]]
-		  - [[Convolutional Neural Network]]
-		  - [[Transfer Learning]]
-		  
-		  ## Metadata
-		  
-		  - **Domain**: Computer Vision, Deep Learning
-		  - **Maturity**: Mature, widely deployed
-		  
-		  ```
+  - **Single-Label or Multi-Label**: Assign one or multiple categories
+  - **End-to-End Learning**: Direct mapping from pixels to class probabilities
+  - **Transfer Learning**: Pre-training on ImageNet for domain adaptation
+  - **Hierarchical Features**: Learning from low-level to high-level visual features
+  - **Probabilistic Outputs**: Class probability distributions
 
-    - technique-for:: [[Computer Vision]]
+  ## Relationships
 
-- public-access:: true
-	- definition:: Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole. Modern image classification employs deep convolutional neural networks (ResNet, EfficientNet, Vision Transformers) trained on large-scale datasets (ImageNet) to achieve human-level or super-human performance on diverse visual recognition tasks.
+  - **Subclass**: Computer Vision
+  - **Related**: Convolutional Neural Network, Transfer Learning, Feature Extraction
+  - **Architectures**: ResNet, VGG, EfficientNet, Vision Transformer
+  - **Datasets**: ImageNet, CIFAR, MNIST
 
+  ## Key Literature
 
+  1. Krizhevsky, A., Sutskever, I., & Hinton, G. E. (2012). "ImageNet classification with deep convolutional neural networks." *NeurIPS*, 1097-1105.
 
-# Image Classification Ontology Entry – Revised
+  2. He, K., et al. (2016). "Deep residual learning for image recognition." *CVPR*, 770-778.
 
-## Academic Context
+  3. Tan, M., & Le, Q. (2019). "EfficientNet: Rethinking model scaling for convolutional neural networks." *ICML*, 6105-6114.
 
-- Image classification is a fundamental task in computer vision involving assigning a categorical label to an entire image from a predefined set of classes.
-  - It differs from related tasks such as object localisation (identifying bounding boxes around objects) and object detection (detecting multiple objects with spatial coordinates).
-  - The task has evolved from early methods based on hand-crafted features (e.g., edge detection, texture analysis) to modern approaches using deep learning, particularly convolutional neural networks (CNNs) and transformer-based architectures.
-  - Image classification is typically formulated as a supervised learning problem, requiring large annotated datasets to train models to recognise visual patterns effectively.
-- Ontologies in computer vision provide structured vocabularies and formal frameworks to represent and reason about visual concepts, improving semantic understanding beyond raw pixel data.
-  - They enable integration of domain knowledge with machine learning, helping to bridge the semantic gap between low-level features and high-level image interpretation.
-  - Ontologies facilitate reasoning about image content, allowing refinement of classifications and supporting complex inference tasks[2][3][5].
+  ## See Also
 
-## Current Landscape (2025)
+  - [[Computer Vision]]
+  - [[Convolutional Neural Network]]
+  - [[Transfer Learning]]
 
-- Industry adoption of image classification remains widespread across sectors such as healthcare, autonomous vehicles, retail, and security.
-  - Leading platforms employ state-of-the-art architectures like EfficientNet, Vision Transformers, and hybrid CNN-transformer models trained on extensive datasets (e.g., ImageNet, Open Images).
-  - Automation in data collection, preprocessing (resizing, normalisation, augmentation), and model training pipelines has increased efficiency and scalability.
-- Ontology integration enhances classification systems by structuring domain knowledge, improving accuracy, interpretability, and reducing dependency on massive labelled datasets.
-  - Ontology-based machine vision systems improve balanced accuracy and decision-making robustness across methods like gradient tree boosting and random forests[6].
-- In the UK, including North England, academic and industrial research hubs contribute to advancing image classification and ontology integration.
-  - Centres such as the Alan Turing Institute and universities in Manchester and Leeds focus on AI and computer vision research with applications in healthcare and manufacturing.
-- Technical limitations persist in handling ambiguous images, domain adaptation, and explainability, motivating ongoing research into hybrid models combining ontological reasoning with deep learning.
-
-## Research & Literature
-
-- Key academic contributions include:
-  - Porello et al. (2015) formalising the integration of ontologies with computer vision algorithms to confer semantic meaning to images and support reasoning[2].
-  - Surveys highlighting ontology-integrated machine learning frameworks that enhance semantic recognition and reduce training data requirements[5].
-  - Studies demonstrating ontology-based systems outperform traditional image recognition by combining knowledge models with feature extraction[3].
-- Ongoing research explores:
-  - Hybrid architectures combining CNNs and transformers with ontology-driven reasoning.
-  - Methods to automate ontology construction and alignment with evolving datasets.
-  - Explainability and interpretability improvements through semantic frameworks.
-
-## UK Context
-
-- British contributions include foundational AI research and ontology development at institutions such as the University of Oxford, University College London, and the Alan Turing Institute.
-- North England hosts innovation hubs in Manchester and Leeds, where interdisciplinary teams work on applying image classification and ontology methods to healthcare diagnostics, industrial quality control, and smart city projects.
-- Regional case studies demonstrate ontology-enhanced image classification improving diagnostic accuracy in medical imaging and defect detection in manufacturing lines.
-
-## Future Directions
-
-- Emerging trends:
-  - Greater fusion of symbolic AI (ontologies) with deep learning to achieve more explainable and adaptable image classification systems.
-  - Expansion of ontology-based frameworks to multimodal data, including video and 3D imagery.
-  - Increased focus on domain-specific ontologies tailored to sectors like healthcare, agriculture, and autonomous systems.
-- Anticipated challenges:
-  - Scalability of ontology construction and maintenance alongside rapidly growing datasets.
-  - Integration complexity between heterogeneous data sources and AI models.
-  - Balancing model performance with interpretability and user trust.
-- Research priorities:
-  - Developing automated ontology learning and updating mechanisms.
-  - Enhancing semantic reasoning capabilities within real-time classification systems.
-  - Addressing ethical and bias concerns through transparent ontology design.
-
-## References
-
-1. Porello, D., Cristani, M., & Ferrario, R. (2015). Integrating Ontologies and Computer Vision for Classification of Objects in Images. *KI - Künstliche Intelligenz*. DOI: 10.1007/s13218-015-0383-0  
-2. Zhang, Y., & Zhang, L. (2020). Review of the Application of Ontology in the Field of Image Object Recognition. *Journal of Visual Communication and Image Representation*. DOI: 10.1016/j.jvcir.2020.102789  
-3. Khan, L., et al. (2002). Image Classification Using Neural Networks and Ontologies. *Proceedings of the 13th International Workshop on Database and Expert Systems Applications (DEXA)*. DOI: 10.1109/DEXA.2002.1033741  
-4. Li, X., et al. (2023). Ontology-Integrated Machine Learning in Computer Vision: A Survey. *Machine Intelligence Journal*. DOI: 10.1016/j.mijrd.2023.100010  
-5. UnitX Labs. (2024). Ontology-Based Machine Vision Systems for AI. *UnitX Resources*.  
-
-## Metadata
-
-- Last Updated: 2025-11-11  
-- Review Status: Comprehensive editorial review  
-- Verification: Academic sources verified  
-- Regional Context: UK/North England where applicable
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

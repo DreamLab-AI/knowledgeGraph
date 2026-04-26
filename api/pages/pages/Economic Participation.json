@@ -1,39 +1,47 @@
 {
-  "id": "Economic Participation",
+  "id": "economic-participation",
   "title": "Economic Participation",
-  "content": "- ### OntologyBlock\n  id:: economic-participation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9889\n\t- source-domain:: mv\n\t- preferred-term:: Economic Participation\n\t- status:: active\n\t- owl:class:: mv:EconomicParticipation\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.\n\t- #### Relationships\n\t  id:: economic-participation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Economy]]\n\t\t- related-to:: [[Economic Parameters]]\n\t\t- related-to:: [[Governance Token]]\n\t\t- enables:: [[Play-to-Earn]]\n\n## Participation Mechanisms\n\n### Entry Requirements\n- Fixed costs for participation (e.g., VR headset purchase)\n- Net gain calculation: VR experience utility expansion minus fixed costs\n- Platform-specific access requirements\n\n### Governance Participation\n- **DeFi**: Financial transactions without conventional institutions\n- **NFTs**: Sovereignty and uniqueness of virtual goods/services\n- **DAOs**: Democratic participation of virtual economic agents\n- **Token Voting**: Influence on platform roadmaps, feature prioritisation, content policies\n\n### Economic Activities\n- Virtual real estate development and trading\n- Gaming and play-to-earn mechanics\n- Social experiences and content creation\n- Service provision and skill-based work\n\n## Platform Examples\n\n### The Sandbox (SAND Token)\n- Holders participate in governance via DAO structure\n- Voting rights on platform roadmap and feature prioritisation\n- Creator-driven content and game development\n\n### Play-to-Earn Gaming\n- Blockchain-based games offering asset ownership\n- Players earn cryptocurrencies and NFTs through gameplay\n- Decentralised economies with player-owned assets\n\n## Market Scale\n\n### Current Market\n- 2024 global metaverse market: USD 105.4 billion\n- Gaming industry as key driver of metaverse economy\n\n### Projected Growth\n- US GDP contribution potential: USD 402-760 billion by 2035\n\n## Accessibility Challenges\n\n### Technical Barriers\n- Internet connectivity requirements\n- Device compatibility constraints\n- Complex user interface learning curves\n\n### Social Equity\n- Digital divide implications\n- Inclusive design requirements\n- Economic access across diverse backgrounds and abilities\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:EconomicParticipation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Economy]]\n  - enables:: [[Play-to-Earn]]\n\n- ### Content\n\n  ## Participation Mechanisms\n\n  ### Entry Requirements\n  - Fixed costs for participation (e.g., VR headset purchase)\n  - Net gain calculation: VR experience utility expansion minus fixed costs\n  - Platform-specific access requirements\n\n  ### Governance Participation\n  - **DeFi**: Financial transactions without conventional institutions\n  - **NFTs**: Sovereignty and uniqueness of virtual goods/services\n  - **DAOs**: Democratic participation of virtual economic agents\n  - **Token Voting**: Influence on platform roadmaps, feature prioritisation, content policies\n\n  ### Economic Activities\n  - Virtual real estate development and trading\n  - Gaming and play-to-earn mechanics\n  - Social experiences and content creation\n  - Service provision and skill-based work\n\n  ## Platform Examples\n\n  ### The Sandbox (SAND Token)\n  - Holders participate in governance via DAO structure\n  - Voting rights on platform roadmap and feature prioritisation\n  - Creator-driven content and game development\n\n  ### Play-to-Earn Gaming\n  - Blockchain-based games offering asset ownership\n  - Players earn cryptocurrencies and NFTs through gameplay\n  - Decentralised economies with player-owned assets\n\n  ## Market Scale\n\n  ### Current Market\n  - 2024 global metaverse market: USD 105.4 billion\n  - Gaming industry as key driver of metaverse economy\n\n  ### Projected Growth\n  - US GDP contribution potential: USD 402-760 billion by 2035\n\n  ## Accessibility Challenges\n\n  ### Technical Barriers\n  - Internet connectivity requirements\n  - Device compatibility constraints\n  - Complex user interface learning curves\n\n  ### Social Equity\n  - Digital divide implications\n  - Inclusive design requirements\n  - Economic access across diverse backgrounds and abilities\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Play-to-Earn (P2E)",
-    "Economic Parameters"
+    "Play-to-Earn (P2E)"
   ],
   "wiki_links": [
-    "Governance Token",
-    "Virtual Economy",
-    "metaverse",
     "Play-to-Earn",
-    "Economic Parameters"
+    "Virtual Economy",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:economic-participation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#EconomicParticipation",
+    "content_hash": "sha256-12-a7ca1c4ed749",
+    "legacy_term_id": "MV-9889",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:economic-participation",
+    "schema_version": "v2",
     "term_id": "MV-9889",
     "preferred_term": "Economic Participation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#EconomicParticipation",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:EconomicParticipation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:EconomicParticipation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Economy"
@@ -48,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Economic Parameters",
-        "Governance Token"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

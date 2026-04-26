@@ -1,62 +1,90 @@
 {
-  "id": "Avatar Standard",
+  "id": "avatar-standard",
   "title": "Avatar Standard",
-  "content": "- ### OntologyBlock\n  id:: Avatar Standard\n  - ontology:: true\n  - public-access:: true\n  - term-id:: MV-9791\n  - preferred-term:: Avatar Standard\n  - source-domain:: mv\n  - owl:class:: mv:AvatarStandard\n  - status:: active\n  - definition:: Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.\n  - is-subclass-of:: [[Technical Standard]]\n  - enables:: [[Avatar Interoperability]], [[Platform-Independent Identities]], [[Standardized Rigging]]\n  - requires:: [[Format Compliance]], [[Skeleton Configuration]], [[Metadata Specification]]\n\n### Technical Details\nKey standards include:\n- **VRM 1.0**: glTF2.0-based format with humanoid-specific extensions for expressions, gaze control, and standardized rigging\n- **Scale and Orientation**: 1.00 = 1m, Y-up, -Z forward, Unity Humanoid compliant T-stance\n- **Single File Packaging**: All data including textures and materials in one file\n- **Licensing Metadata**: Title, author, modification/redistribution rules (Creative Commons), and usage permissions\n\n### Standardization Progress (2024)\nKhronos Group and VRM Consortium collaboration (October 2024) advancing VRM as official glTF extensions. Successful ratification would elevate global recognition and encourage broader platform support.\n\n### Industry Adoption\nVRM established as de facto standard in Japan since 2018, supporting VirtualCast, VRoid Studio, and cluster platforms. Decentraland enabled VRM exports (July 2023) for use in OnCyber, Hyperfy, and Monaverse.\n\n### Avatar Translation Framework\nMetaverse Standards Forum working group developing common baseline format for mesh, material, skeleton, animation, physics, and metadata translation across platforms.",
+  "content": "- ### Definition\n  - Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:AvatarStandard\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Technical Standard]]\n  - requires:: [[Format Compliance]], [[Skeleton Configuration]], [[Metadata Specification]]\n  - enables:: [[Avatar Interoperability]], [[Platform-Independent Identities]], [[Standardized Rigging]]\n\n- ### Content\n\n  ### Technical Details\n  Key standards include:\n  - **VRM 1.0**: glTF2.0-based format with humanoid-specific extensions for expressions, gaze control, and standardized rigging\n  - **Scale and Orientation**: 1.00 = 1m, Y-up, -Z forward, Unity Humanoid compliant T-stance\n  - **Single File Packaging**: All data including textures and materials in one file\n  - **Licensing Metadata**: Title, author, modification/redistribution rules (Creative Commons), and usage permissions\n\n  ### Standardization Progress (2024)\n  Khronos Group and VRM Consortium collaboration (October 2024) advancing VRM as official glTF extensions. Successful ratification would elevate global recognition and encourage broader platform support.\n\n  ### Industry Adoption\n  VRM established as de facto standard in Japan since 2018, supporting VirtualCast, VRoid Studio, and cluster platforms. Decentraland enabled VRM exports (July 2023) for use in OnCyber, Hyperfy, and Monaverse.\n\n  ### Avatar Translation Framework\n  Metaverse Standards Forum working group developing common baseline format for mesh, material, skeleton, animation, physics, and metadata translation across platforms.\n\n- ### Provenance\n  - sources:: [[VRM 1.0]], [[glTF 2.0]], [[Khronos Group]], [[VRM Consortium]], [[Metaverse Standards Forum]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Avatar Interoperability"
   ],
   "wiki_links": [
-    "Format Compliance",
-    "Technical Standard",
     "Avatar Interoperability",
+    "DID Nostr Identity",
+    "Format Compliance",
+    "Khronos Group",
+    "Metadata Specification",
+    "Metaverse Standards Forum",
+    "Platform-Independent Identities",
     "Skeleton Configuration",
     "Standardized Rigging",
-    "Metadata Specification",
-    "Platform-Independent Identities"
+    "Technical Standard",
+    "VRM 1.0",
+    "VRM Consortium",
+    "glTF 2.0"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:avatar-standard",
+    "iri": "http://narrativegoldmine.com/spatial-computing#AvatarStandard",
+    "content_hash": "sha256-12-9e0b2eb1b872",
+    "legacy_term_id": "MV-9791",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:avatar-standard",
+    "schema_version": "v2",
     "term_id": "MV-9791",
     "preferred_term": "Avatar Standard",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AvatarStandard",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:AvatarStandard",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:AvatarStandard",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Technical Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Format Compliance",
+      "Skeleton Configuration",
+      "Metadata Specification"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Avatar Interoperability",
+      "Platform-Independent Identities",
+      "Standardized Rigging"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
-    "source": [],
+    "domain_extensions": {},
+    "source": [
+      "VRM 1.0",
+      "glTF 2.0",
+      "Khronos Group",
+      "VRM Consortium",
+      "Metaverse Standards Forum"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

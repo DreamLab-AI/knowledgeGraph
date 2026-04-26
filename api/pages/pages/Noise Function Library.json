@@ -1,39 +1,47 @@
 {
-  "id": "Noise Function Library",
+  "id": "noise-function-library",
   "title": "Noise Function Library",
-  "content": "- ### OntologyBlock\n  id:: noise-function-library-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9984\n\t- source-domain:: mv\n\t- preferred-term:: Noise Function Library\n\t- status:: active\n\t- definition:: A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.\n\t- owl:class:: mv:NoiseFunctionLibrary\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: noise-function-library-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Graphics Library]]\n\t\t- related-to:: [[Procedural Generation]]\n\t\t- related-to:: [[Texture Synthesis]]\n\t\t- related-to:: [[Terrain Generation]]\n\t\t- enables:: [[Procedural Content]]\n\t- #### Noise Types\n\t  collapsed:: true\n\t\t- Perlin Noise: Classic coherent noise for natural textures\n\t\t- Simplex Noise: Improved Perlin with fewer artifacts\n\t\t- Value Noise: Interpolated random values\n\t\t- Voronoi Noise: Cell-based patterns for crystal and organic structures\n\t\t- Ridged Multifractal: Complex terrain and cloud formations\n\t- #### Popular Libraries\n\t  collapsed:: true\n\t\t- noise-rs: Rust library for procedural noise generation\n\t\t- libnoise: Portable C++ coherent noise library\n\t\t- CoherentNoise: Unity/.NET comprehensive noise library\n\t\t- LYGIA: GLSL shader noise functions\n\t\t- FastNoise: High-performance multi-language implementation",
+  "content": "- ### Definition\n  - A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:NoiseFunctionLibrary\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Graphics Library]]\n  - enables:: [[Procedural Content]]\n\n- ### Content\n\n  - #### Noise Types\n\t\t- Perlin Noise: Classic coherent noise for natural textures\n\t\t- Simplex Noise: Improved Perlin with fewer artifacts\n\t\t- Value Noise: Interpolated random values\n\t\t- Voronoi Noise: Cell-based patterns for crystal and organic structures\n\t\t- Ridged Multifractal: Complex terrain and cloud formations\n  - #### Popular Libraries\n\t\t- noise-rs: Rust library for procedural noise generation\n\t\t- libnoise: Portable C++ coherent noise library\n\t\t- CoherentNoise: Unity/.NET comprehensive noise library\n\t\t- LYGIA: GLSL shader noise functions\n\t\t- FastNoise: High-performance multi-language implementation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Procedural Content Generation"
   ],
   "wiki_links": [
     "Graphics Library",
-    "Procedural Generation",
-    "Terrain Generation",
-    "Texture Synthesis",
-    "metaverse",
-    "Procedural Content"
+    "Procedural Content",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:noise-function-library",
+    "iri": "http://narrativegoldmine.com/spatial-computing#NoiseFunctionLibrary",
+    "content_hash": "sha256-12-d7648a6c2b67",
+    "legacy_term_id": "MV-9984",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:noise-function-library",
+    "schema_version": "v2",
     "term_id": "MV-9984",
     "preferred_term": "Noise Function Library",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#NoiseFunctionLibrary",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:NoiseFunctionLibrary",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:NoiseFunctionLibrary",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Graphics Library"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Procedural Generation",
-        "Texture Synthesis",
-        "Terrain Generation"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

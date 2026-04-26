@@ -1,44 +1,40 @@
-- ### OntologyBlock
-  id:: avatarwearable-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#AvatarWearable
+uri:: urn:visionclaw:concept:spatial-computing:avatar-wearable
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:avatar-wearable
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Avatar Wearable
+content-hash:: sha256-12-0a60682f904f
+legacy-term-id:: MV-4009
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-  - **Identification**
-    - domain-prefix:: MV
-    - sequence-number:: 0001
-    - filename-history:: ["MV-0001-avatarwearable.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: MV-4009
-    - preferred-term:: Avatar Wearable
-    - source-domain:: mv
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.
 
-  - **Definition**
-    - definition:: Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.
-    - maturity:: established
-    - source:: Metaverse Standards Forum
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: spatial-computing:AvatarWearable
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Metaverse]]
 
-  - **Semantic Classification**
-    - owl:class:: mv:AvatarWearable
-    - belongsToDomain:: [[Metaverse]]
+- ### Relationships
+  - is-subclass-of:: [[Digital Asset]]
+  - bridges-to:: [[Telecollaboration]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Digital Asset]]
+- ### Content
+  Avatar Wearable — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :AvatarWearable))
-      (SubClassOf :AvatarWearable :DigitalAsset)
-
-      ; Annotations
-      (AnnotationAssertion rdfs:label :AvatarWearable "Avatar Wearable"@en)
-      (AnnotationAssertion rdfs:comment :AvatarWearable
-        "Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs."@en)
-      ```
-
-- ## About Avatar Wearable
-  Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.
+- ### Provenance
+  - sources:: Metaverse Standards Forum
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,40 +1,47 @@
 {
-  "id": "Non Linear Narrative",
+  "id": "non-linear-narrative",
   "title": "Non Linear Narrative",
-  "content": "- ### OntologyBlock\n  id:: non-linear-narrative-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9985\n\t- source-domain:: mv\n\t- preferred-term:: Non Linear Narrative\n\t- status:: active\n\t- definition:: A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.\n\t- owl:class:: mv:NonLinearNarrative\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: non-linear-narrative-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Narrative Structure]]\n\t\t- related-to:: [[Interactive Storytelling]]\n\t\t- related-to:: [[Branching Narrative]]\n\t\t- related-to:: [[Non Linear Storytelling]]\n\t\t- enables:: [[Player Agency]]\n\t- #### Types\n\t  collapsed:: true\n\t\t- Internally nonlinear: Stories told chronologically out of order\n\t\t- Interactive nonlinear: Multiple paths based on audience choices\n\t\t- Branching narrative: Story diverges based on player decisions\n\t\t- Storylets: Modular narrative units for flexible assembly\n\t- #### Design Considerations\n\t  collapsed:: true\n\t\t- Balance between player freedom and narrative meaning\n\t\t- Scope management for branching complexity\n\t\t- Re-convergence points to control divergence\n\t\t- Testing requirements increase with path combinations\n\t\t- Higher development cost than linear narratives",
+  "content": "- ### Definition\n  - A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:NonLinearNarrative\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Narrative Structure]]\n  - enables:: [[Player Agency]]\n\n- ### Content\n\n  - #### Types\n\t\t- Internally nonlinear: Stories told chronologically out of order\n\t\t- Interactive nonlinear: Multiple paths based on audience choices\n\t\t- Branching narrative: Story diverges based on player decisions\n\t\t- Storylets: Modular narrative units for flexible assembly\n  - #### Design Considerations\n\t\t- Balance between player freedom and narrative meaning\n\t\t- Scope management for branching complexity\n\t\t- Re-convergence points to control divergence\n\t\t- Testing requirements increase with path combinations\n\t\t- Higher development cost than linear narratives\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Narrative Arc",
-    "Non Linear Storytelling"
+    "Narrative Arc"
   ],
   "wiki_links": [
-    "Non Linear Storytelling",
-    "Interactive Storytelling",
-    "Player Agency",
-    "metaverse",
     "Narrative Structure",
-    "Branching Narrative"
+    "Player Agency",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:non-linear-narrative",
+    "iri": "http://narrativegoldmine.com/spatial-computing#NonLinearNarrative",
+    "content_hash": "sha256-12-2a3b217237d4",
+    "legacy_term_id": "MV-9985",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:non-linear-narrative",
+    "schema_version": "v2",
     "term_id": "MV-9985",
     "preferred_term": "Non Linear Narrative",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#NonLinearNarrative",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:NonLinearNarrative",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:NonLinearNarrative",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Narrative Structure"
@@ -49,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Interactive Storytelling",
-        "Branching Narrative",
-        "Non Linear Storytelling"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

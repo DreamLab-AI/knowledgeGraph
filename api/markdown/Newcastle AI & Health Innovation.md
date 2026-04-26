@@ -1,24 +1,38 @@
-- ### OntologyBlock
-  id:: newcastle-ai-and-health-innovation-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-1004
-	- preferred-term:: Newcastle AI & Health Innovation
-	- source-domain:: uk-regional
-	- status:: active
-    - public-access:: true
-	- definition:: Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
-	- maturity:: established
-	- region:: North East England
-	- focus-areas:: AI, Health Tech, Research
-	- owl:class:: ngm:NewcastleAIAndHealthInnovation
-	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+iri:: http://narrativegoldmine.com/ontology#NewcastleAIHealthInnovation
+uri:: urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:newcastle-ai-health-innovation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Newcastle AI & Health Innovation
+content-hash:: sha256-12-991a4b4c37e8
+legacy-term-id:: NGM-1004
+status:: active
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Newcastle's technology ecosystem centred on artificial intelligence and health innovation, anchored by research institutions and the Great North Snowdome.
 
-## Regional Technology Hub
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:NewcastleAIAndHealthInnovation
+  - owl-role:: RegionalEcosystem
+  - belongs-to-domain:: [[UKTechEcosystem]]
 
-- Newcastle AI & Health Innovation, North East England
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Regional Technology Hub
+
+  - Newcastle AI & Health Innovation, North East England
   - ## Overview
     - Newcastle has evolved from an industrial heritage into a leading UK tech and health innovation hub, with strong academic and industry collaboration.
     - The region’s transformation began in the early 2010s, accelerated by strategic investments in digital infrastructure, research centres, and skills development.
@@ -78,38 +92,29 @@
       - Collaboration with UKRI, NIHR, and industry to shape regulatory frameworks and ethical standards for AI in healthcare.
 
 
-## Related Hubs
+  ## Related Hubs
 
-- [[North England Innovation Corridor]]
-- [[Northern Powerhouse]]
-- [[UK Tech Ecosystem]]
+  - [[North England Innovation Corridor]]
+  - [[Northern Powerhouse]]
+  - [[UK Tech Ecosystem]]
 
+  #### References
+  1. [https://healthindustryleaders.com/newcastle-university-secures-22-million-to-drive-health-innovation-and-horizon-scanning/](https://healthindustryleaders.com/newcastle-university-secures-22-million-to-drive-health-innovation-and-horizon-scanning/)
 
-## References
+  2. [https://www.ncl.ac.uk/business-and-partnerships/latest-news/item/north-east-ai-powerhouse/](https://www.ncl.ac.uk/business-and-partnerships/latest-news/item/north-east-ai-powerhouse/)
 
-1. [https://healthindustryleaders.com/newcastle-university-secures-22-million-to-drive-health-innovation-and-horizon-scanning/](https://healthindustryleaders.com/newcastle-university-secures-22-million-to-drive-health-innovation-and-horizon-scanning/)
+  3. [https://www.ucc.ie/en/media/academic/medicineandhealth/academicheathscience/NewcastleHealthInnovationPartners.pdf](https://www.ucc.ie/en/media/academic/medicineandhealth/academicheathscience/NewcastleHealthInnovationPartners.pdf)
 
-2. [https://www.ncl.ac.uk/business-and-partnerships/latest-news/item/north-east-ai-powerhouse/](https://www.ncl.ac.uk/business-and-partnerships/latest-news/item/north-east-ai-powerhouse/)
+  4. [https://www.marketscreener.com/news/newcastle-university-north-east-set-to-become-ai-powerhouse-ce7d58d8db88f622](https://www.marketscreener.com/news/newcastle-university-north-east-set-to-become-ai-powerhouse-ce7d58d8db88f622)
 
-3. [https://www.ucc.ie/en/media/academic/medicineandhealth/academicheathscience/NewcastleHealthInnovationPartners.pdf](https://www.ucc.ie/en/media/academic/medicineandhealth/academicheathscience/NewcastleHealthInnovationPartners.pdf)
+  5. [https://www.contentifai.agency/newcastle-tech-innovation/](https://www.contentifai.agency/newcastle-tech-innovation/)
 
-4. [https://www.marketscreener.com/news/newcastle-university-north-east-set-to-become-ai-powerhouse-ce7d58d8db88f622](https://www.marketscreener.com/news/newcastle-university-north-east-set-to-become-ai-powerhouse-ce7d58d8db88f622)
+  6. [https://www.ncl.ac.uk/singapore/news/news-items/dialogue-on-digital-trust-in-ai-for-healthcare/](https://www.ncl.ac.uk/singapore/news/news-items/dialogue-on-digital-trust-in-ai-for-healthcare/)
 
-5. [https://www.contentifai.agency/newcastle-tech-innovation/](https://www.contentifai.agency/newcastle-tech-innovation/)
+  7. [https://iapetus.ac.uk/studentships/from-sound-to-structure-explainable-ai-for-multimodal-ecosystem-health-monitoring/](https://iapetus.ac.uk/studentships/from-sound-to-structure-explainable-ai-for-multimodal-ecosystem-health-monitoring/)
 
-6. [https://www.ncl.ac.uk/singapore/news/news-items/dialogue-on-digital-trust-in-ai-for-healthcare/](https://www.ncl.ac.uk/singapore/news/news-items/dialogue-on-digital-trust-in-ai-for-healthcare/)
+  8. [https://www.nihr.ac.uk/news/ps22-million-nihr-investment-strengthen-uk-health-and-life-sciences-innovation](https://www.nihr.ac.uk/news/ps22-million-nihr-investment-strengthen-uk-health-and-life-sciences-innovation)
 
-7. [https://iapetus.ac.uk/studentships/from-sound-to-structure-explainable-ai-for-multimodal-ecosystem-health-monitoring/](https://iapetus.ac.uk/studentships/from-sound-to-structure-explainable-ai-for-multimodal-ecosystem-health-monitoring/)
-
-8. [https://www.nihr.ac.uk/news/ps22-million-nihr-investment-strengthen-uk-health-and-life-sciences-innovation](https://www.nihr.ac.uk/news/ps22-million-nihr-investment-strengthen-uk-health-and-life-sciences-innovation)
-
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Region**: North East England, North England
-- **Category**: Regional Technology Ecosystem
-- **Status**: Active
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

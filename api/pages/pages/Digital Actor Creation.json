@@ -1,44 +1,53 @@
 {
-  "id": "Digital Actor Creation",
+  "id": "digital-actor-creation",
   "title": "Digital Actor Creation",
-  "content": "- ### OntologyBlock\n  id:: digital-actor-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9844\n\t- source-domain:: mv\n\t- preferred-term:: Digital Actor Creation\n\t- definition:: The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.\n\t- status:: active\n\t- owl:class:: mv:DigitalActorCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-actor-creation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Human Technology]]\n\t\t- enables:: [[Virtual Performances]], [[Digital Twins]], [[Synthetic Media]]\n\t\t- requires:: [[Motion Capture]], [[3D Modeling]], [[AI Synthesis]]\n\t\t- related-to:: [[Avatar]], [[Virtual Influencer]], [[Deepfake Technology]]\n- ## Technical Details\n\t- **Creation Pipeline**:\n\t\t- 3D scanning and photogrammetry for likeness capture\n\t\t- Rigging and skeletal animation systems\n\t\t- Facial motion capture with expression mapping\n\t\t- Neural rendering for real-time performance\n\t- **AI Technologies**:\n\t\t- Generative adversarial networks (GANs) for face synthesis\n\t\t- Neural radiance fields (NeRF) for volumetric capture\n\t\t- Voice cloning and lip sync generation\n\t\t- Emotion and gesture synthesis\n\t- **Industry Applications (2024)**:\n\t\t- Virtual production using LED volumes and real-time engines\n\t\t- De-aging and digital resurrection in film\n\t\t- AI-generated virtual influencers\n\t\t- Interactive NPCs in gaming and metaverse\n\t- **Leading Platforms**: Epic Games MetaHuman, Character Creator, Synthesia, Soul Machines\n- ## Applications\n\t- Film and television virtual actors\n\t- Video game character creation\n\t- Virtual customer service representatives\n\t- Educational historical recreations\n\t- Metaverse avatar personalization",
+  "content": "- ### Definition\n  - The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.\n\nbridges-to:: [[DID Nostr Identity]]\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:DigitalActorCreation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Human Technology]]\n  - requires:: [[Motion Capture]], [[3D Modeling]], [[AI Synthesis]]\n  - enables:: [[Virtual Performances]], [[Digital Twins]], [[Synthetic Media]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Creation Pipeline**:\n\t\t- 3D scanning and photogrammetry for likeness capture\n\t\t- Rigging and skeletal animation systems\n\t\t- Facial motion capture with expression mapping\n\t\t- Neural rendering for real-time performance\n  - **AI Technologies**:\n\t\t- Generative adversarial networks (GANs) for face synthesis\n\t\t- Neural radiance fields (NeRF) for volumetric capture\n\t\t- Voice cloning and lip sync generation\n\t\t- Emotion and gesture synthesis\n  - **Industry Applications (2024)**:\n\t\t- Virtual production using LED volumes and real-time engines\n\t\t- De-aging and digital resurrection in film\n\t\t- AI-generated virtual influencers\n\t\t- Interactive NPCs in gaming and metaverse\n  - **Leading Platforms**: Epic Games MetaHuman, Character Creator, Synthesia, Soul Machines\n  - ## Applications\n  - Film and television virtual actors\n  - Video game character creation\n  - Virtual customer service representatives\n  - Educational historical recreations\n  - Metaverse avatar personalization\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Performance Capture"
   ],
   "wiki_links": [
-    "Digital Human Technology",
-    "Motion Capture",
-    "AI Synthesis",
-    "Avatar",
-    "Deepfake Technology",
     "3D Modeling",
-    "Virtual Influencer",
-    "Synthetic Media",
-    "metaverse",
+    "AI Synthesis",
+    "DID Nostr Identity",
+    "Digital Human Technology",
     "Digital Twins",
-    "Virtual Performances"
+    "Motion Capture",
+    "Synthetic Media",
+    "Virtual Performances",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:digital-actor-creation",
+    "iri": "http://narrativegoldmine.com/metaverse#DigitalActorCreation",
+    "content_hash": "sha256-12-593d7daacf9a",
+    "legacy_term_id": "MV-9844",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:digital-actor-creation",
+    "schema_version": "v2",
     "term_id": "MV-9844",
     "preferred_term": "Digital Actor Creation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalActorCreation",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "The process of designing and generating photorealistic or stylized virtual human characters using 3D modeling, motion capture, AI synthesis, and deep learning techniques for use in entertainment, virtual production, metaverse experiences, and interactive media applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalActorCreation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:DigitalActorCreation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Human Technology"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Avatar",
-        "Virtual Influencer",
-        "Deepfake Technology"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

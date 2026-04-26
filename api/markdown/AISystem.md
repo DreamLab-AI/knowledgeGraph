@@ -1,41 +1,38 @@
-- ### OntologyBlock
-  id:: aisystem-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-3010
-	- preferred-term:: AISystem
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:AISystem
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/metaverse#AISystem
+uri:: urn:visionclaw:concept:artificial-intelligence:aisystem
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:aisystem
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: AISystem
+content-hash:: sha256-12-6a3da7ec4db2
+legacy-term-id:: MV-3010
+status:: draft
+maturity:: draft
+quality-score:: 0.40
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## OWL Formal Semantics
+- ### Definition
+  - A comprehensive system architecture comprising machine learning models, data pipelines, inference engines, and deployment infrastructure that enables intelligent decision-making and automation. [[AI Systems]] integrate [[Neural Networks]], training frameworks, and monitoring components to operate within [[Organisational Contexts]].
 
-```clojure
-;; OWL Functional Syntax
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AISystem
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-(Declaration (Class :Aisystem))
+- ### Relationships
+  - bridges-to:: [[AI Agent System]]
 
-;; Annotations
-(AnnotationAssertion rdfs:label :Aisystem "AISystem"@en)
-(AnnotationAssertion rdfs:comment :Aisystem "A component of the metaverse ecosystem."@en)
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Aisystem "mv-1761742247878"^^xsd:string)
-```
-
-- ## About AISystem
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Content
+  - An integrated technical architecture combining [[Machine Learning Models]], data processing pipelines, inference engines, and operational infrastructure to enable autonomous decision-making and intelligent automation. AI Systems represent the computational foundation enabling [[Artificial Intelligence]] capabilities across diverse application domains and deployment contexts.
+  - ### Original Content
 		- ```
-- # Ontology Block
-		    collapsed:: true
+  - # Ontology Block
 		    - **Class:** AISystem
 		    - **IRI:** http://purl.org/ai-grounded-ontology/core#AISystem
 		    - **SubClassOf:** owl:Thing
@@ -54,14 +51,14 @@
 		          meta:technologyReadinessLevel "7"^^xsd:integer ;
 		          meta:qualityScore "0.91"^^xsd:float .
 		      ```
-		  
+
 		  - ## Description
 		    - A comprehensive artificial intelligence system that integrates multiple components
 		    - Encompasses machine learning models, neural networks, and inference engines
 		    - Includes data preprocessing pipelines and training workflows
 		    - Features deployment infrastructure for production environments
 		    - Supports monitoring, logging, and continuous improvement capabilities
-		  
+
 		  - ## Properties
 		    - Object properties
 		      - [[hasModel]] - Links to the AI models used in the system
@@ -73,42 +70,34 @@
 		      - deploymentDate - Date when the system was deployed
 		      - accuracyScore - Overall accuracy metric for the system
 		      - processingCapacity - Maximum throughput capacity
-		  
+
 		  - ## Cross-Domain Relationships
 		    - [[dt:implementedOn]] → [[BlockchainNetwork]] - AI systems can be deployed on blockchain infrastructure
 		    - [[dt:securedBy]] → [[SmartContract]] - Security and access control via smart contracts
 		    - [[dt:controls]] → [[AutonomousRobot]] - AI systems controlling robotic platforms
 		    - [[dt:enhances]] → [[VirtualEnvironment]] - AI-powered enhancements in metaverse spaces
 		    - [[dt:uses]] → [[DistributedLedger]] - Utilizing blockchain for audit trails and data provenance
-		  
+
 		  - ## Related Concepts
 		    - [[MachineLearningModel]]
 		    - [[NeuralNetwork]]
 		    - [[AIGovernance]]
 		    - [[AIEthics]]
 		    - [[DeploymentPattern]]
-		  
+
 		  - ## Use Cases
 		    - Autonomous decision-making systems
 		    - Predictive analytics platforms
 		    - Natural language processing services
 		    - Computer vision applications
 		    - Recommendation engines
-		  
+
 		  ```
 
-# AISystem Ontology Entry – Updated Definition
+  # AISystem Ontology Entry – Updated Definition
 
-## Academic Context
-
-- Artificial Intelligence Systems within the metaverse represent the foundational computational layer enabling immersive digital environments
-  - AI functions as the animating force rather than a peripheral enhancement, determining how virtual worlds respond to user interactions in real-time
-  - The integration of AI with metaverse infrastructure has evolved from theoretical speculation to operational necessity across multiple sectors
-  - Academic consensus now positions AI as indispensable to metaverse viability, not merely supplementary
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
+  #### Current Landscape
+  - Industry adoption and implementations
   - Natural Language Processing (NLP) enables conversational interactions with AI-driven non-player characters (NPCs), creating lifelike dialogue experiences
   - Computer vision systems analyse user movements and expressions to enhance avatar customisation and spatial awareness
   - Generative AI models procedurally construct virtual landscapes, buildings, and economic systems, reducing manual content creation overhead
@@ -117,82 +106,81 @@
   - Notable organisations: Meta Platforms continues substantial investment in AI-metaverse convergence; NVIDIA provides hardware acceleration; NTT DOCOMO has deployed world-first generative AI systems for automated NPC creation
   - UK and North England context: whilst major metaverse development remains concentrated in Silicon Valley and Asia-Pacific regions, UK research institutions (particularly those in Manchester, Leeds, and Newcastle) are increasingly contributing to spatial computing and AI safety frameworks; however, dedicated North England metaverse innovation hubs remain nascent compared to established tech clusters
 
-- Technical capabilities and limitations
+  - Technical capabilities and limitations
   - Real-time biometric data processing (eye-tracking, heart rate, brain-computer interface signals) enables dynamic environmental adaptation based on user emotional states
   - Backend resource allocation optimisation reduces computational bottlenecks in large-scale virtual environments
   - Current limitations include bandwidth constraints for haptic feedback synchronisation, persistent latency challenges in cross-platform avatar interactions, and the computational expense of maintaining procedurally generated content fidelity
   - Privacy and data governance remain unresolved technical challenges, particularly regarding continuous biometric monitoring
 
-- Standards and frameworks
+  - Standards and frameworks
   - Interoperability protocols for avatar movement and content sharing across disparate metaverse platforms remain under development
   - No universally adopted technical standards currently exist; proprietary implementations dominate the landscape
   - IEEE and academic consortia are beginning to establish foundational frameworks, though consensus remains elusive
 
-## Research & Literature
+  #### Academic Context
+  - Artificial Intelligence Systems within the metaverse represent the foundational computational layer enabling immersive digital environments
+  - AI functions as the animating force rather than a peripheral enhancement, determining how virtual worlds respond to user interactions in real-time
+  - The integration of AI with metaverse infrastructure has evolved from theoretical speculation to operational necessity across multiple sectors
+  - Academic consensus now positions AI as indispensable to metaverse viability, not merely supplementary
 
-- Key academic papers and sources
-  - Lee, L. H., Braud, T., Zhou, P., Wang, L., Xu, D., Lin, Z., Kumar, A., Bermak, A., & Hui, P. (2021). All one needs to know about metaverse: A complete survey on technological singularity, virtual ecosystem, and research agenda. *Journal of Latex Class Files*, 14(8), 1–47. [Foundational metaverse definition and technological taxonomy]
-  - Damar, H. (2021). Metaverse shape of your life in virtual spaces: Fashion, entertainment, education and beyond. *Journal of Metaverse*, 1(1), 1–10. [Early conceptualisation of metaverse applications across sectors]
-  - Pearlman, K. (2025). XR Safety Initiative research on immersive environment governance and user protection frameworks. [Ongoing work on safety standards and ethical implementation]
-  - Ball, M. (2024). The metaverse: And how it will revolutionise everything. *Liveright Publishing*. [Comprehensive analysis of metaverse economic and social implications]
-  - Brookings Institution. (2025). AI makes rules for the metaverse even more important. Policy brief examining governance implications of AI-driven virtual worlds. [Critical examination of regulatory and ethical dimensions]
-
-- Ongoing research directions
-  - Interoperability standards development across competing metaverse platforms
-  - Privacy-preserving biometric data processing methodologies
-  - Ethical frameworks for AI decision-making in immersive environments
-  - Scalability solutions for supporting billions of concurrent users
-  - Brain-computer interface integration and safety protocols
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - UK academic institutions are contributing to XR safety frameworks and spatial computing research, though commercial metaverse development remains limited compared to North American and Asian competitors
   - The UK's existing strengths in gaming infrastructure (Unreal Engine adoption, game development expertise) position it favourably for metaverse-adjacent technologies, though dedicated metaverse platforms remain underdeveloped
 
-- North England innovation hubs
+  - North England innovation hubs
   - Manchester: Emerging research clusters in immersive technologies and AI safety at university research centres; limited commercial metaverse deployment
   - Leeds and Sheffield: Growing interest in spatial computing applications within manufacturing and industrial sectors, though primarily focused on augmented reality rather than fully immersive metaverse environments
   - Newcastle: Academic research into human-computer interaction and biometric data processing, with potential applications to metaverse user experience design
   - Regional case studies remain sparse; North England has not yet established dedicated metaverse innovation hubs comparable to established tech clusters
 
-## Future Directions
-
-- Emerging trends and developments
+  #### Future Directions
+  - Emerging trends and developments
   - Procedural content generation will increasingly reduce manual asset creation, enabling rapid world expansion
   - Biometric-responsive environments will become standard, personalising experiences at unprecedented granularity (though raising significant privacy concerns)
   - Interoperability protocols will gradually emerge, though proprietary lock-in will likely persist in dominant platforms
   - AI systems will increasingly manage economic transactions and resource allocation within virtual worlds
 
-- Anticipated challenges
+  - Anticipated challenges
   - Privacy erosion through continuous biometric monitoring and behavioural analysis
   - Regulatory fragmentation across jurisdictions, particularly regarding data protection and consumer safeguards
   - Computational resource demands may exacerbate environmental concerns
   - Potential for algorithmic bias in AI-driven content moderation and user experience personalisation
   - The blurring of real-world and virtual-world harms, requiring novel legal frameworks
 
-- Research priorities
+  - Research priorities
   - Development of transparent, auditable AI decision-making systems within immersive environments
   - Privacy-by-design methodologies for biometric data collection and processing
   - Equitable access frameworks to prevent digital divides in metaverse participation
   - Standardised safety protocols for brain-computer interface integration
   - Longitudinal studies examining psychological and social impacts of prolonged immersive experiences
 
-## References
+  #### Research & Literature
+  - Key academic papers and sources
+  - Lee, L. H., Braud, T., Zhou, P., Wang, L., Xu, D., Lin, Z., Kumar, A., Bermak, A., & Hui, P. (2021). All one needs to know about metaverse: A complete survey on technological singularity, virtual ecosystem, and research agenda. *Journal of Latex Class Files*, 14(8), 1–47. [Foundational metaverse definition and technological taxonomy]
+  - Damar, H. (2021). Metaverse shape of your life in virtual spaces: Fashion, entertainment, education and beyond. *Journal of Metaverse*, 1(1), 1–10. [Early conceptualisation of metaverse applications across sectors]
+  - Pearlman, K. (2025). XR Safety Initiative research on immersive environment governance and user protection frameworks. [Ongoing work on safety standards and ethical implementation]
+  - Ball, M. (2024). The metaverse: And how it will revolutionise everything. *Liveright Publishing*. [Comprehensive analysis of metaverse economic and social implications]
+  - Brookings Institution. (2025). AI makes rules for the metaverse even more important. Policy brief examining governance implications of AI-driven virtual worlds. [Critical examination of regulatory and ethical dimensions]
 
-- Brookings Institution. (2025). AI makes rules for the metaverse even more important. Retrieved from Brookings Institution policy publications.
-- Damar, H. (2021). Metaverse shape of your life in virtual spaces: Fashion, entertainment, education and beyond. *Journal of Metaverse*, 1(1), 1–10.
-- Lee, L. H., Braud, T., Zhou, P., Wang, L., Xu, D., Lin, Z., Kumar, A., Bermak, A., & Hui, P. (2021). All one needs to know about metaverse: A complete survey on technological singularity, virtual ecosystem, and research agenda. *Journal of Latex Class Files*, 14(8), 1–47.
-- McKinsey & Company. (2025). What is the metaverse? Featured insights and explainers. Retrieved from McKinsey & Company publications.
-- Pearlman, K. (2025). XR Safety Initiative: Governance frameworks for immersive environments. Ongoing research programme.
-- Ball, M. (2024). *The metaverse: And how it will revolutionise everything*. Liveright Publishing.
-- IEEE Metaverse Reality Initiative. (2025). The role of artificial intelligence in the metaverse. *IEEE Publications*.
-- NTT DOCOMO. (2025). Generative AI system for automated NPC creation in metaverse environments. Technical report.
+  - Ongoing research directions
+  - Interoperability standards development across competing metaverse platforms
+  - Privacy-preserving biometric data processing methodologies
+  - Ethical frameworks for AI decision-making in immersive environments
+  - Scalability solutions for supporting billions of concurrent users
+  - Brain-computer interface integration and safety protocols
 
+  #### References
+  - Brookings Institution. (2025). AI makes rules for the metaverse even more important. Retrieved from Brookings Institution policy publications.
+  - Damar, H. (2021). Metaverse shape of your life in virtual spaces: Fashion, entertainment, education and beyond. *Journal of Metaverse*, 1(1), 1–10.
+  - Lee, L. H., Braud, T., Zhou, P., Wang, L., Xu, D., Lin, Z., Kumar, A., Bermak, A., & Hui, P. (2021). All one needs to know about metaverse: A complete survey on technological singularity, virtual ecosystem, and research agenda. *Journal of Latex Class Files*, 14(8), 1–47.
+  - McKinsey & Company. (2025). What is the metaverse? Featured insights and explainers. Retrieved from McKinsey & Company publications.
+  - Pearlman, K. (2025). XR Safety Initiative: Governance frameworks for immersive environments. Ongoing research programme.
+  - Ball, M. (2024). *The metaverse: And how it will revolutionise everything*. Liveright Publishing.
+  - IEEE Metaverse Reality Initiative. (2025). The role of artificial intelligence in the metaverse. *IEEE Publications*.
+  - NTT DOCOMO. (2025). Generative AI system for automated NPC creation in metaverse environments. Technical report.
 
-## Metadata
-
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+- ### Provenance
+  - sources:: [[IEEE 7000]]
+  - migration-date:: 2026-04-26T00:00:00Z
+  - modified:: 2026-04-26T15:00:00Z

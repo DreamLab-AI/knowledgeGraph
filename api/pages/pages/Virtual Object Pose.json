@@ -1,38 +1,44 @@
 {
-  "id": "Virtual Object Pose",
+  "id": "virtual-object-pose",
   "title": "Virtual Object Pose",
-  "content": "- ### OntologyBlock\n  id:: virtual-object-pose-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10134\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Object Pose\n\t- status:: active\n\t- definition:: The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.\n\t- owl:class:: mv:VirtualObjectPose\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[3D Transformation]]\n\t\t- related-to:: [[Motion Tracking]]\n\t\t- related-to:: [[Virtual Objects]]\n\t  id:: virtual-object-pose-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual object pose defines how 3D objects are positioned and oriented within virtual environments. Precise pose tracking enables realistic object manipulation, physics simulation, and AR/VR interactions. Pose estimation algorithms detect real-world object positions for digital overlay applications.\n- ## Technical Details\n\t- ### Pose Components\n\t\t- **Translation**: X, Y, Z position in world coordinates\n\t\t- **Rotation**: Orientation as quaternion or Euler angles\n\t\t- **Scale**: Size multiplier in each axis\n\t\t- **Transform Matrix**: Combined 4x4 transformation\n\t- ### Tracking Methods\n\t\t- Marker-based tracking (fiducial markers)\n\t\t- Markerless computer vision\n\t\t- Sensor fusion (IMU + optical)\n\t\t- SLAM for environment-relative positioning\n\t- ### Applications in XR\n\t\t- Object placement in AR scenes\n\t\t- Hand and object interaction tracking\n\t\t- Physics simulation anchor points\n\t\t- Avatar body and hand poses\n- ## Applications\n\t- AR object placement and anchoring\n\t- Motion capture animation\n\t- Robotic manipulation in virtual twins\n\t- Interactive 3D user interfaces\n\t- Physics-based simulation",
-  "backlinks": [
-    "Spatial Anchor"
-  ],
+  "content": "- ### Definition\n  - The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualObjectPose\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Spatial Computing]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual object pose defines how 3D objects are positioned and oriented within virtual environments. Precise pose tracking enables realistic object manipulation, physics simulation, and AR/VR interactions. Pose estimation algorithms detect real-world object positions for digital overlay applications.\n  - ## Technical Details\n  - ### Pose Components\n\t\t- **Translation**: X, Y, Z position in world coordinates\n\t\t- **Rotation**: Orientation as quaternion or Euler angles\n\t\t- **Scale**: Size multiplier in each axis\n\t\t- **Transform Matrix**: Combined 4x4 transformation\n  - ### Tracking Methods\n\t\t- Marker-based tracking (fiducial markers)\n\t\t- Markerless computer vision\n\t\t- Sensor fusion (IMU + optical)\n\t\t- SLAM for environment-relative positioning\n  - ### Applications in XR\n\t\t- Object placement in AR scenes\n\t\t- Hand and object interaction tracking\n\t\t- Physics simulation anchor points\n\t\t- Avatar body and hand poses\n  - ## Applications\n  - AR object placement and anchoring\n  - Motion capture animation\n  - Robotic manipulation in virtual twins\n  - Interactive 3D user interfaces\n  - Physics-based simulation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "3D Transformation",
     "Spatial Computing",
-    "metaverse",
-    "Motion Tracking",
-    "Virtual Objects"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-object-pose",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualObjectPose",
+    "content_hash": "sha256-12-0676aad931be",
+    "legacy_term_id": "MV-10134",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-object-pose",
+    "schema_version": "v2",
     "term_id": "MV-10134",
     "preferred_term": "Virtual Object Pose",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualObjectPose",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualObjectPose",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualObjectPose",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Spatial Computing"
@@ -45,26 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "3D Transformation",
-        "Motion Tracking",
-        "Virtual Objects"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

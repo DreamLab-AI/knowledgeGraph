@@ -1,39 +1,47 @@
 {
-  "id": "Spatial Mesh",
+  "id": "spatial-mesh",
   "title": "Spatial Mesh",
-  "content": "- ### OntologyBlock\n  id:: spatial-mesh-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10061\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Mesh\n\t- status:: active\n\t- definition:: A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.\n\t- owl:class:: mv:SpatialMesh\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-mesh-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Reconstruction]]\n\t\t- related-to:: [[Spatial Mapping]]\n\t\t- related-to:: [[Point Cloud]]\n\t\t- related-to:: [[Depth Sensing]]\n\t\t- enables:: [[AR Occlusion]]\n\t- #### Technical Components\n\t  collapsed:: true\n\t\t- Point cloud to mesh conversion\n\t\t- IMU sensor fusion for positioning\n\t\t- Depth camera integration\n\t\t- Real-time surface reconstruction\n\t\t- Meta SAM 3D for single-image 3D reconstruction\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Furniture visualization with View in Room feature\n\t\t- Surgical VR with MRI/CT 3D reconstruction\n\t\t- Architectural visualization in real spaces\n\t\t- Gaming with environmental awareness\n\t\t- Industrial digital twin creation",
+  "content": "- ### Definition\n  - A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SpatialMesh\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[3D Reconstruction]]\n  - enables:: [[AR Occlusion]]\n\n- ### Content\n\n  - #### Technical Components\n\t\t- Point cloud to mesh conversion\n\t\t- IMU sensor fusion for positioning\n\t\t- Depth camera integration\n\t\t- Real-time surface reconstruction\n\t\t- Meta SAM 3D for single-image 3D reconstruction\n  - #### Applications\n\t\t- Furniture visualization with View in Room feature\n\t\t- Surgical VR with MRI/CT 3D reconstruction\n\t\t- Architectural visualization in real spaces\n\t\t- Gaming with environmental awareness\n\t\t- Industrial digital twin creation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Mixed Reality (MR)"
   ],
   "wiki_links": [
     "3D Reconstruction",
     "AR Occlusion",
-    "Point Cloud",
-    "Spatial Mapping",
-    "metaverse",
-    "Depth Sensing"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:spatial-mesh",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SpatialMesh",
+    "content_hash": "sha256-12-b8800a317ac7",
+    "legacy_term_id": "MV-10061",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:spatial-mesh",
+    "schema_version": "v2",
     "term_id": "MV-10061",
     "preferred_term": "Spatial Mesh",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SpatialMesh",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SpatialMesh",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SpatialMesh",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "3D Reconstruction"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Spatial Mapping",
-        "Point Cloud",
-        "Depth Sensing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

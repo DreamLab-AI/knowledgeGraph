@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: machinelearningtechnique-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningTechnique
+uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-technique
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning-technique
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Machine Learning Technique
+content-hash:: sha256-12-24e9da81e8c5
+legacy-term-id:: AI-0828
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0828
-    - filename-history:: ["AI-0828-machinelearningtechnique.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0828
-    - preferred-term:: Machine Learning Technique
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Machine Learning Technique is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MachineLearningTechnique
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:MachineLearningTechnique
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Machine Learning]]
+- ### Content
+  Machine Learning Technique — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :MachineLearningTechnique))
-      (SubClassOf :MachineLearningTechnique :MachineLearning)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :MachineLearningTechnique "Machine Learning Technique"@en)
-      ```
-
-- ## About Machine Learning Technique
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

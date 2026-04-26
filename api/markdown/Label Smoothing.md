@@ -1,138 +1,53 @@
-- ### OntologyBlock
-  id:: label-smoothing-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0289
-	- preferred-term:: Label Smoothing
-	- source-domain:: mv
-	- status:: draft
-- definition:: A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
+iri:: http://narrativegoldmine.com/spatial-computing#LabelSmoothing
+uri:: urn:visionclaw:concept:spatial-computing:label-smoothing
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:label-smoothing
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Label Smoothing
+content-hash:: sha256-12-900ab4594489
+legacy-term-id:: AI-0289
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LabelSmoothing
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :LabelSmoothing))
+- ### Content
+  - A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :LabelSmoothing "Label Smoothing"@en)
-(AnnotationAssertion rdfs:comment :LabelSmoothing "A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation."@en)
+  - # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :LabelSmoothing "AI-0289"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :LabelSmoothing "true"^^xsd:boolean)
-```
+  - # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
 
-## Academic Context
+  - # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
 
-Label smoothing addresses the problem of models becoming overly confident in predictions by encouraging more nuanced probability distributions.
-
-## Key Characteristics
-
-- Softens hard labels
-- Improves calibration
-- Reduces overconfidence
-- Better generalisation
-- Simple regularisation
-- Widely used in vision and NLP
-
-**Formula**:
-```
-y_smooth = (1-ε)y_true + ε/K
-where:
-- ε: smoothing parameter (e.g., 0.1)
-- K: number of classes
-```
-
-## Related Concepts
-
-- **Regularisation**: General technique class
-- **Calibration**: Property improved
-- **Mixup**: Related soft-label approach
-
-## UK English Notes
-
-- "Regularisation" (not "regularization")
-- "Generalisation" (not "generalization")
-
-**Last Updated**: 2025-10-27
-**Verification Status**: Verified against training literature
-	- maturity:: draft
-	- owl:class:: mv:LabelSmoothing
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About Label Smoothing
-	- A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
-
-- # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
-
-- # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
-
-- # GUEST WIFI - is the one labelled guest WiFi and you can put any old email in.
-
-## Academic Context
-
-Label smoothing addresses the problem of models becoming overly confident in predictions by encouraging more nuanced probability distributions.
-
-## Key Characteristics
-
-- Softens hard labels
-- Improves calibration
-- Reduces overconfidence
-- Better generalisation
-- Simple regularisation
-- Widely used in vision and NLP
-
-**Formula**:
-```
-y_smooth = (1-ε)y_true + ε/K
-where:
-- ε: smoothing parameter (e.g., 0.1)
-- K: number of classes
-```
-
-## Related Concepts
-
-- **Regularisation**: General technique class
-- **Calibration**: Property improved
-- **Mixup**: Related soft-label approach
-
-## UK English Notes
-
-- "Regularisation" (not "regularization")
-- "Generalisation" (not "generalization")
-
-**Last Updated**: 2025-10-27
-**Verification Status**: Verified against training literature
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Label Smoothing
-		  
-		  **Term ID**: AI-0289
-		  **Category**: Training Technique
-		  **Ontology Layer**: AI/ML Methodology
-		  
-		  ## Definition
-		  
-		  A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
-		  
-		  ## Academic Context
-		  
-		  Label smoothing addresses the problem of models becoming overly confident in predictions by encouraging more nuanced probability distributions.
-		  
-		  ## Key Characteristics
-		  
-		  - Softens hard labels
+  #### Key Characteristics
+  - Softens hard labels
 		  - Improves calibration
 		  - Reduces overconfidence
 		  - Better generalisation
 		  - Simple regularisation
 		  - Widely used in vision and NLP
-		  
+
 		  **Formula**:
 		  ```
 		  y_smooth = (1-ε)y_true + ε/K
@@ -140,86 +55,92 @@ where:
 		  - ε: smoothing parameter (e.g., 0.1)
 		  - K: number of classes
 		  ```
-		  
-		  ## Related Concepts
-		  
-		  - **Regularisation**: General technique class
+
+  #### Academic Context
+  Label smoothing addresses the problem of models becoming overly confident in predictions by encouraging more nuanced probability distributions.
+
+  #### Related Concepts
+  - **Regularisation**: General technique class
 		  - **Calibration**: Property improved
 		  - **Mixup**: Related soft-label approach
-		  
+
 		  ## UK English Notes
-		  
+
 		  - "Regularisation" (not "regularization")
 		  - "Generalisation" (not "generalization")
-		  
+
 		  **Last Updated**: 2025-10-27
 		  **Verification Status**: Verified against training literature
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
+  - public-access:: true
+  - definition:: A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.
 
 
 
 
-## Academic Context
+  ## Academic Context
 
-- Label smoothing is a regularisation technique primarily used in classification tasks within machine learning and deep learning.
+  - Label smoothing is a regularisation technique primarily used in classification tasks within machine learning and deep learning.
   - It replaces hard one-hot encoded labels with soft targets by distributing a small portion of the probability mass to incorrect classes.
   - This approach prevents models from becoming overly confident in their predictions, which can lead to overfitting and poor generalisation.
-- The technique was popularised by Szegedy et al. (2016) and is grounded in the principle of encouraging models to learn more generalisable representations rather than memorising training data.
-- Academically, label smoothing is understood as a modification of the target distribution in the loss function, often cross-entropy, to a convex combination of the original one-hot label and a uniform or learned noise distribution.
+  - The technique was popularised by Szegedy et al. (2016) and is grounded in the principle of encouraging models to learn more generalisable representations rather than memorising training data.
+  - Academically, label smoothing is understood as a modification of the target distribution in the loss function, often cross-entropy, to a convex combination of the original one-hot label and a uniform or learned noise distribution.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Label smoothing is widely adopted across various domains including image classification, natural language processing, and speech recognition.
+  - Label smoothing is widely adopted across various domains including image classification, natural language processing, and speech recognition.
   - It is integrated into many state-of-the-art neural network training pipelines to improve model calibration and robustness.
-- Notable platforms and organisations implementing label smoothing include leading AI research labs and commercial AI platforms such as Ultralytics HUB.
-- Technically, label smoothing reduces the tendency of models to produce overconfident logits, which improves calibration but may slightly reduce maximum achievable accuracy if over-applied.
-- Recent research highlights a nuanced balance between improved generalisation and the risk of excessive regularisation, with ongoing efforts to adapt smoothing dynamically rather than uniformly.
-- Standards and frameworks for model training increasingly recommend label smoothing as a best practice for classification tasks, often alongside other regularisation methods.
+  - Notable platforms and organisations implementing label smoothing include leading AI research labs and commercial AI platforms such as Ultralytics HUB.
+  - Technically, label smoothing reduces the tendency of models to produce overconfident logits, which improves calibration but may slightly reduce maximum achievable accuracy if over-applied.
+  - Recent research highlights a nuanced balance between improved generalisation and the risk of excessive regularisation, with ongoing efforts to adapt smoothing dynamically rather than uniformly.
+  - Standards and frameworks for model training increasingly recommend label smoothing as a best practice for classification tasks, often alongside other regularisation methods.
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers include:
+  - Key academic papers include:
   - Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., & Wojna, Z. (2016). *Rethinking the Inception Architecture for Computer Vision*. Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR). DOI: 10.1109/CVPR.2016.308
   - Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). *On Calibration of Modern Neural Networks*. Proceedings of the 34th International Conference on Machine Learning (ICML). URL: https://arxiv.org/abs/1706.04599
   - Recent 2025 studies such as the Transactions on Machine Learning Research paper (DOI: 10.5555/XXXXXX) analyse label smoothing’s impact on neural collapse phenomena and feature separability, providing theoretical insights into its role in enhancing generalisation.
-- Ongoing research explores adaptive label smoothing techniques that consider semantic relationships between classes and iterative optimisation strategies to balance regularisation and model calibration.
+  - Ongoing research explores adaptive label smoothing techniques that consider semantic relationships between classes and iterative optimisation strategies to balance regularisation and model calibration.
 
-## UK Context
+  ## UK Context
 
-- British AI research institutions, including those in Manchester and Leeds, actively contribute to advancing regularisation techniques like label smoothing, often within broader efforts on trustworthy and robust AI.
-- North England innovation hubs, such as the Alan Turing Institute’s regional partnerships and AI centres in Newcastle and Sheffield, incorporate label smoothing in applied projects spanning healthcare imaging and natural language processing.
-- Regional case studies demonstrate the use of label smoothing in improving diagnostic AI tools and language models tailored for UK English dialects, reflecting local linguistic nuances.
+  - British AI research institutions, including those in Manchester and Leeds, actively contribute to advancing regularisation techniques like label smoothing, often within broader efforts on trustworthy and robust AI.
+  - North England innovation hubs, such as the Alan Turing Institute’s regional partnerships and AI centres in Newcastle and Sheffield, incorporate label smoothing in applied projects spanning healthcare imaging and natural language processing.
+  - Regional case studies demonstrate the use of label smoothing in improving diagnostic AI tools and language models tailored for UK English dialects, reflecting local linguistic nuances.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends include:
+  - Emerging trends include:
   - Development of adaptive and discrimination-aware label smoothing methods that dynamically adjust smoothing parameters based on data characteristics and model feedback.
   - Integration of label smoothing with other calibration techniques such as temperature scaling, with careful attention to their combined effects.
-- Anticipated challenges involve balancing smoothing strength to avoid underfitting while maintaining improved calibration and generalisation.
-- Research priorities focus on understanding label smoothing’s interaction with model architectures, loss landscapes, and real-world deployment scenarios, especially in safety-critical applications.
+  - Anticipated challenges involve balancing smoothing strength to avoid underfitting while maintaining improved calibration and generalisation.
+  - Research priorities focus on understanding label smoothing’s interaction with model architectures, loss landscapes, and real-world deployment scenarios, especially in safety-critical applications.
 
-## References
+  ## References
 
-1. Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., & Wojna, Z. (2016). Rethinking the Inception Architecture for Computer Vision. *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*. DOI: 10.1109/CVPR.2016.308
+  1. Szegedy, C., Vanhoucke, V., Ioffe, S., Shlens, J., & Wojna, Z. (2016). Rethinking the Inception Architecture for Computer Vision. *Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition (CVPR)*. DOI: 10.1109/CVPR.2016.308
 
-2. Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. *Proceedings of the 34th International Conference on Machine Learning (ICML)*. URL: https://arxiv.org/abs/1706.04599
+  2. Guo, C., Pleiss, G., Sun, Y., & Weinberger, K. Q. (2017). On Calibration of Modern Neural Networks. *Proceedings of the 34th International Conference on Machine Learning (ICML)*. URL: https://arxiv.org/abs/1706.04599
 
-3. Anonymous (2025). Cross Entropy versus Label Smoothing: A Neural Collapse Perspective. *Transactions on Machine Learning Research*. DOI: 10.5555/XXXXXX
+  3. Anonymous (2025). Cross Entropy versus Label Smoothing: A Neural Collapse Perspective. *Transactions on Machine Learning Research*. DOI: 10.5555/XXXXXX
 
-4. Desai, K., & Durrett, G. (2020). Adaptive Label Smoothing for Text Classification. *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics*. DOI: 10.18653/v1/2020.acl-main.XXX
+  4. Desai, K., & Durrett, G. (2020). Adaptive Label Smoothing for Text Classification. *Proceedings of the 58th Annual Meeting of the Association for Computational Linguistics*. DOI: 10.18653/v1/2020.acl-main.XXX
 
-5. Ying, Z. (2019). Regularisation Techniques in Deep Learning: A Survey. *Journal of Machine Learning Research*, 20(1), 1-45. URL: https://jmlr.org/papers/v20/18-123.html
+  5. Ying, Z. (2019). Regularisation Techniques in Deep Learning: A Survey. *Journal of Machine Learning Research*, 20(1), 1-45. URL: https://jmlr.org/papers/v20/18-123.html
 
-(And yes, label smoothing is the machine learning equivalent of telling your model, “Don’t be so sure, you might be wrong!” — a gentle nudge towards humility in the face of data.)
+  (And yes, label smoothing is the machine learning equivalent of telling your model, “Don’t be so sure, you might be wrong!” — a gentle nudge towards humility in the face of data.)
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

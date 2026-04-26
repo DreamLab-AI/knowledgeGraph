@@ -1,46 +1,65 @@
-- ### OntologyBlock
-  id:: user-interface-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10097
-	- source-domain:: mv
-	- preferred-term:: User Interface Architecture
-	- status:: active
-	- definition:: The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.
-	- owl:class:: mv:UserInterfaceArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[System Architecture]]
-		- related-to:: [[User Experience]]
-		- related-to:: [[Interaction Design]]
-		- related-to:: [[Accessibility]]
-	  id:: user-interface-architecture-relationships
-	  collapsed:: true
-- ## Overview
-	- User interface architecture in metaverse contexts must accommodate 3D spatial interactions, multiple input modalities (gesture, voice, gaze, controllers), and cross-platform consistency while maintaining usability and accessibility.
-- ## Technical Details
-	- ### Interface Paradigms
+iri:: http://narrativegoldmine.com/spatial-computing#UserInterfaceArchitecture
+uri:: urn:visionclaw:concept:spatial-computing:user-interface-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:user-interface-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: User Interface Architecture
+content-hash:: sha256-12-ceb2265e8a52
+legacy-term-id:: MV-10097
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:UserInterfaceArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[System Architecture]]
+
+- ### Content
+
+  - ## Overview
+  - User interface architecture in metaverse contexts must accommodate 3D spatial interactions, multiple input modalities (gesture, voice, gaze, controllers), and cross-platform consistency while maintaining usability and accessibility.
+  - ## Technical Details
+  - ### Interface Paradigms
 		- **Spatial UI**: 3D interfaces anchored in virtual space
 		- **Diegetic UI**: Interfaces integrated into the virtual world
 		- **Non-Diegetic UI**: Traditional overlay interfaces
 		- **Adaptive UI**: Context-responsive interface layouts
-	- ### Input Modalities
+  - ### Input Modalities
 		- Hand tracking and gesture recognition
 		- Voice commands and natural language
 		- Eye gaze and head tracking
 		- Physical controllers and haptics
 		- Brain-computer interfaces (emerging)
-	- ### Design Principles
+  - ### Design Principles
 		- Spatial depth and hierarchy
 		- Reachability and comfort zones
 		- Visual comfort and readability
 		- Cross-platform consistency
 		- Accessibility compliance
-- ## Applications
-	- VR application menu systems
-	- AR overlay interfaces
-	- Metaverse social hubs
-	- Virtual workspace design
-	- Gaming HUD and inventory systems
+  - ## Applications
+  - VR application menu systems
+  - AR overlay interfaces
+  - Metaverse social hubs
+  - Virtual workspace design
+  - Gaming HUD and inventory systems
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

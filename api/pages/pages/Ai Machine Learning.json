@@ -1,64 +1,84 @@
 {
-  "id": "Ai Machine Learning",
+  "id": "ai-machine-learning",
   "title": "Ai Machine Learning",
-  "content": "- ### OntologyBlock\n  id:: ai-machine-learning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9762\n\t- source-domain:: mv\n\t- preferred-term:: Ai Machine Learning\n\t- status:: active\n\t- definition:: AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.\n\t- owl:class:: mv:AiMachineLearning\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Artificial Intelligence]]\n\t- enables:: [[Smart Virtual Environments]], [[Adaptive NPCs]], [[Personalized Experiences]], [[Content Generation]]\n\t- requires:: [[Training Data]], [[Computational Infrastructure]], [[Neural Network Architectures]]\n\t- #### Relationships\n\t  id:: ai-machine-learning-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Deep Learning**: Neural network architectures for image recognition, speech processing, and decision-making\n- **Natural Language Processing (NLP)**: Enabling intelligent virtual assistants and NPC dialogue systems\n- **Computer Vision**: Powering avatar interactions, gesture recognition, and environmental understanding\n- **Generative AI (AIGC)**: Autonomous creation of images, text, music, and video content\n\n### Market Context\nThe metaverse market is projected to reach $1.3 trillion by 2030 with a 48% CAGR, driven by AI and ML capabilities.",
+  "content": "- ### Definition\n  - AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AiMachineLearning\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - requires:: [[Training Data]], [[Computational Infrastructure]], [[Neural Network Architectures]]\n  - enables:: [[Smart Virtual Environments]], [[Adaptive NPCs]], [[Personalized Experiences]], [[Content Generation]]\n  - bridges-to:: [[Computer Vision]] (ai)\n\n- ### Content\n\n  ### Technical Details\n  Key components include:\n  - **Deep Learning**: Neural network architectures for image recognition, speech processing, and decision-making\n  - **Natural Language Processing (NLP)**: Enabling intelligent virtual assistants and NPC dialogue systems\n  - **Computer Vision**: Powering avatar interactions, gesture recognition, and environmental understanding\n  - **Generative AI (AIGC)**: Autonomous creation of images, text, music, and video content\n\n  ### Market Context\n  The metaverse market is projected to reach $1.3 trillion by 2030 with a 48% CAGR, driven by AI and ML capabilities.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Personalized Experiences",
-    "Training Data",
-    "Content Generation",
-    "Computational Infrastructure",
-    "metaverse",
-    "Smart Virtual Environments",
     "Adaptive NPCs",
-    "Neural Network Architectures"
+    "Artificial Intelligence",
+    "Computational Infrastructure",
+    "Computer Vision",
+    "Content Generation",
+    "Neural Network Architectures",
+    "Personalized Experiences",
+    "Smart Virtual Environments",
+    "Training Data",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-machine-learning",
+    "iri": "http://narrativegoldmine.com/metaverse#AiMachineLearning",
+    "content_hash": "sha256-12-88193b63174f",
+    "legacy_term_id": "MV-9762",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-machine-learning",
+    "schema_version": "v2",
     "term_id": "MV-9762",
     "preferred_term": "Ai Machine Learning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AiMachineLearning",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "AI Machine Learning in the metaverse context refers to the application of artificial intelligence algorithms, neural networks, and deep learning architectures that enable intelligent virtual environments through natural language processing, computer vision, procedural content generation, and adaptive user experiences.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:AiMachineLearning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AiMachineLearning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Training Data",
+      "Computational Infrastructure",
+      "Neural Network Architectures"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Smart Virtual Environments",
+      "Adaptive NPCs",
+      "Personalized Experiences",
+      "Content Generation"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Computer Vision"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

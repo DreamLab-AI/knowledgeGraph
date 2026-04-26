@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9704-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9704
-	- preferred-term:: Technical Architecture Framework
-	- source-domain:: mv
-	- owl:class:: mv:TechnicalArchitectureFramework
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#TechnicalArchitectureFramework
+uri:: urn:visionclaw:concept:spatial-computing:technical-architecture-framework
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:technical-architecture-framework
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Technical Architecture Framework
+content-hash:: sha256-12-da9a8c50895b
+legacy-term-id:: MV-9704
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Technical Architecture Framework is a concept within the metaverse domain. Further enrichment pending.
 
-Technical Architecture Framework represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:TechnicalArchitectureFramework
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Technical Architecture Framework represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,183 +1,197 @@
-- ### OntologyBlock
-  id:: mathematical-hard-problems-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9957
-	- source-domain:: mv
-	- preferred-term:: Mathematical Hard Problems
-	- status:: active
-	- owl:class:: mv:MathematicalHardProblems
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.
-	- #### Relationships
-	  id:: mathematical-hard-problems-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Cryptographic Security]]
-		- related-to:: [[Post-Quantum Cryptography]]
-		- related-to:: [[Blockchain Security]]
-		- enables:: [[Secure Digital Systems]]
+iri:: http://narrativegoldmine.com/spatial-computing#MathematicalHardProblems
+uri:: urn:visionclaw:concept:spatial-computing:mathematical-hard-problems
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:mathematical-hard-problems
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Mathematical Hard Problems
+content-hash:: sha256-12-2da9f2ec8d37
+legacy-term-id:: MV-9957
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Cryptographic Foundations
+- ### Definition
+  - Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.
 
-### Core Principle
-- Hardness assumptions underpin cryptography
-- Ensure encryption cannot be broken
-- Computational intractability
-- Security guarantees
-- Provable security
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MathematicalHardProblems
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Traditional Problems
-- Integer factorisation
-- Discrete logarithms
-- Elliptic curve problems
-- RSA security basis
-- ECC foundations
+- ### Relationships
+  - is-subclass-of:: [[Cryptographic Security]]
+  - enables:: [[Secure Digital Systems]]
 
-## Quantum Vulnerability
+- ### Content
 
-### Shor's Algorithm
-- Factorisation threat
-- Discrete log vulnerability
-- ECC compromise
-- Polynomial time solutions
-- Blockchain risk
+  ## Cryptographic Foundations
 
-### Impact Areas
-- Current cryptography
-- Bitcoin security
-- Smart contracts
-- Digital signatures
-- Key exchange
+  ### Core Principle
+  - Hardness assumptions underpin cryptography
+  - Ensure encryption cannot be broken
+  - Computational intractability
+  - Security guarantees
+  - Provable security
 
-## Post-Quantum Cryptography
+  ### Traditional Problems
+  - Integer factorisation
+  - Discrete logarithms
+  - Elliptic curve problems
+  - RSA security basis
+  - ECC foundations
 
-### Lattice-Based Problems
-- Shortest Vector Problem (SVP)
-- Learning With Errors (LWE)
-- Ring-LWE variants
-- Module-LWE
-- Quantum resistance
+  ## Quantum Vulnerability
 
-### Lattice Advantages
-- Strong resistance
-- Theoretical foundation
-- Practical implementations
-- NIST standardisation
-- Industry adoption
+  ### Shor's Algorithm
+  - Factorisation threat
+  - Discrete log vulnerability
+  - ECC compromise
+  - Polynomial time solutions
+  - Blockchain risk
 
-## Alternative Approaches
+  ### Impact Areas
+  - Current cryptography
+  - Bitcoin security
+  - Smart contracts
+  - Digital signatures
+  - Key exchange
 
-### Hash-Based Cryptography
-- No exploitable structure
-- Quantum-safe design
-- Brute force resistance
-- Doubled hash sizes
-- Proven security
+  ## Post-Quantum Cryptography
 
-### Code-Based Cryptography
-- Random linear codes
-- Syndrome Decoding Problem
-- NP-hard classification
-- Long-standing security
-- McEliece system
+  ### Lattice-Based Problems
+  - Shortest Vector Problem (SVP)
+  - Learning With Errors (LWE)
+  - Ring-LWE variants
+  - Module-LWE
+  - Quantum resistance
 
-### Isogeny-Based
-- Supersingular elliptic curves
-- Isogeny path problems
-- Compact key sizes
-- SIDH, SIKE schemes
-- Research active
+  ### Lattice Advantages
+  - Strong resistance
+  - Theoretical foundation
+  - Practical implementations
+  - NIST standardisation
+  - Industry adoption
 
-## Implementation Challenges
+  ## Alternative Approaches
 
-### Performance Limitations
-- 4-10x memory increase
-- Computational overhead
-- Key size explosion
-- Bandwidth requirements
-- Processing speed
+  ### Hash-Based Cryptography
+  - No exploitable structure
+  - Quantum-safe design
+  - Brute force resistance
+  - Doubled hash sizes
+  - Proven security
 
-### Blockchain Constraints
-- 78% cite 10KB+ keys
-- Network bottleneck
-- Transaction size
-- Storage requirements
-- Verification speed
+  ### Code-Based Cryptography
+  - Random linear codes
+  - Syndrome Decoding Problem
+  - NP-hard classification
+  - Long-standing security
+  - McEliece system
 
-### Developer Expertise
-- 76% expertise gap
-- Cryptography complexity
-- Blockchain knowledge
-- Implementation errors
-- Security auditing
+  ### Isogeny-Based
+  - Supersingular elliptic curves
+  - Isogeny path problems
+  - Compact key sizes
+  - SIDH, SIKE schemes
+  - Research active
 
-## Problem Hardness Classes
+  ## Implementation Challenges
 
-### NP-Hard Problems
-- Travelling salesman
-- Boolean satisfiability
-- Graph colouring
-- Subset sum
-- Knapsack problem
+  ### Performance Limitations
+  - 4-10x memory increase
+  - Computational overhead
+  - Key size explosion
+  - Bandwidth requirements
+  - Processing speed
 
-### Computational Complexity
-- P vs NP question
-- Polynomial time
-- Exponential scaling
-- Reduction proofs
-- Hardness assumptions
+  ### Blockchain Constraints
+  - 78% cite 10KB+ keys
+  - Network bottleneck
+  - Transaction size
+  - Storage requirements
+  - Verification speed
 
-## Research Directions
+  ### Developer Expertise
+  - 76% expertise gap
+  - Cryptography complexity
+  - Blockchain knowledge
+  - Implementation errors
+  - Security auditing
 
-### New Problem Search
-- Harder problems needed
-- Quantum-resistant
-- Classical-resistant
-- Efficient verification
-- Compact proofs
+  ## Problem Hardness Classes
 
-### Hybrid Approaches
-- Classical + quantum-safe
-- Layered security
-- Transition strategies
-- Backward compatibility
-- Future-proofing
+  ### NP-Hard Problems
+  - Travelling salesman
+  - Boolean satisfiability
+  - Graph colouring
+  - Subset sum
+  - Knapsack problem
 
-## Blockchain Applications
+  ### Computational Complexity
+  - P vs NP question
+  - Polynomial time
+  - Exponential scaling
+  - Reduction proofs
+  - Hardness assumptions
 
-### Current Usage
-- Bitcoin mining (SHA-256)
-- Ethereum signatures
-- Smart contract security
-- Consensus mechanisms
-- Digital identity
+  ## Research Directions
 
-### Future Requirements
-- Quantum-safe chains
-- Upgraded protocols
-- Migration paths
-- Asset protection
-- Long-term security
+  ### New Problem Search
+  - Harder problems needed
+  - Quantum-resistant
+  - Classical-resistant
+  - Efficient verification
+  - Compact proofs
 
-## Security Standards
+  ### Hybrid Approaches
+  - Classical + quantum-safe
+  - Layered security
+  - Transition strategies
+  - Backward compatibility
+  - Future-proofing
 
-### NIST Post-Quantum
-- CRYSTALS-Kyber
-- CRYSTALS-Dilithium
-- FALCON
-- SPHINCS+
-- Standardisation complete
+  ## Blockchain Applications
 
-### Industry Adoption
-- Enterprise readiness
-- Transition planning
-- Crypto-agility
-- Algorithm updates
-- Compliance requirements
+  ### Current Usage
+  - Bitcoin mining (SHA-256)
+  - Ethereum signatures
+  - Smart contract security
+  - Consensus mechanisms
+  - Digital identity
 
-## Metadata
+  ### Future Requirements
+  - Quantum-safe chains
+  - Upgraded protocols
+  - Migration paths
+  - Asset protection
+  - Long-term security
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Security Standards
+
+  ### NIST Post-Quantum
+  - CRYSTALS-Kyber
+  - CRYSTALS-Dilithium
+  - FALCON
+  - SPHINCS+
+  - Standardisation complete
+
+  ### Industry Adoption
+  - Enterprise readiness
+  - Transition planning
+  - Crypto-agility
+  - Algorithm updates
+  - Compliance requirements
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

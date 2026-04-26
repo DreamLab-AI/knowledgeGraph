@@ -1,63 +1,65 @@
 {
-  "id": "Online Learning",
+  "id": "online-learning",
   "title": "Online Learning",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1012\n  - preferred-term:: Online Learning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:OnlineLearning\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Reinforcement Learning]]\n- skos:related:: [[Continual Learning]]\n- skos:related:: [[Incremental Learning]]\n- uses:: [[Stochastic Gradient Descent]]\n- enables:: [[Adaptive Systems]]\n- enables:: [[Real-Time Learning]]\n\n### Definition\nOnline learning is a machine learning paradigm where the model learns incrementally from a stream of data, updating itself after each example or small batch, rather than training on a complete dataset at once. This approach is essential for applications where data arrives continuously, storage is limited, or the underlying distribution changes over time (concept drift).\n\n### Key Characteristics\n- Sequential data processing\n- Immediate model updates\n- Single-pass through data\n- Constant memory requirements\n- Adaptation to distribution shifts\n- No need to store entire dataset\n\n### Learning Protocol\n1. Receive new example x_t\n2. Predict output ŷ_t\n3. Receive true label y_t\n4. Suffer loss ℓ(ŷ_t, y_t)\n5. Update model parameters\n6. Repeat for next example\n\n### Common Algorithms\n**Linear Models:**\n- Perceptron\n- Online gradient descent\n- Follow-the-regularized-leader (FTRL)\n- Adaptive learning rate methods (AdaGrad, Adam)\n\n**Online Ensemble Methods:**\n- Online bagging\n- Online boosting\n- Streaming Random Forests\n\n**Bandit Algorithms:**\n- Upper Confidence Bound (UCB)\n- Thompson Sampling\n- Exp3 (exponential-weight algorithm)\n\n### Performance Metrics\n**Regret:**\n- Cumulative loss compared to best fixed strategy\n- Goal: minimize regret over time\n- Sublinear regret indicates learning\n\n**Mistake Bounds:**\n- Maximum errors before convergence\n- Theoretical guarantees for specific algorithms\n\n### Challenges\n**Concept Drift:**\n- Data distribution changes over time\n- Requires detection and adaptation mechanisms\n- Types: sudden, gradual, incremental, recurring\n\n**Catastrophic Forgetting:**\n- New data overwrites old knowledge\n- Balance plasticity vs. stability\n\n**Limited Feedback:**\n- May not receive labels immediately\n- Delayed feedback complicates learning\n\n### Applications\n- Online advertising (click-through rate prediction)\n- Financial trading (adaptive strategies)\n- Spam filtering (evolving spam patterns)\n- Recommendation systems (user preference changes)\n- Network intrusion detection\n- Social media trend analysis\n- Robotics (environmental adaptation)\n\n### Advantages\n- Memory efficient\n- Adapts to changing data\n- Low latency predictions\n- Suitable for streaming data\n- Can handle infinite data streams\n\n### Related Concepts\n- Incremental learning (similar, often used interchangeably)\n- Lifelong learning (retaining knowledge across tasks)\n- Continual learning (learning new tasks without forgetting)",
-  "backlinks": [
-    "Active Learning"
-  ],
+  "content": "- ### Definition\n  - Online Learning is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:OnlineLearning\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Machine Learning]]\n  - enables:: [[Real-Time Learning]]\n\n- ### Content\n\n  #### Key Characteristics\n  - Sequential data processing\n  - Immediate model updates\n  - Single-pass through data\n  - Constant memory requirements\n  - Adaptation to distribution shifts\n  - No need to store entire dataset\n\n  ### Learning Protocol\n  1. Receive new example x_t\n  2. Predict output ŷ_t\n  3. Receive true label y_t\n  4. Suffer loss ℓ(ŷ_t, y_t)\n  5. Update model parameters\n  6. Repeat for next example\n\n  ### Common Algorithms\n  **Linear Models:**\n  - Perceptron\n  - Online gradient descent\n  - Follow-the-regularized-leader (FTRL)\n  - Adaptive learning rate methods (AdaGrad, Adam)\n\n  **Online Ensemble Methods:**\n  - Online bagging\n  - Online boosting\n  - Streaming Random Forests\n\n  **Bandit Algorithms:**\n  - Upper Confidence Bound (UCB)\n  - Thompson Sampling\n  - Exp3 (exponential-weight algorithm)\n\n  ### Performance Metrics\n  **Regret:**\n  - Cumulative loss compared to best fixed strategy\n  - Goal: minimize regret over time\n  - Sublinear regret indicates learning\n\n  **Mistake Bounds:**\n  - Maximum errors before convergence\n  - Theoretical guarantees for specific algorithms\n\n  ### Challenges\n  **Concept Drift:**\n  - Data distribution changes over time\n  - Requires detection and adaptation mechanisms\n  - Types: sudden, gradual, incremental, recurring\n\n  **Catastrophic Forgetting:**\n  - New data overwrites old knowledge\n  - Balance plasticity vs. stability\n\n  **Limited Feedback:**\n  - May not receive labels immediately\n  - Delayed feedback complicates learning\n\n  ### Applications\n  - Online advertising (click-through rate prediction)\n  - Financial trading (adaptive strategies)\n  - Spam filtering (evolving spam patterns)\n  - Recommendation systems (user preference changes)\n  - Network intrusion detection\n  - Social media trend analysis\n  - Robotics (environmental adaptation)\n\n  ### Advantages\n  - Memory efficient\n  - Adapts to changing data\n  - Low latency predictions\n  - Suitable for streaming data\n  - Can handle infinite data streams\n\n  ### Definition\n  Online learning is a machine learning paradigm where the model learns incrementally from a stream of data, updating itself after each example or small batch, rather than training on a complete dataset at once. This approach is essential for applications where data arrives continuously, storage is limited, or the underlying distribution changes over time (concept drift).\n\n  #### Related Concepts\n  - Incremental learning (similar, often used interchangeably)\n  - Lifelong learning (retaining knowledge across tasks)\n  - Continual learning (learning new tasks without forgetting)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Incremental Learning",
-    "Stochastic Gradient Descent",
-    "Reinforcement Learning",
-    "Real-Time Learning",
-    "Continual Learning",
     "Machine Learning",
-    "Adaptive Systems"
+    "Real-Time Learning"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:online-learning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#OnlineLearning",
+    "content_hash": "sha256-12-00f1f4ccf5bf",
+    "legacy_term_id": "AI-1012",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:online-learning",
+    "schema_version": "v2",
     "term_id": "AI-1012",
     "preferred_term": "Online Learning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#OnlineLearning",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Online Learning is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:OnlineLearning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:OnlineLearning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Machine Learning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Real-Time Learning"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,38 +1,47 @@
 {
-  "id": "Land Parcel",
+  "id": "land-parcel",
   "title": "Land Parcel",
-  "content": "- ### OntologyBlock\n  id:: land-parcel-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9939\n\t- source-domain:: mv\n\t- preferred-term:: Land Parcel\n\t- status:: active\n\t- owl:class:: mv:LandParcel\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.\n\t- #### Relationships\n\t  id:: land-parcel-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual Asset]]\n\t\t- related-to:: [[Non Fungible Token]]\n\t\t- related-to:: [[Virtual Real Estate]]\n\t\t- enables:: [[Metaverse Development]]\n\n## Definition and Nature\n\n### What Land Parcels Are\n- Parcels of land in virtual worlds\n- Programmable digital spaces\n- Unique pixel configurations\n- NFT-secured ownership\n- Digital deed equivalents\n\n### NFT Function\n- Digital proof of ownership\n- Transfer rights enabled\n- Transaction history recorded\n- Title work eliminated\n- 21st-century deeds\n\n## Major Platforms\n\n### Decentraland\n- 90,601 total land parcels\n- Each parcel is an NFT\n- 16m x 16m parcel size\n- MANA token transactions\n- Ethereum blockchain based\n\n### The Sandbox\n- 62% market share dominance\n- 166,464 total LANDs\n- 96m x 96m parcel size\n- SAND token economy\n- 0.13 ETH floor price (2024)\n\n### Voxels (Cryptovoxels)\n- Originally 3,026 parcels\n- Expanded to 8,555 parcels\n- Smallest major metaverse\n- Continuous expansion model\n- Developer-friendly platform\n\n### Somnium Space\n- Launched 2018\n- VR-focused offerings\n- 5,026 land parcels\n- Uneven division\n- NFT art emphasis\n\n## Market Statistics\n\n### Growth Projections\n- 37.73% expansion 2024-2030\n- $5.37B growth through 2026\n- Technavio Research forecast\n- Continued investment interest\n- Market maturation\n\n### Notable Sales\n- $4.3M Sandbox sale (Dec 2021)\n- All-time record purchase\n- Premium location value\n- Brand investment driver\n- Market benchmark\n\n## Brand Participation\n\n### Corporate Investments\n- HSBC The Sandbox presence\n- Samsung RecycleUp Fashion show\n- Nike virtual store\n- Game experiences hosted\n- NFT merchandise sales\n\n### Business Applications\n- Virtual service environments\n- Brand experience centres\n- Event hosting venues\n- Customer engagement\n- Marketing innovation\n\n## Purchasing Process\n\n### Requirements\n- Digital crypto wallet\n- Cryptocurrency holdings\n- Platform account creation\n- Wallet-platform linking\n- Transaction capability\n\n### Steps\n- Wallet setup and funding\n- Platform registration\n- Account connection\n- Parcel selection\n- Purchase execution\n\n## Use Cases\n\n### Socialisation\n- Virtual meetups\n- Community building\n- Event hosting\n- Avatar interaction\n- Social networking\n\n### Commercial\n- NFT galleries\n- Virtual stores\n- Business offices\n- Entertainment venues\n- Advertising spaces\n\n### Gaming\n- Game development\n- Experience creation\n- Player hosting\n- Content monetisation\n- Interactive entertainment\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:LandParcel\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Asset]]\n  - enables:: [[Metaverse Development]]\n\n- ### Content\n\n  ## Definition and Nature\n\n  ### What Land Parcels Are\n  - Parcels of land in virtual worlds\n  - Programmable digital spaces\n  - Unique pixel configurations\n  - NFT-secured ownership\n  - Digital deed equivalents\n\n  ### NFT Function\n  - Digital proof of ownership\n  - Transfer rights enabled\n  - Transaction history recorded\n  - Title work eliminated\n  - 21st-century deeds\n\n  ## Major Platforms\n\n  ### Decentraland\n  - 90,601 total land parcels\n  - Each parcel is an NFT\n  - 16m x 16m parcel size\n  - MANA token transactions\n  - Ethereum blockchain based\n\n  ### The Sandbox\n  - 62% market share dominance\n  - 166,464 total LANDs\n  - 96m x 96m parcel size\n  - SAND token economy\n  - 0.13 ETH floor price (2024)\n\n  ### Voxels (Cryptovoxels)\n  - Originally 3,026 parcels\n  - Expanded to 8,555 parcels\n  - Smallest major metaverse\n  - Continuous expansion model\n  - Developer-friendly platform\n\n  ### Somnium Space\n  - Launched 2018\n  - VR-focused offerings\n  - 5,026 land parcels\n  - Uneven division\n  - NFT art emphasis\n\n  ## Market Statistics\n\n  ### Growth Projections\n  - 37.73% expansion 2024-2030\n  - $5.37B growth through 2026\n  - Technavio Research forecast\n  - Continued investment interest\n  - Market maturation\n\n  ### Notable Sales\n  - $4.3M Sandbox sale (Dec 2021)\n  - All-time record purchase\n  - Premium location value\n  - Brand investment driver\n  - Market benchmark\n\n  ## Brand Participation\n\n  ### Corporate Investments\n  - HSBC The Sandbox presence\n  - Samsung RecycleUp Fashion show\n  - Nike virtual store\n  - Game experiences hosted\n  - NFT merchandise sales\n\n  ### Business Applications\n  - Virtual service environments\n  - Brand experience centres\n  - Event hosting venues\n  - Customer engagement\n  - Marketing innovation\n\n  ## Purchasing Process\n\n  ### Requirements\n  - Digital crypto wallet\n  - Cryptocurrency holdings\n  - Platform account creation\n  - Wallet-platform linking\n  - Transaction capability\n\n  ### Steps\n  - Wallet setup and funding\n  - Platform registration\n  - Account connection\n  - Parcel selection\n  - Purchase execution\n\n  ## Use Cases\n\n  ### Socialisation\n  - Virtual meetups\n  - Community building\n  - Event hosting\n  - Avatar interaction\n  - Social networking\n\n  ### Commercial\n  - NFT galleries\n  - Virtual stores\n  - Business offices\n  - Entertainment venues\n  - Advertising spaces\n\n  ### Gaming\n  - Game development\n  - Experience creation\n  - Player hosting\n  - Content monetisation\n  - Interactive entertainment\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Real Estate"
   ],
   "wiki_links": [
-    "Virtual Real Estate",
-    "Virtual Asset",
-    "metaverse",
     "Metaverse Development",
-    "Non Fungible Token"
+    "Virtual Asset",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:land-parcel",
+    "iri": "http://narrativegoldmine.com/spatial-computing#LandParcel",
+    "content_hash": "sha256-12-9141f16c8fcf",
+    "legacy_term_id": "MV-9939",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:land-parcel",
+    "schema_version": "v2",
     "term_id": "MV-9939",
     "preferred_term": "Land Parcel",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#LandParcel",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:LandParcel",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:LandParcel",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Asset"
@@ -47,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Non Fungible Token",
-        "Virtual Real Estate"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

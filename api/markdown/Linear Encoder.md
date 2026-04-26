@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: linearencoder-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#LinearEncoder
+uri:: urn:visionclaw:concept:robotics:linear-encoder
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:linear-encoder
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Linear Encoder
+content-hash:: sha256-12-7cacd85d0e3d
+legacy-term-id:: RB-0158
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0158
-    - filename-history:: ["RB-0158-linearencoder.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0158
-    - preferred-term:: Linear Encoder
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Linear encoder measures linear displacement.
 
-  - **Definition**
-    - definition:: Linear encoder measures linear displacement.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:LinearEncoder
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:LinearEncoder
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Encoder]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Encoder]]
+- ### Content
+  Linear Encoder — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :LinearEncoder))
-      (SubClassOf :LinearEncoder :Encoder)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :LinearEncoder "Linear Encoder"@en)
-      (AnnotationAssertion rdfs:comment :LinearEncoder
-        "Linear encoder measures linear displacement."@en)
-      ```
-
-- ## About Linear Encoder
-  Linear encoder measures linear displacement.
-  
-  An encoder measuring linear position.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

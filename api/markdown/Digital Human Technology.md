@@ -1,21 +1,46 @@
-- ### OntologyBlock
-  id:: mv9580-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9580
-	- preferred-term:: Digital Human Technology
-	- source-domain:: mv
-	- owl:class:: mv:DigitalHumanTechnology
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Digital Human Technology is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#DigitalHumanTechnology
+uri:: urn:visionclaw:concept:spatial-computing:digital-human-technology
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:digital-human-technology
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Digital Human Technology
+content-hash:: sha256-12-93901b30c924
+legacy-term-id:: MV-9580
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Digital Human Technology is a concept within the metaverse domain. Further enrichment pending.
 
-Digital Human Technology represents an abstract concept in the metaverse ontology hierarchy.
+bridges-to:: [[DID Nostr Identity]]
 
-## Related Concepts
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DigitalHumanTechnology
+  - owl-role:: concept
 
-- [[owl:Thing]]
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  Digital Human Technology represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

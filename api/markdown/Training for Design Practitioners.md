@@ -1,8 +1,33 @@
+iri:: http://narrativegoldmine.com/infrastructure#TrainingForDesignPractitioners
+uri:: urn:visionclaw:concept:infrastructure:training-for-design-practitioners
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:training-for-design-practitioners
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Training for Design Practitioners
+content-hash:: sha256-12-3cfc3b0e1105
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- # Insights about AI for small businesses
-	- ## AI in the cloud vs your own AI
-		- ### Business Admin leveraging Gemini
+- ### Definition
+  - Training for Design Practitioners is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:TrainingForDesignPractitioners
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - # Insights about AI for small businesses
 			- **Primary Recommendation: Google Gemini (Advanced Subscription)**
 				- Integrates deeply with Google Workspace (Docs, Slides, Drive).
 				- Provides cloud storage (2TB with subscription).
@@ -17,7 +42,6 @@ public:: true
 				- **Obsidian:** Powerful (free) note-taking and knowledge management app using markdown. Recommended for organizing AI-generated ideas and notes long-term.
 				- **Mermaid:** Diagram-as-code tool that AI (like Gemini) can generate output for (e.g., Gantt charts). Useful for structured visualization.
 				- **Vectorworks:** existing design software. AI integration is currently limited by Vectorworks itself, but internal plugins might exist (like style transfer).
-		- ### Core Concepts & Insights
 			- **AI as a Productivity Multiplier:** AI can significantly speed up tasks like drafting text, generating ideas, creating initial visuals, and summarizing information.
 			- **The "Jagged Frontier":** AI capabilities are inconsistent and change rapidly. Some tasks work well, others fail unexpectedly. Don't assume uniform competence.
 			- **Hyper-Personalization:** AI enables tailoring outputs (designs, presentations, communication) specifically to individual client styles, preferences, and contexts (e.g., matching design visuals to a client's home art style). This is a key value proposition.
@@ -29,7 +53,6 @@ public:: true
 				- Creative direction and strategic thinking.
 			- **Information Overload:** AI makes generating information easy, increasing the need for effective information management strategies.
 			- **AI Doesn't Replace Expertise (Yet):** AI can generate plausible content but requires knowledgeable human oversight to check accuracy, relevance, and quality (e.g., checking plant suitability, design principles).
-		- ### Practical Advice & Strategies
 			- **Start with Gemini:** Focus initial efforts on learning and integrating Gemini due to its ecosystem integration and suitability for core business tasks.
 			- **Embrace Experimentation:** Be prepared to try things, fail quickly, and iterate. Don't get discouraged if a prompt doesn't work; rephrase or try a different approach.
 			- **Use Voice Interaction:** Leverage the Gemini mobile app's voice capabilities for note-taking, brainstorming, and information capture while on the go (walking, driving). Treat it like an advanced dictaphone that can also analyze and structure information.
@@ -53,13 +76,11 @@ public:: true
 			- **Integrate with Workflow:** Connect Gemini to Google Drive to allow it access to your documents for summarization, analysis, and writing tasks based on your data.
 			- **Don't Over-Rely on Initial AI Output:** Treat AI output as a draft or starting point. Always review, edit, and refine based on your expertise. Don't read every word it generates initially; focus on the overall structure and key ideas.
 			- **Prioritize Tasks:** Focus AI efforts on the most immediate business needs first (e.g., marketing, lead generation) before diving deep into more advanced applications (like complex image editing or video).
-		- ### Learning & Development
 			- **Expect a Learning Curve:** Allocate time (suggested 2-3 months) for dedicated exploration and practice to build confidence and proficiency.
 			- **Play and Explore:** Regularly experiment with the tools ("fiddle around") to understand their capabilities and limitations. This is essential due to the rapid changes in AI.
 			- **Focus on Confidence Building:** The initial phase is about getting comfortable talking to the AI, trying different prompts, and not being afraid of errors.
 			- **Learn Markdown:** Useful for formatting AI outputs and using them in tools like Obsidian. Tell the AI to format responses in markdown.
 			- **Stay Updated (Implicit):** The tools change constantly, requiring ongoing learning.
-		- ### Business Applications (Garden Design Specific)
 			- **Client Consultation Prep/Follow-up:** Transcribe and summarise meeting notes (using local AI on phone or Gemini).
 			- **Concept Generation:** Quickly create mood boards, visual concepts, and planting ideas based on client needs and site photos.
 			- **Visualization:** Generate stylized images of proposed designs, potentially matching the client's aesthetic (using their home/art as inspiration). Create different views (e.g., top-down plan from a perspective sketch).
@@ -69,7 +90,6 @@ public:: true
 			- **Business Planning:** Assist in writing the business plan, analyzing the market.
 			- **Lead Generation:** Research potential clients (e.g., finding recent planning applications in specific areas - though agentic capabilities are future-facing, analysis of documents is possible).
 			- **Logo/Branding Ideas:** Generate initial concepts for branding.
-		- ### Information Management
 			- **Challenge:** AI generates vast amounts of information quickly, making organization crucial.
 			- **Strategy:** Develop a system to capture and retrieve valuable AI interactions and outputs.
 			- **Tools:**
@@ -77,31 +97,24 @@ public:: true
 				- **Obsidian:** Recommended for building a personal knowledge base, linking ideas, and storing notes long-term.
 				- **Google Drive:** Use for storing documents and potentially allowing Gemini access.
 			- **Process:** Be deliberate about saving useful AI conversations/outputs and potentially tagging or linking them for future reference (e.g., saving a good prompt, storing generated text in Obsidian).
-	- DOING It takes a couple of months of pretty serious exploration to find where you are comfortable with AI.
+  - DOING It takes a couple of months of pretty serious exploration to find where you are comfortable with AI.
 		- [[Gemini]]
-	- DOING It typically takes a couple of months of focused exploration to become comfortable with AI tools and workflows.
-	- {{embed ((66f3fee3-6b3f-48df-b61b-2ba06e75b1b4))}}
-	- ## Information Management
+  - DOING It typically takes a couple of months of focused exploration to become comfortable with AI tools and workflows.
+  - {{embed ((66f3fee3-6b3f-48df-b61b-2ba06e75b1b4))}}
 		- It will ALWAYS help the AI for have more data about you. This can be done in a few ways
-		- ### Cloud AI versus On-Premise Models
 			- DONE Cloud services offer simplicity and scale, whereas self-hosted models (e.g. running Stable Diffusion locally or deploying your own LLM) give you full control over data and costs.
-		- ### DONE In-Context Training (think ChatGPT memory)
 			- DOING [[Gemini]] connected to Google Drive and all you data.
 			- DONE Loading data inline on each session gives precise control but can be time-consuming and requires expertise. Alternatively the platforms can manage this for you.
 			- DONE Available free with the [[ChatGPT]] tool. Convenient, but you may find it hard to separate business and personal content, and the process is largely a black box.
-		- ### DONE Retrieval-Augmented Generation (RAG)
 			- DONE [[Retrieval Augmented Generation - RAG]] - Combines your own document store with AI retrieval. Steeper learning curve, but extremely powerful over the medium term for keeping knowledge up to date.
-		- ### Tools for Notes and Knowledge
 			- ‘[Markitdown](https://github.com/microsoft/markitdown)’ for converting Microsoft docs to Markdown
 			- [Obsidian](https://obsidian.md/) or Logseq for personal knowledge bases
 			- DOING Notion for collaborative wikis
-		- ### DOING Knowledge Graphs
 			- [[Knowledge Graphing]] can help you to organise semi structured data.
 			- DOING Obsidian
 			- DONE Logseq
 			- DONE Notion
-- # Media Creation
-	- ## DOING Images
+  - # Media Creation
 		- Landscape renders using custom Stable Diffusion LoRAs (for example, JJ’s Landscape Render, StreetScape and Ecology Park models on Civitai)
 		- General tools such as Midjourney, Stable Diffusion and DALL·E 3
 			- ![image.png](../assets/image_1745922516312_0.png)
@@ -111,22 +124,19 @@ public:: true
 		- [JJ's Landscape Render - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/257038/jjs-landscape-render)
 		- [JJs StreetScape - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306671?modelVersionId=344231)
 		- [JJs Ecology Park - XL v1.0 | Stable Diffusion XL LoRA | Civitai](https://civitai.com/models/306688?modelVersionId=344250)
-	- ## DOING Video
 		- AI-assisted tools like Sustainable Home Visuals AI
 		- Experimental generative video platforms (Runway ML Gen-2, PromeAI) for short concept clips
 		- [Sustainable Home Visuals AI](https://chatgpt.com/c/680cfbe3-eb60-8005-946f-35b268702dab)
 			- {{video https://youtu.be/0fzvIBO-yLw}}
-	- ## Social Media and Marketing
 		- Use [[social media]] planning tools to schedule posts and analyse engagement
 		- Leverage QR codes (for example, AI-powered QR code generators) to link print and digital campaigns
 		- [[social media]]
 		- marketing grind [[Consumer Tools for SMEs]]
 		- QR code
 			- [AI QR Code Generator - Create Free QR in 2025](https://qrcode-ai.com/)
-- co-working engine (not quite sure what that one means)
-- # TODO Vectorworks Plan Visualisation
-	- Modern AI can transform 2D Vectorworks plans into client-ready visuals in five key formats.
-	- ## Renderings from Plan Drawings
+  - co-working engine (not quite sure what that one means)
+  - # TODO Vectorworks Plan Visualisation
+  - Modern AI can transform 2D Vectorworks plans into client-ready visuals in five key formats.
 		- **Vectorworks AI Visualizer** ([FAQ](https://forum.vectorworks.net/index.php?/articles.html/articles/faqs/ai-visualizer/))
 			- Works inside Vectorworks 2024+, using your active file or view plus a text prompt.
 			- Ideal for quick concept iterations (materials, lighting variations).
@@ -137,7 +147,6 @@ public:: true
 		- **Mainstream Text-to-Image Generators**
 			- Export plan or massing views as PNG/JPG and feed into Midjourney, Stable Diffusion (with ControlNet) or DALL·E 3 for high-res concept images.
 			- Best for early-stage mood boards rather than precise layouts.
-	- ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
 			- Real-time link via Datasmith; create MP4 or interactive 360 panoramas.
 			- Supports AI-powered denoising and crowd/traffic generation.
@@ -145,11 +154,9 @@ public:: true
 			- Live rendering inside Vectorworks, with keyframe-based video export and VR standalone packages.
 		- **Experimental AI Video Tools**
 			- Runway ML Gen-2 or PromeAI for short motion clips from still frames (low resolution but quick concept demos).
-	- ## Stylised Artistic Illustrations
 		- Use AI style-transfer plugins (such as Veras prompts for ‘watercolour sketch’ or ‘ink outline’)
 		- Export views to image-to-image tools (Midjourney, Stable Diffusion with community style models) for watercolour, pencil or comic-book effects
 		- Adobe Firefly in Photoshop for generative fill on SVG/PDF exports (text-to-image room textures, decorative elements)
-	- ## Immersive AR and VR Experiences
 		- **Vectorworks Nomad** ([app](https://apps.apple.com/ch/app/vectorworks-nomad/id506706850?l=en-GB))
 			- Markerless AR viewer on iOS/Android; place your model at 1 : 1 scale on site without coding.
 		- **Desktop VR via Enscape or Twinmotion**
@@ -158,7 +165,6 @@ public:: true
 			- Import via Datasmith into Unreal Engine or FBX/OBJ into Unity for bespoke interactive apps. AI can assist by auto-generating environment assets or textures.
 		- **Web-Based AR/VR Viewers**
 			- Upload glTF/GLB to platforms like Sketchfab for browser-based AR (USDZ for iOS Quick Look) or VR demos.
-	- ## Converting 2D Plans into 3D Models
 		- **usBIM.planAI** ([ACCA tool](https://www.accasoftware.com/en/2d-to-3d-how-to-convert-2d-files-into-3d-models))
 			- Upload PNG, JPG or PDF plans; AI recognises walls, doors and rooms; outputs IFC for import into Vectorworks.
 		- **Planner 5D AI** ([service](https://planner5d.com/ai))
@@ -166,8 +172,33 @@ public:: true
 		- **Coohom Floor Plan to 3D** ([overview](https://www.coohom.com/article/floor-plan-to-3d-ai))
 			- One-click conversion with auto-furnished interiors; ideal for rapid prototyping and client approvals.
 		- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.
-		-
-- Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.
-- Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.
-- Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.
-- Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.
+  - Start with a simple RAG setup in Logseq or Obsidian linked to your Vectorworks export folder so that every time you update a client plan, your AI system can index it.
+  - Use the AI Visualizer for rapid concept boards, then refine chosen options in Veras or Enscape for client review.
+  - Incorporate AR with Vectorworks Nomad on site visits—clients love seeing designs overlaid in real space.
+  - Keep stylistic consistency by choosing one illustration pipeline (for example, Stable Diffusion plus a ControlNet line-art workflow) and training a small set of prompts or custom LoRAs so that your presentations always look cohesive.
+
+  - ## AI in the cloud vs your own AI
+		- ### Business Admin leveraging Gemini
+		- ### Core Concepts & Insights
+		- ### Practical Advice & Strategies
+		- ### Learning & Development
+		- ### Business Applications (Garden Design Specific)
+		- ### Information Management
+  - ## Information Management
+		- ### Cloud AI versus On-Premise Models
+		- ### DONE In-Context Training (think ChatGPT memory)
+		- ### DONE Retrieval-Augmented Generation (RAG)
+		- ### Tools for Notes and Knowledge
+		- ### DOING Knowledge Graphs
+  - ## DOING Images
+  - ## DOING Video
+  - ## Social Media and Marketing
+  - ## Renderings from Plan Drawings
+  - ## Walkthrough Animations or Flythrough Videos
+  - ## Stylised Artistic Illustrations
+  - ## Immersive AR and VR Experiences
+  - ## Converting 2D Plans into 3D Models
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

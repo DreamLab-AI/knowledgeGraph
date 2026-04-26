@@ -1,48 +1,36 @@
-- ### OntologyBlock
-  id:: federatedbyzantinefaulttolerance-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#FederatedByzantineFaultTolerance
+uri:: urn:visionclaw:concept:blockchain:federated-byzantine-fault-tolerance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:federated-byzantine-fault-tolerance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Federated Byzantine Fault Tolerance
+content-hash:: sha256-12-d54f09f6ac57
+legacy-term-id:: BC-0556
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0556
-    - filename-history:: ["BC-0556-federatedbyzantinefaulttolerance.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0556
-    - preferred-term:: Federated Byzantine Fault Tolerance
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.
 
-  - **Definition**
-    - definition:: A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:FederatedByzantineFaultTolerance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:FederatedByzantineFaultTolerance
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Byzantine Fault Tolerance]]
-    - also-known-as:: fBFT
+- ### Content
+  Federated Byzantine Fault Tolerance — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :FederatedByzantineFaultTolerance))
-      (SubClassOf :FederatedByzantineFaultTolerance :ByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :FederatedByzantineFaultTolerance "Federated Byzantine Fault Tolerance"@en)
-      (AnnotationAssertion rdfs:comment :FederatedByzantineFaultTolerance
-        "A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network."@en)
-      ```
-
-- ## About Federated Byzantine Fault Tolerance
-  A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.
-  
-  ### Examples
-  - Stellar (SCP), Ripple
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

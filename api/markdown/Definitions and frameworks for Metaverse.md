@@ -1,37 +1,56 @@
+iri:: http://narrativegoldmine.com/spatial-computing#DefinitionsAndFrameworksForMetaverse
+uri:: urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:definitions-and-frameworks-for-metaverse
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Definitions and frameworks for Metaverse
+content-hash:: sha256-12-f8566f20e63f
+legacy-term-id::
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
 public:: true
 
-- #Public page
-	- automatically published
-- # Theoretical Framework toward metaverse [[Update Cycle]]
-  id:: 65cbd03c-03a4-4ca3-8e9d-984692e29412
-	- ## Problem Statement
+- ### Definition
+  - Definitions and frameworks for Metaverse is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DefinitionsAndFrameworksForMetaverse
+  - owl-role:: Concept
+
+- ### Relationships
+  - bridges-to:: [[Computer Vision]] or [[Blockchain]] or [[Telecollaboration]]
+
+- ### Content
+  - #Public page
+  - automatically published
+  - # Theoretical Framework toward metaverse [[Update Cycle]]
 		- It’s very likely that the ‘social first’ metaverse attempts such as [Meta Horizons](https://www.theverge.com/2022/10/6/23391895/meta-facebook-horizon-worlds-vr-social-network-too-buggy-leaked-memo), Sandbox, and Decentraland [represent failures](https://www.coindesk.com/web3/2022/10/07/its-lonely-in-the-metaverse-decentralands-38-daily-active-users-in-a-13b-ecosystem/) to capture audiences. They crashed back down the hype curve as ‘Second Life’ did before them. Games based worlds such as Roblox are fairing far better, with millions of users, but it’s unclear if they have longevity, and they do not fulfil ambitions of an open metaverse.
 		- Worse yet it seems that metaverse is not the most useful way to conduct business. It is evident that there are multiple factors which contribute to successful human-human communication. These factors remain important in telecommunication supported by technology, and are variously supported, unsupported, or modified by particular technologies. Third person large scale metaverse are clearly amongst the worse of the solutions.
 		- Of particular importance is interpersonal gaze.[[Cook1977; @Kleinke1986; @Fagel2010]] Non-verbal cues are also important across multiple modalities of sight, sound,[[Otsuka2005]] and position of interlocutors,[[Kendon1967]] extending to the whole body.[[Kleinke1986; @Nguyen2009]]
 		- While formal meeting paradigms are pretty well supported by commercially deployed systems, such ICT can be expensive, may need to be professionally managed, and high end equipment in board rooms are generally booked well in advance. These meetings seem to demand many 
 		  smaller supporting meetings between parties or groups of parties. The pressure here is clearly toward the now ubiquitous Teams and Zoom style formats, and these offer very poor support for social cues, and incur additional fatigue. These are known and well researched problems, and it is possible that the [strategic pairing of Meta Horizons and Microsoft Teams](https://www.oculus.com/blog/future-of-work-meta-connect-2022-quest-pro-microsoft-accenture/?) will succeed where previous attempted have failed, or that somehow [Microsoft Mesh for Teams will find and audience](https://www.microsoft.com/en-us/microsoft-teams/microsoft-mesh). They both seem to finally have the right assets and opportunity in principle. Apple also seem well positioned now, though how many users they can expect to own and work in their heavy spatial computing headset is unclear.
 		- The ‘problem’ is a supporting technology for small less formal groups,or ad-hoc groups meeting to add clarity or context to formal meetings.Metaverse allows this kind of interaction, while not seeming to replaceformal meeting utility. Metaverse also may connect home and work spaceswithout bringing in those backgrouds, creating a level playing field. Amore advanced metaverse interface could also allow dynamism andmovement, connection of natural non vocal cues, without too muchencumbering technology overhead.
-	- ### Core Assumptions
 		- Figure<a href="#fig:Framework" data-reference-type="ref" data-reference="fig:Framework">[fig:Framework]</a>shows the interlocking relationships between baseline communicationwhere the participants are present, and technology which attempts tosupport across distance.
 		  ![image](./assets/ecf58d485742c10a034d96c07588c28542b21b85.png)
-	- Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
-	- #### Gaze
+  - Of most interest to this research is the centre of the Venn where meeting styles which are less formal, and perhaps dynamic, may occur. Looking at these items one by one gives us our core assumptions.
 		- Gaze is broadly agreed to be highly important for mediating flow. Mutual gaze is a rich emotional channel. The research must consider gaze. All of the researchers listed around the Venn have at some point engaged with this topic.
-	- #### Attention
 		- The non-verbal communication channel employed in ‘attention’ is assumed based upon the literature to be critical to smoothly leaving and entering a fast flowing conversation where concentration around a defined problem may be high (gesturing to a chair for instance). Again, all of the listed researchers have made reference to attention in their work.
-	- #### Spatial (immersive)
 		- Support for spatiality is important in a group setting so that directional non-verbal cues can find their target. The topic of spatial relationships between interlocutors cuts across all of the researchers, but this is not true of immersion. Immersion in a shared virtuality can certainly support the underlying requirements spatial, but the technical infrastructure required is out of scope (so this is struck through on the diagram). Roberts and Steed are the main expertise referenced even though this element is not expanded in the research.
-	- #### Situated
 		- Situated displays are those which are appropriate for their surrounding context, in this case the informal meeting. Roberts, Pan, Steed and Steptoe seem the most relevant researchers in these technology spaces.
-	- #### Informal
 		- Based on the literature proxemics is believed to be relevant in a meeting where subgroups can be instantiated and destroyed as the meeting evolves, and those where people can be invited in from outside the physical bounds of the meeting (informal spaces). Hall is the best source for this work. If it is assumed that people may come and go, and subgroups may be convened then Sermon and Benford are the best references through their work blending real and virtual spaces. This may be more consistent with less organised meetings such as those convened on demand (ad-hoc).
-	- ### Peripheral Assumptions
 		- Surrounding the centre of the Venn are additional relevant topics fromsocial science branches of theory
-		- #### **From verbal communication**
 			- It is assumed that the directionality of sound is important,[[Aoki2003]]and this will be engineered into the experimental design. It is assumedthat movement of the lips is an indicator and this is tied to latencyand frame rate in the vision system.
-		- #### **From non-verbal communication**
 			- It is assumed that eye gaze is of high importance, and that this information channel is supported by head gaze and body torque to a high degree. It is further assumed that mutual eye gaze is of less relevance in a multi party meeting where there is a common focus for attention but can be significant for turn passing. It is assumed that upper body framing and support for transmission of micro and macro gesturing is important for signalling attention in the broader group, and for message passing in subgroups.
-	- ## Post ‘Meta’ metaverse
 		- The current media around “metaverse” has been seeded by Mark Zuckerberg’s rebranding of his Facebook company to ‘Meta’, and his investment in the technology. Kraus et al suggest that this seems more a marketing and communication drive than a true shift in the company business model,[[kraus2022facebook]] but despite this Park and Kim identify dozens of recent papers of metaverse research emerging from Meta labs.[[park2022metaverse]]
 		- In Stephenson’s ‘Snow Crash’ the Hero Protagonist (drolly called Hiro Protagonist) spends much of the novel in a dystopian virtual environment called the metaverse. It is unclear if Facebook is deliberately embracing the irony of aping such a dystopian image, but certainly their known predisposition for corporate surveillance, alongside their attempt at a global digital money is [ringing alarmbells](https://www.politico.com/newsletters/digital-future-daily/2022/04/12/the-facebook-whistleblower-takes-on-the-metaverse-00024762),as is their [currentplan](https://www.cnet.com/personal-finance/metas-new-47-5-fee-on-metaverse-items-has-nft-twitter-pissed/)for monetisation.
 		- The second order hype is likely a [speculativeplay](https://www.goldmansachs.com/insights/pages/framing-the-future-of-web-3.0-metaverse-edition.html)by major companies on the future of the internet. Grayscale investment[published areport](https://grayscale.com/wp-content/uploads/2021/11/Grayscale_Metaverse_Report_Nov2021.pdf)which views Metaverse as a potential trillion dollar global industry.Such industry reports are given to hyperbole, but it seems thetechnology is becoming the focus of technology investment narratives.Some notable exerts from a [2021report](https://www.jpmorgan.com/content/dam/jpm/treasury-services/documents/opportunities-in-the-metaverse.pdf)by American bank JPMorgan show how the legacy financial institutions seethis opportunity:
@@ -44,29 +63,22 @@ public:: true
 		- They assert that strong regulatory capture, identification, KYC/AML etc should underpin their vision of the metaverse. This is far from the community driven and organically emergent narratives that underpin Web3. This is their corporate viewpoint, something they have to say. On the back of this they pitch their consultancy services in these areas.
 		- There has been a reactive pushback against commercialisation andcorporateisation by the wider tech community, who are [concernedabout](https://www.metaversethics.org/p/mde02-metaverse-data-privacy-1)the aforementioned monetisation of biometrics. [Observers do nottrust](https://www.coindesk.com/layer2/2022/01/19/meta-leans-in-to-tracking-your-emotions-in-the-metaverse/)these ‘web’ players with such a potentially powerful social medium. Itis very plausible that this is all just a marketing play that goesnowhere and fizzles out. It is by no means clear that people want tospend time socialising globally in virtual and mixed reality. Thesemajor companies are making an asymmetric bet that if there is a moveinto virtual worlds, then they need to be stakeholders in thegatekeeping capabilities of those worlds.
 		- To paraphrase Olson; the salesmen peddling the inevitability of themetaverse are stuck clinging to aesthetic details because, without them,they’re just talking about the internet. While virtual reality isenjoying hype right now, and will continue to develop, it facessignificant challenges related to the human body’s physiologicallimitations. For instance, the inner ear can become disoriented when auser experiences virtual movement without physically moving. This issuehas led to the development of VR applications that require compromisesbetween immersion and physical comfort.
-	- ### Open Source
 		- The Openstand principles are a great starting place for what an open metaverse might mean. [They are](https://open-stand.org/about-us/principles/)
-		- ### **1. Cooperation**
 			- Respectful cooperation between standards organizations, whereby each respects the autonomy, integrity, processes, and intellectual property rules of the others.
-		- ### **2. Adherence to Principles**
 			- Adherence to the five fundamental principles of standards development:
 				- **Due process.** Decisions are made with equity and fairness among participants. No one party dominates or guides standards development. Standards processes are transparent and opportunities exist to appeal decisions. Processes for periodic standards review and updating are well defined.
 				- **Broad consensus.** Processes allow for all views to be considered and addressed, such that agreement can be found across a range of interests.
 				- **Transparency.** Standards organizations provide advance public notice of proposed standards development activities, the scope of work to be undertaken, and conditions for participation. Easily accessible records of decisions and the materials used in reaching those decisions are provided. Public comment periods are provided before final standards approval and adoption.
 				- **Balance.** Standards activities are not exclusively dominated by any particular person, company or interest group.
 				- **Openness.** Standards processes are open to all interested and informed parties.
-		- ### **3. Collective Empowerment**
 			- Commitment by affirming standards organizations and their participants to collective empowerment by striving for standards that:
 				- are chosen and defined based on technical merit, as judged by the contributed expertise of each participant;
 				- provide global interoperability, scalability, stability, and resiliency;
 				- enable global competition;
 				- serve as building blocks for further innovation; and
 				- contribute to the creation of global communities, benefiting humanity.
-		- ### **4. Availability**
 			- Standards specifications are made accessible to all for implementation and deployment. Affirming standards organizations have defined procedures to develop specifications that can be implemented under fair terms. Given market diversity, fair terms may vary from royalty-free to fair, reasonable, and non-discriminatory terms (FRAND).
-		- ### **5. Voluntary Adoption**
 			- Standards are voluntarily adopted and success is determined by the market.
-		- ## Primitives
 			- OpenAI identified the following 5 points about metaverse, in response to the query "What are 5 key points I should know when studying metaverse?". This is an unexpectedly great answer, probably the cleanest I have found, but I cannot longer find it online.
 				- Metaverse is a virtual reality platform that allows users to interact with each other and with digital objects in a virtual space.
 				- Metaverse is a decentralized platform, meaning that there is no central authority or server that controls the platform.
@@ -144,20 +156,15 @@ public:: true
 					- Safeguarding, and governance
 					- Scaffolded by GenAI
 					- Supports Agentic AI actors
-		- ## Generalised and AI mediated ontologies
 		- Societal glue and translational layer need to be AI mediated by a specialised and trained ontological specialist AI. This is a tremendous opportunity
 		- [[Metaverse Ontology]] to play with the idea -
-	- ### NFT and crypto as metaverse
 		- Within the NFT, Web3 and crypto community it is normalised to refer to ownership of digital tokens as participation in a metaverse. This is reflected in the market analysis above. This fusing of narratives is reviewed in detail by Gadekallu et al in their excellent recent paper on Metaverse and Blockchain.[[gadekallu2022blockchain]] They conclude that much remains to be done here. This CNBC article highlights the confusion, as this major news outlet refers to [Walmart prepares toofferNFTs](https://www.cnbc.com/2022/01/16/walmart-is-quietly-preparing-to-enter-the-metaverse.html)”as an entry “into the metaverse”.
-	- ### Lessons from MMORGS
 		- The concept of ‘instrumental play’ was introduced by literary theoristWolfgang Iser in his 1993 essay “The Fictive and theImaginary.”[[iser1993fictive]] Iser divided play into two categories,free play and instrumental play, based on their relationship to goals.In his view, play becomes instrumental the moment it has a goal or a setof rules. The application of this concept to massively multiplayeronline games was later explored by sociologist T.L Taylor in her 2006book ‘Play Between Worlds.’[[taylor2009play]] According to Taylor,instrumental play is a goal-oriented approach that values efficiency,expertise, and strategy optimization. The point of playing is not toreach the end but to find the best way to get there.
 		- The distinction between instrumental play and fun is often seen as afalse dichotomy. The two are not mutually exclusive but exist intension. Optimization can result in player behaviours that are simply nofun, but achieving goals or improving skills can also bring enjoyment.René Glas in his book ‘Battlefields ofNegotiation’[[glas2013battlefields]] describes the movement betweeninstrumental and free play in World of Warcraft, which has thedistinction of evolving across entirely different iterations of theInternet.
 		- These virtual worlds of massively multiplayer online games are"interactively stabilized" systems, the result of the interactionbetween game designers and players. The social codes of practiceestablished by players can shape what is considered legitimate play.Success in these games is dynamically defined by consensus, as seen inMark Chen’s study of World of Warcraft ‘Leet Noobs.’[[chen2011leet]]
 		- Tom Boellstorff conducted a study of user experiences in SecondLife,[[serapis2008coming]] which was criticized for not involving reallife or other websites or software in the analysis. The virtual worldsof massively multiplayer online games are not enclosed and players canengage with these games through various platforms, such as Discord,Twitch, Twitter, and Google Docs, without physically inhabiting thevirtual world. This concept of "paratext" was first introduced by Frenchliterary theorist Gerard Genette. He saw a book as containing the textof the book and additional components, such as the cover, title,foreword, etc., that are necessary to complete the book but not part ofthe primary text. These additional texts influence the meaning of theprimary text. The definition was later expanded by Mia Consalvo, whodefined paratext as any text that “may alter the meanings of a text,further enhance meanings, or provide challenges to sedimented meanings.”Examples of paratext include reviews, pre-release trailers, etc.Kristine Ask observed the impact of paratext on theorycrafting expertisein World of Warcraft, which was later confirmed by the rise of twitchstreams. Mark Chen’s dissertation Leet Noobs focuses on how AddOns inWorld of Warcraft can become essential agents in raid groups by assumingcognitive load. The concept is based on the idea of object-orientedontology and actor-network theory.[[cole2013call]] These theories arecomplex and contested, but the boundaries between real people andvirtual AI actors in virtual social spaces are certainly blurred.
 		- Virtual spaces are not separate from the real world, but are instead anextension of it. The key factor in making a virtual world compelling isnot its realism, but the fact that people give meaning to their lives byentangling themselves in projects with others, even when those othersare not other people. Worlds become real when people care about them,not when they look like the real world.
-	- ### Immersive and third person XR
 		- In considering the needs of business to business and business to clientsocial VR is it useful to compare software platforms. We have seen thata global connected multiverse is a marketing proposition only, and maybe a decade or more away. Contenders currently look more like one ofthree catagories; games, limited massively multiplayer worlds, ormeeting support software. These will converge.
-		- #### More like a digital twin
 		- One of the most intuitive ways to view a metaverse is as a virtual landscape. This is how metaverse was portrayed in the original Neal Stephenson use of the word. ‘Digital twin’ is another much abused industry term which trends toward a 3D representation of real worldspaces and objects. Sometimes these virtual objects are connected to the real by telemetry, allowing industrial monitoring applications. Much is made of such systems in simulation brochures, and on the web, but it’s surprisingly hard to find real world applications of the idea outside of complex large scale systems engineering (aerospace). The costs of maintenance are simply too high. The US army owns the digital twin which could be called [closest to “The Metaverse”](https://www.army.mil/standto/archive/2018/03/26/) (note the intentional capitalisation). Their global simulation environment mirrors real world locations for their training needs. The European space agency is building an Earth digital twin for climate research, as [is Nvidia](https://www.nvidia.com/en-us/on-demand/session/gtcfall22-a41326/?playlistId=playList-9bb5405e-3e40-4ff3-88db-61cd3a4507e5#:~:text=Earth%2D2%20aims%20to%20improve,learning%20methods%20at%20unprecedented%20scale.),but again it’s unclear what this offers over and above access to direct data feeds, and of course such an ambitious project likely has an ecological cost!
 		- Within industry digital twins are seen as the primary use case for metaverse, with even the world economic forum [subscribing to the hype](https://www.weforum.org/agenda/2023/01/metaverse-biggest-impact-industry-davos2023/).To be clear, there is enormous effort, investment, and potential here, with NVIDIA choosing to bind [their Omniverse](https://www.nvidia.com/en-gb/omniverse/) platform to their substantial hype wave.
 		- ##### Omniverse has become the darling of 2024 and we will investigate it further [[Update Cycle]]
@@ -169,7 +176,6 @@ public:: true
 				- Upgrades to core apps like Omniverse Audio2Face and USD Composer Graphics Delivery Network (GDN) to performantly serve your 3D experience around the world Support for new workflows across industrial use cases like digital twins
 		- ##### Geolocated AR
 			- Overlaying geospecific data into augmented reality (think Pokemon Go) isprobably the ultimate utility of digital twin datasets. It’s such acompelling application space that we will have more on this later.
-		- #### More like a metaverse
 		- ##### Second Life
 			- Notable because it’s the original and has a decently mature marketplace.Some $80M was [paid tocreators](https://www.zdnet.com/article/high-fidelity-invests-in-second-life-to-expand-virtual-world/)in Second Life in 2021 in a wider economic ecosystem of around $650M.It’s possible to write a whole book on Second life, and indeed manyhave. It’s longevity means that there’s more study of business uses ofsuch systems than in any other platform.
 		- ##### Mozilla Hubs
@@ -190,22 +196,15 @@ public:: true
 		- ##### Sansar
 		- ##### Cornerstone
 		- ##### Microsoft Mesh (previously AltSpace)
-			-
 		- Microsoft social meeting platform
-			-
 		- Very good custom avatar design
-			-
 		- Great world building editor in the engine
-			-
 		- Doesn’t really support business integration so it’s a bit out of scope
-			-
 		- Huge numbers (many thousands) possible so it’s great for global events
-			-
 		- Mac support
 		- ##### VRChat
 			- none of this makes money yet
 				- [#1394: Discussion about VRChat Layoffs & Paths to Profitability with Four Community Members – Voices of VR Podcast](https://voicesofvr.com/1394-discussion-about-vrchat-layoffs-paths-to-profitability-with-four-community-members/)
-			-
 			- This text is from wikipedia and will be updated when we have a chance totry VRChat properly. It’s much loved already by the Bitcoin community.
 			- “VRChat’s gameplay is similar to that of games such as Second Life andHabbo Hotel. Players can create their own instanced worlds in which theycan interact with each other through virtual avatars. A softwaredevelopment kit for Unity released alongside the game gives players theability to create or import character models to be used in the platform,as well as build their own worlds.
 			- Player models are capable of supporting "audio lip sync, eye trackingand blinking, and complete range of motion.
@@ -223,7 +222,6 @@ public:: true
 			- The applications and platforms detailed above have their benefits, butfor the application stack in the next section of the book Vircadia hasbeen chosen. The following text is from their website, and is aplaceholder which gives some idea. This section will be written outcompletely to reflect our use of the product to support emerging market users.
 			- Vircadia is open-source software which enables you to create and sharevirtual worlds as virtual reality (VR) and desktop experiences. You cancreate and host your own virtual world, explore other worlds, meet andconnect with other users, attend or host live VR events, and much more.
 			- The Vircadia metaverse provides built-in social features, includingavatar interactions, spatialized audio, and interactive physics.Additionally, you have the ability to import any 3D object into yourvirtual environment. No matter where you go in Vircadia, you will alwaysbe able to interact with your environment, engage with your friends, andlisten to conversations just like you would in real life.
-		- #### More like crypto NFT virtual land
 		- This next three are a placeholder taking text from the [linkedsite](https://www.analyticsinsight.net/top-10-metaverse-platforms-that-will-replace-social-media-in-future/)and will be swapped out: The digital land [narrative isfading](https://www.coindesk.com/markets/2022/04/06/metaverse-majors-struggle-as-user-base-falls-short-of-market-expectations/?).
 		- ##### Decentraland
 			- Decentraland is a large 3D (but not VR) space developed by Argentinedevelopers Esteban Ordano and Ari Meilich. It is a decentralizedmetaverse purporting to be owned by its users, but actually ownedcompletely by a foundation [based inPanama](https://www.crunchbase.com/organization/decentraland/people).The users can shop, buy things, invest, and purchase goods in a virtualspace. The project is built on Ethereum and has a (speculative)valuation in the billions of dollars.
@@ -240,13 +238,11 @@ public:: true
 			- Concerns about centralization persist, as some critics argue that theproject is not entirely decentralized. The team behind The Sandbox stillholds a significant amount of control over the platform’s developmentand governance, potentially undermining the project’s core vision of adecentralized gaming ecosystem.
 		- ##### Space Somnium
 			- Somnium Space is just another one of these, but with more VR. It allowsusers to join in either through a downloadable VR client or abrowser-based version to function like any other web app. It sufferedthe same problems at Decentraland and Sandbox. They are terribleproducts, with hype, manufactured by money, extracted from users, oftenconvinced by paid celebrity endorsements. It’s the NFT space, butsadder, and technically worse, and likely not for very much longer.
-		- #### More like industrial application
 		- As the word metaverse has gained in use, so have some traditional usersand researchers in mixed reality switched to use of the term. Siyaev andJo describe an aircraft training metaverse which incorporates ML basedspeech recognition.[[siyaev2021towards]] This class of mixed realitytrainer traditionally finds positive results, but is highly taskspecific.
-	- ##### Global enterprise perspective
+  - ##### Global enterprise perspective
 		- Microsoft bought Activision / Blizzard for around seventybillion dollars. This has been communicated by Microsoft executives as a“Metaverse play”, leveraging their internal game item markets, and theirmassive multiplayer game worlds to build toward a closed metaverseexperience like the one Meta is planning. This builds on the success ofearly experiments like the Fornite based music concerts, which attractedmillions of concurrent users to live events.
 		- There are three emerging focuses, the social metaverses for pleasure,and business metaverses for larger group meetings andtraining,[[heiphetz2010training; @aldrich2005learning]] and a Nvidia’sevolving [collaborative creationmetaverse](https://blogs.nvidia.com/blog/2022/08/09/omniverse-siggraph/)for digital engineers and creatives. They’re all pretty different‘classes’ of problem. The social metaverse angle where Facebook isconcentrating most effort is of less interest to us here, thoughobviously markets will exist in such systems for business to customer.The next section will explore some of the software tools available toconnect people. Everything looks pretty basic right now in all theavailable systems, but that will likely [change over the next couple ofyears](https://www.youtube.com/watch?v=cRLnR4Kot2M).
-- #### More like meeting support
-	- ##### Spatial
+  - ##### Spatial
 		- Spatial is worth a quick look because it’s a business first meetingtool, and comparatively well received by industry for that purpose.
 		- - Very compelling. Wins at wow.
 		- - Great avatars, user generated
@@ -256,89 +252,86 @@ public:: true
 		- - Limited headset support
 		- - Intuitive meeting support tools
 		- - No back end integration
-	- ##### MeetinVR
-		-
+  - ##### MeetinVR
 		- Good enough graphics, pretty mature system
-		-
 		- OK indicative avatars, user selected
-		-
 		- VR first design
-		-
 		- Limited scenes
-		-
 		- Smaller groups (12?)
-		-
 		- Quest and PC
-		-
 		- Writing and gestures supported
-		-
 		- Some basic enterprise tools integration
-		-
 		- Bring in 3D objects
-		-
 		- Need to apply for a license?
-	- ##### Glue
-		-
+  - ##### Glue
 		- Better enterprise security integration
-		-
 		- Larger environments, potential for breakouts in the same space. Workshop capable
-		-
 		- 3D object support, screen sharing, some collaborative tools
-		-
 		- Apply for a license
-		-
 		- Fairly basic graphics
-		-
 		- Basic avatars
-		-
 		- Quest and PC
-		-
 		- Writing and gestures supported
-		-
 		- Mac support
-	- ##### FramesVR
-		-
+  - ##### FramesVR
 		- Really simple to join
-		-
 		- Basic avatars
-		-
 		- Bit buggy
-		-
 		- 3D object support, screen sharing, some collaborative tools
-		-
 		- Quest and PC
-		-
 		- Larger scenes within scenes
-		-
 		- Runs in the browser
-	- ##### Engage
-		-
+  - ##### Engage
 		- Great polished graphics
-		-
 		- Fully customisable avatars
-		-
 		- Limited scenes
-		-
 		- Presentation to groups for education and learning
-		-
 		- PC first, quest is side loadable but that’s a technical issue
-		-
 		- BigScreen VR
-		-
 		- Seated in observation points in a defined shared theatre
-		-
 		- Screen sharing virtual communal screen watching, aimed at gamers, film watching
-		-
 		- up to 12 user
-	- ##### Gather
+  - ##### Gather
 		- Gather is an oddball meeting space based around fully customisable 2Drooms with a game feel. It’s really a spatialised twist on videoconferencing but interesting.
-	- ##### NEOSVR
+  - ##### NEOSVR
 		- [Notable because](https://neos.com/) it’s trying to integrate cryptomarketplaces, but we haven’t tried it yet.
-	- #### Mixed reality as a metaverse
 		- [Spatial anchors](https://docs.microsoft.com/en-us/windows/mixed-reality/design/spatial-anchors) allow digital objects to be overlaid persistently in the real world. With a global ‘shared truth’ of such objects a different kind of metaverse can arise. One such example is clearly the [[Apple]] [[Vision Pro]]
-	- #### Augmented reality
 		- Marc Petit, general manager of Epic Games envisages a 2 watt pair ofglasses, connected to a 10 watt phone, connected to a 100 watt computeron the edge. This is a device cascade problem which has not yet beensolved, and is at the edge of achievable thermodynamics and latency.
 		- The closest technology at this time seems to be [Lumus’ waveguideprojectors](https://lumusvision.com/) which are light, bright and highresolution. Peggy Johnson, CEO of Magic Leap, one of the market leaderssaid: it“If I had to guess, I think, maybe, five or so years out, forthe type of fully immersive augmented reality that we do.”
 		- In a [GQprofile](https://www.gq.com/story/tim-cook-global-creativity-awards-cover-2023?mbid=social_twitter)Cook, the Apple CEO talked at length about the challenges andopportunities of AR headsets. He has been emphasizing the importance ofaugmented reality over VR for almost a decade, believing that AR canenhance communication and connection by overlaying digital elements onthe physical world. Cook’s vision aligns with Apple’s rumoured mixedreality headset, which is expected to cost around $3,000 and focus on‘copresence’, which we have discussed at length in this chapter. Apple’sapproach differs from Meta’s metaverse, as Apple aims to integratedigital aspects into the real world rather than create purely digitalspaces. This is an interesting area for our applications of bringingsmall teams together, but the pricing at this time is significantly atodds with our chosen market. Cook, like this book, has highlighted AR’spotential in education and its ability to bring people together in thereal world.
-	- #### Ubiquitous displays
 		- This includes [laser retinaldisplays](https://skarredghost.com/2022/06/28/mojo-vision-contact-tested-eye/),and smart screens which are context and user aware.
+
+  - ## Problem Statement
+  - ### Core Assumptions
+  - #### Gaze
+  - #### Attention
+  - #### Spatial (immersive)
+  - #### Situated
+  - #### Informal
+  - ### Peripheral Assumptions
+		- #### **From verbal communication**
+		- #### **From non-verbal communication**
+  - ## Post ‘Meta’ metaverse
+  - ### Open Source
+		- ### **1. Cooperation**
+		- ### **2. Adherence to Principles**
+		- ### **3. Collective Empowerment**
+		- ### **4. Availability**
+		- ### **5. Voluntary Adoption**
+		- ## Primitives
+		- ## Generalised and AI mediated ontologies
+  - ### NFT and crypto as metaverse
+  - ### Lessons from MMORGS
+  - ### Immersive and third person XR
+		- #### More like a digital twin
+		- #### More like a metaverse
+		- #### More like crypto NFT virtual land
+		- #### More like industrial application
+  - #### More like meeting support
+  - #### Mixed reality as a metaverse
+  - #### Augmented reality
+  - #### Ubiquitous displays
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

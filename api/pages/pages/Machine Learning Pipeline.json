@@ -1,0 +1,68 @@
+{
+  "id": "machine-learning-pipeline",
+  "title": "Machine Learning Pipeline",
+  "content": "- ### Definition\n  - Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:MachineLearningPipeline\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Automates data preprocessing and feature engineering\n  - Implements version control for data, code, and models\n  - Orchestrates distributed training and hyperparameter tuning\n  - Enables continuous integration and deployment (CI/CD)\n  - Monitors model performance and triggers retraining\n\n  ## Overview\n\n  Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.\n\n  #### Related Concepts\n  - [[MLOps]]\n  - [[Feature Engineering]]\n  - [[Model Deployment]]\n  - [[Experiment Tracking]]\n\n  #### References\n  - Paleyes, A. et al. (2022). Challenges in Deploying Machine Learning: A Survey of Case Studies. ACM Computing Surveys, 55(6), 1-29.\n  - Baylor, D. et al. (2017). TFX: A TensorFlow-Based Production-Scale Machine Learning Platform. KDD 2017.\n  - Polyzotis, N. et al. (2018). Data Lifecycle Challenges in Production Machine Learning. SIGMOD Record, 47(2), 17-28.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "AutoML",
+    "Data Annotation"
+  ],
+  "wiki_links": [
+    "Experiment Tracking",
+    "Feature Engineering",
+    "MLOps",
+    "Model Deployment"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:machine-learning-pipeline",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#MachineLearningPipeline",
+    "content_hash": "sha256-12-355b6d246620",
+    "legacy_term_id": "AI-9020",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:machine-learning-pipeline",
+    "schema_version": "v2",
+    "term_id": "AI-9020",
+    "preferred_term": "Machine Learning Pipeline",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Machine Learning Pipeline represents the end-to-end workflow for developing, training, validating, deploying, and monitoring ML models. This encompasses data ingestion, preprocessing, feature engineering, model selection, hyperparameter tuning, training, evaluation, deployment, and continuous monitoring. Modern pipelines adopt MLOps practices with automated orchestration (Airflow, Kubeflow), versioning (DVC, MLflow), experiment tracking, A/B testing, and model retraining triggers. Pipelines ensure reproducibility, scalability, and maintainability of ML systems in production environments.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:MachineLearningPipeline",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

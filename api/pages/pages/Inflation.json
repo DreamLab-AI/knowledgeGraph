@@ -1,0 +1,79 @@
+{
+  "id": "inflation",
+  "title": "Inflation",
+  "content": "- ### Definition\n  - Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Inflation\n  - owl-role:: Object\n  - owl-inferred:: blockchain:VirtualObject\n  - belongs-to-domain:: [[TokenEconomicsDomain]]\n  - implemented-in-layer:: [[EconomicLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Entity]], [[EconomicMechanism]]\n\n- ### Content\n\n  ## Class Declaration\n  Declaration(Class(:Inflation))\n\n  ## Subclass Relationships\n  SubClassOf(:Inflation :EconomicMechanism)\n  SubClassOf(:Inflation :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:Inflation\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:Inflation\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :Inflation \"BC-0102\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :Inflation \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :Inflation \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :Inflation :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :Inflation :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Inflation \"Inflation\"@en)\n  AnnotationAssertion(rdfs:comment :Inflation\n    \"Increasing token supply\"@en)\n  AnnotationAssertion(dct:description :Inflation\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :Inflation \"BC-0102\")\n  AnnotationAssertion(:priority :Inflation \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :Inflation \"economic-incentive\"@en)\n  )\n      ```\n\n  - ## About Inflation\n\n  - Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  - ### Key Characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  - ### Technical Components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  - ### Use Cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  - ### Standards & References\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n\n\n\n  <!-- Merged from BC 0102 inflation.md: MetaverseDomain -->\n\n- ### Provenance\n  - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Bitcoin Value Proposition"
+  ],
+  "wiki_links": [
+    "Blockchain Entity",
+    "EconomicLayer",
+    "EconomicMechanism",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR",
+    "TokenEconomicsDomain"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:inflation",
+    "iri": "http://narrativegoldmine.com/blockchain#Inflation",
+    "content_hash": "sha256-12-ae65f873c3d5",
+    "legacy_term_id": "BC-0102",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:inflation",
+    "schema_version": "v2",
+    "term_id": "BC-0102",
+    "preferred_term": "Inflation",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.95,
+    "created": "2025-10-28T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Inflation",
+    "owl_role": "Object",
+    "owl_inferred_class": "blockchain:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "EconomicMechanism"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "TokenEconomicsDomain"
+    ],
+    "implemented_in_layer": [
+      "EconomicLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

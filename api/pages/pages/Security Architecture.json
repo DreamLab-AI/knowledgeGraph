@@ -1,7 +1,7 @@
 {
-  "id": "Security Architecture",
+  "id": "security-architecture",
   "title": "Security Architecture",
-  "content": "- ### OntologyBlock\n  id:: security-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10036\n\t- source-domain:: mv\n\t- preferred-term:: Security Architecture\n\t- status:: active\n\t- definition:: A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.\n\t- owl:class:: mv:SecurityArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: security-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[System Architecture]]\n\t\t- related-to:: [[Zero Trust Security]]\n\t\t- related-to:: [[Identity Management]]\n\t\t- related-to:: [[Threat Detection]]\n\t\t- enables:: [[Secure Systems]]\n\t- #### Security Layers\n\t  collapsed:: true\n\t\t- Network perimeter security\n\t\t- Identity and access management\n\t\t- Application security controls\n\t\t- Data protection and encryption\n\t\t- Endpoint security\n\t- #### Key Principles\n\t  collapsed:: true\n\t\t- Zero trust network architecture\n\t\t- Defence in depth strategy\n\t\t- Least privilege access\n\t\t- Security by design\n\t\t- Continuous monitoring",
+  "content": "- ### Definition\n  - A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SecurityArchitecture\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[System Architecture]]\n  - enables:: [[Secure Systems]]\n\n- ### Content\n\n  - #### Security Layers\n\t\t- Network perimeter security\n\t\t- Identity and access management\n\t\t- Application security controls\n\t\t- Data protection and encryption\n\t\t- Endpoint security\n  - #### Key Principles\n\t\t- Zero trust network architecture\n\t\t- Defence in depth strategy\n\t\t- Least privilege access\n\t\t- Security by design\n\t\t- Continuous monitoring\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Trust Architecture",
     "Cryptographic Key Management",
@@ -9,34 +9,42 @@
     "Zero-Trust Architecture (ZTA)"
   ],
   "wiki_links": [
-    "System Architecture",
     "Secure Systems",
-    "Threat Detection",
-    "Zero Trust Security",
-    "metaverse",
-    "Identity Management"
+    "System Architecture",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:security-architecture",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SecurityArchitecture",
+    "content_hash": "sha256-12-1e056132d99c",
+    "legacy_term_id": "MV-10036",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:security-architecture",
+    "schema_version": "v2",
     "term_id": "MV-10036",
     "preferred_term": "Security Architecture",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SecurityArchitecture",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SecurityArchitecture",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SecurityArchitecture",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "System Architecture"
@@ -51,26 +59,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Zero Trust Security",
-        "Identity Management",
-        "Threat Detection"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,60 +1,63 @@
 {
-  "id": "Digital Identity",
+  "id": "digital-identity",
   "title": "Digital Identity",
-  "content": "- ### OntologyBlock\n  id:: digital-identity-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9860\n\t- source-domain:: mv\n\t- preferred-term:: Digital Identity\n\t- definition:: A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.\n\t- status:: active\n\t- owl:class:: mv:DigitalIdentity\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-identity-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Identity]]\n\t\t- enables:: [[Authentication]], [[Authorization]], [[Digital Presence]]\n\t\t- requires:: [[Identity Verification]], [[Credential Storage]], [[Privacy Controls]]\n\t\t- related-to:: [[Avatar]], [[Self-Sovereign Identity]], [[Decentralized Identifiers]]\n- ## Technical Details\n\t- **Metaverse Identity Components**:\n\t\t- Representation: Avatars, digital personas\n\t\t- Data: Preferences, behaviors, transaction history\n\t\t- Identification: Credentials, keys, attestations\n\t- **Technology Stack**:\n\t\t- Decentralized identifiers (DIDs)\n\t\t- Verifiable credentials (VCs)\n\t\t- Blockchain-based identity anchoring\n\t\t- Biometric authentication\n\t- **Key Characteristics**:\n\t\t- Portable across platforms and metaverses\n\t\t- User-controlled with selective disclosure\n\t\t- Cryptographically verifiable\n\t\t- Persistent across sessions\n\t- **2024 Trends**: Integration with physical identity, regulatory frameworks emerging, interoperability focus\n- ## Applications\n\t- Metaverse user profiles\n\t- NFT and asset ownership\n\t- Cross-platform authentication\n\t- Virtual reputation systems\n\t- Decentralized social networks",
+  "content": "- ### Definition\n  - A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.\n\nbridges-to:: [[DID Nostr Identity]]\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DigitalIdentity\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Identity]]\n  - requires:: [[Identity Verification]], [[Credential Storage]], [[Privacy Controls]]\n  - enables:: [[Authentication]], [[Authorization]], [[Digital Presence]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Metaverse Identity Components**:\n\t\t- Representation: Avatars, digital personas\n\t\t- Data: Preferences, behaviors, transaction history\n\t\t- Identification: Credentials, keys, attestations\n  - **Technology Stack**:\n\t\t- Decentralized identifiers (DIDs)\n\t\t- Verifiable credentials (VCs)\n\t\t- Blockchain-based identity anchoring\n\t\t- Biometric authentication\n  - **Key Characteristics**:\n\t\t- Portable across platforms and metaverses\n\t\t- User-controlled with selective disclosure\n\t\t- Cryptographically verifiable\n\t\t- Persistent across sessions\n  - **2024 Trends**: Integration with physical identity, regulatory frameworks emerging, interoperability focus\n  - ## Applications\n  - Metaverse user profiles\n  - NFT and asset ownership\n  - Cross-platform authentication\n  - Virtual reputation systems\n  - Decentralized social networks\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Deepfakes",
+    "Token Economics Domain",
     "Transaction Standard",
     "Digital Jurisdiction",
     "User Consent Token",
     "Virtual Securities Offering (VSO)",
-    "Participant Authentication",
     "Central Bank Digital Currency",
-    "Avatar",
     "ETSI Domain Virtual Society",
-    "Avatar Interoperability",
-    "Proof Of Authority",
-    "Verification Standard",
-    "Credential Format Standard",
+    "AML KYC Compliance",
     "Virtual Identity",
-    "Universal Avatar",
     "Humanity Attestation",
     "Virtual Property Right"
   ],
   "wiki_links": [
-    "Avatar",
-    "Decentralized Identifiers",
-    "Identity",
-    "Authorization",
-    "Privacy Controls",
-    "metaverse",
-    "Self-Sovereign Identity",
     "Authentication",
-    "Digital Presence",
+    "Authorization",
     "Credential Storage",
-    "Identity Verification"
+    "DID Nostr Identity",
+    "Digital Presence",
+    "Identity",
+    "Identity Verification",
+    "Privacy Controls",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:digital-identity",
+    "iri": "http://narrativegoldmine.com/infrastructure#DigitalIdentity",
+    "content_hash": "sha256-12-256e07f46bd8",
+    "legacy_term_id": "MV-9860",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:digital-identity",
+    "schema_version": "v2",
     "term_id": "MV-9860",
     "preferred_term": "Digital Identity",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalIdentity",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metaverse platforms.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalIdentity",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DigitalIdentity",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Identity"
@@ -75,26 +78,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Avatar",
-        "Self-Sovereign Identity",
-        "Decentralized Identifiers"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

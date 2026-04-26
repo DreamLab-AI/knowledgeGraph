@@ -1,37 +1,50 @@
 {
-  "id": "Video Async",
+  "id": "video-async",
   "title": "Video Async",
-  "content": "- ### OntologyBlock\n  id:: TC-9003\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: TC-9003\n\t- source-domain:: tc\n\t- preferred-term:: Video Async\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.\n\t- source:: [[Collaboration Tools]], [[Loom]]\n\t- maturity:: emerging\n\t- owl:class:: tc:VideoAsync\n\t- owl:role:: Object\n\t- belongsToDomain:: [[TelecollaborationDomain]]\n\t- is-subclass-of:: [[Asynchronous Collaboration]]",
+  "content": "- ### Definition\n  - Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.\n\n- ### Semantic Classification\n  - owl-class:: distributed-collaboration:VideoAsync\n  - owl-role:: Object\n  - belongs-to-domain:: [[TelecollaborationDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Asynchronous Collaboration]]\n\n- ### Content\n  Video Async — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[Collaboration Tools]], [[Loom]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Loom",
-    "Collaboration Tools",
     "Asynchronous Collaboration",
+    "Collaboration Tools",
+    "Loom",
     "TelecollaborationDomain"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:distributed-collaboration:video-async",
+    "iri": "http://narrativegoldmine.com/distributed-collaboration#VideoAsync",
+    "content_hash": "sha256-12-7e019fc43979",
+    "legacy_term_id": "TC-9003",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:distributed-collaboration:video-async",
+    "schema_version": "v2",
     "term_id": "TC-9003",
     "preferred_term": "Video Async",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/telecollaboration#VideoAsync",
-    "source_domain": "tc",
     "domain": "tc",
-    "domain_full_name": "Telecollaboration",
+    "domain_full": "distributed-collaboration",
+    "source_domain": "distributed-collaboration",
+    "domain_full_name": "Distributed Collaboration",
     "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "tc:VideoAsync",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "distributed-collaboration:VideoAsync",
     "owl_role": "Object",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Asynchronous Collaboration"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -40,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "TelecollaborationDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Collaboration Tools",
       "Loom"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

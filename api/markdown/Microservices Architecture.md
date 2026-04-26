@@ -1,151 +1,162 @@
-- ### OntologyBlock
-  id:: microservices-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9967
-	- source-domain:: mv
-	- preferred-term:: Microservices Architecture
-	- status:: active
-	- owl:class:: mv:MicroservicesArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.
-	- #### Relationships
-	  id:: microservices-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[System Architecture]]
-		- related-to:: [[Container Technology]]
-		- related-to:: [[API Design]]
-		- enables:: [[Scalable Applications]]
+iri:: http://narrativegoldmine.com/infrastructure#MicroservicesArchitecture
+uri:: urn:visionclaw:concept:infrastructure:microservices-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:microservices-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Microservices Architecture
+content-hash:: sha256-12-c79c02b9a36c
+legacy-term-id:: MV-9967
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Architecture Overview
+- ### Definition
+  - A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.
 
-### Core Principles
-- Service independence
-- Loose coupling
-- API communication
-- Distributed deployment
-- Fault isolation
+- ### Semantic Classification
+  - owl-class:: infrastructure:MicroservicesArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Industry Examples
-- Netflix: 700+ microservices
-- Google: Kubernetes pioneer
-- Amazon: Service-oriented
-- Spotify: Squad model
-- Uber: Domain services
+- ### Relationships
+  - is-subclass-of:: [[System Architecture]]
+  - enables:: [[Scalable Applications]]
 
-## 2024 Trends
+- ### Content
 
-### Kubernetes Dominance
-- Container orchestration
-- Service discovery
-- Load balancing
-- Automated scaling
-- Rolling updates
+  ## Architecture Overview
 
-### Event-Driven Architecture
-- Asynchronous communication
-- Decoupled services
-- Real-time response
-- Event streaming
-- Message queues
+  ### Core Principles
+  - Service independence
+  - Loose coupling
+  - API communication
+  - Distributed deployment
+  - Fault isolation
 
-### Docker Containerisation
-- Consistent environments
-- Dependency packaging
-- Isolated execution
-- DevOps integration
-- Portable deployment
+  ### Industry Examples
+  - Netflix: 700+ microservices
+  - Google: Kubernetes pioneer
+  - Amazon: Service-oriented
+  - Spotify: Squad model
+  - Uber: Domain services
 
-## Cloud Integration
+  ## 2024 Trends
 
-### AWS Services
-- Elastic Container Service
-- AWS Lambda
-- API Gateway
-- Step Functions
-- Fargate
+  ### Kubernetes Dominance
+  - Container orchestration
+  - Service discovery
+  - Load balancing
+  - Automated scaling
+  - Rolling updates
 
-### Platform Features
-- Auto-scaling
-- Load balancing
-- Service mesh
-- Monitoring
-- Logging
+  ### Event-Driven Architecture
+  - Asynchronous communication
+  - Decoupled services
+  - Real-time response
+  - Event streaming
+  - Message queues
 
-## Key Challenges
+  ### Docker Containerisation
+  - Consistent environments
+  - Dependency packaging
+  - Isolated execution
+  - DevOps integration
+  - Portable deployment
 
-### Complexity Management
-- Service tracking
-- Deployment coordination
-- Debugging difficulty
-- Troubleshooting
-- Network latency
+  ## Cloud Integration
 
-### Data Consistency
-- Distributed data
-- Transaction management
-- Event sourcing
-- CQRS patterns
-- Saga patterns
+  ### AWS Services
+  - Elastic Container Service
+  - AWS Lambda
+  - API Gateway
+  - Step Functions
+  - Fargate
 
-## Best Practices
+  ### Platform Features
+  - Auto-scaling
+  - Load balancing
+  - Service mesh
+  - Monitoring
+  - Logging
 
-### Service Design
-- Single responsibility
-- Domain-driven design
-- API contracts
-- Version management
-- Documentation
+  ## Key Challenges
 
-### Data Management
-- Database per service
-- Event sourcing
-- Data replication
-- Caching strategies
-- Backup procedures
+  ### Complexity Management
+  - Service tracking
+  - Deployment coordination
+  - Debugging difficulty
+  - Troubleshooting
+  - Network latency
 
-### Communication
-- REST APIs
-- gRPC protocols
-- Message brokers
-- Service mesh
-- API gateways
+  ### Data Consistency
+  - Distributed data
+  - Transaction management
+  - Event sourcing
+  - CQRS patterns
+  - Saga patterns
 
-## Deployment Strategies
+  ## Best Practices
 
-### Container Orchestration
-- Kubernetes clusters
-- Docker Swarm
-- Service mesh (Istio)
-- Helm charts
-- GitOps workflows
+  ### Service Design
+  - Single responsibility
+  - Domain-driven design
+  - API contracts
+  - Version management
+  - Documentation
 
-### CI/CD Integration
-- Automated testing
-- Continuous deployment
-- Blue-green releases
-- Canary deployments
-- Rollback capability
+  ### Data Management
+  - Database per service
+  - Event sourcing
+  - Data replication
+  - Caching strategies
+  - Backup procedures
 
-## Monitoring and Observability
+  ### Communication
+  - REST APIs
+  - gRPC protocols
+  - Message brokers
+  - Service mesh
+  - API gateways
 
-### Tools
-- Prometheus metrics
-- Grafana dashboards
-- Jaeger tracing
-- ELK stack
-- Datadog
+  ## Deployment Strategies
 
-### Health Checks
-- Liveness probes
-- Readiness probes
-- Circuit breakers
-- Retry policies
-- Fallback handlers
+  ### Container Orchestration
+  - Kubernetes clusters
+  - Docker Swarm
+  - Service mesh (Istio)
+  - Helm charts
+  - GitOps workflows
 
-## Metadata
+  ### CI/CD Integration
+  - Automated testing
+  - Continuous deployment
+  - Blue-green releases
+  - Canary deployments
+  - Rollback capability
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Monitoring and Observability
+
+  ### Tools
+  - Prometheus metrics
+  - Grafana dashboards
+  - Jaeger tracing
+  - ELK stack
+  - Datadog
+
+  ### Health Checks
+  - Liveness probes
+  - Readiness probes
+  - Circuit breakers
+  - Retry policies
+  - Fallback handlers
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

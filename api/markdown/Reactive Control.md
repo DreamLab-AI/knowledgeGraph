@@ -1,21 +1,42 @@
-- ### OntologyBlock
-  id:: rb9525-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: RB-9525
-	- preferred-term:: Reactive Control
-	- source-domain:: rb
-	- owl:class:: rb:ReactiveControl
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Reactive Control is a concept within the robotics domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/robotics#ReactiveControl
+uri:: urn:visionclaw:concept:robotics:reactive-control
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:reactive-control
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Reactive Control
+content-hash:: sha256-12-d71df8b0b987
+legacy-term-id:: RB-9525
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+bridges-to:: [[AI Agent System]], [[Computer Vision]]
+public:: true
 
-## Overview
+- ### Definition
+  - Reactive Control is a concept within the robotics domain. Further enrichment pending.
 
-Reactive Control represents an abstract concept in the robotics ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: robotics:ReactiveControl
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Reactive Control represents an abstract concept in the robotics ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

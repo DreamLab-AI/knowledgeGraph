@@ -1,0 +1,63 @@
+{
+  "id": "banodoco",
+  "title": "Banodoco",
+  "content": "- ### Definition\n  - Banodoco is a concept within the ngm domain.\n- ### Semantic Classification\n  - owl-class:: spatial-computing:Banodoco\n  - owl-role:: Concept\n- ### Relationships\n  - bridges-to:: [[Digital Twin]]\n- ### Content\n  - Here, we aim to bring **architects and fine-tuners** who are creating open source video models, together with **engineers and tinkerers** who are expanding what these technologies can do, and **ambitious artists** who want push the bounds of creative expression with AI. [[Stable Diffusion]]\n  - Our hope is that bringing together talented and driven people from these different groups will motivate the open source open source AI art community to be more cohesively driven towards a collective purpose: creating the best tools and technologies for controllable artistic creation with AI:\n  ‎[(1423) Discord | #getting-started | banodoco](https://discord.com/channels/1076117621407223829/1148315179336081478)\n  ## **Welcome to Banodoco!**\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Digital Twin",
+    "Stable Diffusion"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:banodoco",
+    "iri": "http://narrativegoldmine.com/spatial-computing#Banodoco",
+    "content_hash": "sha256-12-33d7f0eea34d",
+    "legacy_term_id": "MV-banodoco",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:banodoco",
+    "schema_version": "v2",
+    "term_id": "MV-banodoco",
+    "preferred_term": "Banodoco",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Banodoco is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:Banodoco",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Digital Twin"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

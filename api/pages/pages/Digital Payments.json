@@ -1,7 +1,7 @@
 {
-  "id": "Digital Payments",
+  "id": "digital-payments",
   "title": "Digital Payments",
-  "content": "- ### OntologyBlock\n  id:: digital-payments-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9865\n\t- source-domain:: mv\n\t- preferred-term:: Digital Payments\n\t- definition:: Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalPayments\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-payments-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Transactions]]\n\t\t- enables:: [[E-Commerce]], [[Virtual Purchases]], [[Cross-Border Transfer]]\n\t\t- requires:: [[Payment Processor]], [[Digital Wallet]], [[Network Infrastructure]]\n\t\t- related-to:: [[Mobile Payments]], [[Cryptocurrency]], [[CBDC]]\n- ## Technical Details\n\t- **Payment Technologies**:\n\t\t- Blockchain-based transactions\n\t\t- Mobile payment apps (Apple Pay, Google Pay)\n\t\t- QR code payments\n\t\t- Contactless NFC transactions\n\t- **Metaverse Integration**:\n\t\t- Virtual goods purchasing\n\t\t- In-game currency exchanges\n\t\t- NFT marketplace payments\n\t\t- Subscription-based services\n\t- **Key Trends (2024)**:\n\t\t- AI-powered fraud detection\n\t\t- Personalized payment recommendations\n\t\t- Stablecoin adoption for stability\n\t\t- Cross-chain payment interoperability\n\t- **Challenges**: Cryptocurrency volatility, regulatory compliance, user adoption, security concerns\n- ## Applications\n\t- Virtual reality commerce\n\t- Gaming microtransactions\n\t- Creator economy payments\n\t- International remittances\n\t- Decentralized finance services",
+  "content": "- ### Definition\n  - Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.\n\nbridges-to:: [[Blockchain]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalPayments\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Financial Transactions]]\n  - requires:: [[Payment Processor]], [[Digital Wallet]], [[Network Infrastructure]]\n  - enables:: [[E-Commerce]], [[Virtual Purchases]], [[Cross-Border Transfer]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Payment Technologies**:\n\t\t- Blockchain-based transactions\n\t\t- Mobile payment apps (Apple Pay, Google Pay)\n\t\t- QR code payments\n\t\t- Contactless NFC transactions\n  - **Metaverse Integration**:\n\t\t- Virtual goods purchasing\n\t\t- In-game currency exchanges\n\t\t- NFT marketplace payments\n\t\t- Subscription-based services\n  - **Key Trends (2024)**:\n\t\t- AI-powered fraud detection\n\t\t- Personalized payment recommendations\n\t\t- Stablecoin adoption for stability\n\t\t- Cross-chain payment interoperability\n  - **Challenges**: Cryptocurrency volatility, regulatory compliance, user adoption, security concerns\n  - ## Applications\n  - Virtual reality commerce\n  - Gaming microtransactions\n  - Creator economy payments\n  - International remittances\n  - Decentralized finance services\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Currency",
     "Central Bank Digital Currency",
@@ -9,39 +9,48 @@
     "Digital Economy"
   ],
   "wiki_links": [
-    "Cryptocurrency",
-    "Network Infrastructure",
-    "Mobile Payments",
-    "Payment Processor",
-    "CBDC",
-    "metaverse",
+    "Blockchain",
     "Cross-Border Transfer",
-    "Financial Transactions",
-    "Virtual Purchases",
+    "Digital Wallet",
     "E-Commerce",
-    "Digital Wallet"
+    "Financial Transactions",
+    "Network Infrastructure",
+    "Payment Processor",
+    "Virtual Purchases",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-payments",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalPayments",
+    "content_hash": "sha256-12-bab2a72b855b",
+    "legacy_term_id": "MV-9865",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-payments",
+    "schema_version": "v2",
     "term_id": "MV-9865",
     "preferred_term": "Digital Payments",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalPayments",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalPayments",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalPayments",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Financial Transactions"
@@ -62,26 +71,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Mobile Payments",
-        "Cryptocurrency",
-        "CBDC"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

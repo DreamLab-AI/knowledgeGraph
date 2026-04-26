@@ -1,46 +1,37 @@
-- ### OntologyBlock
-  id:: proofbasedconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#ProofBasedConsensus
+uri:: urn:visionclaw:concept:blockchain:proof-based-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:proof-based-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Proof-Based Consensus
+content-hash:: sha256-12-fe2812ec6cbb
+legacy-term-id:: BC-0543
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+bridges-to:: [[Virtual Economy]], [[DID Nostr Identity]]
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0543
-    - filename-history:: ["BC-0543-proofbasedconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0543
-    - preferred-term:: Proof-Based Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.
 
-  - **Definition**
-    - definition:: Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:ProofBasedConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:ProofBasedConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Consensus Mechanism]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Consensus Mechanism]]
+- ### Content
+  Proof-Based Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ProofBasedConsensus))
-      (SubClassOf :ProofBasedConsensus :ConsensusMechanism)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ProofBasedConsensus "Proof-Based Consensus"@en)
-      (AnnotationAssertion rdfs:comment :ProofBasedConsensus
-        "Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks."@en)
-      ```
-
-- ## About Proof-Based Consensus
-  Consensus mechanisms requiring participants to provide cryptographic or computational proof to validate transactions and create blocks.
-  
-  Includes Proof of Work, Proof of Stake, and their variants.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

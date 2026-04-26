@@ -1,0 +1,136 @@
+{
+  "id": "privacy-filter",
+  "title": "Privacy Filter",
+  "content": "- ### Definition\n  - A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and leaving a tamper-evident audit trail of redactions.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:PrivacyFilter\n  - owl-role:: Process\n  - belongs-to-domain:: [[AgenticSystemsDomain]], [[PrivacyDomain]], [[DataGovernanceDomain]]\n  - implemented-in-layer:: [[SecurityLayer]], [[FilteringLayer]]\n\n- ### Relationships\n  - has-part:: [[PII Detection]], [[Redaction Engine]], [[Pattern Matching]], [[Audit Trail]], [[Policy Enforcement]]\n  - requires:: [[Regular Expressions]], [[Machine Learning (optional)]], [[Privacy Policy]], [[Classification Rules]]\n  - enables:: [[Privacy Preservation]], [[Compliance with GDPR]], [[Compliance with CCPA]], [[Data Minimisation]], [[Selective Disclosure]]\n  - implements:: [[Privacy-Preserving Data Emission]], [[Data Anonymisation]], [[Redaction Policies]]\n  - bridges-to:: [[Compliance Framework]] (domain: governance), [[GDPR Regulation]] (domain: governance), [[Data Protection]] (domain: governance)\n\n- ### Content\n\n  The Privacy Filter is a critical component that sits between agent logic and the [[Federation Surface|federation surfaces]] / [[Nostr Relay|Nostr relay]]. It intercepts all agent outputs (events, credentials, memory snapshots) and scrubs sensitive information before publishing.\n\n  #### Privacy Threats in Agent Outputs\n\n  Agents may inadvertently emit sensitive information:\n\n  - **Personally Identifiable Information (PII)**: Names, email addresses, phone numbers, social security numbers, addresses.\n  - **Secrets**: API keys, database passwords, cryptographic keys.\n  - **Regulated Data**: Health information (HIPAA), financial information (PCI-DSS), government identifiers.\n  - **Business Secrets**: Proprietary algorithms, confidential strategy, customer data.\n\n  An agent processing customer support tickets might include customer names and contact details in its completion events. An agent fine-tuning a language model might expose training data samples. The Privacy Filter catches these before emission.\n\n  #### Redaction Policies\n\n  Each agent is configured with a **redaction policy** specifying what to filter and how:\n\n  ```yaml\n  privacy_filter:\n    enabled: true\n    policies:\n      - name: email-addresses\n        pattern: '^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$'\n        action: redact\n        replacement: '[EMAIL_REDACTED]'\n      - name: ssn\n        pattern: '^\\d{3}-\\d{2}-\\d{4}$'\n        action: redact\n        replacement: '[SSN_REDACTED]'\n      - name: api-keys\n        pattern: 'sk_[a-zA-Z0-9]{32}'\n        action: redact\n        replacement: '[API_KEY_REDACTED]'\n      - name: confidential-data\n        classifier: ml-pii-detector\n        confidence_threshold: 0.85\n        action: redact\n        replacement: '[CONFIDENTIAL_REDACTED]'\n  ```\n\n  #### Redaction Actions\n\n  Different actions can be applied:\n\n  - **Redact**: Replace with a placeholder (e.g., `[EMAIL_REDACTED]`).\n  - **Hash**: Replace with a one-way hash of the value (preserves uniqueness for analytics without exposing the value).\n  - **Truncate**: Keep only the first N characters.\n  - **Remove**: Delete the field entirely.\n  - **Encrypt**: Encrypt the value with a key held by an authorised party (asymmetric encryption).\n\n  #### Detection Methods\n\n  **1. Pattern-Based**\n  Regular expressions match known PII patterns (email, phone, SSN, etc.). Fast and deterministic.\n\n  **2. ML-Based**\n  A pre-trained NER (Named Entity Recognition) or PII detection model identifies sensitive entities. More flexible but requires inference overhead and may have false positives.\n\n  **3. Contextual**\n  Rules based on field names, data sources, or data types. E.g., \"anything from a healthcare data source should be considered sensitive\".\n\n  #### Audit Trail\n\n  When a redaction occurs, the Privacy Filter logs:\n\n  ```json\n  {\n    \"timestamp\": \"2026-04-26T12:34:56Z\",\n    \"agent\": \"did:nostr:0123...ab\",\n    \"event_id\": \"urn:visionclaw:event:0123...ab:sha256-12-eeeeee\",\n    \"field_redacted\": \"credentialSubject.customerName\",\n    \"pattern_matched\": \"email-addresses\",\n    \"original_hash\": \"sha256-12-fffffff\",\n    \"replacement\": \"[EMAIL_REDACTED]\"\n  }\n  ```\n\n  This log is stored in the agent's [[Solid Pod Storage|Solid pod]] (in a private area, not exposed to relays). Later, auditors can review the log to verify that redactions were applied correctly.\n\n  #### Data Minimisation and Selective Disclosure\n\n  Privacy preservation is not just about redaction; it's about emitting only necessary information:\n\n  - **Credential Minimisation**: A credential attests \"task completed\" without including the actual task output (which may contain sensitive data).\n  - **Summary Instead of Details**: Emit \"10 documents processed, 8 passed quality check\" instead of individual document contents.\n  - **Aggregate Statistics**: Emit aggregated metrics (\"average latency 234ms\") instead of per-task traces.\n\n  The Privacy Filter can enforce minimisation rules:\n\n  ```yaml\n  privacy_filter:\n    minimisation:\n      - name: task-outputs\n        source: agent-completion-events\n        action: remove-field\n        field: output  # Don't emit the full task output\n      - name: memory-snapshots\n        source: memory-snapshots\n        action: sample\n        sample_rate: 0.01  # Only emit 1% of memory snapshots\n  ```\n\n  #### Compliance Integration\n\n  The Privacy Filter integrates with compliance frameworks:\n\n  - **GDPR**: Redact personal data of EU residents; provide data deletion capabilities.\n  - **CCPA**: Redact personal information; respect \"do not sell\" signals.\n  - **HIPAA**: Redact health information for healthcare agents.\n  - **PCI-DSS**: Redact payment card data for financial agents.\n\n  Operators configure which regulations apply and the filter enforces them.\n\n  #### Performance Considerations\n\n  Filtering overhead should be minimal:\n\n  - **Regex matching**: O(n) where n is output size; very fast.\n  - **ML inference**: Slower; can be sampled (only filter 10% of events for cost savings) or run asynchronously (filter and re-emit later).\n\n  By default, pattern-based filtering is applied to all outputs; ML-based filtering is optional and can be disabled or sampled.\n\n  #### Transparent Redaction\n\n  The Privacy Filter **maintains transparency**:\n\n  - Users and auditors can see that redactions occurred (the logs are available).\n  - The amount of redaction (number of fields redacted) is tracked.\n  - If redactions are too aggressive (e.g., >50% of events are redacted), alerts are triggered for policy review.\n\n  This is different from \"silent\" filtering, which hides that data was ever sensitive.\n\n  #### Limitations and Tradeoffs\n\n  - **False Positives**: Patterns may match innocuous text (e.g., a user typing \"john@example.com\" as a placeholder).\n  - **False Negatives**: Sophisticated PII (e.g., reconstructed names from partial data) may not be caught.\n  - **Context Loss**: Aggressive redaction reduces data utility for debugging and analytics.\n\n  Operators must balance privacy and utility. The audit trail supports this tradeoff analysis.\n\n- ### Provenance\n  - sources:: [[ADR-008]], [[GDPR Regulation]], [[CCPA Regulation]], [[HIPAA Regulation]], [[PII Detection Best Practices]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Content Addressing",
+    "VisionClaw Agentic Container",
+    "Sovereign Mesh"
+  ],
+  "wiki_links": [
+    "ADR-008",
+    "AgenticSystemsDomain",
+    "Audit Trail",
+    "CCPA Regulation",
+    "Classification Rules",
+    "Compliance Framework",
+    "Compliance with CCPA",
+    "Compliance with GDPR",
+    "Data Anonymisation",
+    "Data Minimisation",
+    "Data Protection",
+    "DataGovernanceDomain",
+    "Federation Surface",
+    "FilteringLayer",
+    "GDPR Regulation",
+    "HIPAA Regulation",
+    "Machine Learning (optional)",
+    "Nostr Relay",
+    "PII Detection",
+    "PII Detection Best Practices",
+    "Pattern Matching",
+    "Policy Enforcement",
+    "Privacy Policy",
+    "Privacy Preservation",
+    "Privacy-Preserving Data Emission",
+    "PrivacyDomain",
+    "Redaction Engine",
+    "Redaction Policies",
+    "Regular Expressions",
+    "SecurityLayer",
+    "Selective Disclosure",
+    "Solid Pod Storage"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:privacy-filter",
+    "iri": "http://narrativegoldmine.com/infrastructure#PrivacyFilter",
+    "content_hash": "sha256-12-dae0f1c2b3a4",
+    "legacy_term_id": "NGM-privacy-filter",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:privacy-filter",
+    "schema_version": "v2",
+    "term_id": "NGM-privacy-filter",
+    "preferred_term": "Privacy Filter",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and leaving a tamper-evident audit trail of redactions.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.87,
+    "authority_score": 0.9,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:PrivacyFilter",
+    "owl_role": "Process",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [
+      "PII Detection",
+      "Redaction Engine",
+      "Pattern Matching",
+      "Audit Trail",
+      "Policy Enforcement"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "Regular Expressions",
+      "Machine Learning (optional)",
+      "Privacy Policy",
+      "Classification Rules"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Privacy Preservation",
+      "Compliance with GDPR",
+      "Compliance with CCPA",
+      "Data Minimisation",
+      "Selective Disclosure"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Compliance Framework",
+      "GDPR Regulation",
+      "Data Protection"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AgenticSystemsDomain",
+      "PrivacyDomain",
+      "DataGovernanceDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer",
+      "FilteringLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ADR-008",
+      "GDPR Regulation",
+      "CCPA Regulation",
+      "HIPAA Regulation",
+      "PII Detection Best Practices"
+    ],
+    "other_relationships": {
+      "implements": [
+        "Privacy-Preserving Data Emission",
+        "Data Anonymisation",
+        "Redaction Policies"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "id": "sovereign-keyset",
+  "title": "Sovereign Keyset",
+  "content": "- ### Definition\n  - The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:SovereignKeyset\n  - owl-role:: Object\n  - belongs-to-domain:: [[AgenticSystemsDomain]], [[CryptographyDomain]], [[IdentityDomain]]\n  - implemented-in-layer:: [[SecurityLayer]], [[InfrastructureLayer]]\n\n- ### Relationships\n  - has-part:: [[BIP-340 Schnorr Keypair]], [[Private Key]], [[Public Key]], [[Key Rotation Policy]]\n  - requires:: [[secp256k1 Elliptic Curve]], [[Secure Random Number Generator]], [[Hardware Security Module (optional)]], [[Key Storage]]\n  - enables:: [[Message Signing]], [[Credential Issuance]], [[Peer Authentication]], [[Self-Sovereign Identity]], [[Decentralised Trust]]\n  - implements:: [[BIP-340]], [[secp256k1]], [[W3C DID Core]]\n  - bridges-to:: [[Blockchain Keypair]] (domain: blockchain), [[Schnorr Signature]] (domain: cryptography)\n\n- ### Content\n\n  Every [[VisionClaw Agentic Container|VisionClaw agent]] is born with a unique **Sovereign Keyset**: a [[BIP-340 Schnorr Keypair|Schnorr keypair]] that the agent controls exclusively and never delegates. This keyset is the cryptographic root of the agent's identity and all its assertions.\n\n  #### Key Derivation\n\n  The keyset is generated at agent instantiation:\n\n  1. **Entropy Source**: A cryptographically secure random number generator produces 256 bits of entropy.\n  2. **Scalar Derivation**: The 256-bit entropy becomes the private key (also called the secret scalar) in the secp256k1 field.\n  3. **Public Key Computation**: The private key is used to compute the corresponding point on the secp256k1 curve. The x-coordinate of this point (32 bytes) is the BIP-340 x-only public key.\n  4. **Encoding**: The public key is encoded as 64 lowercase hexadecimal characters.\n  5. **DID Formation**: The public key is prefixed with `did:nostr:` to form the agent's [[DID Nostr Identity|canonical DID]].\n\n  Once derived, the private key is **stored securely** and the public key is **published freely**.\n\n  #### Key Storage\n\n  [[VisionClaw Agentic Container|VisionClaw agents]] may store their private keys in different ways depending on deployment context:\n\n  - **In-Memory (Development)**: Private key kept in agent memory. Suitable for ephemeral test agents.\n  - **Encrypted at Rest**: Private key encrypted with a passphrase and stored on disk. The agent decrypts the key on startup.\n  - **Hardware Security Module (HSM)**: Private key never leaves the HSM. The agent communicates with the HSM via a secure interface to request signatures.\n  - **Solid Pod**: Private key stored in a personal [[Solid Pod Storage|Solid pod]] with strict access controls.\n  - **Multi-Signature Custody**: Private key material is split using Shamir's secret sharing; multiple parties hold key shards.\n\n  The choice depends on the agent's security posture and operational environment. High-stakes agents (financial, critical infrastructure) use HSMs; ephemeral research agents may use in-memory keys.\n\n  #### Signing Operations\n\n  When an agent signs a message (e.g., a credential, a Nostr event):\n\n  1. **Hash the Message**: Compute SHA-256 of the message.\n  2. **Schnorr Sign**: Apply the Schnorr signing algorithm (BIP-340) using the private key and message hash.\n  3. **Produce Signature**: A 64-byte Schnorr signature is output.\n\n  The signature is deterministic: the same message always produces the same signature (given the same private key and the same nonce derivation). This enables reproducibility and consistency.\n\n  Verification is performed by any party with the public key:\n\n  1. **Hash the Message** (same as above).\n  2. **Schnorr Verify**: Apply the Schnorr verification algorithm using the public key, message hash, and signature.\n  3. **Result**: True if signature is valid, False otherwise.\n\n  #### Key Rotation and Revocation\n\n  If an agent's private key is compromised or lost:\n\n  1. **Generate a New Keyset**: The agent creates a new Schnorr keypair.\n  2. **Publish a Revocation Credential**: The agent (using the old key) issues a signed credential stating \"old DID X is revoked, new DID Y is authoritative\".\n  3. **Update Manifest**: The agent's manifest is updated to reference the new DID.\n  4. **Notify Peers**: The agent broadcasts the revocation to known [[Nostr Relay|Nostr relays]].\n\n  Peers can honour revocations by checking relay history. However, because there's no central registry, revocation requires trust in the relay (it might not have the revocation message if the relay operator silences it). Advanced deployments use [[Smart Contract|smart contracts]] or blockchain-backed DID registries to anchor revocations permanently.\n\n  #### Multi-Agent Trust Groups\n\n  An advanced pattern uses **multi-signature credentials**:\n\n  - Three agents (A, B, C) agree to jointly issue credentials on a shared topic.\n  - A credential is valid only if signed by at least 2-of-3 agents.\n  - Each agent uses its own Sovereign Keyset to sign; the credential aggregates all signatures.\n  - Verifiers check that the credential carries valid signatures from enough agents.\n\n  This pattern requires no shared key material; each agent keeps its own keyset, but the semantics of the credential enforce multi-party consensus.\n\n  #### Threat Model and Mitigations\n\n  **Threat: Private Key Theft**\n  - *Mitigation*: Store key in HSM or encrypted with a strong passphrase. Implement rate limiting on signing operations to detect brute-force attacks.\n\n  **Threat: Compromise of Agent Runtime**\n  - *Mitigation*: Even if an attacker gains code execution in the agent, the HSM-stored key is inaccessible. Signing requests can be logged and audited.\n\n  **Threat: Key Reuse Across Agents**\n  - *Mitigation*: Each agent is allocated a unique keyset at instantiation. Sharing a key between agents is architecturally forbidden.\n\n  **Threat: Weak Random Number Generation**\n  - *Mitigation*: Use operating system RNG (e.g., /dev/urandom on Unix) or a hardware RNG. Never use deterministic RNGs.\n\n  #### Integration with Broader Systems\n\n  Other systems can integrate with a VisionClaw agent's keyset:\n\n  - **External Verifiers**: Obtain the agent's public key (from the [[DID Nostr Identity|did:nostr]]) and verify credentials offline.\n  - **Blockchain Oracles**: The oracle queries the agent's [[Federation Surface|federation surfaces]], retrieves a credential, verifies the signature, and if valid, reports the credential to the smart contract.\n  - **Compliance Audits**: The auditor collects all credentials issued by the agent, verifies each signature, and generates a report.\n\n  Because Schnorr signatures are a standard cryptographic primitive, no special VisionClaw knowledge is required for external verification.\n\n- ### Provenance\n  - sources:: [[ADR-013]], [[BIP-340]], [[secp256k1]], [[W3C DID Core]], [[Schnorr Signature Scheme]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "ADR-013",
+    "AgenticSystemsDomain",
+    "BIP-340",
+    "BIP-340 Schnorr Keypair",
+    "Blockchain Keypair",
+    "Credential Issuance",
+    "CryptographyDomain",
+    "DID Nostr Identity",
+    "Decentralised Trust",
+    "Federation Surface",
+    "Hardware Security Module (optional)",
+    "IdentityDomain",
+    "InfrastructureLayer",
+    "Key Rotation Policy",
+    "Key Storage",
+    "Message Signing",
+    "Nostr Relay",
+    "Peer Authentication",
+    "Private Key",
+    "Public Key",
+    "Schnorr Signature",
+    "Schnorr Signature Scheme",
+    "Secure Random Number Generator",
+    "SecurityLayer",
+    "Self-Sovereign Identity",
+    "Smart Contract",
+    "Solid Pod Storage",
+    "Trustless Peer Communication",
+    "Verifiable Credential Surface",
+    "VisionClaw Agentic Container",
+    "W3C DID Core",
+    "secp256k1",
+    "secp256k1 Elliptic Curve"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:sovereign-keyset",
+    "iri": "http://narrativegoldmine.com/ontology#SovereignKeyset",
+    "content_hash": "sha256-12-a7b8c9dae0f1",
+    "legacy_term_id": "BC-sovereign-keyset",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:sovereign-keyset",
+    "schema_version": "v2",
+    "term_id": "BC-sovereign-keyset",
+    "preferred_term": "Sovereign Keyset",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authenticate [[Nostr Relay|Nostr relay]] messages, and establish [[Trustless Peer Communication|trustless peer-to-peer trust]] without delegating key management to a central authority.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.86,
+    "authority_score": 0.88,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:SovereignKeyset",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [
+      "BIP-340 Schnorr Keypair",
+      "Private Key",
+      "Public Key",
+      "Key Rotation Policy"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "secp256k1 Elliptic Curve",
+      "Secure Random Number Generator",
+      "Hardware Security Module (optional)",
+      "Key Storage"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Message Signing",
+      "Credential Issuance",
+      "Peer Authentication",
+      "Self-Sovereign Identity",
+      "Decentralised Trust"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain Keypair",
+      "Schnorr Signature"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AgenticSystemsDomain",
+      "CryptographyDomain",
+      "IdentityDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer",
+      "InfrastructureLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ADR-013",
+      "BIP-340",
+      "secp256k1",
+      "W3C DID Core",
+      "Schnorr Signature Scheme"
+    ],
+    "other_relationships": {
+      "implements": [
+        "BIP-340",
+        "secp256k1",
+        "W3C DID Core"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

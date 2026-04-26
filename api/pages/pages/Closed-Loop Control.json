@@ -1,0 +1,98 @@
+{
+  "id": "closed-loop-control",
+  "title": "Closed-Loop Control",
+  "content": "- ### Definition\n  - A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.\n\n- ### Semantic Classification\n  - owl-class:: robotics:ClosedLoopControl\n  - owl-role:: Method\n  - belongs-to-domain:: [[Robotics]], [[Control Theory]]\n\n- ### Relationships\n  - bridges-to:: [[AI Agent System]]\n  - is-subclass-of:: [[Control System]]\n  - requires:: [[Feedback Mechanism]]\n  - enables:: [[RB-1013-localization]], [[RB-1007-trajectory-generation]]\n  - implements:: [[PID Control]], [[RB-1004-adaptive-control]]\n\n- ### Content\n\n  - #### OWL Restrictions\n  - is-subclass-of:: [[Control System]]\n  - requires:: [[Feedback Mechanism]]\n  - requires:: [[Sensor System]]\n  - requires:: [[Controller]]\n  - requires:: [[Actuator]]\n  - hasErrorSignal some MeasurementError\n  - implements some CorrectionStrategy\n  - characterizedBy:: [[Stability]], [[Accuracy]], [[Adaptability]]\n\n  - #### Relationships\n  - is-subclass-of:: [[Control System]]\n  - contrasts-with:: [[RB-1001-open-loop-control]]\n  - uses:: [[Sensor System]], [[Controller]], [[Actuator]]\n  - implements:: [[PID Control]], [[RB-1004-adaptive-control]]\n  - enables:: [[RB-1013-localization]], [[RB-1007-trajectory-generation]]\n  - skos:related:: [[RB-1015-kalman-filter]]\n\n  - **Components**\n  - Reference Input (setpoint)\n  - Controller (decision maker)\n  - Actuator (action taker)\n  - Plant (system being controlled)\n  - Sensor (measurement)\n  - Feedback Loop (error calculation)\n\n  - **Control Strategies**\n  - PID Control (Proportional-Integral-Derivative)\n  - State-space control\n  - Adaptive control\n  - Optimal control\n  - Robust control\n\n  - **Advantages**\n  - Error correction capability\n  - Disturbance rejection\n  - Adaptive to environmental changes\n  - Improved accuracy and stability\n\n  - **Disadvantages**\n  - More complex implementation\n  - Higher cost (sensors required)\n  - Potential instability if poorly tuned\n  - Feedback delay effects\n\n  - **Applications**\n  - Robot arm position control\n  - Mobile robot navigation\n  - Autonomous vehicles\n  - Industrial process control\n  - Collaborative robots (cobots)\n\n  - **Quality Metrics**\n  - authority-score:: 0.98\n  - completeness:: 0.95\n  - accuracy:: 0.96\n\n- ### Provenance\n  - sources:: [[Control Theory]], [[ISO 8373:2021]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Agent System",
+    "Accuracy",
+    "Actuator",
+    "Adaptability",
+    "Control System",
+    "Control Theory",
+    "Controller",
+    "Feedback Mechanism",
+    "ISO 8373:2021",
+    "PID Control",
+    "RB-1001-open-loop-control",
+    "RB-1004-adaptive-control",
+    "RB-1007-trajectory-generation",
+    "RB-1013-localization",
+    "RB-1015-kalman-filter",
+    "Robotics",
+    "Sensor System",
+    "Stability"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:closed-loop-control",
+    "iri": "http://narrativegoldmine.com/robotics#Closed-loopControl",
+    "content_hash": "sha256-12-7f45aa69e8ab",
+    "legacy_term_id": "RB-1002",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:closed-loop-control",
+    "schema_version": "v2",
+    "term_id": "RB-1002",
+    "preferred_term": "Closed-Loop Control",
+    "alt_terms": [],
+    "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
+    "domain_full_name": "Robotics",
+    "definition": "A control system that uses feedback from sensors to compare the actual output with the desired output and adjusts the control action to minimize error. The system continuously monitors and corrects its behavior.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.98,
+    "created": "2025-11-24T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:ClosedLoopControl",
+    "owl_role": "Method",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Control System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Feedback Mechanism"
+    ],
+    "depends_on": [],
+    "enables": [
+      "RB-1013-localization",
+      "RB-1007-trajectory-generation"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Robotics",
+      "Control Theory"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Control Theory",
+      "ISO 8373:2021"
+    ],
+    "other_relationships": {
+      "implements": [
+        "PID Control",
+        "RB-1004-adaptive-control"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

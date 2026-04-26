@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9725-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9725
-	- preferred-term:: Virtual Workspace
-	- source-domain:: mv
-	- owl:class:: mv:VirtualWorkspace
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Virtual Workspace is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualWorkspace
+uri:: urn:visionclaw:concept:spatial-computing:virtual-workspace
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-workspace
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Workspace
+content-hash:: sha256-12-b040501b7d1f
+legacy-term-id:: MV-9725
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Virtual Workspace is a concept within the metaverse domain. Further enrichment pending.
 
-Virtual Workspace represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualWorkspace
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Virtual Workspace represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

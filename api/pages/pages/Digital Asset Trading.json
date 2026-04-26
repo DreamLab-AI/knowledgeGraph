@@ -1,46 +1,54 @@
 {
-  "id": "Digital Asset Trading",
+  "id": "digital-asset-trading",
   "title": "Digital Asset Trading",
-  "content": "- ### OntologyBlock\n  id:: digital-asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9851\n\t- source-domain:: mv\n\t- preferred-term:: Digital Asset Trading\n\t- definition:: The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralized exchanges, decentralized protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.\n\t- status:: active\n\t- owl:class:: mv:DigitalAssetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-asset-trading-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Trading]]\n\t\t- enables:: [[Price Discovery]], [[Liquidity Provision]], [[Market Making]]\n\t\t- requires:: [[Exchange Platform]], [[Order Matching]], [[Settlement Systems]]\n\t\t- related-to:: [[Algorithmic Trading]], [[DEX Trading]], [[Derivatives Market]]\n- ## Technical Details\n\t- **Trading Venues**:\n\t\t- Centralized exchanges (CEX): Order book matching, custody\n\t\t- Decentralized exchanges (DEX): AMM pools, on-chain settlement\n\t\t- OTC desks: Large block trades, negotiated pricing\n\t\t- Dark pools: Institutional anonymous trading\n\t- **Order Types**:\n\t\t- Market orders: Immediate execution at best price\n\t\t- Limit orders: Execution at specified price or better\n\t\t- Stop orders: Triggered execution at threshold\n\t\t- TWAP/VWAP: Time/volume-weighted execution\n\t- **2024 Market Structure**:\n\t\t- Daily spot volume: $50-100+ billion globally\n\t\t- Derivatives volume exceeding spot markets\n\t\t- DEX share growing (10-15% of volume)\n\t\t- Institutional trading infrastructure maturing\n\t- **Key Exchanges**: Binance, Coinbase, Kraken, Uniswap, dYdX\n- ## Applications\n\t- Retail cryptocurrency investing\n\t- Institutional trading operations\n\t- Arbitrage and market making\n\t- Hedging and risk management\n\t- Algorithmic strategy execution",
+  "content": "- ### Definition\n  - The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.\n\nbridges-to:: [[Blockchain]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalAssetTrading\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Financial Trading]]\n  - requires:: [[Exchange Platform]], [[Order Matching]], [[Settlement Systems]]\n  - enables:: [[Price Discovery]], [[Liquidity Provision]], [[Market Making]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Trading Venues**:\n\t\t- Centralized exchanges (CEX): Order book matching, custody\n\t\t- Decentralized exchanges (DEX): AMM pools, on-chain settlement\n\t\t- OTC desks: Large block trades, negotiated pricing\n\t\t- Dark pools: Institutional anonymous trading\n  - **Order Types**:\n\t\t- Market orders: Immediate execution at best price\n\t\t- Limit orders: Execution at specified price or better\n\t\t- Stop orders: Triggered execution at threshold\n\t\t- TWAP/VWAP: Time/volume-weighted execution\n  - **2024 Market Structure**:\n\t\t- Daily spot volume: $50-100+ billion globally\n\t\t- Derivatives volume exceeding spot markets\n\t\t- DEX share growing (10-15% of volume)\n\t\t- Institutional trading infrastructure maturing\n  - **Key Exchanges**: Binance, Coinbase, Kraken, Uniswap, dYdX\n  - ## Applications\n  - Retail cryptocurrency investing\n  - Institutional trading operations\n  - Arbitrage and market making\n  - Hedging and risk management\n  - Algorithmic strategy execution\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Cross Metaverse Commerce",
     "Secondary Market Integration",
     "Creator Economy"
   ],
   "wiki_links": [
-    "Financial Trading",
-    "DEX Trading",
-    "Derivatives Market",
-    "Market Making",
-    "Settlement Systems",
-    "Price Discovery",
-    "metaverse",
-    "Algorithmic Trading",
-    "Liquidity Provision",
+    "Blockchain",
     "Exchange Platform",
-    "Order Matching"
+    "Financial Trading",
+    "Liquidity Provision",
+    "Market Making",
+    "Order Matching",
+    "Price Discovery",
+    "Settlement Systems",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-asset-trading",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalAssetTrading",
+    "content_hash": "sha256-12-3ed9e3fe0e59",
+    "legacy_term_id": "MV-9851",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-asset-trading",
+    "schema_version": "v2",
     "term_id": "MV-9851",
     "preferred_term": "Digital Asset Trading",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalAssetTrading",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralized exchanges, decentralized protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalAssetTrading",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalAssetTrading",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Financial Trading"
@@ -61,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Algorithmic Trading",
-        "DEX Trading",
-        "Derivatives Market"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

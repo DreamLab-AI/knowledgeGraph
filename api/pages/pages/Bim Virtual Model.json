@@ -1,42 +1,52 @@
 {
-  "id": "Bim Virtual Model",
+  "id": "bim-virtual-model",
   "title": "BIM Virtual Model",
-  "content": "- ### OntologyBlock\n  id:: bim-virtual-model-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9798\n\t- source-domain:: mv\n\t- preferred-term:: BIM Virtual Model\n\t- definition:: A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.\n\t- status:: active\n\t- owl:class:: mv:BimVirtualModel\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: bim-virtual-model-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Model]]\n\t\t- enables:: [[Design Visualization]], [[Construction Simulation]], [[Clash Detection]]\n\t\t- requires:: [[BIM Software]], [[Design Data]], [[Modeling Standards]]\n\t\t- related-to:: [[Digital Twin]], [[Virtual Construction]], [[Building Design]]\n- ## Technical Details\n\t- **Model Characteristics**:\n\t\t- Parametric 3D geometry with embedded information\n\t\t- Material and component specifications\n\t\t- Spatial relationships and constraints\n\t\t- Scheduling and cost data integration\n\t- **Distinction from Digital Twin**:\n\t\t- BIM models: Static design and construction visualization\n\t\t- Digital twins: Real-time bi-directional data connection with physical asset\n\t- **Integration Technologies**:\n\t\t- CAD drawing import/export\n\t\t- Photogrammetry for existing conditions capture\n\t\t- IoT sensor integration for operational phase\n\t\t- VR/AR for immersive visualization\n\t\t- 3D Gaussian Splatting for enhanced scanning\n- ## Standards\n\t- **ISO 19650**: Information management framework for BIM\n\t- **OpenBIM**: Open standards for cross-platform data exchange\n\t- **IFC (Industry Foundation Classes)**: Neutral file format for model sharing\n- ## Applications\n\t- Pre-construction site visualization\n\t- Stakeholder coordination and communication\n\t- Construction sequencing simulation\n\t- Facility management and operations\n\t- Metaverse integration for extended building interaction",
+  "content": "- ### Definition\n  - A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:BimVirtualModel\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[3D Model]]\n  - requires:: [[BIM Software]], [[Design Data]], [[Modeling Standards]]\n  - enables:: [[Design Visualization]], [[Construction Simulation]], [[Clash Detection]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Model Characteristics**:\n\t\t- Parametric 3D geometry with embedded information\n\t\t- Material and component specifications\n\t\t- Spatial relationships and constraints\n\t\t- Scheduling and cost data integration\n  - **Distinction from Digital Twin**:\n\t\t- BIM models: Static design and construction visualization\n\t\t- Digital twins: Real-time bi-directional data connection with physical asset\n  - **Integration Technologies**:\n\t\t- CAD drawing import/export\n\t\t- Photogrammetry for existing conditions capture\n\t\t- IoT sensor integration for operational phase\n\t\t- VR/AR for immersive visualization\n\t\t- 3D Gaussian Splatting for enhanced scanning\n  - ## Standards\n  - **ISO 19650**: Information management framework for BIM\n  - **OpenBIM**: Open standards for cross-platform data exchange\n  - **IFC (Industry Foundation Classes)**: Neutral file format for model sharing\n  - ## Applications\n  - Pre-construction site visualization\n  - Stakeholder coordination and communication\n  - Construction sequencing simulation\n  - Facility management and operations\n  - Metaverse integration for extended building interaction\n\n- ### Provenance\n  - sources:: [[ISO (International Organization for Standardization)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Modeling Standards",
+    "3D Model",
+    "BIM Software",
+    "Blockchain",
+    "Clash Detection",
+    "Construction Simulation",
     "Design Data",
     "Design Visualization",
-    "Digital Twin",
-    "Building Design",
-    "Clash Detection",
-    "metaverse",
-    "Virtual Construction",
-    "3D Model",
-    "Construction Simulation",
-    "BIM Software"
+    "ISO (International Organization for Standardization)",
+    "Modeling Standards",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:bim-virtual-model",
+    "iri": "http://narrativegoldmine.com/spatial-computing#BIMVirtualModel",
+    "content_hash": "sha256-12-6de5742af3b5",
+    "legacy_term_id": "MV-9798",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:bim-virtual-model",
+    "schema_version": "v2",
     "term_id": "MV-9798",
     "preferred_term": "BIM Virtual Model",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#BimVirtualModel",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection throughout the construction lifecycle.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:BimVirtualModel",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T17:00:00Z",
+    "last_updated": "2026-04-26T17:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:BimVirtualModel",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "3D Model"
@@ -57,26 +67,17 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Digital Twin",
-        "Virtual Construction",
-        "Building Design"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "ISO (International Organization for Standardization)"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

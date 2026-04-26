@@ -1,213 +1,227 @@
-- ### OntologyBlock
-  id:: media-library-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9958
-	- source-domain:: mv
-	- preferred-term:: Media Library
-	- status:: active
-	- owl:class:: mv:MediaLibrary
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.
-	- #### Relationships
-	  id:: media-library-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Digital Asset Management]]
-		- related-to:: [[Content Management System]]
-		- related-to:: [[Asset Repository]]
-		- enables:: [[Content Organisation]]
+iri:: http://narrativegoldmine.com/spatial-computing#MediaLibrary
+uri:: urn:visionclaw:concept:spatial-computing:media-library
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:media-library
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Media Library
+content-hash:: sha256-12-b6b18c837b5a
+legacy-term-id:: MV-9958
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## DAM in the Metaverse
+- ### Definition
+  - Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.
 
-### Digital Asset Foundation
-- Metaverse content core
-- User interaction basis
-- Commerce enablement
-- Creativity support
-- Virtual economy assets
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MediaLibrary
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Management Priority
-- Centralised organisation
-- Access control
-- Distribution management
-- Rights tracking
-- Usage analytics
+- ### Relationships
+  - is-subclass-of:: [[Digital Asset Management]]
+  - enables:: [[Content Organisation]]
 
-## Metaverse Standards Forum
+- ### Content
 
-### DAM Working Group
-- Industry stakeholder bridging
-- Interoperability focus
-- Open communication
-- Gap identification
-- Unified understanding
+  ## DAM in the Metaverse
 
-### Vision Goals
-- Open metaverse
-- Secure asset movement
-- Inclusive platform
-- Cross-platform flow
-- Interoperable solutions
+  ### Digital Asset Foundation
+  - Metaverse content core
+  - User interaction basis
+  - Commerce enablement
+  - Creativity support
+  - Virtual economy assets
 
-## Core Capabilities
+  ### Management Priority
+  - Centralised organisation
+  - Access control
+  - Distribution management
+  - Rights tracking
+  - Usage analytics
 
-### Storage Functions
-- Centralised repository
-- Multi-format support
-- Version control
-- Redundant backup
-- Scalable storage
+  ## Metaverse Standards Forum
 
-### Organisation Features
-- Metadata tagging
-- Category systems
-- Folder structures
-- Custom taxonomies
-- Smart collections
+  ### DAM Working Group
+  - Industry stakeholder bridging
+  - Interoperability focus
+  - Open communication
+  - Gap identification
+  - Unified understanding
 
-### Search Functionality
-- Full-text search
-- Faceted filtering
-- AI-powered discovery
-- Visual similarity
-- Tag-based retrieval
+  ### Vision Goals
+  - Open metaverse
+  - Secure asset movement
+  - Inclusive platform
+  - Cross-platform flow
+  - Interoperable solutions
 
-## Media Types Supported
+  ## Core Capabilities
 
-### 3D Assets
-- Model files (FBX, OBJ, glTF)
-- Textures and materials
-- Animation sequences
-- Rigged characters
-- Environment assets
+  ### Storage Functions
+  - Centralised repository
+  - Multi-format support
+  - Version control
+  - Redundant backup
+  - Scalable storage
 
-### Audio Content
-- Sound effects
-- Music tracks
-- Voice recordings
-- Ambient audio
-- Spatial audio
+  ### Organisation Features
+  - Metadata tagging
+  - Category systems
+  - Folder structures
+  - Custom taxonomies
+  - Smart collections
 
-### Video Assets
-- 360-degree video
-- 2D video content
-- Volumetric capture
-- Motion capture data
-- Tutorial content
+  ### Search Functionality
+  - Full-text search
+  - Faceted filtering
+  - AI-powered discovery
+  - Visual similarity
+  - Tag-based retrieval
 
-### Image Assets
-- Textures
-- Sprites
-- UI elements
-- Reference images
-- Concept art
+  ## Media Types Supported
 
-## AI and ML Integration
+  ### 3D Assets
+  - Model files (FBX, OBJ, glTF)
+  - Textures and materials
+  - Animation sequences
+  - Rigged characters
+  - Environment assets
 
-### Smart Organisation
-- Automated tagging
-- Content recognition
-- Facial detection
-- Scene analysis
-- Object identification
+  ### Audio Content
+  - Sound effects
+  - Music tracks
+  - Voice recordings
+  - Ambient audio
+  - Spatial audio
 
-### Predictive Features
-- Usage analytics
-- Asset recommendations
-- Trend prediction
-- Storage optimisation
-- Workflow automation
+  ### Video Assets
+  - 360-degree video
+  - 2D video content
+  - Volumetric capture
+  - Motion capture data
+  - Tutorial content
 
-## Blockchain Integration
+  ### Image Assets
+  - Textures
+  - Sprites
+  - UI elements
+  - Reference images
+  - Concept art
 
-### Asset Verification
-- Ownership proof
-- Authenticity checks
-- Provenance tracking
-- Rights management
-- Transaction history
+  ## AI and ML Integration
 
-### Decentralised Benefits
-- Democratic governance
-- Economic systems
-- Transparent ownership
-- Immutable records
-- Cross-platform use
+  ### Smart Organisation
+  - Automated tagging
+  - Content recognition
+  - Facial detection
+  - Scene analysis
+  - Object identification
 
-## Market Growth
+  ### Predictive Features
+  - Usage analytics
+  - Asset recommendations
+  - Trend prediction
+  - Storage optimisation
+  - Workflow automation
 
-### DAM Industry
-- $5.3 billion (2024)
-- 14% CAGR
-- Enterprise adoption
-- Cloud migration
-- AI enhancement
+  ## Blockchain Integration
 
-### Metaverse Impact
-- Increased complexity
-- New asset types
-- Scalability demands
-- Real-time access
-- Distribution needs
+  ### Asset Verification
+  - Ownership proof
+  - Authenticity checks
+  - Provenance tracking
+  - Rights management
+  - Transaction history
 
-## Industry Applications
+  ### Decentralised Benefits
+  - Democratic governance
+  - Economic systems
+  - Transparent ownership
+  - Immutable records
+  - Cross-platform use
 
-### Media and Entertainment
-- Production assets
-- Distribution content
-- Archive materials
-- Marketing resources
-- Brand assets
+  ## Market Growth
 
-### Gaming
-- Game assets
-- User-generated content
-- Mod libraries
-- DLC content
-- Patch resources
+  ### DAM Industry
+  - $5.3 billion (2024)
+  - 14% CAGR
+  - Enterprise adoption
+  - Cloud migration
+  - AI enhancement
 
-### Enterprise
-- Training materials
-- Marketing assets
-- Brand guidelines
-- Product images
-- Documentation
+  ### Metaverse Impact
+  - Increased complexity
+  - New asset types
+  - Scalability demands
+  - Real-time access
+  - Distribution needs
 
-## Best Practices
+  ## Industry Applications
 
-### Asset Management
-- Consistent naming
-- Metadata standards
-- Version tracking
-- Access permissions
-- Lifecycle management
+  ### Media and Entertainment
+  - Production assets
+  - Distribution content
+  - Archive materials
+  - Marketing resources
+  - Brand assets
 
-### Integration Strategy
-- API connectivity
-- Workflow integration
-- Tool compatibility
-- Platform support
-- Migration planning
+  ### Gaming
+  - Game assets
+  - User-generated content
+  - Mod libraries
+  - DLC content
+  - Patch resources
 
-## Future Trends
+  ### Enterprise
+  - Training materials
+  - Marketing assets
+  - Brand guidelines
+  - Product images
+  - Documentation
 
-### Emerging Capabilities
-- Real-time collaboration
-- AI curation
-- Generative content
-- Blockchain rights
-- Cross-platform sync
+  ## Best Practices
 
-### Technology Evolution
-- Web3 integration
-- Decentralised storage
-- NFT management
-- Interoperability
-- Enhanced security
+  ### Asset Management
+  - Consistent naming
+  - Metadata standards
+  - Version tracking
+  - Access permissions
+  - Lifecycle management
 
-## Metadata
+  ### Integration Strategy
+  - API connectivity
+  - Workflow integration
+  - Tool compatibility
+  - Platform support
+  - Migration planning
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Trends
+
+  ### Emerging Capabilities
+  - Real-time collaboration
+  - AI curation
+  - Generative content
+  - Blockchain rights
+  - Cross-platform sync
+
+  ### Technology Evolution
+  - Web3 integration
+  - Decentralised storage
+  - NFT management
+  - Interoperability
+  - Enhanced security
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

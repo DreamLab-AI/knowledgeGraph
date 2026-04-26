@@ -1,36 +1,44 @@
 {
-  "id": "Virtualsocietydomain",
+  "id": "virtual-society-domain",
   "title": "Virtual Society Domain",
-  "content": "- ### OntologyBlock\n  id:: virtualsocietydomain-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10158\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Society Domain\n\t- status:: active\n\t- definition:: The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behavior and rights in persistent virtual worlds.\n\t- owl:class:: mv:VirtualSocietyDomain\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Society]]\n\t\t- related-to:: [[Virtual Community]]\n\t\t- related-to:: [[Digital Citizenship]]\n\t\t- related-to:: [[Metaverse Governance]]\n\t  id:: virtualsocietydomain-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual society encompasses social dynamics, communities, and governance within metaverse platforms. VR social platforms like Rec Room and Meta's Horizon Worlds have become central hubs for immersive interaction. The Virtual Society Foundation launched in March 2024 to establish a unified, open metaverse with universal standards for avatar and asset interoperability. VRChat enables global users to gather in customizable spaces with lifelike avatars.\n- ## Technical Details\n\t- ### Social Components\n\t\t- **Virtual Communities**: Shared interest groups and social hubs\n\t\t- **Digital Citizenship**: Rights, responsibilities, and identity in virtual worlds\n\t\t- **Social Interaction**: Avatar-mediated communication and collaboration\n\t\t- **Cultural Events**: Concerts, exhibitions, and virtual gatherings\n\t- ### Community Benefits\n\t\t- Cross-cultural connection and global citizenship\n\t\t- Knowledge sharing and collaborative learning\n\t\t- Collective intelligence driving innovation\n\t\t- Alternative social spaces for diverse populations\n\t- ### Governance Frameworks\n\t\t- Platform terms of service and moderation\n\t\t- User-driven governance in decentralized worlds\n\t\t- Ethical frameworks for virtual conduct\n\t\t- Privacy and data protection policies\n\t- ### Inclusivity Goals\n\t\t- Equal participation regardless of physical ability\n\t\t- Cultural and economic accessibility\n\t\t- Virtual citizenship and digital homes\n\t\t- Business and activity participation opportunities\n- ## Applications\n\t- Social VR platform development\n\t- Virtual community management\n\t- Digital citizenship frameworks\n\t- Metaverse governance systems\n\t- Cultural event programming",
+  "content": "- ### Definition\n  - The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behavior and rights in persistent virtual worlds.\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualSocietyDomain\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n- ### Relationships\n  - is-subclass-of:: [[Digital Society]]\n- ### Content\n  - ## Overview\n  - Virtual society encompasses social dynamics, communities, and governance within metaverse platforms. VR social platforms like Rec Room and Meta's Horizon Worlds have become central hubs for immersive interaction. The Virtual Society Foundation launched in March 2024 to establish a unified, open metaverse with universal standards for avatar and asset interoperability. VRChat enables global users to gather in customizable spaces with lifelike avatars.\n  - ## Technical Details\n  - ### Social Components\n\t\t- **Virtual Communities**: Shared interest groups and social hubs\n\t\t- **Digital Citizenship**: Rights, responsibilities, and identity in virtual worlds\n\t\t- **Social Interaction**: Avatar-mediated communication and collaboration\n\t\t- **Cultural Events**: Concerts, exhibitions, and virtual gatherings\n  - ### Community Benefits\n\t\t- Cross-cultural connection and global citizenship\n\t\t- Knowledge sharing and collaborative learning\n\t\t- Collective intelligence driving innovation\n\t\t- Alternative social spaces for diverse populations\n  - ### Governance Frameworks\n\t\t- Platform terms of service and moderation\n\t\t- User-driven governance in decentralized worlds\n\t\t- Ethical frameworks for virtual conduct\n\t\t- Privacy and data protection policies\n  - ### Inclusivity Goals\n\t\t- Equal participation regardless of physical ability\n\t\t- Cultural and economic accessibility\n\t\t- Virtual citizenship and digital homes\n\t\t- Business and activity participation opportunities\n  - ## Applications\n  - Social VR platform development\n  - Virtual community management\n  - Digital citizenship frameworks\n  - Metaverse governance systems\n  - Cultural event programming\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
     "Digital Society",
-    "metaverse",
-    "Digital Citizenship",
-    "Virtual Community",
-    "Metaverse Governance"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-society-domain",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualSocietyDomain",
+    "content_hash": "sha256-12-86d51c0274e2",
+    "legacy_term_id": "MV-10158",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-society-domain",
+    "schema_version": "v2",
     "term_id": "MV-10158",
     "preferred_term": "Virtual Society Domain",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualSocietyDomain",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ethical and regulatory considerations governing behavior and rights in persistent virtual worlds.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualSocietyDomain",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualSocietyDomain",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Society"
@@ -43,26 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Virtual Community",
-        "Digital Citizenship",
-        "Metaverse Governance"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

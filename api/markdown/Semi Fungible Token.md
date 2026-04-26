@@ -1,49 +1,36 @@
-- ### OntologyBlock
-  id:: semifungibletoken-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#SemiFungibleToken
+uri:: urn:visionclaw:concept:blockchain:semi-fungible-token
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:semi-fungible-token
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Semi-Fungible Token
+content-hash:: sha256-12-0313f3a402c1
+legacy-term-id:: BC-0511
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0511
-    - filename-history:: ["BC-0511-semifungibletoken.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0511
-    - preferred-term:: Semi-Fungible Token
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.
 
-  - **Definition**
-    - definition:: A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:SemiFungibleToken
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:SemiFungibleToken
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Token]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Token]]
+- ### Content
+  Semi-Fungible Token — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :SemiFungibleToken))
-      (SubClassOf :SemiFungibleToken :Token)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :SemiFungibleToken "Semi-Fungible Token"@en)
-      (AnnotationAssertion rdfs:comment :SemiFungibleToken
-        "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets."@en)
-      ```
-
-- ## About Semi-Fungible Token
-  A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.
-  
-  Enabled by ERC-1155 multi-token standard. Allows bundling multiple asset types in one smart contract.
-  
-  ### Examples
-  - Event tickets (fungible until used, then non-fungible as proof of attendance), gaming items with limited quantities
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

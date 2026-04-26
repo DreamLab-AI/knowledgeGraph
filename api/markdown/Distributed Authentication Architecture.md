@@ -1,58 +1,72 @@
-- ### OntologyBlock
-  id:: distributed-authentication-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9883
-	- source-domain:: mv
-	- preferred-term:: Distributed Authentication Architecture
-	- status:: active
-	- owl:class:: mv:DistributedAuthenticationArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: A decentralized identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.
-	- #### Relationships
-	  id:: distributed-authentication-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Identity Management]]
-		- related-to:: [[Blockchain Technology]]
-		- related-to:: [[Self-Sovereign Identity]]
-		- enables:: [[Cross-Platform Interoperability]]
+iri:: http://narrativegoldmine.com/infrastructure#DistributedAuthenticationArchitecture
+uri:: urn:visionclaw:concept:infrastructure:distributed-authentication-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:distributed-authentication-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Distributed Authentication Architecture
+content-hash:: sha256-12-aa48e04ef8bb
+legacy-term-id:: MV-9883
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Technical Details
+- ### Definition
+  - A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.
 
-### Core Components
-- **Decentralized Identity (DID)**: Users upload public keys to blockchain systems for identity verification, enabling cryptographic authentication without centralised credential storage
-- **Verifiable Credentials**: Digital attestations that can be cryptographically verified without contacting the issuer
-- **Digital Wallets**: Secure storage for private keys and credentials under user control
-- **Decentralized Oracle Networks (DON)**: Third-party identity mapping services that maintain privacy whilst enabling accountability
+- ### Bridge-To
+  - bridges-to:: [[DID Nostr Identity]] (ngm)
 
-### Security Mechanisms
-- Hash algorithms and timestamp technology provide data traceability and confidentiality
-- Consensus mechanisms solve credit problems in distributed networks
-- Encrypted P2P connection channels protect authentication exchanges
-- Digital signatures prevent information leakage during identity verification
+- ### Semantic Classification
+  - owl-class:: infrastructure:DistributedAuthenticationArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-## Applications
+- ### Relationships
+  - is-subclass-of:: [[Identity Management]]
+  - enables:: [[Cross-Platform Interoperability]]
 
-### Metaverse Identity Management
-- Users participate through multiple virtual identities or avatars for different applications
-- Virtual identities are continuously generated and mapped with real identities
-- Platform-agnostic identity frameworks ensure user privacy whilst enabling identity recovery when warranted
+- ### Content
 
-### Blockchain-Enabled Security
-- Decentralized subsystem layers provide blockchain and distributed ledger services
-- DAOs and smart contracts facilitate efficient data transmission and verification
-- Distributed blockchain storage enhances security through redundancy
+  ## Technical Details
 
-## Research and Standards
+  ### Core Components
+  - **Decentralized Identity (DID)**: Users upload public keys to blockchain systems for identity verification, enabling cryptographic authentication without centralised credential storage
+  - **Verifiable Credentials**: Digital attestations that can be cryptographically verified without contacting the issuer
+  - **Digital Wallets**: Secure storage for private keys and credentials under user control
+  - **Decentralized Oracle Networks (DON)**: Third-party identity mapping services that maintain privacy whilst enabling accountability
 
-### 2024 Developments
-- Efficient Blockchain-Assisted Distributed Identity-Based Signature Schemes for Consumer Electronics in Metaverse
-- Blockchain-Enabled Decentralized Edge Intelligence for Trustworthy 6G Consumer Electronics
-- Unified Metaverse Architecture powered by Decentralized Autonomous Organizations (DAO)
+  ### Security Mechanisms
+  - Hash algorithms and timestamp technology provide data traceability and confidentiality
+  - Consensus mechanisms solve credit problems in distributed networks
+  - Encrypted P2P connection channels protect authentication exchanges
+  - Digital signatures prevent information leakage during identity verification
 
-## Metadata
+  ## Applications
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### Metaverse Identity Management
+  - Users participate through multiple virtual identities or avatars for different applications
+  - Virtual identities are continuously generated and mapped with real identities
+  - Platform-agnostic identity frameworks ensure user privacy whilst enabling identity recovery when warranted
+
+  ### Blockchain-Enabled Security
+  - Decentralized subsystem layers provide blockchain and distributed ledger services
+  - DAOs and smart contracts facilitate efficient data transmission and verification
+  - Distributed blockchain storage enhances security through redundancy
+
+  ## Research and Standards
+
+  ### 2024 Developments
+  - Efficient Blockchain-Assisted Distributed Identity-Based Signature Schemes for Consumer Electronics in Metaverse
+  - Blockchain-Enabled Decentralized Edge Intelligence for Trustworthy 6G Consumer Electronics
+  - Unified Metaverse Architecture powered by Decentralized Autonomous Organizations (DAO)
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

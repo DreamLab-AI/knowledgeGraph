@@ -1,44 +1,39 @@
-- ### OntologyBlock
-  id:: intelligentnpc-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#IntelligentNPC
+uri:: urn:visionclaw:concept:spatial-computing:intelligent-npc
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:intelligent-npc
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Intelligent NPC
+content-hash:: sha256-12-ea9dfc36500d
+legacy-term-id:: MV-0003
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-  - **Identification**
-    - domain-prefix:: MV
-    - sequence-number:: 0003
-    - filename-history:: ["MV-0003-intelligentnpc.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: MV-0003
-    - preferred-term:: Intelligent NPC
-    - source-domain:: mv
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Non-player characters with AI-driven behavior.
 
-  - **Definition**
-    - definition:: Non-player characters with AI-driven behavior.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: spatial-computing:IntelligentNpc
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Metaverse]]
 
-  - **Semantic Classification**
-    - owl:class:: mv:IntelligentNpc
-    - belongsToDomain:: [[Metaverse]]
+- ### Relationships
+  - is-subclass-of:: [[Digital Humans]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Digital Humans]]
+- ### Content
+  Intelligent NPC — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :IntelligentNpc))
-      (SubClassOf :IntelligentNpc :DigitalHumans)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :IntelligentNpc "Intelligent NPC"@en)
-      (AnnotationAssertion rdfs:comment :IntelligentNpc
-        "Non-player characters with AI-driven behavior."@en)
-      ```
-
-- ## About Intelligent NPC
-  Non-player characters with AI-driven behavior.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

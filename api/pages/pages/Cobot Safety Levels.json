@@ -1,0 +1,100 @@
+{
+  "id": "cobot-safety-levels",
+  "title": "Cobot Safety Levels",
+  "content": "- ### Definition\n  - Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.\n\n- ### Semantic Classification\n  - owl-class:: robotics:CobotSafetyLevels\n  - owl-role:: Specification\n  - belongs-to-domain:: [[Robotics]], [[Collaborative Robotics]], [[Safety Standards]]\n\n- ### Relationships\n  - bridges-to:: [[Telecollaboration]]\n  - is-subclass-of:: [[Safety Standard]]\n  - requires:: [[Risk Assessment]], [[Safety Certification]]\n  - implements:: [[Force Limiting]], [[Speed Monitoring]]\n\n- ### Content\n\n  - #### OWL Restrictions\n  - is-subclass-of:: [[Safety Standard]]\n  - applies-to:: [[Collaborative Robot]]\n  - defines:: [[Safety Requirements]]\n  - specifies:: [[Operational Modes]]\n  - requires:: [[Risk Assessment]]\n  - characterized-by:: [[Human Safety]], [[Contact Limits]]\n\n  - #### Relationships\n  - is-subclass-of:: [[Safety Standard]]\n  - applies-to:: [[Collaborative Robot]], [[Human-Robot Interaction]]\n  - skos:related:: [[RB-1012-trust-in-automation]], [[RB-1004-adaptive-control]]\n  - implements:: [[Force Limiting]], [[Speed Monitoring]]\n  - requires:: [[Risk Assessment]], [[Safety Certification]]\n\n  - **Four Collaborative Operation Modes (ISO/TS 15066)**\n  1. Safety-Rated Monitored Stop\n  2. Hand Guiding\n  3. Speed and Separation Monitoring\n  4. Power and Force Limiting\n\n  - **1. Safety-Rated Monitored Stop**\n  - Robot stops when human enters collaborative workspace\n  - Robot remains powered but stationary\n  - Human can perform tasks in workspace\n  - Robot resumes when workspace is clear\n  - Use Case: Loading/unloading, inspection\n\n  - **2. Hand Guiding**\n  - Operator directly guides robot end-effector\n  - Hand-operated device required\n  - Reduced speed during guiding\n  - Immediate stop capability\n  - Use Case: Teaching, setup, adjustment\n\n  - **3. Speed and Separation Monitoring (SSM)**\n  - Maintains minimum separation distance\n  - Speed reduces as human approaches\n  - Stops if minimum distance violated\n  - Requires real-time monitoring system\n  - Use Case: Assembly, pick-and-place with human nearby\n\n  - **4. Power and Force Limiting (PFL)**\n  - Allows intentional contact\n  - Limits force and pressure below pain thresholds\n  - Inherently safe design or control\n  - Most flexible collaboration mode\n  - Use Case: Close human-robot collaboration\n\n  - **Biomechanical Limits (ISO/TS 15066)**\n  - 29 body regions defined\n  - Maximum force limits specified\n  - Transient contact (clamping)\n  - Quasi-static contact (pinching)\n  - Pain threshold as basis\n\n  - **Example Force Limits**\n  - Skull: 130 N (transient), 65 N (quasi-static)\n  - Face: 65 N (transient), 35 N (quasi-static)\n  - Hand/Fingers: 140 N (transient), 60 N (quasi-static)\n  - Forearm: 160 N (transient), 80 N (quasi-static)\n\n  - **Safety Features Required**\n  - Torque/Force Sensing\n  - Collision Detection\n  - Emergency Stop Systems\n  - Safety-Rated Sensors\n  - Redundant Safety Circuits\n  - Safe Speed Monitoring\n  - Workspace Monitoring\n\n  - **Risk Assessment Process**\n  1. Task and Hazard Identification\n  2. Risk Evaluation\n  3. Safety Measure Implementation\n  4. Verification and Validation\n  5. Documentation\n  6. Ongoing Monitoring\n\n  - **Safety Design Principles**\n  - Inherently Safe Design (eliminate hazards)\n  - Safety Controls (reduce risks)\n  - Protective Measures (guards, sensors)\n  - Information for Use (training, warnings)\n\n  - **Validation Requirements**\n  - Performance testing\n  - Contact force measurements\n  - Safety function verification\n  - Worst-case scenario testing\n  - Documentation and certification\n\n  - **Application Considerations**\n  - Task complexity\n  - Workspace layout\n  - Human exposure time\n  - Robot speed and payload\n  - Environmental factors\n  - Training requirements\n\n  - **Benefits of Compliance**\n  - Legal compliance\n  - Worker safety\n  - Insurance considerations\n  - Market acceptance\n  - Operational efficiency\n\n  - **Challenges**\n  - Balancing safety and productivity\n  - Complex risk assessments\n  - Varying interpretations of standards\n  - Integration with existing systems\n  - Maintaining certification\n\n  - **Quality Metrics**\n  - authority-score:: 0.98\n  - completeness:: 0.95\n  - accuracy:: 0.97\n\n- ### Provenance\n  - sources:: [[ISO/TS 15066]], [[ISO 10218-1]], [[ISO 10218-2]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Collaborative Robot",
+    "Collaborative Robotics",
+    "Contact Limits",
+    "Force Limiting",
+    "Human Safety",
+    "Human-Robot Interaction",
+    "ISO 10218-1",
+    "ISO 10218-2",
+    "ISO/TS 15066",
+    "Operational Modes",
+    "RB-1004-adaptive-control",
+    "RB-1012-trust-in-automation",
+    "Risk Assessment",
+    "Robotics",
+    "Safety Certification",
+    "Safety Requirements",
+    "Safety Standard",
+    "Safety Standards",
+    "Speed Monitoring",
+    "Telecollaboration"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:cobot-safety-levels",
+    "iri": "http://narrativegoldmine.com/robotics#CobotSafetyLevels",
+    "content_hash": "sha256-12-896014593ad3",
+    "legacy_term_id": "RB-1011",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:cobot-safety-levels",
+    "schema_version": "v2",
+    "term_id": "RB-1011",
+    "preferred_term": "Cobot Safety Levels",
+    "alt_terms": [],
+    "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
+    "domain_full_name": "Robotics",
+    "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.98,
+    "created": "2025-11-24T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:CobotSafetyLevels",
+    "owl_role": "Specification",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Safety Standard"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Risk Assessment",
+      "Safety Certification"
+    ],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Telecollaboration"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Robotics",
+      "Collaborative Robotics",
+      "Safety Standards"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "ISO/TS 15066",
+      "ISO 10218-1",
+      "ISO 10218-2"
+    ],
+    "other_relationships": {
+      "implements": [
+        "Force Limiting",
+        "Speed Monitoring"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

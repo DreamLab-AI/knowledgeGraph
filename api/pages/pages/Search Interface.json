@@ -1,39 +1,47 @@
 {
-  "id": "Search Interface",
+  "id": "search-interface",
   "title": "Search Interface",
-  "content": "- ### OntologyBlock\n  id:: search-interface-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10032\n\t- source-domain:: mv\n\t- preferred-term:: Search Interface\n\t- status:: active\n\t- definition:: User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.\n\t- owl:class:: mv:SearchInterface\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: search-interface-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[User Interface]]\n\t\t- related-to:: [[Search Engine]]\n\t\t- related-to:: [[Voice Search]]\n\t\t- related-to:: [[Gesture Input]]\n\t\t- enables:: [[User Query Experience]]\n\t- #### Interface Modalities\n\t  collapsed:: true\n\t\t- Text-based query input\n\t\t- Voice and natural language commands\n\t\t- Gesture-based spatial search\n\t\t- Visual search with image input\n\t\t- AR overlay result presentation\n\t- #### Design Elements\n\t  collapsed:: true\n\t\t- Autocomplete suggestions\n\t\t- Faceted filtering options\n\t\t- Infinite scroll result lists\n\t\t- 3D spatial result displays\n\t\t- Relevance feedback mechanisms",
+  "content": "- ### Definition\n  - User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SearchInterface\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[User Interface]]\n  - enables:: [[User Query Experience]]\n\n- ### Content\n\n  - #### Interface Modalities\n\t\t- Text-based query input\n\t\t- Voice and natural language commands\n\t\t- Gesture-based spatial search\n\t\t- Visual search with image input\n\t\t- AR overlay result presentation\n  - #### Design Elements\n\t\t- Autocomplete suggestions\n\t\t- Faceted filtering options\n\t\t- Infinite scroll result lists\n\t\t- 3D spatial result displays\n\t\t- Relevance feedback mechanisms\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Curation Platform"
   ],
   "wiki_links": [
-    "Voice Search",
-    "Gesture Input",
     "User Interface",
-    "metaverse",
     "User Query Experience",
-    "Search Engine"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:search-interface",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SearchInterface",
+    "content_hash": "sha256-12-37b4fe14e07b",
+    "legacy_term_id": "MV-10032",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:search-interface",
+    "schema_version": "v2",
     "term_id": "MV-10032",
     "preferred_term": "Search Interface",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SearchInterface",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SearchInterface",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SearchInterface",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "User Interface"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Search Engine",
-        "Voice Search",
-        "Gesture Input"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

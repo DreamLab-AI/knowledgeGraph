@@ -1,88 +1,95 @@
-- ### OntologyBlock
-  id:: platform-governance-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7037
-	- preferred-term:: Platform Governance
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.
-	- maturity:: reviewed
-	- owl:class:: ngm:PlatformGovernance
-	- owl:role:: Concept
-	- belongsToDomain:: [[Blockchain]]
+iri:: http://narrativegoldmine.com/ontology#PlatformGovernance
+uri:: urn:visionclaw:concept:artificial-intelligence:platform-governance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:platform-governance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Platform Governance
+content-hash:: sha256-12-03ed0fd77f0b
+legacy-term-id:: NGM-7037
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-	- relatedTo:: [[DAO Governance]]
-	- relatedTo:: [[Token Economy]]
-	- relatedTo:: [[Smart Contracts]]
-	- relatedTo:: [[Consensus Mechanisms]]
-	- enables:: [[Decentralised Decision-Making]]
-	- implementedBy:: [[Voting Mechanisms]]
+- ### Definition
+  - Platform governance encompasses the formal and informal rules, decision-making processes, and control mechanisms that determine how blockchain and decentralised platforms operate, evolve, and distribute power among stakeholders. It includes on-chain mechanisms such as token-weighted voting and smart contract-executed decisions, as well as off-chain processes including community discussions, improvement proposals, and delegated representation structures.
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:PlatformGovernance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-Platform governance in blockchain contexts fundamentally differs from traditional corporate governance by enabling ecosystems where participants directly shape the rules governing the platform. Unlike conventional systems where a central authority dictates decisions, blockchain-based platforms allow users to voice preferences on key governance matters, including resource allocation and control mechanisms.
+- ### Relationships
+  - enables:: [[Decentralised Decision-Making]]
 
-## Governance Mechanism Types
+- ### Content
 
-### On-Chain Governance
-- Stakeholders vote with native tokens to make changes to the blockchain directly
-- Proposals are executed automatically via smart contracts upon approval
-- Provides transparency and immutability of governance decisions
-- Examples include protocol parameter changes and treasury allocations
+  ## Overview
 
-### Off-Chain Governance
-- Includes public discussion forums and improvement proposal processes
-- Community-driven deliberation and consensus building
-- Requires trusted parties to verify votes and implement proposed on-chain changes
-- Platforms such as Snapshot facilitate gasless voting with on-chain execution
+  Platform governance in blockchain contexts fundamentally differs from traditional corporate governance by enabling ecosystems where participants directly shape the rules governing the platform. Unlike conventional systems where a central authority dictates decisions, blockchain-based platforms allow users to voice preferences on key governance matters, including resource allocation and control mechanisms.
 
-### Hybrid Approaches
-- Token-based, reputation-based, and hybrid governance mechanisms
-- Quadratic voting reduces whale influence whilst empowering smaller holders
-- Soulbound Tokens provide non-transferable credentials for governance participation
-- Delegated Representatives (DReps) enable representative democracy within blockchain ecosystems
+  ## Governance Mechanism Types
 
-## Key Components
+  ### On-Chain Governance
+  - Stakeholders vote with native tokens to make changes to the blockchain directly
+  - Proposals are executed automatically via smart contracts upon approval
+  - Provides transparency and immutability of governance decisions
+  - Examples include protocol parameter changes and treasury allocations
 
-### Decision-Making Processes
-- Protocol upgrades and parameter modifications
-- Treasury management and grant allocation
-- Validator selection and staking requirements
-- Emergency response and security incident handling
+  ### Off-Chain Governance
+  - Includes public discussion forums and improvement proposal processes
+  - Community-driven deliberation and consensus building
+  - Requires trusted parties to verify votes and implement proposed on-chain changes
+  - Platforms such as Snapshot facilitate gasless voting with on-chain execution
 
-### Accountability Mechanisms
-- Transparent voting records on-chain
-- Proposal tracking and outcome documentation
-- Delegate performance metrics
-- Community oversight and veto capabilities
+  ### Hybrid Approaches
+  - Token-based, reputation-based, and hybrid governance mechanisms
+  - Quadratic voting reduces whale influence whilst empowering smaller holders
+  - Soulbound Tokens provide non-transferable credentials for governance participation
+  - Delegated Representatives (DReps) enable representative democracy within blockchain ecosystems
 
-## Challenges
+  ## Key Components
 
-### Centralisation Risks
-- Large token holders (whales) can dominate governance decisions
-- Voter participation rates remain low across most platforms
-- In Decentraland, average voter participation per proposal was 0.79%, with median participation at 0.16%
-- Across 30,000 DAOs analysed, 53% were inactive with no proposals in six months
+  ### Decision-Making Processes
+  - Protocol upgrades and parameter modifications
+  - Treasury management and grant allocation
+  - Validator selection and staking requirements
+  - Emergency response and security incident handling
 
-### Coordination Problems
-- Voter apathy affects all governance systems
-- Token holders often prefer passive holding over active participation
-- Quorum requirements may impede timely decision-making
-- Vote-buying and collusion remain ongoing concerns
+  ### Accountability Mechanisms
+  - Transparent voting records on-chain
+  - Proposal tracking and outcome documentation
+  - Delegate performance metrics
+  - Community oversight and veto capabilities
 
-## 2025 Trends
+  ## Challenges
 
-- Increased focus on stakeholder voting and community participation
-- Formalisation of governance processes and tooling
-- Growing diversity of developer participation in governance
-- Enhanced delegation mechanisms with accountability frameworks
-- Integration of reputation systems alongside token-based voting
+  ### Centralisation Risks
+  - Large token holders (whales) can dominate governance decisions
+  - Voter participation rates remain low across most platforms
+  - In Decentraland, average voter participation per proposal was 0.79%, with median participation at 0.16%
+  - Across 30,000 DAOs analysed, 53% were inactive with no proposals in six months
 
-## Metadata
+  ### Coordination Problems
+  - Voter apathy affects all governance systems
+  - Token holders often prefer passive holding over active participation
+  - Quorum requirements may impede timely decision-making
+  - Vote-buying and collusion remain ongoing concerns
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Comprehensive review completed
-- **References**: 5 pages reference this concept
+  ## 2025 Trends
+
+  - Increased focus on stakeholder voting and community participation
+  - Formalisation of governance processes and tooling
+  - Growing diversity of developer participation in governance
+  - Enhanced delegation mechanisms with accountability frameworks
+  - Integration of reputation systems alongside token-based voting
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

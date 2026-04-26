@@ -1,0 +1,90 @@
+{
+  "id": "3d-reconstruction",
+  "title": "3D Reconstruction",
+  "content": "- ### Definition\n  - 3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM). This technology enables digital capture of real-world objects and environments for [[Digital Twin]] creation and immersive environment mapping.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:3DReconstruction\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: [[Computer Vision]]\n  - bridges-to:: [[Computer Vision]], [[Photogrammetry]], [[Digital Twin]]\n  - requires:: [[Image Processing]], [[Camera Calibration]], [[Feature Matching]]\n  - enables:: [[Real-world Digitisation]], [[Environmental Mapping]], [[Point Cloud Generation]]\n\n- ### Content\n\n  ## Overview\n\n  3D Reconstruction bridges the physical and digital worlds by algorithmically deriving 3D structure from 2D observations. Key methodologies include Structure-from-Motion (recovering both structure and camera motion from video), multi-view stereo (dense depth estimation), and sensor fusion combining multiple data streams.\n\n  ## Primary Techniques\n  - **Structure-from-Motion**: Extracting 3D geometry from overlapping photographs and calculating camera trajectories\n  - **Multi-View Stereo (MVS)**: Dense depth estimation by analysing matching pixels across multiple images\n  - **Photogrammetry**: Professional 3D capture using calibrated imaging workflows\n  - **LiDAR Scanning**: Direct depth measurement using laser time-of-flight sensors\n  - **Depth Sensors**: Real-time 3D acquisition via structured light or time-of-flight cameras\n\n  ## Applications\n  - **Heritage Digitisation**: Preserving cultural artefacts and archaeological sites\n  - **Architectural Scanning**: Creating as-built models of buildings\n  - **Industrial Inspection**: Quality control through precise dimensional analysis\n  - **Real Estate**: Virtual property tours via captured environments\n\n  #### Related Concepts\n  - [[Computer Vision]], [[Photogrammetry]], [[Point Cloud]], [[Digital Twin]], [[Structure-from-Motion]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Computer Vision",
+    "Human Capture & Recognition",
+    "Camera Parameters",
+    "Spatial Mesh",
+    "Cultural Heritage XR Experience"
+  ],
+  "wiki_links": [
+    "Camera Calibration",
+    "Computer Vision",
+    "Digital Twin",
+    "Environmental Mapping",
+    "Feature Matching",
+    "Image Processing",
+    "Photogrammetry",
+    "Point Cloud",
+    "Point Cloud Generation",
+    "Real-world Digitisation",
+    "Structure-from-Motion"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:3d-reconstruction",
+    "iri": "http://narrativegoldmine.com/spatial-computing#3dReconstruction",
+    "content_hash": "sha256-12-9a4e9fa565fc",
+    "legacy_term_id": "MV-9506",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:3d-reconstruction",
+    "schema_version": "v2",
+    "term_id": "MV-9506",
+    "preferred_term": "3D Reconstruction",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including [[Computer Vision]], photogrammetry, and Structure-from-Motion (SfM). This technology enables digital capture of real-world objects and environments for [[Digital Twin]] creation and immersive environment mapping.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T20:30:00Z",
+    "last_updated": "2026-04-26T20:30:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:3DReconstruction",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Computer Vision"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Image Processing",
+      "Camera Calibration",
+      "Feature Matching"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Real-world Digitisation",
+      "Environmental Mapping",
+      "Point Cloud Generation"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Computer Vision",
+      "Photogrammetry",
+      "Digital Twin"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

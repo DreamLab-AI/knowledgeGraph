@@ -1,78 +1,87 @@
-- ### OntologyBlock
-  id:: network-protocol-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: TC-7001
-	- preferred-term:: Network Protocol
-	- source-domain:: tc
-	- status:: active
-	- public-access:: true
-	- definition:: A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.
-	- maturity:: reviewed
-	- belongsToDomain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Interoperability]]
-	- owl:class:: tc:NetworkProtocol
-	- owl:role:: Standard
+iri:: http://narrativegoldmine.com/distributed-collaboration#NetworkProtocol
+uri:: urn:visionclaw:concept:distributed-collaboration:network-protocol
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:distributed-collaboration:network-protocol
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: distributed-collaboration
+preferred-term:: Network Protocol
+content-hash:: sha256-12-7e2e38dac200
+legacy-term-id:: TC-7001
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[DID Nostr Identity]]
 
-## Relationships
-- relatedTo:: [[Distributed Computing]], [[Computing Infrastructure]], [[Cloud Infrastructure]]
-- enables:: [[Network Communication]], [[Data Transmission]], [[Interoperability]]
-- standardizedBy:: [[ISO]], [[IETF]], [[IEEE]]
-- implementedIn:: [[TCP/IP Stack]], [[Network Hardware]], [[Operating Systems]]
-- governedBy:: [[OSI Model]], [[Internet Protocol Suite]]
+- ### Definition
+  - A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures. Protocols are organized into layered architectures such as the OSI model (7 layers) and TCP/IP model (4 layers), each layer handling specific aspects of network communication.
 
-## OSI Model (7 Layers)
+- ### Semantic Classification
+  - owl-class:: distributed-collaboration:NetworkProtocol
+  - owl-role:: Standard
+  - belongs-to-domain:: [[InfrastructureDomain]], [[Technology Domain]], [[ETSI_Domain_Interoperability]]
 
-The Open Systems Interconnection model is a conceptual framework created by ISO enabling diverse systems to communicate using standard protocols.
+- ### Relationships
+  - enables:: [[Network Communication]], [[Data Transmission]], [[Interoperability]]
 
-| Layer | Name | Function | Protocols |
-|-------|------|----------|-----------|
-| 7 | Application | Network services to applications | HTTP, FTP, SMTP, DNS, DHCP |
-| 6 | Presentation | Data translation, encryption, compression | SSL/TLS, JPEG, ASCII |
-| 5 | Session | Session establishment and management | NetBIOS, RPC |
-| 4 | Transport | Reliable or fast delivery | TCP, UDP |
-| 3 | Network | Logical addressing and routing | IP, ICMP, OSPF |
-| 2 | Data Link | Node-to-node data transfer | Ethernet, Wi-Fi, PPP |
-| 1 | Physical | Raw bit transmission | USB, DSL, Fiber optic |
+- ### Content
 
-## TCP/IP Model (4 Layers)
+  ## OSI Model (7 Layers)
 
-The practical model underlying the modern Internet, combining OSI layers for simplicity.
+  The Open Systems Interconnection model is a conceptual framework created by ISO enabling diverse systems to communicate using standard protocols.
 
-| Layer | Function | Protocols |
-|-------|----------|-----------|
-| Application | User data preparation | HTTP, FTP, SMTP, DNS |
-| Transport | Segment data, ensure delivery | TCP, UDP |
-| Internet | IP addressing, routing | IP, ICMP, ARP |
-| Link (Network Access) | Frame conversion, physical transmission | Ethernet, Wi-Fi |
+  | Layer | Name | Function | Protocols |
+  |-------|------|----------|-----------|
+  | 7 | Application | Network services to applications | HTTP, FTP, SMTP, DNS, DHCP |
+  | 6 | Presentation | Data translation, encryption, compression | SSL/TLS, JPEG, ASCII |
+  | 5 | Session | Session establishment and management | NetBIOS, RPC |
+  | 4 | Transport | Reliable or fast delivery | TCP, UDP |
+  | 3 | Network | Logical addressing and routing | IP, ICMP, OSPF |
+  | 2 | Data Link | Node-to-node data transfer | Ethernet, Wi-Fi, PPP |
+  | 1 | Physical | Raw bit transmission | USB, DSL, Fiber optic |
 
-## Key Protocols
+  ## TCP/IP Model (4 Layers)
 
-### Transport Layer
-- **TCP (Transmission Control Protocol)**: Connection-oriented, reliable delivery with acknowledgments
-- **UDP (User Datagram Protocol)**: Connectionless, fast but unreliable, used for streaming
+  The practical model underlying the modern Internet, combining OSI layers for simplicity.
 
-### Network Layer
-- **IP (Internet Protocol)**: Logical addressing and packet routing
-- **ICMP**: Error reporting and diagnostics (ping)
+  | Layer | Function | Protocols |
+  |-------|----------|-----------|
+  | Application | User data preparation | HTTP, FTP, SMTP, DNS |
+  | Transport | Segment data, ensure delivery | TCP, UDP |
+  | Internet | IP addressing, routing | IP, ICMP, ARP |
+  | Link (Network Access) | Frame conversion, physical transmission | Ethernet, Wi-Fi |
 
-### Application Layer
-- **HTTP/HTTPS**: Web communication
-- **FTP/SFTP**: File transfer
-- **SMTP/IMAP/POP3**: Email protocols
-- **DNS**: Domain name resolution
-- **DHCP**: Dynamic IP assignment
+  ## Key Protocols
 
-## Model Comparison
+  ### Transport Layer
+  - **TCP (Transmission Control Protocol)**: Connection-oriented, reliable delivery with acknowledgments
+  - **UDP (User Datagram Protocol)**: Connectionless, fast but unreliable, used for streaming
 
-| Aspect | OSI Model | TCP/IP Model |
-|--------|-----------|--------------|
-| Layers | 7 | 4 |
-| Purpose | Reference framework | Practical implementation |
-| Upper Layers | Separate (5,6,7) | Combined (Application) |
-| Usage | Education, troubleshooting | Actual Internet operations |
+  ### Network Layer
+  - **IP (Internet Protocol)**: Logical addressing and packet routing
+  - **ICMP**: Error reporting and diagnostics (ping)
 
-## Metadata
+  ### Application Layer
+  - **HTTP/HTTPS**: Web communication
+  - **FTP/SFTP**: File transfer
+  - **SMTP/IMAP/POP3**: Email protocols
+  - **DNS**: Domain name resolution
+  - **DHCP**: Dynamic IP assignment
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with technical content
-- **References**: 7 pages reference this concept
+  ## Model Comparison
+
+  | Aspect | OSI Model | TCP/IP Model |
+  |--------|-----------|--------------|
+  | Layers | 7 | 4 |
+  | Purpose | Reference framework | Practical implementation |
+  | Upper Layers | Separate (5,6,7) | Combined (Application) |
+  | Usage | Education, troubleshooting | Actual Internet operations |
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

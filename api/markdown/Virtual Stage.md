@@ -1,50 +1,68 @@
-- ### OntologyBlock
-  id:: virtual-stage-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10147
-	- source-domain:: mv
-	- preferred-term:: Virtual Stage
-	- status:: active
-	- definition:: A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.
-	- owl:class:: mv:VirtualStage
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Production Facility]]
-		- related-to:: [[LED Volume]]
-		- related-to:: [[Virtual Production VP]]
-		- related-to:: [[In-Camera VFX]]
-	  id:: virtual-stage-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual stages surround performers with curved LED panels displaying real-time 3D environments, capturing realistic lighting, depth, and reflections directly in-camera. In July 2024, the world's largest LED virtual production volume was unveiled in Deqing, China, spanning 50 meters in diameter with 1,700 square meters of LED display. NBCUniversal used StageCraft for 2024 Paris Olympics promotion. CBS Sports utilized robotic camera systems with ICVFX for 2024 NFL broadcasts.
-- ## Technical Details
-	- ### Stage Configuration
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualStage
+uri:: urn:visionclaw:concept:spatial-computing:virtual-stage
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-stage
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Stage
+content-hash:: sha256-12-27bae63b29cb
+legacy-term-id:: MV-10147
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualStage
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Production Facility]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual stages surround performers with curved LED panels displaying real-time 3D environments, capturing realistic lighting, depth, and reflections directly in-camera. In July 2024, the world's largest LED virtual production volume was unveiled in Deqing, China, spanning 50 meters in diameter with 1,700 square meters of LED display. NBCUniversal used StageCraft for 2024 Paris Olympics promotion. CBS Sports utilized robotic camera systems with ICVFX for 2024 NFL broadcasts.
+  - ## Technical Details
+  - ### Stage Configuration
 		- **LED Walls**: Curved panels surrounding the shooting area
 		- **LED Floor**: Ground-level display for reflections and extended environments
 		- **LED Ceiling**: Optional overhead panels for complete immersion
 		- **Tracking Systems**: Camera position detection for perspective synchronization
-	- ### Technology Stack
+  - ### Technology Stack
 		- ROE Visual panels with 10-bit HDR calibration
 		- Brompton SX40 LED processors for image quality
 		- Unreal Engine for real-time content rendering
 		- Epic Games heavy investment in virtual production tools
-	- ### Applications Beyond Film
+  - ### Applications Beyond Film
 		- Traditional broadcast studios transitioning to VP
 		- Advertising content creation
 		- Episodic television with feature film quality
 		- Live event production and concerts
-	- ### Key Benefits
+  - ### Key Benefits
 		- Real-time VFX during filming stage
 		- Enhanced actor performance with visible environments
 		- Reduced post-production requirements
 		- Reusable environments across productions
-- ## Applications
-	- Feature film and television production
-	- Live broadcast and sports coverage
-	- Advertising and commercial production
-	- Music video and concert visuals
-	- Corporate event presentations
+  - ## Applications
+  - Feature film and television production
+  - Live broadcast and sports coverage
+  - Advertising and commercial production
+  - Music video and concert visuals
+  - Corporate event presentations
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

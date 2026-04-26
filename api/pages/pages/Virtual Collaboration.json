@@ -1,41 +1,47 @@
 {
-  "id": "Virtual Collaboration",
+  "id": "virtual-collaboration",
   "title": "Virtual Collaboration",
-  "content": "- ### OntologyBlock\n  id:: virtual-collaboration-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10109\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Collaboration\n\t- status:: active\n\t- definition:: A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.\n\t- owl:class:: mv:VirtualCollaboration\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Workspace]]\n\t\t- related-to:: [[Remote Work]]\n\t\t- related-to:: [[Digital Workplace]]\n\t\t- related-to:: [[Avatar]]\n\t  id:: virtual-collaboration-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual collaboration in the metaverse enables teams to meet in fully immersive 3D environments, providing a sense of presence and interaction similar to physical offices. Employees can create digital avatars that allow real-time interactions, navigate virtual offices and meeting rooms, approach virtual help desks, deliver live presentations, and socialize in networking lounges. Airbus technicians halved training time and boosted performance by 20% using VR collaboration.\n- ## Technical Details\n\t- ### Collaboration Tools\n\t\t- **Interactive Whiteboards**: Real-time brainstorming with drawing and annotation\n\t\t- **Document Co-Editing**: Synchronized editing with instant updates\n\t\t- **Project Management**: Task organization, role assignment, and progress tracking\n\t\t- **Shared Calendars**: Team-visible scheduling in virtual environments\n\t- ### Access Methods\n\t\t- Desktop computer access via browser\n\t\t- Mobile device applications\n\t\t- VR headset immersion\n\t\t- AR overlay integration\n\t- ### Key Features\n\t\t- 3D spatial audio for natural conversation\n\t\t- Avatar customization and expression\n\t\t- Virtual room persistence\n\t\t- Cross-platform interoperability\n- ## Applications\n\t- Remote team meetings and standups\n\t- Virtual brainstorming and design sessions\n\t- Employee onboarding and training\n\t- Cross-functional project collaboration\n\t- Global team building and social events",
+  "content": "- ### Definition\n  - A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualCollaboration\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Workspace]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual collaboration in the metaverse enables teams to meet in fully immersive 3D environments, providing a sense of presence and interaction similar to physical offices. Employees can create digital avatars that allow real-time interactions, navigate virtual offices and meeting rooms, approach virtual help desks, deliver live presentations, and socialize in networking lounges. Airbus technicians halved training time and boosted performance by 20% using VR collaboration.\n  - ## Technical Details\n  - ### Collaboration Tools\n\t\t- **Interactive Whiteboards**: Real-time brainstorming with drawing and annotation\n\t\t- **Document Co-Editing**: Synchronized editing with instant updates\n\t\t- **Project Management**: Task organization, role assignment, and progress tracking\n\t\t- **Shared Calendars**: Team-visible scheduling in virtual environments\n  - ### Access Methods\n\t\t- Desktop computer access via browser\n\t\t- Mobile device applications\n\t\t- VR headset immersion\n\t\t- AR overlay integration\n  - ### Key Features\n\t\t- 3D spatial audio for natural conversation\n\t\t- Avatar customization and expression\n\t\t- Virtual room persistence\n\t\t- Cross-platform interoperability\n  - ## Applications\n  - Remote team meetings and standups\n  - Virtual brainstorming and design sessions\n  - Employee onboarding and training\n  - Cross-functional project collaboration\n  - Global team building and social events\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Participant Coordination",
     "Xr Meeting Space",
-    "Knowledge Sharing",
     "Metaverse"
   ],
   "wiki_links": [
-    "Avatar",
     "Virtual Workspace",
-    "metaverse",
-    "Remote Work",
-    "Digital Workplace"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-collaboration",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualCollaboration",
+    "content_hash": "sha256-12-e82c054c1cc2",
+    "legacy_term_id": "MV-10109",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-collaboration",
+    "schema_version": "v2",
     "term_id": "MV-10109",
     "preferred_term": "Virtual Collaboration",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualCollaboration",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualCollaboration",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualCollaboration",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Workspace"
@@ -48,26 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Remote Work",
-        "Digital Workplace",
-        "Avatar"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

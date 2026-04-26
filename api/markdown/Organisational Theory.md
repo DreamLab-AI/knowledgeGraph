@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: tc9507-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: TC-9507
-	- preferred-term:: Organisational Theory
-	- source-domain:: tc
-	- owl:class:: tc:OrganisationalTheory
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/distributed-collaboration#OrganisationalTheory
+uri:: urn:visionclaw:concept:distributed-collaboration:organisational-theory
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:distributed-collaboration:organisational-theory
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: distributed-collaboration
+preferred-term:: Organisational Theory
+content-hash:: sha256-12-97afba890f3e
+legacy-term-id:: TC-9507
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Organisational Theory is a concept within the telecollaboration domain. Further enrichment pending.
 
-Organisational Theory represents an abstract concept in the telecollaboration ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: distributed-collaboration:OrganisationalTheory
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Organisational Theory represents an abstract concept in the telecollaboration ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

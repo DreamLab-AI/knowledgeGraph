@@ -1,94 +1,109 @@
-- ### OntologyBlock
-  id:: cryptographic-keys-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: BC-7006
-	- preferred-term:: Cryptographic Keys
-	- source-domain:: bc
-	- status:: active
-	- public-access:: true
-	- definition:: Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.
-	- maturity:: reviewed
-	- owl:class:: bc:CryptographicKeys
-	- owl:role:: Concept
-	- belongsToDomain:: [[Cryptography]]
+iri:: http://narrativegoldmine.com/blockchain#CryptographicKeys
+uri:: urn:visionclaw:concept:blockchain:cryptographic-keys
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:cryptographic-keys
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Cryptographic Keys
+content-hash:: sha256-12-523109541c81
+legacy-term-id:: BC-7006
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Definition
+- ### Definition
+  - Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa. Keys can be symmetric (single shared key) or asymmetric (public-private key pairs), with security depending on key length, randomness, and proper management.
 
-A cryptographic key is a string of data used to encrypt data (to keep the data secret), decrypt data (to perform the reverse operation), sign data (to ensure authenticity), or verify a signature. The security of any cryptographic system fundamentally depends on the secrecy, randomness, and proper management of its keys.
+- ### Semantic Classification
+  - owl-class:: blockchain:CryptographicKeys
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Cryptography]]
 
-## Key Types
+- ### Relationships
+  - is-subclass-of:: [[Cryptography]]
+  - enables:: [[Digital Signature]]
 
-### By Encryption Method
+  - bridges-to:: [[AI Agent System]] (ai)
+- ### Content
 
-#### Symmetric Keys
-- Single key used for both encryption and decryption
-- Must be shared securely between all parties
-- Faster and more efficient for bulk data encryption
-- Common algorithms: AES, ChaCha20, 3DES
-- Typical sizes: 128, 192, or 256 bits
+  ## Definition
 
-#### Asymmetric Keys (Public-Key Pairs)
-- Mathematically related pair: public key and private key
-- Public key encrypts data or verifies signatures
-- Private key decrypts data or creates signatures
-- No need to share private key, reducing exposure risk
-- Common algorithms: RSA, ECC, Ed25519
-- Typical sizes: 2048-4096 bits (RSA), 256-384 bits (ECC)
+  A cryptographic key is a string of data used to encrypt data (to keep the data secret), decrypt data (to perform the reverse operation), sign data (to ensure authenticity), or verify a signature. The security of any cryptographic system fundamentally depends on the secrecy, randomness, and proper management of its keys.
 
-### By Function
+  ## Key Types
 
-- **Encryption Keys**: Transform plaintext to ciphertext
-- **Decryption Keys**: Reverse the encryption process
-- **Signing Keys**: Create digital signatures (typically private keys)
-- **Verification Keys**: Verify digital signatures (typically public keys)
-- **Master Keys**: Root keys from which other keys are derived
-- **Session Keys**: Temporary keys for single communication session
-- **Key Encryption Keys (KEK)**: Keys used to encrypt other keys
+  ### By Encryption Method
 
-## Security Properties
+  #### Symmetric Keys
+  - Single key used for both encryption and decryption
+  - Must be shared securely between all parties
+  - Faster and more efficient for bulk data encryption
+  - Common algorithms: AES, ChaCha20, 3DES
+  - Typical sizes: 128, 192, or 256 bits
 
-| Property | Symmetric Keys | Asymmetric Keys |
-|----------|---------------|-----------------|
-| Key Size for Equivalent Security | 128-bit | 2048-bit (RSA) |
-| Speed | Very fast | Slower |
-| Key Distribution | Challenging | Easier (public key shareable) |
-| Use Case | Bulk encryption | Key exchange, signatures |
+  #### Asymmetric Keys (Public-Key Pairs)
+  - Mathematically related pair: public key and private key
+  - Public key encrypts data or verifies signatures
+  - Private key decrypts data or creates signatures
+  - No need to share private key, reducing exposure risk
+  - Common algorithms: RSA, ECC, Ed25519
+  - Typical sizes: 2048-4096 bits (RSA), 256-384 bits (ECC)
 
-## Blockchain Applications
+  ### By Function
 
-- **Private Keys**: Control access to blockchain addresses and funds
-- **Public Keys**: Derive addresses and verify transaction signatures
-- **HD Wallet Keys**: Hierarchically derived from master seed
-- **Multi-sig Keys**: Multiple keys required for transaction authorization
+  - **Encryption Keys**: Transform plaintext to ciphertext
+  - **Decryption Keys**: Reverse the encryption process
+  - **Signing Keys**: Create digital signatures (typically private keys)
+  - **Verification Keys**: Verify digital signatures (typically public keys)
+  - **Master Keys**: Root keys from which other keys are derived
+  - **Session Keys**: Temporary keys for single communication session
+  - **Key Encryption Keys (KEK)**: Keys used to encrypt other keys
 
-## Key Generation Requirements
+  ## Security Properties
 
-- High-entropy random number source (CSPRNG)
-- Sufficient key length for target security level
-- Algorithm-specific generation procedures
-- Protection against side-channel leakage during generation
+  | Property | Symmetric Keys | Asymmetric Keys |
+  |----------|---------------|-----------------|
+  | Key Size for Equivalent Security | 128-bit | 2048-bit (RSA) |
+  | Speed | Very fast | Slower |
+  | Key Distribution | Challenging | Easier (public key shareable) |
+  | Use Case | Bulk encryption | Key exchange, signatures |
 
-## Hybrid Encryption
+  ## Blockchain Applications
 
-Modern systems often combine both key types:
-1. Asymmetric encryption exchanges a symmetric session key
-2. Symmetric encryption handles bulk data (faster)
-3. Example: TLS/SSL in HTTPS communications
+  - **Private Keys**: Control access to blockchain addresses and funds
+  - **Public Keys**: Derive addresses and verify transaction signatures
+  - **HD Wallet Keys**: Hierarchically derived from master seed
+  - **Multi-sig Keys**: Multiple keys required for transaction authorization
 
-## Relationships
-- managed-by:: [[Cryptographic Key Management]]
-- generated-by:: [[Random Number Generation]]
-- derived-by:: [[Key Derivation Function]]
-- used-in:: [[Symmetric Encryption]]
-- used-in:: [[Asymmetric Encryption]]
-- enables:: [[Digital Signature]]
-- is-subclass-of:: [[Cryptography]]
+  ## Key Generation Requirements
 
-## Metadata
+  - High-entropy random number source (CSPRNG)
+  - Sufficient key length for target security level
+  - Algorithm-specific generation procedures
+  - Protection against side-channel leakage during generation
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with key type details
-- **References**: 9 pages reference this concept
+  ## Hybrid Encryption
 
-#cryptography #keys #encryption #public-key #private-key #blockchain-security
+  Modern systems often combine both key types:
+  1. Asymmetric encryption exchanges a symmetric session key
+  2. Symmetric encryption handles bulk data (faster)
+  3. Example: TLS/SSL in HTTPS communications
+
+  ## Relationships
+  - managed-by:: [[Cryptographic Key Management]]
+  - generated-by:: [[Random Number Generation]]
+  - derived-by:: [[Key Derivation Function]]
+  - used-in:: [[Symmetric Encryption]]
+  - used-in:: [[Asymmetric Encryption]]
+  - enables:: [[Digital Signature]]
+  - is-subclass-of:: [[Cryptography]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

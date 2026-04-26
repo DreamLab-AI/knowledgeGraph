@@ -1,170 +1,181 @@
-- ### OntologyBlock
-  id:: interoperability-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9934
-	- source-domain:: mv
-	- preferred-term:: Interoperability Architecture
-	- status:: active
-	- owl:class:: mv:InteroperabilityArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.
-	- #### Relationships
-	  id:: interoperability-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Technical Architecture]]
-		- related-to:: [[Interoperability Standard]]
-		- related-to:: [[Cross-Platform Integration]]
-		- enables:: [[Unified Metaverse]]
+iri:: http://narrativegoldmine.com/infrastructure#InteroperabilityArchitecture
+uri:: urn:visionclaw:concept:infrastructure:interoperability-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:interoperability-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Interoperability Architecture
+content-hash:: sha256-12-93778ed36959
+legacy-term-id:: MV-9934
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Industry Standards Organisations
+- ### Definition
+  - Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.
 
-### Metaverse Standards Forum
-- Over 2,600 members (2024)
-- Technology providers united
-- Developer participation
-- Standards organisation hub
-- Pre-standardisation discussions
+- ### Semantic Classification
+  - owl-class:: infrastructure:InteroperabilityArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Working Groups
-- 3D asset interoperability
-- Real/virtual world integration
-- Identity management
-- Framework development
-- Emerging standard promotion
+- ### Relationships
+  - is-subclass-of:: [[Technical Architecture]]
+  - enables:: [[Unified Metaverse]]
 
-## Key Architectures
+- ### Content
 
-### IPSME Architecture
-- Nevelsteen and Wehlou design
-- Publish-subscribe mechanism
-- Dynamic translator integration
-- System evolution support
-- Simplified integration approach
+  ## Industry Standards Organisations
 
-### Implementation
-- No uniform protocol requirement
-- Minecraft metaverse application
-- Disparate system connection
-- Flexible adaptation
-- Proven scalability
+  ### Metaverse Standards Forum
+  - Over 2,600 members (2024)
+  - Technology providers united
+  - Developer participation
+  - Standards organisation hub
+  - Pre-standardisation discussions
 
-### CMDMS Architecture
-- Cross-Platform Data Management
-- Chen et al. proposal
-- User profile accessibility
-- Cross-platform spaces
-- 3D asset transfer capability
+  ### Working Groups
+  - 3D asset interoperability
+  - Real/virtual world integration
+  - Identity management
+  - Framework development
+  - Emerging standard promotion
 
-### Engine Support
-- Unity engine integration
-- Unreal engine support
-- Digital asset portability
-- Developer workflow
-- Content preservation
+  ## Key Architectures
 
-### XAVE Architecture
-- Non-immersive experience integration
-- Immersive experience support
-- Heterogeneous environment design
-- Multi-device facilitation
-- Cross-platform interaction
+  ### IPSME Architecture
+  - Nevelsteen and Wehlou design
+  - Publish-subscribe mechanism
+  - Dynamic translator integration
+  - System evolution support
+  - Simplified integration approach
 
-### Device Support
-- PC compatibility
-- Mobile device access
-- VR/AR headset integration
-- Motion capture systems
-- Flexible device inclusion
+  ### Implementation
+  - No uniform protocol requirement
+  - Minecraft metaverse application
+  - Disparate system connection
+  - Flexible adaptation
+  - Proven scalability
 
-## Technical Standards
+  ### CMDMS Architecture
+  - Cross-Platform Data Management
+  - Chen et al. proposal
+  - User profile accessibility
+  - Cross-platform spaces
+  - 3D asset transfer capability
 
-### 3D Object Standards
-- glTF (graphics library transmission)
-- 3D object sharing format
-- Khronos Group specification
-- Cross-platform compatibility
-- Industry adoption
+  ### Engine Support
+  - Unity engine integration
+  - Unreal engine support
+  - Digital asset portability
+  - Developer workflow
+  - Content preservation
 
-### World Standards
-- USD (Universal Scene Description)
-- Open file format
-- 3D world sharing
-- Pixar origination
-- Industry standardisation
+  ### XAVE Architecture
+  - Non-immersive experience integration
+  - Immersive experience support
+  - Heterogeneous environment design
+  - Multi-device facilitation
+  - Cross-platform interaction
 
-### Geospatial Standards
-- 3D Tiles specification
-- Geospatial content streaming
-- Efficient scale delivery
-- Cesium development
-- Large-scale support
+  ### Device Support
+  - PC compatibility
+  - Mobile device access
+  - VR/AR headset integration
+  - Motion capture systems
+  - Flexible device inclusion
 
-### Behaviour Standards
-- O3DE framework
-- 3D object behaviour
-- Interoperability focus
-- Open source foundation
-- AWS supported
+  ## Technical Standards
 
-### XR Device Standards
-- OpenXR specification
-- VR device sharing
-- Extended reality support
-- Khronos Group standard
-- Cross-device compatibility
+  ### 3D Object Standards
+  - glTF (graphics library transmission)
+  - 3D object sharing format
+  - Khronos Group specification
+  - Cross-platform compatibility
+  - Industry adoption
 
-## Web-Based Approaches
+  ### World Standards
+  - USD (Universal Scene Description)
+  - Open file format
+  - 3D world sharing
+  - Pixar origination
+  - Industry standardisation
 
-### W3C Immersive Web
-- WebXR Device API development
-- VR/AR browser access
-- XR device interaction
-- Sensor API exposure
-- Browser standardisation
+  ### Geospatial Standards
+  - 3D Tiles specification
+  - Geospatial content streaming
+  - Efficient scale delivery
+  - Cesium development
+  - Large-scale support
 
-### Unified Metaverse Vision
-- Smooth environment transitions
-- 3D state maintenance
-- Robust interoperability
-- Web connectivity evolution
-- X3D ISO/IEC standard
+  ### Behaviour Standards
+  - O3DE framework
+  - 3D object behaviour
+  - Interoperability focus
+  - Open source foundation
+  - AWS supported
 
-## Identity Requirements
+  ### XR Device Standards
+  - OpenXR specification
+  - VR device sharing
+  - Extended reality support
+  - Khronos Group standard
+  - Cross-device compatibility
 
-### Chain of Trust
-- Individual-action connection
-- Asset linkage
-- Email/social media foundation
-- Enterprise IAM integration
-- Standardisation priority
+  ## Web-Based Approaches
 
-### Essential Aspects
-- Authentication standards
-- Transaction standards
-- Data interoperability
-- Immersive platform support
-- Cross-platform consistency
+  ### W3C Immersive Web
+  - WebXR Device API development
+  - VR/AR browser access
+  - XR device interaction
+  - Sensor API exposure
+  - Browser standardisation
 
-## Blockchain Integration
+  ### Unified Metaverse Vision
+  - Smooth environment transitions
+  - 3D state maintenance
+  - Robust interoperability
+  - Web connectivity evolution
+  - X3D ISO/IEC standard
 
-### Decentralised Foundation
-- Truly interoperable metaverse
-- Virtual asset recording
-- Cross-platform accessibility
-- Utility and value enhancement
-- Trust foundation
+  ## Identity Requirements
 
-### Transaction Support
-- Secure transactions
-- Transparent operations
-- User trust fostering
-- Cross-platform commerce
-- Asset verification
+  ### Chain of Trust
+  - Individual-action connection
+  - Asset linkage
+  - Email/social media foundation
+  - Enterprise IAM integration
+  - Standardisation priority
 
-## Metadata
+  ### Essential Aspects
+  - Authentication standards
+  - Transaction standards
+  - Data interoperability
+  - Immersive platform support
+  - Cross-platform consistency
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Blockchain Integration
+
+  ### Decentralised Foundation
+  - Truly interoperable metaverse
+  - Virtual asset recording
+  - Cross-platform accessibility
+  - Utility and value enhancement
+  - Trust foundation
+
+  ### Transaction Support
+  - Secure transactions
+  - Transparent operations
+  - User trust fostering
+  - Cross-platform commerce
+  - Asset verification
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

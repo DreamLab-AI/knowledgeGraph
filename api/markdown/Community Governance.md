@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9528-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9528
-	- preferred-term:: Community Governance
-	- source-domain:: mv
-	- owl:class:: mv:CommunityGovernance
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Community Governance is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/metaverse#CommunityGovernance
+uri:: urn:visionclaw:concept:artificial-intelligence:community-governance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:community-governance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Community Governance
+content-hash:: sha256-12-91f3479bafc4
+legacy-term-id:: MV-9528
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Community Governance is a concept within the metaverse domain. Further enrichment pending.
 
-Community Governance represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:CommunityGovernance
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Blockchain]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Community Governance represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

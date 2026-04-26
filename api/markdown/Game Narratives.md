@@ -1,107 +1,121 @@
-- ### OntologyBlock
-  id:: game-narratives-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9903
-	- source-domain:: mv
-	- preferred-term:: Game Narratives
-	- status:: active
-	- owl:class:: mv:GameNarratives
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.
-	- #### Relationships
-	  id:: game-narratives-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Interactive Storytelling]]
-		- related-to:: [[Educational Narrative]]
-		- related-to:: [[Dynamic Character Animation]]
-		- enables:: [[Immersive Gaming Experiences]]
+iri:: http://narrativegoldmine.com/spatial-computing#GameNarratives
+uri:: urn:visionclaw:concept:spatial-computing:game-narratives
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:game-narratives
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Game Narratives
+content-hash:: sha256-12-c0ba53818ba0
+legacy-term-id:: MV-9903
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## 2024 Narrative Trends
+- ### Definition
+  - Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.
 
-### Evolving Narrative Approaches
-- Premium on evolving narratives and interactive storytelling
-- Games with branching storylines where player choices impact plot
-- Advanced AI enabling dynamic storytelling
-- Nuanced character interactions and plot twists
+- ### Semantic Classification
+  - owl-class:: spatial-computing:GameNarratives
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Adaptive Narratives
-- Storylines not fixed but evolve based on collective decisions
-- Dynamic and ever-changing narrative landscapes
-- Real-time response to player decisions
-- Personalised story experiences
+- ### Relationships
+  - is-subclass-of:: [[Interactive Storytelling]]
+  - enables:: [[Immersive Gaming Experiences]]
 
-## Metaverse Integration
+- ### Content
 
-### Market Context
-- Metaverse gaming market: USD 24.79 billion (2024)
-- Projected: USD 648.24 billion by 2034
-- CAGR: 38.59%
-- Adventure genre: 31% market share (2024)
+  ## 2024 Narrative Trends
 
-### Interconnected Experiences
-- Seamless movement between games and experiences
-- Social interactions integrated with narratives
-- Commerce and storytelling convergence
-- Persistent story worlds across platforms
+  ### Evolving Narrative Approaches
+  - Premium on evolving narratives and interactive storytelling
+  - Games with branching storylines where player choices impact plot
+  - Advanced AI enabling dynamic storytelling
+  - Nuanced character interactions and plot twists
 
-## Technology Enablers
+  ### Adaptive Narratives
+  - Storylines not fixed but evolve based on collective decisions
+  - Dynamic and ever-changing narrative landscapes
+  - Real-time response to player decisions
+  - Personalised story experiences
 
-### VR/AR Storytelling
-- 3D environments for narrative immersion
-- AR mixing digital elements with reality
-- Location-based gaming narratives
-- Interactive multiplayer storytelling
+  ## Metaverse Integration
 
-### Generative AI
-- Meta developing AI-driven games that change with each play
-- Non-deterministic story paths
-- AI-generated content and responses
-- Procedural narrative generation
+  ### Market Context
+  - Metaverse gaming market: USD 24.79 billion (2024)
+  - Projected: USD 648.24 billion by 2034
+  - CAGR: 38.59%
+  - Adventure genre: 31% market share (2024)
 
-### Player Agency
-- Branching storylines with impactful choices
-- Players as active narrative creators
-- User-generated content and worlds
-- Community-driven story evolution
+  ### Interconnected Experiences
+  - Seamless movement between games and experiences
+  - Social interactions integrated with narratives
+  - Commerce and storytelling convergence
+  - Persistent story worlds across platforms
 
-## Design Approaches
+  ## Technology Enablers
 
-### Narrative Structures
-- Linear with choice points
-- Open world with emergent stories
-- Episodic releases
-- Persistent world narratives
+  ### VR/AR Storytelling
+  - 3D environments for narrative immersion
+  - AR mixing digital elements with reality
+  - Location-based gaming narratives
+  - Interactive multiplayer storytelling
 
-### Character Development
-- Dynamic character relationships
-- NPC memory and behaviour adaptation
-- Player-character bond building
-- Social dynamics simulation
+  ### Generative AI
+  - Meta developing AI-driven games that change with each play
+  - Non-deterministic story paths
+  - AI-generated content and responses
+  - Procedural narrative generation
 
-### World Building
-- Environmental storytelling
-- Discoverable lore systems
-- Living world events
-- Cross-media narrative extensions
+  ### Player Agency
+  - Branching storylines with impactful choices
+  - Players as active narrative creators
+  - User-generated content and worlds
+  - Community-driven story evolution
 
-## Applications
+  ## Design Approaches
 
-### Gaming Platforms
-- AAA game development
-- Indie narrative games
-- Metaverse social platforms
-- Educational gaming
+  ### Narrative Structures
+  - Linear with choice points
+  - Open world with emergent stories
+  - Episodic releases
+  - Persistent world narratives
 
-### Brand Integration
-- Marketing through storytelling
-- Brand-aligned virtual worlds
-- Sponsored narrative content
-- Interactive advertising
+  ### Character Development
+  - Dynamic character relationships
+  - NPC memory and behaviour adaptation
+  - Player-character bond building
+  - Social dynamics simulation
 
-## Metadata
+  ### World Building
+  - Environmental storytelling
+  - Discoverable lore systems
+  - Living world events
+  - Cross-media narrative extensions
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Applications
+
+  ### Gaming Platforms
+  - AAA game development
+  - Indie narrative games
+  - Metaverse social platforms
+  - Educational gaming
+
+  ### Brand Integration
+  - Marketing through storytelling
+  - Brand-aligned virtual worlds
+  - Sponsored narrative content
+  - Interactive advertising
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

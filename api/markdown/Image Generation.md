@@ -1,145 +1,101 @@
-- ### OntologyBlock
-  id:: image-generation-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0362
-	- preferred-term:: Image Generation
-	- source-domain:: mv
-	- status:: draft
-- definition:: Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
+iri:: http://narrativegoldmine.com/spatial-computing#ImageGeneration
+uri:: urn:visionclaw:concept:spatial-computing:image-generation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:image-generation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Image Generation
+content-hash:: sha256-12-88957f90a47f
+legacy-term-id:: AI-0362
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ImageGeneration
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :ImageGeneration))
+- ### Content
+  - Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :ImageGeneration "Image Generation"@en)
-(AnnotationAssertion rdfs:comment :ImageGeneration "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation."@en)
+  - ### [Collaborative Control for Geometry-Conditioned PBR Image Generation](https://unity-research.github.io/holo-gen/) - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.
+  - The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.
+  - One focus is on using [[neural networks]] and [[machine learning]] to automatically generate holographic representations from 2D images or videos.
+  - Another aspect involves creating interactive holographic experiences that allow users to manipulate and interact with virtual objects in a mixed reality environment.
+  - The research investigates [[optimization]] of holographic displays for improved image quality, brightness, and field of view.
+  - Holo-Gen seeks to address challenges such as computational complexity and [[data management]] requirements associated with holographic rendering.
+  - The project explores different holographic display technologies, including spatial light modulators (SLMs) and computational holography.
+  - Colour reproduction in holograms is also a key area of investigation, with research aiming to improve the accuracy and vibrancy of colours.
+  - The research encompasses the development of algorithms for efficiently calculating and rendering holograms in real-time.
+  - Ultimately, Holo-Gen strives to enable more intuitive and immersive mixed reality experiences through advanced [[research]].
 
-;; Taxonomic Relationships
-(SubClassOf :ImageGeneration :ComputerVision)
-
-;; Semantic Relationships
-(SubClassOf :ImageGeneration
-  (ObjectSomeValuesFrom :relatedTo :Texttoimage))
-(SubClassOf :ImageGeneration
-  (ObjectSomeValuesFrom :implements :DiffusionModel))
-(SubClassOf :ImageGeneration
-  (ObjectSomeValuesFrom :relatedTo :GenerativeAdversarialNetwork))
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :ImageGeneration "AI-0362"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :ImageGeneration "true"^^xsd:boolean)
-```
-
-## Core Characteristics
-
-- **High-Fidelity Synthesis**: Photo-realistic image creation
-- **Conditional Generation**: Text-to-image, image-to-image, sketch-to-image
-- **Controllable Generation**: Manipulation of style, content, attributes
-- **Diverse Outputs**: Stochastic sampling for variety
-- **Large-Scale Models**: Trained on billion-image datasets
-
-## Relationships
-
-- **Subclass**: Computer Vision
-- **Related**: Generative Adversarial Network, Diffusion Model, Text-to-Image
-- **Models**: DALL-E, Stable Diffusion, Midjourney, Imagen
-- **Applications**: Art Generation, Data Augmentation, Design
-
-## Key Literature
-
-1. Goodfellow, I., et al. (2014). "Generative adversarial nets." *NeurIPS*, 2672-2680.
-
-2. Rombach, R., et al. (2022). "High-resolution image synthesis with latent diffusion models." *CVPR*, 10684-10695.
-
-3. Ramesh, A., et al. (2022). "Hierarchical text-conditional image generation with CLIP latents." *arXiv:2204.06125*.
-
-## See Also
-
-- [[Generative Adversarial Network]]
-- [[Diffusion Model]]
-- [[Text-to-Image]]
-
-## Metadata
-
-- **Domain**: Computer Vision, Generative AI
-- **Maturity**: Rapid commercial adoption
-	- maturity:: draft
-	- owl:class:: mv:ImageGeneration
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: image-generation-relationships
-- ## About Image Generation
-	- Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
-
-	- ### [Collaborative Control for Geometry-Conditioned PBR Image Generation](https://unity-research.github.io/holo-gen/) - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.
-- The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.
-- One focus is on using [[neural networks]] and [[machine learning]] to automatically generate holographic representations from 2D images or videos.
-- Another aspect involves creating interactive holographic experiences that allow users to manipulate and interact with virtual objects in a mixed reality environment.
-- The research investigates [[optimization]] of holographic displays for improved image quality, brightness, and field of view.
-- Holo-Gen seeks to address challenges such as computational complexity and [[data management]] requirements associated with holographic rendering.
-- The project explores different holographic display technologies, including spatial light modulators (SLMs) and computational holography.
-- Colour reproduction in holograms is also a key area of investigation, with research aiming to improve the accuracy and vibrancy of colours.
-- The research encompasses the development of algorithms for efficiently calculating and rendering holograms in real-time.
-- Ultimately, Holo-Gen strives to enable more intuitive and immersive mixed reality experiences through advanced [[research]].
-
-	- ### **BlenderGPT**
+  - ### **BlenderGPT**
 		- [BlenderGPT GitHub](https://github.com/gd3kr/BlenderGPT) - - BlenderGPT is a project that allows users to control Blender through [[natural language processing]] instructions using [[artificial intelligence]] models.
-- The tool aims to streamline the 3D modelling process by [[automation]] of repetitive tasks and enabling users to create and manipulate objects with simple text commands.
-- The project provides a framework for connecting Blender's Python API with [[machine learning]], enabling users to translate [[natural language processing]] into executable Blender code.
-- Functionality includes object creation, scene organisation, material application (including colour changes), and animation control, all via text prompts.
-- Users can install BlenderGPT as a Blender add-on and configure it with their API key to access the language model's capabilities.
-- The project is designed to be extensible, allowing developers to add custom functions and improve the integration between [[natural language processing]] and Blender actions.
-- The repository offers examples, [[documentation]] and a troubleshooting guide to help users get started and resolve common issues.
-- The system allows for iterative design changes, where users can refine their creations by giving further instructions to the [[machine learning]] model based on previous results.
+  - The tool aims to streamline the 3D modelling process by [[automation]] of repetitive tasks and enabling users to create and manipulate objects with simple text commands.
+  - The project provides a framework for connecting Blender's Python API with [[machine learning]], enabling users to translate [[natural language processing]] into executable Blender code.
+  - Functionality includes object creation, scene organisation, material application (including colour changes), and animation control, all via text prompts.
+  - Users can install BlenderGPT as a Blender add-on and configure it with their API key to access the language model's capabilities.
+  - The project is designed to be extensible, allowing developers to add custom functions and improve the integration between [[natural language processing]] and Blender actions.
+  - The repository offers examples, [[documentation]] and a troubleshooting guide to help users get started and resolve common issues.
+  - The system allows for iterative design changes, where users can refine their creations by giving further instructions to the [[machine learning]] model based on previous results.
 		- [neph1/blender-stable-diffusion-render](https://github.com/neph1/blender-stable-diffusion-render/) - *   This add-on integrates Stable Diffusion directly into Blender, allowing users to generate images and textures using [[artificial intelligence]] from within the 3D modelling software.
 
--   It streamlines the workflow by eliminating the need to switch between Blender and separate Stable Diffusion interfaces.
+  -   It streamlines the workflow by eliminating the need to switch between Blender and separate Stable Diffusion interfaces.
 
--   The add-on provides features for controlling image generation parameters, such as prompts, sampling methods, and image size.
+  -   The add-on provides features for controlling image generation parameters, such as prompts, sampling methods, and image size.
 
--   Users can use generated images as textures, backgrounds, or reference images within their Blender projects.
+  -   Users can use generated images as textures, backgrounds, or reference images within their Blender projects.
 
--   It enables the creation of new and imaginative assets and content without extensive traditional modelling or texturing.
+  -   It enables the creation of new and imaginative assets and content without extensive traditional modelling or texturing.
 
--   The system requires a local installation of Stable Diffusion and necessary dependencies, configured to work with the Blender add-on.
+  -   The system requires a local installation of Stable Diffusion and necessary dependencies, configured to work with the Blender add-on.
 
--   The add-on is designed to be customisable, enabling users to fine-tune image generation based on specific project needs.
+  -   The add-on is designed to be customisable, enabling users to fine-tune image generation based on specific project needs.
 
--   The installation and use process is organised through a user-friendly interface within Blender.
+  -   The installation and use process is organised through a user-friendly interface within Blender.
 
--   It offers a way to enhance the creative possibilities within Blender by leveraging the power of [[artificial intelligence]] image generation.
+  -   It offers a way to enhance the creative possibilities within Blender by leveraging the power of [[artificial intelligence]] image generation.
 
-	- ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
+  - ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
 
-- The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
-- It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
-- The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
-- A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
-- The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
-- The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
-- The user controlled component allows for finer control over colour choices compared to automatic systems.
-- The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
+  - The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
+  - It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
+  - The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
+  - A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
+  - The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
+  - The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
+  - The user controlled component allows for finer control over colour choices compared to automatic systems.
+  - The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
 
-	- ### **Point·E System**
+  - ### **Point·E System**
 		- [Point·E GitHub](https://github.com/openai/point-e) - - Point-E is a system developed by OpenAI for efficiently creating 3D point clouds from text prompts.
-- It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
-- The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
-- It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
-- The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
-- A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
-- The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
-- The technology allows for easy integration into existing 3D pipelines and applications.
-- The project encourages further [[research]] into improving the quality and complexity of generated 3D assets.
-- The documentation helps users to organise the code and understand the underlying techniques for text-to-3D generation.
+  - It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
+  - The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
+  - It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
+  - The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
+  - A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
+  - The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
+  - The technology allows for easy integration into existing 3D pipelines and applications.
+  - The project encourages further [[research]] into improving the quality and complexity of generated 3D assets.
+  - The documentation helps users to organise the code and understand the underlying techniques for text-to-3D generation.
 
-	- ### [MM-Search](https://mmsearch.github.io/)
+  - ### [MM-Search](https://mmsearch.github.io/)
 		- A search engine that uses AI to search for images and videos.
 
 		- ### A website for my company (free hosting auto push to github pages)
@@ -147,7 +103,7 @@
 			- <iframe src="https://www.dreamlab-ai.com" style="width: 100%; height: 600px"></iframe>
 			- ![image.png](assets/image_1759158444878_0.png)
 
-	- ## Most Adopted Enterprise AI Use Cases
+  - ## Most Adopted Enterprise AI Use Cases
 		- Code generation: 51%
 		- Customer support chatbots: 31%
 		- Enterprise search: 28%
@@ -157,25 +113,24 @@
 		- Image generation: 20%
 		- Use cases reflect a shift from consumer-focused tasks to enterprise-specific applications.
 
-	- ### Novel VP Render Pipeline:
+  - ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 
-	- ## Retrieval Augmented Generation (RAG)
+  - ## Retrieval Augmented Generation (RAG)
 
-	- ### GitHub Repositories
+  - ### GitHub Repositories
 		- [guoyww/animatediff](https://github.com/guoyww/animatediff) - A method for creating animation using diffusion models that introduces motion modules integrated into pre-trained text-to-image models, enabling flexible [[computer vision]] and [[machine learning]]-based video generation with customisable [[training]] and fine-tuning capabilities
 		- [continue-revolution/sd-webui-animatediff](https://github.com/continue-revolution/sd-webui-animatediff) - Provides a straightforward method for incorporating AnimateDiff into Stable Diffusion web user interfaces, simplifying the generation of looping videos and animated GIFs with easy [[workflow management]], [[user experience]] optimisation, and [[documentation]] for [[troubleshooting]] common issues
 		- [ArtVentureX/comfyui-animatediff](https://github.com/ArtVentureX/comfyui-animatediff) - Integrates the AnimateDiff motion module into ComfyUI's node-based interface, providing a visual workflow for creating animations with support for controlnets, LoRAs, and various Stable Diffusion checkpoints through [[software engineering]] best practices and [[community]] contributions
 
-- # Specialised Models
-	- ![image.png](assets/image_1717159684964_0.png)
+  - # Specialised Models
+  - ![image.png](assets/image_1717159684964_0.png)
 
 		- ### 3D models for AR and VR
 			- ![image.png](assets/image_1715528397803_0.png)
 			- ![image.png](assets/image_1715584894585_0.png)
-	-
 
-	- ## Section 4: The Multimodality War
+  - ## Section 4: The Multimodality War
 		- Midjourney launched v6 and a web UI.
 		- Assembly AI raised $50m for "Stripe for AI models".
 		- Replicate raised $40m to serve AI engineers.
@@ -183,7 +138,6 @@
 		- OpenAI and Google continue work on "God Models".
 
 		- ### Image Generation & Editing
-		  collapsed:: true
 			- *Task:* Create unique images, enhance product photos, generate backgrounds, or design visual assets for marketing and branding.
 			- **Midjourney**
 				- *Description:* High-quality AI image generator accessed via Discord. Known for artistic and detailed outputs. V6 includes text generation within images, 'Vary Region' for inpainting/product placement.
@@ -218,18 +172,16 @@
 				- *Cost:* Check website for pricing structure.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[ML Blocks](https://mlblocks.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
 
-	- ## Google sub second inferencing on a phone.
+  - ## Google sub second inferencing on a phone.
 		- [Paper page
 		- MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices (huggingface.co)](https://huggingface.co/papers/2311.16567)
--
 
-- # Consumer Hardware
-	- [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
-	- [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
-	-
-- **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
+  - # Consumer Hardware
+  - [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
+  - [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
+  - **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
 
-	- ### Avatar Generation: Creating Digital Beings from Scratch
+  - ### Avatar Generation: Creating Digital Beings from Scratch
 		- This section focuses on platforms and research enabling the generation of complete avatars, encompassing both visual representation and underlying technologies.
 		- * [REPLIKANT](https://www.replikant.com/): An AI-assisted 3D avatar and animation platform designed for creators.
 		  * [Meta Research Paper](https://drive.google.com/file/d/1i4NJKAggS82wqMamCJ1OHRGgViuyoY6R/view): A research paper from Meta exploring an unspecified aspect of avatar generation.
@@ -242,7 +194,7 @@
 				- Stable for solo usage.
 			- **Limitations:** Slower performance compared to newer backends like TabbyAPI or vLLM.
 			- **Link:** [Oobabooga GitHub](https://github.com/oobabooga)
-			  
+
 			  ---
 
 			- ### Multimodal Capabilities
@@ -252,9 +204,8 @@
 		- ### Other Notable Research
 			- ByteDance [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
 
-	- ## Image, Video and 3D
+  - ## Image, Video and 3D
 		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
-		  collapsed:: true
 
 			- ### Text-to-Image Generation
 				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
@@ -262,7 +213,7 @@
 					- ![ComfyUI_temp_exgja_00013_.png](assets/ComfyUI_temp_exgja_00013_1702592236908_0.png){:width 800}
 					- ![Rife_00027.mp4](assets/Rife_00027_1702831574413_0.mp4){:width 300}
 
-	- ### Community Support
+  - ### Community Support
 		- One of Stable Diffusion's greatest strengths is its vibrant and active community.
 		- Much of this happens on Discord and Reddit
 			- [(1832) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367)
@@ -390,7 +341,7 @@
 			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
-	- # Vision Mamba
+  - # Vision Mamba
 		- Majority of Mamba papers (over 60%) address vision/image processing, especially biomedical image segmentation
 		- Key themes:
 			- Representing data as sequences is crucial
@@ -417,7 +368,7 @@
 			- Combining scans sequentially may be more effective than parallel
 			- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
 
-	- ## Artificial Intelligence
+  - ## Artificial Intelligence
 		- [[Overview of Machine Learning Techniques]]
 		- [[Proprietary Large Language Models]]
 		- [[Proprietary Image Generation]]
@@ -426,10 +377,9 @@
 		- [[State of the art in AI]]
 		- [[Adoption of Convergent Technologies]]
 		- [[Soon-Next-Later (AI futurology)]]
-		-
-- This is a very new page and will be subject to a [[Update Cycle]] soon
+  - This is a very new page and will be subject to a [[Update Cycle]] soon
 
-	- ## Walkthrough Animations or Flythrough Videos
+  - ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
 			- Real-time link via Datasmith; create MP4 or interactive 360 panoramas.
 			- Supports AI-powered denoising and crowd/traffic generation.
@@ -438,89 +388,87 @@
 		- **Experimental AI Video Tools**
 			- Runway ML Gen-2 or PromeAI for short motion clips from still frames (low resolution but quick concept demos).
 
-	- ## **Need or Challenge**:
+  - ## **Need or Challenge**:
 		- The project addresses the reluctance in the film industry to adopt AI and ML technologies due to tight margins and complexity.
 		- VisionFlow introduces "parallax plates as a service", integrating robotics with ML-based video generation.
 		- Key benefits include increased productivity in pre-visualization and improved collaboration.
 		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company could enhance the application's relevance and impact.
 
-public:: true
 
-- The [[Ollama]] repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offers a straightforward way to run these models on various operating systems, including macOS, Windows, and Linux, either through manual installation or via Docker.
--
-- [ComfyUI (image generation) and AllTalk (TTS) · open-webui/open-webui · Discussion #1221 (github.com)](https://github.com/open-webui/open-webui/discussions/1221)
-- /parse https://twitter.com/0xfoobar/status/1591142748207583235
-- https://twitter.com/0xfoobar/status/1591142748207583235
-- [[Knowledge Graphing]] MindsDB integration with [[Ollama]] [mindsdb/mindsdb/integrations/handlers/ollama_handler/README.md at main · mindsdb/mindsdb (github.com)](https://github.com/mindsdb/mindsdb/blob/main/mindsdb/integrations/handlers/ollama_handler/README.md)
-	- https://www.mindsdb.com/
-- [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
-	- [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
-- DONE Fix the [[Ollama]] directory issue.
-- [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
-- [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
+  - The [[Ollama]] repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offers a straightforward way to run these models on various operating systems, including macOS, Windows, and Linux, either through manual installation or via Docker.
+  - [ComfyUI (image generation) and AllTalk (TTS) · open-webui/open-webui · Discussion #1221 (github.com)](https://github.com/open-webui/open-webui/discussions/1221)
+  - /parse https://twitter.com/0xfoobar/status/1591142748207583235
+  - https://twitter.com/0xfoobar/status/1591142748207583235
+  - [[Knowledge Graphing]] MindsDB integration with [[Ollama]] [mindsdb/mindsdb/integrations/handlers/ollama_handler/README.md at main · mindsdb/mindsdb (github.com)](https://github.com/mindsdb/mindsdb/blob/main/mindsdb/integrations/handlers/ollama_handler/README.md)
+  - https://www.mindsdb.com/
+  - [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
+  - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
+  - DONE Fix the [[Ollama]] directory issue.
+  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
 
-	- ### [Collaborative Control for Geometry-Conditioned PBR Image Generation](https://unity-research.github.io/holo-gen/) - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.
-- The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.
-- One focus is on using [[neural networks]] and [[machine learning]] to automatically generate holographic representations from 2D images or videos.
-- Another aspect involves creating interactive holographic experiences that allow users to manipulate and interact with virtual objects in a mixed reality environment.
-- The research investigates [[optimization]] of holographic displays for improved image quality, brightness, and field of view.
-- Holo-Gen seeks to address challenges such as computational complexity and [[data management]] requirements associated with holographic rendering.
-- The project explores different holographic display technologies, including spatial light modulators (SLMs) and computational holography.
-- Colour reproduction in holograms is also a key area of investigation, with research aiming to improve the accuracy and vibrancy of colours.
-- The research encompasses the development of algorithms for efficiently calculating and rendering holograms in real-time.
-- Ultimately, Holo-Gen strives to enable more intuitive and immersive mixed reality experiences through advanced [[research]].
+  - ### [Collaborative Control for Geometry-Conditioned PBR Image Generation](https://unity-research.github.io/holo-gen/) - * Holo-Gen is a research project exploring methods for generating 3D holographic content, especially for mixed reality applications.
+  - The project aims to develop tools and techniques that simplify the process of creating holograms, making it more accessible to a wider range of users.
+  - One focus is on using [[neural networks]] and [[machine learning]] to automatically generate holographic representations from 2D images or videos.
+  - Another aspect involves creating interactive holographic experiences that allow users to manipulate and interact with virtual objects in a mixed reality environment.
+  - The research investigates [[optimization]] of holographic displays for improved image quality, brightness, and field of view.
+  - Holo-Gen seeks to address challenges such as computational complexity and [[data management]] requirements associated with holographic rendering.
+  - The project explores different holographic display technologies, including spatial light modulators (SLMs) and computational holography.
+  - Colour reproduction in holograms is also a key area of investigation, with research aiming to improve the accuracy and vibrancy of colours.
+  - The research encompasses the development of algorithms for efficiently calculating and rendering holograms in real-time.
+  - Ultimately, Holo-Gen strives to enable more intuitive and immersive mixed reality experiences through advanced [[research]].
 
-	- ### **BlenderGPT**
+  - ### **BlenderGPT**
 		- [BlenderGPT GitHub](https://github.com/gd3kr/BlenderGPT) - - BlenderGPT is a project that allows users to control Blender through [[natural language processing]] instructions using [[artificial intelligence]] models.
-- The tool aims to streamline the 3D modelling process by [[automation]] of repetitive tasks and enabling users to create and manipulate objects with simple text commands.
-- The project provides a framework for connecting Blender's Python API with [[machine learning]], enabling users to translate [[natural language processing]] into executable Blender code.
-- Functionality includes object creation, scene organisation, material application (including colour changes), and animation control, all via text prompts.
-- Users can install BlenderGPT as a Blender add-on and configure it with their API key to access the language model's capabilities.
-- The project is designed to be extensible, allowing developers to add custom functions and improve the integration between [[natural language processing]] and Blender actions.
-- The repository offers examples, [[documentation]] and a troubleshooting guide to help users get started and resolve common issues.
-- The system allows for iterative design changes, where users can refine their creations by giving further instructions to the [[machine learning]] model based on previous results.
+  - The tool aims to streamline the 3D modelling process by [[automation]] of repetitive tasks and enabling users to create and manipulate objects with simple text commands.
+  - The project provides a framework for connecting Blender's Python API with [[machine learning]], enabling users to translate [[natural language processing]] into executable Blender code.
+  - Functionality includes object creation, scene organisation, material application (including colour changes), and animation control, all via text prompts.
+  - Users can install BlenderGPT as a Blender add-on and configure it with their API key to access the language model's capabilities.
+  - The project is designed to be extensible, allowing developers to add custom functions and improve the integration between [[natural language processing]] and Blender actions.
+  - The repository offers examples, [[documentation]] and a troubleshooting guide to help users get started and resolve common issues.
+  - The system allows for iterative design changes, where users can refine their creations by giving further instructions to the [[machine learning]] model based on previous results.
 		- [neph1/blender-stable-diffusion-render](https://github.com/neph1/blender-stable-diffusion-render/) - *   This add-on integrates Stable Diffusion directly into Blender, allowing users to generate images and textures using [[artificial intelligence]] from within the 3D modelling software.
 
--   It streamlines the workflow by eliminating the need to switch between Blender and separate Stable Diffusion interfaces.
+  -   It streamlines the workflow by eliminating the need to switch between Blender and separate Stable Diffusion interfaces.
 
--   The add-on provides features for controlling image generation parameters, such as prompts, sampling methods, and image size.
+  -   The add-on provides features for controlling image generation parameters, such as prompts, sampling methods, and image size.
 
--   Users can use generated images as textures, backgrounds, or reference images within their Blender projects.
+  -   Users can use generated images as textures, backgrounds, or reference images within their Blender projects.
 
--   It enables the creation of new and imaginative assets and content without extensive traditional modelling or texturing.
+  -   It enables the creation of new and imaginative assets and content without extensive traditional modelling or texturing.
 
--   The system requires a local installation of Stable Diffusion and necessary dependencies, configured to work with the Blender add-on.
+  -   The system requires a local installation of Stable Diffusion and necessary dependencies, configured to work with the Blender add-on.
 
--   The add-on is designed to be customisable, enabling users to fine-tune image generation based on specific project needs.
+  -   The add-on is designed to be customisable, enabling users to fine-tune image generation based on specific project needs.
 
--   The installation and use process is organised through a user-friendly interface within Blender.
+  -   The installation and use process is organised through a user-friendly interface within Blender.
 
--   It offers a way to enhance the creative possibilities within Blender by leveraging the power of [[artificial intelligence]] image generation.
+  -   It offers a way to enhance the creative possibilities within Blender by leveraging the power of [[artificial intelligence]] image generation.
 
-	- ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
+  - ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
 
-- The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
-- It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
-- The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
-- A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
-- The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
-- The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
-- The user controlled component allows for finer control over colour choices compared to automatic systems.
-- The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
+  - The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
+  - It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
+  - The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
+  - A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
+  - The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
+  - The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
+  - The user controlled component allows for finer control over colour choices compared to automatic systems.
+  - The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
 
-	- ### **Point·E System**
+  - ### **Point·E System**
 		- [Point·E GitHub](https://github.com/openai/point-e) - - Point-E is a system developed by OpenAI for efficiently creating 3D point clouds from text prompts.
-- It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
-- The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
-- It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
-- The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
-- A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
-- The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
-- The technology allows for easy integration into existing 3D pipelines and applications.
-- The project encourages further [[research]] into improving the quality and complexity of generated 3D assets.
-- The documentation helps users to organise the code and understand the underlying techniques for text-to-3D generation.
+  - It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
+  - The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
+  - It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
+  - The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
+  - A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
+  - The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
+  - The technology allows for easy integration into existing 3D pipelines and applications.
+  - The project encourages further [[research]] into improving the quality and complexity of generated 3D assets.
+  - The documentation helps users to organise the code and understand the underlying techniques for text-to-3D generation.
 
-	- ### [MM-Search](https://mmsearch.github.io/)
+  - ### [MM-Search](https://mmsearch.github.io/)
 		- A search engine that uses AI to search for images and videos.
 
 		- ### A website for my company (free hosting auto push to github pages)
@@ -528,7 +476,7 @@ public:: true
 			- <iframe src="https://www.dreamlab-ai.com" style="width: 100%; height: 600px"></iframe>
 			- ![image.png](assets/image_1759158444878_0.png)
 
-	- ## Most Adopted Enterprise AI Use Cases
+  - ## Most Adopted Enterprise AI Use Cases
 		- Code generation: 51%
 		- Customer support chatbots: 31%
 		- Enterprise search: 28%
@@ -538,25 +486,24 @@ public:: true
 		- Image generation: 20%
 		- Use cases reflect a shift from consumer-focused tasks to enterprise-specific applications.
 
-	- ### Novel VP Render Pipeline:
+  - ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 
-	- ## Retrieval Augmented Generation (RAG)
+  - ## Retrieval Augmented Generation (RAG)
 
-	- ### GitHub Repositories
+  - ### GitHub Repositories
 		- [guoyww/animatediff](https://github.com/guoyww/animatediff) - A method for creating animation using diffusion models that introduces motion modules integrated into pre-trained text-to-image models, enabling flexible [[computer vision]] and [[machine learning]]-based video generation with customisable [[training]] and fine-tuning capabilities
 		- [continue-revolution/sd-webui-animatediff](https://github.com/continue-revolution/sd-webui-animatediff) - Provides a straightforward method for incorporating AnimateDiff into Stable Diffusion web user interfaces, simplifying the generation of looping videos and animated GIFs with easy [[workflow management]], [[user experience]] optimisation, and [[documentation]] for [[troubleshooting]] common issues
 		- [ArtVentureX/comfyui-animatediff](https://github.com/ArtVentureX/comfyui-animatediff) - Integrates the AnimateDiff motion module into ComfyUI's node-based interface, providing a visual workflow for creating animations with support for controlnets, LoRAs, and various Stable Diffusion checkpoints through [[software engineering]] best practices and [[community]] contributions
 
-- # Specialised Models
-	- ![image.png](assets/image_1717159684964_0.png)
+  - # Specialised Models
+  - ![image.png](assets/image_1717159684964_0.png)
 
 		- ### 3D models for AR and VR
 			- ![image.png](assets/image_1715528397803_0.png)
 			- ![image.png](assets/image_1715584894585_0.png)
-	-
 
-	- ## Section 4: The Multimodality War
+  - ## Section 4: The Multimodality War
 		- Midjourney launched v6 and a web UI.
 		- Assembly AI raised $50m for "Stripe for AI models".
 		- Replicate raised $40m to serve AI engineers.
@@ -564,7 +511,6 @@ public:: true
 		- OpenAI and Google continue work on "God Models".
 
 		- ### Image Generation & Editing
-		  collapsed:: true
 			- *Task:* Create unique images, enhance product photos, generate backgrounds, or design visual assets for marketing and branding.
 			- **Midjourney**
 				- *Description:* High-quality AI image generator accessed via Discord. Known for artistic and detailed outputs. V6 includes text generation within images, 'Vary Region' for inpainting/product placement.
@@ -599,18 +545,16 @@ public:: true
 				- *Cost:* Check website for pricing structure.
 				- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[ML Blocks](https://mlblocks.com/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
 
-	- ## Google sub second inferencing on a phone.
+  - ## Google sub second inferencing on a phone.
 		- [Paper page
 		- MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices (huggingface.co)](https://huggingface.co/papers/2311.16567)
--
 
-- # Consumer Hardware
-	- [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
-	- [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
-	-
-- **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
+  - # Consumer Hardware
+  - [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
+  - [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
+  - **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
 
-	- ### Avatar Generation: Creating Digital Beings from Scratch
+  - ### Avatar Generation: Creating Digital Beings from Scratch
 		- This section focuses on platforms and research enabling the generation of complete avatars, encompassing both visual representation and underlying technologies.
 		- * [REPLIKANT](https://www.replikant.com/): An AI-assisted 3D avatar and animation platform designed for creators.
 		  * [Meta Research Paper](https://drive.google.com/file/d/1i4NJKAggS82wqMamCJ1OHRGgViuyoY6R/view): A research paper from Meta exploring an unspecified aspect of avatar generation.
@@ -623,7 +567,7 @@ public:: true
 				- Stable for solo usage.
 			- **Limitations:** Slower performance compared to newer backends like TabbyAPI or vLLM.
 			- **Link:** [Oobabooga GitHub](https://github.com/oobabooga)
-			  
+
 			  ---
 
 			- ### Multimodal Capabilities
@@ -633,9 +577,8 @@ public:: true
 		- ### Other Notable Research
 			- ByteDance [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
 
-	- ## Image, Video and 3D
+  - ## Image, Video and 3D
 		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
-		  collapsed:: true
 
 			- ### Text-to-Image Generation
 				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
@@ -643,7 +586,7 @@ public:: true
 					- ![ComfyUI_temp_exgja_00013_.png](assets/ComfyUI_temp_exgja_00013_1702592236908_0.png){:width 800}
 					- ![Rife_00027.mp4](assets/Rife_00027_1702831574413_0.mp4){:width 300}
 
-	- ### Community Support
+  - ### Community Support
 		- One of Stable Diffusion's greatest strengths is its vibrant and active community.
 		- Much of this happens on Discord and Reddit
 			- [(1832) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367)
@@ -771,7 +714,7 @@ public:: true
 			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
 
-	- # Vision Mamba
+  - # Vision Mamba
 		- Majority of Mamba papers (over 60%) address vision/image processing, especially biomedical image segmentation
 		- Key themes:
 			- Representing data as sequences is crucial
@@ -798,7 +741,7 @@ public:: true
 			- Combining scans sequentially may be more effective than parallel
 			- Mamba enables memory-efficient processing of high-resolution images, promising for edge applications (e.g., robotics)
 
-	- ## Artificial Intelligence
+  - ## Artificial Intelligence
 		- [[Overview of Machine Learning Techniques]]
 		- [[Proprietary Large Language Models]]
 		- [[Proprietary Image Generation]]
@@ -807,10 +750,9 @@ public:: true
 		- [[State of the art in AI]]
 		- [[Adoption of Convergent Technologies]]
 		- [[Soon-Next-Later (AI futurology)]]
-		-
-- This is a very new page and will be subject to a [[Update Cycle]] soon
+  - This is a very new page and will be subject to a [[Update Cycle]] soon
 
-	- ## Walkthrough Animations or Flythrough Videos
+  - ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
 			- Real-time link via Datasmith; create MP4 or interactive 360 panoramas.
 			- Supports AI-powered denoising and crowd/traffic generation.
@@ -819,102 +761,99 @@ public:: true
 		- **Experimental AI Video Tools**
 			- Runway ML Gen-2 or PromeAI for short motion clips from still frames (low resolution but quick concept demos).
 
-	- ## **Need or Challenge**:
+  - ## **Need or Challenge**:
 		- The project addresses the reluctance in the film industry to adopt AI and ML technologies due to tight margins and complexity.
 		- VisionFlow introduces "parallax plates as a service", integrating robotics with ML-based video generation.
 		- Key benefits include increased productivity in pre-visualization and improved collaboration.
 		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company could enhance the application's relevance and impact.
 
-public:: true
 
-- The [[Ollama]] repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offers a straightforward way to run these models on various operating systems, including macOS, Windows, and Linux, either through manual installation or via Docker.
--
-- [ComfyUI (image generation) and AllTalk (TTS) · open-webui/open-webui · Discussion #1221 (github.com)](https://github.com/open-webui/open-webui/discussions/1221)
-- /parse https://twitter.com/0xfoobar/status/1591142748207583235
-- https://twitter.com/0xfoobar/status/1591142748207583235
-- [[Knowledge Graphing]] MindsDB integration with [[Ollama]] [mindsdb/mindsdb/integrations/handlers/ollama_handler/README.md at main · mindsdb/mindsdb (github.com)](https://github.com/mindsdb/mindsdb/blob/main/mindsdb/integrations/handlers/ollama_handler/README.md)
-	- https://www.mindsdb.com/
-- [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
-	- [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
-- DONE Fix the [[Ollama]] directory issue.
-- [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
-- [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
+  - The [[Ollama]] repository on GitHub is a comprehensive, MIT-licensed platform for utilizing and managing large language models (LLMs) such as Llama 3.1, Mistral, Gemma 2, and others. It offers a straightforward way to run these models on various operating systems, including macOS, Windows, and Linux, either through manual installation or via Docker.
+  - [ComfyUI (image generation) and AllTalk (TTS) · open-webui/open-webui · Discussion #1221 (github.com)](https://github.com/open-webui/open-webui/discussions/1221)
+  - /parse https://twitter.com/0xfoobar/status/1591142748207583235
+  - https://twitter.com/0xfoobar/status/1591142748207583235
+  - [[Knowledge Graphing]] MindsDB integration with [[Ollama]] [mindsdb/mindsdb/integrations/handlers/ollama_handler/README.md at main · mindsdb/mindsdb (github.com)](https://github.com/mindsdb/mindsdb/blob/main/mindsdb/integrations/handlers/ollama_handler/README.md)
+  - https://www.mindsdb.com/
+  - [[Ollama]] [[Open Webui and Pipelines]] [open-webui/pipelines: Pipelines: Versatile, UI-Agnostic OpenAI-Compatible Plugin Framework (github.com)](https://github.com/open-webui/pipelines)
+  - [pipelines/examples/pipelines/providers at 8b5e0a05e982473c205d2a0d7f8e34b8ce539885 · open-webui/pipelines (github.com)](https://github.com/open-webui/pipelines/tree/8b5e0a05e982473c205d2a0d7f8e34b8ce539885/examples/pipelines/providers)
+  - DONE Fix the [[Ollama]] directory issue.
+  - [[ComfyUI]] [[Ollama]] [[Prompt Engineering]] [ComfyUI Ollama prompt generation : r/StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/1ck896z/comfyui_ollama_prompt_generation/)
+  - [agent_tutorials/ollama_agents/llama3_local/llama3_json.py at main · samwit/agent_tutorials (github.com)](https://github.com/samwit/agent_tutorials/blob/main/ollama_agents/llama3_local/llama3_json.py) [[Llama]] [[Ollama]] [[Function Calling]] [[Python and PyTorch]] [[Agents]]
 
-	- ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
+  - ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
 
-- The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
-- It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
-- The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
-- A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
-- The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
-- The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
-- The user controlled component allows for finer control over colour choices compared to automatic systems.
-- The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
+  - The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
+  - It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
+  - The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
+  - A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
+  - The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
+  - The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
+  - The user controlled component allows for finer control over colour choices compared to automatic systems.
+  - The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
 
-	- ### **Point·E System**
+  - ### **Point·E System**
 		- [Point·E GitHub](https://github.com/openai/point-e) - - Point-E is a system developed by OpenAI for efficiently creating 3D point clouds from text prompts.
-- It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
-- The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
-- It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
-- The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
-- A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
-- The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
+  - It offers a fast and direct method for 3D object generation, bypassing the slower and more complex process of first creating a mesh and then rendering.
+  - The system utilises a series of models: a text-to-image model followed by an image-to-3D point cloud model.
+  - It provides code for training and sampling these models, allowing users to experiment with custom datasets and text prompts.
+  - The code includes utilities for visualising and manipulating the generated point clouds, including features for altering their colour and density.
+  - A significant advantage of Point-E is its speed; it can produce 3D models significantly faster than previous approaches.
+  - The repository provides pre-trained models, enabling immediate use without the need for extensive training on the user's part.
 
--   The paper offers empirical evidence demonstrating LION's effectiveness across various language modelling tasks and architectures.
+  -   The paper offers empirical evidence demonstrating LION's effectiveness across various language modelling tasks and architectures.
 
--   The lighter computational overhead of LION compared to Adam allows for training larger models or training existing models more quickly.
+  -   The lighter computational overhead of LION compared to Adam allows for training larger models or training existing models more quickly.
 
--   The LION algorithm is easy to implement and can be incorporated into existing training pipelines with minimal code changes.
+  -   The LION algorithm is easy to implement and can be incorporated into existing training pipelines with minimal code changes.
 
--   The researchers provide code and pre-trained models to encourage adoption and further [[research]].
+  -   The researchers provide code and pre-trained models to encourage adoption and further [[research]].
 
--   LION's stability makes it suitable for training models with mixed precision formats (e.g., FP16), helping to reduce memory usage.
+  -   LION's stability makes it suitable for training models with mixed precision formats (e.g., FP16), helping to reduce memory usage.
 
--   The paper explores the theoretical properties of LION, offering insights into its convergence behaviour and relationship to other optimisation algorithms.
+  -   The paper explores the theoretical properties of LION, offering insights into its convergence behaviour and relationship to other optimisation algorithms.
 
-- # Misc links being integrated.
-- [[MotionDirector]], with a dual-path LoRAs architecture to decouple the learning of appearance and motion. Further, we design a novel appearance-debiased temporal loss to mitigate the influence of appearance on the temporal training objective. Experimental results show the proposed method can generate videos of diverse appearances for the customized motions. Our method also supports various downstream applications, such as the mixing of different videos with their appearance and motion respectively, and animating a single image with customized motions.
-- [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
-	- https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
-	- Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
+  - # Misc links being integrated.
+  - [[MotionDirector]], with a dual-path LoRAs architecture to decouple the learning of appearance and motion. Further, we design a novel appearance-debiased temporal loss to mitigate the influence of appearance on the temporal training objective. Experimental results show the proposed method can generate videos of diverse appearances for the customized motions. Our method also supports various downstream applications, such as the mixing of different videos with their appearance and motion respectively, and animating a single image with customized motions.
+  - [RAVE: Randomized Noise Shuffling for Fast and Consistent Video Editing with Diffusion Models (rave-video.github.io)](https://rave-video.github.io/)
+  - https://discord.com/channels/1076117621407223829/1192162917395730635/1192162917395730635
+  - Here's one way to use the brand new RAVE node from here: https://github.com/spacepxl/ComfyUI-RAVE
 		- First pass often has flickering (depending a lot on the input), so I made a workflow to smooth even harsh flickering with AD. This allows for utilizing the transformative and often more detailed vid2vid from RAVE and still get smooth results in [[ComfyUI]]
 			- Updated LCM version: https://discord.com/channels/1076117621407223829/1192162917395730635/1192212692354748427
-- Motion Control
-	- [MotionCtrl (wzhouxiff.github.io)](https://wzhouxiff.github.io/projects/MotionCtrl/)
-- [[2401.12945] Lumiere: A Space-Time Diffusion Model for Video Generation (arxiv.org)](https://arxiv.org/abs/2401.12945)
-- [I2VGen-XL
-	- a Hugging Face Space by damo-vilab](https://huggingface.co/spaces/damo-vilab/I2VGen-XL)
-- [ali-vilab/i2vgen-xl: Official repo for VGen: a holistic video generation ecosystem for video generation building on diffusion models (github.com)](https://github.com/ali-vilab/i2vgen-xl)
-	- [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
-- Interpolation and interframe consistency
-	- [controlnet and ebsynth temporal consistency](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/)
-	- [FILM frame interpolator](https://film-net.github.io/)
-	- [ProPainter for Video Inpainting (shangchenzhou.com)](https://shangchenzhou.com/projects/ProPainter/)
-	- [zengyh1900/Awesome-Image-Inpainting: A curated list of image inpainting and video inpainting papers and resources (github.com)](https://github.com/zengyh1900/Awesome-Image-Inpainting)
-	- Gen2 examples
-- Multishot [VideoDrafter: Content-Consistent Multi-Scene Video Generation with LLM](https://videodrafter.github.io/)
-- [vienna with prompts](https://www.linkedin.com/posts/dr-andreas-fraunberger_marketinginnovation-digitaltourism-ar-ugcPost-7073039429417730048-BKfQ?utm_source=share&utm_medium=member_desktop)
-- [Video slowmo and enhance](http://zeyuan-chen.com/VideoINR/)
-- [deforum stable diffusion video](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
-- [Phenaki](https://phenaki.video/)
-- [distilled models for 25fps](https://arxiv.org/abs/2202.00512)
-- [Stable warpfusion](https://www.linkedin.com/posts/rainisto_stablediffusion-musicvideo-remix-activity-7018207241522614272-YT1y?utm_source=share&utm_medium=member_desktop)
-- [Video talking heads from text service](https://www.synthesia.io/)
-- [minecraft demo codebase](https://github.com/TSFSean/InvokeAI-DiffusionCraftAI)
-- [animation from mixamo](https://www.reddit.com/r/StableDiffusion/comments/zecyc7/mixamo_animations_stable_diffusion_v2_depth2img/)
-- [Intel enhance photorealism in realtime](https://github.com/isl-org/PhotorealismEnhancement)
-- custom SD video to video script
-- [Testing a custom video2video script I'm working on. (These used RealisticVision1.4 & ControlNet) : r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/comments/11iviep/testing_a_custom_video2video_script_im_working_on/)
-- [consistency tools for character tooning](https://www.reddit.com/r/StableDiffusion/comments/11okvc8/how_about_another_joke_murraaaay/)
-- Alibaba system
-	- [website](https://videocomposer.github.io/)
-	- [github](https://github.com/damo-vilab/videocomposer)
+  - Motion Control
+  - [MotionCtrl (wzhouxiff.github.io)](https://wzhouxiff.github.io/projects/MotionCtrl/)
+  - [[2401.12945] Lumiere: A Space-Time Diffusion Model for Video Generation (arxiv.org)](https://arxiv.org/abs/2401.12945)
+  - [I2VGen-XL
+  - a Hugging Face Space by damo-vilab](https://huggingface.co/spaces/damo-vilab/I2VGen-XL)
+  - [ali-vilab/i2vgen-xl: Official repo for VGen: a holistic video generation ecosystem for video generation building on diffusion models (github.com)](https://github.com/ali-vilab/i2vgen-xl)
+  - [MagicVideo-V2: Multi-Stage High-Aesthetic Video Generation (magicvideov2.github.io)](https://magicvideov2.github.io/)
+  - Interpolation and interframe consistency
+  - [controlnet and ebsynth temporal consistency](https://www.reddit.com/r/StableDiffusion/comments/114zmh3/controlnet_and_ebsynth_make_incredible_temporally/)
+  - [FILM frame interpolator](https://film-net.github.io/)
+  - [ProPainter for Video Inpainting (shangchenzhou.com)](https://shangchenzhou.com/projects/ProPainter/)
+  - [zengyh1900/Awesome-Image-Inpainting: A curated list of image inpainting and video inpainting papers and resources (github.com)](https://github.com/zengyh1900/Awesome-Image-Inpainting)
+  - Gen2 examples
+  - Multishot [VideoDrafter: Content-Consistent Multi-Scene Video Generation with LLM](https://videodrafter.github.io/)
+  - [vienna with prompts](https://www.linkedin.com/posts/dr-andreas-fraunberger_marketinginnovation-digitaltourism-ar-ugcPost-7073039429417730048-BKfQ?utm_source=share&utm_medium=member_desktop)
+  - [Video slowmo and enhance](http://zeyuan-chen.com/VideoINR/)
+  - [deforum stable diffusion video](https://github.com/HelixNGC7293/DeforumStableDiffusionLocal)
+  - [Phenaki](https://phenaki.video/)
+  - [distilled models for 25fps](https://arxiv.org/abs/2202.00512)
+  - [Stable warpfusion](https://www.linkedin.com/posts/rainisto_stablediffusion-musicvideo-remix-activity-7018207241522614272-YT1y?utm_source=share&utm_medium=member_desktop)
+  - [Video talking heads from text service](https://www.synthesia.io/)
+  - [minecraft demo codebase](https://github.com/TSFSean/InvokeAI-DiffusionCraftAI)
+  - [animation from mixamo](https://www.reddit.com/r/StableDiffusion/comments/zecyc7/mixamo_animations_stable_diffusion_v2_depth2img/)
+  - [Intel enhance photorealism in realtime](https://github.com/isl-org/PhotorealismEnhancement)
+  - custom SD video to video script
+  - [Testing a custom video2video script I'm working on. (These used RealisticVision1.4 & ControlNet) : r/StableDiffusion](https://www.reddit.com/r/StableDiffusion/comments/11iviep/testing_a_custom_video2video_script_im_working_on/)
+  - [consistency tools for character tooning](https://www.reddit.com/r/StableDiffusion/comments/11okvc8/how_about_another_joke_murraaaay/)
+  - Alibaba system
+  - [website](https://videocomposer.github.io/)
+  - [github](https://github.com/damo-vilab/videocomposer)
 
-	- ### Novel VP Render Pipeline:
+  - ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 
 		- ### Image Generation & Editing
-		  collapsed:: true
 			- *Task:* Create unique images, enhance product photos, generate backgrounds, or design visual assets for marketing and branding.
 			- **Midjourney**
 				- *Description:* High-quality AI image generator accessed via Discord. Known for artistic and detailed outputs. V6 includes text generation within images, 'Vary Region' for inpainting/product placement.
@@ -925,7 +864,7 @@ public:: true
 					- *Cost:* Free plan available. Paid plans based on word count/features, starting around $30 USD/month (billed annually).
 					- *Website:* <!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->[PlayHT](https://play.ht/)<!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!----><!---->
 
-	- ## Google sub second inferencing on a phone.
+  - ## Google sub second inferencing on a phone.
 		- [Paper page
 		- MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices (huggingface.co)](https://huggingface.co/papers/2311.16567)
 			- Bloomberg reports Sam Altman is in talks to raise money for a ‘global’ network of fabricators building hardware for AI. Sam Altman's plan to establish a global network of AI chip factories could revolutionize the tech industry, reducing dependence on existing semiconductor giants and ensuring a steady supply of AI advancements.
@@ -940,15 +879,14 @@ public:: true
 		- [The MetaVRain asic claims 900x speed increases} on general GPU problems](https://hdh4797.wixsite.com/dhan/project-1)
 		- [Google android etc](https://developers.google.com/learn/topics/on-device-ml)
 		- [Intel meteor lake?](https://www.pocket-lint.com/what-is-meteor-lake-and-how-will-intel-leverage-ai-in-future/)
-	- [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
-	-
-- **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
+  - [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
+  - **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
 
-- # IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models
-	- Hu Ye Jun Zhang Sibo Liu Xiao Han Wei Yang Tencent AI Lab4-5 minutes
-	  
+  - # IP-Adapter: Text Compatible Image Prompt Adapter for Text-to-Image Diffusion Models
+  - Hu Ye Jun Zhang Sibo Liu Xiao Han Wei Yang Tencent AI Lab4-5 minutes
+
 	  ---
-	  
+
   Recent years have witnessed the strong power of large text-to-image diffusion models for the impressive generative capability to create high-fidelity images. But, it is very tricky to generate desired images using only text prompt as it often involves complex prompt engineering. An alternative to text prompt is image prompt, as the saying goes: "an image is worth a thousand words". Although existing methods of direct fine-tuning from pretrained models are effective, they require large computing resources and are not compatible with other base models, text prompt, and structural controls. In this paper, we present IP-Adapter, an effective and lightweight adapter to achieve image prompt capability for the pretrained text-to-image diffusion models. The key design of our IP-Adapter is decoupled cross-attention mechanism that separates cross-attention layers for text features and image features. Despite the simplicity of our method, an IP-Adapter with only 22M parameters can achieve comparable or even better performance to a fine-tuned image prompt model. As we freeze the pretrained duffusion model, the proposed IP-Adapter can be generalized not only to other custom models fine-tuned from the same base model, but also to controllable generation using existing controllable tools. With the benefit of the decoupled cross-attention strategy, the image prompt can also work well with the text prompt to accomplish multimodal image generation.
 
 			- ### Multimodal Capabilities
@@ -994,7 +932,7 @@ public:: true
 			- [Imagic: Text-Based Real Image Editing with Diffusion Models](https://buff.ly/3VLGMzo)
 			- [RODIN Diffusion](https://3d-avatar-diffusion.microsoft.com/?amp%3Butm_medium=email&amp%3Butm_source=Revue+newsletter#/%22/%3E)
 
-	- ## Identity
+  - ## Identity
 		- [[Distributed Identity]]
 		- [[Proprietary Image Generation]]
 		- [[Proprietary Video]]
@@ -1002,39 +940,38 @@ public:: true
 		- [[State of the art in AI]]
 		- [[Adoption of Convergent Technologies]]
 		- [[Soon-Next-Later (AI futurology)]]
-		-
-- This is a very new page and will be subject to a [[Update Cycle]] soon
+  - This is a very new page and will be subject to a [[Update Cycle]] soon
 
-	- ## **Need or Challenge**:
+  - ## **Need or Challenge**:
 		- The project addresses the reluctance in the film industry to adopt AI and ML technologies due to tight margins and complexity.
 		- VisionFlow introduces "parallax plates as a service", integrating robotics with ML-based video generation.
 		- Key benefits include increased productivity in pre-visualization and improved collaboration.
 		- Assessor Feedback: Positive recognition of the project's potential to improve productivity in video content production. However, a closer association with a video production company could enhance the application's relevance and impact.
 
-	- ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
+  - ### [GALA3D: Towards Text-to-3D Complex Scene Generation via Layout-guided Generative Gaussian Splatting](https://huggingface.co/papers/2402.07207) - //huggingface.co/papers/2402.07207) in UK English spelling, presented as bullet points:
 
-- The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
-- It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
-- The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
-- A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
-- The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
-- The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
-- The user controlled component allows for finer control over colour choices compared to automatic systems.
-- The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
+  - The paper introduces a new method for improving the colourisation of greyscale images using diffusion models.
+  - It addresses the problem of colour ambiguity in greyscale images by incorporating semantic information and user guidance.
+  - The approach uses a diffusion model conditioned on both the greyscale image and semantic segmentation maps, allowing for more accurate and consistent colour assignments.
+  - A user interface is provided, enabling users to interactively influence the colourisation process through colour hints or strokes.
+  - The model can be used to organise and visualise large collections of greyscale images, by applying consistent colourisation styles across the dataset.
+  - The framework achieves state-of-the-art performance compared to existing greyscale image colourisation techniques.
+  - The user controlled component allows for finer control over colour choices compared to automatic systems.
+  - The colourisation process is designed to be flexible and adaptable to different types of images and user preferences.
 
-	- ### **OnePose++ for Object Pose Estimation**
+  - ### **OnePose++ for Object Pose Estimation**
 		- [OnePose++ Page](https://zju3dv.github.io/onepose_plus_plus/) - - OnePose++, an extension of the OnePose framework, is a streamlined solution for robust and scalable 6D object pose estimation from a single RGB image.
 
 		- [Imagine 3D](https://captures.lumalabs.ai/imagine) - Luma Labs Imagine allows users to create realistic 3D models from text descriptions, streamlining the design workflow.
-- It offers an intuitive interface to easily generate, edit and visualise 3D assets.
-- Users can control the colour, texture, and shape of the generated 3D models using natural language processing.
-- The tool enables users to iterate quickly on design ideas by making adjustments to the text prompt and regenerating the model.
-- Imagine facilitates the creation of customised 3D models for various applications, including gaming, product visualisation and animation.
-- The platform encourages experimentation with different prompts to explore the creative potential of [[artificial intelligence]]-powered 3D generation.
-- This technology could be used for rapid prototyping, game development, and creation of virtual environments.
-- GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
+  - It offers an intuitive interface to easily generate, edit and visualise 3D assets.
+  - Users can control the colour, texture, and shape of the generated 3D models using natural language processing.
+  - The tool enables users to iterate quickly on design ideas by making adjustments to the text prompt and regenerating the model.
+  - Imagine facilitates the creation of customised 3D models for various applications, including gaming, product visualisation and animation.
+  - The platform encourages experimentation with different prompts to explore the creative potential of [[artificial intelligence]]-powered 3D generation.
+  - This technology could be used for rapid prototyping, game development, and creation of virtual environments.
+  - GET3D aims to democratise 3D content creation by simplifying the process and reducing reliance on expert 3D modellers.
 
-	- ### Novel VP Render Pipeline:
+  - ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 
 			- ### 3.2 **Llama.cpp**
@@ -1045,19 +982,18 @@ public:: true
 				- **Open WebUI:** Can integrate vision models, image generation, TTS, and more with third-party tools like Azure or Together.ai.
 				- **Koboldcpp:** Supports some multimodal backends but lacks native syntax highlighting.
 
-- # 2025 State of Consumer AI Report by Menlo Ventures
+  - # 2025 State of Consumer AI Report by Menlo Ventures
 		- 91% of AI users default to their preferred general tool for most tasks.
 		- AI spending increased from $2.3 billion in 2023 to $13.8 billion in 2024, a sixfold increase.
 		- Code generation: 51%
 				- While adoption has been swift, researchers caution that the long-term economic impact will depend on how deeply generative AI becomes integrated into daily work processes over time.
-				-
 		- 61% of business leaders confirmed their organizations accelerated AI usage in 2024, with more than half planning to increase their AI budgets in 2025.
 		- 72% of enterprises plan to increase their spending on generative AI in the next year, with nearly 40% of those indicating an investment exceeding $250,000 in the current calendar year.
 
-	- ### Novel VP Render Pipeline:
+  - ### Novel VP Render Pipeline:
 		- Putting the ML image generation on the end of a real-time tracked camera render pipeline might remove the need for detail in set building. The set designer, DP, director, etc., will be able to ideate in a headset-based metaverse of the set design, dropping very basic elements. If the interframe consistency (img2img) can deliver, the output on the VP screen can simply inherit the artistic style from the text prompts and render production quality from the basic building blocks. This "next level pre-vis" is being trailed in the Vircadia collaborative environment described in this book.
 
-	- ### Prompt engineering links
+  - ### Prompt engineering links
 		- https://phraser.tech/
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
 		- [non destructive image manipulation using seeds](https://www.reddit.com/r/StableDiffusion/comments/10no6tp/non_destructive_image_variation_in_text2image/)
@@ -1066,45 +1002,43 @@ public:: true
 		- [SDXL native text lora](https://civitai.com/models/176555/harrlogos-xl-finally-custom-text-generation-in-sd)
 		- [segment anything training](https://github.com/NielsRogge/Transformers-Tutorials/tree/master/SAM)
 
-- ## Controlnet
-	- https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
-	- https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
-		-
-- https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
-- https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
-- https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
-- https://www.reddit.com/r/comfyui/comments/1ezlzsp/flux_controlnets_3d_scenes_in_playbook_web_editor/ [[visionflow]]
-- https://huggingface.co/jbilcke-hf/flux-dev-panorama-lora-2
-	- https://www.reddit.com/r/StableDiffusion/comments/1esz4hj/flux_hdr_seamless_panorama_links_in_comment/
+  - ## Controlnet
+  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
+  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
+  - https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
+  - https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
+  - https://www.reddit.com/r/comfyui/comments/1ezlzsp/flux_controlnets_3d_scenes_in_playbook_web_editor/ [[visionflow]]
+  - https://huggingface.co/jbilcke-hf/flux-dev-panorama-lora-2
+  - https://www.reddit.com/r/StableDiffusion/comments/1esz4hj/flux_hdr_seamless_panorama_links_in_comment/
 
-- ## Stable diffusion
-	- is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-	- Vlads next SD
-	- [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
+  - ## Stable diffusion
+  - is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
+  - Vlads next SD
+  - [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
 
-- ## Controlnet
-	- https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
-	- https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
-		-
-- https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
-- https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
-- https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
-- https://www.reddit.com/r/comfyui/comments/1ezlzsp/flux_controlnets_3d_scenes_in_playbook_web_editor/ [[visionflow]]
-- https://huggingface.co/jbilcke-hf/flux-dev-panorama-lora-2
-	- https://www.reddit.com/r/StableDiffusion/comments/1esz4hj/flux_hdr_seamless_panorama_links_in_comment/
-- https://www.reddit.com/r/StableDiffusion/comments/1ex64jj/i_made_an_fp8_implementation_of_flux_which_gets/
-- https://www.reddit.com/r/FluxAI/comments/1esyy3u/flux_dev_workflow_v20_for_loras_face_detailer_and/
-- https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting
+  - ## Controlnet
+  - https://huggingface.co/XLabs-AI/flux-controlnet-collections [[Controlnet and similar]]
+  - https://civitai.com/models/731324 [[Flux]] Social Media Image Generator [[Death of the Internet]]
+  - https://www.reddit.com/r/StableDiffusion/comments/1fkeei6/a_simple_flux_pipeline_workflow/
+  - https://www.reddit.com/r/FluxAI/comments/1f1uhnm/new_flux_controlnet_union_model_just_dropped/
+  - https://www.reddit.com/r/comfyui/comments/1es8r9o/flux_controlnet_depth_canny_comfyui/?utm_source=diffusiondigest.beehiiv.com&utm_medium=referral&utm_campaign=trump-ai-pics-procreate-says-human-only-this-week-in-ai-art
+  - https://www.reddit.com/r/comfyui/comments/1ezlzsp/flux_controlnets_3d_scenes_in_playbook_web_editor/ [[visionflow]]
+  - https://huggingface.co/jbilcke-hf/flux-dev-panorama-lora-2
+  - https://www.reddit.com/r/StableDiffusion/comments/1esz4hj/flux_hdr_seamless_panorama_links_in_comment/
+  - https://www.reddit.com/r/StableDiffusion/comments/1ex64jj/i_made_an_fp8_implementation_of_flux_which_gets/
+  - https://www.reddit.com/r/FluxAI/comments/1esyy3u/flux_dev_workflow_v20_for_loras_face_detailer_and/
+  - https://huggingface.co/spaces/Gradio-Community/Text-guided-Flux-Inpainting
 
-- ## Features
-	- **Text-to-Video:** Generate animations from a text prompt and a static image.
+  - ## Features
+  - **Text-to-Video:** Generate animations from a text prompt and a static image.
 		- [Civitai - AnimateDiff](https://civitai.com/models/372584/ipivs-morph-img2vid-animatediff-lcm-hyper-sd) - IPIVS Morph model designed to enhance image-to-video generation using Animatediff, LCM, and Hypernetworks for smoother transitions and improved aesthetic quality through [[automation]], [[optimization]], and [[machine learning]] techniques within the [[computer vision]] ecosystem
 
-- ### Multi-Modal Large Language Models (LLMs)
-	- **Introduction:**
+  - ### Multi-Modal Large Language Models (LLMs)
+  - **Introduction:**
 		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
-	- **Core Concepts:**
+  - **Core Concepts:**
 		- **LLMs for Text:**
 			- LLMs process prompts and generate replies one token at a time, acting as a multiclass classifier.
 		- **Image Generation:**
@@ -1113,49 +1047,47 @@ public:: true
 		- **[[Variational Autoencoders]] (VAE) & VQ-VAE:**
 			- VAEs add a generative aspect by allowing for new image generation from random latent embeddings.
 
-- ## Stable diffusion
-	- is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-	- Vlads next SD
-	- [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
+  - ## Stable diffusion
+  - is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
+  - Vlads next SD
+  - [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
 
-- ## Constrained Multi-Modal Retrieval Augmented Generation
+  - ## Constrained Multi-Modal Retrieval Augmented Generation
 
-- ## Custom Gen AI models in business
-  id:: 659a9231-4d21-415e-8b07-25b215e6b712
-	- ![image.png](assets/image_1704997279791_0.png){:width 500}
+  - ## Custom Gen AI models in business
+  - ![image.png](assets/image_1704997279791_0.png){:width 500}
 		- Start to sort out your data. Learn it's structure, and whether it's useful to optimise it.
 		- High quality data gives high quality outcomes.
 		- See if there's something on the market that is trustable when your data and product are ready, don't spread data about too much.
 
-- ### Multi-Modal Large Language Models (LLMs)
-	- **Introduction:**
+  - ### Multi-Modal Large Language Models (LLMs)
+  - **Introduction:**
 		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
-	- **Core Concepts:**
+  - **Core Concepts:**
 		- **LLMs for Text:**
 			- LLMs process prompts and generate replies one token at a time, acting as a multiclass classifier.
 		- **Image Generation:**
 			- Traditional pixel-by-pixel image generation is intractable; hence, a different approach is needed.
 			- The solution is treating image generation as a language generation problem, akin to ancient hieroglyphics.
-	- **Techniques in Multi-Modal LLMs:**
+  - **Techniques in Multi-Modal LLMs:**
 		- **Autoencoders:**
 			- Compress images into a lower-dimensional latent space and then regenerate them, learning crucial properties.
 		- **[[Variational Autoencoders]] (VAE) & VQ-VAE:**
 			- VAEs add a generative aspect by allowing for new image generation from random latent embeddings.
 			- VQ-VAE further discretizes this process, creating a vocabulary of image "words" or tokens.
-	- **Implementation:**
+  - **Implementation:**
 		- **Vector Quantization:**
 			- Creates a discrete set of embedding vectors forming the vocabulary for our image-based language.
 		- **Encoding and Decoding:**
 			- Images are encoded to these discrete codes and decoded back to form new or reconstructed images.
-	- **Training and Inference:**
+  - **Training and Inference:**
 		- A mixed sequence of embeddings (words and image tokens) is created for training.
 		- The model learns to generate image tokens, forming a coherent sequence with the text, allowing for the generation of images corresponding to text descriptions.
-	- **Challenges and Developments:**
+  - **Challenges and Developments:**
 		- The importance of quality data over quantity, especially for large, complex models.
 		- Ongoing efforts focus on refining data quality, applying safety measures, and improving model transparency.
--
-- ```mermaid
+  - ```mermaid
   flowchart LR
   A[Text Input] -->|Processed by LLM| B[Text Tokens]
   B -->|Alongside Image Tokens| D[Mixed Embeddings]
@@ -1164,13 +1096,12 @@ public:: true
   D -->|Next Token Prediction| F[Generated Sequence]
   F -->|Decoded| G[Output Image & Text]
   ```
--
-- Some random links
-	- Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
-	- [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
-	- [moondream
+  - Some random links
+  - Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
+  - [moondream
 		- a tiny vision language model](https://moondream.ai/)
-	- Key Papers
+  - Key Papers
 		- [Variational Autoencoder (VAE)](https://arxiv.org/abs/1312.6114)
 		- [Vector Quantized Variational Autoencoder (VQ-VAE)](https://arxiv.org/abs/1711.00937)
 		- [Vector Quantized Generative Adversarial Network (VQ-GAN)](https://compvis.github.io/taming-transformers/)
@@ -1179,32 +1110,28 @@ public:: true
 		- [DallE](https://arxiv.org/pdf/2102.12092.pdf)
 		- [2304.06939.pdf (arxiv.org)](https://arxiv.org/pdf/2304.06939.pdf) C4 model
 		- [huggingface/OBELICS: Code used for the creation of OBELICS, an open, massive and curated collection of interleaved image-text web documents, containing 141M documents, 115B text tokens and 353M images. (github.com)](https://github.com/huggingface/OBELICS?tab=readme-ov-file)
-		-
-		-
 
-- ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
+  - ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
 
-- ## Constrained Multi-Modal Retrieval Augmented Generation
+  - ## Constrained Multi-Modal Retrieval Augmented Generation
 
-- ### Additional Tools and Resources
-- [Horde Image and LLM](https://horde.koboldai.net/)
-	- A project integrating images with LLMs for enhanced content generation.
-- [LobeHub](https://github.com/lobehub)
-	- A technology-driven forum for AIGC, offering modern design components and tools.
-- Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
--
--
+  - ### Additional Tools and Resources
+  - [Horde Image and LLM](https://horde.koboldai.net/)
+  - A project integrating images with LLMs for enhanced content generation.
+  - [LobeHub](https://github.com/lobehub)
+  - A technology-driven forum for AIGC, offering modern design components and tools.
+  - Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
 
-- ## Abstract
-  
+  - ## Abstract
+
   Recent years have witnessed the strong power of large text-to-image diffusion models for the impressive generative capability to create high-fidelity images. But, it is very tricky to generate desired images using only text prompt as it often involves complex prompt engineering. An alternative to text prompt is image prompt, as the saying goes: "an image is worth a thousand words". Although existing methods of direct fine-tuning from pretrained models are effective, they require large computing resources and are not compatible with other base models, text prompt, and structural controls. In this paper, we present IP-Adapter, an effective and lightweight adapter to achieve image prompt capability for the pretrained text-to-image diffusion models. The key design of our IP-Adapter is decoupled cross-attention mechanism that separates cross-attention layers for text features and image features. Despite the simplicity of our method, an IP-Adapter with only 22M parameters can achieve comparable or even better performance to a fine-tuned image prompt model. As we freeze the pretrained duffusion model, the proposed IP-Adapter can be generalized not only to other custom models fine-tuned from the same base model, but also to controllable generation using existing controllable tools. With the benefit of the decoupled cross-attention strategy, the image prompt can also work well with the text prompt to accomplish multimodal image generation.
 
-- ### *Various image synthesis with our proposed IP-Adapter applied on the pretrained text-to-image diffusion model and additional structure controller.*
-  
+  - ### *Various image synthesis with our proposed IP-Adapter applied on the pretrained text-to-image diffusion model and additional structure controller.*
+
   [[Paper]](https://arxiv.org/abs/2308.06721)      [[Code]](https://github.com/tencent-ailab/IP-Adapter)      [[BibTeX]](https://ip-adapter.github.io/files/bibtex.txt)
 
-- #### Future Directions and Reflections
-	- 🔮 Anticipating Future Developments:
+  - #### Future Directions and Reflections
+  - 🔮 Anticipating Future Developments:
 		- AI's capabilities in automating content creation and administrative tasks suggest an imminent shift towards more personalised and efficient educational models.
 		- Ongoing advancement of AI tools like GPT-4 and image generation technologies like Midjourney indicates a rapidly evolving educational technology landscape.
 		- 🤖 AI as a Collaborative Partner:
@@ -1212,63 +1139,59 @@ public:: true
 		- 💭 Creative Considerations:
 		  AI can be an ally in overcoming creative blocks and fostering a culture of innovation and expression in educational settings.
 
-- ## Bots Proliferate
-	- ![paste (6).png](../assets/paste_(6)_1718746134411_0.png)
-	-
-	- Jailbroken foundation models can already solve Capcha human checks, and this will soon be possible with open source models. At this point the internet will possibly explode with bot activity.
+  - ## Bots Proliferate
+  - ![paste (6).png](../assets/paste_(6)_1718746134411_0.png)
+  - Jailbroken foundation models can already solve Capcha human checks, and this will soon be possible with open source models. At this point the internet will possibly explode with bot activity.
 		- ![1706810932954.jpeg](assets/1706810932954_1717339896749_0.jpeg){:width 600}
-	- It's important to note that as the web dies, we will increasingly be forced to use [[Agents]] to mediate information, and this will mean increased [[Global Inequality]] as the remaining tatters of the free internet become badlands.
+  - It's important to note that as the web dies, we will increasingly be forced to use [[Agents]] to mediate information, and this will mean increased [[Global Inequality]] as the remaining tatters of the free internet become badlands.
 		- [Andrew Gao on X: "the singularity is literally here. Devin ended up talking to ANOTHER AI (McDonalds' AI recruiter)!! The future of the web is #agents talking to agents. Luckily, Devin convinced Olivia to give me an interview :) Peep the video https://t.co/oYJG8JzIIO" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786880819170320678)
-	- [Andrew Gao on X: "#Devin helped me get a job at McDonalds 🍔🍟 I will have a job post-AGI! (seriously, it's gotten really good at browser automation, watch) 📽️ Part 2: auto-applying to @cognition_labs with Devin 👇🧵 https://t.co/oBm20nOCvx" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786879644651991549)
+  - [Andrew Gao on X: "#Devin helped me get a job at McDonalds 🍔🍟 I will have a job post-AGI! (seriously, it's gotten really good at browser automation, watch) 📽️ Part 2: auto-applying to @cognition_labs with Devin 👇🧵 https://t.co/oBm20nOCvx" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786879644651991549)
 		- {{twitter https://twitter.com/itsandrewgao/status/1786879644651991549}}
-	- Bots that persuade bots that persuade bots
+  - Bots that persuade bots that persuade bots
 		- https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
-	- Google search is dying under the shifting signal to noise problem.
+  - Google search is dying under the shifting signal to noise problem.
 		- [AI Has Made Google Search So Bad People Are Moving to TikTok & Reddit | by Ronke Babajide | Bouncin’ and Behavin’ Blogs | Medium](https://medium.com/bouncin-and-behavin-blogs/ai-has-made-google-search-so-bad-people-are-moving-to-tiktok-reddit-6ac0b4801d2e)
-	- According to Imperva, 47.4% of all internet traffic in 2022 was bots ([reference](https://www.imperva.com/blog/bad-bot-report-2022-edition/)) though this is contested by industry internet tracker [CHEQ](https://cheq.ai/) .
-	- An ex-CIA expert suggested up to 80% of Twitter accounts could be bots ([reference](https://finance.yahoo.com/news/cia-expert-says-80-twitter-222337217.html)).
+  - According to Imperva, 47.4% of all internet traffic in 2022 was bots ([reference](https://www.imperva.com/blog/bad-bot-report-2022-edition/)) though this is contested by industry internet tracker [CHEQ](https://cheq.ai/) .
+  - An ex-CIA expert suggested up to 80% of Twitter accounts could be bots ([reference](https://finance.yahoo.com/news/cia-expert-says-80-twitter-222337217.html)).
 		- [The majority of traffic from Elon Musk's X may have been fake during the Super Bowl, report suggests | Mashable](https://mashable.com/article/x-twitter-elon-musk-bots-fake-traffic)
-	- Russian bots are inflating Instagram influencer follower counts into the tens of millions ([reference](https://www.adweek.com/social-marketing/study-15-million-russian-instagram-influencers-followers-are-bots/)).
-	- Ticketmaster says bots snatch up concert tickets before fans get access ([reference](https://www.cnbc.com/2017/05/23/ticketmaster-and-live-nation-face-class-action-lawsuit.html)).
-	- [(1) X (twitter.com)](https://twitter.com/lorda26/status/1753451790778225095) ancient spam account posts a generated image description with no image, drawing swarms of admiring text-spam bots which generate imaginary human reactions (read the replies) to an image which doesn’t actually exist
+  - Russian bots are inflating Instagram influencer follower counts into the tens of millions ([reference](https://www.adweek.com/social-marketing/study-15-million-russian-instagram-influencers-followers-are-bots/)).
+  - Ticketmaster says bots snatch up concert tickets before fans get access ([reference](https://www.cnbc.com/2017/05/23/ticketmaster-and-live-nation-face-class-action-lawsuit.html)).
+  - [(1) X (twitter.com)](https://twitter.com/lorda26/status/1753451790778225095) ancient spam account posts a generated image description with no image, drawing swarms of admiring text-spam bots which generate imaginary human reactions (read the replies) to an image which doesn’t actually exist
 
-- ## Custom Gen AI models in business
-  id:: 659a9231-4d21-415e-8b07-25b215e6b712
-	- ![image.png](assets/image_1704997279791_0.png){:width 500}
+  - ## Custom Gen AI models in business
+  - ![image.png](assets/image_1704997279791_0.png){:width 500}
 
-- ## Runway Gen 3
-	- [Introducing Gen-3 Alpha: A New Frontier for Video Generation (runwayml.com)](https://runwayml.com/blog/introducing-gen-3-alpha/)
-	-
+  - ## Runway Gen 3
+  - [Introducing Gen-3 Alpha: A New Frontier for Video Generation (runwayml.com)](https://runwayml.com/blog/introducing-gen-3-alpha/)
 
-- ### Multi-Modal Large Language Models (LLMs)
-	- **Introduction:**
+  - ### Multi-Modal Large Language Models (LLMs)
+  - **Introduction:**
 		- [[Large language models]] are adept at generating coherent text sequences, predicting word probabilities and co-occurrences.
 		- Multimodal models extend LLMs capabilities to not just output text, but images and understand multimodal inputs.
-	- **Core Concepts:**
+  - **Core Concepts:**
 		- **LLMs for Text:**
 			- LLMs process prompts and generate replies one token at a time, acting as a multiclass classifier.
 		- **Image Generation:**
 			- Traditional pixel-by-pixel image generation is intractable; hence, a different approach is needed.
 			- The solution is treating image generation as a language generation problem, akin to ancient hieroglyphics.
-	- **Techniques in Multi-Modal LLMs:**
+  - **Techniques in Multi-Modal LLMs:**
 		- **Autoencoders:**
 			- Compress images into a lower-dimensional latent space and then regenerate them, learning crucial properties.
 		- **[[Variational Autoencoders]] (VAE) & VQ-VAE:**
 			- VAEs add a generative aspect by allowing for new image generation from random latent embeddings.
 			- VQ-VAE further discretizes this process, creating a vocabulary of image "words" or tokens.
-	- **Implementation:**
+  - **Implementation:**
 		- **Vector Quantization:**
 			- Creates a discrete set of embedding vectors forming the vocabulary for our image-based language.
 		- **Encoding and Decoding:**
 			- Images are encoded to these discrete codes and decoded back to form new or reconstructed images.
-	- **Training and Inference:**
+  - **Training and Inference:**
 		- A mixed sequence of embeddings (words and image tokens) is created for training.
 		- The model learns to generate image tokens, forming a coherent sequence with the text, allowing for the generation of images corresponding to text descriptions.
-	- **Challenges and Developments:**
+  - **Challenges and Developments:**
 		- The importance of quality data over quantity, especially for large, complex models.
 		- Ongoing efforts focus on refining data quality, applying safety measures, and improving model transparency.
--
-- ```mermaid
+  - ```mermaid
   flowchart LR
   A[Text Input] -->|Processed by LLM| B[Text Tokens]
   B -->|Alongside Image Tokens| D[Mixed Embeddings]
@@ -1277,13 +1200,12 @@ public:: true
   D -->|Next Token Prediction| F[Generated Sequence]
   F -->|Decoded| G[Output Image & Text]
   ```
--
-- Some random links
-	- Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
-	- [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
-	- [moondream
+  - Some random links
+  - Apple Ferret is a [[Multimodal]] [[Large language models]] from [[Apple]] that can understand and ground anything at any granularity [apple/ml-ferret (github.com)](https://github.com/apple/ml-ferret)
+  - [THUDM/CogVLM: a state-of-the-art-level open visual language model | 多模态预训练模型 (github.com)](https://github.com/THUDM/CogVLM)
+  - [moondream
 		- a tiny vision language model](https://moondream.ai/)
-	- Key Papers
+  - Key Papers
 		- [Variational Autoencoder (VAE)](https://arxiv.org/abs/1312.6114)
 		- [Vector Quantized Variational Autoencoder (VQ-VAE)](https://arxiv.org/abs/1711.00937)
 		- [Vector Quantized Generative Adversarial Network (VQ-GAN)](https://compvis.github.io/taming-transformers/)
@@ -1292,32 +1214,57 @@ public:: true
 		- [DallE](https://arxiv.org/pdf/2102.12092.pdf)
 		- [2304.06939.pdf (arxiv.org)](https://arxiv.org/pdf/2304.06939.pdf) C4 model
 		- [huggingface/OBELICS: Code used for the creation of OBELICS, an open, massive and curated collection of interleaved image-text web documents, containing 141M documents, 115B text tokens and 353M images. (github.com)](https://github.com/huggingface/OBELICS?tab=readme-ov-file)
-		-
-		-
 
-- ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
+  - ## Closed Source Image Generation: id:: 659a9229-ed15-4932-a207-eb2daa96786e
 
-- ## Constrained Multi-Modal Retrieval Augmented Generation
+  - ## Constrained Multi-Modal Retrieval Augmented Generation
 
-- ### Additional Tools and Resources
-- [Horde Image and LLM](https://horde.koboldai.net/)
-	- A project integrating images with LLMs for enhanced content generation.
-- [LobeHub](https://github.com/lobehub)
-	- A technology-driven forum for AIGC, offering modern design components and tools.
-- Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
--
--
+  - ### Additional Tools and Resources
+  - [Horde Image and LLM](https://horde.koboldai.net/)
+  - A project integrating images with LLMs for enhanced content generation.
+  - [LobeHub](https://github.com/lobehub)
+  - A technology-driven forum for AIGC, offering modern design components and tools.
+  - Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
 
-- ## Abstract
-  
+  - ## Abstract
+
   Recent years have witnessed the strong power of large text-to-image diffusion models for the impressive generative capability to create high-fidelity images. But, it is very tricky to generate desired images using only text prompt as it often involves complex prompt engineering. An alternative to text prompt is image prompt, as the saying goes: "an image is worth a thousand words". Although existing methods of direct fine-tuning from pretrained models are effective, they require large computing resources and are not compatible with other base models, text prompt, and structural controls. In this paper, we present IP-Adapter, an effective and lightweight adapter to achieve image prompt capability for the pretrained text-to-image diffusion models. The key design of our IP-Adapter is decoupled cross-attention mechanism that separates cross-attention layers for text features and image features. Despite the simplicity of our method, an IP-Adapter with only 22M parameters can achieve comparable or even better performance to a fine-tuned image prompt model. As we freeze the pretrained duffusion model, the proposed IP-Adapter can be generalized not only to other custom models fine-tuned from the same base model, but also to controllable generation using existing controllable tools. With the benefit of the decoupled cross-attention strategy, the image prompt can also work well with the text prompt to accomplish multimodal image generation.
 
-- ### *Various image synthesis with our proposed IP-Adapter applied on the pretrained text-to-image diffusion model and additional structure controller.*
-  
+  - ### *Various image synthesis with our proposed IP-Adapter applied on the pretrained text-to-image diffusion model and additional structure controller.*
+
   [[Paper]](https://arxiv.org/abs/2308.06721)      [[Code]](https://github.com/tencent-ailab/IP-Adapter)      [[BibTeX]](https://ip-adapter.github.io/files/bibtex.txt)
 
-- #### Future Directions and Reflections
-	- 🔮 Anticipating Future Developments:
+  ## Core Characteristics
+
+  - **High-Fidelity Synthesis**: Photo-realistic image creation
+  - **Conditional Generation**: Text-to-image, image-to-image, sketch-to-image
+  - **Controllable Generation**: Manipulation of style, content, attributes
+  - **Diverse Outputs**: Stochastic sampling for variety
+  - **Large-Scale Models**: Trained on billion-image datasets
+
+  ## Relationships
+
+  - **Subclass**: Computer Vision
+  - **Related**: Generative Adversarial Network, Diffusion Model, Text-to-Image
+  - **Models**: DALL-E, Stable Diffusion, Midjourney, Imagen
+  - **Applications**: Art Generation, Data Augmentation, Design
+
+  ## Key Literature
+
+  1. Goodfellow, I., et al. (2014). "Generative adversarial nets." *NeurIPS*, 2672-2680.
+
+  2. Rombach, R., et al. (2022). "High-resolution image synthesis with latent diffusion models." *CVPR*, 10684-10695.
+
+  3. Ramesh, A., et al. (2022). "Hierarchical text-conditional image generation with CLIP latents." *arXiv:2204.06125*.
+
+  ## See Also
+
+  - [[Generative Adversarial Network]]
+  - [[Diffusion Model]]
+  - [[Text-to-Image]]
+
+  #### Future Directions
+  - 🔮 Anticipating Future Developments:
 		- AI's capabilities in automating content creation and administrative tasks suggest an imminent shift towards more personalised and efficient educational models.
 		- Ongoing advancement of AI tools like GPT-4 and image generation technologies like Midjourney indicates a rapidly evolving educational technology landscape.
 		- 🤖 AI as a Collaborative Partner:
@@ -1325,198 +1272,67 @@ public:: true
 		- 💭 Creative Considerations:
 		  AI can be an ally in overcoming creative blocks and fostering a culture of innovation and expression in educational settings.
 
-- ## Bots Proliferate
-	- ![paste (6).png](../assets/paste_(6)_1718746134411_0.png)
-	-
-	- Jailbroken foundation models can already solve Capcha human checks, and this will soon be possible with open source models. At this point the internet will possibly explode with bot activity.
+  - ## Bots Proliferate
+  - ![paste (6).png](../assets/paste_(6)_1718746134411_0.png)
+  - Jailbroken foundation models can already solve Capcha human checks, and this will soon be possible with open source models. At this point the internet will possibly explode with bot activity.
 		- ![1706810932954.jpeg](assets/1706810932954_1717339896749_0.jpeg){:width 600}
-	- It's important to note that as the web dies, we will increasingly be forced to use [[Agents]] to mediate information, and this will mean increased [[Global Inequality]] as the remaining tatters of the free internet become badlands.
+  - It's important to note that as the web dies, we will increasingly be forced to use [[Agents]] to mediate information, and this will mean increased [[Global Inequality]] as the remaining tatters of the free internet become badlands.
 		- [Andrew Gao on X: "the singularity is literally here. Devin ended up talking to ANOTHER AI (McDonalds' AI recruiter)!! The future of the web is #agents talking to agents. Luckily, Devin convinced Olivia to give me an interview :) Peep the video https://t.co/oYJG8JzIIO" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786880819170320678)
-	- [Andrew Gao on X: "#Devin helped me get a job at McDonalds 🍔🍟 I will have a job post-AGI! (seriously, it's gotten really good at browser automation, watch) 📽️ Part 2: auto-applying to @cognition_labs with Devin 👇🧵 https://t.co/oBm20nOCvx" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786879644651991549)
+  - [Andrew Gao on X: "#Devin helped me get a job at McDonalds 🍔🍟 I will have a job post-AGI! (seriously, it's gotten really good at browser automation, watch) 📽️ Part 2: auto-applying to @cognition_labs with Devin 👇🧵 https://t.co/oBm20nOCvx" / X (twitter.com)](https://twitter.com/itsandrewgao/status/1786879644651991549)
 		- {{twitter https://twitter.com/itsandrewgao/status/1786879644651991549}}
-	- Bots that persuade bots that persuade bots
+  - Bots that persuade bots that persuade bots
 		- https://www.linkedin.com/posts/emollick_two-weird-things-that-are-going-to-happen-activity-7180768944067072000-Gmtq?
-	- Google search is dying under the shifting signal to noise problem.
+  - Google search is dying under the shifting signal to noise problem.
 		- [AI Has Made Google Search So Bad People Are Moving to TikTok & Reddit | by Ronke Babajide | Bouncin’ and Behavin’ Blogs | Medium](https://medium.com/bouncin-and-behavin-blogs/ai-has-made-google-search-so-bad-people-are-moving-to-tiktok-reddit-6ac0b4801d2e)
-	- According to Imperva, 47.4% of all internet traffic in 2022 was bots ([reference](https://www.imperva.com/blog/bad-bot-report-2022-edition/)) though this is contested by industry internet tracker [CHEQ](https://cheq.ai/) .
-	- An ex-CIA expert suggested up to 80% of Twitter accounts could be bots ([reference](https://finance.yahoo.com/news/cia-expert-says-80-twitter-222337217.html)).
+  - According to Imperva, 47.4% of all internet traffic in 2022 was bots ([reference](https://www.imperva.com/blog/bad-bot-report-2022-edition/)) though this is contested by industry internet tracker [CHEQ](https://cheq.ai/) .
+  - An ex-CIA expert suggested up to 80% of Twitter accounts could be bots ([reference](https://finance.yahoo.com/news/cia-expert-says-80-twitter-222337217.html)).
 		- [The majority of traffic from Elon Musk's X may have been fake during the Super Bowl, report suggests | Mashable](https://mashable.com/article/x-twitter-elon-musk-bots-fake-traffic)
-	- Russian bots are inflating Instagram influencer follower counts into the tens of millions ([reference](https://www.adweek.com/social-marketing/study-15-million-russian-instagram-influencers-followers-are-bots/)).
-	- Ticketmaster says bots snatch up concert tickets before fans get access ([reference](https://www.cnbc.com/2017/05/23/ticketmaster-and-live-nation-face-class-action-lawsuit.html)).
-	- [(1) X (twitter.com)](https://twitter.com/lorda26/status/1753451790778225095) ancient spam account posts a generated image description with no image, drawing swarms of admiring text-spam bots which generate imaginary human reactions (read the replies) to an image which doesn’t actually exist
+  - Russian bots are inflating Instagram influencer follower counts into the tens of millions ([reference](https://www.adweek.com/social-marketing/study-15-million-russian-instagram-influencers-followers-are-bots/)).
+  - Ticketmaster says bots snatch up concert tickets before fans get access ([reference](https://www.cnbc.com/2017/05/23/ticketmaster-and-live-nation-face-class-action-lawsuit.html)).
+  - [(1) X (twitter.com)](https://twitter.com/lorda26/status/1753451790778225095) ancient spam account posts a generated image description with no image, drawing swarms of admiring text-spam bots which generate imaginary human reactions (read the replies) to an image which doesn’t actually exist
 
-- ## Custom Gen AI models in business
-  id:: 659a9231-4d21-415e-8b07-25b215e6b712
-	- ![image.png](assets/image_1704997279791_0.png){:width 500}
+  - ## Custom Gen AI models in business
+  - ![image.png](assets/image_1704997279791_0.png){:width 500}
 
-- ## Runway Gen 3
-	- [Introducing Gen-3 Alpha: A New Frontier for Video Generation (runwayml.com)](https://runwayml.com/blog/introducing-gen-3-alpha/)
-	-
+  - ## Runway Gen 3
+  - [Introducing Gen-3 Alpha: A New Frontier for Video Generation (runwayml.com)](https://runwayml.com/blog/introducing-gen-3-alpha/)
 
-- ### Additional Tools and Resources
-- [Horde Image and LLM](https://horde.koboldai.net/)
-	- A project integrating images with LLMs for enhanced content generation.
-- [LobeHub](https://github.com/lobehub)
-	- A technology-driven forum for AIGC, offering modern design components and tools.
-- Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
--
--
+  - ### Additional Tools and Resources
+  - [Horde Image and LLM](https://horde.koboldai.net/)
+  - A project integrating images with LLMs for enhanced content generation.
+  - [LobeHub](https://github.com/lobehub)
+  - A technology-driven forum for AIGC, offering modern design components and tools.
+  - Microsoft [WizardLM 2](https://wizardlm.github.io/WizardLM2/)
 
-## Core Characteristics
+  ## Core Characteristics
 
-- **High-Fidelity Synthesis**: Photo-realistic image creation
-- **Conditional Generation**: Text-to-image, image-to-image, sketch-to-image
-- **Controllable Generation**: Manipulation of style, content, attributes
-- **Diverse Outputs**: Stochastic sampling for variety
-- **Large-Scale Models**: Trained on billion-image datasets
+  - **High-Fidelity Synthesis**: Photo-realistic image creation
+  - **Conditional Generation**: Text-to-image, image-to-image, sketch-to-image
+  - **Controllable Generation**: Manipulation of style, content, attributes
+  - **Diverse Outputs**: Stochastic sampling for variety
+  - **Large-Scale Models**: Trained on billion-image datasets
 
-## Relationships
+  ## Relationships
 
-- **Subclass**: Computer Vision
-- **Related**: Generative Adversarial Network, Diffusion Model, Text-to-Image
-- **Models**: DALL-E, Stable Diffusion, Midjourney, Imagen
-- **Applications**: Art Generation, Data Augmentation, Design
+  - **Subclass**: Computer Vision
+  - **Related**: Generative Adversarial Network, Diffusion Model, Text-to-Image
+  - **Models**: DALL-E, Stable Diffusion, Midjourney, Imagen
+  - **Applications**: Art Generation, Data Augmentation, Design
 
-## Key Literature
+  ## Key Literature
 
-1. Goodfellow, I., et al. (2014). "Generative adversarial nets." *NeurIPS*, 2672-2680.
+  1. Goodfellow, I., et al. (2014). "Generative adversarial nets." *NeurIPS*, 2672-2680.
 
-2. Rombach, R., et al. (2022). "High-resolution image synthesis with latent diffusion models." *CVPR*, 10684-10695.
+  2. Rombach, R., et al. (2022). "High-resolution image synthesis with latent diffusion models." *CVPR*, 10684-10695.
 
-3. Ramesh, A., et al. (2022). "Hierarchical text-conditional image generation with CLIP latents." *arXiv:2204.06125*.
+  3. Ramesh, A., et al. (2022). "Hierarchical text-conditional image generation with CLIP latents." *arXiv:2204.06125*.
 
-## See Also
+  ## See Also
 
-- [[Generative Adversarial Network]]
-- [[Diffusion Model]]
-- [[Text-to-Image]]
+  - [[Generative Adversarial Network]]
+  - [[Diffusion Model]]
+  - [[Text-to-Image]]
 
-## Metadata
-
-- **Domain**: Computer Vision, Generative AI
-- **Maturity**: Rapid commercial adoption
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Image Generation
-		  
-		  **Term ID**: AI-0362
-		  **Category**: Domain Applications → Computer Vision
-		  **Status**: Stable
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
-		  
-		  ## Core Characteristics
-		  
-		  - **High-Fidelity Synthesis**: Photo-realistic image creation
-		  - **Conditional Generation**: Text-to-image, image-to-image, sketch-to-image
-		  - **Controllable Generation**: Manipulation of style, content, attributes
-		  - **Diverse Outputs**: Stochastic sampling for variety
-		  - **Large-Scale Models**: Trained on billion-image datasets
-		  
-		  ## Relationships
-		  
-		  - **Subclass**: Computer Vision
-		  - **Related**: Generative Adversarial Network, Diffusion Model, Text-to-Image
-		  - **Models**: DALL-E, Stable Diffusion, Midjourney, Imagen
-		  - **Applications**: Art Generation, Data Augmentation, Design
-		  
-		  ## Key Literature
-		  
-		  1. Goodfellow, I., et al. (2014). "Generative adversarial nets." *NeurIPS*, 2672-2680.
-		  
-		  2. Rombach, R., et al. (2022). "High-resolution image synthesis with latent diffusion models." *CVPR*, 10684-10695.
-		  
-		  3. Ramesh, A., et al. (2022). "Hierarchical text-conditional image generation with CLIP latents." *arXiv:2204.06125*.
-		  
-		  ## See Also
-		  
-		  - [[Generative Adversarial Network]]
-		  - [[Diffusion Model]]
-		  - [[Text-to-Image]]
-		  
-		  ## Metadata
-		  
-		  - **Domain**: Computer Vision, Generative AI
-		  - **Maturity**: Rapid commercial adoption
-		  
-		  ```
-
-    - uses-technique:: [[Generative Adversarial Network]], [[Diffusion Model]]
-
-- public-access:: true
-	- definition:: Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models. Modern image generation systems (DALL-E, Stable Diffusion, Midjourney) produce high-fidelity images from text descriptions, sketches, or latent representations, enabling creative applications, data augmentation, and content creation.
-
-
-## Academic Context
-
-- Image Generation is a subfield of artificial intelligence focused on synthesising visual content, ranging from photorealistic images to stylised artworks, using generative models.
-  - Foundational techniques include Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models, which learn complex data distributions to create novel images.
-  - The academic foundations lie in deep learning, probabilistic modelling, and computer vision, with seminal papers such as Goodfellow et al. (2014) on GANs and Kingma & Welling (2013) on VAEs.
-  - The field has evolved rapidly, with diffusion models gaining prominence for their superior image quality and controllability.
-
-## Current Landscape (2025)
-
-- Industry adoption is widespread across creative industries, entertainment, advertising, medical imaging, and data augmentation.
-  - Leading platforms include DALL·E, Stable Diffusion, and Midjourney, which generate high-fidelity images from text prompts, sketches, or latent vectors.
-  - These systems enable novel workflows in content creation, reducing reliance on manual design and expanding creative possibilities.
-- Technical capabilities:
-  - High-fidelity synthesis with photorealistic and stylised outputs.
-  - Conditional generation from multimodal inputs (text, sketches, semantic maps).
-  - Limitations include biases inherited from training data, occasional artefacts, and challenges in fine-grained control.
-- Standards and frameworks:
-  - Ontologies formalise concepts and relationships in image generation, supporting interoperability and explainability.
-  - OWL and RDF remain common languages for ontology representation, facilitating semantic reasoning and AI transparency.
-
-## Research & Literature
-
-- Key academic references:
-  - Goodfellow et al., 2014. Generative Adversarial Nets. *Advances in Neural Information Processing Systems*. DOI: 10.1145/3422622
-  - Kingma & Welling, 2013. Auto-Encoding Variational Bayes. arXiv:1312.6114
-  - Ho et al., 2020. Denoising Diffusion Probabilistic Models. *NeurIPS*. DOI: 10.48550/arXiv.2006.11239
-- Ongoing research directions:
-  - Improving controllability and interpretability of generative models.
-  - Reducing computational costs and environmental impact.
-  - Addressing ethical concerns such as bias, copyright, and misuse.
-  - Integration with multimodal AI systems for richer content generation.
-
-## UK Context
-
-- The UK has active research groups in AI and computer vision, with institutions like the Alan Turing Institute and universities such as Cambridge and Edinburgh contributing to generative model research.
-- North England hosts innovation hubs in cities like Manchester and Leeds, where AI startups and academic collaborations focus on creative AI applications, including image generation for media and healthcare.
-- Regional case studies include partnerships between universities and industry to develop AI tools for digital arts and medical diagnostics, leveraging image generation technologies.
-
-## Future Directions
-
-- Emerging trends:
-  - Hybrid models combining diffusion and GAN architectures for enhanced performance.
-  - Real-time image generation integrated into augmented and virtual reality platforms, particularly relevant to the metaverse domain.
-  - Increased emphasis on ethical AI frameworks and transparent ontologies to ensure responsible deployment.
-- Anticipated challenges:
-  - Balancing creativity with control to avoid unintended outputs.
-  - Mitigating biases and ensuring inclusivity in generated content.
-  - Establishing robust standards for interoperability and provenance tracking.
-- Research priorities:
-  - Developing universal ontologies that capture the full pipeline from data input to image synthesis and application.
-  - Enhancing explainability and reproducibility through formal semantic frameworks.
-  - Expanding UK regional innovation to foster equitable AI development.
-
-## References
-
-1. Goodfellow, I., Pouget-Abadie, J., Mirza, M., Xu, B., Warde-Farley, D., Ozair, S., Courville, A., & Bengio, Y. (2014). Generative Adversarial Nets. *Advances in Neural Information Processing Systems*. DOI: 10.1145/3422622  
-2. Kingma, D. P., & Welling, M. (2013). Auto-Encoding Variational Bayes. arXiv:1312.6114  
-3. Ho, J., Jain, A., & Abbeel, P. (2020). Denoising Diffusion Probabilistic Models. *NeurIPS*. DOI: 10.48550/arXiv.2006.11239  
-4. Bikash Daga (2025). Ontology in AI (2025 Guide): Structure, Semantics & Applications in Knowledge Representation. Dev.to.  
-5. LFAI & Data Foundation (2023). Role of Ontologies in Enabling AI Transparency.  
-6. Salesforce Blog (2025). What is an ontology and its role in agentic experience design.  
-
-## Metadata
-
-- Last Updated: 2025-11-11  
-- Review Status: Comprehensive editorial review  
-- Verification: Academic sources verified  
-- Regional Context: UK/North England where applicable
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

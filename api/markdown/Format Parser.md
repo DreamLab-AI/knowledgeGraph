@@ -1,111 +1,125 @@
-- ### OntologyBlock
-  id:: format-parser-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9902
-	- source-domain:: mv
-	- preferred-term:: Format Parser
-	- status:: active
-	- owl:class:: mv:FormatParser
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.
-	- #### Relationships
-	  id:: format-parser-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Processing]]
-		- related-to:: [[3D Asset Pipeline]]
-		- related-to:: [[Interoperability Standard]]
-		- enables:: [[Cross-Platform Content]]
+iri:: http://narrativegoldmine.com/spatial-computing#FormatParser
+uri:: urn:visionclaw:concept:spatial-computing:format-parser
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:format-parser
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Format Parser
+content-hash:: sha256-12-8ec45d4a2af0
+legacy-term-id:: MV-9902
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Supported Formats
+- ### Definition
+  - Software components that interpret and convert various 3D asset file formats (glTF, USD, FBX, OBJ) into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.
 
-### Industry Standards
+- ### Semantic Classification
+  - owl-class:: spatial-computing:FormatParser
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-#### glTF (GL Transmission Format)
-- Khronos Group standard for 3D scenes
-- JSON-based with binary geometry data
-- Optimised for web and real-time applications
-- Widely adopted in metaverse platforms
+- ### Relationships
+  - is-subclass-of:: [[Data Processing]]
+  - enables:: [[Cross-Platform Content]]
 
-#### USD (Universal Scene Description)
-- Pixar-developed scene description format
-- Compositional and non-destructive
-- OpenUSD initiative for industry adoption
-- Digital twin and simulation support
+- ### Content
 
-#### FBX (Filmbox)
-- Autodesk proprietary format
-- Industry standard for animation
-- Skeletal and morph target support
-- Wide tool compatibility
+  ## Supported Formats
 
-#### OBJ (Wavefront Object)
-- Simple text-based geometry format
-- Broad legacy support
-- Material library (.mtl) companion files
-- Limited animation support
+  ### Industry Standards
 
-### Emerging Formats
-- VRM (Virtual Reality Model) for avatars
-- USDZ (Apple's USD variant)
-- 3D Tiles for geospatial data
+  #### glTF (GL Transmission Format)
+  - Khronos Group standard for 3D scenes
+  - JSON-based with binary geometry data
+  - Optimised for web and real-time applications
+  - Widely adopted in metaverse platforms
 
-## Parsing Pipeline
+  #### USD (Universal Scene Description)
+  - Pixar-developed scene description format
+  - Compositional and non-destructive
+  - OpenUSD initiative for industry adoption
+  - Digital twin and simulation support
 
-### Input Processing
-- File format detection
-- Schema validation
-- Binary data extraction
-- Metadata parsing
+  #### FBX (Filmbox)
+  - Autodesk proprietary format
+  - Industry standard for animation
+  - Skeletal and morph target support
+  - Wide tool compatibility
 
-### Geometry Processing
-- Vertex buffer construction
-- Index buffer generation
-- Normal and tangent calculation
-- UV coordinate mapping
+  #### OBJ (Wavefront Object)
+  - Simple text-based geometry format
+  - Broad legacy support
+  - Material library (.mtl) companion files
+  - Limited animation support
 
-### Material Processing
-- PBR (Physically Based Rendering) material extraction
-- Texture reference resolution
-- Shader property mapping
-- Material graph interpretation
+  ### Emerging Formats
+  - VRM (Virtual Reality Model) for avatars
+  - USDZ (Apple's USD variant)
+  - 3D Tiles for geospatial data
 
-### Animation Processing
-- Skeleton hierarchy extraction
-- Animation curve parsing
-- Blend shape target loading
-- Animation clip segmentation
+  ## Parsing Pipeline
 
-## Interoperability Challenges
+  ### Input Processing
+  - File format detection
+  - Schema validation
+  - Binary data extraction
+  - Metadata parsing
 
-### Format Conversion Issues
-- Material system differences
-- Coordinate system variations
-- Animation representation differences
-- Metadata loss during conversion
+  ### Geometry Processing
+  - Vertex buffer construction
+  - Index buffer generation
+  - Normal and tangent calculation
+  - UV coordinate mapping
 
-### Best Practices
-- Preserve original data where possible
-- Document conversion limitations
-- Support format versioning
-- Validate output integrity
+  ### Material Processing
+  - PBR (Physically Based Rendering) material extraction
+  - Texture reference resolution
+  - Shader property mapping
+  - Material graph interpretation
 
-## Applications
+  ### Animation Processing
+  - Skeleton hierarchy extraction
+  - Animation curve parsing
+  - Blend shape target loading
+  - Animation clip segmentation
 
-### Content Creation
-- Asset import/export pipelines
-- Format translation tools
-- Batch processing systems
+  ## Interoperability Challenges
 
-### Runtime Systems
-- Real-time asset loading
-- Streaming content delivery
-- LOD format handling
-- Compression support
+  ### Format Conversion Issues
+  - Material system differences
+  - Coordinate system variations
+  - Animation representation differences
+  - Metadata loss during conversion
 
-## Metadata
+  ### Best Practices
+  - Preserve original data where possible
+  - Document conversion limitations
+  - Support format versioning
+  - Validate output integrity
 
-- **Migration Status**: Enriched via domain knowledge 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Applications
+
+  ### Content Creation
+  - Asset import/export pipelines
+  - Format translation tools
+  - Batch processing systems
+
+  ### Runtime Systems
+  - Real-time asset loading
+  - Streaming content delivery
+  - LOD format handling
+  - Compression support
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

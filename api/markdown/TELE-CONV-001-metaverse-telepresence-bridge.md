@@ -1,184 +1,180 @@
-id:: metaverse-telepresence-bridge-ontology
+iri:: http://narrativegoldmine.com/distributed-collaboration#MetaverseTelepresenceBridge
+uri:: urn:visionclaw:concept:distributed-collaboration:metaverse-telepresence-bridge
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:distributed-collaboration:metaverse-telepresence-bridge
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: distributed-collaboration
+preferred-term:: Metaverse-Telepresence Bridge
+content-hash:: sha256-12-8480d4a8342a
+legacy-term-id:: TC-0191
+status:: active
+maturity:: draft
+quality-score:: 0.60
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-- ### OntologyBlock
-  id:: TELE-CONV-001-metaverse-telepresence-bridge
-  - ontology:: true
-  - public-access:: true
-  - term-id:: TC-0191
-  - preferred-term:: Metaverse-Telepresence Bridge
-  - source-domain:: tc
-  - status:: active
-  - definition:: "The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence social presence mechanisms to enable embodied collaboration in shared digital spaces."
+- ### Definition
+  - "The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence social presence mechanisms to enable embodied collaboration in shared digital spaces."
 
-### Relationships
-- is-subclass-of:: [[ConvergenceConcept]]
-- is-subclass-of:: [[CrossDomainBridge]]
-- requires:: [[MetaversePlatform]]
-- requires:: [[TELE-100-ai-avatars]]
-- requires:: [[TELE-020-virtual-reality-telepresence]]
-- enables:: [[PersistentVirtualPresence]]
-- enables:: [[EmbodiedMetaverseCollaboration]]
-- enables:: [[Social Vr]]
-- ngm:relatedTo:: [[TELE-301-virtual-office-spaces]]
-- ngm:relatedTo:: [[TELE-026-microsoft-mesh]]
-- ngm:relatedTo:: [[TELE-028-horizon-workrooms]]
-- ngm:bridgesTo:: [[SpatialComputing]]
-- ngm:bridgesTo:: [[VirtualReality]]
-- ngm:bridgesTo:: [[TELE-001-telepresence]]
-- ngm:bridgesTo:: [[Metaverse]]
+- ### Semantic Classification
+  - owl-class:: distributed-collaboration:MetaverseTelepresenceBridge
+  - owl-role:: Concept
 
-### Shared 3D Spaces
-**Metaverse Contribution**: Persistent virtual environments, spatial databases, world-building tools
-**Telepresence Contribution**: Natural spatial interaction, proxemics, joint visual attention
-**Integration**: Virtual meeting rooms ([[TELE-028-horizon-workrooms]]) where avatars gather, positioned spatially with distance-based audio attenuation
+- ### Relationships
+  - is-subclass-of:: [[ConvergenceConcept]]
+  - requires:: [[TELE-020-virtual-reality-telepresence]]
+  - enables:: [[EmbodiedMetaverseCollaboration]]
 
-### Avatar Embodiment
-**Metaverse Contribution**: Digital identity, customisable avatars, avatar marketplaces (NFTs)
-**Telepresence Contribution**: Photorealistic avatars ([[TELE-100-ai-avatars]]), facial expression tracking, gesture synthesis
-**Integration**: Users bring persistent metaverse avatars into telepresence meetings with real-time facial animation
+- ### Content
 
-### Social Presence in Virtual Worlds
-**Metaverse Contribution**: Social graphs, friend lists, presence indicators (online/offline)
-**Telepresence Contribution**: Social Presence Theory ([[TELE-003-social-presence-theory]]), nonverbal cues, eye contact
-**Integration**: Metaverse relationships translated to professional collaboration, social VR conventions applied to work contexts
+  ### Shared 3D Spaces
+  **Metaverse Contribution**: Persistent virtual environments, spatial databases, world-building tools
+  **Telepresence Contribution**: Natural spatial interaction, proxemics, joint visual attention
+  **Integration**: Virtual meeting rooms ([[TELE-028-horizon-workrooms]]) where avatars gather, positioned spatially with distance-based audio attenuation
 
-### Persistent Collaboration Artefacts
-**Metaverse Contribution**: Persistent objects in virtual worlds (whiteboards, 3D models remain after users log off)
-**Telepresence Contribution**: Collaborative editing, shared workspaces, co-creation tools
-**Integration**: Shared whiteboards ([[TELE-302-shared-whiteboards]]), 3D object manipulation persisting across sessions
+  ### Avatar Embodiment
+  **Metaverse Contribution**: Digital identity, customisable avatars, avatar marketplaces (NFTs)
+  **Telepresence Contribution**: Photorealistic avatars ([[TELE-100-ai-avatars]]), facial expression tracking, gesture synthesis
+  **Integration**: Users bring persistent metaverse avatars into telepresence meetings with real-time facial animation
 
-### Economic Integration
-**Metaverse Contribution**: Virtual economies, cryptocurrency payments, NFT ownership
-**Telepresence Contribution**: Professional services, remote work, distributed employment
-**Integration**: Blockchain collaboration ([[TELE-250-blockchain-collaboration]]) where metaverse DAOs coordinate telepresence work
+  ### Social Presence in Virtual Worlds
+  **Metaverse Contribution**: Social graphs, friend lists, presence indicators (online/offline)
+  **Telepresence Contribution**: Social Presence Theory ([[TELE-003-social-presence-theory]]), nonverbal cues, eye contact
+  **Integration**: Metaverse relationships translated to professional collaboration, social VR conventions applied to work contexts
 
-## Platform Examples
+  ### Persistent Collaboration Artefacts
+  **Metaverse Contribution**: Persistent objects in virtual worlds (whiteboards, 3D models remain after users log off)
+  **Telepresence Contribution**: Collaborative editing, shared workspaces, co-creation tools
+  **Integration**: Shared whiteboards ([[TELE-302-shared-whiteboards]]), 3D object manipulation persisting across sessions
 
-### Meta Horizon Workrooms ([[TELE-028-horizon-workrooms]])
-**Metaverse Aspects**:
-- Persistent avatar identity across Horizon apps
-- Virtual furniture/room customisation
-- Integration with Meta's social graph
+  ### Economic Integration
+  **Metaverse Contribution**: Virtual economies, cryptocurrency payments, NFT ownership
+  **Telepresence Contribution**: Professional services, remote work, distributed employment
+  **Integration**: Blockchain collaboration ([[TELE-250-blockchain-collaboration]]) where metaverse DAOs coordinate telepresence work
 
-**Telepresence Aspects**:
-- Photorealistic Codec Avatars (experimental)
-- Real-time facial tracking, hand gestures
-- Screen sharing, keyboard passthrough
+  ## Platform Examples
 
-**Bridge**: Professional metaverse collaboration leveraging Meta's social VR infrastructure
+  ### Meta Horizon Workrooms ([[TELE-028-horizon-workrooms]])
+  **Metaverse Aspects**:
+  - Persistent avatar identity across Horizon apps
+  - Virtual furniture/room customisation
+  - Integration with Meta's social graph
 
-### Microsoft Mesh ([[TELE-026-microsoft-mesh]])
-**Metaverse Aspects**:
-- Persistent virtual spaces (Mesh-enabled Teams rooms)
-- HoloLens holographic avatars
-- Azure cloud rendering infrastructure
+  **Telepresence Aspects**:
+  - Photorealistic Codec Avatars (experimental)
+  - Real-time facial tracking, hand gestures
+  - Screen sharing, keyboard passthrough
 
-**Telepresence Aspects**:
-- Microsoft Teams integration (video conferencing fallback)
-- Corporate identity/authentication (Azure AD)
-- Enterprise security/compliance
+  **Bridge**: Professional metaverse collaboration leveraging Meta's social VR infrastructure
 
-**Bridge**: Enterprise metaverse built on Microsoft's collaboration ecosystem
+  ### Microsoft Mesh ([[TELE-026-microsoft-mesh]])
+  **Metaverse Aspects**:
+  - Persistent virtual spaces (Mesh-enabled Teams rooms)
+  - HoloLens holographic avatars
+  - Azure cloud rendering infrastructure
 
-### Spatial Platform ([[TELE-027-spatial-platform]])
-**Metaverse Aspects**:
-- NFT galleries, virtual real estate
-- Web3 wallet integration
-- Creator economy (user-generated worlds)
+  **Telepresence Aspects**:
+  - Microsoft Teams integration (video conferencing fallback)
+  - Corporate identity/authentication (Azure AD)
+  - Enterprise security/compliance
 
-**Telepresence Aspects**:
-- High-fidelity photorealistic avatars (ReadyPlayerMe)
-- Spatial audio for natural conversations
-- Collaborative design tools
+  **Bridge**: Enterprise metaverse built on Microsoft's collaboration ecosystem
 
-**Bridge**: Creator-focused metaverse with professional telepresence capabilities
+  ### Spatial Platform ([[TELE-027-spatial-platform]])
+  **Metaverse Aspects**:
+  - NFT galleries, virtual real estate
+  - Web3 wallet integration
+  - Creator economy (user-generated worlds)
 
-## Cross-Domain Concepts
+  **Telepresence Aspects**:
+  - High-fidelity photorealistic avatars (ReadyPlayerMe)
+  - Spatial audio for natural conversations
+  - Collaborative design tools
 
-### From Metaverse to Telepresence
-- **Persistent Identity**: Metaverse avatars carry professional reputation into telepresence meetings
-- **Virtual Real Estate**: Companies "own" virtual office spaces as NFTs, host telepresence meetings there
-- **Social Conventions**: Metaverse etiquette (personal space bubbles, gesture emotes) adopted in professional telepresence
-- **Economic Models**: Metaverse virtual goods (avatar clothing, office furniture) purchased for telepresence use
+  **Bridge**: Creator-focused metaverse with professional telepresence capabilities
 
-### From Telepresence to Metaverse
-- **Professionalism**: Metaverse platforms add enterprise features (security, analytics) from telepresence tools
-- **Accessibility**: Telepresence best practices (captioning, keyboard-only control) improve metaverse inclusivity
-- **Productivity Tools**: Telepresence innovations (screen sharing, whiteboards) integrated into metaverse
-- **Communication Quality**: Telepresence focus on low-latency, high-fidelity audio/video raises metaverse standards
+  ## Cross-Domain Concepts
 
-## Theoretical Integration
+  ### From Metaverse to Telepresence
+  - **Persistent Identity**: Metaverse avatars carry professional reputation into telepresence meetings
+  - **Virtual Real Estate**: Companies "own" virtual office spaces as NFTs, host telepresence meetings there
+  - **Social Conventions**: Metaverse etiquette (personal space bubbles, gesture emotes) adopted in professional telepresence
+  - **Economic Models**: Metaverse virtual goods (avatar clothing, office furniture) purchased for telepresence use
 
-### Social Presence Theory in Metaverse
-[[TELE-003-social-presence-theory]] predicts higher social presence in metaverse telepresence vs. video calls:
-- **3D Spatial Cues**: Avatar positions, orientations convey attention and engagement
-- **Nonverbal Communication**: Body language, gestures, proxemics replicated virtually
-- **Shared Environment**: Joint focus on virtual objects creates common ground
+  ### From Telepresence to Metaverse
+  - **Professionalism**: Metaverse platforms add enterprise features (security, analytics) from telepresence tools
+  - **Accessibility**: Telepresence best practices (captioning, keyboard-only control) improve metaverse inclusivity
+  - **Productivity Tools**: Telepresence innovations (screen sharing, whiteboards) integrated into metaverse
+  - **Communication Quality**: Telepresence focus on low-latency, high-fidelity audio/video raises metaverse standards
 
-**Research**: Stanford VR Lab (2025) found metaverse telepresence achieves 84% of face-to-face social presence (vs. 67% for video conferencing)
+  ## Theoretical Integration
 
-### Media Richness Theory
-Metaverse telepresence represents richest possible mediated communication:
-- **Multiple Cues**: Visual (avatars), auditory (spatial voice), haptic (controllers)
-- **Immediate Feedback**: Real-time interaction, low latency
-- **Language Variety**: Speech, text chat, gesture emotes
-- **Personalisation**: Customised avatars, personalised environments
+  ### Social Presence Theory in Metaverse
+  [[TELE-003-social-presence-theory]] predicts higher social presence in metaverse telepresence vs. video calls:
+  - **3D Spatial Cues**: Avatar positions, orientations convey attention and engagement
+  - **Nonverbal Communication**: Body language, gestures, proxemics replicated virtually
+  - **Shared Environment**: Joint focus on virtual objects creates common ground
 
-## Challenges and Opportunities
+  **Research**: Stanford VR Lab (2025) found metaverse telepresence achieves 84% of face-to-face social presence (vs. 67% for video conferencing)
 
-### Challenges
-- **Hardware Barriers**: VR headsets required (£300-£3,500), limiting accessibility
-- **Interoperability**: Metaverse platforms proprietary, avatars/assets don't port between systems
-- **Professional Acceptance**: Stigma around "gaming technology" for serious work
-- **Regulation**: Uncertain legal status of metaverse contracts, virtual property rights
-- **Privacy**: Metaverse platforms collect extensive behavioural data (gaze, movement)
+  ### Media Richness Theory
+  Metaverse telepresence represents richest possible mediated communication:
+  - **Multiple Cues**: Visual (avatars), auditory (spatial voice), haptic (controllers)
+  - **Immediate Feedback**: Real-time interaction, low latency
+  - **Language Variety**: Speech, text chat, gesture emotes
+  - **Personalisation**: Customised avatars, personalised environments
 
-### Opportunities
-- **Global Talent Access**: Metaverse telepresence enables truly remote-first organisations
-- **Reduced Carbon Footprint**: Virtual meetings eliminate business travel emissions
-- **Enhanced Creativity**: 3D manipulation, spatial design superior to flat screens
-- **Inclusive Participation**: Avatars equalise physical appearance, reduce bias
-- **New Business Models**: Virtual event spaces, avatar-as-a-service, metaverse real estate
+  ## Challenges and Opportunities
 
-## Future Directions
+  ### Challenges
+  - **Hardware Barriers**: VR headsets required (£300-£3,500), limiting accessibility
+  - **Interoperability**: Metaverse platforms proprietary, avatars/assets don't port between systems
+  - **Professional Acceptance**: Stigma around "gaming technology" for serious work
+  - **Regulation**: Uncertain legal status of metaverse contracts, virtual property rights
+  - **Privacy**: Metaverse platforms collect extensive behavioural data (gaze, movement)
 
-**Near-Term (2025-2027)**:
-- **Standardisation**: Open Metaverse Interoperability protocols enable cross-platform avatars
-- **AI Augmentation**: AI agents assist in metaverse telepresence (note-taking, translation [[TELE-105-real-time-language-translation]])
-- **Haptic Integration**: Gloves, suits provide tactile feedback in metaverse telepresence
+  ### Opportunities
+  - **Global Talent Access**: Metaverse telepresence enables truly remote-first organisations
+  - **Reduced Carbon Footprint**: Virtual meetings eliminate business travel emissions
+  - **Enhanced Creativity**: 3D manipulation, spatial design superior to flat screens
+  - **Inclusive Participation**: Avatars equalise physical appearance, reduce bias
+  - **New Business Models**: Virtual event spaces, avatar-as-a-service, metaverse real estate
 
-**Medium-Term (2027-2030)**:
-- **Neural Interfaces**: Brain-computer interfaces for thought-based metaverse navigation
-- **Holographic Displays**: AR glasses replace VR headsets for persistent metaverse overlay
-- **Autonomous Avatars**: AI-driven avatars attend meetings asynchronously, report to human later
+  #### Future Directions
+  **Near-Term (2025-2027)**:
+  - **Standardisation**: Open Metaverse Interoperability protocols enable cross-platform avatars
+  - **AI Augmentation**: AI agents assist in metaverse telepresence (note-taking, translation [[TELE-105-real-time-language-translation]])
+  - **Haptic Integration**: Gloves, suits provide tactile feedback in metaverse telepresence
 
-**Long-Term (2030+)**:
-- **Full Sensory Immersion**: Olfactory, gustatory feedback in metaverse telepresence
-- **Persistent Digital Twins**: Metaverse contains digital twins [[TELE-300-digital-twin-collaboration]] of all physical spaces
-- **Metaverse-Physical Fusion**: Augmented reality overlays metaverse on physical world ubiquitously
+  **Medium-Term (2027-2030)**:
+  - **Neural Interfaces**: Brain-computer interfaces for thought-based metaverse navigation
+  - **Holographic Displays**: AR glasses replace VR headsets for persistent metaverse overlay
+  - **Autonomous Avatars**: AI-driven avatars attend meetings asynchronously, report to human later
 
-## Related Concepts
+  **Long-Term (2030+)**:
+  - **Full Sensory Immersion**: Olfactory, gustatory feedback in metaverse telepresence
+  - **Persistent Digital Twins**: Metaverse contains digital twins [[TELE-300-digital-twin-collaboration]] of all physical spaces
+  - **Metaverse-Physical Fusion**: Augmented reality overlays metaverse on physical world ubiquitously
 
-- [[TELE-001-telepresence]]
-- [[TELE-020-virtual-reality-telepresence]]
-- [[TELE-028-horizon-workrooms]]
-- [[TELE-026-microsoft-mesh]]
-- [[TELE-100-ai-avatars]]
-- [[TELE-301-virtual-office-spaces]]
-- [[Metaverse]]
-- [[SpatialComputing]]
+  #### Related Concepts
+  - [[TELE-001-telepresence]]
+  - [[TELE-020-virtual-reality-telepresence]]
+  - [[TELE-028-horizon-workrooms]]
+  - [[TELE-026-microsoft-mesh]]
+  - [[TELE-100-ai-avatars]]
+  - [[TELE-301-virtual-office-spaces]]
+  - [[Metaverse]]
+  - [[SpatialComputing]]
 
-## Academic References
+  #### References
+  1. Mystakidis, S. (2022). "Metaverse". *Encyclopedia*, 2(1), 486-497.
+  2. Dionisio, J. D. N., et al. (2013). "3D Virtual Worlds and the Metaverse: Current Status and Future Possibilities". *ACM Computing Surveys*, 45(3), 1-38.
+  3. Bailenson, J. (2021). "Nonverbal Overload: A Theoretical Argument for the Causes of Zoom Fatigue". *Technology, Mind, and Behaviour*, 2(1).
 
-1. Mystakidis, S. (2022). "Metaverse". *Encyclopedia*, 2(1), 486-497.
-2. Dionisio, J. D. N., et al. (2013). "3D Virtual Worlds and the Metaverse: Current Status and Future Possibilities". *ACM Computing Surveys*, 45(3), 1-38.
-3. Bailenson, J. (2021). "Nonverbal Overload: A Theoretical Argument for the Causes of Zoom Fatigue". *Technology, Mind, and Behaviour*, 2(1).
-
-## Metadata
-
-- **Term-ID**: TELE-CONV-001
-- **Last Updated**: 2025-11-16
-- **Maturity**: Developing
-- **Authority Score**: 0.86
-- **UK Context**: High (enterprise adoption growing)
-- **Cross-Domain**: Primary bridge between Telepresence and Metaverse domains
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

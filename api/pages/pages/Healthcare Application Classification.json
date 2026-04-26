@@ -1,38 +1,47 @@
 {
-  "id": "Healthcare Application Classification",
+  "id": "healthcare-application-classification",
   "title": "Healthcare Application Classification",
-  "content": "- ### OntologyBlock\n  id:: healthcare-application-classification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9916\n\t- source-domain:: mv\n\t- preferred-term:: Healthcare Application Classification\n\t- status:: active\n\t- owl:class:: mv:HealthcareApplicationClassification\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.\n\t- #### Relationships\n\t  id:: healthcare-application-classification-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Healthcare Technology]]\n\t\t- related-to:: [[Extended Reality Xr]]\n\t\t- related-to:: [[Medical Simulation]]\n\t\t- enables:: [[Structured Healthcare Innovation]]\n\n## Metaverse Classification Types\n\n### Four Distinct Categories\n- **Augmented Reality (AR)**: Physical-virtual world connection\n- **Lifelogging**: Internal reinforcement of virtual experiences\n- **Mirror World**: Real world reflection in virtual realm\n- **Virtual Reality (VR)**: Fully immersive virtual environments\n\n### Technology Segmentation (2024)\n- AR and VR segment: Market leader\n- Augmented reality: Diagnostics and surgical applications\n- Virtual reality: Growing in simulation and rehabilitation\n- Mixed approaches combining multiple technologies\n\n## Application Categories\n\n### Clinical Applications\n- Virtual medical consultations\n- Medical education and training\n- Patient education\n- Surgical visualisation\n- Diagnostic support\n\n### Research and Development\n- Medical research environments\n- Drug development simulation\n- Clinical trial visualisation\n- Biomedical data analysis\n- Laboratory medicine\n\n## Market Segmentation 2024\n\n### By Application\n- Telemedicine: Largest market share (2024)\n- Medical training and simulation: High growth segment\n- Rehabilitation services\n- Mental health therapy\n- Patient engagement\n\n### By End User\n- Healthcare professionals (clinicians, surgeons)\n- Medical students and trainees\n- Patients (therapy, rehabilitation)\n- Researchers and pharmaceutical companies\n\n## Key Use Cases\n\n### Mental Health\n- VR therapy for anxiety and phobias\n- PTSD treatment in controlled environments\n- Immersive exposure therapy\n- Stress management applications\n- Remote counselling environments\n\n### Physical Rehabilitation\n- Remote physical therapy\n- Mobility and coordination exercises\n- Home-based rehabilitation\n- Rural and remote patient access\n- Progress tracking and monitoring\n\n## Market Growth\n\n### Financial Projections\n- Healthcare metaverse: USD 3.36 billion (2022)\n- CAGR: 42.6% (2023-2030)\n- AR/VR in healthcare: USD 2.45 billion (2024)\n- Projected: USD 22.43 billion by 2034\n\n### Growth Drivers\n- Increasing healthcare professional demand\n- Medical training needs\n- Remote care expansion\n- Technology accessibility improvements\n\n## Challenges and Limitations\n\n### Technical Barriers\n- VR/AR technology maturity\n- Hardware cost and accessibility\n- Eye discomfort concerns\n- Limited internet access (37% of 15-24 year olds)\n\n### Regulatory Considerations\n- Medical device classification\n- Healthcare data privacy\n- Clinical validation requirements\n- Public trust and acceptance\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:HealthcareApplicationClassification\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Healthcare Technology]]\n  - enables:: [[Structured Healthcare Innovation]]\n\n- ### Content\n\n  ## Metaverse Classification Types\n\n  ### Four Distinct Categories\n  - **Augmented Reality (AR)**: Physical-virtual world connection\n  - **Lifelogging**: Internal reinforcement of virtual experiences\n  - **Mirror World**: Real world reflection in virtual realm\n  - **Virtual Reality (VR)**: Fully immersive virtual environments\n\n  ### Technology Segmentation (2024)\n  - AR and VR segment: Market leader\n  - Augmented reality: Diagnostics and surgical applications\n  - Virtual reality: Growing in simulation and rehabilitation\n  - Mixed approaches combining multiple technologies\n\n  ## Application Categories\n\n  ### Clinical Applications\n  - Virtual medical consultations\n  - Medical education and training\n  - Patient education\n  - Surgical visualisation\n  - Diagnostic support\n\n  ### Research and Development\n  - Medical research environments\n  - Drug development simulation\n  - Clinical trial visualisation\n  - Biomedical data analysis\n  - Laboratory medicine\n\n  ## Market Segmentation 2024\n\n  ### By Application\n  - Telemedicine: Largest market share (2024)\n  - Medical training and simulation: High growth segment\n  - Rehabilitation services\n  - Mental health therapy\n  - Patient engagement\n\n  ### By End User\n  - Healthcare professionals (clinicians, surgeons)\n  - Medical students and trainees\n  - Patients (therapy, rehabilitation)\n  - Researchers and pharmaceutical companies\n\n  ## Key Use Cases\n\n  ### Mental Health\n  - VR therapy for anxiety and phobias\n  - PTSD treatment in controlled environments\n  - Immersive exposure therapy\n  - Stress management applications\n  - Remote counselling environments\n\n  ### Physical Rehabilitation\n  - Remote physical therapy\n  - Mobility and coordination exercises\n  - Home-based rehabilitation\n  - Rural and remote patient access\n  - Progress tracking and monitoring\n\n  ## Market Growth\n\n  ### Financial Projections\n  - Healthcare metaverse: USD 3.36 billion (2022)\n  - CAGR: 42.6% (2023-2030)\n  - AR/VR in healthcare: USD 2.45 billion (2024)\n  - Projected: USD 22.43 billion by 2034\n\n  ### Growth Drivers\n  - Increasing healthcare professional demand\n  - Medical training needs\n  - Remote care expansion\n  - Technology accessibility improvements\n\n  ## Challenges and Limitations\n\n  ### Technical Barriers\n  - VR/AR technology maturity\n  - Hardware cost and accessibility\n  - Eye discomfort concerns\n  - Limited internet access (37% of 15-24 year olds)\n\n  ### Regulatory Considerations\n  - Medical device classification\n  - Healthcare data privacy\n  - Clinical validation requirements\n  - Public trust and acceptance\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "ETSI_Domain_Application___Health"
   ],
   "wiki_links": [
-    "Medical Simulation",
     "Healthcare Technology",
-    "metaverse",
-    "Extended Reality Xr",
-    "Structured Healthcare Innovation"
+    "Structured Healthcare Innovation",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification",
+    "iri": "http://narrativegoldmine.com/metaverse#HealthcareApplicationClassification",
+    "content_hash": "sha256-12-376996ff2c21",
+    "legacy_term_id": "MV-9916",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:healthcare-application-classification",
+    "schema_version": "v2",
     "term_id": "MV-9916",
     "preferred_term": "Healthcare Application Classification",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#HealthcareApplicationClassification",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic evaluation and deployment of immersive medical technologies.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:HealthcareApplicationClassification",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:HealthcareApplicationClassification",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Healthcare Technology"
@@ -47,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Extended Reality Xr",
-        "Medical Simulation"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

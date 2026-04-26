@@ -1,0 +1,70 @@
+{
+  "id": "edge-ai-for-smart-cities",
+  "title": "Edge AI for Smart Cities",
+  "content": "- ### Definition\n  - Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure—smart cameras, IoT sensors, edge gateways—enabling real-time autonomous city systems without centralized cloud processing. Smart city applications span traffic management, public safety, environmental monitoring, and energy optimization, each requiring sub-second response times infeasible with cloud latency. Intelligent traffic management systems deploy AI-enabled cameras at intersections for real-time congestion detection, automated signal timing, and incident response, reducing commute times and emissions through local inference. Computer vision models identify pedestrians, cyclists, vehicles, and traffic conditions milliseconds after capture, enabling immediate signal adjustments. Public safety monitoring through smart cameras detects unusual activities (loitering, crowd anomalies, abandoned objects) locally, alerting authorities within seconds rather than hours of manual review. Environmental monitoring networks analyze air quality, noise levels, and pollution patterns across neighborhoods, supporting real-time alerts and policy decisions. Energy optimization systems balance power loads across neighborhoods, integrating renewable energy and storage through local forecasting and demand response. All-local processing protects privacy: video analysis occurs on-device, extracting only semantic events rather than transmitting raw footage. Edge deployment overcomes cloud bandwidth constraints; a single smart camera generates 100+ Mbps video streams impossible to upload continuously. Standards like ISO 37122 (Smart City Indicators) and ITU-T Y.4000 (Smart Sustainable Cities) guide deployments. Successful implementations in Singapore, Barcelona, and Copenhagen demonstrate traffic improvements, crime reduction, and environmental benefits. Edge AI transforms cities from passive data collectors into intelligent adaptive systems responding to citizen needs with millisecond responsiveness and complete privacy preservation.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:EdgeAIForSmartCities\n  - owl-role:: Process\n  - owl-inferred:: ai:VirtualProcess\n  - belongs-to-domain:: [[AIEthicsDomain]]\n  - implemented-in-layer:: [[ConceptualLayer]]\n\n- ### Relationships\n  - <!-- No relationships defined -->\n  - bridges-to:: [[Digital Twin]], [[Autonomous Robot]]\n\n- ### Content\n  Edge AI for Smart Cities (AI-0447) — content pending enrichment.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AIEthicsDomain",
+    "Autonomous Robot",
+    "ConceptualLayer",
+    "Digital Twin"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:edge-ai-for-smart-cities",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#EdgeAiForSmartCities",
+    "content_hash": "sha256-12-a23c16f88a1b",
+    "legacy_term_id": "AI-0447",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:edge-ai-for-smart-cities",
+    "schema_version": "v2",
+    "term_id": "AI-0447",
+    "preferred_term": "Edge AI for Smart Cities",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure—smart cameras, IoT sensors, edge gateways—enabling real-time autonomous city systems without centralized cloud processing. Smart city applications span traffic management, public safety, environmental monitoring, and energy optimization, each requiring sub-second response times infeasible with cloud latency. Intelligent traffic management systems deploy AI-enabled cameras at intersections for real-time congestion detection, automated signal timing, and incident response, reducing commute times and emissions through local inference. Computer vision models identify pedestrians, cyclists, vehicles, and traffic conditions milliseconds after capture, enabling immediate signal adjustments. Public safety monitoring through smart cameras detects unusual activities (loitering, crowd anomalies, abandoned objects) locally, alerting authorities within seconds rather than hours of manual review. Environmental monitoring networks analyze air quality, noise levels, and pollution patterns across neighborhoods, supporting real-time alerts and policy decisions. Energy optimization systems balance power loads across neighborhoods, integrating renewable energy and storage through local forecasting and demand response. All-local processing protects privacy: video analysis occurs on-device, extracting only semantic events rather than transmitting raw footage. Edge deployment overcomes cloud bandwidth constraints; a single smart camera generates 100+ Mbps video streams impossible to upload continuously. Standards like ISO 37122 (Smart City Indicators) and ITU-T Y.4000 (Smart Sustainable Cities) guide deployments. Successful implementations in Singapore, Barcelona, and Copenhagen demonstrate traffic improvements, crime reduction, and environmental benefits. Edge AI transforms cities from passive data collectors into intelligent adaptive systems responding to citizen needs with millisecond responsiveness and complete privacy preservation.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.95,
+    "created": "2025-10-29T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:EdgeAIForSmartCities",
+    "owl_role": "Process",
+    "owl_inferred_class": "ai:VirtualProcess",
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Digital Twin",
+      "Autonomous Robot"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AIEthicsDomain"
+    ],
+    "implemented_in_layer": [
+      "ConceptualLayer"
+    ],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,160 +1,174 @@
-- ### OntologyBlock
-  id:: learning-management-system-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9943
-	- source-domain:: mv
-	- preferred-term:: Learning Management System
-	- status:: active
-	- owl:class:: mv:LearningManagementSystem
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.
-	- #### Relationships
-	  id:: learning-management-system-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Educational Technology]]
-		- related-to:: [[Immersive Learning]]
-		- related-to:: [[Learning Analytics]]
-		- enables:: [[VR Training Delivery]]
+iri:: http://narrativegoldmine.com/spatial-computing#LearningManagementSystem
+uri:: urn:visionclaw:concept:spatial-computing:learning-management-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:learning-management-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Learning Management System
+content-hash:: sha256-12-f2b9a4a0a4df
+legacy-term-id:: MV-9943
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Metaverse-Compatible LMS
+- ### Definition
+  - Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.
 
-### Technical Requirements
-- VR and AR support
-- 3D simulation capability
-- Cloud-based infrastructure
-- Device scalability
-- AI and ML integration
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LearningManagementSystem
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Advanced Features
-- Blockchain credential verification
-- Interoperability standards
-- Multi-platform support
-- Multi-device compatibility
-- Multi-format handling
+- ### Relationships
+  - is-subclass-of:: [[Educational Technology]]
+  - enables:: [[VR Training Delivery]]
 
-## Integration Standards
+- ### Content
 
-### SCORM Support
-- VR lesson export capability
-- Package upload functionality
-- No coding required
-- Direct LMS integration
-- Immersive VR delivery
+  ## Metaverse-Compatible LMS
 
-### xAPI Protocol
-- Experience tracking
-- Activity recording
-- Cross-platform data
-- Detailed analytics
-- Learning path tracking
+  ### Technical Requirements
+  - VR and AR support
+  - 3D simulation capability
+  - Cloud-based infrastructure
+  - Device scalability
+  - AI and ML integration
 
-### LTI Integration
-- Tool interoperability
-- Platform connection
-- Content sharing
-- Grade passback
-- User authentication
+  ### Advanced Features
+  - Blockchain credential verification
+  - Interoperability standards
+  - Multi-platform support
+  - Multi-device compatibility
+  - Multi-format handling
 
-## Platform Integrations
+  ## Integration Standards
 
-### SimLab VR Studio
-- Moodle integration
-- Blackboard support
-- Canvas compatibility
-- Seamless connection
-- VR content delivery
+  ### SCORM Support
+  - VR lesson export capability
+  - Package upload functionality
+  - No coding required
+  - Direct LMS integration
+  - Immersive VR delivery
 
-### Enterprise LMS Support
-- SAP Successfactors
-- Workday integration
-- Cornerstone support
-- Saba connectivity
-- Cross-platform operation
+  ### xAPI Protocol
+  - Experience tracking
+  - Activity recording
+  - Cross-platform data
+  - Detailed analytics
+  - Learning path tracking
 
-## Benefits of VR-LMS Integration
+  ### LTI Integration
+  - Tool interoperability
+  - Platform connection
+  - Content sharing
+  - Grade passback
+  - User authentication
 
-### Learning Enhancement
-- Immersive environment creation
-- Attention capture improvement
-- Information retention boost
-- Complex concept understanding
-- Deeper learning engagement
+  ## Platform Integrations
 
-### Outcome Improvement
-- 75% learning improvement
-- Traditional method comparison
-- Measurable effectiveness
-- Skill acquisition acceleration
-- Knowledge application
+  ### SimLab VR Studio
+  - Moodle integration
+  - Blackboard support
+  - Canvas compatibility
+  - Seamless connection
+  - VR content delivery
 
-## Enterprise Applications
+  ### Enterprise LMS Support
+  - SAP Successfactors
+  - Workday integration
+  - Cornerstone support
+  - Saba connectivity
+  - Cross-platform operation
 
-### Training Delivery
-- Hands-on experience provision
-- Operational efficiency improvement
-- Package handling simulation
-- Engine repair training
-- Complex task practice
+  ## Benefits of VR-LMS Integration
 
-### Metaverse Training
-- Step-by-step assistance
-- VR headset utilisation
-- Practical skill development
-- Real-world application
-- Performance improvement
+  ### Learning Enhancement
+  - Immersive environment creation
+  - Attention capture improvement
+  - Information retention boost
+  - Complex concept understanding
+  - Deeper learning engagement
 
-## Future of LMS
+  ### Outcome Improvement
+  - 75% learning improvement
+  - Traditional method comparison
+  - Measurable effectiveness
+  - Skill acquisition acceleration
+  - Knowledge application
 
-### AI Integration
-- Online learning revolution
-- Educational experience transformation
-- Adaptive learning engines
-- Real-time analytics
-- Personalised pathways
+  ## Enterprise Applications
 
-### VR/AR Advancement
-- Metaverse-based learning growth
-- Immersive solution centrality
-- Interactive capability expansion
-- Advanced feature integration
-- Continuous evolution
+  ### Training Delivery
+  - Hands-on experience provision
+  - Operational efficiency improvement
+  - Package handling simulation
+  - Engine repair training
+  - Complex task practice
 
-## Technical Considerations
+  ### Metaverse Training
+  - Step-by-step assistance
+  - VR headset utilisation
+  - Practical skill development
+  - Real-world application
+  - Performance improvement
 
-### Deployment Options
-- Cloud-hosted solutions
-- On-premise installation
-- Hybrid configurations
-- Mobile access
-- Offline capability
+  ## Future of LMS
 
-### VR Training Companies (2024)
-- Immersive experience leaders
-- Skill acquisition focus
-- LMS integration priority
-- Interoperability emphasis
-- Progress tracking support
+  ### AI Integration
+  - Online learning revolution
+  - Educational experience transformation
+  - Adaptive learning engines
+  - Real-time analytics
+  - Personalised pathways
 
-## Implementation Best Practices
+  ### VR/AR Advancement
+  - Metaverse-based learning growth
+  - Immersive solution centrality
+  - Interactive capability expansion
+  - Advanced feature integration
+  - Continuous evolution
 
-### Integration Planning
-- Platform compatibility assessment
-- Standard protocol selection
-- Data flow design
-- User experience mapping
-- Performance optimisation
+  ## Technical Considerations
 
-### Content Strategy
-- SCORM/xAPI compliance
-- VR content creation
-- Assessment integration
-- Progress tracking
-- Reporting configuration
+  ### Deployment Options
+  - Cloud-hosted solutions
+  - On-premise installation
+  - Hybrid configurations
+  - Mobile access
+  - Offline capability
 
-## Metadata
+  ### VR Training Companies (2024)
+  - Immersive experience leaders
+  - Skill acquisition focus
+  - LMS integration priority
+  - Interoperability emphasis
+  - Progress tracking support
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Implementation Best Practices
+
+  ### Integration Planning
+  - Platform compatibility assessment
+  - Standard protocol selection
+  - Data flow design
+  - User experience mapping
+  - Performance optimisation
+
+  ### Content Strategy
+  - SCORM/xAPI compliance
+  - VR content creation
+  - Assessment integration
+  - Progress tracking
+  - Reporting configuration
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

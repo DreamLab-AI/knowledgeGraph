@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: hydrauliccylinder-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#HydraulicCylinder
+uri:: urn:visionclaw:concept:robotics:hydraulic-cylinder
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:hydraulic-cylinder
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Hydraulic Cylinder
+content-hash:: sha256-12-65d8e0e32218
+legacy-term-id:: RB-0179
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0179
-    - filename-history:: ["RB-0179-hydrauliccylinder.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0179
-    - preferred-term:: Hydraulic Cylinder
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force.
 
-  - **Definition**
-    - definition:: Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:HydraulicCylinder
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:HydraulicCylinder
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Hydraulic Actuator]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Hydraulic Actuator]]
+- ### Content
+  Hydraulic Cylinder — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :HydraulicCylinder))
-      (SubClassOf :HydraulicCylinder :HydraulicActuator)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :HydraulicCylinder "Hydraulic Cylinder"@en)
-      (AnnotationAssertion rdfs:comment :HydraulicCylinder
-        "Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force."@en)
-      ```
-
-- ## About Hydraulic Cylinder
-  Hydraulic cylinder uses pressurized fluid in cylinder to produce linear force.
-  
-  A hydraulic actuator producing linear motion.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

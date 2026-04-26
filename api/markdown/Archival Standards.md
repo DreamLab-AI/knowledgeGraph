@@ -1,34 +1,57 @@
-- ### OntologyBlock
-  id:: archival-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9777
-	- source-domain:: mv
-	- preferred-term:: Archival Standards
-	- status:: active
-	- definition:: Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.
-	- owl:class:: mv:ArchivalStandards
-	- belongsToDomain:: [[metaverse]]
-	- is-subclass-of:: [[Preservation Standards]]
-	- enables:: [[Long-Term Preservation]], [[Content Authenticity]], [[Format Migration]]
-	- requires:: [[Metadata Management]], [[Storage Infrastructure]], [[Preservation Planning]]
-	- #### Relationships
-	  id:: archival-standards-relationships
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#ArchivalStandards
+uri:: urn:visionclaw:concept:spatial-computing:archival-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:archival-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Archival Standards
+content-hash:: sha256-12-5d169eb25920
+legacy-term-id:: MV-9777
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T20:11:27Z
+author-did::
+signature::
+contributors::
+public:: true
 
-### Technical Details
-Key standards include:
-- **OAIS (ISO 14721)**: Reference model defining functional components, terminology, and information packages for digital archives (v3 released December 2024)
-- **PREMIS**: International standard for preservation metadata supporting digital object usability
-- **METS**: XML encoding standard for packaging digital materials with archival information
-- **ISO 16363**: Audit and certification of trustworthy digital repositories
+- ### Definition
+  - Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across technological changes.
 
-### Metadata Requirements
-OAIS recommends five metadata types: reference (identification), provenance (preservation history), context, fixity (authenticity indicators), and representation (formatting, file structure, meaning).
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ArchivalStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Storage Technologies
-Bitstream preservation through backups, redundant storage across locations, media migration, and emerging technologies like laser-etched glass storage (Project Silica) offering thousand-year durability.
+- ### Relationships
+  - is-subclass-of:: [[Preservation Standards]]
+  - requires:: [[Metadata Management]], [[Storage Infrastructure]], [[Preservation Planning]]
+  - enables:: [[Long-Term Preservation]], [[Content Authenticity]], [[Format Migration]]
+  - bridges-to:: [[Blockchain]] (bc)
 
-### Certification
-Routes include Data Seal of Approval (peer review), DIN 31644 (internal methods), and ISO 16363 (comprehensive international certification).
+- ### Content
+
+  ### Technical Details
+  Key standards include:
+  - **OAIS (ISO 14721)**: Reference model defining functional components, terminology, and information packages for digital archives (v3 released December 2024)
+  - **PREMIS**: International standard for preservation metadata supporting digital object usability
+  - **METS**: XML encoding standard for packaging digital materials with archival information
+  - **ISO 16363**: Audit and certification of trustworthy digital repositories
+
+  ### Metadata Requirements
+  OAIS recommends five metadata types: reference (identification), provenance (preservation history), context, fixity (authenticity indicators), and representation (formatting, file structure, meaning).
+
+  ### Storage Technologies
+  Bitstream preservation through backups, redundant storage across locations, media migration, and emerging technologies like laser-etched glass storage (Project Silica) offering thousand-year durability.
+
+  ### Certification
+  Routes include Data Seal of Approval (peer review), DIN 31644 (internal methods), and ISO 16363 (comprehensive international certification).
+
+- ### Provenance
+  - sources:: [[ISO 14721]], [[ISO 16363]]
+  - migration-date:: 2026-04-26T00:00:00Z

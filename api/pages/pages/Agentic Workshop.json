@@ -1,7 +1,62 @@
 {
-  "id": "Agentic Workshop",
+  "id": "agentic-workshop",
   "title": "Agentic Workshop",
-  "content": "-\n- {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}\n- Think of agents as sheep dogs. You're not putting sheep in a pen one by one any more. sometimes the best path to getting the sheep in en masse is a long arc round the field where the agent develops the mass as it goes. Sometimes it's a structured play with more work up front. This somewhat depends on you.\n-\n- My background, why you're here, what you can expect\n- course structure (multi session, not completely interdependent, simple pricing)\n- background and rationalle\n\t- chatbots and the agent / agentic boundary are confusing\n\t\t- you probably already use them (deep research)\n\t\t\t- compare gemini pro deep research with [roo](https://gist.github.com/ruvnet/88c61ee4e38191b0be65f498792d5017) (first view of it)\n\t\t- why this complex way\n\t\t\t- talking about memory\n\t\t\t- consistency, flexibility, scale\n\t\t\t- data safety and privacy\n\t\t\t- longer run times, more thinking, as much as you need\n\t\t\t- price / performance\n\t\t\t- power use and the start of vibe coding\n- phased approach\n\t- Phase one (today)\n\t\t- introduction to vscode\n\t\t- introduction to roo code\n\t\t- context management and context engineering\n\t\t- demonstrate agents, see where we're going (visionflow)\n\t\t- show setup of the system (link to online homework)\n\t\t\t- show how to find all this guidance\n\t\t\t- gemini (free) (more like agents)\n\t\t- claude code (paid) (more like agentic)\n\t\t- case studies using agentic claude\n\t\t\t- -Project management (120 kids doing their own thing)\n\t\t\t- -Data visualisation (new python tools)\n\t\t\t- -Academic research and verifying sources. (latex)\n\t- phase two (tomorrow)\n\t\t- TODO Mcp security course. Context, sheaf of papers\n\t\t-\n- use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)\n-",
+  "content": "- ### Definition\n  - Agentic Workshop is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AgenticWorkshop\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[AI Agent System]]\n\n- ### Content\n  - {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}\n  - Think of agents as sheep dogs. You're not putting sheep in a pen one by one any more. sometimes the best path to getting the sheep in en masse is a long arc round the field where the agent develops the mass as it goes. Sometimes it's a structured play with more work up front. This somewhat depends on you.\n  - My background, why you're here, what you can expect\n  - course structure (multi session, not completely interdependent, simple pricing)\n  - background and rationalle\n  - chatbots and the agent / agentic boundary are confusing\n\t\t- you probably already use them (deep research)\n\t\t\t- compare gemini pro deep research with [roo](https://gist.github.com/ruvnet/88c61ee4e38191b0be65f498792d5017) (first view of it)\n\t\t- why this complex way\n\t\t\t- talking about memory\n\t\t\t- consistency, flexibility, scale\n\t\t\t- data safety and privacy\n\t\t\t- longer run times, more thinking, as much as you need\n\t\t\t- price / performance\n\t\t\t- power use and the start of vibe coding\n  - phased approach\n  - Phase one (today)\n\t\t- introduction to vscode\n\t\t- introduction to roo code\n\t\t- context management and context engineering\n\t\t- demonstrate agents, see where we're going (visionflow)\n\t\t- show setup of the system (link to online homework)\n\t\t\t- show how to find all this guidance\n\t\t\t- gemini (free) (more like agents)\n\t\t- claude code (paid) (more like agentic)\n\t\t- case studies using agentic claude\n\t\t\t- -Project management (120 kids doing their own thing)\n\t\t\t- -Data visualisation (new python tools)\n\t\t\t- -Academic research and verifying sources. (latex)\n  - phase two (tomorrow)\n\t\t- TODO Mcp security course. Context, sheaf of papers\n  - use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
-  "wiki_links": []
+  "wiki_links": [
+    "AI Agent System"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:agentic-workshop",
+    "iri": "http://narrativegoldmine.com/ontology#AgenticWorkshop",
+    "content_hash": "sha256-12-938d08b5a036",
+    "legacy_term_id": "AI-agentic-workshop",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:agentic-workshop",
+    "schema_version": "v2",
+    "term_id": "AI-agentic-workshop",
+    "preferred_term": "Agentic Workshop",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Agentic Workshop is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AgenticWorkshop",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
 }

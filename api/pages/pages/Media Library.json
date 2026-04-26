@@ -1,38 +1,47 @@
 {
-  "id": "Media Library",
+  "id": "media-library",
   "title": "Media Library",
-  "content": "- ### OntologyBlock\n  id:: media-library-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9958\n\t- source-domain:: mv\n\t- preferred-term:: Media Library\n\t- status:: active\n\t- owl:class:: mv:MediaLibrary\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.\n\t- #### Relationships\n\t  id:: media-library-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Asset Management]]\n\t\t- related-to:: [[Content Management System]]\n\t\t- related-to:: [[Asset Repository]]\n\t\t- enables:: [[Content Organisation]]\n\n## DAM in the Metaverse\n\n### Digital Asset Foundation\n- Metaverse content core\n- User interaction basis\n- Commerce enablement\n- Creativity support\n- Virtual economy assets\n\n### Management Priority\n- Centralised organisation\n- Access control\n- Distribution management\n- Rights tracking\n- Usage analytics\n\n## Metaverse Standards Forum\n\n### DAM Working Group\n- Industry stakeholder bridging\n- Interoperability focus\n- Open communication\n- Gap identification\n- Unified understanding\n\n### Vision Goals\n- Open metaverse\n- Secure asset movement\n- Inclusive platform\n- Cross-platform flow\n- Interoperable solutions\n\n## Core Capabilities\n\n### Storage Functions\n- Centralised repository\n- Multi-format support\n- Version control\n- Redundant backup\n- Scalable storage\n\n### Organisation Features\n- Metadata tagging\n- Category systems\n- Folder structures\n- Custom taxonomies\n- Smart collections\n\n### Search Functionality\n- Full-text search\n- Faceted filtering\n- AI-powered discovery\n- Visual similarity\n- Tag-based retrieval\n\n## Media Types Supported\n\n### 3D Assets\n- Model files (FBX, OBJ, glTF)\n- Textures and materials\n- Animation sequences\n- Rigged characters\n- Environment assets\n\n### Audio Content\n- Sound effects\n- Music tracks\n- Voice recordings\n- Ambient audio\n- Spatial audio\n\n### Video Assets\n- 360-degree video\n- 2D video content\n- Volumetric capture\n- Motion capture data\n- Tutorial content\n\n### Image Assets\n- Textures\n- Sprites\n- UI elements\n- Reference images\n- Concept art\n\n## AI and ML Integration\n\n### Smart Organisation\n- Automated tagging\n- Content recognition\n- Facial detection\n- Scene analysis\n- Object identification\n\n### Predictive Features\n- Usage analytics\n- Asset recommendations\n- Trend prediction\n- Storage optimisation\n- Workflow automation\n\n## Blockchain Integration\n\n### Asset Verification\n- Ownership proof\n- Authenticity checks\n- Provenance tracking\n- Rights management\n- Transaction history\n\n### Decentralised Benefits\n- Democratic governance\n- Economic systems\n- Transparent ownership\n- Immutable records\n- Cross-platform use\n\n## Market Growth\n\n### DAM Industry\n- $5.3 billion (2024)\n- 14% CAGR\n- Enterprise adoption\n- Cloud migration\n- AI enhancement\n\n### Metaverse Impact\n- Increased complexity\n- New asset types\n- Scalability demands\n- Real-time access\n- Distribution needs\n\n## Industry Applications\n\n### Media and Entertainment\n- Production assets\n- Distribution content\n- Archive materials\n- Marketing resources\n- Brand assets\n\n### Gaming\n- Game assets\n- User-generated content\n- Mod libraries\n- DLC content\n- Patch resources\n\n### Enterprise\n- Training materials\n- Marketing assets\n- Brand guidelines\n- Product images\n- Documentation\n\n## Best Practices\n\n### Asset Management\n- Consistent naming\n- Metadata standards\n- Version tracking\n- Access permissions\n- Lifecycle management\n\n### Integration Strategy\n- API connectivity\n- Workflow integration\n- Tool compatibility\n- Platform support\n- Migration planning\n\n## Future Trends\n\n### Emerging Capabilities\n- Real-time collaboration\n- AI curation\n- Generative content\n- Blockchain rights\n- Cross-platform sync\n\n### Technology Evolution\n- Web3 integration\n- Decentralised storage\n- NFT management\n- Interoperability\n- Enhanced security\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:MediaLibrary\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Asset Management]]\n  - enables:: [[Content Organisation]]\n\n- ### Content\n\n  ## DAM in the Metaverse\n\n  ### Digital Asset Foundation\n  - Metaverse content core\n  - User interaction basis\n  - Commerce enablement\n  - Creativity support\n  - Virtual economy assets\n\n  ### Management Priority\n  - Centralised organisation\n  - Access control\n  - Distribution management\n  - Rights tracking\n  - Usage analytics\n\n  ## Metaverse Standards Forum\n\n  ### DAM Working Group\n  - Industry stakeholder bridging\n  - Interoperability focus\n  - Open communication\n  - Gap identification\n  - Unified understanding\n\n  ### Vision Goals\n  - Open metaverse\n  - Secure asset movement\n  - Inclusive platform\n  - Cross-platform flow\n  - Interoperable solutions\n\n  ## Core Capabilities\n\n  ### Storage Functions\n  - Centralised repository\n  - Multi-format support\n  - Version control\n  - Redundant backup\n  - Scalable storage\n\n  ### Organisation Features\n  - Metadata tagging\n  - Category systems\n  - Folder structures\n  - Custom taxonomies\n  - Smart collections\n\n  ### Search Functionality\n  - Full-text search\n  - Faceted filtering\n  - AI-powered discovery\n  - Visual similarity\n  - Tag-based retrieval\n\n  ## Media Types Supported\n\n  ### 3D Assets\n  - Model files (FBX, OBJ, glTF)\n  - Textures and materials\n  - Animation sequences\n  - Rigged characters\n  - Environment assets\n\n  ### Audio Content\n  - Sound effects\n  - Music tracks\n  - Voice recordings\n  - Ambient audio\n  - Spatial audio\n\n  ### Video Assets\n  - 360-degree video\n  - 2D video content\n  - Volumetric capture\n  - Motion capture data\n  - Tutorial content\n\n  ### Image Assets\n  - Textures\n  - Sprites\n  - UI elements\n  - Reference images\n  - Concept art\n\n  ## AI and ML Integration\n\n  ### Smart Organisation\n  - Automated tagging\n  - Content recognition\n  - Facial detection\n  - Scene analysis\n  - Object identification\n\n  ### Predictive Features\n  - Usage analytics\n  - Asset recommendations\n  - Trend prediction\n  - Storage optimisation\n  - Workflow automation\n\n  ## Blockchain Integration\n\n  ### Asset Verification\n  - Ownership proof\n  - Authenticity checks\n  - Provenance tracking\n  - Rights management\n  - Transaction history\n\n  ### Decentralised Benefits\n  - Democratic governance\n  - Economic systems\n  - Transparent ownership\n  - Immutable records\n  - Cross-platform use\n\n  ## Market Growth\n\n  ### DAM Industry\n  - $5.3 billion (2024)\n  - 14% CAGR\n  - Enterprise adoption\n  - Cloud migration\n  - AI enhancement\n\n  ### Metaverse Impact\n  - Increased complexity\n  - New asset types\n  - Scalability demands\n  - Real-time access\n  - Distribution needs\n\n  ## Industry Applications\n\n  ### Media and Entertainment\n  - Production assets\n  - Distribution content\n  - Archive materials\n  - Marketing resources\n  - Brand assets\n\n  ### Gaming\n  - Game assets\n  - User-generated content\n  - Mod libraries\n  - DLC content\n  - Patch resources\n\n  ### Enterprise\n  - Training materials\n  - Marketing assets\n  - Brand guidelines\n  - Product images\n  - Documentation\n\n  ## Best Practices\n\n  ### Asset Management\n  - Consistent naming\n  - Metadata standards\n  - Version tracking\n  - Access permissions\n  - Lifecycle management\n\n  ### Integration Strategy\n  - API connectivity\n  - Workflow integration\n  - Tool compatibility\n  - Platform support\n  - Migration planning\n\n  ## Future Trends\n\n  ### Emerging Capabilities\n  - Real-time collaboration\n  - AI curation\n  - Generative content\n  - Blockchain rights\n  - Cross-platform sync\n\n  ### Technology Evolution\n  - Web3 integration\n  - Decentralised storage\n  - NFT management\n  - Interoperability\n  - Enhanced security\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "ETSI_Domain_Data_Management___Creative"
   ],
   "wiki_links": [
-    "Content Management System",
-    "Digital Asset Management",
-    "metaverse",
     "Content Organisation",
-    "Asset Repository"
+    "Digital Asset Management",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:media-library",
+    "iri": "http://narrativegoldmine.com/spatial-computing#MediaLibrary",
+    "content_hash": "sha256-12-b6b18c837b5a",
+    "legacy_term_id": "MV-9958",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:media-library",
+    "schema_version": "v2",
     "term_id": "MV-9958",
     "preferred_term": "Media Library",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MediaLibrary",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:MediaLibrary",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:MediaLibrary",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Asset Management"
@@ -47,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Content Management System",
-        "Asset Repository"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,232 +1,243 @@
-- ### OntologyBlock
-  id:: machine-learning-models-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9952
-	- source-domain:: ai
-	- preferred-term:: Machine Learning Models
-	- status:: active
-	- owl:class:: ai:MachineLearningModels
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.
-	- #### Relationships
-	  id:: machine-learning-models-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Artificial Intelligence]]
-		- related-to:: [[Statistical Learning]]
-		- related-to:: [[Pattern Recognition]]
-		- enables:: [[Automated Decision Making]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningModels
+uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-models
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning-models
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Machine Learning Models
+content-hash:: sha256-12-98afc61054d1
+legacy-term-id:: MV-9952
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Model Categories
+- ### Definition
+  - Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.
 
-### Classification Models
-- Category prediction
-- Label assignment
-- Discrete outputs
-- Spam detection
-- Disease diagnosis
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MachineLearningModels
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Regression Models
-- Continuous value prediction
-- Price forecasting
-- Temperature estimation
-- Sales projection
-- Quantity prediction
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+  - enables:: [[Automated Decision Making]]
 
-## Classification Algorithms
+- ### Content
 
-### Logistic Regression
-- Binary classification
-- Multi-class support
-- Probability estimation
-- Threshold decisions
-- Interpretable results
+  ## Model Categories
 
-### Support Vector Machine (SVM)
-- Hyperplane separation
-- Kernel functions
-- Non-linear classification
-- High-dimensional data
-- Margin maximisation
+  ### Classification Models
+  - Category prediction
+  - Label assignment
+  - Discrete outputs
+  - Spam detection
+  - Disease diagnosis
 
-### k-Nearest Neighbours (kNN)
-- Distance-based classification
-- No training phase
-- Instance-based learning
-- Neighbourhood voting
-- Simple implementation
+  ### Regression Models
+  - Continuous value prediction
+  - Price forecasting
+  - Temperature estimation
+  - Sales projection
+  - Quantity prediction
 
-### Naive Bayes
-- Probabilistic classifier
-- Bayes theorem application
-- Independence assumption
-- Text classification
-- Fast computation
+  ## Classification Algorithms
 
-### Decision Trees
-- Rule-based decisions
-- Feature splits
-- Interpretable structure
-- Overfitting risk
-- Ensemble foundation
+  ### Logistic Regression
+  - Binary classification
+  - Multi-class support
+  - Probability estimation
+  - Threshold decisions
+  - Interpretable results
 
-### Random Forest
-- Multiple decision trees
-- Ensemble averaging
-- Reduced overfitting
-- Feature importance
-- Robust predictions
+  ### Support Vector Machine (SVM)
+  - Hyperplane separation
+  - Kernel functions
+  - Non-linear classification
+  - High-dimensional data
+  - Margin maximisation
 
-## Regression Algorithms
+  ### k-Nearest Neighbours (kNN)
+  - Distance-based classification
+  - No training phase
+  - Instance-based learning
+  - Neighbourhood voting
+  - Simple implementation
 
-### Linear Regression
-- Straight line fitting
-- Coefficient estimation
-- Simple relationships
-- Baseline model
-- Quick implementation
+  ### Naive Bayes
+  - Probabilistic classifier
+  - Bayes theorem application
+  - Independence assumption
+  - Text classification
+  - Fast computation
 
-### Multiple Linear Regression
-- Multiple input features
-- Multivariate analysis
-- Combined effects
-- Feature weighting
-- Correlation handling
+  ### Decision Trees
+  - Rule-based decisions
+  - Feature splits
+  - Interpretable structure
+  - Overfitting risk
+  - Ensemble foundation
 
-### Polynomial Regression
-- Non-linear relationships
-- Curve fitting
-- Higher-order terms
-- Flexibility increase
-- Overfitting caution
+  ### Random Forest
+  - Multiple decision trees
+  - Ensemble averaging
+  - Reduced overfitting
+  - Feature importance
+  - Robust predictions
 
-### Regularised Regression
-- Lasso (L1)
-- Ridge (L2)
-- Elastic Net
-- Overfitting prevention
-- Feature selection
+  ## Regression Algorithms
 
-## Versatile Algorithms
+  ### Linear Regression
+  - Straight line fitting
+  - Coefficient estimation
+  - Simple relationships
+  - Baseline model
+  - Quick implementation
 
-### Decision Trees
-- Classification and regression
-- Tree-like structure
-- Feature splitting
-- Interpretability
-- Ensemble building
+  ### Multiple Linear Regression
+  - Multiple input features
+  - Multivariate analysis
+  - Combined effects
+  - Feature weighting
+  - Correlation handling
 
-### Random Forest
-- Both task types
-- Bagging ensemble
-- Parallel trees
-- Variance reduction
-- Robust performance
+  ### Polynomial Regression
+  - Non-linear relationships
+  - Curve fitting
+  - Higher-order terms
+  - Flexibility increase
+  - Overfitting caution
 
-### Support Vector Machines
-- SVC (Classification)
-- SVR (Regression)
-- Kernel flexibility
-- High-dimensional support
-- Margin optimisation
+  ### Regularised Regression
+  - Lasso (L1)
+  - Ridge (L2)
+  - Elastic Net
+  - Overfitting prevention
+  - Feature selection
 
-### Neural Networks
-- Universal approximators
-- Deep architectures
-- Complex patterns
-- Multiple outputs
-- Task flexibility
+  ## Versatile Algorithms
 
-## Model Selection Criteria
+  ### Decision Trees
+  - Classification and regression
+  - Tree-like structure
+  - Feature splitting
+  - Interpretability
+  - Ensemble building
 
-### Problem Type
-- Categorical output: Classification
-- Continuous output: Regression
-- Group discovery: Clustering
-- Dimensionality: Reduction
-- Sequence: Time series
+  ### Random Forest
+  - Both task types
+  - Bagging ensemble
+  - Parallel trees
+  - Variance reduction
+  - Robust performance
 
-### Data Characteristics
-- Dataset size
-- Feature count
-- Label availability
-- Noise levels
-- Distribution shape
+  ### Support Vector Machines
+  - SVC (Classification)
+  - SVR (Regression)
+  - Kernel flexibility
+  - High-dimensional support
+  - Margin optimisation
 
-### Performance Metrics
+  ### Neural Networks
+  - Universal approximators
+  - Deep architectures
+  - Complex patterns
+  - Multiple outputs
+  - Task flexibility
 
-#### Classification Metrics
-- Accuracy
-- Precision
-- Recall
-- F1 Score
-- ROC-AUC
+  ## Model Selection Criteria
 
-#### Regression Metrics
-- MSE (Mean Squared Error)
-- MAE (Mean Absolute Error)
-- RMSE
-- R-squared
-- Adjusted R-squared
+  ### Problem Type
+  - Categorical output: Classification
+  - Continuous output: Regression
+  - Group discovery: Clustering
+  - Dimensionality: Reduction
+  - Sequence: Time series
 
-## Ensemble Methods
+  ### Data Characteristics
+  - Dataset size
+  - Feature count
+  - Label availability
+  - Noise levels
+  - Distribution shape
 
-### Bagging
-- Bootstrap sampling
-- Parallel training
-- Averaging predictions
-- Variance reduction
-- Random Forest
+  ### Performance Metrics
 
-### Boosting
-- Sequential learning
-- Error correction
-- Weighted samples
-- Bias reduction
-- XGBoost, AdaBoost
+  #### Classification Metrics
+  - Accuracy
+  - Precision
+  - Recall
+  - F1 Score
+  - ROC-AUC
 
-### Stacking
-- Meta-learning
-- Model combination
-- Level-wise training
-- Diverse base models
-- Superior performance
+  #### Regression Metrics
+  - MSE (Mean Squared Error)
+  - MAE (Mean Absolute Error)
+  - RMSE
+  - R-squared
+  - Adjusted R-squared
 
-## 2024 Algorithm Importance
+  ## Ensemble Methods
 
-### Top Algorithms
-- Random Forest (versatility)
-- Gradient Boosting (accuracy)
-- Neural Networks (complexity)
-- SVM (robustness)
-- Logistic Regression (interpretability)
+  ### Bagging
+  - Bootstrap sampling
+  - Parallel training
+  - Averaging predictions
+  - Variance reduction
+  - Random Forest
 
-### AI Job Market
-- Algorithm understanding essential
-- Framework proficiency
-- Model selection skills
-- Performance tuning
-- Deployment expertise
+  ### Boosting
+  - Sequential learning
+  - Error correction
+  - Weighted samples
+  - Bias reduction
+  - XGBoost, AdaBoost
 
-## Model Functions
+  ### Stacking
+  - Meta-learning
+  - Model combination
+  - Level-wise training
+  - Diverse base models
+  - Superior performance
 
-### Core Capabilities
-- Pattern recognition
-- Prediction generation
-- Data-driven learning
-- Error improvement
-- Adaptive performance
+  ## 2024 Algorithm Importance
 
-### Application Areas
-- Healthcare diagnosis
-- Financial prediction
-- Image recognition
-- Natural language
-- Recommendation systems
+  ### Top Algorithms
+  - Random Forest (versatility)
+  - Gradient Boosting (accuracy)
+  - Neural Networks (complexity)
+  - SVM (robustness)
+  - Logistic Regression (interpretability)
 
-## Metadata
+  ### AI Job Market
+  - Algorithm understanding essential
+  - Framework proficiency
+  - Model selection skills
+  - Performance tuning
+  - Deployment expertise
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Model Functions
+
+  ### Core Capabilities
+  - Pattern recognition
+  - Prediction generation
+  - Data-driven learning
+  - Error improvement
+  - Adaptive performance
+
+  ### Application Areas
+  - Healthcare diagnosis
+  - Financial prediction
+  - Image recognition
+  - Natural language
+  - Recommendation systems
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

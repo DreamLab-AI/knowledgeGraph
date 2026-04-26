@@ -1,42 +1,53 @@
 {
-  "id": "C2pa Standard",
+  "id": "c2pa-standard",
   "title": "C2PA Standard",
-  "content": "- ### OntologyBlock\n  id:: c2pa-standard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9802\n\t- source-domain:: mv\n\t- preferred-term:: C2PA Standard\n\t- definition:: An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.\n\t- status:: active\n\t- owl:class:: mv:C2paStandard\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: c2pa-standard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technical Standard]]\n\t\t- enables:: [[Content Provenance]], [[Media Verification]], [[Authenticity Certification]]\n\t\t- requires:: [[Cryptographic Signing]], [[Metadata Framework]], [[Trust Model]]\n\t\t- related-to:: [[Digital Signature]], [[Content Authenticity Initiative]], [[Media Integrity]]\n- ## Technical Details\n\t- **Core Framework**:\n\t\t- Provenance Model: Structures and stores provenance information\n\t\t- Trust Model: Verifies content creator identities\n\t\t- Claim Model: Defines claims made about content\n\t\t- Binding Techniques: Cryptographically links provenance to content\n\t- **Content Credentials Include**:\n\t\t- Content ingredients used in production\n\t\t- Date, time, and location of creation\n\t\t- Device or software used in production process\n\t\t- Cryptographic hash and signature for tamper detection\n\t- **Organizational Structure**: Joint Development Foundation under Linux Foundation, founded by Adobe, Arm, Intel, Microsoft, and Truepic\n\t- **Adoption**: 5000+ member organizations as of 2024, including Microsoft, Adobe, BBC, OpenAI, Google, Meta, and Amazon\n\t- **Standardization**: Expected ISO adoption by 2025; W3C examining browser-level integration\n- ## Applications\n\t- Digital media authenticity verification\n\t- AI-generated content identification\n\t- News and journalism provenance tracking\n\t- Disinformation mitigation\n\t- Creative asset rights management",
+  "content": "- ### Definition\n  - An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:C2paStandard\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Technical Standard]]\n  - requires:: [[Cryptographic Signing]], [[Metadata Framework]], [[Trust Model]]\n  - enables:: [[Content Provenance]], [[Media Verification]], [[Authenticity Certification]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Framework**:\n\t\t- Provenance Model: Structures and stores provenance information\n\t\t- Trust Model: Verifies content creator identities\n\t\t- Claim Model: Defines claims made about content\n\t\t- Binding Techniques: Cryptographically links provenance to content\n  - **Content Credentials Include**:\n\t\t- Content ingredients used in production\n\t\t- Date, time, and location of creation\n\t\t- Device or software used in production process\n\t\t- Cryptographic hash and signature for tamper detection\n  - **Organizational Structure**: Joint Development Foundation under Linux Foundation, founded by Adobe, Arm, Intel, Microsoft, and Truepic\n  - **Adoption**: 5000+ member organizations as of 2024, including Microsoft, Adobe, BBC, OpenAI, Google, Meta, and Amazon\n  - **Standardization**: Expected ISO adoption by 2025; W3C examining browser-level integration\n  - ## Applications\n  - Digital media authenticity verification\n  - AI-generated content identification\n  - News and journalism provenance tracking\n  - Disinformation mitigation\n  - Creative asset rights management\n\n- ### Provenance\n  - sources:: [[ISO (International Organization for Standardization)]], [[W3C (World Wide Web Consortium)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Media Verification",
-    "Trust Model",
-    "Technical Standard",
     "Authenticity Certification",
+    "Computer Vision",
     "Content Provenance",
-    "Metadata Framework",
-    "metaverse",
-    "Media Integrity",
-    "Content Authenticity Initiative",
     "Cryptographic Signing",
-    "Digital Signature"
+    "ISO (International Organization for Standardization)",
+    "Media Verification",
+    "Metadata Framework",
+    "Technical Standard",
+    "Trust Model",
+    "W3C (World Wide Web Consortium)",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:c2pa-standard",
+    "iri": "http://narrativegoldmine.com/spatial-computing#C2PAStandard",
+    "content_hash": "sha256-12-3ea50533b951",
+    "legacy_term_id": "MV-9802",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:c2pa-standard",
+    "schema_version": "v2",
     "term_id": "MV-9802",
     "preferred_term": "C2PA Standard",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#C2paStandard",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:C2paStandard",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T17:00:00Z",
+    "last_updated": "2026-04-26T17:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:C2paStandard",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Technical Standard"
@@ -57,26 +68,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Digital Signature",
-        "Content Authenticity Initiative",
-        "Media Integrity"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "ISO (International Organization for Standardization)",
+      "W3C (World Wide Web Consortium)"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

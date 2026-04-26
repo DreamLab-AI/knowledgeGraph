@@ -1,329 +1,79 @@
-- ### OntologyBlock
-  id:: adversarial-robustness-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0074
-	- preferred-term:: Adversarial Robustness
-	- source-domain:: mv
-	- status:: draft
-- definition:: The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
+iri:: http://narrativegoldmine.com/metaverse#AdversarialRobustness
+uri:: urn:visionclaw:concept:artificial-intelligence:adversarial-robustness
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:adversarial-robustness
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Adversarial Robustness
+content-hash:: sha256-12-67ec8dc4eb5e
+legacy-term-id:: AI-0074
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T20:12:08Z
+public:: true
 
+- ### Definition
+  - The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AdversarialRobustness
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - bridges-to:: [[Computer Vision]] (ai)
 
-(Declaration (Class :AdversarialRobustness))
+- ### Content
+  - The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :AdversarialRobustness "Adversarial Robustness"@en)
-(AnnotationAssertion rdfs:comment :AdversarialRobustness "The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs."@en)
+  ## Formal Specification
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :AdversarialRobustness "AI-0074"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :AdversarialRobustness "true"^^xsd:boolean)
-```
-
-## Formal Specification
-
-```yaml
-term: Adversarial Robustness
-definition: "Resistance to intentionally crafted perturbations designed to cause failures"
-domain: AI Security
-type: Quality Attribute
-threat_model:
+  ```yaml
+  term: Adversarial Robustness
+  definition: "Resistance to intentionally crafted perturbations designed to cause failures"
+  domain: AI Security
+  type: Quality Attribute
+  threat_model:
   - white_box: attacker has full model access
   - black_box: attacker has query access only
   - gray_box: partial knowledge
-attack_types: [evasion, poisoning, model_extraction]
-defense_approaches: [adversarial_training, certified_defenses, detection]
-```
+  attack_types: [evasion, poisoning, model_extraction]
+  defense_approaches: [adversarial_training, certified_defenses, detection]
+  ```
 
-## Authoritative References
+  #### Key Characteristics
+  ### Adversarial Examples
 
-### Primary Sources
-
-1. **ISO/IEC TR 24029-1:2021** - Assessment of the robustness of neural networks
-   - Section 4.5: "Adversarial robustness"
-   - Testing methodologies
-   - Source: ISO/IEC JTC 1/SC 42
-
-2. **Goodfellow, I.J., Shlens, J., & Szegedy, C. (2015)** - "Explaining and Harnessing Adversarial Examples"
-   - Foundational paper on adversarial robustness
-   - *ICLR 2015*
-
-3. **Madry, A., et al. (2018)** - "Towards Deep Learning Models Resistant to Adversarial Attacks"
-   - PGD adversarial training
-   - *ICLR 2018*
-
-## Key Characteristics
-
-### Adversarial Examples
-
-**Definition**: Inputs x' = x + δ where ||δ|| is small but causes misclassification
-
-**Example**: Stop sign + carefully crafted sticker → classified as speed limit sign
-
-**Properties**:
-- Transferability: Examples transfer across models
-- Universality: Single perturbation works on many inputs
-- Physical realizability: Some work in real world (not just digital)
-
-### Threat Models
-
-**White-Box**: Attacker knows model architecture, weights, training data
-**Black-Box**: Attacker can only query model
-**Gray-Box**: Partial knowledge
-
-## Attack Methods
-
-1. **FGSM** (Fast Gradient Sign Method)
-2. **PGD** (Projected Gradient Descent) - iterative FGSM
-3. **C&W Attack** (Carlini & Wagner) - optimization-based
-4. **DeepFool** - minimal perturbation
-5. **Universal Adversarial Perturbations**
-
-## Defense Strategies
-
-### Adversarial Training
-Train on adversarial examples:
-```python
-for batch in data:
-    adv_batch = pgd_attack(batch, model)
-    loss = loss_fn(model(batch)) + loss_fn(model(adv_batch))
-    update(loss)
-```
-
-### Certified Defenses
-- **Randomized Smoothing**: Provable robustness guarantees
-- **Interval Bound Propagation**: Formal verification
-
-### Detection Methods
-- Statistical tests
-- Feature squeezing
-- Outlier detection
-
-## Relationships
-
-- **Component Of**: Robustness (AI-0068), Security (AI-0071)
-- **Threatened By**: Adversarial Attack (AI-0085)
-- **Measured By**: Robust Accuracy, Certified Accuracy
-- **Related To**: Model Robustness (AI-0076)
-
-## Best Practices
-
-1. **Adversarially train** critical models
-2. **Use ensemble defenses** (multiple techniques)
-3. **Test with multiple attack methods**
-4. **Monitor for adversarial inputs** in deployment
-5. **Combine with input validation**
-
-## Related Terms
-
-- Robustness (AI-0068)
-- Security (AI-0071)
-- Adversarial Attack (AI-0085)
-- Model Robustness (AI-0076)
-
-## Version History
-
-- **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-1:2021
-
----
-
-*Adversarial robustness is critical for deploying AI in adversarial environments where attackers may attempt to deceive systems.*
-	- maturity:: draft
-	- owl:class:: mv:AdversarialRobustness
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About Adversarial Robustness
-	- The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
-
-## Formal Specification
-
-```yaml
-term: Adversarial Robustness
-definition: "Resistance to intentionally crafted perturbations designed to cause failures"
-domain: AI Security
-type: Quality Attribute
-threat_model:
-  - white_box: attacker has full model access
-  - black_box: attacker has query access only
-  - gray_box: partial knowledge
-attack_types: [evasion, poisoning, model_extraction]
-defense_approaches: [adversarial_training, certified_defenses, detection]
-```
-
-## Authoritative References
-
-### Primary Sources
-
-1. **ISO/IEC TR 24029-1:2021** - Assessment of the robustness of neural networks
-   - Section 4.5: "Adversarial robustness"
-   - Testing methodologies
-   - Source: ISO/IEC JTC 1/SC 42
-
-2. **Goodfellow, I.J., Shlens, J., & Szegedy, C. (2015)** - "Explaining and Harnessing Adversarial Examples"
-   - Foundational paper on adversarial robustness
-   - *ICLR 2015*
-
-3. **Madry, A., et al. (2018)** - "Towards Deep Learning Models Resistant to Adversarial Attacks"
-   - PGD adversarial training
-   - *ICLR 2018*
-
-## Key Characteristics
-
-### Adversarial Examples
-
-**Definition**: Inputs x' = x + δ where ||δ|| is small but causes misclassification
-
-**Example**: Stop sign + carefully crafted sticker → classified as speed limit sign
-
-**Properties**:
-- Transferability: Examples transfer across models
-- Universality: Single perturbation works on many inputs
-- Physical realizability: Some work in real world (not just digital)
-
-### Threat Models
-
-**White-Box**: Attacker knows model architecture, weights, training data
-**Black-Box**: Attacker can only query model
-**Gray-Box**: Partial knowledge
-
-## Attack Methods
-
-1. **FGSM** (Fast Gradient Sign Method)
-2. **PGD** (Projected Gradient Descent) - iterative FGSM
-3. **C&W Attack** (Carlini & Wagner) - optimization-based
-4. **DeepFool** - minimal perturbation
-5. **Universal Adversarial Perturbations**
-
-## Defense Strategies
-
-### Adversarial Training
-Train on adversarial examples:
-```python
-for batch in data:
-    adv_batch = pgd_attack(batch, model)
-    loss = loss_fn(model(batch)) + loss_fn(model(adv_batch))
-    update(loss)
-```
-
-### Certified Defenses
-- **Randomized Smoothing**: Provable robustness guarantees
-- **Interval Bound Propagation**: Formal verification
-
-### Detection Methods
-- Statistical tests
-- Feature squeezing
-- Outlier detection
-
-## Relationships
-
-- **Component Of**: Robustness (AI-0068), Security (AI-0071)
-- **Threatened By**: Adversarial Attack (AI-0085)
-- **Measured By**: Robust Accuracy, Certified Accuracy
-- **Related To**: Model Robustness (AI-0076)
-
-## Best Practices
-
-1. **Adversarially train** critical models
-2. **Use ensemble defenses** (multiple techniques)
-3. **Test with multiple attack methods**
-4. **Monitor for adversarial inputs** in deployment
-5. **Combine with input validation**
-
-## Related Terms
-
-- Robustness (AI-0068)
-- Security (AI-0071)
-- Adversarial Attack (AI-0085)
-- Model Robustness (AI-0076)
-
-## Version History
-
-- **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-1:2021
-
----
-
-*Adversarial robustness is critical for deploying AI in adversarial environments where attackers may attempt to deceive systems.*
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Adversarial Robustness
-		  
-		  **Term ID**: AI-0074
-		  **Category**: Foundational Concept
-		  **Status**: Active
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
-		  
-		  ## Formal Specification
-		  
-		  ```yaml
-		  term: Adversarial Robustness
-		  definition: "Resistance to intentionally crafted perturbations designed to cause failures"
-		  domain: AI Security
-		  type: Quality Attribute
-		  threat_model:
-		    - white_box: attacker has full model access
-		    - black_box: attacker has query access only
-		    - gray_box: partial knowledge
-		  attack_types: [evasion, poisoning, model_extraction]
-		  defense_approaches: [adversarial_training, certified_defenses, detection]
-		  ```
-		  
-		  ## Authoritative References
-		  
-		  ### Primary Sources
-		  
-		  1. **ISO/IEC TR 24029-1:2021** - Assessment of the robustness of neural networks
-		     - Section 4.5: "Adversarial robustness"
-		     - Testing methodologies
-		     - Source: ISO/IEC JTC 1/SC 42
-		  
-		  2. **Goodfellow, I.J., Shlens, J., & Szegedy, C. (2015)** - "Explaining and Harnessing Adversarial Examples"
-		     - Foundational paper on adversarial robustness
-		     - *ICLR 2015*
-		  
-		  3. **Madry, A., et al. (2018)** - "Towards Deep Learning Models Resistant to Adversarial Attacks"
-		     - PGD adversarial training
-		     - *ICLR 2018*
-		  
-		  ## Key Characteristics
-		  
-		  ### Adversarial Examples
-		  
 		  **Definition**: Inputs x' = x + δ where ||δ|| is small but causes misclassification
-		  
+
 		  **Example**: Stop sign + carefully crafted sticker → classified as speed limit sign
-		  
+
 		  **Properties**:
 		  - Transferability: Examples transfer across models
 		  - Universality: Single perturbation works on many inputs
 		  - Physical realizability: Some work in real world (not just digital)
-		  
+
 		  ### Threat Models
-		  
+
 		  **White-Box**: Attacker knows model architecture, weights, training data
 		  **Black-Box**: Attacker can only query model
 		  **Gray-Box**: Partial knowledge
-		  
+
 		  ## Attack Methods
-		  
+
 		  1. **FGSM** (Fast Gradient Sign Method)
 		  2. **PGD** (Projected Gradient Descent) - iterative FGSM
 		  3. **C&W Attack** (Carlini & Wagner) - optimization-based
 		  4. **DeepFool** - minimal perturbation
 		  5. **Universal Adversarial Perturbations**
-		  
+
 		  ## Defense Strategies
-		  
+
 		  ### Adversarial Training
 		  Train on adversarial examples:
 		  ```python
@@ -332,81 +82,81 @@ for batch in data:
 		      loss = loss_fn(model(batch)) + loss_fn(model(adv_batch))
 		      update(loss)
 		  ```
-		  
+
 		  ### Certified Defenses
 		  - **Randomized Smoothing**: Provable robustness guarantees
 		  - **Interval Bound Propagation**: Formal verification
-		  
+
 		  ### Detection Methods
 		  - Statistical tests
 		  - Feature squeezing
 		  - Outlier detection
-		  
+
 		  ## Relationships
-		  
+
 		  - **Component Of**: Robustness (AI-0068), Security (AI-0071)
 		  - **Threatened By**: Adversarial Attack (AI-0085)
 		  - **Measured By**: Robust Accuracy, Certified Accuracy
 		  - **Related To**: Model Robustness (AI-0076)
-		  
+
 		  ## Best Practices
-		  
+
 		  1. **Adversarially train** critical models
 		  2. **Use ensemble defenses** (multiple techniques)
 		  3. **Test with multiple attack methods**
 		  4. **Monitor for adversarial inputs** in deployment
 		  5. **Combine with input validation**
-		  
+
 		  ## Related Terms
-		  
+
 		  - Robustness (AI-0068)
 		  - Security (AI-0071)
 		  - Adversarial Attack (AI-0085)
 		  - Model Robustness (AI-0076)
-		  
+
 		  ## Version History
-		  
+
 		  - **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-1:2021
-		  
+
 		  ---
-		  
+
 		  *Adversarial robustness is critical for deploying AI in adversarial environments where attackers may attempt to deceive systems.*
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
+  - public-access:: true
+  - definition:: The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples—inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.
 
 
 
-# Adversarial Robustness Ontology Entry – Updated 2025
+  # Adversarial Robustness Ontology Entry – Updated 2025
 
-## Academic Context
+  ## Academic Context
 
-- Adversarial robustness represents a fundamental challenge in machine learning security
+  - Adversarial robustness represents a fundamental challenge in machine learning security
   - Defined as a model's capacity to maintain correct decision-making when confronted with deliberately crafted, deceptive inputs
   - Emerged from recognition that statistical, data-driven systems face attack vectors distinct from traditional software vulnerabilities
   - Addresses the gap between theoretical model performance and real-world resilience
-- The field has matured from academic curiosity to practical security imperative
+  - The field has matured from academic curiosity to practical security imperative
   - Early research demonstrated that imperceptible perturbations could fool sophisticated image classifiers
   - Contemporary work recognises adversarial threats span multiple modalities: vision systems, natural language models, and autonomous decision-making frameworks
   - Distinction between adversarial robustness (defensive capability) and adversarial attacks (offensive techniques) now well-established in literature
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and critical applications
+  - Industry adoption and critical applications
   - Autonomous vehicles: adversarial perturbations to road signs or sensor inputs pose genuine safety risks
   - Financial fraud detection: attackers actively exploit adversarial techniques to bypass detection systems, representing a significant portion of bypass attempts
   - Medical imaging: healthcare organisations face threats from manipulated diagnostic images that could precipitate misdiagnosis
   - Large language models: adversarial prompts designed to elicit harmful outputs now subject to standardised evaluation (Scale AI's Adversarial Robustness Evaluation employs 1,000 human-written adversarial prompts covering illegal activities, hate speech, and harm categories)
   - Chatbot systems: lessons learned from Microsoft's Tay incident (2016) inform contemporary safety protocols
-- Technical capabilities and current limitations
+  - Technical capabilities and current limitations
   - Adversarial training remains the primary defensive approach, though it often incurs accuracy trade-offs
   - Ensemble methods leverage model diversity to improve robustness
   - Contrastive learning frameworks now incorporate adversarial principles during pre-training to enhance downstream robustness transfer
   - Limitation: no universally effective defence mechanism exists; adversarial robustness remains fundamentally incomplete
   - Challenge: robustness gains in one domain frequently fail to transfer across tasks or datasets
-- Standards and regulatory frameworks
+  - Standards and regulatory frameworks
   - NIST AI 100-2e2025 (March 2025): comprehensive taxonomy and terminology for adversarial machine learning, establishing standardised risk management approaches
   - NIST AI Risk Management Framework: mandates systematic vulnerability testing prior to deployment
   - United States Congress: No Adversarial AI Act (2025) addresses foreign adversary AI threats in government applications, requiring comprehensive risk inventories and federal procurement exclusion procedures
@@ -414,72 +164,107 @@ for batch in data:
   - Healthcare regulators: developing specialised frameworks requiring adversarial robustness testing for AI diagnostic systems
   - Aviation authorities: establishing certification requirements for safety-critical AI applications
 
-## Research & Literature
+  ## Research & Literature
 
-- Foundational and contemporary sources
+  - Foundational and contemporary sources
   - IBM Research (2024–2025): work on Adversarial Contrastive Learning (AdvCL5) framework, demonstrating robustness preservation during self-supervised pre-training and fine-tuning without requiring labelled data; outperforms state-of-the-art self-supervised robust learning methods across multiple datasets
   - NIST Trustworthy and Responsible AI Programme (2025): *Adversarial Machine Learning* (NIST AI 100-2e2025), providing taxonomy spanning training data manipulation, adversarial input provision, and model exfiltration attacks
   - Palo Alto Networks Cyberpedia: comprehensive overview of adversarial attack methodologies, distinguishing poisoning attacks (training data corruption) from evasion attacks (post-deployment model fooling)
   - Georgetown University Centre for Security and Emerging Technology (CSET): *Key Concepts in AI Safety: Robustness and Adversarial Examples*—foundational paper introducing adversarial examples as major robustness challenge
-- Ongoing research directions
+  - Ongoing research directions
   - Integration of adversarial training with additional regularisation techniques
   - Ensemble approaches exploiting model diversity
   - Generative model integration for improved data distribution understanding
   - Cross-domain robustness transfer mechanisms
   - Evaluation standardisation for large language models and multimodal systems
 
-## UK Context
+  ## UK Context
 
-- British institutional contributions
+  - British institutional contributions
   - Academic research in adversarial machine learning conducted across Russell Group and specialist institutions
   - UK participation in international standards development (NIST frameworks adopted and adapted for UK regulatory contexts)
   - Financial Conduct Authority (FCA) and Bank of England: emerging guidance on AI resilience in financial services, including adversarial robustness requirements
-- North England innovation considerations
+  - North England innovation considerations
   - Manchester, Leeds, Newcastle, and Sheffield host significant AI research clusters within university computer science departments
   - Regional technology sectors (financial services in Leeds, manufacturing automation in Sheffield) increasingly require adversarial robustness in deployed systems
   - Northern Powerhouse digital initiatives incorporate AI safety considerations, though specific adversarial robustness case studies remain limited in public documentation
   - Note: whilst North England possesses substantial AI research capacity, adversarial robustness remains a specialised domain with concentrated expertise in London and Cambridge; regional expansion of this expertise represents an emerging opportunity
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and anticipated developments
+  - Emerging trends and anticipated developments
   - Regulatory consolidation: expect harmonisation of adversarial robustness standards across jurisdictions (US, EU, UK frameworks currently diverging)
   - Certification frameworks: safety-critical domains (aviation, healthcare, autonomous systems) will likely mandate formal adversarial robustness certification prior to deployment
   - Multimodal adversarial threats: research increasingly addresses attacks spanning vision, language, and sensor fusion simultaneously
   - Interpretability integration: future defences will likely couple adversarial robustness with explainability mechanisms to understand vulnerability sources
-- Anticipated challenges
+  - Anticipated challenges
   - Fundamental tension between model accuracy and adversarial robustness remains unresolved; defensive improvements often degrade benign performance
   - Adversarial robustness evaluation remains context-dependent; universal benchmarks difficult to establish across diverse application domains
   - Computational cost of adversarial training and ensemble methods may limit deployment in resource-constrained environments
   - Arms race dynamics: as defences improve, adversarial attack sophistication escalates correspondingly
-- Research priorities
+  - Research priorities
   - Theoretical foundations: developing formal guarantees for adversarial robustness rather than empirical approximations
   - Transferability: enabling robustness learned in one domain to generalise effectively to others
   - Scalability: efficient adversarial robustness mechanisms suitable for large-scale models and real-time applications
   - Human-in-the-loop approaches: integrating human oversight into adversarial robustness evaluation and improvement cycles
 
-## References
+  ## References
 
-1. IBM Research (2024–2025). "Securing AI Workflows with Adversarial Robustness." *IBM Research Blog*. Available at: research.ibm.com/blog/securing-ai-workflows-with-adversarial-robustness
+  1. IBM Research (2024–2025). "Securing AI Workflows with Adversarial Robustness." *IBM Research Blog*. Available at: research.ibm.com/blog/securing-ai-workflows-with-adversarial-robustness
 
-2. National Institute of Standards and Technology (2025). *Adversarial Machine Learning* (NIST AI 100-2e2025). March 2025. Available at: nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
+  2. National Institute of Standards and Technology (2025). *Adversarial Machine Learning* (NIST AI 100-2e2025). March 2025. Available at: nvlpubs.nist.gov/nistpubs/ai/NIST.AI.100-2e2025.pdf
 
-3. Palo Alto Networks (2024–2025). "What Are Adversarial AI Attacks on Machine Learning?" *Cyberpedia*. Available at: paloaltonetworks.com/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning
+  3. Palo Alto Networks (2024–2025). "What Are Adversarial AI Attacks on Machine Learning?" *Cyberpedia*. Available at: paloaltonetworks.com/cyberpedia/what-are-adversarial-attacks-on-AI-Machine-Learning
 
-4. DataScientest (2024–2025). "What is Adversarial Robustness?" Available at: datascientest.com/en/all-about-adversarial-robustness
+  4. DataScientest (2024–2025). "What is Adversarial Robustness?" Available at: datascientest.com/en/all-about-adversarial-robustness
 
-5. Northwest AI Consulting (2025). "What is Adversarial AI in 2025?" Available at: nwai.co/what-is-adversarial-ai-in-2025/
+  5. Northwest AI Consulting (2025). "What is Adversarial AI in 2025?" Available at: nwai.co/what-is-adversarial-ai-in-2025/
 
-6. Scale AI (2025). "Adversarial Robustness Leaderboard." Available at: scale.com/leaderboard/adversarial_robustness
+  6. Scale AI (2025). "Adversarial Robustness Leaderboard." Available at: scale.com/leaderboard/adversarial_robustness
 
-7. Georgetown University Centre for Security and Emerging Technology (CSET). "Key Concepts in AI Safety: Robustness and Adversarial Examples." Available at: cset.georgetown.edu/publication/key-concepts-in-ai-safety-robustness-and-adversarial-examples/
+  7. Georgetown University Centre for Security and Emerging Technology (CSET). "Key Concepts in AI Safety: Robustness and Adversarial Examples." Available at: cset.georgetown.edu/publication/key-concepts-in-ai-safety-robustness-and-adversarial-examples/
 
-8. International Conference on Agents and Artificial Intelligence (ICAART) (2025). "The Pros and Cons of Adversarial Robustness." Technical Programme. Available at: insticc.org/node/TechnicalProgram/icaart/2025/presentationDetails/131663
+  8. International Conference on Agents and Artificial Intelligence (ICAART) (2025). "The Pros and Cons of Adversarial Robustness." Technical Programme. Available at: insticc.org/node/TechnicalProgram/icaart/2025/presentationDetails/131663
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+  ## Formal Specification
+
+  ```yaml
+  term: Adversarial Robustness
+  definition: "Resistance to intentionally crafted perturbations designed to cause failures"
+  domain: AI Security
+  type: Quality Attribute
+  threat_model:
+  - white_box: attacker has full model access
+  - black_box: attacker has query access only
+  - gray_box: partial knowledge
+  attack_types: [evasion, poisoning, model_extraction]
+  defense_approaches: [adversarial_training, certified_defenses, detection]
+  ```
+
+  #### References
+  ### Primary Sources
+
+		  1. **ISO/IEC TR 24029-1:2021** - Assessment of the robustness of neural networks
+		     - Section 4.5: "Adversarial robustness"
+		     - Testing methodologies
+		     - Source: ISO/IEC JTC 1/SC 42
+
+		  2. **Goodfellow, I.J., Shlens, J., & Szegedy, C. (2015)** - "Explaining and Harnessing Adversarial Examples"
+		     - Foundational paper on adversarial robustness
+		     - *ICLR 2015*
+
+		  3. **Madry, A., et al. (2018)** - "Towards Deep Learning Models Resistant to Adversarial Attacks"
+		     - PGD adversarial training
+		     - *ICLR 2018*
+
+- ### Provenance
+  - sources:: [[FCA]], [[ISO/IEC TR 24029-1:2021]]
+  - migration-date:: 2026-04-26T00:00:00Z

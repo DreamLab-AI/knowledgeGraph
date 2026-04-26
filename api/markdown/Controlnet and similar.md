@@ -1,13 +1,40 @@
+iri:: http://narrativegoldmine.com/ontology#ControlnetAndSimilar
+uri:: urn:visionclaw:concept:artificial-intelligence:controlnet-and-similar
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:controlnet-and-similar
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Controlnet and similar
+content-hash:: sha256-12-21995b863415
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page
+- ### Definition
+  - Controlnet and similar is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ControlnetAndSimilar
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
+  - #Public page
 	 - automatically published
-- ControlNet
-	- Exhastive guide to controlnet [The Ultimate Guide to ControlNet (Part 1) (civitai.com)](https://education.civitai.com/civitai-guide-to-controlnet/#show-me-examples)
-	- [OpenPoses](https://openposes.com/)
-- [(1) ControlNet Support for Multi-Input and IP-Adapter-FaceID-portrait in A1111 : StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/19cwrxh/controlnet_support_for_multiinput_and/)
--
-- Multidiffusion Spatial Controls
+  - ControlNet
+  - Exhastive guide to controlnet [The Ultimate Guide to ControlNet (Part 1) (civitai.com)](https://education.civitai.com/civitai-guide-to-controlnet/#show-me-examples)
+  - [OpenPoses](https://openposes.com/)
+  - [(1) ControlNet Support for Multi-Input and IP-Adapter-FaceID-portrait in A1111 : StableDiffusion (reddit.com)](https://www.reddit.com/r/StableDiffusion/comments/19cwrxh/controlnet_support_for_multiinput_and/)
+  - Multidiffusion Spatial Controls
 	 - a Hugging Face Space by weizmannscience
        <https://huggingface.co/spaces/weizmannscience/multidiffusion-region-based>
       Testing ControlNet on Unreal Engine 5 : r/StableDiffusion
@@ -64,4 +91,7 @@ public:: true
        <https://m.youtube.com/watch?v=sNcEhR65pw0&amp;feature=youtu.be>
       This is a conversation between TomLikesRobots about an experiment with "Ebsynth and Controlnet Img2img". TomLikesRobots has tried different noise percentage values and blends. The experiment involves switching out Elizabeth Moss for Penelope Cruz, and despite some difficulties, the team is making progress towards high-detail photorealism. https://twitter.com/TomLikesRobots/status/1628104009146826763?s=20
       The paper proposes a novel approach to generate new video content by combining zero-shot text-to-video generation with ControlNet. The method takes multiple sketched frames as input and generates video output that matches the flow of these frames. By incorporating ControlNet to enable additional input conditions, the approach leverages the benefits of both zero-shot text-to-video generation and the robust control provided by ControlNet. Experiments demonstrate that the method excels at producing high-quality and remarkably consistent video content that accurately aligns with the user’s intended motion for the subject within the video. A demo of the approach is also available for users to try out. https://sketchingthefuture.github.io/
--
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

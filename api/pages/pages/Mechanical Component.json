@@ -1,32 +1,45 @@
 {
-  "id": "Mechanical Component",
+  "id": "mechanical-component",
   "title": "Mechanical Component",
-  "content": "- ### OntologyBlock\n  id:: rb9520-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9520\n\t- preferred-term:: Mechanical Component\n\t- source-domain:: rb\n\t- owl:class:: rb:MechanicalComponent\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Mechanical Component is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nMechanical Component represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
-  "backlinks": [],
+  "content": "- ### Definition\n  - MechanicalComponent is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: robotics:MechanicalComponent\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[AI Agent System]]\n\n- ### Content\n  term-id: RB-9016\n  domain: rb\n  # MechanicalComponent\n  A Mechanical Component represents physical structural and moving elements constituting robot hardware, including links, joints, frames, transmission systems, and structural members that provide mechanical functionality and support. These components determine robot kinematics, dynamics, payload capacity, and physical interaction capabilities.\n  Components encompass rigid links forming the robot skeleton, revolute and prismatic joints enabling motion degrees of freedom, bearings supporting rotational motion, transmission elements (gears, belts, chains) converting and transmitting power, and structural frames providing mounting surfaces and rigidity. Material selection balances strength, weight, cost, and manufacturing considerations, with aluminum, steel, and carbon fiber composites common for different applications.\n  The category includes end-effectors (grippers, tools) for interaction with objects, coupling mechanisms for module assembly, mounting plates for sensor integration, and protective covers ensuring safety and environmental sealing. Precision components like harmonic drives and ball screws enable accurate positioning, while compliant elements including springs and dampers provide passive adaptation to contact forces.\n  Modern developments incorporate additive manufacturing enabling complex geometries and topology-optimized structures, soft robotic components using elastomers and pneumatic actuators for safe human interaction, and modular mechanical interfaces supporting reconfigurable systems. Contemporary research explores self-healing materials, shape-memory alloys enabling compact actuation, and 4D-printed structures with time-dependent shape changes. Integration of sensing into mechanical structures through strain gauges and embedded sensors enables proprioceptive awareness and condition monitoring for predictive maintenance.\n  - Siciliano, B., & Khatib, O. (2016). Springer Handbook of Robotics (2nd ed.). Springer\n  - Norton, R.L. (2013). Machine Design: An Integrated Approach (5th ed.). Pearson\n  - Budynas, R.G., & Nisbett, J.K. (2014). Shigley's Mechanical Engineering Design (10th ed.). McGraw-Hill\n  - Rus, D., & Tolley, M.T. (2015). \"Design, fabrication and control of soft robots.\" Nature, 521, 467-475\n\n  ## Sources\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "End Effector"
+  ],
   "wiki_links": [
-    "owl:Thing"
+    "AI Agent System"
   ],
   "ontology": {
-    "term_id": "RB-9520",
+    "uri": "urn:visionclaw:concept:robotics:mechanical-component",
+    "iri": "http://narrativegoldmine.com/robotics#MechanicalComponent",
+    "content_hash": "sha256-12-4d41b24c4909",
+    "legacy_term_id": "RB-mechanical-component",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:mechanical-component",
+    "schema_version": "v2",
+    "term_id": "RB-mechanical-component",
     "preferred_term": "Mechanical Component",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#MechanicalComponent",
-    "source_domain": "rb",
     "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
     "domain_full_name": "Robotics",
-    "definition": "Mechanical Component is a concept within the robotics domain. Further enrichment pending.",
+    "definition": "MechanicalComponent is a concept within the ngm domain.",
     "scope_note": null,
-    "status": "draft",
-    "maturity": null,
-    "version": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:MechanicalComponent",
-    "owl_physicality": "abstract",
-    "owl_role": "concept",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:MechanicalComponent",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -35,18 +48,17 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

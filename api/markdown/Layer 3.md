@@ -1,95 +1,108 @@
-- ### OntologyBlock
-  id:: layer-3-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8009
-	- preferred-term:: Layer 3
-	- definition:: Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.
-	- status:: active
-	- maturity:: reviewed
-	- public-access:: true
-	- belongsToDomain:: [[Blockchain]]
-	- owl:class:: bc:Layer3
+iri:: http://narrativegoldmine.com/blockchain#Layer3
+uri:: urn:visionclaw:concept:blockchain:layer-3
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:layer-3
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Layer 3
+content-hash:: sha256-12-2a6e348922f5
+legacy-term-id:: BC-8009
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1002
-title: Layer 3
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications. Layer 3 inherits security from L2 while enabling hyperscalability through domain-specific transaction processing and optimized state management.
 
-# Layer 3
+- ### Semantic Classification
+  - owl-class:: blockchain:Layer3
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-## Definition
-- Application-specific blockchain layer built on Layer 2 scaling solutions
-- Provides customized execution environments for specialized use cases
-- Inherits security from Layer 2 while offering application-specific optimizations
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - enables:: [[Application-Specific Blockchain]]
+  - implements:: [[Custom Execution Environment]]
 
-## Core Components
-- **Custom Execution Logic**: Application-tailored transaction processing
-- **State Synchronization**: Coordination with Layer 2 settlement
-- **Application Runtime**: Specialized virtual machine or execution environment
-- **User Interface Layer**: Direct user interaction endpoints
+- ### Content
 
-## Technical Characteristics
-- **Hyperscalability**: Offloads execution from Layer 2 to application layer
-- **Customization**: Domain-specific transaction types and validation rules
-- **Interoperability**: Cross-application communication within L2 ecosystem
-- **Cost Efficiency**: Minimized settlement costs through batching
+  ## Definition
+  - Application-specific blockchain layer built on Layer 2 scaling solutions
+  - Provides customized execution environments for specialized use cases
+  - Inherits security from Layer 2 while offering application-specific optimizations
 
-## Use Cases
-- Gaming blockchains with custom logic
-- Privacy-focused applications
-- High-frequency trading platforms
-- Social network protocols
-- Enterprise-specific blockchain applications
+  ## Core Components
+  - **Custom Execution Logic**: Application-tailored transaction processing
+  - **State Synchronization**: Coordination with Layer 2 settlement
+  - **Application Runtime**: Specialized virtual machine or execution environment
+  - **User Interface Layer**: Direct user interaction endpoints
 
-## Examples
-- [[dYdX v4]]: Decentralized exchange on custom L3
-- [[Immutable X]]: NFT-focused L3 on StarkNet
-- Gaming-specific chains on [[Arbitrum Orbit]]
+  ## Technical Characteristics
+  - **Hyperscalability**: Offloads execution from Layer 2 to application layer
+  - **Customization**: Domain-specific transaction types and validation rules
+  - **Interoperability**: Cross-application communication within L2 ecosystem
+  - **Cost Efficiency**: Minimized settlement costs through batching
 
-## Relationships
-- child-of:: [[Layer 2]]
-- inherits-security-from:: [[Layer 1]]
-- enables:: [[Application-Specific Blockchain]]
-- implements:: [[Custom Execution Environment]]
-- contrasts-with:: [[General-Purpose Smart Contract Platform]]
+  ## Use Cases
+  - Gaming blockchains with custom logic
+  - Privacy-focused applications
+  - High-frequency trading platforms
+  - Social network protocols
+  - Enterprise-specific blockchain applications
 
-## Architecture Patterns
-- **Sovereign Rollup**: Independent execution with L2 data availability
-- **Hosted Rollup**: Managed execution environment on L2
-- **App Chain**: Dedicated chain for single application
-- **Fractal Scaling**: Recursive Layer 2 stacking
+  ## Examples
+  - [[dYdX v4]]: Decentralized exchange on custom L3
+  - [[Immutable X]]: NFT-focused L3 on StarkNet
+  - Gaming-specific chains on [[Arbitrum Orbit]]
 
-## Security Model
-- Inherits cryptographic security from L2
-- Application-level validation rules
-- State commitment to L2 for fraud/validity proofs
-- Economic incentives for honest operation
+  ## Relationships
+  - child-of:: [[Layer 2]]
+  - inherits-security-from:: [[Layer 1]]
+  - enables:: [[Application-Specific Blockchain]]
+  - implements:: [[Custom Execution Environment]]
+  - contrasts-with:: [[General-Purpose Smart Contract Platform]]
 
-## Performance Considerations
-- Near-instant finality for application transactions
-- Batch settlement to L2 for cost optimization
-- Specialized state management for application needs
-- Custom mempool and transaction ordering
+  ## Architecture Patterns
+  - **Sovereign Rollup**: Independent execution with L2 data availability
+  - **Hosted Rollup**: Managed execution environment on L2
+  - **App Chain**: Dedicated chain for single application
+  - **Fractal Scaling**: Recursive Layer 2 stacking
 
-## Trade-offs
-- Reduced composability with general L2 applications
-- Additional complexity in cross-layer communication
-- Dependency on underlying L2 liveness
-- Custom security auditing requirements
+  ## Security Model
+  - Inherits cryptographic security from L2
+  - Application-level validation rules
+  - State commitment to L2 for fraud/validity proofs
+  - Economic incentives for honest operation
 
-## Related Concepts
-- [[Rollup]]
-- [[Scalability Solutions]]
-- [[Application-Specific Blockchain]]
-- [[State Channel]]
+  ## Performance Considerations
+  - Near-instant finality for application transactions
+  - Batch settlement to L2 for cost optimization
+  - Specialized state management for application needs
+  - Custom mempool and transaction ordering
 
-#blockchain #layer-3 #scalability #application-layer
+  ## Trade-offs
+  - Reduced composability with general L2 applications
+  - Additional complexity in cross-layer communication
+  - Dependency on underlying L2 liveness
+  - Custom security auditing requirements
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Rollup]]
+  - [[Scalability Solutions]]
+  - [[Application-Specific Blockchain]]
+  - [[State Channel]]
+
+  #blockchain #layer-3 #scalability #application-layer
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

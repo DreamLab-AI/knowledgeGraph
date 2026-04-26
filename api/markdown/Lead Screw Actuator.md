@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: leadscrewactuator-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#LeadScrewActuator
+uri:: urn:visionclaw:concept:robotics:lead-screw-actuator
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:lead-screw-actuator
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Lead Screw Actuator
+content-hash:: sha256-12-3e29b813916b
+legacy-term-id:: RB-0176
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0176
-    - filename-history:: ["RB-0176-leadscrewactuator.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0176
-    - preferred-term:: Lead Screw Actuator
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Lead screw actuator uses threaded rod for simple linear motion.
 
-  - **Definition**
-    - definition:: Lead screw actuator uses threaded rod for simple linear motion.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:LeadScrewActuator
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:LeadScrewActuator
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Linear Actuator]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Linear Actuator]]
+- ### Content
+  Lead Screw Actuator — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :LeadScrewActuator))
-      (SubClassOf :LeadScrewActuator :LinearActuator)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :LeadScrewActuator "Lead Screw Actuator"@en)
-      (AnnotationAssertion rdfs:comment :LeadScrewActuator
-        "Lead screw actuator uses threaded rod for simple linear motion."@en)
-      ```
-
-- ## About Lead Screw Actuator
-  Lead screw actuator uses threaded rod for simple linear motion.
-  
-  A linear actuator using lead screw mechanism.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

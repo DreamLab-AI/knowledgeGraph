@@ -1,41 +1,37 @@
-- ### OntologyBlock
-  id:: layer2scaling-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-3074
-	- preferred-term:: Layer2Scaling
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:Layer2Scaling
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/spatial-computing#Layer2Scaling
+uri:: urn:visionclaw:concept:spatial-computing:layer2scaling
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:layer2scaling
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Layer2Scaling
+content-hash:: sha256-12-45f895383f37
+legacy-term-id:: MV-3074
+status:: draft
+maturity:: draft
+quality-score:: 0.40
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## OWL Formal Semantics
-
-```clojure
-;; OWL Functional Syntax
-
-(Declaration (Class :Layer2scaling))
-
-;; Annotations
-(AnnotationAssertion rdfs:label :Layer2scaling "Layer2Scaling"@en)
-(AnnotationAssertion rdfs:comment :Layer2scaling "A component of the metaverse ecosystem."@en)
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Layer2scaling "mv-1761742247942"^^xsd:string)
-```
-
-- ## About Layer2Scaling
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Definition
+  - Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (Ethereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]]. Layer 2 solutions address blockchain congestion and high fees by moving computation off-chain—[[Optimism]] and [[Arbitrum]] use [[OptimisticRollup|optimistic rollups]] (assume validity, prove fraud), [[zkSync]] and [[Polygon]] use [[ZeroKnowledgeProof|zero-knowledge rollups]] (prove correctness)—enabling metaverse transactions at near-free costs and sub-second settlement. Bridges enable [[InteroperabilityProtocol|cross-layer asset transfers]] supporting multi-chain applications.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:Layer2Scaling
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+- ### Relationships
+  - enables:: [[HighThroughputTransaction]] (domain: metaverse→blockchain, type: performance)
+  - uses:: [[CryptographicProof]] (domain: blockchain, type: security)
+  - ### Original Content
 		- ```
-- # Ontology Block
-		    collapsed:: true
+  - # Ontology Block
 		    - **Class:** Layer2ScalingSolution
 		    - **IRI:** http://metaverse-ontology.org/blockchain#Layer2ScalingSolution
 		    - **SubClassOf:** ScalabilityProtocol
@@ -55,14 +51,12 @@
 		          meta:technologyReadinessLevel "8"^^xsd:integer ;
 		          meta:qualityScore "0.93"^^xsd:float .
 		      ```
-		  
 		  - ## Description
 		    - Processes transactions off the main blockchain layer
 		    - Increases throughput while reducing transaction costs
 		    - Inherits security from underlying base layer
 		    - Periodically settles state to main chain
 		    - Includes rollups, state channels, and sidechains
-		  
 		  - ## Properties
 		    - Object properties
 		      - [[buildsOn]] - Base layer blockchain
@@ -74,124 +68,93 @@
 		      - costReduction - Transaction cost reduction percentage
 		      - settlementTime - Time to base layer settlement
 		      - securityModel - Security inheritance model
-		  
 		  - ## Cross-Domain Relationships
 		    - [[dt:enables]] → [[MicroTransaction]] - Low-cost metaverse transactions
 		    - [[dt:scales]] → [[NFTMinting]] - High-volume NFT creation
 		    - [[dt:supports]] → [[GameEconomy]] - Gaming transaction scalability
 		    - [[dt:facilitates]] → [[RealTimePayment]] - Instant payment processing
 		    - [[dt:optimizes]] → [[DeFiProtocol]] - DeFi scalability
-		  
 		  - ## Related Concepts
 		    - [[Rollup]]
 		    - [[StateChannel]]
 		    - [[Sidechain]]
 		    - [[OptimisticRollup]]
 		    - [[ZKRollup]]
-		  
 		  - ## Use Cases
 		    - Gaming microtransactions
 		    - High-frequency trading
 		    - Micropayments
 		    - Scalable NFT platforms
 		    - Mass adoption applications
-		  
 		  ```
-
-## Academic Context
-
-- Brief contextual overview
-  - Layer 2 scaling refers to protocols and solutions built atop a foundational blockchain (Layer 1) to enhance transaction throughput, reduce costs, and improve user experience without compromising decentralisation or security
-  - The concept emerged as a response to the scalability trilemma—balancing decentralisation, security, and scalability—first articulated by Vitalik Buterin and widely discussed in blockchain research literature
-  - Layer 2 solutions are now integral to the architecture of major blockchain ecosystems, including Ethereum, Bitcoin, and increasingly, enterprise and public sector applications
-
-- Key developments and current state
-  - Rollups (Optimistic and ZK), state channels, and sidechains are the dominant Layer 2 paradigms, each with distinct trade-offs in finality, security, and complexity
-  - The integration of Layer 2 solutions has enabled the growth of decentralised finance (DeFi), non-fungible tokens (NFTs), and Web3 applications, making blockchain more accessible for mainstream use
-
-- Academic foundations
-  - The foundational work on payment channels and state channels was introduced by Miller et al. (2017) and extended by Poon and Dryja (2016) in the Bitcoin Lightning Network whitepaper
-  - Rollup architectures, especially zk-Rollups and Optimistic Rollups, have been formalised in recent academic literature, with ongoing research into zero-knowledge proofs and fraud-proof mechanisms
-
-## Current Landscape (2025)
-
-- Industry adoption and implementations
+  #### Current Landscape
+  - Industry adoption and implementations
   - Layer 2 solutions are widely adopted across major blockchain ecosystems, with Optimism, Arbitrum, zkSync, and StarkNet leading the Ethereum ecosystem
   - Bitcoin’s Lightning Network continues to expand, supporting micropayments and cross-chain interoperability
   - Layer 2 solutions are increasingly integrated into enterprise blockchain platforms, including supply chain and identity management systems
-
-- Notable organisations and platforms
+  - Notable organisations and platforms
   - Ethereum Foundation, Chainlink, and Polygon are prominent contributors to Layer 2 research and development
   - Major DeFi protocols such as Uniswap and Aave have migrated or deployed on Layer 2 networks to reduce gas costs and improve user experience
-
-- UK and North England examples where relevant
+  - UK and North England examples where relevant
   - UK-based fintech firms and blockchain startups, including Quant Network and Fetch.ai, have explored Layer 2 integrations for enterprise solutions
   - In North England, innovation hubs such as the Manchester Blockchain Centre and the Newcastle Blockchain Lab have supported research into Layer 2 scalability for public sector and supply chain applications
-
-- Technical capabilities and limitations
+  - Technical capabilities and limitations
   - Layer 2 solutions offer high throughput and low transaction costs, but may introduce complexity in dispute resolution and cross-chain interoperability
   - Security remains dependent on the underlying Layer 1 blockchain, with some trade-offs in finality and decentralisation for certain paradigms
-
-- Standards and frameworks
+  - Standards and frameworks
   - The Ethereum Layer 2 standardisation efforts, including the ERC-4337 account abstraction proposal, are shaping interoperability and developer tooling
   - Industry consortia such as the Blockchain Interoperability Alliance are working on cross-chain Layer 2 frameworks
-
-## Research & Literature
-
-- Key academic papers and sources
+  #### Academic Context
+  - Brief contextual overview
+  - Layer 2 scaling refers to protocols and solutions built atop a foundational blockchain (Layer 1) to enhance transaction throughput, reduce costs, and improve user experience without compromising decentralisation or security
+  - The concept emerged as a response to the scalability trilemma—balancing decentralisation, security, and scalability—first articulated by Vitalik Buterin and widely discussed in blockchain research literature
+  - Layer 2 solutions are now integral to the architecture of major blockchain ecosystems, including Ethereum, Bitcoin, and increasingly, enterprise and public sector applications
+  - Key developments and current state
+  - Rollups (Optimistic and ZK), state channels, and sidechains are the dominant Layer 2 paradigms, each with distinct trade-offs in finality, security, and complexity
+  - The integration of Layer 2 solutions has enabled the growth of decentralised finance (DeFi), non-fungible tokens (NFTs), and Web3 applications, making blockchain more accessible for mainstream use
+  - Academic foundations
+  - The foundational work on payment channels and state channels was introduced by Miller et al. (2017) and extended by Poon and Dryja (2016) in the Bitcoin Lightning Network whitepaper
+  - Rollup architectures, especially zk-Rollups and Optimistic Rollups, have been formalised in recent academic literature, with ongoing research into zero-knowledge proofs and fraud-proof mechanisms
+  #### UK Context
+  - British contributions and implementations
+  - UK universities and research institutions, including University College London and Imperial College London, have published influential work on Layer 2 scalability and blockchain interoperability
+  - British fintech firms have piloted Layer 2 solutions for cross-border payments and supply chain transparency
+  - North England innovation hubs (only if genuinely relevant)
+  - The Manchester Blockchain Centre and Newcastle Blockchain Lab have hosted workshops and research projects on Layer 2 scalability for public sector applications
+  - Local startups in the North East have explored Layer 2 solutions for energy trading and smart city initiatives
+  - Regional case studies
+  - A pilot project in Newcastle utilised Layer 2 scaling for a local energy trading platform, demonstrating improved transaction speed and reduced costs
+  - Manchester-based fintech firms have integrated Layer 2 solutions into their payment systems for SMEs
+  #### Future Directions
+  - Emerging trends and developments
+  - Increased adoption of Layer 2 solutions in enterprise and public sector applications
+  - Development of hybrid Layer 2 architectures combining rollups, state channels, and sidechains
+  - Integration of Layer 2 with emerging technologies such as AI and IoT
+  - Anticipated challenges
+  - Ensuring security and decentralisation in increasingly complex Layer 2 ecosystems
+  - Addressing regulatory and compliance issues for cross-border Layer 2 applications
+  - Managing the environmental impact of Layer 2 solutions
+  - Research priorities
+  - Improving the scalability and security of Layer 2 solutions
+  - Developing standards for cross-chain interoperability
+  - Exploring the integration of Layer 2 with privacy-preserving technologies
+  #### Research & Literature
+  - Key academic papers and sources
   - Miller, A., et al. (2017). "The Lightning Network: Scalable Off-Chain Instant Payments." arXiv:1605.06369. https://arxiv.org/abs/1605.06369
   - Poon, J., & Dryja, T. (2016). "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments." https://lightning.network/lightning-network-paper.pdf
   - Buterin, V. (2018). "On Layer 2 Scaling Solutions." Ethereum Foundation Blog. https://ethereum.org/en/layer-2/
   - ZK-Rollup: Ben-Sasson, E., et al. (2014). "zk-SNARKs: Under the Hood." https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/
   - Optimistic Rollup: Optimism Team. (2020). "Optimistic Rollup: Scalable Blockchain Smart Contracts." https://optimism.io/whitepaper.pdf
-
-- Ongoing research directions
+  - Ongoing research directions
   - Improving the efficiency and security of zero-knowledge proofs for rollups
   - Developing cross-chain interoperability protocols for Layer 2 solutions
   - Exploring the integration of Layer 2 with privacy-preserving technologies
-
-## UK Context
-
-- British contributions and implementations
-  - UK universities and research institutions, including University College London and Imperial College London, have published influential work on Layer 2 scalability and blockchain interoperability
-  - British fintech firms have piloted Layer 2 solutions for cross-border payments and supply chain transparency
-
-- North England innovation hubs (only if genuinely relevant)
-  - The Manchester Blockchain Centre and Newcastle Blockchain Lab have hosted workshops and research projects on Layer 2 scalability for public sector applications
-  - Local startups in the North East have explored Layer 2 solutions for energy trading and smart city initiatives
-
-- Regional case studies
-  - A pilot project in Newcastle utilised Layer 2 scaling for a local energy trading platform, demonstrating improved transaction speed and reduced costs
-  - Manchester-based fintech firms have integrated Layer 2 solutions into their payment systems for SMEs
-
-## Future Directions
-
-- Emerging trends and developments
-  - Increased adoption of Layer 2 solutions in enterprise and public sector applications
-  - Development of hybrid Layer 2 architectures combining rollups, state channels, and sidechains
-  - Integration of Layer 2 with emerging technologies such as AI and IoT
-
-- Anticipated challenges
-  - Ensuring security and decentralisation in increasingly complex Layer 2 ecosystems
-  - Addressing regulatory and compliance issues for cross-border Layer 2 applications
-  - Managing the environmental impact of Layer 2 solutions
-
-- Research priorities
-  - Improving the scalability and security of Layer 2 solutions
-  - Developing standards for cross-chain interoperability
-  - Exploring the integration of Layer 2 with privacy-preserving technologies
-
-## References
-
-1. Miller, A., et al. (2017). "The Lightning Network: Scalable Off-Chain Instant Payments." arXiv:1605.06369. https://arxiv.org/abs/1605.06369
-2. Poon, J., & Dryja, T. (2016). "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments." https://lightning.network/lightning-network-paper.pdf
-3. Buterin, V. (2018). "On Layer 2 Scaling Solutions." Ethereum Foundation Blog. https://ethereum.org/en/layer-2/
-4. Ben-Sasson, E., et al. (2014). "zk-SNARKs: Under the Hood." https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/
-5. Optimism Team. (2020). "Optimistic Rollup: Scalable Blockchain Smart Contracts." https://optimism.io/whitepaper.pdf
-
-## Metadata
-
-- Last Updated: 2025-11-11
-- Review Status: Comprehensive editorial review
-- Verification: Academic sources verified
-- Regional Context: UK/North England where applicable
+  #### References
+  1. Miller, A., et al. (2017). "The Lightning Network: Scalable Off-Chain Instant Payments." arXiv:1605.06369. https://arxiv.org/abs/1605.06369
+  2. Poon, J., & Dryja, T. (2016). "The Bitcoin Lightning Network: Scalable Off-Chain Instant Payments." https://lightning.network/lightning-network-paper.pdf
+  3. Buterin, V. (2018). "On Layer 2 Scaling Solutions." Ethereum Foundation Blog. https://ethereum.org/en/layer-2/
+  4. Ben-Sasson, E., et al. (2014). "zk-SNARKs: Under the Hood." https://blog.ethereum.org/2016/12/05/zksnarks-in-a-nutshell/
+  5. Optimism Team. (2020). "Optimistic Rollup: Scalable Blockchain Smart Contracts." https://optimism.io/whitepaper.pdf
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

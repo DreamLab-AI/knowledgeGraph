@@ -1,0 +1,67 @@
+{
+  "id": "network-architecture",
+  "title": "Network Architecture",
+  "content": "- ### Definition\n  - Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:NetworkArchitecture\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Defines layer connectivity patterns and information flow\n  - Incorporates specialized modules (attention, residual blocks)\n  - Balances model capacity with computational efficiency\n  - Supports modular design and component reusability\n  - Enables architecture search and optimization\n\n  ## Overview\n\n  Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints.\n\n  #### Related Concepts\n  - [[Neural Network]]\n  - [[Convolutional Neural Networks]]\n  - [[Transformers]]\n  - [[Neural Architecture Search]]\n\n  #### References\n  - He, K. et al. (2016). Deep Residual Learning for Image Recognition. CVPR 2016.\n  - Zoph, B. & Le, Q. (2017). Neural Architecture Search with Reinforcement Learning. ICLR 2017.\n  - Tan, M. & Le, Q. (2019). EfficientNet: Rethinking Model Scaling for Convolutional Neural Networks. ICML 2019.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Network Function Virtualization"
+  ],
+  "wiki_links": [
+    "Convolutional Neural Networks",
+    "Neural Architecture Search",
+    "Neural Network",
+    "Transformers"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:network-architecture",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#NetworkArchitecture",
+    "content_hash": "sha256-12-4eab10cfaca8",
+    "legacy_term_id": "AI-9022",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:network-architecture",
+    "schema_version": "v2",
+    "term_id": "AI-9022",
+    "preferred_term": "Network Architecture",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units. Key architectures include feedforward networks, convolutional neural networks (CNNs), recurrent neural networks (RNNs), transformers, and graph neural networks (GNNs). Architecture design involves selecting layer types, activation functions, skip connections, normalization methods, and attention mechanisms. Neural Architecture Search (NAS) automates architecture discovery through evolutionary algorithms or reinforcement learning, optimizing for accuracy, efficiency, and resource constraints.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:NetworkArchitecture",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

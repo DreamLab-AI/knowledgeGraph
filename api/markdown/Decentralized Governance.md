@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: decentralizedgovernance-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#DecentralizedGovernance
+uri:: urn:visionclaw:concept:blockchain:decentralized-governance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:decentralized-governance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Decentralized Governance
+content-hash:: sha256-12-4288d1bc536f
+legacy-term-id:: BC-0577
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0577
-    - filename-history:: ["BC-0577-decentralizedgovernance.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0577
-    - preferred-term:: Decentralized Governance
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Governance through decentralized voting.
 
-  - **Definition**
-    - definition:: Governance through decentralized voting.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:DecentralizedGovernance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:DecentralizedGovernance
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - bridges-to:: [[AI Agent System]] or [[Virtual Economy]]
 
-  - #### Relationships
+- ### Content
+  Decentralized Governance — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DecentralizedGovernance))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DecentralizedGovernance "Decentralized Governance"@en)
-      (AnnotationAssertion rdfs:comment :DecentralizedGovernance
-        "Governance through decentralized voting."@en)
-      ```
-
-- ## About Decentralized Governance
-  Governance through decentralized voting.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

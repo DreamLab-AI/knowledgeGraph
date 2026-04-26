@@ -1,0 +1,72 @@
+{
+  "id": "3d-content-generation",
+  "title": "3D Content Generation",
+  "content": "- ### Definition\n  - 3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:3DContentGeneration\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n  - bridges-to:: [[Digital Asset]] (domain: mv), [[Autonomous Robot]] (domain: rb)\n\n- ### Content\n\n  #### Key Characteristics\n  - Utilizes neural networks for geometric and texture synthesis\n  - Employs procedural generation algorithms for scalable content creation\n  - Integrates physics-based rendering for realistic outputs\n  - Supports real-time and offline generation workflows\n  - Enables text-to-3D and image-to-3D conversion pipelines\n\n  ## Overview\n\n  3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.\n\n  #### Related Concepts\n  - [[Generative AI]]\n  - [[Computer Graphics]]\n  - [[Neural Rendering]]\n  - [[Procedural Generation]]\n\n  #### References\n  - Mildenhall et al. (2020). NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis. ECCV 2020.\n  - Park et al. (2019). DeepSDF: Learning Continuous Signed Distance Functions for Shape Representation. CVPR 2019.\n  - Poole et al. (2022). DreamFusion: Text-to-3D using 2D Diffusion. arXiv:2209.14988.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Neural 3D Generation"
+  ],
+  "wiki_links": [
+    "Autonomous Robot",
+    "Computer Graphics",
+    "Digital Asset",
+    "Generative AI",
+    "Neural Rendering",
+    "Procedural Generation"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:3d-content-generation",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#3DContentGeneration",
+    "content_hash": "sha256-12-839213480f03",
+    "legacy_term_id": "AI-9001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:3d-content-generation",
+    "schema_version": "v2",
+    "term_id": "AI-9001",
+    "preferred_term": "3D Content Generation",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven methods. This encompasses procedural generation techniques, neural rendering, generative adversarial networks (GANs) for 3D model synthesis, and automated texture mapping. Modern approaches leverage deep learning architectures such as NeRF (Neural Radiance Fields) and 3D GANs to generate photorealistic 3D scenes, objects, and environments from minimal input data. Applications span game development, virtual reality, digital twins, and automated CAD design systems.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:3DContentGeneration",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Digital Asset",
+      "Autonomous Robot"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,46 +1,53 @@
 {
-  "id": "Controlled Vocabularies",
+  "id": "controlled-vocabularies",
   "title": "Controlled Vocabularies",
-  "content": "- ### OntologyBlock\n  id:: controlled-vocabularies-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9832\n\t- source-domain:: mv\n\t- preferred-term:: Controlled Vocabularies\n\t- definition:: Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.\n\t- status:: active\n\t- owl:class:: mv:ControlledVocabularies\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: controlled-vocabularies-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Knowledge Organization]]\n\t\t- enables:: [[Consistent Indexing]], [[Information Retrieval]], [[Semantic Interoperability]]\n\t\t- requires:: [[Taxonomy Development]], [[Metadata Standards]], [[Governance Process]]\n\t\t- related-to:: [[Ontology]], [[Taxonomy]], [[Thesaurus]]\n- ## Technical Details\n\t- **Vocabulary Types** (increasing complexity):\n\t\t- **Term Lists/Pick Lists**: Simple agreed-upon word lists\n\t\t- **Taxonomies**: Hierarchical broader/narrower structures\n\t\t- **Thesauri**: Include synonyms, acronyms, and associations\n\t\t- **Ontologies**: Formal description logic with OWL encoding\n\t- **Business Value**:\n\t\t- Enables reuse of existing knowledge assets\n\t\t- Shortens critical process cycle times\n\t\t- Reduces costs through faster retrieval\n\t\t- Supports better decision making\n\t- **2024 Developments**:\n\t\t- Taxonomy Boot Camp 2024 (Washington DC, November 18-19)\n\t\t- AI and NLP for auto-tagging and classification\n\t\t- Integration across enterprise applications\n\t\t- CKO-led systematic taxonomy management\n\t- **Challenges**: Balancing human cognition with automated AI/NLP capabilities in taxonomic classification\n- ## Applications\n\t- Enterprise content management\n\t- Digital asset indexing\n\t- Search engine optimization\n\t- Knowledge graph construction\n\t- Cross-platform metadata alignment",
+  "content": "- ### Definition\n  - Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ControlledVocabularies\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - bridges-to:: [[Telecollaboration]]\n  - is-subclass-of:: [[Knowledge Organization]]\n  - requires:: [[Taxonomy Development]], [[Metadata Standards]], [[Governance Process]]\n  - enables:: [[Consistent Indexing]], [[Information Retrieval]], [[Semantic Interoperability]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Vocabulary Types** (increasing complexity):\n\t\t- **Term Lists/Pick Lists**: Simple agreed-upon word lists\n\t\t- **Taxonomies**: Hierarchical broader/narrower structures\n\t\t- **Thesauri**: Include synonyms, acronyms, and associations\n\t\t- **Ontologies**: Formal description logic with OWL encoding\n  - **Business Value**:\n\t\t- Enables reuse of existing knowledge assets\n\t\t- Shortens critical process cycle times\n\t\t- Reduces costs through faster retrieval\n\t\t- Supports better decision making\n  - **2024 Developments**:\n\t\t- Taxonomy Boot Camp 2024 (Washington DC, November 18-19)\n\t\t- AI and NLP for auto-tagging and classification\n\t\t- Integration across enterprise applications\n\t\t- CKO-led systematic taxonomy management\n  - **Challenges**: Balancing human cognition with automated AI/NLP capabilities in taxonomic classification\n  - ## Applications\n  - Enterprise content management\n  - Digital asset indexing\n  - Search engine optimization\n  - Knowledge graph construction\n  - Cross-platform metadata alignment\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Controlled Vocabulary",
-    "Category Hierarchies",
     "Semantic Metadata Registry"
   ],
   "wiki_links": [
-    "Knowledge Organization",
-    "Information Retrieval",
-    "Metadata Standards",
-    "Governance Process",
-    "Taxonomy Development",
-    "metaverse",
-    "Ontology",
     "Consistent Indexing",
-    "Taxonomy",
-    "Thesaurus",
-    "Semantic Interoperability"
+    "Governance Process",
+    "Information Retrieval",
+    "Knowledge Organization",
+    "Metadata Standards",
+    "Semantic Interoperability",
+    "Taxonomy Development",
+    "Telecollaboration",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:controlled-vocabularies",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ControlledVocabularies",
+    "content_hash": "sha256-12-f5292a8b8d96",
+    "legacy_term_id": "MV-9832",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:controlled-vocabularies",
+    "schema_version": "v2",
     "term_id": "MV-9832",
     "preferred_term": "Controlled Vocabularies",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ControlledVocabularies",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ControlledVocabularies",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ControlledVocabularies",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Knowledge Organization"
@@ -59,28 +66,19 @@
       "Semantic Interoperability"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Telecollaboration"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Ontology",
-        "Taxonomy",
-        "Thesaurus"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,0 +1,70 @@
+{
+  "id": "unsupervised-learning",
+  "title": "Unsupervised Learning",
+  "content": "- ### Definition\n  - Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:UnsupervisedLearning\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Learns from data without labeled examples\n  - Discovers intrinsic data structure and patterns\n  - Reduces dimensionality while preserving information\n  - Identifies outliers and anomalies\n  - Enables self-supervised and contrastive learning\n\n  ## Overview\n\n  Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.\n\n  #### Related Concepts\n  - [[Clustering]]\n  - [[Dimensionality Reduction]]\n  - [[Generative Models]]\n  - [[Autoencoders]]\n\n  #### References\n  - Hastie, T. et al. (2009). The Elements of Statistical Learning (2nd ed.). Springer.\n  - Kingma, D. & Welling, M. (2014). Auto-Encoding Variational Bayes. ICLR 2014.\n  - Goodfellow, I. et al. (2014). Generative Adversarial Nets. NeurIPS 2014.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Dimensionality Reduction",
+    "Patent",
+    "Variational Autoencoders",
+    "Deep Learning"
+  ],
+  "wiki_links": [
+    "Autoencoders",
+    "Clustering",
+    "Dimensionality Reduction",
+    "Generative Models"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:unsupervised-learning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#UnsupervisedLearning",
+    "content_hash": "sha256-12-641e60815887",
+    "legacy_term_id": "AI-9035",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:unsupervised-learning",
+    "schema_version": "v2",
+    "term_id": "AI-9035",
+    "preferred_term": "Unsupervised Learning",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision. Key techniques include clustering (k-means, hierarchical, DBSCAN), dimensionality reduction (PCA, t-SNE, UMAP), density estimation, anomaly detection, and generative modeling (VAEs, GANs). Unsupervised methods extract meaningful features, identify data clusters, reduce dimensionality for visualization, and learn latent representations. Applications span exploratory data analysis, data preprocessing for supervised learning, recommendation systems, and generative AI.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:UnsupervisedLearning",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

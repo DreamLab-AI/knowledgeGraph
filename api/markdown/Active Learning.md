@@ -1,61 +1,44 @@
-- ### OntologyBlock
-  id:: active-learning-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-1013
-	- preferred-term:: Active Learning
-	- alternative-terms:: Query-Based Learning, Sample Selection Learning, Sequential Experimental Design, Optimal Experimental Design, Informativeness-Driven Learning, Oracle-Query Learning, Label-Efficient Learning, Human-in-the-Loop Machine Learning, Adaptive Sampling, Strategic Data Acquisition
-	- source-domain:: ai
-	- status:: production-ready
-	- public-access:: true
-	- definition:: Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident predictions, query-by-committee maximizing ensemble disagreement, expected model change targeting highest gradient impact, expected error reduction minimizing generalization loss, variance reduction lowering prediction uncertainty, density-weighted methods balancing informativeness with representativeness to avoid outliers) applied across learning scenarios (pool-based batch selection from large unlabeled repositories 10K-1M+ examples prevalent in computer vision/NLP, stream-based sequential binary accept/reject decisions for real-time applications, query synthesis generating artificial examples rarely used due to unnaturalness), achieving 50-99% labeling cost reduction by requiring 10-100× less labeled data for equivalent performance compared to passive random sampling particularly critical in domains with expensive expert annotation (medical imaging radiologists $200-$500/hour annotating 10-50 images/hour yielding $4-$50/label, drug discovery wet-lab experiments $5K-$50K per compound synthesis/assay, legal document review $150-$400/hour paralegals, NLP named entity recognition linguists $25-$75/hour), deployed across 15,000+ medical imaging systems (pathology slide annotation Paige.AI/PathAI reducing training data 70-85%, radiology lesion detection Zebra Medical 60% annotation reduction 40+ FDA clearances, dermatology skin cancer classification Stanford HAM10000 achieving dermatologist-level 91.2% accuracy with 25% data), 8,500+ NLP production systems (Google BERT fine-tuning using uncertainty sampling 40-60% label reduction whilst maintaining F1 scores, spaCy named entity recognition active learning module 50-80% reduction, Amazon Comprehend custom entity annotation 45-70% efficiency gains), 3,200+ drug discovery platforms (Atomwise virtual screening selecting 1-5% compounds 10M library reducing synthesis costs $500K-$2M per campaign, Benevolent AI target identification querying 0.1-1% pathways, Exscientia AI-designed molecules DSP-1181 Phase I 30 months vs 4.5 years traditional), 12,000+ autonomous vehicle perception systems (Waymo scenario selection diversity sampling reducing annotation 55-75% 20M miles, Tesla Autopilot edge case mining fleet data, Cruise pedestrian detection uncertainty-based query), implementing mathematical frameworks formalizing information gain I(y;θ|x,D) measuring expected reduction in model parameter uncertainty θ given labeled example (x,y) conditioned on current training set D, mutual information quantifying statistical dependence between label y and parameters θ, version space reduction halving hypothesis space consistent with observed labels (Mitchell 1982 version space learning polynomial query complexity O(VC(H) log |H|) where VC denotes Vapnik-Chervonenkis dimension), PAC (Probably Approximately Correct) learning theory establishing sample complexity bounds n ≥ (1/ε) × (log(1/δ) + VC(H)) for ε-approximate δ-confident learning demonstrating active learning achieves O(VC(H)) labels vs O(VC(H)/ε) passive, Query-by-Committee (QBC) version space disagreement coefficient θ measuring label entropy amongst ensemble members H₁,H₂,...,Hₖ selecting argmax_x H(y|x,{Hᵢ}) maximizing vote entropy, modern deep active learning extending traditional methods with neural network acquisition functions (Bayesian deep learning Monte Carlo dropout estimating epistemic uncertainty through stochastic forward passes T=10-100 yielding predictive entropy H[y|x] = -∑ p(y|x) log p(y|x) where p(y|x)=1/T ∑ₜ p(y|x,Wₜ) averaging over weight samples, deep ensembles training 5-10 networks with different initializations/augmentations measuring prediction variance, gradient embeddings selecting examples maximizing gradient norm ‖∇_θ L(x,ŷ)‖ representing largest potential parameter updates), supported by software libraries (modAL Python 15K+ GitHub stars implementing 10+ query strategies scikit-learn compatible 500-2000 Hz query throughput, libact 8K+ stars Taiwanese research supporting stream-based/pool-based scenarios, ALiPy 5K+ stars 20+ algorithms including QBC/uncertainty/diversity, Google's Active Learning Playground web interface educational 50K+ users, Determined AI active learning experiments distributed GPU clusters 10-100 workers), addressing practical challenges (cold start initialization requiring 5-100 seed labels via random/stratified/clustering-based selection, oracle imperfection handling noisy labels 5-20% annotation error rates through repeated labeling/majority voting/probabilistic models, batch mode parallelization selecting k=10-1000 diverse examples simultaneously reducing human idle time whilst avoiding redundancy through determinantal point processes/k-means clustering/greedy maximization, stopping criteria detecting performance plateau via validation accuracy convergence <1% improvement over 3-5 batches or uncertainty threshold all examples >80% confidence or budget exhaustion), demonstrating ROI calculations medical imaging $4-$50/label × 70-85% reduction = $2.8-$42.5/image savings across 10K-100K dataset = $28K-$4.25M per project, NLP annotation $25-$75/hour × 50-80% reduction × 40 hours/1000 examples = $500-$2,400/K examples × 100K-1M corpus = $50M-$2.4B enterprise-scale, drug discovery $5K-$50K/compound × 95-99% reduction selecting 1-5% library = $4.75K-$49.5K/compound × 100-10,000 tested = $475K-$495M per therapeutic program, autonomous vehicles $0.50-$5/frame annotation × 55-75% reduction × 100M frames = $27.5M-$187.5M fleet-scale savings, fundamentally enabling machine learning deployment in resource-constrained domains by strategically allocating expensive human expertise to maximally informative examples whilst maintaining or exceeding passive learning performance benchmarks.
-	- maturity:: production-ready
-	- authority-score:: 0.88
-	- source:: [[Settles 2009 Active Learning Literature Survey]], [[Cohn et al. 1996 Improving Generalization with Active Learning]], [[Seung et al. 1992 Query by Committee]], [[Lewis & Gale 1994 Sequential Algorithm]], [[Freund et al. 1997 Selective Sampling]], [[Tong & Koller 2001 SVM Active Learning]], [[Haussler et al. 1994 Decision Theoretic Generalization PAC]], [[Dasgupta 2011 Two Faces of Active Learning]], [[Settles & Craven 2008 Multiple-Instance Active Learning]], [[Gal et al. 2017 Deep Bayesian Active Learning]], [[Sener & Savarese 2018 Core-Set Selection]], [[Ash et al. 2020 Deep Batch Active Learning]], [[modAL Python Library]], [[Google Research Active Learning]], [[scikit-learn Documentation]], [[JMLR Active Learning Special Issue]], [[NeurIPS Active Learning Workshop]], [[ICML Interactive Learning Track]]
-	- owl:class:: ai:ActiveLearning
-	- owl:role:: LearningParadigm
-	- owl:inferred-class:: ai:SupervisedLearning, ai:InteractiveLearning, ai:LabelEfficientLearning
-	- belongsToDomain:: [[AI-GroundedDomain]], [[MachineLearningDomain]], [[ComputationAndIntelligenceDomain]]
-	- implementedInLayer:: [[AlgorithmLayer]], [[ApplicationLayer]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#ActiveLearning
+uri:: urn:visionclaw:concept:artificial-intelligence:active-learning
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:active-learning
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Active Learning
+content-hash:: sha256-12-793c02120ac0
+legacy-term-id:: AI-1013
+status:: mature
+maturity:: production-ready
+quality-score:: 0.50
+authority-score:: 0.88
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[Digital Asset]]
 
-- #### Relationships
-  id:: active-learning-relationships
-	- is-subclass-of:: [[Machine Learning]], [[Supervised Learning]], [[Interactive Learning]], [[Human-in-the-Loop Learning]], [[Data-Efficient Learning]]
-	- has-part:: [[Query Strategy]], [[Oracle]], [[Unlabeled Data Pool]], [[Acquisition Function]], [[Stopping Criterion]], [[Label Budget]], [[Diversity Measure]]
-	- enables:: [[Data-Efficient Learning]], [[Cost-Effective Annotation]], [[Rapid Model Development]], [[Expert Knowledge Elicitation]], [[Sample Complexity Reduction]]
-	- requires:: [[Unlabeled Data]], [[Human Oracle]], [[Query Selection Algorithm]], [[Base Learner]], [[Evaluation Metric]]
-	- depends-on:: [[Information Theory]], [[Statistical Learning Theory]], [[Uncertainty Quantification]], [[Version Space Learning]], [[PAC Learning Theory]]
-	- related-to:: [[Semi-Supervised Learning]], [[Online Learning]], [[Reinforcement Learning]], [[Transfer Learning]], [[Few-Shot Learning]], [[Meta-Learning]]
-	- implements:: [[Uncertainty Sampling]], [[Query-by-Committee]], [[Expected Model Change]], [[Expected Error Reduction]], [[Variance Reduction]], [[Density-Weighted Methods]]
-	- supports:: [[Medical Image Annotation]], [[NLP Named Entity Recognition]], [[Drug Discovery]], [[Autonomous Vehicle Perception]], [[Document Classification]], [[Sentiment Analysis]]
-	- uses:: [[Entropy]], [[Mutual Information]], [[Ensemble Methods]], [[Bayesian Inference]], [[Gradient-Based Selection]], [[Core-Set Selection]]
-	- reduces:: [[Labeling Cost]], [[Annotation Time]], [[Expert Effort]], [[Sample Complexity]], [[Data Collection Burden]]
-	- contrasts-with:: [[Passive Learning]] (random sampling vs strategic selection)
+- ### Definition
+  - Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident predictions, query-by-committee maximizing ensemble disagreement, expected model change targeting highest gradient impact, expected error reduction minimizing generalization loss, variance reduction lowering prediction uncertainty, density-weighted methods balancing informativeness with representativeness to avoid outliers) applied across learning scenarios (pool-based batch selection from large unlabeled repositories 10K-1M+ examples prevalent in computer vision/NLP, stream-based sequential binary accept/reject decisions for real-time applications, query synthesis generating artificial examples rarely used due to unnaturalness), achieving 50-99% labeling cost reduction by requiring 10-100× less labeled data for equivalent performance compared to passive random sampling particularly critical in domains with expensive expert annotation (medical imaging radiologists $200-$500/hour annotating 10-50 images/hour yielding $4-$50/label, drug discovery wet-lab experiments $5K-$50K per compound synthesis/assay, legal document review $150-$400/hour paralegals, NLP named entity recognition linguists $25-$75/hour), deployed across 15,000+ medical imaging systems (pathology slide annotation Paige.AI/PathAI reducing training data 70-85%, radiology lesion detection Zebra Medical 60% annotation reduction 40+ FDA clearances, dermatology skin cancer classification Stanford HAM10000 achieving dermatologist-level 91.2% accuracy with 25% data), 8,500+ NLP production systems (Google BERT fine-tuning using uncertainty sampling 40-60% label reduction whilst maintaining F1 scores, spaCy named entity recognition active learning module 50-80% reduction, Amazon Comprehend custom entity annotation 45-70% efficiency gains), 3,200+ drug discovery platforms (Atomwise virtual screening selecting 1-5% compounds 10M library reducing synthesis costs $500K-$2M per campaign, Benevolent AI target identification querying 0.1-1% pathways, Exscientia AI-designed molecules DSP-1181 Phase I 30 months vs 4.5 years traditional), 12,000+ autonomous vehicle perception systems (Waymo scenario selection diversity sampling reducing annotation 55-75% 20M miles, Tesla Autopilot edge case mining fleet data, Cruise pedestrian detection uncertainty-based query), implementing mathematical frameworks formalizing information gain I(y;θ|x,D) measuring expected reduction in model parameter uncertainty θ given labeled example (x,y) conditioned on current training set D, mutual information quantifying statistical dependence between label y and parameters θ, version space reduction halving hypothesis space consistent with observed labels (Mitchell 1982 version space learning polynomial query complexity O(VC(H) log |H|) where VC denotes Vapnik-Chervonenkis dimension), PAC (Probably Approximately Correct) learning theory establishing sample complexity bounds n ≥ (1/ε) × (log(1/δ) + VC(H)) for ε-approximate δ-confident learning demonstrating active learning achieves O(VC(H)) labels vs O(VC(H)/ε) passive, Query-by-Committee (QBC) version space disagreement coefficient θ measuring label entropy amongst ensemble members H₁,H₂,...,Hₖ selecting argmax_x H(y|x,{Hᵢ}) maximizing vote entropy, modern deep active learning extending traditional methods with neural network acquisition functions (Bayesian deep learning Monte Carlo dropout estimating epistemic uncertainty through stochastic forward passes T=10-100 yielding predictive entropy H[y|x] = -∑ p(y|x) log p(y|x) where p(y|x)=1/T ∑ₜ p(y|x,Wₜ) averaging over weight samples, deep ensembles training 5-10 networks with different initializations/augmentations measuring prediction variance, gradient embeddings selecting examples maximizing gradient norm ‖∇_θ L(x,ŷ)‖ representing largest potential parameter updates), supported by software libraries (modAL Python 15K+ GitHub stars implementing 10+ query strategies scikit-learn compatible 500-2000 Hz query throughput, libact 8K+ stars Taiwanese research supporting stream-based/pool-based scenarios, ALiPy 5K+ stars 20+ algorithms including QBC/uncertainty/diversity, Google's Active Learning Playground web interface educational 50K+ users, Determined AI active learning experiments distributed GPU clusters 10-100 workers), addressing practical challenges (cold start initialization requiring 5-100 seed labels via random/stratified/clustering-based selection, oracle imperfection handling noisy labels 5-20% annotation error rates through repeated labeling/majority voting/probabilistic models, batch mode parallelization selecting k=10-1000 diverse examples simultaneously reducing human idle time whilst avoiding redundancy through determinantal point processes/k-means clustering/greedy maximization, stopping criteria detecting performance plateau via validation accuracy convergence <1% improvement over 3-5 batches or uncertainty threshold all examples >80% confidence or budget exhaustion), demonstrating ROI calculations medical imaging $4-$50/label × 70-85% reduction = $2.8-$42.5/image savings across 10K-100K dataset = $28K-$4.25M per project, NLP annotation $25-$75/hour × 50-80% reduction × 40 hours/1000 examples = $500-$2,400/K examples × 100K-1M corpus = $50M-$2.4B enterprise-scale, drug discovery $5K-$50K/compound × 95-99% reduction selecting 1-5% library = $4.75K-$49.5K/compound × 100-10,000 tested = $475K-$495M per therapeutic program, autonomous vehicles $0.50-$5/frame annotation × 55-75% reduction × 100M frames = $27.5M-$187.5M fleet-scale savings, fundamentally enabling machine learning deployment in resource-constrained domains by strategically allocating expensive human expertise to maximally informative examples whilst maintaining or exceeding passive learning performance benchmarks.
 
-- #### OWL Axioms
-  id:: active-learning-owl-axioms
-  collapsed:: true
-	- ```clojure
-	  Prefix(ai:=<http://purl.org/artificial-intelligence/core#>)
-	  Prefix(ml:=<http://purl.org/machine-learning/core#>)
-	  Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-	  Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-	  Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-	  Prefix(dcterms:=<http://purl.org/dc/terms/>)
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ActiveLearning
+  - owl-role:: LearningParadigm
+  - owl-inferred:: ai:SupervisedLearning, ai:InteractiveLearning, ai:LabelEfficientLearning
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[MachineLearningDomain]], [[ComputationAndIntelligenceDomain]]
+  - implemented-in-layer:: [[AlgorithmLayer]], [[ApplicationLayer]]
 
-	  Ontology(<http://purl.org/artificial-intelligence/core/AI-1013>
+- ### Relationships
+  - is-subclass-of:: [[Machine Learning]], [[Supervised Learning]], [[Interactive Learning]], [[Human-in-the-Loop Learning]], [[Data-Efficient Learning]]
+  - has-part:: [[Query Strategy]], [[Oracle]], [[Unlabeled Data Pool]], [[Acquisition Function]], [[Stopping Criterion]], [[Label Budget]], [[Diversity Measure]]
+  - requires:: [[Unlabeled Data]], [[Human Oracle]], [[Query Selection Algorithm]], [[Base Learner]], [[Evaluation Metric]]
+  - enables:: [[Data-Efficient Learning]], [[Cost-Effective Annotation]], [[Rapid Model Development]], [[Expert Knowledge Elicitation]], [[Sample Complexity Reduction]]
+  - implements:: [[Uncertainty Sampling]], [[Query-by-Committee]], [[Expected Model Change]], [[Expected Error Reduction]], [[Variance Reduction]], [[Density-Weighted Methods]]
+  - depends-on:: [[Information Theory]], [[Statistical Learning Theory]], [[Uncertainty Quantification]], [[Version Space Learning]], [[PAC Learning Theory]]
 
-	    Declaration(Class(ai:ActiveLearning))
+- ### Content
 
-	    ## Taxonomic Relationships
-	    SubClassOf(ai:ActiveLearning ml:MachineLearning)
-	    SubClassOf(ai:ActiveLearning ml:SupervisedLearning)
-	    SubClassOf(ai:ActiveLearning ai:InteractiveLearning)
-	    SubClassOf(ai:ActiveLearning ai:HumanInTheLoopLearning)
-	    SubClassOf(ai:ActiveLearning ai:DataEfficientLearning)
-	    SubClassOf(ai:ActiveLearning ai:LearningParadigm)
-
-	    ## Compositional Relationships (Components)
+  ## Compositional Relationships (Components)
 	    SubClassOf(ai:ActiveLearning
 	      ObjectSomeValuesFrom(ai:hasPart ai:QueryStrategy))
 	    SubClassOf(ai:ActiveLearning
@@ -200,14 +183,10 @@
 	  FunctionalDataProperty(ai:dataEfficiencyGain)
 	  ```
 
-- ## About Active Learning
-  id:: active-learning-about
-	- **Active Learning** is a machine learning paradigm that fundamentally inverts the traditional supervised learning data acquisition process. Instead of passively accepting a fixed, randomly labeled training dataset, active learning algorithms strategically select which unlabeled examples from a large pool should be queried for human annotation, optimizing for maximal informativeness under constrained labeling budgets. This approach addresses the central bottleneck in modern machine learning: whilst unlabeled data is often abundant (web-scraped images, unstructured text corpora, sensor streams), obtaining high-quality labels requires expensive human expertise—radiologists annotating medical scans, linguists tagging named entities, chemists assessing compound properties, legal experts reviewing documents.
-	-
-	- The fundamental premise rests on a simple yet powerful observation: **not all examples are equally informative for learning**. Some instances lie comfortably within well-understood regions of the feature space where the model already confidently predicts; labeling these provides minimal new information. Other examples sit near decision boundaries, fall in ambiguous regions, or represent rare but critical edge cases; labeling these can dramatically reduce model uncertainty and improve generalization performance. Active learning formalizes this intuition through **query strategies**—algorithms that score each unlabeled example by its expected contribution to model improvement and prioritize those with the highest scores for human annotation.
-	-
-	- ### Core Mathematical Framework
-	  id:: active-learning-mathematical-framework
+  - ## About Active Learning
+  - **Active Learning** is a machine learning paradigm that fundamentally inverts the traditional supervised learning data acquisition process. Instead of passively accepting a fixed, randomly labeled training dataset, active learning algorithms strategically select which unlabeled examples from a large pool should be queried for human annotation, optimizing for maximal informativeness under constrained labeling budgets. This approach addresses the central bottleneck in modern machine learning: whilst unlabeled data is often abundant (web-scraped images, unstructured text corpora, sensor streams), obtaining high-quality labels requires expensive human expertise—radiologists annotating medical scans, linguists tagging named entities, chemists assessing compound properties, legal experts reviewing documents.
+  - The fundamental premise rests on a simple yet powerful observation: **not all examples are equally informative for learning**. Some instances lie comfortably within well-understood regions of the feature space where the model already confidently predicts; labeling these provides minimal new information. Other examples sit near decision boundaries, fall in ambiguous regions, or represent rare but critical edge cases; labeling these can dramatically reduce model uncertainty and improve generalization performance. Active learning formalizes this intuition through **query strategies**—algorithms that score each unlabeled example by its expected contribution to model improvement and prioritize those with the highest scores for human annotation.
+  - ### Core Mathematical Framework
 
 	  Active learning operates within the framework of **statistical learning theory**, extending concepts from PAC (Probably Approximately Correct) learning to the interactive setting where the learner controls the distribution over which it receives labeled examples.
 
@@ -223,8 +202,7 @@
 
 	  **PAC-Bayesian Analysis**: Modern theoretical frameworks (Balcan et al. 2009) analyze active learning through PAC-Bayesian bounds, establishing that strategic query selection can reduce sample complexity by a factor proportional to the disagreement coefficient θ—a measure of how rapidly the version space shrinks under optimal queries. For many natural hypothesis classes (linear separators in ℝ^d, decision trees of bounded depth), θ = O(log n) yielding near-logarithmic label complexity.
 
-	- ### Query Strategies: Algorithmic Approaches
-	  id:: active-learning-query-strategies
+  - ### Query Strategies: Algorithmic Approaches
 
 	  Query strategies represent the algorithmic core of active learning, defining how to score unlabeled examples by informativeness. Below we detail the six main families, their mathematical formulations, computational costs, and empirical performance characteristics.
 
@@ -314,8 +292,7 @@
 
 	  **Empirical Performance**: Settles & Craven (2008) demonstrated 50-70% label reduction whilst avoiding outlier traps (biomedical NER achieving F1=0.81 with 2,500 labels vs 5,000, with 15% fewer labeling errors compared to pure uncertainty sampling). Dasgupta & Hsu (2008) hierarchical sampling achieved similar improvements on image classification. **Strength**: Robust to label noise and adversarial examples. **Weakness**: Requires tuning β and defining appropriate similarity metrics for high-dimensional data.
 
-	- ### Learning Scenarios: Pool-Based, Stream-Based, Query Synthesis
-	  id:: active-learning-scenarios
+  - ### Learning Scenarios: Pool-Based, Stream-Based, Query Synthesis
 
 	  Active learning manifests in three primary operational scenarios, each suited to different data availability and annotation workflows.
 
@@ -383,8 +360,7 @@
 	  - **Adversarial Robustness**: Generating adversarial examples near decision boundaries to query for labels, improving model robustness (Goodfellow et al. 2015 adversarial training)
 	  - **Grammar Learning**: Synthesizing sentences in formal languages where grammaticality is well-defined (Angluin 1987 learning regular languages)
 
-	- ### Practical Considerations: Deployment Challenges
-	  id:: active-learning-practical-considerations
+  - ### Practical Considerations: Deployment Challenges
 
 	  Deploying active learning in production systems requires addressing several practical challenges beyond algorithmic query strategy selection.
 
@@ -425,8 +401,7 @@
 
 	  **Empirical Observations**: Vlachos (2008) showed active learning curves exhibit **diminishing returns**, with 80-90% of total accuracy gain achieved in first 20-40% of labeling budget. Early stopping at 30-50% budget often yields 95-98% of maximum performance whilst halving annotation costs.
 
-	- ### Industry Applications and Deployment Statistics (January 2025)
-	  id:: active-learning-industry-applications
+  - ### Industry Applications and Deployment Statistics (January 2025)
 
 	  Active learning has transitioned from academic research to widespread industrial deployment across domains with high annotation costs. Below we detail deployment statistics, ROI calculations, and representative case studies for four major application areas.
 
@@ -509,8 +484,7 @@
 
 	  **Aggregate Autonomous Vehicle Deployment**: 12,000+ perception systems deployed (Waymo 700+ vehicles, Cruise 400+ vehicles, Tesla 2M+ Autopilot-enabled vehicles contributing fleet data, Aurora 100+ trucks, Zoox testing fleet, Mobileye 100M+ cameras, various OEM ADAS systems), with estimated **$5B cumulative annotation savings** across 2020-2025 vs passive random sampling.
 
-	- ### Academic Context: Theoretical Foundations and Research Milestones
-	  id:: active-learning-academic-context
+  - ### Academic Context: Theoretical Foundations and Research Milestones
 
 	  Active learning research spans four decades, originating in statistical experimental design and computational learning theory, evolving through empirical NLP/vision applications, and recently integrating with deep learning.
 
@@ -556,8 +530,7 @@
 	  - **Multi-Modal Active Learning** (Mahapatra & Bozorgtabar 2023): Jointly selecting examples across modalities (vision + language, audio + video) optimizing for cross-modal coherence and informativeness.
 	  - **Neural Architecture Search + Active Learning** (Chen et al. 2021): Co-optimizing model architecture and training data selection, discovering architectures robust to limited labeled data.
 
-	- ### Current Landscape: Software Ecosystems and Industry Standards (2025)
-	  id:: active-learning-current-landscape
+  - ### Current Landscape: Software Ecosystems and Industry Standards (2025)
 
 	  Active learning has matured into a production-ready capability supported by robust open-source libraries, commercial platforms, and integration with mainstream ML frameworks.
 
@@ -631,8 +604,7 @@
 	  - Uncertainty estimation via Monte Carlo dropout or ensemble distillation
 	  - Example: Fine-tune BERT on 500 labeled examples (uncertainty sampled) achieving F1=0.88 vs 2,000 passive F1=0.90, **75% label reduction** with 2% performance trade-off
 
-	- ### UK Context: Academic Leadership and Industrial Innovation
-	  id:: active-learning-uk-context
+  - ### UK Context: Academic Leadership and Industrial Innovation
 
 	  The United Kingdom has made substantial contributions to active learning research and deployment, with leading academic institutions, industrial applications across healthcare/finance/NLP, and regional innovation hubs.
 
@@ -698,8 +670,7 @@
 	  - **Newcastle University (School of Computing)**: Active learning for industrial IoT anomaly detection (Siemens turbine sensor data). Labeled 8% of 1M sensor readings (80,000 labels) achieving 91% anomaly detection vs 93% passive (95% confidence interval overlap indicating statistical equivalence).
 	  - **Digital Catapult NE**: SME acceleration program supporting 20+ startups deploying active learning across manufacturing quality control, supply chain optimization, customer service automation. Aggregate annotation cost savings £2M across 2023-2024 cohorts.
 
-	- ### Future Directions and Research Priorities (2025-2030)
-	  id:: active-learning-future-directions
+  - ### Future Directions and Research Priorities (2025-2030)
 
 	  Active learning research and industrial deployment are poised for substantial growth driven by foundation model integration, multi-modal learning, fairness/transparency requirements, and expanding application domains.
 
@@ -788,8 +759,7 @@
 	  - Edge AI deployment (on-device models requiring efficient training on constrained data)
 	  - Scientific discovery acceleration (materials science, climate modeling, genomics)
 
-	- ### Research and Literature
-	  id:: active-learning-research-literature
+  - ### Research and Literature
 
 	  **Foundational Works**:
 	  1. Settles, B. (2009). *Active Learning Literature Survey*. University of Wisconsin-Madison Computer Sciences Technical Report 1648. [Comprehensive survey, 3,000+ citations]
@@ -839,8 +809,7 @@
 	  33. ALiPy Documentation. https://parnec.nuaa.edu.cn/huangsj/alipy/ (2024). [Multi-label, cost-sensitive]
 	  34. Settles, B., & Craven, M. (2008). Multiple-instance active learning. *Proceedings of NeurIPS 2008*, 1289-1296. [Structured prediction benchmark]
 
-	- ## Metadata
-	  id:: active-learning-metadata
+  - ## Metadata
 
 	  - **Last Updated**: 2025-01-24
 	  - **Review Status**: Comprehensive editorial review
@@ -848,3 +817,7 @@
 	  - **Regional Context**: UK academic institutions (Oxford, Cambridge, Imperial, UCL, Edinburgh), industry implementations (BenevolentAI, Kheiron Medical, Luminance), North England innovation hubs (Manchester, Leeds, Sheffield, Newcastle) detailed
 	  - **Production-Ready**: Complete OWL formal semantics, comprehensive content coverage (theory, algorithms, applications, statistics, UK context, future directions)
 	  - **Authority Score**: 0.88 (foundational learning theory, widespread industrial deployment, proven ROI across domains, active research community)
+
+- ### Provenance
+  - sources:: [[Settles 2009 Active Learning Literature Survey]], [[Cohn et al. 1996 Improving Generalization with Active Learning]], [[Seung et al. 1992 Query by Committee]], [[Lewis & Gale 1994 Sequential Algorithm]], [[Freund et al. 1997 Selective Sampling]], [[Tong & Koller 2001 SVM Active Learning]], [[Haussler et al. 1994 Decision Theoretic Generalization PAC]], [[Dasgupta 2011 Two Faces of Active Learning]], [[Settles & Craven 2008 Multiple-Instance Active Learning]], [[Gal et al. 2017 Deep Bayesian Active Learning]], [[Sener & Savarese 2018 Core-Set Selection]], [[Ash et al. 2020 Deep Batch Active Learning]], [[modAL Python Library]], [[Google Research Active Learning]], [[scikit-learn Documentation]], [[JMLR Active Learning Special Issue]], [[NeurIPS Active Learning Workshop]], [[ICML Interactive Learning Track]]
+  - migration-date:: 2026-04-26T00:00:00Z

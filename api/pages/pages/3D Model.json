@@ -1,0 +1,93 @@
+{
+  "id": "3d-model",
+  "title": "3D Model",
+  "content": "- ### Definition\n  - A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:3DModel\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Asset]]\n  - bridges-to:: [[Computer Vision]], [[3D Modeling]], [[Animation Retargeting]]\n  - requires:: [[Mesh Data]], [[Material Definition]], [[Texture Mapping]]\n  - enables:: [[3D Rendering]], [[Interactive Visualization]], [[Virtual Environment Design]]\n\n- ### Content\n\n  ## Overview\n\n  3D Models form the visual foundation of immersive experiences, ranging from simple geometric primitives to complex character rigs with hundreds of thousands of polygons. Each model is composed of geometric data (mesh), material properties, and optional skeletal rigging for animation.\n\n  ## Components\n  - **Geometry**: Vertices and faces forming the visible shape\n  - **Materials**: Surface properties including colour, roughness, and metallic values\n  - **Textures**: 2D images applied to surfaces for visual detail\n  - **Rigging**: Skeletal structure enabling animation and deformation\n  - **LOD Variants**: Multiple detail levels for performance optimisation\n\n  #### Related Concepts\n  - [[3D Modeling]], [[Mesh Data]], [[Material Definition]], [[Texture Mapping]], [[Animation Retargeting]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Digital Twin",
+    "3D Modeling",
+    "3D File Format",
+    "Bim Virtual Model",
+    "Character Model",
+    "Neural 3D Generation"
+  ],
+  "wiki_links": [
+    "3D Development",
+    "3D File Format",
+    "3D Modeling",
+    "3D Rendering",
+    "Animation Retargeting",
+    "Computer Vision",
+    "Digital Asset",
+    "Interactive Visualization",
+    "Material Definition",
+    "Mesh Data",
+    "Metaverse",
+    "Texture Mapping",
+    "Virtual Environment Design"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:3d-model",
+    "iri": "http://narrativegoldmine.com/spatial-computing#3dModel",
+    "content_hash": "sha256-12-826a55d1d856",
+    "legacy_term_id": "MV-9504",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:3d-model",
+    "schema_version": "v2",
+    "term_id": "MV-9504",
+    "preferred_term": "3D Model",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]]. Models serve as foundational assets in [[3D Development]], enabling visualisation, simulation, and interaction within virtual spaces, games, and [[Metaverse]] applications.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T20:30:00Z",
+    "last_updated": "2026-04-26T20:30:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:3DModel",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Digital Asset"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Mesh Data",
+      "Material Definition",
+      "Texture Mapping"
+    ],
+    "depends_on": [],
+    "enables": [
+      "3D Rendering",
+      "Interactive Visualization",
+      "Virtual Environment Design"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Computer Vision",
+      "3D Modeling",
+      "Animation Retargeting"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

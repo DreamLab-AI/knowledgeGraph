@@ -1,0 +1,74 @@
+{
+  "id": "computation-and-intelligence-domain",
+  "title": "Computation And Intelligence Domain",
+  "content": "- ### Definition\n  - A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ComputationAndIntelligenceDomain\n  - owl-role:: Domain\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[ArtificialIntelligenceDomain]]\n  - bridges-to:: [[Theoretical Computer Science]]\n\n- ### Content\n\n  - #### Member Concepts (Inferred by Reasoner)\n\t\t    - Turing Machine is-member-of ComputationAndIntelligenceDomain\n\t\t    - Computational Complexity is-member-of ComputationAndIntelligenceDomain\n\t\t    - Algorithmic Information Theory is-member-of ComputationAndIntelligenceDomain\n\t\t    - Cognitive Architecture is-member-of ComputationAndIntelligenceDomain\n\t\t    - Symbol Grounding is-member-of ComputationAndIntelligenceDomain\n\t\t- bridges-to:: [[Cognitive Science]]\n\t\t- bridges-to:: [[Philosophy of Mind]]\n\t\t- bridges-to:: [[Theoretical Computer Science]]\n\t\t- foundational-to:: [[Machine Learning]]\n\n  ## Definition\n\n  The **ComputationAndIntelligenceDomain** addresses the fundamental theoretical questions at the intersection of computation and cognition. Drawing from Turing's seminal 1950 paper \"Computing Machinery and Intelligence\", this domain encompasses the formal foundations of what it means for systems to exhibit intelligent behaviour.\n\n  ## Theoretical Foundations\n\n  ### Computational Theory\n  - Turing Machines and computability\n  - Computational complexity classes (P, NP, PSPACE)\n  - Algorithmic information theory (Kolmogorov complexity)\n  - Lambda calculus and functional computation\n\n  ### Cognitive Foundations\n  - Cognitive architectures (ACT-R, SOAR, Global Workspace)\n  - Symbol grounding problem\n  - Frame problem\n  - Binding problem\n\n  ### Intelligence Theory\n  - General intelligence measures\n  - Intelligence amplification\n  - Collective intelligence\n  - Machine consciousness debates\n\n  ## Historical Context\n\n  This domain traces its origins to:\n  - **Turing (1950)**: \"Computing Machinery and Intelligence\" - the Turing Test\n  - **McCarthy et al. (1956)**: Dartmouth Conference - founding of AI\n  - **Newell & Simon (1976)**: Physical Symbol System Hypothesis\n  - **Searle (1980)**: Chinese Room argument\n  - **Chalmers (1995)**: Hard problem of consciousness\n\n  ## Cross-Domain Integration\n\n  - **Philosophy**: Mind-body problem, intentionality, qualia\n  - **Neuroscience**: Neural correlates of cognition\n  - **Mathematics**: Goedel incompleteness, logical foundations\n  - **Linguistics**: Compositionality, semantic grounding\n\n  ## Research Questions\n\n  1. What computational processes constitute intelligence?\n  2. Can symbolic manipulation produce understanding?\n  3. What are the computational limits of cognition?\n  4. How does meaning emerge from syntax?\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Conversion Pipeline",
+    "Data Fabric Architecture"
+  ],
+  "wiki_links": [
+    "Artificial Intelligence",
+    "ArtificialIntelligenceDomain",
+    "Cognitive Science",
+    "Machine Learning",
+    "Philosophy of Mind",
+    "Theoretical Computer Science"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:computation-and-intelligence-domain",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ComputationAndIntelligenceDomain",
+    "content_hash": "sha256-12-f2a92546849f",
+    "legacy_term_id": "AI-7008",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:computation-and-intelligence-domain",
+    "schema_version": "v2",
+    "term_id": "AI-7008",
+    "preferred_term": "Computation And Intelligence Domain",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A foundational domain at the intersection of computational theory and cognitive science, encompassing concepts related to algorithmic information processing, computational complexity, machine cognition, and the theoretical underpinnings of intelligent behaviour in both natural and artificial systems.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "stable",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ComputationAndIntelligenceDomain",
+    "owl_role": "Domain",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArtificialIntelligenceDomain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Theoretical Computer Science"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

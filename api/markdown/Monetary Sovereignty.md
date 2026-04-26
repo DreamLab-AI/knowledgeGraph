@@ -1,144 +1,158 @@
-- ### OntologyBlock
-  id:: monetary-sovereignty-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9970
-	- source-domain:: mv
-	- preferred-term:: Monetary Sovereignty
-	- status:: active
-	- owl:class:: mv:MonetarySovereignty
-	- belongsToDomain:: [[metaverse]]
-	- definition:: A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.
-	- #### Relationships
-	  id:: monetary-sovereignty-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Economic Governance]]
-		- related-to:: [[Central Bank Digital Currency]]
-		- related-to:: [[Digital Currency]]
-		- enables:: [[National Financial Control]]
+iri:: http://narrativegoldmine.com/spatial-computing#MonetarySovereignty
+uri:: urn:visionclaw:concept:spatial-computing:monetary-sovereignty
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:monetary-sovereignty
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Monetary Sovereignty
+content-hash:: sha256-12-bf02a98ecfa7
+legacy-term-id:: MV-9970
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Global CBDC Landscape
+- ### Definition
+  - A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.
 
-### Adoption Statistics
-- 137 countries exploring CBDCs
-- 98% of global GDP represented
-- 72 countries in advanced phase
-- 49 pilot projects worldwide
-- 3 fully launched (Bahamas, Jamaica, Nigeria)
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MonetarySovereignty
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Growth Projections
-- 307.1 million payments in 2024
-- 7.8 billion projected by 2031
-- Card network competition
-- Stablecoin response
-- Digital transformation
+- ### Relationships
+  - is-subclass-of:: [[Economic Governance]]
+  - enables:: [[National Financial Control]]
 
-## Major CBDC Initiatives
+- ### Content
 
-### Digital Yuan (e-CNY)
-- World's largest pilot
-- 7 trillion e-CNY transactions
-- $986 billion volume (June 2024)
-- 17 provincial regions
-- Strategic hedge against dollar
+  ## Global CBDC Landscape
 
-### Digital Euro
-- ECB preparation phase (October 2023)
-- European monetary sovereignty
-- Reduced US provider reliance
-- Payment system independence
-- Cross-border efficiency
+  ### Adoption Statistics
+  - 137 countries exploring CBDCs
+  - 98% of global GDP represented
+  - 72 countries in advanced phase
+  - 49 pilot projects worldwide
+  - 3 fully launched (Bahamas, Jamaica, Nigeria)
 
-### Digital Rupee (India)
-- Second-largest pilot
-- 334% growth in circulation
-- Retail and wholesale expansion
-- Offline functionality
-- Broader participation
+  ### Growth Projections
+  - 307.1 million payments in 2024
+  - 7.8 billion projected by 2031
+  - Card network competition
+  - Stablecoin response
+  - Digital transformation
 
-## Sovereignty Motivations
+  ## Major CBDC Initiatives
 
-### State Control
-- Currency substitution defence
-- Informal economy formalisation
-- Banking system reach
-- Economic territory assertion
-- Financial system stability
+  ### Digital Yuan (e-CNY)
+  - World's largest pilot
+  - 7 trillion e-CNY transactions
+  - $986 billion volume (June 2024)
+  - 17 provincial regions
+  - Strategic hedge against dollar
 
-### Strategic Benefits
-- Payment system independence
-- Cross-border transaction control
-- Sanctions resistance
-- Trade facilitation
-- Geopolitical positioning
+  ### Digital Euro
+  - ECB preparation phase (October 2023)
+  - European monetary sovereignty
+  - Reduced US provider reliance
+  - Payment system independence
+  - Cross-border efficiency
 
-## Technology Integration
+  ### Digital Rupee (India)
+  - Second-largest pilot
+  - 334% growth in circulation
+  - Retail and wholesale expansion
+  - Offline functionality
+  - Broader participation
 
-### Blockchain Applications
-- Immutable records
-- Decentralised ledger option
-- Transaction transparency
-- Smart contract capability
-- Programmable money
+  ## Sovereignty Motivations
 
-### Design Considerations
-- Centralised control
-- Privacy balance
-- Interoperability
-- Scalability
-- Security
+  ### State Control
+  - Currency substitution defence
+  - Informal economy formalisation
+  - Banking system reach
+  - Economic territory assertion
+  - Financial system stability
 
-## Policy Implications
+  ### Strategic Benefits
+  - Payment system independence
+  - Cross-border transaction control
+  - Sanctions resistance
+  - Trade facilitation
+  - Geopolitical positioning
 
-### Privacy Concerns
-- Transaction traceability
-- Real-time monitoring
-- Programmable restrictions
-- Government surveillance
-- Civil liberties balance
+  ## Technology Integration
 
-### Regulatory Framework
-- AML compliance
-- KYC requirements
-- Cross-border regulations
-- Consumer protection
-- Financial stability
+  ### Blockchain Applications
+  - Immutable records
+  - Decentralised ledger option
+  - Transaction transparency
+  - Smart contract capability
+  - Programmable money
 
-## US Position
+  ### Design Considerations
+  - Centralised control
+  - Privacy balance
+  - Interoperability
+  - Scalability
+  - Security
 
-### Policy Stance
-- 2025 Executive Order halt
-- Retail CBDC opposition
-- Only country to cease work
-- Privacy concerns cited
-- Private sector preference
+  ## Policy Implications
 
-### Global Outlier
-- Central bank divergence
-- Dollar dominance reliance
-- Alternative approaches
-- Regulatory uncertainty
-- Market-driven solutions
+  ### Privacy Concerns
+  - Transaction traceability
+  - Real-time monitoring
+  - Programmable restrictions
+  - Government surveillance
+  - Civil liberties balance
 
-## Future Outlook
+  ### Regulatory Framework
+  - AML compliance
+  - KYC requirements
+  - Cross-border regulations
+  - Consumer protection
+  - Financial stability
 
-### Emerging Trends
-- Programmable money expansion
-- Cross-border CBDC systems
-- Multi-CBDC bridges
-- Tokenised deposits
-- Hybrid architectures
+  ## US Position
 
-### Challenges
-- Privacy preservation
-- Interoperability standards
-- Technical scalability
-- Political acceptance
-- International coordination
+  ### Policy Stance
+  - 2025 Executive Order halt
+  - Retail CBDC opposition
+  - Only country to cease work
+  - Privacy concerns cited
+  - Private sector preference
 
-## Metadata
+  ### Global Outlier
+  - Central bank divergence
+  - Dollar dominance reliance
+  - Alternative approaches
+  - Regulatory uncertainty
+  - Market-driven solutions
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Outlook
+
+  ### Emerging Trends
+  - Programmable money expansion
+  - Cross-border CBDC systems
+  - Multi-CBDC bridges
+  - Tokenised deposits
+  - Hybrid architectures
+
+  ### Challenges
+  - Privacy preservation
+  - Interoperability standards
+  - Technical scalability
+  - Political acceptance
+  - International coordination
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

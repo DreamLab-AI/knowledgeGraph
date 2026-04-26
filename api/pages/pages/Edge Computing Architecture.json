@@ -1,40 +1,47 @@
 {
-  "id": "Edge Computing Architecture",
+  "id": "edge-computing-architecture",
   "title": "Edge Computing Architecture",
-  "content": "- ### OntologyBlock\n  id:: edge-computing-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9890\n\t- source-domain:: mv\n\t- preferred-term:: Edge Computing Architecture\n\t- status:: active\n\t- owl:class:: mv:EdgeComputingArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.\n\t- #### Relationships\n\t  id:: edge-computing-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Distributed System Architecture]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[5G Networks]]\n\t\t- enables:: [[Low-Latency Experiences]]\n\n## Technical Details\n\n### Architecture Components\n- **Edge Nodes**: Local processing units near end-users\n- **Fog Computing Layer**: Intermediate processing between edge and cloud\n- **Cloud Backend**: Large-scale data storage and economic operations\n- **Hybrid Architecture**: Combination of edge and cloud for optimal performance\n\n### Performance Benefits\n- 50% latency reduction compared to cloud-based metaverse applications (Fog-Edge architecture)\n- Sub-20ms roundtrip latency achievable for preventing cybersickness\n- Distributed computational load ensuring scalability as metaverse grows\n\n### Technical Requirements\n- Intel predicts thousand-fold increase in collective computing power needed for full metaverse enablement\n- High-bandwidth connections between edge nodes and cloud infrastructure\n- Real-time data processing for immersive experiences\n\n## Applications\n\n### XR Device Support\n- VR headset compute offloading\n- AR glasses real-time processing\n- Reduced hardware cost through cloud/edge compute distribution\n- Improved mobility through lighter, less power-hungry devices\n\n### Metaverse Operations\n- Collision detection in virtual universe\n- High-computational 3D physics simulations\n- Avatar physics emulation\n- Graphics rendering computation\n- BoundlessXR and CloudXR platform support\n\n## Market Context\n\n### Growth Projections\n- Metaverse industry: $500 million (2020) to $800 billion by 2024\n- Edge computing critical for $1 trillion revenue opportunity by end of 2025 (Accenture estimate)\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:EdgeComputingArchitecture\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Distributed System Architecture]]\n  - enables:: [[Low-Latency Experiences]]\n\n- ### Content\n\n  ## Technical Details\n\n  ### Architecture Components\n  - **Edge Nodes**: Local processing units near end-users\n  - **Fog Computing Layer**: Intermediate processing between edge and cloud\n  - **Cloud Backend**: Large-scale data storage and economic operations\n  - **Hybrid Architecture**: Combination of edge and cloud for optimal performance\n\n  ### Performance Benefits\n  - 50% latency reduction compared to cloud-based metaverse applications (Fog-Edge architecture)\n  - Sub-20ms roundtrip latency achievable for preventing cybersickness\n  - Distributed computational load ensuring scalability as metaverse grows\n\n  ### Technical Requirements\n  - Intel predicts thousand-fold increase in collective computing power needed for full metaverse enablement\n  - High-bandwidth connections between edge nodes and cloud infrastructure\n  - Real-time data processing for immersive experiences\n\n  ## Applications\n\n  ### XR Device Support\n  - VR headset compute offloading\n  - AR glasses real-time processing\n  - Reduced hardware cost through cloud/edge compute distribution\n  - Improved mobility through lighter, less power-hungry devices\n\n  ### Metaverse Operations\n  - Collision detection in virtual universe\n  - High-computational 3D physics simulations\n  - Avatar physics emulation\n  - Graphics rendering computation\n  - BoundlessXR and CloudXR platform support\n\n  ## Market Context\n\n  ### Growth Projections\n  - Metaverse industry: $500 million (2020) to $800 billion by 2024\n  - Edge computing critical for $1 trillion revenue opportunity by end of 2025 (Accenture estimate)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Distributed System Architecture",
-    "Edge Orchestration",
-    "Metaverse Architecture Stack"
+    "Edge Orchestration"
   ],
   "wiki_links": [
-    "5G Networks",
     "Distributed System Architecture",
     "Low-Latency Experiences",
-    "metaverse",
-    "Cloud Computing"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:edge-computing-architecture",
+    "iri": "http://narrativegoldmine.com/spatial-computing#EdgeComputingArchitecture",
+    "content_hash": "sha256-12-009a25a7a744",
+    "legacy_term_id": "MV-9890",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:edge-computing-architecture",
+    "schema_version": "v2",
     "term_id": "MV-9890",
     "preferred_term": "Edge Computing Architecture",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#EdgeComputingArchitecture",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:EdgeComputingArchitecture",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:EdgeComputingArchitecture",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Distributed System Architecture"
@@ -49,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Cloud Computing",
-        "5G Networks"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

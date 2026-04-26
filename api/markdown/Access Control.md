@@ -1,74 +1,86 @@
-- ### OntologyBlock
-  id:: access-control-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7003
-	- preferred-term:: Access Control
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.
-	- maturity:: reviewed
-	- owl:class:: ngm:AccessControl
-	- owl:role:: Concept
-	- belongsToDomain:: [[Core Technology]]
+iri:: http://narrativegoldmine.com/infrastructure#AccessControl
+uri:: urn:visionclaw:concept:infrastructure:access-control
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:access-control
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Access Control
+content-hash:: sha256-12-089f73f660f4
+legacy-term-id:: NGM-7003
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[Security Mechanism]]
-- related-to:: [[Authentication Service]], [[Identity Management]], [[Security Policy]]
-- enables:: [[Data Protection]], [[System Security]], [[Compliance]]
-- implements:: [[Authorisation]], [[Permission Management]]
+- ### Definition
+  - Access control is a fundamental security mechanism that regulates which users, systems, or processes can view, use, or modify resources within a computing environment. It encompasses the policies, procedures, and technologies that govern the granting and restricting of access rights, ensuring that only authorised entities can perform specific actions on protected resources based on their identity, role, or attributes.
 
-## Components
+- ### Semantic Classification
+  - owl-class:: infrastructure:AccessControl
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Core Technology]]
 
-### Core Elements
-- **Authentication**: Verifying the identity of users or systems before granting access
-- **Authorisation**: Determining what actions authenticated entities can perform
-- **Auditing**: Recording access attempts and actions for accountability and compliance
-- **Access Control Lists (ACLs)**: Data structures that specify permissions for resources
+- ### Relationships
+  - bridges-to:: [[Cryptography]]
+  - is-subclass-of:: [[Security Mechanism]]
+  - enables:: [[Data Protection]], [[System Security]], [[Compliance]]
+  - implements:: [[Authorisation]], [[Permission Management]]
 
-### Security Models
+- ### Content
 
-#### Discretionary Access Control (DAC)
-Resource owners have discretion to decide who can access their resources. Commonly used in operating systems where file owners set permissions for other users and groups.
+  ## Components
 
-#### Mandatory Access Control (MAC)
-Centralised security administration assigns security labels and classifications. Users cannot change access policies; ideal for high-security environments like defence systems.
+  ### Core Elements
+  - **Authentication**: Verifying the identity of users or systems before granting access
+  - **Authorisation**: Determining what actions authenticated entities can perform
+  - **Auditing**: Recording access attempts and actions for accountability and compliance
+  - **Access Control Lists (ACLs)**: Data structures that specify permissions for resources
 
-#### Role-Based Access Control (RBAC)
-Permissions are assigned to roles rather than individual users. Users are granted roles based on job functions, implementing the principle of least privilege effectively for large organisations.
+  ### Security Models
 
-#### Attribute-Based Access Control (ABAC)
-Access decisions based on attributes of users, resources, and environmental conditions. Policies evaluate multiple attributes dynamically, enabling fine-grained, context-aware access control.
+  #### Discretionary Access Control (DAC)
+  Resource owners have discretion to decide who can access their resources. Commonly used in operating systems where file owners set permissions for other users and groups.
 
-#### Rule-Based Access Control (RuBAC)
-System-wide policies grant or deny access based on specific conditions such as time of day, location, or device type.
+  #### Mandatory Access Control (MAC)
+  Centralised security administration assigns security labels and classifications. Users cannot change access policies; ideal for high-security environments like defence systems.
 
-## Implementation
+  #### Role-Based Access Control (RBAC)
+  Permissions are assigned to roles rather than individual users. Users are granted roles based on job functions, implementing the principle of least privilege effectively for large organisations.
 
-### Enterprise Deployment
-1. **Policy Definition**: Establish access control policies aligned with security requirements
-2. **Identity Integration**: Connect with identity providers and directory services
-3. **Role Engineering**: Define roles that map to organisational functions
-4. **Permission Assignment**: Map permissions to roles or attributes
-5. **Enforcement Points**: Deploy controls at network, application, and data layers
+  #### Attribute-Based Access Control (ABAC)
+  Access decisions based on attributes of users, resources, and environmental conditions. Policies evaluate multiple attributes dynamically, enabling fine-grained, context-aware access control.
 
-### Best Practices
-- Implement principle of least privilege
-- Regular access reviews and recertification
-- Separation of duties for sensitive operations
-- Multi-factor authentication for privileged access
-- Comprehensive audit logging
+  #### Rule-Based Access Control (RuBAC)
+  System-wide policies grant or deny access based on specific conditions such as time of day, location, or device type.
 
-### Technology Components
-- Identity and Access Management (IAM) platforms
-- Privileged Access Management (PAM) solutions
-- Directory services (LDAP, Active Directory)
-- API gateways with access control
-- Network access control (NAC) systems
+  ## Implementation
 
-## Metadata
+  ### Enterprise Deployment
+  1. **Policy Definition**: Establish access control policies aligned with security requirements
+  2. **Identity Integration**: Connect with identity providers and directory services
+  3. **Role Engineering**: Define roles that map to organisational functions
+  4. **Permission Assignment**: Map permissions to roles or attributes
+  5. **Enforcement Points**: Deploy controls at network, application, and data layers
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched from stub
-- **References**: 12 pages reference this concept
+  ### Best Practices
+  - Implement principle of least privilege
+  - Regular access reviews and recertification
+  - Separation of duties for sensitive operations
+  - Multi-factor authentication for privileged access
+  - Comprehensive audit logging
+
+  ### Technology Components
+  - Identity and Access Management (IAM) platforms
+  - Privileged Access Management (PAM) solutions
+  - Directory services (LDAP, Active Directory)
+  - API gateways with access control
+  - Network access control (NAC) systems
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

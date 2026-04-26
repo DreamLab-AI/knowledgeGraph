@@ -1,0 +1,68 @@
+{
+  "id": "information-security",
+  "title": "Information Security",
+  "content": "- ### Definition\n  - Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:InformationSecurity\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Implements adversarial robustness and certified defenses\n  - Employs privacy-preserving machine learning techniques\n  - Detects and mitigates data poisoning and backdoor attacks\n  - Secures model deployment and API endpoints\n  - Ensures compliance with data protection regulations\n\n  ## Overview\n\n  Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.\n\n  #### Related Concepts\n  - [[Adversarial Machine Learning]]\n  - [[Differential Privacy]]\n  - [[Federated Learning]]\n  - [[Secure Computation]]\n\n  #### References\n  - Goodfellow, I. et al. (2014). Explaining and Harnessing Adversarial Examples. ICLR 2015.\n  - Dwork, C. (2006). Differential Privacy. ICALP 2006.\n  - Papernot, N. et al. (2018). SoK: Security and Privacy in Machine Learning. IEEE S&P 2018.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "AI Risks",
+    "Asymmetric Encryption"
+  ],
+  "wiki_links": [
+    "Adversarial Machine Learning",
+    "Differential Privacy",
+    "Federated Learning",
+    "Secure Computation"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:information-security",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#InformationSecurity",
+    "content_hash": "sha256-12-19e548c41d65",
+    "legacy_term_id": "AI-9017",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:information-security",
+    "schema_version": "v2",
+    "term_id": "AI-9017",
+    "preferred_term": "Information Security",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation. This includes defending against adversarial examples, model inversion attacks, data poisoning, membership inference, and model extraction. Security measures encompass differential privacy for data protection, federated learning for distributed privacy-preserving training, robust training methods, secure multi-party computation, and encryption of model parameters. As AI systems become critical infrastructure, information security ensures confidentiality, integrity, availability, and trustworthiness.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:InformationSecurity",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,0 +1,70 @@
+{
+  "id": "universal-scene-description",
+  "title": "Universal Scene Description",
+  "content": "- ### Definition\n  - Universal Scene Description is a concept within the mv domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:UniversalSceneDescription\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n  ---\n  id: MV-1015\n  type: concept\n  domain: metaverse\n  subdomain: scene-description\n  status: active\n  created: 2025-11-24\n  modified: 2025-11-24\n  ---\n  # Universal Scene Description\n\n  #### Key Characteristics\n  - **Composability**: Combine multiple USD files into unified scene\n  - **Layering**: Non-destructive overrides and variants\n  - **Scalability**: Handle massive scenes efficiently\n  - **Extensibility**: Custom schemas and data types\n  - **Interoperability**: Bridge between DCC tools and engines\n\n  ## Core Concepts\n\n  ### Scene Graph\n  - Hierarchical organization of primitives (prims)\n  - Parent-child relationships (transforms, instances)\n  - Properties and attributes on prims\n  - Relationships between prims\n\n  ### Composition Arcs\n  - **References**: Include external USD files\n  - **Payloads**: Lazy-loading for performance\n  - **Variants**: Selectable alternatives (LODs, configurations)\n  - **Inherits**: Share common properties\n  - **Specializes**: Template instantiation\n\n  ### Layering System\n  - **Opinions**: Overrides from different layers\n  - **Layer Stack**: Ordered composition of layers\n  - **Strength Ordering**: LIVRPS (Local, Inherits, Variants, References, Payload, Specializes)\n  - **Non-Destructive**: Original data unchanged\n\n  ### Schemas\n  - **Typed Schemas**: Define prim types (Mesh, Camera, Light)\n  - **API Schemas**: Add behaviors (Physics, Animation)\n  - **Custom Schemas**: Extend with domain-specific data\n  - **Schema Registry**: Discover and validate schemas\n\n  ## File Formats\n\n  ### USD Binary (.usd, .usdc)\n  - Compact binary format (Crate)\n  - Fast loading and parsing\n  - Smaller file sizes\n  - Not human-readable\n\n  ### USD ASCII (.usda)\n  - Human-readable text format\n  - Version control friendly\n  - Debugging and inspection\n  - Larger file sizes\n\n  ### USD Archive (.usdz)\n  - Uncompressed ZIP archive\n  - Self-contained asset package\n  - Includes textures and dependencies\n  - Apple AR Quick Look format\n\n  ## Data Types in USD\n\n  ### Geometry\n  - Meshes (polygonal and subdivision surfaces)\n  - Curves (NURBS, Bezier)\n  - Points and instancing\n  - Volumes (OpenVDB)\n\n  ### Materials & Shading\n  - MaterialX integration\n  - Shader networks\n  - Texture references\n  - Material binding\n\n  ### Animation\n  - Keyframe animation\n  - Skeletal animation (UsdSkel)\n  - Blend shapes/morph targets\n  - Time-sampled attributes\n\n  ### Physics\n  - Rigid bodies and colliders\n  - Constraints and joints\n  - Physics materials\n  - Scene queries\n\n  ### Lighting & Cameras\n  - Camera properties (FOV, clipping)\n  - Light types (directional, point, area, dome)\n  - Environment lighting\n  - Render settings\n\n  ## Definition\n\n  Open-source, extensible framework for describing, composing, simulating, and collaborating on 3D scenes, supporting hierarchical composition, non-destructive editing through layering, efficient streaming, and interoperability across diverse tools and platforms in film, games, and metaverse applications.\n\n  #### Future Directions\n  - Expanded schema ecosystem\n  - Better runtime engine integration\n  - Cloud-based USD collaboration\n  - AI/ML integration for content generation\n  - Enhanced physics and simulation support\n\n  #### Related Concepts\n  - [[Interoperability]]\n  - [[3D File Format]]\n  - [[Asset Pipeline]]\n  - [[Virtual Production]]\n  - [[Scene Graph]]\n\n  ## Applications\n\n  ### Film & Animation\n  - Pixar's production pipeline\n  - VFX shot assembly\n  - Asset sharing across vendors\n  - Lighting and rendering\n\n  ### Game Development\n  - Asset import/export\n  - Level design workflows\n  - Procedural generation integration\n  - Cross-platform content\n\n  ### Metaverse Platforms\n  - Interoperable asset standards\n  - User-generated content\n  - World composition\n  - Streaming large environments\n\n  ### Virtual Production\n  - Real-time rendering\n  - LED volume integration\n  - Camera tracking\n  - On-set visualization\n\n  ### AR/VR\n  - Apple AR Quick Look (USDZ)\n  - Spatial computing experiences\n  - 3D asset delivery\n  - Cross-device compatibility\n\n  ## Advantages\n\n  - Industry-standard with broad adoption\n  - Non-destructive workflows\n  - Handles massive complexity\n  - Efficient streaming and lazy loading\n  - Extensible and future-proof\n\n  ## Limitations\n\n  - Learning curve for composition concepts\n  - Complex layer resolution rules\n  - Overhead for simple scenes\n  - Limited runtime engine support (improving)\n  - Schema versioning challenges\n\n  ## Tooling & Ecosystem\n\n  ### Creation Tools\n  - **Blender**: USD import/export\n  - **Maya**: Native USD support (Maya USD)\n  - **Houdini**: Deep USD integration (Solaris)\n  - **Unreal Engine**: USD Stage editor\n  - **Unity**: USD SDK integration\n\n  ### Viewers\n  - **usdview**: Official Pixar viewer\n  - **Omniverse**: NVIDIA's collaborative platform\n  - **Autodesk viewers**: Integrated USD support\n\n  ### Libraries & APIs\n  - **USD Core**: C++ and Python APIs\n  - **Hydra**: Rendering framework\n  - **AR (Asset Resolution)**: Custom resolvers\n\n  ## Metaverse Interoperability\n\n  ### Standards Initiatives\n  - **OpenUSD Alliance**: Industry consortium\n  - **Khronos Group**: Integration with glTF\n  - **Metaverse Standards Forum**: Cross-platform interop\n\n  ### Adoption by Platforms\n  - NVIDIA Omniverse (native USD)\n  - Apple Vision Pro (USDZ)\n  - Epic Unreal Engine (increasing support)\n  - Adobe Substance 3D (USD export)\n\n  ### Challenges\n  - Runtime performance optimization\n  - Shader/material translation\n  - Physics representation differences\n  - Level-of-detail strategies\n\n  ## Best Practices\n\n  ### Scene Organization\n  - Use meaningful prim names and hierarchies\n  - Organize with variants for configurations\n  - Reference external assets, don't inline\n  - Use payloads for optional heavy data\n\n  ### Layering Strategy\n  - Base layer: Shared, stable data\n  - Override layers: Department-specific edits\n  - Session layers: Temporary working state\n  - Minimize layer depth for performance\n\n  ### Performance\n  - Use instancing for repeated geometry\n  - Lazy-load with payloads\n  - Optimize topology and attribute counts\n  - Stream LODs via variants\n\n  ### Collaboration\n  - Consistent naming conventions\n  - Schema documentation\n  - Version control integration (text diffs for .usda)\n  - Asset versioning strategy\n\n  #### References\n  - Pixar (2023). *Universal Scene Description Documentation*\n  - Burgess, C. et al. (2022). \"OpenUSD: A Foundation for the Metaverse\"\n  - NVIDIA (2023). *Omniverse USD Composer Documentation*\n  - Apple (2023). *USDZ File Format Specification*\n\n  ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Cross Platform Digital Twins",
+    "3D Scene Exchange Protocol (SXP)"
+  ],
+  "wiki_links": [
+    "3D File Format",
+    "Asset Pipeline",
+    "Interoperability",
+    "Metaverse",
+    "Scene Graph",
+    "Virtual Production"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:universal-scene-description",
+    "iri": "http://narrativegoldmine.com/spatial-computing#UniversalSceneDescription",
+    "content_hash": "sha256-12-503508318027",
+    "legacy_term_id": "MV-universal-scene-description",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:universal-scene-description",
+    "schema_version": "v2",
+    "term_id": "MV-universal-scene-description",
+    "preferred_term": "Universal Scene Description",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Universal Scene Description is a concept within the mv domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:UniversalSceneDescription",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

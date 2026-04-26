@@ -1,36 +1,47 @@
 {
-  "id": "Asset Tokenization",
+  "id": "asset-tokenization",
   "title": "Asset Tokenization",
-  "content": "- ### OntologyBlock\n  id:: mv9517-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9517\n\t- preferred-term:: Asset Tokenization\n\t- source-domain:: mv\n\t- owl:class:: mv:AssetTokenization\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Asset Tokenization is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nAsset Tokenization represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - Asset Tokenization is a concept within the metaverse domain. Further enrichment pending.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AssetTokenization\n  - owl-role:: concept\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]] (bc)\n\n- ### Content\n\n  ## Overview\n\n  Asset Tokenization represents an abstract concept in the metaverse ontology hierarchy.\n\n  #### Related Concepts\n  - [[owl:Thing]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "NFT Wrapping",
     "Digital Asset Ecosystem",
-    "Royalty Mechanism",
     "Shared Ownership Model"
   ],
   "wiki_links": [
+    "Blockchain",
     "owl:Thing"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:asset-tokenization",
+    "iri": "http://narrativegoldmine.com/metaverse#AssetTokenization",
+    "content_hash": "sha256-12-8ae12f76c7d6",
+    "legacy_term_id": "MV-9517",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:asset-tokenization",
+    "schema_version": "v2",
     "term_id": "MV-9517",
     "preferred_term": "Asset Tokenization",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AssetTokenization",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Asset Tokenization is a concept within the metaverse domain. Further enrichment pending.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:AssetTokenization",
-    "owl_physicality": "abstract",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AssetTokenization",
     "owl_role": "concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -40,18 +51,17 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

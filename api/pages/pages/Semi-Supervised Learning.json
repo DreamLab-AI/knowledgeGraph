@@ -1,63 +1,67 @@
 {
-  "id": "Semi-Supervised Learning",
+  "id": "semi-supervised-learning",
   "title": "Semi-Supervised Learning",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1011\n  - preferred-term:: Semi-Supervised Learning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:SemiSupervisedLearning\n\n### Relationships\n- is-subclass-of:: [[Machine Learning]]\n- skos:related:: [[Supervised Learning]]\n- skos:related:: [[Unsupervised Learning]]\n- skos:related:: [[Active Learning]]\n- uses:: [[Self-Training]]\n- uses:: [[Co-Training]]\n- enables:: [[Data-Efficient Learning]]\n\n### Definition\nSemi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.\n\n### Core Assumptions\n**Smoothness Assumption:**\n- Points close together likely share same label\n- Decision boundaries in low-density regions\n\n**Cluster Assumption:**\n- Data forms distinct clusters\n- Points in same cluster share labels\n\n**Manifold Assumption:**\n- High-dimensional data lies on lower-dimensional manifold\n- Learn manifold structure from unlabeled data\n\n### Common Techniques\n**Self-Training:**\n1. Train on labeled data\n2. Predict labels for unlabeled data\n3. Add high-confidence predictions to training set\n4. Retrain iteratively\n\n**Co-Training:**\n- Split features into independent views\n- Train separate classifiers on each view\n- Exchange high-confidence predictions\n- Effective when views are conditionally independent\n\n**Graph-Based Methods:**\n- Represent data as graph\n- Propagate labels through edges\n- Label spreading/propagation algorithms\n\n**Generative Models:**\n- Model joint distribution P(X,Y)\n- Use unlabeled data to improve P(X)\n- Examples: Gaussian mixture models, VAEs\n\n**Consistency Regularization:**\n- Model should give consistent predictions for perturbed versions of same input\n- Used in modern deep learning (MixMatch, FixMatch)\n\n### Modern Deep Learning Approaches\n- Pseudo-labeling\n- Mean Teacher\n- MixMatch / FixMatch / FlexMatch\n- Contrastive learning with labels\n- Pre-training + fine-tuning\n\n### Applications\n- Text classification (limited labeled documents)\n- Image recognition (few labeled images)\n- Speech recognition\n- Medical diagnosis (limited expert annotations)\n- Natural language processing\n- Computer vision\n\n### Advantages\n- Reduces labeling costs dramatically\n- Improves performance with limited labels\n- Leverages abundant unlabeled data\n- Practical for real-world scenarios\n\n### Challenges\n- Risk of confirmation bias in self-training\n- Quality depends on initial labeled data\n- Can amplify errors if assumptions violated\n- Computational cost of iterative methods",
+  "content": "- ### Definition\n  - Semi-Supervised Learning is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:SemiSupervisedLearning\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Machine Learning]]\n  - enables:: [[Data-Efficient Learning]]\n\n- ### Content\n\n  ### Definition\n  Semi-supervised learning is a machine learning paradigm that combines small amounts of labeled data with large amounts of unlabeled data during training. It addresses the practical challenge that labeling data is expensive and time-consuming, while unlabeled data is abundant, by leveraging the structure and patterns in unlabeled data to improve model performance beyond what labeled data alone could achieve.\n\n  ### Core Assumptions\n  **Smoothness Assumption:**\n  - Points close together likely share same label\n  - Decision boundaries in low-density regions\n\n  **Cluster Assumption:**\n  - Data forms distinct clusters\n  - Points in same cluster share labels\n\n  **Manifold Assumption:**\n  - High-dimensional data lies on lower-dimensional manifold\n  - Learn manifold structure from unlabeled data\n\n  ### Common Techniques\n  **Self-Training:**\n  1. Train on labeled data\n  2. Predict labels for unlabeled data\n  3. Add high-confidence predictions to training set\n  4. Retrain iteratively\n\n  **Co-Training:**\n  - Split features into independent views\n  - Train separate classifiers on each view\n  - Exchange high-confidence predictions\n  - Effective when views are conditionally independent\n\n  **Graph-Based Methods:**\n  - Represent data as graph\n  - Propagate labels through edges\n  - Label spreading/propagation algorithms\n\n  **Generative Models:**\n  - Model joint distribution P(X,Y)\n  - Use unlabeled data to improve P(X)\n  - Examples: Gaussian mixture models, VAEs\n\n  **Consistency Regularization:**\n  - Model should give consistent predictions for perturbed versions of same input\n  - Used in modern deep learning (MixMatch, FixMatch)\n\n  ### Modern Deep Learning Approaches\n  - Pseudo-labeling\n  - Mean Teacher\n  - MixMatch / FixMatch / FlexMatch\n  - Contrastive learning with labels\n  - Pre-training + fine-tuning\n\n  ### Applications\n  - Text classification (limited labeled documents)\n  - Image recognition (few labeled images)\n  - Speech recognition\n  - Medical diagnosis (limited expert annotations)\n  - Natural language processing\n  - Computer vision\n\n  ### Advantages\n  - Reduces labeling costs dramatically\n  - Improves performance with limited labels\n  - Leverages abundant unlabeled data\n  - Practical for real-world scenarios\n\n  ### Challenges\n  - Risk of confirmation bias in self-training\n  - Quality depends on initial labeled data\n  - Can amplify errors if assumptions violated\n  - Computational cost of iterative methods\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Active Learning"
+    "Variational Autoencoders"
   ],
   "wiki_links": [
     "Data-Efficient Learning",
-    "Co-Training",
-    "Supervised Learning",
-    "Self-Training",
-    "Active Learning",
-    "Unsupervised Learning",
     "Machine Learning"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:semi-supervised-learning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#SemiSupervisedLearning",
+    "content_hash": "sha256-12-d32f04afc823",
+    "legacy_term_id": "AI-1011",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:semi-supervised-learning",
+    "schema_version": "v2",
     "term_id": "AI-1011",
     "preferred_term": "Semi-Supervised Learning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#SemiSupervisedLearning",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Semi-Supervised Learning is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:SemiSupervisedLearning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:SemiSupervisedLearning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Machine Learning"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Data-Efficient Learning"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,74 +1,88 @@
 {
-  "id": "Metadata Schema",
+  "id": "metadata-schema",
   "title": "Metadata Schema",
-  "content": "- ### OntologyBlock\n  id:: metadata-schema-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-8001\n\t- preferred-term:: Metadata Schema\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:MetadataSchema\n\t- owl:role:: InformationStandard\n\t- belongsToDomain:: [[Data Governance]]\n\n### Relationships\n- is-subclass-of:: [[Data Standard]]\n- related-to:: [[Ontology]], [[Semantic Web]], [[Data Catalogue]], [[Knowledge Graph]]\n- enables:: [[Data Interoperability]], [[FAIR Data Principles]], [[Data Discovery]]\n- implements:: [[Dublin Core]], [[Schema.org]], [[JSON-LD]]\n\n## Definition\n\nA **Metadata Schema** is a formal specification that defines the structure, semantics, and constraints for metadata elements used to describe information resources. It establishes standardised vocabularies enabling consistent documentation of data assets across systems and organisations.\n\n## Core Components\n\n### Schema Elements\n- **Element Name**: Unique identifier for the metadata attribute\n- **Semantics**: Formal meaning and interpretation rules\n- **Syntax**: Data type, format, and encoding constraints\n- **Cardinality**: Required, optional, or repeatable designations\n- **Controlled Vocabularies**: Permitted value sets or taxonomies\n\n### Schema Types\n1. **Descriptive Schemas**: Resource discovery and identification (Dublin Core)\n2. **Structural Schemas**: Data organisation and relationships (XML Schema)\n3. **Administrative Schemas**: Management and provenance tracking\n4. **Technical Schemas**: Format, encoding, and processing specifications\n\n## Standards and Frameworks\n\n### Core Standards\n- **Dublin Core Metadata Initiative**: 15 core elements for resource description\n- **Schema.org**: Web content structured data vocabulary\n- **Data Documentation Initiative (DDI)**: Survey and observational data\n- **ISO 19115**: Geographic information metadata\n\n### Semantic Web Standards\n- **RDF Schema (RDFS)**: Vocabulary definition framework\n- **Web Ontology Language (OWL)**: Complex ontology specification\n- **SHACL**: Validation constraints and data quality rules\n- **JSON-LD**: Semantic contexts for linked data\n\n## Applications\n\n### Data Governance\n- Asset inventory and cataloguing\n- Lineage and provenance tracking\n- Quality assessment and compliance\n- Access control and classification\n\n### Knowledge Management\n- Semantic search and discovery\n- Cross-system interoperability\n- Knowledge graph construction\n- Automated metadata generation\n\n## References\n- [OpenMetadata Standards](https://openmetadatastandards.org/)\n- [Metadata Standard - Wikipedia](https://en.wikipedia.org/wiki/Metadata_standard)\n- [How to FAIR - Metadata](https://www.howtofair.dk/how-to-fair/metadata/)\n\n## Metadata\n- **Last Updated**: 2025-12-29\n- **Review Status**: Reviewed\n- **References**: 5 pages reference this concept",
+  "content": "- ### Definition\n  - A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:MetadataSchema\n  - owl-role:: InformationStandard\n  - belongs-to-domain:: [[Data Governance]]\n\n- ### Relationships\n  - is-subclass-of:: [[Data Standard]]\n  - enables:: [[Data Interoperability]], [[FAIR Data Principles]], [[Data Discovery]]\n  - implements:: [[Dublin Core]], [[Schema.org]], [[JSON-LD]]\n\n- ### Content\n\n  ## Definition\n\n  A **Metadata Schema** is a formal specification that defines the structure, semantics, and constraints for metadata elements used to describe information resources. It establishes standardised vocabularies enabling consistent documentation of data assets across systems and organisations.\n\n  ## Core Components\n\n  ### Schema Elements\n  - **Element Name**: Unique identifier for the metadata attribute\n  - **Semantics**: Formal meaning and interpretation rules\n  - **Syntax**: Data type, format, and encoding constraints\n  - **Cardinality**: Required, optional, or repeatable designations\n  - **Controlled Vocabularies**: Permitted value sets or taxonomies\n\n  ### Schema Types\n  1. **Descriptive Schemas**: Resource discovery and identification (Dublin Core)\n  2. **Structural Schemas**: Data organisation and relationships (XML Schema)\n  3. **Administrative Schemas**: Management and provenance tracking\n  4. **Technical Schemas**: Format, encoding, and processing specifications\n\n  ## Standards and Frameworks\n\n  ### Core Standards\n  - **Dublin Core Metadata Initiative**: 15 core elements for resource description\n  - **Schema.org**: Web content structured data vocabulary\n  - **Data Documentation Initiative (DDI)**: Survey and observational data\n  - **ISO 19115**: Geographic information metadata\n\n  ### Semantic Web Standards\n  - **RDF Schema (RDFS)**: Vocabulary definition framework\n  - **Web Ontology Language (OWL)**: Complex ontology specification\n  - **SHACL**: Validation constraints and data quality rules\n  - **JSON-LD**: Semantic contexts for linked data\n\n  ## Applications\n\n  ### Data Governance\n  - Asset inventory and cataloguing\n  - Lineage and provenance tracking\n  - Quality assessment and compliance\n  - Access control and classification\n\n  ### Knowledge Management\n  - Semantic search and discovery\n  - Cross-system interoperability\n  - Knowledge graph construction\n  - Automated metadata generation\n\n  #### References\n  - [OpenMetadata Standards](https://openmetadatastandards.org/)\n  - [Metadata Standard - Wikipedia](https://en.wikipedia.org/wiki/Metadata_standard)\n  - [How to FAIR - Metadata](https://www.howtofair.dk/how-to-fair/metadata/)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Controlled Vocabulary",
     "Cultural Provenance Record",
     "Universal Manifest",
     "Discovery Layer",
-    "Data Provenance",
     "Crypto Token",
     "Digital Twin Interop Protocol"
   ],
   "wiki_links": [
-    "Data Governance",
-    "JSON-LD",
-    "Dublin Core",
     "Data Discovery",
-    "Schema.org",
-    "Ontology",
-    "Semantic Web",
+    "Data Governance",
     "Data Interoperability",
     "Data Standard",
-    "Data Catalogue",
-    "Knowledge Graph",
-    "FAIR Data Principles"
+    "Dublin Core",
+    "FAIR Data Principles",
+    "JSON-LD",
+    "Schema.org"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:metadata-schema",
+    "iri": "http://narrativegoldmine.com/infrastructure#MetadataSchema",
+    "content_hash": "sha256-12-673a9893641e",
+    "legacy_term_id": "NGM-8001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:metadata-schema",
+    "schema_version": "v2",
     "term_id": "NGM-8001",
     "preferred_term": "Metadata Schema",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ontology#MetadataSchema",
-    "source_domain": "ngm",
     "domain": "ngm",
-    "domain_full_name": "Narrative Gold Mine Core",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources. Metadata schemas establish standardized vocabularies and constraints that enable interoperability, discovery, and governance across data ecosystems through predefined sets of descriptive attributes tailored for specific domains or resource types.",
     "scope_note": null,
     "status": "active",
     "maturity": "reviewed",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ngm:MetadataSchema",
-    "owl_physicality": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:MetadataSchema",
     "owl_role": "InformationStandard",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Data Standard"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Data Interoperability",
+      "FAIR Data Principles",
+      "Data Discovery"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Data Governance"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
+    "other_relationships": {
+      "implements": [
+        "Dublin Core",
+        "Schema.org",
+        "JSON-LD"
       ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
     }
   }
 }

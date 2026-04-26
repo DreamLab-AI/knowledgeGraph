@@ -1,109 +1,123 @@
-- ### OntologyBlock
-  id:: ieee-p2733-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9917
-	- source-domain:: mv
-	- preferred-term:: Ieee P2733 Standards
-	- status:: active
-	- owl:class:: mv:IeeeP2733Standards
-	- belongsToDomain:: [[metaverse]]
-	- definition:: IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.
-	- #### Relationships
-	  id:: ieee-p2733-standards-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[XR Technical Standard]]
-		- related-to:: [[Ieee7000 Standard]]
-		- related-to:: [[VR Sickness Mitigation]]
-		- enables:: [[Safe Immersive Experiences]]
+iri:: http://narrativegoldmine.com/spatial-computing#IeeeP2733Standards
+uri:: urn:visionclaw:concept:spatial-computing:ieee-p2733-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:ieee-p2733-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Ieee P2733 Standards
+content-hash:: sha256-12-f1b497c44f97
+legacy-term-id:: MV-9917
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## IEEE XR Standards Portfolio
+- ### Definition
+  - IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ethical design practices that ensure safe and accessible immersive experiences.
 
-### VR Sickness Standards
-- IEEE 3079-2020: HMD-based VR sickness reduction
-- Head Mounted Display technology guidelines
-- Sickness mitigation techniques
-- User safety specifications
+- ### Semantic Classification
+  - owl-class:: spatial-computing:IeeeP2733Standards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Metaverse Standards Committee
-- Develops and maintains VR/AR standards
-- Recommended practices and guides
-- Open and accredited process
-- Global advocacy
+- ### Relationships
+  - is-subclass-of:: [[XR Technical Standard]]
+  - enables:: [[Safe Immersive Experiences]]
 
-## Key Standard Initiatives
+- ### Content
 
-### IEEE P2048
-- Standard for Metaverse
-- Terminology and definitions
-- Taxonomy development
-- Foundation for interoperability
+  ## IEEE XR Standards Portfolio
 
-### IEEE P7016
-- Ethically Aligned Design
-- Metaverse system operations
-- Value-based engineering
-- Human-centric design
+  ### VR Sickness Standards
+  - IEEE 3079-2020: HMD-based VR sickness reduction
+  - Head Mounted Display technology guidelines
+  - Sickness mitigation techniques
+  - User safety specifications
 
-### IEEE P7030
-- Ethical Assessment practices
-- Extended Reality (XR) technologies
-- Recommended practice framework
-- Risk evaluation methods
+  ### Metaverse Standards Committee
+  - Develops and maintains VR/AR standards
+  - Recommended practices and guides
+  - Open and accredited process
+  - Global advocacy
 
-### IEEE P3322
-- Comfort Requirements Guide
-- Extended Reality devices
-- Ergonomic specifications
-- User wellbeing focus
+  ## Key Standard Initiatives
 
-## Technical Challenges Addressed
+  ### IEEE P2048
+  - Standard for Metaverse
+  - Terminology and definitions
+  - Taxonomy development
+  - Foundation for interoperability
 
-### IEEE SA Working Areas
-- Better user interfaces
-- Lower system latency
-- Tightly integrated XR technologies
-- Improved 3D modelling
-- Volumetric video rendering
+  ### IEEE P7016
+  - Ethically Aligned Design
+  - Metaverse system operations
+  - Value-based engineering
+  - Human-centric design
 
-### Infrastructure Focus
-- Geospatial data acquisition
-- Rendering and storage
-- Data protection methods
-- Lower power consumption
+  ### IEEE P7030
+  - Ethical Assessment practices
+  - Extended Reality (XR) technologies
+  - Recommended practice framework
+  - Risk evaluation methods
 
-## VR Sickness Mitigation
+  ### IEEE P3322
+  - Comfort Requirements Guide
+  - Extended Reality devices
+  - Ergonomic specifications
+  - User wellbeing focus
 
-### Technology Approaches
-- Motion-to-photon latency reduction
-- Field of view optimisation
-- Frame rate stability
-- Vestibular conflict minimisation
-- Comfort mode implementations
+  ## Technical Challenges Addressed
 
-### User Safety
-- Session duration guidelines
-- Break recommendations
-- Susceptibility assessment
-- Progressive exposure protocols
+  ### IEEE SA Working Areas
+  - Better user interfaces
+  - Lower system latency
+  - Tightly integrated XR technologies
+  - Improved 3D modelling
+  - Volumetric video rendering
 
-## Conference Activities
+  ### Infrastructure Focus
+  - Geospatial data acquisition
+  - Rendering and storage
+  - Data protection methods
+  - Lower power consumption
 
-### IEEE VR 2024
-- Annual conference on VR and 3D interaction
-- Standards discussion forums
-- Industry collaboration
-- Research presentations
+  ## VR Sickness Mitigation
 
-### Metaverse Congress
-- Standards engagement events
-- Stakeholder coordination
-- Technology demonstrations
-- Roadmap development
+  ### Technology Approaches
+  - Motion-to-photon latency reduction
+  - Field of view optimisation
+  - Frame rate stability
+  - Vestibular conflict minimisation
+  - Comfort mode implementations
 
-## Metadata
+  ### User Safety
+  - Session duration guidelines
+  - Break recommendations
+  - Susceptibility assessment
+  - Progressive exposure protocols
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Conference Activities
+
+  ### IEEE VR 2024
+  - Annual conference on VR and 3D interaction
+  - Standards discussion forums
+  - Industry collaboration
+  - Research presentations
+
+  ### Metaverse Congress
+  - Standards engagement events
+  - Stakeholder coordination
+  - Technology demonstrations
+  - Roadmap development
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

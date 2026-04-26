@@ -1,39 +1,61 @@
-- ### OntologyBlock
-  id:: civic-participation-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9821
-	- source-domain:: mv
-	- preferred-term:: Civic Participation
-	- definition:: The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.
-	- status:: active
-	- owl:class:: mv:CivicParticipation
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: civic-participation-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Democratic Engagement]]
-		- enables:: [[Digital Democracy]], [[Public Deliberation]], [[Collective Governance]]
-		- requires:: [[Digital Platform]], [[Accessibility]], [[Trust Infrastructure]]
-		- related-to:: [[DAO Governance]], [[E-Voting]], [[Deliberative Democracy]]
-- ## Technical Details
-	- **Metaverse Potential**:
+iri:: http://narrativegoldmine.com/spatial-computing#CivicParticipation
+uri:: urn:visionclaw:concept:spatial-computing:civic-participation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:civic-participation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Civic Participation
+content-hash:: sha256-12-b00f06ed123b
+legacy-term-id:: MV-9821
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:CivicParticipation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Democratic Engagement]]
+  - requires:: [[Digital Platform]], [[Accessibility]], [[Trust Infrastructure]]
+  - enables:: [[Digital Democracy]], [[Public Deliberation]], [[Collective Governance]]
+  - bridges-to:: [[Telecollaboration]]
+
+- ### Content
+
+  - ## Technical Details
+  - **Metaverse Potential**:
 		- Laboratories for digital democracy testing new governance models
 		- Higher engagement and immersion than 2D processes
 		- Enhanced empathy through VR/AR participation
 		- Global processes without physical travel
-	- **Platform Examples**:
+  - **Platform Examples**:
 		- **Decidim** (Spain): Open-source customizable participation platform
 		- **Participa.gov** (Portugal): National citizen engagement portal
 		- **vTaiwan**: Direct citizen-government policy engagement
 		- **Estonia**: Online voting for civic engagement
-	- **Emerging Technologies**: AI for opinion analysis, blockchain for voting integrity, DAOs for decentralized decision-making
-	- **Challenges**: Declining voter turnout, polarization, accessibility gaps, need for digital literacy, corporate control of virtual spaces
-- ## Applications
-	- Online public consultations
-	- Virtual town halls and assemblies
-	- Participatory budgeting platforms
-	- Digital petition and referendum systems
-	- Metaverse-based deliberative forums
+  - **Emerging Technologies**: AI for opinion analysis, blockchain for voting integrity, DAOs for decentralized decision-making
+  - **Challenges**: Declining voter turnout, polarization, accessibility gaps, need for digital literacy, corporate control of virtual spaces
+  - ## Applications
+  - Online public consultations
+  - Virtual town halls and assemblies
+  - Participatory budgeting platforms
+  - Digital petition and referendum systems
+  - Metaverse-based deliberative forums
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

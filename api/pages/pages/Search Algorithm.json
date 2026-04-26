@@ -1,0 +1,67 @@
+{
+  "id": "search-algorithm",
+  "title": "Search Algorithm",
+  "content": "- ### Definition\n  - Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:SearchAlgorithm\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Explores state spaces systematically or heuristically\n  - Guarantees optimality under specific conditions\n  - Employs admissible heuristics for informed search\n  - Scales to large search spaces through pruning and approximation\n  - Integrates learning for adaptive search strategies\n\n  ## Overview\n\n  Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization.\n\n  #### Related Concepts\n  - [[Heuristic Methods]]\n  - [[Planning]]\n  - [[Monte Carlo Tree Search]]\n  - [[Constraint Satisfaction]]\n\n  #### References\n  - Hart, P. et al. (1968). A Formal Basis for the Heuristic Determination of Minimum Cost Paths. IEEE Transactions on Systems Science and Cybernetics, 4(2), 100-107.\n  - Korf, R. (1985). Depth-First Iterative-Deepening: An Optimal Admissible Tree Search. Artificial Intelligence, 27(1), 97-109.\n  - Silver, D. et al. (2017). Mastering Chess and Shogi by Self-Play with a General Reinforcement Learning Algorithm. arXiv:1712.01815.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Nearest Neighbor Search"
+  ],
+  "wiki_links": [
+    "Constraint Satisfaction",
+    "Heuristic Methods",
+    "Monte Carlo Tree Search",
+    "Planning"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:search-algorithm",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#SearchAlgorithm",
+    "content_hash": "sha256-12-f29bc0a247ee",
+    "legacy_term_id": "AI-9029",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:search-algorithm",
+    "schema_version": "v2",
+    "term_id": "AI-9029",
+    "preferred_term": "Search Algorithm",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search). Advanced techniques incorporate heuristics, pruning, bidirectional search, and iterative deepening. Modern AI integrates learning-based search (Monte Carlo Tree Search with neural networks, learned heuristics) and continuous optimization methods. Applications span planning, constraint satisfaction, game playing, and combinatorial optimization.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:SearchAlgorithm",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

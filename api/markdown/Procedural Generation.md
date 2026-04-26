@@ -1,42 +1,44 @@
-- ### OntologyBlock
-  id:: proceduralgeneration-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#ProceduralGeneration
+uri:: urn:visionclaw:concept:spatial-computing:procedural-generation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:procedural-generation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Procedural Generation
+content-hash:: sha256-12-7bd1cb696f1a
+legacy-term-id:: MV-9199
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0848
-    - filename-history:: ["AI-0848-proceduralgeneration.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0848
-    - preferred-term:: Procedural Generation
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - ProceduralGeneration is a concept within the ngm domain.
 
-  - **Definition**
-    - definition:: Algorithmic content generation techniques.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ProceduralGeneration
+  - owl-role:: Concept
 
-  - **Semantic Classification**
-    - owl:class:: ai:ProceduralGeneration
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  # ProceduralGeneration
+  ProceduralGeneration represents a key component in Metaverse infrastructure and technology. Research: ProceduralGeneration - terrain generation, content synthesis, algorithmic design
+  - https://www.khronos.org/ - Industry standards
+  - https://www.w3.org/TR/ - Web standards
+  - https://developer.mozilla.org/ - Technical documentation
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ProceduralGeneration))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ProceduralGeneration "Procedural Generation"@en)
-      (AnnotationAssertion rdfs:comment :ProceduralGeneration
-        "Algorithmic content generation techniques."@en)
-      ```
+  ## Sources
 
-- ## About Procedural Generation
-  Algorithmic content generation techniques.
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

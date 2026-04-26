@@ -1,44 +1,54 @@
 {
-  "id": "Carbon Neutrality Verification",
+  "id": "carbon-neutrality-verification",
   "title": "Carbon Neutrality Verification",
-  "content": "- ### OntologyBlock\n  id:: carbon-neutrality-verification-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9812\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Neutrality Verification\n\t- definition:: The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.\n\t- status:: active\n\t- owl:class:: mv:CarbonNeutralityVerification\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-neutrality-verification-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Verification]]\n\t\t- enables:: [[Credibility Assurance]], [[Greenwashing Prevention]], [[Stakeholder Trust]]\n\t\t- requires:: [[Third Party Auditor]], [[Documentation Package]], [[Verification Standard]]\n\t\t- related-to:: [[Carbon Accounting]], [[Carbon Offset Certificate]], [[ESG Assurance]]\n- ## Technical Details\n\t- **Key Standards**:\n\t\t- **ISO 14068-1** (2023): New global standard replacing PAS 2060 from January 2025\n\t\t- **PAS 2060**: Current specification for carbon neutrality demonstration\n\t\t- **ISO 14064-3**: GHG verification standard\n\t- **Verification Principles**: Relevance, completeness, consistency, transparency, accuracy\n\t- **Required Documentation**:\n\t\t- Carbon Footprint Report\n\t\t- Carbon Management Plan\n\t\t- Qualifying Explanatory Statements\n\t\t- Offset retirement evidence\n\t- **Carbon Credit Standards**: Gold Standard, VCS (Verra), Climate Action Reserve, American Carbon Registry\n\t- **Verifier Requirements**: 5+ years corporate history, 25+ documented client engagements, experience with $100M+ revenue companies\n\t- **Market Context**: 8,200+ companies worldwide have announced carbon neutrality goals (2024)\n- ## Applications\n\t- Corporate carbon neutrality certification\n\t- Product carbon neutral claims\n\t- Event carbon neutral verification\n\t- Supply chain carbon neutral certification\n\t- ESG report assurance",
+  "content": "- ### Definition\n  - The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CarbonNeutralityVerification\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Environmental Verification]]\n  - requires:: [[Third Party Auditor]], [[Documentation Package]], [[Verification Standard]]\n  - enables:: [[Credibility Assurance]], [[Greenwashing Prevention]], [[Stakeholder Trust]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Key Standards**:\n\t\t- **ISO 14068-1** (2023): New global standard replacing PAS 2060 from January 2025\n\t\t- **PAS 2060**: Current specification for carbon neutrality demonstration\n\t\t- **ISO 14064-3**: GHG verification standard\n  - **Verification Principles**: Relevance, completeness, consistency, transparency, accuracy\n  - **Required Documentation**:\n\t\t- Carbon Footprint Report\n\t\t- Carbon Management Plan\n\t\t- Qualifying Explanatory Statements\n\t\t- Offset retirement evidence\n  - **Carbon Credit Standards**: Gold Standard, VCS (Verra), Climate Action Reserve, American Carbon Registry\n  - **Verifier Requirements**: 5+ years corporate history, 25+ documented client engagements, experience with $100M+ revenue companies\n  - **Market Context**: 8,200+ companies worldwide have announced carbon neutrality goals (2024)\n  - ## Applications\n  - Corporate carbon neutrality certification\n  - Product carbon neutral claims\n  - Event carbon neutral verification\n  - Supply chain carbon neutral certification\n  - ESG report assurance\n\n- ### Provenance\n  - sources:: [[ISO (International Organization for Standardization)]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Environmental Sustainability Label"
   ],
   "wiki_links": [
-    "Documentation Package",
-    "Verification Standard",
-    "Stakeholder Trust",
-    "Greenwashing Prevention",
-    "Third Party Auditor",
-    "metaverse",
-    "ESG Assurance",
+    "Blockchain",
     "Credibility Assurance",
+    "Documentation Package",
     "Environmental Verification",
-    "Carbon Accounting",
-    "Carbon Offset Certificate"
+    "Greenwashing Prevention",
+    "ISO (International Organization for Standardization)",
+    "Stakeholder Trust",
+    "Third Party Auditor",
+    "Verification Standard",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:carbon-neutrality-verification",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CarbonNeutralityVerification",
+    "content_hash": "sha256-12-05e82a1342de",
+    "legacy_term_id": "MV-9812",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:carbon-neutrality-verification",
+    "schema_version": "v2",
     "term_id": "MV-9812",
     "preferred_term": "Carbon Neutrality Verification",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CarbonNeutralityVerification",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CarbonNeutralityVerification",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T17:00:00Z",
+    "last_updated": "2026-04-26T17:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CarbonNeutralityVerification",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Environmental Verification"
@@ -57,28 +67,21 @@
       "Stakeholder Trust"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Carbon Accounting",
-        "Carbon Offset Certificate",
-        "ESG Assurance"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "ISO (International Organization for Standardization)"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

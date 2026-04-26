@@ -1,0 +1,65 @@
+{
+  "id": "cryptocurrency-token",
+  "title": "Cryptocurrency Token",
+  "content": "- ### Definition\n  - CryptocurrencyToken is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: blockchain/CryptocurrencyToken\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n  - bridges-to:: [[Blockchain]] (bc)\n- ### Content\n\n  ## Definition\n\n  Cryptocurrency Token represents a programmable digital asset implemented through smart contracts on blockchain platforms, categorized into utility tokens providing access rights to network services, security tokens representing equity or debt instruments subject to regulatory frameworks, governance tokens enabling decentralized protocol management through voting mechanisms, and non-fungible tokens (NFTs) establishing provably scarce digital ownership of unique items. Token standards define interoperability specifications: Ethereum's ERC-20 establishes fungible token interfaces with transfer, approval, and allowance functions; ERC-721 defines non-fungible tokens with unique identifiers and metadata URIs; ERC-1155 enables multi-token contracts supporting both fungible and non-fungible assets with batch operations. Advanced token mechanics include rebasing tokens adjusting supply algorithmically to maintain price stability, liquidity provider (LP) tokens representing automated market maker pool shares with fee accrual, wrapped tokens bridging assets across blockchain networks (WBTC, stETH), and synthetic tokens tracking external asset prices through oracle-fed collateralization. Token economics (tokenomics) encompasses supply schedules with controlled inflation or deflation mechanisms, distribution models including initial coin offerings (ICOs), airdrops, and liquidity mining, and utility design integrating staking rewards, fee discounts, and protocol access permissions. In 2026, programmable NFTs incorporate dynamic metadata responding to external events, soul-bound tokens establish non-transferable identity credentials, and cross-chain token standards enable seamless asset portability across heterogeneous blockchain ecosystems through trustless bridge protocols and atomic swap mechanisms.\n\n  #### References\n  - Ethereum Foundation. (2024). \"Token Standards Documentation: ERC-20, ERC-721, ERC-1155.\" https://ethereum.org/en/developers/docs/standards/tokens/\n  - OpenZeppelin. (2024). \"Secure Token Implementation Patterns.\" https://docs.openzeppelin.com/contracts/\n  - Buterin, V. (2022). \"Soulbound Tokens.\" https://vitalik.ca/general/2022/01/26/soulbound.html\n  - Wright, A. & De Filippi, P. (2015). \"Decentralized Blockchain Technology and the Rise of Lex Cryptographia.\" SSRN Electronic Journal.\n  - Uniswap Labs. (2024). \"Liquidity Provider Token Economics.\" https://docs.uniswap.org/\n  - Token Engineering Community. (2024). \"Token Design Patterns and Economic Security.\" https://tokenengineeringcommunity.github.io/\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Utility Token",
+    "Payment Token"
+  ],
+  "wiki_links": [
+    "Blockchain"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:cryptocurrency-token",
+    "iri": "https://visionclaw.dreamlab-ai.systems/ns/v2/blockchain#CryptocurrencyToken",
+    "content_hash": "sha256-12-7ebbedc792df",
+    "legacy_term_id": "BC-9005",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:cryptocurrency-token",
+    "schema_version": "v2",
+    "term_id": "BC-9005",
+    "preferred_term": "Cryptocurrency Token",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "CryptocurrencyToken is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.1.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.7,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain/CryptocurrencyToken",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

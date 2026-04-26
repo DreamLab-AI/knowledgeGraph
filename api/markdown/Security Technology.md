@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: bc9506-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: BC-9506
-	- preferred-term:: Security Technology
-	- source-domain:: bc
-	- owl:class:: bc:SecurityTechnology
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Security Technology is a concept within the blockchain domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/blockchain#SecurityTechnology
+uri:: urn:visionclaw:concept:blockchain:security-technology
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:security-technology
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Security Technology
+content-hash:: sha256-12-62d0b6521b31
+legacy-term-id:: BC-9506
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Security Technology is a concept within the blockchain domain. Further enrichment pending.
 
-Security Technology represents an abstract concept in the blockchain ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: blockchain:SecurityTechnology
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Security Technology represents an abstract concept in the blockchain ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,38 +1,46 @@
 {
-  "id": "Virtual Production Pipeline",
+  "id": "virtual-production-pipeline",
   "title": "Virtual Production Pipeline",
-  "content": "- ### OntologyBlock\n  id:: virtual-production-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10138\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Production Pipeline\n\t- status:: active\n\t- definition:: The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.\n\t- owl:class:: mv:VirtualProductionPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Production]]\n\t\t- related-to:: [[LED Volume]]\n\t\t- related-to:: [[Real-Time Rendering]]\n\t\t- related-to:: [[Motion Capture]]\n\t  id:: virtual-production-pipeline-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual production pipelines combine physical filmmaking with digital assets using real-time game engines. LED stages grew from 3 in 2019 to over 300 by 2022, creating a $1.8 billion market projected to reach $7.19 billion by 2029. The Mandalorian popularized ILM's StageCraft technology featuring a 75-foot diameter LED soundstage.\n- ## Technical Details\n\t- ### Pipeline Phases\n\t\t- **Pre-Production**: Concept development, pre-visualization, asset creation\n\t\t- **Production**: LED volume shooting, real-time rendering, camera tracking\n\t\t- **Post-Production**: Final compositing, color grading, delivery\n\t- ### Core Technologies\n\t\t- Unreal Engine / Unity real-time rendering\n\t\t- LED volume stages (curved/flat panels)\n\t\t- Camera tracking systems (OptiTrack, Vicon)\n\t\t- Motion capture integration\n\t- ### Key Differences from Traditional\n\t\t- VFX created in pre-production, not post\n\t\t- In-camera visual effects reduce compositing\n\t\t- Real-time iteration during shooting\n\t\t- Natural lighting from LED backgrounds\n- ## Applications\n\t- Feature film production\n\t- Television series creation\n\t- Commercial and advertising\n\t- Live broadcast graphics\n\t- Virtual location scouting",
+  "content": "- ### Definition\n  - The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualProductionPipeline\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Production]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual production pipelines combine physical filmmaking with digital assets using real-time game engines. LED stages grew from 3 in 2019 to over 300 by 2022, creating a $1.8 billion market projected to reach $7.19 billion by 2029. The Mandalorian popularized ILM's StageCraft technology featuring a 75-foot diameter LED soundstage.\n  - ## Technical Details\n  - ### Pipeline Phases\n\t\t- **Pre-Production**: Concept development, pre-visualization, asset creation\n\t\t- **Production**: LED volume shooting, real-time rendering, camera tracking\n\t\t- **Post-Production**: Final compositing, color grading, delivery\n  - ### Core Technologies\n\t\t- Unreal Engine / Unity real-time rendering\n\t\t- LED volume stages (curved/flat panels)\n\t\t- Camera tracking systems (OptiTrack, Vicon)\n\t\t- Motion capture integration\n  - ### Key Differences from Traditional\n\t\t- VFX created in pre-production, not post\n\t\t- In-camera visual effects reduce compositing\n\t\t- Real-time iteration during shooting\n\t\t- Natural lighting from LED backgrounds\n  - ## Applications\n  - Feature film production\n  - Television series creation\n  - Commercial and advertising\n  - Live broadcast graphics\n  - Virtual location scouting\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Virtual Production Volume"
   ],
   "wiki_links": [
-    "LED Volume",
-    "metaverse",
     "Virtual Production",
-    "Real-Time Rendering",
-    "Motion Capture"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-production-pipeline",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualProductionPipeline",
+    "content_hash": "sha256-12-897a5aa3fa17",
+    "legacy_term_id": "MV-10138",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-production-pipeline",
+    "schema_version": "v2",
     "term_id": "MV-10138",
     "preferred_term": "Virtual Production Pipeline",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualProductionPipeline",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualProductionPipeline",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualProductionPipeline",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Production"
@@ -45,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "LED Volume",
-        "Real-Time Rendering",
-        "Motion Capture"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

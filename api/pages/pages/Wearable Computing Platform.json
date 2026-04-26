@@ -1,39 +1,46 @@
 {
-  "id": "Wearable Computing Platform",
+  "id": "wearable-computing-platform",
   "title": "Wearable Computing Platform",
-  "content": "- ### OntologyBlock\n  id:: wearable-computing-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10166\n\t- source-domain:: mv\n\t- preferred-term:: Wearable Computing Platform\n\t- status:: active\n\t- definition:: Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.\n\t- owl:class:: mv:WearableComputingPlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Computing Platform]]\n\t\t- related-to:: [[XR Hardware]]\n\t\t- related-to:: [[Internet of Things]]\n\t\t- related-to:: [[Mobile Computing]]\n\t  id:: wearable-computing-platform-relationships\n\t  collapsed:: true\n- ## Overview\n\t- The global wearable technology market was estimated at USD 84.2 billion in 2024, growing at 13.6% CAGR to USD 493.26 billion by 2030. Smartwatches hold 46% market share with Apple Watch Series 10 and Samsung Galaxy Watch 6 leading. Meta sold 2 million Ray-Ban smart glasses since late 2023, scaling to 10 million units annually. Head-mounted displays post the fastest 19.51% CAGR driven by enterprise adoption.\n- ## Technical Details\n\t- ### Platform Categories\n\t\t- **Smartwatch OS**: WatchOS, Wear OS, Tizen\n\t\t- **Smart Glasses**: Meta Ray-Ban, Google Glass Enterprise, XREAL\n\t\t- **XR Platforms**: Meta Quest OS, visionOS, SteamVR\n\t\t- **Fitness Platforms**: Fitbit OS, Garmin Connect IQ\n\t- ### Key Technologies\n\t\t- **5G Connectivity**: Low-latency data for medical wearables and XR\n\t\t- **AI Integration**: On-device machine learning for health insights\n\t\t- **Biometric Sensors**: Heart rate, blood oxygen, body composition\n\t\t- **Spatial Computing**: Apple Vision Pro's visionOS paradigm\n\t- ### Market Leaders (2024)\n\t\t- **Apple**: Watch Series 10, Vision Pro spatial computer\n\t\t- **Meta**: Quest 3, Ray-Ban smart glasses\n\t\t- **Samsung**: Galaxy Watch 6, smart ring patents\n\t\t- **Google**: Wear OS, Fitbit integration\n- ## Applications\n\t- Health and fitness monitoring\n\t- Enterprise hands-free computing\n\t- Metaverse access and interaction\n\t- Augmented reality navigation\n\t- Remote patient monitoring",
+  "content": "- ### Definition\n  - Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:WearableComputingPlatform\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Computing Platform]]\n\n- ### Content\n\n  - ## Overview\n  - The global wearable technology market was estimated at USD 84.2 billion in 2024, growing at 13.6% CAGR to USD 493.26 billion by 2030. Smartwatches hold 46% market share with Apple Watch Series 10 and Samsung Galaxy Watch 6 leading. Meta sold 2 million Ray-Ban smart glasses since late 2023, scaling to 10 million units annually. Head-mounted displays post the fastest 19.51% CAGR driven by enterprise adoption.\n  - ## Technical Details\n  - ### Platform Categories\n\t\t- **Smartwatch OS**: WatchOS, Wear OS, Tizen\n\t\t- **Smart Glasses**: Meta Ray-Ban, Google Glass Enterprise, XREAL\n\t\t- **XR Platforms**: Meta Quest OS, visionOS, SteamVR\n\t\t- **Fitness Platforms**: Fitbit OS, Garmin Connect IQ\n  - ### Key Technologies\n\t\t- **5G Connectivity**: Low-latency data for medical wearables and XR\n\t\t- **AI Integration**: On-device machine learning for health insights\n\t\t- **Biometric Sensors**: Heart rate, blood oxygen, body composition\n\t\t- **Spatial Computing**: Apple Vision Pro's visionOS paradigm\n  - ### Market Leaders (2024)\n\t\t- **Apple**: Watch Series 10, Vision Pro spatial computer\n\t\t- **Meta**: Quest 3, Ray-Ban smart glasses\n\t\t- **Samsung**: Galaxy Watch 6, smart ring patents\n\t\t- **Google**: Wear OS, Fitbit integration\n  - ## Applications\n  - Health and fitness monitoring\n  - Enterprise hands-free computing\n  - Metaverse access and interaction\n  - Augmented reality navigation\n  - Remote patient monitoring\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Biosensing Interface",
-    "Wearable Device Integration"
+    "Biosensing Interface"
   ],
   "wiki_links": [
-    "Mobile Computing",
-    "metaverse",
-    "Internet of Things",
     "Computing Platform",
-    "XR Hardware"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:wearable-computing-platform",
+    "iri": "http://narrativegoldmine.com/infrastructure#WearableComputingPlatform",
+    "content_hash": "sha256-12-8e8e82afd593",
+    "legacy_term_id": "MV-10166",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:wearable-computing-platform",
+    "schema_version": "v2",
     "term_id": "MV-10166",
     "preferred_term": "Wearable Computing Platform",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#WearableComputingPlatform",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:WearableComputingPlatform",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:WearableComputingPlatform",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Computing Platform"
@@ -46,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "XR Hardware",
-        "Internet of Things",
-        "Mobile Computing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

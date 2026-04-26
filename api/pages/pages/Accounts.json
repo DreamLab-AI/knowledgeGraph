@@ -1,0 +1,64 @@
+{
+  "id": "accounts",
+  "title": "Accounts",
+  "content": "- ### Definition\n  - Accounts is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:Accounts\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n  - For a limited company in the UK, the due dates for annual accounts are determined by your company's 'accounting reference date,' which is the end of your financial year. Here's how it typically works:\n  - **First Accounting Period**:\n  - Your first accounting period starts on the day your company is incorporated and runs until the end of the month in which the anniversary of incorporation falls, in the following year.\n\t\t- For example, if your company was incorporated in April 2022, your first accounting period would likely run until April 30, 2023.\n  - **Filing Deadline**:\n  - For your first accounts, you have 21 months from the date of incorporation to file with Companies House. This is longer than the normal deadline due to being your first year.\n\t\t- Subsequently, you have 9 months from your accounting reference date to file your accounts. So, for the accounting period ending April 30, 2023, your accounts would be due by January 31, 2024.\n  - **Confirmation Statement**:\n  - Alongside your accounts, you also need to file a confirmation statement annually. This is due 14 days after the anniversary of incorporation.\n  - **Penalties for Late Filing**:\n  - Companies House imposes penalties for late filing, which increase over time. It's crucial to adhere to these deadlines to avoid penalties.\n  - **Annual Return**:\n  - The annual return is a snapshot of company information, separate from the financial accounts, and also needs to be filed annually.\n  - **Staying Organized**:\n  - Keep track of these dates in your calendar and maintain regular communication with your accountant to ensure all filings are completed on time.\n  - Your accountant will be able to provide the exact dates for your specific circumstances, but this general framework should give you a good idea of what to expect.\n  - https://docs.google.com/spreadsheets/d/1fIM6SqpkZdfRsnAInrd1e-A5cPOG3r76CfQhRCQGeE0/edit?usp=sharing\n  - ![rawaccounts.pdf](../assets/rawaccounts_1714229501722_0.pdf)\n  - ![Feb2024-flossverse-010.pdf](../assets/Feb2024-flossverse-010_1717315840873_0.pdf)\n  - ![Feb2024-flossverse-011.pdf](../assets/Feb2024-flossverse-011_1717315846806_0.pdf)\n  - ![Jan2024-flossverse-009.pdf](../assets/Jan2024-flossverse-009_1717315853965_0.pdf)\n  - ![March2024-flossverse-012.pdf](../assets/March2024-flossverse-012_1717315861420_0.pdf)\n  - ![October2023-flossverse-007.pdf](../assets/October2023-flossverse-007_1717315868338_0.pdf)\n  - ![October2023-flossverse-008.pdf](../assets/October2023-flossverse-008_1717315874531_0.pdf)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Tax"
+  ],
+  "wiki_links": [
+    "Blockchain"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:accounts",
+    "iri": "http://narrativegoldmine.com/infrastructure#Accounts",
+    "content_hash": "sha256-12-fe7789767fef",
+    "legacy_term_id": "NGM-accounts",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:accounts",
+    "schema_version": "v2",
+    "term_id": "NGM-accounts",
+    "preferred_term": "Accounts",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Accounts is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:Accounts",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

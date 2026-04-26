@@ -1,32 +1,46 @@
 {
-  "id": "Domain Ontology",
+  "id": "domain-ontology",
   "title": "Domain Ontology",
-  "content": "- ### OntologyBlock\n  id:: rb9505-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9505\n\t- preferred-term:: Domain Ontology\n\t- source-domain:: rb\n\t- owl:class:: rb:DomainOntology\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Domain Ontology is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nDomain Ontology represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - DomainOntology is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DomainOntology\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n  - bridges-to:: [[Blockchain]] (bc)\n- ### Content\n  term-id: RB-9005\n  domain: rb\n  # DomainOntology\n  A Domain Ontology represents a formal, explicit specification of conceptualization within a specific domain of knowledge, providing shared vocabulary and semantic structure for knowledge representation, reasoning, and interoperability in robotics and automation systems. It defines concepts, relationships, axioms, and constraints relevant to robotic systems and their operation.\n  In robotics, domain ontologies capture knowledge about robot hardware components, software architectures, sensing modalities, manipulation primitives, navigation concepts, and task representations. They enable semantic interoperability between heterogeneous systems, support automated reasoning for task planning and error diagnosis, and facilitate knowledge reuse across different robotic platforms and applications.\n  The IEEE Standard Ontology for Robotics and Automation (IEEE 1872-2015) provides a foundational framework, while specialized ontologies address specific domains like manufacturing robotics, service robotics, and autonomous vehicles. Ontologies are typically expressed using formal languages such as OWL (Web Ontology Language) and leverage reasoning engines for inference and consistency checking.\n  Current research explores lightweight ontologies for resource-constrained embedded systems, dynamic ontology evolution through robot learning experiences, probabilistic ontological reasoning under uncertainty, and integration with knowledge graphs for large-scale robotic applications. Standardization efforts aim to establish common vocabularies enabling plug-and-play robotic components and cloud-based robotic services across manufacturers and research institutions.\n  - IEEE Standard 1872-2015. (2015). \"IEEE Standard Ontologies for Robotics and Automation.\" IEEE Robotics and Automation Society\n  - Prestes, E., et al. (2013). \"Towards a core ontology for robotics and automation.\" Robotics and Autonomous Systems, 61(11), 1193-1204\n  - Fiorini, S.R., et al. (2017). \"Extensions to the core ontology for robotics and automation.\" Robotics and Computer-Integrated Manufacturing, 33, 3-11\n  - Stenmark, M., & Malec, J. (2015). \"Knowledge-based industrial robotics.\" Intelligent Industrial Systems, 1(4), 265-277\n\n  ## Sources\n\n- ### Provenance\n  - sources:: [[IEEE 1872-2015]], [[OWL]], [[W3C]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "owl:Thing"
+    "Blockchain",
+    "IEEE 1872-2015",
+    "OWL",
+    "W3C"
   ],
   "ontology": {
-    "term_id": "RB-9505",
+    "uri": "urn:visionclaw:concept:infrastructure:domain-ontology",
+    "iri": "http://narrativegoldmine.com/infrastructure#DomainOntology",
+    "content_hash": "sha256-12-4dee89e342dd",
+    "legacy_term_id": "NGM-domain-ontology",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:domain-ontology",
+    "schema_version": "v2",
+    "term_id": "NGM-domain-ontology",
     "preferred_term": "Domain Ontology",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#DomainOntology",
-    "source_domain": "rb",
-    "domain": "rb",
-    "domain_full_name": "Robotics",
-    "definition": "Domain Ontology is a concept within the robotics domain. Further enrichment pending.",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "DomainOntology is a concept within the ngm domain.",
     "scope_note": null,
-    "status": "draft",
-    "maturity": null,
-    "version": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:DomainOntology",
-    "owl_physicality": "abstract",
-    "owl_role": "concept",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DomainOntology",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -35,18 +49,21 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
-    "source": [],
+    "domain_extensions": {},
+    "source": [
+      "IEEE 1872-2015",
+      "OWL",
+      "W3C"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

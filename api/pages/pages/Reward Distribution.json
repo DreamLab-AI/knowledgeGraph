@@ -1,39 +1,48 @@
 {
-  "id": "Reward Distribution",
+  "id": "reward-distribution",
   "title": "Reward Distribution",
-  "content": "- ### OntologyBlock\n  id:: reward-distribution-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10023\n\t- source-domain:: mv\n\t- preferred-term:: Reward Distribution\n\t- status:: active\n\t- definition:: Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.\n\t- owl:class:: mv:RewardDistribution\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: reward-distribution-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Tokenomics]]\n\t\t- related-to:: [[Staking Rewards]]\n\t\t- related-to:: [[Validator Incentives]]\n\t\t- related-to:: [[Consensus Mechanisms]]\n\t\t- enables:: [[Network Participation]]\n\t- #### Distribution Sources\n\t  collapsed:: true\n\t\t- Attestation rewards (84.375% of consensus)\n\t\t- Transaction fee distribution\n\t\t- Token emission from inflation\n\t\t- Liquidity mining incentives\n\t\t- Governance participation rewards\n\t- #### Implementation Examples\n\t  collapsed:: true\n\t\t- Solana 8% initial inflation decreasing 15% yearly\n\t\t- WalletConnect 17.5% allocation for staking rewards\n\t\t- 1-week to 2-year token locking periods\n\t\t- Slashing penalties for validator failures\n\t\t- Community airdrop allocations",
+  "content": "- ### Definition\n  - Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:RewardDistribution\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Tokenomics]]\n  - enables:: [[Network Participation]]\n\n- ### Content\n\n  - #### Distribution Sources\n\t\t- Attestation rewards (84.375% of consensus)\n\t\t- Transaction fee distribution\n\t\t- Token emission from inflation\n\t\t- Liquidity mining incentives\n\t\t- Governance participation rewards\n  - #### Implementation Examples\n\t\t- Solana 8% initial inflation decreasing 15% yearly\n\t\t- WalletConnect 17.5% allocation for staking rewards\n\t\t- 1-week to 2-year token locking periods\n\t\t- Slashing penalties for validator failures\n\t\t- Community airdrop allocations\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Play-to-Earn (P2E)"
+    "Play-to-Earn (P2E)",
+    "Proof Of Stake Sustainability"
   ],
   "wiki_links": [
     "Network Participation",
     "Tokenomics",
-    "metaverse",
-    "Staking Rewards",
-    "Consensus Mechanisms",
-    "Validator Incentives"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:reward-distribution",
+    "iri": "http://narrativegoldmine.com/spatial-computing#RewardDistribution",
+    "content_hash": "sha256-12-0fb4f74556d2",
+    "legacy_term_id": "MV-10023",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:reward-distribution",
+    "schema_version": "v2",
     "term_id": "MV-10023",
     "preferred_term": "Reward Distribution",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#RewardDistribution",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:RewardDistribution",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:RewardDistribution",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Tokenomics"
@@ -48,26 +57,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Staking Rewards",
-        "Validator Incentives",
-        "Consensus Mechanisms"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

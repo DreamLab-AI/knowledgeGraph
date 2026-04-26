@@ -1,45 +1,36 @@
-- ### OntologyBlock
-  id:: trustedexecutionpbft-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#TrustedExecutionPBFT
+uri:: urn:visionclaw:concept:blockchain:trusted-execution-pbft
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:trusted-execution-pbft
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Trusted Execution PBFT
+content-hash:: sha256-12-7f4b5c63d70b
+legacy-term-id:: BC-0561
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0561
-    - filename-history:: ["BC-0561-trustedexecutionpbft.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0561
-    - preferred-term:: Trusted Execution PBFT
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).
 
-  - **Definition**
-    - definition:: A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:TrustedExecutionPBFT
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:TrustedExecutionPBFT
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
-    - also-known-as:: TEP-BFT
+- ### Content
+  Trusted Execution PBFT — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :TrustedExecutionPBFT))
-      (SubClassOf :TrustedExecutionPBFT :PracticalByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :TrustedExecutionPBFT "Trusted Execution PBFT"@en)
-      (AnnotationAssertion rdfs:comment :TrustedExecutionPBFT
-        "A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX)."@en)
-      ```
-
-- ## About Trusted Execution PBFT
-  A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

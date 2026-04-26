@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: trackedrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#TrackedRobot
+uri:: urn:visionclaw:concept:robotics:tracked-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:tracked-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Tracked Robot
+content-hash:: sha256-12-7559229f5c5e
+legacy-term-id:: RB-0113
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0113
-    - filename-history:: ["RB-0113-trackedrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0113
-    - preferred-term:: Tracked Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Tracked robot uses continuous tracks providing superior traction on rough terrain.
 
-  - **Definition**
-    - definition:: Tracked robot uses continuous tracks providing superior traction on rough terrain.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:TrackedRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:TrackedRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Ground Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Ground Robot]]
+- ### Content
+  Tracked Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :TrackedRobot))
-      (SubClassOf :TrackedRobot :GroundRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :TrackedRobot "Tracked Robot"@en)
-      (AnnotationAssertion rdfs:comment :TrackedRobot
-        "Tracked robot uses continuous tracks providing superior traction on rough terrain."@en)
-      ```
-
-- ## About Tracked Robot
-  Tracked robot uses continuous tracks providing superior traction on rough terrain.
-  
-  A ground robot using continuous tracks (tank treads) for locomotion.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

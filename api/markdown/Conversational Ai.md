@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: conversationalai-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#ConversationalAI
+uri:: urn:visionclaw:concept:artificial-intelligence:conversational-ai
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:conversational-ai
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Conversational AI
+content-hash:: sha256-12-78d6728d5821
+legacy-term-id:: AI-0849
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0849
-    - filename-history:: ["AI-0849-conversationalai.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0849
-    - preferred-term:: Conversational AI
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Conversational AI is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ConversationalAi
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:ConversationalAi
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Natural Language Processing]]
+  - bridges-to:: [[Digital Twin]], [[Autonomous Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Natural Language Processing]]
+- ### Content
+  Conversational AI — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ConversationalAi))
-      (SubClassOf :ConversationalAi :NaturalLanguageProcessing)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ConversationalAi "Conversational AI"@en)
-      ```
-
-- ## About Conversational AI
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

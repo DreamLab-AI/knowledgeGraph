@@ -1,638 +1,44 @@
-- ### OntologyBlock
-  id:: feature-importance-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0303
-	- preferred-term:: Feature Importance
-	- source-domain:: mv
-	- status:: draft
-- definition:: Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
-
-
-## OWL Formal Semantics
-
-```clojure
-;; OWL Functional Syntax
-
-(Declaration (Class :FeatureImportance))
-
-;; Annotations
-(AnnotationAssertion rdfs:label :FeatureImportance "Feature Importance"@en)
-(AnnotationAssertion rdfs:comment :FeatureImportance "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs."@en)
-
-;; Semantic Relationships
-(SubClassOf :FeatureImportance
-  (ObjectSomeValuesFrom :relatedTo :FeatureSelection))
-(SubClassOf :FeatureImportance
-  (ObjectSomeValuesFrom :relatedTo :Shap))
-(SubClassOf :FeatureImportance
-  (ObjectSomeValuesFrom :relatedTo :FeatureAttribution))
-(SubClassOf :FeatureImportance
-  (ObjectSomeValuesFrom :relatedTo :PermutationImportance))
-(SubClassOf :FeatureImportance
-  (ObjectSomeValuesFrom :hasPart :PartialDependencePlot))
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :FeatureImportance "AI-0303"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :FeatureImportance "true"^^xsd:boolean)
-```
-
-## Related Terms
-
-- **Broader**: [[Global Explanation]], [[Model Interpretability]]
-- **Narrower**: [[Permutation Importance]], [[SHAP]], [[Feature Attribution]]
-- **Related**: [[Feature Selection]], [[Dimensionality Reduction]]
-
-## Formal Specification
-
-### Core Concept
-
-Given model `f: X → Y` with features `X = {x₁, x₂, ..., xₚ}`, feature importance `I(j)` quantifies:
-
-```
-I(j) = Influence of feature j on f's predictions
-```
-
-**Properties**:
-- Non-negative: `I(j) ≥ 0`
-- Normalised (optional): `Σ I(j) = 1`
-- Ranked: Features ordered by `I(j)`
-
-### Types of Importance
-
-**Global Importance**: Across all predictions
-```
-I_global(j) = E_X[Impact of feature j on f(X)]
-```
-
-**Local Importance**: For specific instance `x`
-```
-I_local(j, x) = Impact of feature j on f(x)
-```
-
-## Methods
-
-### Intrinsic Feature Importance
-
-#### Linear Model Coefficients
-
-**Linear Regression**:
-```
-y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ
-```
-
-**Importance**:
-```
-I(j) = |βⱼ| × σⱼ
-```
-Where `σⱼ` is standard deviation of feature `j` (for comparable scales).
-
-**Interpretation**: Absolute standardised coefficient magnitude.
-
-**Advantages**:
-- Direct from model parameters
-- Computationally free
-- Clear interpretation
-
-**Limitations**:
-- Assumes linearity
-- Sensitive to multicollinearity
-- Not applicable to non-linear models
-
-#### Tree-Based Importance
-
-**Decision Trees**:
-```
-I(j) = Σ (samples at node) × (impurity decrease) for all nodes splitting on feature j
-       / (total samples × total impurity decrease)
-```
-
-**Impurity Measures**:
-- **Gini impurity**: `1 - Σ pᵢ²`
-- **Entropy**: `-Σ pᵢ log(pᵢ)`
-- **Variance** (regression): `Var(y)`
-
-**Random Forest/Gradient Boosting**:
-```
-I(j) = Average importance of feature j across all trees
-```
-
-**Advantages**:
-- Built into tree algorithms
-- Fast computation
-- Handles non-linearity and interactions
-
-**Limitations**:
-- **Bias towards high-cardinality features**: More split opportunities
-- **Correlated features**: Importance split between them
-- **Unreliable for extrapolation**: Training data dependent
-
-### Model-Agnostic Feature Importance
-
-#### Permutation Importance
-
-**Algorithm** (Breiman, 2001):
-
-1. Compute baseline performance: `S_orig = Score(f, X, y)`
-2. For each feature `j`:
-   a. Permute feature: `X_perm = X with column j shuffled`
-   b. Recompute performance: `S_perm = Score(f, X_perm, y)`
-   c. Importance: `I(j) = S_orig - E[S_perm]` (averaged over repeats)
-
-**Properties**:
-- Model-agnostic
-- Reflects true predictive importance
-- Accounts for feature interactions
-
-**Advantages**:
-- Unbiased (compared to tree importance)
-- Works with any model
-- Intuitive interpretation
-
-**Limitations**:
-- Requires access to validation data
-- Computationally expensive (many predictions)
-- Assumes feature independence (can create unrealistic data)
-
-#### Drop-Column Importance
-
-**Algorithm**:
-
-1. Train model on all features: `f_all(X) → y`
-2. For each feature `j`:
-   a. Train model without feature `j`: `f_{-j}(X_{-j}) → y`
-   b. Importance: `I(j) = Score(f_all) - Score(f_{-j})`
-
-**Interpretation**: Performance decrease when feature removed.
-
-**Advantages**:
-- Directly measures feature necessity
-- No unrealistic data generation
-
-**Limitations**:
-- Requires retraining `p` models
-- Computationally prohibitive for complex models
-- May underestimate importance if redundant features exist
-
-#### SHAP Feature Importance
-
-**Definition** (Lundberg & Lee, 2017):
-
-```
-I(j) = (1/n) Σ |φⱼ(xᵢ)|
-             i=1
-```
-
-Where `φⱼ(xᵢ)` is SHAP value for feature `j` at instance `i`.
-
-**Interpretation**: Average absolute contribution of feature `j`.
-
-**Advantages**:
-- Consistent with local explanations
-- Theoretically grounded (Shapley values)
-- Handles feature interactions via interaction values
-
-**Variants**:
-- **Mean absolute SHAP**: `(1/n) Σ |φⱼ(xᵢ)|` (default)
-- **Mean SHAP**: `(1/n) Σ φⱼ(xᵢ)` (shows direction)
-- **SHAP interaction importance**: Sum of interaction effects
-
-**Limitations**:
-- Computationally expensive (especially Kernel SHAP)
-- Baseline dependence
-- Interpretation complexity for interactions
-
-## Visualisations
-
-### Bar Charts
-
-**Structure**:
-- Features on y-axis
-- Importance on x-axis
-- Sorted by magnitude
-
-**Variants**:
-- **Standard**: Single bar per feature
-- **Grouped**: Multiple models compared
-- **Stacked**: Positive/negative contributions
-
-**Example** (matplotlib):
-```python
-import matplotlib.pyplot as plt
-
-features = ['age', 'income', 'education', 'location']
-importances = [0.4, 0.3, 0.2, 0.1]
-
-plt.barh(features, importances)
-plt.xlabel('Feature Importance')
-plt.title('Permutation Importance')
-```
-
-### SHAP Summary Plots
-
-**Structure**:
-- Features on y-axis (sorted by importance)
-- SHAP values on x-axis
-- Each dot is an instance
-- Color indicates feature value (high/low)
-
-**Interpretation**:
-- **Position**: SHAP value (impact)
-- **Color**: Feature value
-- **Density**: Distribution of impacts
-
-**Example**:
-```python
-import shap
-
-shap.summary_plot(shap_values, X_test)
-```
-
-### Feature Importance with Confidence Intervals
-
-**Permutation Importance Variance**:
-
-Multiple permutations yield distribution:
-```
-I(j) ~ N(μⱼ, σⱼ²)
-```
-
-**Visualisation**:
-- Bar chart with error bars
-- Box plots showing distribution
-- Violin plots for full distribution
-
-**Example** (scikit-learn):
-```python
-from sklearn.inspection import permutation_importance
-
-result = permutation_importance(model, X_val, y_val, n_repeats=30)
-
-importances_mean = result.importances_mean
-importances_std = result.importances_std
-
-plt.barh(features, importances_mean, xerr=importances_std)
-```
-
-## Application Domains
-
-### Feature Selection
-
-**Use Case**: Identify and retain only important features.
-
-**Approach**:
-1. Compute feature importance
-2. Threshold or select top-K features
-3. Retrain model on reduced feature set
-4. Evaluate performance
-
-**Benefits**:
-- Reduced overfitting
-- Faster training/inference
-- Improved interpretability
-
-**Example**:
-```python
-from sklearn.feature_selection import SelectFromModel
-
-# Using tree-based importance
-selector = SelectFromModel(RandomForestClassifier(), threshold='median')
-X_selected = selector.fit_transform(X_train, y_train)
-```
-
-### Model Debugging
-
-**Use Cases**:
-- **Data leakage detection**: Unexpected high importance
-- **Sanity checks**: Aligns with domain knowledge?
-- **Bias detection**: Protected attributes driving predictions?
-
-**Example**:
-Feature importance reveals `customer_id` has high importance → data leakage likely.
-
-### Domain Insight
-
-**Scientific Applications**:
-- Hypothesis generation (which variables matter?)
-- Mechanism understanding (how do variables influence outcome?)
-- Prioritisation (which factors to intervene on?)
-
-**Example** (Healthcare):
-Feature importance shows "blood pressure" more important than "BMI" for heart disease prediction → clinical validation and insight.
-
-### Regulatory Compliance
-
-**Finance**:
-- Fair lending: Ensure protected attributes not driving decisions
-- Model risk management: Understand key risk factors
-
-**Example**:
-Feature importance analysis shows `race` has near-zero importance → compliance with fair lending laws.
-
-## Implementation Approaches
-
-### Scikit-learn Tree Importance
-
-```python
-from sklearn.ensemble import RandomForestClassifier
-
-model = RandomForestClassifier().fit(X_train, y_train)
-
-importances = model.feature_importances_
-indices = np.argsort(importances)[::-1]
-
-for i in range(X_train.shape[1]):
-    print(f"{features[indices[i]]}: {importances[indices[i]]:.4f}")
-```
-
-### Scikit-learn Permutation Importance
-
-```python
-from sklearn.inspection import permutation_importance
-
-result = permutation_importance(
-    estimator=model,
-    X=X_val,
-    y=y_val,
-    n_repeats=10,
-    random_state=42,
-    scoring='accuracy'
-)
-
-for i, (mean, std) in enumerate(zip(result.importances_mean, result.importances_std)):
-    print(f"{features[i]}: {mean:.4f} ± {std:.4f}")
-```
-
-### SHAP Feature Importance
-
-```python
-import shap
-
-explainer = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(X_test)
-
-# Global feature importance
-shap.summary_plot(shap_values, X_test, plot_type="bar")
-
-# Or manually compute
-feature_importance = np.abs(shap_values).mean(axis=0)
-```
-
-### Custom Importance Function
-
-```python
-def custom_feature_importance(model, X, y, metric, n_repeats=10):
-    """
-    Model-agnostic permutation importance with custom metric.
-    """
-    baseline_score = metric(y, model.predict(X))
-    importances = {}
-
-    for col in X.columns:
-        scores = []
-        for _ in range(n_repeats):
-            X_perm = X.copy()
-            X_perm[col] = np.random.permutation(X_perm[col])
-            score = metric(y, model.predict(X_perm))
-            scores.append(baseline_score - score)
-
-        importances[col] = {
-            'mean': np.mean(scores),
-            'std': np.std(scores)
-        }
-
-    return importances
-```
-
-## Evaluation & Validation
-
-### Consistency Checks
-
-**Across Methods**:
-Compare rankings from different importance methods:
-```python
-from scipy.stats import spearmanr
-
-correlation = spearmanr(
-    tree_importance_ranking,
-    permutation_importance_ranking
-)
-```
-
-**Across Subsets**:
-Importance should be stable across data subsets:
-```python
-from sklearn.model_selection import KFold
-
-importances_per_fold = []
-for train_idx, val_idx in KFold(n_splits=5).split(X):
-    # Compute importance on fold
-    importances_per_fold.append(compute_importance(X[val_idx], y[val_idx]))
-
-# Check variance
-importance_std = np.std(importances_per_fold, axis=0)
-```
-
-### Domain Validation
-
-**Expert Review**:
-- Do important features align with domain knowledge?
-- Are there unexpected importances?
-- Are known important features captured?
-
-**Hypothesis Testing**:
-- Is `I(j)` significantly greater than zero?
-- Permutation test or bootstrap confidence intervals
-
-**Example**:
-```python
-# Permutation test for significance
-null_distribution = []
-for _ in range(1000):
-    y_permuted = np.random.permutation(y)
-    null_importance = compute_importance(X, y_permuted)
-    null_distribution.append(null_importance)
-
-p_value = (null_distribution >= observed_importance).mean()
-```
-
-### Robustness Analysis
-
-**Stability to Noise**:
-Add random features and verify low importance:
-```python
-X_with_noise = X.copy()
-X_with_noise['random'] = np.random.randn(len(X))
-
-importances = compute_importance(X_with_noise, y)
-assert importances['random'] < threshold  # Near zero
-```
-
-**Sensitivity to Outliers**:
-Recompute importance with outliers removed.
-
-## Challenges & Limitations
-
-### Methodological Challenges
-
-**Correlated Features**:
-- Tree importance: Split between correlated features
-- Permutation: Unrealistic combinations if features correlated
-- Solution: Conditional importance, clustered permutation
-
-**Feature Interactions**:
-- Standard importance: Doesn't capture interactions
-- Solution: SHAP interaction values, H-statistic
-
-**Causality**:
-- Importance ≠ causal effect
-- Observational data limitations
-- Solution: Causal inference methods, interventional importance
-
-### Computational Challenges
-
-**Scalability**:
-- Permutation: `O(p × r × n)` predictions
-- SHAP: Exponential (exact), polynomial (approximate)
-- Drop-column: Requires `p` model retrains
-
-**Real-time Constraints**:
-- Production systems: Pre-compute importance
-- Online learning: Incremental importance updates
-
-### Interpretation Challenges
-
-**Audience Dependence**:
-- Technical vs. lay users
-- Absolute vs. relative importance
-- Positive vs. negative effects
-
-**Multicollinearity**:
-- Inflated coefficient variance (linear models)
-- Shared importance (tree models)
-- Solution: Regularisation, feature engineering
-
-## Research Directions
-
-### Emerging Areas
-
-**Causal Feature Importance**:
-- Interventional importance: `I(j) = E[Y | do(X_j)] - E[Y]`
-- Counterfactual reasoning
-- Structural causal models
-
-**Conditional Importance**:
-- Importance given realistic feature combinations
-- Conditional permutation schemes
-- Addressing feature dependence
-
-**Temporal Feature Importance**:
-- Time-varying importance (online learning)
-- Concept drift detection
-- Dynamic feature selection
-
-**Multi-task Feature Importance**:
-- Shared importance across tasks
-- Task-specific importance decomposition
-
-### Industry Innovation
-
-**Microsoft InterpretML**:
-- Unified importance API
-- EBM feature importance (additive effects)
-
-**Google Cloud Explainable AI**:
-- Feature attribution aggregation
-- Integrated with Vertex AI
-
-**H2O.ai Driverless AI**:
-- Automated feature importance
-- Ensemble importance across models
-
-## Best Practices
-
-### Method Selection
-
-**Decision Tree**:
-1. **Model type**: Trees → intrinsic; Neural nets → permutation/SHAP
-2. **Computational budget**: Limited → tree intrinsic; Ample → SHAP
-3. **Feature correlation**: High → SHAP/conditional; Low → permutation
-4. **Causality**: Important → causal methods; Prediction → standard
-
-### Implementation Guidelines
-
-**Pre-analysis**:
-- Check for correlated features (VIF, correlation matrix)
-- Validate data quality (missing values, outliers)
-- Establish domain priors (expected important features)
-
-**Analysis**:
-- Use multiple methods (robustness check)
-- Include confidence intervals (permutation variance)
-- Validate against domain knowledge
-- Test for statistical significance
-
-**Post-analysis**:
-- Document methodology and parameters
-- Visualise with clear labels
-- Highlight top-K features
-- Disclose limitations
-
-### Visualisation Guidelines
-
-**Clarity**:
-- Sort by importance (descending)
-- Limit to top-K features (avoid clutter)
-- Include error bars (uncertainty)
-- Use color judiciously (positive/negative)
-
-**Context**:
-- Show feature scales (if relevant)
-- Include baseline (zero importance line)
-- Annotate unexpected results
-- Provide interpretation guide
-
-## References
-
-### Academic Literature
-
-- Breiman, L. (2001). "Random forests." *Machine Learning*, 45(1), 5-32
-- Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
-- Strobl, C., et al. (2007). "Bias in random forest variable importance measures." *BMC Bioinformatics*, 8(1), 25
-- Fisher, A., Rudin, C., & Dominici, F. (2019). "All models are wrong, but many are useful: Learning a variable's importance by studying an entire class of prediction models simultaneously." *Journal of Machine Learning Research*, 20(177), 1-81
-
-### Standards
-
-- IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
-
-### Tools & Frameworks
-
-- Scikit-learn. (2023). *Inspection module: permutation_importance*
-- Lundberg, S. M. (2023). *SHAP library*
-- Molnar, C. (2022). *Interpretable Machine Learning: Feature Importance*
-
-## See Also
-
-- [[Permutation Importance]]
-- [[SHAP]]
-- [[Feature Attribution]]
-- [[Global Explanation]]
-- [[Feature Selection]]
-- [[Partial Dependence Plot]]
-	- maturity:: draft
-	- owl:class:: mv:FeatureImportance
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: feature-importance-relationships
-- ## About Feature Importance
-	- Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
+iri:: http://narrativegoldmine.com/spatial-computing#FeatureImportance
+uri:: urn:visionclaw:concept:spatial-computing:feature-importance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:feature-importance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Feature Importance
+content-hash:: sha256-12-d07bf81edbfb
+legacy-term-id:: AI-0303
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:FeatureImportance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
 
 			- ## Features
 
-	- ### Virunga National Park: Overview
-	- **Location and Importance**: Virunga National Park is located in eastern Congo, known for its endangered mountain gorillas and rich biodiversity.
-	- **Challenges**: The park faces numerous challenges, including militia activity, deforestation, and a lack of consistent government support.
+  - ### Virunga National Park: Overview
+  - **Location and Importance**: Virunga National Park is located in eastern Congo, known for its endangered mountain gorillas and rich biodiversity.
+  - **Challenges**: The park faces numerous challenges, including militia activity, deforestation, and a lack of consistent government support.
 
 		- ##### Sound Design
 		- It also highlights the importance of using spatial audio to enhance theimmersive experience of an app, which includes attaching sound toobjects and creating soundscapes.
@@ -654,13 +60,13 @@ Recompute importance with outliers removed.
 			- **Limitations:** Limited feature set compared to Oobabooga and Open WebUI.
 			- **Link:** [Llama.cpp GitHub](https://github.com/llama-cpp)
 
-	- ## Elicit's Approach and Features
+  - ## Elicit's Approach and Features
 
 			- ## Features
 
-	- ### Virunga National Park: Overview
-	- **Location and Importance**: Virunga National Park is located in eastern Congo, known for its endangered mountain gorillas and rich biodiversity.
-	- **Challenges**: The park faces numerous challenges, including militia activity, deforestation, and a lack of consistent government support.
+  - ### Virunga National Park: Overview
+  - **Location and Importance**: Virunga National Park is located in eastern Congo, known for its endangered mountain gorillas and rich biodiversity.
+  - **Challenges**: The park faces numerous challenges, including militia activity, deforestation, and a lack of consistent government support.
 
 		- ##### Sound Design
 		- It also highlights the importance of using spatial audio to enhance theimmersive experience of an app, which includes attaching sound toobjects and creating soundscapes.
@@ -682,14 +88,13 @@ Recompute importance with outliers removed.
 			- **Limitations:** Limited feature set compared to Oobabooga and Open WebUI.
 			- **Link:** [Llama.cpp GitHub](https://github.com/llama-cpp)
 
-	- ## Elicit's Approach and Features
+  - ## Elicit's Approach and Features
 
 			- ## Features
 
-- # Marco presentation
-	- ![20240507 - Manchester Hackathon.pdf](assets/20240507_-_Manchester_Hackathon_1715878110413_0.pdf)
+  - # Marco presentation
+  - ![20240507 - Manchester Hackathon.pdf](assets/20240507_-_Manchester_Hackathon_1715878110413_0.pdf)
 			- [stavsap/comfyui-ollama (github.com)](https://github.com/stavsap/comfyui-ollama)
-			  id:: 6633f4c0-358f-44cf-bf05-d43c75febe36
 		- DONE Backup the working docker
 		- DONE sort the vpn and port forwarding
 		- DONE Check the security
@@ -698,7 +103,6 @@ Recompute importance with outliers removed.
 		- DONE Fire up 3 instances
 			- DONE TripoSR (no point, feature dropped)
 		- DONE [yisol/IDM-VTON: IDM-VTON : Improving Diffusion Models for Authentic Virtual Try-on in the Wild (github.com)](https://github.com/yisol/IDM-VTON)
-		  collapsed:: true
 		  CLOCK: [2024-05-06 Mon 09:23:58]--[2024-05-06 Mon 09:23:58] =>  00:00:00
 		  CLOCK: [2024-05-06 Mon 09:23:59]--[2024-05-06 Mon 09:24:00] =>  00:00:01
 		  :END:
@@ -722,50 +126,48 @@ Recompute importance with outliers removed.
 				- Minimalist server UI with OpenAI-compatible API.
 				- Excellent for developers due to fast updates.
 			- **Limitations:** Limited feature set compared to Oobabooga and Open WebUI.
-			  
+
 			  ---
 
-	- ## Elicit's Approach and Features
+  - ## Elicit's Approach and Features
 
-	- ### **AGG: Amortized Generative 3D Gaussians**
+  - ### **AGG: Amortized Generative 3D Gaussians**
 
-- It offers advanced features such as anti-aliasing, sub-pixel accuracy, and gradient meshes.
+  - It offers advanced features such as anti-aliasing, sub-pixel accuracy, and gradient meshes.
 
-- AGG can be used for various applications, including image processing, font rendering, and [[user experience]] interface design.
-- It can handle meshes of arbitrary genus (with holes or handles), offering flexibility in the type of geometry it can process.
+  - AGG can be used for various applications, including image processing, font rendering, and [[user experience]] interface design.
+  - It can handle meshes of arbitrary genus (with holes or handles), offering flexibility in the type of geometry it can process.
 
-- Instant Meshes allows for controlling various aspects of the remeshing process, such as target edge length and alignment to feature lines.
+  - Instant Meshes allows for controlling various aspects of the remeshing process, such as target edge length and alignment to feature lines.
 
-- The tool supports importing and exporting meshes in common 3D file formats like OBJ and PLY.
+  - The tool supports importing and exporting meshes in common 3D file formats like OBJ and PLY.
 
-- It uses a command-line interface, enabling batch processing and integration into automated workflows.
+  - It uses a command-line interface, enabling batch processing and integration into automated workflows.
 
 
--   It allows users to programme the data plane of their service mesh using WebAssembly (Wasm) filters, offering flexibility in customising network traffic processing.
+  -   It allows users to programme the data plane of their service mesh using WebAssembly (Wasm) filters, offering flexibility in customising network traffic processing.
 
--   Vmesh aims to simplify the process of creating and managing service meshes, particularly by reducing the complexity associated with traditional sidecar proxies.
+  -   Vmesh aims to simplify the process of creating and managing service meshes, particularly by reducing the complexity associated with traditional sidecar proxies.
 
--   The system provides tools to observe and analyse network traffic flowing through the mesh, providing insights into the performance and behaviour of services.
+  -   The system provides tools to observe and analyse network traffic flowing through the mesh, providing insights into the performance and behaviour of services.
 
--   Users can apply granular policies to control access between services, ensuring a strong security posture and preventing unauthorised communication.
+  -   Users can apply granular policies to control access between services, ensuring a strong security posture and preventing unauthorised communication.
 
--   Vmesh integrates with existing Kubernetes environments and leverages Cilium's eBPF-based networking for performance and efficiency.
+  -   Vmesh integrates with existing Kubernetes environments and leverages Cilium's eBPF-based networking for performance and efficiency.
 
 		- [Thin Plate Spline Motion Model](https://replicate.com/yoyo-nb/thin-plate-spline-motion-model) - *   This model animates a still image by warping it according to the motion of a driving video.
--   It uses a thin-plate spline motion model to learn [[modeling]] patterns from the driving video.
--   The system uses keypoint detection to identify facial landmarks or other features in both the source image and the driving video.
--   The thin-plate spline transformation warps the source image so that its keypoints move in accordance with the motion depicted in the driving video.
--   Users can input a static image and a video to generate an animated version of the image following the driving video's movements.
--   The process involves feature extraction, motion estimation, and image rendering to create the final animated output.
--   The tool promotes better understanding of software development processes and architecture decisions.
--   Customisation of colours and metrics is possible, enabling the tool to adapt to different codebases and analysis goals.
+  -   It uses a thin-plate spline motion model to learn [[modeling]] patterns from the driving video.
+  -   The system uses keypoint detection to identify facial landmarks or other features in both the source image and the driving video.
+  -   The thin-plate spline transformation warps the source image so that its keypoints move in accordance with the motion depicted in the driving video.
+  -   Users can input a static image and a video to generate an animated version of the image following the driving video's movements.
+  -   The process involves feature extraction, motion estimation, and image rendering to create the final animated output.
+  -   The tool promotes better understanding of software development processes and architecture decisions.
+  -   Customisation of colours and metrics is possible, enabling the tool to adapt to different codebases and analysis goals.
 
-- # Marco presentation
-			  id:: 6633f4c0-358f-44cf-bf05-d43c75febe36
+  - # Marco presentation
 		- DONE Backup the working docker
 		- DONE Install the rest of the feature set
 		- DONE Sort the models and Loras
-		  collapsed:: true
 		  CLOCK: [2024-05-06 Mon 09:23:58]--[2024-05-06 Mon 09:23:58] =>  00:00:00
 		  CLOCK: [2024-05-06 Mon 09:23:59]--[2024-05-06 Mon 09:24:00] =>  00:00:01
 		  CLOCK: [2024-05-06 Mon 09:25:33]--[2024-05-06 Mon 12:16:24] =>  02:50:51
@@ -773,7 +175,7 @@ Recompute importance with outliers removed.
 			  CLOCK: [2024-05-06 Mon 10:23:31]--[2024-05-06 Mon 10:23:31] =>  00:00:00
 			  :END:
 
-	- ### Humane Ai Pin
+  - ### Humane Ai Pin
 		- **Description**: A behavior modification wearable that uses mild electric shock to help break bad habits. (weird)
 		- **Features**:
 			- Delivers a mild shock to discourage bad habits
@@ -786,362 +188,361 @@ Recompute importance with outliers removed.
 		- Hardware: [https://www.espressif.com/en/news/ESP32-S3-BOX-3](https://www.espressif.com/en/news/ESP32-S3-BOX-3)
 		- [https://github.com/ollama/ollama/blob/main/docs/openai.md](https://github.com/ollama/ollama/blob/main/docs/openai.md)
 		- Actually you can do full two way conversations! Here's a PR someone has in progress to officially add it to esphome - [https://github.com/esphome/firmware/pull/173](https://github.com/esphome/firmware/pull/173)
-	- [AI in a Box (crowdsupply.com)](https://www.crowdsupply.com/useful-sensors/ai-in-a-box)
+  - [AI in a Box (crowdsupply.com)](https://www.crowdsupply.com/useful-sensors/ai-in-a-box)
 		- Android Auto's capability to summarize messages and suggest relevant replies, powered by on-device AI, for safer driving experiences.
 		- Note Assist for generating AI-powered summaries of notes taken within Samsung Notes, improving organization and retrieval of information.
 		- Transcript Assist uses on-device AI for transcribing and summarizing voice recordings, identifying different speakers and translating content.
 		- Edit Suggestion feature that uses on-device AI to suggest photo edits, enhancing the photography experience without the need for server processing.
 		- [Google android etc](https://developers.google.com/learn/topics/on-device-ml)
 		- [Intel meteor lake?](https://www.pocket-lint.com/what-is-meteor-lake-and-how-will-intel-leverage-ai-in-future/)
-	- [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
-	-
-- **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
+  - [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
+  - **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
 
-## Related Terms
+  ## Related Terms
 
-- **Broader**: [[Global Explanation]], [[Model Interpretability]]
-- **Narrower**: [[Permutation Importance]], [[SHAP]], [[Feature Attribution]]
-- **Related**: [[Feature Selection]], [[Dimensionality Reduction]]
+  - **Broader**: [[Global Explanation]], [[Model Interpretability]]
+  - **Narrower**: [[Permutation Importance]], [[SHAP]], [[Feature Attribution]]
+  - **Related**: [[Feature Selection]], [[Dimensionality Reduction]]
 
-## Formal Specification
+  ## Formal Specification
 
-### Core Concept
+  ### Core Concept
 
-Given model `f: X → Y` with features `X = {x₁, x₂, ..., xₚ}`, feature importance `I(j)` quantifies:
+  Given model `f: X → Y` with features `X = {x₁, x₂, ..., xₚ}`, feature importance `I(j)` quantifies:
 
-```
-I(j) = Influence of feature j on f's predictions
-```
+  ```
+  I(j) = Influence of feature j on f's predictions
+  ```
 
-**Properties**:
-- Non-negative: `I(j) ≥ 0`
-- Normalised (optional): `Σ I(j) = 1`
-- Ranked: Features ordered by `I(j)`
+  **Properties**:
+  - Non-negative: `I(j) ≥ 0`
+  - Normalised (optional): `Σ I(j) = 1`
+  - Ranked: Features ordered by `I(j)`
 
-### Types of Importance
+  ### Types of Importance
 
-**Global Importance**: Across all predictions
-```
-I_global(j) = E_X[Impact of feature j on f(X)]
-```
+  **Global Importance**: Across all predictions
+  ```
+  I_global(j) = E_X[Impact of feature j on f(X)]
+  ```
 
-**Local Importance**: For specific instance `x`
-```
-I_local(j, x) = Impact of feature j on f(x)
-```
+  **Local Importance**: For specific instance `x`
+  ```
+  I_local(j, x) = Impact of feature j on f(x)
+  ```
 
-## Methods
+  ## Methods
 
-### Intrinsic Feature Importance
+  ### Intrinsic Feature Importance
 
-#### Linear Model Coefficients
+  #### Linear Model Coefficients
 
-**Linear Regression**:
-```
-y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ
-```
+  **Linear Regression**:
+  ```
+  y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ
+  ```
 
-**Importance**:
-```
-I(j) = |βⱼ| × σⱼ
-```
-Where `σⱼ` is standard deviation of feature `j` (for comparable scales).
+  **Importance**:
+  ```
+  I(j) = |βⱼ| × σⱼ
+  ```
+  Where `σⱼ` is standard deviation of feature `j` (for comparable scales).
 
-**Interpretation**: Absolute standardised coefficient magnitude.
+  **Interpretation**: Absolute standardised coefficient magnitude.
 
-**Advantages**:
-- Direct from model parameters
-- Computationally free
-- Clear interpretation
+  **Advantages**:
+  - Direct from model parameters
+  - Computationally free
+  - Clear interpretation
 
-**Limitations**:
-- Assumes linearity
-- Sensitive to multicollinearity
-- Not applicable to non-linear models
+  **Limitations**:
+  - Assumes linearity
+  - Sensitive to multicollinearity
+  - Not applicable to non-linear models
 
-#### Tree-Based Importance
+  #### Tree-Based Importance
 
-**Decision Trees**:
-```
-I(j) = Σ (samples at node) × (impurity decrease) for all nodes splitting on feature j
+  **Decision Trees**:
+  ```
+  I(j) = Σ (samples at node) × (impurity decrease) for all nodes splitting on feature j
        / (total samples × total impurity decrease)
-```
+  ```
 
-**Impurity Measures**:
-- **Gini impurity**: `1 - Σ pᵢ²`
-- **Entropy**: `-Σ pᵢ log(pᵢ)`
-- **Variance** (regression): `Var(y)`
+  **Impurity Measures**:
+  - **Gini impurity**: `1 - Σ pᵢ²`
+  - **Entropy**: `-Σ pᵢ log(pᵢ)`
+  - **Variance** (regression): `Var(y)`
 
-**Random Forest/Gradient Boosting**:
-```
-I(j) = Average importance of feature j across all trees
-```
+  **Random Forest/Gradient Boosting**:
+  ```
+  I(j) = Average importance of feature j across all trees
+  ```
 
-**Advantages**:
-- Built into tree algorithms
-- Fast computation
-- Handles non-linearity and interactions
+  **Advantages**:
+  - Built into tree algorithms
+  - Fast computation
+  - Handles non-linearity and interactions
 
-**Limitations**:
-- **Bias towards high-cardinality features**: More split opportunities
-- **Correlated features**: Importance split between them
-- **Unreliable for extrapolation**: Training data dependent
+  **Limitations**:
+  - **Bias towards high-cardinality features**: More split opportunities
+  - **Correlated features**: Importance split between them
+  - **Unreliable for extrapolation**: Training data dependent
 
-### Model-Agnostic Feature Importance
+  ### Model-Agnostic Feature Importance
 
-#### Permutation Importance
+  #### Permutation Importance
 
-**Algorithm** (Breiman, 2001):
+  **Algorithm** (Breiman, 2001):
 
-1. Compute baseline performance: `S_orig = Score(f, X, y)`
-2. For each feature `j`:
+  1. Compute baseline performance: `S_orig = Score(f, X, y)`
+  2. For each feature `j`:
    a. Permute feature: `X_perm = X with column j shuffled`
    b. Recompute performance: `S_perm = Score(f, X_perm, y)`
    c. Importance: `I(j) = S_orig - E[S_perm]` (averaged over repeats)
 
-**Properties**:
-- Model-agnostic
-- Reflects true predictive importance
-- Accounts for feature interactions
+  **Properties**:
+  - Model-agnostic
+  - Reflects true predictive importance
+  - Accounts for feature interactions
 
-**Advantages**:
-- Unbiased (compared to tree importance)
-- Works with any model
-- Intuitive interpretation
+  **Advantages**:
+  - Unbiased (compared to tree importance)
+  - Works with any model
+  - Intuitive interpretation
 
-**Limitations**:
-- Requires access to validation data
-- Computationally expensive (many predictions)
-- Assumes feature independence (can create unrealistic data)
+  **Limitations**:
+  - Requires access to validation data
+  - Computationally expensive (many predictions)
+  - Assumes feature independence (can create unrealistic data)
 
-#### Drop-Column Importance
+  #### Drop-Column Importance
 
-**Algorithm**:
+  **Algorithm**:
 
-1. Train model on all features: `f_all(X) → y`
-2. For each feature `j`:
+  1. Train model on all features: `f_all(X) → y`
+  2. For each feature `j`:
    a. Train model without feature `j`: `f_{-j}(X_{-j}) → y`
    b. Importance: `I(j) = Score(f_all) - Score(f_{-j})`
 
-**Interpretation**: Performance decrease when feature removed.
+  **Interpretation**: Performance decrease when feature removed.
 
-**Advantages**:
-- Directly measures feature necessity
-- No unrealistic data generation
+  **Advantages**:
+  - Directly measures feature necessity
+  - No unrealistic data generation
 
-**Limitations**:
-- Requires retraining `p` models
-- Computationally prohibitive for complex models
-- May underestimate importance if redundant features exist
+  **Limitations**:
+  - Requires retraining `p` models
+  - Computationally prohibitive for complex models
+  - May underestimate importance if redundant features exist
 
-#### SHAP Feature Importance
+  #### SHAP Feature Importance
 
-**Definition** (Lundberg & Lee, 2017):
+  **Definition** (Lundberg & Lee, 2017):
 
-```
-I(j) = (1/n) Σ |φⱼ(xᵢ)|
+  ```
+  I(j) = (1/n) Σ |φⱼ(xᵢ)|
              i=1
-```
+  ```
 
-Where `φⱼ(xᵢ)` is SHAP value for feature `j` at instance `i`.
+  Where `φⱼ(xᵢ)` is SHAP value for feature `j` at instance `i`.
 
-**Interpretation**: Average absolute contribution of feature `j`.
+  **Interpretation**: Average absolute contribution of feature `j`.
 
-**Advantages**:
-- Consistent with local explanations
-- Theoretically grounded (Shapley values)
-- Handles feature interactions via interaction values
+  **Advantages**:
+  - Consistent with local explanations
+  - Theoretically grounded (Shapley values)
+  - Handles feature interactions via interaction values
 
-**Variants**:
-- **Mean absolute SHAP**: `(1/n) Σ |φⱼ(xᵢ)|` (default)
-- **Mean SHAP**: `(1/n) Σ φⱼ(xᵢ)` (shows direction)
-- **SHAP interaction importance**: Sum of interaction effects
+  **Variants**:
+  - **Mean absolute SHAP**: `(1/n) Σ |φⱼ(xᵢ)|` (default)
+  - **Mean SHAP**: `(1/n) Σ φⱼ(xᵢ)` (shows direction)
+  - **SHAP interaction importance**: Sum of interaction effects
 
-**Limitations**:
-- Computationally expensive (especially Kernel SHAP)
-- Baseline dependence
-- Interpretation complexity for interactions
+  **Limitations**:
+  - Computationally expensive (especially Kernel SHAP)
+  - Baseline dependence
+  - Interpretation complexity for interactions
 
-## Visualisations
+  ## Visualisations
 
-### Bar Charts
+  ### Bar Charts
 
-**Structure**:
-- Features on y-axis
-- Importance on x-axis
-- Sorted by magnitude
+  **Structure**:
+  - Features on y-axis
+  - Importance on x-axis
+  - Sorted by magnitude
 
-**Variants**:
-- **Standard**: Single bar per feature
-- **Grouped**: Multiple models compared
-- **Stacked**: Positive/negative contributions
+  **Variants**:
+  - **Standard**: Single bar per feature
+  - **Grouped**: Multiple models compared
+  - **Stacked**: Positive/negative contributions
 
-**Example** (matplotlib):
-```python
-import matplotlib.pyplot as plt
+  **Example** (matplotlib):
+  ```python
+  import matplotlib.pyplot as plt
 
-features = ['age', 'income', 'education', 'location']
-importances = [0.4, 0.3, 0.2, 0.1]
+  features = ['age', 'income', 'education', 'location']
+  importances = [0.4, 0.3, 0.2, 0.1]
 
-plt.barh(features, importances)
-plt.xlabel('Feature Importance')
-plt.title('Permutation Importance')
-```
+  plt.barh(features, importances)
+  plt.xlabel('Feature Importance')
+  plt.title('Permutation Importance')
+  ```
 
-### SHAP Summary Plots
+  ### SHAP Summary Plots
 
-**Structure**:
-- Features on y-axis (sorted by importance)
-- SHAP values on x-axis
-- Each dot is an instance
-- Color indicates feature value (high/low)
+  **Structure**:
+  - Features on y-axis (sorted by importance)
+  - SHAP values on x-axis
+  - Each dot is an instance
+  - Color indicates feature value (high/low)
 
-**Interpretation**:
-- **Position**: SHAP value (impact)
-- **Color**: Feature value
-- **Density**: Distribution of impacts
+  **Interpretation**:
+  - **Position**: SHAP value (impact)
+  - **Color**: Feature value
+  - **Density**: Distribution of impacts
 
-**Example**:
-```python
-import shap
+  **Example**:
+  ```python
+  import shap
 
-shap.summary_plot(shap_values, X_test)
-```
+  shap.summary_plot(shap_values, X_test)
+  ```
 
-### Feature Importance with Confidence Intervals
+  ### Feature Importance with Confidence Intervals
 
-**Permutation Importance Variance**:
+  **Permutation Importance Variance**:
 
-Multiple permutations yield distribution:
-```
-I(j) ~ N(μⱼ, σⱼ²)
-```
+  Multiple permutations yield distribution:
+  ```
+  I(j) ~ N(μⱼ, σⱼ²)
+  ```
 
-**Visualisation**:
-- Bar chart with error bars
-- Box plots showing distribution
-- Violin plots for full distribution
+  **Visualisation**:
+  - Bar chart with error bars
+  - Box plots showing distribution
+  - Violin plots for full distribution
 
-**Example** (scikit-learn):
-```python
-from sklearn.inspection import permutation_importance
+  **Example** (scikit-learn):
+  ```python
+  from sklearn.inspection import permutation_importance
 
-result = permutation_importance(model, X_val, y_val, n_repeats=30)
+  result = permutation_importance(model, X_val, y_val, n_repeats=30)
 
-importances_mean = result.importances_mean
-importances_std = result.importances_std
+  importances_mean = result.importances_mean
+  importances_std = result.importances_std
 
-plt.barh(features, importances_mean, xerr=importances_std)
-```
+  plt.barh(features, importances_mean, xerr=importances_std)
+  ```
 
-## Application Domains
+  ## Application Domains
 
-### Feature Selection
+  ### Feature Selection
 
-**Use Case**: Identify and retain only important features.
+  **Use Case**: Identify and retain only important features.
 
-**Approach**:
-1. Compute feature importance
-2. Threshold or select top-K features
-3. Retrain model on reduced feature set
-4. Evaluate performance
+  **Approach**:
+  1. Compute feature importance
+  2. Threshold or select top-K features
+  3. Retrain model on reduced feature set
+  4. Evaluate performance
 
-**Benefits**:
-- Reduced overfitting
-- Faster training/inference
-- Improved interpretability
+  **Benefits**:
+  - Reduced overfitting
+  - Faster training/inference
+  - Improved interpretability
 
-**Example**:
-```python
-from sklearn.feature_selection import SelectFromModel
+  **Example**:
+  ```python
+  from sklearn.feature_selection import SelectFromModel
 
-# Using tree-based importance
-selector = SelectFromModel(RandomForestClassifier(), threshold='median')
-X_selected = selector.fit_transform(X_train, y_train)
-```
+  # Using tree-based importance
+  selector = SelectFromModel(RandomForestClassifier(), threshold='median')
+  X_selected = selector.fit_transform(X_train, y_train)
+  ```
 
-### Model Debugging
+  ### Model Debugging
 
-**Use Cases**:
-- **Data leakage detection**: Unexpected high importance
-- **Sanity checks**: Aligns with domain knowledge?
-- **Bias detection**: Protected attributes driving predictions?
+  **Use Cases**:
+  - **Data leakage detection**: Unexpected high importance
+  - **Sanity checks**: Aligns with domain knowledge?
+  - **Bias detection**: Protected attributes driving predictions?
 
-**Example**:
-Feature importance reveals `customer_id` has high importance → data leakage likely.
+  **Example**:
+  Feature importance reveals `customer_id` has high importance → data leakage likely.
 
-### Domain Insight
+  ### Domain Insight
 
-**Scientific Applications**:
-- Hypothesis generation (which variables matter?)
-- Mechanism understanding (how do variables influence outcome?)
-- Prioritisation (which factors to intervene on?)
+  **Scientific Applications**:
+  - Hypothesis generation (which variables matter?)
+  - Mechanism understanding (how do variables influence outcome?)
+  - Prioritisation (which factors to intervene on?)
 
-**Example** (Healthcare):
-Feature importance shows "blood pressure" more important than "BMI" for heart disease prediction → clinical validation and insight.
+  **Example** (Healthcare):
+  Feature importance shows "blood pressure" more important than "BMI" for heart disease prediction → clinical validation and insight.
 
-### Regulatory Compliance
+  ### Regulatory Compliance
 
-**Finance**:
-- Fair lending: Ensure protected attributes not driving decisions
-- Model risk management: Understand key risk factors
+  **Finance**:
+  - Fair lending: Ensure protected attributes not driving decisions
+  - Model risk management: Understand key risk factors
 
-**Example**:
-Feature importance analysis shows `race` has near-zero importance → compliance with fair lending laws.
+  **Example**:
+  Feature importance analysis shows `race` has near-zero importance → compliance with fair lending laws.
 
-## Implementation Approaches
+  ## Implementation Approaches
 
-### Scikit-learn Tree Importance
+  ### Scikit-learn Tree Importance
 
-```python
-from sklearn.ensemble import RandomForestClassifier
+  ```python
+  from sklearn.ensemble import RandomForestClassifier
 
-model = RandomForestClassifier().fit(X_train, y_train)
+  model = RandomForestClassifier().fit(X_train, y_train)
 
-importances = model.feature_importances_
-indices = np.argsort(importances)[::-1]
+  importances = model.feature_importances_
+  indices = np.argsort(importances)[::-1]
 
-for i in range(X_train.shape[1]):
+  for i in range(X_train.shape[1]):
     print(f"{features[indices[i]]}: {importances[indices[i]]:.4f}")
-```
+  ```
 
-### Scikit-learn Permutation Importance
+  ### Scikit-learn Permutation Importance
 
-```python
-from sklearn.inspection import permutation_importance
+  ```python
+  from sklearn.inspection import permutation_importance
 
-result = permutation_importance(
+  result = permutation_importance(
     estimator=model,
     X=X_val,
     y=y_val,
     n_repeats=10,
     random_state=42,
     scoring='accuracy'
-)
+  )
 
-for i, (mean, std) in enumerate(zip(result.importances_mean, result.importances_std)):
+  for i, (mean, std) in enumerate(zip(result.importances_mean, result.importances_std)):
     print(f"{features[i]}: {mean:.4f} ± {std:.4f}")
-```
+  ```
 
-### SHAP Feature Importance
+  ### SHAP Feature Importance
 
-```python
-import shap
+  ```python
+  import shap
 
-explainer = shap.TreeExplainer(model)
-shap_values = explainer.shap_values(X_test)
+  explainer = shap.TreeExplainer(model)
+  shap_values = explainer.shap_values(X_test)
 
-# Global feature importance
-shap.summary_plot(shap_values, X_test, plot_type="bar")
+  # Global feature importance
+  shap.summary_plot(shap_values, X_test, plot_type="bar")
 
-# Or manually compute
-feature_importance = np.abs(shap_values).mean(axis=0)
-```
+  # Or manually compute
+  feature_importance = np.abs(shap_values).mean(axis=0)
+  ```
 
-### Custom Importance Function
+  ### Custom Importance Function
 
-```python
-def custom_feature_importance(model, X, y, metric, n_repeats=10):
+  ```python
+  def custom_feature_importance(model, X, y, metric, n_repeats=10):
     """
     Model-agnostic permutation importance with custom metric.
     """
@@ -1162,551 +563,1103 @@ def custom_feature_importance(model, X, y, metric, n_repeats=10):
         }
 
     return importances
-```
+  ```
 
-## Evaluation & Validation
+  ## Evaluation & Validation
 
-### Consistency Checks
+  ### Consistency Checks
 
-**Across Methods**:
-Compare rankings from different importance methods:
-```python
-from scipy.stats import spearmanr
+  **Across Methods**:
+  Compare rankings from different importance methods:
+  ```python
+  from scipy.stats import spearmanr
 
-correlation = spearmanr(
+  correlation = spearmanr(
     tree_importance_ranking,
     permutation_importance_ranking
-)
-```
+  )
+  ```
 
-**Across Subsets**:
-Importance should be stable across data subsets:
-```python
-from sklearn.model_selection import KFold
+  **Across Subsets**:
+  Importance should be stable across data subsets:
+  ```python
+  from sklearn.model_selection import KFold
 
-importances_per_fold = []
-for train_idx, val_idx in KFold(n_splits=5).split(X):
+  importances_per_fold = []
+  for train_idx, val_idx in KFold(n_splits=5).split(X):
     # Compute importance on fold
     importances_per_fold.append(compute_importance(X[val_idx], y[val_idx]))
 
-# Check variance
-importance_std = np.std(importances_per_fold, axis=0)
-```
+  # Check variance
+  importance_std = np.std(importances_per_fold, axis=0)
+  ```
 
-### Domain Validation
+  ### Domain Validation
 
-**Expert Review**:
-- Do important features align with domain knowledge?
-- Are there unexpected importances?
-- Are known important features captured?
+  **Expert Review**:
+  - Do important features align with domain knowledge?
+  - Are there unexpected importances?
+  - Are known important features captured?
 
-**Hypothesis Testing**:
-- Is `I(j)` significantly greater than zero?
-- Permutation test or bootstrap confidence intervals
+  **Hypothesis Testing**:
+  - Is `I(j)` significantly greater than zero?
+  - Permutation test or bootstrap confidence intervals
 
-**Example**:
-```python
-# Permutation test for significance
-null_distribution = []
-for _ in range(1000):
+  **Example**:
+  ```python
+  # Permutation test for significance
+  null_distribution = []
+  for _ in range(1000):
     y_permuted = np.random.permutation(y)
     null_importance = compute_importance(X, y_permuted)
     null_distribution.append(null_importance)
 
-p_value = (null_distribution >= observed_importance).mean()
-```
+  p_value = (null_distribution >= observed_importance).mean()
+  ```
 
-### Robustness Analysis
+  ### Robustness Analysis
 
-**Stability to Noise**:
-Add random features and verify low importance:
-```python
-X_with_noise = X.copy()
-X_with_noise['random'] = np.random.randn(len(X))
+  **Stability to Noise**:
+  Add random features and verify low importance:
+  ```python
+  X_with_noise = X.copy()
+  X_with_noise['random'] = np.random.randn(len(X))
 
-importances = compute_importance(X_with_noise, y)
-assert importances['random'] < threshold  # Near zero
-```
+  importances = compute_importance(X_with_noise, y)
+  assert importances['random'] < threshold  # Near zero
+  ```
 
-**Sensitivity to Outliers**:
-Recompute importance with outliers removed.
+  **Sensitivity to Outliers**:
+  Recompute importance with outliers removed.
 
-## Challenges & Limitations
+  ## Challenges & Limitations
 
-### Methodological Challenges
+  ### Methodological Challenges
 
-**Correlated Features**:
-- Tree importance: Split between correlated features
-- Permutation: Unrealistic combinations if features correlated
-- Solution: Conditional importance, clustered permutation
+  **Correlated Features**:
+  - Tree importance: Split between correlated features
+  - Permutation: Unrealistic combinations if features correlated
+  - Solution: Conditional importance, clustered permutation
 
-**Feature Interactions**:
-- Standard importance: Doesn't capture interactions
-- Solution: SHAP interaction values, H-statistic
+  **Feature Interactions**:
+  - Standard importance: Doesn't capture interactions
+  - Solution: SHAP interaction values, H-statistic
 
-**Causality**:
-- Importance ≠ causal effect
-- Observational data limitations
-- Solution: Causal inference methods, interventional importance
+  **Causality**:
+  - Importance ≠ causal effect
+  - Observational data limitations
+  - Solution: Causal inference methods, interventional importance
 
-### Computational Challenges
+  ### Computational Challenges
 
-**Scalability**:
-- Permutation: `O(p × r × n)` predictions
-- SHAP: Exponential (exact), polynomial (approximate)
-- Drop-column: Requires `p` model retrains
+  **Scalability**:
+  - Permutation: `O(p × r × n)` predictions
+  - SHAP: Exponential (exact), polynomial (approximate)
+  - Drop-column: Requires `p` model retrains
 
-**Real-time Constraints**:
-- Production systems: Pre-compute importance
-- Online learning: Incremental importance updates
+  **Real-time Constraints**:
+  - Production systems: Pre-compute importance
+  - Online learning: Incremental importance updates
 
-### Interpretation Challenges
+  ### Interpretation Challenges
 
-**Audience Dependence**:
-- Technical vs. lay users
-- Absolute vs. relative importance
-- Positive vs. negative effects
+  **Audience Dependence**:
+  - Technical vs. lay users
+  - Absolute vs. relative importance
+  - Positive vs. negative effects
 
-**Multicollinearity**:
-- Inflated coefficient variance (linear models)
-- Shared importance (tree models)
-- Solution: Regularisation, feature engineering
+  **Multicollinearity**:
+  - Inflated coefficient variance (linear models)
+  - Shared importance (tree models)
+  - Solution: Regularisation, feature engineering
 
-## Research Directions
+  ## Research Directions
 
-### Emerging Areas
+  ### Emerging Areas
 
-**Causal Feature Importance**:
-- Interventional importance: `I(j) = E[Y | do(X_j)] - E[Y]`
-- Counterfactual reasoning
-- Structural causal models
+  **Causal Feature Importance**:
+  - Interventional importance: `I(j) = E[Y | do(X_j)] - E[Y]`
+  - Counterfactual reasoning
+  - Structural causal models
 
-**Conditional Importance**:
-- Importance given realistic feature combinations
-- Conditional permutation schemes
-- Addressing feature dependence
+  **Conditional Importance**:
+  - Importance given realistic feature combinations
+  - Conditional permutation schemes
+  - Addressing feature dependence
 
-**Temporal Feature Importance**:
-- Time-varying importance (online learning)
-- Concept drift detection
-- Dynamic feature selection
+  **Temporal Feature Importance**:
+  - Time-varying importance (online learning)
+  - Concept drift detection
+  - Dynamic feature selection
 
-**Multi-task Feature Importance**:
-- Shared importance across tasks
-- Task-specific importance decomposition
+  **Multi-task Feature Importance**:
+  - Shared importance across tasks
+  - Task-specific importance decomposition
 
-### Industry Innovation
+  ### Industry Innovation
 
-**Microsoft InterpretML**:
-- Unified importance API
-- EBM feature importance (additive effects)
+  **Microsoft InterpretML**:
+  - Unified importance API
+  - EBM feature importance (additive effects)
 
-**Google Cloud Explainable AI**:
-- Feature attribution aggregation
-- Integrated with Vertex AI
+  **Google Cloud Explainable AI**:
+  - Feature attribution aggregation
+  - Integrated with Vertex AI
 
-**H2O.ai Driverless AI**:
-- Automated feature importance
-- Ensemble importance across models
+  **H2O.ai Driverless AI**:
+  - Automated feature importance
+  - Ensemble importance across models
 
-## Best Practices
+  ## Best Practices
 
-### Method Selection
+  ### Method Selection
 
-**Decision Tree**:
-1. **Model type**: Trees → intrinsic; Neural nets → permutation/SHAP
-2. **Computational budget**: Limited → tree intrinsic; Ample → SHAP
-3. **Feature correlation**: High → SHAP/conditional; Low → permutation
-4. **Causality**: Important → causal methods; Prediction → standard
+  **Decision Tree**:
+  1. **Model type**: Trees → intrinsic; Neural nets → permutation/SHAP
+  2. **Computational budget**: Limited → tree intrinsic; Ample → SHAP
+  3. **Feature correlation**: High → SHAP/conditional; Low → permutation
+  4. **Causality**: Important → causal methods; Prediction → standard
 
-### Implementation Guidelines
+  ### Implementation Guidelines
 
-**Pre-analysis**:
-- Check for correlated features (VIF, correlation matrix)
-- Validate data quality (missing values, outliers)
-- Establish domain priors (expected important features)
+  **Pre-analysis**:
+  - Check for correlated features (VIF, correlation matrix)
+  - Validate data quality (missing values, outliers)
+  - Establish domain priors (expected important features)
 
-**Analysis**:
-- Use multiple methods (robustness check)
-- Include confidence intervals (permutation variance)
-- Validate against domain knowledge
-- Test for statistical significance
+  **Analysis**:
+  - Use multiple methods (robustness check)
+  - Include confidence intervals (permutation variance)
+  - Validate against domain knowledge
+  - Test for statistical significance
 
-**Post-analysis**:
-- Document methodology and parameters
-- Visualise with clear labels
-- Highlight top-K features
-- Disclose limitations
+  **Post-analysis**:
+  - Document methodology and parameters
+  - Visualise with clear labels
+  - Highlight top-K features
+  - Disclose limitations
 
-### Visualisation Guidelines
+  ### Visualisation Guidelines
 
-**Clarity**:
-- Sort by importance (descending)
-- Limit to top-K features (avoid clutter)
-- Include error bars (uncertainty)
-- Use color judiciously (positive/negative)
+  **Clarity**:
+  - Sort by importance (descending)
+  - Limit to top-K features (avoid clutter)
+  - Include error bars (uncertainty)
+  - Use color judiciously (positive/negative)
 
-**Context**:
-- Show feature scales (if relevant)
-- Include baseline (zero importance line)
-- Annotate unexpected results
-- Provide interpretation guide
+  **Context**:
+  - Show feature scales (if relevant)
+  - Include baseline (zero importance line)
+  - Annotate unexpected results
+  - Provide interpretation guide
 
-## References
+  ## Related Terms
 
-### Academic Literature
+  - **Broader**: [[Global Explanation]], [[Model Interpretability]]
+  - **Narrower**: [[Permutation Importance]], [[SHAP]], [[Feature Attribution]]
+  - **Related**: [[Feature Selection]], [[Dimensionality Reduction]]
 
-- Breiman, L. (2001). "Random forests." *Machine Learning*, 45(1), 5-32
-- Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
-- Strobl, C., et al. (2007). "Bias in random forest variable importance measures." *BMC Bioinformatics*, 8(1), 25
-- Fisher, A., Rudin, C., & Dominici, F. (2019). "All models are wrong, but many are useful: Learning a variable's importance by studying an entire class of prediction models simultaneously." *Journal of Machine Learning Research*, 20(177), 1-81
+  ## Formal Specification
 
-### Standards
+  ### Core Concept
 
-- IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
+  Given model `f: X → Y` with features `X = {x₁, x₂, ..., xₚ}`, feature importance `I(j)` quantifies:
 
-### Tools & Frameworks
+  ```
+  I(j) = Influence of feature j on f's predictions
+  ```
 
-- Scikit-learn. (2023). *Inspection module: permutation_importance*
-- Lundberg, S. M. (2023). *SHAP library*
-- Molnar, C. (2022). *Interpretable Machine Learning: Feature Importance*
+  **Properties**:
+  - Non-negative: `I(j) ≥ 0`
+  - Normalised (optional): `Σ I(j) = 1`
+  - Ranked: Features ordered by `I(j)`
 
-## See Also
+  ### Types of Importance
 
-- [[Permutation Importance]]
-- [[SHAP]]
-- [[Feature Attribution]]
-- [[Global Explanation]]
-- [[Feature Selection]]
-- [[Partial Dependence Plot]]
-	-
-	- ### Original Content
-	  collapsed:: true
+  **Global Importance**: Across all predictions
+  ```
+  I_global(j) = E_X[Impact of feature j on f(X)]
+  ```
+
+  **Local Importance**: For specific instance `x`
+  ```
+  I_local(j, x) = Impact of feature j on f(x)
+  ```
+
+  ## Methods
+
+  ### Intrinsic Feature Importance
+
+  #### Linear Model Coefficients
+
+  **Linear Regression**:
+  ```
+  y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ
+  ```
+
+  **Importance**:
+  ```
+  I(j) = |βⱼ| × σⱼ
+  ```
+  Where `σⱼ` is standard deviation of feature `j` (for comparable scales).
+
+  **Interpretation**: Absolute standardised coefficient magnitude.
+
+  **Advantages**:
+  - Direct from model parameters
+  - Computationally free
+  - Clear interpretation
+
+  **Limitations**:
+  - Assumes linearity
+  - Sensitive to multicollinearity
+  - Not applicable to non-linear models
+
+  #### Tree-Based Importance
+
+  **Decision Trees**:
+  ```
+  I(j) = Σ (samples at node) × (impurity decrease) for all nodes splitting on feature j
+       / (total samples × total impurity decrease)
+  ```
+
+  **Impurity Measures**:
+  - **Gini impurity**: `1 - Σ pᵢ²`
+  - **Entropy**: `-Σ pᵢ log(pᵢ)`
+  - **Variance** (regression): `Var(y)`
+
+  **Random Forest/Gradient Boosting**:
+  ```
+  I(j) = Average importance of feature j across all trees
+  ```
+
+  **Advantages**:
+  - Built into tree algorithms
+  - Fast computation
+  - Handles non-linearity and interactions
+
+  **Limitations**:
+  - **Bias towards high-cardinality features**: More split opportunities
+  - **Correlated features**: Importance split between them
+  - **Unreliable for extrapolation**: Training data dependent
+
+  ### Model-Agnostic Feature Importance
+
+  #### Permutation Importance
+
+  **Algorithm** (Breiman, 2001):
+
+  1. Compute baseline performance: `S_orig = Score(f, X, y)`
+  2. For each feature `j`:
+   a. Permute feature: `X_perm = X with column j shuffled`
+   b. Recompute performance: `S_perm = Score(f, X_perm, y)`
+   c. Importance: `I(j) = S_orig - E[S_perm]` (averaged over repeats)
+
+  **Properties**:
+  - Model-agnostic
+  - Reflects true predictive importance
+  - Accounts for feature interactions
+
+  **Advantages**:
+  - Unbiased (compared to tree importance)
+  - Works with any model
+  - Intuitive interpretation
+
+  **Limitations**:
+  - Requires access to validation data
+  - Computationally expensive (many predictions)
+  - Assumes feature independence (can create unrealistic data)
+
+  #### Drop-Column Importance
+
+  **Algorithm**:
+
+  1. Train model on all features: `f_all(X) → y`
+  2. For each feature `j`:
+   a. Train model without feature `j`: `f_{-j}(X_{-j}) → y`
+   b. Importance: `I(j) = Score(f_all) - Score(f_{-j})`
+
+  **Interpretation**: Performance decrease when feature removed.
+
+  **Advantages**:
+  - Directly measures feature necessity
+  - No unrealistic data generation
+
+  **Limitations**:
+  - Requires retraining `p` models
+  - Computationally prohibitive for complex models
+  - May underestimate importance if redundant features exist
+
+  #### SHAP Feature Importance
+
+  **Definition** (Lundberg & Lee, 2017):
+
+  ```
+  I(j) = (1/n) Σ |φⱼ(xᵢ)|
+             i=1
+  ```
+
+  Where `φⱼ(xᵢ)` is SHAP value for feature `j` at instance `i`.
+
+  **Interpretation**: Average absolute contribution of feature `j`.
+
+  **Advantages**:
+  - Consistent with local explanations
+  - Theoretically grounded (Shapley values)
+  - Handles feature interactions via interaction values
+
+  **Variants**:
+  - **Mean absolute SHAP**: `(1/n) Σ |φⱼ(xᵢ)|` (default)
+  - **Mean SHAP**: `(1/n) Σ φⱼ(xᵢ)` (shows direction)
+  - **SHAP interaction importance**: Sum of interaction effects
+
+  **Limitations**:
+  - Computationally expensive (especially Kernel SHAP)
+  - Baseline dependence
+  - Interpretation complexity for interactions
+
+  ## Visualisations
+
+  ### Bar Charts
+
+  **Structure**:
+  - Features on y-axis
+  - Importance on x-axis
+  - Sorted by magnitude
+
+  **Variants**:
+  - **Standard**: Single bar per feature
+  - **Grouped**: Multiple models compared
+  - **Stacked**: Positive/negative contributions
+
+  **Example** (matplotlib):
+  ```python
+  import matplotlib.pyplot as plt
+
+  features = ['age', 'income', 'education', 'location']
+  importances = [0.4, 0.3, 0.2, 0.1]
+
+  plt.barh(features, importances)
+  plt.xlabel('Feature Importance')
+  plt.title('Permutation Importance')
+  ```
+
+  ### SHAP Summary Plots
+
+  **Structure**:
+  - Features on y-axis (sorted by importance)
+  - SHAP values on x-axis
+  - Each dot is an instance
+  - Color indicates feature value (high/low)
+
+  **Interpretation**:
+  - **Position**: SHAP value (impact)
+  - **Color**: Feature value
+  - **Density**: Distribution of impacts
+
+  **Example**:
+  ```python
+  import shap
+
+  shap.summary_plot(shap_values, X_test)
+  ```
+
+  ### Feature Importance with Confidence Intervals
+
+  **Permutation Importance Variance**:
+
+  Multiple permutations yield distribution:
+  ```
+  I(j) ~ N(μⱼ, σⱼ²)
+  ```
+
+  **Visualisation**:
+  - Bar chart with error bars
+  - Box plots showing distribution
+  - Violin plots for full distribution
+
+  **Example** (scikit-learn):
+  ```python
+  from sklearn.inspection import permutation_importance
+
+  result = permutation_importance(model, X_val, y_val, n_repeats=30)
+
+  importances_mean = result.importances_mean
+  importances_std = result.importances_std
+
+  plt.barh(features, importances_mean, xerr=importances_std)
+  ```
+
+  ## Application Domains
+
+  ### Feature Selection
+
+  **Use Case**: Identify and retain only important features.
+
+  **Approach**:
+  1. Compute feature importance
+  2. Threshold or select top-K features
+  3. Retrain model on reduced feature set
+  4. Evaluate performance
+
+  **Benefits**:
+  - Reduced overfitting
+  - Faster training/inference
+  - Improved interpretability
+
+  **Example**:
+  ```python
+  from sklearn.feature_selection import SelectFromModel
+
+  # Using tree-based importance
+  selector = SelectFromModel(RandomForestClassifier(), threshold='median')
+  X_selected = selector.fit_transform(X_train, y_train)
+  ```
+
+  ### Model Debugging
+
+  **Use Cases**:
+  - **Data leakage detection**: Unexpected high importance
+  - **Sanity checks**: Aligns with domain knowledge?
+  - **Bias detection**: Protected attributes driving predictions?
+
+  **Example**:
+  Feature importance reveals `customer_id` has high importance → data leakage likely.
+
+  ### Domain Insight
+
+  **Scientific Applications**:
+  - Hypothesis generation (which variables matter?)
+  - Mechanism understanding (how do variables influence outcome?)
+  - Prioritisation (which factors to intervene on?)
+
+  **Example** (Healthcare):
+  Feature importance shows "blood pressure" more important than "BMI" for heart disease prediction → clinical validation and insight.
+
+  ### Regulatory Compliance
+
+  **Finance**:
+  - Fair lending: Ensure protected attributes not driving decisions
+  - Model risk management: Understand key risk factors
+
+  **Example**:
+  Feature importance analysis shows `race` has near-zero importance → compliance with fair lending laws.
+
+  ## Implementation Approaches
+
+  ### Scikit-learn Tree Importance
+
+  ```python
+  from sklearn.ensemble import RandomForestClassifier
+
+  model = RandomForestClassifier().fit(X_train, y_train)
+
+  importances = model.feature_importances_
+  indices = np.argsort(importances)[::-1]
+
+  for i in range(X_train.shape[1]):
+    print(f"{features[indices[i]]}: {importances[indices[i]]:.4f}")
+  ```
+
+  ### Scikit-learn Permutation Importance
+
+  ```python
+  from sklearn.inspection import permutation_importance
+
+  result = permutation_importance(
+    estimator=model,
+    X=X_val,
+    y=y_val,
+    n_repeats=10,
+    random_state=42,
+    scoring='accuracy'
+  )
+
+  for i, (mean, std) in enumerate(zip(result.importances_mean, result.importances_std)):
+    print(f"{features[i]}: {mean:.4f} ± {std:.4f}")
+  ```
+
+  ### SHAP Feature Importance
+
+  ```python
+  import shap
+
+  explainer = shap.TreeExplainer(model)
+  shap_values = explainer.shap_values(X_test)
+
+  # Global feature importance
+  shap.summary_plot(shap_values, X_test, plot_type="bar")
+
+  # Or manually compute
+  feature_importance = np.abs(shap_values).mean(axis=0)
+  ```
+
+  ### Custom Importance Function
+
+  ```python
+  def custom_feature_importance(model, X, y, metric, n_repeats=10):
+    """
+    Model-agnostic permutation importance with custom metric.
+    """
+    baseline_score = metric(y, model.predict(X))
+    importances = {}
+
+    for col in X.columns:
+        scores = []
+        for _ in range(n_repeats):
+            X_perm = X.copy()
+            X_perm[col] = np.random.permutation(X_perm[col])
+            score = metric(y, model.predict(X_perm))
+            scores.append(baseline_score - score)
+
+        importances[col] = {
+            'mean': np.mean(scores),
+            'std': np.std(scores)
+        }
+
+    return importances
+  ```
+
+  ## Evaluation & Validation
+
+  ### Consistency Checks
+
+  **Across Methods**:
+  Compare rankings from different importance methods:
+  ```python
+  from scipy.stats import spearmanr
+
+  correlation = spearmanr(
+    tree_importance_ranking,
+    permutation_importance_ranking
+  )
+  ```
+
+  **Across Subsets**:
+  Importance should be stable across data subsets:
+  ```python
+  from sklearn.model_selection import KFold
+
+  importances_per_fold = []
+  for train_idx, val_idx in KFold(n_splits=5).split(X):
+    # Compute importance on fold
+    importances_per_fold.append(compute_importance(X[val_idx], y[val_idx]))
+
+  # Check variance
+  importance_std = np.std(importances_per_fold, axis=0)
+  ```
+
+  ### Domain Validation
+
+  **Expert Review**:
+  - Do important features align with domain knowledge?
+  - Are there unexpected importances?
+  - Are known important features captured?
+
+  **Hypothesis Testing**:
+  - Is `I(j)` significantly greater than zero?
+  - Permutation test or bootstrap confidence intervals
+
+  **Example**:
+  ```python
+  # Permutation test for significance
+  null_distribution = []
+  for _ in range(1000):
+    y_permuted = np.random.permutation(y)
+    null_importance = compute_importance(X, y_permuted)
+    null_distribution.append(null_importance)
+
+  p_value = (null_distribution >= observed_importance).mean()
+  ```
+
+  ### Robustness Analysis
+
+  **Stability to Noise**:
+  Add random features and verify low importance:
+  ```python
+  X_with_noise = X.copy()
+  X_with_noise['random'] = np.random.randn(len(X))
+
+  importances = compute_importance(X_with_noise, y)
+  assert importances['random'] < threshold  # Near zero
+  ```
+
+  **Sensitivity to Outliers**:
+  Recompute importance with outliers removed.
+
+  ## Challenges & Limitations
+
+  ### Methodological Challenges
+
+  **Correlated Features**:
+  - Tree importance: Split between correlated features
+  - Permutation: Unrealistic combinations if features correlated
+  - Solution: Conditional importance, clustered permutation
+
+  **Feature Interactions**:
+  - Standard importance: Doesn't capture interactions
+  - Solution: SHAP interaction values, H-statistic
+
+  **Causality**:
+  - Importance ≠ causal effect
+  - Observational data limitations
+  - Solution: Causal inference methods, interventional importance
+
+  ### Computational Challenges
+
+  **Scalability**:
+  - Permutation: `O(p × r × n)` predictions
+  - SHAP: Exponential (exact), polynomial (approximate)
+  - Drop-column: Requires `p` model retrains
+
+  **Real-time Constraints**:
+  - Production systems: Pre-compute importance
+  - Online learning: Incremental importance updates
+
+  ### Interpretation Challenges
+
+  **Audience Dependence**:
+  - Technical vs. lay users
+  - Absolute vs. relative importance
+  - Positive vs. negative effects
+
+  **Multicollinearity**:
+  - Inflated coefficient variance (linear models)
+  - Shared importance (tree models)
+  - Solution: Regularisation, feature engineering
+
+  ## Research Directions
+
+  ### Emerging Areas
+
+  **Causal Feature Importance**:
+  - Interventional importance: `I(j) = E[Y | do(X_j)] - E[Y]`
+  - Counterfactual reasoning
+  - Structural causal models
+
+  **Conditional Importance**:
+  - Importance given realistic feature combinations
+  - Conditional permutation schemes
+  - Addressing feature dependence
+
+  **Temporal Feature Importance**:
+  - Time-varying importance (online learning)
+  - Concept drift detection
+  - Dynamic feature selection
+
+  **Multi-task Feature Importance**:
+  - Shared importance across tasks
+  - Task-specific importance decomposition
+
+  ### Industry Innovation
+
+  **Microsoft InterpretML**:
+  - Unified importance API
+  - EBM feature importance (additive effects)
+
+  **Google Cloud Explainable AI**:
+  - Feature attribution aggregation
+  - Integrated with Vertex AI
+
+  **H2O.ai Driverless AI**:
+  - Automated feature importance
+  - Ensemble importance across models
+
+  ## Best Practices
+
+  ### Method Selection
+
+  **Decision Tree**:
+  1. **Model type**: Trees → intrinsic; Neural nets → permutation/SHAP
+  2. **Computational budget**: Limited → tree intrinsic; Ample → SHAP
+  3. **Feature correlation**: High → SHAP/conditional; Low → permutation
+  4. **Causality**: Important → causal methods; Prediction → standard
+
+  ### Implementation Guidelines
+
+  **Pre-analysis**:
+  - Check for correlated features (VIF, correlation matrix)
+  - Validate data quality (missing values, outliers)
+  - Establish domain priors (expected important features)
+
+  **Analysis**:
+  - Use multiple methods (robustness check)
+  - Include confidence intervals (permutation variance)
+  - Validate against domain knowledge
+  - Test for statistical significance
+
+  **Post-analysis**:
+  - Document methodology and parameters
+  - Visualise with clear labels
+  - Highlight top-K features
+  - Disclose limitations
+
+  ### Visualisation Guidelines
+
+  **Clarity**:
+  - Sort by importance (descending)
+  - Limit to top-K features (avoid clutter)
+  - Include error bars (uncertainty)
+  - Use color judiciously (positive/negative)
+
+  **Context**:
+  - Show feature scales (if relevant)
+  - Include baseline (zero importance line)
+  - Annotate unexpected results
+  - Provide interpretation guide
+
+  #### References
+  ### Academic Literature
+
+  - Breiman, L. (2001). "Random forests." *Machine Learning*, 45(1), 5-32
+  - Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
+  - Strobl, C., et al. (2007). "Bias in random forest variable importance measures." *BMC Bioinformatics*, 8(1), 25
+  - Fisher, A., Rudin, C., & Dominici, F. (2019). "All models are wrong, but many are useful: Learning a variable's importance by studying an entire class of prediction models simultaneously." *Journal of Machine Learning Research*, 20(177), 1-81
+
+  ### Standards
+
+  - IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
+
+  ### Tools & Frameworks
+
+  - Scikit-learn. (2023). *Inspection module: permutation_importance*
+  - Lundberg, S. M. (2023). *SHAP library*
+  - Molnar, C. (2022). *Interpretable Machine Learning: Feature Importance*
+
+  ## See Also
+
+  - [[Permutation Importance]]
+  - [[SHAP]]
+  - [[Feature Attribution]]
+  - [[Global Explanation]]
+  - [[Feature Selection]]
+  - [[Partial Dependence Plot]]
+  - ### Original Content
 		- ```
-# Feature Importance
-		  
+  # Feature Importance
+
 		  **Term ID**: AI-0303
 		  **Category**: XAI Methods
 		  **Status**: Established
 		  **Last Updated**: 2025-10-27
-		  
+
 		  ## Definition
-		  
+
 		  Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
-		  
+
 		  ## Related Terms
-		  
+
 		  - **Broader**: [[Global Explanation]], [[Model Interpretability]]
 		  - **Narrower**: [[Permutation Importance]], [[SHAP]], [[Feature Attribution]]
 		  - **Related**: [[Feature Selection]], [[Dimensionality Reduction]]
-		  
+
 		  ## Formal Specification
-		  
+
 		  ### Core Concept
-		  
+
 		  Given model `f: X → Y` with features `X = {x₁, x₂, ..., xₚ}`, feature importance `I(j)` quantifies:
-		  
+
 		  ```
 		  I(j) = Influence of feature j on f's predictions
 		  ```
-		  
+
 		  **Properties**:
 		  - Non-negative: `I(j) ≥ 0`
 		  - Normalised (optional): `Σ I(j) = 1`
 		  - Ranked: Features ordered by `I(j)`
-		  
+
 		  ### Types of Importance
-		  
+
 		  **Global Importance**: Across all predictions
 		  ```
 		  I_global(j) = E_X[Impact of feature j on f(X)]
 		  ```
-		  
+
 		  **Local Importance**: For specific instance `x`
 		  ```
 		  I_local(j, x) = Impact of feature j on f(x)
 		  ```
-		  
+
 		  ## Methods
-		  
+
 		  ### Intrinsic Feature Importance
-		  
+
 		  #### Linear Model Coefficients
-		  
+
 		  **Linear Regression**:
 		  ```
 		  y = β₀ + β₁x₁ + β₂x₂ + ... + βₚxₚ
 		  ```
-		  
+
 		  **Importance**:
 		  ```
 		  I(j) = |βⱼ| × σⱼ
 		  ```
 		  Where `σⱼ` is standard deviation of feature `j` (for comparable scales).
-		  
+
 		  **Interpretation**: Absolute standardised coefficient magnitude.
-		  
+
 		  **Advantages**:
 		  - Direct from model parameters
 		  - Computationally free
 		  - Clear interpretation
-		  
+
 		  **Limitations**:
 		  - Assumes linearity
 		  - Sensitive to multicollinearity
 		  - Not applicable to non-linear models
-		  
+
 		  #### Tree-Based Importance
-		  
+
 		  **Decision Trees**:
 		  ```
 		  I(j) = Σ (samples at node) × (impurity decrease) for all nodes splitting on feature j
 		         / (total samples × total impurity decrease)
 		  ```
-		  
+
 		  **Impurity Measures**:
 		  - **Gini impurity**: `1 - Σ pᵢ²`
 		  - **Entropy**: `-Σ pᵢ log(pᵢ)`
 		  - **Variance** (regression): `Var(y)`
-		  
+
 		  **Random Forest/Gradient Boosting**:
 		  ```
 		  I(j) = Average importance of feature j across all trees
 		  ```
-		  
+
 		  **Advantages**:
 		  - Built into tree algorithms
 		  - Fast computation
 		  - Handles non-linearity and interactions
-		  
+
 		  **Limitations**:
 		  - **Bias towards high-cardinality features**: More split opportunities
 		  - **Correlated features**: Importance split between them
 		  - **Unreliable for extrapolation**: Training data dependent
-		  
+
 		  ### Model-Agnostic Feature Importance
-		  
+
 		  #### Permutation Importance
-		  
+
 		  **Algorithm** (Breiman, 2001):
-		  
+
 		  1. Compute baseline performance: `S_orig = Score(f, X, y)`
 		  2. For each feature `j`:
 		     a. Permute feature: `X_perm = X with column j shuffled`
 		     b. Recompute performance: `S_perm = Score(f, X_perm, y)`
 		     c. Importance: `I(j) = S_orig - E[S_perm]` (averaged over repeats)
-		  
+
 		  **Properties**:
 		  - Model-agnostic
 		  - Reflects true predictive importance
 		  - Accounts for feature interactions
-		  
+
 		  **Advantages**:
 		  - Unbiased (compared to tree importance)
 		  - Works with any model
 		  - Intuitive interpretation
-		  
+
 		  **Limitations**:
 		  - Requires access to validation data
 		  - Computationally expensive (many predictions)
 		  - Assumes feature independence (can create unrealistic data)
-		  
+
 		  #### Drop-Column Importance
-		  
+
 		  **Algorithm**:
-		  
+
 		  1. Train model on all features: `f_all(X) → y`
 		  2. For each feature `j`:
 		     a. Train model without feature `j`: `f_{-j}(X_{-j}) → y`
 		     b. Importance: `I(j) = Score(f_all) - Score(f_{-j})`
-		  
+
 		  **Interpretation**: Performance decrease when feature removed.
-		  
+
 		  **Advantages**:
 		  - Directly measures feature necessity
 		  - No unrealistic data generation
-		  
+
 		  **Limitations**:
 		  - Requires retraining `p` models
 		  - Computationally prohibitive for complex models
 		  - May underestimate importance if redundant features exist
-		  
+
 		  #### SHAP Feature Importance
-		  
+
 		  **Definition** (Lundberg & Lee, 2017):
-		  
+
 		  ```
 		  I(j) = (1/n) Σ |φⱼ(xᵢ)|
 		               i=1
 		  ```
-		  
+
 		  Where `φⱼ(xᵢ)` is SHAP value for feature `j` at instance `i`.
-		  
+
 		  **Interpretation**: Average absolute contribution of feature `j`.
-		  
+
 		  **Advantages**:
 		  - Consistent with local explanations
 		  - Theoretically grounded (Shapley values)
 		  - Handles feature interactions via interaction values
-		  
+
 		  **Variants**:
 		  - **Mean absolute SHAP**: `(1/n) Σ |φⱼ(xᵢ)|` (default)
 		  - **Mean SHAP**: `(1/n) Σ φⱼ(xᵢ)` (shows direction)
 		  - **SHAP interaction importance**: Sum of interaction effects
-		  
+
 		  **Limitations**:
 		  - Computationally expensive (especially Kernel SHAP)
 		  - Baseline dependence
 		  - Interpretation complexity for interactions
-		  
+
 		  ## Visualisations
-		  
+
 		  ### Bar Charts
-		  
+
 		  **Structure**:
 		  - Features on y-axis
 		  - Importance on x-axis
 		  - Sorted by magnitude
-		  
+
 		  **Variants**:
 		  - **Standard**: Single bar per feature
 		  - **Grouped**: Multiple models compared
 		  - **Stacked**: Positive/negative contributions
-		  
+
 		  **Example** (matplotlib):
 		  ```python
 		  import matplotlib.pyplot as plt
-		  
+
 		  features = ['age', 'income', 'education', 'location']
 		  importances = [0.4, 0.3, 0.2, 0.1]
-		  
+
 		  plt.barh(features, importances)
 		  plt.xlabel('Feature Importance')
 		  plt.title('Permutation Importance')
 		  ```
-		  
+
 		  ### SHAP Summary Plots
-		  
+
 		  **Structure**:
 		  - Features on y-axis (sorted by importance)
 		  - SHAP values on x-axis
 		  - Each dot is an instance
 		  - Color indicates feature value (high/low)
-		  
+
 		  **Interpretation**:
 		  - **Position**: SHAP value (impact)
 		  - **Color**: Feature value
 		  - **Density**: Distribution of impacts
-		  
+
 		  **Example**:
 		  ```python
 		  import shap
-		  
+
 		  shap.summary_plot(shap_values, X_test)
 		  ```
-		  
+
 		  ### Feature Importance with Confidence Intervals
-		  
+
 		  **Permutation Importance Variance**:
-		  
+
 		  Multiple permutations yield distribution:
 		  ```
 		  I(j) ~ N(μⱼ, σⱼ²)
 		  ```
-		  
+
 		  **Visualisation**:
 		  - Bar chart with error bars
 		  - Box plots showing distribution
 		  - Violin plots for full distribution
-		  
+
 		  **Example** (scikit-learn):
 		  ```python
 		  from sklearn.inspection import permutation_importance
-		  
+
 		  result = permutation_importance(model, X_val, y_val, n_repeats=30)
-		  
+
 		  importances_mean = result.importances_mean
 		  importances_std = result.importances_std
-		  
+
 		  plt.barh(features, importances_mean, xerr=importances_std)
 		  ```
-		  
+
 		  ## Application Domains
-		  
+
 		  ### Feature Selection
-		  
+
 		  **Use Case**: Identify and retain only important features.
-		  
+
 		  **Approach**:
 		  1. Compute feature importance
 		  2. Threshold or select top-K features
 		  3. Retrain model on reduced feature set
 		  4. Evaluate performance
-		  
+
 		  **Benefits**:
 		  - Reduced overfitting
 		  - Faster training/inference
 		  - Improved interpretability
-		  
+
 		  **Example**:
 		  ```python
 		  from sklearn.feature_selection import SelectFromModel
-		  
+
 		  # Using tree-based importance
 		  selector = SelectFromModel(RandomForestClassifier(), threshold='median')
 		  X_selected = selector.fit_transform(X_train, y_train)
 		  ```
-		  
+
 		  ### Model Debugging
-		  
+
 		  **Use Cases**:
 		  - **Data leakage detection**: Unexpected high importance
 		  - **Sanity checks**: Aligns with domain knowledge?
 		  - **Bias detection**: Protected attributes driving predictions?
-		  
+
 		  **Example**:
 		  Feature importance reveals `customer_id` has high importance → data leakage likely.
-		  
+
 		  ### Domain Insight
-		  
+
 		  **Scientific Applications**:
 		  - Hypothesis generation (which variables matter?)
 		  - Mechanism understanding (how do variables influence outcome?)
 		  - Prioritisation (which factors to intervene on?)
-		  
+
 		  **Example** (Healthcare):
 		  Feature importance shows "blood pressure" more important than "BMI" for heart disease prediction → clinical validation and insight.
-		  
+
 		  ### Regulatory Compliance
-		  
+
 		  **Finance**:
 		  - Fair lending: Ensure protected attributes not driving decisions
 		  - Model risk management: Understand key risk factors
-		  
+
 		  **Example**:
 		  Feature importance analysis shows `race` has near-zero importance → compliance with fair lending laws.
-		  
+
 		  ## Implementation Approaches
-		  
+
 		  ### Scikit-learn Tree Importance
-		  
+
 		  ```python
 		  from sklearn.ensemble import RandomForestClassifier
-		  
+
 		  model = RandomForestClassifier().fit(X_train, y_train)
-		  
+
 		  importances = model.feature_importances_
 		  indices = np.argsort(importances)[::-1]
-		  
+
 		  for i in range(X_train.shape[1]):
 		      print(f"{features[indices[i]]}: {importances[indices[i]]:.4f}")
 		  ```
-		  
+
 		  ### Scikit-learn Permutation Importance
-		  
+
 		  ```python
 		  from sklearn.inspection import permutation_importance
-		  
+
 		  result = permutation_importance(
 		      estimator=model,
 		      X=X_val,
@@ -1715,28 +1668,28 @@ Recompute importance with outliers removed.
 		      random_state=42,
 		      scoring='accuracy'
 		  )
-		  
+
 		  for i, (mean, std) in enumerate(zip(result.importances_mean, result.importances_std)):
 		      print(f"{features[i]}: {mean:.4f} ± {std:.4f}")
 		  ```
-		  
+
 		  ### SHAP Feature Importance
-		  
+
 		  ```python
 		  import shap
-		  
+
 		  explainer = shap.TreeExplainer(model)
 		  shap_values = explainer.shap_values(X_test)
-		  
+
 		  # Global feature importance
 		  shap.summary_plot(shap_values, X_test, plot_type="bar")
-		  
+
 		  # Or manually compute
 		  feature_importance = np.abs(shap_values).mean(axis=0)
 		  ```
-		  
+
 		  ### Custom Importance Function
-		  
+
 		  ```python
 		  def custom_feature_importance(model, X, y, metric, n_repeats=10):
 		      """
@@ -1744,7 +1697,7 @@ Recompute importance with outliers removed.
 		      """
 		      baseline_score = metric(y, model.predict(X))
 		      importances = {}
-		  
+
 		      for col in X.columns:
 		          scores = []
 		          for _ in range(n_repeats):
@@ -1752,55 +1705,55 @@ Recompute importance with outliers removed.
 		              X_perm[col] = np.random.permutation(X_perm[col])
 		              score = metric(y, model.predict(X_perm))
 		              scores.append(baseline_score - score)
-		  
+
 		          importances[col] = {
 		              'mean': np.mean(scores),
 		              'std': np.std(scores)
 		          }
-		  
+
 		      return importances
 		  ```
-		  
+
 		  ## Evaluation & Validation
-		  
+
 		  ### Consistency Checks
-		  
+
 		  **Across Methods**:
 		  Compare rankings from different importance methods:
 		  ```python
 		  from scipy.stats import spearmanr
-		  
+
 		  correlation = spearmanr(
 		      tree_importance_ranking,
 		      permutation_importance_ranking
 		  )
 		  ```
-		  
+
 		  **Across Subsets**:
 		  Importance should be stable across data subsets:
 		  ```python
 		  from sklearn.model_selection import KFold
-		  
+
 		  importances_per_fold = []
 		  for train_idx, val_idx in KFold(n_splits=5).split(X):
 		      # Compute importance on fold
 		      importances_per_fold.append(compute_importance(X[val_idx], y[val_idx]))
-		  
+
 		  # Check variance
 		  importance_std = np.std(importances_per_fold, axis=0)
 		  ```
-		  
+
 		  ### Domain Validation
-		  
+
 		  **Expert Review**:
 		  - Do important features align with domain knowledge?
 		  - Are there unexpected importances?
 		  - Are known important features captured?
-		  
+
 		  **Hypothesis Testing**:
 		  - Is `I(j)` significantly greater than zero?
 		  - Permutation test or bootstrap confidence intervals
-		  
+
 		  **Example**:
 		  ```python
 		  # Permutation test for significance
@@ -1809,257 +1762,146 @@ Recompute importance with outliers removed.
 		      y_permuted = np.random.permutation(y)
 		      null_importance = compute_importance(X, y_permuted)
 		      null_distribution.append(null_importance)
-		  
+
 		  p_value = (null_distribution >= observed_importance).mean()
 		  ```
-		  
+
 		  ### Robustness Analysis
-		  
+
 		  **Stability to Noise**:
 		  Add random features and verify low importance:
 		  ```python
 		  X_with_noise = X.copy()
 		  X_with_noise['random'] = np.random.randn(len(X))
-		  
+
 		  importances = compute_importance(X_with_noise, y)
 		  assert importances['random'] < threshold  # Near zero
 		  ```
-		  
+
 		  **Sensitivity to Outliers**:
 		  Recompute importance with outliers removed.
-		  
+
 		  ## Challenges & Limitations
-		  
+
 		  ### Methodological Challenges
-		  
+
 		  **Correlated Features**:
 		  - Tree importance: Split between correlated features
 		  - Permutation: Unrealistic combinations if features correlated
 		  - Solution: Conditional importance, clustered permutation
-		  
+
 		  **Feature Interactions**:
 		  - Standard importance: Doesn't capture interactions
 		  - Solution: SHAP interaction values, H-statistic
-		  
+
 		  **Causality**:
 		  - Importance ≠ causal effect
 		  - Observational data limitations
 		  - Solution: Causal inference methods, interventional importance
-		  
+
 		  ### Computational Challenges
-		  
+
 		  **Scalability**:
 		  - Permutation: `O(p × r × n)` predictions
 		  - SHAP: Exponential (exact), polynomial (approximate)
 		  - Drop-column: Requires `p` model retrains
-		  
+
 		  **Real-time Constraints**:
 		  - Production systems: Pre-compute importance
 		  - Online learning: Incremental importance updates
-		  
+
 		  ### Interpretation Challenges
-		  
+
 		  **Audience Dependence**:
 		  - Technical vs. lay users
 		  - Absolute vs. relative importance
 		  - Positive vs. negative effects
-		  
+
 		  **Multicollinearity**:
 		  - Inflated coefficient variance (linear models)
 		  - Shared importance (tree models)
 		  - Solution: Regularisation, feature engineering
-		  
+
 		  ## Research Directions
-		  
+
 		  ### Emerging Areas
-		  
+
 		  **Causal Feature Importance**:
 		  - Interventional importance: `I(j) = E[Y | do(X_j)] - E[Y]`
 		  - Counterfactual reasoning
 		  - Structural causal models
-		  
+
 		  **Conditional Importance**:
 		  - Importance given realistic feature combinations
 		  - Conditional permutation schemes
 		  - Addressing feature dependence
-		  
+
 		  **Temporal Feature Importance**:
 		  - Time-varying importance (online learning)
 		  - Concept drift detection
 		  - Dynamic feature selection
-		  
+
 		  **Multi-task Feature Importance**:
 		  - Shared importance across tasks
 		  - Task-specific importance decomposition
-		  
+
 		  ### Industry Innovation
-		  
+
 		  **Microsoft InterpretML**:
 		  - Unified importance API
 		  - EBM feature importance (additive effects)
-		  
+
 		  **Google Cloud Explainable AI**:
 		  - Feature attribution aggregation
 		  - Integrated with Vertex AI
-		  
+
 		  **H2O.ai Driverless AI**:
 		  - Automated feature importance
 		  - Ensemble importance across models
-		  
+
 		  ## Best Practices
-		  
+
 		  ### Method Selection
-		  
+
 		  **Decision Tree**:
 		  1. **Model type**: Trees → intrinsic; Neural nets → permutation/SHAP
 		  2. **Computational budget**: Limited → tree intrinsic; Ample → SHAP
 		  3. **Feature correlation**: High → SHAP/conditional; Low → permutation
 		  4. **Causality**: Important → causal methods; Prediction → standard
-		  
+
 		  ### Implementation Guidelines
-		  
+
 		  **Pre-analysis**:
 		  - Check for correlated features (VIF, correlation matrix)
 		  - Validate data quality (missing values, outliers)
 		  - Establish domain priors (expected important features)
-		  
+
 		  **Analysis**:
 		  - Use multiple methods (robustness check)
 		  - Include confidence intervals (permutation variance)
 		  - Validate against domain knowledge
 		  - Test for statistical significance
-		  
+
 		  **Post-analysis**:
 		  - Document methodology and parameters
 		  - Visualise with clear labels
 		  - Highlight top-K features
 		  - Disclose limitations
-		  
+
 		  ### Visualisation Guidelines
-		  
+
 		  **Clarity**:
 		  - Sort by importance (descending)
 		  - Limit to top-K features (avoid clutter)
 		  - Include error bars (uncertainty)
 		  - Use color judiciously (positive/negative)
-		  
+
 		  **Context**:
 		  - Show feature scales (if relevant)
 		  - Include baseline (zero importance line)
 		  - Annotate unexpected results
 		  - Provide interpretation guide
-		  
-		  ## References
-		  
-		  ### Academic Literature
-		  
-		  - Breiman, L. (2001). "Random forests." *Machine Learning*, 45(1), 5-32
-		  - Lundberg, S. M., & Lee, S. I. (2017). "A unified approach to interpreting model predictions." *NeurIPS*
-		  - Strobl, C., et al. (2007). "Bias in random forest variable importance measures." *BMC Bioinformatics*, 8(1), 25
-		  - Fisher, A., Rudin, C., & Dominici, F. (2019). "All models are wrong, but many are useful: Learning a variable's importance by studying an entire class of prediction models simultaneously." *Journal of Machine Learning Research*, 20(177), 1-81
-		  
-		  ### Standards
-		  
-		  - IEEE. (2023). *IEEE P2976: Standard for eXplainable Artificial Intelligence*
-		  
-		  ### Tools & Frameworks
-		  
-		  - Scikit-learn. (2023). *Inspection module: permutation_importance*
-		  - Lundberg, S. M. (2023). *SHAP library*
-		  - Molnar, C. (2022). *Interpretable Machine Learning: Feature Importance*
-		  
-		  ## See Also
-		  
-		  - [[Permutation Importance]]
-		  - [[SHAP]]
-		  - [[Feature Attribution]]
-		  - [[Global Explanation]]
-		  - [[Feature Selection]]
-		  - [[Partial Dependence Plot]]
-		  
-		  ```
 
-- public-access:: true
-	- definition:: Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.
-
-
-
-## Academic Context
-
-- Feature importance quantifies the relative influence of individual input variables on machine learning model predictions.
-  - It enables identification of critical features driving model outputs, facilitating interpretability, feature selection, and debugging.
-  - Rooted in statistical learning theory and explainable AI, feature importance methods bridge the gap between black-box models and human understanding.
-  - Key academic foundations include decision tree impurity measures, permutation tests, and cooperative game theory approaches such as Shapley values.
-
-## Current Landscape (2025)
-
-- Feature importance is widely adopted across industries to improve model transparency, performance, and trustworthiness.
-  - Model-agnostic methods (e.g., permutation importance, SHAP) and model-specific methods (e.g., Gini importance in trees) coexist, each with distinct trade-offs.
-  - Leading platforms like scikit-learn, XGBoost, and SHAP libraries provide robust implementations.
-  - UK organisations, including financial institutions in London and tech hubs in Manchester and Leeds, leverage feature importance to comply with regulatory demands and enhance AI explainability.
-- Technical capabilities:
-  - Methods vary in computational cost, stability, and interpretability.
-  - Permutation-based methods remain popular but face criticism for potential bias and instability.
-  - Retraining-based approaches (e.g., Leave-One-Covariate-Out) offer rigorous insights but are computationally expensive.
-- Standards and frameworks:
-  - The UK’s Centre for Data Ethics and Innovation promotes transparency standards incorporating feature importance for AI governance.
-  - International frameworks such as the EU’s AI Act encourage explainability practices including feature importance reporting.
-
-## Research & Literature
-
-- Key academic papers:
-  - Lundberg, S.M., & Lee, S.-I. (2017). A Unified Approach to Interpreting Model Predictions. *Advances in Neural Information Processing Systems*, 30, 4765–4774. DOI: 10.5555/3295222.3295230
-  - Fisher, A., Rudin, C., & Dominici, F. (2019). All Models are Wrong, but Many are Useful: Learning a Variable’s Importance by Studying an Entire Class of Prediction Models Simultaneously. *Journal of Machine Learning Research*, 20(177), 1–81. URL: http://jmlr.org/papers/v20/18-760.html
-  - Ewald, F.K., et al. (2025). Beyond the Black Box: Choosing the Right Feature Importance Method. *Machine Learning and Computational Modelling Journal*, 12(1), 45–67.
-- Ongoing research:
-  - Improving robustness and fairness of feature importance measures.
-  - Developing causal feature importance metrics to distinguish correlation from causation.
-  - Enhancing scalability for large, high-dimensional datasets.
-
-## UK Context
-
-- British contributions:
-  - UK universities such as the University of Manchester and University of Leeds conduct cutting-edge research on interpretable machine learning and feature importance.
-  - The Alan Turing Institute in London leads national efforts on trustworthy AI, including feature importance methodologies.
-- North England innovation hubs:
-  - Manchester’s AI and data science clusters integrate feature importance in healthcare predictive models.
-  - Leeds-based fintech startups employ feature importance to meet FCA transparency requirements.
-  - Newcastle and Sheffield research groups focus on applying feature importance in environmental and industrial data analytics.
-- Regional case studies:
-  - A Leeds-based healthcare provider used permutation importance to identify key predictors of patient readmission, improving resource allocation.
-  - Manchester tech firms incorporate SHAP values to explain credit scoring models to regulators and customers alike.
-
-## Future Directions
-
-- Emerging trends:
-  - Integration of feature importance with causal inference to provide actionable insights.
-  - Automated feature importance explanations embedded in AI model deployment pipelines.
-  - Expansion of feature importance methods to unsupervised and reinforcement learning contexts.
-- Anticipated challenges:
-  - Balancing computational efficiency with interpretability and accuracy.
-  - Mitigating biases introduced by correlated or redundant features.
-  - Ensuring explanations remain comprehensible to non-technical stakeholders.
-- Research priorities:
-  - Developing standardised benchmarks for evaluating feature importance methods.
-  - Enhancing multi-modal feature importance for complex data types (e.g., images, text).
-  - Investigating the interplay between feature importance and model fairness.
-
-## References
-
-1. Lundberg, S.M., & Lee, S.-I. (2017). A Unified Approach to Interpreting Model Predictions. *Advances in Neural Information Processing Systems*, 30, 4765–4774. DOI: 10.5555/3295222.3295230
-
-2. Fisher, A., Rudin, C., & Dominici, F. (2019). All Models are Wrong, but Many are Useful: Learning a Variable’s Importance by Studying an Entire Class of Prediction Models Simultaneously. *Journal of Machine Learning Research*, 20(177), 1–81. URL: http://jmlr.org/papers/v20/18-760.html
-
-3. Ewald, F.K., et al. (2025). Beyond the Black Box: Choosing the Right Feature Importance Method. *Machine Learning and Computational Modelling Journal*, 12(1), 45–67.
-
-4. Centre for Data Ethics and Innovation (2024). *AI Transparency and Explainability Standards*. UK Government Publication.
-
-5. UK Financial Conduct Authority (2025). *Guidance on AI and Machine Learning in Financial Services*.
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

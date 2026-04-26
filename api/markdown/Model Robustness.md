@@ -1,128 +1,51 @@
-- ### OntologyBlock
-  id:: model-robustness-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0075
-	- preferred-term:: Model Robustness
-	- source-domain:: ai
-	- status:: draft
-- definition:: The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
+iri:: http://narrativegoldmine.com/artificial-intelligence#ModelRobustness
+uri:: urn:visionclaw:concept:artificial-intelligence:model-robustness
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:model-robustness
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Model Robustness
+content-hash:: sha256-12-8a413b1302b2
+legacy-term-id:: AI-0075
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ModelRobustness
+  - owl-role:: Concept
+  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :ModelRobustness))
+- ### Content
+  - The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :ModelRobustness "Model Robustness"@en)
-(AnnotationAssertion rdfs:comment :ModelRobustness "The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality."@en)
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :ModelRobustness "AI-0075"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :ModelRobustness "true"^^xsd:boolean)
-```
-
-## Formal Specification
-
-```yaml
-term: Model Robustness
-definition: "Consistent model performance under input variations and distributional shifts"
-domain: Machine Learning Quality
-type: Model Property
-dimensions:
-  - noise_tolerance
-  - distribution_shift_resilience
-  - outlier_handling
-  - edge_case_performance
-metrics: [robust_accuracy, worst_case_performance, ood_detection]
-```
-
-## Authoritative References
-
-### Primary Sources
-
-1. **ISO/IEC TR 24029-2:2023** - Assessment of the robustness of neural networks — Part 2: Methodology
-   - Comprehensive robustness testing methodology
-   - Source: ISO/IEC JTC 1/SC 42
-
-2. **Hendrycks, D. & Dietterich, T. (2019)** - "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations"
-   - ICLR 2019, robustness benchmarks
-
-## Key Characteristics
-
-### Types of Robustness
-
-1. **Noise Robustness**: Performance under Gaussian, impulse, salt-and-pepper noise
-2. **Corruption Robustness**: Blur, weather effects, compression artifacts
-3. **Distribution Shift**: Covariate shift, concept drift, domain shift
-4. **Adversarial Robustness**: See AI-0074
-
-### Measuring Robustness
-
-**Robust Accuracy**: Accuracy on perturbed test set
-**Corruption Error (CE)**: Performance under systematic corruptions
-**Effective Robustness**: Robustness beyond what training data diversity explains
-
-## Improving Model Robustness
-
-1. **Data Augmentation**: Expose model to variations during training
-2. **Robust Optimization**: Min-max formulation
-3. **Ensemble Methods**: Combine multiple models
-4. **Regularization**: Lipschitz constraints, smoothness penalties
-5. **Test-Time Adaptation**: Adjust to test distribution
-
-## Relationships
-
-- **Component Of**: Robustness (AI-0068)
-- **Related To**: Adversarial Robustness (AI-0074), Reliability (AI-0069)
-- **Supports**: Safety (AI-0070), Performance
-
-## Best Practices
-
-1. **Diversify training data** with augmentations
-2. **Test on multiple robustness benchmarks** (ImageNet-C, CIFAR-C, etc.)
-3. **Monitor distribution shift** in deployment
-4. **Use robust training objectives**
-
-## Related Terms
-
-- Robustness (AI-0068)
-- Adversarial Robustness (AI-0074)
-- Reliability (AI-0069)
-- Distribution Shift
-
-## Version History
-
-- **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-2:2023
-
----
-
-*Model robustness ensures AI systems perform reliably in real-world conditions with inevitable data variations.*
-	- maturity:: draft
-	- owl:class:: ai:ModelRobustness
-	- owl:role:: Concept
-	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
-- ## About Model Robustness
-	- The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
-
-	- ### Models
+  - ### Models
 		- **[Amazon Nova](https://aboutamazon.com/news/aws/amazon-nova-foundation-models)**: A new family of foundation models, including "Micro," "Lite," "Pro," "Premier," "Canvas," and "Reel."
 
-	- ### Character Consistency: Maintaining Identity Across Generations
+  - ### Character Consistency: Maintaining Identity Across Generations
 		- Achieving consistency in character appearance across multiple generations is a key challenge. This section highlights resources and techniques addressing this issue.
 		- * [Consistent Character Creation (OpenArt)](https://openart.ai/promptbook/an-attempt-at-full-character-consistency-using-sdxl-model-with-lightning-8-step-lora-comfyui-workflow): A workflow for achieving full-character consistency using the SDXL model with a Lightning 8-step LoRA.
 
-	- ### Models
+  - ### Models
 		- **[Amazon Nova](https://aboutamazon.com/news/aws/amazon-nova-foundation-models)**: A new family of foundation models, including "Micro," "Lite," "Pro," "Premier," "Canvas," and "Reel."
 
-	- ### Character Consistency: Maintaining Identity Across Generations
+  - ### Character Consistency: Maintaining Identity Across Generations
 		- Achieving consistency in character appearance across multiple generations is a key challenge. This section highlights resources and techniques addressing this issue.
 		- * [Consistent Character Creation (OpenArt)](https://openart.ai/promptbook/an-attempt-at-full-character-consistency-using-sdxl-model-with-lightning-8-step-lora-comfyui-workflow): A workflow for achieving full-character consistency using the SDXL model with a Lightning 8-step LoRA.
 
-	- ## Walkthrough Animations or Flythrough Videos
+  - ## Walkthrough Animations or Flythrough Videos
 		- **Twinmotion** ([guide](https://www.vectorworks.net/en-US/newsroom/your-guide-to-rendering-with-twinmotion))
 			- Markerless AR viewer on iOS/Android; place your model at 1 : 1 scale on site without coding.
 		- **Desktop VR via Enscape or Twinmotion**
@@ -131,7 +54,6 @@ metrics: [robust_accuracy, worst_case_performance, ood_detection]
 		- **Planner 5D AI** ([service](https://planner5d.com/ai))
 			- Fast floor-plan recognition from images; yields a basic 3D layout you can reference or rebuild precisely.
 		- Other services (GetFloorPlan, RoomSketcher) offer similar AI-assisted conversions for sketches or scanned plans.
-		-
 
 			- ### Key Technologies Integrated:
 				- Nostr Relays for decentralized communication
@@ -140,292 +62,218 @@ metrics: [robust_accuracy, worst_case_performance, ood_detection]
 				- Anthropic Model Context Protocol
 			- The diagram shows how these different components interconnect, creating a robust, decentralized ecosystem for computational agents. The color-coded layers help visualize the different types of components:
 
-## Formal Specification
+  ## Formal Specification
 
-```yaml
-term: Model Robustness
-definition: "Consistent model performance under input variations and distributional shifts"
-domain: Machine Learning Quality
-type: Model Property
-dimensions:
+  ```yaml
+  term: Model Robustness
+  definition: "Consistent model performance under input variations and distributional shifts"
+  domain: Machine Learning Quality
+  type: Model Property
+  dimensions:
   - noise_tolerance
   - distribution_shift_resilience
   - outlier_handling
   - edge_case_performance
-metrics: [robust_accuracy, worst_case_performance, ood_detection]
-```
+  metrics: [robust_accuracy, worst_case_performance, ood_detection]
+  ```
 
-## Authoritative References
+  #### Key Characteristics
+  ### Types of Robustness
 
-### Primary Sources
-
-1. **ISO/IEC TR 24029-2:2023** - Assessment of the robustness of neural networks — Part 2: Methodology
-   - Comprehensive robustness testing methodology
-   - Source: ISO/IEC JTC 1/SC 42
-
-2. **Hendrycks, D. & Dietterich, T. (2019)** - "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations"
-   - ICLR 2019, robustness benchmarks
-
-## Key Characteristics
-
-### Types of Robustness
-
-1. **Noise Robustness**: Performance under Gaussian, impulse, salt-and-pepper noise
-2. **Corruption Robustness**: Blur, weather effects, compression artifacts
-3. **Distribution Shift**: Covariate shift, concept drift, domain shift
-4. **Adversarial Robustness**: See AI-0074
-
-### Measuring Robustness
-
-**Robust Accuracy**: Accuracy on perturbed test set
-**Corruption Error (CE)**: Performance under systematic corruptions
-**Effective Robustness**: Robustness beyond what training data diversity explains
-
-## Improving Model Robustness
-
-1. **Data Augmentation**: Expose model to variations during training
-2. **Robust Optimization**: Min-max formulation
-3. **Ensemble Methods**: Combine multiple models
-4. **Regularization**: Lipschitz constraints, smoothness penalties
-5. **Test-Time Adaptation**: Adjust to test distribution
-
-## Relationships
-
-- **Component Of**: Robustness (AI-0068)
-- **Related To**: Adversarial Robustness (AI-0074), Reliability (AI-0069)
-- **Supports**: Safety (AI-0070), Performance
-
-## Best Practices
-
-1. **Diversify training data** with augmentations
-2. **Test on multiple robustness benchmarks** (ImageNet-C, CIFAR-C, etc.)
-3. **Monitor distribution shift** in deployment
-4. **Use robust training objectives**
-
-## Related Terms
-
-- Robustness (AI-0068)
-- Adversarial Robustness (AI-0074)
-- Reliability (AI-0069)
-- Distribution Shift
-
-## Version History
-
-- **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-2:2023
-
----
-
-*Model robustness ensures AI systems perform reliably in real-world conditions with inevitable data variations.*
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Model Robustness
-		  
-		  **Term ID**: AI-0075
-		  **Category**: Foundational Concept
-		  **Status**: Active
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
-		  
-		  ## Formal Specification
-		  
-		  ```yaml
-		  term: Model Robustness
-		  definition: "Consistent model performance under input variations and distributional shifts"
-		  domain: Machine Learning Quality
-		  type: Model Property
-		  dimensions:
-		    - noise_tolerance
-		    - distribution_shift_resilience
-		    - outlier_handling
-		    - edge_case_performance
-		  metrics: [robust_accuracy, worst_case_performance, ood_detection]
-		  ```
-		  
-		  ## Authoritative References
-		  
-		  ### Primary Sources
-		  
-		  1. **ISO/IEC TR 24029-2:2023** - Assessment of the robustness of neural networks — Part 2: Methodology
-		     - Comprehensive robustness testing methodology
-		     - Source: ISO/IEC JTC 1/SC 42
-		  
-		  2. **Hendrycks, D. & Dietterich, T. (2019)** - "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations"
-		     - ICLR 2019, robustness benchmarks
-		  
-		  ## Key Characteristics
-		  
-		  ### Types of Robustness
-		  
 		  1. **Noise Robustness**: Performance under Gaussian, impulse, salt-and-pepper noise
 		  2. **Corruption Robustness**: Blur, weather effects, compression artifacts
 		  3. **Distribution Shift**: Covariate shift, concept drift, domain shift
 		  4. **Adversarial Robustness**: See AI-0074
-		  
+
 		  ### Measuring Robustness
-		  
+
 		  **Robust Accuracy**: Accuracy on perturbed test set
 		  **Corruption Error (CE)**: Performance under systematic corruptions
 		  **Effective Robustness**: Robustness beyond what training data diversity explains
-		  
+
 		  ## Improving Model Robustness
-		  
+
 		  1. **Data Augmentation**: Expose model to variations during training
 		  2. **Robust Optimization**: Min-max formulation
 		  3. **Ensemble Methods**: Combine multiple models
 		  4. **Regularization**: Lipschitz constraints, smoothness penalties
 		  5. **Test-Time Adaptation**: Adjust to test distribution
-		  
+
 		  ## Relationships
-		  
+
 		  - **Component Of**: Robustness (AI-0068)
 		  - **Related To**: Adversarial Robustness (AI-0074), Reliability (AI-0069)
 		  - **Supports**: Safety (AI-0070), Performance
-		  
+
 		  ## Best Practices
-		  
+
 		  1. **Diversify training data** with augmentations
 		  2. **Test on multiple robustness benchmarks** (ImageNet-C, CIFAR-C, etc.)
 		  3. **Monitor distribution shift** in deployment
 		  4. **Use robust training objectives**
-		  
+
 		  ## Related Terms
-		  
+
 		  - Robustness (AI-0068)
 		  - Adversarial Robustness (AI-0074)
 		  - Reliability (AI-0069)
 		  - Distribution Shift
-		  
+
 		  ## Version History
-		  
+
 		  - **1.0** (2025-10-27): Initial definition based on ISO/IEC TR 24029-2:2023
-		  
+
 		  ---
-		  
+
 		  *Model robustness ensures AI systems perform reliably in real-world conditions with inevitable data variations.*
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
+  - public-access:: true
+  - definition:: The capacity of a machine learning model to maintain consistent and reliable performance when exposed to variations in input data, including noise, distributional shifts, and edge cases, without catastrophic degradation in accuracy or functionality.
 
 
 
 
-## Academic Context
+  ## Academic Context
 
-- Machine learning robustness represents a fundamental pillar of reliable AI systems
+  - Machine learning robustness represents a fundamental pillar of reliable AI systems
   - Emerged as critical concern as ML models transitioned from research environments to production deployment
   - Addresses the gap between training performance and real-world operational reliability
   - Encompasses multiple dimensions: noise tolerance, distributional stability, adversarial resilience, and generalisation capability
   - Distinct from mere accuracy—robustness concerns *consistency* across varying conditions rather than peak performance on curated datasets
 
-- Theoretical foundations rooted in statistical learning theory and risk governance
+  - Theoretical foundations rooted in statistical learning theory and risk governance
   - Builds upon classical concepts of bias-variance trade-off and generalisation error
   - Increasingly formalised through adversarial machine learning literature
   - Recognised as essential for trustworthy AI deployment in safety-critical domains
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
+  - Industry adoption and implementations
   - Robustness testing now standard practice across financial services, healthcare, and autonomous systems sectors
   - Major technology firms (Google, Meta, OpenAI) maintain dedicated robustness research divisions
   - Regulatory frameworks increasingly mandate robustness assessment—particularly in EU AI Act compliance and UK AI Bill implementation
   - UK organisations including NHS trusts and financial regulators now require robustness documentation for model deployment
   - North England innovation: Manchester's AI research community (University of Manchester, Boehringer Ingelheim's Manchester facility) actively develops robustness frameworks for pharmaceutical applications; Leeds Teaching Hospitals NHS Trust implements robustness protocols for diagnostic AI systems
 
-- Technical capabilities and limitations
+  - Technical capabilities and limitations
   - Practitioners employ multiple complementary strategies: data preprocessing, regularisation techniques, ensemble methods, and adversarial training
   - Robustness assessment remains computationally expensive—particularly for deep learning models
   - Trade-offs exist between robustness and model interpretability; enhanced robustness sometimes obscures decision-making mechanisms
   - No universal robustness metric; assessment typically requires domain-specific validation approaches
   - Current tools handle well-characterised perturbations (Gaussian noise, small distributional shifts) but struggle with novel, out-of-distribution scenarios
 
-- Standards and frameworks
+  - Standards and frameworks
   - ISO/IEC 42001 (AI management systems) incorporates robustness requirements
   - NIST AI Risk Management Framework (2024) emphasises robustness as core governance element
   - IEEE 7000 series standards address algorithmic bias and robustness in autonomous systems
   - UK's Alan Turing Institute publishes guidance on responsible AI robustness assessment
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
+  - Key academic papers and sources
   - Encord (2024). "Model Robustness: Building Reliable AI Models." Encord Blog. Addresses practical strategies for robustness achievement, including outlier sensitivity reduction and adversarial attack mitigation.
   - Nature (2024). "A scoping review of robustness concepts for machine learning in healthcare." *Nature Digital Medicine*, 7, 1420. Identifies eight robustness dimensions: input perturbations, missing data, label noise, imbalanced data, feature extraction, model specification, domain shift, and adversarial attacks. Demonstrates that robustness emphasis varies significantly by data type and model architecture.
   - Vector Institute (2024). "Machine Learning Robustness: New Challenges and Approaches." Examines robustness within ML governance frameworks, emphasising performance consistency between training and deployment data.
   - XenonStack (2024). "The Importance of Model Robustness." Contextualises robustness within supervised learning, highlighting challenges from out-of-distribution samples and adversarial inputs.
 
-- Ongoing research directions
+  - Ongoing research directions
   - Certified robustness: developing formal verification methods for model guarantees under specified perturbation bounds
   - Robustness-interpretability integration: reconciling transparency requirements with robustness enhancements
   - Domain adaptation and transfer learning: improving robustness across heterogeneous data distributions
   - Efficient robustness assessment: reducing computational overhead of comprehensive robustness testing
   - Fairness-robustness interplay: understanding how robustness techniques affect model equity across demographic groups
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
+  - British contributions and implementations
   - Alan Turing Institute (London) leads UK research on responsible AI robustness, publishing accessible guidance for practitioners
   - University of Oxford and University of Cambridge maintain active robustness research programmes, particularly in adversarial machine learning
   - UK Health Security Agency incorporates robustness requirements into AI procurement standards for epidemiological forecasting models
   - Financial Conduct Authority mandates robustness assessment for algorithmic trading systems and credit-scoring models
 
-- North England innovation hubs
+  - North England innovation hubs
   - Manchester: University of Manchester's Department of Computer Science collaborates with pharmaceutical firms on robustness frameworks for drug discovery models; Boehringer Ingelheim's Manchester research centre applies robustness techniques to biomarker identification
   - Leeds: Leeds Teaching Hospitals NHS Trust implements robustness protocols for diagnostic imaging AI; University of Leeds contributes to healthcare AI standards development
   - Newcastle: Newcastle University's School of Computing develops robustness assessment tools for autonomous vehicle systems; regional NHS trusts adopt these frameworks
   - Sheffield: University of Sheffield's Machine Learning and Optimisation group researches robustness in industrial applications, particularly manufacturing quality control
 
-- Regional case studies
+  - Regional case studies
   - Manchester's pharmaceutical sector increasingly requires robustness validation before deploying predictive models for clinical trial design
   - Leeds Teaching Hospitals' adoption of robustness-tested diagnostic AI has reduced model failure rates in production environments by approximately 40% (internal assessment, 2024)
   - Newcastle's autonomous vehicle research demonstrates practical robustness challenges in adverse weather conditions—a particular concern for North England's climate
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - Shift towards *certified robustness*: formal mathematical guarantees rather than empirical testing alone
   - Integration of robustness into foundation model development—addressing robustness at pre-training stage rather than post-hoc
   - Regulatory convergence: harmonisation of robustness requirements across UK, EU, and international frameworks
   - Automated robustness assessment: machine-learning-assisted tools to identify vulnerabilities without exhaustive manual testing
   - Robustness-by-design: architectural approaches embedding robustness into model development from inception
 
-- Anticipated challenges
+  - Anticipated challenges
   - Computational cost of comprehensive robustness validation will remain significant barrier for resource-constrained organisations
   - Tension between robustness and model performance—achieving both simultaneously remains unsolved in many domains
   - Adversarial arms race: as robustness techniques advance, adversarial attack methods evolve correspondingly
   - Regulatory fragmentation: divergent international standards may complicate global model deployment
   - Measurement ambiguity: lack of consensus on robustness metrics complicates cross-organisational comparison
 
-- Research priorities
+  - Research priorities
   - Developing practical, computationally efficient robustness assessment methods suitable for resource-limited settings
   - Understanding robustness requirements for emerging model architectures (large language models, multimodal systems)
   - Establishing causal links between specific robustness interventions and real-world performance improvements
   - Creating domain-specific robustness benchmarks for healthcare, finance, and autonomous systems
   - Investigating fairness-robustness trade-offs to ensure robust models do not inadvertently amplify bias
 
-## References
+  ## References
 
-1. Encord (2024). Model Robustness: Building Reliable AI Models. *Encord Blog*. Available at: encord.com/blog/model-robustness-machine-learning-strategies/
+  1. Encord (2024). Model Robustness: Building Reliable AI Models. *Encord Blog*. Available at: encord.com/blog/model-robustness-machine-learning-strategies/
 
-2. Nature (2024). A scoping review of robustness concepts for machine learning in healthcare. *Nature Digital Medicine*, 7, 1420. DOI: 10.1038/s41746-024-01420-1
+  2. Nature (2024). A scoping review of robustness concepts for machine learning in healthcare. *Nature Digital Medicine*, 7, 1420. DOI: 10.1038/s41746-024-01420-1
 
-3. Vector Institute (2024). Machine Learning Robustness: New Challenges and Approaches. Available at: vectorinstitute.ai/machine-learning-robustness-new-challenges-and-approaches/
+  3. Vector Institute (2024). Machine Learning Robustness: New Challenges and Approaches. Available at: vectorinstitute.ai/machine-learning-robustness-new-challenges-and-approaches/
 
-4. XenonStack (2024). The Importance of Model Robustness. *XenonStack Blog*. Available at: xenonstack.com/blog/model-robustness
+  4. XenonStack (2024). The Importance of Model Robustness. *XenonStack Blog*. Available at: xenonstack.com/blog/model-robustness
 
-5. Alooba (2024). Understanding Robustness in Machine Learning. *Alooba Skills Concepts*. Available at: alooba.com/skills/concepts/machine-learning/robustness/
+  5. Alooba (2024). Understanding Robustness in Machine Learning. *Alooba Skills Concepts*. Available at: alooba.com/skills/concepts/machine-learning/robustness/
 
-6. FlowHunt (2024). Model Robustness. *FlowHunt Glossary*. Available at: flowhunt.io/glossary/model-robustness/
+  6. FlowHunt (2024). Model Robustness. *FlowHunt Glossary*. Available at: flowhunt.io/glossary/model-robustness/
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+  ## Formal Specification
+
+  ```yaml
+  term: Model Robustness
+  definition: "Consistent model performance under input variations and distributional shifts"
+  domain: Machine Learning Quality
+  type: Model Property
+  dimensions:
+  - noise_tolerance
+  - distribution_shift_resilience
+  - outlier_handling
+  - edge_case_performance
+  metrics: [robust_accuracy, worst_case_performance, ood_detection]
+  ```
+
+  #### References
+  ### Primary Sources
+
+		  1. **ISO/IEC TR 24029-2:2023** - Assessment of the robustness of neural networks — Part 2: Methodology
+		     - Comprehensive robustness testing methodology
+		     - Source: ISO/IEC JTC 1/SC 42
+
+		  2. **Hendrycks, D. & Dietterich, T. (2019)** - "Benchmarking Neural Network Robustness to Common Corruptions and Perturbations"
+		     - ICLR 2019, robustness benchmarks
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,72 +1,82 @@
 {
-  "id": "Asset Trading",
+  "id": "asset-trading",
   "title": "Asset Trading",
-  "content": "- ### OntologyBlock\n  id:: asset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: NGM-7030\n\t- preferred-term:: Asset Trading\n\t- source-domain:: ngm\n\t- status:: active\n\t- public-access:: true\n\t- definition:: The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.\n\t- maturity:: reviewed\n\t- owl:class:: ngm:AssetTrading\n\t- owl:role:: Concept\n\t- belongsToDomain:: [[Financial Technology]]\n\t- belongsToDomain:: [[Decentralized Finance]]\n\t- belongsToDomain:: [[Cryptocurrency]]\n\n## Trading Mechanisms\n- **Centralized Exchanges (CEXs)**: Traditional order book matching with custodial asset holding\n- **Decentralized Exchanges (DEXs)**: Smart contract-based swaps enabling self-custody trading\n- **Automated Market Makers (AMMs)**: Algorithmic liquidity pools replacing order books\n- **Aggregators**: Cross-platform routing for optimal trade execution\n\n## DEX Characteristics\n- Self-custody: Users retain complete control of their funds via wallet connections\n- Enhanced privacy: Minimal or no KYC verification requirements\n- Global accessibility: No regional restrictions on participation\n- Wide token availability: Including new and niche projects not listed on CEXs\n- Immutable transactions: Executed through audited smart contracts\n\n## Market Scale (2025)\n- Total Value Locked (TVL) in DeFi exceeds $100 billion\n- Weekly DEX trading volume averages $18.6 billion\n- Over 1,127 tracked decentralized exchanges\n- 24-hour DEX trading volume of $5.4 billion\n- Leading platforms: Uniswap, PancakeSwap, SushiSwap, Jupiter, Hyperliquid\n\n## Key Trends\n- Cross-chain interoperability enabling seamless asset swaps across blockchain networks\n- Decentralized derivatives markets attracting institutional investors\n- Layer 3 scaling solutions improving transaction throughput\n- Privacy-preserving technologies including zero-knowledge rollups\n- Institutional-grade compliance tooling and real-time settlement layers\n\n## Relationships\n- is-subclass-of:: [[Financial Services]]\n- uses:: [[Smart Contract]]\n- uses:: [[Liquidity Pool]]\n- enables:: [[Decentralized Exchange]]\n- related-to:: [[Asset Management]]\n- related-to:: [[Market Making]]\n- supports:: [[Price Discovery]]\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched from research\n- **References**: 5 pages reference this concept",
+  "content": "- ### Definition\n  - The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:AssetTrading\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Decentralized Finance]]\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]]\n  - is-subclass-of:: [[Financial Services]]\n  - enables:: [[Decentralized Exchange]]\n\n- ### Content\n\n  ## Trading Mechanisms\n  - **Centralized Exchanges (CEXs)**: Traditional order book matching with custodial asset holding\n  - **Decentralized Exchanges (DEXs)**: Smart contract-based swaps enabling self-custody trading\n  - **Automated Market Makers (AMMs)**: Algorithmic liquidity pools replacing order books\n  - **Aggregators**: Cross-platform routing for optimal trade execution\n\n  ## DEX Characteristics\n  - Self-custody: Users retain complete control of their funds via wallet connections\n  - Enhanced privacy: Minimal or no KYC verification requirements\n  - Global accessibility: No regional restrictions on participation\n  - Wide token availability: Including new and niche projects not listed on CEXs\n  - Immutable transactions: Executed through audited smart contracts\n\n  ## Market Scale (2025)\n  - Total Value Locked (TVL) in DeFi exceeds $100 billion\n  - Weekly DEX trading volume averages $18.6 billion\n  - Over 1,127 tracked decentralized exchanges\n  - 24-hour DEX trading volume of $5.4 billion\n  - Leading platforms: Uniswap, PancakeSwap, SushiSwap, Jupiter, Hyperliquid\n\n  ## Key Trends\n  - Cross-chain interoperability enabling seamless asset swaps across blockchain networks\n  - Decentralized derivatives markets attracting institutional investors\n  - Layer 3 scaling solutions improving transaction throughput\n  - Privacy-preserving technologies including zero-knowledge rollups\n  - Institutional-grade compliance tooling and real-time settlement layers\n\n  ## Relationships\n  - is-subclass-of:: [[Financial Services]]\n  - uses:: [[Smart Contract]]\n  - uses:: [[Liquidity Pool]]\n  - enables:: [[Decentralized Exchange]]\n  - related-to:: [[Asset Management]]\n  - related-to:: [[Market Making]]\n  - supports:: [[Price Discovery]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Goods",
     "Non-Fungible Token (NFT)",
-    "Digital Asset",
+    "Liquidity Provision",
     "Marketplace",
     "Tokenization"
   ],
   "wiki_links": [
-    "Cryptocurrency",
-    "Market Making",
-    "Financial Technology",
+    "Asset Management",
+    "Blockchain",
+    "Decentralized Exchange",
+    "Decentralized Finance",
     "Financial Services",
     "Liquidity Pool",
+    "Market Making",
     "Price Discovery",
-    "Decentralized Finance",
-    "Asset Management",
-    "Decentralized Exchange",
     "Smart Contract"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:asset-trading",
+    "iri": "http://narrativegoldmine.com/ontology#AssetTrading",
+    "content_hash": "sha256-12-cd1d7fd91482",
+    "legacy_term_id": "NGM-7030",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:asset-trading",
+    "schema_version": "v2",
     "term_id": "NGM-7030",
     "preferred_term": "Asset Trading",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ontology#AssetTrading",
-    "source_domain": "ngm",
-    "domain": "ngm",
-    "domain_full_name": "Narrative Gold Mine Core",
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
     "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms. Asset trading in the blockchain context enables peer-to-peer token swaps via smart contracts, eliminating intermediaries while users retain custody of their assets, with weekly DEX trading volumes averaging $18.6 billion and over 9.7 million unique wallets interacting with DeFi protocols in 2025.",
     "scope_note": null,
     "status": "active",
     "maturity": "reviewed",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ngm:AssetTrading",
-    "owl_physicality": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:AssetTrading",
     "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Financial Services"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Decentralized Exchange"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
-      "Financial Technology",
-      "Decentralized Finance",
-      "Cryptocurrency"
+      "Decentralized Finance"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

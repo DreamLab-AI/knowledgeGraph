@@ -1,49 +1,51 @@
 {
-  "id": "AI Hardware",
+  "id": "ai-hardware",
   "title": "AI Hardware",
-  "content": "- ### OntologyBlock\n  id:: ai-hardware-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: AI-7020\n\t- preferred-term:: AI Hardware\n\t- source-domain:: ai\n\t- status:: active\n\t- definition:: AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.\n\t- maturity:: mature\n\t- owl:class:: ai:AiHardware\n\t- owl:role:: Technology\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: ai-hardware-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Computer Hardware]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- related-to:: [[Neural Networks]]\n\t\t- related-to:: [[High-Performance Computing]]\n\t\t- related-to:: [[AI Infrastructure]]\n\t\t- enables:: [[Deep Learning]]\n\t\t- enables:: [[Large Language Models]]\n\t\t- enables:: [[AI Training]]\n\t- #### Key Components\n\t  collapsed:: true\n\t\t- **Graphics Processing Units (GPUs)**: Parallel processors with thousands of cores optimized for matrix operations; NVIDIA Blackwell architecture leads in 2025\n\t\t- **Tensor Processing Units (TPUs)**: Google's custom ASICs for neural network acceleration; TPU v7 (Ironwood) delivers 4,614 TFLOP/s\n\t\t- **Neural Processing Units (NPUs)**: Low-power accelerators for edge AI and on-device inference with emphasis on energy efficiency\n\t\t- **AI Accelerators (ASICs)**: Application-specific chips like AWS Trainium/Inferentia, Microsoft Maia, Intel Habana Gaudi\n\t\t- **FPGAs**: Field-programmable gate arrays offering flexibility for custom AI workloads\n\t- #### Major Manufacturers (2025)\n\t  collapsed:: true\n\t\t- **NVIDIA**: Market leader with Blackwell architecture, H100/H200 GPUs\n\t\t- **Google**: TPU v7 Ironwood with 256-chip and 9,216-chip cluster configurations\n\t\t- **AMD**: MI400 series challenging NVIDIA with competitive performance\n\t\t- **Intel**: Habana Gaudi processors for enterprise AI\n\t\t- **Cerebras**: Wafer-scale engines for large model training\n\t\t- **Groq**: LPUs optimized for low-latency inference\n\t\t- **SambaNova**: RDUs for enterprise AI workloads\n\t- #### Performance Metrics\n\t  collapsed:: true\n\t\t- **TOPS (Trillions of Operations Per Second)**: 1-50 TOPS for edge NPUs, 90-420 TOPS for datacenter TPUs\n\t\t- **TFLOPS (Teraflops)**: Floating-point throughput for training workloads\n\t\t- **Power Efficiency**: Performance per watt critical for sustainable AI\n\t\t- **Memory Bandwidth**: HBM3 and HBM3e for high-bandwidth data transfer\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Large-scale model training in data centers\n\t\t- Real-time inference for AI services\n\t\t- Edge AI for IoT and mobile devices\n\t\t- Autonomous vehicle perception systems\n\t\t- Scientific computing and simulation\n\t\t- AI-powered content generation\n\n## Metadata\n\n- **Last Updated**: 2025-12-29\n- **Review Status**: Enriched with 2025 hardware specifications\n- **Verification**: Technical sources verified\n- **Regional Context**: Global technology landscape",
+  "content": "- ### Definition\n  - AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AiHardware\n  - owl-role:: Technology\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[Computer Hardware]]\n  - enables:: [[Large Language Models]]\n  - bridges-to:: [[Autonomous Robot]] (domain: rb)\n\n- ### Content\n\n  - #### Key Components\n\t\t- **Graphics Processing Units (GPUs)**: Parallel processors with thousands of cores optimized for matrix operations; NVIDIA Blackwell architecture leads in 2025\n\t\t- **Tensor Processing Units (TPUs)**: Google's custom ASICs for neural network acceleration; TPU v7 (Ironwood) delivers 4,614 TFLOP/s\n\t\t- **Neural Processing Units (NPUs)**: Low-power accelerators for edge AI and on-device inference with emphasis on energy efficiency\n\t\t- **AI Accelerators (ASICs)**: Application-specific chips like AWS Trainium/Inferentia, Microsoft Maia, Intel Habana Gaudi\n\t\t- **FPGAs**: Field-programmable gate arrays offering flexibility for custom AI workloads\n  - #### Major Manufacturers (2025)\n\t\t- **NVIDIA**: Market leader with Blackwell architecture, H100/H200 GPUs\n\t\t- **Google**: TPU v7 Ironwood with 256-chip and 9,216-chip cluster configurations\n\t\t- **AMD**: MI400 series challenging NVIDIA with competitive performance\n\t\t- **Intel**: Habana Gaudi processors for enterprise AI\n\t\t- **Cerebras**: Wafer-scale engines for large model training\n\t\t- **Groq**: LPUs optimized for low-latency inference\n\t\t- **SambaNova**: RDUs for enterprise AI workloads\n  - #### Performance Metrics\n\t\t- **TOPS (Trillions of Operations Per Second)**: 1-50 TOPS for edge NPUs, 90-420 TOPS for datacenter TPUs\n\t\t- **TFLOPS (Teraflops)**: Floating-point throughput for training workloads\n\t\t- **Power Efficiency**: Performance per watt critical for sustainable AI\n\t\t- **Memory Bandwidth**: HBM3 and HBM3e for high-bandwidth data transfer\n  - #### Applications\n\t\t- Large-scale model training in data centers\n\t\t- Real-time inference for AI services\n\t\t- Edge AI for IoT and mobile devices\n\t\t- Autonomous vehicle perception systems\n\t\t- Scientific computing and simulation\n\t\t- AI-powered content generation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "NPU",
-    "Tensor Processing Unit",
-    "Neuromorphic Chips",
     "Neuromorphic Chip",
     "Inference Hardware",
     "Edge AI Accelerator",
-    "Training Hardware",
-    "FPGA",
     "TPU"
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "Large Language Models",
-    "High-Performance Computing",
-    "AI Infrastructure",
-    "AI Training",
-    "Deep Learning",
-    "Machine Learning",
+    "Autonomous Robot",
     "Computer Hardware",
-    "Neural Networks"
+    "Large Language Models"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-hardware",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#AIHardware",
+    "content_hash": "sha256-12-3a1209d7c469",
+    "legacy_term_id": "AI-7020",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-hardware",
+    "schema_version": "v2",
     "term_id": "AI-7020",
     "preferred_term": "AI Hardware",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#AiHardware",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale. These processors feature architectures specifically designed for the matrix operations, parallel processing, and low-precision arithmetic fundamental to modern AI algorithms.",
     "scope_note": null,
     "status": "active",
     "maturity": "mature",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:AiHardware",
-    "owl_physicality": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AiHardware",
     "owl_role": "Technology",
     "owl_inferred_class": null,
     "is_subclass_of": [
@@ -54,33 +56,22 @@
     "requires": [],
     "depends_on": [],
     "enables": [
-      "Deep Learning",
-      "Large Language Models",
-      "AI Training"
+      "Large Language Models"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Autonomous Robot"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Artificial Intelligence"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Machine Learning",
-        "Neural Networks",
-        "High-Performance Computing",
-        "AI Infrastructure"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

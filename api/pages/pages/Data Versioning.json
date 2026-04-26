@@ -1,65 +1,77 @@
 {
-  "id": "Data Versioning",
+  "id": "data-versioning",
   "title": "Data Versioning",
-  "content": "- ### OntologyBlock\n  id:: AI-9011\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9011\n\t- source-domain:: ai\n\t- preferred-term:: Data Versioning\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Version control system for datasets and ML models, tracking changes to data over time to ensure reproducibility and lineage in machine learning workflows (e.g., DVC).\n\t- source:: [[MLOps]], [[Data Engineering]], [[DVC]]\n\t- maturity:: emerging\n\t- owl:class:: ai:DataVersioning\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[Data Engineering]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
+  "content": "- ### Definition\n  - Version control system for datasets and ML models, tracking changes to data over time to ensure reproducibility and lineage in machine learning workflows (e.g., DVC).\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:DataVersioning\n  - owl-role:: Process\n  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n  Data Versioning — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[MLOps]], [[Data Engineering]], [[DVC]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "ETSI_Domain_Data_Mgmt___AI"
   ],
   "wiki_links": [
     "Artificial Intelligence",
-    "DVC",
-    "MLOps",
     "ArtificialIntelligenceDomain",
-    "Data Engineering"
+    "Blockchain",
+    "DVC",
+    "Data Engineering",
+    "MLOps"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:data-versioning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#DataVersioning",
+    "content_hash": "sha256-12-3e076deaccef",
+    "legacy_term_id": "AI-9011",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:data-versioning",
+    "schema_version": "v2",
     "term_id": "AI-9011",
     "preferred_term": "Data Versioning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#DataVersioning",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Version control system for datasets and ML models, tracking changes to data over time to ensure reproducibility and lineage in machine learning workflows (e.g., DVC).",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:DataVersioning",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:DataVersioning",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "ArtificialIntelligenceDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "MLOps",
       "Data Engineering",
       "DVC"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

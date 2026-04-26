@@ -1,23 +1,41 @@
-- ### OntologyBlock
-  id:: platform-engineering-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0014
-	- preferred-term:: Platform Engineering
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:PlatformEngineering
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Infrastructure & Cloud
+iri:: http://narrativegoldmine.com/spatial-computing#PlatformEngineering
+uri:: urn:visionclaw:concept:spatial-computing:platform-engineering
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:platform-engineering
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Platform Engineering
+content-hash:: sha256-12-3ac523b90ecc
+legacy-term-id:: ME-0014
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: spatial-computing:PlatformEngineering
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-- Platform Engineering (Infrastructure & Cloud Context)
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  - Platform Engineering (Infrastructure & Cloud Context)
   - Precise technical definition
     - Platform Engineering is the practice of designing, building, and maintaining internal developer platforms (IDPs) that abstract infrastructure complexity and provide self-service toolchains, workflows, and automation for software engineering teams.
     - It enables developers to deploy, manage, and monitor applications efficiently by standardising and automating infrastructure provisioning, CI/CD pipelines, and operational tasks, reducing cognitive load and operational bottlenecks.
@@ -45,20 +63,12 @@
     - In North England, regional innovation clusters and public sector digital transformation programmes are likely to drive further adoption, especially in sectors requiring rapid, secure, and compliant software delivery.
     - Research and development will focus on improving interoperability between platforms, enhancing developer experience, and integrating sustainability metrics into platform operations.
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Infrastructure & Cloud
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

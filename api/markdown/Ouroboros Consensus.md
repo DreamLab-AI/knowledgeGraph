@@ -1,52 +1,36 @@
-- ### OntologyBlock
-  id:: ouroborosconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#OuroborosConsensus
+uri:: urn:visionclaw:concept:blockchain:ouroboros-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:ouroboros-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Ouroboros Consensus
+content-hash:: sha256-12-2088011bd6ed
+legacy-term-id:: BC-0553
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0553
-    - filename-history:: ["BC-0553-ouroborosconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0553
-    - preferred-term:: Ouroboros Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.
 
-  - **Definition**
-    - definition:: A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:OuroborosConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:OuroborosConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Proof Of Stake]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Proof Of Stake]]
+- ### Content
+  Ouroboros Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :OuroborosConsensus))
-      (SubClassOf :OuroborosConsensus :ProofOfStake)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :OuroborosConsensus "Ouroboros Consensus"@en)
-      (AnnotationAssertion rdfs:comment :OuroborosConsensus
-        "A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders."@en)
-      ```
-
-- ## About Ouroboros Consensus
-  A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.
-  
-  Rigorously tested in academic settings. Emphasizes provable security guarantees.
-  
-  ### Examples
-  - Cardano
-  
-  ### Historical Context
-  - Developed by IOHK research team, peer-reviewed at CRYPTO 2017.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

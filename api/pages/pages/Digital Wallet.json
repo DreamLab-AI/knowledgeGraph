@@ -1,7 +1,7 @@
 {
-  "id": "Digital Wallet",
+  "id": "digital-wallet",
   "title": "Digital Wallet",
-  "content": "- ### OntologyBlock\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9881\n\t- source-domain:: bc\n\t- preferred-term:: Digital Wallet\n\t- definition:: A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.\n\t- status:: active\n\t- owl:class:: bc:DigitalWallet\n\t- #### Relationships\n\t  id:: digital-wallet-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptocurrency Storage]]\n\t\t- enables:: [[Asset Management]], [[Transaction Signing]], [[DeFi Access]]\n\t\t- requires:: [[Private Key]], [[Blockchain Network]], [[Cryptographic Security]]\n\t\t- related-to:: [[Self-Custody]], [[Hardware Wallet]], [[Web3]]\n- ## Technical Details\n\t- **Wallet Types**:\n\t\t- Non-custodial (self-custody): User controls private keys\n\t\t- Custodial: Third party manages keys\n\t\t- Smart contract wallets: Account abstraction features\n\t\t- Hot wallets: Internet-connected software\n\t\t- Cold wallets: Offline hardware devices\n\t- **2024 Developments**:\n\t\t- Mastercard Web3 card program with MetaMask integration\n\t\t- Smart wallets with social recovery features\n\t\t- Account abstraction hiding blockchain complexity\n\t\t- Batched transactions and programmable features\n\t- **Popular Web3 Wallets**:\n\t\t- MetaMask: EVM-compatible blockchains\n\t\t- Phantom: Solana, Ethereum, Polygon\n\t\t- Trust Wallet: Multi-chain mobile wallet\n\t\t- Ledger/Trezor: Hardware cold storage\n\t- **Security**: Cold wallets safest; never share private keys\n- ## Applications\n\t- Cryptocurrency storage and transfer\n\t- DeFi protocol interaction\n\t- NFT management\n\t- Web3 application authentication\n\t- Decentralized identity management",
+  "content": "- ### Definition\n  - A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:DigitalWallet\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Cryptocurrency Storage]]\n  - requires:: [[Private Key]], [[Blockchain Network]], [[Cryptographic Security]]\n  - enables:: [[Asset Management]], [[Transaction Signing]], [[DeFi Access]]\n\n  - bridges-to:: [[AI Agent System]] (ai)\n- ### Content\n\n  - ## Technical Details\n  - **Wallet Types**:\n\t\t- Non-custodial (self-custody): User controls private keys\n\t\t- Custodial: Third party manages keys\n\t\t- Smart contract wallets: Account abstraction features\n\t\t- Hot wallets: Internet-connected software\n\t\t- Cold wallets: Offline hardware devices\n  - **2024 Developments**:\n\t\t- Mastercard Web3 card program with MetaMask integration\n\t\t- Smart wallets with social recovery features\n\t\t- Account abstraction hiding blockchain complexity\n\t\t- Batched transactions and programmable features\n  - **Popular Web3 Wallets**:\n\t\t- MetaMask: EVM-compatible blockchains\n\t\t- Phantom: Solana, Ethereum, Polygon\n\t\t- Trust Wallet: Multi-chain mobile wallet\n\t\t- Ledger/Trezor: Hardware cold storage\n  - **Security**: Cold wallets safest; never share private keys\n  - ## Applications\n  - Cryptocurrency storage and transfer\n  - DeFi protocol interaction\n  - NFT management\n  - Web3 application authentication\n  - Decentralized identity management\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "NFT Renting",
     "Digital Goods",
@@ -13,10 +13,8 @@
     "Non-Fungible Token (NFT)",
     "Digital Money",
     "Digital Payments",
-    "Token Custody Service",
     "Micropayment",
     "Digital Ownership",
-    "Digital Asset",
     "Customer Rewards",
     "NFT Wrapping",
     "Digital Payment System",
@@ -30,38 +28,47 @@
     "Tokenization"
   ],
   "wiki_links": [
-    "Private Key",
-    "Transaction Signing",
-    "Hardware Wallet",
-    "Self-Custody",
-    "Blockchain Network",
-    "Cryptographic Security",
-    "Web3",
+    "AI Agent System",
     "Asset Management",
+    "Blockchain Network",
     "Cryptocurrency Storage",
-    "DeFi Access"
+    "Cryptographic Security",
+    "DeFi Access",
+    "Private Key",
+    "Transaction Signing"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:digital-wallet",
+    "iri": "http://narrativegoldmine.com/blockchain#DigitalWallet",
+    "content_hash": "sha256-12-dda4f7b2e78a",
+    "legacy_term_id": "MV-9881",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:digital-wallet",
+    "schema_version": "v2",
     "term_id": "MV-9881",
     "preferred_term": "Digital Wallet",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#DigitalWallet",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "A software application or hardware device that stores private keys and enables users to manage, send, and receive cryptocurrencies and digital assets on blockchain networks, with self-custody wallets providing complete user control over private keys without third-party intermediaries.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:DigitalWallet",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:DigitalWallet",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Cryptocurrency Storage"
@@ -80,27 +87,17 @@
       "DeFi Access"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Self-Custody",
-        "Hardware Wallet",
-        "Web3"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "term-id 'MV-9881' doesn't match domain 'bc' (expected BC-)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

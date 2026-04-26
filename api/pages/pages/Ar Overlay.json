@@ -1,63 +1,82 @@
 {
-  "id": "Ar Overlay",
+  "id": "ar-overlay",
   "title": "Ar Overlay",
-  "content": "- ### OntologyBlock\n  id:: ar-overlay-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9771\n\t- source-domain:: mv\n\t- preferred-term:: Ar Overlay\n\t- status:: active\n\t- definition:: AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.\n\t- owl:class:: mv:ArOverlay\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Digital Display Layer]]\n\t- enables:: [[Information Augmentation]], [[Spatial Annotation]], [[Virtual Object Placement]]\n\t- requires:: [[Spatial Anchoring]], [[Real-Time Rendering]], [[Environmental Understanding]]\n\t- #### Relationships\n\t  id:: ar-overlay-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Digital Overlay**: Virtual elements from simple text to complex animated 3D objects added to user's view\n- **Spatial Anchoring**: Anchoring virtual objects to specific real-world locations\n- **Environmental Understanding**: Recognition of physical surfaces, lighting conditions, and spatial relationships\n- **Real-Time Interaction**: Dynamic response to user inputs and environmental changes\n\n### Relationship to Spatial Computing\nAR overlay is described as \"the immersive, interactive layer of digital content overlaid and anchored onto our physical world, perceived through a sophisticated lens or display.\" AR is a subset of spatial computing (XR) enabling human-computer interaction in three-dimensional spaces.\n\n### 2024 Developments\nApple Vision Pro and Meta Orion demonstrate advanced spatial overlay capabilities for mixed reality experiences.",
+  "content": "- ### Definition\n  - AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ArOverlay\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Display Layer]]\n  - requires:: [[Spatial Anchoring]], [[Real-Time Rendering]], [[Environmental Understanding]]\n  - enables:: [[Information Augmentation]], [[Spatial Annotation]], [[Virtual Object Placement]]\n  - bridges-to:: [[Computer Vision]] (ai)\n\n- ### Content\n\n  ### Technical Details\n  Key components include:\n  - **Digital Overlay**: Virtual elements from simple text to complex animated 3D objects added to user's view\n  - **Spatial Anchoring**: Anchoring virtual objects to specific real-world locations\n  - **Environmental Understanding**: Recognition of physical surfaces, lighting conditions, and spatial relationships\n  - **Real-Time Interaction**: Dynamic response to user inputs and environmental changes\n\n  ### Relationship to Spatial Computing\n  AR overlay is described as \"the immersive, interactive layer of digital content overlaid and anchored onto our physical world, perceived through a sophisticated lens or display.\" AR is a subset of spatial computing (XR) enabling human-computer interaction in three-dimensional spaces.\n\n  ### 2024 Developments\n  Apple Vision Pro and Meta Orion demonstrate advanced spatial overlay capabilities for mixed reality experiences.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Spatial Annotation",
+    "Computer Vision",
     "Digital Display Layer",
-    "metaverse",
+    "Environmental Understanding",
     "Information Augmentation",
     "Real-Time Rendering",
-    "Environmental Understanding",
     "Spatial Anchoring",
-    "Virtual Object Placement"
+    "Spatial Annotation",
+    "Virtual Object Placement",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:ar-overlay",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ArOverlay",
+    "content_hash": "sha256-12-ec83bf82d6d2",
+    "legacy_term_id": "MV-9771",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:ar-overlay",
+    "schema_version": "v2",
     "term_id": "MV-9771",
     "preferred_term": "Ar Overlay",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ArOverlay",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ArOverlay",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ArOverlay",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Digital Display Layer"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Spatial Anchoring",
+      "Real-Time Rendering",
+      "Environmental Understanding"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Information Augmentation",
+      "Spatial Annotation",
+      "Virtual Object Placement"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Computer Vision"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

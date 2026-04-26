@@ -1,295 +1,312 @@
-- ### OntologyBlock
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-1026
-  - preferred-term:: FPGA
-  - alternate-terms:: Field-Programmable Gate Array
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:Fpga
+iri:: http://narrativegoldmine.com/artificial-intelligence#FPGA
+uri:: urn:visionclaw:concept:artificial-intelligence:fpga
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:fpga
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: FPGA
+content-hash:: sha256-12-a45062712f64
+legacy-term-id:: AI-1026
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[AI Hardware]]
-- is-subclass-of:: [[Inference Hardware]]
-- skos:related:: [[ASIC]]
-- skos:related:: [[Reconfigurable Computing]]
-- skos:related:: [[Hardware Acceleration]]
-- enables:: [[Custom Neural Architectures]]
-- enables:: [[Low-Latency Inference]]
-- used-in:: [[Edge Computing]]
+- ### Definition
+  - FPGA is a concept within the ai domain.
 
-### Definition
-Field-Programmable Gate Arrays (FPGAs) are integrated circuits that can be configured by users after manufacturing to implement custom digital logic, offering a middle ground between flexible but slower CPUs/GPUs and fast but fixed ASICs. For AI applications, FPGAs provide reconfigurable hardware acceleration, enabling optimized implementations of neural networks with low latency, deterministic performance, and energy efficiency, particularly suited for inference at the edge and specialized deployment scenarios.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Fpga
+  - owl-role:: Concept
 
-### Architecture Overview
-**Core Components:**
-- **Logic Blocks (CLBs):** Configurable logic cells with LUTs (Look-Up Tables), flip-flops, multiplexers
-- **Routing Resources:** Programmable interconnects between blocks
-- **DSP Slices:** Dedicated multiply-accumulate units
-- **Block RAM (BRAM):** On-chip memory blocks
-- **I/O Blocks:** Configurable input/output interfaces
+- ### Relationships
+  - is-subclass-of:: [[Inference Hardware]]
+  - enables:: [[Custom Neural Architectures]]
+  - bridges-to:: [[Autonomous Robot]], [[Digital Twin]]
 
-**Reconfiguration:**
-- Hardware behavior defined by bitstream
-- Can be reprogrammed in field (hence "field-programmable")
-- Partial reconfiguration possible (some regions while others operate)
-- Configuration stored in SRAM (volatile) or flash
+- ### Content
 
-### FPGA vs. Other Hardware
-| Aspect | FPGA | GPU | ASIC |
-|--------|------|-----|------|
-| Flexibility | Reconfigurable | Fixed architecture | Fixed design |
-| Performance | Medium-High | High | Highest |
-| Power | Low-Medium | High | Lowest (optimized) |
-| Development | HDL programming | Software libraries | Months-years |
-| Cost | $100s-$10,000s | $1,000s-$10,000s | High NRE, low per-unit |
-| Latency | Microseconds | Milliseconds | Microseconds |
-| NRE Cost | None | None | $1M-$100M+ |
+  ### Definition
+  Field-Programmable Gate Arrays (FPGAs) are integrated circuits that can be configured by users after manufacturing to implement custom digital logic, offering a middle ground between flexible but slower CPUs/GPUs and fast but fixed ASICs. For AI applications, FPGAs provide reconfigurable hardware acceleration, enabling optimized implementations of neural networks with low latency, deterministic performance, and energy efficiency, particularly suited for inference at the edge and specialized deployment scenarios.
 
-### AI Advantages
-**Low Latency:**
-- Direct hardware implementation
-- Microsecond response times
-- Deterministic execution (no OS jitter)
-- Ideal for real-time systems
+  ### Architecture Overview
+  **Core Components:**
+  - **Logic Blocks (CLBs):** Configurable logic cells with LUTs (Look-Up Tables), flip-flops, multiplexers
+  - **Routing Resources:** Programmable interconnects between blocks
+  - **DSP Slices:** Dedicated multiply-accumulate units
+  - **Block RAM (BRAM):** On-chip memory blocks
+  - **I/O Blocks:** Configurable input/output interfaces
 
-**Energy Efficiency:**
-- Optimized data paths
-- No unnecessary operations
-- 10-100x better than CPU/GPU for specific tasks
-- <10W for edge FPGAs
+  **Reconfiguration:**
+  - Hardware behavior defined by bitstream
+  - Can be reprogrammed in field (hence "field-programmable")
+  - Partial reconfiguration possible (some regions while others operate)
+  - Configuration stored in SRAM (volatile) or flash
 
-**Flexibility:**
-- Adapt to new model architectures
-- Optimize for specific models
-- Support multiple models (time-multiplexed)
-- Update without hardware replacement
+  ### FPGA vs. Other Hardware
+  | Aspect | FPGA | GPU | ASIC |
+  |--------|------|-----|------|
+  | Flexibility | Reconfigurable | Fixed architecture | Fixed design |
+  | Performance | Medium-High | High | Highest |
+  | Power | Low-Medium | High | Lowest (optimized) |
+  | Development | HDL programming | Software libraries | Months-years |
+  | Cost | $100s-$10,000s | $1,000s-$10,000s | High NRE, low per-unit |
+  | Latency | Microseconds | Milliseconds | Microseconds |
+  | NRE Cost | None | None | $1M-$100M+ |
 
-**Customization:**
-- Variable precision (not limited to INT8/FP16)
-- Custom memory hierarchies
-- Specialized operators
-- Model-specific optimizations
+  ### AI Advantages
+  **Low Latency:**
+  - Direct hardware implementation
+  - Microsecond response times
+  - Deterministic execution (no OS jitter)
+  - Ideal for real-time systems
 
-### Challenges for AI
-**Programming Complexity:**
-- Requires HDL knowledge (Verilog/VHDL)
-- Long development cycles
-- Harder to debug than software
-- Steep learning curve
+  **Energy Efficiency:**
+  - Optimized data paths
+  - No unnecessary operations
+  - 10-100x better than CPU/GPU for specific tasks
+  - <10W for edge FPGAs
 
-**Tool Ecosystem:**
-- Less mature than CUDA/TensorFlow
-- Compilation times (hours for large designs)
-- Vendor lock-in
-- Limited open-source tools
+  **Flexibility:**
+  - Adapt to new model architectures
+  - Optimize for specific models
+  - Support multiple models (time-multiplexed)
+  - Update without hardware replacement
 
-**Resource Constraints:**
-- Limited DSP blocks, BRAM
-- Large models may not fit
-- Balancing resource usage tricky
+  **Customization:**
+  - Variable precision (not limited to INT8/FP16)
+  - Custom memory hierarchies
+  - Specialized operators
+  - Model-specific optimizations
 
-**Performance:**
-- Raw compute lower than GPUs
-- Memory bandwidth limited
-- Best for specific architectures (CNNs better than Transformers)
+  ### Challenges for AI
+  **Programming Complexity:**
+  - Requires HDL knowledge (Verilog/VHDL)
+  - Long development cycles
+  - Harder to debug than software
+  - Steep learning curve
 
-### Major FPGA Vendors
-**Xilinx (AMD):**
-- Versal AI Edge/Core (AI accelerators)
-- Alveo accelerator cards (data center)
-- Zynq UltraScale+ MPSoC (embedded)
-- Vitis AI framework
+  **Tool Ecosystem:**
+  - Less mature than CUDA/TensorFlow
+  - Compilation times (hours for large designs)
+  - Vendor lock-in
+  - Limited open-source tools
 
-**Intel (Altera):**
-- Stratix, Agilex families
-- Arria (mid-range)
-- Intel FPGA AI Suite
+  **Resource Constraints:**
+  - Limited DSP blocks, BRAM
+  - Large models may not fit
+  - Balancing resource usage tricky
 
-**Lattice:**
-- Low-power FPGAs
-- Sensai stack (edge AI)
-- <1W power consumption
+  **Performance:**
+  - Raw compute lower than GPUs
+  - Memory bandwidth limited
+  - Best for specific architectures (CNNs better than Transformers)
 
-**Microchip (Microsemi):**
-- PolarFire FPGAs
-- Radiation-hardened (aerospace)
+  ### Major FPGA Vendors
+  **Xilinx (AMD):**
+  - Versal AI Edge/Core (AI accelerators)
+  - Alveo accelerator cards (data center)
+  - Zynq UltraScale+ MPSoC (embedded)
+  - Vitis AI framework
 
-### FPGA AI Frameworks
-**Xilinx Vitis AI:**
-- High-level synthesis (C++/Python to HDL)
-- Model compiler (TensorFlow/PyTorch → bitstream)
-- Quantization tools
-- Pre-optimized neural network libraries
+  **Intel (Altera):**
+  - Stratix, Agilex families
+  - Arria (mid-range)
+  - Intel FPGA AI Suite
 
-**Intel OpenVINO:**
-- Inference optimization
-- Support for Intel FPGAs
-- Model compression
+  **Lattice:**
+  - Low-power FPGAs
+  - Sensai stack (edge AI)
+  - <1W power consumption
 
-**FINN (Xilinx Research):**
-- Binarized neural networks
-- Extreme quantization (1-2 bit)
-- Open-source
+  **Microchip (Microsemi):**
+  - PolarFire FPGAs
+  - Radiation-hardened (aerospace)
 
-**hls4ml:**
-- High-Level Synthesis for ML
-- Low-latency inference
-- Physics experiments (particle accelerators)
+  ### FPGA AI Frameworks
+  **Xilinx Vitis AI:**
+  - High-level synthesis (C++/Python to HDL)
+  - Model compiler (TensorFlow/PyTorch → bitstream)
+  - Quantization tools
+  - Pre-optimized neural network libraries
 
-### Deployment Scenarios
-**Edge AI:**
-- Autonomous drones
-- Industrial IoT sensors
-- Smart cameras
-- Medical devices
-- 5G base stations
+  **Intel OpenVINO:**
+  - Inference optimization
+  - Support for Intel FPGAs
+  - Model compression
 
-**Data Center:**
-- Bing search acceleration (Microsoft)
-- Database acceleration
-- Video transcoding
-- Genomics processing
+  **FINN (Xilinx Research):**
+  - Binarized neural networks
+  - Extreme quantization (1-2 bit)
+  - Open-source
 
-**Real-Time Systems:**
-- ADAS (Advanced Driver Assistance)
-- Financial trading (HFT)
-- Robotics control
-- Radar/sonar processing
+  **hls4ml:**
+  - High-Level Synthesis for ML
+  - Low-latency inference
+  - Physics experiments (particle accelerators)
 
-**Aerospace/Defense:**
-- Radiation-hardened computing
-- Satellite imaging
-- Signal intelligence
-- Secure enclaves
+  ### Deployment Scenarios
+  **Edge AI:**
+  - Autonomous drones
+  - Industrial IoT sensors
+  - Smart cameras
+  - Medical devices
+  - 5G base stations
 
-### Quantization and Precision
-**Custom Bit-Widths:**
-- Not limited to 8/16/32-bit
-- 3-bit, 5-bit, arbitrary precision
-- Per-layer precision tuning
-- Ternary/binary neural networks
+  **Data Center:**
+  - Bing search acceleration (Microsoft)
+  - Database acceleration
+  - Video transcoding
+  - Genomics processing
 
-**Benefits:**
-- Reduced BRAM usage
-- More parallelism
-- Lower power
-- Minimal accuracy loss (with tuning)
+  **Real-Time Systems:**
+  - ADAS (Advanced Driver Assistance)
+  - Financial trading (HFT)
+  - Robotics control
+  - Radar/sonar processing
 
-### FPGA AI Accelerator Cards
-**Xilinx Alveo:**
-- U50, U200, U250, U280 (PCIe cards)
-- HBM memory (up to 32GB)
-- Data center inference
-- Virtualization support
+  **Aerospace/Defense:**
+  - Radiation-hardened computing
+  - Satellite imaging
+  - Signal intelligence
+  - Secure enclaves
 
-**Intel PAC (Programmable Acceleration Card):**
-- N3000, D5005
-- PCIe Gen3/Gen4
-- Integrated with OpenVINO
+  ### Quantization and Precision
+  **Custom Bit-Widths:**
+  - Not limited to 8/16/32-bit
+  - 3-bit, 5-bit, arbitrary precision
+  - Per-layer precision tuning
+  - Ternary/binary neural networks
 
-### Performance Examples
-**Image Classification (ResNet-50):**
-- Xilinx U50: 2000-5000 fps (INT8)
-- <10ms latency
-- 75W power
+  **Benefits:**
+  - Reduced BRAM usage
+  - More parallelism
+  - Lower power
+  - Minimal accuracy loss (with tuning)
 
-**Object Detection (YOLO):**
-- Edge FPGA: 30-60 fps at 5-10W
-- Data center FPGA: 200-500 fps
+  ### FPGA AI Accelerator Cards
+  **Xilinx Alveo:**
+  - U50, U200, U250, U280 (PCIe cards)
+  - HBM memory (up to 32GB)
+  - Data center inference
+  - Virtualization support
 
-### Development Flow
-1. **Model Training:** Standard frameworks (PyTorch, TensorFlow)
-2. **Quantization:** Reduce precision (8-bit, custom)
-3. **Compilation:** Model → HDL/bitstream (Vitis AI, etc.)
-4. **Synthesis:** HDL → gate-level netlist
-5. **Place & Route:** Physical layout on FPGA
-6. **Bitstream Generation:** Final configuration file
-7. **Deployment:** Load onto FPGA
-8. **Profiling:** Optimize resource usage, timing
+  **Intel PAC (Programmable Acceleration Card):**
+  - N3000, D5005
+  - PCIe Gen3/Gen4
+  - Integrated with OpenVINO
 
-**Time:** Days to weeks (vs. hours for GPU software)
+  ### Performance Examples
+  **Image Classification (ResNet-50):**
+  - Xilinx U50: 2000-5000 fps (INT8)
+  - <10ms latency
+  - 75W power
 
-### Hybrid Approaches
-**CPU + FPGA:**
-- CPU for control, FPGA for acceleration
-- Zynq SoCs (ARM + FPGA fabric)
-- Xilinx Versal (AI Engines + FPGA)
+  **Object Detection (YOLO):**
+  - Edge FPGA: 30-60 fps at 5-10W
+  - Data center FPGA: 200-500 fps
 
-**FPGA + HBM:**
-- High-bandwidth memory integration
-- Alveo U50/U280
-- Overcome memory bottleneck
+  ### Development Flow
+  1. **Model Training:** Standard frameworks (PyTorch, TensorFlow)
+  2. **Quantization:** Reduce precision (8-bit, custom)
+  3. **Compilation:** Model → HDL/bitstream (Vitis AI, etc.)
+  4. **Synthesis:** HDL → gate-level netlist
+  5. **Place & Route:** Physical layout on FPGA
+  6. **Bitstream Generation:** Final configuration file
+  7. **Deployment:** Load onto FPGA
+  8. **Profiling:** Optimize resource usage, timing
 
-**Multi-FPGA:**
-- Scale across cards
-- Data center racks
-- FPGA clusters
+  **Time:** Days to weeks (vs. hours for GPU software)
 
-### Cost Considerations
-**Hardware:**
-- Low-end FPGAs: $10-100 (edge)
-- Mid-range: $500-5,000
-- High-end data center: $5,000-15,000
-- Development boards: $200-2,000
+  ### Hybrid Approaches
+  **CPU + FPGA:**
+  - CPU for control, FPGA for acceleration
+  - Zynq SoCs (ARM + FPGA fabric)
+  - Xilinx Versal (AI Engines + FPGA)
 
-**Development:**
-- Tool licenses (free to $50,000+/year)
-- Engineering time (longer than software)
-- NRE (no manufacturing cost)
+  **FPGA + HBM:**
+  - High-bandwidth memory integration
+  - Alveo U50/U280
+  - Overcome memory bottleneck
 
-**Operating:**
-- Low power (edge FPGAs <10W)
-- Deterministic behavior (maintenance)
+  **Multi-FPGA:**
+  - Scale across cards
+  - Data center racks
+  - FPGA clusters
 
-### Use Case Suitability
-**Best For:**
-- Low-latency requirements (<1ms)
-- Edge deployment (power-constrained)
-- Custom/evolving architectures
-- Deterministic performance needed
-- Medium batch sizes
-- CNNs, RNNs (structured models)
+  ### Cost Considerations
+  **Hardware:**
+  - Low-end FPGAs: $10-100 (edge)
+  - Mid-range: $500-5,000
+  - High-end data center: $5,000-15,000
+  - Development boards: $200-2,000
 
-**Not Ideal For:**
-- Large transformer models (limited resources)
-- Rapid prototyping (slow compile)
-- High-throughput batch processing (GPUs better)
-- Standard models on cloud (GPU mature ecosystem)
+  **Development:**
+  - Tool licenses (free to $50,000+/year)
+  - Engineering time (longer than software)
+  - NRE (no manufacturing cost)
 
-### Future Trends
-**Heterogeneous SoCs:**
-- Versal AI Engines (Xilinx)
-- Integrated AI accelerators + FPGA fabric
-- Best of both worlds
+  **Operating:**
+  - Low power (edge FPGAs <10W)
+  - Deterministic behavior (maintenance)
 
-**High-Level Tools:**
-- Python-to-bitstream workflows
-- Automated optimization
-- Lower barrier to entry
+  ### Use Case Suitability
+  **Best For:**
+  - Low-latency requirements (<1ms)
+  - Edge deployment (power-constrained)
+  - Custom/evolving architectures
+  - Deterministic performance needed
+  - Medium batch sizes
+  - CNNs, RNNs (structured models)
 
-**Datacenter Integration:**
-- Kubernetes support
-- Cloud FPGA offerings (AWS F1)
-- Disaggregated infrastructure
+  **Not Ideal For:**
+  - Large transformer models (limited resources)
+  - Rapid prototyping (slow compile)
+  - High-throughput batch processing (GPUs better)
+  - Standard models on cloud (GPU mature ecosystem)
 
-**Chiplet Integration:**
-- FPGA fabric + HBM + AI cores
-- UCIe standard interfaces
-- Modular computing
+  ### Future Trends
+  **Heterogeneous SoCs:**
+  - Versal AI Engines (Xilinx)
+  - Integrated AI accelerators + FPGA fabric
+  - Best of both worlds
 
-### Notable Deployments
-- **Microsoft Bing:** Project Catapult (FPGA acceleration)
-- **AWS:** F1 instances (FPGA cloud)
-- **Alibaba:** FPGA inference in data centers
-- **Autonomous Vehicles:** Xilinx in many platforms
-- **5G Base Stations:** Acceleration and flexibility
+  **High-Level Tools:**
+  - Python-to-bitstream workflows
+  - Automated optimization
+  - Lower barrier to entry
 
-### Research Directions
-- NeuroFPGA (neural architecture search for FPGA)
-- Binarized/ternary neural networks (extreme efficiency)
-- In-FPGA training (not just inference)
-- Optical-FPGA hybrid systems
-- FPGA overlays (abstraction layers)
+  **Datacenter Integration:**
+  - Kubernetes support
+  - Cloud FPGA offerings (AWS F1)
+  - Disaggregated infrastructure
 
-FPGAs occupy a unique niche in AI hardware, offering a compelling balance of flexibility, efficiency, and low latency for applications where GPUs are overkill or too power-hungry and ASICs are too rigid or costly, making them particularly valuable for edge AI, real-time systems, and specialized deployment scenarios requiring deterministic performance.
+  **Chiplet Integration:**
+  - FPGA fabric + HBM + AI cores
+  - UCIe standard interfaces
+  - Modular computing
+
+  ### Notable Deployments
+  - **Microsoft Bing:** Project Catapult (FPGA acceleration)
+  - **AWS:** F1 instances (FPGA cloud)
+  - **Alibaba:** FPGA inference in data centers
+  - **Autonomous Vehicles:** Xilinx in many platforms
+  - **5G Base Stations:** Acceleration and flexibility
+
+  ### Research Directions
+  - NeuroFPGA (neural architecture search for FPGA)
+  - Binarized/ternary neural networks (extreme efficiency)
+  - In-FPGA training (not just inference)
+  - Optical-FPGA hybrid systems
+  - FPGA overlays (abstraction layers)
+
+  FPGAs occupy a unique niche in AI hardware, offering a compelling balance of flexibility, efficiency, and low latency for applications where GPUs are overkill or too power-hungry and ASICs are too rigid or costly, making them particularly valuable for edge AI, real-time systems, and specialized deployment scenarios requiring deterministic performance.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

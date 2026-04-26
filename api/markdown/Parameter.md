@@ -1,40 +1,36 @@
-- ### OntologyBlock
-  id:: parameter-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Parameter
+uri:: urn:visionclaw:concept:artificial-intelligence:parameter
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:parameter
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Parameter
+content-hash:: sha256-12-16b2762a2f1e
+legacy-term-id:: AI-0837
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0837
-    - filename-history:: ["AI-0837-parameter.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0837
-    - preferred-term:: Parameter
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Parameter is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Parameter
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:Parameter
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  Parameter — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Parameter))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Parameter "Parameter"@en)
-      ```
-
-- ## About Parameter
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

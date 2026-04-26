@@ -1,123 +1,138 @@
-- ### OntologyBlock
-  id:: hanim-standard-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9913
-	- source-domain:: mv
-	- preferred-term:: Hanim Standard
-	- status:: active
-	- owl:class:: mv:HanimStandard
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulations, and virtual environments.
-	- #### Relationships
-	  id:: hanim-standard-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Animation Standard]]
-		- related-to:: [[Gltf Standard]]
-		- related-to:: [[Avatar Interoperability]]
-		- enables:: [[Cross-Platform Avatars]]
+iri:: http://narrativegoldmine.com/spatial-computing#HanimStandard
+uri:: urn:visionclaw:concept:spatial-computing:hanim-standard
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:hanim-standard
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Hanim Standard
+content-hash:: sha256-12-a2824b8e4890
+legacy-term-id:: MV-9913
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Standard Overview
+- ### Definition
+  - Humanoid Animation (H-Anim) is an ISO/IEC approved international standard developed by the Web3D Consortium for interchangeable humanoid figures, defining specifications for articulated avatars, skeletal hierarchies, and animation systems that enable character portability across 3D games, simulations, and virtual environments.
 
-### ISO/IEC Recognition
-- Approved ISO and IEC standard
-- Royalty-free and publicly available
-- Continuously developed since VRML (1997)
-- Web3D Consortium maintenance
+- ### Semantic Classification
+  - owl-class:: spatial-computing:HanimStandard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Extensible 3D Integration
-- Coordinated with X3D Graphics standards
-- VRML compatibility
-- Network delivery specifications
-- Interactive 3D data integration
+- ### Relationships
+  - is-subclass-of:: [[Animation Standard]]
+  - enables:: [[Cross-Platform Avatars]]
+  - bridges-to:: [[Blockchain]]
 
-## Technical Specifications
+- ### Content
 
-### Level of Articulation (LOA)
-- Low LOA: 14 joints
-- High LOA: 72+ joints
-- Scalable complexity levels
-- Application-specific selection
+  ## Standard Overview
 
-### Component Standards
-- Skin mesh definitions
-- Skeleton hierarchies
-- Internal organ representations
-- Haptic and kinematic interfaces
+  ### ISO/IEC Recognition
+  - Approved ISO and IEC standard
+  - Royalty-free and publicly available
+  - Continuously developed since VRML (1997)
+  - Web3D Consortium maintenance
 
-## Web3D 2024 Conference
+  ### Extensible 3D Integration
+  - Coordinated with X3D Graphics standards
+  - VRML compatibility
+  - Network delivery specifications
+  - Interactive 3D data integration
 
-### Workshop Highlights (September 2024)
-- Co-chairs: Don Brutzman, Carol McDonald, Myeong Won Lee
-- Part 6: Soft-body physics discussion
-- Part 7: Avatar use cases and requirements
-- Metaverse Standards Forum coordination
+  ## Technical Specifications
 
-### Emerging Topics
-- Clothing and cloth animation
-- Fabric material properties (roughness, friction, stretch)
-- FabricMaterial node consideration
-- 3D clothing-humanoid relationships
+  ### Level of Articulation (LOA)
+  - Low LOA: 14 joints
+  - High LOA: 72+ joints
+  - Scalable complexity levels
+  - Application-specific selection
 
-## Facial Animation
+  ### Component Standards
+  - Skin mesh definitions
+  - Skeleton hierarchies
+  - Internal organ representations
+  - Haptic and kinematic interfaces
 
-### Expression Standards
-- Region-based facial modelling
-- Mesh deformation methods
-- X3D interpolators and morphors
-- Human expression representation
+  ## Web3D 2024 Conference
 
-### Technical Implementation
-- Muscle-based animation
-- Blend shape systems
-- Phoneme synchronisation
-- Emotional expression mapping
+  ### Workshop Highlights (September 2024)
+  - Co-chairs: Don Brutzman, Carol McDonald, Myeong Won Lee
+  - Part 6: Soft-body physics discussion
+  - Part 7: Avatar use cases and requirements
+  - Metaverse Standards Forum coordination
 
-## Medical Applications
+  ### Emerging Topics
+  - Clothing and cloth animation
+  - Fabric material properties (roughness, friction, stretch)
+  - FabricMaterial node consideration
+  - 3D clothing-humanoid relationships
 
-### Internal Organ Standards
-- Medical professional targeting
-- Anatomically correct definitions
-- 3D organ representation
-- Health and medical visualisation
+  ## Facial Animation
 
-### Healthcare Use Cases
-- Surgical simulation
-- Medical education
-- Anatomical reference
-- Treatment planning
+  ### Expression Standards
+  - Region-based facial modelling
+  - Mesh deformation methods
+  - X3D interpolators and morphors
+  - Human expression representation
 
-## Metaverse Integration
+  ### Technical Implementation
+  - Muscle-based animation
+  - Blend shape systems
+  - Phoneme synchronisation
+  - Emotional expression mapping
 
-### Avatar Portability
-- Cross-platform character use
-- Game and simulation compatibility
-- Standardised figure interchange
-- Virtual environment deployment
+  ## Medical Applications
 
-### Industry Applications
-- 3D gaming characters
-- Training simulations
-- Virtual reality avatars
-- Augmented reality figures
+  ### Internal Organ Standards
+  - Medical professional targeting
+  - Anatomically correct definitions
+  - 3D organ representation
+  - Health and medical visualisation
 
-## Working Group Activities
+  ### Healthcare Use Cases
+  - Surgical simulation
+  - Medical education
+  - Anatomical reference
+  - Treatment planning
 
-### Current Development
-- Sharable skeleton standards
-- Body and animation interoperability
-- Discrete articulation levels
-- Real-time animation support
+  ## Metaverse Integration
 
-### Future Directions
-- Soft-body physics integration
-- Advanced cloth simulation
-- Enhanced facial expression
-- Haptic feedback standards
+  ### Avatar Portability
+  - Cross-platform character use
+  - Game and simulation compatibility
+  - Standardised figure interchange
+  - Virtual environment deployment
 
-## Metadata
+  ### Industry Applications
+  - 3D gaming characters
+  - Training simulations
+  - Virtual reality avatars
+  - Augmented reality figures
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Working Group Activities
+
+  ### Current Development
+  - Sharable skeleton standards
+  - Body and animation interoperability
+  - Discrete articulation levels
+  - Real-time animation support
+
+  #### Future Directions
+  - Soft-body physics integration
+  - Advanced cloth simulation
+  - Enhanced facial expression
+  - Haptic feedback standards
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

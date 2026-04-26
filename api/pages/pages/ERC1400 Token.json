@@ -1,0 +1,67 @@
+{
+  "id": "erc1400-token",
+  "title": "ERC1400 Token",
+  "content": "- ### Definition\n  - A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:ERC1400Token\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Security Token]]\n\n- ### Content\n  ERC-1400 Token — content pending enrichment.\n\n- ### Provenance\n  - sources:: Chimera Prime Research\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain",
+    "Security Token"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:erc1400-token",
+    "iri": "http://narrativegoldmine.com/blockchain#Erc1400Token",
+    "content_hash": "sha256-12-0aa49479ff9e",
+    "legacy_term_id": "BC-0518",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:erc1400-token",
+    "schema_version": "v2",
+    "term_id": "BC-0518",
+    "preferred_term": "ERC1400 Token",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.95,
+    "created": "2025-11-13T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:ERC1400Token",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Security Token"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Blockchain"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Chimera Prime Research"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

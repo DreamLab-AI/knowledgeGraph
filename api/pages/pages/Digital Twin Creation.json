@@ -1,45 +1,54 @@
 {
-  "id": "Digital Twin Creation",
+  "id": "digital-twin-creation",
   "title": "Digital Twin Creation",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9876\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation\n\t- definition:: The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimization across the asset's entire lifecycle from design through decommissioning.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinCreation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-creation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Modeling]]\n\t\t- enables:: [[Real-Time Monitoring]], [[Predictive Analytics]], [[Lifecycle Management]]\n\t\t- requires:: [[3D Modeling]], [[IoT Integration]], [[Sensor Data]]\n\t\t- related-to:: [[Simulation]], [[Virtual Prototype]], [[Asset Management]]\n- ## Technical Details\n\t- **Market Growth**:\n\t\t- Global market: ~60% annual growth over next five years\n\t\t- Projected $73.5B by 2027 (McKinsey analysis)\n\t\t- Current market: $3.1B (2020) to $48.2B by 2026\n\t- **Creation Process**:\n\t\t- 3D scanning of existing assets (LiDAR, structured-light)\n\t\t- Meticulous data collection and analysis\n\t\t- Sensor integration for real-time updates\n\t\t- AI/ML model training for behavior prediction\n\t- **Digital Twin vs Simulation**:\n\t\t- Simulations: Static, predefined scenarios, no real-world connection\n\t\t- Digital Twins: Dynamic, real-time conditions, bidirectional data flow\n\t- **Required Technologies**: CAD modeling, cloud computing, IIoT, AR/VR, AI/ML, systems integration\n- ## Applications\n\t- Manufacturing predictive maintenance\n\t- Healthcare surgical planning\n\t- Automotive EV battery simulation\n\t- Smart city traffic optimization\n\t- Product lifecycle management",
+  "content": "- ### Definition\n  - The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning.\n\nbridges-to:: [[Computer Vision]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalTwinCreation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Modeling]]\n  - requires:: [[3D Modeling]], [[IoT Integration]], [[Sensor Data]]\n  - enables:: [[Real-Time Monitoring]], [[Predictive Analytics]], [[Lifecycle Management]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Market Growth**:\n\t\t- Global market: ~60% annual growth over next five years\n\t\t- Projected $73.5B by 2027 (McKinsey analysis)\n\t\t- Current market: $3.1B (2020) to $48.2B by 2026\n  - **Creation Process**:\n\t\t- 3D scanning of existing assets (LiDAR, structured-light)\n\t\t- Meticulous data collection and analysis\n\t\t- Sensor integration for real-time updates\n\t\t- AI/ML model training for behavior prediction\n  - **Digital Twin vs Simulation**:\n\t\t- Simulations: Static, predefined scenarios, no real-world connection\n\t\t- Digital Twins: Dynamic, real-time conditions, bidirectional data flow\n  - **Required Technologies**: CAD modeling, cloud computing, IIoT, AR/VR, AI/ML, systems integration\n  - ## Applications\n  - Manufacturing predictive maintenance\n  - Healthcare surgical planning\n  - Automotive EV battery simulation\n  - Smart city traffic optimization\n  - Product lifecycle management\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Reality Capture System",
     "Lidar Scanning"
   ],
   "wiki_links": [
-    "Real-Time Monitoring",
-    "Digital Modeling",
-    "Sensor Data",
     "3D Modeling",
-    "Lifecycle Management",
-    "Virtual Prototype",
-    "Asset Management",
-    "metaverse",
-    "Simulation",
+    "Computer Vision",
+    "Digital Modeling",
     "IoT Integration",
-    "Predictive Analytics"
+    "Lifecycle Management",
+    "Predictive Analytics",
+    "Real-Time Monitoring",
+    "Sensor Data",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-twin-creation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalTwinCreation",
+    "content_hash": "sha256-12-15d1662af014",
+    "legacy_term_id": "MV-9876",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-twin-creation",
+    "schema_version": "v2",
     "term_id": "MV-9876",
     "preferred_term": "Digital Twin Creation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalTwinCreation",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimization across the asset's entire lifecycle from design through decommissioning.",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "The process of developing virtual replicas of physical entities that dynamically reflect real-time conditions through continuous data linkage, enabling simulation, monitoring, and optimisation across the asset's entire lifecycle from design through decommissioning.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalTwinCreation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalTwinCreation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Modeling"
@@ -60,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Simulation",
-        "Virtual Prototype",
-        "Asset Management"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

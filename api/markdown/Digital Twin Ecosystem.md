@@ -1,43 +1,65 @@
-- ### OntologyBlock
-  id:: digital-twin-ecosystem-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9877
-	- source-domain:: mv
-	- preferred-term:: Digital Twin Ecosystem
-	- definition:: The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualization systems working together to create, maintain, and derive value from virtual replicas of physical systems.
-	- status:: active
-	- owl:class:: mv:DigitalTwinEcosystem
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: digital-twin-ecosystem-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Technology Ecosystem]]
-		- enables:: [[System Integration]], [[Cross-Platform Analytics]], [[Enterprise Digital Twins]]
-		- requires:: [[IoT Infrastructure]], [[Cloud Platform]], [[Data Standards]]
-		- related-to:: [[Industrial Metaverse]], [[Smart City]], [[Industry 4.0]]
-- ## Technical Details
-	- **Industrial Metaverse Market**:
+iri:: http://narrativegoldmine.com/spatial-computing#DigitalTwinEcosystem
+uri:: urn:visionclaw:concept:spatial-computing:digital-twin-ecosystem
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:digital-twin-ecosystem
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Digital Twin Ecosystem
+content-hash:: sha256-12-60470b9a9e7a
+legacy-term-id:: MV-9877
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems.
+
+bridges-to:: [[Computer Vision]]
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DigitalTwinEcosystem
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Technology Ecosystem]]
+  - requires:: [[IoT Infrastructure]], [[Cloud Platform]], [[Data Standards]]
+  - enables:: [[System Integration]], [[Cross-Platform Analytics]], [[Enterprise Digital Twins]]
+
+- ### Content
+
+  - ## Technical Details
+  - **Industrial Metaverse Market**:
 		- 2024 value: $28.7B
 		- 2029 projection: $228.6B (MarketsandMarkets)
 		- Shift from pilot projects to core operations
-	- **Ecosystem Components**:
+  - **Ecosystem Components**:
 		- IoT sensors for real-time data collection
 		- Edge computing for low-latency processing
 		- Cloud platforms for analytics and storage
 		- AI/ML for predictive insights
 		- Visualization and simulation engines
-	- **Smart Building Integration (2024)**:
+  - **Smart Building Integration (2024)**:
 		- Commercial metaverse platform integration with IoT sensors
 		- Real-time data relay and environmental visualization
 		- Multi-user collaboration in virtual environments
-	- **Emerging Trends**: "Twin of Everything" concept extending to cities, human organs, weather patterns
-- ## Applications
-	- Smart building management
-	- Industrial manufacturing optimization
-	- Smart city infrastructure
-	- Healthcare predictive modeling
-	- Supply chain visibility
+  - **Emerging Trends**: "Twin of Everything" concept extending to cities, human organs, weather patterns
+  - ## Applications
+  - Smart building management
+  - Industrial manufacturing optimization
+  - Smart city infrastructure
+  - Healthcare predictive modeling
+  - Supply chain visibility
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

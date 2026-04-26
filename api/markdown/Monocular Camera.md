@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: monocularcamera-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#MonocularCamera
+uri:: urn:visionclaw:concept:robotics:monocular-camera
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:monocular-camera
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Monocular Camera
+content-hash:: sha256-12-d1df62b3a463
+legacy-term-id:: RB-0160
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0160
-    - filename-history:: ["RB-0160-monocularcamera.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0160
-    - preferred-term:: Monocular Camera
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Monocular camera uses single lens to capture 2D images.
 
-  - **Definition**
-    - definition:: Monocular camera uses single lens to capture 2D images.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:MonocularCamera
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:MonocularCamera
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Camera]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Camera]]
+- ### Content
+  Monocular Camera — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :MonocularCamera))
-      (SubClassOf :MonocularCamera :Camera)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :MonocularCamera "Monocular Camera"@en)
-      (AnnotationAssertion rdfs:comment :MonocularCamera
-        "Monocular camera uses single lens to capture 2D images."@en)
-      ```
-
-- ## About Monocular Camera
-  Monocular camera uses single lens to capture 2D images.
-  
-  A single camera providing 2D images.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

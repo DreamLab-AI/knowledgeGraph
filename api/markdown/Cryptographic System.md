@@ -1,50 +1,37 @@
-- ### OntologyBlock
-  id:: cryptographic-system-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#CryptographicSystem
+uri:: urn:visionclaw:concept:blockchain:cryptographic-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:cryptographic-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Cryptographic System
+content-hash:: sha256-12-1821727e8d49
+legacy-term-id:: PC-0003
+status:: complete
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-08T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - ontology:: true
-    - term-id:: PC-0003
-    - preferred-term:: Cryptographic System
-    - source-domain:: bc
-    - status:: complete
-    - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-08
+- ### Definition
+  - A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.
 
-  - **Definition**
-    - definition:: A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments. In blockchain contexts, cryptographic systems form the foundational security layer enabling trustless operation through mathematical guarantees rather than trusted intermediaries. These systems encompass cryptographic hash functions for data integrity verification, digital signature schemes for authentication and authorization, encryption mechanisms for confidentiality, and advanced protocols like zero-knowledge proofs for privacy-preserving verification. Blockchain cryptographic systems must satisfy rigorous security requirements including collision resistance for hash functions, computational infeasibility of private key recovery from public keys, and resistance to quantum computing attacks in next-generation systems. The security guarantees provided by cryptographic systems enable blockchain's core properties: immutability through hash chaining, ownership verification through digital signatures, and transaction validity through cryptographic proofs, all without requiring trust in central authorities.
-    - maturity:: mature
-    - source:: [[NIST Cryptographic Standards]], [[ISO/IEC 18033 Encryption Algorithms]], [[FIPS 140-3 Security Requirements]]
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:CryptographicSystem
+  - owl-role:: Concept
+  - owl-inferred:: ConceptualConcept
+  - belongs-to-domain:: [[BlockchainDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:CryptographicSystem
-    - owl:role:: Concept
-    - owl:inferred-class:: ConceptualConcept
-    - belongsToDomain:: [[BlockchainDomain]]
-    - implementedInLayer:: [[ConceptualLayer]]
+- ### Relationships
+  - is-subclass-of:: [[Blockchain Entity]]
 
-  - #### Relationships
-    id:: cryptographic-system-relationships
-    - is-subclass-of:: [[Blockchain Entity]]
-
-  - #### OWL Axioms
-    id:: cryptographic-system-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dct:=<http://purl.org/dc/terms/>)
-Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
-
-Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
-  Import(<http://metaverse-ontology.org/blockchain/core>)
-  Import(<http://metaverse-ontology.org/blockchain/PC-0001>)
+  - bridges-to:: [[AI Agent System]] (ai)
+- ### Content
 
   ## Class Declaration
   Declaration(Class(:CryptographicSystem))
@@ -121,11 +108,10 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
 
   ## Disjoint Classes
   DisjointClasses(:CryptographicSystem :PlainTextSystem)
-)
+  )
       ```
 
-- ## About Cryptographic System
-  id:: cryptographic-system-about
+  - ## About Cryptographic System
 
   - A Cryptographic System provides the mathematical foundation for blockchain security, replacing trust in institutions with trust in computational complexity and mathematical proofs. Unlike traditional systems that rely on access controls and trusted intermediaries, blockchain cryptographic systems enable security properties through algorithms whose breaking requires computationally infeasible effort, even for well-resourced adversaries.
 
@@ -134,7 +120,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
   - The security strength of cryptographic systems is measured in "bits of security" representing the computational effort required to break the system—modern blockchain systems typically require 128-256 bits of security, meaning attackers would need 2^128 to 2^256 operations to compromise the system. However, quantum computing threatens current cryptographic assumptions: Shor's algorithm could break RSA and elliptic curve signatures, driving research into post-quantum cryptographic systems using lattice-based, hash-based, or code-based algorithms resistant to quantum attacks.
 
   - ### Key Characteristics
-    id:: cryptographic-system-characteristics
     - **Mathematical Security**: Security derived from computational hardness rather than secrecy
     - **Collision Resistance**: Infeasibility of finding two inputs producing the same hash output
     - **Preimage Resistance**: Infeasibility of finding input from a given hash output
@@ -144,7 +129,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
     - **Computational Hardness**: Security based on problems believed computationally intractable
 
   - ### Subclasses
-    id:: cryptographic-system-subclasses
     - [[Blockchain]] (BC-0001) - Implements cryptographic hash chaining
     - [[Cryptographic Hash Function]] (BC-0008) - One-way transformation with collision resistance
     - [[Digital Signature]] (BC-0009) - Asymmetric authentication mechanism
@@ -155,24 +139,23 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
     - [[Threshold Cryptography]] - Multi-party cryptographic protocols
 
   - ### Use in Ontology
-    id:: cryptographic-system-ontology-use
     - **Security Foundation**: Establishes security properties inherited by all cryptographic blockchain components
     - **Algorithm Classification**: Provides taxonomy for hash functions, signatures, and encryption schemes
     - **Security Level Semantics**: Defines properties for measuring and comparing cryptographic strength
     - **Quantum Resistance**: Framework for classifying post-quantum cryptographic approaches
     - **Standards Compliance**: Links to NIST, ISO, and other cryptographic standards
-# Cryptographic System – Updated Ontology Entry
+  # Cryptographic System – Updated Ontology Entry
 
-## Academic Context
+  ## Academic Context
 
-- Cryptographic systems represent the practical implementation of cryptography, which derives from Ancient Greek *kryptos* (hidden) and *graphein* (to write)[6]
+  - Cryptographic systems represent the practical implementation of cryptography, which derives from Ancient Greek *kryptos* (hidden) and *graphein* (to write)[6]
   - Defined as structured schemes comprising algorithms that convert plaintext to ciphertext for secure encoding and decoding[3]
   - Rooted in mathematical and computer science disciplines, with applications spanning information security, electrical engineering, and digital signal processing[6]
   - Core security principles: data confidentiality, integrity, authentication, and non-repudiation[6]
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Fundamental architecture and components
+  - Fundamental architecture and components
   - Plaintext: unencrypted information requiring protection[3]
   - Ciphertext: encrypted, unreadable version of plaintext[3]
   - Encryption algorithm: mathematical transformation converting plaintext to ciphertext[3]
@@ -180,7 +163,7 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
   - Encryption and decryption keys: cryptographic material controlling algorithmic operations[3]
   - Security fundamentally depends on key security rather than algorithm secrecy[3]
 
-- Primary cryptographic approaches
+  - Primary cryptographic approaches
   - Symmetric cryptography: simplest implementation, shared key between parties[5]
   - Asymmetric cryptography: typically more secure, employing public-private key pairs[5]
   - Hash functions: third category, operating without key material[5]
@@ -188,7 +171,7 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
   - Message Authentication Codes (MACs): ensuring data integrity[4]
   - Authenticated encryption: combining confidentiality with integrity verification[4]
 
-- Contemporary applications and implementations
+  - Contemporary applications and implementations
   - Electronic commerce and secure online transactions[6]
   - Chip-based payment card systems and digital currencies[6]
   - Computer password protection and authentication protocols[6]
@@ -197,104 +180,108 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0003>
   - Financial networks and credit card information transmission[3]
   - Smartphone security and global communication infrastructure[2]
 
-- UK and North England context
+  - UK and North England context
   - UK National Cyber Security Centre (NCSC) provides cryptographic policy guidance, particularly regarding symmetric cryptography and hash functions[4]
   - Financial sector implementation through European Payments Council guidelines adopted across UK payment service providers[4]
   - Academic research centres in North England (Manchester, Leeds, Newcastle, Sheffield) contributing to cryptographic standards development and cybersecurity education
 
-- Technical considerations and limitations
+  - Technical considerations and limitations
   - Cryptosystems must incorporate robust key generation, encryption, and decryption techniques[3]
   - Implementation quality significantly impacts security; side-channel attacks remain a practical concern[4]
   - Crypto agility—the ability to transition between cryptographic algorithms—increasingly recommended by NIST and BSI standards[4]
   - Post-quantum cryptographic primitives under active development to address emerging computational threats[4]
   - Interoperability challenges arise from data formatting issues and algorithm implementation variations[4]
 
-- Standards and frameworks
+  - Standards and frameworks
   - European Payments Council Guidelines on Cryptographic Algorithms Usage and Key Management (EPC342-08, version 15.0, 2025)[4]
   - NIST cryptographic standards and recommendations[4]
   - BSI (Bundesamt für Sicherheit in der Informationstechnik) guidelines[4]
   - Algorithm Object Identifiers (OIDs) for standardised implementation[4]
 
-## Research & Literature
+  ## Research & Literature
 
-- Foundational academic sources
+  - Foundational academic sources
   - Wikipedia contributors (2025). "Cryptography." *Wikipedia, The Free Encyclopedia*. Accessed November 2025. Defines cryptography as practice and study of techniques for secure communication in adversarial contexts, encompassing mathematical, computer science, and engineering disciplines[6]
-  
+
   - Slonopas, Dr. Andre (2025, February 3). "Cybersecurity and Cryptography: Their Eternal Relationship." *American Military University*. Examines cryptography's vital role in protecting confidentiality, integrity, and authenticity of sensitive data across personal, corporate, and governmental systems[2]
-  
+
   - TechTarget (2025). "What is a cryptosystem? Definition from WhatIs.com." *SearchSecurity*. Provides technical taxonomy of cryptosystem components and their functional relationships in secure communication[3]
-  
+
   - IBM (2025). "What Is Cryptography?" *IBM Think*. Describes cryptography as practice of developing and using coded algorithms to protect and obscure transmitted information[1]
-  
+
   - Okta (2025). "What Is Cryptography? Definition & How It Works." Explains modern cryptographic methods for sender-recipient communication, emphasising encryption, decryption keys, and symmetric versus asymmetric approaches[5]
-  
+
   - European Payments Council (2025). *Guidelines on Cryptographic Algorithms Usage and Key Management* (EPC342-08, version 15.0). Comprehensive guidance for payment service providers, security officers, and system designers regarding cryptographic implementation and key management protocols[4]
 
-- Ongoing research directions
+  - Ongoing research directions
   - Post-quantum cryptography development addressing computational threats from quantum computing
   - Homomorphic encryption applications for secure computation on encrypted data[4]
   - Distributed ledger technology integration with cryptographic systems[4]
   - Enhanced side-channel attack mitigation strategies[4]
   - Crypto agility frameworks for seamless algorithm transition[4]
 
-## UK Context
+  ## UK Context
 
-- British contributions and governance
+  - British contributions and governance
   - UK NCSC provides authoritative cryptographic policy guidance, particularly for symmetric algorithms and hash functions[4]
   - Regulatory framework through Financial Conduct Authority (FCA) requirements for financial institutions
   - Academic leadership through universities in Manchester, Leeds, Newcastle, and Sheffield contributing to cryptographic research and standards development
 
-- North England innovation and implementation
+  - North England innovation and implementation
   - Manchester: established centre for computer science research with contributions to cryptographic standards and cybersecurity education
   - Leeds: financial services sector implementation of cryptographic systems across banking and payment infrastructure
   - Newcastle: cybersecurity research initiatives addressing emerging cryptographic challenges
   - Sheffield: engineering and computer science programmes developing practical cryptographic applications
 
-- Regional case studies
+  - Regional case studies
   - UK financial sector adoption of European Payments Council cryptographic guidelines across payment service providers
   - NHS (National Health Service) implementation of cryptographic systems for patient data protection and secure communications
   - Government Communications Headquarters (GCHQ) oversight of national cryptographic standards and security protocols
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - Transition to post-quantum cryptographic algorithms as quantum computing capabilities advance[4]
   - Integration of homomorphic encryption enabling computation on encrypted data without decryption[4]
   - Enhanced crypto agility frameworks allowing organisations to transition between algorithms without service disruption[4]
   - Distributed ledger technology applications requiring novel cryptographic approaches[4]
 
-- Anticipated challenges
+  - Anticipated challenges
   - Legacy system migration to quantum-resistant cryptography
   - Balancing security requirements with performance and interoperability constraints
   - Side-channel attack sophistication requiring continuous implementation refinement[4]
   - Key management complexity across increasingly distributed systems
   - Regulatory harmonisation across jurisdictions (UK, EU, international standards)
 
-- Research priorities
+  - Research priorities
   - Practical implementation of post-quantum algorithms at scale
   - Development of cryptographic systems resistant to emerging attack vectors
   - Standardisation of crypto agility frameworks across sectors
   - Enhanced security protocols for emerging technologies (blockchain, IoT, edge computing)
   - Integration of cryptographic systems with artificial intelligence and machine learning applications
 
-## References
+  ## References
 
-[1] IBM (2025). "What Is Cryptography?" *IBM Think*. Available at: https://www.ibm.com/think/topics/cryptography
+  [1] IBM (2025). "What Is Cryptography?" *IBM Think*. Available at: https://www.ibm.com/think/topics/cryptography
 
-[2] Slonopas, A. (2025, February 3). "Cybersecurity and Cryptography: Their Eternal Relationship." *American Military University*. Available at: https://www.amu.apus.edu/area-of-study/information-technology/resources/cybersecurity-and-cryptography/
+  [2] Slonopas, A. (2025, February 3). "Cybersecurity and Cryptography: Their Eternal Relationship." *American Military University*. Available at: https://www.amu.apus.edu/area-of-study/information-technology/resources/cybersecurity-and-cryptography/
 
-[3] TechTarget (2025). "What is a cryptosystem? Definition from WhatIs.com." *SearchSecurity*. Available at: https://www.techtarget.com/searchsecurity/definition/cryptosystem
+  [3] TechTarget (2025). "What is a cryptosystem? Definition from WhatIs.com." *SearchSecurity*. Available at: https://www.techtarget.com/searchsecurity/definition/cryptosystem
 
-[4] European Payments Council (2025). *Guidelines on Cryptographic Algorithms Usage and Key Management* (EPC342-08, version 15.0). Available at: https://www.europeanpaymentscouncil.eu
+  [4] European Payments Council (2025). *Guidelines on Cryptographic Algorithms Usage and Key Management* (EPC342-08, version 15.0). Available at: https://www.europeanpaymentscouncil.eu
 
-[5] Okta (2025). "What Is Cryptography? Definition & How It Works." *Okta Identity 101*. Available at: https://www.okta.com/identity-101/cryptography/
+  [5] Okta (2025). "What Is Cryptography? Definition & How It Works." *Okta Identity 101*. Available at: https://www.okta.com/identity-101/cryptography/
 
-[6] Wikipedia contributors (2025). "Cryptography." *Wikipedia, The Free Encyclopedia*. Available at: https://en.wikipedia.org/wiki/Cryptography
+  [6] Wikipedia contributors (2025). "Cryptography." *Wikipedia, The Free Encyclopedia*. Available at: https://en.wikipedia.org/wiki/Cryptography
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[NIST Cryptographic Standards]], [[ISO/IEC 18033 Encryption Algorithms]], [[FIPS 140-3 Security Requirements]]
+  - migration-date:: 2026-04-26T00:00:00Z

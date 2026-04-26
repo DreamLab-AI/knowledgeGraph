@@ -1,0 +1,86 @@
+{
+  "id": "3d-development",
+  "title": "3D Development",
+  "content": "- ### Definition\n  - 3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modeling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:3DDevelopment\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: [[Software Development]]\n  - bridges-to:: [[Computer Vision]], [[3D Modeling]], [[Game Engine]]\n  - requires:: [[3D Graphics Standard]], [[3D Rendering Engine]]\n  - enables:: [[Metaverse Creation]], [[XR Applications]], [[Virtual Environment Design]]\n\n- ### Content\n\n  ## Overview\n\n  3D Development represents the full creative and technical pipeline for producing three-dimensional digital assets. It encompasses asset creation, real-time rendering optimisation, physics simulation, and deployment to various platforms including VR/AR headsets, game consoles, and web environments.\n\n  ## Key Disciplines\n  - **Asset Creation**: Modelling, rigging, and animation of characters and props\n  - **Environment Design**: Landscape and architectural design for virtual spaces\n  - **Real-Time Rendering**: Optimising visual quality within performance constraints\n  - **Integration**: Combining assets into cohesive interactive experiences\n\n  #### Related Concepts\n  - [[3D Modeling]], [[3D Graphics Standard]], [[3D Rendering Engine]], [[Game Development]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Virtual Environment Creation",
+    "3D Modeling",
+    "3D Model"
+  ],
+  "wiki_links": [
+    "3D Graphics Standard",
+    "3D Modeling",
+    "3D Rendering Engine",
+    "Computer Vision",
+    "Game Development",
+    "Game Engine",
+    "Metaverse Creation",
+    "Software Development",
+    "Virtual Environment Design",
+    "XR Applications"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:3d-development",
+    "iri": "http://narrativegoldmine.com/spatial-computing#3dDevelopment",
+    "content_hash": "sha256-12-bed8deecbe97",
+    "legacy_term_id": "MV-9501",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:3d-development",
+    "schema_version": "v2",
+    "term_id": "MV-9501",
+    "preferred_term": "3D Development",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "3D Development encompasses the methodologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments. It integrates disciplines including [[3D Modeling]], [[3D Graphics Standard]], and [[3D Rendering Engine]] to produce immersive content for games, virtual worlds, and extended reality applications.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T20:30:00Z",
+    "last_updated": "2026-04-26T20:30:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:3DDevelopment",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Software Development"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "3D Graphics Standard",
+      "3D Rendering Engine"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Metaverse Creation",
+      "XR Applications",
+      "Virtual Environment Design"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Computer Vision",
+      "3D Modeling",
+      "Game Engine"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

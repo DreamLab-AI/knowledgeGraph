@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: ngm9501-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-9501
-	- preferred-term:: owl Thing
-	- source-domain:: ngm
-	- owl:class:: ngm:owlThing
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: owl Thing is a concept within the ontology domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/infrastructure#OwlThing
+uri:: urn:visionclaw:concept:infrastructure:owl-thing
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:owl-thing
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: owl Thing
+content-hash:: sha256-12-e7f0a105c1f6
+legacy-term-id:: NGM-9501
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - owl Thing is a concept within the ontology domain. Further enrichment pending.
 
-owl Thing represents an abstract concept in the ontology ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: infrastructure:owlThing
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  owl Thing represents an abstract concept in the ontology ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

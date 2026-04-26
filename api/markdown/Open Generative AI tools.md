@@ -1,13 +1,37 @@
+iri:: http://narrativegoldmine.com/ontology#OpenGenerativeAITools
+uri:: urn:visionclaw:concept:artificial-intelligence:open-generative-ai-tools
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:open-generative-ai-tools
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Open Generative AI tools
+content-hash:: sha256-12-88ffeeadac82
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-	- # Open (ish) tooling
-	- ## Opensource vs Freeware in AI:
+- ### Definition
+  - Open Generative AI tools is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:OpenGenerativeAITools
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - # Open (ish) tooling
 		- This is a hot, and also seemingly endless debate that has been going on for years.
 		- Open-source AI allows users to access, modify, and distribute the source code **and training methods** for free, promoting collaboration and community-driven development. Popular AI frameworks like TensorFlow and PyTorch fall under this category.
 		- Free-to-use, on the other hand, is copyrighted software distributed without charge, but with limited rights to modify or distribute. Meta Llama 2 falls into that catagory.
 		- Feel free to get right into the weeds with the [Hannibal046/Awesome-LLM: Awesome-LLM: a curated list of Large Language Model (github.com)](https://github.com/Hannibal046/Awesome-LLM)
-	- ## Large Language models:
-		- ### **"AI is the high interest credit card of product development"**
 			- There's SO much activity. [Thousands and thousands](https://llm.extractum.io/) of merges and models and LoRAs oh my...
 				- Some of these are from legit labs are are fabulous.
 				- [[Deepseek]] (Chinese) [[Falcon]] (UAE) [[Mistral]] (France) [[Red Pyjama]] [[Microsoft Models]] [[Poro]] (Finland) and more.
@@ -18,14 +42,21 @@ public:: true
 				- It is multi-modal, can generate images like OpenAI, and use audio bi-driectionally, like OpenAI.
 				- It is a drop in replacement, so crucially it can serve as a BACKUP
 				- This is doable, but probably don't do it.
-	- this loads up my local LLM sandbox [<]iframe src="http://192.168.0.51:3000/canvas/b9738eeb-4fa2-41a0-9535-549638a958f5" style="width: 100%; height: 600px"></iframe>
-	- [[ComfyUI]] live demo (not here for now)
-	- #### Demo: Running UK Company [[Stable Diffusion]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
-	- this is a local demo [<]iframe src="http://192.168.0.51:8188" style="width: 100%; height: 600px"></iframe>
-	- {{video https://www.youtube.com/watch?v=kN8jdvRQvzA}}
-	- {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}
-	- You can play with all of these on [Rundiffusion](https://app.rundiffusion.com/)
-	- ![image.png](../assets/image_1705158589247_0.png)
-	- [[3D and 4D]]
-	- {{embed ((65a5024d-11bb-4737-aef3-af73103fa218))}}
--
+  - this loads up my local LLM sandbox [<]iframe src="http://192.168.0.51:3000/canvas/b9738eeb-4fa2-41a0-9535-549638a958f5" style="width: 100%; height: 600px"></iframe>
+  - [[ComfyUI]] live demo (not here for now)
+  - this is a local demo [<]iframe src="http://192.168.0.51:8188" style="width: 100%; height: 600px"></iframe>
+  - {{video https://www.youtube.com/watch?v=kN8jdvRQvzA}}
+  - {{video https://www.youtube.com/watch?v=AF2VyqSApjA}}
+  - You can play with all of these on [Rundiffusion](https://app.rundiffusion.com/)
+  - ![image.png](../assets/image_1705158589247_0.png)
+  - [[3D and 4D]]
+  - {{embed ((65a5024d-11bb-4737-aef3-af73103fa218))}}
+
+  - ## Opensource vs Freeware in AI:
+  - ## Large Language models:
+		- ### **"AI is the high interest credit card of product development"**
+  - #### Demo: Running UK Company [[Stable Diffusion]] (SDXL) with a cutting edge French language model creating the prompts in real-time, completely privately on local hardware
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

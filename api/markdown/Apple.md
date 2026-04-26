@@ -1,14 +1,40 @@
+iri:: http://narrativegoldmine.com/infrastructure#Apple
+uri:: urn:visionclaw:concept:infrastructure:apple
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:apple
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Apple
+content-hash:: sha256-12-fcc6bf2bab71
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page automatically published
-- # Partnership with OpenAI, and Siri
-	- Apple is focusing on "AI for the rest of us" - making AI capabilities accessible and useful for everyday tasks rather than flashy frontier use cases. The emphasis is on small but significant time-saving wins.
-	- Siri is the centerpiece, with expanded natural language understanding, ability to maintain context, and both voice and text input. Siri can now take actions across Apple and third-party apps.
-	- Apple has partnered with OpenAI to integrate ChatGPT into Siri and other Apple experiences later this year. Siri can tap into ChatGPT when needed to expand its capabilities.
-	- Apple argues that great product experience matters more than just having state-of-the-art AI models. They are willing to reduce user choice to create a simpler experience, as seen with the limited options in their Image Playground feature.
-	- Apple is trying to balance leveraging personal context and data with strong privacy protections through on-device processing and a new "private cloud compute" capability.
-	- Apple is taking an approach of deeply integrating AI assistants and capabilities across the OS in a frictionless way to help users with everyday tasks, while maintaining their emphasis on privacy and a carefully designed user experience over flashy demos. The partnership with OpenAI expands what's possible while keeping the Apple experience at the forefront.
-	- ### IOS18 Security and Privacy
+- ### Definition
+  - Apple is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:Apple
+  - owl-role:: Concept
+
+- ### Relationships
+  - bridges-to:: [[Digital Twin]]
+
+- ### Content
+  - #Public page automatically published
+  - # Partnership with OpenAI, and Siri
+  - Apple is focusing on "AI for the rest of us" - making AI capabilities accessible and useful for everyday tasks rather than flashy frontier use cases. The emphasis is on small but significant time-saving wins.
+  - Siri is the centerpiece, with expanded natural language understanding, ability to maintain context, and both voice and text input. Siri can now take actions across Apple and third-party apps.
+  - Apple has partnered with OpenAI to integrate ChatGPT into Siri and other Apple experiences later this year. Siri can tap into ChatGPT when needed to expand its capabilities.
+  - Apple argues that great product experience matters more than just having state-of-the-art AI models. They are willing to reduce user choice to create a simpler experience, as seen with the limited options in their Image Playground feature.
+  - Apple is trying to balance leveraging personal context and data with strong privacy protections through on-device processing and a new "private cloud compute" capability.
+  - Apple is taking an approach of deeply integrating AI assistants and capabilities across the OS in a frictionless way to help users with everyday tasks, while maintaining their emphasis on privacy and a carefully designed user experience over flashy demos. The partnership with OpenAI expands what's possible while keeping the Apple experience at the forefront.
 		- [Thread by Matthew Green](https://threadreaderapp.com/thread/1800291897245835616.html?)
 			- Apple, unlike most other mobile providers, has traditionally done a lot of processing on-device. For example, all of the machine learning and OCR text recognition on Photos is done right on your device. 
 			  The problem is that while modern phone “neural” hardware is improving, it’s not improving fast enough to take advantage of all the crazy features Silicon Valley wants from modern AI, including generative AI and its ilk. This fundamentally requires servers.
@@ -32,17 +58,23 @@ public:: true
 			- In practice the alternative to on-device is: ship private data to OpenAI or someplace sketchier, where who knows what might happen to it.
 			- And of course, keep in mind that super-spies aren’t your biggest adversary. For many people your biggest adversary is the company who sold you your device/software. This PCC system represents a real commitment by Apple not to “peek” at your data. That’s a big deal.
 			- In any case, this is the world we’re moving to. Your phone might seem to be in your pocket, but a part of it lives 2,000 miles away in a data center. As security folks we probably need to get used to that fact, and do the best we can to make sure all parts are secure.
-- They are sitting on a huge cash war chest and can effectively buy their way through and out of the coming battles around ip like the NYT court case.
-- Biding their time waiting for local inferencing that leverages strong legacy media buy in might be a great play. Only the cost to their mind share of talent might be an issue.
-- Apple are innovating in core ML research to support large language models.
-- They are developing new techniques for data management between flash memory and DRAM, crucial for running larger models on devices with limited memory.
-- The research also reveals significant speed improvements, with 4-5 times faster processing on CPUs and 20-25 times on GPUs for models up to twice the size of the available DRAM. These advancements could lead to a wider adoption of these technologies,
-	- [Paper page
+  - They are sitting on a huge cash war chest and can effectively buy their way through and out of the coming battles around ip like the NYT court case.
+  - Biding their time waiting for local inferencing that leverages strong legacy media buy in might be a great play. Only the cost to their mind share of talent might be an issue.
+  - Apple are innovating in core ML research to support large language models.
+  - They are developing new techniques for data management between flash memory and DRAM, crucial for running larger models on devices with limited memory.
+  - The research also reveals significant speed improvements, with 4-5 times faster processing on CPUs and 20-25 times on GPUs for models up to twice the size of the available DRAM. These advancements could lead to a wider adoption of these technologies,
+  - [Paper page
 		- LLM in a flash: Efficient Large Language Model Inference with Limited Memory (huggingface.co)](https://huggingface.co/papers/2312.11514) [[Hardware and Edge]]
-- [Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica](https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/) [[Hardware and Edge]]
-- HUGS: Human [[Gaussian splatting and Similar]]
-	- [Apple Machine Learning Research](https://machinelearning.apple.com/research/hugs)
-- Apple presents [Paper page
-	- Speculative Streaming: Fast LLM Inference without Auxiliary Models (huggingface.co)](https://huggingface.co/papers/2402.11131):
-	- Speculative decoding is a prominent technique to speed up the inference of a large target language model based on predictions of an auxiliary draft model. While effective, in application-specific settings, it often involves fine-tuning both draft and target models to achieve high acceptance rates. As the number of downstream tasks grows, these draft models add significant complexity to inference systems. We propose Speculative Streaming, a single-model speculative decoding method that fuses drafting into the target model by changing the fine-tuning objective from next token prediction to future n-gram prediction. Speculative Streaming speeds up decoding by 1.8
-	- 3.1X in a diverse set of tasks, such as Summarization, Structured Queries, and Meaning Representation, without sacrificing generation quality. Additionally, Speculative Streaming is parameter-efficient. It achieves on-par/higher speed-ups than Medusa-style architectures while using ~10000X fewer extra parameters, making it well-suited for resource-constrained devices.
+  - [Apple wants AI to run directly on its hardware instead of in the cloud | Ars Technica](https://arstechnica.com/apple/2023/12/apple-wants-ai-to-run-directly-on-its-hardware-instead-of-in-the-cloud/) [[Hardware and Edge]]
+  - HUGS: Human [[Gaussian splatting and Similar]]
+  - [Apple Machine Learning Research](https://machinelearning.apple.com/research/hugs)
+  - Apple presents [Paper page
+  - Speculative Streaming: Fast LLM Inference without Auxiliary Models (huggingface.co)](https://huggingface.co/papers/2402.11131):
+  - Speculative decoding is a prominent technique to speed up the inference of a large target language model based on predictions of an auxiliary draft model. While effective, in application-specific settings, it often involves fine-tuning both draft and target models to achieve high acceptance rates. As the number of downstream tasks grows, these draft models add significant complexity to inference systems. We propose Speculative Streaming, a single-model speculative decoding method that fuses drafting into the target model by changing the fine-tuning objective from next token prediction to future n-gram prediction. Speculative Streaming speeds up decoding by 1.8
+  - 3.1X in a diverse set of tasks, such as Summarization, Structured Queries, and Meaning Representation, without sacrificing generation quality. Additionally, Speculative Streaming is parameter-efficient. It achieves on-par/higher speed-ups than Medusa-style architectures while using ~10000X fewer extra parameters, making it well-suited for resource-constrained devices.
+
+  - ### IOS18 Security and Privacy
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

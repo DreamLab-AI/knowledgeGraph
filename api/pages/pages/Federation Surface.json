@@ -1,0 +1,135 @@
+{
+  "id": "federation-surface",
+  "title": "Federation Surface",
+  "content": "- ### Definition\n  - A standardised [[JSON-LD 1.1]] encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:FederationSurface\n  - owl-role:: Object\n  - belongs-to-domain:: [[AgenticSystemsDomain]], [[DataIntegrationDomain]], [[SemanticWebDomain]]\n  - implemented-in-layer:: [[DataLayer]], [[APILayer]]\n\n- ### Relationships\n  - has-part:: [[Linked Data Encoder]], [[JSON-LD Context]], [[URI Canonicaliser]], [[Content Addressing]]\n  - requires:: [[JSON-LD 1.1 Standard]], [[HTTP Endpoint]], [[W3C Vocabulary]]\n  - enables:: [[Cross-System Querying]], [[Linked Data Consumption]], [[Automated Monitoring]], [[Blockchain Oracle Integration]], [[Knowledge Graph Federation]]\n  - implements:: [[JSON-LD 1.1]], [[W3C Linked Data Platform]]\n  - bridges-to:: [[Knowledge Graph]] (domain: ngm), [[Smart Contract]] (domain: blockchain), [[Data Portal]] (domain: ngm)\n\n- ### Content\n\n  VisionClaw agents emit state through eleven standardised [[JSON-LD 1.1]] surfaces. Each surface exposes a specific aspect of agent lifecycle and state in a common semantic format. This design allows external systems to integrate agent data without custom API clients.\n\n  #### Surface Inventory\n\n  **S1: Pod Index**\n  Enumerates available [[Solid Pod Storage|Solid pods]] and their metadata. An agent may have multiple pods (personal, shared, organisational), each with its own URI, access control rules, and available quota.\n\n  ```json\n  {\n    \"@context\": \"https://visionclaw.dreamlab-ai.systems/ns/v1\",\n    \"@type\": \"ldp:Container\",\n    \"@id\": \"urn:visionclaw:pod:0abc...ef:sha256-12-deadbeef\",\n    \"ldp:contains\": [\n      { \"@id\": \"urn:visionclaw:pod:0abc...ef:sha256-12-aaa111\", \"label\": \"Personal\" },\n      { \"@id\": \"urn:visionclaw:pod:0abc...ef:sha256-12-bbb222\", \"label\": \"Shared Team\" }\n    ]\n  }\n  ```\n\n  **S3: Verifiable Credentials**\n  Issues [[Verifiable Credential Surface|W3C VC 2.0 credentials]] signed by the agent's [[DID Nostr Identity|did:nostr]] DID. Credentials attest to work completed, capabilities claimed, or attestations from other agents.\n\n  ```json\n  {\n    \"@context\": [\"https://www.w3.org/2018/credentials/v1\", \"https://visionclaw.dreamlab-ai.systems/ns/v1\"],\n    \"type\": [\"VerifiableCredential\", \"vcw:AgentWorkCredential\"],\n    \"issuer\": \"did:nostr:0abc...ef\",\n    \"credentialSubject\": {\n      \"id\": \"did:nostr:0123...ab\",\n      \"taskId\": \"urn:visionclaw:bead:0123...ab:task-42\",\n      \"completionTime\": \"2026-04-26T12:34:56Z\",\n      \"result\": \"success\"\n    },\n    \"proof\": {\n      \"type\": \"SchnorrSignature2025\",\n      \"verificationMethod\": \"did:nostr:0abc...ef#key-0\",\n      \"signatureValue\": \"<JCS-canonicalised Schnorr sig>\"\n    }\n  }\n  ```\n\n  **S6: Agent Events**\n  Real-time telemetry stream emitted via WebSocket, recording agent lifecycle events: birth (instantiation), startup, activity (work assignment), completion, errors, and termination. External monitoring systems subscribe to this stream to track fleet health.\n\n  ```json\n  {\n    \"@context\": \"https://visionclaw.dreamlab-ai.systems/ns/v1\",\n    \"@type\": \"as:Event\",\n    \"@id\": \"urn:visionclaw:event:0abc...ef:sha256-12-eee333\",\n    \"actor\": \"did:nostr:0abc...ef\",\n    \"object\": \"urn:visionclaw:bead:0abc...ef:task-99\",\n    \"eventType\": \"completion\",\n    \"timestamp\": \"2026-04-26T12:34:57Z\",\n    \"result\": { \"status\": \"success\", \"duration\": 2340 }\n  }\n  ```\n\n  **S9: Memory Snapshots**\n  Periodic snapshots of agent memory state (episodic memories, learned patterns, state vectors) encoded as [[Linked Data Encoder|JSON-LD]]. Enables analysis of how agents' internal state evolves, and allows agents to migrate state to new instances.\n\n  ```json\n  {\n    \"@context\": \"https://visionclaw.dreamlab-ai.systems/ns/v1\",\n    \"@type\": \"vcw:MemorySnapshot\",\n    \"@id\": \"urn:visionclaw:activity:0abc...ef:sha256-12-fff444\",\n    \"agent\": \"did:nostr:0abc...ef\",\n    \"timestamp\": \"2026-04-26T12:35:00Z\",\n    \"memory\": {\n      \"recentTasks\": [\n        { \"taskId\": \"task-99\", \"duration\": 2340, \"outcome\": \"success\" }\n      ],\n      \"learnedPatterns\": [\n        { \"pattern\": \"urn:visionclaw:pattern:classify-docs\", \"confidence\": 0.92 }\n      ]\n    }\n  }\n  ```\n\n  **S11: Bead Catalogue**\n  Index of work units ([[Agent Bead|beads]]) and their status (pending, in-progress, completed, failed). External systems (task schedulers, compliance auditors) query this surface to understand fleet workload.\n\n  ```json\n  {\n    \"@context\": \"https://visionclaw.dreamlab-ai.systems/ns/v1\",\n    \"@type\": \"ldp:Container\",\n    \"@id\": \"urn:visionclaw:bead:0abc...ef:\",\n    \"ldp:contains\": [\n      {\n        \"@id\": \"urn:visionclaw:bead:0abc...ef:task-99\",\n        \"status\": \"completed\",\n        \"assignedAgent\": \"did:nostr:0abc...ef\",\n        \"createdTime\": \"2026-04-26T12:30:00Z\",\n        \"completedTime\": \"2026-04-26T12:34:57Z\"\n      }\n    ]\n  }\n  ```\n\n  #### Design Principles\n\n  1. **Content-Addressed URIs**: Every object in every surface has a [[URI Canonicaliser|urn:visionclaw:...]] URI. External systems follow URIs to discover related data without hardcoding paths.\n\n  2. **Immutable Contexts**: Each surface references pinned [[JSON-LD Context|JSON-LD contexts]] (https://visionclaw.dreamlab-ai.systems/ns/v1) that never change. Consumers can safely cache contexts without fear of breaking semantics.\n\n  3. **Queryable**: All surfaces are exposed via HTTP endpoints (`/v1/agent/<agent-id>/surface/<surface-name>`). External systems use SPARQL or link-following to extract insight.\n\n  4. **Linkable**: Cross-references between surfaces use @id links. A credential references a bead by URI; a memory snapshot references patterns by URI. This enables graph traversal.\n\n  5. **Decoupled from Agent Code**: Surfaces are emitted by [[Linked Data Encoder|a separate encoder]], not by agent logic. Agent logic never needs to know about JSON-LD semantics.\n\n  #### Federation in Practice\n\n  A typical federation workflow:\n\n  1. A **compliance audit system** queries `GET /v1/agent/did%3Anostr%3A0abc.../surface/credentials` and receives all credentials issued by the agent, along with Schnorr signatures.\n  2. The audit system verifies each credential's signature using the agent's public key.\n  3. For any suspicious credential, the audit system follows the `@id` link to retrieve the referenced bead (`urn:visionclaw:bead:...`), discovering what work was actually done.\n  4. The audit system then queries the **agent events surface** to confirm the agent was online and active at that time.\n\n  This entire process occurs without the agent needing to expose a custom audit API; the agent's surfaces are generic.\n\n  #### Blockchain Oracle Integration\n\n  [[Smart Contract|Smart contracts]] can also consume federation surfaces:\n\n  1. A smart contract needs attestation that an agent completed a specific task.\n  2. The contract's oracle queries the agent's credentials surface for a credential matching that task URI.\n  3. The oracle verifies the credential's Schnorr signature against the agent's public key (derived from its [[DID Nostr Identity|did:nostr]]).\n  4. If valid, the oracle calls the smart contract with the credential as proof.\n\n  This pattern eliminates the need for centralised oracle operators; anyone can verify agent claims independently.\n\n- ### Provenance\n  - sources:: [[ADR-012]], [[ADR-008]], [[JSON-LD 1.1 Spec]], [[W3C Linked Data Platform]], [[PRD-006]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Linked Data Encoder",
+    "VisionClaw Agentic Container",
+    "DID Nostr Identity",
+    "Verifiable Credential Surface",
+    "Privacy Filter",
+    "URI Canonicaliser",
+    "Sovereign Keyset"
+  ],
+  "wiki_links": [
+    "ADR-008",
+    "ADR-012",
+    "APILayer",
+    "Agent Bead",
+    "AgenticSystemsDomain",
+    "Automated Monitoring",
+    "Blockchain Oracle Integration",
+    "Content Addressing",
+    "Cross-System Querying",
+    "DID Nostr Identity",
+    "Data Portal",
+    "DataIntegrationDomain",
+    "DataLayer",
+    "HTTP Endpoint",
+    "JSON-LD 1.1",
+    "JSON-LD 1.1 Spec",
+    "JSON-LD 1.1 Standard",
+    "JSON-LD Context",
+    "Knowledge Graph",
+    "Knowledge Graph Federation",
+    "Linked Data Consumption",
+    "Linked Data Encoder",
+    "PRD-006",
+    "SemanticWebDomain",
+    "Smart Contract",
+    "Solid Pod Storage",
+    "URI Canonicaliser",
+    "Verifiable Credential Surface",
+    "W3C Linked Data Platform",
+    "W3C Vocabulary"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:federation-surface",
+    "iri": "http://narrativegoldmine.com/infrastructure#FederationSurface",
+    "content_hash": "sha256-12-c3d4e5f6a7b8",
+    "legacy_term_id": "NGM-federation-surface",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:federation-surface",
+    "schema_version": "v2",
+    "term_id": "NGM-federation-surface",
+    "preferred_term": "Federation Surface",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge graphs) without agent-specific API adapters.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.86,
+    "authority_score": 0.89,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:FederationSurface",
+    "owl_role": "Object",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [
+      "Linked Data Encoder",
+      "JSON-LD Context",
+      "URI Canonicaliser",
+      "Content Addressing"
+    ],
+    "is_part_of": [],
+    "requires": [
+      "JSON-LD 1.1 Standard",
+      "HTTP Endpoint",
+      "W3C Vocabulary"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Cross-System Querying",
+      "Linked Data Consumption",
+      "Automated Monitoring",
+      "Blockchain Oracle Integration",
+      "Knowledge Graph Federation"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Knowledge Graph",
+      "Smart Contract",
+      "Data Portal"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AgenticSystemsDomain",
+      "DataIntegrationDomain",
+      "SemanticWebDomain"
+    ],
+    "implemented_in_layer": [
+      "DataLayer",
+      "APILayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ADR-012",
+      "ADR-008",
+      "JSON-LD 1.1 Spec",
+      "W3C Linked Data Platform",
+      "PRD-006"
+    ],
+    "other_relationships": {
+      "implements": [
+        "JSON-LD 1.1",
+        "W3C Linked Data Platform"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

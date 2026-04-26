@@ -1,173 +1,184 @@
-- ### OntologyBlock
-  id:: mev-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8012
-	- preferred-term:: MEV
-	- status:: active
-	- public-access:: true
-	- definition:: Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.
-	- maturity:: reviewed
-	- owl:class:: bc:Mev
-	- belongsToDomain:: [[BlockchainDomain]]
+iri:: http://narrativegoldmine.com/blockchain#MEV
+uri:: urn:visionclaw:concept:blockchain:mev
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:mev
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: MEV
+content-hash:: sha256-12-9ae3c8364beb
+legacy-term-id:: BC-8012
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1017
-title: MEV
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.
 
-# MEV (Maximal Extractable Value)
+- ### Semantic Classification
+  - owl-class:: blockchain:Mev
+  - owl-role:: Concept
+  - belongs-to-domain:: [[BlockchainDomain]]
 
-## Definition
-- Profit extractable by block producers through strategic transaction ordering, inclusion, and exclusion
-- Arises from block producers' privileged position to control transaction sequencing
-- Represents market inefficiency where intermediaries capture value from users' transactions
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
 
-## Core Concepts
-- **Transaction Ordering Control**: Block producers determine execution sequence
-- **Value Extraction**: Profit beyond standard block rewards and fees
-- **Front-Running**: Executing transaction before observed user transaction
-- **Back-Running**: Executing transaction immediately after target transaction
+- ### Content
 
-## MEV Categories
-### Arbitrage MEV
-- Exploiting price differences across DEXs
-- Sandwich trading around large swaps
-- Cross-DEX arbitrage opportunities
+  ## Definition
+  - Profit extractable by block producers through strategic transaction ordering, inclusion, and exclusion
+  - Arises from block producers' privileged position to control transaction sequencing
+  - Represents market inefficiency where intermediaries capture value from users' transactions
 
-### Liquidation MEV
-- Capturing liquidation rewards in lending protocols
-- Racing to liquidate undercollateralized positions
-- Priority gas auctions for liquidation rights
+  ## Core Concepts
+  - **Transaction Ordering Control**: Block producers determine execution sequence
+  - **Value Extraction**: Profit beyond standard block rewards and fees
+  - **Front-Running**: Executing transaction before observed user transaction
+  - **Back-Running**: Executing transaction immediately after target transaction
 
-### Sandwich Attacks
-1. Front-run: Buy before victim's trade
-2. Victim trade executes at worse price
-3. Back-run: Sell after victim's trade
-- Profit from induced slippage
+  ## MEV Categories
+  ### Arbitrage MEV
+  - Exploiting price differences across DEXs
+  - Sandwich trading around large swaps
+  - Cross-DEX arbitrage opportunities
 
-### Time-Bandit Attacks
-- Reorganizing blockchain history for MEV
-- Only profitable when MEV > block reward
-- Threatens consensus security
+  ### Liquidation MEV
+  - Capturing liquidation rewards in lending protocols
+  - Racing to liquidate undercollateralized positions
+  - Priority gas auctions for liquidation rights
 
-## Technical Mechanisms
-### Mempool Observation
-- Monitoring pending transactions
-- Identifying profitable opportunities
-- Calculating optimal extraction strategy
+  ### Sandwich Attacks
+  1. Front-run: Buy before victim's trade
+  2. Victim trade executes at worse price
+  3. Back-run: Sell after victim's trade
+  - Profit from induced slippage
 
-### Gas Price Manipulation
-- Priority Gas Auctions (PGAs)
-- Bidding wars for transaction ordering
-- Failed transaction costs
+  ### Time-Bandit Attacks
+  - Reorganizing blockchain history for MEV
+  - Only profitable when MEV > block reward
+  - Threatens consensus security
 
-### Transaction Bundling
-- Atomic multi-transaction bundles
-- Conditional execution dependencies
-- Flashbots-style private relay
+  ## Technical Mechanisms
+  ### Mempool Observation
+  - Monitoring pending transactions
+  - Identifying profitable opportunities
+  - Calculating optimal extraction strategy
 
-## MEV Infrastructure
-### Flashbots
-- Private transaction relay
-- MEV-Boost for Ethereum PoS
-- Separates proposer/builder roles (PBS)
+  ### Gas Price Manipulation
+  - Priority Gas Auctions (PGAs)
+  - Bidding wars for transaction ordering
+  - Failed transaction costs
 
-### MEV-Boost Architecture
-```
-Searchers -> Builders -> Relays -> Validators
-```
-- **Searchers**: Find MEV opportunities
-- **Builders**: Construct optimal blocks
-- **Relays**: Trusted intermediaries
-- **Validators**: Choose highest-value block
+  ### Transaction Bundling
+  - Atomic multi-transaction bundles
+  - Conditional execution dependencies
+  - Flashbots-style private relay
 
-### Eden Network
-- Priority ordering for stakers
-- Network-level protection against sandwich attacks
-- Alternative to Flashbots
+  ## MEV Infrastructure
+  ### Flashbots
+  - Private transaction relay
+  - MEV-Boost for Ethereum PoS
+  - Separates proposer/builder roles (PBS)
 
-## Relationships
-- exploits:: [[Transaction Ordering]]
-- threatens:: [[Consensus Security]]
-- uses:: [[Front-Running]]
-- mitigated-by:: [[Proposer-Builder Separation]]
-- component-of:: [[DeFi Ecosystem]]
+  ### MEV-Boost Architecture
+  ```
+  Searchers -> Builders -> Relays -> Validators
+  ```
+  - **Searchers**: Find MEV opportunities
+  - **Builders**: Construct optimal blocks
+  - **Relays**: Trusted intermediaries
+  - **Validators**: Choose highest-value block
 
-## Economic Impact
-- **User Value Loss**: Estimated billions in extracted value
-- **Network Congestion**: PGAs increase gas costs
-- **Protocol Revenue**: Portion flows back to validators
-- **Market Efficiency**: Can improve price discovery
+  ### Eden Network
+  - Priority ordering for stakers
+  - Network-level protection against sandwich attacks
+  - Alternative to Flashbots
 
-## Security Implications
-- Validator centralization incentive
-- Consensus instability from chain reorgs
-- Cartel formation among block producers
-- Censorship through transaction suppression
+  ## Relationships
+  - exploits:: [[Transaction Ordering]]
+  - threatens:: [[Consensus Security]]
+  - uses:: [[Front-Running]]
+  - mitigated-by:: [[Proposer-Builder Separation]]
+  - component-of:: [[DeFi Ecosystem]]
 
-## Mitigation Strategies
-### Protocol-Level
-- **Encrypted Mempools**: Hide transaction contents until inclusion
-- **Fair Ordering Services**: Decentralized sequencing
-- **Threshold Encryption**: Time-locked transaction revelation
-- **Account Abstraction**: User-defined execution rules
+  ## Economic Impact
+  - **User Value Loss**: Estimated billions in extracted value
+  - **Network Congestion**: PGAs increase gas costs
+  - **Protocol Revenue**: Portion flows back to validators
+  - **Market Efficiency**: Can improve price discovery
 
-### Application-Level
-- **MEV Protection DEXs**: CoW Swap, CowSwap
-- **Private Transactions**: Direct submission to validators
-- **Slippage Limits**: Protect against sandwich attacks
-- **Commit-Reveal Schemes**: Hide trade intentions
+  ## Security Implications
+  - Validator centralization incentive
+  - Consensus instability from chain reorgs
+  - Cartel formation among block producers
+  - Censorship through transaction suppression
 
-### Proposer-Builder Separation (PBS)
-- Separate block production from block proposal
-- Democratize MEV extraction
-- Reduce validator centralization
+  ## Mitigation Strategies
+  ### Protocol-Level
+  - **Encrypted Mempools**: Hide transaction contents until inclusion
+  - **Fair Ordering Services**: Decentralized sequencing
+  - **Threshold Encryption**: Time-locked transaction revelation
+  - **Account Abstraction**: User-defined execution rules
 
-## MEV Types by Blockchain
-| Blockchain | Primary MEV | Characteristics |
-|------------|-------------|-----------------|
-| Ethereum | Arbitrage, liquidations, sandwiches | High DeFi activity |
-| Bitcoin | Fee sniping, RBF conflicts | Limited smart contracts |
-| Solana | Front-running, arbitrage | Parallel execution reduces some MEV |
-| Layer 2s | Sequencer MEV | Centralized sequencers control ordering |
+  ### Application-Level
+  - **MEV Protection DEXs**: CoW Swap, CowSwap
+  - **Private Transactions**: Direct submission to validators
+  - **Slippage Limits**: Protect against sandwich attacks
+  - **Commit-Reveal Schemes**: Hide trade intentions
 
-## Quantification
-- **Realized MEV**: Actual extracted value (observable)
-- **Total MEV**: All extractable value (includes unsuccessful attempts)
-- **MEV per Block**: Average extraction rate
-- **Failed MEV**: Wasted gas on unsuccessful attempts
+  ### Proposer-Builder Separation (PBS)
+  - Separate block production from block proposal
+  - Democratize MEV extraction
+  - Reduce validator centralization
 
-## Ethical Considerations
-- Extractive vs productive MEV debate
-- User value alignment
-- Protocol fairness
-- Regulatory implications
+  ## MEV Types by Blockchain
+  | Blockchain | Primary MEV | Characteristics |
+  |------------|-------------|-----------------|
+  | Ethereum | Arbitrage, liquidations, sandwiches | High DeFi activity |
+  | Bitcoin | Fee sniping, RBF conflicts | Limited smart contracts |
+  | Solana | Front-running, arbitrage | Parallel execution reduces some MEV |
+  | Layer 2s | Sequencer MEV | Centralized sequencers control ordering |
 
-## Future Directions
-- Encrypted mempools (threshold encryption)
-- Fair sequencing services
-- MEV redistribution to users
-- Cross-domain MEV (cross-chain)
+  ## Quantification
+  - **Realized MEV**: Actual extracted value (observable)
+  - **Total MEV**: All extractable value (includes unsuccessful attempts)
+  - **MEV per Block**: Average extraction rate
+  - **Failed MEV**: Wasted gas on unsuccessful attempts
 
-## Tools and Analysis
-- **Flashbots Data**: Public MEV dashboards
-- **MEV-Inspect**: Historical MEV analysis
-- **Zeromev**: MEV monitoring
-- **EigenPhi**: MEV profit tracking
+  ## Ethical Considerations
+  - Extractive vs productive MEV debate
+  - User value alignment
+  - Protocol fairness
+  - Regulatory implications
 
-## Related Concepts
-- [[Front-Running]]
-- [[Transaction Ordering]]
-- [[Proposer-Builder Separation]]
-- [[Mempool]]
+  #### Future Directions
+  - Encrypted mempools (threshold encryption)
+  - Fair sequencing services
+  - MEV redistribution to users
+  - Cross-domain MEV (cross-chain)
 
-#blockchain #mev #defi #security #transaction-ordering
+  ## Tools and Analysis
+  - **Flashbots Data**: Public MEV dashboards
+  - **MEV-Inspect**: Historical MEV analysis
+  - **Zeromev**: MEV monitoring
+  - **EigenPhi**: MEV profit tracking
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Front-Running]]
+  - [[Transaction Ordering]]
+  - [[Proposer-Builder Separation]]
+  - [[Mempool]]
+
+  #blockchain #mev #defi #security #transaction-ordering
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

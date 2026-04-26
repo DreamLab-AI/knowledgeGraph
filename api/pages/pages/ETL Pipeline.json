@@ -1,62 +1,73 @@
 {
-  "id": "ETL Pipeline",
+  "id": "etl-pipeline",
   "title": "ETL Pipeline",
-  "content": "- ### OntologyBlock\n  id:: AI-9010\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9010\n\t- source-domain:: ai\n\t- preferred-term:: ETL Pipeline\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.\n\t- source:: [[Data Engineering]]\n\t- maturity:: mature\n\t- owl:class:: ai:ETLPipeline\n\t- owl:role:: Process\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[Data Engineering]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
-  "backlinks": [
-    "Conversion Pipeline",
-    "Data Integration Interface"
-  ],
+  "content": "- ### Definition\n  - Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ETLPipeline\n  - owl-role:: Process\n  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n  - bridges-to:: [[Blockchain]], [[Digital Twin]]\n\n- ### Content\n  ETL Pipeline — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[Data Engineering]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
     "Artificial Intelligence",
     "ArtificialIntelligenceDomain",
-    "Data Engineering"
+    "Blockchain",
+    "Data Engineering",
+    "Digital Twin"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:etl-pipeline",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ETLPipeline",
+    "content_hash": "sha256-12-c8422b3ee949",
+    "legacy_term_id": "AI-9010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:etl-pipeline",
+    "schema_version": "v2",
     "term_id": "AI-9010",
     "preferred_term": "ETL Pipeline",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#ETLPipeline",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
     "scope_note": null,
     "status": "draft",
     "maturity": "mature",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:ETLPipeline",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ETLPipeline",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain",
+      "Digital Twin"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "ArtificialIntelligenceDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "Data Engineering"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

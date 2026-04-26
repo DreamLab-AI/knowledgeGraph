@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9539-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9539
-	- preferred-term:: Context Aware Computing
-	- source-domain:: mv
-	- owl:class:: mv:ContextAwareComputing
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Context Aware Computing is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#ContextAwareComputing
+uri:: urn:visionclaw:concept:spatial-computing:context-aware-computing
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:context-aware-computing
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Context Aware Computing
+content-hash:: sha256-12-3dbced9389d9
+legacy-term-id:: MV-9539
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Context Aware Computing is a concept within the metaverse domain. Further enrichment pending.
 
-Context Aware Computing represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ContextAwareComputing
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Computer Vision]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Context Aware Computing represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

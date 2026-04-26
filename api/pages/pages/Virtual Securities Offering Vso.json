@@ -1,36 +1,44 @@
 {
-  "id": "Virtual Securities Offering Vso",
+  "id": "virtual-securities-offering-vso",
   "title": "Virtual Securities Offering VSO",
-  "content": "- ### OntologyBlock\n  id:: virtual-securities-offering-vso-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10144\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Securities Offering VSO\n\t- status:: active\n\t- definition:: A type of security token offering that issues blockchain-based tokens representing ownership of virtual assets, metaverse properties, or digital rights within virtual environments, combining traditional securities regulation compliance with tokenization technology to enable fractional ownership and trading of virtual world assets.\n\t- owl:class:: mv:VirtualSecuritiesOfferingVSO\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Security Token Offering]]\n\t\t- related-to:: [[Tokenized Securities]]\n\t\t- related-to:: [[Virtual Asset]]\n\t\t- related-to:: [[Blockchain]]\n\t  id:: virtual-securities-offering-vso-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual Securities Offerings represent the application of security token offering (STO) frameworks to virtual world assets. STOs distribute blockchain-based tokens representing ownership of assets ranging from real estate and art to company equity. The tokenized securities market was valued at $202 billion in 2023 and is expected to reach $301 billion by 2030 with 5.96% CAGR. Unlike ICOs, STOs ensure investor protection through regulatory compliance.\n- ## Technical Details\n\t- ### Token Structure\n\t\t- **Security Classification**: Tokens treated as regulated financial instruments\n\t\t- **Smart Contracts**: Automated compliance and transfer restrictions\n\t\t- **Fractional Ownership**: Assets split into smaller tradable units\n\t\t- **Blockchain Recording**: Immutable transaction and ownership history\n\t- ### Regulatory Framework\n\t\t- SEC oversight in the United States under traditional securities laws\n\t\t- EU regulations including MiCA for crypto-assets\n\t\t- UK crypto business legislation refinements in 2024\n\t\t- KYC/AML requirements for investor verification\n\t- ### Compliance Requirements\n\t\t- Investor accreditation verification\n\t\t- Anti-money laundering procedures\n\t\t- Know Your Customer identity checks\n\t\t- Securities registration or exemption filing\n\t- ### Platform Infrastructure\n\t\t- Security token exchanges for secondary trading\n\t\t- Custody solutions for token storage\n\t\t- Transfer agents for ownership records\n\t\t- Compliance automation systems\n- ## Applications\n\t- Virtual land and real estate tokenization\n\t- Metaverse platform equity offerings\n\t- Digital art and collectible securities\n\t- Virtual world infrastructure investment\n\t- Cross-border virtual asset investment access",
+  "content": "- ### Definition\n  - A type of security token offering that issues blockchain-based tokens representing ownership of virtual assets, metaverse properties, or digital rights within virtual environments, combining traditional securities regulation compliance with tokenization technology to enable fractional ownership and trading of virtual world assets.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualSecuritiesOfferingVSO\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Security Token Offering]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual Securities Offerings represent the application of security token offering (STO) frameworks to virtual world assets. STOs distribute blockchain-based tokens representing ownership of assets ranging from real estate and art to company equity. The tokenized securities market was valued at $202 billion in 2023 and is expected to reach $301 billion by 2030 with 5.96% CAGR. Unlike ICOs, STOs ensure investor protection through regulatory compliance.\n  - ## Technical Details\n  - ### Token Structure\n\t\t- **Security Classification**: Tokens treated as regulated financial instruments\n\t\t- **Smart Contracts**: Automated compliance and transfer restrictions\n\t\t- **Fractional Ownership**: Assets split into smaller tradable units\n\t\t- **Blockchain Recording**: Immutable transaction and ownership history\n  - ### Regulatory Framework\n\t\t- SEC oversight in the United States under traditional securities laws\n\t\t- EU regulations including MiCA for crypto-assets\n\t\t- UK crypto business legislation refinements in 2024\n\t\t- KYC/AML requirements for investor verification\n  - ### Compliance Requirements\n\t\t- Investor accreditation verification\n\t\t- Anti-money laundering procedures\n\t\t- Know Your Customer identity checks\n\t\t- Securities registration or exemption filing\n  - ### Platform Infrastructure\n\t\t- Security token exchanges for secondary trading\n\t\t- Custody solutions for token storage\n\t\t- Transfer agents for ownership records\n\t\t- Compliance automation systems\n  - ## Applications\n  - Virtual land and real estate tokenization\n  - Metaverse platform equity offerings\n  - Digital art and collectible securities\n  - Virtual world infrastructure investment\n  - Cross-border virtual asset investment access\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
     "Security Token Offering",
-    "Tokenized Securities",
-    "Virtual Asset",
-    "Blockchain",
     "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-securities-offering-vso",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualSecuritiesOfferingVSO",
+    "content_hash": "sha256-12-86dab37bb685",
+    "legacy_term_id": "MV-10144",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-securities-offering-vso",
+    "schema_version": "v2",
     "term_id": "MV-10144",
     "preferred_term": "Virtual Securities Offering VSO",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualSecuritiesOfferingVSO",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A type of security token offering that issues blockchain-based tokens representing ownership of virtual assets, metaverse properties, or digital rights within virtual environments, combining traditional securities regulation compliance with tokenization technology to enable fractional ownership and trading of virtual world assets.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualSecuritiesOfferingVSO",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualSecuritiesOfferingVSO",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Security Token Offering"
@@ -43,26 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Tokenized Securities",
-        "Virtual Asset",
-        "Blockchain"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

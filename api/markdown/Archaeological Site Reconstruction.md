@@ -1,34 +1,57 @@
-- ### OntologyBlock
-  id:: archaeological-site-reconstruction-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9776
-	- source-domain:: mv
-	- preferred-term:: Archaeological Site Reconstruction
-	- status:: active
-	- definition:: Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.
-	- owl:class:: mv:ArchaeologicalSiteReconstruction
-	- belongsToDomain:: [[metaverse]]
-	- is-subclass-of:: [[Digital Heritage]]
-	- enables:: [[Heritage Preservation]], [[Virtual Tourism]], [[Educational Experiences]]
-	- requires:: [[Photogrammetry]], [[3D Modeling]], [[Historical Research]]
-	- #### Relationships
-	  id:: archaeological-site-reconstruction-relationships
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#ArchaeologicalSiteReconstruction
+uri:: urn:visionclaw:concept:spatial-computing:archaeological-site-reconstruction
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:archaeological-site-reconstruction
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Archaeological Site Reconstruction
+content-hash:: sha256-12-89420ebe52af
+legacy-term-id:: MV-9776
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-### Technical Details
-Key technologies include:
-- **Photogrammetry**: Reality-based 3D modeling from 2D images, primary technique for cultural heritage documentation
-- **LiDAR and Laser Scanning**: High-precision 3D data capture for complex site geometries
-- **Drone Mapping**: Aerial photogrammetry for large-scale site documentation
-- **3D Modeling Software**: Tools for reconstructing original appearances from incomplete remains
+- ### Definition
+  - Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic simulations of historical environments.
 
-### Applications
-- **Documentation and Cataloguing**: Permanent digital records of archaeological finds
-- **Preservation**: Capturing current state for future reference, especially for conflict-threatened heritage
-- **Virtual Tours**: Remote exploration increasing public access to historical sites
-- **AR/VR Experiences**: Immersive reconstructions showing monuments in their original state
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ArchaeologicalSiteReconstruction
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Virtual Archaeology
-Defined as computer techniques enabling 3D visualization and realistic representation of ancient buildings and objects whose remains have disappeared or are in poor conservation state, making interpretation possible where physical examination is difficult.
+- ### Relationships
+  - is-subclass-of:: [[Digital Heritage]]
+  - requires:: [[Photogrammetry]], [[3D Modeling]], [[Historical Research]]
+  - enables:: [[Heritage Preservation]], [[Virtual Tourism]], [[Educational Experiences]]
+  - bridges-to:: [[Computer Vision]] (ai)
+
+- ### Content
+
+  ### Technical Details
+  Key technologies include:
+  - **Photogrammetry**: Reality-based 3D modeling from 2D images, primary technique for cultural heritage documentation
+  - **LiDAR and Laser Scanning**: High-precision 3D data capture for complex site geometries
+  - **Drone Mapping**: Aerial photogrammetry for large-scale site documentation
+  - **3D Modeling Software**: Tools for reconstructing original appearances from incomplete remains
+
+  ### Applications
+  - **Documentation and Cataloguing**: Permanent digital records of archaeological finds
+  - **Preservation**: Capturing current state for future reference, especially for conflict-threatened heritage
+  - **Virtual Tours**: Remote exploration increasing public access to historical sites
+  - **AR/VR Experiences**: Immersive reconstructions showing monuments in their original state
+
+  ### Virtual Archaeology
+  Defined as computer techniques enabling 3D visualization and realistic representation of ancient buildings and objects whose remains have disappeared or are in poor conservation state, making interpretation possible where physical examination is difficult.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

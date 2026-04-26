@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9726-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9726
-	- preferred-term:: Visual Effects
-	- source-domain:: mv
-	- owl:class:: mv:VisualEffects
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Visual Effects is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#VisualEffects
+uri:: urn:visionclaw:concept:spatial-computing:visual-effects
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:visual-effects
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Visual Effects
+content-hash:: sha256-12-4546709d2ed7
+legacy-term-id:: MV-9164
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - VisualEffects is a concept within the ngm domain.
 
-Visual Effects represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VisualEffects
+  - owl-role:: Concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+  # VisualEffects
+  VisualEffects represents a key component in Metaverse infrastructure and technology. Research: VisualEffects in real-time - particle systems, post-processing, shader effects, VFX techniques
+  - https://www.khronos.org/ - Industry standards
+  - https://www.w3.org/TR/ - Web standards
+  - https://developer.mozilla.org/ - Technical documentation
+
+  ## Sources
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

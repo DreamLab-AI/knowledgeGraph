@@ -1,23 +1,43 @@
-- ### OntologyBlock
-  id:: digital-humans-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0009
-	- preferred-term:: Digital Humans
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:DigitalHumans
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: Spatial & Immersive
+iri:: http://narrativegoldmine.com/spatial-computing#DigitalHumans
+uri:: urn:visionclaw:concept:spatial-computing:digital-humans
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:digital-humans
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Digital Humans
+content-hash:: sha256-12-199a4e0d9810
+legacy-term-id:: ME-0009
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+bridges-to:: [[DID Nostr Identity]]
 
-- Digital Humans in the Context of Spatial & Immersive Technologies
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DigitalHumans
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  - Digital Humans in the Context of Spatial & Immersive Technologies
   - Precise technical definition
     - A digital human is a photorealistic, AI-driven virtual being that replicates human appearance, movement, and conversational abilities, typically rendered in 3D and designed for interaction within immersive environments such as virtual reality (VR), augmented reality (AR), or mixed reality (MR).
     - These entities integrate advanced technologies including artificial intelligence, natural language processing, 3D modelling, and real-time rendering to simulate lifelike communication and presence.
@@ -45,20 +65,12 @@
     - Ethical considerations, such as data privacy and the potential for deception, will become increasingly important as digital humans become more lifelike and pervasive.
     - The UK, particularly regions like the North, is poised to remain at the forefront of innovation in digital humans and immersive technologies, driven by academic research, industry collaboration, and government support.
 
-
-## UK Context
-
-- British contributions and implementations
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: Spatial & Immersive
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

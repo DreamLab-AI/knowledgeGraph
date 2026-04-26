@@ -1,44 +1,53 @@
 {
-  "id": "Civic Participation",
+  "id": "civic-participation",
   "title": "Civic Participation",
-  "content": "- ### OntologyBlock\n  id:: civic-participation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9821\n\t- source-domain:: mv\n\t- preferred-term:: Civic Participation\n\t- definition:: The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.\n\t- status:: active\n\t- owl:class:: mv:CivicParticipation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: civic-participation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Democratic Engagement]]\n\t\t- enables:: [[Digital Democracy]], [[Public Deliberation]], [[Collective Governance]]\n\t\t- requires:: [[Digital Platform]], [[Accessibility]], [[Trust Infrastructure]]\n\t\t- related-to:: [[DAO Governance]], [[E-Voting]], [[Deliberative Democracy]]\n- ## Technical Details\n\t- **Metaverse Potential**:\n\t\t- Laboratories for digital democracy testing new governance models\n\t\t- Higher engagement and immersion than 2D processes\n\t\t- Enhanced empathy through VR/AR participation\n\t\t- Global processes without physical travel\n\t- **Platform Examples**:\n\t\t- **Decidim** (Spain): Open-source customizable participation platform\n\t\t- **Participa.gov** (Portugal): National citizen engagement portal\n\t\t- **vTaiwan**: Direct citizen-government policy engagement\n\t\t- **Estonia**: Online voting for civic engagement\n\t- **Emerging Technologies**: AI for opinion analysis, blockchain for voting integrity, DAOs for decentralized decision-making\n\t- **Challenges**: Declining voter turnout, polarization, accessibility gaps, need for digital literacy, corporate control of virtual spaces\n- ## Applications\n\t- Online public consultations\n\t- Virtual town halls and assemblies\n\t- Participatory budgeting platforms\n\t- Digital petition and referendum systems\n\t- Metaverse-based deliberative forums",
+  "content": "- ### Definition\n  - The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CivicParticipation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Democratic Engagement]]\n  - requires:: [[Digital Platform]], [[Accessibility]], [[Trust Infrastructure]]\n  - enables:: [[Digital Democracy]], [[Public Deliberation]], [[Collective Governance]]\n  - bridges-to:: [[Telecollaboration]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Metaverse Potential**:\n\t\t- Laboratories for digital democracy testing new governance models\n\t\t- Higher engagement and immersion than 2D processes\n\t\t- Enhanced empathy through VR/AR participation\n\t\t- Global processes without physical travel\n  - **Platform Examples**:\n\t\t- **Decidim** (Spain): Open-source customizable participation platform\n\t\t- **Participa.gov** (Portugal): National citizen engagement portal\n\t\t- **vTaiwan**: Direct citizen-government policy engagement\n\t\t- **Estonia**: Online voting for civic engagement\n  - **Emerging Technologies**: AI for opinion analysis, blockchain for voting integrity, DAOs for decentralized decision-making\n  - **Challenges**: Declining voter turnout, polarization, accessibility gaps, need for digital literacy, corporate control of virtual spaces\n  - ## Applications\n  - Online public consultations\n  - Virtual town halls and assemblies\n  - Participatory budgeting platforms\n  - Digital petition and referendum systems\n  - Metaverse-based deliberative forums\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Citizenship"
   ],
   "wiki_links": [
-    "Trust Infrastructure",
-    "Public Deliberation",
-    "Digital Democracy",
     "Accessibility",
     "Collective Governance",
-    "Deliberative Democracy",
-    "E-Voting",
-    "metaverse",
-    "Digital Platform",
     "Democratic Engagement",
-    "DAO Governance"
+    "Digital Democracy",
+    "Digital Platform",
+    "Public Deliberation",
+    "Telecollaboration",
+    "Trust Infrastructure",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:civic-participation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CivicParticipation",
+    "content_hash": "sha256-12-b00f06ed123b",
+    "legacy_term_id": "MV-9821",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:civic-participation",
+    "schema_version": "v2",
     "term_id": "MV-9821",
     "preferred_term": "Civic Participation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CivicParticipation",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CivicParticipation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CivicParticipation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Democratic Engagement"
@@ -57,28 +66,19 @@
       "Collective Governance"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Telecollaboration"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "DAO Governance",
-        "E-Voting",
-        "Deliberative Democracy"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

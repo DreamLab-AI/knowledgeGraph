@@ -1,0 +1,72 @@
+{
+  "id": "level-of-detail",
+  "title": "Level of Detail",
+  "content": "- ### Definition\n  - Level of Detail is a concept within the mv domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:LevelOfDetail\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n\n  #### Key Characteristics\n  - **Distance-Based**: Complexity scales with viewer proximity\n  - **Dynamic Switching**: Real-time transitions between detail levels\n  - **Performance Scaling**: Reduces GPU workload significantly\n  - **Perceptual Optimization**: Maintains visual quality where noticeable\n  - **Multi-Faceted**: Applies to geometry, textures, shaders, and effects\n\n  ## LOD Strategies\n\n  ### Discrete LOD\n  - Pre-created models at different detail levels\n  - Hard transitions between LOD levels\n  - Simple to implement and control\n  - May have visible \"popping\" artifacts\n\n  ### Continuous LOD\n  - Smooth transitions between detail levels\n  - Geomorphing or progressive meshes\n  - Eliminates popping artifacts\n  - More complex implementation\n\n  ### Hierarchical LOD (HLOD)\n  - Merge distant objects into single meshes\n  - Drastically reduce draw calls\n  - Essential for open-world environments\n  - Requires pre-processing and memory\n\n  ## LOD Types\n\n  ### Geometric LOD\n  - **Mesh Decimation**: Reduce polygon count\n  - **LOD Chains**: Multiple pre-made models (LOD0, LOD1, LOD2)\n  - **Imposters**: 2D billboards for very distant objects\n  - **Progressive Meshes**: Dynamically add/remove detail\n\n  ### Texture LOD (Mipmapping)\n  - Pre-filtered texture pyramid\n  - Lower resolutions for distant surfaces\n  - Reduces texture bandwidth and aliasing\n  - Automatic in modern GPUs\n\n  ### Shader LOD\n  - Simplified shaders for distant objects\n  - Disable expensive effects (parallax, subsurface scattering)\n  - Reduce lighting complexity\n  - Switch to cheaper approximations\n\n  ### Animation LOD\n  - Lower update rates for distant characters\n  - Simplified skeletal rigs\n  - Disable facial animations\n  - Reduce IK solver complexity\n\n  ### Effect LOD\n  - Disable particle systems at distance\n  - Reduce particle counts\n  - Simplify physics simulations\n  - Lower shadow resolution\n\n  ## LOD Selection Criteria\n\n  ### Distance-Based\n  - Most common approach\n  - Thresholds based on camera distance\n  - Simple to implement and tune\n\n  ### Screen-Space Coverage\n  - Based on object's pixel coverage\n  - Better for variable object sizes\n  - More perceptually accurate\n\n  ### Importance-Based\n  - Weighted by gameplay significance\n  - Player character always high LOD\n  - AI-driven prioritization\n\n  ### Performance Budget\n  - Dynamically adjust LOD levels to maintain framerate\n  - Adapt to hardware capabilities\n  - Sacrifice quality under load\n\n  ## Implementation Example (Pseudocode)\n\n  ```cpp\n  enum LODLevel { LOD_HIGH, LOD_MEDIUM, LOD_LOW, LOD_IMPOSTER };\n\n  LODLevel SelectLOD(GameObject object, Camera camera) {\n    float distance = Distance(object.position, camera.position);\n\n    if (distance < 20.0f)\n        return LOD_HIGH;    // Full detail\n    else if (distance < 50.0f)\n        return LOD_MEDIUM;  // Medium detail\n    else if (distance < 100.0f)\n        return LOD_LOW;     // Low detail\n    else\n        return LOD_IMPOSTER; // Billboard\n  }\n\n  void RenderObject(GameObject object, Camera camera) {\n    LODLevel lod = SelectLOD(object, camera);\n\n    switch (lod) {\n        case LOD_HIGH:\n            Render(object.highPolyMesh, object.highResMaterial);\n            break;\n        case LOD_MEDIUM:\n            Render(object.mediumPolyMesh, object.mediumResMaterial);\n            break;\n        case LOD_LOW:\n            Render(object.lowPolyMesh, object.lowResMaterial);\n            break;\n        case LOD_IMPOSTER:\n            RenderBillboard(object.imposterTexture);\n            break;\n    }\n  }\n  ```\n\n  ## Definition\n\n  Rendering optimization technique that dynamically adjusts the geometric complexity, texture resolution, and shader complexity of 3D objects based on viewing distance, screen-space coverage, or perceptual importance to maximize performance while preserving visual fidelity.\n\n  #### Related Concepts\n  - [[Culling]]\n  - [[Rasterization]]\n  - [[Performance Optimization]]\n  - [[Occlusion Culling]]\n  - [[Instancing]]\n\n  ## Applications\n\n  - Open-world metaverse environments\n  - Massive multiplayer scenes\n  - VR applications (strict performance requirements)\n  - Mobile metaverse platforms\n  - Procedurally generated worlds\n\n  ## Advantages\n\n  - Significant performance improvements\n  - Scalable to various hardware\n  - Enables larger, more detailed worlds\n  - Maintains consistent frame rates\n  - Reduces memory bandwidth\n\n  ## Challenges\n\n  - Authoring multiple LOD levels\n  - Transition artifacts (popping)\n  - Memory overhead for storing LODs\n  - Tuning LOD thresholds\n  - Balancing quality vs. performance\n\n  ## Best Practices\n\n  - **Smooth Transitions**: Use fade or geomorphing\n  - **Hysteresis**: Prevent rapid LOD switching\n  - **Measure Coverage**: Use screen-space metrics\n  - **Automatic Generation**: Tools for LOD creation\n  - **Profile Performance**: Test across hardware\n  - **Combine with Culling**: LOD + frustum/occlusion culling\n\n  ## Metaverse Considerations\n\n  - **Large Viewing Distances**: Metaverse often has vast sightlines\n  - **Player Density**: Many avatars require efficient LOD\n  - **Streaming**: LOD integrates with asset streaming\n  - **User-Generated Content**: Automatic LOD for UGC\n  - **Quality Settings**: Expose LOD control to users\n\n  ## Tools & Algorithms\n\n  - **Mesh Simplification**: QuadricEdge collapse\n  - **Progressive Meshes**: Hoppe's algorithm\n  - **Automatic LOD Generation**: Simplygon, Unity LOD Group\n  - **HLOD Generation**: Unreal Engine HLOD system\n\n  #### References\n  - Luebke, D. et al. (2002). *Level of Detail for 3D Graphics*\n  - Hoppe, H. (1996). \"Progressive Meshes\"\n  - Cebenoyan, C. (2004). \"Effective LOD Management\"\n\n  ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Scene Graph",
+    "Rasterization",
+    "Ray Tracing",
+    "Telecollaboration and Telepresence"
+  ],
+  "wiki_links": [
+    "Culling",
+    "Instancing",
+    "Metaverse",
+    "Occlusion Culling",
+    "Performance Optimization",
+    "Rasterization"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:level-of-detail",
+    "iri": "http://narrativegoldmine.com/spatial-computing#LevelOfDetail",
+    "content_hash": "sha256-12-11fca9bf53b6",
+    "legacy_term_id": "MV-level-of-detail",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:level-of-detail",
+    "schema_version": "v2",
+    "term_id": "MV-level-of-detail",
+    "preferred_term": "Level of Detail",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Level of Detail is a concept within the mv domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:LevelOfDetail",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

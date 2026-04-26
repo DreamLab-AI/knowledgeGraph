@@ -1,0 +1,68 @@
+{
+  "id": "ai-metadata",
+  "title": "AI Metadata",
+  "content": "- ### Definition\n  - AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AIMetadata\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n  - bridges-to:: [[Blockchain]] (domain: bc)\n\n- ### Content\n\n  #### Key Characteristics\n  - Documents model architecture, hyperparameters, and training configuration\n  - Tracks dataset lineage, versioning, and data quality metrics\n  - Captures performance benchmarks across diverse evaluation scenarios\n  - Records ethical assessments and bias audits\n  - Facilitates model discovery, reuse, and governance\n\n  ## Overview\n\n  AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle.\n\n  #### Related Concepts\n  - [[Model Card]]\n  - [[Data Provenance]]\n  - [[ML Reproducibility]]\n  - [[AI Governance]]\n\n  #### References\n  - Mitchell, M. et al. (2019). Model Cards for Model Reporting. FAT* 2019.\n  - Gebru, T. et al. (2021). Datasheets for Datasets. Communications of the ACM, 64(12), 86-92.\n  - Bender, E. & Friedman, B. (2018). Data Statements for Natural Language Processing. TACL 2018.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Governance",
+    "Blockchain",
+    "Data Provenance",
+    "ML Reproducibility",
+    "Model Card"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:ai-metadata",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#AIMetadata",
+    "content_hash": "sha256-12-f4714a78395b",
+    "legacy_term_id": "AI-9006",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:ai-metadata",
+    "schema_version": "v2",
+    "term_id": "AI-9006",
+    "preferred_term": "AI Metadata",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts. This includes model cards documenting architecture details, training procedures, performance metrics, intended use cases, ethical considerations, and known limitations. Dataset metadata captures information about data sources, collection methods, preprocessing steps, labeling procedures, and potential biases. Comprehensive AI metadata enables reproducibility, transparency, regulatory compliance, and responsible AI deployment across the machine learning lifecycle.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AIMetadata",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

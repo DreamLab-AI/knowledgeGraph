@@ -1,216 +1,230 @@
-- ### OntologyBlock
-  id:: metaverse-application-platform-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9963
-	- source-domain:: mv
-	- preferred-term:: Metaverse Application Platform
-	- status:: active
-	- owl:class:: mv:MetaverseApplicationPlatform
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.
-	- #### Relationships
-	  id:: metaverse-application-platform-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Development Platform]]
-		- related-to:: [[Game Engine]]
-		- related-to:: [[SDK Development]]
-		- enables:: [[Metaverse Content Creation]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetaverseApplicationPlatform
+uri:: urn:visionclaw:concept:spatial-computing:metaverse-application-platform
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metaverse-application-platform
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metaverse Application Platform
+content-hash:: sha256-12-b410230ed4d4
+legacy-term-id:: MV-9963
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Major Game Engines
+- ### Definition
+  - Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.
 
-### Unity
-- C# programming
-- Cross-platform support
-- Asset store ecosystem
-- Graphical components
-- Metaverse tools built-in
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetaverseApplicationPlatform
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Unity Advantages
-- Flexible customisation
-- dApp development
-- Agile technology
-- Wide platform support
-- Large community
+- ### Relationships
+  - is-subclass-of:: [[Development Platform]]
+  - enables:: [[Metaverse Content Creation]]
 
-### Unreal Engine
-- C++ foundation
-- Premium graphics
-- Advanced features
-- Tweaking options
-- Drag-and-drop features
+- ### Content
 
-### Unreal Advantages
-- Higher visual fidelity
-- Complex functionality
-- AAA quality
-- Blueprint visual scripting
-- Extensive documentation
+  ## Major Game Engines
 
-## Platform Comparison
+  ### Unity
+  - C# programming
+  - Cross-platform support
+  - Asset store ecosystem
+  - Graphical components
+  - Metaverse tools built-in
 
-### Entry Threshold
-- Unity: Lower barrier
-- Unreal: More complex
-- Unity: Faster learning
-- Unreal: Greater depth
-- Both: Professional tools
+  ### Unity Advantages
+  - Flexible customisation
+  - dApp development
+  - Agile technology
+  - Wide platform support
+  - Large community
 
-### Graphics Quality
-- Unreal: Premium visuals
-- Unity: Good quality
-- Unreal: Cinematic rendering
-- Unity: Optimised performance
-- Both: High-quality capable
+  ### Unreal Engine
+  - C++ foundation
+  - Premium graphics
+  - Advanced features
+  - Tweaking options
+  - Drag-and-drop features
 
-## SDK Ecosystem
+  ### Unreal Advantages
+  - Higher visual fidelity
+  - Complex functionality
+  - AAA quality
+  - Blueprint visual scripting
+  - Extensive documentation
 
-### GameFi Metaverse SDK
-- Unity and Unreal support
-- Blockchain bridging
-- Wallet connection
-- NFT minting
-- Smart contract calls
+  ## Platform Comparison
 
-### Web3 Integration
-- Crypto wallet authentication
-- Decentralised apps
-- Web3Api support
-- Token management
-- Blockchain transactions
+  ### Entry Threshold
+  - Unity: Lower barrier
+  - Unreal: More complex
+  - Unity: Faster learning
+  - Unreal: Greater depth
+  - Both: Professional tools
 
-## Enterprise Platforms
+  ### Graphics Quality
+  - Unreal: Premium visuals
+  - Unity: Good quality
+  - Unreal: Cinematic rendering
+  - Unity: Optimised performance
+  - Both: High-quality capable
 
-### Cavrnus
-- Industrial metaverse
-- Enterprise-first design
-- Foundational security
-- High performance
-- Collaboration features
+  ## SDK Ecosystem
 
-### Cavrnus Deployment
-- Unity (all platforms)
-- Unreal (Windows)
-- iOS and Android
-- AR/VR support
-- visionOS compatibility
+  ### GameFi Metaverse SDK
+  - Unity and Unreal support
+  - Blockchain bridging
+  - Wallet connection
+  - NFT minting
+  - Smart contract calls
 
-## Development Features
+  ### Web3 Integration
+  - Crypto wallet authentication
+  - Decentralised apps
+  - Web3Api support
+  - Token management
+  - Blockchain transactions
 
-### Core Capabilities
-- 3D world creation
-- Physics simulation
-- Audio systems
-- Animation tools
-- Scripting support
+  ## Enterprise Platforms
 
-### Blockchain Integration
-- Wallet connection
-- NFT support
-- Token transactions
-- Smart contracts
-- Decentralised identity
+  ### Cavrnus
+  - Industrial metaverse
+  - Enterprise-first design
+  - Foundational security
+  - High performance
+  - Collaboration features
 
-## Cross-Platform Support
+  ### Cavrnus Deployment
+  - Unity (all platforms)
+  - Unreal (Windows)
+  - iOS and Android
+  - AR/VR support
+  - visionOS compatibility
 
-### Unity Targets
-- Windows
-- macOS
-- iOS
-- Android
-- WebGL
-- AR/VR headsets
+  ## Development Features
 
-### Unreal Targets
-- Windows
-- Console platforms
-- Mobile (expanding)
-- VR headsets
-- Streaming
+  ### Core Capabilities
+  - 3D world creation
+  - Physics simulation
+  - Audio systems
+  - Animation tools
+  - Scripting support
 
-## SDK Best Practices
+  ### Blockchain Integration
+  - Wallet connection
+  - NFT support
+  - Token transactions
+  - Smart contracts
+  - Decentralised identity
 
-### Developer Experience
-- Comprehensive documentation
-- Deprecation policy
-- Proper versioning
-- Error handling
-- API consistency
+  ## Cross-Platform Support
 
-### Integration Approach
-- Seamless authentication
-- Clear APIs
-- Sample projects
-- Support resources
-- Community forums
+  ### Unity Targets
+  - Windows
+  - macOS
+  - iOS
+  - Android
+  - WebGL
+  - AR/VR headsets
 
-## Platform Selection
+  ### Unreal Targets
+  - Windows
+  - Console platforms
+  - Mobile (expanding)
+  - VR headsets
+  - Streaming
 
-### Unity Best For
-- Mobile development
-- Rapid prototyping
-- Indie projects
-- Cross-platform needs
-- C# preference
+  ## SDK Best Practices
 
-### Unreal Best For
-- AAA quality graphics
-- Complex simulations
-- Enterprise applications
-- Photorealism needs
-- C++ expertise
+  ### Developer Experience
+  - Comprehensive documentation
+  - Deprecation policy
+  - Proper versioning
+  - Error handling
+  - API consistency
 
-## Content Creation
+  ### Integration Approach
+  - Seamless authentication
+  - Clear APIs
+  - Sample projects
+  - Support resources
+  - Community forums
 
-### Virtual Worlds
-- Environment design
-- Terrain systems
-- Lighting setups
-- Asset placement
-- Optimisation
+  ## Platform Selection
 
-### Interactive Elements
-- User interfaces
-- NPC systems
-- Physics interactions
-- Network multiplayer
-- Event systems
+  ### Unity Best For
+  - Mobile development
+  - Rapid prototyping
+  - Indie projects
+  - Cross-platform needs
+  - C# preference
 
-## Marketplace Integration
+  ### Unreal Best For
+  - AAA quality graphics
+  - Complex simulations
+  - Enterprise applications
+  - Photorealism needs
+  - C++ expertise
 
-### Unity Asset Store
-- Pre-built assets
-- Scripts and tools
-- Complete systems
-- Templates
-- Extensions
+  ## Content Creation
 
-### Unreal Marketplace
-- High-quality assets
-- Blueprint systems
-- Complete projects
-- Plugins
-- Learning resources
+  ### Virtual Worlds
+  - Environment design
+  - Terrain systems
+  - Lighting setups
+  - Asset placement
+  - Optimisation
 
-## Future Trends
+  ### Interactive Elements
+  - User interfaces
+  - NPC systems
+  - Physics interactions
+  - Network multiplayer
+  - Event systems
 
-### Emerging Technologies
-- AI-assisted development
-- Procedural generation
-- Real-time collaboration
-- Cloud rendering
-- Spatial computing
+  ## Marketplace Integration
 
-### Platform Evolution
-- Low-code options
-- No-code tools
-- AI integration
-- Cross-engine workflows
-- Open standards
+  ### Unity Asset Store
+  - Pre-built assets
+  - Scripts and tools
+  - Complete systems
+  - Templates
+  - Extensions
 
-## Metadata
+  ### Unreal Marketplace
+  - High-quality assets
+  - Blueprint systems
+  - Complete projects
+  - Plugins
+  - Learning resources
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Trends
+
+  ### Emerging Technologies
+  - AI-assisted development
+  - Procedural generation
+  - Real-time collaboration
+  - Cloud rendering
+  - Spatial computing
+
+  ### Platform Evolution
+  - Low-code options
+  - No-code tools
+  - AI integration
+  - Cross-engine workflows
+  - Open standards
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

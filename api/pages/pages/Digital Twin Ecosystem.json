@@ -1,44 +1,51 @@
 {
-  "id": "Digital Twin Ecosystem",
+  "id": "digital-twin-ecosystem",
   "title": "Digital Twin Ecosystem",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-ecosystem-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9877\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Ecosystem\n\t- definition:: The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualization systems working together to create, maintain, and derive value from virtual replicas of physical systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinEcosystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-ecosystem-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Technology Ecosystem]]\n\t\t- enables:: [[System Integration]], [[Cross-Platform Analytics]], [[Enterprise Digital Twins]]\n\t\t- requires:: [[IoT Infrastructure]], [[Cloud Platform]], [[Data Standards]]\n\t\t- related-to:: [[Industrial Metaverse]], [[Smart City]], [[Industry 4.0]]\n- ## Technical Details\n\t- **Industrial Metaverse Market**:\n\t\t- 2024 value: $28.7B\n\t\t- 2029 projection: $228.6B (MarketsandMarkets)\n\t\t- Shift from pilot projects to core operations\n\t- **Ecosystem Components**:\n\t\t- IoT sensors for real-time data collection\n\t\t- Edge computing for low-latency processing\n\t\t- Cloud platforms for analytics and storage\n\t\t- AI/ML for predictive insights\n\t\t- Visualization and simulation engines\n\t- **Smart Building Integration (2024)**:\n\t\t- Commercial metaverse platform integration with IoT sensors\n\t\t- Real-time data relay and environmental visualization\n\t\t- Multi-user collaboration in virtual environments\n\t- **Emerging Trends**: \"Twin of Everything\" concept extending to cities, human organs, weather patterns\n- ## Applications\n\t- Smart building management\n\t- Industrial manufacturing optimization\n\t- Smart city infrastructure\n\t- Healthcare predictive modeling\n\t- Supply chain visibility",
-  "backlinks": [
-    "Digital Twin"
-  ],
+  "content": "- ### Definition\n  - The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems.\n\nbridges-to:: [[Computer Vision]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalTwinEcosystem\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Technology Ecosystem]]\n  - requires:: [[IoT Infrastructure]], [[Cloud Platform]], [[Data Standards]]\n  - enables:: [[System Integration]], [[Cross-Platform Analytics]], [[Enterprise Digital Twins]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Industrial Metaverse Market**:\n\t\t- 2024 value: $28.7B\n\t\t- 2029 projection: $228.6B (MarketsandMarkets)\n\t\t- Shift from pilot projects to core operations\n  - **Ecosystem Components**:\n\t\t- IoT sensors for real-time data collection\n\t\t- Edge computing for low-latency processing\n\t\t- Cloud platforms for analytics and storage\n\t\t- AI/ML for predictive insights\n\t\t- Visualization and simulation engines\n  - **Smart Building Integration (2024)**:\n\t\t- Commercial metaverse platform integration with IoT sensors\n\t\t- Real-time data relay and environmental visualization\n\t\t- Multi-user collaboration in virtual environments\n  - **Emerging Trends**: \"Twin of Everything\" concept extending to cities, human organs, weather patterns\n  - ## Applications\n  - Smart building management\n  - Industrial manufacturing optimization\n  - Smart city infrastructure\n  - Healthcare predictive modeling\n  - Supply chain visibility\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Cross-Platform Analytics",
-    "System Integration",
-    "Industrial Metaverse",
-    "Smart City",
-    "IoT Infrastructure",
-    "Data Standards",
     "Cloud Platform",
-    "metaverse",
-    "Industry 4.0",
+    "Computer Vision",
+    "Cross-Platform Analytics",
+    "Data Standards",
     "Enterprise Digital Twins",
-    "Technology Ecosystem"
+    "IoT Infrastructure",
+    "System Integration",
+    "Technology Ecosystem",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-twin-ecosystem",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalTwinEcosystem",
+    "content_hash": "sha256-12-60470b9a9e7a",
+    "legacy_term_id": "MV-9877",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-twin-ecosystem",
+    "schema_version": "v2",
     "term_id": "MV-9877",
     "preferred_term": "Digital Twin Ecosystem",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalTwinEcosystem",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualization systems working together to create, maintain, and derive value from virtual replicas of physical systems.",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working together to create, maintain, and derive value from virtual replicas of physical systems.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalTwinEcosystem",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalTwinEcosystem",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Technology Ecosystem"
@@ -59,26 +66,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Industrial Metaverse",
-        "Smart City",
-        "Industry 4.0"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

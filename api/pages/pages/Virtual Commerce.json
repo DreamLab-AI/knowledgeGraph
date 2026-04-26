@@ -1,43 +1,50 @@
 {
-  "id": "Virtual Commerce",
+  "id": "virtual-commerce",
   "title": "Virtual Commerce",
-  "content": "- ### OntologyBlock\n  id:: virtual-commerce-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10110\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Commerce\n\t- status:: active\n\t- definition:: An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.\n\t- owl:class:: mv:VirtualCommerce\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Economy]]\n\t\t- related-to:: [[NFT Marketplace]]\n\t\t- related-to:: [[Cryptocurrency]]\n\t\t- related-to:: [[Digital Asset]]\n\t  id:: virtual-commerce-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual commerce (V-commerce) redefines shopping experiences by enabling immersive customer-product interactions within metaverse platforms. The market was valued at USD 12.63 billion in 2023 and is projected to reach USD 368.73 billion by 2032, growing at 44.32% CAGR. McKinsey estimates the metaverse could drive $5 trillion in value creation by 2030 as consumers increasingly seek immersive purchasing experiences.\n- ## Technical Details\n\t- ### Key Technologies\n\t\t- **Augmented Reality (AR)**: Virtual try-ons and product visualization\n\t\t- **Virtual Reality (VR)**: Immersive shopping environments\n\t\t- **Blockchain**: Secure transactions and digital asset ownership\n\t\t- **AI Personalization**: Intelligent shopping assistants and recommendations\n\t- ### Commerce Models\n\t\t- Virtual storefronts in platforms like Decentraland and Roblox\n\t\t- NFT-based digital collectibles and fashion items\n\t\t- Social commerce with collaborative shopping\n\t\t- Hybrid physical-digital product offerings\n\t- ### 2024 Developments\n\t\t- Meta AI-powered virtual shopping assistants (February 2024)\n\t\t- Amazon blockchain-based virtual store expansion (March 2024)\n\t\t- Microsoft metaverse retail solutions launch (April 2024)\n- ## Applications\n\t- Virtual try-ons for fashion and cosmetics\n\t- 3D product visualization and home staging\n\t- Brand experiences and exclusive virtual events\n\t- NFT marketplace transactions\n\t- Social shopping with friends and influencers",
+  "content": "- ### Definition\n  - An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualCommerce\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Economy]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual commerce (V-commerce) redefines shopping experiences by enabling immersive customer-product interactions within metaverse platforms. The market was valued at USD 12.63 billion in 2023 and is projected to reach USD 368.73 billion by 2032, growing at 44.32% CAGR. McKinsey estimates the metaverse could drive $5 trillion in value creation by 2030 as consumers increasingly seek immersive purchasing experiences.\n  - ## Technical Details\n  - ### Key Technologies\n\t\t- **Augmented Reality (AR)**: Virtual try-ons and product visualization\n\t\t- **Virtual Reality (VR)**: Immersive shopping environments\n\t\t- **Blockchain**: Secure transactions and digital asset ownership\n\t\t- **AI Personalization**: Intelligent shopping assistants and recommendations\n  - ### Commerce Models\n\t\t- Virtual storefronts in platforms like Decentraland and Roblox\n\t\t- NFT-based digital collectibles and fashion items\n\t\t- Social commerce with collaborative shopping\n\t\t- Hybrid physical-digital product offerings\n  - ### 2024 Developments\n\t\t- Meta AI-powered virtual shopping assistants (February 2024)\n\t\t- Amazon blockchain-based virtual store expansion (March 2024)\n\t\t- Microsoft metaverse retail solutions launch (April 2024)\n  - ## Applications\n  - Virtual try-ons for fashion and cosmetics\n  - 3D product visualization and home staging\n  - Brand experiences and exclusive virtual events\n  - NFT marketplace transactions\n  - Social shopping with friends and influencers\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Goods",
-    "Cross Metaverse Commerce",
     "Stablecoin",
     "Metaverse",
     "Digital Economy",
     "Digital Real Estate"
   ],
   "wiki_links": [
-    "NFT Marketplace",
-    "Cryptocurrency",
-    "Digital Asset",
-    "metaverse",
-    "Virtual Economy"
+    "Virtual Economy",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-commerce",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualCommerce",
+    "content_hash": "sha256-12-745ec8278e5e",
+    "legacy_term_id": "MV-10110",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-commerce",
+    "schema_version": "v2",
     "term_id": "MV-10110",
     "preferred_term": "Virtual Commerce",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualCommerce",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualCommerce",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualCommerce",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Economy"
@@ -50,26 +57,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "NFT Marketplace",
-        "Cryptocurrency",
-        "Digital Asset"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

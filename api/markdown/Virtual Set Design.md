@@ -1,51 +1,70 @@
-- ### OntologyBlock
-  id:: virtual-set-design-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10145
-	- source-domain:: mv
-	- preferred-term:: Virtual Set Design
-	- status:: active
-	- definition:: The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.
-	- owl:class:: mv:VirtualSetDesign
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Production Design]]
-		- related-to:: [[LED Volume]]
-		- related-to:: [[Virtual Production VP]]
-		- related-to:: [[Virtual Art Department]]
-	  id:: virtual-set-design-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual set design enables the creation of dynamic digital environments displayed on massive LED walls, replacing traditional green screens with reactive, real-time backgrounds. Productions can quickly change scenes to meet real-time shooting needs without limitations of weather, light, or physical construction. LED wall technology creates unique and infinite environments with real-time stage changes, controlled light and color, and immersive actor experiences.
-- ## Technical Details
-	- ### Design Process
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualSetDesign
+uri:: urn:visionclaw:concept:spatial-computing:virtual-set-design
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-set-design
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Set Design
+content-hash:: sha256-12-4ffbf719272f
+legacy-term-id:: MV-10145
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The creation of digital environments and backgrounds for film, television, and broadcast production using 3D modeling, game engines, and LED wall technology, enabling dynamic digital sets that can be modified in real-time during filming to replace or augment physical set construction.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualSetDesign
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Production Design]]
+  - bridges-to:: [[Computer Vision]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual set design enables the creation of dynamic digital environments displayed on massive LED walls, replacing traditional green screens with reactive, real-time backgrounds. Productions can quickly change scenes to meet real-time shooting needs without limitations of weather, light, or physical construction. LED wall technology creates unique and infinite environments with real-time stage changes, controlled light and color, and immersive actor experiences.
+  - ## Technical Details
+  - ### Design Process
 		- **3D Modeling**: Environment creation in DCC tools and game engines
 		- **Asset Library**: Reusable props, textures, and environmental elements
 		- **Lighting Integration**: Virtual lights matching physical set illumination
 		- **Perspective Matching**: Camera tracking for parallax accuracy
-	- ### Technical Requirements
+  - ### Technical Requirements
 		- **LED Panel Specifications**: ROE Visual panels support up to 144 fps
 		- **Tracking Systems**: Inside-out or outside-in camera tracking
 		- **Real-Time Rendering**: Game engine performance optimization
 		- **Color Calibration**: LED wall color accuracy for realistic lighting
-	- ### Cost Considerations
+  - ### Cost Considerations
 		- Small projects (10-20 sqm): $50,000-$100,000
 		- Medium projects (30-50 sqm): $100,000-$250,000
 		- Large studio installations: $250,000+
 		- Rental options for production-specific needs
-	- ### Integration Challenges
+  - ### Integration Challenges
 		- Lighting interaction between virtual and physical elements
 		- Tracking marker placement and calibration
 		- LED panel refresh rate synchronization
 		- Color matching between panels and physical set pieces
-- ## Applications
-	- Feature film and television production
-	- Variety shows and entertainment programming
-	- Commercial and advertising production
-	- Music video creation
-	- Live broadcast and news production
-	- CBS Sports broadcast content using robotic camera systems
+  - ## Applications
+  - Feature film and television production
+  - Variety shows and entertainment programming
+  - Commercial and advertising production
+  - Music video creation
+  - Live broadcast and news production
+  - CBS Sports broadcast content using robotic camera systems
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

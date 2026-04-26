@@ -1,13 +1,36 @@
+iri:: http://narrativegoldmine.com/ontology#StableDiffusion
+uri:: urn:visionclaw:concept:artificial-intelligence:stable-diffusion
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:stable-diffusion
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Stable Diffusion
+content-hash:: sha256-12-2f10e6168fa6
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page automatically published
-- Stable Diffusion has emerged as a transformative force in generative AI, mainly for text to image synthesis. This open source model was developed by UK company 'Stability AI', has democratised access to high quality image workflows, empowering artists, creatives, and professionals.
-- # Why Stable Diffusion?
-  id:: 66408f9e-30e0-442b-9aba-9eb51e36a739
-	- ## Image, Video and 3D
+- ### Definition
+  - Stable Diffusion is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:StableDiffusion
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - #Public page automatically published
+  - Stable Diffusion has emerged as a transformative force in generative AI, mainly for text to image synthesis. This open source model was developed by UK company 'Stability AI', has democratised access to high quality image workflows, empowering artists, creatives, and professionals.
+  - # Why Stable Diffusion?
 		- [[Stable Diffusion]] and [[Stable Video Diffusion]] allow a lot of control, but at a cost of complexity.
-		  collapsed:: true
-		- ## Stable Diffusion 1.5, XL, and 3
 			- UK company with global impact. It is likely now winding up it's operations after difficulty generating revenue in the hyper competitive GenAI market.
 				- **Introduction**: Open-source model by StabilityAI
 					- **Cost**: Free to run on own hardware; nominal fee for online tools.
@@ -15,23 +38,18 @@ public:: true
 					- **Strengths**: Unlimited control, good image quality, no censorship.
 					- **Weaknesses**: Requires decent hardware, steep learning curve. Questions about Stability business.
 					- **Skill Level**: Intermediate to advanced.
-			- ### Text-to-Image Generation
 				- Stable Diffusion generates realistic and imaginative images from descriptive text prompts. This core functionality allows users to translate their creative visions into visual form with remarkable accuracy and detail. Whether it's a photorealistic portrait, a surreal landscape, or an abstract concept, Stable Diffusion can bring your ideas to life with just a few words.
 				- A lot of the products you see on the market are either wrappers for the big AI companies, or else leveraging Stability models on rented cloud compute.
 					- ![ComfyUI_temp_exgja_00013_.png](../assets/ComfyUI_temp_exgja_00013_1702592236908_0.png){:width 800}
 					- ![Rife_00027.mp4](../assets/Rife_00027_1702831574413_0.mp4){:width 300}
-	- ## Open Source
 		- Stable Diffusion's open-source nature sets it apart from many other generative AI models.
 		- Users have free access to the model's weights and a lot of modular code, allowing them to modify, distribute, and build upon it.
 		- This openness fosters collaboration, innovation, and community driven development.
 		- Ensures that the technology is not controlled by a select few entities.
 		- For brands and private companies this allows private development of digital assets.
-	- ## User Friendly Interfaces
 		- Platforms like [Leonardo.AI](https://leonardo.ai/), [RunDiffusion](https://rundiffusion.com/) and [Automatic1111's WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui) provide intuitive and user friendly interfaces for interacting with Stable Diffusion.
-		- ### Rundiffusion
 			- <iframe src="https://rundiffusion.com/" style="width: 800px; height: 600px"></iframe>
 		- These interfaces offer a range of options for customizing parameters, fine tuning models, and experimenting with different artistic styles.
-	- ### Customisation
 		- Stable Diffusion's flexibility extends to its ability to be fine-tuned on custom datasets.
 		- Techniques like  [[KOHYA Dreambooth and similar]] and  [[LoRA DoRA etc]] training   allow users to tailor the model to their specific needs and generate images that align with their unique artistic visions or domain-specific requirements.
 		  :LOGBOOK:
@@ -41,7 +59,6 @@ public:: true
 		- This opens up a world of possibilities for creating personalised images,
 			- Generating images of specific objects or individuals,
 			- Developing models for specialised domains like  [[Fashion]]  or architectural design.
-	- ### Community Support
 		- One of Stable Diffusion's greatest strengths is its vibrant and active community.
 		- Much of this happens on Discord and Reddit
 			- [(1832) Discord | #ad_resources | banodoco](https://discord.com/channels/1076117621407223829/1149372684220768367)
@@ -53,83 +70,61 @@ public:: true
 			- This collaborative environment fosters learning, inspiration, and rapid innovation
 		- <iframe src="https://openaijourney.com/comfyui-guide/" style="width: 800px; height: 600px"></iframe>
 		- <iframe src="https://comfyworkflows.com" style="width: 900px; height: 600px"></iframe>
-	- ## Core Models
 		- ~~Stable Diffusion 1.4~~
-		- ### Stable Diffusion 1.5
 			- [Available on GitHub](https://github.com/CompVis/stable-diffusion), this model is optimized for speed and efficiency,
 			- Suitable for generating images quickly, especially on less powerful hardware.
 			- Highest model diversity
 		- ~~Stable Diffusion 2.1~~
-		- ### SDXL
 			- Higher resolution, better prompt control
 			- Will often mess up human bodies due to constrained training
 			- More resource intensive
 			- Less compatible extensions
-		- ### CosXL
 			- Likely the last update from the team, most of whom have left following the departure of founder [Emad Mostaque](https://en.wikipedia.org/wiki/Emad_Mostaque).
 			- This is a "best practice" update to SDXL which allows higher contrast.
-		- ### Zero123 & SV3D
 			- {{video https://youtu.be/gl1s7f0mV2E?t=677}}
-		- ### ~~Stable Cascade~~
 			- Only a partial release.
 			- Not great adoption.
 			- Better prompt adherence.
-		- ### Stable Diffusion 3
 			- [Temporary Stable Diffusion 3 Ban | Civitai](https://civitai.com/articles/5732/temporary-stable-diffusion-3-ban)
 			- Might be ok in the end.
 			- Whole new architecture.
 			- Excellent prompt following.
 			- Terrible human anatomy.
-	- # Community models
+  - # Community models
 		- Models and inspiration from CivitAI, which is very often "not safe for work" so do exercise caution.
 			- <iframe src="https://civitai.com/images" style="width: 100%; height: 600px"></iframe>
-- ### Prompt Engineering: The Art of Guiding AI Creativity
-	- Effective prompt engineering is crucial for unlocking the full potential of Stable Diffusion. Different models demand different styles
-	- Here are some tips to enhance your prompts:
-		- #### Specificity:
+  - Effective prompt engineering is crucial for unlocking the full potential of Stable Diffusion. Different models demand different styles
+  - Here are some tips to enhance your prompts:
 			- Use specific keywords and descriptive phrases to clearly convey your desired image to the AI model.
 			- The more precise and detailed your prompt, the better the model can understand your intent and generate images that match your vision.
-		- #### Negative Prompts:
 			- Utilize negative prompts to exclude unwanted elements or styles from the generated image.
 			- This allows you to refine the output and avoid generating images with undesirable features.
-		- #### Compositional Control:
 			- Employ prompt scheduling and area prompting to create complex compositions and focus on specific details.
 			- These techniques allow you to control the timing and location of different elements within the image, resulting in more intricate and visually compelling outputs.
-		- #### Extensions:
 			- Leverage extensions like "Test My Prompt" to understand the impact of each word in your prompt and refine your wording for better results. This extension helps you analyse how the model interprets different words and phrases, allowing you to optimize your prompts for the desired outcome.
-		- #### Experimentation:
 			- Don't be afraid to experiment with different models, fine tuning techniques, and prompt styles to discover new possibilities and achieve your desired artistic outcomes.
 			- The beauty of Stable Diffusion lies in its flexibility and the endless creative potential it offers.
-- ### Applications Across Industries:
-	- Stable Diffusion's versatility has led to its adoption across various industries:
-		- #### Digital Art Creation:
+  - Stable Diffusion's versatility has led to its adoption across various industries:
 			- Artists are using Stable Diffusion to create stunning and innovative digital artworks, pushing the boundaries of artistic expression and exploring new creative frontiers.
 			  Concept Visualization:
-		- #### Designers and engineers
 			- Use Stable Diffusion to quickly generate visual representations of their ideas, facilitating rapid prototyping and concept development. This allows for faster iteration and improved communication within design teams.
 			  Character Design:
-		- #### Game developers and animators
 			- Leverage Stable Diffusion to create unique and memorable characters, streamlining the design process and reducing the time and resources required for character creation.
 			  Illustration:
-		- #### Illustrators
 			- Can use Stable Diffusion to generate high-quality illustrations for books, magazines, and other media, offering a faster and more efficient way to produce visually compelling artwork.
-		- #### Virtual Production:
 			- Filmmakers and VFX artists can use Stable Diffusion to generate realistic backgrounds and environments for virtual production shoots, offering a cost-effective and efficient alternative to traditional green screen techniques.
-- ### Addressing Hardware Limitations:
   While Stable Diffusion requires a decent GPU for optimal performance, several solutions are emerging to address hardware limitations:
   Cloud-based Solutions: Platforms like [RunDiffusion](https://app.rundiffusion.com/)
-- https://www.forbes.com/sites/iainmartin/2024/03/20/key-stable-diffusion-researchers-leave-stability-ai-as-company-flounders/
+  - https://www.forbes.com/sites/iainmartin/2024/03/20/key-stable-diffusion-researchers-leave-stability-ai-as-company-flounders/
   Stable diffusion is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-- ## Stable diffusion
-	- is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
-	- [Illustrated overview](https://jalammar.github.io/illustrated-stable-diffusion/)
-	- Stable diffusion XL muse GPT [Stable Diffusion Muse SDXL GPT Prompt Generator | Civitai](https://civitai.com/articles/2928/stable-diffusion-muse-sdxl-gpt-prompt-generator)
-	- [Automatic1111 GUI and user guide](https://www.thosesixfaces.com/post/stable-diffusion-getting-started-windows)
-	- [citivia browser](https://github.com/Vetchems/sd-civitai-browser)
-	- [Automatic WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
-	- Vlads next SD
-	- [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
-	- ### Prompt engineering links
+  - is a company that specializes in developing advanced artificial intelligence models. They are known for their expertise in creating generative models, which are capable of producing high-quality and realistic outputs in various domains such as image synthesis, language generation, and music composition. Stable Diffusion's cutting-edge research and innovative approaches have made significant contributions to the field of generative AI.
+  - [Illustrated overview](https://jalammar.github.io/illustrated-stable-diffusion/)
+  - Stable diffusion XL muse GPT [Stable Diffusion Muse SDXL GPT Prompt Generator | Civitai](https://civitai.com/articles/2928/stable-diffusion-muse-sdxl-gpt-prompt-generator)
+  - [Automatic1111 GUI and user guide](https://www.thosesixfaces.com/post/stable-diffusion-getting-started-windows)
+  - [citivia browser](https://github.com/Vetchems/sd-civitai-browser)
+  - [Automatic WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui)
+  - Vlads next SD
+  - [InvokeAI simple interface](https://invoke-ai.github.io/InvokeAI/)
 		- https://phraser.tech/
 		- [Artist keywords that are known to work](https://docs.google.com/document/d/1SaQx1uJ9LBRS7c6OsZIaeanJGkUdsUBjk9X4dC59BaA/edit#)
 		- https://promptomania.com/stable-diffusion-prompt-builder/
@@ -139,11 +134,9 @@ public:: true
 		- [public prompts guy](https://publicprompts.art/)
 		- [Promptimize testing suite for prompts](https://github.com/preset-io/promptimize)
 		- [Photoshop plugin](https://christiancantrell.com/#ai-ml)
-	- ### Dreambooth retraining for faces
 		- [windows instructions](https://pastebin.com/xcFpp9Mr)
 		- [Discord server](https://discord.com/channels/1023277529424986162/)
 		- [dreambooth for SD2](https://github.com/nitrosocke/dreambooth-training-guide/blob/main/README.md#how-to-fine-tune-stable-diffusion-20)
-	- ### Birme image resizer
 		- [2 hour tutorial](https://www.youtube.com/watch?v=Bdl-jWR3Ukc&t=34)
 		- [inject your face into any model (dreambooth)](https://www.youtube.com/watch?v=s25hcW4zq4M)
 		- [Guide for dreambooth](https://github.com/nitrosocke/dreambooth-training-guide)
@@ -190,7 +183,7 @@ public:: true
 		- [Photorealism](https://www.reddit.com/r/StableDiffusion/comments/11u2p0u/lazy_guide_to_photorealistic_images/)
 		- [sdtools image v 1.6](https://www.reddit.com/r/StableDiffusion/comments/127gck9/sdtools_v16/)
 		- [Character plugin](https://github.com/alexv0iceh/AutoChar)
-	- [[Checkpoints]]
+  - [[Checkpoints]]
 		- [Stability specific tools](https://sdtools.org/)
 		- Arible Prompt Database https://www.arible.co/prompts
 		- [[Guide] Make your own Loras, easy and free | Stable Diffusion Other | Civitai: You don't need to download anything, this is a guide with online tools. Click "Show more" below.](https://civitai.com/models/22530)
@@ -220,7 +213,6 @@ public:: true
 		- [Interactive photo manipulation GAN](https://huggingface.co/papers/2305.10973)
 		- [3d plugin for Automatic1111](https://github.com/jtydhr88/sd-webui-3d-editor)
 		- [Face replace plugin for automatic](https://github.com/Gourieff/sd-webui-roop-nsfw)
-		- ## Images
 			- [Colour palette extraction](https://github.com/mattdesl/gifenc)
 			- [Text based real time image manipulation](https://arxiv.org/abs/2210.09276)
 			- [Sketch guided text to image inference](https://sketch-guided-diffusion.github.io/)
@@ -334,3 +326,41 @@ public:: true
 			- [[Controlnet and similar]] [[Stable Diffusion]] [xinsir/controlnet-union-sdxl-1.0 · Hugging Face]
 			- [[AI Video]] [(1865) Discord | "Steerable Motion 1.4 - now with unlimited input frames! (+ minor optimisations)" | banodoco](https://discord.com/channels/1076117621407223829/1234280186892259368) [[Stable Diffusion]] [[Stable Video Diffusion]]
 			- (https://huggingface.co/xinsir/controlnet-union-sdxl-1.0)
+
+  - ## Image, Video and 3D
+		- ## Stable Diffusion 1.5, XL, and 3
+			- ### Text-to-Image Generation
+  - ## Open Source
+  - ## User Friendly Interfaces
+		- ### Rundiffusion
+  - ### Customisation
+  - ### Community Support
+  - ## Core Models
+		- ### Stable Diffusion 1.5
+		- ### SDXL
+		- ### CosXL
+		- ### Zero123 & SV3D
+		- ### ~~Stable Cascade~~
+		- ### Stable Diffusion 3
+  - ### Prompt Engineering: The Art of Guiding AI Creativity
+		- #### Specificity:
+		- #### Negative Prompts:
+		- #### Compositional Control:
+		- #### Extensions:
+		- #### Experimentation:
+  - ### Applications Across Industries:
+		- #### Digital Art Creation:
+		- #### Designers and engineers
+		- #### Game developers and animators
+		- #### Illustrators
+		- #### Virtual Production:
+  - ### Addressing Hardware Limitations:
+  - ## Stable diffusion
+  - ### Prompt engineering links
+  - ### Dreambooth retraining for faces
+  - ### Birme image resizer
+		- ## Images
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

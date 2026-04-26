@@ -1,34 +1,54 @@
+iri:: http://narrativegoldmine.com/infrastructure#HardwareAndEdge
+uri:: urn:visionclaw:concept:infrastructure:hardware-and-edge
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:hardware-and-edge
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Hardware and Edge
+content-hash:: sha256-12-b731f908cea8
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-	- #Public page automatically published
-- # Wearables
-	- ### Orion
+- ### Definition
+  - Hardware and Edge is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:HardwareAndEdge
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - #Public page automatically published
+  - # Wearables
 		- [Zero to One: How Our Custom Silicon & Chips Are Revolutionizing AR | Meta Quest Blog | Meta Store](https://www.meta.com/en-gb/blog/orion-custom-silicon-chips-ip-blocks-accelerators-ar-algorithms-energy-efficiency-reality-labs/)
-	- ### Meta Ray Bans
 		- ![rbm-plp-hero-d-data.mp4](../assets/rbm-plp-hero-d-data_1718993826789_0.mp4)
 		- The Meta Ray-Ban smart glasses, developed in partnership with EssilorLuxottica, offer a range of advanced features in a [stylish form factor](https://about.fb.com/news/2023/09/new-ray-ban-meta-smart-glasses/). Here's a technical overview:
-		- #### Hardware
 			- Camera: 12 MP ultra-wide camera for photos and 1080p video recording
 			- Processor: Qualcomm Snapdragon AR1 Gen1 Platform
 			- Audio: Custom-designed speakers with improved bass and directional audio
 			- Microphones: Five-microphone array for immersive audio recording
 			- Battery: Redesigned charging case with up to 36 hours of total use
-		- #### Key Features
 			- Hands-free photo and video capture
 			- Live streaming to Facebook and Instagram
 			- Voice commands for various functions
 			- Open-ear audio for music and calls
 			- Water-resistant (IPX4 rating)
 			- Integration with Meta AI assistant
-		- #### Design
 			- Available in Wayfarer and new Headliner styles
 			- Multiple color options, including transparent frames
 			- Prescription-lens compatible
 			- Reduced weight and slimmer profile for improved comfort
-	- The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of **all** of this stuff. VR is still very poorly adopted and unloved, given the investment.
-	- To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
-	- ### [Rabbit](https://www.rabbit.tech/)
-	  id:: 659e5979-c2de-4138-b2df-ede79790ee6d - 🟢 **Description:** A pocket companion that mediates between the user and all their other web services
+  - The Meta Ray-Ban smart glasses have been well-received, with reports indicating that around 1 million units have been shipped since their launch. To be clear, this modality of vision AR and AI is the future of **all** of this stuff. VR is still very poorly adopted and unloved, given the investment.
+  - To reach this Meta is developing full AR glasses codenamed Orion, [slated for release in 2027](https://www.theverge.com/2023/2/28/23619730/meta-vr-oculus-ar-glasses-smartwatch-plans). These glasses are designed to work in tandem with a neural interface wristband, allowing for gesture-based control and potentially revolutionizing how we interact with digital content in the physical world.
 		- **Features:**
 			- Designed by Teenage Engineering Co
 			- Agentic (connect it to your data and it does stuff)
@@ -37,12 +57,9 @@ public:: true
 			- It's **cheap**, I would totally give this to a kid over a mobile phone. £200 all in?!?
 			- It sold out immediately.
 			- {{tweet https://twitter.com/rabbit_hmi/status/1744781083831574824}}
-			-
-- # Neural Interfaces
-	- ## EMG Wristbands
+  - # Neural Interfaces
 		- Meta's EMG wristbands use electromyography to interpret electrical signals from the brain that control hand movements[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands). This technology allows for seamless and precise interactions with digital objects in virtual and augmented reality environments without the need for external cameras or sensors[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).The wristbands contain embedded sensors that capture subtle electrical signals transmitted from the brain to the hands. These signals are then translated into precise commands, enabling real-time interaction with virtual environments[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
 		- [Meta are Enhancing VR Experiences with Neural Wristbands](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands)
-		- ### Key Features and Benefits
 			- **Precision and Intuitiveness**: The EMG technology can detect even the tiniest muscle movements, allowing for fluid and responsive interactions in VR and AR[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
 			- **Non-Invasive**: The wristbands offer a non-invasive way to capture neural signals, making the technology more accessible and user-friendly[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
 			- **Versatility**: The wristbands can be used for various applications, from simple object recognition to fully immersive environments[1](https://blogs.expandreality.io/meta-are-enhancing-vr-experiences-with-neural-wristbands).
@@ -52,10 +69,8 @@ public:: true
 				- D-pad-like gestures
 				- Simple hand movements[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/)
 			- While these inputs are currently limited, Meta's CTO Andrew Bosworth suggests that the technology could evolve to become an increasingly universal interface over time[2](https://mixed-news.com/en/bosworth-on-emg-wristband-as-quest-controller/).
-- # Smart Rings - sticky sensor tech
-	- [We tested six smart rings, and there’s a clear winner - The Verge](https://www.theverge.com/2024/10/1/24259284/oura-ring-samsung-galaxy-ring-ultrahuman-ring-air-ringconn-circular-ring-evie-ring-review-wearables)
-	-
-	- ### Oura Smart Ring
+  - # Smart Rings - sticky sensor tech
+  - [We tested six smart rings, and there’s a clear winner - The Verge](https://www.theverge.com/2024/10/1/24259284/oura-ring-samsung-galaxy-ring-ultrahuman-ring-air-ringconn-circular-ring-evie-ring-review-wearables)
 		- **Description**: A ring that tracks overall health, focusing on sleep quality, activity levels, and readiness. Finland, not new, fairly mature.
 		- **Features**:
 			- Sleep tracking with detailed stages
@@ -64,9 +79,7 @@ public:: true
 			- 7-day battery life
 			- Waterproof and sleek design
 		- **AI Aspect**: Employs AI to analyze data and provide personalized health insights and recommendations.
-	- ### Amazfit Smart Ring
 		- {{tweet https://twitter.com/AmazfitGlobal/status/1745524225589547012}}
-	- ### Rewind Pendant
 		- **Description**: A wearable device designed to aid memory by passively capturing audio throughout the day.
 		- **Features**:
 			- Auto-records ambient sound
@@ -74,7 +87,6 @@ public:: true
 			- Lightweight and can be worn as a necklace
 			- Integrates with an app for audio playback
 		- **AI Aspect**: Uses AI to intelligently capture and categorize important sound bites.
-	- ### Humane Ai Pin
 		- [twitter link to the render loading below](https://twitter.com/jaredostdiek/status/1768674773389713645)
 		  {{twitter https://twitter.com/jaredostdiek/status/1768674773389713645}}
 		- **Description**: A wearable device focused on interaction and connectivity, emphasizing humane and natural tech usage.
@@ -86,7 +98,6 @@ public:: true
 		- **AI Aspect**: Integrates AI for intuitive interactions and ambient computing.
 		- This attempt at a wearable has been roundly panned by early adopters and reviewers.
 			- {{video https://www.youtube.com/watch?v=TitZV6k8zfA}}
-	- ### Apollo Neuro
 		- **Description**: A wearable wellness device that uses touch therapy to help the body adapt to stress.
 		- **Features**:
 			- Delivers gentle vibrations to improve stress resilience
@@ -94,7 +105,6 @@ public:: true
 			- Wearable on the wrist or ankle
 			- App-controlled
 		- **AI Aspect**: Utilizes AI to personalize and adapt therapy based on user feedback and usage patterns.
-	- ### Pavlok 3
 		- **Description**: A behavior modification wearable that uses mild electric shock to help break bad habits. (weird)
 		- **Features**:
 			- Delivers a mild shock to discourage bad habits
@@ -102,7 +112,6 @@ public:: true
 			- Programmable via an app
 			- Community challenges and support
 		- **AI Aspect**: Utilizes AI to learn patterns and optimize intervention timing.
-	- ### Yopi
 		- **Description**: A voice-based wellness coach focused on improving breathing and reducing stress.
 		- **Features**:
 			- Monitors breathing patterns
@@ -110,7 +119,6 @@ public:: true
 			- Portable and pairs with smartphones
 			- Focus on breathing exercises and meditation
 		- **AI Aspect**: Uses AI to customize breathing exercises and track progress.
-	- ### ChatGPT (and whatever Siri becomes) is coming to watches
 		- **Description**: A concept of smartwatches integrated with AI for interactive and adaptive communication.
 		- **Features**:
 			- Voice and text-based interaction with AI
@@ -119,26 +127,24 @@ public:: true
 			- Continuous updates and learning capabilities
 		- **AI Aspect**: Incorporates a conversational AI model for real-time communication and assistance.
 		- [Translation earbuds |Translator | language translation device – Mymanu®](https://mymanu.com/) -
-- # Open Source
-	- [ADeus](https://github.com/adamcohenhillel/ADeus?tab=readme-ov-file#setup-hardware---coral-ai-device)
+  - # Open Source
+  - [ADeus](https://github.com/adamcohenhillel/ADeus?tab=readme-ov-file#setup-hardware---coral-ai-device)
 		- **Description**: An open source AI wearable device that captures what you say and hear in the real world and then transcribes and stores it on your own server. You can then chat with Adeus using the app, and it will have all the right context about what you want to talk about
 		- a truly personalized, personal AI.
-	- [OwlAIProject/Owl: A personal wearable AI that runs locally (github.com)](https://github.com/OwlAIProject/Owl)
+  - [OwlAIProject/Owl: A personal wearable AI that runs locally (github.com)](https://github.com/OwlAIProject/Owl)
 		- **Owl** is an experiment in human-computer interaction using wearable devices to observe our lives and extract information and insights from them using AI. Presently, only audio and location are captured, but we plan to incorporate vision and other modalities as well. The objectives of the project are, broadly speaking:
-	- [Hey Ollama](https://www.reddit.com/r/LocalLLaMA/comments/1b9hwwt/hey_ollama_home_assistant_ollama/)
+  - [Hey Ollama](https://www.reddit.com/r/LocalLLaMA/comments/1b9hwwt/hey_ollama_home_assistant_ollama/)
 		- For HA<->Ollama: [https://github.com/jekalmin/extended_openai_conversation](https://github.com/jekalmin/extended_openai_conversation)
 		- Hardware: [https://www.espressif.com/en/news/ESP32-S3-BOX-3](https://www.espressif.com/en/news/ESP32-S3-BOX-3)
 		- [https://github.com/ollama/ollama/blob/main/docs/openai.md](https://github.com/ollama/ollama/blob/main/docs/openai.md)
 		- [https://github.com/kahrendt/microWakeWord/issues/2](https://github.com/kahrendt/microWakeWord/issues/2)
 		- [https://github.com/jaymunro/esphome_firmware/blob/main/wake-word-voice-assistant/esp32-s3-box-3.yaml](https://github.com/jaymunro/esphome_firmware/blob/main/wake-word-voice-assistant/esp32-s3-box-3.yaml)
 		- Actually you can do full two way conversations! Here's a PR someone has in progress to officially add it to esphome - [https://github.com/esphome/firmware/pull/173](https://github.com/esphome/firmware/pull/173)
-	- [AI in a Box (crowdsupply.com)](https://www.crowdsupply.com/useful-sensors/ai-in-a-box)
+  - [AI in a Box (crowdsupply.com)](https://www.crowdsupply.com/useful-sensors/ai-in-a-box)
 		- ```Your very own private AI that you can ask questions and get answers, all in a tiny box! The first AI that you can talk to, and that talks back, **running locally with no internet connection** so your conversations and data are completely secure. No account, setup, or subscription are needed, just plug in the box and start chatting. Need closed captions for a live event, or just to help in situations where you have trouble hearing a conversation? We’re using the latest in AI technology to display subtitles based on the audio input, which are output on the built-in display and through an HDMI connector for external monitors or screens.```
-		  id:: 65d5d2b5-36a9-4cac-8efe-18bb9e2559d4
 		- [usefulsensors/useful-transformers: Efficient Inference of Transformer models (github.com)](https://github.com/usefulsensors/useful-transformers)
 		- ![](https://www.crowdsupply.com/img/6605/75c87a10-e0cc-4acf-9f3b-6c498c986605/useful-sensors-ai-box-ready_jpg_md-xl.jpg) -
-- # Phones
-	- ## Samsung Galaxy S24 Series Local AI Inferencing Features
+  - # Phones
 		- Live Translate for real-time voice and text translations directly within the phone app, functioning without the need for an internet connection.
 		- Chat Assist in Samsung Keyboard for real-time translation in 13 languages, enabling on-device translation for messages.
 		- Android Auto's capability to summarize messages and suggest relevant replies, powered by on-device AI, for safer driving experiences.
@@ -146,12 +152,10 @@ public:: true
 		- Transcript Assist uses on-device AI for transcribing and summarizing voice recordings, identifying different speakers and translating content.
 		- Edit Suggestion feature that uses on-device AI to suggest photo edits, enhancing the photography experience without the need for server processing.
 		- Generative Edit for intelligently filling in parts of an image background, providing users with AI-powered content creation tools.
-	- ## Google sub second inferencing on a phone.
 		- [Paper page
 		- MobileDiffusion: Subsecond Text-to-Image Generation on Mobile Devices (huggingface.co)](https://huggingface.co/papers/2311.16567)
--
-- # Training and inferencing hardware
-	- Chips and [[Hardware and Edge]] technologies are rapidly advancing to support the growing demands of artificial intelligence applications.
+  - # Training and inferencing hardware
+  - Chips and [[Hardware and Edge]] technologies are rapidly advancing to support the growing demands of artificial intelligence applications.
 		- For more insights on this topic, visit [Etched](http://etched.com).
 		- [Cristiano Amon: generative AI is ‘evolving very, very fast’ into mobile devices (FT.com)](https://www.ft.com/content/dbc0984b-4801-4aeb-bcab-480704c34161) highlights the necessity for dedicated computing resources in mobile devices.
 			- As Amon explains, while tasks can be executed on a CPU or GPU, these processors are often preoccupied with other functions. This multitasking can hinder performance when running complex AI algorithms.
@@ -179,20 +183,19 @@ public:: true
 		- [TPU v4 matrix multiplier](https://cloud.google.com/blog/topics/systems/tpu-v4-enables-performance-energy-and-co2e-efficiency-gains)
 		- [Tinygrad tinybox](https://github.com/geohot/tinygrad/blob/master/docs/showcase.md#stable-diffusion)
 		- [Snapdragon 8 inference](https://www.phonescoop.com/articles/article.php?a=22911) Qualcomm has launched its latest flagship chip, the Snapdragon 8 Gen 2, which is expected to power most Android smartphones next year. The new chip is more power-efficient and powerful compared to its predecessor Gen 1, and features significant improvements and new features in AI. The new Qualcomm AI engine offers an AI performance improvement of up to 4.35x and up to 60% better power efficiency. There is a new direct link between the Hexagon AI cores and the Spectra imaging cores, providing real-time semantic segmentation, and the Sensing Hub has two AI processors and more memory for smarter always-on features. The Kryo CPU cores have also been updated, with four performance cores and three efficiency cores, optimising them for legacy 32-bit apps. On the GPU side, the new Adreno cores support hardware-accelerated raytracing and Unreal Engine 5's Metahumans technology. The X70 modem supports 4-carrier aggregation for downlink speeds of up to 10 Gbps, while the onboard FastConnect 7800 system is the first to support Wi-Fi 7 with High Band Simultaneous Multi-Link. https://www.phonescoop.com/articles/article.php?a=22911
-- # Consumer Hardware
-	- [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
-	- [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
-	-
-- **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
-- # HCI and interfaces
-	- [Doublepoint launches gesture-touch tech for wearable devices | VentureBeat](https://venturebeat.com/games/doublepoint-launches-gesture-touch-tech-for-wearable-devices/)
-	- [Meta's wrist reader](https://www.from-the-interface.com/wrist-interfaces/)
-- # Edge
-	- Edge compute refers to the practice of processing and analyzing data as close to the source as possible, which is typically at the edge of a network. This approach aims to reduce latency and network congestion by performing computations and running applications on devices such as sensors, gateways, or edge servers located near the data source. By moving computational tasks closer to where the data is generated, edge compute enables real-time and low-latency decision-making.
-	- Edge AI, also known as AI at the edge or on-device AI, refers to the deployment of artificial intelligence and machine learning algorithms on edge devices. By bringing AI capabilities closer to the data source, Edge AI eliminates the need to transmit large volumes of data to the cloud for processing. This approach enables real-time inference and decision-making directly on devices with limited computing resources, such as smartphones, drones, or IoT devices. Edge AI has several advantages, including reduced latency, improved privacy and security, offline functionality, and the ability to operate in disconnected or bandwidth-constrained environments.
-	- Fog compute, on the other hand, extends the concept of edge compute by introducing a hierarchical architecture. It involves distributing computing resources, storage, and applications between the cloud and edge devices. In the fog computing model, intermediate fog nodes are deployed between edge devices and the cloud, enabling them to process and store data. This approach reduces the need for data to be transmitted to traditional data centers or the cloud, allowing for faster response times, increased security, and better bandwidth utilization.
-	- Overall, the combination of edge compute, fog compute, and edge AI introduces a distributed computing paradigm that brings processing, storage, and intelligence closer to the data source. This not only improves performance and efficiency but also enables new use cases and applications in various domains, including IoT, smart cities, autonomous vehicles, and industrial automation.
-	- These systems will drive the compute to less ‘constrained’ but somewhat less capable AI systems, distributing the access but increasing risks. [[Update Cycle]]
+  - # Consumer Hardware
+  - [Sideloaded app stores are coming to iOS in the EU (thenextweb.com)](https://thenextweb.com/news/sideloaded-app-stores-ios-eu-how-work)
+  - [AI HoloBox: ChatGPT-Powered Holographic Desktop Companion by AI HoloBox — Kickstarter](https://www.kickstarter.com/projects/752925986/ai-holobox-chatgpt-powered-holographic-desktop-companion?)
+  - **I don't personally think any of these wearables and gadgets "break through" vs watches, but I can see the next generation of watching inferring a LOT more and containing MUCH more functionality. People will wear watches. Sometimes.**
+  - # HCI and interfaces
+  - [Doublepoint launches gesture-touch tech for wearable devices | VentureBeat](https://venturebeat.com/games/doublepoint-launches-gesture-touch-tech-for-wearable-devices/)
+  - [Meta's wrist reader](https://www.from-the-interface.com/wrist-interfaces/)
+  - # Edge
+  - Edge compute refers to the practice of processing and analyzing data as close to the source as possible, which is typically at the edge of a network. This approach aims to reduce latency and network congestion by performing computations and running applications on devices such as sensors, gateways, or edge servers located near the data source. By moving computational tasks closer to where the data is generated, edge compute enables real-time and low-latency decision-making.
+  - Edge AI, also known as AI at the edge or on-device AI, refers to the deployment of artificial intelligence and machine learning algorithms on edge devices. By bringing AI capabilities closer to the data source, Edge AI eliminates the need to transmit large volumes of data to the cloud for processing. This approach enables real-time inference and decision-making directly on devices with limited computing resources, such as smartphones, drones, or IoT devices. Edge AI has several advantages, including reduced latency, improved privacy and security, offline functionality, and the ability to operate in disconnected or bandwidth-constrained environments.
+  - Fog compute, on the other hand, extends the concept of edge compute by introducing a hierarchical architecture. It involves distributing computing resources, storage, and applications between the cloud and edge devices. In the fog computing model, intermediate fog nodes are deployed between edge devices and the cloud, enabling them to process and store data. This approach reduces the need for data to be transmitted to traditional data centers or the cloud, allowing for faster response times, increased security, and better bandwidth utilization.
+  - Overall, the combination of edge compute, fog compute, and edge AI introduces a distributed computing paradigm that brings processing, storage, and intelligence closer to the data source. This not only improves performance and efficiency but also enables new use cases and applications in various domains, including IoT, smart cities, autonomous vehicles, and industrial automation.
+  - These systems will drive the compute to less ‘constrained’ but somewhat less capable AI systems, distributing the access but increasing risks. [[Update Cycle]]
 		- [Andrej Karpathy's Baby Llama Runs on Samsung Galaxy Watch 4Baby Llama Runs on Samsung Galaxy Watch 4 (analyticsindiamag.com)](https://analyticsindiamag.com/andrej-karpathys-baby-llama-runs-on-samsung-galaxy-watch-4/)
 		- Baby llama [[Large language models]] with Llama.c is 700 lines of C code!  [karpathy/llama2.c: Inference Llama 2 in one file of pure C (github.com)](https://github.com/karpathy/llama2.c)
 		- ###### Edge AI compute and APUs
@@ -207,27 +210,25 @@ public:: true
 		- Litepaper (extropic.ai)](https://www.extropic.ai/future)
 		- Tenstorrent Grayskull [[Hardware and Edge]]  [Cards
 		- Tenstorrent](https://tenstorrent.com/cards/) -
-- # Displays
-	- ### Displays & Headset Hardware
+  - # Displays
 		- Awaiting a bit more market stability for this section. Of note is thatMicrosoft seems to be [abandoningHololens](https://www.windowscentral.com/microsoft/microsoft-has-laid-off-entire-teams-behind-virtual-mixed-reality-and-hololens),and Apple seem to have postponed their commodity AR headset.
 		- Microsoft think that creating the Perfect Illusion, that of alife-likeness in VR will require a field of view of 210 horizontal and135 vertical, 60 pixels per degree subtended, and a refresh rate of 1800Mhz according to Microsoft. They expect this by as soon as2028.[[cuervo2018creating]]
 		- With the advent of[WebGPU](https://developer.chrome.com/docs/web-platform/webgpu/)alongside WebGL everything is likely to converge on the browserexperience.
 		- {{renderer :linkpreview,https://skarredghost.com/2024/04/01/valve-deckard-leaked/}}
-	- #### The Apple in the Room
 		- Following the announcement of The Apple Vision Pro we start to see theconvergence of spatial computing, mixed reality, locally appliedtransformer based AI, and business. They have perhaps removed “gorillaarm syndrome”[[boring2009scroll]] where hands in the sky interfaces arepotentially uncomfortable over long periods.[[hansberger2017dispelling]]Nathan Gitter and Amy DeDonato from the Apple Design team [introducespatial design for thedevice](https://developer.apple.com/videos/play/wwdc2023/10072/).
-	- ##### Spatial operating systems
+  - ##### Spatial operating systems
 		- - Enabling users to design experiences not previously possible.
 		- - The presentation outlines how to keep apps familiar, be human-centered, take advantage of space, enhance immersion, and make apps authentic to the platform.
 		- - The world serves as an infinite canvas for new apps and games.
 		- - Existing app elements should be kept familiar with common elements like sidebars, tabs, and search fields.
 		- - In a spatial platform, interfaces are placed within windows to make them easily accessible and part of the user’s surroundings.
-	- ##### Windows in Spatial Design
+  - ##### Windows in Spatial Design
 		- - Windows are designed with a new visual language, made of a glass material that provides contrast with the world, awareness of surroundings, and adapts to different lighting conditions.
 		- - Windows can be moved, closed, and resized by users, with windows facing the user during movement.
 		- - Windows are flexible and can be resized to fit comfortably within the user’s view.
 		- - Choosing Window Size and Layout Windows are designed to be flexible, adapting to content, and the window size should be chosen based on this. Windows can change size dynamically based on context.
 		- - Apps can use multiple windows to display content side by side or show distinct actions, but should ideally stick to a single window to avoid user overwhelm.
-	- ##### Designing with Points
+  - ##### Designing with Points
 		- - Interfaces are designed with points to ensure they scale well and remain legible at different distances.
 		- - Points allow designers to set the size of interface elements with familiar units. Human-Centered Design
 		- - Good spatial design places the user at the center, accounting for their field of view and movement.
@@ -253,30 +254,53 @@ public:: true
 		- Emphasizes creating an authentic experience that takes full advantage ofthe platform’s capabilities. An example given is Freeform, which uses alarge creative space allowing users to view all their content at once.
 		- ##### Key Moments
 		- Focusing on a “key moment” that provides a unique spatial or immersiveexperience is recommended. This could involve enhancing a moment withdepth and scale or transforming the user’s space to create a unique andmemorable experience.
-	- Lightfield
+  - Lightfield
 		- [Light Field Lab](https://www.lightfieldlab.com/#tech)
-	- [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
-	- [HYPERVSN is a 3D Integrated Holographic System for advertising, digital signage, events.](https://hypervsn.com/)
-	- {{video https://www.youtube.com/watch?v=DxkIo-2Jzzo&}}
-	-
-	-
-- # Brain
-	- Apple has submitted a patent application that raises some serious privacy and ethical concerns.
-	- [From this post](https://www.linkedin.com/feed/update/urn:li:activity:7196781454519877632/)
-	- ![1715807554519.jpeg](../assets/1715807554519_1716117593773_0.jpeg)
-	- The US Patent and Trademark Office lists application 2023/0225659 as a “biosensing device” built into Apple’s earbuds to measure “biological signal parameters from a user.”
+  - [Infitec shows holographic projection screens (installation-international.com)](https://www.installation-international.com/ise-daily/infitec-shows-holographic-projection-screens)
+  - [HYPERVSN is a 3D Integrated Holographic System for advertising, digital signage, events.](https://hypervsn.com/)
+  - {{video https://www.youtube.com/watch?v=DxkIo-2Jzzo&}}
+  - # Brain
+  - Apple has submitted a patent application that raises some serious privacy and ethical concerns.
+  - [From this post](https://www.linkedin.com/feed/update/urn:li:activity:7196781454519877632/)
+  - ![1715807554519.jpeg](../assets/1715807554519_1716117593773_0.jpeg)
+  - The US Patent and Trademark Office lists application 2023/0225659 as a “biosensing device” built into Apple’s earbuds to measure “biological signal parameters from a user.”
 		- 👉 Electroencephalography (EEG). In other words, the aim is to directly record the user’s brain waves from tiny sensors positioned within the ear canal.
 		- 👉 Electromyography (EMG). This records muscle movements and the information can be used to help understand facial expressions and jaw movements related to emotion.
 		- 👉 Electrooculography (EOG) tracks eye movements, particularly side-to-side.
 		- 👉 Electrocardiogram (ECG) typically measures the electrical activity of the heart.
 		- 👉 Galvanic skin response (GSR), which provides an indirect measure of emotional arousal – that is, the strength of an emotional response.
 		- 👉 Blood volume pulse (BVP). This is measured using photoplethysmography and provides information about heart rate (HR) and heart rate variability (HRV).
-	- In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
-	- It’s unclear to me how you could even record meaningful data from within the ear.
-	- If this kind of interface goes ahead it should be
+  - In other words, the aim is to collect a very comprehensive set of neurological and biometric data from the user. Creepy, right?!
+  - It’s unclear to me how you could even record meaningful data from within the ear.
+  - If this kind of interface goes ahead it should be
 		- 1. Voluntary. Participants should not be forced or deceived into providing physiological or neurological data. Volunteers at liberty to stop at any time.
 		- 2. Limited. Personal data may only be collected for a specific, explicit and legitimate purpose. This purpose must be clearly stated, and only stored as long as needed to complete that purpose.
 		- 3. Transparent. Requires informed consent including being aware the data are being collected and knowing the risks involved, including whether the information will be shared with other organizations.
 		- 4. Autonomy. Free from manipulation. Participants should not be forced or deceived into making decisions they would not otherwise make.
 		- 5. Valid. Must be based on valid science and led by scientifically trained staff.
-	- To my mind, this application potentially violates 4 out of 5 of these principles (I don’t see any evidence of manipulation) and this makes me deeply uneasy!
+  - To my mind, this application potentially violates 4 out of 5 of these principles (I don’t see any evidence of manipulation) and this makes me deeply uneasy!
+
+  - ### Orion
+  - ### Meta Ray Bans
+		- #### Hardware
+		- #### Key Features
+		- #### Design
+  - ### [Rabbit](https://www.rabbit.tech/)
+  - ## EMG Wristbands
+		- ### Key Features and Benefits
+  - ### Oura Smart Ring
+  - ### Amazfit Smart Ring
+  - ### Rewind Pendant
+  - ### Humane Ai Pin
+  - ### Apollo Neuro
+  - ### Pavlok 3
+  - ### Yopi
+  - ### ChatGPT (and whatever Siri becomes) is coming to watches
+  - ## Samsung Galaxy S24 Series Local AI Inferencing Features
+  - ## Google sub second inferencing on a phone.
+  - ### Displays & Headset Hardware
+  - #### The Apple in the Room
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

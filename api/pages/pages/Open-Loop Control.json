@@ -1,0 +1,79 @@
+{
+  "id": "open-loop-control",
+  "title": "Open-Loop Control",
+  "content": "- ### Definition\n  - A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.\n\n- ### Semantic Classification\n  - owl-class:: robotics:OpenLoopControl\n  - owl-role:: Method\n  - belongs-to-domain:: [[Robotics]], [[Control Theory]]\n\n- ### Relationships\n  - is-subclass-of:: [[Control System]]\n  - requires:: [[Actuator]]\n\n- ### Content\n\n  - #### OWL Restrictions\n  - is-subclass-of:: [[Control System]]\n  - lacks:: [[Feedback Mechanism]]\n  - requires:: [[Actuator]]\n  - hasInputSignal some ControlCommand\n  - produces some SystemOutput\n  - characterizedBy:: [[Predictability]], [[No Feedback]]\n\n  - #### Relationships\n  - is-subclass-of:: [[Control System]]\n  - contrasts-with:: [[RB-1002-closed-loop-control]]\n  - uses:: [[Actuator]]\n  - applied-in:: [[Stepper Motor Control]], [[Servo Control]]\n  - skos:related:: [[Forward Kinematics]]\n\n  - **Advantages**\n  - Simple implementation\n  - Lower cost (no sensors required)\n  - Fast execution (no feedback delay)\n  - Predictable timing\n\n  - **Disadvantages**\n  - No error correction\n  - Sensitive to disturbances\n  - Cannot adapt to environmental changes\n  - Requires accurate system modeling\n\n  - **Applications**\n  - Stepper motor positioning\n  - Simple pick-and-place operations\n  - Timed sequences\n  - Pre-programmed robot trajectories\n\n  - **Quality Metrics**\n  - authority-score:: 0.95\n  - completeness:: 0.90\n  - accuracy:: 0.92\n\n- ### Provenance\n  - sources:: [[Control Theory]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Actuator",
+    "Control System",
+    "Control Theory",
+    "Feedback Mechanism",
+    "Forward Kinematics",
+    "No Feedback",
+    "Predictability",
+    "RB-1002-closed-loop-control",
+    "Robotics",
+    "Servo Control",
+    "Stepper Motor Control"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:open-loop-control",
+    "iri": "http://narrativegoldmine.com/robotics#Open-loopControl",
+    "content_hash": "sha256-12-fd22b53e637f",
+    "legacy_term_id": "RB-1001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:open-loop-control",
+    "schema_version": "v2",
+    "term_id": "RB-1001",
+    "preferred_term": "Open-Loop Control",
+    "alt_terms": [],
+    "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
+    "domain_full_name": "Robotics",
+    "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.95,
+    "created": "2025-11-24T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:OpenLoopControl",
+    "owl_role": "Method",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Control System"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Actuator"
+    ],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Robotics",
+      "Control Theory"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Control Theory"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

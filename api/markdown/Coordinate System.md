@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9540-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9540
-	- preferred-term:: Coordinate System
-	- source-domain:: mv
-	- owl:class:: mv:CoordinateSystem
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Coordinate System is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#CoordinateSystem
+uri:: urn:visionclaw:concept:spatial-computing:coordinate-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:coordinate-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Coordinate System
+content-hash:: sha256-12-5ec4fb558642
+legacy-term-id:: MV-9540
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Coordinate System is a concept within the metaverse domain. Further enrichment pending.
 
-Coordinate System represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:CoordinateSystem
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Computer Vision]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Coordinate System represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

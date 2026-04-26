@@ -1,144 +1,158 @@
-- ### OntologyBlock
-  id:: learning-analytics-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9941
-	- source-domain:: mv
-	- preferred-term:: Learning Analytics
-	- status:: active
-	- owl:class:: mv:LearningAnalytics
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.
-	- #### Relationships
-	  id:: learning-analytics-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Educational Technology]]
-		- related-to:: [[Immersive Learning]]
-		- related-to:: [[Learning Management System]]
-		- enables:: [[Adaptive Learning]]
+iri:: http://narrativegoldmine.com/spatial-computing#LearningAnalytics
+uri:: urn:visionclaw:concept:spatial-computing:learning-analytics
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:learning-analytics
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Learning Analytics
+content-hash:: sha256-12-83a9b5e2838c
+legacy-term-id:: MV-9941
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Research Landscape
+- ### Definition
+  - The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.
 
-### Systematic Review Findings
-- 34 peer-reviewed articles analysed
-- Conference proceedings included
-- Theoretical integration examined
-- Methodological diversity reviewed
-- Multimodal data utilisation assessed
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LearningAnalytics
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Evolution of Focus
-- Initial: Learning outcomes analysis
-- Initial: Behavioural analysis
-- Expanded: Performance prediction
-- Expanded: Self-regulation study
-- Expanded: Affective state analysis
+- ### Relationships
+  - is-subclass-of:: [[Educational Technology]]
+  - enables:: [[Adaptive Learning]]
 
-### LAVR@LAK24 Workshop
-- Learning Analytics + VR focus
-- Researcher and practitioner gathering
-- Rich sensory data potential
-- Challenge identification
-- Educational VR design improvement
+- ### Content
 
-## Measurement Challenges
+  ## Research Landscape
 
-### Attention Tracking
-- VR glasses focal point variation
-- User non-confinement to location
-- Traditional indicator limitations
-- Precision reduction in VR
-- New methodologies needed
+  ### Systematic Review Findings
+  - 34 peer-reviewed articles analysed
+  - Conference proceedings included
+  - Theoretical integration examined
+  - Methodological diversity reviewed
+  - Multimodal data utilisation assessed
 
-### Lin et al. Technique (2023)
-- Expression score measurement
-- Visual rejection anxiety tracking
-- Task mastery evaluation
-- Comprehensive index creation
-- HMD VR interaction focus
+  ### Evolution of Focus
+  - Initial: Learning outcomes analysis
+  - Initial: Behavioural analysis
+  - Expanded: Performance prediction
+  - Expanded: Self-regulation study
+  - Expanded: Affective state analysis
 
-## Data and Privacy
+  ### LAVR@LAK24 Workshop
+  - Learning Analytics + VR focus
+  - Researcher and practitioner gathering
+  - Rich sensory data potential
+  - Challenge identification
+  - Educational VR design improvement
 
-### Security Concerns
-- Sensitive environment integration
-- Heightened vigilance required
-- Large data volume generation
-- Biometric data capture
-- Movement and interaction logging
+  ## Measurement Challenges
 
-### Stakeholder Concerns
-- Data storage practices
-- Usage transparency
-- Safeguard implementation
-- Educator awareness
-- Policymaker attention
+  ### Attention Tracking
+  - VR glasses focal point variation
+  - User non-confinement to location
+  - Traditional indicator limitations
+  - Precision reduction in VR
+  - New methodologies needed
 
-## Impact on Learning
+  ### Lin et al. Technique (2023)
+  - Expression score measurement
+  - Visual rejection anxiety tracking
+  - Task mastery evaluation
+  - Comprehensive index creation
+  - HMD VR interaction focus
 
-### Device Effectiveness
-- Standalone VR headsets most effective
-- Positive test score contribution
-- Learning satisfaction improvement
-- Discipline-specific variation
-- Spatial understanding enhancement
+  ## Data and Privacy
 
-### Optimal Disciplines
-- Architecture
-- Engineering
-- Chemistry
-- Physics
-- Visual learning subjects
+  ### Security Concerns
+  - Sensitive environment integration
+  - Heightened vigilance required
+  - Large data volume generation
+  - Biometric data capture
+  - Movement and interaction logging
 
-### Limited Effectiveness
-- Biology abstract concepts
-- Astronomy visualisation
-- Language learning
-- Cultural heritage
-- Abstract explanation tasks
+  ### Stakeholder Concerns
+  - Data storage practices
+  - Usage transparency
+  - Safeguard implementation
+  - Educator awareness
+  - Policymaker attention
 
-## Market Growth
+  ## Impact on Learning
 
-### VR in Education Market
-- $14.55 billion (2023 value)
-- $17.18 billion (2024 projected)
-- $65.55 billion (2032 forecast)
-- 18.2% CAGR
-- Sustained growth trajectory
+  ### Device Effectiveness
+  - Standalone VR headsets most effective
+  - Positive test score contribution
+  - Learning satisfaction improvement
+  - Discipline-specific variation
+  - Spatial understanding enhancement
 
-## 2024 Trends
+  ### Optimal Disciplines
+  - Architecture
+  - Engineering
+  - Chemistry
+  - Physics
+  - Visual learning subjects
 
-### Multi-Modal Devices
-- Apple Vision Pro exploration
-- Meta Quest 3 utilisation
-- Immersion level control
-- MR and VR switching
-- Training flexibility
+  ### Limited Effectiveness
+  - Biology abstract concepts
+  - Astronomy visualisation
+  - Language learning
+  - Cultural heritage
+  - Abstract explanation tasks
 
-### AI Integration
-- Personalised learning evaluation
-- Comprehensive assessment methods
-- Engaging evaluation techniques
-- Machine learning integration
-- Adaptive platform capabilities
+  ## Market Growth
 
-## Technical Considerations
+  ### VR in Education Market
+  - $14.55 billion (2023 value)
+  - $17.18 billion (2024 projected)
+  - $65.55 billion (2032 forecast)
+  - 18.2% CAGR
+  - Sustained growth trajectory
 
-### Data Types Collected
-- Behavioural patterns
-- Performance metrics
-- Engagement indicators
-- Social interaction logs
-- Affective state signals
+  ## 2024 Trends
 
-### Analysis Techniques
-- Pattern recognition
-- Predictive modelling
-- Sentiment analysis
-- Engagement scoring
-- Progress tracking
+  ### Multi-Modal Devices
+  - Apple Vision Pro exploration
+  - Meta Quest 3 utilisation
+  - Immersion level control
+  - MR and VR switching
+  - Training flexibility
 
-## Metadata
+  ### AI Integration
+  - Personalised learning evaluation
+  - Comprehensive assessment methods
+  - Engaging evaluation techniques
+  - Machine learning integration
+  - Adaptive platform capabilities
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Technical Considerations
+
+  ### Data Types Collected
+  - Behavioural patterns
+  - Performance metrics
+  - Engagement indicators
+  - Social interaction logs
+  - Affective state signals
+
+  ### Analysis Techniques
+  - Pattern recognition
+  - Predictive modelling
+  - Sentiment analysis
+  - Engagement scoring
+  - Progress tracking
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

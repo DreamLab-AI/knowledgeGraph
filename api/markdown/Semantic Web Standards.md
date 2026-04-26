@@ -1,35 +1,51 @@
-- ### OntologyBlock
-  id:: semantic-web-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10037
-	- source-domain:: mv
-	- preferred-term:: Semantic Web Standards
-	- status:: active
-	- definition:: A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.
-	- owl:class:: mv:SemanticWebStandards
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: semantic-web-standards-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Web Standards]]
-		- related-to:: [[Knowledge Representation]]
-		- related-to:: [[Ontology Engineering]]
-		- related-to:: [[Linked Data]]
-		- enables:: [[Data Interoperability]]
-	- #### Core Standards
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#SemanticWebStandards
+uri:: urn:visionclaw:concept:spatial-computing:semantic-web-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:semantic-web-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Semantic Web Standards
+content-hash:: sha256-12-3d2615746f5c
+legacy-term-id:: MV-10037
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:SemanticWebStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Web Standards]]
+  - enables:: [[Data Interoperability]]
+
+- ### Content
+
+  - #### Core Standards
 		- RDF - Resource Description Framework for data interchange
 		- RDF Schema (RDFS) for vocabulary definition
 		- OWL - Web Ontology Language for knowledge representation
 		- SPARQL - query language for semantic data
 		- RIF - Rule Interchange Format for web rules
-	- #### OWL 2 Profiles
-	  collapsed:: true
+  - #### OWL 2 Profiles
 		- OWL2 EL - polynomial time reasoning complexity
 		- OWL2 QL - database query optimization
 		- OWL2 RL - rule-based subset
 		- Tools: Apache Jena, OpenLink Virtuoso
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

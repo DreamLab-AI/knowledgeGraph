@@ -1,39 +1,45 @@
 {
-  "id": "Secure Multi Party Computation",
+  "id": "secure-multi-party-computation",
   "title": "Secure Multi Party Computation",
-  "content": "- ### OntologyBlock\n  id:: secure-multi-party-computation-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10035\n\t- source-domain:: mv\n\t- preferred-term:: Secure Multi Party Computation\n\t- status:: active\n\t- definition:: A cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual data to each other, enabling privacy-preserving analytics and collaborative processing in distributed metaverse systems.\n\t- owl:class:: mv:SecureMultiPartyComputation\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: secure-multi-party-computation-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptographic Protocol]]\n\t\t- related-to:: [[Privacy Preserving Data Sharing]]\n\t\t- related-to:: [[Federated Learning]]\n\t\t- related-to:: [[Zero Knowledge Proofs]]\n\t\t- enables:: [[Private Computation]]\n\t- #### Key Techniques\n\t  collapsed:: true\n\t\t- Secret sharing protocols\n\t\t- Garbled circuits\n\t\t- Oblivious transfer\n\t\t- Homomorphic encryption integration\n\t\t- Verifiable computation\n\t- #### Applications\n\t  collapsed:: true\n\t\t- Private auction mechanisms\n\t\t- Collaborative fraud detection\n\t\t- Joint AI model training\n\t\t- Cross-border financial analysis\n\t\t- Secure voting systems",
-  "backlinks": [
-    "Privacy Preserving Data Sharing"
-  ],
+  "content": "- ### Definition\n  - A cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual data to each other, enabling privacy-preserving analytics and collaborative processing in distributed metaverse systems.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SecureMultiPartyComputation\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Cryptographic Protocol]]\n  - enables:: [[Private Computation]]\n\n- ### Content\n\n  - #### Key Techniques\n\t\t- Secret sharing protocols\n\t\t- Garbled circuits\n\t\t- Oblivious transfer\n\t\t- Homomorphic encryption integration\n\t\t- Verifiable computation\n  - #### Applications\n\t\t- Private auction mechanisms\n\t\t- Collaborative fraud detection\n\t\t- Joint AI model training\n\t\t- Cross-border financial analysis\n\t\t- Secure voting systems\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
     "Cryptographic Protocol",
-    "Zero Knowledge Proofs",
-    "Privacy Preserving Data Sharing",
     "Private Computation",
-    "metaverse",
-    "Federated Learning"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:secure-multi-party-computation",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SecureMultiPartyComputation",
+    "content_hash": "sha256-12-1fd8b05ca639",
+    "legacy_term_id": "MV-10035",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:secure-multi-party-computation",
+    "schema_version": "v2",
     "term_id": "MV-10035",
     "preferred_term": "Secure Multi Party Computation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SecureMultiPartyComputation",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual data to each other, enabling privacy-preserving analytics and collaborative processing in distributed metaverse systems.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SecureMultiPartyComputation",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SecureMultiPartyComputation",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Cryptographic Protocol"
@@ -48,26 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Privacy Preserving Data Sharing",
-        "Federated Learning",
-        "Zero Knowledge Proofs"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

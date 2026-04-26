@@ -1,255 +1,272 @@
-- ### OntologyBlock
-  - ontology:: true
-  - public-access:: true
-  - term-id:: AI-1022
-  - preferred-term:: Training Hardware
-  - source-domain:: ai
-  - status:: draft
-  - owl:class:: ai:TrainingHardware
+iri:: http://narrativegoldmine.com/artificial-intelligence#TrainingHardware
+uri:: urn:visionclaw:concept:artificial-intelligence:training-hardware
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:training-hardware
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Training Hardware
+content-hash:: sha256-12-c5184a5c82c9
+legacy-term-id:: AI-1022
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[AI Hardware]]
-- is-subclass-of:: [[High-Performance Computing]]
-- skos:related:: [[Deep Learning]]
-- skos:related:: [[Distributed Training]]
-- uses:: [[GPU]]
-- uses:: [[Tensor Processing Unit]]
-- enables:: [[Large Language Models]]
-- enables:: [[Neural Network Training]]
+- ### Definition
+  - Training Hardware is a concept within the ai domain.
 
-### Definition
-Training hardware refers to the specialized computational infrastructure designed to efficiently train machine learning models, particularly deep neural networks. It encompasses GPUs, TPUs, specialized AI accelerators, and distributed systems optimized for the massive parallel matrix operations, high-throughput data processing, and memory-intensive computations required for modern AI model training at scale.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:TrainingHardware
+  - owl-role:: Concept
 
-### Hardware Categories
-**General-Purpose GPUs:**
-- NVIDIA A100, H100, H200 (data center)
-- AMD MI250X, MI300 series
-- Optimized for parallel floating-point operations
-- CUDA ecosystem (NVIDIA dominant)
-- Tensor cores for mixed precision
+- ### Relationships
+  - is-subclass-of:: [[High-Performance Computing]]
+  - enables:: [[Neural Network Training]]
 
-**AI-Specific Accelerators:**
-- Google TPU v4, v5 (TensorFlow optimized)
-- AWS Trainium (cost-optimized training)
-- Graphcore IPU (Intelligence Processing Unit)
-- Cerebras Wafer-Scale Engine (largest chip)
-- SambaNova DataScale
+- ### Content
 
-**CPUs (For Training):**
-- AMD EPYC, Intel Xeon
-- Useful for smaller models
-- Heterogeneous computing setups
-- Data preprocessing
+  ### Definition
+  Training hardware refers to the specialized computational infrastructure designed to efficiently train machine learning models, particularly deep neural networks. It encompasses GPUs, TPUs, specialized AI accelerators, and distributed systems optimized for the massive parallel matrix operations, high-throughput data processing, and memory-intensive computations required for modern AI model training at scale.
 
-### Key Hardware Metrics
-**Compute Performance:**
-- FP32 (single precision) TFLOPS
-- FP16/BF16 (half precision) TFLOPS
-- INT8 TOPS (integer operations)
-- Tensor core utilization
+  ### Hardware Categories
+  **General-Purpose GPUs:**
+  - NVIDIA A100, H100, H200 (data center)
+  - AMD MI250X, MI300 series
+  - Optimized for parallel floating-point operations
+  - CUDA ecosystem (NVIDIA dominant)
+  - Tensor cores for mixed precision
 
-**Memory:**
-- Capacity (80GB for A100, 192GB for H100)
-- Bandwidth (2+ TB/s for modern GPUs)
-- HBM (High Bandwidth Memory)
-- Critical for large models
+  **AI-Specific Accelerators:**
+  - Google TPU v4, v5 (TensorFlow optimized)
+  - AWS Trainium (cost-optimized training)
+  - Graphcore IPU (Intelligence Processing Unit)
+  - Cerebras Wafer-Scale Engine (largest chip)
+  - SambaNova DataScale
 
-**Interconnect:**
-- NVLink (GPU-to-GPU)
-- NVSwitch (multi-GPU)
-- InfiniBand (node-to-node)
-- PCIe bandwidth
+  **CPUs (For Training):**
+  - AMD EPYC, Intel Xeon
+  - Useful for smaller models
+  - Heterogeneous computing setups
+  - Data preprocessing
 
-**Power Efficiency:**
-- TFLOPS per watt
-- Total power consumption (400-700W per GPU)
-- Thermal design power (TDP)
+  ### Key Hardware Metrics
+  **Compute Performance:**
+  - FP32 (single precision) TFLOPS
+  - FP16/BF16 (half precision) TFLOPS
+  - INT8 TOPS (integer operations)
+  - Tensor core utilization
 
-### NVIDIA GPU Evolution (Data Center)
-- **V100 (2017):** 125 TFLOPS (FP16), 32GB HBM2
-- **A100 (2020):** 312 TFLOPS (FP16), 40/80GB HBM2
-- **H100 (2022):** 1000 TFLOPS (FP8), 80GB HBM3
-- **H200 (2023):** 1000 TFLOPS, 141GB HBM3e
-- **B100/B200 (2024+):** Next-gen Blackwell architecture
+  **Memory:**
+  - Capacity (80GB for A100, 192GB for H100)
+  - Bandwidth (2+ TB/s for modern GPUs)
+  - HBM (High Bandwidth Memory)
+  - Critical for large models
 
-### Google TPU Architecture
-- Domain-specific architecture (systolic arrays)
-- Optimized for TensorFlow operations
-- TPU v4: 275 TFLOPS (BF16)
-- TPU v5: 459 TFLOPS (BF16)
-- Pod configurations (thousands of chips)
-- Lower precision focus (BF16, INT8)
+  **Interconnect:**
+  - NVLink (GPU-to-GPU)
+  - NVSwitch (multi-GPU)
+  - InfiniBand (node-to-node)
+  - PCIe bandwidth
 
-### Distributed Training Infrastructure
-**Single-Node Multi-GPU:**
-- 8x GPUs typical (DGX systems)
-- NVLink/NVSwitch interconnect
-- Data parallelism
+  **Power Efficiency:**
+  - TFLOPS per watt
+  - Total power consumption (400-700W per GPU)
+  - Thermal design power (TDP)
 
-**Multi-Node Clusters:**
-- Hundreds to thousands of GPUs
-- InfiniBand networking (400-800 Gb/s)
-- Model parallelism, pipeline parallelism
-- Examples: NVIDIA SuperPOD, Meta's RSC
+  ### NVIDIA GPU Evolution (Data Center)
+  - **V100 (2017):** 125 TFLOPS (FP16), 32GB HBM2
+  - **A100 (2020):** 312 TFLOPS (FP16), 40/80GB HBM2
+  - **H100 (2022):** 1000 TFLOPS (FP8), 80GB HBM3
+  - **H200 (2023):** 1000 TFLOPS, 141GB HBM3e
+  - **B100/B200 (2024+):** Next-gen Blackwell architecture
 
-**Cloud Training Infrastructure:**
-- AWS EC2 P4d/P5 instances
-- Google Cloud TPU Pods
-- Azure ND-series VMs
-- On-demand scaling
+  ### Google TPU Architecture
+  - Domain-specific architecture (systolic arrays)
+  - Optimized for TensorFlow operations
+  - TPU v4: 275 TFLOPS (BF16)
+  - TPU v5: 459 TFLOPS (BF16)
+  - Pod configurations (thousands of chips)
+  - Lower precision focus (BF16, INT8)
 
-### Memory Hierarchy
-**GPU Memory (HBM):**
-- Fastest, most expensive
-- 80-192GB typical
-- Limits batch size
+  ### Distributed Training Infrastructure
+  **Single-Node Multi-GPU:**
+  - 8x GPUs typical (DGX systems)
+  - NVLink/NVSwitch interconnect
+  - Data parallelism
 
-**CPU Memory:**
-- Larger capacity (TBs possible)
-- Slower access
-- Parameter server role
+  **Multi-Node Clusters:**
+  - Hundreds to thousands of GPUs
+  - InfiniBand networking (400-800 Gb/s)
+  - Model parallelism, pipeline parallelism
+  - Examples: NVIDIA SuperPOD, Meta's RSC
 
-**Storage (NVMe SSD):**
-- Dataset storage
-- Checkpointing
-- High bandwidth needed
+  **Cloud Training Infrastructure:**
+  - AWS EC2 P4d/P5 instances
+  - Google Cloud TPU Pods
+  - Azure ND-series VMs
+  - On-demand scaling
 
-### Specialized Training Accelerators
-**Cerebras CS-2:**
-- Wafer-scale chip (215mm x 215mm)
-- 850,000 cores, 40GB on-chip memory
-- Eliminates inter-chip communication
-- Record training speeds
+  ### Memory Hierarchy
+  **GPU Memory (HBM):**
+  - Fastest, most expensive
+  - 80-192GB typical
+  - Limits batch size
 
-**Graphcore IPU:**
-- Massive parallelism (1,472 cores per IPU)
-- MIMD architecture vs. SIMD (GPUs)
-- Graph-based computation model
+  **CPU Memory:**
+  - Larger capacity (TBs possible)
+  - Slower access
+  - Parameter server role
 
-**SambaNova DataScale:**
-- Reconfigurable dataflow architecture
-- Software-defined hardware
+  **Storage (NVMe SSD):**
+  - Dataset storage
+  - Checkpointing
+  - High bandwidth needed
 
-**AWS Trainium:**
-- Custom chip for training
-- 2nd gen NeuronCore
-- Cost-optimized vs. GPUs
+  ### Specialized Training Accelerators
+  **Cerebras CS-2:**
+  - Wafer-scale chip (215mm x 215mm)
+  - 850,000 cores, 40GB on-chip memory
+  - Eliminates inter-chip communication
+  - Record training speeds
 
-### Training Workload Characteristics
-**Compute-Bound:**
-- Matrix multiplications (large dense layers)
-- Convolutions
-- Attention mechanisms
-- Benefits from tensor cores
+  **Graphcore IPU:**
+  - Massive parallelism (1,472 cores per IPU)
+  - MIMD architecture vs. SIMD (GPUs)
+  - Graph-based computation model
 
-**Memory-Bound:**
-- Normalization layers
-- Activation functions
-- Small batch sizes
-- Large models (GB parameters)
+  **SambaNova DataScale:**
+  - Reconfigurable dataflow architecture
+  - Software-defined hardware
 
-**I/O-Bound:**
-- Data loading
-- Augmentation
-- Small models on fast hardware
+  **AWS Trainium:**
+  - Custom chip for training
+  - 2nd gen NeuronCore
+  - Cost-optimized vs. GPUs
 
-### Optimization Techniques
-**Mixed Precision Training:**
-- FP16/BF16 for forward/backward
-- FP32 for weight updates
-- 2-3x speedup
-- Reduced memory
+  ### Training Workload Characteristics
+  **Compute-Bound:**
+  - Matrix multiplications (large dense layers)
+  - Convolutions
+  - Attention mechanisms
+  - Benefits from tensor cores
 
-**Gradient Accumulation:**
-- Effective larger batches
-- Limited memory workaround
+  **Memory-Bound:**
+  - Normalization layers
+  - Activation functions
+  - Small batch sizes
+  - Large models (GB parameters)
 
-**Gradient Checkpointing:**
-- Trade compute for memory
-- Recompute activations during backward
+  **I/O-Bound:**
+  - Data loading
+  - Augmentation
+  - Small models on fast hardware
 
-**Model Parallelism:**
-- Split model across GPUs
-- Pipeline parallelism (layers)
-- Tensor parallelism (within layers)
+  ### Optimization Techniques
+  **Mixed Precision Training:**
+  - FP16/BF16 for forward/backward
+  - FP32 for weight updates
+  - 2-3x speedup
+  - Reduced memory
 
-**Data Parallelism:**
-- Replicate model
-- Split data across GPUs
-- Synchronize gradients
+  **Gradient Accumulation:**
+  - Effective larger batches
+  - Limited memory workaround
 
-### Cost Considerations
-**Cloud Pricing (approximate):**
-- NVIDIA H100: $2-4/hour
-- NVIDIA A100: $1-2/hour
-- Google TPU v4: $1.35/hour
-- AWS Trainium: $0.50-1/hour
+  **Gradient Checkpointing:**
+  - Trade compute for memory
+  - Recompute activations during backward
 
-**On-Premise Investment:**
-- DGX H100 (8x H100): ~$300K-500K
-- Cluster (64-512 GPUs): $5M-100M+
-- Operational costs: power, cooling, maintenance
+  **Model Parallelism:**
+  - Split model across GPUs
+  - Pipeline parallelism (layers)
+  - Tensor parallelism (within layers)
 
-### Industry Leaders
-**Hardware Providers:**
-- NVIDIA (dominant ~95% AI training market)
-- Google (TPU, internal use + cloud)
-- AMD (growing presence)
-- Intel (Habana Gaudi)
+  **Data Parallelism:**
+  - Replicate model
+  - Split data across GPUs
+  - Synchronize gradients
 
-**System Builders:**
-- NVIDIA DGX systems
-- Dell, HPE, Supermicro servers
-- Cloud providers (AWS, GCP, Azure)
+  ### Cost Considerations
+  **Cloud Pricing (approximate):**
+  - NVIDIA H100: $2-4/hour
+  - NVIDIA A100: $1-2/hour
+  - Google TPU v4: $1.35/hour
+  - AWS Trainium: $0.50-1/hour
 
-### Training Large Language Models
-**GPT-3 (175B parameters):**
-- Trained on ~10,000 V100s
-- Months of training time
-- Estimated cost: $4-12M
+  **On-Premise Investment:**
+  - DGX H100 (8x H100): ~$300K-500K
+  - Cluster (64-512 GPUs): $5M-100M+
+  - Operational costs: power, cooling, maintenance
 
-**PaLM (540B parameters):**
-- Trained on 6,144 TPU v4 chips
-- 50 days of training
+  ### Industry Leaders
+  **Hardware Providers:**
+  - NVIDIA (dominant ~95% AI training market)
+  - Google (TPU, internal use + cloud)
+  - AMD (growing presence)
+  - Intel (Habana Gaudi)
 
-**Llama 3.1 405B:**
-- Trained on 16,000 H100 GPUs
-- Estimated cost: $50M+
+  **System Builders:**
+  - NVIDIA DGX systems
+  - Dell, HPE, Supermicro servers
+  - Cloud providers (AWS, GCP, Azure)
 
-### Energy Consumption
-- Large model training: 100-1000 MWh
-- Carbon footprint concerns
-- Focus on efficiency (FLOPS/watt)
-- Renewable energy usage increasing
+  ### Training Large Language Models
+  **GPT-3 (175B parameters):**
+  - Trained on ~10,000 V100s
+  - Months of training time
+  - Estimated cost: $4-12M
 
-### Future Trends
-**Near-Term (2024-2025):**
-- 200-500GB GPU memory
-- 2-3x compute improvements
-- Advanced packaging (chiplets)
-- FP8/FP4 precision
+  **PaLM (540B parameters):**
+  - Trained on 6,144 TPU v4 chips
+  - 50 days of training
 
-**Long-Term:**
-- Optical interconnects
-- Photonic computing
-- Quantum-classical hybrid
-- Neuromorphic chips for training
-- 3D stacking
+  **Llama 3.1 405B:**
+  - Trained on 16,000 H100 GPUs
+  - Estimated cost: $50M+
 
-### Bottlenecks
-1. **Memory capacity** (largest models)
-2. **Interconnect bandwidth** (distributed training)
-3. **Power/cooling** (data center limits)
-4. **Cost** (prohibitive for many)
-5. **Supply constraints** (chip shortages)
+  ### Energy Consumption
+  - Large model training: 100-1000 MWh
+  - Carbon footprint concerns
+  - Focus on efficiency (FLOPS/watt)
+  - Renewable energy usage increasing
 
-### Best Practices
-- Profile workloads to identify bottlenecks
-- Use mixed precision when possible
-- Optimize data pipelines (avoid I/O bottlenecks)
-- Monitor GPU utilization
-- Leverage distributed training frameworks
-- Consider cost vs. time tradeoffs
-- Regular checkpointing for fault tolerance
+  ### Future Trends
+  **Near-Term (2024-2025):**
+  - 200-500GB GPU memory
+  - 2-3x compute improvements
+  - Advanced packaging (chiplets)
+  - FP8/FP4 precision
 
-Training hardware has become a critical factor in AI progress, with hardware capabilities often determining which models can be trained, at what scale, and at what cost, driving an arms race in specialized accelerator development and massive infrastructure investments.
+  **Long-Term:**
+  - Optical interconnects
+  - Photonic computing
+  - Quantum-classical hybrid
+  - Neuromorphic chips for training
+  - 3D stacking
+
+  ### Bottlenecks
+  1. **Memory capacity** (largest models)
+  2. **Interconnect bandwidth** (distributed training)
+  3. **Power/cooling** (data center limits)
+  4. **Cost** (prohibitive for many)
+  5. **Supply constraints** (chip shortages)
+
+  ### Best Practices
+  - Profile workloads to identify bottlenecks
+  - Use mixed precision when possible
+  - Optimize data pipelines (avoid I/O bottlenecks)
+  - Monitor GPU utilization
+  - Leverage distributed training frameworks
+  - Consider cost vs. time tradeoffs
+  - Regular checkpointing for fault tolerance
+
+  Training hardware has become a critical factor in AI progress, with hardware capabilities often determining which models can be trained, at what scale, and at what cost, driving an arms race in specialized accelerator development and massive infrastructure investments.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

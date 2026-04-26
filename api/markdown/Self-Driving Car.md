@@ -1,322 +1,132 @@
-- ### OntologyBlock
-  id:: self-driving-car-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0347
-	- preferred-term:: Self Driving Car
-	- source-domain:: mv
-	- status:: draft
-- definition:: A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
+iri:: http://narrativegoldmine.com/spatial-computing#SelfDrivingCar
+uri:: urn:visionclaw:concept:spatial-computing:self-driving-car
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:self-driving-car
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Self Driving Car
+content-hash:: sha256-12-033e41d8ed20
+legacy-term-id:: AI-0347
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: spatial-computing:SelfDrivingCar
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :SelfDrivingCar))
+- ### Content
+  - A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :SelfDrivingCar "Self Driving Car"@en)
-(AnnotationAssertion rdfs:comment :SelfDrivingCar "A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments."@en)
-
-;; Semantic Relationships
-(SubClassOf :SelfDrivingCar
-  (ObjectSomeValuesFrom :relatedTo :Adas))
-(SubClassOf :SelfDrivingCar
-  (ObjectSomeValuesFrom :relatedTo :AutonomousVehicle))
-(SubClassOf :SelfDrivingCar
-  (ObjectSomeValuesFrom :relatedTo :PerceptionSystem))
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :SelfDrivingCar "AI-0347"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :SelfDrivingCar "true"^^xsd:boolean)
-```
-
-## Core Characteristics
-
-- **Full Autonomy**: Capable of handling complete driving task
-- **Safety-Critical**: Designed for passenger safety and public road operation
-- **Regulatory Compliance**: Adherence to traffic laws and vehicle regulations
-- **User Interface**: Passenger interaction and override capabilities
-- **Fail-Safe Systems**: Redundancy and graceful degradation
-
-## Relationships
-
-- **Superclass**: Autonomous Vehicle
-- **Related**: Robotaxi, ADAS, Autonomous Navigation
-- **Standards**: SAE J3016, ISO 26262, UN Regulation 155/156
-
-## Key Literature
-
-1. Litman, T. (2021). "Autonomous Vehicle Implementation Predictions: Implications for Transport Planning." *Victoria Transport Policy Institute*.
-
-2. Fagnant, D. J., & Kockelman, K. (2015). "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations." *Transportation Research Part A*, 77, 167-181.
-
-## See Also
-
-- [[Autonomous Vehicle]]
-- [[ADAS]]
-- [[Perception System]]
-
-## Metadata
-
-- **Domain**: Autonomous Vehicles, Transportation
-- **Maturity**: Commercial pilots and limited deployment
-	- maturity:: draft
-	- owl:class:: mv:SelfDrivingCar
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: self-driving-car-relationships
-- ## About Self Driving Car
-	- A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
-
-	- ## Conclusion
+  - ## Conclusion
 		- Enterprise AI is driving broad organisational transformation across multiple departments.
 		- Challenges persist due to the wide-reaching and iterative nature of generative AI adoption.
 
-	- ## Inequality as the driving force
+  - ## Inequality as the driving force
 
-	- ## Methodology and Approach
-	- Mimic socratic self-questioning and theory of mind as needed
-	- Do not elide or truncate code in code samples
+  - ## Methodology and Approach
+  - Mimic socratic self-questioning and theory of mind as needed
+  - Do not elide or truncate code in code samples
 
-	- ## Conclusion
+  - ## Conclusion
 		- Enterprise AI is driving broad organisational transformation across multiple departments.
 		- Challenges persist due to the wide-reaching and iterative nature of generative AI adoption.
 
-	- ## Inequality as the driving force
+  - ## Inequality as the driving force
 
-	- ## Methodology and Approach
-	- Mimic socratic self-questioning and theory of mind as needed
-	- Do not elide or truncate code in code samples
+  - ## Methodology and Approach
+  - Mimic socratic self-questioning and theory of mind as needed
+  - Do not elide or truncate code in code samples
 
-	- ## Agentic Architectures
+  - ## Agentic Architectures
 		- Adoption of agentic architectures grew from 0% in 2023 to 12% in 2024.
 		- Enterprise AI is driving broad organisational transformation across multiple departments.
 		- Challenges persist due to the wide-reaching and iterative nature of generative AI adoption.
 			- ![889099_6bc1d69ec5284cc0a19315afe6075af0~mv2.webp](assets/889099_6bc1d69ec5284cc0a19315afe6075af0~mv2_1728113404306_0.webp){:width 800}
-			-
 				- As of August 2024, 39.4% of Americans aged 18-64 reported using generative AI.
 				- 28% of employed respondents said they use generative AI at work.
 				- Nearly 1 in 9 workers (10.6%) reported using generative AI daily at work.
 				- Adoption has been faster than previous transformative technologies like personal computers and the internet.
 
-	- ## Inequality as the driving force
+  - ## Inequality as the driving force
 
-	- ## Methodology and Approach
-	- Mimic socratic self-questioning and theory of mind as needed
-	- Do not elide or truncate code in code samples
+  - ## Methodology and Approach
+  - Mimic socratic self-questioning and theory of mind as needed
+  - Do not elide or truncate code in code samples
 
-	- ## Agentic Architectures
+  - ## Agentic Architectures
 		- Enterprise AI is driving broad organisational transformation across multiple departments.
 
-	- ## Inequality as the driving force
+  - ## Inequality as the driving force
 
-## Core Characteristics
+  ## Core Characteristics
 
-- **Full Autonomy**: Capable of handling complete driving task
-- **Safety-Critical**: Designed for passenger safety and public road operation
-- **Regulatory Compliance**: Adherence to traffic laws and vehicle regulations
-- **User Interface**: Passenger interaction and override capabilities
-- **Fail-Safe Systems**: Redundancy and graceful degradation
+  - **Full Autonomy**: Capable of handling complete driving task
+  - **Safety-Critical**: Designed for passenger safety and public road operation
+  - **Regulatory Compliance**: Adherence to traffic laws and vehicle regulations
+  - **User Interface**: Passenger interaction and override capabilities
+  - **Fail-Safe Systems**: Redundancy and graceful degradation
 
-## Relationships
+  ## Relationships
 
-- **Superclass**: Autonomous Vehicle
-- **Related**: Robotaxi, ADAS, Autonomous Navigation
-- **Standards**: SAE J3016, ISO 26262, UN Regulation 155/156
+  - **Superclass**: Autonomous Vehicle
+  - **Related**: Robotaxi, ADAS, Autonomous Navigation
+  - **Standards**: SAE J3016, ISO 26262, UN Regulation 155/156
 
-## Key Literature
+  ## Key Literature
 
-1. Litman, T. (2021). "Autonomous Vehicle Implementation Predictions: Implications for Transport Planning." *Victoria Transport Policy Institute*.
+  1. Litman, T. (2021). "Autonomous Vehicle Implementation Predictions: Implications for Transport Planning." *Victoria Transport Policy Institute*.
 
-2. Fagnant, D. J., & Kockelman, K. (2015). "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations." *Transportation Research Part A*, 77, 167-181.
+  2. Fagnant, D. J., & Kockelman, K. (2015). "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations." *Transportation Research Part A*, 77, 167-181.
 
-## See Also
+  ## See Also
 
-- [[Autonomous Vehicle]]
-- [[ADAS]]
-- [[Perception System]]
+  - [[Autonomous Vehicle]]
+  - [[ADAS]]
+  - [[Perception System]]
 
-## Metadata
+  ## Core Characteristics
 
-- **Domain**: Autonomous Vehicles, Transportation
-- **Maturity**: Commercial pilots and limited deployment
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Self-Driving Car
-		  
-		  **Term ID**: AI-0347
-		  **Category**: Domain Applications → Autonomous Systems
-		  **Status**: Stable
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
-		  
-		  ## Core Characteristics
-		  
-		  - **Full Autonomy**: Capable of handling complete driving task
-		  - **Safety-Critical**: Designed for passenger safety and public road operation
-		  - **Regulatory Compliance**: Adherence to traffic laws and vehicle regulations
-		  - **User Interface**: Passenger interaction and override capabilities
-		  - **Fail-Safe Systems**: Redundancy and graceful degradation
-		  
-		  ## Relationships
-		  
-		  - **Superclass**: Autonomous Vehicle
-		  - **Related**: Robotaxi, ADAS, Autonomous Navigation
-		  - **Standards**: SAE J3016, ISO 26262, UN Regulation 155/156
-		  
-		  ## Key Literature
-		  
-		  1. Litman, T. (2021). "Autonomous Vehicle Implementation Predictions: Implications for Transport Planning." *Victoria Transport Policy Institute*.
-		  
-		  2. Fagnant, D. J., & Kockelman, K. (2015). "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations." *Transportation Research Part A*, 77, 167-181.
-		  
-		  ## See Also
-		  
-		  - [[Autonomous Vehicle]]
-		  - [[ADAS]]
-		  - [[Perception System]]
-		  
-		  ## Metadata
-		  
-		  - **Domain**: Autonomous Vehicles, Transportation
-		  - **Maturity**: Commercial pilots and limited deployment
-		  
-		  ```
+  - **Full Autonomy**: Capable of handling complete driving task
+  - **Safety-Critical**: Designed for passenger safety and public road operation
+  - **Regulatory Compliance**: Adherence to traffic laws and vehicle regulations
+  - **User Interface**: Passenger interaction and override capabilities
+  - **Fail-Safe Systems**: Redundancy and graceful degradation
 
-- public-access:: true
-	- definition:: A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely. Self-driving cars represent the consumer application of autonomous vehicle technology, typically targeting SAE Level 3-5 automation in urban and highway environments.
+  ## Relationships
 
+  - **Superclass**: Autonomous Vehicle
+  - **Related**: Robotaxi, ADAS, Autonomous Navigation
+  - **Standards**: SAE J3016, ISO 26262, UN Regulation 155/156
 
+  ## Key Literature
 
-# Self-Driving Car – Revised Ontology Entry
+  1. Litman, T. (2021). "Autonomous Vehicle Implementation Predictions: Implications for Transport Planning." *Victoria Transport Policy Institute*.
 
-## Academic Context
+  2. Fagnant, D. J., & Kockelman, K. (2015). "Preparing a nation for autonomous vehicles: opportunities, barriers and policy recommendations." *Transportation Research Part A*, 77, 167-181.
 
-- Autonomous vehicle technology represents a convergence of artificial intelligence, sensor systems, and control engineering
-  - Builds upon decades of driver-assistance research and real-world deployment data
-  - Increasingly recognised as a multi-disciplinary challenge spanning computer vision, robotics, ethics, and policy
-  - The field has matured from theoretical frameworks to commercial implementations, though full autonomy remains more gradual than initially anticipated
+  ## See Also
 
-## Current Landscape (2025)
+  - [[Autonomous Vehicle]]
+  - [[ADAS]]
+  - [[Perception System]]
 
-### Industry Adoption and Implementations
-
-- **Robotaxi expansion and commercial deployment**
-  - Waymo (Google's Alphabet subsidiary) has expanded autonomous taxi partnerships with Uber to include Austin and Atlanta, building on Phoenix operations[2]
-  - Users can now hail Waymo vehicles directly through the Uber app, representing significant accessibility progress[2]
-  - Amazon's Zoox, Tesla, Alibaba, and Baidu are actively developing competing systems with substantial capital investment[2]
-
-- **Manufacturer commitments and timelines**
-  - General Motors announced an "eyes-off" autonomous driving system launching on the Cadillac Escalade IQ electric SUV in 2028, initially for highway driving with urban expansion planned[3]
-  - This represents the first major automaker commercialisation of technology legally permitting eyes-off operation—a meaningful distinction from Tesla's Full Self-Driving system, which requires continuous driver attention[3]
-  - GM's approach builds upon 700 million miles of real-world Super Cruise data and learnings from its Cruise division[3]
-
-- **UK and North England context**
-  - Search results do not provide specific information regarding autonomous vehicle implementations or trials in the UK or North England regions as of November 2025
-  - This represents a notable gap in current commercial deployment relative to US and Chinese markets
-
-### Technical Capabilities and Limitations
-
-- **AI and computational advancement**
-  - Nvidia's DRIVE Thor processor (unveiled at CES 2025) delivers 20 times the computational power of its DRIVE ORIN predecessor[1]
-  - Real-time sensor fusion integrating LiDAR, radar, and camera data enables split-second decision-making[1][5]
-  - Generative AI applications now support real-time data processing and predictive analytics for adaptive navigation[1]
-
-- **Connectivity infrastructure**
-  - Vehicle-to-Everything (V2X) integration is expanding across multiple cities globally, enabling communication between vehicles, infrastructure, and road users[1]
-  - 5G networks provide the foundational connectivity required for reliable autonomous operation, though coverage gaps remain a practical constraint[4]
-  - IoT-enabled sensors facilitate real-time data gathering and analysis[1]
-
-- **Automation levels and realistic expectations**
-  - Personal vehicles are expected to remain predominantly at SAE Level 2 and Level 2+ through 2030, with drivers required to maintain hands-on-wheel and eyes-on-road vigilance[6]
-  - Full autonomy (Level 4-5) remains "significantly constrained by both technical and regulatory barriers" for consumer vehicles[6]
-  - Robotaxis and autonomous shuttles represent the most viable near-term deployment pathway, followed by autonomous trucks[6]
-
-### Standards and Frameworks
-
-- **SAE Automation Levels**
-  - Current commercial systems operate primarily at Level 2-3, with Level 4 ("eyes-off") systems entering limited deployment
-  - Level 5 (full autonomy in all conditions) remains aspirational rather than realised
-
-- **Regulatory evolution**
-  - Regulatory frameworks are adapting to accommodate autonomous systems, though adoption remains more gradual than previously forecast[2]
-  - Safety data from deployed systems (such as GM's 700 million Super Cruise miles) is informing policy development[3]
-
-## Research & Literature
-
-- **Key technical foundations**
-  - Sensor fusion and perception systems: LiDAR, radar, and camera integration for environmental awareness[5]
-  - Machine learning algorithms for object detection, decision-making, and route optimisation[1]
-  - Real-time processing architectures enabling split-second autonomous navigation[1]
-
-- **Emerging research directions**
-  - Generative AI applications for predictive analytics and adaptive behaviour[1]
-  - V2X communication protocols and standardisation[1]
-  - Integration of autonomous vehicles with public transportation networks[5]
-  - Urban planning implications of reduced parking demand and optimised traffic flow[5]
-
-*Note: Complete academic citations with DOI references were not available in the provided search results. Recommend consulting IEEE Xplore, arXiv, and SAE International publications for peer-reviewed literature on autonomous vehicle systems, sensor fusion, and regulatory frameworks.*
-
-## UK Context
-
-- Current deployment status remains limited relative to North American and Chinese markets
-- Regulatory frameworks in the UK are evolving to accommodate autonomous systems, though specific North England trials or implementations are not documented in current sources
-- Opportunity exists for UK automotive research institutions and technology hubs to contribute to standardisation and safety validation
-
-## Future Directions
-
-### Emerging Trends
-
-- **Market expansion and scale**
-  - Annual production of Level 4-5 autonomous vehicles (robo-cars) is projected to reach 800,000 units by 2030[4]
-  - Robotaxi fleets are expected to operate at scale in 40 to 80 cities globally by 2035[6]
-
-- **Technology maturation**
-  - Incremental rather than revolutionary advancement in personal vehicle autonomy through 2035[6]
-  - Continued refinement of AI-driven perception and decision-making systems[1]
-  - Expansion of V2X infrastructure and 5G connectivity coverage[1][4]
-
-### Anticipated Challenges
-
-- **Technical barriers**
-  - Achieving reliable Level 4-5 autonomy in diverse weather, lighting, and traffic conditions remains computationally and algorithmically demanding
-  - Sensor reliability and redundancy requirements increase system complexity and cost
-
-- **Regulatory and economic constraints**
-  - Harmonisation of autonomous vehicle regulations across jurisdictions remains incomplete
-  - Cost of advanced sensor arrays and computing systems limits consumer vehicle accessibility
-  - 5G infrastructure gaps in rural and underserved regions constrain deployment
-
-- **Societal and urban planning implications**
-  - Integration with existing transportation networks requires coordinated policy development
-  - Labour market transitions in driving professions require proactive workforce planning
-  - Cybersecurity and data privacy considerations remain underexplored in current deployments
-
-### Research Priorities
-
-- Standardisation of V2X communication protocols and safety validation frameworks
-- Development of robust perception systems for edge cases and adverse conditions
-- Integration of autonomous vehicles with public transportation and urban mobility networks
-- Regulatory harmonisation across major markets (US, EU, China, UK)
-- Long-term societal impact assessment and equitable access planning
-
----
-
-**Note on sources:** This revision incorporates information current to November 2025. UK-specific autonomous vehicle implementations and North England trials were not documented in available search results, suggesting either limited public deployment or insufficient media coverage. Recommend consulting UK government transport policy documents, Innovate UK funding announcements, and regional development authority reports for comprehensive UK context.
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,229 +1,243 @@
-- ### OntologyBlock
-  id:: marker-based-tracking-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9955
-	- source-domain:: mv
-	- preferred-term:: Marker Based Tracking
-	- status:: active
-	- owl:class:: mv:MarkerBasedTracking
-	- belongsToDomain:: [[metaverse]]
-	- definition:: AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.
-	- #### Relationships
-	  id:: marker-based-tracking-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Spatial Tracking Technology]]
-		- related-to:: [[Computer Vision]]
-		- related-to:: [[Augmented Reality]]
-		- enables:: [[AR Content Positioning]]
+iri:: http://narrativegoldmine.com/spatial-computing#MarkerBasedTracking
+uri:: urn:visionclaw:concept:spatial-computing:marker-based-tracking
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:marker-based-tracking
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Marker Based Tracking
+content-hash:: sha256-12-1a566a8436a9
+legacy-term-id:: MV-9955
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Core Technology
+- ### Definition
+  - AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.
 
-### How It Works
-- Camera image capture
-- Pattern recognition
-- Position calculation
-- Orientation detection
-- Digital content overlay
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MarkerBasedTracking
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Marker Types
-- QR codes
-- April tags
-- ArUco markers
-- Fiducial patterns
-- Custom designs
+- ### Relationships
+  - is-subclass-of:: [[Spatial Tracking Technology]]
+  - enables:: [[AR Content Positioning]]
 
-## Fiducial Markers
+- ### Content
 
-### Definition
-- Scene reference objects
-- Frame of reference
-- Position tracking
-- 3D reconstruction
-- Environment mapping
+  ## Core Technology
 
-### April Tags
-- University of Michigan origin
-- Robust visual markers
-- Robot tracking
-- Camera calibration
-- Faster than QR codes
+  ### How It Works
+  - Camera image capture
+  - Pattern recognition
+  - Position calculation
+  - Orientation detection
+  - Digital content overlay
 
-### ArUco Markers
-- OpenCV integration
-- Square patterns
-- Multiple detection
-- Pose estimation
-- Camera calibration
+  ### Marker Types
+  - QR codes
+  - April tags
+  - ArUco markers
+  - Fiducial patterns
+  - Custom designs
 
-## Platform Support
+  ## Fiducial Markers
 
-### Magic Leap
-- 6DOF pose tracking
-- Encoded information extraction
-- QR code support
-- April tag support
-- ArUco compatibility
+  ### Definition
+  - Scene reference objects
+  - Frame of reference
+  - Position tracking
+  - 3D reconstruction
+  - Environment mapping
 
-### Tracking Modes
-- Inside-out tracking
-- Outside-in tracking
-- Environment markers
-- Reference point systems
-- Hybrid approaches
+  ### April Tags
+  - University of Michigan origin
+  - Robust visual markers
+  - Robot tracking
+  - Camera calibration
+  - Faster than QR codes
 
-## VR/AR Applications
+  ### ArUco Markers
+  - OpenCV integration
+  - Square patterns
+  - Multiple detection
+  - Pose estimation
+  - Camera calibration
 
-### Head-Mounted Display Tracking
-- HMD position
-- Input device tracking
-- Room-scale VR
-- Controller location
-- Accessory tracking
+  ## Platform Support
 
-### AR Content Anchoring
-- Digital overlay positioning
-- World-locked content
-- Persistent anchors
-- Multi-marker systems
-- Scene reconstruction
+  ### Magic Leap
+  - 6DOF pose tracking
+  - Encoded information extraction
+  - QR code support
+  - April tag support
+  - ArUco compatibility
 
-## Technical Considerations
+  ### Tracking Modes
+  - Inside-out tracking
+  - Outside-in tracking
+  - Environment markers
+  - Reference point systems
+  - Hybrid approaches
 
-### Detection Accuracy
-- Partial occlusion handling
-- Angle tolerance
-- Distance limitations
-- Lighting conditions
-- Motion blur sensitivity
+  ## VR/AR Applications
 
-### QR Code Challenges
-- Small detail sensitivity
-- Motion blur impact
-- Stationary detection preference
-- Size requirements
-- Contrast needs
+  ### Head-Mounted Display Tracking
+  - HMD position
+  - Input device tracking
+  - Room-scale VR
+  - Controller location
+  - Accessory tracking
 
-## Development Tools
+  ### AR Content Anchoring
+  - Digital overlay positioning
+  - World-locked content
+  - Persistent anchors
+  - Multi-marker systems
+  - Scene reconstruction
 
-### ARToolKit
-- Open-source library
-- AR application building
-- Marker tracking
-- Cross-platform
-- Community support
+  ## Technical Considerations
 
-### ARKit and ARCore
-- Apple/Google platforms
-- Native marker support
-- Image tracking
-- Combined approaches
-- Mobile optimisation
+  ### Detection Accuracy
+  - Partial occlusion handling
+  - Angle tolerance
+  - Distance limitations
+  - Lighting conditions
+  - Motion blur sensitivity
 
-### OpenCV
-- Computer vision library
-- Marker detection
-- Pose estimation
-- ArUco module
-- Custom implementations
+  ### QR Code Challenges
+  - Small detail sensitivity
+  - Motion blur impact
+  - Stationary detection preference
+  - Size requirements
+  - Contrast needs
 
-## Computer Vision Algorithms
+  ## Development Tools
 
-### Detection Process
-- Image preprocessing
-- Edge detection
-- Pattern matching
-- Pose calculation
-- Refinement steps
+  ### ARToolKit
+  - Open-source library
+  - AR application building
+  - Marker tracking
+  - Cross-platform
+  - Community support
 
-### Advanced Techniques
-- CNN-based detection
-- Robust recognition
-- Deep learning enhancement
-- Real-time processing
-- GPU acceleration
+  ### ARKit and ARCore
+  - Apple/Google platforms
+  - Native marker support
+  - Image tracking
+  - Combined approaches
+  - Mobile optimisation
 
-## Emerging Trends
+  ### OpenCV
+  - Computer vision library
+  - Marker detection
+  - Pose estimation
+  - ArUco module
+  - Custom implementations
 
-### Natural Feature Replacement
-- Markerless tracking growth
-- Environmental features
-- GPS integration
-- Landmark recognition
-- Skyline detection
+  ## Computer Vision Algorithms
 
-### Deep Learning Integration
-- CNN marker detection
-- Improved robustness
-- Occlusion handling
-- Lighting adaptation
-- Speed improvement
+  ### Detection Process
+  - Image preprocessing
+  - Edge detection
+  - Pattern matching
+  - Pose calculation
+  - Refinement steps
 
-### Hybrid Systems
-- Marker + markerless
-- Initial calibration
-- Drift correction
-- Reliability improvement
-- Fallback mechanisms
+  ### Advanced Techniques
+  - CNN-based detection
+  - Robust recognition
+  - Deep learning enhancement
+  - Real-time processing
+  - GPU acceleration
 
-## Use Cases
+  ## Emerging Trends
 
-### Industrial AR
-- Assembly guidance
-- Quality inspection
-- Training applications
-- Maintenance support
-- Warehouse navigation
+  ### Natural Feature Replacement
+  - Markerless tracking growth
+  - Environmental features
+  - GPS integration
+  - Landmark recognition
+  - Skyline detection
 
-### Gaming
-- AR game triggers
-- Location-based experiences
-- Collectible cards
-- Interactive toys
-- Physical-digital bridge
+  ### Deep Learning Integration
+  - CNN marker detection
+  - Improved robustness
+  - Occlusion handling
+  - Lighting adaptation
+  - Speed improvement
 
-### Education
-- Interactive textbooks
-- Museum exhibits
-- Science visualisation
-- Historical reconstruction
-- Language learning
+  ### Hybrid Systems
+  - Marker + markerless
+  - Initial calibration
+  - Drift correction
+  - Reliability improvement
+  - Fallback mechanisms
 
-## Advantages
+  ## Use Cases
 
-### Precision
-- Accurate positioning
-- Stable tracking
-- Repeatable results
-- Known reference
-- Calibrated environment
+  ### Industrial AR
+  - Assembly guidance
+  - Quality inspection
+  - Training applications
+  - Maintenance support
+  - Warehouse navigation
 
-### Simplicity
-- Easy implementation
-- Clear triggers
-- Defined anchors
-- Controlled experience
-- Predictable behaviour
+  ### Gaming
+  - AR game triggers
+  - Location-based experiences
+  - Collectible cards
+  - Interactive toys
+  - Physical-digital bridge
 
-## Limitations
+  ### Education
+  - Interactive textbooks
+  - Museum exhibits
+  - Science visualisation
+  - Historical reconstruction
+  - Language learning
 
-### Environmental Dependency
-- Marker placement needed
-- Visual occlusion issues
-- Lighting requirements
-- Physical installation
-- Maintenance needs
+  ## Advantages
 
-### User Experience
-- Marker visibility
-- Aesthetic concerns
-- Setup requirements
-- Limited spontaneity
-- Prepared environments
+  ### Precision
+  - Accurate positioning
+  - Stable tracking
+  - Repeatable results
+  - Known reference
+  - Calibrated environment
 
-## Metadata
+  ### Simplicity
+  - Easy implementation
+  - Clear triggers
+  - Defined anchors
+  - Controlled experience
+  - Predictable behaviour
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Limitations
+
+  ### Environmental Dependency
+  - Marker placement needed
+  - Visual occlusion issues
+  - Lighting requirements
+  - Physical installation
+  - Maintenance needs
+
+  ### User Experience
+  - Marker visibility
+  - Aesthetic concerns
+  - Setup requirements
+  - Limited spontaneity
+  - Prepared environments
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

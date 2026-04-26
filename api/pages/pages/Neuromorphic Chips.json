@@ -1,64 +1,65 @@
 {
-  "id": "Neuromorphic Chips",
+  "id": "neuromorphic-chips",
   "title": "Neuromorphic Chips",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1024\n  - preferred-term:: Neuromorphic Chips\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:NeuromorphicChips\n\n### Relationships\n- is-subclass-of:: [[AI Hardware]]\n- is-subclass-of:: [[Inference Hardware]]\n- skos:related:: [[Spiking Neural Networks]]\n- skos:related:: [[Brain-Inspired Computing]]\n- skos:related:: [[Event-Driven Computing]]\n- inspired-by:: [[Neuroscience]]\n- enables:: [[Ultra-Low-Power AI]]\n- enables:: [[Edge AI]]\n\n### Definition\nNeuromorphic chips are brain-inspired computing processors that emulate the structure and function of biological neural systems, using event-driven spiking neural networks, massively parallel architectures, and analog/mixed-signal circuits to achieve extreme energy efficiency. Unlike traditional von Neumann architectures, neuromorphic hardware integrates memory and computation, processes information asynchronously through discrete events (spikes), and exploits spatiotemporal dynamics for computation.\n\n### Core Principles\n**Brain-Inspired Architecture:**\n- Neurons and synapses as computational primitives\n- Massive parallelism (billions of connections)\n- Collocated memory and processing\n- Low-power operation\n\n**Event-Driven Computation:**\n- Asynchronous communication via spikes\n- Activity-dependent energy consumption\n- Sparse, temporal coding\n- No clock-driven synchronization\n\n**Analog/Mixed-Signal:**\n- Analog computation (membrane dynamics)\n- Digital communication (spikes)\n- Exploits device physics\n- Inherent noise tolerance\n\n### Key Characteristics\n**Advantages:**\n- Ultra-low power (1000x less than GPUs)\n- Real-time processing\n- Inherent temporal dynamics\n- Scalable parallelism\n- Adaptive/learning circuits\n\n**Challenges:**\n- Limited software ecosystem\n- Difficult programming model\n- Accuracy vs. efficiency tradeoffs\n- Lack of standardization\n- Training algorithms immature\n\n### Major Neuromorphic Platforms\n**Intel Loihi 2 (2021):**\n- 128 neuromorphic cores\n- 1 million neurons per chip\n- Programmable neuron models\n- On-chip learning (STDP, etc.)\n- 8x more efficient than Loihi 1\n- Research platform (not commercial)\n\n**IBM TrueNorth (2014):**\n- 1 million neurons, 256M synapses\n- 4,096 cores\n- 70 mW power consumption\n- Fixed-point digital\n- Event-driven\n- Limited commercial adoption\n\n**BrainScaleS-2 (Europe):**\n- Analog neuron circuits\n- 10,000x faster than real-time\n- Mixed-signal architecture\n- Research platform\n\n**SpiNNaker (UK):**\n- ARM cores simulate neurons\n- 1 million cores (full system)\n- Real-time brain modeling\n- Digital approach\n\n**Akida (BrainChip):**\n- Commercial neuromorphic chip\n- Edge AI inference\n- Event-based vision\n- Incremental learning\n\n**Loihi Ecosystem (INRC):**\n- Intel Neuromorphic Research Community\n- 100+ institutions\n- Research applications\n\n### Neuron Models\n**Leaky Integrate-and-Fire (LIF):**\n- Simple, efficient\n- Membrane potential integrates inputs\n- Fires spike when threshold crossed\n- Most common in neuromorphic chips\n\n**Izhikevich Model:**\n- Captures diverse neuron dynamics\n- Biologically realistic\n- Efficient simulation\n\n**Hodgkin-Huxley:**\n- High biological fidelity\n- Computationally expensive\n- Rarely used in hardware\n\n**Adaptive Models:**\n- Spike frequency adaptation\n- Refractory periods\n- Burst firing\n\n### Learning Mechanisms\n**Spike-Timing-Dependent Plasticity (STDP):**\n- Hebbian learning rule\n- Timing-based weight updates\n- Unsupervised learning\n- Implemented in analog circuits\n\n**Reward-Modulated STDP:**\n- Reinforcement learning\n- Dopamine-like modulation\n- Three-factor learning rule\n\n**Backpropagation Adaptations:**\n- Surrogate gradients\n- BPTT for spiking networks\n- Hybrid approaches\n\n**Online Learning:**\n- Continual adaptation\n- No separate training phase\n- Real-world learning\n\n### Applications\n**Sensory Processing:**\n- Event cameras (DVS - Dynamic Vision Sensor)\n- Audio processing (cochlear models)\n- Tactile sensing\n- Olfactory sensing\n\n**Robotics:**\n- Motor control\n- Sensor fusion\n- Real-time decision-making\n- Low-latency control loops\n\n**Edge AI:**\n- Always-on keyword detection\n- Gesture recognition\n- Anomaly detection\n- Battery-powered devices\n\n**Pattern Recognition:**\n- Time-series analysis\n- Spatiotemporal patterns\n- Radar/sonar processing\n\n**Optimization:**\n- Constraint satisfaction\n- Graph problems\n- Combinatorial optimization\n\n### Event-Based Sensors\n**Dynamic Vision Sensors (DVS):**\n- Pixels fire on brightness change\n- Microsecond latency\n- 120 dB dynamic range\n- Low power (<10 mW)\n- Natural pairing with neuromorphic chips\n\n**Silicon Cochleas:**\n- Event-based audio\n- Frequency decomposition\n- Real-time processing\n\n**Tactile Sensors:**\n- Event-based touch\n- Pressure changes trigger events\n\n### Energy Efficiency\n**Power Consumption:**\n- Loihi 2: ~1W (research chip)\n- TrueNorth: 70 mW (1M neurons)\n- Akida: <1W\n- Compare to: GPU inference 75-400W\n\n**Efficiency Metrics:**\n- Synaptic operations per joule\n- 1000-10,000x more efficient than GPU for spiking tasks\n- Activity-dependent power (idle consumes almost nothing)\n\n### Programming Frameworks\n**Lava (Intel):**\n- Python-based\n- Supports Loihi 1/2\n- Cross-platform (CPU, GPU, neuromorphic)\n\n**PyNN:**\n- Python neural network simulator\n- Hardware-agnostic\n- Supports SpiNNaker, BrainScaleS\n\n**BindsNET:**\n- Spiking neural networks in PyTorch\n- Simulation-based development\n\n**Brian2:**\n- Spiking network simulator\n- Equation-based neuron specification\n\n**Nengo:**\n- Neural engineering framework\n- Supports multiple backends\n\n### Comparison with Traditional AI Hardware\n| Aspect | Neuromorphic | GPU/TPU |\n|--------|--------------|---------|\n| Architecture | Event-driven, distributed | Synchronous, centralized |\n| Power | <1W | 75-400W |\n| Latency | Microseconds | Milliseconds |\n| Training | On-chip learning emerging | Dominant paradigm |\n| Accuracy | Lower (for DNNs) | State-of-the-art |\n| Temporal | Native support | Requires recurrence |\n| Software | Immature | Mature ecosystem |\n\n### Hybrid Approaches\n**Neuromorphic + GPU:**\n- GPU for training conventional DNNs\n- Neuromorphic for inference\n- Conversion tools (DNN → SNN)\n\n**Neuromorphic Co-processors:**\n- Handle specific tasks (e.g., audio)\n- Main processor for general compute\n- Example: Always-on voice detection\n\n### Research Directions\n**Materials:**\n- Memristors (analog weight storage)\n- Phase-change memory\n- Spin-torque devices\n- Organic electronics\n\n**3D Integration:**\n- Stacked neuron/synapse layers\n- Increased connectivity density\n- Reduced communication distance\n\n**Large-Scale Systems:**\n- Wafer-scale integration\n- Multi-chip systems\n- Brain-scale emulation\n\n**Algorithm Development:**\n- Efficient SNN training\n- Transfer learning for SNNs\n- Neuromorphic transformers\n\n### Commercial Landscape\n**Startups:**\n- BrainChip (Akida - commercial)\n- SynSense (event-based vision)\n- Prophesee (event cameras)\n- Rain Neuromorphics\n\n**Research Labs:**\n- Intel (Loihi)\n- IBM (TrueNorth research)\n- Universities worldwide\n\n**Adoption Barriers:**\n- Lack of killer application\n- Software ecosystem immaturity\n- Competition from efficient GPUs\n- Conservative enterprise IT\n\n### Future Outlook\n**Near-Term (2024-2027):**\n- Improved programming tools\n- DNN-to-SNN conversion maturity\n- Edge AI deployments\n- Event-based sensor fusion\n\n**Long-Term (2028+):**\n- Neuromorphic supercomputers\n- Seamless hybrid systems\n- On-chip lifelong learning\n- Brain-scale emulation (billions of neurons)\n\n### Potential Breakthroughs\n- Solving the training problem (efficient backprop for SNNs)\n- Standardization (common APIs, benchmarks)\n- Killer application discovery\n- Memristor maturity (analog weights)\n- Integration with quantum computing\n\nNeuromorphic chips represent a fundamental rethinking of computing inspired by biological brains, promising radical energy efficiency and real-time capabilities, but face significant challenges in software maturity and competing with rapidly improving traditional AI accelerators for mainstream adoption.",
-  "backlinks": [
-    "Inference Hardware"
-  ],
+  "content": "- ### Definition\n  - Neuromorphic Chips is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:NeuromorphicChips\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Inference Hardware]]\n  - enables:: [[Ultra-Low-Power AI]]\n\n- ### Content\n\n  #### Key Characteristics\n  **Advantages:**\n  - Ultra-low power (1000x less than GPUs)\n  - Real-time processing\n  - Inherent temporal dynamics\n  - Scalable parallelism\n  - Adaptive/learning circuits\n\n  **Challenges:**\n  - Limited software ecosystem\n  - Difficult programming model\n  - Accuracy vs. efficiency tradeoffs\n  - Lack of standardization\n  - Training algorithms immature\n\n  ### Major Neuromorphic Platforms\n  **Intel Loihi 2 (2021):**\n  - 128 neuromorphic cores\n  - 1 million neurons per chip\n  - Programmable neuron models\n  - On-chip learning (STDP, etc.)\n  - 8x more efficient than Loihi 1\n  - Research platform (not commercial)\n\n  **IBM TrueNorth (2014):**\n  - 1 million neurons, 256M synapses\n  - 4,096 cores\n  - 70 mW power consumption\n  - Fixed-point digital\n  - Event-driven\n  - Limited commercial adoption\n\n  **BrainScaleS-2 (Europe):**\n  - Analog neuron circuits\n  - 10,000x faster than real-time\n  - Mixed-signal architecture\n  - Research platform\n\n  **SpiNNaker (UK):**\n  - ARM cores simulate neurons\n  - 1 million cores (full system)\n  - Real-time brain modeling\n  - Digital approach\n\n  **Akida (BrainChip):**\n  - Commercial neuromorphic chip\n  - Edge AI inference\n  - Event-based vision\n  - Incremental learning\n\n  **Loihi Ecosystem (INRC):**\n  - Intel Neuromorphic Research Community\n  - 100+ institutions\n  - Research applications\n\n  ### Neuron Models\n  **Leaky Integrate-and-Fire (LIF):**\n  - Simple, efficient\n  - Membrane potential integrates inputs\n  - Fires spike when threshold crossed\n  - Most common in neuromorphic chips\n\n  **Izhikevich Model:**\n  - Captures diverse neuron dynamics\n  - Biologically realistic\n  - Efficient simulation\n\n  **Hodgkin-Huxley:**\n  - High biological fidelity\n  - Computationally expensive\n  - Rarely used in hardware\n\n  **Adaptive Models:**\n  - Spike frequency adaptation\n  - Refractory periods\n  - Burst firing\n\n  ### Learning Mechanisms\n  **Spike-Timing-Dependent Plasticity (STDP):**\n  - Hebbian learning rule\n  - Timing-based weight updates\n  - Unsupervised learning\n  - Implemented in analog circuits\n\n  **Reward-Modulated STDP:**\n  - Reinforcement learning\n  - Dopamine-like modulation\n  - Three-factor learning rule\n\n  **Backpropagation Adaptations:**\n  - Surrogate gradients\n  - BPTT for spiking networks\n  - Hybrid approaches\n\n  **Online Learning:**\n  - Continual adaptation\n  - No separate training phase\n  - Real-world learning\n\n  ### Applications\n  **Sensory Processing:**\n  - Event cameras (DVS - Dynamic Vision Sensor)\n  - Audio processing (cochlear models)\n  - Tactile sensing\n  - Olfactory sensing\n\n  **Robotics:**\n  - Motor control\n  - Sensor fusion\n  - Real-time decision-making\n  - Low-latency control loops\n\n  **Edge AI:**\n  - Always-on keyword detection\n  - Gesture recognition\n  - Anomaly detection\n  - Battery-powered devices\n\n  **Pattern Recognition:**\n  - Time-series analysis\n  - Spatiotemporal patterns\n  - Radar/sonar processing\n\n  **Optimization:**\n  - Constraint satisfaction\n  - Graph problems\n  - Combinatorial optimization\n\n  ### Event-Based Sensors\n  **Dynamic Vision Sensors (DVS):**\n  - Pixels fire on brightness change\n  - Microsecond latency\n  - 120 dB dynamic range\n  - Low power (<10 mW)\n  - Natural pairing with neuromorphic chips\n\n  **Silicon Cochleas:**\n  - Event-based audio\n  - Frequency decomposition\n  - Real-time processing\n\n  **Tactile Sensors:**\n  - Event-based touch\n  - Pressure changes trigger events\n\n  ### Energy Efficiency\n  **Power Consumption:**\n  - Loihi 2: ~1W (research chip)\n  - TrueNorth: 70 mW (1M neurons)\n  - Akida: <1W\n  - Compare to: GPU inference 75-400W\n\n  **Efficiency Metrics:**\n  - Synaptic operations per joule\n  - 1000-10,000x more efficient than GPU for spiking tasks\n  - Activity-dependent power (idle consumes almost nothing)\n\n  ### Programming Frameworks\n  **Lava (Intel):**\n  - Python-based\n  - Supports Loihi 1/2\n  - Cross-platform (CPU, GPU, neuromorphic)\n\n  **PyNN:**\n  - Python neural network simulator\n  - Hardware-agnostic\n  - Supports SpiNNaker, BrainScaleS\n\n  **BindsNET:**\n  - Spiking neural networks in PyTorch\n  - Simulation-based development\n\n  **Brian2:**\n  - Spiking network simulator\n  - Equation-based neuron specification\n\n  **Nengo:**\n  - Neural engineering framework\n  - Supports multiple backends\n\n  ### Comparison with Traditional AI Hardware\n  | Aspect | Neuromorphic | GPU/TPU |\n  |--------|--------------|---------|\n  | Architecture | Event-driven, distributed | Synchronous, centralized |\n  | Power | <1W | 75-400W |\n  | Latency | Microseconds | Milliseconds |\n  | Training | On-chip learning emerging | Dominant paradigm |\n  | Accuracy | Lower (for DNNs) | State-of-the-art |\n  | Temporal | Native support | Requires recurrence |\n  | Software | Immature | Mature ecosystem |\n\n  ### Hybrid Approaches\n  **Neuromorphic + GPU:**\n  - GPU for training conventional DNNs\n  - Neuromorphic for inference\n  - Conversion tools (DNN → SNN)\n\n  **Neuromorphic Co-processors:**\n  - Handle specific tasks (e.g., audio)\n  - Main processor for general compute\n  - Example: Always-on voice detection\n\n  ### Research Directions\n  **Materials:**\n  - Memristors (analog weight storage)\n  - Phase-change memory\n  - Spin-torque devices\n  - Organic electronics\n\n  **3D Integration:**\n  - Stacked neuron/synapse layers\n  - Increased connectivity density\n  - Reduced communication distance\n\n  **Large-Scale Systems:**\n  - Wafer-scale integration\n  - Multi-chip systems\n  - Brain-scale emulation\n\n  **Algorithm Development:**\n  - Efficient SNN training\n  - Transfer learning for SNNs\n  - Neuromorphic transformers\n\n  ### Commercial Landscape\n  **Startups:**\n  - BrainChip (Akida - commercial)\n  - SynSense (event-based vision)\n  - Prophesee (event cameras)\n  - Rain Neuromorphics\n\n  **Research Labs:**\n  - Intel (Loihi)\n  - IBM (TrueNorth research)\n  - Universities worldwide\n\n  **Adoption Barriers:**\n  - Lack of killer application\n  - Software ecosystem immaturity\n  - Competition from efficient GPUs\n  - Conservative enterprise IT\n\n  ### Future Outlook\n  **Near-Term (2024-2027):**\n  - Improved programming tools\n  - DNN-to-SNN conversion maturity\n  - Edge AI deployments\n  - Event-based sensor fusion\n\n  **Long-Term (2028+):**\n  - Neuromorphic supercomputers\n  - Seamless hybrid systems\n  - On-chip lifelong learning\n  - Brain-scale emulation (billions of neurons)\n\n  ### Potential Breakthroughs\n  - Solving the training problem (efficient backprop for SNNs)\n  - Standardization (common APIs, benchmarks)\n  - Killer application discovery\n  - Memristor maturity (analog weights)\n  - Integration with quantum computing\n\n  Neuromorphic chips represent a fundamental rethinking of computing inspired by biological brains, promising radical energy efficiency and real-time capabilities, but face significant challenges in software maturity and competing with rapidly improving traditional AI accelerators for mainstream adoption.\n\n  ### Definition\n  Neuromorphic chips are brain-inspired computing processors that emulate the structure and function of biological neural systems, using event-driven spiking neural networks, massively parallel architectures, and analog/mixed-signal circuits to achieve extreme energy efficiency. Unlike traditional von Neumann architectures, neuromorphic hardware integrates memory and computation, processes information asynchronously through discrete events (spikes), and exploits spatiotemporal dynamics for computation.\n\n  ### Core Principles\n  **Brain-Inspired Architecture:**\n  - Neurons and synapses as computational primitives\n  - Massive parallelism (billions of connections)\n  - Collocated memory and processing\n  - Low-power operation\n\n  **Event-Driven Computation:**\n  - Asynchronous communication via spikes\n  - Activity-dependent energy consumption\n  - Sparse, temporal coding\n  - No clock-driven synchronization\n\n  **Analog/Mixed-Signal:**\n  - Analog computation (membrane dynamics)\n  - Digital communication (spikes)\n  - Exploits device physics\n  - Inherent noise tolerance\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
     "Inference Hardware",
-    "Ultra-Low-Power AI",
-    "Neuroscience",
-    "Event-Driven Computing",
-    "AI Hardware",
-    "Spiking Neural Networks",
-    "Edge AI",
-    "Brain-Inspired Computing"
+    "Ultra-Low-Power AI"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:neuromorphic-chips",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#NeuromorphicChips",
+    "content_hash": "sha256-12-2ccfefdad31d",
+    "legacy_term_id": "AI-1024",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:neuromorphic-chips",
+    "schema_version": "v2",
     "term_id": "AI-1024",
     "preferred_term": "Neuromorphic Chips",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#NeuromorphicChips",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Neuromorphic Chips is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:NeuromorphicChips",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:NeuromorphicChips",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Inference Hardware"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Ultra-Low-Power AI"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,44 +1,63 @@
-- ### OntologyBlock
-  id:: virtual-asset-trading-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10103
-	- source-domain:: mv
-	- preferred-term:: Virtual Asset Trading
-	- status:: active
-	- definition:: The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.
-	- owl:class:: mv:VirtualAssetTrading
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Virtual Economy]]
-		- related-to:: [[NFT Marketplace]]
-		- related-to:: [[Cryptocurrency Exchange]]
-		- related-to:: [[Virtual Asset]]
-	  id:: virtual-asset-trading-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual asset trading encompasses all forms of digital asset exchange in metaverse and blockchain ecosystems. This includes centralized exchanges, decentralized exchanges (DEXs), NFT marketplaces, and peer-to-peer trading platforms.
-- ## Technical Details
-	- ### Trading Platforms
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualAssetTrading
+uri:: urn:visionclaw:concept:spatial-computing:virtual-asset-trading
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-asset-trading
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Asset Trading
+content-hash:: sha256-12-a1c13d451d69
+legacy-term-id:: MV-10103
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualAssetTrading
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Virtual Economy]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual asset trading encompasses all forms of digital asset exchange in metaverse and blockchain ecosystems. This includes centralized exchanges, decentralized exchanges (DEXs), NFT marketplaces, and peer-to-peer trading platforms.
+  - ## Technical Details
+  - ### Trading Platforms
 		- **Centralized Exchanges (CEX)**: Coinbase, Binance, Kraken
 		- **Decentralized Exchanges (DEX)**: Uniswap, SushiSwap, Curve
 		- **NFT Marketplaces**: OpenSea, Blur, Magic Eden
 		- **Metaverse Markets**: Decentraland, The Sandbox
-	- ### Trading Mechanisms
+  - ### Trading Mechanisms
 		- Order book matching
 		- Automated Market Makers (AMM)
 		- Auction systems (English, Dutch)
 		- Fixed-price listings
-	- ### Regulatory Considerations
+  - ### Regulatory Considerations
 		- FATF Travel Rule compliance
 		- AML/KYC requirements
 		- Securities classification
 		- Consumer protection
-- ## Applications
-	- Cryptocurrency spot trading
-	- NFT collection trading
-	- Virtual real estate transactions
-	- In-game item marketplaces
-	- Digital art auctions
+  - ## Applications
+  - Cryptocurrency spot trading
+  - NFT collection trading
+  - Virtual real estate transactions
+  - In-game item marketplaces
+  - Digital art auctions
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

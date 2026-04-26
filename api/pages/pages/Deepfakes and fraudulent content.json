@@ -1,7 +1,7 @@
 {
-  "id": "Deepfakes and fraudulent content",
+  "id": "deepfakes-and-fraudulent-content",
   "title": "Deepfakes and fraudulent content",
-  "content": "- ![WhatsApp Image 2024-06-13 at 09.29.51_1881330c.jpg](../assets/WhatsApp_Image_2024-06-13_at_09.29.51_1881330c_1718268091114_0.jpg){:width 400}\n\t- [Deepfake Video Call Scams Finance Bro Out of $25 Million (gizmodo.com)](https://gizmodo.com/deepfake-video-call-scams-finance-bro-out-25-million-1851227196)\n- [FCC-24-17A1.pdf](https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf) FCC makes robotcalls illegal after New Hampshire political stunt [Fake Biden robocall investigation targets 2 Texas companies | AP News](https://apnews.com/article/biden-robocalls-artificial-intelligence-new-hampshire-texas-a8665277d43d05380d2c7594edf27617)\n- [Bland AI Phone Calling Platform](https://www.bland.ai/) [[Cyber security and Cryptography]] [[Agents]]\n- [Viral deepfake videos of Le Pen family reminder that content moderation is still not up to par ahead of EU elections – Euractiv](https://www.euractiv.com/section/artificial-intelligence/news/viral-deepfake-videos-of-le-pen-family-reminder-that-content-moderation-is-still-not-up-to-par-ahead-of-eu-elections/)\n- [twitter link to the render loading below](https://twitter.com/BrivaelLp/status/1772023234512175290)\n- {{twitter https://twitter.com/BrivaelLp/status/1772023234512175290}}\n- # Social engineering\n\t- {{twitter https://twitter.com/jelleprins/status/1771459616016126015?}}\n- ## The blurred line of identity\n\t- ![GODgca6bAAAxaPB.jpeg](../assets/GODgca6bAAAxaPB_1716366033099_0.jpeg)",
+  "content": "- ### Definition\n  - Deepfakes and fraudulent content is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DeepfakesAndFraudulentContent\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]] or [[AI Agent System]]\n\n- ### Content\n  - ![WhatsApp Image 2024-06-13 at 09.29.51_1881330c.jpg](../assets/WhatsApp_Image_2024-06-13_at_09.29.51_1881330c_1718268091114_0.jpg){:width 400}\n  - [Deepfake Video Call Scams Finance Bro Out of $25 Million (gizmodo.com)](https://gizmodo.com/deepfake-video-call-scams-finance-bro-out-25-million-1851227196)\n  - [FCC-24-17A1.pdf](https://docs.fcc.gov/public/attachments/FCC-24-17A1.pdf) FCC makes robotcalls illegal after New Hampshire political stunt [Fake Biden robocall investigation targets 2 Texas companies | AP News](https://apnews.com/article/biden-robocalls-artificial-intelligence-new-hampshire-texas-a8665277d43d05380d2c7594edf27617)\n  - [Bland AI Phone Calling Platform](https://www.bland.ai/) [[Cyber security and Cryptography]] [[Agents]]\n  - [Viral deepfake videos of Le Pen family reminder that content moderation is still not up to par ahead of EU elections – Euractiv](https://www.euractiv.com/section/artificial-intelligence/news/viral-deepfake-videos-of-le-pen-family-reminder-that-content-moderation-is-still-not-up-to-par-ahead-of-eu-elections/)\n  - [twitter link to the render loading below](https://twitter.com/BrivaelLp/status/1772023234512175290)\n  - {{twitter https://twitter.com/BrivaelLp/status/1772023234512175290}}\n  - # Social engineering\n  - {{twitter https://twitter.com/jelleprins/status/1771459616016126015?}}\n  - ![GODgca6bAAAxaPB.jpeg](../assets/GODgca6bAAAxaPB_1716366033099_0.jpeg)\n\n  - ## The blurred line of identity\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Social Impact",
     "Education and AI",
@@ -10,7 +10,63 @@
     "Death of the Internet"
   ],
   "wiki_links": [
-    "Cyber security and Cryptography",
-    "Agents"
-  ]
+    "AI Agent System",
+    "Agents",
+    "Blockchain",
+    "Cyber security and Cryptography"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:deepfakes-and-fraudulent-content",
+    "iri": "http://narrativegoldmine.com/infrastructure#DeepfakesAndFraudulentContent",
+    "content_hash": "sha256-12-1f54e412ef0e",
+    "legacy_term_id": "NGM-deepfakes-and-fraudulent-content",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:deepfakes-and-fraudulent-content",
+    "schema_version": "v2",
+    "term_id": "NGM-deepfakes-and-fraudulent-content",
+    "preferred_term": "Deepfakes and fraudulent content",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Deepfakes and fraudulent content is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DeepfakesAndFraudulentContent",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain",
+      "AI Agent System"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
 }

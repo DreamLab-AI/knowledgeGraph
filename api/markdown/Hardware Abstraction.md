@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9625-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9625
-	- preferred-term:: Hardware Abstraction
-	- source-domain:: mv
-	- owl:class:: mv:HardwareAbstraction
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#HardwareAbstraction
+uri:: urn:visionclaw:concept:spatial-computing:hardware-abstraction
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:hardware-abstraction
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Hardware Abstraction
+content-hash:: sha256-12-749ad57ce6da
+legacy-term-id:: MV-9625
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Hardware Abstraction is a concept within the metaverse domain. Further enrichment pending.
 
-Hardware Abstraction represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:HardwareAbstraction
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Hardware Abstraction represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

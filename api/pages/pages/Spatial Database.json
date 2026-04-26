@@ -1,41 +1,47 @@
 {
-  "id": "Spatial Database",
+  "id": "spatial-database",
   "title": "Spatial Database",
-  "content": "- ### OntologyBlock\n  id:: spatial-database-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10058\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Database\n\t- status:: active\n\t- definition:: A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.\n\t- owl:class:: mv:SpatialDatabase\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-database-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Database System]]\n\t\t- related-to:: [[GIS Technology]]\n\t\t- related-to:: [[PostGIS]]\n\t\t- related-to:: [[OGC Standards]]\n\t\t- enables:: [[Geospatial Data Management]]\n\t- #### Key Implementations\n\t  collapsed:: true\n\t\t- PostGIS (PostgreSQL extension)\n\t\t- Oracle Spatial\n\t\t- Microsoft SQL Server Spatial\n\t\t- MySQL Spatial Extensions\n\t\t- Esri Geodatabase\n\t- #### Spatial Query Types\n\t  collapsed:: true\n\t\t- Containment queries (does A contain B)\n\t\t- Intersection queries (does A intersect B)\n\t\t- Proximity queries (what is near A)\n\t\t- Adjacency queries (what is next to A)\n\t\t- Distance and area calculations",
+  "content": "- ### Definition\n  - A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:SpatialDatabase\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Database System]]\n  - enables:: [[Geospatial Data Management]]\n\n- ### Content\n\n  - #### Key Implementations\n\t\t- PostGIS (PostgreSQL extension)\n\t\t- Oracle Spatial\n\t\t- Microsoft SQL Server Spatial\n\t\t- MySQL Spatial Extensions\n\t\t- Esri Geodatabase\n  - #### Spatial Query Types\n\t\t- Containment queries (does A contain B)\n\t\t- Intersection queries (does A intersect B)\n\t\t- Proximity queries (what is near A)\n\t\t- Adjacency queries (what is next to A)\n\t\t- Distance and area calculations\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Spatial Computing Layer",
-    "Spatial Index",
-    "Spatial Queries"
+    "Spatial Index"
   ],
   "wiki_links": [
-    "Geospatial Data Management",
-    "PostGIS",
-    "GIS Technology",
     "Database System",
-    "OGC Standards",
+    "Geospatial Data Management",
     "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:spatial-database",
+    "iri": "http://narrativegoldmine.com/infrastructure#SpatialDatabase",
+    "content_hash": "sha256-12-d97b7c9f7d05",
+    "legacy_term_id": "MV-10058",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:spatial-database",
+    "schema_version": "v2",
     "term_id": "MV-10058",
     "preferred_term": "Spatial Database",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SpatialDatabase",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "A database system optimized for storing, indexing, and querying georeferenced data and geometric objects, supporting spatial data types (points, lines, polygons) and spatial operations (intersection, containment, proximity) per OGC Simple Features specification for GIS and metaverse applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SpatialDatabase",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:SpatialDatabase",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Database System"
@@ -50,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "GIS Technology",
-        "PostGIS",
-        "OGC Standards"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,44 +1,53 @@
 {
-  "id": "Carbon Offset Trading",
+  "id": "carbon-offset-trading",
   "title": "Carbon Offset Trading",
-  "content": "- ### OntologyBlock\n  id:: carbon-offset-trading-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9814\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Offset Trading\n\t- definition:: The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.\n\t- status:: active\n\t- owl:class:: mv:CarbonOffsetTrading\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-offset-trading-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Environmental Trading]]\n\t\t- enables:: [[Carbon Price Discovery]], [[Climate Finance]], [[Offset Liquidity]]\n\t\t- requires:: [[Trading Platform]], [[Carbon Registry]], [[Market Infrastructure]]\n\t\t- related-to:: [[Carbon Credit Tracking]], [[Voluntary Carbon Market]], [[Emissions Trading]]\n- ## Technical Details\n\t- **Market Size**: Carbon Credit Trading Platform Market USD 203M (2024), projected USD 1.2B by 2032 (25% CAGR)\n\t- **Market Types**:\n\t\t- **Compliance Markets**: Regulated (EU ETS, California cap-and-trade)\n\t\t- **Voluntary Markets (VCM)**: Corporate-driven, fastest growing\n\t- **Major Exchanges**:\n\t\t- **Xpansiv/CBL**: ~25% global VCM market share, 1000+ projects\n\t\t- **Carbon Trade Exchange (CTX)**: First digital exchange, 24/7 global operation\n\t\t- **Riyadh Voluntary Exchange**: Launching late 2024\n\t- **Key Players**: Nasdaq, CME Group, EEX Group, Air Carbon Exchange, Carbonplace\n\t- **Regulatory Developments (2024)**:\n\t\t- Biden Administration voluntary VCM principles\n\t\t- CFTC proposed guidance for VCM derivatives\n\t\t- ICVCM quality approvals\n- ## Applications\n\t- Corporate offset procurement\n\t- Climate investment portfolio management\n\t- Compliance market participation\n\t- Carbon price hedging\n\t- Sustainable finance instruments",
+  "content": "- ### Definition\n  - The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CarbonOffsetTrading\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Environmental Trading]]\n  - requires:: [[Trading Platform]], [[Carbon Registry]], [[Market Infrastructure]]\n  - enables:: [[Carbon Price Discovery]], [[Climate Finance]], [[Offset Liquidity]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Market Size**: Carbon Credit Trading Platform Market USD 203M (2024), projected USD 1.2B by 2032 (25% CAGR)\n  - **Market Types**:\n\t\t- **Compliance Markets**: Regulated (EU ETS, California cap-and-trade)\n\t\t- **Voluntary Markets (VCM)**: Corporate-driven, fastest growing\n  - **Major Exchanges**:\n\t\t- **Xpansiv/CBL**: ~25% global VCM market share, 1000+ projects\n\t\t- **Carbon Trade Exchange (CTX)**: First digital exchange, 24/7 global operation\n\t\t- **Riyadh Voluntary Exchange**: Launching late 2024\n  - **Key Players**: Nasdaq, CME Group, EEX Group, Air Carbon Exchange, Carbonplace\n  - **Regulatory Developments (2024)**:\n\t\t- Biden Administration voluntary VCM principles\n\t\t- CFTC proposed guidance for VCM derivatives\n\t\t- ICVCM quality approvals\n  - ## Applications\n  - Corporate offset procurement\n  - Climate investment portfolio management\n  - Compliance market participation\n  - Carbon price hedging\n  - Sustainable finance instruments\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Carbon Credit Token"
   ],
   "wiki_links": [
-    "Carbon Credit Tracking",
+    "Blockchain",
     "Carbon Price Discovery",
-    "Environmental Trading",
-    "Emissions Trading",
-    "metaverse",
     "Carbon Registry",
-    "Voluntary Carbon Market",
-    "Offset Liquidity",
     "Climate Finance",
+    "Environmental Trading",
     "Market Infrastructure",
-    "Trading Platform"
+    "Offset Liquidity",
+    "Trading Platform",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:carbon-offset-trading",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CarbonOffsetTrading",
+    "content_hash": "sha256-12-46ef84a23905",
+    "legacy_term_id": "MV-9814",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:carbon-offset-trading",
+    "schema_version": "v2",
     "term_id": "MV-9814",
     "preferred_term": "Carbon Offset Trading",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CarbonOffsetTrading",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CarbonOffsetTrading",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CarbonOffsetTrading",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Environmental Trading"
@@ -57,28 +66,19 @@
       "Offset Liquidity"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Carbon Credit Tracking",
-        "Voluntary Carbon Market",
-        "Emissions Trading"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

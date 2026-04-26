@@ -1,34 +1,51 @@
-- ### OntologyBlock
-  id:: network-function-virtualization-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9982
-	- source-domain:: mv
-	- preferred-term:: Network Function Virtualization
-	- status:: active
-	- definition:: A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.
-	- owl:class:: mv:NetworkFunctionVirtualization
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: network-function-virtualization-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Network Architecture]]
-		- related-to:: [[Cloud Computing]]
-		- related-to:: [[Software Defined Networking]]
-		- is-associated-with:: [[G Network Slice]]
-		- enables:: [[Network Scalability]]
-	- #### ETSI Architecture
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#NetworkFunctionVirtualization
+uri:: urn:visionclaw:concept:spatial-computing:network-function-virtualization
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:network-function-virtualization
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Network Function Virtualization
+content-hash:: sha256-12-226fcf7f5d73
+legacy-term-id:: MV-9982
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:NetworkFunctionVirtualization
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Network Architecture]]
+  - enables:: [[Network Scalability]]
+
+- ### Content
+
+  - #### ETSI Architecture
 		- NFV Infrastructure (NFVI): Compute, storage, and network resources
 		- Virtual Network Functions (VNFs): Software implementations of network functions
 		- NFV Management and Orchestration (MANO): Lifecycle management layer
 		- Cloud-Native Network Functions (CNFs): Container-based evolution using microservices
-	- #### Market Context
-	  collapsed:: true
+  - #### Market Context
 		- Market valued at approximately USD 35-40 billion in 2024
 		- Projected to reach USD 240+ billion by 2033-2034
 		- Growth driven by 5G adoption and IoT scalability demands
 		- China investing USD 2 billion in 2024 for national NFV infrastructure
 		- US FCC initiating USD 1.2 billion program for NFV deployment
 
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

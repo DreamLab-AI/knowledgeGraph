@@ -1,72 +1,97 @@
 {
-  "id": "Blockchain Governance",
+  "id": "blockchain-governance",
   "title": "Blockchain Governance",
-  "content": "- ### OntologyBlock\n  id:: blockchain-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0603\n\t- preferred-term:: Blockchain Governance\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.\n\t- owl:class:: bc:BlockchainGovernance\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: blockchain-governance-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[DAO Governance]]\n\t\t- is-parent-of:: [[On-Chain Governance]]\n\t\t- is-parent-of:: [[Voting Mechanism]]\n\t\t- related-to:: [[Token Economics]]",
-  "backlinks": [],
+  "content": "- ### Definition\n  - Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:BlockchainGovernance\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain Technology]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Entity]], [[Decentralized Organization]]\n  - requires:: [[Smart Contract]], [[Voting Mechanism]], [[Token-Based Representation]]\n  - enables:: [[Decentralized Decision-Making]], [[Protocol Evolution]], [[Community Alignment]]\n  - has-part:: [[On-Chain Voting]], [[DAO Structure]], [[Proposal System]]\n  - bridges-to:: [[Telecollaboration]], [[Collective Intelligence]]\n\n- ### Content\n\n  Blockchain Governance encompasses the mechanisms and structures through which decentralised networks make collective decisions about protocol development, resource allocation, and system evolution. Unlike traditional corporate governance centralised in boards of directors, blockchain governance distributes decision-making authority through [[Smart Contracts]], [[Token]] holders, and community participation mechanisms.\n\n  On-chain voting systems enable token holders to directly influence protocol changes by casting votes weighted by token holdings or delegated voting power. Decentralised Autonomous Organisations (DAOs) formalise governance structures through smart contracts that execute decisions automatically when voting thresholds are met. Proposals undergo community deliberation through forums and discussion channels before being formalised into code that the network executes.\n\n  Governance challenges include voter apathy (low participation rates), plutocracy concerns (wealth-based voting), and protocol capture by organised interest groups. Innovative solutions explore quadratic voting (where voting power scales sublinearly with stake), delegation mechanisms enabling specialisation, and optimistic governance (where decisions proceed unless vetoed) to balance inclusivity with operational efficiency.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Bitcoin Centralisation Risks"
+  ],
   "wiki_links": [
-    "Voting Mechanism",
-    "Token Economics",
-    "Blockchain Technology",
     "Blockchain Entity",
-    "On-Chain Governance",
-    "DAO Governance"
+    "Blockchain Technology",
+    "Collective Intelligence",
+    "Community Alignment",
+    "DAO Structure",
+    "Decentralized Decision-Making",
+    "Decentralized Organization",
+    "On-Chain Voting",
+    "Proposal System",
+    "Protocol Evolution",
+    "Smart Contract",
+    "Smart Contracts",
+    "Telecollaboration",
+    "Token",
+    "Token-Based Representation",
+    "Voting Mechanism"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:blockchain-governance",
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainGovernance",
+    "content_hash": "sha256-12-c0b335ba27cc",
+    "legacy_term_id": "BC-0603",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:blockchain-governance",
+    "schema_version": "v2",
     "term_id": "BC-0603",
     "preferred_term": "Blockchain Governance",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#BlockchainGovernance",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols. This includes on-chain voting systems, decentralised autonomous organisations (DAOs), and community-driven decision-making frameworks.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.1.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:BlockchainGovernance",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.65,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:BlockchainGovernance",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Blockchain Entity"
+      "Blockchain Entity",
+      "Decentralized Organization"
     ],
-    "has_part": [],
+    "has_part": [
+      "On-Chain Voting",
+      "DAO Structure",
+      "Proposal System"
+    ],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Smart Contract",
+      "Voting Mechanism",
+      "Token-Based Representation"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Decentralized Decision-Making",
+      "Protocol Evolution",
+      "Community Alignment"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Telecollaboration",
+      "Collective Intelligence"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain Technology"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "DAO Governance",
-        "On-Chain Governance",
-        "Voting Mechanism"
-      ],
-      "related-to": [
-        "Token Economics"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

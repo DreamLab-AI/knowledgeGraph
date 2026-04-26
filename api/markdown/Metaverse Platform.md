@@ -1,241 +1,255 @@
-- ### OntologyBlock
-  id:: metaverse-platform-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9964
-	- source-domain:: mv
-	- preferred-term:: Metaverse Platform
-	- status:: active
-	- owl:class:: mv:MetaversePlatform
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.
-	- #### Relationships
-	  id:: metaverse-platform-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Virtual World]]
-		- related-to:: [[Social VR]]
-		- related-to:: [[User-Generated Content]]
-		- enables:: [[Virtual Social Interaction]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetaversePlatform
+uri:: urn:visionclaw:concept:spatial-computing:metaverse-platform
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metaverse-platform
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metaverse Platform
+content-hash:: sha256-12-d8c7eba4edb4
+legacy-term-id:: MV-9964
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Market Overview
+- ### Definition
+  - Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.
 
-### User Statistics
-- 600 million+ active users
-- Diverse audience
-- Entertainment focus
-- Gaming primary
-- Social interaction
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetaversePlatform
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Market Projections
-- $507.8 billion by 2030
-- 37.43% CAGR
-- Substantial growth
-- Investment increase
-- Platform expansion
+- ### Relationships
+  - is-subclass-of:: [[Virtual World]]
+  - enables:: [[Virtual Social Interaction]]
 
-## Major Platforms
+- ### Content
 
-### Roblox
-- 77.7 million daily users
-- 47 million daily active users
-- 9.5 million+ creators
-- Under-13 focus
-- AI moderation
+  ## Market Overview
 
-### Roblox Features
-- Game creation tools
-- Social platform
-- Content sharing
-- Safety filters
-- Creator economy
+  ### User Statistics
+  - 600 million+ active users
+  - Diverse audience
+  - Entertainment focus
+  - Gaming primary
+  - Social interaction
 
-### Fortnite
-- 236 million monthly users
-- Battle royale origin
-- Cultural hub
-- Concert events
-- Brand partnerships
+  ### Market Projections
+  - $507.8 billion by 2030
+  - 37.43% CAGR
+  - Substantial growth
+  - Investment increase
+  - Platform expansion
 
-### Fortnite Evolution
-- Beyond gaming
-- Gallery experiences
-- Virtual events
-- Social space
-- Creative mode
+  ## Major Platforms
 
-### Decentraland
-- Pioneer platform
-- Blockchain-based
-- Virtual land trading
-- Cryptocurrency economy
-- NFT integration
+  ### Roblox
+  - 77.7 million daily users
+  - 47 million daily active users
+  - 9.5 million+ creators
+  - Under-13 focus
+  - AI moderation
 
-### Decentraland Features
-- Artwork creation
-- Challenge development
-- Scene building
-- Social events
-- AI personalisation
+  ### Roblox Features
+  - Game creation tools
+  - Social platform
+  - Content sharing
+  - Safety filters
+  - Creator economy
 
-### VRChat
-- VR-focused platform
-- Social interaction
-- Avatar customisation
-- Community events
-- Identity exploration
+  ### Fortnite
+  - 236 million monthly users
+  - Battle royale origin
+  - Cultural hub
+  - Concert events
+  - Brand partnerships
 
-### VRChat Capabilities
-- Internal economy
-- Niche audiences
-- Immersive experience
-- Social gatherings
-- Creative expression
+  ### Fortnite Evolution
+  - Beyond gaming
+  - Gallery experiences
+  - Virtual events
+  - Social space
+  - Creative mode
 
-## Platform Categories
+  ### Decentraland
+  - Pioneer platform
+  - Blockchain-based
+  - Virtual land trading
+  - Cryptocurrency economy
+  - NFT integration
 
-### Gaming Focused
-- Roblox
-- Fortnite
-- Minecraft
-- Active gameplay
-- Competitive elements
+  ### Decentraland Features
+  - Artwork creation
+  - Challenge development
+  - Scene building
+  - Social events
+  - AI personalisation
 
-### Social VR
-- VRChat
-- Horizon Worlds
-- Social emphasis
-- VR environments
-- Community building
+  ### VRChat
+  - VR-focused platform
+  - Social interaction
+  - Avatar customisation
+  - Community events
+  - Identity exploration
 
-### Blockchain Native
-- Decentraland
-- The Sandbox
-- Crypto economy
-- Digital ownership
-- Decentralised governance
+  ### VRChat Capabilities
+  - Internal economy
+  - Niche audiences
+  - Immersive experience
+  - Social gatherings
+  - Creative expression
 
-## 2024 Trends
+  ## Platform Categories
 
-### Technology Advances
-- Full-body tracking
-- Improved accuracy
-- Enhanced immersion
-- Better representation
-- Natural movement
+  ### Gaming Focused
+  - Roblox
+  - Fortnite
+  - Minecraft
+  - Active gameplay
+  - Competitive elements
 
-### Platform Evolution
-- Software improvements
-- Hardware advances
-- Content tools
-- User experience
-- Engagement features
+  ### Social VR
+  - VRChat
+  - Horizon Worlds
+  - Social emphasis
+  - VR environments
+  - Community building
 
-## Brand Engagement
+  ### Blockchain Native
+  - Decentraland
+  - The Sandbox
+  - Crypto economy
+  - Digital ownership
+  - Decentralised governance
 
-### Marketing Focus
-- Gen Z connection
-- Youth engagement
-- Brand experiences
-- Virtual products
-- Immersive campaigns
+  ## 2024 Trends
 
-### Brand Examples
-- Hugo Boss (Roblox)
-- Nike (various)
-- Gucci (multiple)
-- Fashion integration
-- Virtual commerce
+  ### Technology Advances
+  - Full-body tracking
+  - Improved accuracy
+  - Enhanced immersion
+  - Better representation
+  - Natural movement
 
-## User Experiences
+  ### Platform Evolution
+  - Software improvements
+  - Hardware advances
+  - Content tools
+  - User experience
+  - Engagement features
 
-### Entertainment
-- Gaming
-- Concerts
-- Exhibitions
-- Parties
-- Cultural events
+  ## Brand Engagement
 
-### Social Features
-- Avatar interaction
-- Voice chat
-- Text communication
-- Gesture systems
-- Shared activities
+  ### Marketing Focus
+  - Gen Z connection
+  - Youth engagement
+  - Brand experiences
+  - Virtual products
+  - Immersive campaigns
 
-### Economic Activities
-- Trading assets
-- Virtual commerce
-- Creator monetisation
-- Employment
-- Investment
+  ### Brand Examples
+  - Hugo Boss (Roblox)
+  - Nike (various)
+  - Gucci (multiple)
+  - Fashion integration
+  - Virtual commerce
 
-## Platform Selection
+  ## User Experiences
 
-### For Marketing
-- Audience alignment
-- Brand fit
-- Feature availability
-- User demographics
-- Campaign goals
+  ### Entertainment
+  - Gaming
+  - Concerts
+  - Exhibitions
+  - Parties
+  - Cultural events
 
-### For Development
-- Creation tools
-- Monetisation options
-- User base
-- Technical capabilities
-- Platform policies
+  ### Social Features
+  - Avatar interaction
+  - Voice chat
+  - Text communication
+  - Gesture systems
+  - Shared activities
 
-## Safety Considerations
+  ### Economic Activities
+  - Trading assets
+  - Virtual commerce
+  - Creator monetisation
+  - Employment
+  - Investment
 
-### Content Moderation
-- AI filtering
-- Human review
-- Age verification
-- Report systems
-- Community guidelines
+  ## Platform Selection
 
-### Child Safety
-- Parental controls
-- Age restrictions
-- Content limits
-- Interaction monitoring
-- Privacy protection
+  ### For Marketing
+  - Audience alignment
+  - Brand fit
+  - Feature availability
+  - User demographics
+  - Campaign goals
 
-## Technical Requirements
+  ### For Development
+  - Creation tools
+  - Monetisation options
+  - User base
+  - Technical capabilities
+  - Platform policies
 
-### User Hardware
-- Gaming devices
-- VR headsets
-- Mobile devices
-- Desktop computers
-- Internet connection
+  ## Safety Considerations
 
-### Platform Infrastructure
-- Server capacity
-- Global reach
-- Low latency
-- High availability
-- Scalability
+  ### Content Moderation
+  - AI filtering
+  - Human review
+  - Age verification
+  - Report systems
+  - Community guidelines
 
-## Future Outlook
+  ### Child Safety
+  - Parental controls
+  - Age restrictions
+  - Content limits
+  - Interaction monitoring
+  - Privacy protection
 
-### Platform Convergence
-- Cross-platform identity
-- Asset portability
-- Interoperability
-- Standard protocols
-- Unified experiences
+  ## Technical Requirements
 
-### Technology Integration
-- AI enhancement
-- Spatial computing
-- Haptic feedback
-- Brain interfaces
-- Persistent worlds
+  ### User Hardware
+  - Gaming devices
+  - VR headsets
+  - Mobile devices
+  - Desktop computers
+  - Internet connection
 
-## Metadata
+  ### Platform Infrastructure
+  - Server capacity
+  - Global reach
+  - Low latency
+  - High availability
+  - Scalability
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Outlook
+
+  ### Platform Convergence
+  - Cross-platform identity
+  - Asset portability
+  - Interoperability
+  - Standard protocols
+  - Unified experiences
+
+  ### Technology Integration
+  - AI enhancement
+  - Spatial computing
+  - Haptic feedback
+  - Brain interfaces
+  - Persistent worlds
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,0 +1,70 @@
+{
+  "id": "semantic-search",
+  "title": "Semantic Search",
+  "content": "- ### Definition\n  - A semantic search component in the Metaverse domain that enables KnowledgeGraph.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:SemanticSearch\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Search Technology]]\n\n- ### Content\n  SemanticSearch — content pending enrichment.\n\n- ### Provenance\n  - sources:: Generated from bridge validation\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Knowledge Graph",
+    "Semantic Metadata Registry",
+    "Telecollaboration and Telepresence",
+    "Nearest Neighbor Search",
+    "Glossary Index"
+  ],
+  "wiki_links": [
+    "Search Technology"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:semantic-search",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#SemanticSearch",
+    "content_hash": "sha256-12-d0fb657d5329",
+    "legacy_term_id": "MV-1004",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:semantic-search",
+    "schema_version": "v2",
+    "term_id": "MV-1004",
+    "preferred_term": "Semantic Search",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A semantic search component in the Metaverse domain that enables KnowledgeGraph.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:SemanticSearch",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Search Technology"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

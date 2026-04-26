@@ -1,44 +1,58 @@
 {
-  "id": "Compliance Standards",
+  "id": "compliance-standards",
   "title": "Compliance Standards",
-  "content": "- ### OntologyBlock\n  id:: compliance-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9828\n\t- source-domain:: mv\n\t- preferred-term:: Compliance Standards\n\t- definition:: The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.\n\t- status:: active\n\t- owl:class:: mv:ComplianceStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: compliance-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Regulatory Framework]]\n\t\t- enables:: [[Legal Compliance]], [[Data Protection]], [[Consumer Safety]]\n\t\t- requires:: [[Regulatory Guidance]], [[Legal Expertise]], [[Monitoring Systems]]\n\t\t- related-to:: [[GDPR]], [[Digital Services Act]], [[Platform Regulation]]\n- ## Technical Details\n\t- **EU Regulatory Framework**:\n\t\t- European Parliament called for metaverse-specific regulations (January 2024)\n\t\t- GDPR: Data collection, consent, transparency, privacy notices\n\t\t- Digital Services Act (DSA): Platform accountability and content moderation\n\t\t- AI Act: Cybersecurity duties, risk assessment, explainability, oversight\n\t\t- Digital Markets Act (DMA): Gatekeeper obligations for competition and transparency\n\t- **Compliance Categories**:\n\t\t- Intellectual property law (patents, trademarks, copyrights)\n\t\t- User conduct and behavioral standards\n\t\t- Privacy and safety regulations\n\t\t- Age-appropriate design codes for minors\n\t- **Key Challenges**:\n\t\t- GDPR right to erasure conflicts with metaverse persistence\n\t\t- Cross-border regulatory harmonization\n\t\t- Pseudonymity vs. KYC requirements\n\t- **Recommendations**: Privacy-first design, metaverse-specific policies, user data control mechanisms\n- ## Applications\n\t- Platform licensing and operation\n\t- Data privacy compliance\n\t- Intellectual property protection\n\t- Consumer protection enforcement\n\t- Cross-jurisdictional regulatory alignment",
+  "content": "- ### Definition\n  - The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ComplianceStandards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Regulatory Framework]]\n  - requires:: [[Regulatory Guidance]], [[Legal Expertise]], [[Monitoring Systems]]\n  - enables:: [[Legal Compliance]], [[Data Protection]], [[Consumer Safety]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **EU Regulatory Framework**:\n\t\t- European Parliament called for metaverse-specific regulations (January 2024)\n\t\t- GDPR: Data collection, consent, transparency, privacy notices\n\t\t- Digital Services Act (DSA): Platform accountability and content moderation\n\t\t- AI Act: Cybersecurity duties, risk assessment, explainability, oversight\n\t\t- Digital Markets Act (DMA): Gatekeeper obligations for competition and transparency\n  - **Compliance Categories**:\n\t\t- Intellectual property law (patents, trademarks, copyrights)\n\t\t- User conduct and behavioral standards\n\t\t- Privacy and safety regulations\n\t\t- Age-appropriate design codes for minors\n  - **Key Challenges**:\n\t\t- GDPR right to erasure conflicts with metaverse persistence\n\t\t- Cross-border regulatory harmonization\n\t\t- Pseudonymity vs. KYC requirements\n  - **Recommendations**: Privacy-first design, metaverse-specific policies, user data control mechanisms\n  - ## Applications\n  - Platform licensing and operation\n  - Data privacy compliance\n  - Intellectual property protection\n  - Consumer protection enforcement\n  - Cross-jurisdictional regulatory alignment\n\n- ### Provenance\n  - sources:: [[GDPR]], [[DSA]], [[AI Act]], [[DMA]], [[W3C]]\n  - migration-date:: 2026-04-26T00:00:00Z\n  - modified:: 2026-04-26T14:15:00Z",
   "backlinks": [
     "Validation Process"
   ],
   "wiki_links": [
-    "Platform Regulation",
-    "Regulatory Framework",
-    "Legal Expertise",
+    "AI Act",
+    "Blockchain",
+    "Consumer Safety",
+    "DMA",
+    "DSA",
     "Data Protection",
     "GDPR",
     "Legal Compliance",
-    "metaverse",
-    "Regulatory Guidance",
-    "Digital Services Act",
+    "Legal Expertise",
     "Monitoring Systems",
-    "Consumer Safety"
+    "Regulatory Framework",
+    "Regulatory Guidance",
+    "W3C",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:compliance-standards",
+    "iri": "http://narrativegoldmine.com/metaverse#ComplianceStandards",
+    "content_hash": "sha256-12-e2a12e422be5",
+    "legacy_term_id": "MV-9828",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:compliance-standards",
+    "schema_version": "v2",
     "term_id": "MV-9828",
     "preferred_term": "Compliance Standards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ComplianceStandards",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in or developing for immersive digital spaces.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ComplianceStandards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ComplianceStandards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Regulatory Framework"
@@ -57,28 +71,25 @@
       "Consumer Safety"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
-    "source": [],
-    "other_relationships": {
-      "related-to": [
-        "GDPR",
-        "Digital Services Act",
-        "Platform Regulation"
-      ]
-    },
+    "domain_extensions": {},
+    "source": [
+      "GDPR",
+      "DSA",
+      "AI Act",
+      "DMA",
+      "W3C"
+    ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

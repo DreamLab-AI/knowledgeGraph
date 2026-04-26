@@ -1,37 +1,50 @@
 {
-  "id": "Social Navigation",
+  "id": "social-navigation",
   "title": "Social Navigation",
-  "content": "- ### OntologyBlock\n  id:: RB-9008\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9008\n\t- source-domain:: rb\n\t- preferred-term:: Social Navigation\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.\n\t- source:: [[HRI]], [[Mobile Robotics]]\n\t- maturity:: emerging\n\t- owl:class:: rb:SocialNavigation\n\t- owl:role:: Process\n\t- belongsToDomain:: [[RoboticsDomain]]\n\t- is-subclass-of:: [[Robotics]]",
+  "content": "- ### Definition\n  - Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.\n\n- ### Semantic Classification\n  - owl-class:: robotics:SocialNavigation\n  - owl-role:: Process\n  - belongs-to-domain:: [[RoboticsDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Robotics]]\n\n- ### Content\n  Social Navigation — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[HRI]], [[Mobile Robotics]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "RoboticsDomain",
-    "Mobile Robotics",
     "HRI",
-    "Robotics"
+    "Mobile Robotics",
+    "Robotics",
+    "RoboticsDomain"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:social-navigation",
+    "iri": "http://narrativegoldmine.com/robotics#SocialNavigation",
+    "content_hash": "sha256-12-76becb6f5e60",
+    "legacy_term_id": "RB-9008",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:social-navigation",
+    "schema_version": "v2",
     "term_id": "RB-9008",
     "preferred_term": "Social Navigation",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#SocialNavigation",
-    "source_domain": "rb",
     "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
     "domain_full_name": "Robotics",
     "definition": "Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:SocialNavigation",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:SocialNavigation",
     "owl_role": "Process",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Robotics"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -40,22 +53,18 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "RoboticsDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "HRI",
       "Mobile Robotics"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

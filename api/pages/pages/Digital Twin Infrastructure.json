@@ -1,44 +1,53 @@
 {
-  "id": "Digital Twin Infrastructure",
+  "id": "digital-twin-infrastructure",
   "title": "Digital Twin Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9880\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Infrastructure\n\t- definition:: The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-infrastructure-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Computing Infrastructure]]\n\t\t- enables:: [[Real-Time Processing]], [[Scalable Deployment]], [[Edge Analytics]]\n\t\t- requires:: [[Cloud Platform]], [[Edge Computing]], [[5G Connectivity]]\n\t\t- related-to:: [[IoT Gateway]], [[Data Pipeline]], [[Hybrid Cloud]]\n- ## Technical Details\n\t- **Market Size (2024)**:\n\t\t- Global digital twin market: $25B (projected $260B by 2032, 40% CAGR)\n\t\t- Alternative projection: +$163.42B growth 2024-2029 (64.9% CAGR)\n\t\t- Digital Twin as-a-Service (DTaaS): Emerging subscription model\n\t- **Architecture Components**:\n\t\t- IoT sensors and industrial gateways\n\t\t- Edge computing for low-latency processing\n\t\t- Cloud platforms (Azure, AWS, IBM Watson IoT)\n\t\t- 5G/6G connectivity for real-time data\n\t\t- AI/ML processing engines\n\t- **Major Cloud Offerings**:\n\t\t- Azure Digital Twins: DTDL v3 semantic models\n\t\t- AWS TwinMaker: 50M API calls/month free tier\n\t\t- IBM Watson IoT: Hybrid cloud with AI analytics\n\t- **6G Research (2024)**: Hyper-distributed IoT-Edge-Cloud platforms for real-time digital twins\n- ## Applications\n\t- Industrial IoT data processing\n\t- Smart city infrastructure\n\t- Building management systems\n\t- Manufacturing execution systems\n\t- Healthcare monitoring platforms",
+  "content": "- ### Definition\n  - The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.\n\nbridges-to:: [[Sensor Input]]\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DigitalTwinInfrastructure\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Computing Infrastructure]]\n  - requires:: [[Cloud Platform]], [[Edge Computing]], [[5G Connectivity]]\n  - enables:: [[Real-Time Processing]], [[Scalable Deployment]], [[Edge Analytics]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Market Size (2024)**:\n\t\t- Global digital twin market: $25B (projected $260B by 2032, 40% CAGR)\n\t\t- Alternative projection: +$163.42B growth 2024-2029 (64.9% CAGR)\n\t\t- Digital Twin as-a-Service (DTaaS): Emerging subscription model\n  - **Architecture Components**:\n\t\t- IoT sensors and industrial gateways\n\t\t- Edge computing for low-latency processing\n\t\t- Cloud platforms (Azure, AWS, IBM Watson IoT)\n\t\t- 5G/6G connectivity for real-time data\n\t\t- AI/ML processing engines\n  - **Major Cloud Offerings**:\n\t\t- Azure Digital Twins: DTDL v3 semantic models\n\t\t- AWS TwinMaker: 50M API calls/month free tier\n\t\t- IBM Watson IoT: Hybrid cloud with AI analytics\n  - **6G Research (2024)**: Hyper-distributed IoT-Edge-Cloud platforms for real-time digital twins\n  - ## Applications\n  - Industrial IoT data processing\n  - Smart city infrastructure\n  - Building management systems\n  - Manufacturing execution systems\n  - Healthcare monitoring platforms\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Twin Synchronisation Bus"
   ],
   "wiki_links": [
-    "Computing Infrastructure",
-    "Real-Time Processing",
-    "Hybrid Cloud",
-    "IoT Gateway",
-    "Cloud Platform",
     "5G Connectivity",
-    "Scalable Deployment",
-    "Data Pipeline",
-    "metaverse",
+    "Cloud Platform",
+    "Computing Infrastructure",
     "Edge Analytics",
-    "Edge Computing"
+    "Edge Computing",
+    "Real-Time Processing",
+    "Scalable Deployment",
+    "Sensor Input",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:digital-twin-infrastructure",
+    "iri": "http://narrativegoldmine.com/infrastructure#DigitalTwinInfrastructure",
+    "content_hash": "sha256-12-0e2d2fd31a27",
+    "legacy_term_id": "MV-9880",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:digital-twin-infrastructure",
+    "schema_version": "v2",
     "term_id": "MV-9880",
     "preferred_term": "Digital Twin Infrastructure",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalTwinInfrastructure",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual counterparts.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalTwinInfrastructure",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DigitalTwinInfrastructure",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Computing Infrastructure"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "IoT Gateway",
-        "Data Pipeline",
-        "Hybrid Cloud"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

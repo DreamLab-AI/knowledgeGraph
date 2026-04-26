@@ -1,40 +1,47 @@
 {
-  "id": "Parental Controls",
+  "id": "parental-controls",
   "title": "Parental Controls",
-  "content": "- ### OntologyBlock\n  id:: parental-controls-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9993\n\t- source-domain:: mv\n\t- preferred-term:: Parental Controls\n\t- status:: active\n\t- definition:: Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.\n\t- owl:class:: mv:ParentalControls\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: parental-controls-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Safety]]\n\t\t- related-to:: [[Content Filtering]]\n\t\t- related-to:: [[Screen Time Management]]\n\t\t- related-to:: [[Child Safety]]\n\t\t- enables:: [[Safe Online Environment]]\n\t- #### Key Features\n\t  collapsed:: true\n\t\t- Content filtering for adult, violent, or harmful material\n\t\t- Screen time limits and scheduled downtime\n\t\t- App and website blocking or allowlisting\n\t\t- Location tracking and geofencing\n\t\t- Activity monitoring and reporting\n\t- #### Popular Platforms\n\t  collapsed:: true\n\t\t- Google Family Link for Android and ChromeOS\n\t\t- Bark for AI-powered threat detection\n\t\t- Qustodio for comprehensive web filtering\n\t\t- Canopy for image recognition filtering\n\t\t- Apple Screen Time for iOS devices",
+  "content": "- ### Definition\n  - Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ParentalControls\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Safety]]\n  - enables:: [[Safe Online Environment]]\n\n- ### Content\n\n  - #### Key Features\n\t\t- Content filtering for adult, violent, or harmful material\n\t\t- Screen time limits and scheduled downtime\n\t\t- App and website blocking or allowlisting\n\t\t- Location tracking and geofencing\n\t\t- Activity monitoring and reporting\n  - #### Popular Platforms\n\t\t- Google Family Link for Android and ChromeOS\n\t\t- Bark for AI-powered threat detection\n\t\t- Qustodio for comprehensive web filtering\n\t\t- Canopy for image recognition filtering\n\t\t- Apple Screen Time for iOS devices\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Safe Immersive Experience",
     "Digital Well-Being Index"
   ],
   "wiki_links": [
-    "Child Safety",
-    "Screen Time Management",
+    "Digital Safety",
     "Safe Online Environment",
-    "metaverse",
-    "Content Filtering",
-    "Digital Safety"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:parental-controls",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ParentalControls",
+    "content_hash": "sha256-12-a480fb1ace02",
+    "legacy_term_id": "MV-9993",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:parental-controls",
+    "schema_version": "v2",
     "term_id": "MV-9993",
     "preferred_term": "Parental Controls",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ParentalControls",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ParentalControls",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ParentalControls",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Safety"
@@ -49,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Content Filtering",
-        "Screen Time Management",
-        "Child Safety"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

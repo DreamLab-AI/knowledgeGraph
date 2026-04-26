@@ -1,21 +1,41 @@
-- ### OntologyBlock
-  id:: mv9618-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9618
-	- preferred-term:: Generative Content
-	- source-domain:: mv
-	- owl:class:: mv:GenerativeContent
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Generative Content is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/metaverse#GenerativeContent
+uri:: urn:visionclaw:concept:artificial-intelligence:generative-content
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:generative-content
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Generative Content
+content-hash:: sha256-12-62d3f4a2496d
+legacy-term-id:: MV-9618
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Overview
+- ### Definition
+  - Generative Content is a concept within the metaverse domain. Further enrichment pending.
 
-Generative Content represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:GenerativeContent
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Generative Content represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

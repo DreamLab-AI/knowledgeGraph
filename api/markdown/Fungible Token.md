@@ -1,49 +1,36 @@
-- ### OntologyBlock
-  id:: fungibletoken-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#FungibleToken
+uri:: urn:visionclaw:concept:blockchain:fungible-token
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:fungible-token
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Fungible Token
+content-hash:: sha256-12-c3110d4cd3a3
+legacy-term-id:: BC-0509
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0509
-    - filename-history:: ["BC-0509-fungibletoken.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0509
-    - preferred-term:: Fungible Token
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.
 
-  - **Definition**
-    - definition:: A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:FungibleToken
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:FungibleToken
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Token]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Token]]
+- ### Content
+  Fungible Token — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :FungibleToken))
-      (SubClassOf :FungibleToken :Token)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :FungibleToken "Fungible Token"@en)
-      (AnnotationAssertion rdfs:comment :FungibleToken
-        "A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type."@en)
-      ```
-
-- ## About Fungible Token
-  A token where each unit is identical and interchangeable with any other unit of the same token, like traditional currencies. Each token holds equal value to another token of the same type.
-  
-  Fungible tokens are divisible into smaller units and have uniform value. Examples: 10 ETH equals another 10 ETH in value.
-  
-  ### Examples
-  - ERC-20 tokens, stablecoins, governance tokens, utility tokens
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

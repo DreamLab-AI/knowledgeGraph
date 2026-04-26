@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: constitutionalprinciple-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#ConstitutionalPrinciple
+uri:: urn:visionclaw:concept:artificial-intelligence:constitutional-principle
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:constitutional-principle
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Constitutional Principle
+content-hash:: sha256-12-9c8a97af5998
+legacy-term-id:: AI-0826
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0826
-    - filename-history:: ["AI-0826-constitutionalprinciple.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0826
-    - preferred-term:: Constitutional Principle
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Guiding principle for constitutional AI systems.
 
-  - **Definition**
-    - definition:: Guiding principle for constitutional AI systems.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ConstitutionalPrinciple
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:ConstitutionalPrinciple
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
+  - bridges-to:: [[Blockchain]], [[Autonomous Robot]]
 
-  - #### Relationships
+- ### Content
+  Constitutional Principle — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ConstitutionalPrinciple))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ConstitutionalPrinciple "Constitutional Principle"@en)
-      (AnnotationAssertion rdfs:comment :ConstitutionalPrinciple
-        "Guiding principle for constitutional AI systems."@en)
-      ```
-
-- ## About Constitutional Principle
-  Guiding principle for constitutional AI systems.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

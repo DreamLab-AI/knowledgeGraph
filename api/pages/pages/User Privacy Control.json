@@ -1,0 +1,66 @@
+{
+  "id": "user-privacy-control",
+  "title": "User Privacy Control",
+  "content": "- ### Definition\n  - A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:UserPrivacyControl\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Privacy Mechanism]]\n\n- ### Content\n  UserPrivacyControl — content pending enrichment.\n\n- ### Provenance\n  - sources:: Generated from bridge validation\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Right to Be Forgotten"
+  ],
+  "wiki_links": [
+    "Privacy Mechanism"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:user-privacy-control",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#UserPrivacyControl",
+    "content_hash": "sha256-12-3c0b5c0a45a8",
+    "legacy_term_id": "AI-4017",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:user-privacy-control",
+    "schema_version": "v2",
+    "term_id": "AI-4017",
+    "preferred_term": "User Privacy Control",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:UserPrivacyControl",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Privacy Mechanism"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

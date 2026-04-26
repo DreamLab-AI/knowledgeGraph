@@ -1,137 +1,151 @@
-- ### OntologyBlock
-  id:: interface-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9933
-	- source-domain:: mv
-	- preferred-term:: Interface Standards
-	- status:: active
-	- owl:class:: mv:InterfaceStandards
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.
-	- #### Relationships
-	  id:: interface-standards-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Technical Standard]]
-		- related-to:: [[Interoperability Standard]]
-		- related-to:: [[OpenXR Standard]]
-		- enables:: [[Cross-Platform Interoperability]]
+iri:: http://narrativegoldmine.com/spatial-computing#InterfaceStandards
+uri:: urn:visionclaw:concept:spatial-computing:interface-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:interface-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Interface Standards
+content-hash:: sha256-12-7dc84911a339
+legacy-term-id:: MV-9933
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Key Organisations
+- ### Definition
+  - Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.
 
-### Khronos Group Initiative
-- Metaverse Standards Forum launch (2022)
-- 37 founding members initially
-- AI, GPU, XR, Web3 integration
-- 5G/6G networking advancement
-- Open standard protocols
+- ### Semantic Classification
+  - owl-class:: spatial-computing:InterfaceStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### 2024 Commitments
-- Standard protocols advancement
-- Interface definitions
-- Open metaverse goals
-- Interoperability framework
-- 2025+ roadmap planning
+- ### Relationships
+  - is-subclass-of:: [[Technical Standard]]
+  - enables:: [[Cross-Platform Interoperability]]
 
-## European Standards Framework
+- ### Content
 
-### ISG ARF (Augmented Reality Framework)
-- AR component interoperability
-- System and service standards
-- XR solution specifications
-- Metaverse application basis
-- Modular architecture design
+  ## Key Organisations
 
-### Multi-Provider Support
-- Component interoperability
-- Defined interfaces
-- Provider-agnostic design
-- Flexible integration
-- Standards compliance
+  ### Khronos Group Initiative
+  - Metaverse Standards Forum launch (2022)
+  - 37 founding members initially
+  - AI, GPU, XR, Web3 integration
+  - 5G/6G networking advancement
+  - Open standard protocols
 
-## ITU-T Standards
+  ### 2024 Commitments
+  - Standard protocols advancement
+  - Interface definitions
+  - Open metaverse goals
+  - Interoperability framework
+  - 2025+ roadmap planning
 
-### Study Groups
-- SG16 metaverse studies
-- SG17 security focus
-- SG20 IoT integration
-- Building block standards
-- Recommendation development
+  ## European Standards Framework
 
-### H.430 Series
-- H.430.1-H.430.5 specifications
-- Immersive live experience (ILE)
-- Service requirements
-- Architectural framework
-- Media transport protocols
+  ### ISG ARF (Augmented Reality Framework)
+  - AR component interoperability
+  - System and service standards
+  - XR solution specifications
+  - Metaverse application basis
+  - Modular architecture design
 
-## Communication Layers
+  ### Multi-Provider Support
+  - Component interoperability
+  - Defined interfaces
+  - Provider-agnostic design
+  - Flexible integration
+  - Standards compliance
 
-### IPSME Protocol
-- Base interoperable communication
-- Disparate system negotiation
-- Fundamental communication basis
-- System interconnection
-- Protocol bridging
+  ## ITU-T Standards
 
-### Web3.0 Services
-- Distributed service requirements
-- Metaverse capability support
-- Essential infrastructure provision
-- Scalable application tools
-- Feature-rich protocols
+  ### Study Groups
+  - SG16 metaverse studies
+  - SG17 security focus
+  - SG20 IoT integration
+  - Building block standards
+  - Recommendation development
 
-## Technical Challenges
+  ### H.430 Series
+  - H.430.1-H.430.5 specifications
+  - Immersive live experience (ILE)
+  - Service requirements
+  - Architectural framework
+  - Media transport protocols
 
-### Data Interoperability
-- Seamless platform navigation
-- Universal data protocol need
-- Base-level information transfer
-- Accurate interpretation
-- Cross-platform consistency
+  ## Communication Layers
 
-### Immersive Identity
-- Virtual asset portability
-- Credential interoperability
-- Platform integration
-- Service consistency
-- Device compatibility
+  ### IPSME Protocol
+  - Base interoperable communication
+  - Disparate system negotiation
+  - Fundamental communication basis
+  - System interconnection
+  - Protocol bridging
 
-## Regulatory Considerations
+  ### Web3.0 Services
+  - Distributed service requirements
+  - Metaverse capability support
+  - Essential infrastructure provision
+  - Scalable application tools
+  - Feature-rich protocols
 
-### Digital Markets Act (EU)
-- Interoperability balance
-- Priority indication
-- Convergent technology space
-- XR, AI, IoT, blockchain scope
-- Impact maximisation
+  ## Technical Challenges
 
-### Blockchain Role
-- Decentralised infrastructure
-- Asymmetric encryption
-- Hash function security
-- XR stakeholder facilitation
-- Digital identity proof
+  ### Data Interoperability
+  - Seamless platform navigation
+  - Universal data protocol need
+  - Base-level information transfer
+  - Accurate interpretation
+  - Cross-platform consistency
 
-## IEEE Standards
+  ### Immersive Identity
+  - Virtual asset portability
+  - Credential interoperability
+  - Platform integration
+  - Service consistency
+  - Device compatibility
 
-### XR Ethics
-- IEEE P7030 development
-- Ethical assessment practice
-- Extended reality focus
-- Global initiative support
-- Pre-standards activities
+  ## Regulatory Considerations
 
-### Recommended Practices
-- Technology assessment
-- Safety considerations
-- User protection
-- Industry guidance
-- Compliance frameworks
+  ### Digital Markets Act (EU)
+  - Interoperability balance
+  - Priority indication
+  - Convergent technology space
+  - XR, AI, IoT, blockchain scope
+  - Impact maximisation
 
-## Metadata
+  ### Blockchain Role
+  - Decentralised infrastructure
+  - Asymmetric encryption
+  - Hash function security
+  - XR stakeholder facilitation
+  - Digital identity proof
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## IEEE Standards
+
+  ### XR Ethics
+  - IEEE P7030 development
+  - Ethical assessment practice
+  - Extended reality focus
+  - Global initiative support
+  - Pre-standards activities
+
+  ### Recommended Practices
+  - Technology assessment
+  - Safety considerations
+  - User protection
+  - Industry guidance
+  - Compliance frameworks
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

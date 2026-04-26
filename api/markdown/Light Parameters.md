@@ -1,162 +1,176 @@
-- ### OntologyBlock
-  id:: light-parameters-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9947
-	- source-domain:: mv
-	- preferred-term:: Light Parameters
-	- status:: active
-	- owl:class:: mv:LightParameters
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.
-	- #### Relationships
-	  id:: light-parameters-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Rendering Technology]]
-		- related-to:: [[Global Illumination]]
-		- related-to:: [[Physically Based Rendering]]
-		- enables:: [[Visual Realism]]
+iri:: http://narrativegoldmine.com/spatial-computing#LightParameters
+uri:: urn:visionclaw:concept:spatial-computing:light-parameters
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:light-parameters
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Light Parameters
+content-hash:: sha256-12-642197bc46d7
+legacy-term-id:: MV-9947
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Core Light Settings
+- ### Definition
+  - Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.
 
-### Fundamental Parameters
-- Light intensity values
-- Colour temperature (Kelvin)
-- Light bounce count
-- Shadow quality settings
-- Reflection accuracy
-- Ambient occlusion levels
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LightParameters
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Light Categories
-- Baked lights (static)
-- Dynamic lights (real-time)
-- Area lights
-- Point lights
-- Directional lights
-- Spot lights
+- ### Relationships
+  - is-subclass-of:: [[Rendering Technology]]
+  - enables:: [[Visual Realism]]
 
-## VR-Specific Considerations
+- ### Content
 
-### Performance Balance
-- Frame rate maintenance
-- Latency constraints
-- GPU optimisation
-- Mobile VR limitations
-- Untethered system support
+  ## Core Light Settings
 
-### Immersion Factors
-- Convincing illumination
-- Visual immersion quality
-- Environment adaptation
-- Geometry changes response
-- Light source dynamics
+  ### Fundamental Parameters
+  - Light intensity values
+  - Colour temperature (Kelvin)
+  - Light bounce count
+  - Shadow quality settings
+  - Reflection accuracy
+  - Ambient occlusion levels
 
-## Advanced Rendering Techniques
+  ### Light Categories
+  - Baked lights (static)
+  - Dynamic lights (real-time)
+  - Area lights
+  - Point lights
+  - Directional lights
+  - Spot lights
 
-### Ray Tracing
-- Light ray path tracing
-- Surface interaction calculation
-- Real-time reflections
-- Accurate refractions
-- Precise shadows
+  ## VR-Specific Considerations
 
-### Global Illumination
-- Light bounce simulation
-- Natural lighting spread
-- Scene cohesion
-- Ambient contribution
-- Indirect lighting
+  ### Performance Balance
+  - Frame rate maintenance
+  - Latency constraints
+  - GPU optimisation
+  - Mobile VR limitations
+  - Untethered system support
 
-### Physically-Based Rendering (PBR)
-- Material light reaction
-- Physical property simulation
-- Accurate reflections
-- Surface roughness
-- Texture realism
+  ### Immersion Factors
+  - Convincing illumination
+  - Visual immersion quality
+  - Environment adaptation
+  - Geometry changes response
+  - Light source dynamics
 
-## Implementation Methods
+  ## Advanced Rendering Techniques
 
-### Lightmap Baking
-- Pre-rendered lighting
-- Static element application
-- Performance optimisation
-- Texture overlay
-- Blending modes
+  ### Ray Tracing
+  - Light ray path tracing
+  - Surface interaction calculation
+  - Real-time reflections
+  - Accurate refractions
+  - Precise shadows
 
-### Dynamic Systems
-- Real-time calculation
-- Moving light sources
-- Character interaction
-- Environmental changes
-- Day/night cycles
+  ### Global Illumination
+  - Light bounce simulation
+  - Natural lighting spread
+  - Scene cohesion
+  - Ambient contribution
+  - Indirect lighting
 
-## Quality Parameters
+  ### Physically-Based Rendering (PBR)
+  - Material light reaction
+  - Physical property simulation
+  - Accurate reflections
+  - Surface roughness
+  - Texture realism
 
-### Shadow Settings
-- Shadow resolution
-- Soft shadow blur
-- Contact shadows
-- Cascade distances
-- Shadow bias values
+  ## Implementation Methods
 
-### Reflection Settings
-- Screen Space Reflections (SSR)
-- Reflection probe density
-- Cubemap resolution
-- Planar reflections
-- Real-time updates
+  ### Lightmap Baking
+  - Pre-rendered lighting
+  - Static element application
+  - Performance optimisation
+  - Texture overlay
+  - Blending modes
 
-## Research Findings
+  ### Dynamic Systems
+  - Real-time calculation
+  - Moving light sources
+  - Character interaction
+  - Environmental changes
+  - Day/night cycles
 
-### Realism Studies
-- Light setting perception research
-- Virtual replica immersion
-- Real-time VR evaluation
-- User experience correlation
-- Visual fidelity metrics
+  ## Quality Parameters
 
-### Performance Analysis
-- Computational cost assessment
-- GPU capability requirements
-- Frame rate impact
-- Quality trade-offs
-- Optimisation strategies
+  ### Shadow Settings
+  - Shadow resolution
+  - Soft shadow blur
+  - Contact shadows
+  - Cascade distances
+  - Shadow bias values
 
-## Platform Considerations
+  ### Reflection Settings
+  - Screen Space Reflections (SSR)
+  - Reflection probe density
+  - Cubemap resolution
+  - Planar reflections
+  - Real-time updates
 
-### VR Headset Requirements
-- 90fps minimum target
-- Low-latency rendering
-- Stereo rendering overhead
-- Foveated rendering support
-- Variable rate shading
+  ## Research Findings
 
-### Development Engines
-- Unity light parameters
-- Unreal Engine settings
-- Custom engine configuration
-- Shader optimisation
-- Material settings
+  ### Realism Studies
+  - Light setting perception research
+  - Virtual replica immersion
+  - Real-time VR evaluation
+  - User experience correlation
+  - Visual fidelity metrics
 
-## 2024 Trends
+  ### Performance Analysis
+  - Computational cost assessment
+  - GPU capability requirements
+  - Frame rate impact
+  - Quality trade-offs
+  - Optimisation strategies
 
-### Advanced Techniques
-- High-resolution textures
-- Dynamic lighting response
-- Character movement reaction
-- Environmental awareness
-- Real-time ray tracing
+  ## Platform Considerations
 
-### Emerging Technologies
-- Path tracing integration
-- Neural rendering
-- AI-assisted lighting
-- Procedural generation
-- Adaptive quality
+  ### VR Headset Requirements
+  - 90fps minimum target
+  - Low-latency rendering
+  - Stereo rendering overhead
+  - Foveated rendering support
+  - Variable rate shading
 
-## Metadata
+  ### Development Engines
+  - Unity light parameters
+  - Unreal Engine settings
+  - Custom engine configuration
+  - Shader optimisation
+  - Material settings
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## 2024 Trends
+
+  ### Advanced Techniques
+  - High-resolution textures
+  - Dynamic lighting response
+  - Character movement reaction
+  - Environmental awareness
+  - Real-time ray tracing
+
+  ### Emerging Technologies
+  - Path tracing integration
+  - Neural rendering
+  - AI-assisted lighting
+  - Procedural generation
+  - Adaptive quality
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

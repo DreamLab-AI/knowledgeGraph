@@ -1,234 +1,248 @@
-- ### OntologyBlock
-  id:: metaverse-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9003
-	- source-domain:: mv
-	- preferred-term:: Metaverse Architecture
-	- status:: active
-	- owl:class:: mv:MetaverseArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.
-	- #### Relationships
-	  id:: metaverse-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[System Architecture]]
-		- related-to:: [[Infrastructure Layer]]
-		- related-to:: [[Technology Stack]]
-		- enables:: [[Virtual World Operation]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetaverseArchitecture
+uri:: urn:visionclaw:concept:spatial-computing:metaverse-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metaverse-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metaverse Architecture
+content-hash:: sha256-12-dd5d5ae307f2
+legacy-term-id:: MV-9003
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Jon Radoff's 7-Layer Model
+- ### Definition
+  - The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.
 
-### Experience Layer
-- User interactions
-- 2D and 3D experiences
-- Intuitive environments
-- Interactive design
-- Physical constraint removal
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetaverseArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Discovery Layer
-- User engagement mechanisms
-- Inbound discovery
-- Outbound discovery
-- Community content
-- Real-time presence
+- ### Relationships
+  - is-subclass-of:: [[System Architecture]]
+  - enables:: [[Virtual World Operation]]
 
-### Creator Economy Layer
-- Creation tools
-- Monetisation platforms
-- No-code capability
-- Content empowerment
-- User-generated content
+- ### Content
 
-### Spatial Computing Layer
-- 3D engines
-- VR/AR systems
-- Gesture recognition
-- Spatial mapping
-- Object recognition
+  ## Jon Radoff's 7-Layer Model
 
-### Decentralisation Layer
-- Blockchain networks
-- Edge computing
-- Distributed systems
-- Ownership rights
-- Economic protocols
+  ### Experience Layer
+  - User interactions
+  - 2D and 3D experiences
+  - Intuitive environments
+  - Interactive design
+  - Physical constraint removal
 
-### Human Interface Layer
-- VR headsets
-- AR glasses
-- Haptic devices
-- Motion tracking
-- Brain-computer interfaces
+  ### Discovery Layer
+  - User engagement mechanisms
+  - Inbound discovery
+  - Outbound discovery
+  - Community content
+  - Real-time presence
 
-### Infrastructure Layer
-- Network connectivity
-- Computing resources
-- Cloud systems
-- Hardware foundation
-- Data centres
+  ### Creator Economy Layer
+  - Creation tools
+  - Monetisation platforms
+  - No-code capability
+  - Content empowerment
+  - User-generated content
 
-## Three-Layer Architecture
+  ### Spatial Computing Layer
+  - 3D engines
+  - VR/AR systems
+  - Gesture recognition
+  - Spatial mapping
+  - Object recognition
 
-### Infrastructure Layer
-- Physical elements
-- Hardware systems
-- Network infrastructure
-- Computing resources
-- Foundation support
+  ### Decentralisation Layer
+  - Blockchain networks
+  - Edge computing
+  - Distributed systems
+  - Ownership rights
+  - Economic protocols
 
-### Interaction Layer
-- User interfaces
-- Communication protocols
-- Social systems
-- Content delivery
-- Experience management
+  ### Human Interface Layer
+  - VR headsets
+  - AR glasses
+  - Haptic devices
+  - Motion tracking
+  - Brain-computer interfaces
 
-### Ecosystem Layer
-- Applications
-- Services
-- Economies
-- Governance
-- Communities
+  ### Infrastructure Layer
+  - Network connectivity
+  - Computing resources
+  - Cloud systems
+  - Hardware foundation
+  - Data centres
 
-## Technology Stack
+  ## Three-Layer Architecture
 
-### Core Technologies
-- AR/VR systems
-- AI/ML integration
-- 3D rendering
-- Blockchain solutions
-- Cloud computing
+  ### Infrastructure Layer
+  - Physical elements
+  - Hardware systems
+  - Network infrastructure
+  - Computing resources
+  - Foundation support
 
-### Network Requirements
-- 5G connectivity
-- eMBB services
-- mMTC support
-- URLLC capability
-- 6G preparation
+  ### Interaction Layer
+  - User interfaces
+  - Communication protocols
+  - Social systems
+  - Content delivery
+  - Experience management
 
-## Network Infrastructure
+  ### Ecosystem Layer
+  - Applications
+  - Services
+  - Economies
+  - Governance
+  - Communities
 
-### 5G Benefits
-- Large bandwidth
-- Low latency
-- VR/AR support
-- Real-time connections
-- Mass connectivity
+  ## Technology Stack
 
-### 6G Future
-- Speed increase
-- Order of magnitude improvement
-- Persistent connections
-- Real-time experience
-- Holographic support
+  ### Core Technologies
+  - AR/VR systems
+  - AI/ML integration
+  - 3D rendering
+  - Blockchain solutions
+  - Cloud computing
 
-## Computing Architecture
+  ### Network Requirements
+  - 5G connectivity
+  - eMBB services
+  - mMTC support
+  - URLLC capability
+  - 6G preparation
 
-### Distributed Computing
-- Cloud resources
-- Edge processing
-- Local computation
-- Blockchain computing
-- Hybrid approaches
+  ## Network Infrastructure
 
-### Hardware Requirements
-- High-end computers
-- Gaming consoles
-- Specialised workstations
-- Processing power
-- Graphics capability
+  ### 5G Benefits
+  - Large bandwidth
+  - Low latency
+  - VR/AR support
+  - Real-time connections
+  - Mass connectivity
 
-## Blockchain Integration
+  ### 6G Future
+  - Speed increase
+  - Order of magnitude improvement
+  - Persistent connections
+  - Real-time experience
+  - Holographic support
 
-### Economic Structure
-- Decentralisation
-- True ownership
-- Digital assets
-- NFT capability
-- Smart contracts
+  ## Computing Architecture
 
-### Platform Options
-- Ethereum
-- Polkadot
-- Solana
-- Layer 2 solutions
-- Cross-chain bridges
+  ### Distributed Computing
+  - Cloud resources
+  - Edge processing
+  - Local computation
+  - Blockchain computing
+  - Hybrid approaches
 
-## AI Integration
+  ### Hardware Requirements
+  - High-end computers
+  - Gaming consoles
+  - Specialised workstations
+  - Processing power
+  - Graphics capability
 
-### Generative AI
-- Pattern learning
-- Content generation
-- Personalisation
-- Environment customisation
-- User engagement
+  ## Blockchain Integration
 
-### Intelligent Services
-- NPC behaviour
-- Content moderation
-- Translation services
-- Recommendation systems
-- Predictive analytics
+  ### Economic Structure
+  - Decentralisation
+  - True ownership
+  - Digital assets
+  - NFT capability
+  - Smart contracts
 
-## Application Layer
+  ### Platform Options
+  - Ethereum
+  - Polkadot
+  - Solana
+  - Layer 2 solutions
+  - Cross-chain bridges
 
-### Physical-Virtual Bridge
-- Digital twins
-- Mixed reality
-- Real-world integration
-- Sensor fusion
-- Spatial anchoring
+  ## AI Integration
 
-### Intelligent Services
-- Smart assistance
-- Automated systems
-- Context awareness
-- Adaptive experiences
-- Life serving
+  ### Generative AI
+  - Pattern learning
+  - Content generation
+  - Personalisation
+  - Environment customisation
+  - User engagement
 
-## Design Principles
+  ### Intelligent Services
+  - NPC behaviour
+  - Content moderation
+  - Translation services
+  - Recommendation systems
+  - Predictive analytics
 
-### Interoperability
-- Cross-platform assets
-- Standard protocols
-- Open APIs
-- Portable identity
-- Universal currencies
+  ## Application Layer
 
-### Scalability
-- Massive users
-- Global reach
-- Performance maintenance
-- Resource efficiency
-- Growth accommodation
+  ### Physical-Virtual Bridge
+  - Digital twins
+  - Mixed reality
+  - Real-world integration
+  - Sensor fusion
+  - Spatial anchoring
 
-### Persistence
-- Always-on worlds
-- State preservation
-- Continuous evolution
-- History retention
-- Progress saving
+  ### Intelligent Services
+  - Smart assistance
+  - Automated systems
+  - Context awareness
+  - Adaptive experiences
+  - Life serving
 
-## Implementation Approach
+  ## Design Principles
 
-### Modular Design
-- Component separation
-- Independent scaling
-- Easy updates
-- Technology flexibility
-- Future-proofing
+  ### Interoperability
+  - Cross-platform assets
+  - Standard protocols
+  - Open APIs
+  - Portable identity
+  - Universal currencies
 
-### Standards Adoption
-- Open protocols
-- Industry alignment
-- Interoperability focus
-- Community contribution
-- Ecosystem building
+  ### Scalability
+  - Massive users
+  - Global reach
+  - Performance maintenance
+  - Resource efficiency
+  - Growth accommodation
 
-## Metadata
+  ### Persistence
+  - Always-on worlds
+  - State preservation
+  - Continuous evolution
+  - History retention
+  - Progress saving
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Implementation Approach
+
+  ### Modular Design
+  - Component separation
+  - Independent scaling
+  - Easy updates
+  - Technology flexibility
+  - Future-proofing
+
+  ### Standards Adoption
+  - Open protocols
+  - Industry alignment
+  - Interoperability focus
+  - Community contribution
+  - Ecosystem building
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

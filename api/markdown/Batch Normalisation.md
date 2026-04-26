@@ -1,234 +1,172 @@
-- ### OntologyBlock
-  id:: batch-normalisation-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0058
-	- preferred-term:: Batch Normalisation
-	- source-domain:: ai
-	- status:: draft
-- public-access:: true
-	- definition:: ### Primary Definition
-**Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
-	- maturity:: draft
-	- owl:class:: ai:BatchNormalisation
-	- owl:role:: Concept
-	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
-- ## About Batch Normalisation
-	- ### Primary Definition
-**Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
-	-
-	- ### Original Content
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#BatchNormalisation
+uri:: urn:visionclaw:concept:artificial-intelligence:batch-normalisation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:batch-normalisation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Batch Normalisation
+content-hash:: sha256-12-415fa48a5f50
+legacy-term-id:: AI-0058
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T17:00:00Z
+public:: true
+bridges-to:: [[Computer Vision]]
+
+- ### Definition
+  - ### Primary Definition
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:BatchNormalisation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - ### Primary Definition
+  **Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
+  - ### Original Content
 		- ```
-# Batch Normalisation
-		  
-		  ## Metadata
-		  - **Term ID**: AI-0058
-		  - **Type**: AIAlgorithm
-		  - **Classification**: Normalisation Technique
-		  - **Domain**: MLDomain
-		  - **Layer**: AlgorithmicLayer
-		  - **Status**: Active
-		  - **Version**: 1.0
-		  - **Last Updated**: 2025-10-27
-		  - **Priority**: 1=Foundational
-		  
-		  ## Definition
-		  
-		  ### Primary Definition
-		  **Batch Normalisation** is a technique that normalises layer inputs within a mini-batch to have zero mean and unit variance, stabilising training, enabling higher learning rates, and acting as a form of regularisation.
-		  
-		  **Source**: ISO/IEC 22989:2022 (Training) + Ioffe & Szegedy, 2015 - Authority Score: 0.92
-		  
-		  ### Operational Characteristics
-		  - **Input Normalisation**: Standardises layer inputs per mini-batch
-		  - **Training Stabilisation**: Reduces internal covariate shift
-		  - **Faster Convergence**: Enables higher learning rates
-		  - **Regularisation Effect**: Slight regularisation due to batch statistics noise
-		  - **Learnable Parameters**: Scale and shift parameters per feature
-		  
-		  ## Relationships
-		  
-		  ### Parent Classes
-		  - **Normalisation Technique**: Batch norm is a normalisation method
-		  - **Training Technique**: Applied during neural network training
-		  
-		  ### Related Concepts
-		  - **Training** (AI-0041): Batch norm stabilises training
+  # Batch Normalisation
+
+  #### Related Concepts
+  - **Training** (AI-0041): Batch norm stabilises training
 		  - **Convergence**: Batch norm accelerates convergence
 		  - **Neural Network**: Batch norm layers in deep networks
 		  - **Regularisation** (AI-0056): Batch norm has regularising effect
-		  
+
 		  ## Formal Ontology
-		  
+
 		  <details>
 		  <summary>Click to expand OntologyBlock</summary>
-		  
-		  ```clojure
-		  ;; Batch Normalisation Ontology (OWL Functional Syntax)
-		  ;; Term ID: AI-0058
-		  ;; Domain: MLDomain | Layer: AlgorithmicLayer
-		  
-		  (Declaration (Class :BatchNormalisation))
-		  
-		  ;; Core Classification
-		  (SubClassOf :BatchNormalisation :NormalisationTechnique)
-		  (SubClassOf :BatchNormalisation :TrainingTechnique)
-		  
-		  ;; Functional Properties
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :normalises :LayerInputs))
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :stabilises :TrainingProcess))
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :enables :HigherLearningRates))
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :providesEffect :RegularisationEffect))
-		  
-		  ;; Application Context
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :appliedDuring :Training))
-		  (SubClassOf :BatchNormalisation
-		    (ObjectSomeValuesFrom :accelerates :Convergence))
-		  
-		  ;; Annotations
-		  (AnnotationAssertion rdfs:label :BatchNormalisation "Batch Normalisation"@en-GB)
-		  (AnnotationAssertion rdfs:comment :BatchNormalisation
-		    "Technique normalising layer inputs to zero mean and unit variance for training stabilisation"@en)
-		  (AnnotationAssertion :academicReference :BatchNormalisation "Ioffe & Szegedy, Batch Normalization, ICML 2015")
-		  (AnnotationAssertion :authorityScore :BatchNormalisation "0.92"^^xsd:float)
-		  (AnnotationAssertion :priorityLevel :BatchNormalisation "1"^^xsd:integer)
-		  
-		  ;; Data Properties
-		  (DataPropertyAssertion :normalisesToZeroMean :BatchNormalisation "true"^^xsd:boolean)
-		  (DataPropertyAssertion :hasLearnableParameters :BatchNormalisation "true"^^xsd:boolean)
-		  (DataPropertyAssertion :reducesInternalCovariateShift :BatchNormalisation "true"^^xsd:boolean)
-		  
-		  ;; Property Declarations
-		  (Declaration (ObjectProperty :stabilises))
-		  (ObjectPropertyDomain :stabilises :BatchNormalisation)
-		  (ObjectPropertyRange :stabilises :TrainingProcess)
-		  
-		  (Declaration (DataProperty :normalisesToZeroMean))
-		  (DataPropertyDomain :normalisesToZeroMean :BatchNormalisation)
-		  (DataPropertyRange :normalisesToZeroMean xsd:boolean)
-		  ```
+
 		  </details>
-		  
+
 		  ## Standards Alignment
-		  
+
 		  ### ISO/IEC Standards
 		  - **ISO/IEC 22989:2022**: Training and normalisation techniques
-		  
+
 		  ### NIST AI RMF
 		  - **Function**: MAP (Training optimisation)
-		  
+
 		  ## Related Terms
 		  - **Training** (AI-0041): Uses batch normalisation
 		  - **Neural Network**: Contains batch norm layers
 		  - **Regularisation** (AI-0056): Side effect of batch norm
 		  - **Convergence**: Improved by batch normalisation
-		  
-		  ## References
-		  1. Ioffe & Szegedy - "Batch Normalization: Accelerating Deep Network Training" - ICML, 2015
+
+  #### References
+  1. Ioffe & Szegedy - "Batch Normalization: Accelerating Deep Network Training" - ICML, 2015
 		  2. ISO/IEC 22989:2022 - Training techniques
-		  
+
 		  ---
-		  
+
 		  **Authority Score**: 0.92 | **Standards Compliance**: ✓ ISO/IEC ✓ NIST
-		  
+
 		  ```
-## Academic Context
+  ## Academic Context
 
-- Brief contextual overview
-	- Batch normalisation is a foundational technique in deep learning, introduced to address the challenge of internal covariate shift—the phenomenon where the distribution of layer inputs changes during training, slowing convergence and destabilising learning.
-	- The method has become a standard component in modern neural network architectures, widely taught in university courses and applied in both research and industry.
+  - Brief contextual overview
+  - Batch normalisation is a foundational technique in deep learning, introduced to address the challenge of internal covariate shift—the phenomenon where the distribution of layer inputs changes during training, slowing convergence and destabilising learning.
+  - The method has become a standard component in modern neural network architectures, widely taught in university courses and applied in both research and industry.
 
-- Key developments and current state
-	- Originally proposed in 2015, batch normalisation has since been refined and extended, with ongoing debate about its precise mechanisms and optimal use.
-	- While initially thought to mitigate internal covariate shift, recent research suggests its primary benefit may lie in smoothing the optimisation landscape, making gradients more predictable and training more robust.
+  - Key developments and current state
+  - Originally proposed in 2015, batch normalisation has since been refined and extended, with ongoing debate about its precise mechanisms and optimal use.
+  - While initially thought to mitigate internal covariate shift, recent research suggests its primary benefit may lie in smoothing the optimisation landscape, making gradients more predictable and training more robust.
 
-- Academic foundations
-	- The technique is grounded in statistical normalisation and is closely related to other regularisation and normalisation strategies, such as layer normalisation and instance normalisation.
-	- It is now considered a core concept in machine learning curricula, including those at UK universities.
+  - Academic foundations
+  - The technique is grounded in statistical normalisation and is closely related to other regularisation and normalisation strategies, such as layer normalisation and instance normalisation.
+  - It is now considered a core concept in machine learning curricula, including those at UK universities.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
-	- Batch normalisation is a staple in deep learning frameworks such as PyTorch and TensorFlow, used in a wide range of applications from computer vision to natural language processing.
-	- Many leading tech companies, including Google, Meta, and DeepMind, routinely employ batch normalisation in their models.
+  - Industry adoption and implementations
+  - Batch normalisation is a staple in deep learning frameworks such as PyTorch and TensorFlow, used in a wide range of applications from computer vision to natural language processing.
+  - Many leading tech companies, including Google, Meta, and DeepMind, routinely employ batch normalisation in their models.
 
-- Notable organisations and platforms
-	- UK-based AI startups and research labs, such as Graphcore (Bristol) and Faculty (London), integrate batch normalisation into their deep learning pipelines.
-	- In North England, organisations like the Alan Turing Institute’s regional hubs (Manchester, Leeds) and the Digital Catapult (Newcastle) leverage batch normalisation in projects spanning healthcare, finance, and smart cities.
+  - Notable organisations and platforms
+  - UK-based AI startups and research labs, such as Graphcore (Bristol) and Faculty (London), integrate batch normalisation into their deep learning pipelines.
+  - In North England, organisations like the Alan Turing Institute’s regional hubs (Manchester, Leeds) and the Digital Catapult (Newcastle) leverage batch normalisation in projects spanning healthcare, finance, and smart cities.
 
-- Technical capabilities and limitations
-	- Batch normalisation accelerates training, improves model stability, and can act as a regulariser, sometimes reducing the need for dropout.
-	- However, it can introduce challenges in small-batch or online learning scenarios, where batch statistics may be unreliable.
-	- Recent alternatives, such as group normalisation and weight standardisation, have emerged to address these limitations.
+  - Technical capabilities and limitations
+  - Batch normalisation accelerates training, improves model stability, and can act as a regulariser, sometimes reducing the need for dropout.
+  - However, it can introduce challenges in small-batch or online learning scenarios, where batch statistics may be unreliable.
+  - Recent alternatives, such as group normalisation and weight standardisation, have emerged to address these limitations.
 
-- Standards and frameworks
-	- Batch normalisation is supported in all major deep learning frameworks and is often included as a default option in model templates.
-	- Best practices for its use are well-documented in both academic literature and industry guidelines.
+  - Standards and frameworks
+  - Batch normalisation is supported in all major deep learning frameworks and is often included as a default option in model templates.
+  - Best practices for its use are well-documented in both academic literature and industry guidelines.
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
-	- Ioffe, S., & Szegedy, C. (2015). Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. Proceedings of the 32nd International Conference on Machine Learning (ICML), 37, 448–456. https://proceedings.mlr.press/v37/ioffe15.html
-	- Santurkar, S., Tsipras, D., Ilyas, A., & Madry, A. (2018). How Does Batch Normalization Help Optimization? Advances in Neural Information Processing Systems (NeurIPS), 31. https://proceedings.neurips.cc/paper/2018/file/905056c1ac1dad141560467e0a99e1cf-Paper.pdf
-	- Luo, P., Ren, J., Lin, Z., & Wang, J. (2019). Group Normalization. European Conference on Computer Vision (ECCV), 11217, 3–19. https://doi.org/10.1007/978-3-030-01261-8_1
+  - Key academic papers and sources
+  - Ioffe, S., & Szegedy, C. (2015). Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. Proceedings of the 32nd International Conference on Machine Learning (ICML), 37, 448–456. https://proceedings.mlr.press/v37/ioffe15.html
+  - Santurkar, S., Tsipras, D., Ilyas, A., & Madry, A. (2018). How Does Batch Normalization Help Optimization? Advances in Neural Information Processing Systems (NeurIPS), 31. https://proceedings.neurips.cc/paper/2018/file/905056c1ac1dad141560467e0a99e1cf-Paper.pdf
+  - Luo, P., Ren, J., Lin, Z., & Wang, J. (2019). Group Normalization. European Conference on Computer Vision (ECCV), 11217, 3–19. https://doi.org/10.1007/978-3-030-01261-8_1
 
-- Ongoing research directions
-	- Investigating the theoretical underpinnings of batch normalisation, including its impact on optimisation dynamics and generalisation.
-	- Developing more robust normalisation techniques for small-batch and online learning.
-	- Exploring the interaction between batch normalisation and other regularisation methods.
+  - Ongoing research directions
+  - Investigating the theoretical underpinnings of batch normalisation, including its impact on optimisation dynamics and generalisation.
+  - Developing more robust normalisation techniques for small-batch and online learning.
+  - Exploring the interaction between batch normalisation and other regularisation methods.
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
-	- UK researchers have made significant contributions to the understanding and application of batch normalisation, with work published in top-tier journals and conferences.
-	- The technique is widely taught in UK universities, including at the University of Manchester, University of Leeds, and Newcastle University.
+  - British contributions and implementations
+  - UK researchers have made significant contributions to the understanding and application of batch normalisation, with work published in top-tier journals and conferences.
+  - The technique is widely taught in UK universities, including at the University of Manchester, University of Leeds, and Newcastle University.
 
-- North England innovation hubs
-	- The North of England is home to several innovation hubs and research centres that actively use and develop batch normalisation techniques.
-	- For example, the Manchester Centre for Advanced Computational Science (MCAS) and the Leeds Institute for Data Analytics (LIDA) have projects that leverage batch normalisation in deep learning applications.
+  - North England innovation hubs
+  - The North of England is home to several innovation hubs and research centres that actively use and develop batch normalisation techniques.
+  - For example, the Manchester Centre for Advanced Computational Science (MCAS) and the Leeds Institute for Data Analytics (LIDA) have projects that leverage batch normalisation in deep learning applications.
 
-- Regional case studies
-	- In Manchester, batch normalisation has been used in projects related to medical imaging and predictive analytics.
-	- In Leeds, it has been applied in natural language processing tasks for local government and healthcare.
-	- In Newcastle, batch normalisation is a key component in smart city initiatives, enhancing the performance of models used for traffic prediction and environmental monitoring.
+  - Regional case studies
+  - In Manchester, batch normalisation has been used in projects related to medical imaging and predictive analytics.
+  - In Leeds, it has been applied in natural language processing tasks for local government and healthcare.
+  - In Newcastle, batch normalisation is a key component in smart city initiatives, enhancing the performance of models used for traffic prediction and environmental monitoring.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
-	- Continued refinement of normalisation techniques to address the limitations of batch normalisation.
-	- Integration of batch normalisation with other advanced deep learning methods, such as attention mechanisms and transformers.
+  - Emerging trends and developments
+  - Continued refinement of normalisation techniques to address the limitations of batch normalisation.
+  - Integration of batch normalisation with other advanced deep learning methods, such as attention mechanisms and transformers.
 
-- Anticipated challenges
-	- Ensuring robustness in small-batch and online learning scenarios.
-	- Balancing the benefits of batch normalisation with the computational overhead it introduces.
+  - Anticipated challenges
+  - Ensuring robustness in small-batch and online learning scenarios.
+  - Balancing the benefits of batch normalisation with the computational overhead it introduces.
 
-- Research priorities
-	- Developing more efficient and scalable normalisation methods.
-	- Exploring the theoretical foundations of batch normalisation and its impact on model performance.
+  - Research priorities
+  - Developing more efficient and scalable normalisation methods.
+  - Exploring the theoretical foundations of batch normalisation and its impact on model performance.
 
-## References
+  ## References
 
-1. Ioffe, S., & Szegedy, C. (2015). Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. Proceedings of the 32nd International Conference on Machine Learning (ICML), 37, 448–456. https://proceedings.mlr.press/v37/ioffe15.html
-2. Santurkar, S., Tsipras, D., Ilyas, A., & Madry, A. (2018). How Does Batch Normalization Help Optimization? Advances in Neural Information Processing Systems (NeurIPS), 31. https://proceedings.neurips.cc/paper/2018/file/905056c1ac1dad141560467e0a99e1cf-Paper.pdf
-3. Luo, P., Ren, J., Lin, Z., & Wang, J. (2019). Group Normalization. European Conference on Computer Vision (ECCV), 11217, 3–19. https://doi.org/10.1007/978-3-030-01261-8_1
-4. GeeksforGeeks. (2025). What is Batch Normalization In Deep Learning? https://www.geeksforgeeks.org/deep-learning/what-is-batch-normalization-in-deep-learning/
-5. Machine Learning Mastery. (2025). A Gentle Introduction to Batch Normalization. https://machinelearningmastery.com/a-gentle-introduction-to-batch-normalization/
-6. Coursera. (2025). What Is Batch Normalization? https://www.coursera.org/articles/what-is-batch-normalization
-7. Wikipedia. (2025). Batch normalization. https://en.wikipedia.org/wiki/Batch_normalization
-8. UnitX Labs. (2025). Batch Normalization in Machine Vision: A Beginner's Guide. https://www.unitxlabs.com/resources/batch-normalization-machine-vision-guide/
-9. LearnOpenCV. (2025). Batch Normalization and Dropout: Combined Regularization. https://learnopencv.com/batch-normalization-and-dropout-as-regularizers/
-10. PMC. (2025). Attention-Based Batch Normalization for Binary Neural Networks. https://pmc.ncbi.nlm.nih.gov/articles/PMC12192098/
+  1. Ioffe, S., & Szegedy, C. (2015). Batch Normalization: Accelerating Deep Network Training by Reducing Internal Covariate Shift. Proceedings of the 32nd International Conference on Machine Learning (ICML), 37, 448–456. https://proceedings.mlr.press/v37/ioffe15.html
+  2. Santurkar, S., Tsipras, D., Ilyas, A., & Madry, A. (2018). How Does Batch Normalization Help Optimization? Advances in Neural Information Processing Systems (NeurIPS), 31. https://proceedings.neurips.cc/paper/2018/file/905056c1ac1dad141560467e0a99e1cf-Paper.pdf
+  3. Luo, P., Ren, J., Lin, Z., & Wang, J. (2019). Group Normalization. European Conference on Computer Vision (ECCV), 11217, 3–19. https://doi.org/10.1007/978-3-030-01261-8_1
+  4. GeeksforGeeks. (2025). What is Batch Normalization In Deep Learning? https://www.geeksforgeeks.org/deep-learning/what-is-batch-normalization-in-deep-learning/
+  5. Machine Learning Mastery. (2025). A Gentle Introduction to Batch Normalization. https://machinelearningmastery.com/a-gentle-introduction-to-batch-normalization/
+  6. Coursera. (2025). What Is Batch Normalization? https://www.coursera.org/articles/what-is-batch-normalization
+  7. Wikipedia. (2025). Batch normalization. https://en.wikipedia.org/wiki/Batch_normalization
+  8. UnitX Labs. (2025). Batch Normalization in Machine Vision: A Beginner's Guide. https://www.unitxlabs.com/resources/batch-normalization-machine-vision-guide/
+  9. LearnOpenCV. (2025). Batch Normalization and Dropout: Combined Regularization. https://learnopencv.com/batch-normalization-and-dropout-as-regularizers/
+  10. PMC. (2025). Attention-Based Batch Normalization for Binary Neural Networks. https://pmc.ncbi.nlm.nih.gov/articles/PMC12192098/
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[ISO (International Organization for Standardization)]], [[NIST (National Institute of Standards and Technology)]]
+  - migration-date:: 2026-04-26T00:00:00Z

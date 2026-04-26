@@ -1,74 +1,36 @@
-- ### OntologyBlock
-  id:: humanpreference-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#HumanPreference
+uri:: urn:visionclaw:concept:artificial-intelligence:human-preference
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:human-preference
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Human Preference
+content-hash:: sha256-12-8cada20c04c5
+legacy-term-id:: AI-0801
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0801
-    - filename-history:: ["AI-0801-humanpreference.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0801
-    - preferred-term:: Human Preference
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Capability for autonomous self-improvement.
 
-  - **Definition**
-    - definition:: Capability for autonomous self-improvement.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:HumanPreference
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:HumanPreference
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Neural Network Component]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Machine Learning]]
-    - is-subclass-of:: [[Attention Mechanism]]
-    - is-subclass-of:: [[Neural Network Component]]
-    - is-subclass-of:: [[Machine Learning]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Ai Governance]]
-    - is-subclass-of:: [[Machine Learning]]
-    - is-subclass-of:: [[System]]
-    - is-subclass-of:: [[Component]]
-    - is-subclass-of:: [[Component]]
+- ### Content
+  Human Preference — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :HumanPreference))
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :MachineLearning)
-      (SubClassOf :HumanPreference :AttentionMechanism)
-      (SubClassOf :HumanPreference :NeuralNetworkComponent)
-      (SubClassOf :HumanPreference :MachineLearning)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :ArtificialIntelligence)
-      (SubClassOf :HumanPreference :AiGovernance)
-      (SubClassOf :HumanPreference :MachineLearning)
-      (SubClassOf :HumanPreference :System)
-      (SubClassOf :HumanPreference :Component)
-      (SubClassOf :HumanPreference :Component)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :HumanPreference "Property"@en)
-      (AnnotationAssertion rdfs:comment :HumanPreference
-        "Capability for autonomous self-improvement."@en)
-      ```
-
-- ## About Property
-  Capability for autonomous self-improvement.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,51 +1,36 @@
-- ### OntologyBlock
-  id:: gasperconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#GasperConsensus
+uri:: urn:visionclaw:concept:blockchain:gasper-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:gasper-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Gasper Consensus
+content-hash:: sha256-12-a71c409934bc
+legacy-term-id:: BC-0554
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0554
-    - filename-history:: ["BC-0554-gasperconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0554
-    - preferred-term:: Gasper Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism.
 
-  - **Definition**
-    - definition:: Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:GasperConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:GasperConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Hybrid Consensus]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Proof Of Stake]]
-    - is-subclass-of:: [[Hybrid Consensus]]
+- ### Content
+  Gasper Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :GasperConsensus))
-      (SubClassOf :GasperConsensus :ProofOfStake)
-      (SubClassOf :GasperConsensus :HybridConsensus)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :GasperConsensus "Gasper Consensus"@en)
-      (AnnotationAssertion rdfs:comment :GasperConsensus
-        "Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism."@en)
-      ```
-
-- ## About Gasper Consensus
-  Ethereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake ether without delegation mechanism.
-  
-  Provides finality - to revert a finalized block, attacker must lose at least 1/3 of total staked ETH.
-  
-  ### Examples
-  - Ethereum (post-Merge)
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

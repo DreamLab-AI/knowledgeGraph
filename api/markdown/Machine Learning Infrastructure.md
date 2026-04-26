@@ -1,202 +1,213 @@
-- ### OntologyBlock
-  id:: machine-learning-infrastructure-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9950
-	- source-domain:: ai
-	- preferred-term:: Machine Learning Infrastructure
-	- status:: active
-	- owl:class:: ai:MachineLearningInfrastructure
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.
-	- #### Relationships
-	  id:: machine-learning-infrastructure-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Computing Infrastructure]]
-		- related-to:: [[Cloud Computing]]
-		- related-to:: [[GPU Computing]]
-		- enables:: [[Scalable AI Training]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningInfrastructure
+uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning-infrastructure
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Machine Learning Infrastructure
+content-hash:: sha256-12-1f94d8fcec0e
+legacy-term-id:: MV-9950
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Market Overview
+- ### Definition
+  - Hardware and software systems that support machine learning workloads, including GPU clusters, cloud computing platforms, storage systems, and orchestration tools required for training and deploying AI models at scale.
 
-### GPU-as-a-Service Growth
-- USD 4.31 billion (2024)
-- USD 49.84 billion by 2032
-- 35.8% CAGR
-- Explosive demand
-- Enterprise adoption
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MachineLearningInfrastructure
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### NVIDIA Dominance
-- 90% GPU market share (2024)
-- 40,000+ companies using
-- 4 million+ developers
-- AI/ML leadership
-- Hardware innovation
+- ### Relationships
+  - is-subclass-of:: [[Computing Infrastructure]]
+  - enables:: [[Scalable AI Training]]
 
-## Major Cloud Providers
+- ### Content
 
-### Google Cloud
-- A3 VM instances (H100)
-- 3.9x speed vs A2 (A100)
-- Wide GPU selection
-- TPU availability
-- Vertex AI integration
+  ## Market Overview
 
-### Available GPUs
-- NVIDIA H200, H100
-- GB300, GB200, B200
-- RTX PRO 6000
-- L4, T4, V100
-- A100 variants
+  ### GPU-as-a-Service Growth
+  - USD 4.31 billion (2024)
+  - USD 49.84 billion by 2032
+  - 35.8% CAGR
+  - Explosive demand
+  - Enterprise adoption
 
-### Azure ML
-- NC, ND, NV series
-- Heavy computation focus
-- Virtual desktop support
-- Enterprise integration
-- Hybrid capabilities
+  ### NVIDIA Dominance
+  - 90% GPU market share (2024)
+  - 40,000+ companies using
+  - 4 million+ developers
+  - AI/ML leadership
+  - Hardware innovation
 
-### AWS
-- SageMaker platform
-- EC2 GPU instances
-- Inf2 Inferentia chips
-- Custom silicon
-- Global availability
+  ## Major Cloud Providers
 
-## Specialised Providers
+  ### Google Cloud
+  - A3 VM instances (H100)
+  - 3.9x speed vs A2 (A100)
+  - Wide GPU selection
+  - TPU availability
+  - Vertex AI integration
 
-### Lambda Labs
-- 1-Click Clusters
-- 16-2,000+ GPUs
-- HGX B200 and H100
-- Fast deployment
-- Cost-effective scaling
+  ### Available GPUs
+  - NVIDIA H200, H100
+  - GB300, GB200, B200
+  - RTX PRO 6000
+  - L4, T4, V100
+  - A100 variants
 
-### Modal
-- Sub-second cold starts
-- Instant autoscaling
-- 100x faster than Docker
-- Developer-friendly
-- Heavy AI workload focus
+  ### Azure ML
+  - NC, ND, NV series
+  - Heavy computation focus
+  - Virtual desktop support
+  - Enterprise integration
+  - Hybrid capabilities
 
-### Paperspace (DigitalOcean)
-- Fully-managed platform
-- Compute, storage, networking
-- End-to-end ML support
-- Gradient notebooks
-- Team collaboration
+  ### AWS
+  - SageMaker platform
+  - EC2 GPU instances
+  - Inf2 Inferentia chips
+  - Custom silicon
+  - Global availability
 
-### RunPod
-- A100, H100, MI300X, H200
-- Per-second billing
-- Budget flexibility
-- Quick tests support
-- Batch job optimisation
+  ## Specialised Providers
 
-### Vast.ai
-- 80% cost savings
-- Marketplace model
-- 24/7 expert support
-- GPU instance seconds
-- High performance
+  ### Lambda Labs
+  - 1-Click Clusters
+  - 16-2,000+ GPUs
+  - HGX B200 and H100
+  - Fast deployment
+  - Cost-effective scaling
 
-## GPU Orchestration
+  ### Modal
+  - Sub-second cold starts
+  - Instant autoscaling
+  - 100x faster than Docker
+  - Developer-friendly
+  - Heavy AI workload focus
 
-### NVIDIA Run:ai
-- AI factory support
-- Open architecture
-- Multi-cloud integration
-- Dynamic scaling
-- Intelligent orchestration
+  ### Paperspace (DigitalOcean)
+  - Fully-managed platform
+  - Compute, storage, networking
+  - End-to-end ML support
+  - Gradient notebooks
+  - Team collaboration
 
-### Compute Utilisation
-- Idle time reduction
-- Resource maximisation
-- Workload scheduling
-- Priority management
-- Cost optimisation
+  ### RunPod
+  - A100, H100, MI300X, H200
+  - Per-second billing
+  - Budget flexibility
+  - Quick tests support
+  - Batch job optimisation
 
-## Technical Requirements
+  ### Vast.ai
+  - 80% cost savings
+  - Marketplace model
+  - 24/7 expert support
+  - GPU instance seconds
+  - High performance
 
-### Memory Considerations
-- Large LLM requirements
-- Multi-GPU distribution
-- VRAM capacity
-- Memory bandwidth
-- Model sharding
+  ## GPU Orchestration
 
-### Performance Metrics
-- TFLOPS measurement
-- Training time reduction
-- Inference speed
-- Batch processing
-- Throughput optimisation
+  ### NVIDIA Run:ai
+  - AI factory support
+  - Open architecture
+  - Multi-cloud integration
+  - Dynamic scaling
+  - Intelligent orchestration
 
-## Infrastructure Components
+  ### Compute Utilisation
+  - Idle time reduction
+  - Resource maximisation
+  - Workload scheduling
+  - Priority management
+  - Cost optimisation
 
-### Compute Layer
-- GPU clusters
-- CPU farms
-- TPU pods
-- FPGA arrays
-- Custom accelerators
+  ## Technical Requirements
 
-### Storage Systems
-- High-speed NVMe
-- Distributed file systems
-- Object storage
-- Data lakes
-- Checkpoint storage
+  ### Memory Considerations
+  - Large LLM requirements
+  - Multi-GPU distribution
+  - VRAM capacity
+  - Memory bandwidth
+  - Model sharding
 
-### Networking
-- InfiniBand connectivity
-- NVLink interconnects
-- High-bandwidth switches
-- Low-latency fabrics
-- Multi-node communication
+  ### Performance Metrics
+  - TFLOPS measurement
+  - Training time reduction
+  - Inference speed
+  - Batch processing
+  - Throughput optimisation
 
-## Deployment Options
+  ## Infrastructure Components
 
-### Cloud-Native
-- Scalable on-demand
-- Pay-per-use
-- Global distribution
-- Managed services
-- Rapid provisioning
+  ### Compute Layer
+  - GPU clusters
+  - CPU farms
+  - TPU pods
+  - FPGA arrays
+  - Custom accelerators
 
-### On-Premises
-- Data sovereignty
-- Predictable costs
-- Hardware control
-- Security compliance
-- Custom configuration
+  ### Storage Systems
+  - High-speed NVMe
+  - Distributed file systems
+  - Object storage
+  - Data lakes
+  - Checkpoint storage
 
-### Hybrid Approach
-- Burst capability
-- Sensitive workloads local
-- Flexibility balance
-- Cost optimisation
-- Multi-cloud strategy
+  ### Networking
+  - InfiniBand connectivity
+  - NVLink interconnects
+  - High-bandwidth switches
+  - Low-latency fabrics
+  - Multi-node communication
 
-## Future Trends
+  ## Deployment Options
 
-### Hardware Evolution
-- Next-gen GPUs
-- Specialised AI chips
-- Quantum integration
-- Neuromorphic computing
-- Edge acceleration
+  ### Cloud-Native
+  - Scalable on-demand
+  - Pay-per-use
+  - Global distribution
+  - Managed services
+  - Rapid provisioning
 
-### Software Advances
-- Automated scaling
-- Intelligent scheduling
-- MLOps maturation
-- Containerisation
-- Serverless ML
+  ### On-Premises
+  - Data sovereignty
+  - Predictable costs
+  - Hardware control
+  - Security compliance
+  - Custom configuration
 
-## Metadata
+  ### Hybrid Approach
+  - Burst capability
+  - Sensitive workloads local
+  - Flexibility balance
+  - Cost optimisation
+  - Multi-cloud strategy
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Future Trends
+
+  ### Hardware Evolution
+  - Next-gen GPUs
+  - Specialised AI chips
+  - Quantum integration
+  - Neuromorphic computing
+  - Edge acceleration
+
+  ### Software Advances
+  - Automated scaling
+  - Intelligent scheduling
+  - MLOps maturation
+  - Containerisation
+  - Serverless ML
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

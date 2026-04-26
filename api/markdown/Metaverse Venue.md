@@ -1,135 +1,149 @@
-- ### OntologyBlock
-  id:: metaverse-venue-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9966
-	- source-domain:: mv
-	- preferred-term:: Metaverse Venue
-	- status:: active
-	- owl:class:: mv:MetaverseVenue
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.
-	- #### Relationships
-	  id:: metaverse-venue-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Virtual Environment]]
-		- related-to:: [[Virtual Events]]
-		- related-to:: [[Digital Twin]]
-		- enables:: [[Global Virtual Gatherings]]
+iri:: http://narrativegoldmine.com/spatial-computing#MetaverseVenue
+uri:: urn:visionclaw:concept:spatial-computing:metaverse-venue
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:metaverse-venue
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Metaverse Venue
+content-hash:: sha256-12-a3e6c654bc20
+legacy-term-id:: MV-9966
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Market Overview
+- ### Definition
+  - Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.
 
-### Investment Growth
-- $12 billion spent in 2020
-- $72.8 billion projected for 2024
-- VR/AR foundation technologies
-- Increasing enterprise adoption
-- Platform expansion
+- ### Semantic Classification
+  - owl-class:: spatial-computing:MetaverseVenue
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Key Platforms
+- ### Relationships
+  - is-subclass-of:: [[Virtual Environment]]
+  - enables:: [[Global Virtual Gatherings]]
 
-#### MootUp
-- Browser-based access
-- Scalable event hosting
-- Thousands of concurrent attendees
-- Global accessibility
-- 3D interactive features
+- ### Content
 
-#### Meetaverse
-- Business meeting focus
-- Sales and marketing tools
-- Engagement tracking
-- User data analytics
-- Corporate event support
+  ## Market Overview
 
-#### Hyperspace
-- VR conference capability
-- Metaverse networking
-- 3D environment navigation
-- Collaborative sessions
-- Virtual exhibitor booths
+  ### Investment Growth
+  - $12 billion spent in 2020
+  - $72.8 billion projected for 2024
+  - VR/AR foundation technologies
+  - Increasing enterprise adoption
+  - Platform expansion
 
-#### vFairs
-- Avatar customisation
-- Personalised presence
-- Interactive 3D venues
-- Visual engagement
-- Event management
+  ### Key Platforms
 
-#### VenueTwin
-- Digital twin creation
-- Real-time interaction
-- Colleague collaboration
-- Partner engagement
-- Physical venue replication
+  #### MootUp
+  - Browser-based access
+  - Scalable event hosting
+  - Thousands of concurrent attendees
+  - Global accessibility
+  - 3D interactive features
 
-## Event Types
+  #### Meetaverse
+  - Business meeting focus
+  - Sales and marketing tools
+  - Engagement tracking
+  - User data analytics
+  - Corporate event support
 
-### Corporate Events
-- Conferences
-- Trade shows
-- Product launches
-- Team meetings
-- Training sessions
+  #### Hyperspace
+  - VR conference capability
+  - Metaverse networking
+  - 3D environment navigation
+  - Collaborative sessions
+  - Virtual exhibitor booths
 
-### Social Gatherings
-- Concerts
-- Exhibitions
-- Networking events
-- Community meetups
-- Cultural celebrations
+  #### vFairs
+  - Avatar customisation
+  - Personalised presence
+  - Interactive 3D venues
+  - Visual engagement
+  - Event management
 
-## Key Features
+  #### VenueTwin
+  - Digital twin creation
+  - Real-time interaction
+  - Colleague collaboration
+  - Partner engagement
+  - Physical venue replication
 
-### Avatar Systems
-- Custom creation
-- Personal representation
-- Expression capability
-- Interaction tools
-- Identity options
+  ## Event Types
 
-### Environment Design
-- 3D world building
-- Interactive elements
-- Spatial audio
-- Visual branding
-- Navigation systems
+  ### Corporate Events
+  - Conferences
+  - Trade shows
+  - Product launches
+  - Team meetings
+  - Training sessions
 
-## Benefits
+  ### Social Gatherings
+  - Concerts
+  - Exhibitions
+  - Networking events
+  - Community meetups
+  - Cultural celebrations
 
-### Global Reach
-- No geographical limits
-- Cross-cultural participation
-- Time zone flexibility
-- International networking
-- Inclusive access
+  ## Key Features
 
-### Engagement
-- Immersive experience
-- Interactive content
-- Personalised journeys
-- Real-time interaction
-- Memorable events
+  ### Avatar Systems
+  - Custom creation
+  - Personal representation
+  - Expression capability
+  - Interaction tools
+  - Identity options
 
-## Technical Requirements
+  ### Environment Design
+  - 3D world building
+  - Interactive elements
+  - Spatial audio
+  - Visual branding
+  - Navigation systems
 
-### Platform Support
-- Web browser access
-- VR headset compatibility
-- Mobile device support
-- Desktop applications
-- Cross-platform sync
+  ## Benefits
 
-### Infrastructure
-- High bandwidth
-- Low latency
-- Scalable hosting
-- Secure connections
-- Reliable uptime
+  ### Global Reach
+  - No geographical limits
+  - Cross-cultural participation
+  - Time zone flexibility
+  - International networking
+  - Inclusive access
 
-## Metadata
+  ### Engagement
+  - Immersive experience
+  - Interactive content
+  - Personalised journeys
+  - Real-time interaction
+  - Memorable events
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Technical Requirements
+
+  ### Platform Support
+  - Web browser access
+  - VR headset compatibility
+  - Mobile device support
+  - Desktop applications
+  - Cross-platform sync
+
+  ### Infrastructure
+  - High bandwidth
+  - Low latency
+  - Scalable hosting
+  - Secure connections
+  - Reliable uptime
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

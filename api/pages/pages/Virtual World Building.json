@@ -1,38 +1,46 @@
 {
-  "id": "Virtual World Building",
+  "id": "virtual-world-building",
   "title": "Virtual World Building",
-  "content": "- ### OntologyBlock\n  id:: virtual-world-building-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10153\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Building\n\t- status:: active\n\t- definition:: The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.\n\t- owl:class:: mv:VirtualWorldBuilding\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[3D Design]]\n\t\t- related-to:: [[Metaverse]]\n\t\t- related-to:: [[Game Engine]]\n\t\t- related-to:: [[Level Design]]\n\t  id:: virtual-world-building-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual world building has been democratized by no-code platforms alongside professional tools. HTC's Viverse Create enables building in VR, mobile, or web without coding, with direct Sketchfab integration for millions of free 3D models. Generative AI now allows voice and text prompts to create environments, lowering barriers for non-technical creators. Unity and Unreal Engine remain primary platforms for professional development.\n- ## Technical Details\n\t- ### Development Approaches\n\t\t- **No-Code Platforms**: Viverse Create, drag-and-drop builders\n\t\t- **Professional Engines**: Unity, Unreal Engine for complex worlds\n\t\t- **AI-Assisted**: Text and voice prompt world generation\n\t\t- **Hybrid Tools**: Combination of visual and code-based creation\n\t- ### Platform Categories\n\t\t- **Consumer Ecosystems**: Roblox, Fortnite for entertainment\n\t\t- **Enterprise Collaboration**: Meta Horizon Workrooms, Apple Vision Pro\n\t\t- **Industrial Computing**: Specialized simulation environments\n\t\t- **Metaverse-as-a-Service**: Virbela for customized virtual workplaces\n\t- ### 3D Asset Types\n\t\t- Environmental terrain and landscapes\n\t\t- Architectural structures and buildings\n\t\t- Props and interactive objects\n\t\t- Avatar customization elements\n\t\t- Lighting and atmospheric effects\n\t- ### 2024 Trends\n\t\t- AI and blockchain integration focus\n\t\t- Dynamic real-time world generation\n\t\t- Cross-platform interoperability\n\t\t- Increased accessibility for creators\n- ## Applications\n\t- Metaverse platform environment creation\n\t- Game level and world design\n\t- Virtual event venue construction\n\t- Educational simulation environments\n\t- Enterprise virtual workspace design",
+  "content": "- ### Definition\n  - The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualWorldBuilding\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[3D Design]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual world building has been democratized by no-code platforms alongside professional tools. HTC's Viverse Create enables building in VR, mobile, or web without coding, with direct Sketchfab integration for millions of free 3D models. Generative AI now allows voice and text prompts to create environments, lowering barriers for non-technical creators. Unity and Unreal Engine remain primary platforms for professional development.\n  - ## Technical Details\n  - ### Development Approaches\n\t\t- **No-Code Platforms**: Viverse Create, drag-and-drop builders\n\t\t- **Professional Engines**: Unity, Unreal Engine for complex worlds\n\t\t- **AI-Assisted**: Text and voice prompt world generation\n\t\t- **Hybrid Tools**: Combination of visual and code-based creation\n  - ### Platform Categories\n\t\t- **Consumer Ecosystems**: Roblox, Fortnite for entertainment\n\t\t- **Enterprise Collaboration**: Meta Horizon Workrooms, Apple Vision Pro\n\t\t- **Industrial Computing**: Specialized simulation environments\n\t\t- **Metaverse-as-a-Service**: Virbela for customized virtual workplaces\n  - ### 3D Asset Types\n\t\t- Environmental terrain and landscapes\n\t\t- Architectural structures and buildings\n\t\t- Props and interactive objects\n\t\t- Avatar customization elements\n\t\t- Lighting and atmospheric effects\n  - ### 2024 Trends\n\t\t- AI and blockchain integration focus\n\t\t- Dynamic real-time world generation\n\t\t- Cross-platform interoperability\n\t\t- Increased accessibility for creators\n  - ## Applications\n  - Metaverse platform environment creation\n  - Game level and world design\n  - Virtual event venue construction\n  - Educational simulation environments\n  - Enterprise virtual workspace design\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "ETSI_Domain_Creative_Media"
   ],
   "wiki_links": [
-    "Level Design",
-    "Game Engine",
-    "metaverse",
-    "Metaverse",
-    "3D Design"
+    "3D Design",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-world-building",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualWorldBuilding",
+    "content_hash": "sha256-12-f944b4d4d2c6",
+    "legacy_term_id": "MV-10153",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-world-building",
+    "schema_version": "v2",
     "term_id": "MV-10153",
     "preferred_term": "Virtual World Building",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualWorldBuilding",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualWorldBuilding",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualWorldBuilding",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "3D Design"
@@ -45,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Metaverse",
-        "Game Engine",
-        "Level Design"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

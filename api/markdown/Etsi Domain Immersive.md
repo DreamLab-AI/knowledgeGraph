@@ -1,100 +1,113 @@
-id:: etsi-domain-immersive-ontology
+iri:: http://narrativegoldmine.com/spatial-computing#EtsiDomainImmersive
+uri:: urn:visionclaw:concept:spatial-computing:etsi-domain-immersive
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:etsi-domain-immersive
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Etsi Domain Immersive
+content-hash:: sha256-12-bebcb23d4336
+legacy-term-id:: MV-9896
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-- ### OntologyBlock
-  id:: Etsi Domain Immersive
-  - ontology:: true
-  - public-access:: true
-  - term-id:: MV-9896
-  - preferred-term:: Etsi Domain Immersive
-  - source-domain:: mv
-  - owl:class:: mv:EtsiDomainImmersive
-  - status:: active
-  - definition:: The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.
+- ### Definition
+  - The ETSI (European Telecommunications Standards Institute) technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.
 
-### Relationships
-- is-subclass-of:: [[ETSI Standards]]
-- related-to:: [[Extended Reality Xr]]
-- related-to:: [[Documentation Standards]]
-- governs:: [[Immersive Technology Standards]]
+- ### Semantic Classification
+  - owl-class:: spatial-computing:EtsiDomainImmersive
+  - owl-role:: Concept
 
-## ETSI Overview
+- ### Relationships
+  - is-subclass-of:: [[ETSI Standards]]
 
-### Organisation
-- European Telecommunications Standards Institute
-- Develops globally applicable ICT standards
-- Headquarters in Sophia Antipolis, France
-- Industry-driven standardisation body
+- ### Content
 
-### Immersive Technology Focus
-- Extended Reality (XR) specifications
-- Network requirements for immersive services
-- Quality of Experience (QoE) frameworks
-- Interoperability standards
+  ## ETSI Overview
 
-## Technical Scope
+  ### Organisation
+  - European Telecommunications Standards Institute
+  - Develops globally applicable ICT standards
+  - Headquarters in Sophia Antipolis, France
+  - Industry-driven standardisation body
 
-### Network Requirements
-- Ultra-low latency specifications (sub-20ms for immersive)
-- High bandwidth requirements for volumetric data
-- Edge computing integration standards
-- 5G/6G network slicing for XR
+  ### Immersive Technology Focus
+  - Extended Reality (XR) specifications
+  - Network requirements for immersive services
+  - Quality of Experience (QoE) frameworks
+  - Interoperability standards
 
-### Quality Metrics
-- Visual quality assessment frameworks
-- Audio-visual synchronisation standards
-- Motion-to-photon latency specifications
-- Cybersickness prevention guidelines
+  ## Technical Scope
 
-### Device Standards
-- Head-mounted display specifications
-- Tracking system requirements
-- Controller interface standards
-- Haptic feedback specifications
+  ### Network Requirements
+  - Ultra-low latency specifications (sub-20ms for immersive)
+  - High bandwidth requirements for volumetric data
+  - Edge computing integration standards
+  - 5G/6G network slicing for XR
 
-## Industry Specification Groups
+  ### Quality Metrics
+  - Visual quality assessment frameworks
+  - Audio-visual synchronisation standards
+  - Motion-to-photon latency specifications
+  - Cybersickness prevention guidelines
 
-### XR-Related ISGs
-- Focus on emerging immersive technology requirements
-- Cross-industry collaboration frameworks
-- Implementation guidelines
-- Conformance testing specifications
+  ### Device Standards
+  - Head-mounted display specifications
+  - Tracking system requirements
+  - Controller interface standards
+  - Haptic feedback specifications
 
-### Collaboration Areas
-- Telecommunications operators
-- Device manufacturers
-- Content providers
-- Platform developers
+  ## Industry Specification Groups
 
-## Applications
+  ### XR-Related ISGs
+  - Focus on emerging immersive technology requirements
+  - Cross-industry collaboration frameworks
+  - Implementation guidelines
+  - Conformance testing specifications
 
-### Telecommunications
-- Network slicing for XR services
-- Edge computing deployment
-- Quality of service guarantees
-- Roaming specifications
+  ### Collaboration Areas
+  - Telecommunications operators
+  - Device manufacturers
+  - Content providers
+  - Platform developers
 
-### Enterprise
-- Training and simulation standards
-- Remote collaboration specifications
-- Digital twin integration
-- Industrial XR applications
+  ## Applications
 
-### Consumer
-- Gaming and entertainment
-- Social VR platforms
-- Educational applications
-- Healthcare and therapy
+  ### Telecommunications
+  - Network slicing for XR services
+  - Edge computing deployment
+  - Quality of service guarantees
+  - Roaming specifications
 
-## Related Standards Bodies
+  ### Enterprise
+  - Training and simulation standards
+  - Remote collaboration specifications
+  - Digital twin integration
+  - Industrial XR applications
 
-### Coordination
-- ITU Focus Group on Metaverse
-- Metaverse Standards Forum
-- IEEE XR standards
-- ISO/IEC immersive technology standards
+  ### Consumer
+  - Gaming and entertainment
+  - Social VR platforms
+  - Educational applications
+  - Healthcare and therapy
 
-## Metadata
+  ## Related Standards Bodies
 
-- **Migration Status**: Enriched via domain knowledge 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### Coordination
+  - ITU Focus Group on Metaverse
+  - Metaverse Standards Forum
+  - IEEE XR standards
+  - ISO/IEC immersive technology standards
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

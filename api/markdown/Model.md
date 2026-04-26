@@ -1,42 +1,32 @@
-- ### OntologyBlock
-  id:: model-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Model
+uri:: urn:visionclaw:concept:artificial-intelligence:model
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:model
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Model
+content-hash:: sha256-12-32a5c6aa27bd
+legacy-term-id:: AI-0829
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0829
-    - filename-history:: ["AI-0829-model.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0829
-    - preferred-term:: Model
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
-
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
-
-  - **Semantic Classification**
-    - owl:class:: ai:Model
-    - belongsToDomain:: [[Artificial Intelligence]]
-
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
-
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Model))
-      (SubClassOf :Model :ArtificialIntelligence)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Model "Model"@en)
-      ```
-
-- ## About Model
-  
+- ### Definition
+  - Model is a concept within the ai domain.
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Model
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+- ### Content
+  Model — content pending enrichment.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

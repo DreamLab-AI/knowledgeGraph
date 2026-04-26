@@ -1,0 +1,69 @@
+{
+  "id": "land-economics",
+  "title": "Land Economics",
+  "content": "- ### Definition\n  - Land Economics is a concept within the mv domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:LandEconomics\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n\n  #### Key Characteristics\n  - **Artificial Scarcity**: Intentional limitation of available virtual space\n  - **Location Premium**: Proximity to high-traffic areas increases value\n  - **Development Rights**: Ability to build structures and experiences\n  - **Speculative Markets**: Investment-driven price fluctuations\n  - **Platform Governance**: Rules set by metaverse operators\n\n  ## Economic Mechanisms\n\n  - **Primary Sales**: Initial land parcels sold by platform\n  - **Secondary Markets**: Peer-to-peer land trading and auctions\n  - **Rental Systems**: Leasing virtual space for temporary use\n  - **Taxation Models**: Platform fees on transactions or holdings\n  - **Zoning Policies**: Restrictions on land use by location\n\n  ## Valuation Factors\n\n  - **Traffic Density**: Visitor volume and visibility\n  - **Adjacency**: Proximity to popular destinations or infrastructure\n  - **Size & Geometry**: Parcel dimensions and buildable area\n  - **Development Status**: Existing improvements and structures\n  - **Platform Reputation**: Stability and user base of metaverse\n\n  ## Definition\n\n  Economic framework governing virtual land ownership, valuation, development, and transaction within metaverse environments, characterized by artificial scarcity and spatial positioning value.\n\n  #### Related Concepts\n  - [[Virtual Economy]]\n  - [[Virtual Labor]]\n  - [[Digital Ownership]]\n  - [[Spatial Computing]]\n  - [[Non-Fungible Token]]\n\n  ## Applications\n\n  - Virtual retail storefronts and galleries\n  - Event venues and concert spaces\n  - Educational campuses and museums\n  - Corporate headquarters and meeting spaces\n  - Gaming zones and entertainment districts\n\n  ## Challenges\n\n  - Extreme speculation and price volatility\n  - Platform centralization vs. decentralization\n  - Environmental costs of blockchain land systems\n  - Accessibility barriers for smaller creators\n  - Long-term value preservation concerns\n\n  #### References\n  - Bartle, R. (2004). *Designing Virtual Worlds*\n  - Castronova, E. (2005). *Synthetic Worlds: The Business and Culture of Online Games*\n  - Wang, T. et al. (2022). \"Mapping the Metaverse Real Estate Market\"\n\n  ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Virtual Labor"
+  ],
+  "wiki_links": [
+    "Digital Ownership",
+    "Metaverse",
+    "Non-Fungible Token",
+    "Spatial Computing",
+    "Virtual Economy",
+    "Virtual Labor"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:land-economics",
+    "iri": "http://narrativegoldmine.com/spatial-computing#LandEconomics",
+    "content_hash": "sha256-12-e858008af97e",
+    "legacy_term_id": "MV-land-economics",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:land-economics",
+    "schema_version": "v2",
+    "term_id": "MV-land-economics",
+    "preferred_term": "Land Economics",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Land Economics is a concept within the mv domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:LandEconomics",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

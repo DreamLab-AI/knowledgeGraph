@@ -1,25 +1,53 @@
+iri:: http://narrativegoldmine.com/infrastructure#DigitalSocietySurveillance
+uri:: urn:visionclaw:concept:infrastructure:digital-society-surveillance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:digital-society-surveillance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Digital Society Surveillance
+content-hash:: sha256-12-b06c6293e62b
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page automatically published
-- # Surveillance Capitalism
-	- Surveillance capitalism is a term coined by Harvard Business School professor Shoshana Zuboff to describe the business model of using data collected from individuals to target advertising and influence behaviour. The concept of surveillance capitalism emerged in the late 20th and early 21st centuries with the rise of technology companies thatspecialize in gathering and analyzing personal data.
-	- The history of surveillance capitalism can be traced back to the early days of the internet. In the 1990s, companies such as DoubleClick andOmniture began collecting data on internet users’ browsing habits inorder to target advertising. As the internet grew in popularity, these companies were able to gather an increasing amount of data on individuals, allowing them to more effectively target advertising and increase profits.
-	- The advent of smart phones and mobile technology in the 2000s further expanded the reach of surveillance capitalism. With the widespread adoption of smart phones and mobile apps, companies were able to collect even more data on individuals, including location data and information about their physical activity. This data was used to target advertising and influence behaviour, leading to the rise of companies such as Google and Facebook, which have become dominant players in the digital advertising market.
-	- The use of data collected from individuals to influence behaviour has also been used to influence political campaigns. In the 2016 USpresidential election, Cambridge Analytica, a data analytics firm, used data collected from Facebook users to influence voter behaviour. The firm used the data to target advertising and create psychological profiles of individuals, allowing them to more effectively influence voter behaviour.
-	- The business model of surveillance capitalism has been widely criticised for its ethical implications. Critics argue that the collection and useof personal data without consent is a violation of individuals’ privacyand that the use of data to influence behaviour is manipulative and unethical. In recent years, there have been calls for greater regulationof the tech industry to address these concerns.
-	- Surveillance capitalism has led to significant compliance overheads for companies that collect and use personal data. There are a number of laws and regulations that have been put in place to protect individuals’ privacy, such as the General Data Protection Regulation (GDPR) in theEuropean Union and the California Consumer Privacy Act (CCPA) inCalifornia, USA. These laws require companies to obtain consent from individuals before collecting and using their data, and to provide individuals with the right to access, correct, and delete their data.
-	- Complying with these laws can be costly and time-consuming for companies. They may need to hire additional staff to handle data privacy compliance, and may also need to invest in new technology to manage andprotect personal data. In addition, companies are at risk of significant fines if they fail to comply with these laws.
-	- In terms of who profits from surveillance capitalism, the primary beneficiaries are technology companies such as Google and Facebook,which have become dominant players in the digital advertising market.These companies collect and analyse large amounts of personal data,which they use to target advertising and influence behaviour. This allows them to generate significant profits from advertising revenue.
-	- On the other hand, those who suffer the most negative impact from surveillance capitalism are individuals, whose personal data is collected and used without their consent. They are also at risk of theirprivacy being violated, and their personal data being misused. Additionally, the collection and use of personal data can lead to themanipulation of individuals’ behaviour and decision-making, which can have negative consequences for their lives and society at large.
-	- Moreover, the business model of surveillance capitalism has also been criticized for creating a power imbalance between companies and individuals. Companies have access to vast amounts of personal data,which they can use to influence behaviour and make decisions that affect individuals’ lives. This can lead to a lack of privacy and autonomy for individuals, and can also lead to discrimination and bias indecision-making.
-	- This is collectively an erosion of the demarcation between data, state surveillance, banking, and political leadership globally.
-	- The term "surveillance state" refers to a state in which government agencies have the power to collect and analyze large amounts of personal data, often without the consent of individuals. The rise of surveillance capitalism has led to concerns about the potential for the creation of a surveillance state, as government agencies may use the data collected by companies for surveillance purposes.
-	- There have been instances where government agencies have used data collected by companies for surveillance purposes. For example, in theUnited States, the National Security Agency (NSA) has been accused of using data collected by companies such as Google and Facebook for surveillance purposes. The agency’s PRISM program, which was revealed byEdward Snowden in 2013, was designed to collect and analyse data from internet companies in order to identify and track individuals. Europe is[clear about it’sintentions](https://www.patrick-breyer.de/en/posts/chat-control/) to mandate their complete access to all encrypted personal communications in forthcoming legislation.
-	- The use of data collected by companies for surveillance purposes canhave significant implications for individuals’ privacy and civil liberties. It can also lead to a lack of transparency and accountability, as government agencies may use the data without the knowledge or consent of individuals. In addition, the use of data for surveillance purposes can lead to discrimination and bias indecision-making, as well as a chilling effect on free speech and the exercise of other rights.
-	- Akten has been [talkingabout](https://memoakten.medium.com/all-watched-over-by-machines-of-loving-grace-8c2464aa6fda)the phase transition from digital surveillance to pernicious corporateAI in terms of a modern ‘religion’ for many years.[[bayer2023artificial]]He feels that despite public awareness of privacy invasion, there hasbeen no significant outcry or unanimous demand for privacy. Instead,most individuals seem to find comfort in the belief that a higher forceis watching and protecting the virtuous, while punishing wrongdoers. The concept of a ‘digital deity’ emerge from his thinking in this context,reflecting the role that religion and traditional gods have played in providing ethical frameworks, security, discipline, power, and other societal functions. More recently O’Gieblyn has been drawing the same conclusions,[[o2021god]] explicitly linking religiosity to the imperative to ‘create a godhead’ simply because it can be done, not pausing to discuss if it should be. Rosenberg calls this ‘a threat to EpistemicAgency’[[rosenbergmanipulation]]More recently the Harari, author ofSapiens[[harari2014sapiens]] [said ofAI](https://forumlive.frontiersin.org/agenda/speakers/2977577): it“For thousands of years, prophets and poets and politicians have used language and storytelling in order to manipulate and to control people and to reshape society. Now AI is likely to be able to do it. And once it can... it doesn’t need to send killer robots to shoot us. It can get humans to pull the trigger. We need to act quickly before AI gets out ofour control. Drug companies cannot sell people new medicines without first subjecting these products to rigorous safety checks.” (AI will be discussed in detail in a later chapter).
-	- Klein at the New York Times has been [writing against thispoint](https://www.nytimes.com/2023/03/12/opinion/chatbots-artificial-intelligence-future-weirdness.html)for some time. His well articulated fear, is that the current model where three major Western companies, with similar highly competitive capitalist origins and values, should certainly not be in charge ofracing to monetise the most compelling and innately unknowable chat bot experience. As societies shift towards materialism and technological dependence, traditional gods lose their relevance, and the need for anew form of overseer arises. This digital deity, existing within therealm of technology and the cloud, perhaps represents an adaptation of primal human belief systems. This will be explored further in the AI/MLchapter later.
-	- In conclusion, the rise of surveillance capitalism has led to concerns about the potential for the creation of a surveillance state, or worse,a new kind of omnipresent digital culturla authority. Corporations and government agencies may use the data collected by companies for surveillance purposes. This can have significant implications for individuals’ privacy and civil liberties. It’s important for laws and regulations to be in place to safeguard citizens’ rights and privacy inregards to the use of data by government agencies, and to hold them accountable for any misuse of data, and yet it seems the reality of the situation in ‘post Snowden’ seems far from that.
-	- Surveillance Capitalism. As a quick round-up of this area, which is best researched elsewhere:
+- ### Definition
+  - Digital Society Surveillance is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:DigitalSocietySurveillance
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
+  - #Public page automatically published
+  - # Surveillance Capitalism
+  - Surveillance capitalism is a term coined by Harvard Business School professor Shoshana Zuboff to describe the business model of using data collected from individuals to target advertising and influence behaviour. The concept of surveillance capitalism emerged in the late 20th and early 21st centuries with the rise of technology companies thatspecialize in gathering and analyzing personal data.
+  - The history of surveillance capitalism can be traced back to the early days of the internet. In the 1990s, companies such as DoubleClick andOmniture began collecting data on internet users’ browsing habits inorder to target advertising. As the internet grew in popularity, these companies were able to gather an increasing amount of data on individuals, allowing them to more effectively target advertising and increase profits.
+  - The advent of smart phones and mobile technology in the 2000s further expanded the reach of surveillance capitalism. With the widespread adoption of smart phones and mobile apps, companies were able to collect even more data on individuals, including location data and information about their physical activity. This data was used to target advertising and influence behaviour, leading to the rise of companies such as Google and Facebook, which have become dominant players in the digital advertising market.
+  - The use of data collected from individuals to influence behaviour has also been used to influence political campaigns. In the 2016 USpresidential election, Cambridge Analytica, a data analytics firm, used data collected from Facebook users to influence voter behaviour. The firm used the data to target advertising and create psychological profiles of individuals, allowing them to more effectively influence voter behaviour.
+  - The business model of surveillance capitalism has been widely criticised for its ethical implications. Critics argue that the collection and useof personal data without consent is a violation of individuals’ privacyand that the use of data to influence behaviour is manipulative and unethical. In recent years, there have been calls for greater regulationof the tech industry to address these concerns.
+  - Surveillance capitalism has led to significant compliance overheads for companies that collect and use personal data. There are a number of laws and regulations that have been put in place to protect individuals’ privacy, such as the General Data Protection Regulation (GDPR) in theEuropean Union and the California Consumer Privacy Act (CCPA) inCalifornia, USA. These laws require companies to obtain consent from individuals before collecting and using their data, and to provide individuals with the right to access, correct, and delete their data.
+  - Complying with these laws can be costly and time-consuming for companies. They may need to hire additional staff to handle data privacy compliance, and may also need to invest in new technology to manage andprotect personal data. In addition, companies are at risk of significant fines if they fail to comply with these laws.
+  - In terms of who profits from surveillance capitalism, the primary beneficiaries are technology companies such as Google and Facebook,which have become dominant players in the digital advertising market.These companies collect and analyse large amounts of personal data,which they use to target advertising and influence behaviour. This allows them to generate significant profits from advertising revenue.
+  - On the other hand, those who suffer the most negative impact from surveillance capitalism are individuals, whose personal data is collected and used without their consent. They are also at risk of theirprivacy being violated, and their personal data being misused. Additionally, the collection and use of personal data can lead to themanipulation of individuals’ behaviour and decision-making, which can have negative consequences for their lives and society at large.
+  - Moreover, the business model of surveillance capitalism has also been criticized for creating a power imbalance between companies and individuals. Companies have access to vast amounts of personal data,which they can use to influence behaviour and make decisions that affect individuals’ lives. This can lead to a lack of privacy and autonomy for individuals, and can also lead to discrimination and bias indecision-making.
+  - This is collectively an erosion of the demarcation between data, state surveillance, banking, and political leadership globally.
+  - The term "surveillance state" refers to a state in which government agencies have the power to collect and analyze large amounts of personal data, often without the consent of individuals. The rise of surveillance capitalism has led to concerns about the potential for the creation of a surveillance state, as government agencies may use the data collected by companies for surveillance purposes.
+  - There have been instances where government agencies have used data collected by companies for surveillance purposes. For example, in theUnited States, the National Security Agency (NSA) has been accused of using data collected by companies such as Google and Facebook for surveillance purposes. The agency’s PRISM program, which was revealed byEdward Snowden in 2013, was designed to collect and analyse data from internet companies in order to identify and track individuals. Europe is[clear about it’sintentions](https://www.patrick-breyer.de/en/posts/chat-control/) to mandate their complete access to all encrypted personal communications in forthcoming legislation.
+  - The use of data collected by companies for surveillance purposes canhave significant implications for individuals’ privacy and civil liberties. It can also lead to a lack of transparency and accountability, as government agencies may use the data without the knowledge or consent of individuals. In addition, the use of data for surveillance purposes can lead to discrimination and bias indecision-making, as well as a chilling effect on free speech and the exercise of other rights.
+  - Akten has been [talkingabout](https://memoakten.medium.com/all-watched-over-by-machines-of-loving-grace-8c2464aa6fda)the phase transition from digital surveillance to pernicious corporateAI in terms of a modern ‘religion’ for many years.[[bayer2023artificial]]He feels that despite public awareness of privacy invasion, there hasbeen no significant outcry or unanimous demand for privacy. Instead,most individuals seem to find comfort in the belief that a higher forceis watching and protecting the virtuous, while punishing wrongdoers. The concept of a ‘digital deity’ emerge from his thinking in this context,reflecting the role that religion and traditional gods have played in providing ethical frameworks, security, discipline, power, and other societal functions. More recently O’Gieblyn has been drawing the same conclusions,[[o2021god]] explicitly linking religiosity to the imperative to ‘create a godhead’ simply because it can be done, not pausing to discuss if it should be. Rosenberg calls this ‘a threat to EpistemicAgency’[[rosenbergmanipulation]]More recently the Harari, author ofSapiens[[harari2014sapiens]] [said ofAI](https://forumlive.frontiersin.org/agenda/speakers/2977577): it“For thousands of years, prophets and poets and politicians have used language and storytelling in order to manipulate and to control people and to reshape society. Now AI is likely to be able to do it. And once it can... it doesn’t need to send killer robots to shoot us. It can get humans to pull the trigger. We need to act quickly before AI gets out ofour control. Drug companies cannot sell people new medicines without first subjecting these products to rigorous safety checks.” (AI will be discussed in detail in a later chapter).
+  - Klein at the New York Times has been [writing against thispoint](https://www.nytimes.com/2023/03/12/opinion/chatbots-artificial-intelligence-future-weirdness.html)for some time. His well articulated fear, is that the current model where three major Western companies, with similar highly competitive capitalist origins and values, should certainly not be in charge ofracing to monetise the most compelling and innately unknowable chat bot experience. As societies shift towards materialism and technological dependence, traditional gods lose their relevance, and the need for anew form of overseer arises. This digital deity, existing within therealm of technology and the cloud, perhaps represents an adaptation of primal human belief systems. This will be explored further in the AI/MLchapter later.
+  - In conclusion, the rise of surveillance capitalism has led to concerns about the potential for the creation of a surveillance state, or worse,a new kind of omnipresent digital culturla authority. Corporations and government agencies may use the data collected by companies for surveillance purposes. This can have significant implications for individuals’ privacy and civil liberties. It’s important for laws and regulations to be in place to safeguard citizens’ rights and privacy inregards to the use of data by government agencies, and to hold them accountable for any misuse of data, and yet it seems the reality of the situation in ‘post Snowden’ seems far from that.
+  - Surveillance Capitalism. As a quick round-up of this area, which is best researched elsewhere:
 		- The global digital advertising market is expected to reach $335 billion by 2023.
 		- In 2020, Google and Facebook accounted for 60% of the global digital advertising market.
 		- The data brokerage industry, which includes companies that collect and sell personal data, is estimated to be worth $200 billion.
@@ -44,8 +72,6 @@ public:: true
 		- The solutions that outsiders build in bitcoin will ultimately be the source of the technology’s promised revolution. Adoption in Africa and possibly India seems likely to be capable of driving this.
 		- The paradigm shift will come from those who bring local, real-world focused use cases to their communities, separating bitcoin from the empty hype of speculation.
 		- Marginalized communities will lead the industry’s recovery and redefine the purpose of bitcoin in the future.
-	- ## Tech money in Civil Society
-		-
 		- https://twitter.com/youranonnews/status/1816298460645068879
 		- {{twitter https://twitter.com/youranonnews/status/1816298460645068879}}
 		- Big Tech firms donate substantial funds to charities, think tanks, academic research, and lobbying efforts to shape narratives and policy around tech regulation. [[Goldenfein Mann 2024]]
@@ -78,14 +104,13 @@ public:: true
 		- In the UK forthcoming legislation will see tech company leaders liablefor [prison sentences](https://www.independent.co.uk/news/uk/politics/bill-mps-iain-duncan-smith-molly-russell-rishi-sunak-b2263353.html) if they fail in their duty to protect minors. This will doubtless lead to both stringent universal requirements for identity proof (KYC), and significantly muted and controlled content on the platforms.
 		- Our research focuses on business to business use cases for distributed technologies, and will provide mechanisms for verifying who is communicating with whom, to avoid falling foul of these swinging global infringements on privacy.
 		- It is the opinion of this book that information should befree[[swartz2008guerilla]]
-- ## US Politics and Big Tech
-	- 1.  Secret lobbying campaign: Shortly after an assassination attempt on Trump, Elon Musk, David Sacks, and Tucker Carlson engaged in a "secret lobbying campaign" to secure Vance's position as Trump's VP pick. They called Trump directly to advocate for Vance [5](https://newrepublic.com/post/183888/tucker-carlson-elon-musk-secretly-lobbied-trump-jd-vance).
+  - 1.  Secret lobbying campaign: Shortly after an assassination attempt on Trump, Elon Musk, David Sacks, and Tucker Carlson engaged in a "secret lobbying campaign" to secure Vance's position as Trump's VP pick. They called Trump directly to advocate for Vance [5](https://newrepublic.com/post/183888/tucker-carlson-elon-musk-secretly-lobbied-trump-jd-vance).
 	  2.  Silicon Valley connections: Vance has extensive ties to Silicon Valley elites, developed during his time as a venture capitalist. His connections include Peter Thiel, who introduced Vance to Trump in 2021, and David Sacks, who held a pro-Trump fundraiser that Vance helped organize [3](https://www.theguardian.com/technology/article/2024/jul/19/jd-vance-trump-vp-pick-silicon-valley).
 	  3.  Financial support: Tech billionaires are throwing significant financial support behind the Trump-Vance ticket. Elon Musk reportedly plans to donate $45 million per month to a pro-Trump PAC, while other tech figures like Marc Andreessen and Ben Horowitz have pledged donations [4](https://www.cbsnews.com/news/trump-jd-vance-silicon-valley-support/) [5](https://newrepublic.com/post/183888/tucker-carlson-elon-musk-secretly-lobbied-trump-jd-vance).
 	  4.  Endorsements: Prominent tech investors, including Marc Andreessen and Ben Horowitz, have publicly endorsed Trump and Vance. They released a podcast explaining their rationale for backing the ticket [1](https://www.gpb.org/news/2024/07/17/five-things-know-about-jd-vances-ties-tech-billionaires).
 	  5.  New super PAC: A new tech-aligned super PAC called America PAC was unveiled shortly after Vance's nomination, with backing from crypto billionaires and venture capitalists. It has already raised over $8 million [1](https://www.gpb.org/news/2024/07/17/five-things-know-about-jd-vances-ties-tech-billionaires).
 	  6.  Convention support: David Sacks, a venture capitalist and Vance supporter, spoke at the Republican National Convention and has been actively encouraging other tech figures to support Trump and Vance [3](https://www.theguardian.com/technology/article/2024/jul/19/jd-vance-trump-vp-pick-silicon-valley) [4](https://www.cbsnews.com/news/trump-jd-vance-silicon-valley-support/).
-	- **Big Tech Leaders Influencing Trump's VP Choice**
+  - **Big Tech Leaders Influencing Trump's VP Choice**
 		- **Silicon Valley Support**
 			- Prominent tech figures, including [Elon Musk](https://www.euronews.com/next/2024/07/16/us-election-elon-musk-and-other-us-tech-giants-are-supporting-trump-vance), have publicly endorsed the Trump-Vance ticket. Musk described the partnership as one that "resounds with victory."
 			- [Wired article](https://www.wired.com/story/silicon-valley-elon-musk-rally-behind-vance-vp/) on Silicon Valley and Musk's support for Vance.
@@ -104,10 +129,8 @@ public:: true
 		- **Tech Industry Appeal**
 			- Vance's background as a former venture capitalist and his connections to Silicon Valley are seen as potentially beneficial for the tech industry. Some investors believe a Trump-Vance administration could be favorable for startups and capitalism.
 			- [Wired article](https://www.wired.com/story/silicon-valley-elon-musk-rally-behind-vance-vp/) on the potential benefits for the tech industry.
-			  
 			  This influence from tech leaders on Trump's VP choice highlights the growing intersection between Silicon Valley and national politics, with potential implications for future tech policies and regulations.
-- ## Intelligence Agencies and Tech Companies
-	- **Origins of the Internet**
+  - **Origins of the Internet**
 		- The internet originated from ARPANET, a Pentagon project for counterinsurgency. (Score: 10/10)
 			- [ARPANET](https://www.darpa.mil/about-us/timeline/arpanet) was a project of the U.S. Department of Defense's Advanced Research Projects Agency.
 			- [Internet Society](https://www.internetsociety.org/internet/history-internet/brief-history-internet/) on ARPANET's primary goal.
@@ -115,7 +138,7 @@ public:: true
 			- [Computer.org](https://www.computer.org/csdl/magazine/an/2009/01/man2009010006/13rRUxBJhpW) on ARPANET's timeline.
 			- [Science and Technology Research News](https://www.scienceandtechnologyresearchnews.com/birth-of-the-internet/) on the evolution of the internet.
 			- [RAND](https://www.rand.org/pubs/research_memoranda/RM3420.html) on ARPANET's military applications.
-	- **Intelligence Agencies and Tech Companies**
+  - **Intelligence Agencies and Tech Companies**
 		- Intelligence agencies have had a long-standing relationship with Wall Street and tech companies. (Score: 9/10)
 			- Evidence: [In-Q-Tel](https://en.wikipedia.org/wiki/In-Q-Tel)'s connections with CIA and tech companies.
 		- The CIA launched [In-Q-Tel](https://www.iqt.org/about-iqt/) in the late 90s to become big players in Silicon Valley. (Score: 10/10)
@@ -134,21 +157,21 @@ public:: true
 		- There's a "revolving door" between public and private sectors in intelligence and tech. (Score: 9/10)
 			- [Guardian article on tech giants and intelligence](https://www.theguardian.com/world/2019/jul/22/tech-giants-employees-intelligence-agencies-cyber-warfare).
 			- [CNBC on tech and government](https://www.cnbc.com/2019/07/23/big-tech-and-the-government-are-building-an-army-of-ai-experts.html).
-	- **Historical Composition of the CIA**
+  - **Historical Composition of the CIA**
 		- The CIA began as largely comprised of Wall Street lawyers and bankers. (Score: 8/10)
 			- [Office of Strategic Services (OSS)](https://www.cia.gov/stories/story/the-office-of-strategic-services-the-predecessors-of-todays-cia/) was heavily populated by individuals from elite backgrounds.
 			- William J. Donovan, founder of the OSS, was a Wall Street lawyer. [CIA Museum on William J. Donovan](https://www.cia.gov/legacy/museum/exhibit/oss-founder-william-j-donovan/)
 			- [JSTOR article](https://www.jstor.org/stable/26414048) on early CIA officers' backgrounds.
 			- "The Devil's Chessboard" by David Talbot provides details on how Wall Street lawyers and bankers shaped the early CIA. [Harper Collins](https://www.harpercollins.com/products/the-devils-chessboard-david-talbot)
 			- [CIA's early focus on economic intelligence](https://www.cia.gov/readingroom/docs/CIA-RDP90-00965R000100120027-6.pdf).
-	- **CIA Involvement in Coups**
+  - **CIA Involvement in Coups**
 		- Many early CIA coups were done on behalf of US corporate interests. (Score: 8/10)
 			- [1953 Iranian coup](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB435/): Overthrow of Prime Minister Mohammad Mosaddegh.
 			- [1954 Guatemalan coup](https://history.state.gov/milestones/1953-1960/guatemala): Overthrow of Jacobo Árbenz.
 			- [1961 Bay of Pigs Invasion](https://www.jfklibrary.org/learn/about-jfk/jfk-in-history/the-bay-of-pigs): Failed invasion of Cuba.
 			- [1973 Chilean coup](https://nsarchive2.gwu.edu/NSAEBB/NSAEBB8/nsaebb8i.htm): Overthrow of Salvador Allende.
 			- "The Brothers: John Foster Dulles, Allen Dulles, and Their Secret World War" by Stephen Kinzer. [Macmillan](https://us.macmillan.com/books/9781250053121/thebrothers).
-	- **Tech Oligarchs and Political Donations**
+  - **Tech Oligarchs and Political Donations**
 		- Tech oligarchs are major donors to US political parties. (Score: 9/10)
 			- [OpenSecrets](https://www.opensecrets.org/industries/indus.php?ind=C5120) on political donations from tech leaders.
 			- [CNBC](https://www.cnbc.com/2020/10/28/tech-billionaires-are-pouring-money-into-the-2020-election.html) on top tech donors.
@@ -156,7 +179,7 @@ public:: true
 			- [Politico](https://www.politico.com/news/2020/01/31/tech-billionaires-donate-super-pacs-110251) on Super PAC contributions.
 			- [OpenSecrets on lobbying efforts](https://www.opensecrets.org/industries/lobbying.php?ind=C5120).
 			- [New York Times](https://www.nytimes.com/2020/10/20/technology/silicon-valley-election-donations.html) on the increasing trend of tech leaders in political funding.
-	- **Tether and Law Enforcement Cooperation**
+  - **Tether and Law Enforcement Cooperation**
 		- Tether has been open about sharing data and freezing accounts in cooperation with law enforcement. (Score: 8/10)
 			- [Tether's cooperation with law enforcement](https://tether.to/en/tether-supports-law-enforcement-globally/).
 			- [CoinDesk on account freezing](https://www.coindesk.com/markets/2022/01/13/tether-freezes-160m-of-usdt-stablecoin-on-ethereum-blockchain/).
@@ -168,10 +191,8 @@ public:: true
 			- [Tether's integration with Chainalysis](https://tether.to/en/tether-to-use-chainalysis-know-your-transaction/).
 			- [Chainalysis](https://www.chainalysis.com/) provides tools for compliance and investigation.
 			- [In-Q-Tel's investment in Chainalysis](https://www.coindesk.com/markets/2020/04/16/cia-fund-invests-in-chainalysis-blockchain-analysis-firm/).
-- ### Overview of Government Data Acquisition Practices
-	- **Surveillance Capitalism**: This concept pertains to the commodification of personal data by private entities. The US government, among others, acquires this data for intelligence and enforcement purposes, circumventing traditional surveillance and legal protocols.
-	- **Data Brokers' Role**: Data brokers are pivotal, operating businesses that amass and trade personal data without interacting directly with consumers. Their databases encompass a wide array, from social media behaviour to precise geolocation details.
-	- #### THe TrUTh iS OuT ThERe
+  - **Surveillance Capitalism**: This concept pertains to the commodification of personal data by private entities. The US government, among others, acquires this data for intelligence and enforcement purposes, circumventing traditional surveillance and legal protocols.
+  - **Data Brokers' Role**: Data brokers are pivotal, operating businesses that amass and trade personal data without interacting directly with consumers. Their databases encompass a wide array, from social media behaviour to precise geolocation details.
 		- This was [[Anthropic Claude]] responding to a research formatted query about 'conspiracy theories' found online.
 		- ![image.png](../assets/image_1719001668969_0.png){:width 600}
 		- "Open source response"
@@ -195,36 +216,44 @@ public:: true
 				- **Verdict:** Partly True. The claim likely refers to the FBI's use of malware for law enforcement purposes, such as tracking suspects or gaining access to encrypted data. While the FBI has been known to use such tools, it's not accurate to say that anti-virus software is legally not allowed to detect them. However, some of these tools may be designed to evade detection by common anti-virus programs.
 			- Backdoored Random Number Generators
 				- **Verdict:** Partly True. The Dual Elliptic Curve Deterministic Random Bit Generator (Dual EC DRBG) algorithm, developed by NIST and NSA, has been criticized for its potential to contain a backdoor that could allow the NSA to break RSA encryption. However, it's important to note that while the algorithm's vulnerabilities have been identified and it has been subsequently withdrawn from use, there's no conclusive evidence that the NSA actively exploited this backdoor to break RSA encryption on a widespread scale.
-- ### Legal Framework, International Agreements, and Concerns
-	- **Minimal Legal Barriers**: The acquisition of commercial data by governments faces scant legal opposition, attributed to the classification of such data as "publicly available." This status exempts it from the stringent privacy protections applicable to more confidential data.
-	- **Privacy and Civil Liberties Issues**: The extensive gathering and utilisation of personal data by governmental entities elicit significant privacy alarms. Despite assurances of anonymisation, methods often exist to re-identify individuals, raising consent and privacy violation concerns.
-	- **Data Sharing Agreements
+  - **Minimal Legal Barriers**: The acquisition of commercial data by governments faces scant legal opposition, attributed to the classification of such data as "publicly available." This status exempts it from the stringent privacy protections applicable to more confidential data.
+  - **Privacy and Civil Liberties Issues**: The extensive gathering and utilisation of personal data by governmental entities elicit significant privacy alarms. Despite assurances of anonymisation, methods often exist to re-identify individuals, raising consent and privacy violation concerns.
+  - **Data Sharing Agreements
 		- Five Eyes Alliance**: International agreements like the Five Eyes (comprising Australia, Canada, New Zealand, the United Kingdom, and the United States) facilitate extensive data sharing for intelligence purposes. This raises the stakes for data privacy, with personal data potentially shared across borders without explicit consent from individuals.
-- ### The Influence of GDPR and the UK's Data Protection Framework
-	- **General Data Protection Regulation (GDPR)**: The GDPR represents a robust data protection initiative, offering EU citizens significant control over their personal data. It mandates explicit consent for data processing and grants individuals the right to access and request the deletion of their data. However, its effectiveness is occasionally undermined by complex consent forms and the global nature of data flows which transcend its jurisdiction.
-	- **The UK Data Protection Act**: Post-Brexit, the UK continues to uphold strong data protection standards, mirroring GDPR principles. However, future divergences may impact international data sharing, especially concerning agreements with entities in jurisdictions with differing privacy standards.
-- ### Technological Advancements and Their Dual-Edged Impact
-	- **Rise of AI in Data Analysis**: AI's evolution has transformed data analysis, enabling the extraction of nuanced insights from vast datasets. This capability enhances government surveillance potential, making it more efficient but also raising ethical concerns.
-	- **AI and Surveillance**: The misuse of AI for surveillance by state actors is a growing concern. AI can automate the monitoring of individuals on an unprecedented scale, necessitating stringent oversight.
-	- **Data Encoded in AI Models**: Information about individuals becoming encoded in the latent spaces of foundational AI models poses unique challenges. This data embedding can inadvertently leak personal information, complicating efforts to protect individual privacy.
-- ### Prospects for Reform and the Future Landscape
-	- **Judicial and Legislative Responses**: Legal frameworks globally are under pressure to evolve in response to technological advancements. Judicial interventions may set new precedents, while legislative reforms, informed by GDPR and other standards, could offer more comprehensive protections.
-	- **Impact of AI Regulation**: The regulation of AI technologies, to prevent their misuse for surveillance, becomes increasingly critical. Ensuring transparency and accountability in AI operations is paramount to safeguarding civil liberties.
-	- **International Cooperation**: Addressing the global nature of data privacy requires international cooperation. Agreements on data protection standards and ethical AI use are essential to navigating the complex web of data surveillance, sharing, and protection.
-- # Misc links
-- [Signal Foundation Warns Against EU's Plan to Scan Private Messages for CSAM (thehackernews.com)](https://thehackernews.com/2024/06/signal-foundation-warns-against-eus.html?m=1)
-- [Sealed Court Files Obscure Rise in Electronic Surveillance WSJ](https://www.wsj.com/articles/sealed-court-files-obscure-rise-in-electronic-surveillance-1401761770)
-- [Portfolio – Jennifer Valentino DeVries (jennifervalentinodevries.com)](https://jennifervalentinodevries.com/portfolio/)
-- # Government and Agency Involvement in AI
-	- Former NSA Director Michael Hayden said:
-	- ```text
+  - **General Data Protection Regulation (GDPR)**: The GDPR represents a robust data protection initiative, offering EU citizens significant control over their personal data. It mandates explicit consent for data processing and grants individuals the right to access and request the deletion of their data. However, its effectiveness is occasionally undermined by complex consent forms and the global nature of data flows which transcend its jurisdiction.
+  - **The UK Data Protection Act**: Post-Brexit, the UK continues to uphold strong data protection standards, mirroring GDPR principles. However, future divergences may impact international data sharing, especially concerning agreements with entities in jurisdictions with differing privacy standards.
+  - **Rise of AI in Data Analysis**: AI's evolution has transformed data analysis, enabling the extraction of nuanced insights from vast datasets. This capability enhances government surveillance potential, making it more efficient but also raising ethical concerns.
+  - **AI and Surveillance**: The misuse of AI for surveillance by state actors is a growing concern. AI can automate the monitoring of individuals on an unprecedented scale, necessitating stringent oversight.
+  - **Data Encoded in AI Models**: Information about individuals becoming encoded in the latent spaces of foundational AI models poses unique challenges. This data embedding can inadvertently leak personal information, complicating efforts to protect individual privacy.
+  - **Judicial and Legislative Responses**: Legal frameworks globally are under pressure to evolve in response to technological advancements. Judicial interventions may set new precedents, while legislative reforms, informed by GDPR and other standards, could offer more comprehensive protections.
+  - **Impact of AI Regulation**: The regulation of AI technologies, to prevent their misuse for surveillance, becomes increasingly critical. Ensuring transparency and accountability in AI operations is paramount to safeguarding civil liberties.
+  - **International Cooperation**: Addressing the global nature of data privacy requires international cooperation. Agreements on data protection standards and ethical AI use are essential to navigating the complex web of data surveillance, sharing, and protection.
+  - # Misc links
+  - [Signal Foundation Warns Against EU's Plan to Scan Private Messages for CSAM (thehackernews.com)](https://thehackernews.com/2024/06/signal-foundation-warns-against-eus.html?m=1)
+  - [Sealed Court Files Obscure Rise in Electronic Surveillance WSJ](https://www.wsj.com/articles/sealed-court-files-obscure-rise-in-electronic-surveillance-1401761770)
+  - [Portfolio – Jennifer Valentino DeVries (jennifervalentinodevries.com)](https://jennifervalentinodevries.com/portfolio/)
+  - # Government and Agency Involvement in AI
+  - Former NSA Director Michael Hayden said:
+  - ```text
 	  "we kill people based on metadata"
+
+  - ## Tech money in Civil Society
+  - ## US Politics and Big Tech
+  - ## Intelligence Agencies and Tech Companies
+  - ### Overview of Government Data Acquisition Practices
+  - #### THe TrUTh iS OuT ThERe
+  - ### Legal Framework, International Agreements, and Concerns
+  - ### The Influence of GDPR and the UK's Data Protection Framework
+  - ### Technological Advancements and Their Dual-Edged Impact
+  - ### Prospects for Reform and the Future Landscape
 	  ```
-	- during a debate in 2014 at John Hopkins University. Hayden admitted that the U.S. government uses metadata, which refers to data about communications like phone records (numbers called, time, duration) rather than the actual content, as a basis for killing people in drone strikes against terrorist suspects abroad. Reports based on Snowden leaks alleged the NSA used metadata analysis to track potential targets for lethal drone operations.
-	- OpenAI [has appointed](https://openai.com/index/openai-announces-leadership-transition/) Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board's Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
-		-
+  - during a debate in 2014 at John Hopkins University. Hayden admitted that the U.S. government uses metadata, which refers to data about communications like phone records (numbers called, time, duration) rather than the actual content, as a basis for killing people in drone strikes against terrorist suspects abroad. Reports based on Snowden leaks alleged the NSA used metadata analysis to track potential targets for lethal drone operations.
+  - OpenAI [has appointed](https://openai.com/index/openai-announces-leadership-transition/) Retired U.S. Army General Paul M. Nakasone to its Board of Directors and the Board's Safety and Security Committee. General Nakasone is a leading expert in cybersecurity, having previously served as the Director of the National Security Agency (NSA) and Commander of U.S. Cyber Command (USCYBERCOM).
 		- [(1) Edward Snowden on X: "They've gone full mask-off: 𝐝𝐨 𝐧𝐨𝐭 𝐞𝐯𝐞𝐫 trust @OpenAI or its products (ChatGPT etc). There is only one reason for appointing an @NSAGov Director to your board. This is a willful, calculated betrayal of the rights of every person on Earth. You have been warned." / X (twitter.com)](https://twitter.com/Snowden/status/1801610725229498403)
 		- {{twitter https://twitter.com/Snowden/status/1801610725229498403}}
-	- <iframe src="https://www.eff.org/deeplinks/2024/04/us-senate-and-biden-administration-shamefully-renew-and-expand-fisa-section-702-0" style="width: 100%; height: 600px"></iframe>
-- [Chat Control: The EU’s CSEM scanner proposal – Patrick Breyer (patrick-breyer.de)](https://www.patrick-breyer.de/en/posts/chat-control/)
--
+  - <iframe src="https://www.eff.org/deeplinks/2024/04/us-senate-and-biden-administration-shamefully-renew-and-expand-fisa-section-702-0" style="width: 100%; height: 600px"></iframe>
+  - [Chat Control: The EU’s CSEM scanner proposal – Patrick Breyer (patrick-breyer.de)](https://www.patrick-breyer.de/en/posts/chat-control/)
+
+- ### Provenance
+  - sources:: [[GDPR]], [[FISA]], [[UK Investigatory Powers Act]], [[Foreign Intelligence Surveillance Act]]
+  - migration-date:: 2026-04-26T00:00:00Z

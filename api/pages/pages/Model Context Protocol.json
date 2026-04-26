@@ -1,0 +1,165 @@
+{
+  "id": "model-context-protocol",
+  "title": "Model Context Protocol",
+  "content": "- ### Definition\n  - The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, and prompts in a uniform interface that allows any compliant LLM application to discover and invoke heterogeneous external services — databases, file systems, APIs, agent memory stores — without bespoke integration code, forming the primary tool-surface interface within [[VisionClaw Agentic Container]] for agent-to-environment interaction.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ModelContextProtocol\n  - owl-role:: Process\n  - owl-inferred:: ai:AgentToolProtocol\n  - belongs-to-domain:: [[AI Domain]]\n  - implemented-in-layer:: [[ProtocolLayer]], [[AgentLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Agent Communication Protocol]], [[JSON-RPC Protocol]]\n  - has-part:: [[MCP Tool]], [[MCP Resource]], [[MCP Prompt]], [[MCP Server]], [[MCP Client]], [[MCP Transport Layer]]\n  - is-part-of:: [[VisionClaw Agentic Container]], [[LangChain Agent Framework]], [[Claude Agent SDK]]\n  - requires:: [[JSON-RPC 2.0]], [[HTTP Protocol]], [[WebSocket Protocol]], [[STDIO Transport]]\n  - enables:: [[Agent Tool Use]], [[Context Injection]], [[Sandboxed Capability Discovery]], [[Multi-Agent Orchestration]]\n  - implements:: [[Anthropic MCP Specification v0.1]], [[JSON Schema]], [[OAuth 2.0 Resource Server]]\n  - bridges-to:: [[Robot Operating System]] (domain: rb), [[Nostr Protocol]] (domain: bc), [[Solid Pod]] (domain: ngm), [[WebAssembly]] (domain: ngm)\n  - depends-on:: [[JSON Schema Validator]], [[TypeScript SDK]], [[Python MCP SDK]]\n\n- ### Content\n\n  The Model Context Protocol emerged from Anthropic's work on Claude tool use and the observation that every organisation integrating LLMs with external systems was independently solving the same problem: how to expose a tool's input schema, invoke it safely, and return structured results to the model. MCP standardises this interaction as a lightweight protocol, analogous to the Language Server Protocol (LSP) in the IDE ecosystem — a single client-side integration that unlocks a growing ecosystem of server-side capability providers.\n\n  #### Key Characteristics\n\n  - **Three Primitive Abstractions**: MCP defines exactly three server-side primitives — **Tools** (functions the model can call; model-controlled), **Resources** (data the host exposes to the model context; application-controlled), and **Prompts** (templated instruction sequences; user-controlled). This minimal surface area keeps implementations tractable.\n  - **JSON-RPC 2.0 Transport**: All messages are JSON-RPC 2.0 requests and responses. The transport layer is pluggable: STDIO (subprocess communication), HTTP with Server-Sent Events (SSE), and WebSocket are all specified. This allows MCP servers to be embedded in CLIs, web services, or Docker sidecars.\n  - **Capability Negotiation**: On connection, client and server exchange `initialize` handshakes that advertise supported protocol versions and optional capability flags (sampling, roots, logging). This enables graceful degradation when client and server versions differ.\n  - **Tool Schema Validation**: Each tool advertisement includes a JSON Schema defining its input parameters. The LLM uses this schema to generate valid tool-call arguments; the MCP client validates the call before forwarding it to the server, preventing malformed invocations.\n  - **Security Boundaries**: MCP servers run as separate processes with their own permission scope; the client never grants a server direct access to the model's context window. Capability grants are explicit and auditable.\n\n  #### How It Works\n\n  An MCP interaction follows a well-defined lifecycle. An MCP client (e.g., Claude Desktop, a LangChain agent, or a [[VisionClaw Agentic Container]] skill host) spawns or connects to an MCP server. The client sends `initialize` to negotiate capabilities and receive the server's tool, resource, and prompt manifests. When the LLM decides to invoke a tool, the client sends `tools/call` with the tool name and validated arguments. The server executes the tool — querying a database, calling an API, reading from a [[Solid Pod]] — and returns a structured `CallToolResult` containing text, image, or embedded resource content. The client inserts this result into the model's context for the next inference step.\n\n  Within [[VisionClaw Agentic Container]], each agent skill is exposed as an MCP server. The skill host (a Wasmtime-based [[WebAssembly]] runner) launches the skill's Wasm module and communicates with it over STDIO MCP. Agent orchestration — spawning sub-agents, routing tasks, checking memory — is handled by the `claude-flow` MCP server, which exposes swarm coordination and [[RuVector Memory]] operations as MCP tools. This architecture means the LLM (Claude Sonnet/Opus) never needs bespoke code per skill; it discovers and invokes all capabilities through the uniform MCP tool-call surface.\n\n  #### Current Landscape\n\n  Since its November 2024 release, MCP has achieved rapid adoption. By mid-2025, over 2,000 open-source MCP servers had been published on GitHub and the official MCP server registry. Major integrations include: GitHub (repository search, PR management), PostgreSQL (schema inspection, query execution), Cloudflare (KV store, Workers deployment), Brave Search, and Puppeteer browser automation. The Anthropic [[Claude Agent SDK]] ships with built-in MCP client support. OpenAI, Google DeepMind, and Mistral have all announced MCP compatibility for their agent tooling frameworks. The Nostr community is prototyping [[Nostr Protocol]] MCP servers that expose relay subscriptions and event publishing as LLM tools, enabling censorship-resistant agent communication.\n\n  #### Cross-Domain Applications\n\n  In the [[Robotics Domain]], MCP servers bridge to [[Robot Operating System]] topics and services, enabling natural-language robot commanding: an LLM agent calls an MCP tool `ros2_action_send_goal` to navigate a robot to coordinates. In the [[Blockchain Domain]], MCP servers expose blockchain RPC endpoints (Ethereum, Bitcoin) as tools, allowing agents to query on-chain data and submit transactions. In the [[NGM Domain]], [[Solid Pod]] MCP servers expose pod containers as resources, enabling agents to personalise themselves from the user's linked data without centralised data stores. In the [[Telecollaboration Domain]], MCP tools can trigger [[WebRTC]] session establishment or inject shared context into collaborative virtual environments.\n\n  #### Standards and References\n\n  - Anthropic. (2024). *Model Context Protocol Specification*. https://modelcontextprotocol.io/specification\n  - Anthropic. (2024). \"Introducing the Model Context Protocol.\" Anthropic Blog. https://www.anthropic.com/news/model-context-protocol\n  - IETF. (2020). *JSON-RPC 2.0 Specification*. https://www.jsonrpc.org/specification\n  - Microsoft. (2016). *Language Server Protocol Specification*. https://microsoft.github.io/language-server-protocol/\n  - GitHub MCP Server Registry. (2025). https://github.com/modelcontextprotocol/servers\n\n- ### Provenance\n  - sources:: [[Anthropic MCP Specification]], [[Model Context Protocol GitHub]], [[Claude Agent SDK Documentation]], [[JSON-RPC 2.0 Specification]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Nostr protocol",
+    "Solid Pod",
+    "VisionClaw Agentic Container",
+    "AutoML",
+    "AI Agent System",
+    "Robot Operating System",
+    "LangChain",
+    "NGM Domain",
+    "Nostr Protocol",
+    "Gazebo Simulator",
+    "WebAssembly",
+    "OpenXR"
+  ],
+  "wiki_links": [
+    "AI Domain",
+    "Agent Communication Protocol",
+    "Agent Tool Use",
+    "AgentLayer",
+    "Anthropic MCP Specification",
+    "Anthropic MCP Specification v0.1",
+    "Blockchain Domain",
+    "Claude Agent SDK",
+    "Claude Agent SDK Documentation",
+    "Context Injection",
+    "HTTP Protocol",
+    "JSON Schema",
+    "JSON Schema Validator",
+    "JSON-RPC 2.0",
+    "JSON-RPC 2.0 Specification",
+    "JSON-RPC Protocol",
+    "LangChain Agent Framework",
+    "Large Language Model",
+    "MCP Client",
+    "MCP Prompt",
+    "MCP Resource",
+    "MCP Server",
+    "MCP Tool",
+    "MCP Transport Layer",
+    "Model Context Protocol GitHub",
+    "Multi-Agent Orchestration",
+    "NGM Domain",
+    "Nostr Protocol",
+    "OAuth 2.0 Resource Server",
+    "ProtocolLayer",
+    "Python MCP SDK",
+    "Robot Operating System",
+    "Robotics Domain",
+    "RuVector Memory",
+    "STDIO Transport",
+    "Sandboxed Capability Discovery",
+    "Solid Pod",
+    "Telecollaboration Domain",
+    "TypeScript SDK",
+    "VisionClaw Agentic Container",
+    "WebAssembly",
+    "WebRTC",
+    "WebSocket Protocol"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:model-context-protocol",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ModelContextProtocol",
+    "content_hash": "sha256-12-4f8b2d6e9a1c",
+    "legacy_term_id": "AI-model-context-protocol",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:model-context-protocol",
+    "schema_version": "v2",
+    "term_id": "AI-model-context-protocol",
+    "preferred_term": "Model Context Protocol",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "The Model Context Protocol (MCP) is an open standard published by Anthropic in November 2024 that defines a JSON-RPC 2.0-based client–server protocol for connecting [[Large Language Model]] inference hosts (MCP clients) to external capability providers (MCP servers), exposing tools, resources, and prompts in a uniform interface that allows any compliant LLM application to discover and invoke heterogeneous external services — databases, file systems, APIs, agent memory stores — without bespoke integration code, forming the primary tool-surface interface within [[VisionClaw Agentic Container]] for agent-to-environment interaction.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.7,
+    "authority_score": 0.85,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ModelContextProtocol",
+    "owl_role": "Process",
+    "owl_inferred_class": "ai:AgentToolProtocol",
+    "is_subclass_of": [
+      "Agent Communication Protocol",
+      "JSON-RPC Protocol"
+    ],
+    "has_part": [
+      "MCP Tool",
+      "MCP Resource",
+      "MCP Prompt",
+      "MCP Server",
+      "MCP Client",
+      "MCP Transport Layer"
+    ],
+    "is_part_of": [
+      "VisionClaw Agentic Container",
+      "LangChain Agent Framework",
+      "Claude Agent SDK"
+    ],
+    "requires": [
+      "JSON-RPC 2.0",
+      "HTTP Protocol",
+      "WebSocket Protocol",
+      "STDIO Transport"
+    ],
+    "depends_on": [
+      "JSON Schema Validator",
+      "TypeScript SDK",
+      "Python MCP SDK"
+    ],
+    "enables": [
+      "Agent Tool Use",
+      "Context Injection",
+      "Sandboxed Capability Discovery",
+      "Multi-Agent Orchestration"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Robot Operating System",
+      "Nostr Protocol",
+      "Solid Pod",
+      "WebAssembly"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "AI Domain"
+    ],
+    "implemented_in_layer": [
+      "ProtocolLayer",
+      "AgentLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "Anthropic MCP Specification",
+      "Model Context Protocol GitHub",
+      "Claude Agent SDK Documentation",
+      "JSON-RPC 2.0 Specification"
+    ],
+    "other_relationships": {
+      "implements": [
+        "Anthropic MCP Specification v0.1",
+        "JSON Schema",
+        "OAuth 2.0 Resource Server"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

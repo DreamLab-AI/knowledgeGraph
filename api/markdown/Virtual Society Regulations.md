@@ -1,51 +1,66 @@
-- ### OntologyBlock
-  id:: virtual-society-regulations-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10146
-	- source-domain:: mv
-	- preferred-term:: Virtual Society Regulations
-	- status:: active
-	- definition:: The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.
-	- owl:class:: mv:VirtualSocietyRegulations
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Digital Governance]]
-		- related-to:: [[Metaverse Governance]]
-		- related-to:: [[Virtual World Platform]]
-		- related-to:: [[Data Privacy]]
-	  id:: virtual-society-regulations-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual society regulations address governance challenges in metaverse environments where traditional geographic jurisdiction boundaries become complex. The EU is formulating comprehensive virtual world policies, projecting market growth from EUR27 billion in 2022 to over EUR800 billion by 2030. The European Parliament adopted the AI Act on 13 March 2024 with metaverse-relevant provisions. UN Virtual Worlds Day occurred in June 2024, preceding the Global Digital Compact adoption in September 2024.
-- ## Technical Details
-	- ### EU Regulatory Framework
+iri:: http://narrativegoldmine.com/metaverse#VirtualSocietyRegulations
+uri:: urn:visionclaw:concept:artificial-intelligence:virtual-society-regulations
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:virtual-society-regulations
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Virtual Society Regulations
+content-hash:: sha256-12-23e9e22fd4c0
+legacy-term-id:: MV-10146
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement challenges.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:VirtualSocietyRegulations
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Digital Governance]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual society regulations address governance challenges in metaverse environments where traditional geographic jurisdiction boundaries become complex. The EU is formulating comprehensive virtual world policies, projecting market growth from EUR27 billion in 2022 to over EUR800 billion by 2030. The European Parliament adopted the AI Act on 13 March 2024 with metaverse-relevant provisions. UN Virtual Worlds Day occurred in June 2024, preceding the Global Digital Compact adoption in September 2024.
+  - ## Technical Details
+  - ### EU Regulatory Framework
 		- **GDPR**: Data protection for virtual world personal data
 		- **Digital Services Act**: Platform liability and content moderation
 		- **Digital Markets Act**: Competition and gatekeeper obligations
 		- **AI Act**: Prohibition of harmful manipulation and deception
-	- ### Governance Challenges
+  - ### Governance Challenges
 		- **Jurisdiction**: Determining applicable law across global virtual spaces
 		- **Identity**: Avatar accountability and real-world attribution
 		- **Enforcement**: Cross-border violation prosecution
 		- **Interoperability**: Standards across different metaverse platforms
-	- ### Key Legal Areas
+  - ### Key Legal Areas
 		- Intellectual property rights protection
 		- Data privacy and personal information handling
 		- Criminal law application to virtual crimes
 		- Content moderation and community guidelines
-	- ### Multistakeholder Approach
+  - ### Multistakeholder Approach
 		- Industry self-regulation and standards development
 		- Government oversight and enforcement
 		- User community governance participation
 		- International cooperation frameworks
-- ## Applications
-	- Platform terms of service enforcement
-	- Virtual property rights protection
-	- User safety and harassment prevention
-	- Cross-platform identity verification
-	- Virtual economy consumer protection
-	- Human rights preservation in virtual spaces
+  - ## Applications
+  - Platform terms of service enforcement
+  - Virtual property rights protection
+  - User safety and harassment prevention
+  - Cross-platform identity verification
+  - Virtual economy consumer protection
+  - Human rights preservation in virtual spaces
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

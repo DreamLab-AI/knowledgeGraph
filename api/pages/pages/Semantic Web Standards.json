@@ -1,44 +1,48 @@
 {
-  "id": "Semantic Web Standards",
+  "id": "semantic-web-standards",
   "title": "Semantic Web Standards",
-  "content": "- ### OntologyBlock\n  id:: semantic-web-standards-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10037\n\t- source-domain:: mv\n\t- preferred-term:: Semantic Web Standards\n\t- status:: active\n\t- definition:: A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.\n\t- owl:class:: mv:SemanticWebStandards\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: semantic-web-standards-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Web Standards]]\n\t\t- related-to:: [[Knowledge Representation]]\n\t\t- related-to:: [[Ontology Engineering]]\n\t\t- related-to:: [[Linked Data]]\n\t\t- enables:: [[Data Interoperability]]\n\t- #### Core Standards\n\t  collapsed:: true\n\t\t- RDF - Resource Description Framework for data interchange\n\t\t- RDF Schema (RDFS) for vocabulary definition\n\t\t- OWL - Web Ontology Language for knowledge representation\n\t\t- SPARQL - query language for semantic data\n\t\t- RIF - Rule Interchange Format for web rules\n\t- #### OWL 2 Profiles\n\t  collapsed:: true\n\t\t- OWL2 EL - polynomial time reasoning complexity\n\t\t- OWL2 QL - database query optimization\n\t\t- OWL2 RL - rule-based subset\n\t\t- Tools: Apache Jena, OpenLink Virtuoso",
+  "content": "- ### Definition\n  - A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SemanticWebStandards\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Web Standards]]\n  - enables:: [[Data Interoperability]]\n\n- ### Content\n\n  - #### Core Standards\n\t\t- RDF - Resource Description Framework for data interchange\n\t\t- RDF Schema (RDFS) for vocabulary definition\n\t\t- OWL - Web Ontology Language for knowledge representation\n\t\t- SPARQL - query language for semantic data\n\t\t- RIF - Rule Interchange Format for web rules\n  - #### OWL 2 Profiles\n\t\t- OWL2 EL - polynomial time reasoning complexity\n\t\t- OWL2 QL - database query optimization\n\t\t- OWL2 RL - rule-based subset\n\t\t- Tools: Apache Jena, OpenLink Virtuoso\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Provenance Ontology (PROV-O)",
-    "Shared Knowledge Base",
-    "Sparql Query Engine",
-    "Namespace Declarations",
-    "Intelligent Virtual Entity",
-    "Skos Vocabulary"
+    "Namespace Declarations"
   ],
   "wiki_links": [
-    "Ontology Engineering",
-    "Knowledge Representation",
     "Data Interoperability",
-    "metaverse",
     "Web Standards",
-    "Linked Data"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:semantic-web-standards",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SemanticWebStandards",
+    "content_hash": "sha256-12-3d2615746f5c",
+    "legacy_term_id": "MV-10037",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:semantic-web-standards",
+    "schema_version": "v2",
     "term_id": "MV-10037",
     "preferred_term": "Semantic Web Standards",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SemanticWebStandards",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SemanticWebStandards",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SemanticWebStandards",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Web Standards"
@@ -53,26 +57,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Knowledge Representation",
-        "Ontology Engineering",
-        "Linked Data"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

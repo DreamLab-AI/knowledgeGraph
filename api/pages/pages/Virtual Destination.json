@@ -1,39 +1,46 @@
 {
-  "id": "Virtual Destination",
+  "id": "virtual-destination",
   "title": "Virtual Destination",
-  "content": "- ### OntologyBlock\n  id:: virtual-destination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10116\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Destination\n\t- status:: active\n\t- definition:: A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.\n\t- owl:class:: mv:VirtualDestination\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Virtual Environment]]\n\t\t- related-to:: [[Virtual Tourism]]\n\t\t- related-to:: [[Virtual World]]\n\t\t- related-to:: [[Digital Twin]]\n\t  id:: virtual-destination-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual destinations are digital locations within metaverse platforms that users can explore and experience. These range from faithful recreations of real-world landmarks to entirely fantastical worlds. As virtual tourism grows, destinations serve as key attractions for social gatherings, educational experiences, and entertainment.\n- ## Technical Details\n\t- ### Destination Types\n\t\t- **Heritage Sites**: Digital twins of historical landmarks\n\t\t- **Fantasy Worlds**: Original immersive environments\n\t\t- **Brand Experiences**: Corporate virtual spaces\n\t\t- **Event Venues**: Concert halls, stadiums, exhibition spaces\n\t- ### Creation Technologies\n\t\t- Photogrammetry for realistic reconstruction\n\t\t- Procedural generation for large-scale worlds\n\t\t- 3D modeling and environment design\n\t\t- Real-time rendering engines\n\t- ### Access Methods\n\t\t- VR headset immersive exploration\n\t\t- Desktop and mobile browser access\n\t\t- Gaming platform integration\n\t\t- AR location-based overlays\n- ## Applications\n\t- Virtual tourism and exploration\n\t- Cultural heritage preservation\n\t- Educational field trips\n\t- Brand marketing experiences\n\t- Social gathering spaces",
+  "content": "- ### Definition\n  - A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualDestination\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual Environment]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual destinations are digital locations within metaverse platforms that users can explore and experience. These range from faithful recreations of real-world landmarks to entirely fantastical worlds. As virtual tourism grows, destinations serve as key attractions for social gatherings, educational experiences, and entertainment.\n  - ## Technical Details\n  - ### Destination Types\n\t\t- **Heritage Sites**: Digital twins of historical landmarks\n\t\t- **Fantasy Worlds**: Original immersive environments\n\t\t- **Brand Experiences**: Corporate virtual spaces\n\t\t- **Event Venues**: Concert halls, stadiums, exhibition spaces\n  - ### Creation Technologies\n\t\t- Photogrammetry for realistic reconstruction\n\t\t- Procedural generation for large-scale worlds\n\t\t- 3D modeling and environment design\n\t\t- Real-time rendering engines\n  - ### Access Methods\n\t\t- VR headset immersive exploration\n\t\t- Desktop and mobile browser access\n\t\t- Gaming platform integration\n\t\t- AR location-based overlays\n  - ## Applications\n  - Virtual tourism and exploration\n  - Cultural heritage preservation\n  - Educational field trips\n  - Brand marketing experiences\n  - Social gathering spaces\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Tourism Metaverse",
-    "Virtual Location"
+    "Tourism Metaverse"
   ],
   "wiki_links": [
-    "Digital Twin",
-    "Virtual Tourism",
-    "Virtual World",
-    "metaverse",
-    "Virtual Environment"
+    "Virtual Environment",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-destination",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualDestination",
+    "content_hash": "sha256-12-6745de9de49a",
+    "legacy_term_id": "MV-10116",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-destination",
+    "schema_version": "v2",
     "term_id": "MV-10116",
     "preferred_term": "Virtual Destination",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualDestination",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A digital location or space within virtual environments that serves as a point of interest or travel objective, including virtual recreations of real-world landmarks, fantasy worlds, themed experiences, and interactive attractions accessible through metaverse platforms.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualDestination",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualDestination",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual Environment"
@@ -46,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Virtual Tourism",
-        "Virtual World",
-        "Digital Twin"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

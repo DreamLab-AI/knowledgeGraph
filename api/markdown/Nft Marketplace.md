@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: nftmarketplace-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#NFTMarketplace
+uri:: urn:visionclaw:concept:blockchain:nft-marketplace
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:nft-marketplace
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: NFT Marketplace
+content-hash:: sha256-12-f96cd1babe06
+legacy-term-id:: BC-0572
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0572
-    - filename-history:: ["BC-0572-nftmarketplace.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0572
-    - preferred-term:: NFT Marketplace
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Platform for trading NFTs.
 
-  - **Definition**
-    - definition:: Platform for trading NFTs.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:NftMarketplace
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:NftMarketplace
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  NFT Marketplace — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NftMarketplace))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NftMarketplace "NFT Marketplace"@en)
-      (AnnotationAssertion rdfs:comment :NftMarketplace
-        "Platform for trading NFTs."@en)
-      ```
-
-- ## About NFT Marketplace
-  Platform for trading NFTs.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

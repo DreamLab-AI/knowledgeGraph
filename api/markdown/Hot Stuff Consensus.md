@@ -1,47 +1,36 @@
-- ### OntologyBlock
-  id:: hotstuffconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#HotStuffConsensus
+uri:: urn:visionclaw:concept:blockchain:hotstuff-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:hotstuff-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: HotStuff Consensus
+content-hash:: sha256-12-090be3b766ab
+legacy-term-id:: BC-0558
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0558
-    - filename-history:: ["BC-0558-hotstuffconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0558
-    - preferred-term:: HotStuff Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.
 
-  - **Definition**
-    - definition:: The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:HotStuffConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:HotStuffConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Byzantine Fault Tolerance]]
+- ### Content
+  HotStuff Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :HotStuffConsensus))
-      (SubClassOf :HotStuffConsensus :ByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :HotStuffConsensus "HotStuff Consensus"@en)
-      (AnnotationAssertion rdfs:comment :HotStuffConsensus
-        "The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance."@en)
-      ```
-
-- ## About HotStuff Consensus
-  The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.
-  
-  ### Examples
-  - Diem (formerly Libra), Flow blockchain
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

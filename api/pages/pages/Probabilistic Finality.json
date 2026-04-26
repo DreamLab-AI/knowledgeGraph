@@ -1,67 +1,77 @@
 {
-  "id": "Probabilistic Finality",
+  "id": "probabilistic-finality",
   "title": "Probabilistic Finality",
-  "content": "- ### OntologyBlock\n  id:: probabilistic-finality-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8013\n\t- preferred-term:: Probabilistic Finality\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.\n\t- maturity:: reviewed\n\t- owl:class:: bc:ProbabilisticFinality\n\t- belongsToDomain:: [[BlockchainDomain]]\n\n---\nid: BC-1015\ntitle: Probabilistic Finality\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Probabilistic Finality\n\n## Definition\n- Transaction finality model where confidence in irreversibility increases asymptotically with block depth\n- Never reaches absolute certainty but becomes exponentially unlikely to reverse\n- Characteristic of longest-chain consensus mechanisms like Proof-of-Work\n\n## Core Principles\n- **Exponential Decay**: Probability of reversal decreases exponentially with confirmations\n- **Computational Security**: Attacker must outpace honest hash power\n- **Asymptotic Confidence**: Approaches but never reaches 100% certainty\n- **Statistical Guarantee**: Based on probabilistic model of attacker success\n\n## Mathematical Model\n```\nP(reorg at depth k) ≈ (q/p)^k\n\nwhere:\n  p = honest hash rate fraction\n  q = attacker hash rate fraction\n  k = block depth (confirmations)\n```\n\nFor 30% attacker: P(reorg after 6 blocks) ≈ 0.1%\n\n## Confirmation Heuristics\n| Use Case | Bitcoin Confirmations | Reasoning |\n|----------|----------------------|-----------|\n| Coffee purchase | 0 (unconfirmed) | Low value, low risk |\n| Standard payment | 3 (~30 min) | Balance speed/security |\n| Exchange deposit | 6 (~60 min) | Industry standard |\n| High-value transfer | 10+ (~100 min) | Maximum security |\n\n## Technical Characteristics\n- **Block Depth**: Number of subsequent blocks added\n- **Orphan Risk**: Competing chains naturally occur\n- **Chain Selection**: Longest chain rule determines canonical chain\n- **Reorganization**: Switching to longer competing chain\n\n## Blockchain Examples\n### Bitcoin\n- 6 confirmations standard (~60 minutes)\n- 10-minute average block time\n- Reorganizations typically 1-2 blocks maximum\n\n### Ethereum (Pre-Merge PoW)\n- 20-30 confirmations recommended (~5-7 minutes)\n- 13-second block time\n- Higher orphan rate than Bitcoin\n\n### Bitcoin Cash\n- Similar to Bitcoin with adjusted difficulty\n- Larger block size doesn't affect finality model\n\n## Relationships\n- type-of:: [[Transaction Finality]]\n- used-by:: [[Proof of Work]]\n- contrasts-with:: [[Deterministic Finality]]\n- requires:: [[Longest Chain Rule]]\n- vulnerable-to:: [[51% Attack]]\n\n## Security Analysis\n### Assumptions\n- Majority of hash power controlled by honest miners\n- Rational economic actors (attack cost > benefit)\n- Network connectivity maintains global state propagation\n\n### Attack Scenarios\n- **51% Attack**: Attacker controls majority hash power\n- **Selfish Mining**: Strategic block withholding\n- **Double-Spend**: Reversing confirmed transactions\n- **Deep Reorg**: Rewriting extensive history (very costly)\n\n## Advantages\n- Simple protocol design\n- Well-studied security properties\n- No reliance on validator identity or stake\n- Naturally handles network partitions\n\n## Limitations\n- Long wait times for high security\n- Never absolute certainty\n- Vulnerable to hash rate concentration\n- Energy inefficient (PoW requirement)\n\n## Practical Considerations\n### For Merchants\n- Risk tolerance determines confirmation requirement\n- Dynamic adjustment based on transaction value\n- Insurance/payment processor policies\n\n### For Exchanges\n- Standardized confirmation requirements\n- Monitoring for unusual chain activity\n- Halting deposits during suspected attacks\n\n### For DeFi Protocols\n- Time-locked mechanisms for large operations\n- Confirmation depth for cross-chain interactions\n- Oracle update frequency relative to finality\n\n## Improvements\n- **Checkpointing**: Periodic hard-coded finality points\n- **Merged Mining**: Borrowed hash rate for security\n- **Hybrid Consensus**: Combine with BFT finality layer\n\n## Real-World Incidents\n- **Bitcoin Cash 2019**: 2-block reorganization\n- **Ethereum Classic 2019**: Multiple 51% attacks\n- **Bitcoin 2013**: 24-block reorg due to software bug\n\n## Related Concepts\n- [[Deterministic Finality]]\n- [[Proof of Work]]\n- [[Consensus Mechanism]]\n- [[Transaction Confirmation]]\n\n#blockchain #finality #probabilistic #proof-of-work\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "content": "- ### Definition\n  - Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:ProbabilisticFinality\n  - owl-role:: Concept\n  - belongs-to-domain:: [[BlockchainDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n  - requires:: [[Longest Chain Rule]]\n\n- ### Content\n\n  ## Definition\n  - Transaction finality model where confidence in irreversibility increases asymptotically with block depth\n  - Never reaches absolute certainty but becomes exponentially unlikely to reverse\n  - Characteristic of longest-chain consensus mechanisms like Proof-of-Work\n\n  ## Core Principles\n  - **Exponential Decay**: Probability of reversal decreases exponentially with confirmations\n  - **Computational Security**: Attacker must outpace honest hash power\n  - **Asymptotic Confidence**: Approaches but never reaches 100% certainty\n  - **Statistical Guarantee**: Based on probabilistic model of attacker success\n\n  ## Mathematical Model\n  ```\n  P(reorg at depth k) ≈ (q/p)^k\n\n  where:\n  p = honest hash rate fraction\n  q = attacker hash rate fraction\n  k = block depth (confirmations)\n  ```\n\n  For 30% attacker: P(reorg after 6 blocks) ≈ 0.1%\n\n  ## Confirmation Heuristics\n  | Use Case | Bitcoin Confirmations | Reasoning |\n  |----------|----------------------|-----------|\n  | Coffee purchase | 0 (unconfirmed) | Low value, low risk |\n  | Standard payment | 3 (~30 min) | Balance speed/security |\n  | Exchange deposit | 6 (~60 min) | Industry standard |\n  | High-value transfer | 10+ (~100 min) | Maximum security |\n\n  ## Technical Characteristics\n  - **Block Depth**: Number of subsequent blocks added\n  - **Orphan Risk**: Competing chains naturally occur\n  - **Chain Selection**: Longest chain rule determines canonical chain\n  - **Reorganization**: Switching to longer competing chain\n\n  ## Blockchain Examples\n  ### Bitcoin\n  - 6 confirmations standard (~60 minutes)\n  - 10-minute average block time\n  - Reorganizations typically 1-2 blocks maximum\n\n  ### Ethereum (Pre-Merge PoW)\n  - 20-30 confirmations recommended (~5-7 minutes)\n  - 13-second block time\n  - Higher orphan rate than Bitcoin\n\n  ### Bitcoin Cash\n  - Similar to Bitcoin with adjusted difficulty\n  - Larger block size doesn't affect finality model\n\n  ## Relationships\n  - type-of:: [[Transaction Finality]]\n  - used-by:: [[Proof of Work]]\n  - contrasts-with:: [[Deterministic Finality]]\n  - requires:: [[Longest Chain Rule]]\n  - vulnerable-to:: [[51% Attack]]\n\n  ## Security Analysis\n  ### Assumptions\n  - Majority of hash power controlled by honest miners\n  - Rational economic actors (attack cost > benefit)\n  - Network connectivity maintains global state propagation\n\n  ### Attack Scenarios\n  - **51% Attack**: Attacker controls majority hash power\n  - **Selfish Mining**: Strategic block withholding\n  - **Double-Spend**: Reversing confirmed transactions\n  - **Deep Reorg**: Rewriting extensive history (very costly)\n\n  ## Advantages\n  - Simple protocol design\n  - Well-studied security properties\n  - No reliance on validator identity or stake\n  - Naturally handles network partitions\n\n  ## Limitations\n  - Long wait times for high security\n  - Never absolute certainty\n  - Vulnerable to hash rate concentration\n  - Energy inefficient (PoW requirement)\n\n  ## Practical Considerations\n  ### For Merchants\n  - Risk tolerance determines confirmation requirement\n  - Dynamic adjustment based on transaction value\n  - Insurance/payment processor policies\n\n  ### For Exchanges\n  - Standardized confirmation requirements\n  - Monitoring for unusual chain activity\n  - Halting deposits during suspected attacks\n\n  ### For DeFi Protocols\n  - Time-locked mechanisms for large operations\n  - Confirmation depth for cross-chain interactions\n  - Oracle update frequency relative to finality\n\n  ## Improvements\n  - **Checkpointing**: Periodic hard-coded finality points\n  - **Merged Mining**: Borrowed hash rate for security\n  - **Hybrid Consensus**: Combine with BFT finality layer\n\n  ## Real-World Incidents\n  - **Bitcoin Cash 2019**: 2-block reorganization\n  - **Ethereum Classic 2019**: Multiple 51% attacks\n  - **Bitcoin 2013**: 24-block reorg due to software bug\n\n  #### Related Concepts\n  - [[Deterministic Finality]]\n  - [[Proof of Work]]\n  - [[Consensus Mechanism]]\n  - [[Transaction Confirmation]]\n\n  #blockchain #finality #probabilistic #proof-of-work\n\n  ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Deterministic Finality",
     "Transaction Finality"
   ],
   "wiki_links": [
+    "51% Attack",
+    "Blockchain",
+    "BlockchainDomain",
     "Consensus Mechanism",
     "Deterministic Finality",
-    "51% Attack",
-    "BlockchainDomain",
-    "Transaction Confirmation",
-    "Blockchain",
-    "Transaction Finality",
     "Longest Chain Rule",
-    "Proof of Work"
+    "Proof of Work",
+    "Transaction Confirmation",
+    "Transaction Finality"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:probabilistic-finality",
+    "iri": "http://narrativegoldmine.com/blockchain#ProbabilisticFinality",
+    "content_hash": "sha256-12-1e739e77a615",
+    "legacy_term_id": "BC-8013",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:probabilistic-finality",
+    "schema_version": "v2",
     "term_id": "BC-8013",
     "preferred_term": "Probabilistic Finality",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#ProbabilisticFinality",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^k where q is attacker hashrate fraction and k is confirmation depth.",
     "scope_note": null,
     "status": "active",
     "maturity": "reviewed",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:ProbabilisticFinality",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:ProbabilisticFinality",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Blockchain"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Longest Chain Rule"
+    ],
     "depends_on": [],
     "enables": [],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "BlockchainDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

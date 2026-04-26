@@ -1,117 +1,131 @@
-- ### OntologyBlock
-  id:: immersive-experience-pipeline-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9922
-	- source-domain:: mv
-	- preferred-term:: Immersive Experience Pipeline
-	- status:: active
-	- owl:class:: mv:ImmersiveExperiencePipeline
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.
-	- #### Relationships
-	  id:: immersive-experience-pipeline-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Content Production Workflow]]
-		- related-to:: [[3D Asset Pipeline]]
-		- related-to:: [[Gltf Standard]]
-		- enables:: [[XR Content Delivery]]
+iri:: http://narrativegoldmine.com/spatial-computing#ImmersiveExperiencePipeline
+uri:: urn:visionclaw:concept:spatial-computing:immersive-experience-pipeline
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:immersive-experience-pipeline
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Immersive Experience Pipeline
+content-hash:: sha256-12-6c2b61f99a8c
+legacy-term-id:: MV-9922
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Pipeline Stages
+- ### Definition
+  - The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.
 
-### Concept and Design
-- Project vision definition
-- Storyboarding and planning
-- User experience mapping
-- Interaction design
-- Technical requirements
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ImmersiveExperiencePipeline
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Asset Creation
-- 3D model development
-- Texture and material creation
-- Animation production
-- Audio asset development
-- Environment design
+- ### Relationships
+  - is-subclass-of:: [[Content Production Workflow]]
+  - enables:: [[XR Content Delivery]]
 
-## AI-Powered Creation
+- ### Content
 
-### Generative AI Integration
-- DALL-E 2 and DeepAI for assets
-- Near-instantaneous content creation
-- Reduced specialist knowledge need
-- Unprecedented asset volume capability
+  ## Pipeline Stages
 
-### Game Engine Optimisation
-- Unreal Engine 5 integration
-- Nanite virtualised geometry
-- File editing and processing
-- Efficient runtime optimisation
+  ### Concept and Design
+  - Project vision definition
+  - Storyboarding and planning
+  - User experience mapping
+  - Interaction design
+  - Technical requirements
 
-## XR Workflow Technologies
+  ### Asset Creation
+  - 3D model development
+  - Texture and material creation
+  - Animation production
+  - Audio asset development
+  - Environment design
 
-### Essential Technologies (8 Key Areas)
-- Motion sensing systems
-- Eye tracking integration
-- Pose estimation and 3D mapping
-- Scene understanding
-- Digital humans creation
-- Conversational AI for NPCs
-- Motion-to-photon latency compensation
-- Optical display systems
+  ## AI-Powered Creation
 
-### Development Tools
-- Unity development environment
-- Unreal Engine workflows
-- Platform-specific SDKs
-- Testing and validation tools
+  ### Generative AI Integration
+  - DALL-E 2 and DeepAI for assets
+  - Near-instantaneous content creation
+  - Reduced specialist knowledge need
+  - Unprecedented asset volume capability
 
-## Enterprise Solutions
+  ### Game Engine Optimisation
+  - Unreal Engine 5 integration
+  - Nanite virtualised geometry
+  - File editing and processing
+  - Efficient runtime optimisation
 
-### Automation Platforms
-- Theorem Visualization Pipeline
-- CAD data transformation
-- Automated XR asset creation
-- Unity and Unreal asset generation
+  ## XR Workflow Technologies
 
-### Content Creation Platforms
-- VIROO content studio
-- Multi-user XR creation
-- No-code/low-code options
-- 2024 improved user experience
+  ### Essential Technologies (8 Key Areas)
+  - Motion sensing systems
+  - Eye tracking integration
+  - Pose estimation and 3D mapping
+  - Scene understanding
+  - Digital humans creation
+  - Conversational AI for NPCs
+  - Motion-to-photon latency compensation
+  - Optical display systems
 
-## Cloud Streaming
+  ### Development Tools
+  - Unity development environment
+  - Unreal Engine workflows
+  - Platform-specific SDKs
+  - Testing and validation tools
 
-### Google Cloud Immersive Stream
-- Cloud-hosted rendering
-- GPU-powered processing
-- Cross-platform delivery (iOS, Android, Web)
-- No app download required
-- Device offloading benefits
+  ## Enterprise Solutions
 
-### Platform Benefits
-- Powerful cloud GPU access
-- Consistent user experience
-- Reduced device requirements
-- Single codebase deployment
+  ### Automation Platforms
+  - Theorem Visualization Pipeline
+  - CAD data transformation
+  - Automated XR asset creation
+  - Unity and Unreal asset generation
 
-## Production Workflow
+  ### Content Creation Platforms
+  - VIROO content studio
+  - Multi-user XR creation
+  - No-code/low-code options
+  - 2024 improved user experience
 
-### Structured Approach
-- Concept definition and storyboarding
-- High-quality 3D asset creation
-- Texture development for environment
-- Functionality testing phase
-- Multi-platform optimisation
+  ## Cloud Streaming
 
-### Quality Assurance
-- User experience testing
-- Performance validation
-- Accessibility review
-- Platform compliance
+  ### Google Cloud Immersive Stream
+  - Cloud-hosted rendering
+  - GPU-powered processing
+  - Cross-platform delivery (iOS, Android, Web)
+  - No app download required
+  - Device offloading benefits
 
-## Metadata
+  ### Platform Benefits
+  - Powerful cloud GPU access
+  - Consistent user experience
+  - Reduced device requirements
+  - Single codebase deployment
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Production Workflow
+
+  ### Structured Approach
+  - Concept definition and storyboarding
+  - High-quality 3D asset creation
+  - Texture development for environment
+  - Functionality testing phase
+  - Multi-platform optimisation
+
+  ### Quality Assurance
+  - User experience testing
+  - Performance validation
+  - Accessibility review
+  - Platform compliance
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

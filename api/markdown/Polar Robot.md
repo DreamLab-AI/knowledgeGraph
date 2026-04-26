@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: polarrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#PolarRobot
+uri:: urn:visionclaw:concept:robotics:polar-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:polar-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Polar Robot
+content-hash:: sha256-12-9cc6c332ed08
+legacy-term-id:: RB-0135
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0135
-    - filename-history:: ["RB-0135-polarrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0135
-    - preferred-term:: Polar Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.
 
-  - **Definition**
-    - definition:: Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:PolarRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:PolarRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Industrial Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Industrial Robot]]
+- ### Content
+  Polar Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PolarRobot))
-      (SubClassOf :PolarRobot :IndustrialRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PolarRobot "Polar Robot"@en)
-      (AnnotationAssertion rdfs:comment :PolarRobot
-        "Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace."@en)
-      ```
-
-- ## About Polar Robot
-  Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.
-  
-  A robot with spherical coordinate system workspace (also called spherical robot).
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

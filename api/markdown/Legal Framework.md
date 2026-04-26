@@ -1,104 +1,115 @@
-- ### OntologyBlock
-  id:: legal-framework-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7024
-	- preferred-term:: Legal Framework
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.
-	- maturity:: reviewed
-	- owl:class:: ngm:LegalFramework
-	- owl:role:: Concept
-	- belongsToDomain:: [[Core Technology]]
+iri:: http://narrativegoldmine.com/infrastructure#LegalFramework
+uri:: urn:visionclaw:concept:infrastructure:legal-framework
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:legal-framework
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Legal Framework
+content-hash:: sha256-12-c6655f8e80c8
+legacy-term-id:: NGM-7024
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-### Relationships
-- is-subclass-of:: [[Regulatory Framework]]
-- related-to:: [[Governance Framework]], [[Compliance]], [[Data Protection]]
-- enables:: [[Legal Compliance]], [[Rights Protection]], [[Accountability]]
-- implements:: [[Privacy Requirements]], [[Security Obligations]]
+- ### Definition
+  - A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.
 
-## Components
+- ### Semantic Classification
+  - owl-class:: infrastructure:LegalFramework
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Core Technology]]
 
-### Major Data Protection Regulations
+- ### Relationships
+  - is-subclass-of:: [[Regulatory Framework]]
+  - enables:: [[Legal Compliance]], [[Rights Protection]], [[Accountability]]
+  - implements:: [[Privacy Requirements]], [[Security Obligations]]
 
-#### GDPR (General Data Protection Regulation)
-European Union regulation establishing comprehensive data protection requirements. Key principles include lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity, and accountability. Applies to any organisation processing personal data of EU residents.
+- ### Content
 
-#### EU AI Act
-First comprehensive legal framework for artificial intelligence, enacted in 2024. Establishes risk-based requirements for AI systems, mandating transparency, safety, and human oversight particularly for high-risk applications.
+  ## Components
 
-#### National Data Protection Laws
-Over 100 countries have enacted data privacy regulations, including:
-- UK Data Protection Act 2018
-- California Consumer Privacy Act (CCPA)
-- Brazil's LGPD
-- China's PIPL
+  ### Major Data Protection Regulations
 
-### Core Legal Requirements
+  #### GDPR (General Data Protection Regulation)
+  European Union regulation establishing comprehensive data protection requirements. Key principles include lawfulness, fairness, transparency, purpose limitation, data minimisation, accuracy, storage limitation, integrity, and accountability. Applies to any organisation processing personal data of EU residents.
 
-#### Privacy by Design and Default
-- Data protection considerations integrated into system design
-- Default settings prioritise privacy
-- Technical and organisational measures implemented from the outset
+  #### EU AI Act
+  First comprehensive legal framework for artificial intelligence, enacted in 2024. Establishes risk-based requirements for AI systems, mandating transparency, safety, and human oversight particularly for high-risk applications.
 
-#### Data Subject Rights
-- Right to access personal data
-- Right to rectification and erasure
-- Right to data portability
-- Right to object to processing
-- Rights related to automated decision-making
+  #### National Data Protection Laws
+  Over 100 countries have enacted data privacy regulations, including:
+  - UK Data Protection Act 2018
+  - California Consumer Privacy Act (CCPA)
+  - Brazil's LGPD
+  - China's PIPL
 
-#### Organisational Obligations
-- Lawful basis for data processing
-- Transparency in data collection and use
-- Data protection impact assessments (DPIAs)
-- Breach notification within 72 hours
-- Appointment of Data Protection Officers where required
+  ### Core Legal Requirements
 
-### Compliance Areas
-- **Data Processing**: Legal basis, consent management, purpose limitation
-- **Cross-Border Transfers**: Adequacy decisions, standard contractual clauses
-- **Security**: Technical and organisational measures, encryption
-- **Records**: Processing activities documentation, audit trails
-- **Third Parties**: Processor agreements, vendor due diligence
+  #### Privacy by Design and Default
+  - Data protection considerations integrated into system design
+  - Default settings prioritise privacy
+  - Technical and organisational measures implemented from the outset
 
-## Implementation
+  #### Data Subject Rights
+  - Right to access personal data
+  - Right to rectification and erasure
+  - Right to data portability
+  - Right to object to processing
+  - Rights related to automated decision-making
 
-### Compliance Programme Structure
-1. **Assessment**: Gap analysis against applicable regulations
-2. **Policies**: Development of privacy and data protection policies
-3. **Processes**: Implementation of compliant data handling procedures
-4. **Technology**: Deployment of privacy-enhancing technologies
-5. **Training**: Staff awareness and role-specific education
-6. **Monitoring**: Ongoing compliance verification and auditing
+  #### Organisational Obligations
+  - Lawful basis for data processing
+  - Transparency in data collection and use
+  - Data protection impact assessments (DPIAs)
+  - Breach notification within 72 hours
+  - Appointment of Data Protection Officers where required
 
-### Technology Compliance Requirements
-- Privacy impact assessments for new systems
-- Data mapping and inventory maintenance
-- Consent management platforms
-- Data retention and deletion mechanisms
-- Security controls appropriate to risk
-- Audit logging and monitoring
+  ### Compliance Areas
+  - **Data Processing**: Legal basis, consent management, purpose limitation
+  - **Cross-Border Transfers**: Adequacy decisions, standard contractual clauses
+  - **Security**: Technical and organisational measures, encryption
+  - **Records**: Processing activities documentation, audit trails
+  - **Third Parties**: Processor agreements, vendor due diligence
 
-### Emerging Legal Considerations
-- AI regulation and algorithmic accountability
-- Cross-border data flow restrictions
-- Sector-specific regulations (healthcare, finance)
-- Children's data protection requirements
-- Biometric data special categories
+  ## Implementation
 
-### Best Practices
-- Maintain current awareness of regulatory changes
-- Integrate legal compliance into system development lifecycle
-- Establish clear accountability for data protection
-- Regular compliance audits and assessments
-- Documented decision-making for processing activities
-- Incident response procedures for data breaches
+  ### Compliance Programme Structure
+  1. **Assessment**: Gap analysis against applicable regulations
+  2. **Policies**: Development of privacy and data protection policies
+  3. **Processes**: Implementation of compliant data handling procedures
+  4. **Technology**: Deployment of privacy-enhancing technologies
+  5. **Training**: Staff awareness and role-specific education
+  6. **Monitoring**: Ongoing compliance verification and auditing
 
-## Metadata
+  ### Technology Compliance Requirements
+  - Privacy impact assessments for new systems
+  - Data mapping and inventory maintenance
+  - Consent management platforms
+  - Data retention and deletion mechanisms
+  - Security controls appropriate to risk
+  - Audit logging and monitoring
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched from stub
-- **References**: 6 pages reference this concept
+  ### Emerging Legal Considerations
+  - AI regulation and algorithmic accountability
+  - Cross-border data flow restrictions
+  - Sector-specific regulations (healthcare, finance)
+  - Children's data protection requirements
+  - Biometric data special categories
+
+  ### Best Practices
+  - Maintain current awareness of regulatory changes
+  - Integrate legal compliance into system development lifecycle
+  - Establish clear accountability for data protection
+  - Regular compliance audits and assessments
+  - Documented decision-making for processing activities
+  - Incident response procedures for data breaches
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

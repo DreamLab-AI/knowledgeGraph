@@ -1,15 +1,40 @@
+iri:: http://narrativegoldmine.com/ontology#OverviewOfMachineLearningTechniques
+uri:: urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:overview-of-machine-learning-techniques
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Overview of Machine Learning Techniques
+content-hash:: sha256-12-7708788df1f0
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page
-	- automatically published
-	- ## AI or ML or what?
-	- It's not intelligent. It's just machine learning which is statistics.
-	- Artificial intelligence is a marketing term, but it's supported in literature as the high level term.
-	- [That's OK!](https://simonwillison.net/2024/Jan/7/call-it-ai/)
-	- I'm mainly going to use AI from here in.
-	- ![1706985611136.gif](../assets/1706985611136_1707078214092_0.gif)
-- # Machine Learning Techniques Overview
-	- ## Supervised Learning
+- ### Definition
+  - Overview of Machine Learning Techniques is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:OverviewOfMachineLearningTechniques
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - #Public page
+  - automatically published
+  - It's not intelligent. It's just machine learning which is statistics.
+  - Artificial intelligence is a marketing term, but it's supported in literature as the high level term.
+  - [That's OK!](https://simonwillison.net/2024/Jan/7/call-it-ai/)
+  - I'm mainly going to use AI from here in.
+  - ![1706985611136.gif](../assets/1706985611136_1707078214092_0.gif)
+  - # Machine Learning Techniques Overview
 		- **Concept**: Techniques where models learn from labeled data.
 		- **Explain**: Like teaching a child with clear examples and answers.
 		- ##### 1️⃣ Support Vector Machines (SVM)
@@ -36,7 +61,6 @@ public:: true
 		- **Description**: Ensemble of decision trees for improved accuracy.
 		- **Explain**: Like consulting a group of experts instead of just one.
 		- **Paper**: [Understanding Random Forests: From Theory to Practice](https://arxiv.org/abs/1407.7502)
-	- ## Unsupervised Learning
 		- **Concept**: Techniques where models learn from unlabeled data.
 		- **Explain Like I'm New**: Learning without direct guidance, like exploring a new city without a map.
 		- ##### 1️⃣ K-Means Clustering
@@ -47,42 +71,48 @@ public:: true
 		- **Description**: Classifies cases based on similarity measures.
 		- **Explain Like I'm New**: Like making friends based on common interests.
 		- **Paper**: [Comparative performance analysis of K-nearest neighbour (KNN)](https://www.nature.com/articles/s41598-022-10358-x)
-	- ### Neural Networks and Deep Learning id:: 659a9232-2320-494a-b922-968029718ad5
 		- **Concept**: Advanced algorithms inspired by the structure of the human brain.
 		- **Explain**: Like building a brain in a computer to solve complex problems.
-		- #### 1️⃣ Neural Networks
 		- **Description**: Consists of layers of interconnected nodes which just tweak numbers
 		- **Explain**: Like a network of brain cells working together to think and learn.
 		- **Paper**: [Neural networks: An overview of early research, current frameworks and new challenges](https://www.sciencedirect.com/science/article/pii/S0925231216305550?)
 		- {{video https://www.youtube.com/watch?v=aircAruvnKk&}}
-		- #### 2️⃣ Deep Learning
 		- **Description**: Involves training large neural networks.
 		- **Explain**: Larger scale engineering of neural nets, to solve much harder problems.
 		- **Paper**: [Deep Learning: A Comprehensive Overview on Techniques, Taxonomy, and Applications](https://link.springer.com/article/10.1007/s42979-021-00815-1)
 		- **Fine tuning and alignment**
-		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
 			- **Description**: Two neural networks trained in an adversarial process.
 			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
 			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
-		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
 			- **Description:** *DPO dramatically simplifies the whole thing.
 			- **Explain:** Removes the reward function, and so the human in the loop.
 			- **Paper:** [Direct Preference Optimization: Your Language Model is Secretly a Reward Model (arxiv.org)](https://arxiv.org/abs/2305.18290?)
 		- **In operation:  [[Proprietary Large Language Models]]:**
-		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
 			- **Description**: Two neural networks trained in an adversarial process.
 			- **Explain**: Like two brains, one creating art and the other judging it, helping each other improve.
 			- **Paper**: [Generative Adversarial Networks](https://ieeexplore.ieee.org/abstract/document/8253599?)
-		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
-		  id:: 661d5f76-bb78-4920-949e-76c3dbf66efe
 			- **Description**: Advanced models that 'diffuse' data to create new, synthetic outputs, using efficient [[Transformers]]
 			- **Explain**: Imagine starting with a noisy, random pattern and gradually shaping it into a clear picture.
 			- **Paper**: [Diffusion Models: A Comprehensive Survey of Methods and Applications](https://arxiv.org/abs/2311.10242)  *(Note: This covers the lot including:)*
-		- #### 7️⃣ 🟢 [[Transformers]]
-		  id:: 661d5f76-3ffa-4f10-9027-6f8e90601162
 			- **Description:** Circa 2017, introduced self-attention mechanism to capture dependencies between different words in a sequence.
 			- **Explain:** Examines the interdependencies across a wider view of words / tokens
 			- **Paper:** [Attention Is All You Need (arxiv.org)](https://arxiv.org/abs/1706.03762) **(underpinned recent advances)**
 			- Not the only game in town [[State Space and Other Approaches]] and [others](https://hazyresearch.stanford.edu/blog/2023-06-08-hyena-safari)
 		- <iframe src="https://bbycroft.net/llm" style="width: 100%; height: 600px"></iframe>
-- Next [[presentation]] slide [[Proprietary Large Language Models]]
+  - Next [[presentation]] slide [[Proprietary Large Language Models]]
+
+  - ## AI or ML or what?
+  - ## Supervised Learning
+  - ## Unsupervised Learning
+  - ### Neural Networks and Deep Learning id:: 659a9232-2320-494a-b922-968029718ad5
+		- #### 1️⃣ Neural Networks
+		- #### 2️⃣ Deep Learning
+		- #### 3️⃣ Reinforcement Learning from Human Feedback [[RLHF]]
+		- #### 4️⃣ Direct Preference Optimisation [[DPO]]
+		- #### 5️⃣ Generative Adversarial Networks [[GANs]]
+		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
+		- #### 7️⃣ 🟢 [[Transformers]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

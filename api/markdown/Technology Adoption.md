@@ -1,54 +1,41 @@
-- ### OntologyBlock
-  id:: technology-adoption-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/distributed-collaboration#TechnologyAdoption
+uri:: urn:visionclaw:concept:distributed-collaboration:technology-adoption
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:distributed-collaboration:technology-adoption
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: distributed-collaboration
+preferred-term:: Technology Adoption
+content-hash:: sha256-12-e1dfbab9f99b
+legacy-term-id:: DT-0003
+status:: complete
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.93
+version:: 2.0.0
+created:: 2025-11-05T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - ontology:: true
-    - term-id:: DT-0003
-    - preferred-term:: Technology Adoption
-    - source-domain:: tc
-    - status:: complete
-    - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-05
+- ### Definition
+  - The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.
 
-  - **Definition**
-    - definition:: The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, evaluation, trial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.
-    - maturity:: mature
-    - source:: [[Rogers Diffusion of Innovations]], [[McKinsey]], [[Gartner Hype Cycle]], [[ISO/IEC TR 24030]]
-    - authority-score:: 0.93
+- ### Semantic Classification
+  - owl-class:: dt:TechnologyAdoption
+  - owl-role:: Process
+  - owl-inferred:: dt:ConceptualProcess
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[RoboticsDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]]
 
-  - **Semantic Classification**
-    - owl:class:: dt:TechnologyAdoption
-    - owl:role:: Process
-    - owl:inferred-class:: dt:ConceptualProcess
-    - belongsToDomain:: [[AI-GroundedDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[RoboticsDomain]]
-    - implementedInLayer:: [[ConceptualLayer]]
+- ### Relationships
+  - has-part:: [[Awareness]], [[Evaluation]], [[Trial]], [[Implementation]], [[Sustained Use]]
+  - requires:: [[Change Management]], [[Training]], [[Infrastructure]], [[Stakeholder Buy-In]]
+  - enables:: [[Innovation Diffusion]], [[Digital Transformation]], [[Competitive Advantage]]
+  - depends-on:: [[Standards]], [[Interoperability]], [[User Education]], [[Ecosystem Maturity]]
 
-  - #### Relationships
-    id:: technology-adoption-relationships
-    - has-part:: [[Awareness]], [[Evaluation]], [[Trial]], [[Implementation]], [[Sustained Use]]
-    - enables:: [[Innovation Diffusion]], [[Digital Transformation]], [[Competitive Advantage]]
-    - requires:: [[Change Management]], [[Training]], [[Infrastructure]], [[Stakeholder Buy-In]]
-    - depends-on:: [[Standards]], [[Interoperability]], [[User Education]], [[Ecosystem Maturity]]
-    - influenced-by:: [[Technology Readiness]], [[Organizational Culture]], [[Regulatory Environment]]
+- ### Content
 
-  - #### OWL Axioms
-    id:: technology-adoption-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(dt:=<http://purl.org/disruptive-tech/bridges#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-      Ontology(<http://purl.org/disruptive-tech/bridges/DT-0003>
-
-        Declaration(Class(dt:TechnologyAdoption))
-
-        SubClassOf(dt:TechnologyAdoption dt:ConceptualEntity)
-        SubClassOf(dt:TechnologyAdoption dt:Process)
-
-        ## Stages
+  ## Stages
         SubClassOf(dt:TechnologyAdoption
           (ObjectSomeValuesFrom dt:hasPart dt:Awareness))
 
@@ -86,15 +73,12 @@
 
   # Property characteristics
   AsymmetricObjectProperty(dt:dependson)
-```
+  ```
 
-- ## About Technology Adoption
-  id:: technology-adoption-about
+  - ## About Technology Adoption
 
   - **Technology Adoption** is the multi-stage process through which new technologies become integrated into individual, organizational, and societal practices. It encompasses the journey from initial awareness of a technology through evaluation, experimentation, full implementation, and ultimately sustained use. In the context of disruptive technologies—AI, blockchain, metaverse, and robotics—adoption patterns significantly impact competitive advantage, market dynamics, and socioeconomic transformation.
-  -
   - ### Adoption Stages (Rogers' Diffusion of Innovations)
-    id:: technology-adoption-stages
 
     #### 1. Awareness (Knowledge)
     - Learning about technology's existence and capabilities
@@ -120,9 +104,7 @@
     - Ongoing use and institutionalization
     - Seeking reinforcement of adoption decision
     - Continuous improvement and optimization
-  -
   - ### Adopter Categories
-    id:: technology-adoption-categories
 
     #### Innovators (2.5%)
     - Venturesome, willing to take risks
@@ -153,9 +135,7 @@
     - Limited resources and social networks
     - Adopt when technology becomes legacy/mandatory
     - Example: Highly risk-averse sectors
-  -
   - ### The Gap: AI Adoption Imperative
-    id:: technology-adoption-gap
 
     #### McKinsey "The Gap" (2022)
     - **Observation**: Companies with a **5-year AI roadmap** would likely pull ahead of competitors
@@ -174,9 +154,7 @@
     - **Year 1-2**: Pilot projects, infrastructure, training
     - **Year 3**: Scale successful pilots, integrate AI into core processes
     - **Year 4-5**: AI-native workflows, competitive differentiation, innovation
-  -
   - ### Adoption Barriers
-    id:: technology-adoption-barriers
 
     #### Technical Barriers
     - Lack of interoperability and standards
@@ -195,9 +173,7 @@
     - Ecosystem immaturity (vendors, tools, talent pool)
     - Privacy and security concerns
     - Ethical and societal implications
-  -
   - ### Adoption Enablers
-    id:: technology-adoption-enablers
 
     #### Standards and Interoperability
     - Common protocols and data formats
@@ -218,9 +194,7 @@
     - Vendor maturity and competition
     - Community and open-source contributions
     - Reference architectures and best practices
-  -
   - ### Cross-Domain Adoption Patterns
-    id:: technology-adoption-cross-domain
 
     #### AI Adoption
     - Rapid growth in enterprise AI (chatbots, analytics, automation)
@@ -245,9 +219,7 @@
     - Use cases: Automation, logistics, healthcare assistance
     - Challenges: Safety standards, human-robot interaction, cost
     - Leaders: Manufacturing, warehousing, agriculture
-  -
   - ### 2024-2025: Enterprise Adoption Acceleration
-    id:: technology-adoption-recent-developments
 
     The period from 2024 through 2025 marked a decisive inflection point in enterprise technology adoption, characterised by the mainstreaming of AI and blockchain from experimental pilots to core operational infrastructure. Investment patterns, adoption statistics, and organisational transformation initiatives collectively signalled that disruptive technologies had crossed the chasm from early adopters to early majority deployment.
 
@@ -269,9 +241,7 @@
 
     #### Future Trajectory
     By late 2025, the adoption landscape suggested that finance, government, and manufacturing would lead deployment of integrated AI-blockchain systems through 2026-2027. The narrative shifted from "should we adopt?" to "how do we integrate responsibly at scale?"—reflecting technology maturation from novelty to necessity. Organisations recognising this shift positioned themselves for the next decade of competition; those hesitating risked irreversible strategic disadvantage.
-  -
   - ### Convergent Technology Adoption
-    id:: technology-adoption-convergence
 
     #### Synergistic Adoption
     - AI + Robotics: Intelligent autonomous systems
@@ -283,67 +253,69 @@
     - Technologies adopt faster when integrated
     - Cross-domain use cases demonstrate value
     - Ecosystem effects reduce individual adoption barriers
-  -
   - ### Related Concepts
-    id:: technology-adoption-related
     - [[Digital Transformation]] - Broader organizational change
     - [[Innovation Diffusion]] - Spread of innovations through society
     - [[Change Management]] - Process of managing organizational change
     - [[AI Governance]] - Frameworks for responsible AI adoption
     - [[Social Impact]] - Societal effects of technology adoption
     - [[Standards]] - Enablers of interoperability and adoption
-## Academic Context
+  ## Academic Context
 
-- Technology adoption refers to the process by which individuals or organisations accept, integrate, and utilise new technologies.
+  - Technology adoption refers to the process by which individuals or organisations accept, integrate, and utilise new technologies.
   - This process is influenced by multiple interrelated factors including performance expectancy (perceived benefits), effort expectancy (ease of use), social influence (peer and institutional pressures), and facilitating conditions (infrastructure and support) [1].
   - The academic foundation is strongly rooted in diffusion of innovations theory, notably Everett Rogers’s model, which categorises adopters into innovators, early adopters, early majority, late majority, and laggards, highlighting the social dynamics of adoption [2].
   - Research emphasises that adoption is not merely a technical challenge but a socio-organisational one, requiring alignment of technology capabilities with user attitudes and institutional contexts.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption is accelerating, driven by digital transformation imperatives and the integration of artificial intelligence (AI) across sectors.
+  - Industry adoption is accelerating, driven by digital transformation imperatives and the integration of artificial intelligence (AI) across sectors.
   - Leading organisations globally and in the UK are embedding AI, cloud computing, and automation technologies to enhance operational efficiency and customer engagement [3].
   - In the UK, sectors such as finance, healthcare, and manufacturing are prominent adopters, with enterprise platforms evolving to support hybrid workforces and data-driven decision-making [4].
-- Technical capabilities have advanced, with AI-powered tools offering predictive analytics, natural language processing, and automation; however, challenges remain in interoperability, data privacy, and user trust.
-- Standards and frameworks increasingly focus on responsible innovation, emphasising ethical AI, transparency, and inclusivity as gatekeepers to adoption success [3].
+  - Technical capabilities have advanced, with AI-powered tools offering predictive analytics, natural language processing, and automation; however, challenges remain in interoperability, data privacy, and user trust.
+  - Standards and frameworks increasingly focus on responsible innovation, emphasising ethical AI, transparency, and inclusivity as gatekeepers to adoption success [3].
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic sources include:
+  - Key academic sources include:
   - Venkatesh, V., Thong, J.Y.L., & Xu, X. (2016). "Unified Theory of Acceptance and Use of Technology: A Synthesis and the Road Ahead." *Journal of the Association for Information Systems*, 17(5), 328-376. DOI: 10.17705/1jais.00428
   - Rogers, E.M. (2003). *Diffusion of Innovations* (5th ed.). Free Press.
   - Si Tou, W.K.J., & Vezzani, A. (2025). *Technology and Innovation Report 2025: Inclusive Artificial Intelligence for Development*. United Nations Conference on Trade and Development (UNCTAD). [5]
   - Albeit not a bedtime read, these papers provide the backbone for understanding how and why technology adoption succeeds or stumbles.
-- Ongoing research explores the interplay between human factors and technological complexity, with a growing focus on equitable access and sustainability of technology use [1].
+  - Ongoing research explores the interplay between human factors and technological complexity, with a growing focus on equitable access and sustainability of technology use [1].
 
-## UK Context
+  ## UK Context
 
-- The UK has been proactive in fostering technology adoption through government initiatives such as the UK Digital Strategy and investments in AI research hubs.
-- North England, particularly cities like Manchester, Leeds, Newcastle, and Sheffield, has emerged as a vibrant innovation ecosystem.
+  - The UK has been proactive in fostering technology adoption through government initiatives such as the UK Digital Strategy and investments in AI research hubs.
+  - North England, particularly cities like Manchester, Leeds, Newcastle, and Sheffield, has emerged as a vibrant innovation ecosystem.
   - Manchester’s MediaCityUK and Leeds Digital Hub are notable for nurturing tech startups and digital skills development.
   - Newcastle and Sheffield are advancing smart city projects and industrial digitalisation, respectively, blending traditional industries with cutting-edge technologies.
-- Regional case studies reveal that successful adoption often hinges on localised support networks, tailored training programmes, and collaboration between academia, industry, and government.
+  - Regional case studies reveal that successful adoption often hinges on localised support networks, tailored training programmes, and collaboration between academia, industry, and government.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends include the rise of responsible AI adoption frameworks, increased emphasis on user-centric design, and the integration of augmented reality (AR) and virtual reality (VR) in enterprise settings.
-- Anticipated challenges involve overcoming digital divides, ensuring cybersecurity resilience, and managing the ethical implications of pervasive AI.
-- Research priorities focus on developing comprehensive models that integrate technical, social, and organisational dimensions to foster sustainable and inclusive technology adoption.
+  - Emerging trends include the rise of responsible AI adoption frameworks, increased emphasis on user-centric design, and the integration of augmented reality (AR) and virtual reality (VR) in enterprise settings.
+  - Anticipated challenges involve overcoming digital divides, ensuring cybersecurity resilience, and managing the ethical implications of pervasive AI.
+  - Research priorities focus on developing comprehensive models that integrate technical, social, and organisational dimensions to foster sustainable and inclusive technology adoption.
 
-## References
+  ## References
 
-1. Al-Emran, M., Mezhuyev, V., & Kamaludin, A. (2024). "Key factors influencing educational technology adoption in higher education: A systematic review." *PLoS ONE*, 19(3), e0281234. https://doi.org/10.1371/journal.pone.0281234  
-2. Rogers, E.M. (2003). *Diffusion of Innovations* (5th ed.). New York: Free Press.  
-3. McKinsey & Company. (2025). "The top trends in tech." McKinsey Technology Insights.  
-4. Omdia. (2025). "Market Landscape: Enterprise Technology Adoption in 2025." Omdia Reports.  
-5. Si Tou, W.K.J., & Vezzani, A. (2025). *Technology and Innovation Report 2025: Inclusive Artificial Intelligence for Development*. United Nations Conference on Trade and Development (UNCTAD).  
+  1. Al-Emran, M., Mezhuyev, V., & Kamaludin, A. (2024). "Key factors influencing educational technology adoption in higher education: A systematic review." *PLoS ONE*, 19(3), e0281234. https://doi.org/10.1371/journal.pone.0281234  
+  2. Rogers, E.M. (2003). *Diffusion of Innovations* (5th ed.). New York: Free Press.  
+  3. McKinsey & Company. (2025). "The top trends in tech." McKinsey Technology Insights.  
+  4. Omdia. (2025). "Market Landscape: Enterprise Technology Adoption in 2025." Omdia Reports.  
+  5. Si Tou, W.K.J., & Vezzani, A. (2025). *Technology and Innovation Report 2025: Inclusive Artificial Intelligence for Development*. United Nations Conference on Trade and Development (UNCTAD).  
 
-*If technology adoption were a dance, the UK’s North England is certainly learning the steps—sometimes with a bit of a stumble, but always moving forward.*
+  *If technology adoption were a dance, the UK’s North England is certainly learning the steps—sometimes with a bit of a stumble, but always moving forward.*
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[Rogers Diffusion of Innovations]], [[McKinsey]], [[Gartner Hype Cycle]], [[ISO/IEC TR 24030]]
+  - migration-date:: 2026-04-26T00:00:00Z

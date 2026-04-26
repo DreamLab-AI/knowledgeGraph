@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: omnidirectionalrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#OmnidirectionalRobot
+uri:: urn:visionclaw:concept:robotics:omnidirectional-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:omnidirectional-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Omnidirectional Robot
+content-hash:: sha256-12-7b4e4020b38c
+legacy-term-id:: RB-0116
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0116
-    - filename-history:: ["RB-0116-omnidirectionalrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0116
-    - preferred-term:: Omnidirectional Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.
 
-  - **Definition**
-    - definition:: Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:OmnidirectionalRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:OmnidirectionalRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Wheeled Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Wheeled Robot]]
+- ### Content
+  Omnidirectional Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :OmnidirectionalRobot))
-      (SubClassOf :OmnidirectionalRobot :WheeledRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :OmnidirectionalRobot "Omnidirectional Robot"@en)
-      (AnnotationAssertion rdfs:comment :OmnidirectionalRobot
-        "Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion."@en)
-      ```
-
-- ## About Omnidirectional Robot
-  Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.
-  
-  A wheeled robot capable of instantaneous motion in any direction.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9657-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9657
-	- preferred-term:: Network Quality Metric
-	- source-domain:: mv
-	- owl:class:: mv:NetworkQualityMetric
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Network Quality Metric is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#NetworkQualityMetric
+uri:: urn:visionclaw:concept:spatial-computing:network-quality-metric
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:network-quality-metric
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Network Quality Metric
+content-hash:: sha256-12-5691ec709ed1
+legacy-term-id:: MV-9657
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Network Quality Metric is a concept within the metaverse domain. Further enrichment pending.
 
-Network Quality Metric represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:NetworkQualityMetric
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Network Quality Metric represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

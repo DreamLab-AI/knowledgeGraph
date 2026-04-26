@@ -1,38 +1,44 @@
 {
-  "id": "Virtual Network",
+  "id": "virtual-network",
   "title": "Virtual Network",
-  "content": "- ### OntologyBlock\n  id:: virtual-network-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10133\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Network\n\t- status:: active\n\t- definition:: A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.\n\t- owl:class:: mv:VirtualNetwork\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Network Infrastructure]]\n\t\t- is-associated-with:: [[5G Network Slice]]\n\t\t- related-to:: [[Software Defined Networking]]\n\t\t- related-to:: [[Cloud Computing]]\n\t  id:: virtual-network-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual networks enable isolated, configurable communication infrastructure for metaverse and cloud applications. Network slicing in 5G allows dedicated virtual networks optimized for specific use cases like ultra-low latency XR experiences. SDN and NFV technologies provide flexible, programmable network management.\n- ## Technical Details\n\t- ### Network Types\n\t\t- **VLANs**: Layer 2 network segmentation\n\t\t- **VPNs**: Encrypted tunnels over public networks\n\t\t- **Overlay Networks**: Virtual topologies over physical infrastructure\n\t\t- **Network Slices**: 5G dedicated virtual network segments\n\t- ### Key Technologies\n\t\t- Software Defined Networking (SDN)\n\t\t- Network Function Virtualization (NFV)\n\t\t- Virtual switches and routers\n\t\t- Container networking (CNI)\n\t- ### Performance Features\n\t\t- Quality of Service (QoS) guarantees\n\t\t- Bandwidth allocation and management\n\t\t- Latency optimization\n\t\t- Traffic isolation and security\n- ## Applications\n\t- Metaverse platform connectivity\n\t- Multi-tenant cloud isolation\n\t- Enterprise branch connectivity\n\t- Gaming and streaming optimization\n\t- IoT device management",
-  "backlinks": [
-    "6G Network Slice"
-  ],
+  "content": "- ### Definition\n  - A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualNetwork\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Network Infrastructure]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual networks enable isolated, configurable communication infrastructure for metaverse and cloud applications. Network slicing in 5G allows dedicated virtual networks optimized for specific use cases like ultra-low latency XR experiences. SDN and NFV technologies provide flexible, programmable network management.\n  - ## Technical Details\n  - ### Network Types\n\t\t- **VLANs**: Layer 2 network segmentation\n\t\t- **VPNs**: Encrypted tunnels over public networks\n\t\t- **Overlay Networks**: Virtual topologies over physical infrastructure\n\t\t- **Network Slices**: 5G dedicated virtual network segments\n  - ### Key Technologies\n\t\t- Software Defined Networking (SDN)\n\t\t- Network Function Virtualization (NFV)\n\t\t- Virtual switches and routers\n\t\t- Container networking (CNI)\n  - ### Performance Features\n\t\t- Quality of Service (QoS) guarantees\n\t\t- Bandwidth allocation and management\n\t\t- Latency optimization\n\t\t- Traffic isolation and security\n  - ## Applications\n  - Metaverse platform connectivity\n  - Multi-tenant cloud isolation\n  - Enterprise branch connectivity\n  - Gaming and streaming optimization\n  - IoT device management\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Software Defined Networking",
     "Network Infrastructure",
-    "metaverse",
-    "Cloud Computing",
-    "5G Network Slice"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-network",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualNetwork",
+    "content_hash": "sha256-12-b28c55e7320f",
+    "legacy_term_id": "MV-10133",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-network",
+    "schema_version": "v2",
     "term_id": "MV-10133",
     "preferred_term": "Virtual Network",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualNetwork",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualNetwork",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualNetwork",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Network Infrastructure"
@@ -45,28 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-associated-with": [
-        "5G Network Slice"
-      ],
-      "related-to": [
-        "Software Defined Networking",
-        "Cloud Computing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: decisiontransparency-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#DecisionTransparency
+uri:: urn:visionclaw:concept:artificial-intelligence:decision-transparency
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:decision-transparency
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Decision Transparency
+content-hash:: sha256-12-44c55fefb302
+legacy-term-id:: AI-0822
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0822
-    - filename-history:: ["AI-0822-decisiontransparency.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0822
-    - preferred-term:: Decision Transparency
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Transparency of AI decision-making processes.
 
-  - **Definition**
-    - definition:: Transparency of AI decision-making processes.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:DecisionTransparency
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:DecisionTransparency
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - <!-- No relationships defined -->
+  - bridges-to:: [[Blockchain]], [[Digital Twin]]
 
-  - #### Relationships
+- ### Content
+  Decision Transparency — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DecisionTransparency))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DecisionTransparency "Decision Transparency"@en)
-      (AnnotationAssertion rdfs:comment :DecisionTransparency
-        "Transparency of AI decision-making processes."@en)
-      ```
-
-- ## About Decision Transparency
-  Transparency of AI decision-making processes.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,44 +1,53 @@
 {
-  "id": "Carbon Neutrality Planning",
+  "id": "carbon-neutrality-planning",
   "title": "Carbon Neutrality Planning",
-  "content": "- ### OntologyBlock\n  id:: carbon-neutrality-planning-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9811\n\t- source-domain:: mv\n\t- preferred-term:: Carbon Neutrality Planning\n\t- definition:: The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.\n\t- status:: active\n\t- owl:class:: mv:CarbonNeutralityPlanning\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: carbon-neutrality-planning-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Strategic Planning]]\n\t\t- enables:: [[Decarbonization]], [[Net Zero Achievement]], [[Climate Action]]\n\t\t- requires:: [[GHG Baseline]], [[Reduction Targets]], [[Implementation Strategy]]\n\t\t- related-to:: [[Carbon Accounting]], [[Science Based Targets]], [[ESG Strategy]]\n- ## Technical Details\n\t- **Roadmap Components**:\n\t\t- GHG balance sheet (Scopes 1-3)\n\t\t- Science-based reduction targets (1.5C aligned)\n\t\t- Intermediate targets (2030, 2040)\n\t\t- Net-zero target year (2050 or earlier)\n\t\t- Action plans for each emission source\n\t- **Framework Standards**:\n\t\t- **SBTi Corporate Net-Zero Standard**: Prioritizes reductions before offsets\n\t\t- **ISSB/ESRS**: Regulatory reporting requirements\n\t\t- **Paris Agreement**: 1.5C compatibility requirement\n\t- **Key Principles**:\n\t\t- Reduce emissions first (90%+)\n\t\t- Neutralize only residual emissions (final 10%)\n\t\t- Use permanent carbon removal for neutralization\n\t\t- Report progress at regular intervals\n\t- **Corporate Examples**: United Airlines (SAF focus), Stellantis (2038 target), Google (22 GW clean energy)\n- ## Applications\n\t- Corporate decarbonization strategy\n\t- Regulatory compliance planning\n\t- Investor ESG reporting\n\t- Supply chain transformation\n\t- Operational efficiency improvement",
+  "content": "- ### Definition\n  - The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CarbonNeutralityPlanning\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Strategic Planning]]\n  - requires:: [[GHG Baseline]], [[Reduction Targets]], [[Implementation Strategy]]\n  - enables:: [[Decarbonization]], [[Net Zero Achievement]], [[Climate Action]]\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Roadmap Components**:\n\t\t- GHG balance sheet (Scopes 1-3)\n\t\t- Science-based reduction targets (1.5C aligned)\n\t\t- Intermediate targets (2030, 2040)\n\t\t- Net-zero target year (2050 or earlier)\n\t\t- Action plans for each emission source\n  - **Framework Standards**:\n\t\t- **SBTi Corporate Net-Zero Standard**: Prioritizes reductions before offsets\n\t\t- **ISSB/ESRS**: Regulatory reporting requirements\n\t\t- **Paris Agreement**: 1.5C compatibility requirement\n  - **Key Principles**:\n\t\t- Reduce emissions first (90%+)\n\t\t- Neutralize only residual emissions (final 10%)\n\t\t- Use permanent carbon removal for neutralization\n\t\t- Report progress at regular intervals\n  - **Corporate Examples**: United Airlines (SAF focus), Stellantis (2038 target), Google (22 GW clean energy)\n  - ## Applications\n  - Corporate decarbonization strategy\n  - Regulatory compliance planning\n  - Investor ESG reporting\n  - Supply chain transformation\n  - Operational efficiency improvement\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Environmental Impact Metric"
   ],
   "wiki_links": [
-    "Reduction Targets",
-    "metaverse",
+    "Blockchain",
+    "Climate Action",
+    "Decarbonization",
     "GHG Baseline",
     "Implementation Strategy",
-    "Science Based Targets",
-    "Climate Action",
-    "Carbon Accounting",
-    "Strategic Planning",
-    "ESG Strategy",
     "Net Zero Achievement",
-    "Decarbonization"
+    "Reduction Targets",
+    "Strategic Planning",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:carbon-neutrality-planning",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CarbonNeutralityPlanning",
+    "content_hash": "sha256-12-d1dbc2d5ab06",
+    "legacy_term_id": "MV-9811",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:carbon-neutrality-planning",
+    "schema_version": "v2",
     "term_id": "MV-9811",
     "preferred_term": "Carbon Neutrality Planning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CarbonNeutralityPlanning",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CarbonNeutralityPlanning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CarbonNeutralityPlanning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Strategic Planning"
@@ -57,28 +66,19 @@
       "Climate Action"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Carbon Accounting",
-        "Science Based Targets",
-        "ESG Strategy"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

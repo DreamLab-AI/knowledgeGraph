@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: pretrainedmodel-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#PretrainedModel
+uri:: urn:visionclaw:concept:artificial-intelligence:pretrained-model
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:pretrained-model
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Pretrained Model
+content-hash:: sha256-12-821b921bca8a
+legacy-term-id:: AI-0875
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0875
-    - filename-history:: ["AI-0875-pretrainedmodel.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0875
-    - preferred-term:: Pretrained Model
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Pretrained Model is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:PretrainedModel
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:PretrainedModel
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Model]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Model]]
+- ### Content
+  Pretrained Model — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PretrainedModel))
-      (SubClassOf :PretrainedModel :Model)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PretrainedModel "Pretrained Model"@en)
-      ```
-
-- ## About Pretrained Model
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,51 +1,37 @@
-- ### OntologyBlock
-  id:: agreement-protocol-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#AgreementProtocol
+uri:: urn:visionclaw:concept:blockchain:agreement-protocol
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:agreement-protocol
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Agreement Protocol
+content-hash:: sha256-12-3003dd059c18
+legacy-term-id:: PC-0007
+status:: complete
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-08T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - ontology:: true
-    - term-id:: PC-0007
-    - preferred-term:: Agreement Protocol
-    - source-domain:: bc
-    - status:: complete
-    - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-08
+- ### Definition
+  - An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomization, synchrony assumptions, economic incentives, and probabilistic finality.
 
-  - **Definition**
-    - definition:: An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants. Agreement protocols constitute the theoretical foundation for blockchain consensus mechanisms, formalizing the conditions under which distributed parties can coordinate without trusted intermediaries. These protocols must satisfy fundamental properties: safety (also called consistency or agreement—all honest nodes agree on the same value), liveness (also called termination—the protocol eventually completes), and validity (the agreed value satisfies specified constraints, such as being proposed by some participant). The design of agreement protocols navigates fundamental impossibility results including the FLP theorem (impossibility of deterministic consensus in asynchronous systems with crash failures) and Byzantine Agreement bounds (requiring at least 3f+1 nodes to tolerate f Byzantine failures). Practical blockchain agreement protocols employ various techniques to circumvent these impossibilities including randomization, synchrony assumptions, economic incentives, and probabilistic finality.
-    - maturity:: mature
-    - source:: [[Byzantine Agreement Papers]], [[FLP Impossibility]], [[Paxos and Raft Consensus]], [[PBFT Algorithm]]
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:AgreementProtocol
+  - owl-role:: Concept
+  - owl-inferred:: ConceptualConcept
+  - belongs-to-domain:: [[BlockchainDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:AgreementProtocol
-    - owl:role:: Concept
-    - owl:inferred-class:: ConceptualConcept
-    - belongsToDomain:: [[BlockchainDomain]]
-    - implementedInLayer:: [[ConceptualLayer]]
+- ### Relationships
+  - is-subclass-of:: [[Distributed Protocol]]
+  - bridges-to:: [[Telecollaboration]]
 
-  - #### Relationships
-    id:: agreement-protocol-relationships
-    - is-subclass-of:: [[Distributed Protocol]]
-
-  - #### OWL Axioms
-    id:: agreement-protocol-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(:=<http://metaverse-ontology.org/blockchain#>)
-Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-Prefix(xml:=<http://www.w3.org/XML/1998/namespace>)
-Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-Prefix(dct:=<http://purl.org/dc/terms/>)
-Prefix(skos:=<http://www.w3.org/2004/02/skos/core#>)
-
-Ontology(<http://metaverse-ontology.org/blockchain/PC-0007>
-  Import(<http://metaverse-ontology.org/blockchain/core>)
-  Import(<http://metaverse-ontology.org/blockchain/PC-0001>)
-  Import(<http://metaverse-ontology.org/blockchain/PC-0006>)
+- ### Content
 
   ## Class Declaration
   Declaration(Class(:AgreementProtocol))
@@ -129,11 +115,10 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0007>
 
   SubClassOf(:AgreementProtocol
     (DataMinCardinality 1 :ensuresLiveness))
-)
+  )
       ```
 
-- ## About Agreement Protocol
-  id:: agreement-protocol-about
+  - ## About Agreement Protocol
 
   - Agreement Protocols represent the theoretical heart of blockchain consensus, formalizing how distributed parties can coordinate despite the inherent challenges of unreliable networks and potentially malicious participants. The study of agreement protocols originated in the 1980s with Lamport, Shostak, and Pease's Byzantine Generals Problem, which asked: how can generals surrounding a city coordinate an attack when some may be traitors sending conflicting messages? This abstract problem precisely captures the blockchain challenge: coordinating agreement when participants may behave arbitrarily.
 
@@ -142,7 +127,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0007>
   - Agreement protocols differ in their synchrony assumptions (synchronous systems have known message delays; asynchronous have unbounded delays; partially synchronous have eventually bounded delays), failure models (crash faults vs. Byzantine faults), and finality guarantees (deterministic vs. probabilistic). Bitcoin's Nakamoto consensus provides probabilistic finality—confidence increases with subsequent blocks but is never 100%. BFT protocols like Tendermint provide instant finality—once decided, the agreement cannot be reversed. This trade-off between performance and finality guarantees shapes blockchain design choices across the ecosystem.
 
   - ### Key Characteristics
-    id:: agreement-protocol-characteristics
     - **Safety Property**: All honest nodes agree on the same value
     - **Liveness Property**: Protocol eventually terminates with a decision
     - **Validity Property**: Agreed value satisfies specified constraints
@@ -152,7 +136,6 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0007>
     - **Communication Rounds**: Number of message exchanges required for agreement
 
   - ### Subclasses
-    id:: agreement-protocol-subclasses
     - [[Consensus Mechanism]] (PC-0009, BC-0051) - Blockchain-specific agreement protocols
     - [[Byzantine Agreement]] - Agreement tolerating arbitrary failures
     - [[Crash Fault Tolerant Agreement]] - Agreement tolerating only crash failures
@@ -162,61 +145,64 @@ Ontology(<http://metaverse-ontology.org/blockchain/PC-0007>
     - [[BFT Consensus]] - Byzantine fault tolerant agreement family
 
   - ### Use in Ontology
-    id:: agreement-protocol-ontology-use
     - **Consensus Foundation**: Theoretical grounding for blockchain consensus mechanisms
     - **Safety/Liveness Semantics**: Formal properties defining correctness
     - **Fault Tolerance Framework**: Classification by failure models and thresholds
     - **Finality Types**: Distinguishes deterministic vs. probabilistic guarantees
     - **Performance Metrics**: Round complexity, communication overhead, time to finality
-I appreciate the detailed request, but I must clarify an important limitation: you've asked me to review and improve an ontology entry, yet no current definition has been provided in your query. The "CURRENT DEFINITION" section references a filename (Agreement Protocol.md) but contains no actual content to review or improve.
+  I appreciate the detailed request, but I must clarify an important limitation: you've asked me to review and improve an ontology entry, yet no current definition has been provided in your query. The "CURRENT DEFINITION" section references a filename (Agreement Protocol.md) but contains no actual content to review or improve.
 
-To provide the comprehensive, technically rigorous update you've requested—complete with UK context, North England examples, full academic citations, and Logseq formatting—I would need to see the existing definition first.
+  To provide the comprehensive, technically rigorous update you've requested—complete with UK context, North England examples, full academic citations, and Logseq formatting—I would need to see the existing definition first.
 
-However, I can offer what the improved entry *should* contain based on current information:
+  However, I can offer what the improved entry *should* contain based on current information:
 
-## Academic Context
+  ## Academic Context
 
-- Agreement protocols represent foundational mechanisms in distributed systems engineering
+  - Agreement protocols represent foundational mechanisms in distributed systems engineering
   - Enable consensus among independent nodes despite potential failures, network partitions, or asynchronous communication
   - Critical for maintaining consistency and reliability in decentralised environments
   - Evolved from early consensus theory through contemporary blockchain implementations
-- Key protocol families include consensus protocols (Paxos, Raft), atomic broadcast mechanisms, and two-phase commit protocols[1]
+  - Key protocol families include consensus protocols (Paxos, Raft), atomic broadcast mechanisms, and two-phase commit protocols[1]
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption spans financial services, cloud infrastructure, and blockchain networks
+  - Industry adoption spans financial services, cloud infrastructure, and blockchain networks
   - Consensus mechanisms (Proof-of-Work, Proof-of-Stake) now standard in cryptocurrency protocols[3][4]
   - Enterprise implementations in distributed ledger technology across banking and supply chain sectors
   - UK financial technology sector increasingly adopts agreement protocols for settlement systems
-- Technical capabilities centre on fault tolerance, consistency guarantees, and Byzantine resilience
+  - Technical capabilities centre on fault tolerance, consistency guarantees, and Byzantine resilience
   - Modern protocols handle network partitions whilst maintaining data integrity[1]
   - Scalability remains an active research concern as node counts increase
-- Standards emerging through ISO/IEC frameworks and industry consortia
+  - Standards emerging through ISO/IEC frameworks and industry consortia
 
-## Research & Literature
+  ## Research & Literature
 
-- Lamport, L. (1998). "The Part-Time Parliament." *ACM Transactions on Computer Systems*, 16(2), 133–169
-- Ongaro, D., & Ousterhout, J. (2014). "In Search of an Understandable Consensus Algorithm." *USENIX Annual Technical Conference*
-- Contemporary blockchain protocol specifications (Bitcoin, Ethereum whitepapers and technical documentation)
+  - Lamport, L. (1998). "The Part-Time Parliament." *ACM Transactions on Computer Systems*, 16(2), 133–169
+  - Ongaro, D., & Ousterhout, J. (2014). "In Search of an Understandable Consensus Algorithm." *USENIX Annual Technical Conference*
+  - Contemporary blockchain protocol specifications (Bitcoin, Ethereum whitepapers and technical documentation)
 
-## UK Context
+  ## UK Context
 
-- Bank of England's work on distributed ledger technology for settlement systems
-- UK Financial Conduct Authority guidance on blockchain infrastructure
-- Academic research at Russell Group institutions (Cambridge, Oxford, Imperial College London)
+  - Bank of England's work on distributed ledger technology for settlement systems
+  - UK Financial Conduct Authority guidance on blockchain infrastructure
+  - Academic research at Russell Group institutions (Cambridge, Oxford, Imperial College London)
 
-## Future Directions
+  ## Future Directions
 
-- Quantum-resistant consensus mechanisms
-- Energy-efficient alternatives to Proof-of-Work
-- Cross-chain interoperability protocols
+  - Quantum-resistant consensus mechanisms
+  - Energy-efficient alternatives to Proof-of-Work
+  - Cross-chain interoperability protocols
 
-**Please provide the existing definition you wish improved, and I shall deliver the complete, refined entry in the format specified.**
+  **Please provide the existing definition you wish improved, and I shall deliver the complete, refined entry in the format specified.**
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[Byzantine Agreement Papers]], [[FLP Impossibility]], [[Paxos and Raft Consensus]], [[PBFT Algorithm]]
+  - migration-date:: 2026-04-26T00:00:00Z

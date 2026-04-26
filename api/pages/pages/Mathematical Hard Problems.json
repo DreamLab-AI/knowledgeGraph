@@ -1,38 +1,47 @@
 {
-  "id": "Mathematical Hard Problems",
+  "id": "mathematical-hard-problems",
   "title": "Mathematical Hard Problems",
-  "content": "- ### OntologyBlock\n  id:: mathematical-hard-problems-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9957\n\t- source-domain:: mv\n\t- preferred-term:: Mathematical Hard Problems\n\t- status:: active\n\t- owl:class:: mv:MathematicalHardProblems\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.\n\t- #### Relationships\n\t  id:: mathematical-hard-problems-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Cryptographic Security]]\n\t\t- related-to:: [[Post-Quantum Cryptography]]\n\t\t- related-to:: [[Blockchain Security]]\n\t\t- enables:: [[Secure Digital Systems]]\n\n## Cryptographic Foundations\n\n### Core Principle\n- Hardness assumptions underpin cryptography\n- Ensure encryption cannot be broken\n- Computational intractability\n- Security guarantees\n- Provable security\n\n### Traditional Problems\n- Integer factorisation\n- Discrete logarithms\n- Elliptic curve problems\n- RSA security basis\n- ECC foundations\n\n## Quantum Vulnerability\n\n### Shor's Algorithm\n- Factorisation threat\n- Discrete log vulnerability\n- ECC compromise\n- Polynomial time solutions\n- Blockchain risk\n\n### Impact Areas\n- Current cryptography\n- Bitcoin security\n- Smart contracts\n- Digital signatures\n- Key exchange\n\n## Post-Quantum Cryptography\n\n### Lattice-Based Problems\n- Shortest Vector Problem (SVP)\n- Learning With Errors (LWE)\n- Ring-LWE variants\n- Module-LWE\n- Quantum resistance\n\n### Lattice Advantages\n- Strong resistance\n- Theoretical foundation\n- Practical implementations\n- NIST standardisation\n- Industry adoption\n\n## Alternative Approaches\n\n### Hash-Based Cryptography\n- No exploitable structure\n- Quantum-safe design\n- Brute force resistance\n- Doubled hash sizes\n- Proven security\n\n### Code-Based Cryptography\n- Random linear codes\n- Syndrome Decoding Problem\n- NP-hard classification\n- Long-standing security\n- McEliece system\n\n### Isogeny-Based\n- Supersingular elliptic curves\n- Isogeny path problems\n- Compact key sizes\n- SIDH, SIKE schemes\n- Research active\n\n## Implementation Challenges\n\n### Performance Limitations\n- 4-10x memory increase\n- Computational overhead\n- Key size explosion\n- Bandwidth requirements\n- Processing speed\n\n### Blockchain Constraints\n- 78% cite 10KB+ keys\n- Network bottleneck\n- Transaction size\n- Storage requirements\n- Verification speed\n\n### Developer Expertise\n- 76% expertise gap\n- Cryptography complexity\n- Blockchain knowledge\n- Implementation errors\n- Security auditing\n\n## Problem Hardness Classes\n\n### NP-Hard Problems\n- Travelling salesman\n- Boolean satisfiability\n- Graph colouring\n- Subset sum\n- Knapsack problem\n\n### Computational Complexity\n- P vs NP question\n- Polynomial time\n- Exponential scaling\n- Reduction proofs\n- Hardness assumptions\n\n## Research Directions\n\n### New Problem Search\n- Harder problems needed\n- Quantum-resistant\n- Classical-resistant\n- Efficient verification\n- Compact proofs\n\n### Hybrid Approaches\n- Classical + quantum-safe\n- Layered security\n- Transition strategies\n- Backward compatibility\n- Future-proofing\n\n## Blockchain Applications\n\n### Current Usage\n- Bitcoin mining (SHA-256)\n- Ethereum signatures\n- Smart contract security\n- Consensus mechanisms\n- Digital identity\n\n### Future Requirements\n- Quantum-safe chains\n- Upgraded protocols\n- Migration paths\n- Asset protection\n- Long-term security\n\n## Security Standards\n\n### NIST Post-Quantum\n- CRYSTALS-Kyber\n- CRYSTALS-Dilithium\n- FALCON\n- SPHINCS+\n- Standardisation complete\n\n### Industry Adoption\n- Enterprise readiness\n- Transition planning\n- Crypto-agility\n- Algorithm updates\n- Compliance requirements\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:MathematicalHardProblems\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Cryptographic Security]]\n  - enables:: [[Secure Digital Systems]]\n\n- ### Content\n\n  ## Cryptographic Foundations\n\n  ### Core Principle\n  - Hardness assumptions underpin cryptography\n  - Ensure encryption cannot be broken\n  - Computational intractability\n  - Security guarantees\n  - Provable security\n\n  ### Traditional Problems\n  - Integer factorisation\n  - Discrete logarithms\n  - Elliptic curve problems\n  - RSA security basis\n  - ECC foundations\n\n  ## Quantum Vulnerability\n\n  ### Shor's Algorithm\n  - Factorisation threat\n  - Discrete log vulnerability\n  - ECC compromise\n  - Polynomial time solutions\n  - Blockchain risk\n\n  ### Impact Areas\n  - Current cryptography\n  - Bitcoin security\n  - Smart contracts\n  - Digital signatures\n  - Key exchange\n\n  ## Post-Quantum Cryptography\n\n  ### Lattice-Based Problems\n  - Shortest Vector Problem (SVP)\n  - Learning With Errors (LWE)\n  - Ring-LWE variants\n  - Module-LWE\n  - Quantum resistance\n\n  ### Lattice Advantages\n  - Strong resistance\n  - Theoretical foundation\n  - Practical implementations\n  - NIST standardisation\n  - Industry adoption\n\n  ## Alternative Approaches\n\n  ### Hash-Based Cryptography\n  - No exploitable structure\n  - Quantum-safe design\n  - Brute force resistance\n  - Doubled hash sizes\n  - Proven security\n\n  ### Code-Based Cryptography\n  - Random linear codes\n  - Syndrome Decoding Problem\n  - NP-hard classification\n  - Long-standing security\n  - McEliece system\n\n  ### Isogeny-Based\n  - Supersingular elliptic curves\n  - Isogeny path problems\n  - Compact key sizes\n  - SIDH, SIKE schemes\n  - Research active\n\n  ## Implementation Challenges\n\n  ### Performance Limitations\n  - 4-10x memory increase\n  - Computational overhead\n  - Key size explosion\n  - Bandwidth requirements\n  - Processing speed\n\n  ### Blockchain Constraints\n  - 78% cite 10KB+ keys\n  - Network bottleneck\n  - Transaction size\n  - Storage requirements\n  - Verification speed\n\n  ### Developer Expertise\n  - 76% expertise gap\n  - Cryptography complexity\n  - Blockchain knowledge\n  - Implementation errors\n  - Security auditing\n\n  ## Problem Hardness Classes\n\n  ### NP-Hard Problems\n  - Travelling salesman\n  - Boolean satisfiability\n  - Graph colouring\n  - Subset sum\n  - Knapsack problem\n\n  ### Computational Complexity\n  - P vs NP question\n  - Polynomial time\n  - Exponential scaling\n  - Reduction proofs\n  - Hardness assumptions\n\n  ## Research Directions\n\n  ### New Problem Search\n  - Harder problems needed\n  - Quantum-resistant\n  - Classical-resistant\n  - Efficient verification\n  - Compact proofs\n\n  ### Hybrid Approaches\n  - Classical + quantum-safe\n  - Layered security\n  - Transition strategies\n  - Backward compatibility\n  - Future-proofing\n\n  ## Blockchain Applications\n\n  ### Current Usage\n  - Bitcoin mining (SHA-256)\n  - Ethereum signatures\n  - Smart contract security\n  - Consensus mechanisms\n  - Digital identity\n\n  ### Future Requirements\n  - Quantum-safe chains\n  - Upgraded protocols\n  - Migration paths\n  - Asset protection\n  - Long-term security\n\n  ## Security Standards\n\n  ### NIST Post-Quantum\n  - CRYSTALS-Kyber\n  - CRYSTALS-Dilithium\n  - FALCON\n  - SPHINCS+\n  - Standardisation complete\n\n  ### Industry Adoption\n  - Enterprise readiness\n  - Transition planning\n  - Crypto-agility\n  - Algorithm updates\n  - Compliance requirements\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Post-Quantum Cryptography"
   ],
   "wiki_links": [
-    "Secure Digital Systems",
     "Cryptographic Security",
-    "Blockchain Security",
-    "metaverse",
-    "Post-Quantum Cryptography"
+    "Secure Digital Systems",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:mathematical-hard-problems",
+    "iri": "http://narrativegoldmine.com/spatial-computing#MathematicalHardProblems",
+    "content_hash": "sha256-12-2da9f2ec8d37",
+    "legacy_term_id": "MV-9957",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:mathematical-hard-problems",
+    "schema_version": "v2",
     "term_id": "MV-9957",
     "preferred_term": "Mathematical Hard Problems",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MathematicalHardProblems",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:MathematicalHardProblems",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:MathematicalHardProblems",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Cryptographic Security"
@@ -47,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Post-Quantum Cryptography",
-        "Blockchain Security"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

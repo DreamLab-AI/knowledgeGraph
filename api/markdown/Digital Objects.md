@@ -1,27 +1,49 @@
+iri:: http://narrativegoldmine.com/infrastructure#DigitalObjects
+uri:: urn:visionclaw:concept:infrastructure:digital-objects
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:digital-objects
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Digital Objects
+content-hash:: sha256-12-17be590ee1fd
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
-termID:: DO-2025-001
-qualityScore:: 0.92
-lastUpdated:: 2025-11-15
-tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 
-- #Public page
-	- automatically published
-- # [[Digital Objects]] & [[NFT|NFTs]]
-	- [[Non-fungible tokens]] are a whole 'class' of [[Digital assets]], separate and distinct from everything discussed to this point. They are generally[recognised inlaw](https://www.signaturelitigation.com/nfts-recognised-as-property-lavinia-deborah-osbourne-v-1-persons-unknown-2-ozone-networks-inc-trading-as-opensea/)as [[Digital property]] in their own right.[[moringiello2021property; @fairfield2021tokenized]] In the Initial Coin Offering (ICO) and [[Project tokens]] detailed earlier, and limiting this description to the [[Ethereum]] network for now, a project launching an [[ERC-20]] token commits contract code to the [[Blockchain]], and this contract then mediates the issuance and management of millions or billions of tokens associated with that project and its use case. [[ERC-20]](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) is a [fungible](https://en.wikipedia.org/wiki/Fungibility) token issuance. Each of the projects' tokens is interchangeable with any other token. They're all the same from the point of view of the user.
-	- Rather than the [[ERC-20]] contract type used for fungible [[Token issuance]], [[NFT|NFTs]] predominantly use the [[ERC-721]] protocol on [[Ethereum]] (just different instructions). It's the case that most [[NFT|NFTs]] in the 2024-2025 market maturation phase are algorithmically generated sets of themed art (so-called [[PFP-NFT|Profile Picture NFTs]]). Tens of thousands of distinct tokens are 'minted', each one being a complex transaction commitment to the [[Ethereum]] blockchain, along with its associated [[Gas fees]]. These minting events were much-hyped social occasions (before the 2024 market consolidation), and happened very quickly, with users clamouring to create art with randomly allocated features from the art schema associated with the project. Lucky winners could find themselves with an [[NFT]] art piece with more than an average number of 'rare' features. If the overall mint becomes more popular, then the secondary market for all of those mints goes up, and because of the [[Liquidity premium]], they can go up a lot. The perceived rarer mints go up a lot more. This whole process is [very energy intensive](https://memoakten.medium.com/the-unreasonable-ecological-cost-of-cryptoart-2221d3eb2053) on the chain, and the vast majority of these projects simply trend to zero value. In response to scalability concerns, the [[Ethereum Foundation]] has proposed solutions to make [[NFT minting]] more efficient. Modern improvements include batch minting protocols allowing multiple tokens in single transactions.
-	- The [[Ethereum]] Foundation provides their view of [[NFT|NFTs]] on their website and it's a useful primer. On that page, they detail some of the use cases, as listed below, with a critique added:
+- ### Definition
+  - Digital Objects is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:DigitalObjects
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+  - bridges-to:: [[Blockchain]] (bc)
+- ### Content
+  - #Public page
+  - automatically published
+  - # [[Digital Objects]] & [[NFT|NFTs]]
+  - [[Non-fungible tokens]] are a whole 'class' of [[Digital assets]], separate and distinct from everything discussed to this point. They are generally[recognised inlaw](https://www.signaturelitigation.com/nfts-recognised-as-property-lavinia-deborah-osbourne-v-1-persons-unknown-2-ozone-networks-inc-trading-as-opensea/)as [[Digital property]] in their own right.[[moringiello2021property; @fairfield2021tokenized]] In the Initial Coin Offering (ICO) and [[Project tokens]] detailed earlier, and limiting this description to the [[Ethereum]] network for now, a project launching an [[ERC-20]] token commits contract code to the [[Blockchain]], and this contract then mediates the issuance and management of millions or billions of tokens associated with that project and its use case. [[ERC-20]](https://ethereum.org/en/developers/docs/standards/tokens/erc-20/) is a [fungible](https://en.wikipedia.org/wiki/Fungibility) token issuance. Each of the projects' tokens is interchangeable with any other token. They're all the same from the point of view of the user.
+  - Rather than the [[ERC-20]] contract type used for fungible [[Token issuance]], [[NFT|NFTs]] predominantly use the [[ERC-721]] protocol on [[Ethereum]] (just different instructions). It's the case that most [[NFT|NFTs]] in the 2024-2025 market maturation phase are algorithmically generated sets of themed art (so-called [[PFP-NFT|Profile Picture NFTs]]). Tens of thousands of distinct tokens are 'minted', each one being a complex transaction commitment to the [[Ethereum]] blockchain, along with its associated [[Gas fees]]. These minting events were much-hyped social occasions (before the 2024 market consolidation), and happened very quickly, with users clamouring to create art with randomly allocated features from the art schema associated with the project. Lucky winners could find themselves with an [[NFT]] art piece with more than an average number of 'rare' features. If the overall mint becomes more popular, then the secondary market for all of those mints goes up, and because of the [[Liquidity premium]], they can go up a lot. The perceived rarer mints go up a lot more. This whole process is [very energy intensive](https://memoakten.medium.com/the-unreasonable-ecological-cost-of-cryptoart-2221d3eb2053) on the chain, and the vast majority of these projects simply trend to zero value. In response to scalability concerns, the [[Ethereum Foundation]] has proposed solutions to make [[NFT minting]] more efficient. Modern improvements include batch minting protocols allowing multiple tokens in single transactions.
+  - The [[Ethereum]] Foundation provides their view of [[NFT|NFTs]] on their website and it's a useful primer. On that page, they detail some of the use cases, as listed below, with a critique added:
 		- [[Digital content]]; this is the dominant use case in 2025. Much more on this later.
 		- [[Gaming NFTs]]; again more on this later, it's an obvious enough use case but [[Complex policies]] in the intersection of [[Games]] and [[Cryptocurrency]] have influenced adoption curves.
 		- [[Domain names]]; this is starting to reach mainstream applications in 2024-2025, with decentralized domain registries emerging.
 		- [[Physical items]]; seemed like a clear over-reach as the transfer of the [[NFT]] does not imply the transfer of the object, but this is emerging as an important use case.
 		- [[Digital investments]] and [[Collateral]]; while this was an emergent option in the space, historical market cycles have shown volatility. [[Liquidity]] providers and [[Risk management]] in [[Cryptocurrency]] continue to mature in 2025.
-	- Moving away from [[Ethereum]], [[NFT|NFTs]] can be minted on most of the other [[Layer 1 blockchains]]. [[Solana]] is a notable example. [[Solana]] is centralized compared to [[Ethereum]], but thanks to that it's faster and cheaper to mint [[NFT|NFTs]] on it. The blockchain ecosystem in 2024-2025 shows increasing competition between [[Layer 1 blockchains|L1 chains]] for [[NFT]] market share. By 2025, the industry has seen consolidation with leading chains dominating based on [[Network effects]] and developer ecosystems.
+  - Moving away from [[Ethereum]], [[NFT|NFTs]] can be minted on most of the other [[Layer 1 blockchains]]. [[Solana]] is a notable example. [[Solana]] is centralized compared to [[Ethereum]], but thanks to that it's faster and cheaper to mint [[NFT|NFTs]] on it. The blockchain ecosystem in 2024-2025 shows increasing competition between [[Layer 1 blockchains|L1 chains]] for [[NFT]] market share. By 2025, the industry has seen consolidation with leading chains dominating based on [[Network effects]] and developer ecosystems.
 	  ![image](./assets/c79e0ea22ab5fa6fac6fa22abbe87ab19f6ef244.jpg){:height 1068, :width 913}
-	- [[Cardano]] offers technical advancements with [[ADA]], though competing [[Layer 1 blockchains|L1s]] struggle with diverse adoption. It's worth reiterating here that the nature of these [[Digital tools]] likely makes for a 'winner take all' market dynamic over time. With [[Transaction fees]] being central to [[NFT]] use cases, it's possible to see that highly optimized, fast, and economical chains will capture market share. The evolution toward 2025 shows increasing emphasis on [[Scalability solutions]] and [[Layer 2 networks]] to address [[Blockchain]] limitations.
-	- Astonishingly, according to a JPMorgan insider market report ([reportedon in apodcast](https://www.coindesk.com/podcasts/the-breakdown-with-nlw/jpmorgan-bitcoin-shows-some-merit-as-a-store-of-value/)),only around 2 million people have ever actually interacted with NFTs.One analysis suggests that a single entity accounts for 3 of the top 4holders, having made 32,000 ETH from the NFT boom. This suggests heavymarket manipulation and is far from the egalitarian landscape claimed inthe hype. Tellingly it’s thought around [10% of the tradingvolume](https://uk.finance.yahoo.com/news/three-arrows-wanted-100m-nft-161811450.html)on market leading platform ‘Super Rare’ was by the now bankrupt venturecapital firm ‘Three Arrows’.
-	- With that said NFTs have clearly allowed [digital and new mediaartists](https://en.wikipedia.org/wiki/List_of_most_expensive_non-fungible_tokens)to connect with audiences without gatekeepers. Established mediators andcurators of art have been caught totally wrongfooted, and NFTs seem togive a way for them to be cut out completely. There are suggestions ofapplications beyond this initial digital art scope. This is acompounding, and disrupting paradigm change.
-- ## Key use cases
-	- ### [[Digital Art]]
+  - [[Cardano]] offers technical advancements with [[ADA]], though competing [[Layer 1 blockchains|L1s]] struggle with diverse adoption. It's worth reiterating here that the nature of these [[Digital tools]] likely makes for a 'winner take all' market dynamic over time. With [[Transaction fees]] being central to [[NFT]] use cases, it's possible to see that highly optimized, fast, and economical chains will capture market share. The evolution toward 2025 shows increasing emphasis on [[Scalability solutions]] and [[Layer 2 networks]] to address [[Blockchain]] limitations.
+  - Astonishingly, according to a JPMorgan insider market report ([reportedon in apodcast](https://www.coindesk.com/podcasts/the-breakdown-with-nlw/jpmorgan-bitcoin-shows-some-merit-as-a-store-of-value/)),only around 2 million people have ever actually interacted with NFTs.One analysis suggests that a single entity accounts for 3 of the top 4holders, having made 32,000 ETH from the NFT boom. This suggests heavymarket manipulation and is far from the egalitarian landscape claimed inthe hype. Tellingly it’s thought around [10% of the tradingvolume](https://uk.finance.yahoo.com/news/three-arrows-wanted-100m-nft-161811450.html)on market leading platform ‘Super Rare’ was by the now bankrupt venturecapital firm ‘Three Arrows’.
+  - With that said NFTs have clearly allowed [digital and new mediaartists](https://en.wikipedia.org/wiki/List_of_most_expensive_non-fungible_tokens)to connect with audiences without gatekeepers. Established mediators andcurators of art have been caught totally wrongfooted, and NFTs seem togive a way for them to be cut out completely. There are suggestions ofapplications beyond this initial digital art scope. This is acompounding, and disrupting paradigm change.
 		- The recent surge of interest in [[NFT|NFT's]] during 2024-2025 has been largely driven by [[Digital art]] and [[Generative art]], building on foundations established since 2014. [[Digital artists]] like [[Kevin McCoy]] pioneered [[NFT art]], with his *Quantum* widely recognized as foundational work. By 2025, [[NFT]] art sales represent significant value in the [[Art market]]. High profile [[Digital artists]] such as [[Beeple]] helped bring [[NFT|NFT's]] into mainstream awareness through record-breaking sales. The [[Art community]] now widely uses [[Digital objects]] for [[Provenance]], [[Authenticity verification]], and [[Direct sales to collectors]].
 		  ![image](./assets/348ebd1d1b622796f691fdcedc6d6207ec79739d.jpg)
 		- [[Art]] as [[NFT|NFT's]] offer the following advantages:
@@ -45,7 +67,6 @@ tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 				- A recent report from "Base Layer" tries to capture the community‘feature’ of big brand NFTs. [“Crypto culturedecoded”](https://baselayer.so/crypto-culture-decoded) explains that isis these online communities which are the attraction not necessarily theart. This is a powerful ‘in group’ argument, though speculation remainsthe most likely underpinning.
 				- While it is likely that this is currently a speculative bubble, that is[waning already](https://www.bbc.co.uk/news/business-61102759) (Figure<a href="#fig:monkey" data-reference-type="ref" data-reference="fig:monkey">[fig:monkey]</a>),it seems certain that the technology is here to stay in some form.
 				  ![image](./assets/8b0f2b24b70d1083878b139fb04cb6001e4acf56.jpg)
-			- #### [[Gaming]] & [[Video games]]
 				- [[Computer games]] and [[Video games]] are a massive global industry. By 2025, the [[Gaming industry]] revenues exceed both the [[Film industry]] and [[Sports industry]] combined.
 				- A global industry with revenues over £200b, with nearly half the people on the planet playing some form of [[Games]] in 2025.
 				- As the [[Games industry]] has evolved, [[Secondary markets]] have emerged, most notably the [[Retro gaming]] and [[Used games]] resale market. The market for [[Gaming collectibles]] demonstrates lucrative opportunities for [[Private resellers]].
@@ -68,7 +89,6 @@ tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 				- {{twitter https://twitter.com/justinkan/status/1491270239967154178}}
 				- [Link to Tweet](https://twitter.com/justinkan/status/1491270239967154178)
 					- Justin Kan, co-founder of twitch: it“NFTs are a better business modelfor games. Many gamers seem to be raging hard against game studiosselling NFTs. But NFTs are also better for players. Here’s why I thinkblockchain games will be the predominant business model in gaming in tenyears. NFTs are a better business model for funding games . Example:recently I invested in a new web3 game SynCityHQ. They are building amafia metaverse and raised $3M in their initial NFT drop.  NFTs give studios access to a new capital market for raising capitalfrom the crowd.NFTs can be a better ongoing model for games. Web3 gameswill open economies, and by building the games on open and programmableassets (tokens + NFTs) they will create far more economic value thanthey could from any one game. Imagine Fortnite, but other developers canbuild experiences on top of the V-Bucks and skins. Epic would get aroyalty every time any transaction happens. As big as Fortnite is today,Open Fortnite could be much bigger, because it will be a true platform.NFTs are better for gamers Allowing gamers to have ownership of theassets they buy and earn in game allows them to participate in thepotential growth of a game. It lets gamers preserve some economic valuewhen they switch to playing something new. But what about the criticismsof NFTs?  Here are my thoughts on the common FUDs: "It’s just a money grab on thepart of the studios!"  Game studios already switched over to the model of selling in-gameitems, cosmetics, etc to players long ago. But currently the digitalstuff players are buying isn’t re-sellable. NFT ownership is strictlybetter for players. "The games aren’t real games." This reminds me ofthe criticism of free-to-play in 2008, when the games were Mafia Wars /FarmVille. We haven’t had time for great developers to create incredibleexperiences yet. Everyone investing in games knows there are great teamsbuilding. "Game NFTs aren’t really decentralized because they rely onmodels / assets inside centralized game clients." Crypto is as much amovement as it is a technology. Putting items on a blockchain is whatgives people trust that they have participatory ownership...which makepeople willing to buy in to the game. These assets are “backed” byblockchain. The fact that these item collections are NFTs will makeother people willing to build on top of them. "NFTs are bad for theenvironment." Solana and L2s solve this. NFT games are better forplayers and for game developers. Like the free-to-play revolutionchanged gaming, so will blockchain. The games of the future will befully robust, with open and programmable economies.”
-			- ### [[Broader digital object uses]] and [[Metaverse]] applications
 				- By 2025, [[NFT|NFTs]] and [[Digital objects]] are categorized into diverse use cases:
 					- [[Profile pictures|PFP NFTs]]: Originally popular on [[Social media]], these identity-based [[Digital collectibles]] have evolved into more sophisticated [[Avatar systems]] for [[Metaverse]] environments. The intersection of [[Social identity]] and [[Virtual worlds]] is a growing area.
 					- [[Digital music]] and [[Music NFTs]]: [[Artists]] are using [[NFT|NFTs]] to distribute [[Music rights]] and [[Royalties]] directly to fans. Platforms are experimenting with [[Music NFTs]] and [[Creator economy]] models. [[Music]] represents a [[Creator economy]] opportunity where [[Artists]] can distribute value directly to [[Audiences]].
@@ -92,32 +112,23 @@ tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 					- [[Soulbound tokens]]: Non-transferable [[Account-bound NFTs]] for [[Reputation]], [[Achievements]], and [[Identity verification]].
 					- [[Educational credentials]]: [[Skill certificates]] and [[Verified learning]] records on the [[Blockchain]].
 					- [[Smart contract]]–based ownership: [[Digital contracts]], [[Conditional ownership]], and [[Asset transfer]] logic enabled through [[Blockchain]] integration.
-- ### [[Digital objects]] in collaborative [[Mixed reality]] applications
-	- By 2025, there has been a shift toward [[Digital objects]] terminology and away from purely [[NFT]] branding. [[Digital objects]] are considered crucial for [[Metaverse]] development. [[Avatar collectibles]] and [[Digital assets]] in [[Virtual worlds]] are increasingly mainstream.
-	- Multiple platforms provide paths to [[Digital assets]]:
-	- #### [[Bitcoin]] layer solutions
+  - By 2025, there has been a shift toward [[Digital objects]] terminology and away from purely [[NFT]] branding. [[Digital objects]] are considered crucial for [[Metaverse]] development. [[Avatar collectibles]] and [[Digital assets]] in [[Virtual worlds]] are increasingly mainstream.
+  - Multiple platforms provide paths to [[Digital assets]]:
 		- [[Liquid Network]]: A mature [[Bitcoin sidechain]] developed by [[Blockstream]], enabling [[Asset issuance]] and [[Token creation]]. [[Liquid]] offers [[Privacy]] and [[Scalability]] improvements while maintaining [[Bitcoin]] security.
 		- [[Bitcoin ordinals]]: [[Satoshi inscriptions]] enable [[Digital artifact]] storage directly on the [[Bitcoin blockchain]], providing [[Immutability]] and [[Security]].
 		- [[Taproot assets]]: Next-generation [[Asset issuance]] protocol leveraging [[Taproot]] for [[Privacy]] and [[Efficiency]].
-	- #### [[Ethereum]]
 		- Despite scalability challenges, [[Ethereum]] maintains the largest [[NFT]] ecosystem. [[Layer 2 solutions]] like [[Optimism]] and [[Arbitrum]] provide improved [[Scalability]].
-	- #### [[Alternative layer 1 blockchains]]
 		- [[Solana]]: Fast and cheap, but [[Centralized]]. [[Solana]] suffered from the [[FTX]] exchange collapse, affecting [[Asset]] confidence.
 		- [[Cardano]]: Offers technical improvements but faces [[Network effects]] challenges.
-	- #### [[Peerswap]]
 		- [[Submarine swaps]] and [[Liquidity rebalancing]] protocols enable asset transfer between [[Liquid]] and other [[Bitcoin]] layers. This is an active area of development in 2025.
-	- #### [[FROST]] on [[Bitcoin]]
 		- [[FROST]] (Flexible Round-Optimized Schnorr Threshold) enables [[Threshold signatures]] and multi-sig arrangements on [[Bitcoin]]. This allows [[Collaborative custody]] and [[Shared ownership]] of [[UTXO|UTXOs]].
-	- #### [[Spacechains]]
 		- [[Spacechains]] provide a clean method for [[Asset issuance]] using [[Bitcoin]] as the base layer. New [[Spacechains]] inherit [[Bitcoin's security]] through [[Mining]]. By 2025, spacechains are approaching [[Mainnet]] readiness.
-	- #### [[RGB Protocol]]
 		- [[RGB]] is a sophisticated [[Smart contract]] protocol for [[Bitcoin]] and [[Taproot]]. It enables [[Client-side validation]], [[Privacy]] through [[Zero-knowledge proofs]], and efficient [[Asset]] management. [[RGB]] is the planned solution for [[Digital objects]] requiring complex logic.
-	- ##### [[BRC-20 tokens]]
+  - ##### [[BRC-20 tokens]]
 		- [[BRC-20]] are [[Fungible tokens]] created by attaching [[JSON]] data to [[Satoshis]] through [[Bitcoin ordinals]]. The community is split on [[BRC-20]] usage and its impact on [[Bitcoin transaction fees]]. For [[Fungible assets]], [[BRC-20]] offers advantages over [[ERC-20]] in [[Simplicity]], [[Security]], and [[Fair minting processes]]. By 2025, [[BRC-20]] adoption has stabilized with clearer fee market dynamics.
-	- ##### [[Litecoin]], [[Vertcoin]], and other chains
+  - ##### [[Litecoin]], [[Vertcoin]], and other chains
 		- [[Bitcoin forks]] and [[Alternative networks]] can implement [[Ordinals]]-based [[Asset issuance]]. [[Litecoin]] serves as a [[Technical testbed]] for [[Bitcoin]] innovations. By 2025, multiple chains experiment with [[Inscription]] protocols and [[Digital artifacts]].
 		- [Runes on Litecoin! : r/litecoin (reddit.com)](https://www.reddit.com/r/litecoin/comments/1ckwnu6/runes_on_litecoin/)
-	- #### [[Bitcoin Ordinals]], [[Inscriptions]], and [[RUNES]]
 		- [[Bitcoin ordinals]] enable [[Digital artifact]] storage directly on the [[Bitcoin blockchain]], offering [[Security]], [[Immutability]], and [[Decentralization]]. The [[Taproot]] upgrade allows efficient [[Large file storage]] on [[Bitcoin]]. By 2025, ordinals have matured as a viable [[Asset]] protocol.
 		- [[Digital artifacts]] represent a higher standard than traditional [[NFT|NFTs]]: they are [[Decentralized]], [[Immutable]], [[On-chain]], and [[Unrestricted]]. Unlike many [[NFT|NFTs]] with [[Off-chain storage]], ordinals provide complete [[On-chain]] [[Digital object]] integrity.
 			- *[[Inscriptions]] are stored entirely on [[Bitcoin]], the oldest, most [[Decentralized]], most [[Secure blockchain]]. They require no [[Smart contract]] audits and represent true [[Digital artifacts]].*
@@ -132,10 +143,8 @@ tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 		- For complex [[Metaverse]] use cases, [[RGB Protocol]] is the preferred solution, offering [[Privacy]] through [[Zero-knowledge proofs]], [[Client-side validation]], and [[Peer-to-peer verification]]. [[RGB]] provides the [[Smart contract]] sophistication needed for advanced [[Digital objects]].
 		- [[RUNES]], created by [[Rodarmor]], enable [[Fungible token]] issuance on [[Bitcoin]]. This represents an evolution from [[Ordinals]] for [[Fungible assets]]. By 2025, [[RUNES]] have become a significant part of the [[Bitcoin]] asset ecosystem, with implications for [[Transaction fees]].
 		- <iframe src="https://rodarmor.com/blog/runes/" style="width: 100%; height: 600px"></iframe>
-		-
-- #### [[Taproot Assets]]
-	- [[Taproot Assets]] is a next-generation protocol leveraging the [[Taproot]] upgrade on [[Bitcoin]], enabling [[Asset issuance]] with [[Security]], [[Scalability]], and [[Lightning Network]] integration.
-	- ##### Core Features
+  - [[Taproot Assets]] is a next-generation protocol leveraging the [[Taproot]] upgrade on [[Bitcoin]], enabling [[Asset issuance]] with [[Security]], [[Scalability]], and [[Lightning Network]] integration.
+  - ##### Core Features
 		- [[Asset issuance]] on the [[Bitcoin blockchain]]
 		- Powered by [[Taproot]] for [[Privacy]] and [[Scalability]]
 		- Integration with [[Lightning Network]] for fast, low-fee transactions
@@ -143,141 +152,94 @@ tags:: #DigitalObjects #NFT #Blockchain #Web3 #CreatorEconomy
 		- Support for [[Unique assets|unique]] and [[Non-unique assets|non-unique]] [[Digital objects]] and collections
 		- [[Multi-signature]] and [[Co-signatory]] arrangements
 		- Batch [[Minting]] in single [[Transactions]]
-	- ##### Benefits and [[Status]]
+  - ##### Benefits and [[Status]]
 		- [[Light client]] friendly with low [[Verification]] costs
 		- Leverages existing [[Network effects]]
 		- Addresses [[Blockchain scalability|blockchain scalability]]
 		- [[Privacy features]] through [[Taproot]]
 		- By 2025, [[Taproot Assets]] development is advancing toward [[Mainnet]] deployment
 		- [[Lightning Labs]] continues development with focus on security and reliability
-- # Resources and Implementation
-	- [[Gaming]] implementations
+  - # Resources and Implementation
+  - [[Gaming]] implementations
 		- [[Generative art]] games and [[NFT]] gaming experiences
-	- [[UDA|User Digital Assets]] and [[DIBA]] ecosystem
+  - [[UDA|User Digital Assets]] and [[DIBA]] ecosystem
 		- [[RGB Protocol]] resources and educational materials
 		- [[RGB tokens]] implementations
 		- [[Iris Wallet]] - [[RGB]]-enabled [[Bitcoin]] wallet
 		- [[DIBA Wallet]] - [[Marketplace]] and [[Asset management]]
 		- [[RGB]] and [[Nostr]] integration for privacy
 		- [[ZeroSync]] - [[Client-side validation]]
-	- [[Protocol development]]
+  - [[Protocol development]]
 		- [[NIP-88]] - [[Nostr]] protocol enhancements
 		- [[Single-use seals]] and [[Proof of folding]]
-	- [[Bitcoin inscriptions]] and [[Ordinals]]
+  - [[Bitcoin inscriptions]] and [[Ordinals]]
 		- [[Inscription impact]] on [[Block space]]
 		- [[OpenOrdex]] - [[Decentralized exchange]] for [[Ordinals]]
-	- [[Government NFT initiatives]]
+  - [[Government NFT initiatives]]
 		- [[UK Royal Mint]] [[NFT]] exploration
-	- [[Taproot Assets]] development
-- https://block21m.substack.com/p/most-bitcoin-inscriptions-belong-d6d
-- [[NFT Security]] and [[Hacking risks]]
-  title:: Hackers Stole Thousands of Dollars Worth of NFTs from Collectors
-  url:: https://www.vice.com/amp/en/article/v7mw7b/nifty-gateway-hacked-nfts
-  Tags:: [[DigitalObjects]], [[Cybersecurity]]
-- [[Stacks]] [[NFT marketplace]]
-  title:: Stacks Art
-  url:: https://www.stacksart.com/collections/stacks-punks/7452
-  Tags:: [[DigitalObjects]], [[Stacks]]
-- [[Ethereum]] official resources
-  title:: Home | ethereum.org
-  url:: https://ethereum.org/en
-  Tags:: [[DigitalObjects]], [[Ethereum]]
-- [[NFT Speculation]] examples
-  title:: NYC man sells fart for $85, cashing in on NFT craze
-  url:: https://nypost.com/2021/03/18/nyc-man-sells-fart-for-85-cashing-in-on-nft-craze
-  Tags:: [[DigitalObjects]], [[Speculation]]
-- [[Gaming platforms]] and [[NFT policy]]
-  title:: Steam bans blockchain and NFT games
-  url:: https://www.gamesindustry.biz/articles/2021-10-15-steam-reportedly-bans-blockchain-and-nft-games
-  Tags:: [[DigitalObjects]], [[Gaming]]
-- [[Celebrity NFT]] participation
-  title:: MELANIA TRUMP on Twitter / X
-  url:: https://twitter.com/melaniatrump/status/1471468919810670603?s=21
-  Tags:: [[DigitalObjects]], [[Celebrity]]
-- [[Fine art]] and [[NFT criticism]]
-  title:: The Guardian view on Damien Hirst's NFTs: posing a burning question | Editorial
-  url:: https://www.theguardian.com/commentisfree/2022/oct/16/the-guardian-view-on-damien-hirsts-nfts-posing-a-burning-question
-  Tags:: [[Economics]], [[DigitalObjects]], [[Art criticism]]
-- [[Crypto community]] perspectives
-  title:: Crypto Tony on Twitter / X
-  url:: https://twitter.com/CryptoTony__/status/1407678604402638858?s=20
-  Tags:: [[DigitalObjects]], [[Community]]
-- [[Artist]] and [[Developer]] communities
-  title:: From the Cyberpunk community on Reddit: Looking for Artists and Developers for NFTsForSale.com
-  url:: https://www.reddit.com/r/Cyberpunk/comments/mhbsbt/looking_for_artists_and_developers_for
-  Tags:: [[DigitalObjects]], [[Community]]
-- [[AI art generation]] and [[Generative art]]
-  title:: Funky AI-generated spiraling medieval village captivates social media
-  url:: https://arstechnica.com/information-technology/2023/09/dreamy-ai-generated-geometric-scenes-mesmerize-social-media-users
-  Tags:: [[DigitalObjects]], [[AI]], [[Generative art]]
-- [[Gaming platforms]] and [[NFT gaming]]
-  title:: Gala Games
-  url:: https://app.gala.games/nodes
-  Tags:: [[DigitalObjects]], [[Gaming]]
-- [[Regulatory perspectives]] on [[NFT]]
-  title:: John Reed Stark on Twitter / X
-  url:: https://twitter.com/johnreedstark/status/1666780985189433347?%5Cn=
-  Tags:: [[DigitalObjects]], [[Regulation]]
-- [[Bored Ape]] market dynamics
-  title:: Bored Ape NFT accidentally sells for $3,000 instead of $300,000
-  url:: https://www.bbc.co.uk/news/technology-59638565
-  Tags:: [[DigitalObjects]], [[Market analysis]]
-- [[Government]] and [[Treasury]] perspectives
-  title:: HM Treasury on Twitter / X
-  url:: https://twitter.com/hmtreasury/status/1510971092072079360
-  Tags:: [[Economics]], [[DigitalObjects]], [[Policy]]
-- [[NFT use cases]] and applications
-  title:: 15 NFT Use Cases That Could Go Mainstream
-  url:: https://finance.yahoo.com/news/15-nft-cases-could-mainstream-164631131.html
-  Tags:: [[DigitalObjects]], [[Applications]]
-- [[Celebrity]] perspectives
-  title:: Elon Musk on Twitter / X
-  url:: https://twitter.com/elonmusk/status/1371549960030842893
-  Tags:: [[DigitalObjects]], [[Celebrity]]
-- [[NFT collections]] on [[OpenSea]]
-	  title:: Chads NFT Collection
-	  url:: https://opensea.io/collection/chads-nft
-	  Tags:: [[DigitalObjects]], [[NFT marketplace]]
-- [[AI]] perspectives and implications
-  title:: On holding back the strange AI tide
-  url:: https://www.oneusefulthing.org/p/on-holding-back-the-strange-ai-tide
-  Tags:: [[DigitalObjects]], [[AI]], [[Technology]]
-- [[Cryptocurrency]] and [[Blockchain]] community
-  title:: Di₳mondHODL on Twitter / X
-  url:: https://twitter.com/DiamondsHODL/status/1488185982541131777?s=20&t=E6nZ0OJB6lIZtidDiXj_0Q
-  Tags:: [[DigitalObjects]], [[Community]]
-- [[AI art tools]] and [[Generation]]
-	  title:: starryai - AI Art Generator App
-	  url:: https://www.starryai.com/
-	  Tags:: [[DigitalObjects]], [[AI]], [[Art tools]]
-- [[Meta]] and [[Metaverse]] strategy
-  title:: Meta Newsroom on Twitter / X
-  url:: https://twitter.com/MetaNewsroom/status/1564281969134927872
-  Tags:: [[DigitalObjects]], [[Metaverse]], [[Corporate strategy]]
-- [[NFT use cases|15 NFT Use Cases That Could Go Mainstream]]
-- [[Beeple]] record-breaking sales
-- [[Market dynamics]] and pricing
-- [[Gaming industry]] response to [[NFT|NFTs]]
-- [[Community development]] and artist networks
-- [[Security]] and [[Hacking risks|NFT theft]]
-- [[Community]] resources and servers
-- [[NFT speculation|Speculative assets]]
-- [[OpenSea]] - [[NFT marketplace|Leading NFT marketplace]]
-- [[Art criticism]] and satire
-- [[Platform policies]] on [[Blockchain games]]
-- [[Critical analysis|Critical perspectives]]
-- [[NFT piracy|BitTorrent NFT distribution]]
-- [[Regulatory frameworks]] and [[Government policy]]
-- [[Political funding]] via [[NFT|NFTs]]
-- [[Market analysis]] and [[Research reports]]
-- [[Metaverse economics]] and [[Virtual property]]
-- [[NFT platforms]] and [[Marketplace fees]]
-- [[Venture capital]] and [[Market analysis|NFT funding]]
-- [[Spin-off projects]] and [[Legal issues]]
-- [[Gaming economics]] and [[Play-to-earn]]
-- [[Market valuations|Market cap analysis]]
-- [[Gaming policy]] and [[Blockchain games]]
--
-- [[Digital Asset Risks]]
--
--
+  - [[Taproot Assets]] development
+  - https://block21m.substack.com/p/most-bitcoin-inscriptions-belong-d6d
+  - [[NFT Security]] and [[Hacking risks]]
+  - [[Stacks]] [[NFT marketplace]]
+  - [[Ethereum]] official resources
+  - [[NFT Speculation]] examples
+  - [[Gaming platforms]] and [[NFT policy]]
+  - [[Celebrity NFT]] participation
+  - [[Fine art]] and [[NFT criticism]]
+  - [[Crypto community]] perspectives
+  - [[Artist]] and [[Developer]] communities
+  - [[AI art generation]] and [[Generative art]]
+  - [[Gaming platforms]] and [[NFT gaming]]
+  - [[Regulatory perspectives]] on [[NFT]]
+  - [[Bored Ape]] market dynamics
+  - [[Government]] and [[Treasury]] perspectives
+  - [[NFT use cases]] and applications
+  - [[Celebrity]] perspectives
+  - [[NFT collections]] on [[OpenSea]]
+  - [[AI]] perspectives and implications
+  - [[Cryptocurrency]] and [[Blockchain]] community
+  - [[AI art tools]] and [[Generation]]
+  - [[Meta]] and [[Metaverse]] strategy
+  - [[NFT use cases|15 NFT Use Cases That Could Go Mainstream]]
+  - [[Beeple]] record-breaking sales
+  - [[Market dynamics]] and pricing
+  - [[Gaming industry]] response to [[NFT|NFTs]]
+  - [[Community development]] and artist networks
+  - [[Security]] and [[Hacking risks|NFT theft]]
+  - [[Community]] resources and servers
+  - [[NFT speculation|Speculative assets]]
+  - [[OpenSea]] - [[NFT marketplace|Leading NFT marketplace]]
+  - [[Art criticism]] and satire
+  - [[Platform policies]] on [[Blockchain games]]
+  - [[Critical analysis|Critical perspectives]]
+  - [[NFT piracy|BitTorrent NFT distribution]]
+  - [[Regulatory frameworks]] and [[Government policy]]
+  - [[Political funding]] via [[NFT|NFTs]]
+  - [[Market analysis]] and [[Research reports]]
+  - [[Metaverse economics]] and [[Virtual property]]
+  - [[NFT platforms]] and [[Marketplace fees]]
+  - [[Venture capital]] and [[Market analysis|NFT funding]]
+  - [[Spin-off projects]] and [[Legal issues]]
+  - [[Gaming economics]] and [[Play-to-earn]]
+  - [[Market valuations|Market cap analysis]]
+  - [[Gaming policy]] and [[Blockchain games]]
+  - [[Digital Asset Risks]]
+
+  - ## Key use cases
+  - ### [[Digital Art]]
+			- #### [[Gaming]] & [[Video games]]
+			- ### [[Broader digital object uses]] and [[Metaverse]] applications
+  - ### [[Digital objects]] in collaborative [[Mixed reality]] applications
+  - #### [[Bitcoin]] layer solutions
+  - #### [[Ethereum]]
+  - #### [[Alternative layer 1 blockchains]]
+  - #### [[Peerswap]]
+  - #### [[FROST]] on [[Bitcoin]]
+  - #### [[Spacechains]]
+  - #### [[RGB Protocol]]
+  - #### [[Bitcoin Ordinals]], [[Inscriptions]], and [[RUNES]]
+  - #### [[Taproot Assets]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

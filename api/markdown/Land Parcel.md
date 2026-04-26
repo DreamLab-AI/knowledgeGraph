@@ -1,142 +1,156 @@
-- ### OntologyBlock
-  id:: land-parcel-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9939
-	- source-domain:: mv
-	- preferred-term:: Land Parcel
-	- status:: active
-	- owl:class:: mv:LandParcel
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.
-	- #### Relationships
-	  id:: land-parcel-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Virtual Asset]]
-		- related-to:: [[Non Fungible Token]]
-		- related-to:: [[Virtual Real Estate]]
-		- enables:: [[Metaverse Development]]
+iri:: http://narrativegoldmine.com/spatial-computing#LandParcel
+uri:: urn:visionclaw:concept:spatial-computing:land-parcel
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:land-parcel
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Land Parcel
+content-hash:: sha256-12-9141f16c8fcf
+legacy-term-id:: MV-9939
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Definition and Nature
+- ### Definition
+  - Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.
 
-### What Land Parcels Are
-- Parcels of land in virtual worlds
-- Programmable digital spaces
-- Unique pixel configurations
-- NFT-secured ownership
-- Digital deed equivalents
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LandParcel
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### NFT Function
-- Digital proof of ownership
-- Transfer rights enabled
-- Transaction history recorded
-- Title work eliminated
-- 21st-century deeds
+- ### Relationships
+  - is-subclass-of:: [[Virtual Asset]]
+  - enables:: [[Metaverse Development]]
 
-## Major Platforms
+- ### Content
 
-### Decentraland
-- 90,601 total land parcels
-- Each parcel is an NFT
-- 16m x 16m parcel size
-- MANA token transactions
-- Ethereum blockchain based
+  ## Definition and Nature
 
-### The Sandbox
-- 62% market share dominance
-- 166,464 total LANDs
-- 96m x 96m parcel size
-- SAND token economy
-- 0.13 ETH floor price (2024)
+  ### What Land Parcels Are
+  - Parcels of land in virtual worlds
+  - Programmable digital spaces
+  - Unique pixel configurations
+  - NFT-secured ownership
+  - Digital deed equivalents
 
-### Voxels (Cryptovoxels)
-- Originally 3,026 parcels
-- Expanded to 8,555 parcels
-- Smallest major metaverse
-- Continuous expansion model
-- Developer-friendly platform
+  ### NFT Function
+  - Digital proof of ownership
+  - Transfer rights enabled
+  - Transaction history recorded
+  - Title work eliminated
+  - 21st-century deeds
 
-### Somnium Space
-- Launched 2018
-- VR-focused offerings
-- 5,026 land parcels
-- Uneven division
-- NFT art emphasis
+  ## Major Platforms
 
-## Market Statistics
+  ### Decentraland
+  - 90,601 total land parcels
+  - Each parcel is an NFT
+  - 16m x 16m parcel size
+  - MANA token transactions
+  - Ethereum blockchain based
 
-### Growth Projections
-- 37.73% expansion 2024-2030
-- $5.37B growth through 2026
-- Technavio Research forecast
-- Continued investment interest
-- Market maturation
+  ### The Sandbox
+  - 62% market share dominance
+  - 166,464 total LANDs
+  - 96m x 96m parcel size
+  - SAND token economy
+  - 0.13 ETH floor price (2024)
 
-### Notable Sales
-- $4.3M Sandbox sale (Dec 2021)
-- All-time record purchase
-- Premium location value
-- Brand investment driver
-- Market benchmark
+  ### Voxels (Cryptovoxels)
+  - Originally 3,026 parcels
+  - Expanded to 8,555 parcels
+  - Smallest major metaverse
+  - Continuous expansion model
+  - Developer-friendly platform
 
-## Brand Participation
+  ### Somnium Space
+  - Launched 2018
+  - VR-focused offerings
+  - 5,026 land parcels
+  - Uneven division
+  - NFT art emphasis
 
-### Corporate Investments
-- HSBC The Sandbox presence
-- Samsung RecycleUp Fashion show
-- Nike virtual store
-- Game experiences hosted
-- NFT merchandise sales
+  ## Market Statistics
 
-### Business Applications
-- Virtual service environments
-- Brand experience centres
-- Event hosting venues
-- Customer engagement
-- Marketing innovation
+  ### Growth Projections
+  - 37.73% expansion 2024-2030
+  - $5.37B growth through 2026
+  - Technavio Research forecast
+  - Continued investment interest
+  - Market maturation
 
-## Purchasing Process
+  ### Notable Sales
+  - $4.3M Sandbox sale (Dec 2021)
+  - All-time record purchase
+  - Premium location value
+  - Brand investment driver
+  - Market benchmark
 
-### Requirements
-- Digital crypto wallet
-- Cryptocurrency holdings
-- Platform account creation
-- Wallet-platform linking
-- Transaction capability
+  ## Brand Participation
 
-### Steps
-- Wallet setup and funding
-- Platform registration
-- Account connection
-- Parcel selection
-- Purchase execution
+  ### Corporate Investments
+  - HSBC The Sandbox presence
+  - Samsung RecycleUp Fashion show
+  - Nike virtual store
+  - Game experiences hosted
+  - NFT merchandise sales
 
-## Use Cases
+  ### Business Applications
+  - Virtual service environments
+  - Brand experience centres
+  - Event hosting venues
+  - Customer engagement
+  - Marketing innovation
 
-### Socialisation
-- Virtual meetups
-- Community building
-- Event hosting
-- Avatar interaction
-- Social networking
+  ## Purchasing Process
 
-### Commercial
-- NFT galleries
-- Virtual stores
-- Business offices
-- Entertainment venues
-- Advertising spaces
+  ### Requirements
+  - Digital crypto wallet
+  - Cryptocurrency holdings
+  - Platform account creation
+  - Wallet-platform linking
+  - Transaction capability
 
-### Gaming
-- Game development
-- Experience creation
-- Player hosting
-- Content monetisation
-- Interactive entertainment
+  ### Steps
+  - Wallet setup and funding
+  - Platform registration
+  - Account connection
+  - Parcel selection
+  - Purchase execution
 
-## Metadata
+  ## Use Cases
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### Socialisation
+  - Virtual meetups
+  - Community building
+  - Event hosting
+  - Avatar interaction
+  - Social networking
+
+  ### Commercial
+  - NFT galleries
+  - Virtual stores
+  - Business offices
+  - Entertainment venues
+  - Advertising spaces
+
+  ### Gaming
+  - Game development
+  - Experience creation
+  - Player hosting
+  - Content monetisation
+  - Interactive entertainment
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

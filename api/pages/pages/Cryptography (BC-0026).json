@@ -1,0 +1,82 @@
+{
+  "id": "cryptography-bc-0026",
+  "title": "Cryptography",
+  "content": "- ### Definition\n  - Cryptography is the mathematical science of securing information through techniques that transform data into unintelligible forms for unauthorized parties whilst enabling authorized parties to reverse the transformation, providing confidentiality, integrity, authentication, and non-repudiation in blockchain systems.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Cryptography\n  - owl-role:: Object\n  - owl-inferred:: blockchain:VirtualObject\n  - belongs-to-domain:: [[CryptographicDomain]]\n  - implemented-in-layer:: [[SecurityLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Mathematical Science]], [[Security Technology]], [[Information Protection]]\n\n  - bridges-to:: [[AI Agent System]] (ai)\n- ### Content\n\n  ## Class Declaration\n  Declaration(Class(:Cryptography))\n\n  ## Subclass Relationships\n  SubClassOf(:Cryptography :MathematicalScience)\n  SubClassOf(:Cryptography :SecurityTechnology)\n  SubClassOf(:Cryptography :InformationProtection)\n\n  ## Essential Properties\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :provides :Confidentiality))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :provides :Integrity))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :provides :Authentication))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :provides :NonRepudiation))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :uses :MathematicalPrimitive))\n\n  ## Cryptographic Primitives\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :implements :HashFunction))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :implements :DigitalSignature))\n\n  SubClassOf(:Cryptography\n    (ObjectSomeValuesFrom :implements :EncryptionScheme))\n\n  ## Data Properties\n  DataPropertyAssertion(:securityStrength :Cryptography xsd:positiveInteger)\n  DataPropertyAssertion(:quantumResistant :Cryptography xsd:boolean)\n  DataPropertyAssertion(:computationalComplexity :Cryptography xsd:string)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:secures :Cryptography :Data)\n  ObjectPropertyAssertion(:enablesFeature :Cryptography :SecurityProperty)\n  ObjectPropertyAssertion(:basedOn :Cryptography :MathematicalProblem)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :Cryptography \"Cryptography\"@en)\n  AnnotationAssertion(rdfs:comment :Cryptography\n    \"Mathematical science securing blockchain data and operations\"@en)\n  AnnotationAssertion(:termID :Cryptography \"BC-0026\")\n\n  ## Disjoint Classes\n  DisjointClasses(:Cryptography :Steganography)\n  )\n      ```\n\n  - ## About Cryptography\n\n  - Cryptography is the mathematical science of securing information through techniques that transform data into unintelligible forms for unauthorized parties whilst enabling authorized parties to reverse the transformation, providing confidentiality, integrity, authentication, and non-repudiation in blockchain systems.\n  - ### Key Characteristics\n    - 1. **Confidentiality**: Protecting data from unauthorized access\n    - 2. **Integrity**: Detecting unauthorized modifications\n    - 3. **Authentication**: Verifying identity and origin\n    - 4. **Non-Repudiation**: Preventing denial of actions\n    - 5. **Forward Secrecy**: Past sessions remain secure\n  - ### Technical Components\n    - **Computational Security**: Based on hard mathematical problems\n    - **Provable Security**: Formal reduction to known hard problems\n    - **Key Management**: Generation, storage, distribution, revocation\n    - **Algorithm Agility**: Ability to replace compromised algorithms\n  - ### Use Cases\n    - **1. Transaction Authentication**\n    - **Application**: Proving transaction authorization\n    - **Mechanism**: Digital signatures (ECDSA on secp256k1)\n    - **Example**: Bitcoin transaction signing\n    - **Security**: 128-bit security level\n  - ### 2024-2025: Post-Quantum Cryptography Transition\n\n    The period from 2024 through 2025 marked a watershed moment in cryptographic infrastructure: the finalisation and deployment of **post-quantum cryptography (PQC)** standards designed to resist attacks from quantum computers, fundamentally reshaping security assumptions underpinning blockchain systems and digital communications.\n\n    #### NIST PQC Standards Finalised (August 2024)\n    On 13th August 2024, NIST published the first three finalised post-quantum cryptography standards:\n    - **FIPS 203** (ML-KEM, formerly CRYSTALS-Kyber): Key encapsulation mechanism\n    - **FIPS 204** (formerly CRYSTALS-Dilithium): Digital signature algorithm\n    - **FIPS 205** (SPHINCS+): Hash-based digital signature algorithm\n\n    These standards represented the culmination of NIST's multi-year PQC standardisation project, providing quantum-resistant algorithms ready for immediate deployment. The transition timeline became urgent as quantum computing capabilities advanced—whilst large-scale quantum computers capable of breaking RSA and ECC remained years away, \"harvest now, decrypt later\" attacks incentivised early adoption of quantum-resistant cryptography.\n\n    #### Fifth Algorithm Selected (March 2025)\n    On 11th March 2025, NIST selected **HQC (Hamming Quasi-Cyclic)** as the fifth algorithm for post-quantum encryption. HQC was chosen specifically as a backup standard based on different mathematical foundations than ML-KEM, providing cryptographic diversity against potential mathematical breakthroughs. Following a 90-day comment period, NIST planned to finalise the standard for release in 2027.\n\n    #### Transition Guidance and Fourth Round\n    NIST published draft guidance in November 2024 describing expected approaches to transitioning from quantum-vulnerable cryptographic algorithms to post-quantum alternatives. By October 2024, NIST down-selected to **15 second-round signature candidates** for further analysis from 40 initially accepted submissions, demonstrating continued refinement of PQC capabilities.\n\n    #### Blockchain Implications\n    Post-quantum cryptography posed existential questions for blockchain systems relying on ECDSA signatures (Bitcoin, Ethereum) and public-key cryptography. Whilst quantum computers capable of deriving private keys from public keys remained theoretical, the \"Q-Day\" threat—when quantum computers could break current cryptography—required proactive migration strategies. Bitcoin's cryptographic community, including Pieter Wuille, Gregory Maxwell, Andrew Poelstra, and Jonas Nick, began exploring quantum-resistant signature schemes whilst preserving backwards compatibility.\n\n    Bitcoin's core cryptographic protocols (ECDSA on secp256k1, SHA-256, RIPEMD-160) had withstood scrutiny since 2009 despite enormous financial incentives for breaking them, demonstrating security through time-testing. However, the quantum threat represented a qualitatively different challenge requiring algorithmic replacement rather than parameter tuning.\n\n    The cryptographic transition required coordinated ecosystem-wide upgrades: wallets, exchanges, nodes, and protocols all needed quantum-resistant signature verification. The complexity of this migration—potentially the largest coordinated cryptographic upgrade in history—underscored the importance of NIST's standards and ongoing academic research published at IEEE S&P, ACM CCS, Financial Cryptography, and Real World Crypto conferences.\n  - ### Standards & References\n    - [[ISO/IEC 18033]] - Blockchain and distributed ledger technologies\n    - [[NIST FIPS]] - Blockchain and distributed ledger technologies\n    - [[NIST SP]] - Blockchain and distributed ledger technologies\n\n- ### Provenance\n  - sources:: [[ISO/IEC 18033]], [[NIST FIPS]], [[NIST SP]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Agent System",
+    "CryptographicDomain",
+    "ISO/IEC 18033",
+    "Information Protection",
+    "Mathematical Science",
+    "NIST FIPS",
+    "NIST SP",
+    "Security Technology",
+    "SecurityLayer"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:cryptography-bc-0026",
+    "iri": "http://narrativegoldmine.com/blockchain#Cryptography",
+    "content_hash": "sha256-12-55f98cffda45",
+    "legacy_term_id": "BC-0026",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:cryptography-bc-0026",
+    "schema_version": "v2",
+    "term_id": "BC-0026",
+    "preferred_term": "Cryptography",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "Cryptography is the mathematical science of securing information through techniques that transform data into unintelligible forms for unauthorized parties whilst enabling authorized parties to reverse the transformation, providing confidentiality, integrity, authentication, and non-repudiation in blockchain systems.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 1.0,
+    "created": "2025-10-28T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Cryptography",
+    "owl_role": "Object",
+    "owl_inferred_class": "blockchain:VirtualObject",
+    "is_subclass_of": [
+      "Mathematical Science",
+      "Security Technology",
+      "Information Protection"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "AI Agent System"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ISO/IEC 18033",
+      "NIST FIPS",
+      "NIST SP"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

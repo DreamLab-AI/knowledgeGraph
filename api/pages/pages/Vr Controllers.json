@@ -1,36 +1,44 @@
 {
-  "id": "Vr Controllers",
+  "id": "vr-controllers",
   "title": "VR Controllers",
-  "content": "- ### OntologyBlock\n  id:: vr-controllers-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10162\n\t- source-domain:: mv\n\t- preferred-term:: VR Controllers\n\t- status:: active\n\t- definition:: Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.\n\t- owl:class:: mv:VrControllers\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[XR Hardware]]\n\t\t- related-to:: [[Haptic Feedback]]\n\t\t- related-to:: [[Motion Tracking]]\n\t\t- related-to:: [[Virtual Reality VR]]\n\t  id:: vr-controllers-relationships\n\t  collapsed:: true\n- ## Overview\n\t- VR controllers translate physical hand movements into virtual interactions, serving as the primary interface for metaverse experiences. The global haptic feedback VR controller market was valued at $1.2 billion in 2023, projected to reach $3.8 billion by 2028. 6DoF (six degrees of freedom) controllers have become the industry standard, with specifications requiring tracking accuracy of plus or minus 1mm positional error and latency under 20ms.\n- ## Technical Details\n\t- ### Key Specifications\n\t\t- **Tracking**: 6DoF positional and rotational tracking\n\t\t- **Haptic Feedback**: Vibration frequency range 100-500Hz\n\t\t- **Latency**: Under 20ms for responsive interaction\n\t\t- **Battery Life**: 8+ hours continuous use\n\t- ### Controller Types\n\t\t- **Standard Controllers**: Meta Touch, Valve Index Controllers, PlayStation VR2 Sense\n\t\t- **Haptic Gloves**: Sharp prototype with multi-segmented tactile elements\n\t\t- **Hand Tracking**: Camera-based gesture recognition without physical controllers\n\t\t- **Full-Body Trackers**: Extended tracking for immersive experiences\n\t- ### Haptic Technologies\n\t\t- **Mechanical Actuators**: Vibration motors and linear resonant actuators\n\t\t- **Electro-Tactile Feedback**: Electrical stimulation for texture sensation\n\t\t- **Force Feedback**: Resistance simulation for object interaction\n\t\t- **Thermal Feedback**: Temperature sensation for enhanced immersion\n- ## Applications\n\t- VR gaming and entertainment\n\t- Virtual training simulations\n\t- Metaverse social interactions\n\t- Industrial design and prototyping\n\t- Medical and surgical simulation",
+  "content": "- ### Definition\n  - Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VrControllers\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[XR Hardware]]\n\n- ### Content\n\n  - ## Overview\n  - VR controllers translate physical hand movements into virtual interactions, serving as the primary interface for metaverse experiences. The global haptic feedback VR controller market was valued at $1.2 billion in 2023, projected to reach $3.8 billion by 2028. 6DoF (six degrees of freedom) controllers have become the industry standard, with specifications requiring tracking accuracy of plus or minus 1mm positional error and latency under 20ms.\n  - ## Technical Details\n  - ### Key Specifications\n\t\t- **Tracking**: 6DoF positional and rotational tracking\n\t\t- **Haptic Feedback**: Vibration frequency range 100-500Hz\n\t\t- **Latency**: Under 20ms for responsive interaction\n\t\t- **Battery Life**: 8+ hours continuous use\n  - ### Controller Types\n\t\t- **Standard Controllers**: Meta Touch, Valve Index Controllers, PlayStation VR2 Sense\n\t\t- **Haptic Gloves**: Sharp prototype with multi-segmented tactile elements\n\t\t- **Hand Tracking**: Camera-based gesture recognition without physical controllers\n\t\t- **Full-Body Trackers**: Extended tracking for immersive experiences\n  - ### Haptic Technologies\n\t\t- **Mechanical Actuators**: Vibration motors and linear resonant actuators\n\t\t- **Electro-Tactile Feedback**: Electrical stimulation for texture sensation\n\t\t- **Force Feedback**: Resistance simulation for object interaction\n\t\t- **Thermal Feedback**: Temperature sensation for enhanced immersion\n  - ## Applications\n  - VR gaming and entertainment\n  - Virtual training simulations\n  - Metaverse social interactions\n  - Industrial design and prototyping\n  - Medical and surgical simulation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Haptic Feedback",
-    "metaverse",
-    "Motion Tracking",
     "XR Hardware",
-    "Virtual Reality VR"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:vr-controllers",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VRControllers",
+    "content_hash": "sha256-12-238bf55bbfb2",
+    "legacy_term_id": "MV-10162",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:vr-controllers",
+    "schema_version": "v2",
     "term_id": "MV-10162",
     "preferred_term": "VR Controllers",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VrControllers",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VrControllers",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VrControllers",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "XR Hardware"
@@ -43,26 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Haptic Feedback",
-        "Motion Tracking",
-        "Virtual Reality VR"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

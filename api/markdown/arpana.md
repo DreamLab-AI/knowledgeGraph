@@ -1,0 +1,36 @@
+iri:: http://narrativegoldmine.com/infrastructure#Arpana
+uri:: urn:visionclaw:concept:infrastructure:arpana
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:arpana
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: arpana
+content-hash:: sha256-12-3bcf0c0aaa1d
+status:: stub
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - arpana is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:Arpana
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - [[law]]
+  - [[crime uk]]
+  - jurisditional practice for integraating crime scene reconstruction with court proceeding
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

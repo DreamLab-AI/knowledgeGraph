@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: optimizationalgorithm-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#OptimizationAlgorithm
+uri:: urn:visionclaw:concept:artificial-intelligence:optimization-algorithm
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:optimization-algorithm
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Optimization Algorithm
+content-hash:: sha256-12-128a9fb0f27f
+legacy-term-id:: AI-0866
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0866
-    - filename-history:: ["AI-0866-optimizationalgorithm.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0866
-    - preferred-term:: Optimization Algorithm
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Optimization Algorithm is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:OptimizationAlgorithm
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:OptimizationAlgorithm
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Algorithm]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Algorithm]]
+- ### Content
+  Optimization Algorithm — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :OptimizationAlgorithm))
-      (SubClassOf :OptimizationAlgorithm :Algorithm)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :OptimizationAlgorithm "Optimization Algorithm"@en)
-      ```
-
-- ## About Optimization Algorithm
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

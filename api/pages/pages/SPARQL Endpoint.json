@@ -1,0 +1,67 @@
+{
+  "id": "sparql-endpoint",
+  "title": "SPARQL Endpoint",
+  "content": "- ### Definition\n  - A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SparqlEndpoint\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Data Access Interface]]\n\n- ### Content\n  SparqlEndpoint — content pending enrichment.\n\n- ### Provenance\n  - sources:: Generated from bridge validation\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Provenance Ontology (PROV-O)",
+    "Metaverse Ontology Schema"
+  ],
+  "wiki_links": [
+    "Data Access Interface"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:sparql-endpoint",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SparqlEndpoint",
+    "content_hash": "sha256-12-58462c017ab7",
+    "legacy_term_id": "MV-1005",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:sparql-endpoint",
+    "schema_version": "v2",
+    "term_id": "MV-1005",
+    "preferred_term": "SPARQL Endpoint",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SparqlEndpoint",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Data Access Interface"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

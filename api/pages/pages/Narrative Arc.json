@@ -1,41 +1,47 @@
 {
-  "id": "Narrative Arc",
+  "id": "narrative-arc",
   "title": "Narrative Arc",
-  "content": "- ### OntologyBlock\n  id:: narrative-arc-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9978\n\t- source-domain:: mv\n\t- preferred-term:: Narrative Arc\n\t- status:: active\n\t- definition:: The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.\n\t- owl:class:: mv:NarrativeArc\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: narrative-arc-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Storytelling Structure]]\n\t\t- related-to:: [[Narrative Content]]\n\t\t- related-to:: [[Narrative Theme]]\n\t\t- related-to:: [[Interactive Storytelling]]\n\t\t- enables:: [[Non Linear Narrative]]\n\t- #### Freytag's Five Stages\n\t  collapsed:: true\n\t\t- Exposition: Introduction to characters, setting, and circumstances\n\t\t- Rising Action: Tension and conflicts escalate building suspense\n\t\t- Climax: Highest point of tension where subplots converge\n\t\t- Falling Action: Conflict resolution as loose ends tie up\n\t\t- Resolution: Story closes showing how events changed characters\n\t- #### Technical Analysis\n\t  collapsed:: true\n\t\t- Computer-based language analysis reveals three primary processes\n\t\t- Staging establishes narrative foundation\n\t\t- Plot progression drives story forward\n\t\t- Cognitive tension builds and releases psychological engagement\n\t\t- LIWC-22 can map and score narrativity patterns",
+  "content": "- ### Definition\n  - The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:NarrativeArc\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Storytelling Structure]]\n  - enables:: [[Non Linear Narrative]]\n\n- ### Content\n\n  - #### Freytag's Five Stages\n\t\t- Exposition: Introduction to characters, setting, and circumstances\n\t\t- Rising Action: Tension and conflicts escalate building suspense\n\t\t- Climax: Highest point of tension where subplots converge\n\t\t- Falling Action: Conflict resolution as loose ends tie up\n\t\t- Resolution: Story closes showing how events changed characters\n  - #### Technical Analysis\n\t\t- Computer-based language analysis reveals three primary processes\n\t\t- Staging establishes narrative foundation\n\t\t- Plot progression drives story forward\n\t\t- Cognitive tension builds and releases psychological engagement\n\t\t- LIWC-22 can map and score narrativity patterns\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Narrative Content",
-    "Narrative Theme",
     "Narrative Design Ontology"
   ],
   "wiki_links": [
-    "Storytelling Structure",
-    "Interactive Storytelling",
     "Non Linear Narrative",
-    "Narrative Content",
-    "metaverse",
-    "Narrative Theme"
+    "Storytelling Structure",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:narrative-arc",
+    "iri": "http://narrativegoldmine.com/spatial-computing#NarrativeArc",
+    "content_hash": "sha256-12-653e73ee2afb",
+    "legacy_term_id": "MV-9978",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:narrative-arc",
+    "schema_version": "v2",
     "term_id": "MV-9978",
     "preferred_term": "Narrative Arc",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#NarrativeArc",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The structural framework of a story that charts the progression through exposition, rising action, climax, falling action, and resolution, creating peaks and plateaus of dramatic tension that engage audiences and shape their emotional journey through the narrative.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:NarrativeArc",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:NarrativeArc",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Storytelling Structure"
@@ -50,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Narrative Content",
-        "Narrative Theme",
-        "Interactive Storytelling"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

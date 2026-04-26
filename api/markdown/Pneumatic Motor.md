@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: pneumaticmotor-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#PneumaticMotor
+uri:: urn:visionclaw:concept:robotics:pneumatic-motor
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:pneumatic-motor
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Pneumatic Motor
+content-hash:: sha256-12-ae25d1da9965
+legacy-term-id:: RB-0182
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0182
-    - filename-history:: ["RB-0182-pneumaticmotor.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0182
-    - preferred-term:: Pneumatic Motor
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Pneumatic motor converts compressed air to rotational motion.
 
-  - **Definition**
-    - definition:: Pneumatic motor converts compressed air to rotational motion.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:PneumaticMotor
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:PneumaticMotor
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Pneumatic Actuator]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Pneumatic Actuator]]
+- ### Content
+  Pneumatic Motor — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PneumaticMotor))
-      (SubClassOf :PneumaticMotor :PneumaticActuator)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PneumaticMotor "Pneumatic Motor"@en)
-      (AnnotationAssertion rdfs:comment :PneumaticMotor
-        "Pneumatic motor converts compressed air to rotational motion."@en)
-      ```
-
-- ## About Pneumatic Motor
-  Pneumatic motor converts compressed air to rotational motion.
-  
-  A pneumatic actuator producing rotational motion.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

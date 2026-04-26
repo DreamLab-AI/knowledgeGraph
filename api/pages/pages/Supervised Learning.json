@@ -1,0 +1,68 @@
+{
+  "id": "supervised-learning",
+  "title": "Supervised Learning",
+  "content": "- ### Definition\n  - Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values). Common algorithms span linear models, decision trees, support vector machines, neural networks, and ensemble methods. Supervised learning requires curated datasets with ground-truth labels and addresses challenges of overfitting, generalization, and class imbalance.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:SupervisedLearning\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n\n- ### Content\n\n  #### Key Characteristics\n  - Learns from input-output pairs with labeled examples\n  - Optimizes predictive accuracy on held-out validation data\n  - Handles classification and regression tasks\n  - Employs regularization techniques to prevent overfitting\n  - Scales to high-dimensional feature spaces with deep learning\n\n  ## Overview\n\n  Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values). Common algorithms span linear models, decision trees, support vector machines, neural networks, and ensemble methods. Supervised learning requires curated datasets with ground-truth labels and addresses challenges of overfitting, generalization, and class imbalance.\n\n  #### Related Concepts\n  - [[Classification]]\n  - [[Regression]]\n  - [[Deep Learning]]\n  - [[Training Data]]\n\n  #### References\n  - Hastie, T. et al. (2009). The Elements of Statistical Learning (2nd ed.). Springer.\n  - Bishop, C. (2006). Pattern Recognition and Machine Learning. Springer.\n  - Goodfellow, I. et al. (2016). Deep Learning. MIT Press.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Active Learning",
+    "Deep Learning"
+  ],
+  "wiki_links": [
+    "Classification",
+    "Deep Learning",
+    "Regression",
+    "Training Data"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:supervised-learning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#SupervisedLearning",
+    "content_hash": "sha256-12-7b7055450eaa",
+    "legacy_term_id": "AI-9033",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:supervised-learning",
+    "schema_version": "v2",
+    "term_id": "AI-9033",
+    "preferred_term": "Supervised Learning",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors. Key tasks include classification (discrete labels) and regression (continuous values). Common algorithms span linear models, decision trees, support vector machines, neural networks, and ensemble methods. Supervised learning requires curated datasets with ground-truth labels and addresses challenges of overfitting, generalization, and class imbalance.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:SupervisedLearning",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

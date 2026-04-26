@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9669-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9669
-	- preferred-term:: Production Pipeline
-	- source-domain:: mv
-	- owl:class:: mv:ProductionPipeline
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Production Pipeline is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#ProductionPipeline
+uri:: urn:visionclaw:concept:spatial-computing:production-pipeline
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:production-pipeline
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Production Pipeline
+content-hash:: sha256-12-b51c4c0329a0
+legacy-term-id:: MV-9669
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Production Pipeline is a concept within the metaverse domain. Further enrichment pending.
 
-Production Pipeline represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ProductionPipeline
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Production Pipeline represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

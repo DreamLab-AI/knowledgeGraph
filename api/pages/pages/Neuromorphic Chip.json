@@ -1,38 +1,51 @@
 {
-  "id": "Neuromorphic Chip",
+  "id": "neuromorphic-chip",
   "title": "Neuromorphic Chip",
-  "content": "- ### OntologyBlock\n  id:: AI-9006\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9006\n\t- source-domain:: ai\n\t- preferred-term:: Neuromorphic Chip\n\t- status:: draft\n\t- public-access:: true\n\t- definition:: Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.\n\t- source:: [[AI Hardware]], [[Intel Loihi]], [[IBM TrueNorth]]\n\t- maturity:: emerging\n\t- owl:class:: ai:NeuromorphicChip\n\t- owl:role:: Object\n\t- belongsToDomain:: [[ArtificialIntelligenceDomain]]\n\t- isSubclassOf:: [[AI Hardware]]\n\n\n### Relationships\n- is-subclass-of:: [[Artificial Intelligence]]",
+  "content": "- ### Definition\n  - Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:NeuromorphicChip\n  - owl-role:: Object\n  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Artificial Intelligence]]\n\n- ### Content\n  Neuromorphic Chip — content pending enrichment.\n\n- ### Provenance\n  - sources:: [[AI Hardware]], [[Intel Loihi]], [[IBM TrueNorth]]\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "IBM TrueNorth",
-    "Intel Loihi",
     "AI Hardware",
-    "ArtificialIntelligenceDomain"
+    "Artificial Intelligence",
+    "ArtificialIntelligenceDomain",
+    "IBM TrueNorth",
+    "Intel Loihi"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:neuromorphic-chip",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#NeuromorphicChip",
+    "content_hash": "sha256-12-59b58d1f4a18",
+    "legacy_term_id": "AI-9006",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:neuromorphic-chip",
+    "schema_version": "v2",
     "term_id": "AI-9006",
     "preferred_term": "Neuromorphic Chip",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#NeuromorphicChip",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Computer chips designed to mimic the structure and function of biological neural networks, using analog circuits to emulate neuronal behavior for energy-efficient AI processing.",
     "scope_note": null,
     "status": "draft",
     "maturity": "emerging",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:NeuromorphicChip",
-    "owl_physicality": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:NeuromorphicChip",
     "owl_role": "Object",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Artificial Intelligence"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -41,23 +54,19 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "ArtificialIntelligenceDomain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [
       "AI Hardware",
       "Intel Loihi",
       "IBM TrueNorth"
     ],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

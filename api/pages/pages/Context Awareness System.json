@@ -1,45 +1,54 @@
 {
-  "id": "Context Awareness System",
+  "id": "context-awareness-system",
   "title": "Context Awareness System",
-  "content": "- ### OntologyBlock\n  id:: context-awareness-system-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9831\n\t- source-domain:: mv\n\t- preferred-term:: Context Awareness System\n\t- definition:: A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.\n\t- status:: active\n\t- owl:class:: mv:ContextAwarenessSystem\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: context-awareness-system-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Intelligent Systems]]\n\t\t- enables:: [[Location Based Services]], [[Adaptive Services]], [[Situational Awareness]]\n\t\t- requires:: [[IoT Sensors]], [[Data Analytics]], [[Network Infrastructure]]\n\t\t- related-to:: [[Context Aware Response]], [[Smart Environment]], [[Ubiquitous Computing]]\n- ## Technical Details\n\t- **Context Types**:\n\t\t- User location (most common context)\n\t\t- Current activity and situation\n\t\t- Mood and social context\n\t\t- Task and goals\n\t\t- Environmental conditions\n\t- **Sensor Technologies**:\n\t\t- Smartphones, tablets, wearable devices\n\t\t- Smart sensors, cameras, microphones\n\t\t- GPS devices, beacons, RFID\n\t\t- IoT environmental sensors\n\t- **2024 Advancements**:\n\t\t- AI, 5G, and edge computing improving indoor positioning\n\t\t- Contextual analysis providing \"why\" and \"how\" of movement patterns\n\t\t- Real-time precise location data via connected IoT devices\n\t- **Applications by Sector**:\n\t\t- Retail: Customer navigation, targeted promotions\n\t\t- Manufacturing: Equipment tracking, production optimization\n\t\t- Logistics: Real-time shipment tracking\n- ## Applications\n\t- Indoor navigation and wayfinding\n\t- Personalized retail experiences\n\t- Smart building automation\n\t- Healthcare patient monitoring\n\t- Industrial asset tracking",
+  "content": "- ### Definition\n  - A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ContextAwarenessSystem\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - bridges-to:: [[Sensor Input]]\n  - is-subclass-of:: [[Intelligent Systems]]\n  - requires:: [[IoT Sensors]], [[Data Analytics]], [[Network Infrastructure]]\n  - enables:: [[Location Based Services]], [[Adaptive Services]], [[Situational Awareness]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Context Types**:\n\t\t- User location (most common context)\n\t\t- Current activity and situation\n\t\t- Mood and social context\n\t\t- Task and goals\n\t\t- Environmental conditions\n  - **Sensor Technologies**:\n\t\t- Smartphones, tablets, wearable devices\n\t\t- Smart sensors, cameras, microphones\n\t\t- GPS devices, beacons, RFID\n\t\t- IoT environmental sensors\n  - **2024 Advancements**:\n\t\t- AI, 5G, and edge computing improving indoor positioning\n\t\t- Contextual analysis providing \"why\" and \"how\" of movement patterns\n\t\t- Real-time precise location data via connected IoT devices\n  - **Applications by Sector**:\n\t\t- Retail: Customer navigation, targeted promotions\n\t\t- Manufacturing: Equipment tracking, production optimization\n\t\t- Logistics: Real-time shipment tracking\n  - ## Applications\n  - Indoor navigation and wayfinding\n  - Personalized retail experiences\n  - Smart building automation\n  - Healthcare patient monitoring\n  - Industrial asset tracking\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Procedural Audio Generator",
     "Context Aware Response"
   ],
   "wiki_links": [
-    "Data Analytics",
-    "Situational Awareness",
-    "Network Infrastructure",
-    "Ubiquitous Computing",
     "Adaptive Services",
-    "Context Aware Response",
-    "Location Based Services",
-    "metaverse",
-    "Smart Environment",
+    "Data Analytics",
+    "Intelligent Systems",
     "IoT Sensors",
-    "Intelligent Systems"
+    "Location Based Services",
+    "Network Infrastructure",
+    "Sensor Input",
+    "Situational Awareness",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:context-awareness-system",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ContextAwarenessSystem",
+    "content_hash": "sha256-12-f9b62fa9d0eb",
+    "legacy_term_id": "MV-9831",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:context-awareness-system",
+    "schema_version": "v2",
     "term_id": "MV-9831",
     "preferred_term": "Context Awareness System",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ContextAwarenessSystem",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ContextAwarenessSystem",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ContextAwarenessSystem",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Intelligent Systems"
@@ -58,28 +67,19 @@
       "Situational Awareness"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Sensor Input"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Context Aware Response",
-        "Smart Environment",
-        "Ubiquitous Computing"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

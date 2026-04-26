@@ -1,38 +1,48 @@
 {
-  "id": "Distributed Authentication Architecture",
+  "id": "distributed-authentication-architecture",
   "title": "Distributed Authentication Architecture",
-  "content": "- ### OntologyBlock\n  id:: distributed-authentication-architecture-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9883\n\t- source-domain:: mv\n\t- preferred-term:: Distributed Authentication Architecture\n\t- status:: active\n\t- owl:class:: mv:DistributedAuthenticationArchitecture\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: A decentralized identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.\n\t- #### Relationships\n\t  id:: distributed-authentication-architecture-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Identity Management]]\n\t\t- related-to:: [[Blockchain Technology]]\n\t\t- related-to:: [[Self-Sovereign Identity]]\n\t\t- enables:: [[Cross-Platform Interoperability]]\n\n## Technical Details\n\n### Core Components\n- **Decentralized Identity (DID)**: Users upload public keys to blockchain systems for identity verification, enabling cryptographic authentication without centralised credential storage\n- **Verifiable Credentials**: Digital attestations that can be cryptographically verified without contacting the issuer\n- **Digital Wallets**: Secure storage for private keys and credentials under user control\n- **Decentralized Oracle Networks (DON)**: Third-party identity mapping services that maintain privacy whilst enabling accountability\n\n### Security Mechanisms\n- Hash algorithms and timestamp technology provide data traceability and confidentiality\n- Consensus mechanisms solve credit problems in distributed networks\n- Encrypted P2P connection channels protect authentication exchanges\n- Digital signatures prevent information leakage during identity verification\n\n## Applications\n\n### Metaverse Identity Management\n- Users participate through multiple virtual identities or avatars for different applications\n- Virtual identities are continuously generated and mapped with real identities\n- Platform-agnostic identity frameworks ensure user privacy whilst enabling identity recovery when warranted\n\n### Blockchain-Enabled Security\n- Decentralized subsystem layers provide blockchain and distributed ledger services\n- DAOs and smart contracts facilitate efficient data transmission and verification\n- Distributed blockchain storage enhances security through redundancy\n\n## Research and Standards\n\n### 2024 Developments\n- Efficient Blockchain-Assisted Distributed Identity-Based Signature Schemes for Consumer Electronics in Metaverse\n- Blockchain-Enabled Decentralized Edge Intelligence for Trustworthy 6G Consumer Electronics\n- Unified Metaverse Architecture powered by Decentralized Autonomous Organizations (DAO)\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.\n\n- ### Bridge-To\n  - bridges-to:: [[DID Nostr Identity]] (ngm)\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DistributedAuthenticationArchitecture\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Identity Management]]\n  - enables:: [[Cross-Platform Interoperability]]\n\n- ### Content\n\n  ## Technical Details\n\n  ### Core Components\n  - **Decentralized Identity (DID)**: Users upload public keys to blockchain systems for identity verification, enabling cryptographic authentication without centralised credential storage\n  - **Verifiable Credentials**: Digital attestations that can be cryptographically verified without contacting the issuer\n  - **Digital Wallets**: Secure storage for private keys and credentials under user control\n  - **Decentralized Oracle Networks (DON)**: Third-party identity mapping services that maintain privacy whilst enabling accountability\n\n  ### Security Mechanisms\n  - Hash algorithms and timestamp technology provide data traceability and confidentiality\n  - Consensus mechanisms solve credit problems in distributed networks\n  - Encrypted P2P connection channels protect authentication exchanges\n  - Digital signatures prevent information leakage during identity verification\n\n  ## Applications\n\n  ### Metaverse Identity Management\n  - Users participate through multiple virtual identities or avatars for different applications\n  - Virtual identities are continuously generated and mapped with real identities\n  - Platform-agnostic identity frameworks ensure user privacy whilst enabling identity recovery when warranted\n\n  ### Blockchain-Enabled Security\n  - Decentralized subsystem layers provide blockchain and distributed ledger services\n  - DAOs and smart contracts facilitate efficient data transmission and verification\n  - Distributed blockchain storage enhances security through redundancy\n\n  ## Research and Standards\n\n  ### 2024 Developments\n  - Efficient Blockchain-Assisted Distributed Identity-Based Signature Schemes for Consumer Electronics in Metaverse\n  - Blockchain-Enabled Decentralized Edge Intelligence for Trustworthy 6G Consumer Electronics\n  - Unified Metaverse Architecture powered by Decentralized Autonomous Organizations (DAO)\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Identity Federation"
   ],
   "wiki_links": [
-    "Blockchain Technology",
     "Cross-Platform Interoperability",
-    "metaverse",
-    "Self-Sovereign Identity",
-    "Identity Management"
+    "DID Nostr Identity",
+    "Identity Management",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:distributed-authentication-architecture",
+    "iri": "http://narrativegoldmine.com/infrastructure#DistributedAuthenticationArchitecture",
+    "content_hash": "sha256-12-aa48e04ef8bb",
+    "legacy_term_id": "MV-9883",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:distributed-authentication-architecture",
+    "schema_version": "v2",
     "term_id": "MV-9883",
     "preferred_term": "Distributed Authentication Architecture",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DistributedAuthenticationArchitecture",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "A decentralized identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DistributedAuthenticationArchitecture",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DistributedAuthenticationArchitecture",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Identity Management"
@@ -47,25 +57,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Blockchain Technology",
-        "Self-Sovereign Identity"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

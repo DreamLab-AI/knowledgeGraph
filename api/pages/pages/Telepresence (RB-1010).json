@@ -1,0 +1,93 @@
+{
+  "id": "telepresence-rb-1010",
+  "title": "Telepresence",
+  "content": "- ### Definition\n  - A technology that enables a person to feel as if they were present at a remote location through a robot or virtual avatar, allowing interaction with the remote environment and people as if physically there. It combines remote control, real-time feedback, and immersive interfaces.\n\n- ### Semantic Classification\n  - owl-class:: robotics:Telepresence\n  - owl-role:: System\n  - belongs-to-domain:: [[Robotics]], [[Human-Robot Interaction]], [[Teleoperation]]\n\n- ### Relationships\n  - is-subclass-of:: [[Teleoperation]]\n  - requires:: [[Communication Channel]]\n  - enables:: [[Remote Collaboration]], [[Remote Work]]\n\n- ### Content\n\n  - #### OWL Restrictions\n  - is-subclass-of:: [[Teleoperation]]\n  - requires:: [[Communication Channel]]\n  - requires:: [[Remote Robot]]\n  - requires:: [[Operator Interface]]\n  - provides:: [[Sensory Feedback]]\n  - enables:: [[Remote Interaction]]\n  - characterized-by:: [[Immersion]], [[Real-Time Communication]]\n\n  - #### Relationships\n  - is-subclass-of:: [[Teleoperation]]\n  - skos:related:: [[RB-1009-social-robotics]], [[Virtual Reality]]\n  - enables:: [[Remote Collaboration]], [[Remote Work]]\n  - uses:: [[Video Conferencing]], [[Haptic Feedback]], [[Mobile Robotics]]\n  - applied-in:: [[Healthcare]], [[Education]], [[Business]]\n\n  - **Key Components**\n  - Telepresence Robot (physical avatar)\n  - Operator Interface (control station)\n  - Communication Network (data transmission)\n  - Sensory Feedback Systems\n  - Navigation and Mobility System\n  - Audio-Visual Communication\n\n  - **Levels of Immersion**\n  1. Basic Video Conferencing\n  2. Mobile Screen with Remote Control\n  3. Full Telepresence Robot\n  4. VR-Enabled Telepresence\n  5. Haptic and Multi-Sensory Feedback\n\n  - **Types of Telepresence Systems**\n  - Desktop Telepresence (screen-based)\n  - Mobile Telepresence Robots\n  - Humanoid Telepresence\n  - VR/AR Telepresence\n  - Surgical Telepresence\n  - Industrial Telepresence\n\n  - **Technical Requirements**\n  - Low-Latency Communication (< 100ms ideal)\n  - High-Quality Video and Audio\n  - Reliable Network Connectivity\n  - Intuitive Control Interface\n  - Obstacle Detection and Avoidance\n  - Battery Management\n\n  - **Sensory Feedback**\n  - Visual (camera streams, depth perception)\n  - Audio (microphones, speakers)\n  - Haptic (force feedback, touch)\n  - Proprioceptive (robot state awareness)\n\n  - **Applications**\n  - Remote Work and Meetings\n  - Healthcare\n    - Remote consultations\n    - Tele-surgery\n    - Patient monitoring\n  - Education\n    - Remote learning\n    - Virtual field trips\n    - Guest lectures\n  - Business\n    - Office presence for remote workers\n    - Trade shows and conferences\n  - Social\n    - Family connections\n    - Social events participation\n  - Emergency Response\n    - Hazardous environment inspection\n    - Disaster assessment\n\n  - **Challenges**\n  - Network Latency and Bandwidth\n  - Presence and Embodiment (feeling \"there\")\n  - Social Acceptance\n  - Privacy Concerns\n  - Navigation in Complex Environments\n  - Battery Life and Mobility\n  - Eye Contact and Natural Interaction\n\n  - **User Experience Factors**\n  - Sense of Presence\n  - Control Responsiveness\n  - Audio-Visual Quality\n  - Ease of Navigation\n  - Social Interaction Quality\n  - Fatigue and Comfort\n\n  - **Advantages**\n  - Enables remote participation\n  - Reduces travel costs and time\n  - Allows presence in multiple locations\n  - Provides mobility for remote users\n  - Facilitates global collaboration\n\n  - **Limitations**\n  - Cannot replace physical presence entirely\n  - Technical failures can disrupt interaction\n  - Limited physical interaction\n  - Dependent on network quality\n  - Social awkwardness in some contexts\n\n  - **Commercial Examples**\n  - Double Robotics\n  - Beam Telepresence\n  - OhmniLabs\n  - Suitable Technologies\n  - VGo\n\n  - **Quality Metrics**\n  - authority-score:: 0.93\n  - completeness:: 0.90\n  - accuracy:: 0.92\n\n- ### Provenance\n  - sources:: [[Human-Robot Interaction]], [[Teleoperation]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Business",
+    "Communication Channel",
+    "Education",
+    "Haptic Feedback",
+    "Healthcare",
+    "Human-Robot Interaction",
+    "Immersion",
+    "Mobile Robotics",
+    "Operator Interface",
+    "RB-1009-social-robotics",
+    "Real-Time Communication",
+    "Remote Collaboration",
+    "Remote Interaction",
+    "Remote Robot",
+    "Remote Work",
+    "Robotics",
+    "Sensory Feedback",
+    "Teleoperation",
+    "Video Conferencing",
+    "Virtual Reality"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:telepresence-rb-1010",
+    "iri": "http://narrativegoldmine.com/robotics#Telepresence",
+    "content_hash": "sha256-12-63f9f8a86622",
+    "legacy_term_id": "RB-1010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:telepresence-rb-1010",
+    "schema_version": "v2",
+    "term_id": "RB-1010",
+    "preferred_term": "Telepresence",
+    "alt_terms": [],
+    "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
+    "domain_full_name": "Robotics",
+    "definition": "A technology that enables a person to feel as if they were present at a remote location through a robot or virtual avatar, allowing interaction with the remote environment and people as if physically there. It combines remote control, real-time feedback, and immersive interfaces.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.93,
+    "created": "2025-11-24T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:Telepresence",
+    "owl_role": "System",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Teleoperation"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "Communication Channel"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Remote Collaboration",
+      "Remote Work"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Robotics",
+      "Human-Robot Interaction",
+      "Teleoperation"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Human-Robot Interaction",
+      "Teleoperation"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

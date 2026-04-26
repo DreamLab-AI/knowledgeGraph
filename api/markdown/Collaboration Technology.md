@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9526-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9526
-	- preferred-term:: Collaboration Technology
-	- source-domain:: mv
-	- owl:class:: mv:CollaborationTechnology
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Collaboration Technology is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#CollaborationTechnology
+uri:: urn:visionclaw:concept:spatial-computing:collaboration-technology
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:collaboration-technology
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Collaboration Technology
+content-hash:: sha256-12-e4923a9ab1b8
+legacy-term-id:: MV-9526
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Collaboration Technology is a concept within the metaverse domain. Further enrichment pending.
 
-Collaboration Technology represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:CollaborationTechnology
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Telecollaboration]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Collaboration Technology represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

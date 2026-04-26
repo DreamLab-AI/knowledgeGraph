@@ -1,52 +1,57 @@
 {
-  "id": "Digital Currency",
+  "id": "digital-currency",
   "title": "Digital Currency",
-  "content": "- ### OntologyBlock\n  id:: digital-currency-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9855\n\t- source-domain:: mv\n\t- preferred-term:: Digital Currency\n\t- definition:: Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.\n\t- status:: active\n\t- owl:class:: mv:DigitalCurrency\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-currency-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Financial Technology]]\n\t\t- enables:: [[Digital Payments]], [[Virtual Transactions]], [[Programmable Money]]\n\t\t- requires:: [[Digital Wallet]], [[Transaction Network]], [[Security Infrastructure]]\n\t\t- related-to:: [[CBDC]], [[Cryptocurrency]], [[Stablecoin]]\n- ## Technical Details\n\t- **Currency Types**:\n\t\t- CBDCs: Central bank issued, centralized ledger\n\t\t- Cryptocurrencies: Decentralized, blockchain-based (Bitcoin, Ethereum)\n\t\t- Stablecoins: Pegged to fiat or commodities (USDT, USDC)\n\t\t- Virtual currencies: In-game or platform-specific tokens\n\t- **Global CBDC Status (2024)**:\n\t\t- 134 countries (98% of GDP) exploring CBDCs\n\t\t- China e-CNY: 7 trillion yuan ($986B) transaction volume\n\t\t- India e-rupee: 334% growth, ₹10.16 billion in circulation\n\t\t- 91% of surveyed central banks exploring retail or wholesale CBDCs\n\t- **Technology Stack**:\n\t\t- Distributed ledger technology (DLT)\n\t\t- Smart contracts for programmable money\n\t\t- Cross-border payment protocols\n\t\t- Digital wallet infrastructure\n\t- **Regulatory Framework**: EU MiCAR effective June 2024, US halted retail CBDC work 2025\n- ## Applications\n\t- Cross-border remittances\n\t- Metaverse commerce\n\t- Programmable payments\n\t- Financial inclusion\n\t- Micropayment systems",
+  "content": "- ### Definition\n  - Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.\n\nbridges-to:: [[Blockchain]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalCurrency\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Financial Technology]]\n  - requires:: [[Digital Wallet]], [[Transaction Network]], [[Security Infrastructure]]\n  - enables:: [[Digital Payments]], [[Virtual Transactions]], [[Programmable Money]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Currency Types**:\n\t\t- CBDCs: Central bank issued, centralized ledger\n\t\t- Cryptocurrencies: Decentralized, blockchain-based (Bitcoin, Ethereum)\n\t\t- Stablecoins: Pegged to fiat or commodities (USDT, USDC)\n\t\t- Virtual currencies: In-game or platform-specific tokens\n  - **Global CBDC Status (2024)**:\n\t\t- 134 countries (98% of GDP) exploring CBDCs\n\t\t- China e-CNY: 7 trillion yuan ($986B) transaction volume\n\t\t- India e-rupee: 334% growth, ₹10.16 billion in circulation\n\t\t- 91% of surveyed central banks exploring retail or wholesale CBDCs\n  - **Technology Stack**:\n\t\t- Distributed ledger technology (DLT)\n\t\t- Smart contracts for programmable money\n\t\t- Cross-border payment protocols\n\t\t- Digital wallet infrastructure\n  - **Regulatory Framework**: EU MiCAR effective June 2024, US halted retail CBDC work 2025\n  - ## Applications\n  - Cross-border remittances\n  - Metaverse commerce\n  - Programmable payments\n  - Financial inclusion\n  - Micropayment systems\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Monetary Sovereignty",
-    "Transaction Standard",
     "Value Transfer",
-    "Monetary System",
+    "Asia Pacific Regulation",
     "Central Bank Digital Currency",
     "Bitcoin As Money",
-    "Central Bank Digital Currency (CBDC)",
-    "Money",
-    "Barter System"
+    "Cryptocurrency"
   ],
   "wiki_links": [
-    "Virtual Transactions",
-    "Transaction Network",
-    "Cryptocurrency",
-    "Financial Technology",
+    "Blockchain",
     "Digital Payments",
+    "Digital Wallet",
+    "Financial Technology",
     "Programmable Money",
     "Security Infrastructure",
-    "metaverse",
-    "Stablecoin",
-    "CBDC",
-    "Digital Wallet"
+    "Transaction Network",
+    "Virtual Transactions",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-currency",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalCurrency",
+    "content_hash": "sha256-12-048fb25f9933",
+    "legacy_term_id": "MV-9855",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-currency",
+    "schema_version": "v2",
     "term_id": "MV-9855",
     "preferred_term": "Digital Currency",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalCurrency",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Any form of monetary value that exists purely in electronic format, encompassing central bank digital currencies, cryptocurrencies, stablecoins, and virtual currencies used within metaverse economies for transactions, payments, and value exchange without physical representation.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalCurrency",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalCurrency",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Financial Technology"
@@ -67,26 +72,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "CBDC",
-        "Cryptocurrency",
-        "Stablecoin"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

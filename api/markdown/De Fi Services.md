@@ -1,21 +1,45 @@
-- ### OntologyBlock
-  id:: mv9564-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9564
-	- preferred-term:: De Fi Services
-	- source-domain:: mv
-	- owl:class:: mv:DeFiServices
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: De Fi Services is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#DeFiServices
+uri:: urn:visionclaw:concept:spatial-computing:de-fi-services
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:de-fi-services
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: De Fi Services
+content-hash:: sha256-12-54d3c8e73de4
+legacy-term-id:: MV-9564
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - De Fi Services is a concept within the metaverse domain. Further enrichment pending.
 
-De Fi Services represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DeFiServices
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  De Fi Services represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - bridges-to:: [[Blockchain]] (bc)
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

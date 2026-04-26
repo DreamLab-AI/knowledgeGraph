@@ -1,0 +1,74 @@
+{
+  "id": "computer-hardware",
+  "title": "Computer Hardware",
+  "content": "- ### Definition\n  - Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ComputerHardware\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: ['owl:Thing']\n  - bridges-to:: [[Autonomous Robot]], [[Blockchain]], [[Digital Twin]]\n\n- ### Content\n\n  #### Key Characteristics\n  - Optimized for matrix multiplication and tensor operations\n  - Supports mixed-precision training and quantized inference\n  - Provides high-bandwidth memory (HBM) for data-intensive workloads\n  - Enables distributed training via high-speed interconnects (NVLink, InfiniBand)\n  - Incorporates specialized units for common AI operations (tensor cores)\n\n  ## Overview\n\n  Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.\n\n  #### Related Concepts\n  - [[GPU Computing]]\n  - [[AI Accelerator]]\n  - [[Neuromorphic Hardware]]\n  - [[Distributed Training]]\n\n  #### References\n  - Jouppi, N. et al. (2017). In-Datacenter Performance Analysis of a Tensor Processing Unit. ISCA 2017.\n  - NVIDIA (2023). NVIDIA Hopper Architecture. Technical Whitepaper.\n  - Merolla, P. et al. (2014). A million spiking-neuron integrated circuit with a scalable communication network. Science, 345(6197), 668-673.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "AI Hardware"
+  ],
+  "wiki_links": [
+    "AI Accelerator",
+    "Autonomous Robot",
+    "Blockchain",
+    "Digital Twin",
+    "Distributed Training",
+    "GPU Computing",
+    "Neuromorphic Hardware"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:computer-hardware",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ComputerHardware",
+    "content_hash": "sha256-12-2073ae7991eb",
+    "legacy_term_id": "AI-9010",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:computer-hardware",
+    "schema_version": "v2",
+    "term_id": "AI-9010",
+    "preferred_term": "Computer Hardware",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "Computer Hardware for AI refers to the physical computing components optimized for artificial intelligence workloads, particularly neural network training and inference. This includes Graphics Processing Units (GPUs), Tensor Processing Units (TPUs), Field-Programmable Gate Arrays (FPGAs), Application-Specific Integrated Circuits (ASICs), and neuromorphic chips. Modern AI hardware emphasizes parallel processing, high memory bandwidth, low-precision arithmetic (FP16, INT8), and energy efficiency. Specialized accelerators like NVIDIA A100/H100, Google TPU v4/v5, and Intel Gaudi enable training of billion-parameter models and real-time inference at scale.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ComputerHardware",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "['owl:Thing']"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Autonomous Robot",
+      "Blockchain",
+      "Digital Twin"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

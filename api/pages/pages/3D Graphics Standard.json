@@ -1,0 +1,91 @@
+{
+  "id": "3d-graphics-standard",
+  "title": "3D Graphics Standard",
+  "content": "- ### Definition\n  - 3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:3DGraphicsStandard\n  - owl-role:: concept\n\n- ### Relationships\n  - is-subclass-of:: [[Rendering Standard]], [[Technical Specification]]\n  - bridges-to:: [[Computer Vision]], [[GPU Architecture]], [[Shader Language]]\n  - enables:: [[Real-time Rendering]], [[Cross-Platform Compatibility]], [[Hardware Acceleration]]\n  - requires:: [[GPU Support]], [[Driver Implementation]]\n\n- ### Content\n\n  ## Overview\n\n  3D Graphics Standards establish the contract between software and hardware for efficient visual computation. They define APIs, coordinate spaces, rasterisation algorithms, and performance expectations.\n\n  ## Key Standards\n  - **OpenGL**: Cross-platform API supporting desktop, mobile, and web rendering\n  - **DirectX**: Microsoft's ecosystem including Direct3D for Windows and Xbox\n  - **Vulkan**: Low-level API enabling fine-grained GPU control and efficiency\n  - **Metal**: Apple's optimised API for iOS and macOS devices\n\n  #### Related Concepts\n  - [[GPU Architecture]], [[Shader Language]], [[Rendering Pipeline]], [[3D Rendering Engine]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "3D Scene Exchange Protocol (SXP)",
+    "3D Development"
+  ],
+  "wiki_links": [
+    "3D Rendering Engine",
+    "Computer Vision",
+    "Cross-Platform Compatibility",
+    "DirectX",
+    "Driver Implementation",
+    "GPU Architecture",
+    "GPU Support",
+    "Hardware Acceleration",
+    "OpenGL",
+    "Real-time Rendering",
+    "Rendering Pipeline",
+    "Rendering Standard",
+    "Shader Language",
+    "Technical Specification",
+    "Vulkan"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:3d-graphics-standard",
+    "iri": "http://narrativegoldmine.com/spatial-computing#3dGraphicsStandard",
+    "content_hash": "sha256-12-4f178eade606",
+    "legacy_term_id": "MV-9503",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:3d-graphics-standard",
+    "schema_version": "v2",
+    "term_id": "MV-9503",
+    "preferred_term": "3D Graphics Standard",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions. These standards ensure consistency in visual output across platforms and enable developers to create graphics pipelines compatible with diverse hardware architectures.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T20:30:00Z",
+    "last_updated": "2026-04-26T20:30:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:3DGraphicsStandard",
+    "owl_role": "concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Rendering Standard",
+      "Technical Specification"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [
+      "GPU Support",
+      "Driver Implementation"
+    ],
+    "depends_on": [],
+    "enables": [
+      "Real-time Rendering",
+      "Cross-Platform Compatibility",
+      "Hardware Acceleration"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Computer Vision",
+      "GPU Architecture",
+      "Shader Language"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

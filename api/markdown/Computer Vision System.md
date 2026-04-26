@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9530-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9530
-	- preferred-term:: Computer Vision System
-	- source-domain:: mv
-	- owl:class:: mv:ComputerVisionSystem
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Computer Vision System is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#ComputerVisionSystem
+uri:: urn:visionclaw:concept:spatial-computing:computer-vision-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:computer-vision-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Computer Vision System
+content-hash:: sha256-12-e946fe01c8ab
+legacy-term-id:: MV-9530
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Computer Vision System is a concept within the metaverse domain. Further enrichment pending.
 
-Computer Vision System represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ComputerVisionSystem
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Computer Vision]]
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Computer Vision System represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

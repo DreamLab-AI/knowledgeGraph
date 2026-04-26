@@ -1,31 +1,54 @@
-- ### OntologyBlock
-  id:: ar-overlay-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9771
-	- source-domain:: mv
-	- preferred-term:: Ar Overlay
-	- status:: active
-	- definition:: AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.
-	- owl:class:: mv:ArOverlay
-	- belongsToDomain:: [[metaverse]]
-	- is-subclass-of:: [[Digital Display Layer]]
-	- enables:: [[Information Augmentation]], [[Spatial Annotation]], [[Virtual Object Placement]]
-	- requires:: [[Spatial Anchoring]], [[Real-Time Rendering]], [[Environmental Understanding]]
-	- #### Relationships
-	  id:: ar-overlay-relationships
-	  collapsed:: true
+iri:: http://narrativegoldmine.com/spatial-computing#ArOverlay
+uri:: urn:visionclaw:concept:spatial-computing:ar-overlay
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:ar-overlay
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Ar Overlay
+content-hash:: sha256-12-ec83bf82d6d2
+legacy-term-id:: MV-9771
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-### Technical Details
-Key components include:
-- **Digital Overlay**: Virtual elements from simple text to complex animated 3D objects added to user's view
-- **Spatial Anchoring**: Anchoring virtual objects to specific real-world locations
-- **Environmental Understanding**: Recognition of physical surfaces, lighting conditions, and spatial relationships
-- **Real-Time Interaction**: Dynamic response to user inputs and environmental changes
+- ### Definition
+  - AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.
 
-### Relationship to Spatial Computing
-AR overlay is described as "the immersive, interactive layer of digital content overlaid and anchored onto our physical world, perceived through a sophisticated lens or display." AR is a subset of spatial computing (XR) enabling human-computer interaction in three-dimensional spaces.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ArOverlay
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### 2024 Developments
-Apple Vision Pro and Meta Orion demonstrate advanced spatial overlay capabilities for mixed reality experiences.
+- ### Relationships
+  - is-subclass-of:: [[Digital Display Layer]]
+  - requires:: [[Spatial Anchoring]], [[Real-Time Rendering]], [[Environmental Understanding]]
+  - enables:: [[Information Augmentation]], [[Spatial Annotation]], [[Virtual Object Placement]]
+  - bridges-to:: [[Computer Vision]] (ai)
+
+- ### Content
+
+  ### Technical Details
+  Key components include:
+  - **Digital Overlay**: Virtual elements from simple text to complex animated 3D objects added to user's view
+  - **Spatial Anchoring**: Anchoring virtual objects to specific real-world locations
+  - **Environmental Understanding**: Recognition of physical surfaces, lighting conditions, and spatial relationships
+  - **Real-Time Interaction**: Dynamic response to user inputs and environmental changes
+
+  ### Relationship to Spatial Computing
+  AR overlay is described as "the immersive, interactive layer of digital content overlaid and anchored onto our physical world, perceived through a sophisticated lens or display." AR is a subset of spatial computing (XR) enabling human-computer interaction in three-dimensional spaces.
+
+  ### 2024 Developments
+  Apple Vision Pro and Meta Orion demonstrate advanced spatial overlay capabilities for mixed reality experiences.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

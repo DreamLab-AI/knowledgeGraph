@@ -1,160 +1,171 @@
-- ### OntologyBlock
-  id:: lidar-scanning-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9946
-	- source-domain:: mv
-	- preferred-term:: Lidar Scanning
-	- status:: active
-	- owl:class:: mv:LidarScanning
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.
-	- #### Relationships
-	  id:: lidar-scanning-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Spatial Mapping Technology]]
-		- related-to:: [[3D Capture Technology]]
-		- related-to:: [[Spatial Computing]]
-		- enables:: [[Digital Twin Creation]]
+iri:: http://narrativegoldmine.com/robotics#LidarScanning
+uri:: urn:visionclaw:concept:robotics:lidar-scanning
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:lidar-scanning
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Lidar Scanning
+content-hash:: sha256-12-28738ab5e0db
+legacy-term-id:: MV-9946
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Technology Principles
+- ### Definition
+  - Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.
 
-### How LiDAR Works
-- Laser pulse emission
-- Return time measurement
-- Object hit detection
-- 3D map generation
-- Environment scanning
+- ### Semantic Classification
+  - owl-class:: robotics:LidarScanning
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Technical Evolution
-- Previously bulky and expensive
-- Now compact systems
-- Smartphone integration
-- iPhone Pro 12 capability
-- Consumer accessibility
+- ### Relationships
+  - is-subclass-of:: [[Spatial Mapping Technology]]
+  - enables:: [[Digital Twin Creation]]
 
-## VR/AR Applications
+- ### Content
 
-### 3D Model Creation
-- Real-life object scanning
-- Virtual reality headset use
-- Gaming applications
-- Education and training
-- Healthcare simulation
+  ## Technology Principles
 
-### Manufacturing
-- Simulation environments
-- Visualisation improvement
-- Immersive experience
-- User engagement
-- Design validation
+  ### How LiDAR Works
+  - Laser pulse emission
+  - Return time measurement
+  - Object hit detection
+  - 3D map generation
+  - Environment scanning
 
-## AR Enhancements
+  ### Technical Evolution
+  - Previously bulky and expensive
+  - Now compact systems
+  - Smartphone integration
+  - iPhone Pro 12 capability
+  - Consumer accessibility
 
-### Enhanced Occlusion
-- Depth understanding
-- Object hiding precision
-- Real-world obstacle detection
-- Believable experience
-- Interactive environments
+  ## VR/AR Applications
 
-### Spatial Awareness
-- User position understanding
-- Real-time movement tracking
-- Context-sensitive interaction
-- Navigation support
-- Virtual map adjustment
+  ### 3D Model Creation
+  - Real-life object scanning
+  - Virtual reality headset use
+  - Gaming applications
+  - Education and training
+  - Healthcare simulation
 
-### Gesture Recognition
-- Hand movement capture
-- Body motion tracking
-- Natural interaction
-- Intuitive control
-- AR content engagement
+  ### Manufacturing
+  - Simulation environments
+  - Visualisation improvement
+  - Immersive experience
+  - User engagement
+  - Design validation
 
-## Apple Vision Pro
+  ## AR Enhancements
 
-### Digital LiDAR Scanner
-- Immersive experience delivery
-- Interactive AR/VR support
-- Spatial mapping capability
-- Hand tracking enhancement
-- Eye tracking support
+  ### Enhanced Occlusion
+  - Depth understanding
+  - Object hiding precision
+  - Real-world obstacle detection
+  - Believable experience
+  - Interactive environments
 
-### Features Enabled
-- AR content consumption
-- Metaverse experience
-- Gaming enhancement
-- Precision interaction
-- Environmental awareness
+  ### Spatial Awareness
+  - User position understanding
+  - Real-time movement tracking
+  - Context-sensitive interaction
+  - Navigation support
+  - Virtual map adjustment
 
-## Metaverse Development
+  ### Gesture Recognition
+  - Hand movement capture
+  - Body motion tracking
+  - Natural interaction
+  - Intuitive control
+  - AR content engagement
 
-### Vision for Metaverse
-- Shared virtual space
-- Real-time interaction
-- Digital content engagement
-- User collaboration
-- Spatial integration
+  ## Apple Vision Pro
 
-### LiDAR Role
-- Accurate spatial maps
-- Virtual/physical integration
-- Seamless blending
-- Environment precision
-- Reality bridging
+  ### Digital LiDAR Scanner
+  - Immersive experience delivery
+  - Interactive AR/VR support
+  - Spatial mapping capability
+  - Hand tracking enhancement
+  - Eye tracking support
 
-## Spatial Mapping Solutions
+  ### Features Enabled
+  - AR content consumption
+  - Metaverse experience
+  - Gaming enhancement
+  - Precision interaction
+  - Environmental awareness
 
-### ARway Technology
-- Hyper-accurate meshes
-- Metaverse spatial mapping
-- Wayfinding enhancement
-- Spatial computing focus
-- Market leadership
+  ## Metaverse Development
 
-### Dense Point Clouds
-- 3D environment images
-- Precise scanning
-- Hyper-accurate modelling
-- Environment capture
-- Digital representation
+  ### Vision for Metaverse
+  - Shared virtual space
+  - Real-time interaction
+  - Digital content engagement
+  - User collaboration
+  - Spatial integration
 
-## Industry Applications
+  ### LiDAR Role
+  - Accurate spatial maps
+  - Virtual/physical integration
+  - Seamless blending
+  - Environment precision
+  - Reality bridging
 
-### Spatial Computing
-- LiDAR and spatial intersection
-- AR/VR system development
-- Metaverse environment creation
-- 3D application support
-- Spatial mapping solutions
+  ## Spatial Mapping Solutions
 
-### Use Cases
-- Digital twin creation
-- Environment replication
-- Real estate virtualisation
-- Industrial simulation
-- Heritage preservation
+  ### ARway Technology
+  - Hyper-accurate meshes
+  - Metaverse spatial mapping
+  - Wayfinding enhancement
+  - Spatial computing focus
+  - Market leadership
 
-## Technical Specifications
+  ### Dense Point Clouds
+  - 3D environment images
+  - Precise scanning
+  - Hyper-accurate modelling
+  - Environment capture
+  - Digital representation
 
-### Scanning Capabilities
-- Point cloud density
-- Range measurement
-- Accuracy levels
-- Processing speed
-- Resolution options
+  ## Industry Applications
 
-### Integration Options
-- Mobile device sensors
-- Dedicated scanners
-- Headset integration
-- Drone mounting
-- Vehicle systems
+  ### Spatial Computing
+  - LiDAR and spatial intersection
+  - AR/VR system development
+  - Metaverse environment creation
+  - 3D application support
+  - Spatial mapping solutions
 
-## Metadata
+  ### Use Cases
+  - Digital twin creation
+  - Environment replication
+  - Real estate virtualisation
+  - Industrial simulation
+  - Heritage preservation
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Technical Specifications
+
+  ### Scanning Capabilities
+  - Point cloud density
+  - Range measurement
+  - Accuracy levels
+  - Processing speed
+  - Resolution options
+
+  ### Integration Options
+  - Mobile device sensors
+  - Dedicated scanners
+  - Headset integration
+  - Drone mounting
+  - Vehicle systems
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

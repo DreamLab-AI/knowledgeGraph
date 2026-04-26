@@ -1,181 +1,195 @@
-- ### OntologyBlock
-  id:: learning-resources-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9945
-	- source-domain:: mv
-	- preferred-term:: Learning Resources
-	- status:: active
-	- owl:class:: mv:LearningResources
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.
-	- #### Relationships
-	  id:: learning-resources-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Educational Technology]]
-		- related-to:: [[Learning Module]]
-		- related-to:: [[Immersive Learning]]
-		- enables:: [[Immersive Education]]
+iri:: http://narrativegoldmine.com/spatial-computing#LearningResources
+uri:: urn:visionclaw:concept:spatial-computing:learning-resources
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:learning-resources
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Learning Resources
+content-hash:: sha256-12-ba3d1137ce09
+legacy-term-id:: MV-9945
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Meta for Education Resources
+- ### Definition
+  - Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.
 
-### Programme Rollout (2024)
-- US and UK implementation
-- XR headset provision
-- Meta Quest 3 utilisation
-- Quest 3S support
-- Cutting-edge software
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LearningResources
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Beta Testing Results
-- 12+ universities participating
-- VR/XR prototype trials
-- Classroom integration
-- Educator feedback
-- Student engagement
+- ### Relationships
+  - is-subclass-of:: [[Educational Technology]]
+  - enables:: [[Immersive Education]]
 
-### Partnership Examples
-- University of Basque Country
-- University of Hannover
-- Leeds University
-- VictoryXR collaboration
-- Digital twin development
+- ### Content
 
-## Proven Outcomes
+  ## Meta for Education Resources
 
-### Purdue University
-- 10-15% nursing exam improvement
-- VR and MR education use
-- National exam results
-- Measurable outcomes
-- Skill enhancement
+  ### Programme Rollout (2024)
+  - US and UK implementation
+  - XR headset provision
+  - Meta Quest 3 utilisation
+  - Quest 3S support
+  - Cutting-edge software
 
-### University of Glasgow
-- Teaching transformation
-- Mixed reality standard-setting
-- Worldwide recognition
-- Innovative approach
-- Educational leadership
+  ### Beta Testing Results
+  - 12+ universities participating
+  - VR/XR prototype trials
+  - Classroom integration
+  - Educator feedback
+  - Student engagement
 
-### NYU College of Dentistry
-- 1,200+ students trained
-- VR simulations used
-- Practical skill development
-- Clinical preparation
-- Safe practice environment
+  ### Partnership Examples
+  - University of Basque Country
+  - University of Hannover
+  - Leeds University
+  - VictoryXR collaboration
+  - Digital twin development
 
-## Platform Capabilities
+  ## Proven Outcomes
 
-### Metaverse-as-a-Service
-- No-code solutions
-- Low-code platforms
-- LMS integration
-- Training resource control
-- Component combination
+  ### Purdue University
+  - 10-15% nursing exam improvement
+  - VR and MR education use
+  - National exam results
+  - Measurable outcomes
+  - Skill enhancement
 
-### AI Enhancement
-- Code generation assistance
-- Asset creation support
-- Customised environments
-- Real-time coaching
-- Adaptive feedback
+  ### University of Glasgow
+  - Teaching transformation
+  - Mixed reality standard-setting
+  - Worldwide recognition
+  - Innovative approach
+  - Educational leadership
 
-## Content Examples
+  ### NYU College of Dentistry
+  - 1,200+ students trained
+  - VR simulations used
+  - Practical skill development
+  - Clinical preparation
+  - Safe practice environment
 
-### Life Sciences (Glasgow)
-- Human body immersion
-- Internal exploration
-- Anatomical learning
-- Visual understanding
-- Interactive experience
+  ## Platform Capabilities
 
-### Criminal Justice (NMSU)
-- Virtual crime scenes
-- Investigation practice
-- Evidence analysis
-- Procedure learning
-- Real-world simulation
+  ### Metaverse-as-a-Service
+  - No-code solutions
+  - Low-code platforms
+  - LMS integration
+  - Training resource control
+  - Component combination
 
-### Business (Stanford)
-- Interview preparation
-- Professional skills
-- Communication practice
-- Scenario simulation
-- Confidence building
+  ### AI Enhancement
+  - Code generation assistance
+  - Asset creation support
+  - Customised environments
+  - Real-time coaching
+  - Adaptive feedback
 
-## Resource Delivery
+  ## Content Examples
 
-### Virtual World Exploration
-- Digital object interaction
-- Peer collaboration
-- Traditional classroom transcendence
-- Active participation
-- Deep understanding
+  ### Life Sciences (Glasgow)
+  - Human body immersion
+  - Internal exploration
+  - Anatomical learning
+  - Visual understanding
+  - Interactive experience
 
-### Dynamic Content
-- Interactive formats
-- Self-paced learning
-- Immediate feedback
-- Guidance provision
-- Personalised pathways
+  ### Criminal Justice (NMSU)
+  - Virtual crime scenes
+  - Investigation practice
+  - Evidence analysis
+  - Procedure learning
+  - Real-world simulation
 
-## 2024 Trends
+  ### Business (Stanford)
+  - Interview preparation
+  - Professional skills
+  - Communication practice
+  - Scenario simulation
+  - Confidence building
 
-### Generative AI Integration
-- Metaverse asset creation
-- Environment customisation
-- Content personalisation
-- Assistant integration
-- Adaptive programmes
+  ## Resource Delivery
 
-### Platform Flexibility
-- Easy-to-use interfaces
-- Customisable options
-- Reduced developer needs
-- Wider adoption
-- Accessibility improvement
+  ### Virtual World Exploration
+  - Digital object interaction
+  - Peer collaboration
+  - Traditional classroom transcendence
+  - Active participation
+  - Deep understanding
 
-## Research Considerations
+  ### Dynamic Content
+  - Interactive formats
+  - Self-paced learning
+  - Immediate feedback
+  - Guidance provision
+  - Personalised pathways
 
-### Current Limitations
-- Active learning gaps identified
-- Full potential not leveraged
-- Subset showing advantage
-- Pedagogical shortfall
-- Deep engagement needed
+  ## 2024 Trends
 
-### Recommendations
-- Pedagogical approach improvement
-- Active engagement facilitation
-- Technology capability leverage
-- Content quality focus
-- Evidence-based design
+  ### Generative AI Integration
+  - Metaverse asset creation
+  - Environment customisation
+  - Content personalisation
+  - Assistant integration
+  - Adaptive programmes
 
-## Resource Types
+  ### Platform Flexibility
+  - Easy-to-use interfaces
+  - Customisable options
+  - Reduced developer needs
+  - Wider adoption
+  - Accessibility improvement
 
-### 3D Models
-- Anatomical structures
-- Equipment replicas
-- Environment assets
-- Interactive objects
-- Manipulable elements
+  ## Research Considerations
 
-### Simulations
-- Procedure practice
-- Scenario exploration
-- Skill application
-- Safe experimentation
-- Repeated attempt
+  ### Current Limitations
+  - Active learning gaps identified
+  - Full potential not leveraged
+  - Subset showing advantage
+  - Pedagogical shortfall
+  - Deep engagement needed
 
-### Environments
-- Virtual classrooms
-- Laboratory spaces
-- Field locations
-- Historical settings
-- Professional spaces
+  ### Recommendations
+  - Pedagogical approach improvement
+  - Active engagement facilitation
+  - Technology capability leverage
+  - Content quality focus
+  - Evidence-based design
 
-## Metadata
+  ## Resource Types
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### 3D Models
+  - Anatomical structures
+  - Equipment replicas
+  - Environment assets
+  - Interactive objects
+  - Manipulable elements
+
+  ### Simulations
+  - Procedure practice
+  - Scenario exploration
+  - Skill application
+  - Safe experimentation
+  - Repeated attempt
+
+  ### Environments
+  - Virtual classrooms
+  - Laboratory spaces
+  - Field locations
+  - Historical settings
+  - Professional spaces
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

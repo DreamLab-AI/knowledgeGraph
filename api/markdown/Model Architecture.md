@@ -1,149 +1,160 @@
-- ### OntologyBlock
-  id:: model-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9968
-	- source-domain:: ai
-	- preferred-term:: Model Architecture
-	- status:: active
-	- owl:class:: ai:ModelArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.
-	- #### Relationships
-	  id:: model-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[System Architecture]]
-		- related-to:: [[Neural Network]]
-		- related-to:: [[Deep Learning]]
-		- enables:: [[AI Model Development]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#ModelArchitecture
+uri:: urn:visionclaw:concept:artificial-intelligence:model-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:model-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Model Architecture
+content-hash:: sha256-12-30936148e3eb
+legacy-term-id:: MV-9968
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Core Architectures
+- ### Definition
+  - The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.
 
-### Convolutional Neural Networks (CNNs)
-- Image analysis
-- Feature extraction
-- Pooling layers
-- Spatial hierarchies
-- Computer vision
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ModelArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Recurrent Neural Networks (RNNs)
-- Sequence processing
-- Temporal patterns
-- Hidden states
-- Time series
-- Natural language
+- ### Relationships
+  - is-subclass-of:: [[System Architecture]]
+  - enables:: [[AI Model Development]]
 
-### Transformers
-- Attention mechanisms
-- Parallel processing
-- Long-range dependencies
-- Language models
-- Multi-modal learning
+- ### Content
 
-### Generative Adversarial Networks (GANs)
-- Generator networks
-- Discriminator networks
-- Adversarial training
-- Synthetic data
-- Image generation
+  ## Core Architectures
 
-## Advanced Architectures
+  ### Convolutional Neural Networks (CNNs)
+  - Image analysis
+  - Feature extraction
+  - Pooling layers
+  - Spatial hierarchies
+  - Computer vision
 
-### LSTM and GRU
-- Memory cells
-- Gating mechanisms
-- Long sequences
-- Speech recognition
-- Time series analysis
+  ### Recurrent Neural Networks (RNNs)
+  - Sequence processing
+  - Temporal patterns
+  - Hidden states
+  - Time series
+  - Natural language
 
-### Capsule Networks
-- Nested layers
-- Spatial relationships
-- Viewpoint invariance
-- Hierarchical parsing
-- Dynamic routing
+  ### Transformers
+  - Attention mechanisms
+  - Parallel processing
+  - Long-range dependencies
+  - Language models
+  - Multi-modal learning
 
-### Graph Neural Networks (GNNs)
-- Node relationships
-- Edge features
-- Message passing
-- Social networks
-- Molecular structures
+  ### Generative Adversarial Networks (GANs)
+  - Generator networks
+  - Discriminator networks
+  - Adversarial training
+  - Synthetic data
+  - Image generation
 
-## Novel Developments (2024)
+  ## Advanced Architectures
 
-### Kolmogorov-Arnold Networks (KAN)
-- Enhanced interpretability
-- Mathematical foundation
-- Explainable outputs
-- Research interest
-- Transparent learning
+  ### LSTM and GRU
+  - Memory cells
+  - Gating mechanisms
+  - Long sequences
+  - Speech recognition
+  - Time series analysis
 
-### Neural Architecture Search (NAS)
-- Automated design
-- Algorithm optimisation
-- Model discovery
-- Efficiency gains
-- Performance improvement
+  ### Capsule Networks
+  - Nested layers
+  - Spatial relationships
+  - Viewpoint invariance
+  - Hierarchical parsing
+  - Dynamic routing
 
-## Design Patterns
+  ### Graph Neural Networks (GNNs)
+  - Node relationships
+  - Edge features
+  - Message passing
+  - Social networks
+  - Molecular structures
 
-### Layer Types
-- Dense/Fully connected
-- Convolutional
-- Recurrent
-- Attention
-- Normalisation
+  ## Novel Developments (2024)
 
-### Activation Functions
-- ReLU variants
-- Sigmoid
-- Tanh
-- Softmax
-- GELU
+  ### Kolmogorov-Arnold Networks (KAN)
+  - Enhanced interpretability
+  - Mathematical foundation
+  - Explainable outputs
+  - Research interest
+  - Transparent learning
 
-### Regularisation
-- Dropout
-- Batch normalisation
-- Weight decay
-- Data augmentation
-- Early stopping
+  ### Neural Architecture Search (NAS)
+  - Automated design
+  - Algorithm optimisation
+  - Model discovery
+  - Efficiency gains
+  - Performance improvement
 
-## Training Techniques
+  ## Design Patterns
 
-### Learning Methods
-- Supervised learning
-- Self-supervised learning
-- Federated learning
-- Transfer learning
-- Reinforcement learning
+  ### Layer Types
+  - Dense/Fully connected
+  - Convolutional
+  - Recurrent
+  - Attention
+  - Normalisation
 
-### Optimisation
-- Adam optimiser
-- SGD variants
-- Learning rate scheduling
-- Gradient clipping
-- Mixed precision
+  ### Activation Functions
+  - ReLU variants
+  - Sigmoid
+  - Tanh
+  - Softmax
+  - GELU
 
-## Architecture Selection
+  ### Regularisation
+  - Dropout
+  - Batch normalisation
+  - Weight decay
+  - Data augmentation
+  - Early stopping
 
-### Considerations
-- Task requirements
-- Data characteristics
-- Computational resources
-- Latency constraints
-- Accuracy needs
+  ## Training Techniques
 
-### Trade-offs
-- Depth vs width
-- Accuracy vs speed
-- Memory vs performance
-- Complexity vs interpretability
-- Training vs inference
+  ### Learning Methods
+  - Supervised learning
+  - Self-supervised learning
+  - Federated learning
+  - Transfer learning
+  - Reinforcement learning
 
-## Metadata
+  ### Optimisation
+  - Adam optimiser
+  - SGD variants
+  - Learning rate scheduling
+  - Gradient clipping
+  - Mixed precision
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Architecture Selection
+
+  ### Considerations
+  - Task requirements
+  - Data characteristics
+  - Computational resources
+  - Latency constraints
+  - Accuracy needs
+
+  ### Trade-offs
+  - Depth vs width
+  - Accuracy vs speed
+  - Memory vs performance
+  - Complexity vs interpretability
+  - Training vs inference
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

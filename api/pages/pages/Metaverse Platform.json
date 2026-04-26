@@ -1,9 +1,8 @@
 {
-  "id": "Metaverse Platform",
+  "id": "metaverse-platform",
   "title": "Metaverse Platform",
-  "content": "- ### OntologyBlock\n  id:: metaverse-platform-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9964\n\t- source-domain:: mv\n\t- preferred-term:: Metaverse Platform\n\t- status:: active\n\t- owl:class:: mv:MetaversePlatform\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.\n\t- #### Relationships\n\t  id:: metaverse-platform-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Virtual World]]\n\t\t- related-to:: [[Social VR]]\n\t\t- related-to:: [[User-Generated Content]]\n\t\t- enables:: [[Virtual Social Interaction]]\n\n## Market Overview\n\n### User Statistics\n- 600 million+ active users\n- Diverse audience\n- Entertainment focus\n- Gaming primary\n- Social interaction\n\n### Market Projections\n- $507.8 billion by 2030\n- 37.43% CAGR\n- Substantial growth\n- Investment increase\n- Platform expansion\n\n## Major Platforms\n\n### Roblox\n- 77.7 million daily users\n- 47 million daily active users\n- 9.5 million+ creators\n- Under-13 focus\n- AI moderation\n\n### Roblox Features\n- Game creation tools\n- Social platform\n- Content sharing\n- Safety filters\n- Creator economy\n\n### Fortnite\n- 236 million monthly users\n- Battle royale origin\n- Cultural hub\n- Concert events\n- Brand partnerships\n\n### Fortnite Evolution\n- Beyond gaming\n- Gallery experiences\n- Virtual events\n- Social space\n- Creative mode\n\n### Decentraland\n- Pioneer platform\n- Blockchain-based\n- Virtual land trading\n- Cryptocurrency economy\n- NFT integration\n\n### Decentraland Features\n- Artwork creation\n- Challenge development\n- Scene building\n- Social events\n- AI personalisation\n\n### VRChat\n- VR-focused platform\n- Social interaction\n- Avatar customisation\n- Community events\n- Identity exploration\n\n### VRChat Capabilities\n- Internal economy\n- Niche audiences\n- Immersive experience\n- Social gatherings\n- Creative expression\n\n## Platform Categories\n\n### Gaming Focused\n- Roblox\n- Fortnite\n- Minecraft\n- Active gameplay\n- Competitive elements\n\n### Social VR\n- VRChat\n- Horizon Worlds\n- Social emphasis\n- VR environments\n- Community building\n\n### Blockchain Native\n- Decentraland\n- The Sandbox\n- Crypto economy\n- Digital ownership\n- Decentralised governance\n\n## 2024 Trends\n\n### Technology Advances\n- Full-body tracking\n- Improved accuracy\n- Enhanced immersion\n- Better representation\n- Natural movement\n\n### Platform Evolution\n- Software improvements\n- Hardware advances\n- Content tools\n- User experience\n- Engagement features\n\n## Brand Engagement\n\n### Marketing Focus\n- Gen Z connection\n- Youth engagement\n- Brand experiences\n- Virtual products\n- Immersive campaigns\n\n### Brand Examples\n- Hugo Boss (Roblox)\n- Nike (various)\n- Gucci (multiple)\n- Fashion integration\n- Virtual commerce\n\n## User Experiences\n\n### Entertainment\n- Gaming\n- Concerts\n- Exhibitions\n- Parties\n- Cultural events\n\n### Social Features\n- Avatar interaction\n- Voice chat\n- Text communication\n- Gesture systems\n- Shared activities\n\n### Economic Activities\n- Trading assets\n- Virtual commerce\n- Creator monetisation\n- Employment\n- Investment\n\n## Platform Selection\n\n### For Marketing\n- Audience alignment\n- Brand fit\n- Feature availability\n- User demographics\n- Campaign goals\n\n### For Development\n- Creation tools\n- Monetisation options\n- User base\n- Technical capabilities\n- Platform policies\n\n## Safety Considerations\n\n### Content Moderation\n- AI filtering\n- Human review\n- Age verification\n- Report systems\n- Community guidelines\n\n### Child Safety\n- Parental controls\n- Age restrictions\n- Content limits\n- Interaction monitoring\n- Privacy protection\n\n## Technical Requirements\n\n### User Hardware\n- Gaming devices\n- VR headsets\n- Mobile devices\n- Desktop computers\n- Internet connection\n\n### Platform Infrastructure\n- Server capacity\n- Global reach\n- Low latency\n- High availability\n- Scalability\n\n## Future Outlook\n\n### Platform Convergence\n- Cross-platform identity\n- Asset portability\n- Interoperability\n- Standard protocols\n- Unified experiences\n\n### Technology Integration\n- AI enhancement\n- Spatial computing\n- Haptic feedback\n- Brain interfaces\n- Persistent worlds\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:MetaversePlatform\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Virtual World]]\n  - enables:: [[Virtual Social Interaction]]\n\n- ### Content\n\n  ## Market Overview\n\n  ### User Statistics\n  - 600 million+ active users\n  - Diverse audience\n  - Entertainment focus\n  - Gaming primary\n  - Social interaction\n\n  ### Market Projections\n  - $507.8 billion by 2030\n  - 37.43% CAGR\n  - Substantial growth\n  - Investment increase\n  - Platform expansion\n\n  ## Major Platforms\n\n  ### Roblox\n  - 77.7 million daily users\n  - 47 million daily active users\n  - 9.5 million+ creators\n  - Under-13 focus\n  - AI moderation\n\n  ### Roblox Features\n  - Game creation tools\n  - Social platform\n  - Content sharing\n  - Safety filters\n  - Creator economy\n\n  ### Fortnite\n  - 236 million monthly users\n  - Battle royale origin\n  - Cultural hub\n  - Concert events\n  - Brand partnerships\n\n  ### Fortnite Evolution\n  - Beyond gaming\n  - Gallery experiences\n  - Virtual events\n  - Social space\n  - Creative mode\n\n  ### Decentraland\n  - Pioneer platform\n  - Blockchain-based\n  - Virtual land trading\n  - Cryptocurrency economy\n  - NFT integration\n\n  ### Decentraland Features\n  - Artwork creation\n  - Challenge development\n  - Scene building\n  - Social events\n  - AI personalisation\n\n  ### VRChat\n  - VR-focused platform\n  - Social interaction\n  - Avatar customisation\n  - Community events\n  - Identity exploration\n\n  ### VRChat Capabilities\n  - Internal economy\n  - Niche audiences\n  - Immersive experience\n  - Social gatherings\n  - Creative expression\n\n  ## Platform Categories\n\n  ### Gaming Focused\n  - Roblox\n  - Fortnite\n  - Minecraft\n  - Active gameplay\n  - Competitive elements\n\n  ### Social VR\n  - VRChat\n  - Horizon Worlds\n  - Social emphasis\n  - VR environments\n  - Community building\n\n  ### Blockchain Native\n  - Decentraland\n  - The Sandbox\n  - Crypto economy\n  - Digital ownership\n  - Decentralised governance\n\n  ## 2024 Trends\n\n  ### Technology Advances\n  - Full-body tracking\n  - Improved accuracy\n  - Enhanced immersion\n  - Better representation\n  - Natural movement\n\n  ### Platform Evolution\n  - Software improvements\n  - Hardware advances\n  - Content tools\n  - User experience\n  - Engagement features\n\n  ## Brand Engagement\n\n  ### Marketing Focus\n  - Gen Z connection\n  - Youth engagement\n  - Brand experiences\n  - Virtual products\n  - Immersive campaigns\n\n  ### Brand Examples\n  - Hugo Boss (Roblox)\n  - Nike (various)\n  - Gucci (multiple)\n  - Fashion integration\n  - Virtual commerce\n\n  ## User Experiences\n\n  ### Entertainment\n  - Gaming\n  - Concerts\n  - Exhibitions\n  - Parties\n  - Cultural events\n\n  ### Social Features\n  - Avatar interaction\n  - Voice chat\n  - Text communication\n  - Gesture systems\n  - Shared activities\n\n  ### Economic Activities\n  - Trading assets\n  - Virtual commerce\n  - Creator monetisation\n  - Employment\n  - Investment\n\n  ## Platform Selection\n\n  ### For Marketing\n  - Audience alignment\n  - Brand fit\n  - Feature availability\n  - User demographics\n  - Campaign goals\n\n  ### For Development\n  - Creation tools\n  - Monetisation options\n  - User base\n  - Technical capabilities\n  - Platform policies\n\n  ## Safety Considerations\n\n  ### Content Moderation\n  - AI filtering\n  - Human review\n  - Age verification\n  - Report systems\n  - Community guidelines\n\n  ### Child Safety\n  - Parental controls\n  - Age restrictions\n  - Content limits\n  - Interaction monitoring\n  - Privacy protection\n\n  ## Technical Requirements\n\n  ### User Hardware\n  - Gaming devices\n  - VR headsets\n  - Mobile devices\n  - Desktop computers\n  - Internet connection\n\n  ### Platform Infrastructure\n  - Server capacity\n  - Global reach\n  - Low latency\n  - High availability\n  - Scalability\n\n  ## Future Outlook\n\n  ### Platform Convergence\n  - Cross-platform identity\n  - Asset portability\n  - Interoperability\n  - Standard protocols\n  - Unified experiences\n\n  ### Technology Integration\n  - AI enhancement\n  - Spatial computing\n  - Haptic feedback\n  - Brain interfaces\n  - Persistent worlds\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Shared Virtual World",
     "Infrastructure Architecture",
     "Tourism Metaverse",
     "Digital Constitution",
@@ -15,31 +14,40 @@
   "wiki_links": [
     "Virtual Social Interaction",
     "Virtual World",
-    "metaverse",
-    "User-Generated Content",
-    "Social VR"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:metaverse-platform",
+    "iri": "http://narrativegoldmine.com/spatial-computing#MetaversePlatform",
+    "content_hash": "sha256-12-d8c7eba4edb4",
+    "legacy_term_id": "MV-9964",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:metaverse-platform",
+    "schema_version": "v2",
     "term_id": "MV-9964",
     "preferred_term": "Metaverse Platform",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MetaversePlatform",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:MetaversePlatform",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:MetaversePlatform",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Virtual World"
@@ -54,25 +62,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Social VR",
-        "User-Generated Content"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

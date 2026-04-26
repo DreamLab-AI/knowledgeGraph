@@ -1,112 +1,127 @@
-- ### OntologyBlock
-  id:: granular-consent-control-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9912
-	- source-domain:: mv
-	- preferred-term:: Granular Consent Control
-	- status:: active
-	- owl:class:: mv:GranularConsentControl
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and user autonomy over personal information.
-	- #### Relationships
-	  id:: granular-consent-control-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Privacy Framework]]
-		- related-to:: [[Gdpr Article45]]
-		- related-to:: [[Data Protection Regulation]]
-		- enables:: [[User Data Autonomy]]
+iri:: http://narrativegoldmine.com/spatial-computing#GranularConsentControl
+uri:: urn:visionclaw:concept:spatial-computing:granular-consent-control
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:granular-consent-control
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Granular Consent Control
+content-hash:: sha256-12-63bb0bbca9ff
+legacy-term-id:: MV-9912
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## GDPR Requirements
+- ### Definition
+  - Privacy management mechanisms enabling users to selectively authorise specific types of data collection and processing within metaverse environments, allowing separate consent decisions for analytics, advertising, cross-device tracking, and data transfers while maintaining GDPR compliance and user autonomy over personal information.
 
-### Consent Principles
-- Explicit, freely given consent
-- Specific and informed authorisation
-- Data minimisation compliance
-- Purpose limitation adherence
-- Fairness and transparency
+- ### Semantic Classification
+  - owl-class:: spatial-computing:GranularConsentControl
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Metaverse Challenges
-- Unique platform characteristics complicate compliance
-- Continuous data collection requirements
-- Real-time sensor data processing
-- Cross-platform user tracking
+- ### Relationships
+  - is-subclass-of:: [[Privacy Framework]]
+  - enables:: [[User Data Autonomy]]
+  - bridges-to:: [[Computer Vision]]
 
-## Category-Based Controls
+- ### Content
 
-### Consent Categories
-- Analytics tracking permissions
-- Advertising personalisation settings
-- Cross-device measurement authorisation
-- Third-party data sharing controls
-- International transfer consent
+  ## GDPR Requirements
 
-### User Control Features
-- Separate consent for each category
-- Precise data usage control
-- Partial consent capability
-- Withdrawal mechanisms
+  ### Consent Principles
+  - Explicit, freely given consent
+  - Specific and informed authorisation
+  - Data minimisation compliance
+  - Purpose limitation adherence
+  - Fairness and transparency
 
-## Regional Requirements
+  ### Metaverse Challenges
+  - Unique platform characteristics complicate compliance
+  - Continuous data collection requirements
+  - Real-time sensor data processing
+  - Cross-platform user tracking
 
-### EEA and UK Users
-- Explicit opt-in consent required
-- Detailed processing explanations
-- Clear withdrawal mechanisms
-- Cross-border transfer controls
-- Advertising and analytics separation
+  ## Category-Based Controls
 
-### 2024 Enforcement
-- EUR 2.92 billion in GDPR fines (2024)
-- Meta Pixel implementation penalties
-- Advertising data collection focus
-- Stricter compliance requirements
+  ### Consent Categories
+  - Analytics tracking permissions
+  - Advertising personalisation settings
+  - Cross-device measurement authorisation
+  - Third-party data sharing controls
+  - International transfer consent
 
-## Technical Challenges
+  ### User Control Features
+  - Separate consent for each category
+  - Precise data usage control
+  - Partial consent capability
+  - Withdrawal mechanisms
 
-### Device Limitations
-- Screen-less device consent difficulties
-- Privacy policy display challenges
-- Sensor-based consent collection
-- Informed consent feasibility
+  ## Regional Requirements
 
-### Data Collection Conflicts
-- Data minimisation vs platform requirements
-- Real-time analysis demands
-- Sensor data volume increase
-- Enhanced experience trade-offs
+  ### EEA and UK Users
+  - Explicit opt-in consent required
+  - Detailed processing explanations
+  - Clear withdrawal mechanisms
+  - Cross-border transfer controls
+  - Advertising and analytics separation
 
-## Jurisdictional Complexity
+  ### 2024 Enforcement
+  - EUR 2.92 billion in GDPR fines (2024)
+  - Meta Pixel implementation penalties
+  - Advertising data collection focus
+  - Stricter compliance requirements
 
-### Multi-Law Compliance
-- Geo-specific privacy laws
-- Inconsistent global standards
-- Virtual world jurisdiction questions
-- Service provider matrix complexity
+  ## Technical Challenges
 
-### Controller Relationships
-- Multiple data controllers
-- Joint controller arrangements
-- Processor relationships
-- Overlapping regulatory requirements
+  ### Device Limitations
+  - Screen-less device consent difficulties
+  - Privacy policy display challenges
+  - Sensor-based consent collection
+  - Informed consent feasibility
 
-## Consent Management Platforms
+  ### Data Collection Conflicts
+  - Data minimisation vs platform requirements
+  - Real-time analysis demands
+  - Sensor data volume increase
+  - Enhanced experience trade-offs
 
-### Technical Solutions
-- Consent mode implementations
-- Category filtering systems
-- Preference centres
-- Audit trail maintenance
+  ## Jurisdictional Complexity
 
-### Platform Integration
-- Meta Consent Mode
-- Google Consent Mode V2
-- First-party data collection
-- Third-party cookie alternatives
+  ### Multi-Law Compliance
+  - Geo-specific privacy laws
+  - Inconsistent global standards
+  - Virtual world jurisdiction questions
+  - Service provider matrix complexity
 
-## Metadata
+  ### Controller Relationships
+  - Multiple data controllers
+  - Joint controller arrangements
+  - Processor relationships
+  - Overlapping regulatory requirements
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Consent Management Platforms
+
+  ### Technical Solutions
+  - Consent mode implementations
+  - Category filtering systems
+  - Preference centres
+  - Audit trail maintenance
+
+  ### Platform Integration
+  - Meta Consent Mode
+  - Google Consent Mode V2
+  - First-party data collection
+  - Third-party cookie alternatives
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

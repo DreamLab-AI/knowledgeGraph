@@ -1,42 +1,37 @@
-- ### OntologyBlock
-  id:: documentationgeneration-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#DocumentationGeneration
+uri:: urn:visionclaw:concept:artificial-intelligence:documentation-generation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:documentation-generation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Documentation Generation
+content-hash:: sha256-12-5c4371261255
+legacy-term-id:: AI-0869
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0869
-    - filename-history:: ["AI-0869-documentationgeneration.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0869
-    - preferred-term:: Documentation Generation
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Documentation Generation is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:DocumentationGeneration
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:DocumentationGeneration
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Generative Ai]]
+  - bridges-to:: [[Digital Twin]], [[Autonomous Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Generative Ai]]
+- ### Content
+  Documentation Generation — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DocumentationGeneration))
-      (SubClassOf :DocumentationGeneration :GenerativeAi)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DocumentationGeneration "Documentation Generation"@en)
-      ```
-
-- ## About Documentation Generation
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

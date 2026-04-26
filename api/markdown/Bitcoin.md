@@ -1,114 +1,102 @@
-- ### OntologyBlock
-  id:: bitcoin-ontology
-  collapsed:: true
-- **Identification**
-    - ontology:: true
-    - term-id:: BC-4000
-    - preferred-term:: Bitcoin
-    - source-domain:: bc
-    - status:: complete
-    - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-14
-    - quality-score:: 0.96
+iri:: http://narrativegoldmine.com/blockchain#Bitcoin
+uri:: urn:visionclaw:concept:blockchain:bitcoin
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:bitcoin
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Bitcoin
+content-hash:: sha256-12-00683bc64bb5
+legacy-term-id:: BC-4000
+status:: complete
+maturity:: mature
+quality-score:: 0.96
+authority-score:: 1.0
+version:: 2.0.0
+created:: 2025-11-14T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-  - **Definition**
-    - definition:: The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.
-    - maturity:: mature
-    - source:: [[Bitcoin Whitepaper (Nakamoto 2008)]], [[BIP (Bitcoin Improvement Proposals)]], [[ISO/IEC 23257:2021]]
-    - authority-score:: 1.0
+- ### Definition
+  - The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 million coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.
 
-  - **Semantic Classification**
-    - owl:class:: bc:Bitcoin
-    - owl:role:: Object
-    - owl:inferred-class:: bc:VirtualObject
-    - belongsToDomain:: [[BlockchainDomain]], [[TokenEconomicsDomain]]
-    - implementedInLayer:: [[EconomicLayer]], [[ConceptualLayer]]
+- ### Semantic Classification
+  - owl-class:: blockchain:Bitcoin
+  - owl-role:: Object
+  - owl-inferred:: blockchain:VirtualObject
+  - belongs-to-domain:: [[BlockchainDomain]], [[TokenEconomicsDomain]]
+  - implemented-in-layer:: [[EconomicLayer]], [[ConceptualLayer]]
 
-  - #### Relationships
-    id:: bitcoin-relationships
-    - is-subclass-of:: [[Cryptocurrency]], [[Blockchain]]
-    - has-part:: [[Block]], [[Transaction]], [[Script]], [[UTXO]], [[Lightning Network]], [[Mempool]]
-    - implements:: [[Proof of Work]], [[SHA-256]], [[Elliptic Curve Cryptography]], [[UTXO Model]]
-    - uses:: [[Halving]], [[Supply Cap]], [[Difficulty Adjustment]], [[Block Reward]]
-    - enables:: [[Peer-to-Peer Transfer]], [[Censorship Resistance]], [[Monetary Sovereignty]], [[Programmable Money]]
-    - bridges-to:: [[Renewable Energy]] (domain: energy), [[Value Transfer]] (domain: economics)
+- ### Relationships
+  - is-subclass-of:: [[Cryptocurrency]], [[Blockchain]]
+  - has-part:: [[Block]], [[Transaction]], [[Script]], [[UTXO]], [[Lightning Network]], [[Mempool]]
+  - enables:: [[Peer-to-Peer Transfer]], [[Censorship Resistance]], [[Monetary Sovereignty]], [[Programmable Money]]
+  - implements:: [[Proof of Work]], [[SHA-256]], [[Elliptic Curve Cryptography]], [[UTXO Model]]
+  - bridges-to:: [[Renewable Energy]] (domain: energy), [[Value Transfer]] (domain: economics)
 
-  - #### OWL Axioms
-    id:: bitcoin-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(:=<http://purl.org/blockchain-ontology#>)
-      Prefix(bc:=<http://purl.org/blockchain-ontology#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(rdf:=<http://www.w3.org/1999/02/22-rdf-syntax-ns#>)
-      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
+- ### Content
 
-      Ontology(<http://purl.org/blockchain-ontology/BC-0500>
-        Import(<http://purl.org/blockchain-ontology/core>)
-
-        ## Class Declaration
-        Declaration(Class(bc:Bitcoin))
+  ## Class Declaration
+        Declaration(Class(blockchain:Bitcoin))
 
         ## Subclass Relationships
-        SubClassOf(bc:Bitcoin bc:Cryptocurrency)
-        SubClassOf(bc:Bitcoin bc:Blockchain)
-        SubClassOf(bc:Bitcoin bc:VirtualObject)
+        SubClassOf(blockchain:Bitcoin blockchain:Cryptocurrency)
+        SubClassOf(blockchain:Bitcoin blockchain:Blockchain)
+        SubClassOf(blockchain:Bitcoin blockchain:VirtualObject)
 
         ## Essential Properties - Fixed Supply
-        SubClassOf(bc:Bitcoin
-          (DataHasValue bc:hasSupplyCap "21000000"^^xsd:integer))
+        SubClassOf(blockchain:Bitcoin
+          (DataHasValue blockchain:hasSupplyCap "21000000"^^xsd:integer))
 
-        SubClassOf(bc:Bitcoin
-          (DataHasValue bc:hasFixedSupply "true"^^xsd:boolean))
+        SubClassOf(blockchain:Bitcoin
+          (DataHasValue blockchain:hasFixedSupply "true"^^xsd:boolean))
 
         ## Consensus Mechanism
-        SubClassOf(bc:Bitcoin
-          (ObjectExactCardinality 1 bc:usesConsensus bc:ProofOfWork))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectExactCardinality 1 blockchain:usesConsensus blockchain:ProofOfWork))
 
         ## Hash Function
-        SubClassOf(bc:Bitcoin
-          (ObjectExactCardinality 1 bc:usesHashFunction bc:SHA256))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectExactCardinality 1 blockchain:usesHashFunction blockchain:SHA256))
 
         ## Transaction Model
-        SubClassOf(bc:Bitcoin
-          (ObjectExactCardinality 1 bc:usesTransactionModel bc:UTXOModel))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectExactCardinality 1 blockchain:usesTransactionModel blockchain:UTXOModel))
 
         ## Block Time
-        SubClassOf(bc:Bitcoin
-          (DataHasValue bc:hasBlockTime "600"^^xsd:integer))  # 10 minutes in seconds
+        SubClassOf(blockchain:Bitcoin
+          (DataHasValue blockchain:hasBlockTime "600"^^xsd:integer))  # 10 minutes in seconds
 
         ## Halving Schedule
-        SubClassOf(bc:Bitcoin
-          (ObjectSomeValuesFrom bc:implements bc:Halving))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectSomeValuesFrom blockchain:implements blockchain:Halving))
 
-        SubClassOf(bc:Bitcoin
-          (DataHasValue bc:halvingInterval "210000"^^xsd:integer))  # blocks
+        SubClassOf(blockchain:Bitcoin
+          (DataHasValue blockchain:halvingInterval "210000"^^xsd:integer))  # blocks
 
         ## Layer 2 Solutions
-        SubClassOf(bc:Bitcoin
-          (ObjectSomeValuesFrom bc:hasPart bc:LightningNetwork))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectSomeValuesFrom blockchain:hasPart blockchain:LightningNetwork))
 
         ## Script System
-        SubClassOf(bc:Bitcoin
-          (ObjectSomeValuesFrom bc:hasPart bc:Script))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectSomeValuesFrom blockchain:hasPart blockchain:Script))
 
         ## Programmability Features
-        SubClassOf(bc:Bitcoin
-          (ObjectSomeValuesFrom bc:supports bc:Miniscript))
+        SubClassOf(blockchain:Bitcoin
+          (ObjectSomeValuesFrom blockchain:supports blockchain:Miniscript))
 
         ## Data Properties
-        DataPropertyAssertion(bc:hasIdentifier bc:Bitcoin "BC-0500"^^xsd:string)
-        DataPropertyAssertion(bc:hasAuthorityScore bc:Bitcoin "1.0"^^xsd:decimal)
-        DataPropertyAssertion(bc:isFoundational bc:Bitcoin "true"^^xsd:boolean)
-        DataPropertyAssertion(bc:isFirstCryptocurrency bc:Bitcoin "true"^^xsd:boolean)
+        DataPropertyAssertion(blockchain:hasIdentifier blockchain:Bitcoin "BC-0500"^^xsd:string)
+        DataPropertyAssertion(blockchain:hasAuthorityScore blockchain:Bitcoin "1.0"^^xsd:decimal)
+        DataPropertyAssertion(blockchain:isFoundational blockchain:Bitcoin "true"^^xsd:boolean)
+        DataPropertyAssertion(blockchain:isFirstCryptocurrency blockchain:Bitcoin "true"^^xsd:boolean)
 
         ## Annotations
-        AnnotationAssertion(rdfs:label bc:Bitcoin "Bitcoin"@en)
-        AnnotationAssertion(rdfs:comment bc:Bitcoin
+        AnnotationAssertion(rdfs:label blockchain:Bitcoin "Bitcoin"@en)
+        AnnotationAssertion(rdfs:comment blockchain:Bitcoin
           "First decentralised cryptocurrency implementing proof-of-work consensus and fixed supply monetary policy"@en)
-        AnnotationAssertion(bc:priority bc:Bitcoin "1"^^xsd:integer)
+        AnnotationAssertion(blockchain:priority blockchain:Bitcoin "1"^^xsd:integer)
       )
 
   # Property characteristics
@@ -118,17 +106,13 @@
   AsymmetricObjectProperty(dt:enables)
   # Symmetric property
   SymmetricObjectProperty(dt:bridgesto)
-```
+  ```
 
-- ## About Bitcoin
-  id:: bitcoin-about
+  - ## About Bitcoin
 
   - Bitcoin is the **first decentralised cryptocurrency** and the foundational implementation of blockchain technology. Created by Satoshi Nakamoto in 2008 and launched in January 2009, Bitcoin introduced a peer-to-peer electronic cash system that operates without requiring a trusted central authority. It combines cryptographic techniques, distributed consensus, and economic incentives to create a censorship-resistant, scarce digital asset with a fixed supply of 21 million coins.
-  -
   - Bitcoin's significance extends beyond being merely the first cryptocurrency—it represents a novel solution to the Byzantine Generals Problem in distributed systems, introduces a decentralised monetary policy enforced by mathematics rather than institutions, and has catalysed an entire ecosystem of blockchain innovation and digital asset development.
-  -
   - ### Key Characteristics
-    id:: bitcoin-characteristics
     - **Fixed Supply**: Maximum 21 million BTC, enforced by protocol consensus
     - **Deflationary Design**: Halving of block rewards every 210,000 blocks (~4 years)
     - **Proof-of-Work Security**: SHA-256 based mining providing immutable transaction history
@@ -137,9 +121,7 @@
     - **Programmable Transactions**: Script language enabling complex spending conditions
     - **Global Accessibility**: Permissionless network accessible to anyone with internet
     - **Pseudonymous**: Addresses not inherently linked to real-world identities
-  -
   - ### Technical Components
-    id:: bitcoin-technical-components
     - [[Block]] - Data structure containing transactions, previous block hash, nonce, timestamp
     - [[Transaction]] - Transfer of bitcoin value between addresses using digital signatures
     - [[Script]] - Stack-based programming language for transaction validation logic
@@ -149,9 +131,7 @@
     - [[Node]] - Computer running Bitcoin software, validating and relaying transactions
     - [[Wallet]] - Software managing private keys and constructing transactions
     - [[Mempool]] - Pool of unconfirmed transactions awaiting inclusion in blocks
-  -
   - ### Advanced Technical Features
-    id:: bitcoin-advanced-features
 
     #### Bitcoin Script and Miniscript
     - **BIP-0118 (ANYPREVOUT)**: Soft-fork enabling signature flexibility for advanced protocols
@@ -179,9 +159,7 @@
     - Structured subset of Bitcoin Script enabling safer composition
     - Formal analysis of spending conditions
     - Improved wallet interoperability for complex scripts
-  -
   - ### Economic Properties
-    id:: bitcoin-economic-properties
 
     #### Supply Schedule
     - **Initial Block Reward**: 50 BTC (2009-2012)
@@ -211,9 +189,7 @@
     Corporate treasury adoption accelerated in parallel, with MicroStrategy acquiring 257,000 BTC in 2024 alone, demonstrating how the ETF approval catalysed broader institutional commitment. JPMorgan Chase projected Bitcoin reaching $165,000 by year-end 2025, driven by liquidity tailwinds and the conclusion of quantitative tightening, whilst VanEck maintained its $180,000 year-end target. Bitcoin's mining difficulty surged by 6.31% to an all-time high of 155.97 trillion in late 2025, indicating robust network security despite the reduced block reward.
 
     The convergence of halving mechanics, regulatory legitimacy, and institutional adoption represents a fundamental maturation of Bitcoin's role in global finance. What began as a peer-to-peer electronic cash experiment has evolved into a recognised asset class with over $149.96 billion in U.S. spot ETF net assets by Q4 2025—a trajectory that would have seemed implausible even five years prior.
-  -
   - ### Value Proposition
-    id:: bitcoin-value-proposition
 
     #### Monetary Sovereignty
     - **Self-Custody**: Users control their own assets via private keys
@@ -255,9 +231,7 @@
       - Geographic concentration effects where cheap electricity availability drives mining location decisions
       - Need for transparent reporting standards on energy mix and emissions
       - Balancing network security requirements with environmental sustainability goals
-  -
   - ### Network Architecture
-    id:: bitcoin-network-architecture
 
     #### Node Types
     - **Full Nodes**: Validate all transactions and blocks, enforce consensus rules
@@ -270,9 +244,7 @@
     - **Difficulty Adjustment**: Retargets every 2016 blocks (~2 weeks) to maintain 10-minute block time
     - **51% Attack Resistance**: Economic cost of attacking exceeds potential gain
     - **Byzantine Fault Tolerance**: Tolerates up to 50% malicious hash power
-  -
   - ### Use Cases
-    id:: bitcoin-use-cases
     - **Digital Gold**: Long-term store of value and inflation hedge
     - **Cross-Border Payments**: International remittances bypassing traditional banking
     - **Micropayments**: Lightning Network enables sub-cent transactions
@@ -281,9 +253,7 @@
     - **Smart Contracts**: Time-locked transactions, multi-signature wallets, atomic swaps
     - **Energy Grid Balancing**: Mining as interruptible load for renewable energy integration
     - **Censorship-Resistant Donations**: Supporting causes in restrictive jurisdictions
-  -
   - ### Standards & References
-    id:: bitcoin-standards
     - [[Bitcoin Whitepaper (Nakamoto 2008)]] - Original specification by Satoshi Nakamoto
     - [[BIP (Bitcoin Improvement Proposals)]] - Community-driven protocol enhancement process
       - BIP-0118: ANYPREVOUT signature hash mode
@@ -292,9 +262,7 @@
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies vocabulary
     - [[Lightning Network Whitepaper]] - Layer 2 scaling solution specification
     - [[Eltoo Protocol Whitepaper]] - Simplified payment channel update mechanism
-  -
   - ### Related Concepts
-    id:: bitcoin-related
     - [[Cryptocurrency]] - Parent class of digital currencies
     - [[Blockchain]] - Underlying distributed ledger technology
     - [[Proof of Work]] - Consensus mechanism used by Bitcoin
@@ -313,15 +281,11 @@
 
     - uses-technique:: [[Blockchain Network]]
 
-- ## About Bitcoin
-  id:: bitcoin-about
+  - ## About Bitcoin
 
   - [[Bitcoin]] is the **first decentralised [[cryptocurrency]]** and the foundational implementation of [[blockchain]] [[technology]]. Created by [[Satoshi Nakamoto]] in 2008 and launched in January 2009, Bitcoin introduced a [[peer-to-peer]] electronic [[cash system]] that operates without requiring a [[trusted central authority]]. It combines [[cryptographic techniques]], [[distributed consensus]], and [[economic incentives]] to create a [[censorship-resistant]], [[scarce]] [[digital asset]] with a [[fixed supply]] of 21 million [[coins]].
-  -
   - Bitcoin's significance extends beyond being merely the first cryptocurrency—it represents a novel solution to the [[Byzantine Generals Problem]] in [[distributed systems]], introduces a [[decentralised monetary policy]] enforced by [[mathematics]] rather than [[institutions]], and has catalysed an entire [[ecosystem]] of [[blockchain innovation]] and [[digital asset development]]. Bitcoin also enables emerging [[Bitcoin-AI]] integration patterns through protocols like [[L402-Protocol]] for [[micropayment]]-based [[AI services]], [[RGB and Client Side Validation]] for [[smart contracts]] on Bitcoin, and the [[Lightning and Similar L2]] payment network supporting the [[Agentic Internet]].
-  -
   - ### Key Characteristics
-    id:: bitcoin-characteristics
     - **[[Fixed Supply]]**: Maximum 21 million BTC, enforced by [[protocol consensus]]
     - **[[Deflationary Design]]**: [[Halving]] of [[block rewards]] every 210,000 [[blocks]] (~4 years)
     - **[[Proof-of-Work]] [[Security]]**: [[SHA-256]] based [[mining]] providing [[immutable]] [[transaction history]]
@@ -330,9 +294,7 @@
     - **[[Programmable Transactions]]**: [[Script]] language enabling complex [[spending conditions]]
     - **[[Global Accessibility]]**: [[Permissionless]] network accessible to anyone with [[internet]]
     - **[[Pseudonymous]]**: [[Addresses]] not inherently linked to [[real-world identities]]
-  -
   - ### Technical Components
-    id:: bitcoin-technical-components
     - [[Block]] - Data structure containing transactions, previous block hash, nonce, timestamp
     - [[Transaction]] - Transfer of bitcoin value between addresses using digital signatures
     - [[Script]] - Stack-based programming language for transaction validation logic
@@ -342,9 +304,7 @@
     - [[Node]] - Computer running Bitcoin software, validating and relaying transactions
     - [[Wallet]] - Software managing private keys and constructing transactions
     - [[Mempool]] - Pool of unconfirmed transactions awaiting inclusion in blocks
-  -
   - ### Advanced Technical Features
-    id:: bitcoin-advanced-features
 
     #### Bitcoin Script and Miniscript
     - **[[BIP-0118]] ([[ANYPREVOUT]])**: [[Soft-fork]] enabling [[signature flexibility]] for advanced [[protocols]]
@@ -374,9 +334,7 @@
     - [[Formal analysis]] of [[spending conditions]]
     - Improved [[wallet]] [[interoperability]] for complex [[scripts]]
     - Enables [[RGB and Client Side Validation]] for advanced [[smart contract]] capabilities on Bitcoin
-  -
   - ### Economic Properties
-    id:: bitcoin-economic-properties
 
     #### Supply Schedule
     - **Initial Block Reward**: 50 BTC (2009-2012)
@@ -408,9 +366,7 @@
     **[Updated 2025]**: Total [[Bitcoin ETF]] [[AUM]] reached approximately **$134.6-170 billion** by October 2025, with [[institutional holdings]] of **$33.6 billion** in Q2 2025 representing **24.96%** of total ETF assets. [[BlackRock]]'s IBIT approached $100 billion in AUM, becoming one of the most successful ETF launches in history.
 
     The convergence of halving mechanics, regulatory legitimacy, and institutional adoption represents a fundamental maturation of Bitcoin's role in [[global finance]]. What began as a peer-to-peer electronic cash experiment has evolved into a recognised [[asset class]] supporting emerging use cases including [[AI services]] monetization through [[Lightning Network]] and [[L402-Protocol]], [[tokenization]] via [[RGB and Client Side Validation]], and infrastructure for the [[Agentic Internet]].
-  -
   - ### Value Proposition
-    id:: bitcoin-value-proposition
 
     #### [[Monetary Sovereignty]]
     - **[[Self-Custody]]**: Users control their own [[assets]] via [[private keys]]
@@ -453,9 +409,7 @@
       - Geographic concentration effects where cheap electricity availability drives mining location decisions
       - Need for transparent reporting standards on energy mix and emissions
       - Balancing network security requirements with environmental sustainability goals
-  -
   - ### Network Architecture
-    id:: bitcoin-network-architecture
 
     #### Node Types
     - **Full Nodes**: Validate all transactions and blocks, enforce consensus rules
@@ -468,9 +422,7 @@
     - **Difficulty Adjustment**: Retargets every 2016 blocks (~2 weeks) to maintain 10-minute block time
     - **51% Attack Resistance**: Economic cost of attacking exceeds potential gain
     - **Byzantine Fault Tolerance**: Tolerates up to 50% malicious hash power
-  -
   - ### Use Cases
-    id:: bitcoin-use-cases
     - **[[Digital Gold]]**: Long-term [[store of value]] and [[inflation hedge]]
     - **[[Cross-Border Payments]]**: International [[remittances]] bypassing [[traditional banking]]
     - **[[Micropayments]]**: [[Lightning Network]] enables sub-cent [[transactions]] for [[AI API]] access via [[L402-Protocol]]
@@ -481,9 +433,7 @@
     - **[[Censorship-Resistant Donations]]**: Supporting causes in restrictive jurisdictions
     - **[[AI Services]] [[Monetization]]**: [[Lightning Network]] [[micropayments]] enabling [[pay-per-use]] [[machine learning]] models
     - **[[Agentic Internet]]**: [[Autonomous agent]] payments and [[machine-to-machine]] value transfer
-  -
   - ### Standards & References
-    id:: bitcoin-standards
     - [[Bitcoin Whitepaper (Nakamoto 2008)]] - Original specification by Satoshi Nakamoto
     - [[BIP (Bitcoin Improvement Proposals)]] - Community-driven protocol enhancement process
       - BIP-0118: ANYPREVOUT signature hash mode
@@ -492,9 +442,7 @@
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies vocabulary
     - [[Lightning Network Whitepaper]] - Layer 2 scaling solution specification
     - [[Eltoo Protocol Whitepaper]] - Simplified payment channel update mechanism
-  -
   - ### Related Concepts
-    id:: bitcoin-related
     - [[Cryptocurrency]] - Parent class of digital currencies
     - [[Blockchain]] - Underlying distributed ledger technology
     - [[Proof of Work]] - Consensus mechanism used by Bitcoin
@@ -522,128 +470,132 @@
     - uses-technique:: [[Blockchain Network]]
 
 
-## Academic Context
+  ## Academic Context
 
-- Brief contextual overview
-	- Bitcoin remains the pioneering decentralised digital currency, introduced in 2008 by the pseudonymous Satoshi Nakamoto
-	- Its foundational innovation lies in the blockchain, a distributed ledger technology enabling trustless peer-to-peer transactions without intermediaries
-	- Bitcoin’s design prioritises scarcity, security, and decentralisation, with a capped supply of 21 million coins
+  - Brief contextual overview
+  - Bitcoin remains the pioneering decentralised digital currency, introduced in 2008 by the pseudonymous Satoshi Nakamoto
+  - Its foundational innovation lies in the blockchain, a distributed ledger technology enabling trustless peer-to-peer transactions without intermediaries
+  - Bitcoin’s design prioritises scarcity, security, and decentralisation, with a capped supply of 21 million coins
 
-- Key developments and current state
-	- Bitcoin has evolved from a niche cryptographic experiment to a globally recognised asset class, influencing both financial markets and academic research
-	- The protocol has demonstrated remarkable resilience, withstanding technical, regulatory, and economic challenges over more than a decade
-	- Academic interest spans cryptography, economics, distributed systems, and financial regulation
+  - Key developments and current state
+  - Bitcoin has evolved from a niche cryptographic experiment to a globally recognised asset class, influencing both financial markets and academic research
+  - The protocol has demonstrated remarkable resilience, withstanding technical, regulatory, and economic challenges over more than a decade
+  - Academic interest spans cryptography, economics, distributed systems, and financial regulation
 
-- Academic foundations
-	- The Bitcoin whitepaper, “Bitcoin: A Peer-to-Peer Electronic Cash System,” is widely cited in computer science and economics literature
-	- Research continues to explore consensus mechanisms, game theory, and the socio-economic implications of decentralised currencies
+  - Academic foundations
+  - The Bitcoin whitepaper, “Bitcoin: A Peer-to-Peer Electronic Cash System,” is widely cited in computer science and economics literature
+  - Research continues to explore consensus mechanisms, game theory, and the socio-economic implications of decentralised currencies
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
-	- Bitcoin is increasingly integrated into mainstream financial infrastructure, with institutional investors, asset managers, and payment platforms offering Bitcoin-related products
-	- Major global exchanges and custodians provide regulated access to Bitcoin, including ETFs and staking services
-	- In the UK, Bitcoin is accessible through regulated exchanges such as Coinbase UK and Bitstamp, with growing interest from fintech firms and traditional financial institutions
+  - Industry adoption and implementations
+  - Bitcoin is increasingly integrated into mainstream financial infrastructure, with institutional investors, asset managers, and payment platforms offering Bitcoin-related products
+  - Major global exchanges and custodians provide regulated access to Bitcoin, including ETFs and staking services
+  - In the UK, Bitcoin is accessible through regulated exchanges such as Coinbase UK and Bitstamp, with growing interest from fintech firms and traditional financial institutions
 
-- Notable organisations and platforms
-	- Bitwise Asset Management offers a suite of Bitcoin investment products, serving institutional and retail clients globally
-	- Grayscale Investments provides Bitcoin Trusts and sector-specific indexes, contributing to the professionalisation of crypto asset management
-	- Chainalysis supports regulatory compliance and market analysis, with a presence in London and Manchester
+  - Notable organisations and platforms
+  - Bitwise Asset Management offers a suite of Bitcoin investment products, serving institutional and retail clients globally
+  - Grayscale Investments provides Bitcoin Trusts and sector-specific indexes, contributing to the professionalisation of crypto asset management
+  - Chainalysis supports regulatory compliance and market analysis, with a presence in London and Manchester
 
-- UK and North England examples where relevant
-	- Manchester and Leeds have emerged as regional fintech hubs, with local startups and academic institutions exploring blockchain applications
-	- Newcastle and Sheffield host research groups focused on distributed ledger technologies and digital finance, often collaborating with industry partners
+  - UK and North England examples where relevant
+  - Manchester and Leeds have emerged as regional fintech hubs, with local startups and academic institutions exploring blockchain applications
+  - Newcastle and Sheffield host research groups focused on distributed ledger technologies and digital finance, often collaborating with industry partners
 
-- Technical capabilities and limitations
-	- Bitcoin’s proof-of-work consensus mechanism ensures security but faces criticism for energy consumption and scalability
-	- Ongoing development efforts, such as the Lightning Network, aim to improve transaction speed and reduce fees
-	- The protocol’s immutability and decentralisation remain core strengths, though upgrades require broad community consensus
+  - Technical capabilities and limitations
+  - Bitcoin’s proof-of-work consensus mechanism ensures security but faces criticism for energy consumption and scalability
+  - Ongoing development efforts, such as the Lightning Network, aim to improve transaction speed and reduce fees
+  - The protocol’s immutability and decentralisation remain core strengths, though upgrades require broad community consensus
 
-- Standards and frameworks
-	- Bitcoin adheres to open-source standards, with regular protocol updates managed through a transparent governance process
-	- Regulatory frameworks in the UK and EU continue to evolve, with the GENIUS Act and similar legislation shaping the legal landscape for stablecoins and digital assets
+  - Standards and frameworks
+  - Bitcoin adheres to open-source standards, with regular protocol updates managed through a transparent governance process
+  - Regulatory frameworks in the UK and EU continue to evolve, with the GENIUS Act and similar legislation shaping the legal landscape for stablecoins and digital assets
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
-	- Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf
-	- Böhme, R., Christin, N., Edelman, B., & Moore, T. (2015). Bitcoin: Economics, Technology, and Governance. Journal of Economic Perspectives, 29(2), 213–238. https://doi.org/10.1257/jep.29.2.213
-	- Fisch, C. (2019). Initial Coin Offerings (ICOs) to Finance New Ventures: An Exploratory Study. Journal of Business Venturing, 34(1), 1–22. https://doi.org/10.1016/j.jbusvent.2018.09.007
-	- Grinberg, R. (2012). Bitcoin: An Innovative Alternative Digital Currency. Hastings Science & Technology Law Journal, 4(1), 159–208. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1976021
-	- Schnoering, M., & Vazirgiannis, M. (2025). Bitcoin research with a transaction graph dataset. Scientific Data, 12(1). https://doi.org/10.1038/s41597-025-04684-8
-	- Rudd, M. A. (2024). Important Bitcoin information gaps and research needs for 2024. SSRN Electronic Journal. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5146515
-	- Taylor & Francis. (2024). Unravelling the global landscape of Bitcoin research: insights from bibliometric analysis. Technology Analysis & Strategic Management. https://doi.org/10.1080/09537325.2024.2306931
+  - Key academic papers and sources
+  - Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf
+  - Böhme, R., Christin, N., Edelman, B., & Moore, T. (2015). Bitcoin: Economics, Technology, and Governance. Journal of Economic Perspectives, 29(2), 213–238. https://doi.org/10.1257/jep.29.2.213
+  - Fisch, C. (2019). Initial Coin Offerings (ICOs) to Finance New Ventures: An Exploratory Study. Journal of Business Venturing, 34(1), 1–22. https://doi.org/10.1016/j.jbusvent.2018.09.007
+  - Grinberg, R. (2012). Bitcoin: An Innovative Alternative Digital Currency. Hastings Science & Technology Law Journal, 4(1), 159–208. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1976021
+  - Schnoering, M., & Vazirgiannis, M. (2025). Bitcoin research with a transaction graph dataset. Scientific Data, 12(1). https://doi.org/10.1038/s41597-025-04684-8
+  - Rudd, M. A. (2024). Important Bitcoin information gaps and research needs for 2024. SSRN Electronic Journal. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5146515
+  - Taylor & Francis. (2024). Unravelling the global landscape of Bitcoin research: insights from bibliometric analysis. Technology Analysis & Strategic Management. https://doi.org/10.1080/09537325.2024.2306931
 
-- Ongoing research directions **[Updated 2025]**
-	- [[Scalability]] and [[energy efficiency]] of [[consensus mechanisms]]
-	- [[Regulatory impact]] on [[market dynamics]] and [[investor behaviour]]
-	- Integration of Bitcoin with [[emerging technologies]], particularly [[artificial intelligence]], [[machine learning]], and the [[Internet of Things]]
-	- [[Lightning Network]] development and [[Layer 2]] scaling solutions
-	- [[Bitcoin-AI]] integration patterns including [[L402-Protocol]] and [[micropayment]]-based [[AI services]]
-	- [[RGB]] protocol and [[client-side validation]] for advanced [[smart contracts]]
-	- [[Decentralised finance]] (DeFi), [[non-fungible tokens]] (NFTs), and [[clean energy]] mining
-	- [[Monetary policy]] implications and [[store of value]] characteristics
+  - Ongoing research directions **[Updated 2025]**
+  - [[Scalability]] and [[energy efficiency]] of [[consensus mechanisms]]
+  - [[Regulatory impact]] on [[market dynamics]] and [[investor behaviour]]
+  - Integration of Bitcoin with [[emerging technologies]], particularly [[artificial intelligence]], [[machine learning]], and the [[Internet of Things]]
+  - [[Lightning Network]] development and [[Layer 2]] scaling solutions
+  - [[Bitcoin-AI]] integration patterns including [[L402-Protocol]] and [[micropayment]]-based [[AI services]]
+  - [[RGB]] protocol and [[client-side validation]] for advanced [[smart contracts]]
+  - [[Decentralised finance]] (DeFi), [[non-fungible tokens]] (NFTs), and [[clean energy]] mining
+  - [[Monetary policy]] implications and [[store of value]] characteristics
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
-	- UK universities, including the University of Cambridge and Imperial College London, host leading research centres in blockchain and digital finance
-	- The Bank of England and Financial Conduct Authority actively monitor and regulate crypto asset markets, balancing innovation with consumer protection
+  - British contributions and implementations
+  - UK universities, including the University of Cambridge and Imperial College London, host leading research centres in blockchain and digital finance
+  - The Bank of England and Financial Conduct Authority actively monitor and regulate crypto asset markets, balancing innovation with consumer protection
 
-- North England innovation hubs (if relevant)
-	- Manchester’s Digital Innovation Factory supports blockchain startups and academic collaborations
-	- Leeds and Newcastle have seen growth in fintech incubators and research partnerships, fostering regional expertise in distributed ledger technologies
+  - North England innovation hubs (if relevant)
+  - Manchester’s Digital Innovation Factory supports blockchain startups and academic collaborations
+  - Leeds and Newcastle have seen growth in fintech incubators and research partnerships, fostering regional expertise in distributed ledger technologies
 
-- Regional case studies
-	- The University of Sheffield’s Advanced Manufacturing Research Centre explores blockchain applications in supply chain management
-	- Newcastle University’s Centre for Cyber Security conducts research on the security and privacy implications of Bitcoin and other cryptocurrencies
+  - Regional case studies
+  - The University of Sheffield’s Advanced Manufacturing Research Centre explores blockchain applications in supply chain management
+  - Newcastle University’s Centre for Cyber Security conducts research on the security and privacy implications of Bitcoin and other cryptocurrencies
 
-## Future Directions **[Updated 2025]**
+  ## Future Directions **[Updated 2025]**
 
-- Emerging trends and developments
-	- Increased [[institutional adoption]] and [[regulatory clarity]] are expected to drive further integration of Bitcoin into [[mainstream finance]]
-	- Advances in [[layer-two solutions]] ([[Lightning Network]], [[RGB]]) and [[cross-chain interoperability]] may enhance Bitcoin's utility and scalability
-	- **[Updated 2025]**: [[Bitcoin-AI]] integration emerging as major use case, with [[L402-Protocol]] enabling [[AI service]] monetization
-	- **[Updated 2025]**: [[Agentic Internet]] development enabling [[autonomous agent]] economies on [[Lightning Network]]
-	- **[Updated 2025]**: [[Bitcoin ETF]] ecosystem maturation with over $170 billion AUM driving [[institutional]] access
+  - Emerging trends and developments
+  - Increased [[institutional adoption]] and [[regulatory clarity]] are expected to drive further integration of Bitcoin into [[mainstream finance]]
+  - Advances in [[layer-two solutions]] ([[Lightning Network]], [[RGB]]) and [[cross-chain interoperability]] may enhance Bitcoin's utility and scalability
+  - **[Updated 2025]**: [[Bitcoin-AI]] integration emerging as major use case, with [[L402-Protocol]] enabling [[AI service]] monetization
+  - **[Updated 2025]**: [[Agentic Internet]] development enabling [[autonomous agent]] economies on [[Lightning Network]]
+  - **[Updated 2025]**: [[Bitcoin ETF]] ecosystem maturation with over $170 billion AUM driving [[institutional]] access
 
-- Anticipated challenges
-	- Balancing [[decentralisation]] with [[regulatory compliance]] remains a key challenge
-	- [[Environmental concerns]] and [[energy consumption]] continue to attract scrutiny, though [[renewable energy]] adoption exceeds 52%
-	- **[Updated 2025]**: Scaling [[Lightning Network]] while maintaining [[decentralization]] and [[security]]
-	- **[Updated 2025]**: [[Privacy]] enhancements while meeting [[regulatory]] requirements
+  - Anticipated challenges
+  - Balancing [[decentralisation]] with [[regulatory compliance]] remains a key challenge
+  - [[Environmental concerns]] and [[energy consumption]] continue to attract scrutiny, though [[renewable energy]] adoption exceeds 52%
+  - **[Updated 2025]**: Scaling [[Lightning Network]] while maintaining [[decentralization]] and [[security]]
+  - **[Updated 2025]**: [[Privacy]] enhancements while meeting [[regulatory]] requirements
 
-- Research priorities
-	- Long-term impact of Bitcoin on [[financial systems]] and [[monetary policy]]
-	- Development of [[sustainable]] and [[efficient]] [[consensus mechanisms]]
-	- Interdisciplinary research on the social, economic, and legal implications of [[decentralised currencies]]
-	- **[Updated 2025]**: [[Bitcoin-AI]] integration architectures and [[micropayment]] protocols
-	- **[Updated 2025]**: [[Layer 2]] scaling solutions and [[cross-layer]] [[interoperability]]
-	- **[Updated 2025]**: [[Smart contract]] capabilities via [[RGB and Client Side Validation]]
+  - Research priorities
+  - Long-term impact of Bitcoin on [[financial systems]] and [[monetary policy]]
+  - Development of [[sustainable]] and [[efficient]] [[consensus mechanisms]]
+  - Interdisciplinary research on the social, economic, and legal implications of [[decentralised currencies]]
+  - **[Updated 2025]**: [[Bitcoin-AI]] integration architectures and [[micropayment]] protocols
+  - **[Updated 2025]**: [[Layer 2]] scaling solutions and [[cross-layer]] [[interoperability]]
+  - **[Updated 2025]**: [[Smart contract]] capabilities via [[RGB and Client Side Validation]]
 
-## References
+  ## References
 
-1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf
-2. Böhme, R., Christin, N., Edelman, B., & Moore, T. (2015). Bitcoin: Economics, Technology, and Governance. Journal of Economic Perspectives, 29(2), 213–238. https://doi.org/10.1257/jep.29.2.213
-3. Fisch, C. (2019). Initial Coin Offerings (ICOs) to Finance New Ventures: An Exploratory Study. Journal of Business Venturing, 34(1), 1–22. https://doi.org/10.1016/j.jbusvent.2018.09.007
-4. Grinberg, R. (2012). Bitcoin: An Innovative Alternative Digital Currency. Hastings Science & Technology Law Journal, 4(1), 159–208. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1976021
-5. Schnoering, M., & Vazirgiannis, M. (2025). Bitcoin research with a transaction graph dataset. Scientific Data, 12(1). https://doi.org/10.1038/s41597-025-04684-8
-6. Rudd, M. A. (2024). Important Bitcoin information gaps and research needs for 2024. SSRN Electronic Journal. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5146515
-7. Taylor & Francis. (2024). Unravelling the global landscape of Bitcoin research: insights from bibliometric analysis. Technology Analysis & Strategic Management. https://doi.org/10.1080/09537325.2024.2306931
-8. Bitwise Asset Management. (2025). Bitcoin Long-Term Capital Market Assumptions: 2025. https://bitwiseinvestments.com/crypto-market-insights/bitcoin-long-term-capital-market-assumptions-2025
-9. Grayscale Research. (2025). Grayscale Research Insights: Crypto Sectors in Q4 2025. https://research.grayscale.com/market-commentary/grayscale-research-insights-crypto-sectors-in-q4-2025
-10. Chainalysis. (2025). The Chainalysis 2025 Global Adoption Index. https://www.chainalysis.com/blog/2025-global-crypto-adoption-index/
-11. Kansas City Fed. (2025). U.S. Consumers' Use of Cryptocurrency for Payments. https://www.kansascityfed.org/research/payments-system-research-briefings/us-consumers-use-of-cryptocurrency-for-payments/
-12. SSRN. (2025). Bitcoin 2025-2026 Macro Analysis: Policy, Institutional Flows, and Strategic Positioning. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5232018
-13. Wiley Online Library. (2025). Bitcoin Research: What Are the New Frontiers? https://onlinelibrary.wiley.com/doi/10.1111/fire.70015
+  1. Nakamoto, S. (2008). Bitcoin: A Peer-to-Peer Electronic Cash System. https://bitcoin.org/bitcoin.pdf
+  2. Böhme, R., Christin, N., Edelman, B., & Moore, T. (2015). Bitcoin: Economics, Technology, and Governance. Journal of Economic Perspectives, 29(2), 213–238. https://doi.org/10.1257/jep.29.2.213
+  3. Fisch, C. (2019). Initial Coin Offerings (ICOs) to Finance New Ventures: An Exploratory Study. Journal of Business Venturing, 34(1), 1–22. https://doi.org/10.1016/j.jbusvent.2018.09.007
+  4. Grinberg, R. (2012). Bitcoin: An Innovative Alternative Digital Currency. Hastings Science & Technology Law Journal, 4(1), 159–208. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1976021
+  5. Schnoering, M., & Vazirgiannis, M. (2025). Bitcoin research with a transaction graph dataset. Scientific Data, 12(1). https://doi.org/10.1038/s41597-025-04684-8
+  6. Rudd, M. A. (2024). Important Bitcoin information gaps and research needs for 2024. SSRN Electronic Journal. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5146515
+  7. Taylor & Francis. (2024). Unravelling the global landscape of Bitcoin research: insights from bibliometric analysis. Technology Analysis & Strategic Management. https://doi.org/10.1080/09537325.2024.2306931
+  8. Bitwise Asset Management. (2025). Bitcoin Long-Term Capital Market Assumptions: 2025. https://bitwiseinvestments.com/crypto-market-insights/bitcoin-long-term-capital-market-assumptions-2025
+  9. Grayscale Research. (2025). Grayscale Research Insights: Crypto Sectors in Q4 2025. https://research.grayscale.com/market-commentary/grayscale-research-insights-crypto-sectors-in-q4-2025
+  10. Chainalysis. (2025). The Chainalysis 2025 Global Adoption Index. https://www.chainalysis.com/blog/2025-global-crypto-adoption-index/
+  11. Kansas City Fed. (2025). U.S. Consumers' Use of Cryptocurrency for Payments. https://www.kansascityfed.org/research/payments-system-research-briefings/us-consumers-use-of-cryptocurrency-for-payments/
+  12. SSRN. (2025). Bitcoin 2025-2026 Macro Analysis: Policy, Institutional Flows, and Strategic Positioning. https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5232018
+  13. Wiley Online Library. (2025). Bitcoin Research: What Are the New Frontiers? https://onlinelibrary.wiley.com/doi/10.1111/fire.70015
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-14
-- **Review Status**: Comprehensive editorial review with 2025 updates
-- **Verification**: Academic sources verified, market data updated November 2025
-- **Regional Context**: UK/North England where applicable
-- **Quality Score**: 0.96
-- **Wiki-Links Added**: 60+
-- **Bitcoin-AI Cross-References**: [[L402-Protocol]], [[RGB and Client Side Validation]], [[Agentic Internet]], [[Lightning and Similar L2]]
+  - **Last Updated**: 2025-11-14
+  - **Review Status**: Comprehensive editorial review with 2025 updates
+  - **Verification**: Academic sources verified, market data updated November 2025
+  - **Regional Context**: UK/North England where applicable
+  - **Quality Score**: 0.96
+  - **Wiki-Links Added**: 60+
+  - **Bitcoin-AI Cross-References**: [[L402-Protocol]], [[RGB and Client Side Validation]], [[Agentic Internet]], [[Lightning and Similar L2]]
+
+- ### Provenance
+  - sources:: [[Bitcoin Whitepaper (Nakamoto 2008)]], [[BIP (Bitcoin Improvement Proposals)]], [[ISO/IEC 23257:2021]]
+  - migration-date:: 2026-04-26T00:00:00Z

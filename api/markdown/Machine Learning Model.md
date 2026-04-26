@@ -1,218 +1,228 @@
-- ### OntologyBlock
-  id:: machine-learning-model-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9951
-	- source-domain:: ai
-	- preferred-term:: Machine Learning Model
-	- status:: active
-	- owl:class:: ai:MachineLearningModel
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.
-	- #### Relationships
-	  id:: machine-learning-model-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Artificial Intelligence]]
-		- related-to:: [[Neural Network Architecture]]
-		- related-to:: [[Deep Learning]]
-		- enables:: [[Intelligent Metaverse Systems]]
+iri:: http://narrativegoldmine.com/artificial-intelligence#MachineLearningModel
+uri:: urn:visionclaw:concept:artificial-intelligence:machine-learning-model
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:machine-learning-model
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Machine Learning Model
+content-hash:: sha256-12-b724c4fe366d
+legacy-term-id:: MV-9951
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Core Neural Network Types
+- ### Definition
+  - Computational algorithms trained on data to recognise patterns, make predictions, and perform tasks in metaverse applications, including neural networks for content generation, NPC behaviour, computer vision, and natural language processing.
 
-### Convolutional Neural Networks (CNN)
-- Pattern recognition
-- Image processing
-- Object detection
-- Visual analysis
-- Feature extraction
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MachineLearningModel
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Recurrent Neural Networks (RNN)
-- Sequential data processing
-- Time series analysis
-- Language modelling
-- Memory retention
-- State preservation
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+  - enables:: [[Intelligent Metaverse Systems]]
 
-### Long Short-Term Memory (LSTM)
-- Extended memory
-- Gradient problem solution
-- Complex sequences
-- Speech recognition
-- Text generation
+- ### Content
 
-## Generative Models
+  ## Core Neural Network Types
 
-### GANs (Generative Adversarial Networks)
-- Generator-discriminator architecture
-- Realistic content synthesis
-- Image generation
-- Style transfer
-- Data augmentation
+  ### Convolutional Neural Networks (CNN)
+  - Pattern recognition
+  - Image processing
+  - Object detection
+  - Visual analysis
+  - Feature extraction
 
-### VAEs (Variational Autoencoders)
-- Latent space learning
-- Content reconstruction
-- Feature interpolation
-- Anomaly detection
-- Data compression
+  ### Recurrent Neural Networks (RNN)
+  - Sequential data processing
+  - Time series analysis
+  - Language modelling
+  - Memory retention
+  - State preservation
 
-### NeRF Technology
-- Neural Radiance Fields
-- 3D scene generation
-- 2D to 3D conversion
-- Hours to minutes modelling
-- Implicit representations
+  ### Long Short-Term Memory (LSTM)
+  - Extended memory
+  - Gradient problem solution
+  - Complex sequences
+  - Speech recognition
+  - Text generation
 
-## Metaverse Applications
+  ## Generative Models
 
-### Content Generation
-- 3D asset creation
-- Environment synthesis
-- Avatar design
-- Texture generation
-- World building
+  ### GANs (Generative Adversarial Networks)
+  - Generator-discriminator architecture
+  - Realistic content synthesis
+  - Image generation
+  - Style transfer
+  - Data augmentation
 
-### Natural Language Processing
-- Chatbot intelligence
-- Virtual assistants
-- NPC dialogue
-- Language translation
-- Voice interaction
+  ### VAEs (Variational Autoencoders)
+  - Latent space learning
+  - Content reconstruction
+  - Feature interpolation
+  - Anomaly detection
+  - Data compression
 
-### Computer Vision
-- AR object detection
-- Pose estimation
-- Scene understanding
-- Gesture recognition
-- Spatial mapping
+  ### NeRF Technology
+  - Neural Radiance Fields
+  - 3D scene generation
+  - 2D to 3D conversion
+  - Hours to minutes modelling
+  - Implicit representations
 
-### Digital Twins
-- Physical object replication
-- City planning
-- Assembly line simulation
-- Virtual surgery
-- Process modelling
+  ## Metaverse Applications
 
-## Training Approaches
+  ### Content Generation
+  - 3D asset creation
+  - Environment synthesis
+  - Avatar design
+  - Texture generation
+  - World building
 
-### Supervised Learning
-- Labelled data training
-- Classification tasks
-- Regression problems
-- Error minimisation
-- Ground truth alignment
+  ### Natural Language Processing
+  - Chatbot intelligence
+  - Virtual assistants
+  - NPC dialogue
+  - Language translation
+  - Voice interaction
 
-### Unsupervised Learning
-- Pattern discovery
-- Clustering
-- Dimensionality reduction
-- Anomaly detection
-- Feature learning
+  ### Computer Vision
+  - AR object detection
+  - Pose estimation
+  - Scene understanding
+  - Gesture recognition
+  - Spatial mapping
 
-### Reinforcement Learning
-- Reward-based training
-- Agent behaviour
-- Game AI
-- Decision optimisation
-- Environment interaction
+  ### Digital Twins
+  - Physical object replication
+  - City planning
+  - Assembly line simulation
+  - Virtual surgery
+  - Process modelling
 
-## Industry Applications
+  ## Training Approaches
 
-### Healthcare
-- Surgical simulation
-- Diagnostic assistance
-- Treatment planning
-- Medical training
-- Patient interaction
+  ### Supervised Learning
+  - Labelled data training
+  - Classification tasks
+  - Regression problems
+  - Error minimisation
+  - Ground truth alignment
 
-### Gaming
-- NPC intelligence
-- Procedural generation
-- Player behaviour prediction
-- Adaptive difficulty
-- Content personalisation
+  ### Unsupervised Learning
+  - Pattern discovery
+  - Clustering
+  - Dimensionality reduction
+  - Anomaly detection
+  - Feature learning
 
-### Security
-- Fraud detection
-- Anomaly identification
-- Cyberattack prevention
-- Transaction monitoring
-- Darktrace, Microsoft Defender
+  ### Reinforcement Learning
+  - Reward-based training
+  - Agent behaviour
+  - Game AI
+  - Decision optimisation
+  - Environment interaction
 
-## Development Tools
+  ## Industry Applications
 
-### AI Engines
-- Claude2
-- Midjourney
-- Runway
-- Stable Diffusion
-- Llama2
+  ### Healthcare
+  - Surgical simulation
+  - Diagnostic assistance
+  - Treatment planning
+  - Medical training
+  - Patient interaction
 
-### Frameworks
-- TensorFlow
-- PyTorch
-- Keras
-- JAX
-- ONNX
+  ### Gaming
+  - NPC intelligence
+  - Procedural generation
+  - Player behaviour prediction
+  - Adaptive difficulty
+  - Content personalisation
 
-## Model Capabilities
+  ### Security
+  - Fraud detection
+  - Anomaly identification
+  - Cyberattack prevention
+  - Transaction monitoring
+  - Darktrace, Microsoft Defender
 
-### Prediction
-- Future state estimation
-- Behaviour forecasting
-- Trend analysis
-- Risk assessment
-- Demand prediction
+  ## Development Tools
 
-### Classification
-- Category assignment
-- Object identification
-- Sentiment analysis
-- Content moderation
-- Intent recognition
+  ### AI Engines
+  - Claude2
+  - Midjourney
+  - Runway
+  - Stable Diffusion
+  - Llama2
 
-### Generation
-- Content creation
-- Image synthesis
-- Text generation
-- Music composition
-- Video production
+  ### Frameworks
+  - TensorFlow
+  - PyTorch
+  - Keras
+  - JAX
+  - ONNX
 
-## 2024 Advancements
+  ## Model Capabilities
 
-### GPT-4 Era
-- Unprecedented capabilities
-- Multimodal learning
-- Complex reasoning
-- Creative assistance
-- Task automation
+  ### Prediction
+  - Future state estimation
+  - Behaviour forecasting
+  - Trend analysis
+  - Risk assessment
+  - Demand prediction
 
-### Multimodal Integration
-- Visual understanding
-- Audio processing
-- Text analysis
-- Combined inputs
-- Comprehensive AI
+  ### Classification
+  - Category assignment
+  - Object identification
+  - Sentiment analysis
+  - Content moderation
+  - Intent recognition
 
-## Future Directions
+  ### Generation
+  - Content creation
+  - Image synthesis
+  - Text generation
+  - Music composition
+  - Video production
 
-### Scalable AI
-- Larger models
-- Efficient training
-- Edge deployment
-- Real-time inference
-- Cost reduction
+  ## 2024 Advancements
 
-### Intelligent Environments
-- Hyper-personalisation
-- Adaptive content
-- Dynamic experiences
-- Decentralised AI
-- Autonomous systems
+  ### GPT-4 Era
+  - Unprecedented capabilities
+  - Multimodal learning
+  - Complex reasoning
+  - Creative assistance
+  - Task automation
 
-## Metadata
+  ### Multimodal Integration
+  - Visual understanding
+  - Audio processing
+  - Text analysis
+  - Combined inputs
+  - Comprehensive AI
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  #### Future Directions
+  ### Scalable AI
+  - Larger models
+  - Efficient training
+  - Edge deployment
+  - Real-time inference
+  - Cost reduction
+
+  ### Intelligent Environments
+  - Hyper-personalisation
+  - Adaptive content
+  - Dynamic experiences
+  - Decentralised AI
+  - Autonomous systems
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,78 +1,100 @@
 {
-  "id": "Blockchain Scalability",
+  "id": "blockchain-scalability",
   "title": "Blockchain Scalability",
-  "content": "- ### OntologyBlock\n  id:: blockchain-scalability-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0602\n\t- preferred-term:: Blockchain Scalability\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.\n\t- owl:class:: bc:BlockchainScalability\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: blockchain-scalability-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[Layer 2]]\n\t\t- is-parent-of:: [[Sharding]]\n\t\t- is-parent-of:: [[Rollup]]\n\t\t- is-parent-of:: [[State Channel]]\n\t\t- related-to:: [[Blockchain Network]]",
+  "content": "- ### Definition\n  - Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:BlockchainScalability\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain Technology]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Entity]], [[System Performance]], [[Protocol Architecture]]\n  - requires:: [[Consensus Mechanism]], [[Smart Contract]], [[Network Infrastructure]]\n  - enables:: [[High Throughput]], [[Low Latency]], [[Mass Adoption]]\n  - has-part:: [[Layer 2 Solution]], [[Sharding]], [[Rollup]], [[State Channel]]\n  - bridges-to:: [[AI Energy Optimisation]], [[Data Compression]]\n\n- ### Content\n\n  Blockchain Scalability addresses the fundamental tension between decentralisation, security, and transaction throughput. Bitcoin processes approximately 7 transactions per second whilst Ethereum historically handled around 15, far below Visa's 65,000 transactions per second capacity. Layer 2 solutions operate above the base blockchain, bundling transactions and settling them periodically on-chain. Lightning Network enables near-instantaneous Bitcoin payments with microsecond finality for micropayments, whilst [[Rollups]] on Ethereum compress hundreds of transactions into single on-chain proofs.\n\n  Sharding partitions blockchain state across parallel chains, enabling simultaneous transaction processing on different chain shards. Danksharding advances this through data availability sampling, reducing validator hardware requirements. State channels enable counterparties to execute transactions off-chain, updating shared state only when disagreements occur or channels close.\n\n  Scalability solutions introduce trade-offs: Layer 2 solutions may reduce decentralisation if few operators exist, whilst sharding increases protocol complexity. The optimal scalability architecture depends on application requirements—instant micropayments prioritise latency, financial settlements prioritise final security, and data availability systems prioritise throughput.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Zk Starks",
-    "Smart Contract Platform",
-    "Proof Of Authority"
+    "Lightning Network"
   ],
   "wiki_links": [
-    "State Channel",
-    "Blockchain Technology",
-    "Layer 2",
+    "AI Energy Optimisation",
     "Blockchain Entity",
-    "Blockchain Network",
+    "Blockchain Technology",
+    "Consensus Mechanism",
+    "Data Compression",
+    "High Throughput",
+    "Layer 2 Solution",
+    "Low Latency",
+    "Mass Adoption",
+    "Network Infrastructure",
+    "Protocol Architecture",
+    "Rollup",
+    "Rollups",
     "Sharding",
-    "Rollup"
+    "Smart Contract",
+    "State Channel",
+    "System Performance"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:blockchain-scalability",
+    "iri": "http://narrativegoldmine.com/blockchain#BlockchainScalability",
+    "content_hash": "sha256-12-1a426a12f563",
+    "legacy_term_id": "BC-0602",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:blockchain-scalability",
+    "schema_version": "v2",
     "term_id": "BC-0602",
     "preferred_term": "Blockchain Scalability",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#BlockchainScalability",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation. Key approaches include Layer 2 solutions, sharding, rollups, and state channels.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.1.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:BlockchainScalability",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.65,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:BlockchainScalability",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
-      "Blockchain Entity"
+      "Blockchain Entity",
+      "System Performance",
+      "Protocol Architecture"
     ],
-    "has_part": [],
+    "has_part": [
+      "Layer 2 Solution",
+      "Sharding",
+      "Rollup",
+      "State Channel"
+    ],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Consensus Mechanism",
+      "Smart Contract",
+      "Network Infrastructure"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "High Throughput",
+      "Low Latency",
+      "Mass Adoption"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "AI Energy Optimisation",
+      "Data Compression"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain Technology"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "Layer 2",
-        "Sharding",
-        "Rollup",
-        "State Channel"
-      ],
-      "related-to": [
-        "Blockchain Network"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

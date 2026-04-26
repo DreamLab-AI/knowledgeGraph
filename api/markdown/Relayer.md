@@ -1,135 +1,148 @@
-- ### OntologyBlock
-  id:: relayer-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8015
-	- preferred-term:: Relayer
-	- definition:: Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.
-	- status:: active
-	- maturity:: reviewed
-	- public-access:: true
-	- belongsToDomain:: [[Blockchain]]
-	- owl:class:: bc:Relayer
+iri:: http://narrativegoldmine.com/blockchain#Relayer
+uri:: urn:visionclaw:concept:blockchain:relayer
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:relayer
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Relayer
+content-hash:: sha256-12-034286bfa38e
+legacy-term-id:: BC-8015
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1010
-title: Relayer
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.
 
-# Relayer
+- ### Semantic Classification
+  - owl-class:: blockchain:Relayer
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-## Definition
-- Infrastructure operator facilitating cross-chain message passing and state verification between blockchains
-- Monitors source chain for events and submits cryptographic proofs to destination chain
-- Provides connectivity layer for interoperability protocols without custodying user assets
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - enables:: [[Cross-Chain Bridge]]
+  - implements:: [[Message Passing]]
 
-## Core Components
-- **Event Listener**: Monitors source chain for cross-chain messages
-- **Proof Generator**: Creates cryptographic proof of source chain state
-- **Transaction Submitter**: Broadcasts proof transactions to destination chain
-- **State Oracle**: Provides verified state information across chains
+- ### Content
 
-## Technical Characteristics
-- **Non-Custodial**: Does not hold user funds
-- **Incentive-Compatible**: Economically motivated to relay accurately
-- **Permissionless**: Anyone can operate relayer in most protocols
-- **Redundant**: Multiple relayers ensure liveness and censorship resistance
+  ## Definition
+  - Infrastructure operator facilitating cross-chain message passing and state verification between blockchains
+  - Monitors source chain for events and submits cryptographic proofs to destination chain
+  - Provides connectivity layer for interoperability protocols without custodying user assets
 
-## Relayer Types
-### Message Relayers
-- Transmit cross-chain messages and events
-- Execute instructions on destination chain
-- Used in general message passing protocols
+  ## Core Components
+  - **Event Listener**: Monitors source chain for cross-chain messages
+  - **Proof Generator**: Creates cryptographic proof of source chain state
+  - **Transaction Submitter**: Broadcasts proof transactions to destination chain
+  - **State Oracle**: Provides verified state information across chains
 
-### State Relayers
-- Relay block headers and state proofs
-- Enable light client verification
-- Used in trustless bridge protocols
+  ## Technical Characteristics
+  - **Non-Custodial**: Does not hold user funds
+  - **Incentive-Compatible**: Economically motivated to relay accurately
+  - **Permissionless**: Anyone can operate relayer in most protocols
+  - **Redundant**: Multiple relayers ensure liveness and censorship resistance
 
-### Transaction Relayers
-- Submit transactions on behalf of users
-- Enable gasless transactions (meta-transactions)
-- Used in user experience improvements
+  ## Relayer Types
+  ### Message Relayers
+  - Transmit cross-chain messages and events
+  - Execute instructions on destination chain
+  - Used in general message passing protocols
 
-## Protocol Examples
-- **IBC Relayers**: Cosmos Inter-Blockchain Communication
-- **Chainlink CCIP**: Cross-Chain Interoperability Protocol relayers
-- **LayerZero Relayers**: Omnichain messaging relayers
-- **Polkadot Relayers**: Parachain message relayers
+  ### State Relayers
+  - Relay block headers and state proofs
+  - Enable light client verification
+  - Used in trustless bridge protocols
 
-## Relationships
-- enables:: [[Cross-Chain Bridge]]
-- component-of:: [[Interoperability Protocol]]
-- uses:: [[Light Client]]
-- coordinates-with:: [[Oracle]]
-- implements:: [[Message Passing]]
+  ### Transaction Relayers
+  - Submit transactions on behalf of users
+  - Enable gasless transactions (meta-transactions)
+  - Used in user experience improvements
 
-## Economic Model
-- **Fee-Based**: User pays fee for relaying service
-- **Gas Reimbursement**: Relayer reimbursed for destination chain gas
-- **Subsidy Model**: Protocol subsidizes relayer operations
-- **Staking/Slashing**: Economic security through bonded stake
+  ## Protocol Examples
+  - **IBC Relayers**: Cosmos Inter-Blockchain Communication
+  - **Chainlink CCIP**: Cross-Chain Interoperability Protocol relayers
+  - **LayerZero Relayers**: Omnichain messaging relayers
+  - **Polkadot Relayers**: Parachain message relayers
 
-## Security Considerations
-- Relayer liveness dependency
-- Censorship by colluding relayers
-- DoS attacks on relayer infrastructure
-- Relayer signature key management
-- MEV extraction by relayers
+  ## Relationships
+  - enables:: [[Cross-Chain Bridge]]
+  - component-of:: [[Interoperability Protocol]]
+  - uses:: [[Light Client]]
+  - coordinates-with:: [[Oracle]]
+  - implements:: [[Message Passing]]
 
-## Operational Requirements
-- Full node access to source and destination chains
-- High availability and low latency infrastructure
-- Sufficient capital for gas fees
-- Monitoring and alerting systems
-- Key management and operational security
+  ## Economic Model
+  - **Fee-Based**: User pays fee for relaying service
+  - **Gas Reimbursement**: Relayer reimbursed for destination chain gas
+  - **Subsidy Model**: Protocol subsidizes relayer operations
+  - **Staking/Slashing**: Economic security through bonded stake
 
-## Trust Assumptions
-- **Optimistic Relayers**: Assume honest with fraud proofs
-- **Verified Relayers**: Cryptographic proof validation
-- **Threshold Relayers**: Require m-of-n relayer agreement
-- **Bonded Relayers**: Economic stake slashed for misbehavior
+  ## Security Considerations
+  - Relayer liveness dependency
+  - Censorship by colluding relayers
+  - DoS attacks on relayer infrastructure
+  - Relayer signature key management
+  - MEV extraction by relayers
 
-## Performance Metrics
-- Message relay latency
-- Uptime and availability
-- Cost per message relayed
-- Number of supported chains
-- Throughput (messages per second)
+  ## Operational Requirements
+  - Full node access to source and destination chains
+  - High availability and low latency infrastructure
+  - Sufficient capital for gas fees
+  - Monitoring and alerting systems
+  - Key management and operational security
 
-## Decentralization Strategies
-- Open relayer networks
-- Incentive mechanisms for diverse operators
-- Slashing for malicious behavior
-- Reputation systems
-- Geographic and entity diversity
+  ## Trust Assumptions
+  - **Optimistic Relayers**: Assume honest with fraud proofs
+  - **Verified Relayers**: Cryptographic proof validation
+  - **Threshold Relayers**: Require m-of-n relayer agreement
+  - **Bonded Relayers**: Economic stake slashed for misbehavior
 
-## Use Cases
-- Cross-chain token transfers
-- Cross-chain smart contract calls
-- Interchain account management
-- Cross-chain liquidations
-- Multi-chain application synchronization
+  ## Performance Metrics
+  - Message relay latency
+  - Uptime and availability
+  - Cost per message relayed
+  - Number of supported chains
+  - Throughput (messages per second)
 
-## Challenges
-- Capital requirements for gas fees
-- Operational complexity across multiple chains
-- Handling chain reorganizations
-- Optimizing for cost vs latency
-- Managing relayer profitability
+  ## Decentralization Strategies
+  - Open relayer networks
+  - Incentive mechanisms for diverse operators
+  - Slashing for malicious behavior
+  - Reputation systems
+  - Geographic and entity diversity
 
-## Related Concepts
-- [[Cross-Chain Bridge]]
-- [[Light Client]]
-- [[Oracle]]
-- [[Interoperability]]
+  ## Use Cases
+  - Cross-chain token transfers
+  - Cross-chain smart contract calls
+  - Interchain account management
+  - Cross-chain liquidations
+  - Multi-chain application synchronization
 
-#blockchain #relayer #interoperability #cross-chain
+  ## Challenges
+  - Capital requirements for gas fees
+  - Operational complexity across multiple chains
+  - Handling chain reorganizations
+  - Optimizing for cost vs latency
+  - Managing relayer profitability
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Cross-Chain Bridge]]
+  - [[Light Client]]
+  - [[Oracle]]
+  - [[Interoperability]]
+
+  #blockchain #relayer #interoperability #cross-chain
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

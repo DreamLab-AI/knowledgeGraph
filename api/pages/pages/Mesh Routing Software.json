@@ -1,38 +1,45 @@
 {
-  "id": "Mesh Routing Software",
+  "id": "mesh-routing-software",
   "title": "Mesh Routing Software",
-  "content": "- ### OntologyBlock\n  id:: mesh-routing-software-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9959\n\t- source-domain:: mv\n\t- preferred-term:: Mesh Routing Software\n\t- status:: active\n\t- owl:class:: mv:MeshRoutingSoftware\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.\n\t- #### Relationships\n\t  id:: mesh-routing-software-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Network Infrastructure]]\n\t\t- related-to:: [[IoT Connectivity]]\n\t\t- related-to:: [[Distributed Systems]]\n\t\t- enables:: [[Decentralised Networks]]\n\n## Core Mesh Protocols\n\n### LoRaMesher\n- Distance-vector protocol\n- FreeRTOS implementation\n- ESP32 compatibility\n- Two-way communication\n- Long-range capability\n\n### Middleware Layer\n- Distributed applications\n- IoT interconnection\n- Node communication\n- Routing capacity\n- Network formation\n\n## Major Mesh Technologies\n\n### Wirepas\n- Decentralised architecture\n- Low-power IoT focus\n- Homogeneous devices\n- Local routing decisions\n- Unlimited scalability\n\n### Wirepas Features\n- Massive scalability\n- Self-healing network\n- Energy efficiency\n- Automatic optimisation\n- Device addition support\n\n### Zigbee\n- 2.4 GHz operation\n- 250 Kbps data rate\n- Three node types\n- Coordinator required\n- Smart home focus\n\n### Zigbee Components\n- Coordinators\n- Routers\n- End devices\n- Network formation\n- Traffic routing\n\n### Thread\n- Google development\n- No hub required\n- IPv6-based\n- Strong encryption\n- Low energy use\n\n### Thread Benefits\n- Single point elimination\n- Auto-reconfiguration\n- Smart building support\n- Google Nest integration\n- Border Router required\n\n### NeoMesh\n- Flat architecture\n- No central coordinator\n- Patented routing\n- 20+ hop support\n- Large network scalability\n\n## Routing Algorithms\n\n### Proactive Protocols\n- Continuous route updates\n- Quick path availability\n- Higher overhead\n- Distance-vector\n- Link-state\n\n### Reactive Protocols\n- On-demand routing\n- Lower overhead\n- Route discovery delay\n- AODV protocol\n- DSR protocol\n\n### Hybrid Approaches\n- Combined benefits\n- Zone-based routing\n- Adaptive switching\n- Scalability focus\n- Efficiency balance\n\n## Key Benefits\n\n### Decentralisation\n- No single failure point\n- Distributed management\n- Node independence\n- Resilient design\n- Peer communication\n\n### Self-Healing\n- Automatic rerouting\n- Broken path detection\n- Congestion avoidance\n- Route recalculation\n- Mission-critical support\n\n### Scalability\n- Thousands of devices\n- Performance maintenance\n- Dynamic growth\n- Easy expansion\n- Coverage extension\n\n## Technical Features\n\n### Smart Routing\n- RPL protocol\n- AODV implementation\n- On-the-fly calculation\n- Path optimisation\n- Load balancing\n\n### AI Integration\n- Adaptive tuning\n- Predictive maintenance\n- Smarter routing\n- Neural mesh networks\n- Distributed learning\n\n## IoT Applications\n\n### Smart Buildings\n- Sensor networks\n- Lighting control\n- HVAC management\n- Security systems\n- Energy monitoring\n\n### Industrial IoT\n- Factory automation\n- Asset tracking\n- Condition monitoring\n- Process control\n- Predictive maintenance\n\n### Smart Cities\n- Street lighting\n- Traffic management\n- Environmental monitoring\n- Utility metering\n- Public safety\n\n## Implementation Considerations\n\n### Protocol Selection\n- Use case alignment\n- Power requirements\n- Range needs\n- Data rate demands\n- Device count\n\n### Network Design\n- Coverage planning\n- Node placement\n- Redundancy level\n- Gateway positioning\n- Interference mitigation\n\n## Development Libraries\n\n### LoRaMesher Library\n- Open-source\n- ESP32 support\n- Easy integration\n- Active community\n- Documentation\n\n### Protocol Stacks\n- Zigbee stack\n- Thread stack\n- Matter support\n- BLE mesh\n- Wi-Fi mesh\n\n## Future Trends\n\n### Emerging Capabilities\n- 5G mesh integration\n- Edge computing\n- AI optimisation\n- Quantum networking\n- Satellite mesh\n\n### Technology Evolution\n- Higher speeds\n- Lower latency\n- Better security\n- Improved efficiency\n- Cross-protocol support\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
-  "backlinks": [
-    "Edge Mesh Network"
-  ],
+  "content": "- ### Definition\n  - Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:MeshRoutingSoftware\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Network Infrastructure]]\n  - enables:: [[Decentralised Networks]]\n\n- ### Content\n\n  ## Core Mesh Protocols\n\n  ### LoRaMesher\n  - Distance-vector protocol\n  - FreeRTOS implementation\n  - ESP32 compatibility\n  - Two-way communication\n  - Long-range capability\n\n  ### Middleware Layer\n  - Distributed applications\n  - IoT interconnection\n  - Node communication\n  - Routing capacity\n  - Network formation\n\n  ## Major Mesh Technologies\n\n  ### Wirepas\n  - Decentralised architecture\n  - Low-power IoT focus\n  - Homogeneous devices\n  - Local routing decisions\n  - Unlimited scalability\n\n  ### Wirepas Features\n  - Massive scalability\n  - Self-healing network\n  - Energy efficiency\n  - Automatic optimisation\n  - Device addition support\n\n  ### Zigbee\n  - 2.4 GHz operation\n  - 250 Kbps data rate\n  - Three node types\n  - Coordinator required\n  - Smart home focus\n\n  ### Zigbee Components\n  - Coordinators\n  - Routers\n  - End devices\n  - Network formation\n  - Traffic routing\n\n  ### Thread\n  - Google development\n  - No hub required\n  - IPv6-based\n  - Strong encryption\n  - Low energy use\n\n  ### Thread Benefits\n  - Single point elimination\n  - Auto-reconfiguration\n  - Smart building support\n  - Google Nest integration\n  - Border Router required\n\n  ### NeoMesh\n  - Flat architecture\n  - No central coordinator\n  - Patented routing\n  - 20+ hop support\n  - Large network scalability\n\n  ## Routing Algorithms\n\n  ### Proactive Protocols\n  - Continuous route updates\n  - Quick path availability\n  - Higher overhead\n  - Distance-vector\n  - Link-state\n\n  ### Reactive Protocols\n  - On-demand routing\n  - Lower overhead\n  - Route discovery delay\n  - AODV protocol\n  - DSR protocol\n\n  ### Hybrid Approaches\n  - Combined benefits\n  - Zone-based routing\n  - Adaptive switching\n  - Scalability focus\n  - Efficiency balance\n\n  ## Key Benefits\n\n  ### Decentralisation\n  - No single failure point\n  - Distributed management\n  - Node independence\n  - Resilient design\n  - Peer communication\n\n  ### Self-Healing\n  - Automatic rerouting\n  - Broken path detection\n  - Congestion avoidance\n  - Route recalculation\n  - Mission-critical support\n\n  ### Scalability\n  - Thousands of devices\n  - Performance maintenance\n  - Dynamic growth\n  - Easy expansion\n  - Coverage extension\n\n  ## Technical Features\n\n  ### Smart Routing\n  - RPL protocol\n  - AODV implementation\n  - On-the-fly calculation\n  - Path optimisation\n  - Load balancing\n\n  ### AI Integration\n  - Adaptive tuning\n  - Predictive maintenance\n  - Smarter routing\n  - Neural mesh networks\n  - Distributed learning\n\n  ## IoT Applications\n\n  ### Smart Buildings\n  - Sensor networks\n  - Lighting control\n  - HVAC management\n  - Security systems\n  - Energy monitoring\n\n  ### Industrial IoT\n  - Factory automation\n  - Asset tracking\n  - Condition monitoring\n  - Process control\n  - Predictive maintenance\n\n  ### Smart Cities\n  - Street lighting\n  - Traffic management\n  - Environmental monitoring\n  - Utility metering\n  - Public safety\n\n  ## Implementation Considerations\n\n  ### Protocol Selection\n  - Use case alignment\n  - Power requirements\n  - Range needs\n  - Data rate demands\n  - Device count\n\n  ### Network Design\n  - Coverage planning\n  - Node placement\n  - Redundancy level\n  - Gateway positioning\n  - Interference mitigation\n\n  ## Development Libraries\n\n  ### LoRaMesher Library\n  - Open-source\n  - ESP32 support\n  - Easy integration\n  - Active community\n  - Documentation\n\n  ### Protocol Stacks\n  - Zigbee stack\n  - Thread stack\n  - Matter support\n  - BLE mesh\n  - Wi-Fi mesh\n\n  ## Future Trends\n\n  ### Emerging Capabilities\n  - 5G mesh integration\n  - Edge computing\n  - AI optimisation\n  - Quantum networking\n  - Satellite mesh\n\n  ### Technology Evolution\n  - Higher speeds\n  - Lower latency\n  - Better security\n  - Improved efficiency\n  - Cross-protocol support\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Network Infrastructure",
     "Decentralised Networks",
-    "Distributed Systems",
-    "IoT Connectivity",
+    "Network Infrastructure",
     "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:mesh-routing-software",
+    "iri": "http://narrativegoldmine.com/spatial-computing#MeshRoutingSoftware",
+    "content_hash": "sha256-12-f9129b8fb6aa",
+    "legacy_term_id": "MV-9959",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:mesh-routing-software",
+    "schema_version": "v2",
     "term_id": "MV-9959",
     "preferred_term": "Mesh Routing Software",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MeshRoutingSoftware",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:MeshRoutingSoftware",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:MeshRoutingSoftware",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Network Infrastructure"
@@ -47,25 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "IoT Connectivity",
-        "Distributed Systems"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

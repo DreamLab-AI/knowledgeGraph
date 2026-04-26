@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: surfacerobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#SurfaceMarineRobot
+uri:: urn:visionclaw:concept:robotics:surface-marine-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:surface-marine-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Surface Marine Robot
+content-hash:: sha256-12-e8a19f48628c
+legacy-term-id:: RB-0127
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0127
-    - filename-history:: ["RB-0127-surfacerobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0127
-    - preferred-term:: Surface Marine Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Surface marine robot operates on water surface like unmanned surface vessels.
 
-  - **Definition**
-    - definition:: Surface marine robot operates on water surface like unmanned surface vessels.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:SurfaceRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:SurfaceRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Marine Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Marine Robot]]
+- ### Content
+  Surface Marine Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :SurfaceRobot))
-      (SubClassOf :SurfaceRobot :MarineRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :SurfaceRobot "Surface Marine Robot"@en)
-      (AnnotationAssertion rdfs:comment :SurfaceRobot
-        "Surface marine robot operates on water surface like unmanned surface vessels."@en)
-      ```
-
-- ## About Surface Marine Robot
-  Surface marine robot operates on water surface like unmanned surface vessels.
-  
-  A marine robot operating on water surface.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

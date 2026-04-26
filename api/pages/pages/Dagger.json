@@ -1,0 +1,62 @@
+{
+  "id": "dagger",
+  "title": "Dagger",
+  "content": "- ### Definition\n  - Dagger is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:Dagger\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n  - bridges-to:: [[Blockchain]] (bc)\n- ### Content\n  - Of course! This is an excellent question and a perfect use case for comparing the traditional Docker wrapper script pattern with Dagger. Your `powerdev.sh` and `Dockerfile` are a very well-structured and powerful example of the conventional approach.\n  Let's break down how Dagger would be different, focusing on the advantages and disadvantages.\n  Your current setup uses two distinct tools:\n  1.  **`Dockerfile`**: A declarative text file to **define** the image's contents.\n  2.  **`powerdev.sh`**: An imperative shell script to **manage** the lifecycle of a container based on that image (build, run, exec, etc.).\n  Dagger unifies these two concepts. You use a single programming language (like Go, Python, TypeScript) to **define the pipeline that produces and interacts with your environment**. The `Dockerfile` logic and the shell script logic both move into code.\n  ---\n  *   **Your Script:** Is a `bash` script. It won't run on a Windows machine without WSL. It relies on the host having `docker` installed and in the `PATH`.\n  *   **Dagger:** Your pipeline is written in Go, Python, TypeScript, etc. It runs identically on Linux, macOS, and Windows. The only dependency is the Dagger CLI and a container runtime. The logic is self-contained and not dependent on shell nuances.\n  *   **Your Dockerfile:** You're using `DOCKER_BUILDKIT=1` and `--mount=type=cache`, which is great! This gives you layer caching and apt/pip cache mounts. However, if you change a line in the middle of a `RUN` command, that entire layer and all subsequent layers are invalidated.\n  *   **Dagger:** Dagger caches the result of **every single function call**.\n  Let's look at this part of your `Dockerfile`:\n  ```\n  If you decide to add `scikit-learn` to STEP 3, the entire `RUN` command for STEP 3 is re-executed.\n  In Dagger, this would be a chain of `.WithExec()` calls.\n  ```\n  If you add `.WithExec([]string{..., \"scikit-learn\"})` to the chain, Dagger knows the results of the previous `WithExec` calls are cached and reuses them instantly. It only executes the new command. This fine-grained caching saves enormous amounts of time during development.\n  *   **Your Dockerfile:** It's a single, monolithic file. What if you wanted to create a slightly different environment that has the Rust part but not the Python ML stack? You'd have to copy-paste sections of the Dockerfile.\n  *   **Dagger:** You can break down your `Dockerfile` into discrete functions.\n  ```\n  You compose your environment using functions, just like any other software. This makes it incredibly easy to reuse logic and avoid duplication. You can even publish these functions as reusable modules on Daggerverse.\n  *   **Your Script:** To run this in CI (like GitHub Actions), you'd need a runner that has Docker, checkout your code, and then run `./powerdev.sh build`. The `start` command wouldn't make sense, you'd do something else. You have to maintain two sets of logic: local (`powerdev.sh`) and CI (`.github/workflows/main.yml`).\n  *   **Dagger:** You run the exact same command: `dagger call power-dev test`. Dagger abstracts away the execution environment. It works the same on your laptop as it does in a GitHub Actions runner. This eliminates an entire class of \"it works on my machine\" issues.\n  *   **Your Script:** How do you know what commands are available? You have to `cat powerdev.sh` or run the `help` command.\n  *   **Dagger:** You run `dagger functions` to see all available pipelines. If you're using an IDE, you get full autocompletion, type-checking, and docstrings for every function and parameter. It turns your CI/dev environment into a strongly-typed API.\n  ---\n  This is the biggest one.\n  *   **Your Script:** The mental model is clear: you are managing a **persistent, named container** (`swarm_container`) on your host. You start it, exec into it, and stop it.\n  *   **Dagger:** The primary artifact is a **pipeline definition that produces an output**. The container definition is immutable. You don't \"start\" a Dagger container in the same way. Instead, you call a function and get a result. For an interactive shell, you'd run:\n    ```\n    This executes the pipeline and drops you into a shell in the *resulting* container. When you exit, it's gone. State is managed via Dagger's cache or by explicitly mounting host directories, not by a persistent named container. This can take some getting used to.\n  A simple `RUN` command in a Dockerfile can feel more concise than its Dagger equivalent.\n  *   **Dockerfile:** `RUN command -v max >/dev/null`\n  *   **Dagger (Go):** `container.WithExec([]string{\"sh\", \"-c\", \"command -v max >/dev/null\"})`\n  For complex logic, Dagger's structure is a win, but for simple one-liners, it can feel a bit more verbose.\n  *   **Your Script:** You explicitly list `--gpus all` in your `RUN_OPTS`. It's very clear.\n  *   **Dagger:** Dagger does support GPUs, but it's handled by the Dagger Engine configuration, not an explicit flag in your code. This is by design (to keep the pipeline portable), but it means configuration is managed outside the pipeline code itself. For a user, it's one more thing to learn how to configure on the Dagger Engine.\n  ---\n  Your `Dockerfile` logic would be ported into a `PowerDev()` function in a Go/Python file, using chained `.WithExec()` calls.\n  Your `powerdev.sh` commands would map like this:\n  | `powerdev.sh` Command | Dagger Equivalent (`dagger call ...`) | Notes |\n  | :--- | :--- | :--- |\n  | `build` | `power-dev build` | The `build` command would just write the container to a tarball or push to a registry. |\n  | `start` | `power-dev terminal` | This gives you an interactive shell in the final container. |\n  | `exec CMD` | `power-dev with-exec \"CMD\" stdout` | Executes a command and streams the output. |\n  | `logs`, `stop`, `rm` | N/A (or `dagger service stop`) | These apply to persistent named containers, which is not Dagger's primary model. If you run the container as a long-running service (`.AsService()`), then you can manage its lifecycle. |\n  | `restart` | `dagger service stop && dagger service up` | For Dagger services. |\n  | `health` | `power-dev healthcheck` | The `.WithHealthcheck()` configuration on the container can be invoked. |\n  | `watch` | This would be a Dagger function that runs a loop, calls the healthcheck on a service, and restarts it if it fails. |\n  Your `powerdev.sh` script is a great, classic solution for a complex, single-machine development environment. It's direct and leverages the Docker CLI effectively.\n  **You should consider Dagger if you are facing these challenges:**\n  *   Builds are slow, and you want more granular caching.\n  *   You need your dev environment to work for a team across macOS, Windows, and Linux.\n  *   You spend time debugging differences between your local setup and your CI environment.\n  *   You find yourself copy-pasting your `Dockerfile` to create slightly different environments.\n  *   You want to treat your environment definition like any other piece of testable, reusable software.\n  Dagger is an investment. It has a steeper initial learning curve but pays significant dividends in reproducibility, portability, and speed for complex, team-based projects.\n  - [Build an AI Agent | Dagger](https://docs.dagger.io/quickstart/agent)\n  - [Building AI agent from scratch using Dagger - YouTube](https://www.youtube.com/watch?v=1rDcyiR0wZE)\n\n  - ### High-Level Summary\n  - ### Advantages of Dagger\n  - #### 1. Portability & Language\n  - #### 2. Unmatched Caching\n  ```dockerfile\n  # STEP 2: Install the core, heavy ML frameworks.\n  RUN /opt/venv312/bin/pip install --no-cache-dir \\\n    tensorflow \\\n    torch torchvision torchaudio \\\n    keras\n\n  # STEP 3: Install other common data science libraries.\n  RUN /opt/venv312/bin/pip install --no-cache-dir \\\n    h2o xgboost\n  ```go\n  // Simplified Dagger Go example\n  mlStack := base.\n    WithExec([]string{\"/opt/venv312/bin/pip\", \"install\", \"tensorflow\", \"torch\", ...}).\n    WithExec([]string{\"/opt/venv312/bin/pip\", \"install\", \"h2o\", \"xgboost\"})\n  - #### 3. Modularity & Reusability\n  ```go\n  // In your Dagger module\n  func (m *MyModule) WithBase(ctx context.Context) *dagger.Container {\n    // Installs build-essential, git, etc.\n  }\n\n  func (m *MyModule) WithPython(ctx context.Context, ctr *dagger.Container) *dagger.Container {\n    // Adds PPA, installs python, creates venvs\n  }\n\n  func (m *MyModule) WithMLStack(ctx context.Context, ctr *dagger.Container) *dagger.Container {\n    // Does all the pip installs for the ML stack\n  }\n\n  func (m *MyModule) WithRust(ctx context.Context, ctr *dagger.Container) *dagger.Container {\n    // Installs the Rust toolchain\n  }\n\n  // Your main dev environment function\n  func (m *MyModule) PowerDev(ctx context.Context) *dagger.Container {\n    return m.WithRust(ctx, m.WithMLStack(ctx, m.WithPython(ctx, m.WithBase(ctx))))\n  }\n\n  // A different environment for a Rust-only project\n  func (m *MyModule) RustDev(ctx context.Context) *dagger.Container {\n    return m.WithRust(ctx, m.WithBase(ctx))\n  }\n  - #### 4. CI/Local Parity\n  - #### 5. Discoverability & Type Safety\n  - ### Disadvantages & Considerations\n  - #### 1. Mindset Shift & Learning Curve\n    ```bash\n    dagger call power-dev terminal\n  - #### 2. Verbosity for Simple Commands\n  - #### 3. Host Device Integration (like GPUs)\n  - ### How Your `powerdev` would look in Dagger (Conceptual)\n  - ### Conclusion\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:dagger",
+    "iri": "http://narrativegoldmine.com/infrastructure#Dagger",
+    "content_hash": "sha256-12-b50af848926f",
+    "legacy_term_id": "NGM-dagger",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:dagger",
+    "schema_version": "v2",
+    "term_id": "NGM-dagger",
+    "preferred_term": "Dagger",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "Dagger is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:Dagger",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

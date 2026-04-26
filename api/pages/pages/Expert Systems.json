@@ -1,64 +1,70 @@
 {
-  "id": "Expert Systems",
+  "id": "expert-systems",
   "title": "Expert Systems",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1002\n  - preferred-term:: Expert Systems\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:ExpertSystems\n\n### Relationships\n- is-subclass-of:: [[Knowledge Representation]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[Inference Engine]]\n- uses:: [[Knowledge Base]]\n- skos:related:: [[Fuzzy Logic]]\n- skos:related:: [[Rule-Based Systems]]\n- enables:: [[Decision Support]]\n\n### Definition\nExpert systems are computer programs that emulate the decision-making ability of human experts in specific domains. They consist of a knowledge base containing domain-specific information and an inference engine that applies logical rules to derive conclusions, make recommendations, or solve complex problems within their specialized area of expertise.\n\n### Architecture Components\n- Knowledge base (facts and rules)\n- Inference engine (reasoning mechanism)\n- User interface\n- Explanation facility\n- Knowledge acquisition module\n\n### Historical Significance\n- MYCIN (medical diagnosis)\n- DENDRAL (chemical analysis)\n- XCON (computer configuration)\n- Peak popularity in 1980s-1990s\n\n### Modern Applications\n- Medical diagnosis support\n- Financial planning\n- Quality control\n- Fault diagnosis\n- Configuration systems",
-  "backlinks": [
-    "Symbolic AI",
-    "Fuzzy Logic"
-  ],
+  "content": "- ### Definition\n  - Expert Systems is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ExpertSystems\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Knowledge Representation]]\n  - enables:: [[Decision Support]]\n  - bridges-to:: [[Autonomous Robot]], [[Blockchain]]\n\n- ### Content\n\n  ### Definition\n  Expert systems are computer programs that emulate the decision-making ability of human experts in specific domains. They consist of a knowledge base containing domain-specific information and an inference engine that applies logical rules to derive conclusions, make recommendations, or solve complex problems within their specialized area of expertise.\n\n  ### Architecture Components\n  - Knowledge base (facts and rules)\n  - Inference engine (reasoning mechanism)\n  - User interface\n  - Explanation facility\n  - Knowledge acquisition module\n\n  ### Historical Significance\n  - MYCIN (medical diagnosis)\n  - DENDRAL (chemical analysis)\n  - XCON (computer configuration)\n  - Peak popularity in 1980s-1990s\n\n  ### Modern Applications\n  - Medical diagnosis support\n  - Financial planning\n  - Quality control\n  - Fault diagnosis\n  - Configuration systems\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "Inference Engine",
-    "Knowledge Base",
-    "Knowledge Representation",
+    "Autonomous Robot",
+    "Blockchain",
     "Decision Support",
-    "Fuzzy Logic",
-    "Rule-Based Systems"
+    "Knowledge Representation"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:expert-systems",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ExpertSystems",
+    "content_hash": "sha256-12-fdde0d7bd71c",
+    "legacy_term_id": "AI-1002",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:expert-systems",
+    "schema_version": "v2",
     "term_id": "AI-1002",
     "preferred_term": "Expert Systems",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#ExpertSystems",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Expert Systems is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:ExpertSystems",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ExpertSystems",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Knowledge Representation"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Decision Support"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Autonomous Robot",
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

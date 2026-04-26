@@ -1,0 +1,66 @@
+{
+  "id": "training-dataset-metadata",
+  "title": "Training Dataset Metadata",
+  "content": "- ### Definition\n  - A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:TrainingDatasetMetadata\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[ModelArchitecture]]\n\n- ### Content\n  TrainingDatasetMetadata — content pending enrichment.\n\n- ### Provenance\n  - sources:: Generated from bridge validation\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "AI Model Card"
+  ],
+  "wiki_links": [
+    "ModelArchitecture"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:training-dataset-metadata",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#TrainingDatasetMetadata",
+    "content_hash": "sha256-12-ac2773f0dedc",
+    "legacy_term_id": "AI-1001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:training-dataset-metadata",
+    "schema_version": "v2",
+    "term_id": "AI-1001",
+    "preferred_term": "Training Dataset Metadata",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "emerging",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:TrainingDatasetMetadata",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ModelArchitecture"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [
+      "Generated from bridge validation"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

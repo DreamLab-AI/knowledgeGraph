@@ -1,0 +1,69 @@
+{
+  "id": "proteus-effect",
+  "title": "Proteus Effect",
+  "content": "- ### Definition\n  - Proteus Effect is a concept within the mv domain.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ProteusEffect\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Content\n\n  #### Key Characteristics\n  - **Behavioral Conformity**: Actions match avatar stereotypes\n  - **Unconscious Process**: Users unaware of influence\n  - **Context-Dependent**: Occurs in virtual environments\n  - **Appearance-Driven**: Triggered by visual avatar traits\n  - **Bidirectional**: Can persist into physical world\n\n  ## Theoretical Foundation\n\n  ### Self-Perception Theory\n  - Individuals infer attitudes from observed behaviors\n  - Avatar appearance influences self-observation\n  - Changed behavior leads to changed self-concept\n\n  ### Stereotype Activation\n  - Cultural stereotypes associated with physical traits\n  - Avatar appearance primes associated behaviors\n  - Automatic and implicit cognitive process\n\n  ### Embodied Cognition\n  - Physical form influences cognitive processes\n  - Virtual embodiment extends to digital representations\n  - Sensorimotor feedback loop in virtual space\n\n  ## Empirical Findings\n\n  ### Height Effects\n  - **Taller Avatars**: More confident negotiation, aggressive bargaining\n  - **Shorter Avatars**: More accommodating, less assertive\n\n  ### Attractiveness Effects\n  - **Attractive Avatars**: More self-disclosure, intimate conversations\n  - **Unattractive Avatars**: More reserved social interactions\n\n  ### Age Effects\n  - **Older Avatars**: More conservative decisions, long-term thinking\n  - **Younger Avatars**: Risk-taking behavior, impulsivity\n\n  ### Race/Ethnicity Effects\n  - **Different-race Avatars**: Reduced implicit bias, increased empathy\n  - **Stereotype Threat**: Conformity to negative stereotypes\n\n  ## Definition\n\n  Behavioral and attitudinal conformity phenomenon where individuals unconsciously adopt behaviors, attitudes, and self-perceptions that align with the stereotypical expectations of their digital avatar's visual characteristics within virtual environments.\n\n  #### Related Concepts\n  - [[Avatar Identity]]\n  - [[Digital Embodiment]]\n  - [[Virtual Group Dynamics]]\n  - [[Social Presence]]\n  - [[Virtual Psychology]]\n\n  ## Applications\n\n  ### Therapeutic Interventions\n  - Confidence building through empowered avatars\n  - Exposure therapy with controlled avatar appearance\n  - Social skills training with varied embodiments\n\n  ### Education & Training\n  - Role-playing with diverse avatar identities\n  - Perspective-taking exercises\n  - Historical simulations with period-appropriate avatars\n\n  ### Business & Collaboration\n  - Virtual meeting avatar considerations\n  - Negotiation training with avatar manipulation\n  - Team dynamics influenced by avatar design\n\n  ### Bias Reduction\n  - Experiencing life in different-race avatars\n  - Gender-swapped avatar experiences\n  - Disability perspective-taking\n\n  ## Design Implications for Metaverse\n\n  ### Ethical Considerations\n  - User awareness of Proteus Effect\n  - Informed consent for avatar assignment\n  - Avoiding exploitative avatar design\n  - Protecting vulnerable user populations\n\n  ### Avatar Customization\n  - Balance between self-expression and conformity\n  - Default avatar choices matter\n  - Idealized vs. realistic avatars\n  - Cultural sensitivity in avatar options\n\n  ### Social Platform Design\n  - Avatar appearance norms and expectations\n  - Moderation of avatar-based stereotyping\n  - Accessibility in avatar representation\n  - Anti-discrimination policies\n\n  ## Positive Applications\n\n  - **Empathy Building**: Walk in another's shoes\n  - **Confidence Enhancement**: Empowered self-presentation\n  - **Behavioral Rehearsal**: Practice with safe embodiments\n  - **Stereotype Disruption**: Challenge implicit biases\n\n  ## Potential Harms\n\n  - **Exploitation**: Manipulative avatar assignment\n  - **Reinforcement**: Strengthening negative stereotypes\n  - **Identity Confusion**: Blurred self-concept boundaries\n  - **Pressure to Conform**: Idealized appearance standards\n\n  ## Research Methods\n\n  - Randomized avatar assignment experiments\n  - Longitudinal behavioral tracking\n  - Self-report questionnaires\n  - Behavioral observation in virtual tasks\n  - Physiological measures (VR embodiment)\n\n  ## Moderating Factors\n\n  - **Avatar Identification**: Strength of self-avatar association\n  - **Virtual Environment Context**: Social vs. gaming vs. professional\n  - **Individual Differences**: Personality, susceptibility to influence\n  - **Cultural Background**: Stereotype content varies by culture\n  - **Exposure Duration**: Stronger effects with longer use\n\n  ## Future Research Directions\n\n  - Long-term effects on identity\n  - Transfer effects to physical world\n  - VR vs. screen-based embodiment differences\n  - Cultural variation in Proteus Effect\n  - Ethical guidelines for metaverse platforms\n\n  #### References\n  - Yee, N. & Bailenson, J. (2007). \"The Proteus Effect: The Effect of Transformed Self-Representation on Behavior\"\n  - Yee, N. et al. (2009). \"The Unbearable Likeness of Being Digital\"\n  - Peck, T. C. et al. (2013). \"Putting Yourself in the Skin of a Black Avatar Reduces Implicit Racial Bias\"\n  - Ratan, R. et al. (2020). \"The Proteus Effect in Virtual Reality\"\n\n  ### Relationships\n  - is-subclass-of:: [[Metaverse]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Virtual Group Dynamics"
+  ],
+  "wiki_links": [
+    "Avatar Identity",
+    "Digital Embodiment",
+    "Metaverse",
+    "Social Presence",
+    "Virtual Group Dynamics",
+    "Virtual Psychology"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:proteus-effect",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ProteusEffect",
+    "content_hash": "sha256-12-52a4c1ce946a",
+    "legacy_term_id": "MV-proteus-effect",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:proteus-effect",
+    "schema_version": "v2",
+    "term_id": "MV-proteus-effect",
+    "preferred_term": "Proteus Effect",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "Proteus Effect is a concept within the mv domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ProteusEffect",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "Metaverse"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

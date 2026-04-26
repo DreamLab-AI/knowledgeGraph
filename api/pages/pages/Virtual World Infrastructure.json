@@ -1,38 +1,46 @@
 {
-  "id": "Virtual World Infrastructure",
+  "id": "virtual-world-infrastructure",
   "title": "Virtual World Infrastructure",
-  "content": "- ### OntologyBlock\n  id:: virtual-world-infrastructure-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10155\n\t- source-domain:: mv\n\t- preferred-term:: Virtual World Infrastructure\n\t- status:: active\n\t- definition:: The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.\n\t- owl:class:: mv:VirtualWorldInfrastructure\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Digital Infrastructure]]\n\t\t- related-to:: [[Cloud Computing]]\n\t\t- related-to:: [[Edge Computing]]\n\t\t- related-to:: [[Network Architecture]]\n\t  id:: virtual-world-infrastructure-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual world infrastructure runs on cloud computing, edge networks, and distributed systems working together as an integrated system. AWS hosts VRChat infrastructure, while Decentraland uses both AWS and Azure. NVIDIA's Omniverse Cloud provides industrial metaverse services through OVX, HGX, and the Graphics Delivery Network. The metaverse may require 1000 times current computing capacity, storage, and internet speed to operate efficiently at scale.\n- ## Technical Details\n\t- ### Core Components\n\t\t- **Cloud Computing**: AWS, Azure scalable foundation for virtual worlds\n\t\t- **Edge Computing**: Reduces latency by bringing compute closer to devices\n\t\t- **Distributed Systems**: Peer-to-peer networking for state sharing\n\t\t- **Real-Time Rendering**: GPU acceleration for graphics processing\n\t- ### Network Requirements\n\t\t- Sub-10 millisecond latency for responsive experiences\n\t\t- High bandwidth backbone and last-mile delivery\n\t\t- 5G/6G wireless connectivity development\n\t\t- IPFS and decentralized storage solutions\n\t- ### Architecture Approaches\n\t\t- Traditional game architecture with high-end client devices\n\t\t- Web application delivery through browsers\n\t\t- Cloud streaming for thin client access\n\t\t- Peer-to-peer networking with server state management\n\t- ### NVIDIA Omniverse Cloud\n\t\t- Nucleus Cloud for USD-based 3D collaboration\n\t\t- Graphics Delivery Network for edge rendering\n\t\t- OVX for graphics and physics simulation\n\t\t- HGX for advanced AI workloads\n- ## Applications\n\t- Metaverse platform hosting\n\t- Real-time multiplayer experiences\n\t- Industrial digital twin environments\n\t- Enterprise virtual collaboration\n\t- Massively concurrent user support",
+  "content": "- ### Definition\n  - The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:VirtualWorldInfrastructure\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Digital Infrastructure]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual world infrastructure runs on cloud computing, edge networks, and distributed systems working together as an integrated system. AWS hosts VRChat infrastructure, while Decentraland uses both AWS and Azure. NVIDIA's Omniverse Cloud provides industrial metaverse services through OVX, HGX, and the Graphics Delivery Network. The metaverse may require 1000 times current computing capacity, storage, and internet speed to operate efficiently at scale.\n  - ## Technical Details\n  - ### Core Components\n\t\t- **Cloud Computing**: AWS, Azure scalable foundation for virtual worlds\n\t\t- **Edge Computing**: Reduces latency by bringing compute closer to devices\n\t\t- **Distributed Systems**: Peer-to-peer networking for state sharing\n\t\t- **Real-Time Rendering**: GPU acceleration for graphics processing\n  - ### Network Requirements\n\t\t- Sub-10 millisecond latency for responsive experiences\n\t\t- High bandwidth backbone and last-mile delivery\n\t\t- 5G/6G wireless connectivity development\n\t\t- IPFS and decentralized storage solutions\n  - ### Architecture Approaches\n\t\t- Traditional game architecture with high-end client devices\n\t\t- Web application delivery through browsers\n\t\t- Cloud streaming for thin client access\n\t\t- Peer-to-peer networking with server state management\n  - ### NVIDIA Omniverse Cloud\n\t\t- Nucleus Cloud for USD-based 3D collaboration\n\t\t- Graphics Delivery Network for edge rendering\n\t\t- OVX for graphics and physics simulation\n\t\t- HGX for advanced AI workloads\n  - ## Applications\n  - Metaverse platform hosting\n  - Real-time multiplayer experiences\n  - Industrial digital twin environments\n  - Enterprise virtual collaboration\n  - Massively concurrent user support\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Spatial Index"
   ],
   "wiki_links": [
-    "Cloud Computing",
     "Digital Infrastructure",
-    "metaverse",
-    "Network Architecture",
-    "Edge Computing"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:virtual-world-infrastructure",
+    "iri": "http://narrativegoldmine.com/infrastructure#VirtualWorldInfrastructure",
+    "content_hash": "sha256-12-ac213a1c713b",
+    "legacy_term_id": "MV-10155",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:virtual-world-infrastructure",
+    "schema_version": "v2",
     "term_id": "MV-10155",
     "preferred_term": "Virtual World Infrastructure",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualWorldInfrastructure",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "The underlying technical foundation required to operate metaverse platforms, encompassing cloud computing services, edge networks, distributed systems, real-time rendering capabilities, networking protocols, and blockchain integration that together enable persistent, scalable virtual environments with low-latency user interactions.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualWorldInfrastructure",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:VirtualWorldInfrastructure",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Infrastructure"
@@ -45,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Cloud Computing",
-        "Edge Computing",
-        "Network Architecture"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

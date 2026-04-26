@@ -1,55 +1,56 @@
-- ### OntologyBlock
-  id:: etsi_domain_governance_compliance-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-3021
-	- preferred-term:: ETSI_Domain_Governance_Compliance
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Governance_Compliance
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/metaverse#ETSIDomainGovernanceCompliance
+uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernancecompliance
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: ETSI_Domain_Governance_Compliance
+content-hash:: sha256-12-4beadcf13113
+legacy-term-id:: MV-3021
+status:: draft
+maturity:: draft
+quality-score:: 0.40
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## OWL Formal Semantics
+- ### Definition
+  - ETSI domain categorisation encompassing governance and regulatory compliance mechanisms, addressing frameworks for regulatory adherence, compliance oversight, and governance enforcement within metaverse infrastructure. These [[Governance Structures]] integrate [[Regulatory Requirements]], [[Compliance Audits]], and [[Oversight Mechanisms]].
 
-```clojure
-;; OWL Functional Syntax
+- ### Bridge-To
+  - bridges-to:: [[Blockchain]] (bc)
 
-(Declaration (Class :Etsidomaingovernancecompliance))
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ETSI_Domain_Governance_Compliance
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-;; Annotations
-(AnnotationAssertion rdfs:label :Etsidomaingovernancecompliance "ETSI_Domain_Governance_Compliance"@en)
-(AnnotationAssertion rdfs:comment :Etsidomaingovernancecompliance "A component of the metaverse ecosystem."@en)
+- ### Relationships
+  - <!-- No relationships defined -->
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Etsidomaingovernancecompliance "mv-1761742247919"^^xsd:string)
-```
-
-- ## About ETSI_Domain_Governance_Compliance
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Content
+  - An [[ETSI]] governance classification encompassing regulatory compliance mechanisms, audit frameworks, and enforcement structures ensuring adherence to legal, standards, and ethical requirements. This domain integrates [[Compliance Oversight]], [[Regulatory Requirements]], and [[Governance Enforcement]] across metaverse and digital infrastructure contexts.
+  - ### Original Content
 		- ```
-# ETSI_Domain_Governance_Compliance
-		  
+  # ETSI_Domain_Governance_Compliance
+
 		  **ID:** 20350
 		  **Classification:** VirtualObject
 		  **Stage:** Defined
 		  **Domain:** InfrastructureDomain
 		  **Layer:** ApplicationLayer
-		  
+
 		  ## Overview
-		  
+
 		  ETSI Domain categorization for Governance and Compliance in metaverse infrastructure, representing regulatory frameworks, compliance management, and governance oversight mechanisms.
-		  
+
 		  ## Formal Characteristics
-		  
+
 		  ### SubClassOf Axioms
-		  
+
 		  1. **SubClassOf**: VirtualObject
 		  2. **SubClassOf**: hasDomain some InfrastructureDomain
 		  3. **SubClassOf**: operatesInLayer some ApplicationLayer
@@ -59,130 +60,132 @@
 		  7. **SubClassOf**: providesComplianceMonitoring some ComplianceService
 		  8. **SubClassOf**: hasStandardsReference value "ISO_23257"
 		  9. **SubClassOf**: enablesCrossoverWith some (SecurityDomain or EthicsDomain)
-		  
+
 		  ## Domain Context
-		  
+
 		  - **Primary Domain**: Governance & Compliance marker for metaverse infrastructure
 		  - **Standards Alignment**: ETSI GS MEC, ETSI GR MEC 032, ISO 23257
 		  - **Functional Role**: Regulatory compliance tracking and governance oversight
 		  - **Cross-Domain Integration**: Security, Ethics, Society, Economy
-		  
-		  ## Related Concepts
-		  
-		  - ETSI_Domain_Governance_Security
+
+  #### Related Concepts
+  - ETSI_Domain_Governance_Security
 		  - ETSI_Domain_Governance___Ethics
 		  - ETSI_Domain_Governance___Economy
 		  - ETSI_Domain_Governance___Society
-		  
-		  ## References
-		  
-		  - ETSI GR MEC 032 (Metaverse Architectural Framework)
+
+  #### References
+  - ETSI GR MEC 032 (Metaverse Architectural Framework)
 		  - ISO 23257 (Metaverse Governance)
 		  - ETSI GS MEC (Multi-access Edge Computing)
-		  
+
 		  ```
 
-## Academic Context
+  ## Academic Context
 
-- Brief contextual overview
+  - Brief contextual overview
   - ETSI Domain Governance and Compliance refers to the structured approach for managing regulatory, ethical, and operational requirements within digital ecosystems, particularly those governed by European Telecommunications Standards Institute (ETSI) frameworks
   - The domain integrates governance, risk management, and compliance (GRC) principles, ensuring that digital infrastructures—such as identity wallets, data platforms, and metaverse environments—operate within legal and ethical boundaries
 
-- Key developments and current state
+  - Key developments and current state
   - ETSI’s TR 104 077 series provides a comprehensive mapping of governance and compliance requirements for digital identity and data ecosystems, including the European Digital Identity (EUDI) Wallet initiative
   - The focus has shifted from reactive compliance to proactive governance, embedding compliance into system design and daily operations
 
-- Academic foundations
+  - Academic foundations
   - Rooted in information governance, regulatory compliance theory, and digital ethics
   - Draws from frameworks such as ISO/IEC 38500 (governance of IT), COBIT (control objectives for information and related technologies), and NIST Cybersecurity Framework
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
+  - Industry adoption and implementations
   - ETSI Domain Governance and Compliance is widely adopted in digital identity, data sharing, and metaverse platforms across Europe
   - Organisations implementing ETSI standards include national digital identity providers, financial institutions, and public sector agencies
 
-- Notable organisations and platforms
+  - Notable organisations and platforms
   - ETSI itself, as the standards body, continues to lead in defining governance and compliance requirements
   - UK-based organisations such as the Digital Identity and Attributes Trust Framework (DIATF) and the National Cyber Security Centre (NCSC) reference ETSI standards in their guidance
 
-- UK and North England examples where relevant
+  - UK and North England examples where relevant
   - In Manchester, the Greater Manchester Combined Authority has piloted digital identity solutions aligned with ETSI governance principles for citizen services
   - Leeds City Council has explored ETSI-compliant data governance for smart city initiatives
   - Newcastle and Sheffield universities are involved in research on digital identity and compliance, often collaborating with ETSI working groups
 
-- Technical capabilities and limitations
+  - Technical capabilities and limitations
   - Capabilities include robust access control, audit trails, privacy-by-design, and interoperability with other standards
   - Limitations include complexity in cross-border implementation and the need for continuous updates to keep pace with evolving regulations
 
-- Standards and frameworks
+  - Standards and frameworks
   - ETSI TR 104 077 series (including TR 104 077-1, -3, and related documents)
   - ISO/IEC 38500, COBIT, NIST Cybersecurity Framework
   - GDPR, UK Data Protection Act 2018
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
+  - Key academic papers and sources
   - European Telecommunications Standards Institute. (2025). ETSI TR 104 077-3 V1.1.1: Compliance and governance. https://www.etsi.org/deliver/etsi_tr/104000_104099/10407703/01.01.01_60/tr_10407703v010101p.pdf
   - European Telecommunications Standards Institute. (2025). ETSI TR 104 027 V1.1.1: Data governance and retention. https://www.etsi.org/deliver/etsi_tr/104000_104099/104027/01.01.01_60/tr_104027v010101p.pdf
   - European Telecommunications Standards Institute. (2025). ETSI TR 104 119 V1.1.1: Documentation and audit. https://www.etsi.org/deliver/etsi_tr/104100_104199/104119/01.01.01_60/tr_104119v010101p.pdf
   - Weill, P., & Ross, J. W. (2004). IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Press.
   - ISACA. (2018). COBIT 2019 Framework: Governance and Management Objectives. https://www.isaca.org/resources/cobit
 
-- Ongoing research directions
+  - Ongoing research directions
   - Integration of artificial intelligence and machine learning in compliance monitoring
   - Cross-border data governance and compliance in the context of the EU Digital Identity Wallet
   - Privacy-preserving technologies and their impact on governance and compliance
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
+  - British contributions and implementations
   - The UK has been active in shaping digital identity and data governance standards, often aligning with ETSI frameworks
   - The National Cyber Security Centre (NCSC) and the Information Commissioner’s Office (ICO) provide guidance that references ETSI standards
 
-- North England innovation hubs (if relevant)
+  - North England innovation hubs (if relevant)
   - Manchester’s Digital Innovation Factory and Leeds’ Digital Health Enterprise Zone are examples of regional hubs where ETSI-compliant governance and compliance practices are being piloted
   - Newcastle and Sheffield universities contribute to research on digital identity and compliance, often collaborating with ETSI working groups
 
-- Regional case studies
+  - Regional case studies
   - Greater Manchester Combined Authority’s digital identity pilot for citizen services
   - Leeds City Council’s smart city data governance initiative
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - Increased use of automated compliance monitoring tools
   - Greater emphasis on ethical guidelines and user rights in digital ecosystems
   - Expansion of ETSI standards to cover emerging technologies such as the metaverse and Web3
 
-- Anticipated challenges
+  - Anticipated challenges
   - Keeping pace with rapidly evolving regulations and technologies
   - Ensuring interoperability between different governance and compliance frameworks
   - Addressing the complexity of cross-border implementation
 
-- Research priorities
+  - Research priorities
   - Development of more user-centric governance and compliance models
   - Integration of privacy-preserving technologies in compliance monitoring
   - Exploration of the impact of artificial intelligence on governance and compliance
 
-## References
+  ## References
 
-1. European Telecommunications Standards Institute. (2025). ETSI TR 104 077-3 V1.1.1: Compliance and governance. https://www.etsi.org/deliver/etsi_tr/104000_104099/10407703/01.01.01_60/tr_10407703v010101p.pdf
-2. European Telecommunications Standards Institute. (2025). ETSI TR 104 027 V1.1.1: Data governance and retention. https://www.etsi.org/deliver/etsi_tr/104000_104099/104027/01.01.01_60/tr_104027v010101p.pdf
-3. European Telecommunications Standards Institute. (2025). ETSI TR 104 119 V1.1.1: Documentation and audit. https://www.etsi.org/deliver/etsi_tr/104100_104199/104119/01.01.01_60/tr_104119v010101p.pdf
-4. Weill, P., & Ross, J. W. (2004). IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Press.
-5. ISACA. (2018). COBIT 2019 Framework: Governance and Management Objectives. https://www.isaca.org/resources/cobit
-6. National Cyber Security Centre. (2025). Guidance on digital identity and data governance. https://www.ncsc.gov.uk
-7. Information Commissioner’s Office. (2025). Guidance on data protection and compliance. https://ico.org.uk
-8. Greater Manchester Combined Authority. (2025). Digital identity pilot for citizen services. https://www.greatermanchester-ca.gov.uk
-9. Leeds City Council. (2025). Smart city data governance initiative. https://www.leeds.gov.uk
-10. Newcastle University. (2025). Research on digital identity and compliance. https://www.ncl.ac.uk
-11. Sheffield University. (2025). Research on digital identity and compliance. https://www.sheffield.ac.uk
+  1. European Telecommunications Standards Institute. (2025). ETSI TR 104 077-3 V1.1.1: Compliance and governance. https://www.etsi.org/deliver/etsi_tr/104000_104099/10407703/01.01.01_60/tr_10407703v010101p.pdf
+  2. European Telecommunications Standards Institute. (2025). ETSI TR 104 027 V1.1.1: Data governance and retention. https://www.etsi.org/deliver/etsi_tr/104000_104099/104027/01.01.01_60/tr_104027v010101p.pdf
+  3. European Telecommunications Standards Institute. (2025). ETSI TR 104 119 V1.1.1: Documentation and audit. https://www.etsi.org/deliver/etsi_tr/104100_104199/104119/01.01.01_60/tr_104119v010101p.pdf
+  4. Weill, P., & Ross, J. W. (2004). IT Governance: How Top Performers Manage IT Decision Rights for Superior Results. Harvard Business Press.
+  5. ISACA. (2018). COBIT 2019 Framework: Governance and Management Objectives. https://www.isaca.org/resources/cobit
+  6. National Cyber Security Centre. (2025). Guidance on digital identity and data governance. https://www.ncsc.gov.uk
+  7. Information Commissioner’s Office. (2025). Guidance on data protection and compliance. https://ico.org.uk
+  8. Greater Manchester Combined Authority. (2025). Digital identity pilot for citizen services. https://www.greatermanchester-ca.gov.uk
+  9. Leeds City Council. (2025). Smart city data governance initiative. https://www.leeds.gov.uk
+  10. Newcastle University. (2025). Research on digital identity and compliance. https://www.ncl.ac.uk
+  11. Sheffield University. (2025). Research on digital identity and compliance. https://www.sheffield.ac.uk
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[ETSI TR 104 077 series]], [[ETSI GR MEC 032]], [[ISO 23257]], [[ISO/IEC 38500]], [[COBIT]], [[NIST Cybersecurity Framework]], [[GDPR]]
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,54 +1,114 @@
 {
-  "id": "Human Factors",
+  "id": "human-factors",
   "title": "Human Factors",
-  "content": "- ### OntologyBlock\n  id:: rb9511-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9511\n\t- preferred-term:: Human Factors\n\t- source-domain:: rb\n\t- owl:class:: rb:HumanFactors\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Human Factors is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nHuman Factors represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.\n\n- ### Semantic Classification\n  - owl-class:: robotics:HumanFactors\n  - owl-role:: concept\n  - belongs-to-domain:: [[Robotics]]\n\n- ### Relationships\n  - bridges-to:: [[Telecollaboration]]\n  - is-subclass-of:: [[Interaction Design]], [[Systems Engineering]]\n  - has-part:: [[Ergonomics]], [[Cognitive Load Analysis]], [[Safety Assessment]], [[Usability Testing]], [[Trust Calibration]]\n  - requires:: [[User Research]], [[Task Analysis]], [[Interface Design]], [[Performance Metrics]]\n  - enables:: [[Intuitive Control]], [[Operator Safety]], [[Efficient Collaboration]], [[User Acceptance]]\n  - depends-on:: [[Cognitive Science]], [[Psychology]], [[Biomechanics]]\n\n- ### Content\n\n  Human factors research in robotics addresses foundational questions about how humans perceive robot capabilities and limitations, how cognitive and physical workload scales with robot complexity, and how to design interfaces enabling non-specialist operators to control sophisticated systems effectively. Ergonomic analysis ensures robot workstations do not cause repetitive strain injuries or musculoskeletal disorder in human operators; cognitive load assessment quantifies whether task demands exceed human attention capacity; and safety analysis identifies failure modes where robot behaviour could endanger humans.\n\n  Key human factors challenges arise in [[Collaborative Robotics]] where humans and robots share workspaces—robot motion must be predictable, forces and speeds must be limited to non-injurious levels, and safety monitoring systems must reliably detect unexpected situations. [[Teleoperation]] systems introduce network latency and limited sensory feedback, requiring careful interface design to avoid operator overload and poor situation awareness. [[Human-Robot Teamwork]] requires robots to communicate intent clearly through [[Gaze Control]], movement patterns, and explicit signals enabling humans to predict robot actions.\n\n  Contemporary human factors research explores cultural differences in robot perception and acceptance, personalisation of robot behaviour to individual operator preferences through learning algorithms, accessibility design enabling disabled individuals to operate robots effectively, and remote operation from home enabling flexible work whilst monitoring robot performance. Emerging topics include [[Trust Calibration]]—ensuring humans develop appropriate confidence in robot capabilities rather than over-trust or dangerous mistrust—and [[Moral Agency]] considerations for robots making autonomous decisions affecting human welfare. Evidence-based design guidelines from large-scale user studies enable standardisation of interfaces, reducing training time and errors when operators transition between robot platforms.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "RB-1012-trust-in-automation"
+    "Trust in Automation"
   ],
   "wiki_links": [
-    "owl:Thing"
+    "Biomechanics",
+    "Cognitive Load Analysis",
+    "Cognitive Science",
+    "Collaborative Robotics",
+    "Efficient Collaboration",
+    "Ergonomics",
+    "Gaze Control",
+    "Human-Robot Interaction",
+    "Human-Robot Teamwork",
+    "Interaction Design",
+    "Interface Design",
+    "Intuitive Control",
+    "Moral Agency",
+    "Operator Safety",
+    "Performance Metrics",
+    "Psychology",
+    "Robotics",
+    "Safety Assessment",
+    "Systems Engineering",
+    "Task Analysis",
+    "Telecollaboration",
+    "Teleoperation",
+    "Trust Calibration",
+    "Usability Testing",
+    "User Acceptance",
+    "User Research"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:robotics:human-factors",
+    "iri": "http://narrativegoldmine.com/robotics#HumanFactors",
+    "content_hash": "sha256-12-443c65c9857d",
+    "legacy_term_id": "RB-9511",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:human-factors",
+    "schema_version": "v2",
     "term_id": "RB-9511",
     "preferred_term": "Human Factors",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#HumanFactors",
-    "source_domain": "rb",
     "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
     "domain_full_name": "Robotics",
-    "definition": "Human Factors is a concept within the robotics domain. Further enrichment pending.",
+    "definition": "Human factors encompasses the interdisciplinary study of how humans interact with, perceive, and respond to robotic systems, integrating ergonomics, psychology, cognitive science, and design principles to ensure robots enhance rather than impede human performance and safety. Effective human factors engineering is critical for successful [[Human-Robot Interaction]], [[Collaborative Robotics]], and safe deployment in human-centred environments.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:HumanFactors",
-    "owl_physicality": "abstract",
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:HumanFactors",
     "owl_role": "concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
-    "has_part": [],
+    "is_subclass_of": [
+      "Interaction Design",
+      "Systems Engineering"
+    ],
+    "has_part": [
+      "Ergonomics",
+      "Cognitive Load Analysis",
+      "Safety Assessment",
+      "Usability Testing",
+      "Trust Calibration"
+    ],
     "is_part_of": [],
-    "requires": [],
-    "depends_on": [],
-    "enables": [],
+    "requires": [
+      "User Research",
+      "Task Analysis",
+      "Interface Design",
+      "Performance Metrics"
+    ],
+    "depends_on": [
+      "Cognitive Science",
+      "Psychology",
+      "Biomechanics"
+    ],
+    "enables": [
+      "Intuitive Control",
+      "Operator Safety",
+      "Efficient Collaboration",
+      "User Acceptance"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Telecollaboration"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
-    "belongs_to_domain": [],
+    "belongs_to_domain": [
+      "Robotics"
+    ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

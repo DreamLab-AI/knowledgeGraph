@@ -1,100 +1,114 @@
-- ### OntologyBlock
-  id:: infrared-camera-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9928
-	- source-domain:: mv
-	- preferred-term:: Infrared Camera
-	- status:: active
-	- owl:class:: mv:InfraredCamera
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.
-	- #### Relationships
-	  id:: infrared-camera-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Tracking Hardware]]
-		- related-to:: [[Infrared Illuminator]]
-		- related-to:: [[Eye Tracking System]]
-		- enables:: [[Motion Tracking]]
+iri:: http://narrativegoldmine.com/spatial-computing#InfraredCamera
+uri:: urn:visionclaw:concept:spatial-computing:infrared-camera
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:infrared-camera
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Infrared Camera
+content-hash:: sha256-12-7404b1950046
+legacy-term-id:: MV-9928
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Tracking Technology
+- ### Definition
+  - Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.
 
-### Eye Tracking Systems
-- Infrared camera sensors capture light reflections
-- Dedicated algorithms determine gaze direction
-- Enables foveated rendering technology
-- Reduces GPU and computing demands
-- Renders high resolution in direct field of vision
+- ### Semantic Classification
+  - owl-class:: spatial-computing:InfraredCamera
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Position and Movement Tracking
-- Multiple IR LEDs create light dot patterns
-- Camera registers and tracks IR patterns
-- Determines user position and movements
-- Integrates movements into VR action
-- 6DoF (degrees of freedom) tracking
+- ### Relationships
+  - is-subclass-of:: [[Tracking Hardware]]
+  - enables:: [[Motion Tracking]]
 
-## Inside-Out Tracking
+- ### Content
 
-### Mechanism
-- Cameras mounted on headset device
-- Identifies fiducial markers and patterns
-- Analyses marker position, size, orientation
-- Calculates device pose relative to markers
-- No external sensor requirement
+  ## Tracking Technology
 
-### Applications
-- Meta Quest headset tracking
-- Apple Vision Pro spatial awareness
-- PSVR2 controller detection
-- Hand tracking in low light
+  ### Eye Tracking Systems
+  - Infrared camera sensors capture light reflections
+  - Dedicated algorithms determine gaze direction
+  - Enables foveated rendering technology
+  - Reduces GPU and computing demands
+  - Renders high resolution in direct field of vision
 
-## Metaverse Integration
+  ### Position and Movement Tracking
+  - Multiple IR LEDs create light dot patterns
+  - Camera registers and tracks IR patterns
+  - Determines user position and movements
+  - Integrates movements into VR action
+  - 6DoF (degrees of freedom) tracking
 
-### Virtual Hand Tracking
-- Real-world hand posture acquisition
-- Infrared-based sensor mapping
-- Natural interaction achievement
-- Meta Quest 2 pilot testing
-- Retopology process integration
+  ## Inside-Out Tracking
 
-### Professional Solutions
-- Antilatency high-precision tracking
-- Location-based entertainment (LBE)
-- Warehouse-scale tracking capability
-- Multi-user environment support
-- 6DoF for dynamic environments
+  ### Mechanism
+  - Cameras mounted on headset device
+  - Identifies fiducial markers and patterns
+  - Analyses marker position, size, orientation
+  - Calculates device pose relative to markers
+  - No external sensor requirement
 
-## 2024 Developments
+  ### Applications
+  - Meta Quest headset tracking
+  - Apple Vision Pro spatial awareness
+  - PSVR2 controller detection
+  - Hand tracking in low light
 
-### Enhanced Capabilities
-- Refined hand/controller tracking
-- Eye tracking integration
-- Facial tracking systems
-- Full body tracking solutions
+  ## Metaverse Integration
 
-### Essential Technologies
-- Motion sensing advancement
-- Pose estimation improvement
-- 3D mapping capabilities
-- Scene understanding enhancement
+  ### Virtual Hand Tracking
+  - Real-world hand posture acquisition
+  - Infrared-based sensor mapping
+  - Natural interaction achievement
+  - Meta Quest 2 pilot testing
+  - Retopology process integration
 
-## Hardware Examples
+  ### Professional Solutions
+  - Antilatency high-precision tracking
+  - Location-based entertainment (LBE)
+  - Warehouse-scale tracking capability
+  - Multi-user environment support
+  - 6DoF for dynamic environments
 
-### Consumer Headsets
-- Meta Quest 3 IR camera array
-- Apple Vision Pro spatial cameras
-- PSVR2 tracking cameras
-- HTC Vive Pro sensors
+  ## 2024 Developments
 
-### Research Systems
-- Multi-camera tracking arrays
-- CAVE environment systems
-- Large-scale VR installations
-- Motion capture integration
+  ### Enhanced Capabilities
+  - Refined hand/controller tracking
+  - Eye tracking integration
+  - Facial tracking systems
+  - Full body tracking solutions
 
-## Metadata
+  ### Essential Technologies
+  - Motion sensing advancement
+  - Pose estimation improvement
+  - 3D mapping capabilities
+  - Scene understanding enhancement
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Hardware Examples
+
+  ### Consumer Headsets
+  - Meta Quest 3 IR camera array
+  - Apple Vision Pro spatial cameras
+  - PSVR2 tracking cameras
+  - HTC Vive Pro sensors
+
+  ### Research Systems
+  - Multi-camera tracking arrays
+  - CAVE environment systems
+  - Large-scale VR installations
+  - Motion capture integration
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

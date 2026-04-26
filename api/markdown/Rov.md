@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: rov-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#RemotelyOperatedVehicleROV
+uri:: urn:visionclaw:concept:robotics:remotely-operated-vehicle-rov
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:remotely-operated-vehicle-rov
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Remotely Operated Vehicle (ROV)
+content-hash:: sha256-12-f38dd8d455d2
+legacy-term-id:: RB-0128
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0128
-    - filename-history:: ["RB-0128-rov.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0128
-    - preferred-term:: Remotely Operated Vehicle (ROV)
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - ROV is tethered underwater robot controlled remotely via cable providing power and communications.
 
-  - **Definition**
-    - definition:: ROV is tethered underwater robot controlled remotely via cable providing power and communications.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:Rov
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:Rov
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Underwater Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Underwater Robot]]
+- ### Content
+  Remotely Operated Vehicle (ROV) — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :Rov))
-      (SubClassOf :Rov :UnderwaterRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :Rov "Remotely Operated Vehicle (ROV)"@en)
-      (AnnotationAssertion rdfs:comment :Rov
-        "ROV is tethered underwater robot controlled remotely via cable providing power and communications."@en)
-      ```
-
-- ## About Remotely Operated Vehicle (ROV)
-  ROV is tethered underwater robot controlled remotely via cable providing power and communications.
-  
-  An underwater robot tethered to surface ship by cable.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

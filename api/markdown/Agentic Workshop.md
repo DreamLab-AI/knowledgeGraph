@@ -1,13 +1,38 @@
+iri:: http://narrativegoldmine.com/ontology#AgenticWorkshop
+uri:: urn:visionclaw:concept:artificial-intelligence:agentic-workshop
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:agentic-workshop
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Agentic Workshop
+content-hash:: sha256-12-938d08b5a036
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
--
-- {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}
-- Think of agents as sheep dogs. You're not putting sheep in a pen one by one any more. sometimes the best path to getting the sheep in en masse is a long arc round the field where the agent develops the mass as it goes. Sometimes it's a structured play with more work up front. This somewhat depends on you.
--
-- My background, why you're here, what you can expect
-- course structure (multi session, not completely interdependent, simple pricing)
-- background and rationalle
-	- chatbots and the agent / agentic boundary are confusing
+- ### Definition
+  - Agentic Workshop is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AgenticWorkshop
+  - owl-role:: Concept
+
+- ### Relationships
+  - bridges-to:: [[AI Agent System]]
+
+- ### Content
+  - {{embed ((68d3ab67-38ca-43b6-b924-439d02c7f3bd))}}
+  - Think of agents as sheep dogs. You're not putting sheep in a pen one by one any more. sometimes the best path to getting the sheep in en masse is a long arc round the field where the agent develops the mass as it goes. Sometimes it's a structured play with more work up front. This somewhat depends on you.
+  - My background, why you're here, what you can expect
+  - course structure (multi session, not completely interdependent, simple pricing)
+  - background and rationalle
+  - chatbots and the agent / agentic boundary are confusing
 		- you probably already use them (deep research)
 			- compare gemini pro deep research with [roo](https://gist.github.com/ruvnet/88c61ee4e38191b0be65f498792d5017) (first view of it)
 		- why this complex way
@@ -17,8 +42,8 @@ public:: true
 			- longer run times, more thinking, as much as you need
 			- price / performance
 			- power use and the start of vibe coding
-- phased approach
-	- Phase one (today)
+  - phased approach
+  - Phase one (today)
 		- introduction to vscode
 		- introduction to roo code
 		- context management and context engineering
@@ -31,8 +56,10 @@ public:: true
 			- -Project management (120 kids doing their own thing)
 			- -Data visualisation (new python tools)
 			- -Academic research and verifying sources. (latex)
-	- phase two (tomorrow)
+  - phase two (tomorrow)
 		- TODO Mcp security course. Context, sheaf of papers
-		-
-- use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)
--
+  - use the search on agentics video site [Agentics Foundation Video Portal](https://video.agentics.org/search?keyword=middleware)
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: servomotor-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#ServoMotor
+uri:: urn:visionclaw:concept:robotics:servo-motor
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:servo-motor
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Servo Motor
+content-hash:: sha256-12-8ebc3d833f69
+legacy-term-id:: RB-0170
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0170
-    - filename-history:: ["RB-0170-servomotor.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0170
-    - preferred-term:: Servo Motor
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Servo motor provides precise position, velocity, and torque control.
 
-  - **Definition**
-    - definition:: Servo motor provides precise position, velocity, and torque control.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:ServoMotor
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:ServoMotor
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Electric Motor]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Electric Motor]]
+- ### Content
+  Servo Motor — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ServoMotor))
-      (SubClassOf :ServoMotor :ElectricMotor)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ServoMotor "Servo Motor"@en)
-      (AnnotationAssertion rdfs:comment :ServoMotor
-        "Servo motor provides precise position, velocity, and torque control."@en)
-      ```
-
-- ## About Servo Motor
-  Servo motor provides precise position, velocity, and torque control.
-  
-  A motor with closed-loop feedback control.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,41 +1,62 @@
-- ### OntologyBlock
-  id:: community-standards-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9825
-	- source-domain:: mv
-	- preferred-term:: Community Standards
-	- definition:: The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.
-	- status:: active
-	- owl:class:: mv:CommunityStandards
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-	  id:: community-standards-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Platform Governance]]
-		- enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]
-		- requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]
-		- related-to:: [[Content Moderation Standards]], [[Digital Ethics]], [[Platform Policy]]
-- ## Technical Details
-	- **Standards Organizations**:
+iri:: http://narrativegoldmine.com/spatial-computing#CommunityStandards
+uri:: urn:visionclaw:concept:spatial-computing:community-standards
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:community-standards
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Community Standards
+content-hash:: sha256-12-f825c133e9d4
+legacy-term-id:: MV-9825
+status:: active
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T17:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, and positive user experiences.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:CommunityStandards
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Platform Governance]]
+  - requires:: [[Governance Framework]], [[Moderation Tools]], [[Reporting Mechanisms]]
+  - enables:: [[User Safety]], [[Content Moderation]], [[Trust Building]]
+  - bridges-to:: [[Telecollaboration]]
+
+- ### Content
+
+  - ## Technical Details
+  - **Standards Organizations**:
 		- Metaverse Standards Forum: 2,600+ member organizations promoting interoperability and inclusivity
 		- IEEE Standards: P2048 Metaverse Terminology, P7016 Ethically Aligned Design
 		- World Economic Forum "Defining and Building the Metaverse" initiative
-	- **Key Principles**:
+  - **Key Principles**:
 		- Plurality, inclusivity, openness, transparency, decision-making by consensus
 		- Decentralized platforms based on community protocols via blockchain
 		- Technical standards enabling compatibility and security across platforms
-	- **Human Rights Considerations**:
+  - **Human Rights Considerations**:
 		- Virtual environments enable free expression but risk bullying, harassment, and hate speech
 		- Behavioral moderation needed in addition to content moderation
 		- Immersive nature intensifies perception of threats and psychological effects
-	- **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)
-- ## Applications
-	- Virtual world governance policies
-	- User behavior guidelines enforcement
-	- Content creation standards
-	- Community safety protocols
-	- Cross-platform interoperability standards
+  - **Regulatory Frameworks**: GDPR, Digital Services Act, EU AI Act, Global Digital Compact (2024)
+  - ## Applications
+  - Virtual world governance policies
+  - User behavior guidelines enforcement
+  - Content creation standards
+  - Community safety protocols
+  - Cross-platform interoperability standards
 
-
+- ### Provenance
+  - sources:: [[EU AI Act]], [[GDPR (General Data Protection Regulation)]], [[IEEE (Institute of Electrical and Electronics Engineers)]]
+  - migration-date:: 2026-04-26T00:00:00Z

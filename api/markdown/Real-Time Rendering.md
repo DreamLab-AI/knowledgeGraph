@@ -1,107 +1,115 @@
-- ### OntologyBlock
-  id:: real-time-rendering-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-7027
-	- preferred-term:: Real-Time Rendering
-	- source-domain:: ngm
-	- status:: active
-	- public-access:: true
-	- definition:: Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.
-	- maturity:: reviewed
-	- belongsToDomain:: [[CreativeMediaDomain]], [[Technology Domain]], [[ETSI_Domain_Immersive_Experiences]]
-	- owl:class:: ngm:RealTimeRendering
-	- owl:role:: Technology
+iri:: http://narrativegoldmine.com/infrastructure#RealTimeRendering
+uri:: urn:visionclaw:concept:infrastructure:real-time-rendering
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:real-time-rendering
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Real-Time Rendering
+content-hash:: sha256-12-22a2119f53d9
+legacy-term-id:: NGM-7027
+status:: active
+maturity:: reviewed
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Relationships
-- relatedTo:: [[Performance Optimization]], [[Computing Infrastructure]], [[GPU Computing]]
-- enables:: [[Video Games]], [[Virtual Reality]], [[Augmented Reality]], [[Interactive Visualization]]
-- implementedBy:: [[Graphics APIs]], [[Game Engines]], [[GPU Hardware]]
-- utilizes:: [[Shader Programs]], [[Texture Mapping]], [[Rasterization]]
-- dependsOn:: [[GPU Architecture]], [[Graphics Drivers]]
+- ### Definition
+  - Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds. The graphics pipeline processes geometry, applies textures and lighting, and rasterizes the final image fast enough to support interactive applications such as video games, simulations, and virtual reality.
 
-## Graphics Pipeline
+- ### Semantic Classification
+  - owl-class:: infrastructure:RealTimeRendering
+  - owl-role:: Technology
+  - belongs-to-domain:: [[CreativeMediaDomain]], [[Technology Domain]], [[ETSI_Domain_Immersive_Experiences]]
 
-The rendering pipeline is the foundation of real-time graphics, converting 3D scenes into 2D images.
+- ### Relationships
+  - enables:: [[Video Games]], [[Virtual Reality]], [[Augmented Reality]], [[Interactive Visualization]]
 
-### Pipeline Stages
+- ### Content
 
-| Stage | Function |
-|-------|----------|
-| **Application** | Scene generation, collision detection, animation, user input |
-| **Geometry** | Vertex processing, transformations, clipping, projection |
-| **Rasterization** | Pixel conversion, fragment processing, texturing, lighting |
+  ## Graphics Pipeline
 
-### Detailed Stage Functions
+  The rendering pipeline is the foundation of real-time graphics, converting 3D scenes into 2D images.
 
-**Application Stage (CPU)**
-- Scene graph traversal
-- Visibility culling
-- Animation updates
-- Physics simulation
-- Draw call preparation
+  ### Pipeline Stages
 
-**Geometry Stage (GPU)**
-- Vertex shading
-- Tessellation
-- Geometry shading
-- Primitive assembly
-- Clipping and screen mapping
+  | Stage | Function |
+  |-------|----------|
+  | **Application** | Scene generation, collision detection, animation, user input |
+  | **Geometry** | Vertex processing, transformations, clipping, projection |
+  | **Rasterization** | Pixel conversion, fragment processing, texturing, lighting |
 
-**Rasterization Stage (GPU)**
-- Triangle setup
-- Fragment shading
-- Texture sampling
-- Depth testing (Z-buffer)
-- Blending and output
+  ### Detailed Stage Functions
 
-## Optimization Techniques
+  **Application Stage (CPU)**
+  - Scene graph traversal
+  - Visibility culling
+  - Animation updates
+  - Physics simulation
+  - Draw call preparation
 
-### Performance Techniques
-| Technique | Purpose |
-|-----------|---------|
-| Z-buffering | Depth sorting for correct occlusion |
-| Back-face Culling | Skip rendering non-visible surfaces |
-| Level of Detail (LOD) | Reduce geometry for distant objects |
-| Frustum Culling | Skip objects outside view |
-| Occlusion Culling | Skip objects hidden behind others |
+  **Geometry Stage (GPU)**
+  - Vertex shading
+  - Tessellation
+  - Geometry shading
+  - Primitive assembly
+  - Clipping and screen mapping
 
-### Visual Quality Techniques
-- **Screen-Space Reflections**: Approximate reflections from visible data
-- **Baked Lighting**: Pre-calculated static illumination
-- **Real-Time Ray Tracing**: Hardware-accelerated ray tracing (RTX)
-- **Temporal Anti-Aliasing**: Multi-frame edge smoothing
+  **Rasterization Stage (GPU)**
+  - Triangle setup
+  - Fragment shading
+  - Texture sampling
+  - Depth testing (Z-buffer)
+  - Blending and output
 
-## Graphics APIs
+  ## Optimization Techniques
 
-| API | Platform | Description |
-|-----|----------|-------------|
-| DirectX 12 | Windows, Xbox | Low-level, high-performance |
-| Vulkan | Cross-platform | Open standard, explicit control |
-| Metal | Apple platforms | Apple-optimized graphics |
-| OpenGL | Cross-platform | Mature, widely supported |
+  ### Performance Techniques
+  | Technique | Purpose |
+  |-----------|---------|
+  | Z-buffering | Depth sorting for correct occlusion |
+  | Back-face Culling | Skip rendering non-visible surfaces |
+  | Level of Detail (LOD) | Reduce geometry for distant objects |
+  | Frustum Culling | Skip objects outside view |
+  | Occlusion Culling | Skip objects hidden behind others |
 
-## 2024 Advances (SIGGRAPH)
+  ### Visual Quality Techniques
+  - **Screen-Space Reflections**: Approximate reflections from visible data
+  - **Baked Lighting**: Pre-calculated static illumination
+  - **Real-Time Ray Tracing**: Hardware-accelerated ray tracing (RTX)
+  - **Temporal Anti-Aliasing**: Multi-frame edge smoothing
 
-- **GPU-Driven Rendering**: Visibility buffer techniques
-- **Mesh Shaders**: Overcoming geometry pipeline bottlenecks
-- **Mobile Cluster Rendering**: Seamless adaptive solutions
-- **Neural Network GI**: AI-based global illumination
-- **Dense Geometry**: Nanite-style virtualized geometry
-- **Hemispherical Lighting**: Advanced lighting models
+  ## Graphics APIs
 
-## Hardware Considerations
+  | API | Platform | Description |
+  |-----|----------|-------------|
+  | DirectX 12 | Windows, Xbox | Low-level, high-performance |
+  | Vulkan | Cross-platform | Open standard, explicit control |
+  | Metal | Apple platforms | Apple-optimized graphics |
+  | OpenGL | Cross-platform | Mature, widely supported |
 
-### GPU Role
-The GPU performs massively parallel processing of vertices and fragments, executing thousands of shader programs simultaneously.
+  ## 2024 Advances (SIGGRAPH)
 
-### CPU-GPU Communication
-- CPU prepares data and issues draw calls
-- APIs (DirectX, Vulkan, OpenGL) provide abstraction
-- Minimizing draw calls and state changes improves performance
+  - **GPU-Driven Rendering**: Visibility buffer techniques
+  - **Mesh Shaders**: Overcoming geometry pipeline bottlenecks
+  - **Mobile Cluster Rendering**: Seamless adaptive solutions
+  - **Neural Network GI**: AI-based global illumination
+  - **Dense Geometry**: Nanite-style virtualized geometry
+  - **Hemispherical Lighting**: Advanced lighting models
 
-## Metadata
+  ## Hardware Considerations
 
-- **Last Updated**: 2025-12-29
-- **Review Status**: Enriched with technical content
-- **References**: 6 pages reference this concept
+  ### GPU Role
+  The GPU performs massively parallel processing of vertices and fragments, executing thousands of shader programs simultaneously.
+
+  ### CPU-GPU Communication
+  - CPU prepares data and issues draw calls
+  - APIs (DirectX, Vulkan, OpenGL) provide abstraction
+  - Minimizing draw calls and state changes improves performance
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

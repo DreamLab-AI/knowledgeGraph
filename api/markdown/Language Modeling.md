@@ -1,202 +1,44 @@
-- ### OntologyBlock
-  id:: language-modeling-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0375
-	- preferred-term:: Language Modeling
-	- source-domain:: mv
-	- status:: draft
-- definition:: Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
+iri:: http://narrativegoldmine.com/spatial-computing#LanguageModeling
+uri:: urn:visionclaw:concept:spatial-computing:language-modeling
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:language-modeling
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Language Modeling
+content-hash:: sha256-12-4369597b9ddb
+legacy-term-id:: AI-0375
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
+- ### Definition
+  - Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
 
-## OWL Formal Semantics
+- ### Semantic Classification
+  - owl-class:: spatial-computing:LanguageModeling
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-```clojure
-;; OWL Functional Syntax
+- ### Relationships
+  - <!-- No relationships defined -->
 
-(Declaration (Class :LanguageModeling))
+- ### Content
+  - Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
 
-;; Annotations
-(AnnotationAssertion rdfs:label :LanguageModeling "Language Modeling"@en)
-(AnnotationAssertion rdfs:comment :LanguageModeling "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis."@en)
-
-;; Semantic Relationships
-(SubClassOf :LanguageModeling
-  (ObjectSomeValuesFrom :relatedTo :Transformer))
-(SubClassOf :LanguageModeling
-  (ObjectSomeValuesFrom :relatedTo :Gpt))
-(SubClassOf :LanguageModeling
-  (ObjectSomeValuesFrom :relatedTo :NaturalLanguageProcessing))
-(SubClassOf :LanguageModeling
-  (ObjectSomeValuesFrom :relatedTo :Bert))
-(SubClassOf :LanguageModeling
-  (ObjectSomeValuesFrom :relatedTo :TextGeneration))
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :LanguageModeling "AI-0375"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :LanguageModeling "true"^^xsd:boolean)
-```
-
-## Core Characteristics
-
-- **Probability Distribution Learning**: Modelling P(word|context) or P(sequence)
-- **Autoregressive**: Left-to-right sequential prediction (GPT-style)
-- **Masked Language Modeling**: Bidirectional context learning (BERT-style)
-- **Large-Scale Pre-Training**: Training on billions to trillions of tokens
-- **Transfer Learning**: Fine-tuning for diverse downstream tasks
-- **Emergent Capabilities**: In-context learning, reasoning, few-shot adaptation
-
-## Relationships
-
-- **Foundation For**: Natural Language Processing, Text Generation, Machine Translation
-- **Related**: Large Language Model, Transformer, Self-Attention
-- **Models**: GPT series, BERT, T5, LLaMA, PaLM, Gemini
-- **Paradigms**: Autoregressive LM, Masked LM, Encoder-Decoder LM
-
-## Key Literature
-
-1. Bengio, Y., et al. (2003). "A neural probabilistic language model." *Journal of Machine Learning Research*, 3, 1137-1155.
-
-2. Radford, A., et al. (2018). "Improving language understanding by generative pre-training." *OpenAI Technical Report*.
-
-3. Devlin, J., et al. (2019). "BERT: Pre-training of deep bidirectional transformers for language understanding." *NAACL*, 4171-4186.
-
-4. Brown, T., et al. (2020). "Language models are few-shot learners." *NeurIPS*, 1877-1901.
-
-5. Kaplan, J., et al. (2020). "Scaling laws for neural language models." *arXiv:2001.08361*.
-
-6. Wei, J., et al. (2022). "Emergent abilities of large language models." *TMLR*.
-
-## Technical Concepts
-
-### Autoregressive Language Modeling
-```
-P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
-```
-Models predict next token conditioned on previous tokens (GPT-style).
-
-### Masked Language Modeling
-```
-Objective: Predict masked tokens given bidirectional context
-Example: "The [MASK] sat on the mat" → predict "cat"
-```
-Enables bidirectional context learning (BERT-style).
-
-### Perplexity
-```
-Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
-```
-Evaluation metric measuring model uncertainty.
-
-## Applications
-
-1. **Text Generation**: Article writing, story generation, content creation
-2. **Code Generation**: Programming assistance, code completion
-3. **Machine Translation**: Neural machine translation systems
-4. **Question Answering**: Reading comprehension and knowledge retrieval
-5. **Text Classification**: Sentiment analysis, topic modelling
-6. **Named Entity Recognition**: Information extraction
-7. **Dialogue Systems**: Conversational AI and chatbots
-8. **Text Summarisation**: Document summarisation
-9. **Semantic Search**: Embedding-based information retrieval
-10. **Few-Shot Learning**: In-context learning for new tasks
-
-## Pre-Training Paradigms
-
-### Causal Language Modeling (CLM)
-- **Models**: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM
-- **Training**: Left-to-right autoregressive prediction
-- **Strength**: Natural text generation, few-shot learning
-- **Applications**: Chat, content generation, code synthesis
-
-### Masked Language Modeling (MLM)
-- **Models**: BERT, RoBERTa, ALBERT, DeBERTa
-- **Training**: Bidirectional context with masked token prediction
-- **Strength**: Understanding tasks, representation learning
-- **Applications**: Classification, NER, question answering
-
-### Encoder-Decoder
-- **Models**: T5, BART, mT5, UL2
-- **Training**: Sequence-to-sequence with various objectives
-- **Strength**: Versatile text-to-text framework
-- **Applications**: Translation, summarisation, generation
-
-## Scaling Laws
-
-Language model performance improves predictably with:
-- **Model Size**: Number of parameters (millions to trillions)
-- **Data Size**: Training tokens (billions to trillions)
-- **Compute**: FLOPs for training
-
-Power law relationships:
-```
-Loss ∝ N^(-α)  where N is model size
-Loss ∝ D^(-β)  where D is dataset size
-Loss ∝ C^(-γ)  where C is compute budget
-```
-
-## Emergent Abilities
-
-Large language models exhibit emergent capabilities appearing at scale:
-- **Few-Shot Learning**: Learning from examples in prompts
-- **Chain-of-Thought Reasoning**: Step-by-step problem solving
-- **Instruction Following**: Zero-shot task execution from instructions
-- **Multi-Step Reasoning**: Complex reasoning tasks
-- **Code Understanding**: Programming language comprehension
-
-## Evaluation Metrics
-
-- **Perplexity**: Model uncertainty on held-out text
-- **BLEU**: Machine translation quality
-- **ROUGE**: Summarisation quality
-- **Accuracy**: Task-specific classification accuracy
-- **F1 Score**: Balanced precision and recall
-- **Human Evaluation**: Quality, coherence, factuality assessment
-
-## Challenges and Research Directions
-
-1. **Hallucination**: Generating plausible but factually incorrect content
-2. **Bias and Fairness**: Societal biases in training data and outputs
-3. **Interpretability**: Understanding model decisions and reasoning
-4. **Efficiency**: Reducing computational costs for training and inference
-5. **Long-Context Modeling**: Extending context windows beyond current limits
-6. **Multimodal Integration**: Combining language with vision, audio, other modalities
-7. **Continual Learning**: Updating knowledge without catastrophic forgetting
-8. **Grounding**: Connecting language to external knowledge and real-world facts
-9. **Controllability**: Steering model outputs for desired properties
-10. **Safety and Alignment**: Ensuring beneficial and aligned AI behaviour
-
-## See Also
-
-- [[Natural Language Processing]]
-- [[Large Language Model]]
-- [[Transformer]]
-- [[Text Generation]]
-- [[GPT]]
-- [[BERT]]
-- [[Self-Attention]]
-
-## Metadata
-
-- **Domain**: Natural Language Processing, Machine Learning
-- **Maturity**: Foundation of modern NLP, rapidly evolving
-- **Impact**: Transformative across all NLP applications
-- **Research Activity**: Extremely active, core AI research area
-	- maturity:: draft
-	- owl:class:: mv:LanguageModeling
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- #### Relationships
-	  id:: language-modeling-relationships
-- ## About Language Modeling
-	- Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
-
-	- ### Models
+  - ### Models
 		- **[Llama 3.1, 3.2, and 4](https://yourstory.com/2025/02/meta-ai-llama-4-series-open-source-models)**: A series of powerful, open-source large language models.
 
-- # Business Functions
-	- collapsed:: true
-	  
+  - # Business Functions
+
 	  **AI Technology & Concepts**
 		- LLMs (Large Language Models)
 		- Automation
@@ -204,8 +46,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Agents
 		- Avatars
 		- Tech & Infrastructure
-	- collapsed:: true
-	  
+
 	  **Business Functions & Roles**
 		- Business
 		- Marketing
@@ -218,8 +59,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Small Business
 		- Entrepreneurs
 		- Solopreneurs
-	- collapsed:: true
-	  
+
 	  **Creative & Media**
 		- Creativity
 		- Design
@@ -229,8 +69,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Audio
 		- Music
 		- Creators
-	- collapsed:: true
-	  
+
 	  **Skills, Learning & Productivity**
 		- Coding
 		- Productivity
@@ -239,21 +78,20 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Professional Development
 		- Personal Growth
 
-	- ### [LangChain](https://www.langchain.com/)
+  - ### [LangChain](https://www.langchain.com/)
 		- A framework for developing applications powered by language models.
 
-	- ### Performance
+  - ### Performance
 		- LLaMA-3 models demonstrate competitive performance on various language modeling tasks, showcasing significant improvements over previous open weights models.
 		- Integrated free across their social media platforms
 		- Fast image generation, can be fine tunes for creatives.
 		- [Introducing New AI Experiences Across Our Family of Apps and Devices | Meta (fb.com)](https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/)
 		- [What’s up with Llama 3? Arena data analysis | LMSYS Org](https://lmsys.org/blog/2024-05-08-llama3/)
 		- ![](https://lmsys.org/images/blog/llama3/topic_win_rate.png){:width 500}
-		-
 
-	- ## Large Language models:
+  - ## Large Language models:
 
-	- #### Biomedical
+  - #### Biomedical
 		- Collaborative Virtual Environments (CVEs) have immense potential in the
 		  fields of chemical and medical molecular modeling. By incorporating
 		  natural language AI and visual generative machine learning, these
@@ -357,11 +195,11 @@ Large language models exhibit emergent capabilities appearing at scale:
 		   language. The voice interface can help overcome literacy barriers and
 		   make the system more accessible to a diverse range of community members.
 
-	- ## Language and Tone
-	- Use EXPERT terminology for the given context
-	- AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
+  - ## Language and Tone
+  - Use EXPERT terminology for the given context
+  - AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
 
-	- ### Grok from Musk is pretty bad, but..
+  - ### Grok from Musk is pretty bad, but..
 		- People haven't appreciated the strength of the business model Musk has
 		- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
 
@@ -369,12 +207,9 @@ Large language models exhibit emergent capabilities appearing at scale:
 			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
 			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse]]-aeco-demo-pack/) giving global instant models.
-			-
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
-	-
-	-
-	- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
-- This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
+  - {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
+  - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
 
 		- ### Key Quotes
 		- "Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences."
@@ -387,7 +222,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
 		- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
 
-	- # Long Context Modeling
+  - # Long Context Modeling
 		- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on "needle in a haystack" task
 		- Evo: Models long DNA sequences, learning a "cell model" analogous to language models' "world model"
 		- Potential challenges:
@@ -395,12 +230,11 @@ Large language models exhibit emergent capabilities appearing at scale:
 			- Need for state regularization or "pruning" to maintain performance
 		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
 
-	- ### Models
+  - ### Models
 		- **[Llama 3.1, 3.2, and 4](https://yourstory.com/2025/02/meta-ai-llama-4-series-open-source-models)**: A series of powerful, open-source large language models.
 
-- # Business Functions
-	- collapsed:: true
-	  
+  - # Business Functions
+
 	  **AI Technology & Concepts**
 		- LLMs (Large Language Models)
 		- Automation
@@ -408,8 +242,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Agents
 		- Avatars
 		- Tech & Infrastructure
-	- collapsed:: true
-	  
+
 	  **Business Functions & Roles**
 		- Business
 		- Marketing
@@ -422,8 +255,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Small Business
 		- Entrepreneurs
 		- Solopreneurs
-	- collapsed:: true
-	  
+
 	  **Creative & Media**
 		- Creativity
 		- Design
@@ -433,8 +265,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Audio
 		- Music
 		- Creators
-	- collapsed:: true
-	  
+
 	  **Skills, Learning & Productivity**
 		- Coding
 		- Productivity
@@ -443,21 +274,20 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Professional Development
 		- Personal Growth
 
-	- ### [LangChain](https://www.langchain.com/)
+  - ### [LangChain](https://www.langchain.com/)
 		- A framework for developing applications powered by language models.
 
-	- ### Performance
+  - ### Performance
 		- LLaMA-3 models demonstrate competitive performance on various language modeling tasks, showcasing significant improvements over previous open weights models.
 		- Integrated free across their social media platforms
 		- Fast image generation, can be fine tunes for creatives.
 		- [Introducing New AI Experiences Across Our Family of Apps and Devices | Meta (fb.com)](https://about.fb.com/news/2023/09/introducing-ai-powered-assistants-characters-and-creative-tools/)
 		- [What’s up with Llama 3? Arena data analysis | LMSYS Org](https://lmsys.org/blog/2024-05-08-llama3/)
 		- ![](https://lmsys.org/images/blog/llama3/topic_win_rate.png){:width 500}
-		-
 
-	- ## Large Language models:
+  - ## Large Language models:
 
-	- #### Biomedical
+  - #### Biomedical
 		- Collaborative Virtual Environments (CVEs) have immense potential in the
 		  fields of chemical and medical molecular modeling. By incorporating
 		  natural language AI and visual generative machine learning, these
@@ -561,11 +391,11 @@ Large language models exhibit emergent capabilities appearing at scale:
 		   language. The voice interface can help overcome literacy barriers and
 		   make the system more accessible to a diverse range of community members.
 
-	- ## Language and Tone
-	- Use EXPERT terminology for the given context
-	- AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
+  - ## Language and Tone
+  - Use EXPERT terminology for the given context
+  - AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
 
-	- ### Grok from Musk is pretty bad, but..
+  - ### Grok from Musk is pretty bad, but..
 		- People haven't appreciated the strength of the business model Musk has
 		- His is the only unified language and vision company in the world at this scale that can handle real world interactions.
 
@@ -573,12 +403,9 @@ Large language models exhibit emergent capabilities appearing at scale:
 			- 🟢 I could go on all day about this, goods and bads. I literally wrote a book on it.
 			- 🟢 A lot (for me) hinges on [[OpenUSD]] the universal scene language. It's been SO long since we have had something useful.
 			- Nvidia have a text to 3D pipeline for [[Omniverse]]. Will be interesting to see what the use cases are. This is their new Cesium [geo tile integration](https://cesium.com/blog/2024/01/16/now-available-[[NVIDIA Omniverse]]-aeco-demo-pack/) giving global instant models.
-			-
 			- ![1705423306024.mp4](assets/1705423306024_1705437842029_0.mp4)
-	-
-	-
-	- {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
-- This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
+  - {{tweet https://twitter.com/BlockadeLabs/status/1719818562917761094}}
+  - This is a [[presentation]] slide and the next slide is [[Open Generative AI tools]]
 
 		- ### Key Quotes
 		- "Mamba enjoys fast inference (5× higher throughput than Transformers) and linear scaling in sequence length and its performance improves on real data up to million-length sequences."
@@ -591,7 +418,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- **Authors' Views**: The authors propose Mamba as a significant step forward in sequence modeling, addressing the inefficiency of Transformers while maintaining or improving performance.
 		- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
 
-	- # Long Context Modeling
+  - # Long Context Modeling
 		- LongMamba (LongMamba): Generalizes to 40k tokens after training on 16k, nearly perfect on "needle in a haystack" task
 		- Evo: Models long DNA sequences, learning a "cell model" analogous to language models' "world model"
 		- Potential challenges:
@@ -599,13 +426,12 @@ Large language models exhibit emergent capabilities appearing at scale:
 			- Need for state regularization or "pruning" to maintain performance
 		- Implications for biology: Foundation models could revolutionize drug discovery and biological research
 
-	- ### Research
+  - ### Research
 		- **[Phi-3 and Phi-4](https://msdynamicsworld.com/story/new-microsoft-dynamics-365-and-power-platform-features-2024-release-wave-1-plan)**: Powerful language models compact enough to run on a smartphone.
 
-- # Existing state of the Art
-	- [Index — MLGT: The authoritative multi-lingual glossary of terms (metaverse-standards.org)](https://glossary.metaverse-standards.org/)
-	-
-	- It was unexpectedly successful, resulting in what seems to be an internally consistent knowledge graph in an [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language) compliant ontology for the design represented throughout this wider [[Logseq]] [[Knowledge Graphing]].
+  - # Existing state of the Art
+  - [Index — MLGT: The authoritative multi-lingual glossary of terms (metaverse-standards.org)](https://glossary.metaverse-standards.org/)
+  - It was unexpectedly successful, resulting in what seems to be an internally consistent knowledge graph in an [Web Ontology Language](https://en.wikipedia.org/wiki/Web_Ontology_Language) compliant ontology for the design represented throughout this wider [[Logseq]] [[Knowledge Graphing]].
 		- Although the established OWL can richly describe our ontology, it's a little too arcane. Nonetheless the full text can be seen where with the diagram.
 			- OWL based Ontology
 				- https://github.com/VisualDataWeb/WebVOWL
@@ -617,7 +443,7 @@ Large language models exhibit emergent capabilities appearing at scale:
 				- Inability to reshape data structure using framing
 				- Reduced interoperability with RDF and Linked Data ecosystem
 
-	- #### Biomedical
+  - #### Biomedical
 		- Collaborative Virtual Environments (CVEs) have immense potential in the
 		  fields of chemical and medical molecular modeling. By incorporating
 		  natural language AI and visual generative machine learning, these
@@ -678,11 +504,11 @@ Large language models exhibit emergent capabilities appearing at scale:
 		   help identify areas of concern and rapidly adapt the LLM to address
 		   emerging challenges.
 
-	- ## Language and Tone
-	- Use EXPERT terminology for the given context
-	- AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
+  - ## Language and Tone
+  - Use EXPERT terminology for the given context
+  - AVOID: superfluous prose, self-references, expert advice disclaimers, and apologies
 
-	- # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
+  - # Mamba: Linear-Time Sequence Modelling with Selective State Spaces
 		- [Mamba: Linear-Time Sequence Modeling with Selective State Spaces](https://arxiv.org/pdf/2312.00752.pdf)
 		- **"This class of models can be computed very efficiently as either a recurrence or convolution with linear or near-linear scaling in sequence length."**
 		- "Selective SSMs and by extension the Mamba architecture are fully recurrent models with key properties that make them suitable as the backbone of general foundation models operating on sequences."
@@ -694,9 +520,9 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- **Comparative Analysis**: Mamba is positioned as superior to existing models, particularly Transformers, in terms of efficiency and scalability
 
 		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
-- Next [[presentation]] slide [[Proprietary Large Language Models]]
+  - Next [[presentation]] slide [[Proprietary Large Language Models]]
 
-	- #### Biomedical
+  - #### Biomedical
 		- Collaborative Virtual Environments (CVEs) have immense potential in the
 		  fields of chemical and medical molecular modeling. By incorporating
 		  natural language AI and visual generative machine learning, these
@@ -730,27 +556,27 @@ Large language models exhibit emergent capabilities appearing at scale:
 		   The open-source system can be adapted to serve various industries,
 		   making remote collaboration more efficient and inclusive.
 
-	- ## Language and Tone
+  - ## Language and Tone
 
 		- #### 6️⃣ [[Diffusion Models]] (Generative Models)
-- Next [[presentation]] slide [[Proprietary Large Language Models]]
+  - Next [[presentation]] slide [[Proprietary Large Language Models]]
 
-- ## See Also
-	- [[Large language models]]
-	- [[Google]]
+  - ## See Also
+  - [[Large language models]]
+  - [[Google]]
 
-- ## See Also
-	- [[Large language models]]
-	- [[OpenAI]]
-	- [[Google]]
+  - ## See Also
+  - [[Large language models]]
+  - [[OpenAI]]
+  - [[Google]]
 
-- ### Software stack
-	- This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
-	  
+  - ### Software stack
+  - This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
+
 	  ![image](assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg)
-	  
+
 	  <span class="image">image</span>
-	  
+
 	  At this time we favour the following component units, with alternatives in brackets.
 		- 🟩 Open source collaborative space 🟩 Headset VR integration 🟨 WebGL interface 🟩 Minting digital assets (Ordinal then RGB) 🟨 Digital asset integration and management 🟩 Large language model MVP 🟩 Large language model API integration 🟩 Large language model voice to voice interface 🟩 Stable diffusion image creation MVP 🟩 Stable diffusion image creation MVP 🟨 AutoGPT voice to voice integration MVP 🟨 Stable diffusion image creation API 🟨 Nostr social media integration 🟨 Nostr identity management 🟨 Nostr machine to machine finacially enabled bots (ubiquitous federating agents) 🟨 Nostr human programmable semi autonomous economic actors 🟩 Bitcoin / Lightning / stablecoin stack 🟥 Bitcoin / Lightning / stablecoin integration 🟨 Collaborative virtual production MVP 🟥 Collaborative virtual production integration 🟥 3D asset generation with ML
 		- ![image.png](../assets/highlevelstack.png){:width 600}
@@ -779,525 +605,320 @@ Large language models exhibit emergent capabilities appearing at scale:
 		- Object tracking
 		- Nostr \[LnBits accounts\]
 
-- ## Llama 3 overview
-	- Meta (formerly Facebook) has recently released LLaMA-3,  a series of foundational large language models (LLMs) that aim to advance AI research while remaining more accessible in terms of computational requirements.
+  - ## Llama 3 overview
+  - Meta (formerly Facebook) has recently released LLaMA-3,  a series of foundational large language models (LLMs) that aim to advance AI research while remaining more accessible in terms of computational requirements.
 
-- ### Multilingual and Abstract Translation
-	- Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
+  - ### Multilingual and Abstract Translation
+  - Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
 		- [SeamlessM4T by Facebook Research](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
 		- *An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.*
 
-- ## Key Features
-	- **3D Modeling:** A comprehensive suite of modeling tools for creating, transforming, and editing your models.
-	- **Sculpting:** Digital sculpting tools provide the power and flexibility required in several stages of the digital production pipeline.
-	- **Animation & Rigging:** A production-ready camera and object tracking solution.
-	- **Grease Pencil:** A revolutionary 2D animation tool that allows you to draw in 3D space.
-	- **Rendering:** A powerful, unbiased rendering engine that offers stunning, ultra-realistic rendering.
-	- **Simulation:** Create amazing simulations with industry-standard libraries such as Bullet and MantaFlow.
-	- **Video Editing:** A built-in video sequence editor allows you to perform basic actions like video cuts and splicing, as well as more complex tasks like video masking or color grading.
-	- **Scripting:** With a rich Python API, Blender is highly customizable and can be extended with custom tools and add-ons.
-	- **VFX:** A built-in compositor allows you to post-produce your renders without leaving Blender.
+  - ## Key Features
+  - **3D Modeling:** A comprehensive suite of modeling tools for creating, transforming, and editing your models.
+  - **Sculpting:** Digital sculpting tools provide the power and flexibility required in several stages of the digital production pipeline.
+  - **Animation & Rigging:** A production-ready camera and object tracking solution.
+  - **Grease Pencil:** A revolutionary 2D animation tool that allows you to draw in 3D space.
+  - **Rendering:** A powerful, unbiased rendering engine that offers stunning, ultra-realistic rendering.
+  - **Simulation:** Create amazing simulations with industry-standard libraries such as Bullet and MantaFlow.
+  - **Video Editing:** A built-in video sequence editor allows you to perform basic actions like video cuts and splicing, as well as more complex tasks like video masking or color grading.
+  - **Scripting:** With a rich Python API, Blender is highly customizable and can be extended with custom tools and add-ons.
+  - **VFX:** A built-in compositor allows you to post-produce your renders without leaving Blender.
 
-- ## The Current Landscape
-	- The AI landscape is currently dominated by a few large technology companies that are developing and deploying powerful large language models (LLMs). These models are being integrated into a wide range of products and services, from search engines to creative tools.
-	- [AI Index Report 2024](https://aiindex.stanford.edu/report/)
+  ## Core Characteristics
 
-- ## See Also
-	- [[Large language models]]
-	- [[OpenAI]]
-	- [[Google]]
+  - **Probability Distribution Learning**: Modelling P(word|context) or P(sequence)
+  - **Autoregressive**: Left-to-right sequential prediction (GPT-style)
+  - **Masked Language Modeling**: Bidirectional context learning (BERT-style)
+  - **Large-Scale Pre-Training**: Training on billions to trillions of tokens
+  - **Transfer Learning**: Fine-tuning for diverse downstream tasks
+  - **Emergent Capabilities**: In-context learning, reasoning, few-shot adaptation
 
-- ## How it Works
-	- AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.
+  ## Relationships
 
-- ### Software stack
-	- This section needs building out to describe the stack and the choices made, but can be seen in Figure <a href="#fig:pyramind" data-reference-type="ref" data-reference="fig:pyramind">[fig:pyramind]</a> and Figure <a href="#fig:highlevelstack" data-reference-type="ref" data-reference="fig:highlevelstack">[fig:highlevelstack]</a>.
-	  
-	  ![image](assets/eca327e7bb2caa27aa4753ec0b4f1be3737ac371.jpg)
-	  
-	  <span class="image">image</span>
-	  
-	  At this time we favour the following component units, with alternatives in brackets.
-		- 🟩 Open source collaborative space 🟩 Headset VR integration 🟨 WebGL interface 🟩 Minting digital assets (Ordinal then RGB) 🟨 Digital asset integration and management 🟩 Large language model MVP 🟩 Large language model API integration 🟩 Large language model voice to voice interface 🟩 Stable diffusion image creation MVP 🟩 Stable diffusion image creation MVP 🟨 AutoGPT voice to voice integration MVP 🟨 Stable diffusion image creation API 🟨 Nostr social media integration 🟨 Nostr identity management 🟨 Nostr machine to machine finacially enabled bots (ubiquitous federating agents) 🟨 Nostr human programmable semi autonomous economic actors 🟩 Bitcoin / Lightning / stablecoin stack 🟥 Bitcoin / Lightning / stablecoin integration 🟨 Collaborative virtual production MVP 🟥 Collaborative virtual production integration 🟥 3D asset generation with ML
-		- ![image.png](../assets/highlevelstack.png){:width 600}
-		- Collaborative space
-		- Vircadia \[Omniverse, Open3D foundation, Unreal\]
-		- Distributed truth
-		- Bitcoin testnet \[Main net\]
-		- Digital Objects
-		- Fedimint \[Ordinals, Pear credits, RGB\]
-		- Messaging and sync
-		- Nostr
-		- Identity
-		- Nostr \[Bluesky ION, pubky\]
-		- Fiat money xfer
-		- Fedimint \[Pear credits, RGB, Taro main net\]
-		- Hardware signing
-		- Seed signer \[any hardware wallet\]
-		- Small group banking
-		- Fediment \[chaumian ecash\]
-		- Local wallet
-		- [Mutiny](https://app.mutinywallet.com/) \[bitkit, and lightning wallet\]
-		- Machine learning text
-		- Alpaca \[ChatGPT etc\]
-		- Machine learning image
-		- Stable diffusion \[midjourney, Dall-E\]
-		- Object tracking
-		- Nostr \[LnBits accounts\]
+  - **Foundation For**: Natural Language Processing, Text Generation, Machine Translation
+  - **Related**: Large Language Model, Transformer, Self-Attention
+  - **Models**: GPT series, BERT, T5, LLaMA, PaLM, Gemini
+  - **Paradigms**: Autoregressive LM, Masked LM, Encoder-Decoder LM
 
-- ## Llama 3 overview
-	- Meta (formerly Facebook) has recently released LLaMA-3,  a series of foundational large language models (LLMs) that aim to advance AI research while remaining more accessible in terms of computational requirements.
+  ## Key Literature
 
-- ### Multilingual and Abstract Translation
-	- Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
+  1. Bengio, Y., et al. (2003). "A neural probabilistic language model." *Journal of Machine Learning Research*, 3, 1137-1155.
+
+  2. Radford, A., et al. (2018). "Improving language understanding by generative pre-training." *OpenAI Technical Report*.
+
+  3. Devlin, J., et al. (2019). "BERT: Pre-training of deep bidirectional transformers for language understanding." *NAACL*, 4171-4186.
+
+  4. Brown, T., et al. (2020). "Language models are few-shot learners." *NeurIPS*, 1877-1901.
+
+  5. Kaplan, J., et al. (2020). "Scaling laws for neural language models." *arXiv:2001.08361*.
+
+  6. Wei, J., et al. (2022). "Emergent abilities of large language models." *TMLR*.
+
+  ## Technical Concepts
+
+  ### Autoregressive Language Modeling
+  ```
+  P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
+  ```
+  Models predict next token conditioned on previous tokens (GPT-style).
+
+  ### Masked Language Modeling
+  ```
+  Objective: Predict masked tokens given bidirectional context
+  Example: "The [MASK] sat on the mat" → predict "cat"
+  ```
+  Enables bidirectional context learning (BERT-style).
+
+  ### Perplexity
+  ```
+  Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
+  ```
+  Evaluation metric measuring model uncertainty.
+
+  ## Applications
+
+  1. **Text Generation**: Article writing, story generation, content creation
+  2. **Code Generation**: Programming assistance, code completion
+  3. **Machine Translation**: Neural machine translation systems
+  4. **Question Answering**: Reading comprehension and knowledge retrieval
+  5. **Text Classification**: Sentiment analysis, topic modelling
+  6. **Named Entity Recognition**: Information extraction
+  7. **Dialogue Systems**: Conversational AI and chatbots
+  8. **Text Summarisation**: Document summarisation
+  9. **Semantic Search**: Embedding-based information retrieval
+  10. **Few-Shot Learning**: In-context learning for new tasks
+
+  ## Pre-Training Paradigms
+
+  ### Causal Language Modeling (CLM)
+  - **Models**: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM
+  - **Training**: Left-to-right autoregressive prediction
+  - **Strength**: Natural text generation, few-shot learning
+  - **Applications**: Chat, content generation, code synthesis
+
+  ### Masked Language Modeling (MLM)
+  - **Models**: BERT, RoBERTa, ALBERT, DeBERTa
+  - **Training**: Bidirectional context with masked token prediction
+  - **Strength**: Understanding tasks, representation learning
+  - **Applications**: Classification, NER, question answering
+
+  ### Encoder-Decoder
+  - **Models**: T5, BART, mT5, UL2
+  - **Training**: Sequence-to-sequence with various objectives
+  - **Strength**: Versatile text-to-text framework
+  - **Applications**: Translation, summarisation, generation
+
+  ## Scaling Laws
+
+  Language model performance improves predictably with:
+  - **Model Size**: Number of parameters (millions to trillions)
+  - **Data Size**: Training tokens (billions to trillions)
+  - **Compute**: FLOPs for training
+
+  Power law relationships:
+  ```
+  Loss ∝ N^(-α)  where N is model size
+  Loss ∝ D^(-β)  where D is dataset size
+  Loss ∝ C^(-γ)  where C is compute budget
+  ```
+
+  ## Emergent Abilities
+
+  Large language models exhibit emergent capabilities appearing at scale:
+  - **Few-Shot Learning**: Learning from examples in prompts
+  - **Chain-of-Thought Reasoning**: Step-by-step problem solving
+  - **Instruction Following**: Zero-shot task execution from instructions
+  - **Multi-Step Reasoning**: Complex reasoning tasks
+  - **Code Understanding**: Programming language comprehension
+
+  ## Evaluation Metrics
+
+  - **Perplexity**: Model uncertainty on held-out text
+  - **BLEU**: Machine translation quality
+  - **ROUGE**: Summarisation quality
+  - **Accuracy**: Task-specific classification accuracy
+  - **F1 Score**: Balanced precision and recall
+  - **Human Evaluation**: Quality, coherence, factuality assessment
+
+  ## Challenges and Research Directions
+
+  1. **Hallucination**: Generating plausible but factually incorrect content
+  2. **Bias and Fairness**: Societal biases in training data and outputs
+  3. **Interpretability**: Understanding model decisions and reasoning
+  4. **Efficiency**: Reducing computational costs for training and inference
+  5. **Long-Context Modeling**: Extending context windows beyond current limits
+  6. **Multimodal Integration**: Combining language with vision, audio, other modalities
+  7. **Continual Learning**: Updating knowledge without catastrophic forgetting
+  8. **Grounding**: Connecting language to external knowledge and real-world facts
+  9. **Controllability**: Steering model outputs for desired properties
+  10. **Safety and Alignment**: Ensuring beneficial and aligned AI behaviour
+
+  ## See Also
+
+  - [[Natural Language Processing]]
+  - [[Large Language Model]]
+  - [[Transformer]]
+  - [[Text Generation]]
+  - [[GPT]]
+  - [[BERT]]
+  - [[Self-Attention]]
+
+  #### Current Landscape
+  - The AI landscape is currently dominated by a few large technology companies that are developing and deploying powerful large language models (LLMs). These models are being integrated into a wide range of products and services, from search engines to creative tools.
+  - [AI Index Report 2024](https://aiindex.stanford.edu/report/)
+
+  - ## See Also
+  - [[Large language models]]
+  - [[OpenAI]]
+  - [[Google]]
+
+  - ## How it Works
+  - AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.
+
+  - ### Multilingual and Abstract Translation
+  - Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
 		- [SeamlessM4T by Facebook Research](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
 		- *An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.*
 
-- ## Key Features
-	- **3D Modeling:** A comprehensive suite of modeling tools for creating, transforming, and editing your models.
-	- **Sculpting:** Digital sculpting tools provide the power and flexibility required in several stages of the digital production pipeline.
-	- **Animation & Rigging:** A production-ready camera and object tracking solution.
-	- **Grease Pencil:** A revolutionary 2D animation tool that allows you to draw in 3D space.
-	- **Rendering:** A powerful, unbiased rendering engine that offers stunning, ultra-realistic rendering.
-	- **Simulation:** Create amazing simulations with industry-standard libraries such as Bullet and MantaFlow.
-	- **Video Editing:** A built-in video sequence editor allows you to perform basic actions like video cuts and splicing, as well as more complex tasks like video masking or color grading.
-	- **Scripting:** With a rich Python API, Blender is highly customizable and can be extended with custom tools and add-ons.
-	- **VFX:** A built-in compositor allows you to post-produce your renders without leaving Blender.
-
-- ## The Current Landscape
-	- The AI landscape is currently dominated by a few large technology companies that are developing and deploying powerful large language models (LLMs). These models are being integrated into a wide range of products and services, from search engines to creative tools.
-	- [AI Index Report 2024](https://aiindex.stanford.edu/report/)
-
-- ## See Also
-	- [[Large language models]]
-	- [[OpenAI]]
-	- [[Google]]
-
-- ## How it Works
-	- AnimateDiff works by adding a motion modeling module to a stable diffusion model. This module is trained on a large dataset of videos and learns to predict the motion between frames. When you provide AnimateDiff with an image and a text prompt, it uses the motion modeling module to generate a sequence of frames that create an animation.
-
-- ### Multilingual and Abstract Translation
-	- Projects dedicated to improving LLM capabilities in translation, fostering better understanding and communication across languages.
-		- [SeamlessM4T by Facebook Research](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
-		- *An innovative project aimed at enhancing multilingual translation, showcasing efforts to bridge language barriers and improve communication globally.*
-
-## Core Characteristics
-
-- **Probability Distribution Learning**: Modelling P(word|context) or P(sequence)
-- **Autoregressive**: Left-to-right sequential prediction (GPT-style)
-- **Masked Language Modeling**: Bidirectional context learning (BERT-style)
-- **Large-Scale Pre-Training**: Training on billions to trillions of tokens
-- **Transfer Learning**: Fine-tuning for diverse downstream tasks
-- **Emergent Capabilities**: In-context learning, reasoning, few-shot adaptation
-
-## Relationships
-
-- **Foundation For**: Natural Language Processing, Text Generation, Machine Translation
-- **Related**: Large Language Model, Transformer, Self-Attention
-- **Models**: GPT series, BERT, T5, LLaMA, PaLM, Gemini
-- **Paradigms**: Autoregressive LM, Masked LM, Encoder-Decoder LM
-
-## Key Literature
-
-1. Bengio, Y., et al. (2003). "A neural probabilistic language model." *Journal of Machine Learning Research*, 3, 1137-1155.
-
-2. Radford, A., et al. (2018). "Improving language understanding by generative pre-training." *OpenAI Technical Report*.
-
-3. Devlin, J., et al. (2019). "BERT: Pre-training of deep bidirectional transformers for language understanding." *NAACL*, 4171-4186.
-
-4. Brown, T., et al. (2020). "Language models are few-shot learners." *NeurIPS*, 1877-1901.
-
-5. Kaplan, J., et al. (2020). "Scaling laws for neural language models." *arXiv:2001.08361*.
-
-6. Wei, J., et al. (2022). "Emergent abilities of large language models." *TMLR*.
-
-## Technical Concepts
-
-### Autoregressive Language Modeling
-```
-P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
-```
-Models predict next token conditioned on previous tokens (GPT-style).
-
-### Masked Language Modeling
-```
-Objective: Predict masked tokens given bidirectional context
-Example: "The [MASK] sat on the mat" → predict "cat"
-```
-Enables bidirectional context learning (BERT-style).
-
-### Perplexity
-```
-Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
-```
-Evaluation metric measuring model uncertainty.
-
-## Applications
-
-1. **Text Generation**: Article writing, story generation, content creation
-2. **Code Generation**: Programming assistance, code completion
-3. **Machine Translation**: Neural machine translation systems
-4. **Question Answering**: Reading comprehension and knowledge retrieval
-5. **Text Classification**: Sentiment analysis, topic modelling
-6. **Named Entity Recognition**: Information extraction
-7. **Dialogue Systems**: Conversational AI and chatbots
-8. **Text Summarisation**: Document summarisation
-9. **Semantic Search**: Embedding-based information retrieval
-10. **Few-Shot Learning**: In-context learning for new tasks
-
-## Pre-Training Paradigms
-
-### Causal Language Modeling (CLM)
-- **Models**: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM
-- **Training**: Left-to-right autoregressive prediction
-- **Strength**: Natural text generation, few-shot learning
-- **Applications**: Chat, content generation, code synthesis
-
-### Masked Language Modeling (MLM)
-- **Models**: BERT, RoBERTa, ALBERT, DeBERTa
-- **Training**: Bidirectional context with masked token prediction
-- **Strength**: Understanding tasks, representation learning
-- **Applications**: Classification, NER, question answering
-
-### Encoder-Decoder
-- **Models**: T5, BART, mT5, UL2
-- **Training**: Sequence-to-sequence with various objectives
-- **Strength**: Versatile text-to-text framework
-- **Applications**: Translation, summarisation, generation
-
-## Scaling Laws
-
-Language model performance improves predictably with:
-- **Model Size**: Number of parameters (millions to trillions)
-- **Data Size**: Training tokens (billions to trillions)
-- **Compute**: FLOPs for training
-
-Power law relationships:
-```
-Loss ∝ N^(-α)  where N is model size
-Loss ∝ D^(-β)  where D is dataset size
-Loss ∝ C^(-γ)  where C is compute budget
-```
-
-## Emergent Abilities
-
-Large language models exhibit emergent capabilities appearing at scale:
-- **Few-Shot Learning**: Learning from examples in prompts
-- **Chain-of-Thought Reasoning**: Step-by-step problem solving
-- **Instruction Following**: Zero-shot task execution from instructions
-- **Multi-Step Reasoning**: Complex reasoning tasks
-- **Code Understanding**: Programming language comprehension
-
-## Evaluation Metrics
-
-- **Perplexity**: Model uncertainty on held-out text
-- **BLEU**: Machine translation quality
-- **ROUGE**: Summarisation quality
-- **Accuracy**: Task-specific classification accuracy
-- **F1 Score**: Balanced precision and recall
-- **Human Evaluation**: Quality, coherence, factuality assessment
-
-## Challenges and Research Directions
-
-1. **Hallucination**: Generating plausible but factually incorrect content
-2. **Bias and Fairness**: Societal biases in training data and outputs
-3. **Interpretability**: Understanding model decisions and reasoning
-4. **Efficiency**: Reducing computational costs for training and inference
-5. **Long-Context Modeling**: Extending context windows beyond current limits
-6. **Multimodal Integration**: Combining language with vision, audio, other modalities
-7. **Continual Learning**: Updating knowledge without catastrophic forgetting
-8. **Grounding**: Connecting language to external knowledge and real-world facts
-9. **Controllability**: Steering model outputs for desired properties
-10. **Safety and Alignment**: Ensuring beneficial and aligned AI behaviour
-
-## See Also
-
-- [[Natural Language Processing]]
-- [[Large Language Model]]
-- [[Transformer]]
-- [[Text Generation]]
-- [[GPT]]
-- [[BERT]]
-- [[Self-Attention]]
-
-## Metadata
-
-- **Domain**: Natural Language Processing, Machine Learning
-- **Maturity**: Foundation of modern NLP, rapidly evolving
-- **Impact**: Transformative across all NLP applications
-- **Research Activity**: Extremely active, core AI research area
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Language Modeling
-		  
-		  **Term ID**: AI-0375
-		  **Category**: Domain Applications → NLP Applications
-		  **Status**: Stable
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
-		  
-		  ## Core Characteristics
-		  
-		  - **Probability Distribution Learning**: Modelling P(word|context) or P(sequence)
-		  - **Autoregressive**: Left-to-right sequential prediction (GPT-style)
-		  - **Masked Language Modeling**: Bidirectional context learning (BERT-style)
-		  - **Large-Scale Pre-Training**: Training on billions to trillions of tokens
-		  - **Transfer Learning**: Fine-tuning for diverse downstream tasks
-		  - **Emergent Capabilities**: In-context learning, reasoning, few-shot adaptation
-		  
-		  ## Relationships
-		  
-		  - **Foundation For**: Natural Language Processing, Text Generation, Machine Translation
-		  - **Related**: Large Language Model, Transformer, Self-Attention
-		  - **Models**: GPT series, BERT, T5, LLaMA, PaLM, Gemini
-		  - **Paradigms**: Autoregressive LM, Masked LM, Encoder-Decoder LM
-		  
-		  ## Key Literature
-		  
-		  1. Bengio, Y., et al. (2003). "A neural probabilistic language model." *Journal of Machine Learning Research*, 3, 1137-1155.
-		  
-		  2. Radford, A., et al. (2018). "Improving language understanding by generative pre-training." *OpenAI Technical Report*.
-		  
-		  3. Devlin, J., et al. (2019). "BERT: Pre-training of deep bidirectional transformers for language understanding." *NAACL*, 4171-4186.
-		  
-		  4. Brown, T., et al. (2020). "Language models are few-shot learners." *NeurIPS*, 1877-1901.
-		  
-		  5. Kaplan, J., et al. (2020). "Scaling laws for neural language models." *arXiv:2001.08361*.
-		  
-		  6. Wei, J., et al. (2022). "Emergent abilities of large language models." *TMLR*.
-		  
-		  ## Technical Concepts
-		  
-		  ### Autoregressive Language Modeling
-		  ```
-		  P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
-		  ```
-		  Models predict next token conditioned on previous tokens (GPT-style).
-		  
-		  ### Masked Language Modeling
-		  ```
-		  Objective: Predict masked tokens given bidirectional context
-		  Example: "The [MASK] sat on the mat" → predict "cat"
-		  ```
-		  Enables bidirectional context learning (BERT-style).
-		  
-		  ### Perplexity
-		  ```
-		  Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
-		  ```
-		  Evaluation metric measuring model uncertainty.
-		  
-		  ## Applications
-		  
-		  1. **Text Generation**: Article writing, story generation, content creation
-		  2. **Code Generation**: Programming assistance, code completion
-		  3. **Machine Translation**: Neural machine translation systems
-		  4. **Question Answering**: Reading comprehension and knowledge retrieval
-		  5. **Text Classification**: Sentiment analysis, topic modelling
-		  6. **Named Entity Recognition**: Information extraction
-		  7. **Dialogue Systems**: Conversational AI and chatbots
-		  8. **Text Summarisation**: Document summarisation
-		  9. **Semantic Search**: Embedding-based information retrieval
-		  10. **Few-Shot Learning**: In-context learning for new tasks
-		  
-		  ## Pre-Training Paradigms
-		  
-		  ### Causal Language Modeling (CLM)
-		  - **Models**: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM
-		  - **Training**: Left-to-right autoregressive prediction
-		  - **Strength**: Natural text generation, few-shot learning
-		  - **Applications**: Chat, content generation, code synthesis
-		  
-		  ### Masked Language Modeling (MLM)
-		  - **Models**: BERT, RoBERTa, ALBERT, DeBERTa
-		  - **Training**: Bidirectional context with masked token prediction
-		  - **Strength**: Understanding tasks, representation learning
-		  - **Applications**: Classification, NER, question answering
-		  
-		  ### Encoder-Decoder
-		  - **Models**: T5, BART, mT5, UL2
-		  - **Training**: Sequence-to-sequence with various objectives
-		  - **Strength**: Versatile text-to-text framework
-		  - **Applications**: Translation, summarisation, generation
-		  
-		  ## Scaling Laws
-		  
-		  Language model performance improves predictably with:
-		  - **Model Size**: Number of parameters (millions to trillions)
-		  - **Data Size**: Training tokens (billions to trillions)
-		  - **Compute**: FLOPs for training
-		  
-		  Power law relationships:
-		  ```
-		  Loss ∝ N^(-α)  where N is model size
-		  Loss ∝ D^(-β)  where D is dataset size
-		  Loss ∝ C^(-γ)  where C is compute budget
-		  ```
-		  
-		  ## Emergent Abilities
-		  
-		  Large language models exhibit emergent capabilities appearing at scale:
-		  - **Few-Shot Learning**: Learning from examples in prompts
-		  - **Chain-of-Thought Reasoning**: Step-by-step problem solving
-		  - **Instruction Following**: Zero-shot task execution from instructions
-		  - **Multi-Step Reasoning**: Complex reasoning tasks
-		  - **Code Understanding**: Programming language comprehension
-		  
-		  ## Evaluation Metrics
-		  
-		  - **Perplexity**: Model uncertainty on held-out text
-		  - **BLEU**: Machine translation quality
-		  - **ROUGE**: Summarisation quality
-		  - **Accuracy**: Task-specific classification accuracy
-		  - **F1 Score**: Balanced precision and recall
-		  - **Human Evaluation**: Quality, coherence, factuality assessment
-		  
-		  ## Challenges and Research Directions
-		  
-		  1. **Hallucination**: Generating plausible but factually incorrect content
-		  2. **Bias and Fairness**: Societal biases in training data and outputs
-		  3. **Interpretability**: Understanding model decisions and reasoning
-		  4. **Efficiency**: Reducing computational costs for training and inference
-		  5. **Long-Context Modeling**: Extending context windows beyond current limits
-		  6. **Multimodal Integration**: Combining language with vision, audio, other modalities
-		  7. **Continual Learning**: Updating knowledge without catastrophic forgetting
-		  8. **Grounding**: Connecting language to external knowledge and real-world facts
-		  9. **Controllability**: Steering model outputs for desired properties
-		  10. **Safety and Alignment**: Ensuring beneficial and aligned AI behaviour
-		  
-		  ## See Also
-		  
-		  - [[Natural Language Processing]]
-		  - [[Large Language Model]]
-		  - [[Transformer]]
-		  - [[Text Generation]]
-		  - [[GPT]]
-		  - [[BERT]]
-		  - [[Self-Attention]]
-		  
-		  ## Metadata
-		  
-		  - **Domain**: Natural Language Processing, Machine Learning
-		  - **Maturity**: Foundation of modern NLP, rapidly evolving
-		  - **Impact**: Transformative across all NLP applications
-		  - **Research Activity**: Extremely active, core AI research area
-		  
-		  ```
-
-    - measured-by:: [[Natural Language Processing]]
-
-    - technique-for:: [[Transformer]], [[Text Generation]], [[GPT]], [[BERT]], [[Self-Attention]]
-
-- public-access:: true
-	- definition:: Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations. Language models underpin virtually all modern NLP applications through pre-training on massive text corpora, capturing syntactic structure, semantic relationships, and world knowledge that transfer to downstream tasks including text generation, translation, question answering, and code synthesis.
-
-
-
-# Language Modeling Ontology Entry – Revised
-
-## Academic Context
-
-- Language modelling represents a cornerstone discipline within natural language processing and computational linguistics
-  - Emerged from statistical foundations in the late 20th century, evolving through n-gram models toward contemporary neural architectures
-  - Fundamentally concerned with learning probability distributions over word sequences to enable prediction and generation of contextually appropriate text
-  - Captures syntactic structure, semantic relationships, and implicit world knowledge through exposure to vast text corpora
-  - Underpins the practical functionality of modern NLP applications including machine translation, speech recognition, sentiment analysis, and question-answering systems
-
-## Current Landscape (2025)
-
-- Technical architecture and capabilities
-  - Transformer models dominate the field, employing attention mechanisms to weight the importance of different words and capture long-range dependencies effectively[4]
-  - Deep learning approaches using neural network architectures have superseded pure statistical methods for most production applications
-  - Models learn statistical relationships between words through backpropagation optimisation, minimising prediction error across training datasets[4]
-  - The predictive capability—assigning high probability to contextually plausible continuations and low probability to implausible ones—remains the fundamental operational principle[4]
-
-- Contemporary model families and their characteristics
-  - Large language models (GPT-4, Claude, Gemini) demonstrate advanced reasoning, memory, summarisation, and compliance with complex stylistic instructions[3]
-  - Multimodal variants comprehend and generate text, images, audio, and code simultaneously, enabling real-time multilingual interaction[3]
-  - Edge-deployable variants (DistilBERT, MobileBERT) provide efficient, privacy-preserving NLP capabilities for mobile and IoT applications[3]
-  - Low-resource language models (mBERT, XLM-R, No Language Left Behind) advance cross-lingual learning, extending NLP capabilities to underserved linguistic communities[3]
-
-- Industry adoption and implementations
-  - Integrated into everyday applications: search engines, voice-operated systems (Alexa, Siri, Cortana), customer service chatbots, and digital assistants[2]
-  - Enterprise deployment increasingly common for automating customer support, data entry, document classification, and content extraction[2]
-  - Language translation systems preserve meaning, context, and nuance whilst converting between languages[2]
-
-- UK and North England context
-  - British AI research institutions contribute significantly to language modelling research, though specific North England innovation hubs remain underdeveloped relative to London and Cambridge clusters
-  - UK enterprises increasingly adopt NLP-powered solutions for regulatory compliance, financial analysis, and operational efficiency
-  - Regional universities (University of Manchester, University of Leeds, Newcastle University, University of Sheffield) maintain active computational linguistics research programmes, though funding and industry partnerships remain concentrated in South East England
-
-## Technical Foundations
-
-- Core operational principles
-  - Models learn patterns and grammar from massive text datasets (Wikipedia, book collections, web corpora) through supervised learning[4]
-  - Training involves adjusting internal weights to minimise the difference between predicted and actual text sequences[4]
-  - The attention mechanism enables models to understand context by determining which words in the input sequence are most relevant to predicting subsequent words[4]
-
-- Capabilities and current limitations
-  - Excellent at capturing statistical regularities and generating fluent, contextually appropriate text
-  - Limitations include potential hallucination (generating plausible but false information), difficulty with genuinely novel reasoning, and substantial computational requirements for training and inference
-  - Multilingual capabilities now extend to dozens of languages, though performance remains uneven across low-resource languages[3]
-
-## Research & Literature
-
-- Foundational work
-  - Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). "Attention Is All You Need." *Advances in Neural Information Processing Systems* – established the Transformer architecture that revolutionised language modelling[4]
-
-- Contemporary technical resources
-  - GeeksforGeeks (2025). "What are Language Models in NLP?" – comprehensive overview of language model categorisation, purpose, and functionality
-  - Ultralytics (2025). "Language Modeling in AI & NLP" – detailed explanation of modern neural approaches and the Transformer architecture[4]
-
-- Industry and application perspectives
-  - IBM (2025). "What Is NLP (Natural Language Processing)?" – contextualises language modelling within broader NLP ecosystem and enterprise applications[2]
-  - AWS (2025). "What is Natural Language Processing? – NLP Explained" – practical overview of NLP applications and business value
-
-- Ongoing research directions
-  - Efficiency optimisation for edge deployment and resource-constrained environments
-  - Improved reasoning capabilities and factual accuracy in generation
-  - Cross-lingual transfer learning and support for low-resource languages
-  - Interpretability and explainability of model predictions
-  - Alignment with human values and reduction of harmful outputs
-
-## Current State Assessment (2025)
-
-- Language modelling has matured from experimental technique to production-grade technology deployed across consumer and enterprise applications
-- The field exhibits healthy tension between scale (increasingly large models with enhanced capabilities) and efficiency (smaller, deployable variants for practical constraints)
-- Multimodal and multilingual capabilities represent genuine advances, though performance heterogeneity across languages remains a practical concern
-- The technology has transitioned from academic curiosity to infrastructure component—rather like electricity, it now powers systems most users interact with without conscious awareness
-
-## Future Directions
-
-- Emerging priorities
-  - Achieving more reliable reasoning and factual grounding without proportional increases in model scale
-  - Extending capabilities to genuinely low-resource languages and specialised domains
-  - Developing interpretable models that can explain their predictions and reasoning processes
-  - Addressing computational efficiency to reduce environmental impact and deployment costs
-
-- Anticipated challenges
-  - Balancing model capability with computational sustainability
-  - Maintaining performance across diverse linguistic and cultural contexts
-  - Ensuring responsible deployment and mitigating potential harms
-  - Advancing beyond pattern matching toward genuine understanding and reasoning
-
-- Research priorities for UK institutions
-  - Collaborative work on low-resource language support could position British research as a leader in linguistic equity
-  - Investigation of efficient architectures suitable for resource-constrained deployment aligns with UK strengths in applied mathematics and computer science
-  - Interdisciplinary research combining linguistics, philosophy, and computer science could advance interpretability and alignment
-
----
-
-**Note on tone and approach:** This revision maintains technical precision whilst acknowledging that language modelling, despite its sophistication, remains fundamentally a statistical enterprise—extraordinarily effective at pattern recognition and generation, but not (yet) a substitute for genuine understanding. The UK context section reflects the honest assessment that whilst British institutions conduct excellent research, the concentration of commercial NLP development remains geographically uneven within the UK.
-
-
-## Metadata
-
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  ## Core Characteristics
+
+  - **Probability Distribution Learning**: Modelling P(word|context) or P(sequence)
+  - **Autoregressive**: Left-to-right sequential prediction (GPT-style)
+  - **Masked Language Modeling**: Bidirectional context learning (BERT-style)
+  - **Large-Scale Pre-Training**: Training on billions to trillions of tokens
+  - **Transfer Learning**: Fine-tuning for diverse downstream tasks
+  - **Emergent Capabilities**: In-context learning, reasoning, few-shot adaptation
+
+  ## Relationships
+
+  - **Foundation For**: Natural Language Processing, Text Generation, Machine Translation
+  - **Related**: Large Language Model, Transformer, Self-Attention
+  - **Models**: GPT series, BERT, T5, LLaMA, PaLM, Gemini
+  - **Paradigms**: Autoregressive LM, Masked LM, Encoder-Decoder LM
+
+  ## Key Literature
+
+  1. Bengio, Y., et al. (2003). "A neural probabilistic language model." *Journal of Machine Learning Research*, 3, 1137-1155.
+
+  2. Radford, A., et al. (2018). "Improving language understanding by generative pre-training." *OpenAI Technical Report*.
+
+  3. Devlin, J., et al. (2019). "BERT: Pre-training of deep bidirectional transformers for language understanding." *NAACL*, 4171-4186.
+
+  4. Brown, T., et al. (2020). "Language models are few-shot learners." *NeurIPS*, 1877-1901.
+
+  5. Kaplan, J., et al. (2020). "Scaling laws for neural language models." *arXiv:2001.08361*.
+
+  6. Wei, J., et al. (2022). "Emergent abilities of large language models." *TMLR*.
+
+  ## Technical Concepts
+
+  ### Autoregressive Language Modeling
+  ```
+  P(x₁, x₂, ..., xₙ) = ∏ᵢ P(xᵢ | x₁, x₂, ..., xᵢ₋₁)
+  ```
+  Models predict next token conditioned on previous tokens (GPT-style).
+
+  ### Masked Language Modeling
+  ```
+  Objective: Predict masked tokens given bidirectional context
+  Example: "The [MASK] sat on the mat" → predict "cat"
+  ```
+  Enables bidirectional context learning (BERT-style).
+
+  ### Perplexity
+  ```
+  Perplexity = exp(-1/N ∑ᵢ log P(xᵢ | context))
+  ```
+  Evaluation metric measuring model uncertainty.
+
+  ## Applications
+
+  1. **Text Generation**: Article writing, story generation, content creation
+  2. **Code Generation**: Programming assistance, code completion
+  3. **Machine Translation**: Neural machine translation systems
+  4. **Question Answering**: Reading comprehension and knowledge retrieval
+  5. **Text Classification**: Sentiment analysis, topic modelling
+  6. **Named Entity Recognition**: Information extraction
+  7. **Dialogue Systems**: Conversational AI and chatbots
+  8. **Text Summarisation**: Document summarisation
+  9. **Semantic Search**: Embedding-based information retrieval
+  10. **Few-Shot Learning**: In-context learning for new tasks
+
+  ## Pre-Training Paradigms
+
+  ### Causal Language Modeling (CLM)
+  - **Models**: GPT, GPT-2, GPT-3, GPT-4, LLaMA, PaLM
+  - **Training**: Left-to-right autoregressive prediction
+  - **Strength**: Natural text generation, few-shot learning
+  - **Applications**: Chat, content generation, code synthesis
+
+  ### Masked Language Modeling (MLM)
+  - **Models**: BERT, RoBERTa, ALBERT, DeBERTa
+  - **Training**: Bidirectional context with masked token prediction
+  - **Strength**: Understanding tasks, representation learning
+  - **Applications**: Classification, NER, question answering
+
+  ### Encoder-Decoder
+  - **Models**: T5, BART, mT5, UL2
+  - **Training**: Sequence-to-sequence with various objectives
+  - **Strength**: Versatile text-to-text framework
+  - **Applications**: Translation, summarisation, generation
+
+  ## Scaling Laws
+
+  Language model performance improves predictably with:
+  - **Model Size**: Number of parameters (millions to trillions)
+  - **Data Size**: Training tokens (billions to trillions)
+  - **Compute**: FLOPs for training
+
+  Power law relationships:
+  ```
+  Loss ∝ N^(-α)  where N is model size
+  Loss ∝ D^(-β)  where D is dataset size
+  Loss ∝ C^(-γ)  where C is compute budget
+  ```
+
+  ## Emergent Abilities
+
+  Large language models exhibit emergent capabilities appearing at scale:
+  - **Few-Shot Learning**: Learning from examples in prompts
+  - **Chain-of-Thought Reasoning**: Step-by-step problem solving
+  - **Instruction Following**: Zero-shot task execution from instructions
+  - **Multi-Step Reasoning**: Complex reasoning tasks
+  - **Code Understanding**: Programming language comprehension
+
+  ## Evaluation Metrics
+
+  - **Perplexity**: Model uncertainty on held-out text
+  - **BLEU**: Machine translation quality
+  - **ROUGE**: Summarisation quality
+  - **Accuracy**: Task-specific classification accuracy
+  - **F1 Score**: Balanced precision and recall
+  - **Human Evaluation**: Quality, coherence, factuality assessment
+
+  ## Challenges and Research Directions
+
+  1. **Hallucination**: Generating plausible but factually incorrect content
+  2. **Bias and Fairness**: Societal biases in training data and outputs
+  3. **Interpretability**: Understanding model decisions and reasoning
+  4. **Efficiency**: Reducing computational costs for training and inference
+  5. **Long-Context Modeling**: Extending context windows beyond current limits
+  6. **Multimodal Integration**: Combining language with vision, audio, other modalities
+  7. **Continual Learning**: Updating knowledge without catastrophic forgetting
+  8. **Grounding**: Connecting language to external knowledge and real-world facts
+  9. **Controllability**: Steering model outputs for desired properties
+  10. **Safety and Alignment**: Ensuring beneficial and aligned AI behaviour
+
+  ## See Also
+
+  - [[Natural Language Processing]]
+  - [[Large Language Model]]
+  - [[Transformer]]
+  - [[Text Generation]]
+  - [[GPT]]
+  - [[BERT]]
+  - [[Self-Attention]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

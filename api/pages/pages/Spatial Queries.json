@@ -1,39 +1,47 @@
 {
-  "id": "Spatial Queries",
+  "id": "spatial-queries",
   "title": "Spatial Queries",
-  "content": "- ### OntologyBlock\n  id:: spatial-queries-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10064\n\t- source-domain:: mv\n\t- preferred-term:: Spatial Queries\n\t- status:: active\n\t- definition:: Database queries that select geographic features based on location or spatial relationships such as intersection, containment, proximity, and adjacency, implemented using R-tree spatial indexing and filter-refine strategies per OGC Simple Features and SQL/MM Spatial standards.\n\t- owl:class:: mv:SpatialQueries\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-queries-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Database Query]]\n\t\t- related-to:: [[Spatial Database]]\n\t\t- related-to:: [[R-Tree Indexing]]\n\t\t- related-to:: [[GIS Analysis]]\n\t\t- enables:: [[Location Based Search]]\n\t- #### Query Types\n\t  collapsed:: true\n\t\t- Intersection (does A intersect B)\n\t\t- Containment (does A contain B)\n\t\t- Proximity (what is near A)\n\t\t- Adjacency (what is next to A)\n\t\t- Buffer analysis queries\n\t- #### Implementation Technologies\n\t  collapsed:: true\n\t\t- PostGIS GiST and SP-GiST indexes\n\t\t- R-tree spatial indexing family\n\t\t- OGC Simple Features standard\n\t\t- SQL/MM Spatial ISO standard\n\t\t- QGIS Select by Location tools",
+  "content": "- ### Definition\n  - Database queries that select geographic features based on location or spatial relationships such as intersection, containment, proximity, and adjacency, implemented using R-tree spatial indexing and filter-refine strategies per OGC Simple Features and SQL/MM Spatial standards.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SpatialQueries\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Database Query]]\n  - enables:: [[Location Based Search]]\n\n- ### Content\n\n  - #### Query Types\n\t\t- Intersection (does A intersect B)\n\t\t- Containment (does A contain B)\n\t\t- Proximity (what is near A)\n\t\t- Adjacency (what is next to A)\n\t\t- Buffer analysis queries\n  - #### Implementation Technologies\n\t\t- PostGIS GiST and SP-GiST indexes\n\t\t- R-tree spatial indexing family\n\t\t- OGC Simple Features standard\n\t\t- SQL/MM Spatial ISO standard\n\t\t- QGIS Select by Location tools\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Scene Graph"
   ],
   "wiki_links": [
-    "GIS Analysis",
-    "R-Tree Indexing",
-    "Location Based Search",
     "Database Query",
-    "metaverse",
-    "Spatial Database"
+    "Location Based Search",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:spatial-queries",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SpatialQueries",
+    "content_hash": "sha256-12-a50369039892",
+    "legacy_term_id": "MV-10064",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:spatial-queries",
+    "schema_version": "v2",
     "term_id": "MV-10064",
     "preferred_term": "Spatial Queries",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SpatialQueries",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Database queries that select geographic features based on location or spatial relationships such as intersection, containment, proximity, and adjacency, implemented using R-tree spatial indexing and filter-refine strategies per OGC Simple Features and SQL/MM Spatial standards.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SpatialQueries",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SpatialQueries",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Database Query"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Spatial Database",
-        "R-Tree Indexing",
-        "GIS Analysis"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

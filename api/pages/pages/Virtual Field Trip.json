@@ -1,39 +1,46 @@
 {
-  "id": "Virtual Field Trip",
+  "id": "virtual-field-trip",
   "title": "Virtual Field Trip",
-  "content": "- ### OntologyBlock\n  id:: virtual-field-trip-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10125\n\t- source-domain:: mv\n\t- preferred-term:: Virtual Field Trip\n\t- status:: active\n\t- definition:: An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.\n\t- owl:class:: mv:VirtualFieldTrip\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Educational Technology]]\n\t\t- related-to:: [[Virtual Reality]]\n\t\t- related-to:: [[Immersive Learning]]\n\t\t- related-to:: [[Distance Learning]]\n\t  id:: virtual-field-trip-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Virtual field trips use immersive technologies to transport students to otherwise inaccessible locations such as the Great Wall of China, coral reefs, or historical sites. Research shows VR can improve knowledge acquisition compared to traditional instruction. In Kentucky, students use Meta Quest headsets to virtually visit technology centers and learn about careers.\n- ## Technical Details\n\t- ### Technology Types\n\t\t- **Virtual Reality (VR)**: Fully immersive 360-degree environments via headsets\n\t\t- **Augmented Reality (AR)**: Digital overlays on physical world via devices\n\t\t- **Mixed Reality (MR)**: Interactive digital elements in physical spaces\n\t\t- **360 Video**: Non-interactive panoramic experiences\n\t- ### Content Sources\n\t\t- Google Arts & Culture collections\n\t\t- National Geographic expeditions\n\t\t- Living Oceans Foundation coral reef curriculum\n\t\t- Museum and historical site partnerships\n\t- ### Hardware Options\n\t\t- Meta Quest headsets for schools\n\t\t- Smartphone-based VR viewers\n\t\t- Classroom projection systems\n\t\t- Tablet-based AR experiences\n- ## Applications\n\t- Historical site and museum visits\n\t- Science and nature exploration\n\t- Career and workplace exposure\n\t- Cultural and geographic education\n\t- STEM concept visualization",
+  "content": "- ### Definition\n  - An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:VirtualFieldTrip\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Educational Technology]]\n\n- ### Content\n\n  - ## Overview\n  - Virtual field trips use immersive technologies to transport students to otherwise inaccessible locations such as the Great Wall of China, coral reefs, or historical sites. Research shows VR can improve knowledge acquisition compared to traditional instruction. In Kentucky, students use Meta Quest headsets to virtually visit technology centers and learn about careers.\n  - ## Technical Details\n  - ### Technology Types\n\t\t- **Virtual Reality (VR)**: Fully immersive 360-degree environments via headsets\n\t\t- **Augmented Reality (AR)**: Digital overlays on physical world via devices\n\t\t- **Mixed Reality (MR)**: Interactive digital elements in physical spaces\n\t\t- **360 Video**: Non-interactive panoramic experiences\n  - ### Content Sources\n\t\t- Google Arts & Culture collections\n\t\t- National Geographic expeditions\n\t\t- Living Oceans Foundation coral reef curriculum\n\t\t- Museum and historical site partnerships\n  - ### Hardware Options\n\t\t- Meta Quest headsets for schools\n\t\t- Smartphone-based VR viewers\n\t\t- Classroom projection systems\n\t\t- Tablet-based AR experiences\n  - ## Applications\n  - Historical site and museum visits\n  - Science and nature exploration\n  - Career and workplace exposure\n  - Cultural and geographic education\n  - STEM concept visualization\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Virtual Museum Tour",
     "Education Metaverse"
   ],
   "wiki_links": [
     "Educational Technology",
-    "Distance Learning",
-    "Virtual Reality",
-    "metaverse",
-    "Immersive Learning"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:virtual-field-trip",
+    "iri": "http://narrativegoldmine.com/spatial-computing#VirtualFieldTrip",
+    "content_hash": "sha256-12-3c7a131649df",
+    "legacy_term_id": "MV-10125",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:virtual-field-trip",
+    "schema_version": "v2",
     "term_id": "MV-10125",
     "preferred_term": "Virtual Field Trip",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VirtualFieldTrip",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VirtualFieldTrip",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:VirtualFieldTrip",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Educational Technology"
@@ -46,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Virtual Reality",
-        "Immersive Learning",
-        "Distance Learning"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

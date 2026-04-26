@@ -1,62 +1,41 @@
-- ### OntologyBlock
-  id:: value-transfer-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/distributed-collaboration#ValueTransfer
+uri:: urn:visionclaw:concept:distributed-collaboration:value-transfer
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:distributed-collaboration:value-transfer
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: distributed-collaboration
+preferred-term:: Value Transfer
+content-hash:: sha256-12-71df9490e063
+legacy-term-id:: DT-0001
+status:: complete
+maturity:: mature
+quality-score:: 0.50
+authority-score:: 1.0
+version:: 2.0.0
+created:: 2025-11-05T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - public-access:: true
-    - ontology:: true
-    - term-id:: DT-0001
-    - preferred-term:: Value Transfer
-    - source-domain:: tc
-    - status:: complete
-    - version:: 1.0.0
-- last-updated:: 2025-11-05
+- ### Definition
+  - The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.
 
-- last-updated:: 2025-11-15
-    - qualityScore:: 0.94
+- ### Semantic Classification
+  - owl-class:: dt:ValueTransfer
+  - owl-role:: Process
+  - owl-inferred:: dt:ConceptualProcess
+  - belongs-to-domain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]
+  - implemented-in-layer:: [[ConceptualLayer]], [[EconomicLayer]]
 
-  - **Definition**
-    - definition:: The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.
-    - maturity:: mature
-    - source:: [[ISO/IEC 23257:2021]], [[BIS Innovation Hub]], [[W3C Web Payments]]
-    - authority-score:: 1.0
+- ### Relationships
+  - has-part:: [[Money]], [[Digital Currency]], [[Token]], [[Barter System]], [[Rights Transfer]], [[Resource Allocation]]
+  - requires:: [[Trust Mechanism]], [[Value Representation]], [[Transfer Protocol]]
+  - enables:: [[Economic Exchange]], [[Trade]], [[Commerce]], [[Payment]], [[Settlement]]
+  - bridges-to:: [[Blockchain Transaction]] (domain: blockchain), [[Payment System]] (domain: metaverse), [[Robot-to-Robot Commerce]] (domain: robotics), [[AI Agent Economic Interaction]] (domain: ai-grounded)
 
-  - **Semantic Classification**
-    - owl:class:: dt:ValueTransfer
-    - owl:role:: Process
-    - owl:inferred-class:: dt:ConceptualProcess
-    - belongsToDomain:: [[EconomicSystemDomain]], [[BlockchainDomain]], [[MetaverseDomain]], [[AI-GroundedDomain]], [[RoboticsDomain]]
-    - implementedInLayer:: [[ConceptualLayer]], [[EconomicLayer]]
+- ### Content
 
-  - #### Relationships
-    id:: value-transfer-relationships
-		- is-enabled-by:: [[Stablecoin]], [[Digital Asset]]
-    - has-part:: [[Money]], [[Digital Currency]], [[Token]], [[Barter System]], [[Rights Transfer]], [[Resource Allocation]]
-    - enables:: [[Economic Exchange]], [[Trade]], [[Commerce]], [[Payment]], [[Settlement]]
-    - implemented-by:: [[Transaction]], [[Smart Contract]], [[Payment System]], [[Exchange Protocol]]
-    - requires:: [[Trust Mechanism]], [[Value Representation]], [[Transfer Protocol]]
-    - bridges-to::
-      - [[Blockchain Transaction]] (domain: blockchain)
-      - [[Payment System]] (domain: metaverse)
-      - [[Robot-to-Robot Commerce]] (domain: robotics)
-      - [[AI Agent Economic Interaction]] (domain: ai-grounded)
-
-  - #### OWL Axioms
-    id:: value-transfer-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(dt:=<http://purl.org/disruptive-tech/bridges#>)
-      Prefix(bc:=<http://purl.org/blockchain-ontology#>)
-      Prefix(mv:=<http://purl.org/metaverse-ontology#>)
-      Prefix(ai:=<http://purl.org/ai-ontology#>)
-      Prefix(rb:=<http://purl.org/robotics-ontology#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-      Ontology(<http://purl.org/disruptive-tech/bridges/DT-0001>
-
-        ## Class Declaration
+  ## Class Declaration
         Declaration(Class(dt:ValueTransfer))
 
         ## Classification
@@ -69,7 +48,7 @@
           (ObjectSomeValuesFrom dt:implementedInDomain bc:BlockchainDomain))
 
         SubClassOf(dt:ValueTransfer
-          (ObjectSomeValuesFrom dt:implementedInDomain mv:MetaverseDomain))
+          (ObjectSomeValuesFrom dt:implementedInDomain distributed-collaboration:MetaverseDomain))
 
         SubClassOf(dt:ValueTransfer
           (ObjectSomeValuesFrom dt:implementedInDomain ai:AIGroundedDomain))
@@ -124,17 +103,13 @@
 
   # Property characteristics
   AsymmetricObjectProperty(dt:requires)
-```
+  ```
 
-- ## About Value Transfer
-  id:: value-transfer-about
+  - ## About Value Transfer
 
   - **Value Transfer** is a fundamental cross-domain concept representing the mechanisms by which economic value, rights, or utility move between parties in modern technological systems. It transcends traditional notions of monetary exchange to encompass blockchain transactions, virtual economy transfers, AI agent commerce, and robotic resource allocation.
-  -
   - As a cross-cutting concept, Value Transfer serves as a semantic bridge connecting the economic functions of AI, Blockchain, Metaverse, and Robotics domains, enabling unified reasoning about economic interactions in disruptive technology systems.
-  -
   - ### Key Characteristics
-    id:: value-transfer-characteristics
     - **Multi-Modal**: Operates across physical (cash), digital (bank transfers), virtual (metaverse coins), and hybrid (CBDC) domains
     - **Trust-Dependent**: Requires mechanisms for ensuring transfer integrity (cryptography, institutions, smart contracts)
     - **Protocol-Based**: Implemented through standardized exchange protocols and formats
@@ -142,9 +117,7 @@
     - **Domain-Agnostic**: Abstract concept applicable to human, AI, robotic, and virtual entity exchanges
     - **Settlement-Oriented**: Involves finality mechanisms for confirming completed transfers
     - **Programmable**: Can encode complex conditions via smart contracts or business logic
-  -
   - ### Value Transfer Modalities
-    id:: value-transfer-modalities
 
     #### Physical Value Transfer
     - **Cash Transactions**: Physical currency exchange
@@ -182,9 +155,7 @@
     - **Energy Credit Trading**: Power resource allocation among robots
     - **Task Allocation Markets**: Economic coordination of robotic work
     - **Shared Resource Access**: Payment for charging stations, tool use, etc.
-  -
   - ### Trust Mechanisms
-    id:: value-transfer-trust-mechanisms
 
     #### Institutional Trust
     - Central banks and government backing
@@ -209,9 +180,7 @@
     - Transparency through open-source code
     - Formal verification of contract logic
     - Automated enforcement without intermediaries
-  -
   - ### Central Bank Digital Currency (CBDC) Evolution
-    id:: value-transfer-cbdc
 
     #### BIS Unified Electronic Ledger Proposal
     - **Concept**: Integrate Central Bank Digital Currencies, tokenized money, and assets on a single platform
@@ -234,9 +203,7 @@
     - **Architecture**: Centralized ledger hosted by Bank of England
     - **Technical Focus**: API functionalities for diverse payment scenarios
     - **Impact**: Informing ongoing global CBDC policy discussions
-  -
   - ### Cross-Domain Bridges
-    id:: value-transfer-bridges
 
     #### Blockchain ↔ Traditional Finance
     - Cryptocurrency on/off ramps
@@ -261,9 +228,7 @@
     - Manufacturing-as-a-Service billing
     - Robot fleet resource optimization
     - Shared mobility transactions
-  -
   - ### Use Cases
-    id:: value-transfer-use-cases
     - **Cross-Border Remittances**: Blockchain-based international transfers bypassing correspondent banks
     - **Micropayments for AI**: Pay-per-query AI service consumption
     - **Virtual Real Estate**: Buying/selling metaverse land parcels
@@ -274,9 +239,7 @@
     - **Streaming Payments**: Continuous micropayment flows for content/services
     - **Supply Chain Finance**: Blockchain-based invoice factoring
     - **Carbon Credit Trading**: Tokenized environmental asset exchanges
-  -
   - ### Standards & References
-    id:: value-transfer-standards
     - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies vocabulary
     - [[BIS Innovation Hub]] - Central bank digital currency research and experimentation
     - [[W3C Web Payments]] - Standard web payment protocols
@@ -284,9 +247,7 @@
     - [[SWIFT]] - Society for Worldwide Interbank Financial Telecommunication
     - [[ERC-20]] - Ethereum token standard
     - [[Lightning Network]] - Bitcoin layer 2 payment protocol
-  -
   - ### Related Concepts
-    id:: value-transfer-related
     - [[Money]] - Traditional medium of exchange and store of value
     - [[Cryptocurrency]] - Digital currencies using cryptography
     - [[Token]] - Blockchain-based asset representations
@@ -298,9 +259,7 @@
     - [[Central Bank Digital Currency]] - Government-issued digital money
     - [[Bitcoin]] - First decentralized cryptocurrency
     - [[Blockchain]] - Distributed ledger technology
--
   - ## Current Landscape (2025)
-    id:: value-transfer-landscape-2025
 
     ### Global Payment Volume [Updated 2025]
     - **Stablecoin Ecosystem**: $305B total supply (September 2025), with payment-specific transaction volumes reaching $5.7T annually
@@ -372,7 +331,6 @@
     - **Global Standards**: [[FATF]] Travel Rule enforcement, requiring KYC for transfers >$1,000
 
   - ## Technical Implementation
-    id:: value-transfer-technical-implementation
 
     ### Payment Channel Networks
     - **Lightning Network Architecture**:
@@ -553,7 +511,6 @@
     ```
 
   - ## Cross-Domain Integration Deep Dive
-    id:: value-transfer-cross-domain-integration
 
     ### AI Agent Economic Interactions
     - **Autonomous API Payments**:
@@ -628,7 +585,6 @@
       - [[BitGo]]: $64B assets, multi-signature wallet infrastructure
 
   - ## United Kingdom Context
-    id:: value-transfer-uk-context
 
     ### London Fintech Ecosystem [Updated 2025]
     - **Major Players**:
@@ -709,7 +665,6 @@
       - [[Barclays]]: Cautious approach, limited crypto client support
 
   - ## Future Directions
-    id:: value-transfer-future-directions
 
     ### Emerging Trends [Updated 2025]
     - **Real-Time Gross Settlement via Blockchain**:
@@ -786,7 +741,6 @@
       - **Pilots**: [[Sovrin]], [[uPort]], [[Microsoft ION]], [[Polygon ID]]
 
   - ## Research and Literature
-    id:: value-transfer-research
 
     ### Academic Foundations
     - Nakamoto, S. (2008). "Bitcoin: A Peer-to-Peer Electronic Cash System." *Cryptography Mailing List*. [[Bitcoin Whitepaper]]
@@ -816,7 +770,6 @@
     - Bonneau, J., Narayanan, A., Miller, A., Clark, J., Kroll, J. A., & Felten, E. W. (2014). "Mixcoin: Anonymity for Bitcoin with accountable mixes." *International Conference on Financial Cryptography and Data Security*, 486-504.
 
   - ## References
-    id:: value-transfer-references
 
     ### Industry Reports [Updated 2025]
     - Circle (2025). "State of the USDC Economy: Q3 2025 Report." [[Circle Research]]
@@ -848,7 +801,6 @@
     - [[Glassnode]]: On-chain blockchain analytics and metrics
 
   - ## Metadata
-    id:: value-transfer-metadata
 
     - **Last Updated**: 2025-11-15
     - **Review Status**: Comprehensive editorial review with 2025 market data
@@ -861,3 +813,7 @@
     - **Wiki-Links**: 187 total links to related concepts
     - **Citations**: 27 academic and industry sources
     - **Version**: 2.0.0 (Major expansion from 1.0.0)
+
+- ### Provenance
+  - sources:: [[ISO/IEC 23257:2021]], [[BIS Innovation Hub]], [[W3C Web Payments]]
+  - migration-date:: 2026-04-26T00:00:00Z

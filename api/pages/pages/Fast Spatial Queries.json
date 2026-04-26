@@ -1,39 +1,47 @@
 {
-  "id": "Fast Spatial Queries",
+  "id": "fast-spatial-queries",
   "title": "Fast Spatial Queries",
-  "content": "- ### OntologyBlock\n  id:: fast-spatial-queries-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9901\n\t- source-domain:: mv\n\t- preferred-term:: Fast Spatial Queries\n\t- status:: active\n\t- owl:class:: mv:FastSpatialQueries\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.\n\t- #### Relationships\n\t  id:: fast-spatial-queries-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Spatial Computing]]\n\t\t- related-to:: [[Geospatial Engine]]\n\t\t- related-to:: [[3D Rendering]]\n\t\t- enables:: [[Real-Time Metaverse Interactions]]\n\n## Technical Details\n\n### Spatial Data Structures\n- **Octrees**: Hierarchical 3D space partitioning\n- **BVH (Bounding Volume Hierarchies)**: Collision detection optimisation\n- **R-Trees**: Spatial indexing for range queries\n- **KD-Trees**: Nearest neighbour searches\n\n### Query Types\n- **Proximity Queries**: Find objects within radius\n- **Visibility Queries**: Determine visible objects from viewpoint\n- **Collision Queries**: Detect object intersections\n- **Containment Queries**: Objects within regions\n\n## MetaSpatial Framework (2024)\n\n### AI-Enhanced Spatial Reasoning\n- First reinforcement learning (RL) framework for 3D spatial reasoning in VLMs\n- Real-time 3D scene generation without hard-coded optimisations\n- Multi-turn RL-based optimisation mechanism\n- Physics-aware constraints integration\n\n### Validation Mechanisms\n- **Format Detection**: Structural validity verification\n- **Physical Detection**: Scene graph spatial constraint assessment\n- **Rendering-based Evaluation**: VLM-scored plausibility assessment\n\n## Applications\n\n### Real-Time Metaverse\n- Avatar proximity calculations\n- Object interaction detection\n- Environmental occlusion culling\n- Spatial audio positioning\n\n### Digital Twins\n- 3D spatial mapping algorithms\n- Image processing integration\n- Predictive geographic modelling\n- Manufacturing environment simulation\n\n### Game Engines\n- Unity and Unreal Engine spatial systems\n- Physics engine integration\n- LOD (Level of Detail) management\n- Streaming world loading\n\n## Performance Optimisation\n\n### Techniques\n- Spatial hashing for uniform grids\n- Frustum culling for visibility\n- Broadphase and narrowphase collision detection\n- Hierarchical bounding volumes\n\n### Hardware Acceleration\n- GPU-accelerated spatial queries\n- SIMD optimisation for vector operations\n- Parallel query processing\n- Specialised spatial compute shaders\n\n## Market Context\n\n### Technology Integration\n- GIS and game engine convergence (Cesium + Epic Games)\n- Esri integration with Unreal and Unity\n- Real-time geospatial data streaming\n- Consumer hardware 3D rendering\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:FastSpatialQueries\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Spatial Computing]]\n  - enables:: [[Real-Time Metaverse Interactions]]\n\n- ### Content\n\n  ## Technical Details\n\n  ### Spatial Data Structures\n  - **Octrees**: Hierarchical 3D space partitioning\n  - **BVH (Bounding Volume Hierarchies)**: Collision detection optimisation\n  - **R-Trees**: Spatial indexing for range queries\n  - **KD-Trees**: Nearest neighbour searches\n\n  ### Query Types\n  - **Proximity Queries**: Find objects within radius\n  - **Visibility Queries**: Determine visible objects from viewpoint\n  - **Collision Queries**: Detect object intersections\n  - **Containment Queries**: Objects within regions\n\n  ## MetaSpatial Framework (2024)\n\n  ### AI-Enhanced Spatial Reasoning\n  - First reinforcement learning (RL) framework for 3D spatial reasoning in VLMs\n  - Real-time 3D scene generation without hard-coded optimisations\n  - Multi-turn RL-based optimisation mechanism\n  - Physics-aware constraints integration\n\n  ### Validation Mechanisms\n  - **Format Detection**: Structural validity verification\n  - **Physical Detection**: Scene graph spatial constraint assessment\n  - **Rendering-based Evaluation**: VLM-scored plausibility assessment\n\n  ## Applications\n\n  ### Real-Time Metaverse\n  - Avatar proximity calculations\n  - Object interaction detection\n  - Environmental occlusion culling\n  - Spatial audio positioning\n\n  ### Digital Twins\n  - 3D spatial mapping algorithms\n  - Image processing integration\n  - Predictive geographic modelling\n  - Manufacturing environment simulation\n\n  ### Game Engines\n  - Unity and Unreal Engine spatial systems\n  - Physics engine integration\n  - LOD (Level of Detail) management\n  - Streaming world loading\n\n  ## Performance Optimisation\n\n  ### Techniques\n  - Spatial hashing for uniform grids\n  - Frustum culling for visibility\n  - Broadphase and narrowphase collision detection\n  - Hierarchical bounding volumes\n\n  ### Hardware Acceleration\n  - GPU-accelerated spatial queries\n  - SIMD optimisation for vector operations\n  - Parallel query processing\n  - Specialised spatial compute shaders\n\n  ## Market Context\n\n  ### Technology Integration\n  - GIS and game engine convergence (Cesium + Epic Games)\n  - Esri integration with Unreal and Unity\n  - Real-time geospatial data streaming\n  - Consumer hardware 3D rendering\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Spatial Index",
-    "Geospatial Engine"
+    "Spatial Index"
   ],
   "wiki_links": [
+    "Real-Time Metaverse Interactions",
     "Spatial Computing",
-    "3D Rendering",
-    "metaverse",
-    "Geospatial Engine",
-    "Real-Time Metaverse Interactions"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:fast-spatial-queries",
+    "iri": "http://narrativegoldmine.com/spatial-computing#FastSpatialQueries",
+    "content_hash": "sha256-12-337e99e5ca86",
+    "legacy_term_id": "MV-9901",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:fast-spatial-queries",
+    "schema_version": "v2",
     "term_id": "MV-9901",
     "preferred_term": "Fast Spatial Queries",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#FastSpatialQueries",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:FastSpatialQueries",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:FastSpatialQueries",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Spatial Computing"
@@ -48,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Geospatial Engine",
-        "3D Rendering"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

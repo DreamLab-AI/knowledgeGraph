@@ -1,52 +1,67 @@
-- ### OntologyBlock
-  id:: virtual-training-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10151
-	- source-domain:: mv
-	- preferred-term:: Virtual Training
-	- status:: active
-	- definition:: The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.
-	- owl:class:: mv:VirtualTraining
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Workforce Development]]
-		- related-to:: [[Virtual Reality VR]]
-		- related-to:: [[Simulation]]
-		- related-to:: [[Enterprise Learning]]
-	  id:: virtual-training-relationships
-	  collapsed:: true
-- ## Overview
-	- The global virtual training and simulation market was valued at $380.11 billion in 2024, projected to reach $1.42 trillion by 2034 at 14.08% CAGR. VR-trained employees are 4x more focused than e-learning peers and retain up to 75% of material vs 10% for lectures. Walmart's VR initiative improved test scores 10-15% while reducing training time 30%, training over 1 million employees. VR learners are 275% more confident applying skills after training.
-- ## Technical Details
-	- ### Training Benefits
+iri:: http://narrativegoldmine.com/metaverse#VirtualTraining
+uri:: urn:visionclaw:concept:artificial-intelligence:virtual-training
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:virtual-training
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Virtual Training
+content-hash:: sha256-12-3e71d8207ed5
+legacy-term-id:: MV-10151
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+
+- ### Definition
+  - The use of VR, AR, and simulation technologies to create immersive learning experiences for workforce development, enabling employees to practice skills, experience scenarios, and learn procedures in safe, repeatable virtual environments with measurable outcomes and faster knowledge retention.
+
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:VirtualTraining
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Workforce Development]]
+
+- ### Content
+
+  - ## Overview
+  - The global virtual training and simulation market was valued at $380.11 billion in 2024, projected to reach $1.42 trillion by 2034 at 14.08% CAGR. VR-trained employees are 4x more focused than e-learning peers and retain up to 75% of material vs 10% for lectures. Walmart's VR initiative improved test scores 10-15% while reducing training time 30%, training over 1 million employees. VR learners are 275% more confident applying skills after training.
+  - ## Technical Details
+  - ### Training Benefits
 		- **Engagement**: 75% engagement rate outperforming traditional methods
 		- **Retention**: 75% material retention vs 10% for lectures
 		- **Emotional Connection**: 3.75x more connected than classroom learning
 		- **Time Reduction**: Walmart reduced 30-45 min sessions to 3-5 min VR simulations
-	- ### Industry Applications
+  - ### Industry Applications
 		- **Aviation**: NASA, USAF, Boeing flight simulators
 		- **Healthcare**: Surgical procedure practice on virtual patients
 		- **Manufacturing**: Equipment operation and safety
 		- **Retail**: Customer service and store operations
 		- **Military**: Combat and tactical training
-	- ### Technology Platforms
+  - ### Technology Platforms
 		- Meta Quest 3 standalone headsets for enterprise
 		- Strivr for workforce performance
 		- Transfr for career exploration
 		- VR Vision for custom training simulations
-	- ### AI Integration
+  - ### AI Integration
 		- Intelligent adaptive training content
 		- Performance analytics and assessment
 		- Personalized learning paths
 		- Natural language interaction
-- ## Applications
-	- Employee onboarding programs
-	- Safety and compliance training
-	- Technical skill development
-	- Soft skill and communication practice
-	- High-stakes scenario rehearsal
-	- Equipment operation certification
+  - ## Applications
+  - Employee onboarding programs
+  - Safety and compliance training
+  - Technical skill development
+  - Soft skill and communication practice
+  - High-stakes scenario rehearsal
+  - Equipment operation certification
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

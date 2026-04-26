@@ -1,39 +1,45 @@
 {
-  "id": "Spatial User Interfaces",
+  "id": "spatial-user-interfaces",
   "title": "Spatial User Interfaces",
-  "content": "- ### OntologyBlock\n  id:: spatial-user-interfaces-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10067\n\t- source-domain:: mv\n\t- preferred-term:: Spatial User Interfaces\n\t- status:: active\n\t- definition:: Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.\n\t- owl:class:: mv:SpatialUserInterfaces\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: spatial-user-interfaces-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D User Interface]]\n\t\t- related-to:: [[Gesture Recognition]]\n\t\t- related-to:: [[Gaze Tracking]]\n\t\t- related-to:: [[Voice Interaction]]\n\t\t- enables:: [[Immersive Interaction]]\n\t- #### Interaction Methods\n\t  collapsed:: true\n\t\t- Hand tracking and gesture recognition\n\t\t- Eye gaze selection and navigation\n\t\t- Voice command input\n\t\t- Controller-based 6DOF manipulation\n\t\t- Point-to-select and grasp-to-manipulate\n\t- #### Design Principles\n\t  collapsed:: true\n\t\t- UI within 60 degree forward view\n\t\t- Comfort zone placement for accessibility\n\t\t- Natural gesture mirroring\n\t\t- Minimal cognitive load\n\t\t- Fatigue-conscious positioning",
-  "backlinks": [
-    "Spatial Computing"
-  ],
+  "content": "- ### Definition\n  - Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:SpatialUserInterfaces\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[3D User Interface]]\n  - enables:: [[Immersive Interaction]]\n\n- ### Content\n\n  - #### Interaction Methods\n\t\t- Hand tracking and gesture recognition\n\t\t- Eye gaze selection and navigation\n\t\t- Voice command input\n\t\t- Controller-based 6DOF manipulation\n\t\t- Point-to-select and grasp-to-manipulate\n  - #### Design Principles\n\t\t- UI within 60 degree forward view\n\t\t- Comfort zone placement for accessibility\n\t\t- Natural gesture mirroring\n\t\t- Minimal cognitive load\n\t\t- Fatigue-conscious positioning\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
     "3D User Interface",
-    "metaverse",
-    "Voice Interaction",
     "Immersive Interaction",
-    "Gesture Recognition",
-    "Gaze Tracking"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:spatial-user-interfaces",
+    "iri": "http://narrativegoldmine.com/spatial-computing#SpatialUserInterfaces",
+    "content_hash": "sha256-12-d451816461db",
+    "legacy_term_id": "MV-10067",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:spatial-user-interfaces",
+    "schema_version": "v2",
     "term_id": "MV-10067",
     "preferred_term": "Spatial User Interfaces",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SpatialUserInterfaces",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware methods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6DOF input.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SpatialUserInterfaces",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:SpatialUserInterfaces",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "3D User Interface"
@@ -48,26 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Gesture Recognition",
-        "Gaze Tracking",
-        "Voice Interaction"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

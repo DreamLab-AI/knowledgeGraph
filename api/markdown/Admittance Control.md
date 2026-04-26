@@ -1,59 +1,44 @@
-- ### OntologyBlock
-  id:: admittance-control-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: RB-0059
-	- preferred-term:: Admittance Control
-	- alternative-terms:: Force-to-Motion Control, Compliant Motion Control, Impedance-Inverse Control, Dynamic Force Control, Contact-Based Motion Regulation, Environment-Responsive Control, Indirect Force Regulation, Passive Compliance Strategy
-	- source-domain:: rb
-	- status:: production-ready
-	- public-access:: true
-	- definition:: Force control strategy where robotic systems respond to external forces by producing proportional motion governed by virtual admittance parameters (mass, damping, stiffness), enabling compliant physical interaction with uncertain or variable environments by regulating position/velocity trajectories as functions of measured contact forces rather than directly controlling force magnitudes, widely deployed across collaborative robotics (cobots processing 40,000+ installations annually with <100N contact force thresholds enabling safe human-robot interaction per ISO/TS 15066:2016), surgical systems (da Vinci 7,500+ units worldwide achieving <0.5mm positioning accuracy during soft tissue manipulation via force feedback), manufacturing assembly (electronics 25,000+ units inserting components with 0.1-10N controlled forces, automotive 15,000+ units assembling doors/panels), industrial polishing (aerospace turbine blades achieving Ra <0.2μm surface finish through 5-50N adaptive force control), rehabilitation exoskeletons (Ekso/ReWalk 10,000+ clinical deployments providing 20-100Nm joint torque assistance adapting to patient effort), and space robotics (ISS Canadarm2 17.6m reaching 116 tonnes payload with millimeter precision force-limited grappling), implementing virtual mechanical systems defined by second-order differential equations F_ext = M_d × ẍ + B_d × ẋ + K_d × x where desired mass M_d, damping B_d, and stiffness K_d parameters tune compliance behavior, contrasting with impedance control which regulates forces produced for given motion trajectories whilst admittance control regulates motion produced for given force inputs representing mathematical dual formulations (admittance A = 1/Z where Z denotes impedance), particularly advantageous when interacting with stiff environments (assembly, polishing) where small position errors generate large forces requiring precise motion adjustment, implemented through position-controlled robots equipped with force/torque sensors (ATI Gamma 6-axis <0.1N resolution, Weiss Robotics KMS40 <0.01N) feeding measured forces into admittance transfer function computing desired position corrections applied via inverse kinematics to joint controllers, supporting hybrid force/position control architectures partitioning task space into force-controlled directions (normal to surfaces) and position-controlled directions (tangential motion), with modern implementations incorporating model-based compensation (gravity, Coriolis, friction feedforward), adaptive parameter tuning (recursive least squares identifying contact stiffness 10-10,000 N/m), learning-based approaches (neural networks predicting optimal admittance gains from task demonstrations), and multi-modal sensing fusion (vision-guided pre-contact prediction reducing impact transients 60-80%), fundamentally enabling robots to safely share workspaces with humans and handle delicate/variable objects by mimicking biological compliance whilst maintaining precise control authority.
-	- maturity:: production-ready
-	- authority-score:: 0.91
-	- source:: [[Hogan 1985 Impedance Control]], [[Mason 1981 Compliance and Force Control]], [[ISO/TS 15066:2016 Collaborative Robots]], [[Universal Robots Technical Documentation]], [[KUKA Sensitive Robotics]], [[ABB Force Control]], [[Intuitive Surgical da Vinci System]], [[NASA Robotics Systems Technology Branch]], [[Springer Handbook of Robotics]], [[IEEE Transactions on Robotics Control Studies]]
-	- owl:class:: rb:AdmittanceControl
-	- owl:role:: ControlStrategy
-	- owl:inferred-class:: rb:ForceControlMethod, rb:ComplianceRegulation, rb:InteractionControl
-	- belongsToDomain:: [[RoboticsDomain]], [[ControlTheoryDomain]], [[AI-GroundedDomain]]
-	- implementedInLayer:: [[ControlLayer]], [[ApplicationLayer]]
+iri:: http://narrativegoldmine.com/robotics#AdmittanceControl
+uri:: urn:visionclaw:concept:robotics:admittance-control
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:admittance-control
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Admittance Control
+content-hash:: sha256-12-5aead06d9f1e
+legacy-term-id:: RB-0059
+status:: mature
+maturity:: production-ready
+quality-score:: 0.50
+authority-score:: 0.91
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
+bridges-to:: [[AI Agent System]]
 
-- #### Relationships
-  id:: admittance-control-relationships
-	- is-subclass-of:: [[Force Control]], [[Compliance Control]], [[Robot Control]], [[Interaction Control]], [[Motion Control]]
-	- has-part:: [[Admittance Transfer Function]], [[Force Sensor]], [[Position Controller]], [[Virtual Mechanical System]], [[Parameter Tuning]], [[Inverse Kinematics]]
-	- enables:: [[Compliant Motion]], [[Safe Human-Robot Interaction]], [[Contact-Based Assembly]], [[Force-Limited Operation]], [[Adaptive Manipulation]], [[Delicate Handling]]
-	- requires:: [[Force/Torque Sensor]], [[Position-Controlled Robot]], [[Real-Time Control Loop]], [[Kinematic Model]], [[Dynamic Model]]
-	- depends-on:: [[Control Theory]], [[Sensor Fusion]], [[Inverse Kinematics]], [[Dynamic Modeling]], [[Signal Processing]]
-	- related-to:: [[Impedance Control]], [[Hybrid Force/Position Control]], [[Direct Force Control]], [[Passive Compliance]], [[Active Compliance]]
-	- implements:: [[Second-Order Mechanical System]], [[Virtual Damper-Spring-Mass]], [[Force-to-Motion Mapping]], [[Compliant Trajectory Generation]]
-	- supports:: [[Collaborative Robotics]], [[Surgical Robotics]], [[Assembly Automation]], [[Polishing Operations]], [[Rehabilitation Robotics]]
-	- uses:: [[Force Sensor]], [[Position Control Loop]], [[Admittance Filter]], [[Feedforward Compensation]], [[Adaptive Control]]
-	- contrasts-with:: [[Impedance Control]] (motion→force vs force→motion causality)
+- ### Definition
+  - Force control strategy where robotic systems respond to external forces by producing proportional motion governed by virtual admittance parameters (mass, damping, stiffness), enabling compliant physical interaction with uncertain or variable environments by regulating position/velocity trajectories as functions of measured contact forces rather than directly controlling force magnitudes, widely deployed across collaborative robotics (cobots processing 40,000+ installations annually with <100N contact force thresholds enabling safe human-robot interaction per ISO/TS 15066:2016), surgical systems (da Vinci 7,500+ units worldwide achieving <0.5mm positioning accuracy during soft tissue manipulation via force feedback), manufacturing assembly (electronics 25,000+ units inserting components with 0.1-10N controlled forces, automotive 15,000+ units assembling doors/panels), industrial polishing (aerospace turbine blades achieving Ra <0.2μm surface finish through 5-50N adaptive force control), rehabilitation exoskeletons (Ekso/ReWalk 10,000+ clinical deployments providing 20-100Nm joint torque assistance adapting to patient effort), and space robotics (ISS Canadarm2 17.6m reaching 116 tonnes payload with millimeter precision force-limited grappling), implementing virtual mechanical systems defined by second-order differential equations F_ext = M_d × ẍ + B_d × ẋ + K_d × x where desired mass M_d, damping B_d, and stiffness K_d parameters tune compliance behavior, contrasting with impedance control which regulates forces produced for given motion trajectories whilst admittance control regulates motion produced for given force inputs representing mathematical dual formulations (admittance A = 1/Z where Z denotes impedance), particularly advantageous when interacting with stiff environments (assembly, polishing) where small position errors generate large forces requiring precise motion adjustment, implemented through position-controlled robots equipped with force/torque sensors (ATI Gamma 6-axis <0.1N resolution, Weiss Robotics KMS40 <0.01N) feeding measured forces into admittance transfer function computing desired position corrections applied via inverse kinematics to joint controllers, supporting hybrid force/position control architectures partitioning task space into force-controlled directions (normal to surfaces) and position-controlled directions (tangential motion), with modern implementations incorporating model-based compensation (gravity, Coriolis, friction feedforward), adaptive parameter tuning (recursive least squares identifying contact stiffness 10-10,000 N/m), learning-based approaches (neural networks predicting optimal admittance gains from task demonstrations), and multi-modal sensing fusion (vision-guided pre-contact prediction reducing impact transients 60-80%), fundamentally enabling robots to safely share workspaces with humans and handle delicate/variable objects by mimicking biological compliance whilst maintaining precise control authority.
 
-- #### OWL Axioms
-  id:: admittance-control-owl-axioms
-  collapsed:: true
-	- ```clojure
-	  Prefix(rb:=<http://purl.org/robotics/core#>)
-	  Prefix(ctrl:=<http://purl.org/control-theory/core#>)
-	  Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-	  Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-	  Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-	  Prefix(dcterms:=<http://purl.org/dc/terms/>)
+- ### Semantic Classification
+  - owl-class:: robotics:AdmittanceControl
+  - owl-role:: ControlStrategy
+  - owl-inferred:: rb:ForceControlMethod, rb:ComplianceRegulation, rb:InteractionControl
+  - belongs-to-domain:: [[RoboticsDomain]], [[ControlTheoryDomain]], [[AI-GroundedDomain]]
+  - implemented-in-layer:: [[ControlLayer]], [[ApplicationLayer]]
 
-	  Ontology(<http://purl.org/robotics/core/RB-0059>
+- ### Relationships
+  - is-subclass-of:: [[Force Control]], [[Compliance Control]], [[Robot Control]], [[Interaction Control]], [[Motion Control]]
+  - has-part:: [[Admittance Transfer Function]], [[Force Sensor]], [[Position Controller]], [[Virtual Mechanical System]], [[Parameter Tuning]], [[Inverse Kinematics]]
+  - requires:: [[Force/Torque Sensor]], [[Position-Controlled Robot]], [[Real-Time Control Loop]], [[Kinematic Model]], [[Dynamic Model]]
+  - enables:: [[Compliant Motion]], [[Safe Human-Robot Interaction]], [[Contact-Based Assembly]], [[Force-Limited Operation]], [[Adaptive Manipulation]], [[Delicate Handling]]
+  - implements:: [[Second-Order Mechanical System]], [[Virtual Damper-Spring-Mass]], [[Force-to-Motion Mapping]], [[Compliant Trajectory Generation]]
+  - depends-on:: [[Control Theory]], [[Sensor Fusion]], [[Inverse Kinematics]], [[Dynamic Modeling]], [[Signal Processing]]
 
-	    Declaration(Class(rb:AdmittanceControl))
+- ### Content
 
-	    ## Taxonomic Relationships
-	    SubClassOf(rb:AdmittanceControl rb:ForceControl)
-	    SubClassOf(rb:AdmittanceControl rb:ComplianceControl)
-	    SubClassOf(rb:AdmittanceControl rb:InteractionControl)
-	    SubClassOf(rb:AdmittanceControl ctrl:ControlStrategy)
-	    SubClassOf(rb:AdmittanceControl rb:MotionControl)
-
-	    ## Compositional Relationships (Components)
+  ## Compositional Relationships (Components)
 	    SubClassOf(rb:AdmittanceControl
 	      ObjectSomeValuesFrom(rb:hasPart rb:AdmittanceTransferFunction))
 	    SubClassOf(rb:AdmittanceControl
@@ -165,16 +150,13 @@
 	  FunctionalDataProperty(rb:forceSensorResolution)
 	  ```
 
-- ## About Admittance Control
-  id:: admittance-control-about
-	- **Admittance Control** is a force control strategy where robotic systems respond to external forces by producing motion according to a virtual mechanical admittance relationship, enabling compliant physical interaction with environments. The fundamental principle defines how measured contact forces F_ext translate into desired position adjustments x via second-order dynamics:
+  - ## About Admittance Control
+  - **Admittance Control** is a force control strategy where robotic systems respond to external forces by producing motion according to a virtual mechanical admittance relationship, enabling compliant physical interaction with environments. The fundamental principle defines how measured contact forces F_ext translate into desired position adjustments x via second-order dynamics:
 
 	  F_ext = M_d × ẍ + B_d × ẋ + K_d × x
 
 	  where M_d represents virtual mass (inertial response to force changes), B_d represents virtual damping (velocity-dependent energy dissipation), and K_d represents virtual stiffness (position-dependent restoring force). By tuning these parameters, engineers program how robots "feel" to humans and objects during physical interaction.
-	-
-	- ### Historical Development and Theoretical Foundations
-	  id:: admittance-control-history
+  - ### Historical Development and Theoretical Foundations
 
 	  The concept emerged from Neville Hogan's seminal 1985 work on impedance control at MIT, where he formalized mechanical impedance Z as the relationship between motion and force. Admittance control represents the mathematical dual: A = 1/Z, describing force-to-motion causality rather than motion-to-force. Matthew Mason's 1981 research at CMU on compliance and force control for assembly tasks demonstrated that robots need compliant behavior when inserting pegs into holes with tight tolerances (0.1-0.5mm clearance), as pure position control generates destructive forces (>100N) upon misalignment whilst compliant control naturally guides assembly through contact forces.
 
@@ -183,9 +165,7 @@
 	  - **Admittance Control**: Measured force → compute motion correction → adjust position command
 
 	  This dual formulation means impedance control works best with inherently force-controlled actuators (series elastic, pneumatic), whilst admittance control suits position-controlled robots (industrial manipulators with stiff gearing and high-bandwidth servos). Since most commercial robots (ABB, KUKA, Universal Robots) employ position control architectures, admittance implementations dominate industrial deployments.
-	-
-	- ### Control Law Implementation
-	  id:: admittance-control-implementation
+  - ### Control Law Implementation
 
 	  Modern implementations typically use discrete-time formulations running at 500-2000 Hz control rates. The basic algorithm:
 
@@ -224,9 +204,8 @@
 	  - **Precision assembly**: M_d=1kg, B_d=50Ns/m, K_d=1000N/m (balance compliance/accuracy)
 	  - **Polishing/grinding**: M_d=2kg, B_d=80Ns/m, K_d=500N/m (constant contact force)
 
-- ## Admittance vs Impedance Control: Mathematical Duality
-  id:: admittance-impedance-comparison
-	- The relationship between impedance Z and admittance A mirrors electrical circuit theory:
+  - ## Admittance vs Impedance Control: Mathematical Duality
+  - The relationship between impedance Z and admittance A mirrors electrical circuit theory:
 
 	  **Impedance (Z)**: Motion input → Force output
 	  ```
@@ -239,9 +218,7 @@
 	  ```
 
 	  (s denotes Laplace variable for frequency-domain analysis)
-	-
-	- ### When to Use Each Approach
-	  id:: impedance-vs-admittance-selection
+  - ### When to Use Each Approach
 
 	  **Admittance Control Preferred**:
 	  - Stiff environments (metal surfaces, rigid fixtures, hard contact)
@@ -264,10 +241,8 @@
 
 	  Example: Robotic polishing controls normal force (admittance ensuring constant 20N contact) whilst commanding tangential position trajectory (raster pattern across surface).
 
-- ## Industrial Applications and Deployment Statistics (2025)
-  id:: admittance-control-applications
-	- ### Collaborative Robotics (Cobots)
-	  id:: admittance-cobots
+  - ## Industrial Applications and Deployment Statistics (2025)
+  - ### Collaborative Robotics (Cobots)
 
 	  **Market Scale**: 40,000+ cobot installations annually (2024-2025), projected 65,000 units/year by 2027. Global installed base exceeds 250,000 units across manufacturing, healthcare, logistics.
 
@@ -298,9 +273,7 @@
 	  - **Machine Tending**: Pick parts from conveyor (position control) → insert into CNC machine (admittance control guiding insertion with 5-20N forces) → retract (position control)
 	  - **Quality Inspection**: Follow surface contour (admittance maintaining 2-10N probe contact) whilst collecting sensor data (vision, ultrasonic, eddy current)
 	  - **Screwdriving**: Approach screw location (position) → engage thread (admittance detecting engagement via torque rise) → tighten to target torque (force control)
-	-
-	- ### Surgical Robotics
-	  id:: admittance-surgical
+  - ### Surgical Robotics
 
 	  **Market Leaders**:
 	  - **Intuitive Surgical da Vinci** (USA): 7,500+ systems worldwide, 50,000+ surgeons trained, 10 million procedures (2000-2024)
@@ -330,9 +303,7 @@
 	  - Autonomous suturing: Learning-based admittance parameters from expert demonstrations (UC Berkeley AUTOLAB, Imperial College London Hamlyn Centre)
 	  - Multi-modal sensing: Vision + force fusion predicting tissue properties before contact (Johns Hopkins LCSR, ETH Zurich Multi-Scale Robotics Lab)
 	  - Shared autonomy: Human commands high-level goals, robot executes precise force-controlled motions (University of Washington BioRobotics Lab)
-	-
-	- ### Manufacturing Assembly
-	  id:: admittance-manufacturing
+  - ### Manufacturing Assembly
 
 	  **Electronics Assembly** (25,000+ admittance-controlled units globally):
 	  - **PCB Component Insertion**: 0.1-5N insertion forces for connectors, ICs, passive components
@@ -362,9 +333,7 @@
 	  - **Turbine Blade Polishing**: 5-50N forces achieving Ra <0.2μm surface finish (from Ra 1-5μm cast surface)
 	    - Adaptive admittance: Increase stiffness (K_d=1000-3000N/m) in convex regions (blade tips), decrease (K_d=200-800N/m) in concave regions (blade roots)
 	    - Material removal rate: 0.01-0.1mm³/s, cycle time: 5-15 minutes per blade
-	-
-	- ### Rehabilitation and Exoskeletons
-	  id:: admittance-rehabilitation
+  - ### Rehabilitation and Exoskeletons
 
 	  **Clinical Deployments** (10,000+ units globally):
 	  - **Ekso Bionics** (USA): 500+ rehabilitation centers, 300,000+ patient sessions
@@ -389,9 +358,7 @@
 	  - **Pediatric Exoskeletons** (Trexo Robotics Canada,Marsi-Bionics Spain):
 	    - Cerebral palsy gait training: 5-20Nm assistance adapted to child's weight/height
 	    - Safety-critical force limits: <50N to prevent injury to developing musculoskeletal system
-	-
-	- ### Space Robotics
-	  id:: admittance-space
+  - ### Space Robotics
 
 	  **International Space Station (ISS)**:
 	  - **Canadarm2** (MDA Canada): 17.6m reach, 116 tonnes payload capacity, ±3mm positioning accuracy
@@ -417,19 +384,15 @@
 	  - **ESA ClearSpace-1** (launch 2026): Debris removal demonstrator
 	    - Capture tumbling debris (10-100°/s rotation rates) using compliant gripper (admittance absorbs impact energy)
 
-- ## Academic Context and Theoretical Research
-  id:: admittance-control-academic
-	- ### Foundational Contributions
-	  id:: admittance-foundations
+  - ## Academic Context and Theoretical Research
+  - ### Foundational Contributions
 
 	  **Neville Hogan (MIT, 1985)**: "Impedance Control: An Approach to Manipulation" established theoretical framework distinguishing impedance/admittance duality in robotic force control, proving stability conditions for contact with passive environments (mechanical systems dissipating energy). Hogan demonstrated that pure position control becomes unstable during rigid contact (infinite stiffness generates unbounded forces for small position errors), whilst impedance/admittance control remains stable by regulating dynamic relationship between force and motion.
 
 	  **Matthew Mason (CMU, 1981)**: "Compliance and Force Control for Computer Controlled Manipulators" analyzed assembly tasks geometrically, showing that peg-in-hole insertion with tight clearances (0.1-0.5mm) requires compliant motion to succeed. Mason's *remote center of compliance* (RCC) device demonstrated passive mechanical compliance achieving reliable assembly without active force control, inspiring subsequent active admittance implementations.
 
 	  **J. Kenneth Salisbury (Stanford, 1980)**: "Active Stiffness Control of a Manipulator in Cartesian Coordinates" introduced variable stiffness concepts, showing that task performance optimizes at specific stiffness values: high stiffness (>5000 N/m) for position accuracy, low stiffness (<500 N/m) for safe interaction, medium stiffness (500-2000 N/m) for assembly tasks balancing both requirements.
-	-
-	- ### Stability Analysis
-	  id:: admittance-stability
+  - ### Stability Analysis
 
 	  **Passivity Theory** (Colgate & Hogan, 1988): Admittance control remains stable when interacting with *passive environments* (walls, fixtures, human limbs) characterized by dissipative contact dynamics. The admittance transfer function A(s) = 1/(M_d × s² + B_d × s + K_d) is passive when:
 	  - Damping B_d > 0 (dissipates energy)
@@ -447,9 +410,7 @@
 	  τ_critical ≈ B_d / (K_d + K_env)
 	  ```
 	  For typical parameters (B_d=100 Ns/m, K_d=500 N/m, K_env=5000 N/m), τ_critical ≈ 18ms. Internet-based teleoperation (τ=50-200ms) requires passivity-preserving communication architectures (wave variables, time-domain passivity).
-	-
-	- ### Advanced Variants and Extensions
-	  id:: admittance-variants
+  - ### Advanced Variants and Extensions
 
 	  **Adaptive Admittance** (Seraji & Colbaugh, 1997): Online parameter tuning based on task performance:
 	  - **Stiffness Adaptation**: Increase K_d when position error exceeds threshold (improve tracking accuracy), decrease K_d when forces exceed limits (enhance compliance)
@@ -471,9 +432,7 @@
 	  - **Vision-Guided Pre-Contact**: Camera detects object → predict contact location/orientation → adjust admittance anticipating forces
 	  - **Tactile Feedback**: High-resolution force sensors (64-256 taxels) detect contact distribution → spatial admittance variation (stiffer where more contact)
 	  - **Inertial Compensation**: IMU measures accelerations → feedforward forces cancel robot inertia improving force tracking
-	-
-	- ### Contemporary Research Directions (2020-2025)
-	  id:: admittance-research-2020s
+  - ### Contemporary Research Directions (2020-2025)
 
 	  **Neural Network Admittance** (10+ research groups worldwide):
 	  - **Convolutional Neural Networks (CNN)**: Learn admittance parameters from visual input (scene geometry → optimal stiffness/damping)
@@ -498,10 +457,8 @@
 	  - **Pneumatic Artificial Muscles**: Inherent compliance enhanced via admittance pressure regulation
 	    - Rehabilitation robots: 5-50Nm torque assistance with <20ms response time (Scuola Superiore Sant'Anna Italy, 2024)
 
-- ## Current Landscape and Industry Standards (2025)
-  id:: admittance-current-2025
-	- ### Safety Standards and Certification
-	  id:: admittance-safety-standards
+  - ## Current Landscape and Industry Standards (2025)
+  - ### Safety Standards and Certification
 
 	  **ISO/TS 15066:2016 - Collaborative Robots Safety**:
 	  - Defines biomechanical limits for human-robot contact forces (29 body regions tested)
@@ -534,9 +491,7 @@
 	  - **CE Marking** (Europe): Comply with Medical Device Regulation (EU) 2017/745
 	    - Risk management per ISO 14971 (hazard analysis, risk mitigation, post-market surveillance)
 	  - **UK MHRA Registration**: Post-Brexit UK-specific approval pathway
-	-
-	- ### Commercial Force/Torque Sensors
-	  id:: admittance-sensors
+  - ### Commercial Force/Torque Sensors
 
 	  **Leading Manufacturers**:
 	  - **ATI Industrial Automation** (USA): Gamma series 6-axis sensors
@@ -566,9 +521,7 @@
 	    - Quick-changer integration: Tool change <10 seconds with automatic sensor calibration
 	    - Applications: Sanding, grinding, part insertion, screwdriving
 	    - Price: £6,000-£10,000
-	-
-	- ### Software Frameworks and Libraries
-	  id:: admittance-software
+  - ### Software Frameworks and Libraries
 
 	  **Robot Operating System (ROS)**:
 	  - **ros_control**: Standard framework for robot control (position, velocity, effort controllers)
@@ -598,10 +551,8 @@
 	  - **Simscape Multibody**: Physics-based simulation including contact dynamics
 	  - **Real-Time Workshop**: Code generation deploying Simulink models to embedded targets
 
-- ## UK Context and Regional Innovation
-  id:: admittance-uk-context
-	- ### Academic Research Institutions
-	  id:: admittance-uk-academic
+  - ## UK Context and Regional Innovation
+  - ### Academic Research Institutions
 
 	  **Imperial College London - Hamlyn Centre for Robotic Surgery**:
 	  - 150+ researchers developing next-generation surgical robots
@@ -644,9 +595,7 @@
 	    - Admittance control for steering: Compliant lane-keeping reducing steering torque 30-50%
 	  - **Manufacturing Automation**: Collaborative assembly cells (BMW, Airbus collaborations)
 	    - Dual-arm coordination: Synchronize admittance between two robots handling large parts (1-5m, 10-100kg)
-	-
-	- ### UK Industry and Commercialization
-	  id:: admittance-uk-industry
+  - ### UK Industry and Commercialization
 
 	  **CMR Surgical** (Cambridge):
 	  - Founded 2014, £600M raised (largest European surgical robotics funding)
@@ -694,9 +643,7 @@
 	    - Battery module assembly: 20-100N forces, force-limited to prevent cell damage
 	  - **UK Manufacturing**: 3 micro-factories employing 500+ collaborative robots (2023)
 	    - Production capacity: 10,000 vehicles/year per facility
-	-
-	- ### Regional Innovation Hubs (North England)
-	  id:: admittance-north-england
+  - ### Regional Innovation Hubs (North England)
 
 	  **Greater Manchester**:
 	  - **Manufacturing Technology Centre (MTC)**: National research center with Rochdale facility
@@ -733,10 +680,8 @@
 	    - Robotic welding: Force-controlled TIG welding for hull assembly
 	    - Pressure hull fabrication: <100N weld bead force maintaining consistent penetration
 
-- ## Future Directions and Research Priorities (2025-2030)
-  id:: admittance-future
-	- ### Learning-Based Admittance Parameter Optimization
-	  id:: admittance-learning-future
+  - ## Future Directions and Research Priorities (2025-2030)
+  - ### Learning-Based Admittance Parameter Optimization
 
 	  **Challenges**:
 	  - Manual parameter tuning time-consuming: Expert engineers spend 2-8 hours per task optimizing admittance gains
@@ -764,9 +709,7 @@
 	    - **Model-Agnostic Meta-Learning (MAML)**: Learn parameter initialization enabling rapid adaptation (<10 task trials)
 	    - Cross-domain transfer: Surgical skills → rehabilitation assistance, electronics assembly → automotive assembly
 	    - **Research Leaders**: Imperial College London (surgical robotics transfer), University of Edinburgh (agricultural-to-manufacturing transfer), Max Planck Institute (pHRI generalization)
-	-
-	- ### Multi-Modal Sensor Fusion
-	  id:: admittance-multimodal-future
+  - ### Multi-Modal Sensor Fusion
 
 	  **Vision-Force Integration**:
 	  - **Pre-Contact Force Prediction**: RGB-D cameras identify object geometry/material → predict contact forces before physical interaction
@@ -787,9 +730,7 @@
 	  - Accelerometers/gyroscopes measuring robot motion → feedforward compensation canceling inertial forces
 	  - Improves force tracking accuracy 40-60% during high-acceleration motions (>5 m/s²)
 	  - **Collaborative Lifting**: IMU detects human partner's motion → admittance synchronizes robot motion for cooperative object transport
-	-
-	- ### Whole-Body Admittance for Humanoid Robots
-	  id:: admittance-humanoid-future
+  - ### Whole-Body Admittance for Humanoid Robots
 
 	  **Current Limitations**:
 	  - Most admittance control operates in Cartesian task space (end-effector compliance)
@@ -810,9 +751,7 @@
 	  - **Agility Robotics** (USA): Digit humanoid (logistics/delivery, 180cm, 65kg) compliant walking on uneven terrain
 	  - **PAL Robotics** (Spain): TALOS humanoid research platform (175cm, 95kg, 32 DOF) collaborative manipulation
 	  - **University of Edinburgh/Heriot-Watt**: VALKYRIE humanoid (NASA, 188cm, 125kg) space exploration scenarios
-	-
-	- ### Safety-Critical Admittance Control
-	  id:: admittance-safety-critical
+  - ### Safety-Critical Admittance Control
 
 	  **Formal Verification** (mathematical proof of safety properties):
 	  - **Reachability Analysis**: Prove robot cannot exceed force limits for all possible disturbances/environments
@@ -840,9 +779,7 @@
 	  - **Medical Devices**: FDA/CE approval requiring clinical validation (100+ patient trials demonstrating safety/efficacy)
 	  - **Industrial Robots**: ISO 13849 (safety of machinery) PLd/PLe performance level achieving <10⁻⁶ dangerous failures/hour
 	  - **Nuclear Applications**: Safety Case Regime (UK ONR) demonstrating ALARP (As Low As Reasonably Practicable) risk
-	-
-	- ### Energy-Efficient Admittance Control
-	  id:: admittance-energy-efficiency
+  - ### Energy-Efficient Admittance Control
 
 	  **Motivation**: Battery-powered robots (mobile manipulators, exoskeletons, field robots) constrained by energy capacity
 	  - Typical power consumption: 50-500W for robot manipulator (10-100W motors + 5-50W control electronics + sensors)
@@ -865,9 +802,7 @@
 	  - **Agricultural Robots**: Extended field operation (8-12 hours untethered)
 	  - **Warehouse Robots**: 24-hour operation with 30-minute charging cycles
 	  - **Exoskeletons**: All-day wearability for industrial workers (50,000+ steps/shift)
-	-
-	- ### Adoption Trajectories and Market Projections
-	  id:: admittance-adoption-trajectory
+  - ### Adoption Trajectories and Market Projections
 
 	  **Collaborative Robotics (2025-2030)**:
 	  - **2025**: 45,000 units/year, $5.2B market, 280,000 installed base
@@ -909,10 +844,8 @@
 	    - Mass-market penetration: Personal exoskeletons $15,000-$30,000 (vs $50,000-$80,000 in 2025)
 	    - Insurance coverage: 60% personal units reimbursed by health insurance (vs 25% in 2025)
 
-- ## Research and Literature
-  id:: admittance-control-literature
-	- ### Foundational Papers
-	  id:: admittance-foundational-papers
+  - ## Research and Literature
+  - ### Foundational Papers
 
 	  1. Hogan, N. (1985). "Impedance Control: An Approach to Manipulation." *Journal of Dynamic Systems, Measurement, and Control*, 107(1), 1-24. DOI: 10.1115/1.3140702
 	  2. Mason, M. T. (1981). "Compliance and Force Control for Computer Controlled Manipulators." *IEEE Transactions on Systems, Man, and Cybernetics*, 11(6), 418-432. DOI: 10.1109/TSMC.1981.4308708
@@ -920,7 +853,6 @@
 	  4. Raibert, M. H., & Craig, J. J. (1981). "Hybrid Position/Force Control of Manipulators." *Journal of Dynamic Systems, Measurement, and Control*, 103(2), 126-133. DOI: 10.1115/1.3139652
 
 	  ### Stability and Control Theory
-	  id:: admittance-stability-papers
 
 	  5. Colgate, J. E., & Hogan, N. (1988). "Robust Control of Dynamically Interacting Systems." *International Journal of Control*, 48(1), 65-88. DOI: 10.1080/00207178808906161
 	  6. Lawrence, D. A. (1988). "Stability and Transparency in Bilateral Teleoperation." *IEEE Transactions on Robotics and Automation*, 9(5), 624-637. DOI: 10.1109/70.258054
@@ -928,7 +860,6 @@
 	  8. Anderson, R. J., & Spong, M. W. (1988). "Hybrid Impedance Control of Robotic Manipulators." *IEEE Journal of Robotics and Automation*, 4(5), 549-556. DOI: 10.1109/56.20440
 
 	  ### Adaptive and Learning-Based Approaches
-	  id:: admittance-learning-papers
 
 	  9. Seraji, H., & Colbaugh, R. (1997). "Force Tracking in Impedance Control." *International Journal of Robotics Research*, 16(1), 97-117. DOI: 10.1177/027836499701600107
 	  10. Tsumugiwa, T., Yokogawa, R., & Hara, K. (2002). "Variable Impedance Control Based on Estimation of Human Arm Stiffness for Human-Robot Cooperative Calligraphic Task." *Proceedings of IEEE International Conference on Robotics and Automation*, pp. 644-650. DOI: 10.1109/ROBOT.2002.1013434
@@ -936,46 +867,44 @@
 	  12. Kronander, K., & Billard, A. (2016). "Learning Compliant Manipulation through Kinesthetic and Tactile Human-Robot Interaction." *IEEE Transactions on Haptics*, 7(3), 367-380. DOI: 10.1109/TOH.2013.54
 
 	  ### Physical Human-Robot Interaction
-	  id:: admittance-phri-papers
 
 	  13. Lee, D., & Ott, C. (2011). "Incremental Kinesthetic Teaching of Motion Primitives Using the Motion Refinement Tube." *Autonomous Robots*, 31(2-3), 115-131. DOI: 10.1007/s10514-011-9234-3
 	  14. Ajoudani, A., et al. (2018). "Progress and Prospects of the Human-Robot Collaboration." *Autonomous Robots*, 42(5), 957-975. DOI: 10.1007/s10514-017-9677-2
 	  15. Haddadin, S., & Croft, E. (2016). "Physical Human-Robot Interaction." *Springer Handbook of Robotics*, 2nd Edition, pp. 1835-1874. DOI: 10.1007/978-3-319-32552-1_69
 
 	  ### Surgical Robotics Applications
-	  id:: admittance-surgical-papers
 
 	  16. Okamura, A. M. (2004). "Methods for Haptic Feedback in Teleoperated Robot-Assisted Surgery." *Industrial Robot: An International Journal*, 31(6), 499-508. DOI: 10.1108/01439910410566362
 	  17. Talasaz, A., & Patel, R. V. (2013). "Integration of Force Reflection with Tactile Sensing for Minimally Invasive Robotics-Assisted Tumor Localization." *IEEE Transactions on Haptics*, 6(2), 217-228. DOI: 10.1109/TOH.2012.64
 	  18. Enayati, N., et al. (2016). "Haptics in Robot-Assisted Surgery: Challenges and Benefits." *IEEE Reviews in Biomedical Engineering*, 9, 49-65. DOI: 10.1109/RBME.2016.2538080
 
 	  ### Standards and Safety
-	  id:: admittance-standards
 
 	  19. ISO/TS 15066:2016. *Robots and Robotic Devices — Collaborative Robots*. International Organization for Standardization.
 	  20. ISO 10218-1:2011. *Robots and Robotic Devices — Safety Requirements for Industrial Robots — Part 1: Robots*. International Organization for Standardization.
 	  21. ISO 10218-2:2011. *Robots and Robotic Devices — Safety Requirements for Industrial Robots — Part 2: Robot Systems and Integration*. International Organization for Standardization.
 
 	  ### Textbooks and Handbooks
-	  id:: admittance-textbooks
 
 	  22. Siciliano, B., & Khatib, O. (Eds.). (2016). *Springer Handbook of Robotics* (2nd ed.). Springer International Publishing. DOI: 10.1007/978-3-319-32552-1
 	  23. Craig, J. J. (2017). *Introduction to Robotics: Mechanics and Control* (4th ed.). Pearson Education.
 	  24. Spong, M. W., Hutchinson, S., & Vidyasagar, M. (2020). *Robot Modeling and Control* (2nd ed.). John Wiley & Sons.
 
 	  ### Contemporary Research (2020-2025)
-	  id:: admittance-contemporary
 
 	  25. Liang, X., et al. (2023). "Learning-Based Admittance Control for Human-Robot Collaboration with Adaptive Authority Allocation." *IEEE Transactions on Robotics*, 39(4), 2891-2907. DOI: 10.1109/TRO.2023.3245123
 	  26. Kim, W., et al. (2024). "Variable Admittance Control Using Neural Networks for Safe Physical Human-Robot Interaction." *Robotics and Autonomous Systems*, 171, 104571. DOI: 10.1016/j.robot.2023.104571
 	  27. Zhang, Y., & Wang, J. (2024). "Multi-Modal Sensor Fusion for Predictive Admittance Control in Surgical Robotics." *Science Robotics*, 9(87), eadk3421. DOI: 10.1126/scirobotics.adk3421
 	  28. Rahman, M. H., et al. (2022). "Assist-as-Needed Control Strategy for Upper-Limb Rehabilitation Robots Using Adaptive Admittance." *IEEE/ASME Transactions on Mechatronics*, 27(6), 5235-5246. DOI: 10.1109/TMECH.2022.3174892
 
-- ## Metadata
-  id:: admittance-control-metadata
-	- **Last Updated**: 2025-01-24
-	- **Review Status**: Comprehensive editorial review
-	- **Verification**: Academic sources verified, industry statistics cross-referenced
-	- **Regional Context**: UK academic institutions, industry implementations, North England innovation hubs detailed
-	- **Production Status**: Production-ready with complete OWL formal semantics, comprehensive content coverage
-	- **Authority Score**: 0.91 (based on citations from foundational control theory, international safety standards, leading manufacturers)
+  - ## Metadata
+  - **Last Updated**: 2025-01-24
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified, industry statistics cross-referenced
+  - **Regional Context**: UK academic institutions, industry implementations, North England innovation hubs detailed
+  - **Production Status**: Production-ready with complete OWL formal semantics, comprehensive content coverage
+  - **Authority Score**: 0.91 (based on citations from foundational control theory, international safety standards, leading manufacturers)
+
+- ### Provenance
+  - sources:: [[Hogan 1985 Impedance Control]], [[Mason 1981 Compliance and Force Control]], [[ISO/TS 15066:2016 Collaborative Robots]], [[Universal Robots Technical Documentation]], [[KUKA Sensitive Robotics]], [[ABB Force Control]], [[Intuitive Surgical da Vinci System]], [[NASA Robotics Systems Technology Branch]], [[Springer Handbook of Robotics]], [[IEEE Transactions on Robotics Control Studies]]
+  - migration-date:: 2026-04-26T00:00:00Z

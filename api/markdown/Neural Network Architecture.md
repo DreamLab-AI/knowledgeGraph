@@ -1,42 +1,49 @@
-- ### OntologyBlock
-  id:: neuralnetworkarchitecture-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralNetworkArchitecture
+uri:: urn:visionclaw:concept:artificial-intelligence:neural-network-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:neural-network-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Neural Network Architecture
+content-hash:: sha256-12-be6f269926f6
+legacy-term-id:: AI-7013
+status:: active
+maturity:: reviewed
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0803
-    - filename-history:: ["AI-0803-neuralnetworkarchitecture.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0803
-    - preferred-term:: Neural Network Architecture
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Neural network architecture defines the structural organization of artificial neurons into layers and the connectivity patterns between them, determining how the network processes and transforms input data through weighted connections and activation functions. Core architecture types include feedforward networks (unidirectional flow), CNNs (convolutional layers with filters for spatial features), RNNs (recurrent connections for sequential dependencies with variants like LSTM and GRU), and transformers (self-attention mechanisms enabling parallel processing).
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Neuralnetworkarchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:NeuralNetworkArchitecture
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[ModelArchitecture]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
+- ### Content
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NeuralNetworkArchitecture))
-      (SubClassOf :NeuralNetworkArchitecture :ArtificialIntelligence)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NeuralNetworkArchitecture "Neural Network Architecture"@en)
-      ```
+  ### Architecture Types
+  - **Feedforward Neural Networks (FFNs)**: Simplest architecture with fully connected layers, data flows input to output without loops
+  - **Convolutional Neural Networks (CNNs)**: Use convolutional and pooling layers to detect spatial features in grid-like data
+  - **Recurrent Neural Networks (RNNs)**: Retain state information through recurrent connections for sequential data
+  - **LSTM**: Long Short-Term Memory networks address vanishing gradient problem with gating mechanisms
+  - **GRU**: Gated Recurrent Units provide simplified gating for long-term dependencies
+  - **BiLSTM**: Bidirectional processing for context from both directions
+  - **Transformers**: Self-attention mechanisms process entire sequences in parallel, foundation for BERT, GPT, and vision transformers
 
-- ## About Neural Network Architecture
-  
+  ### Key Considerations
+  - **Vanishing/Exploding Gradients**: Challenge in deep networks addressed by LSTM, residual connections
+  - **Computational Complexity**: Transformers enable parallel processing vs sequential RNN computation
+  - **Inductive Biases**: CNNs assume spatial locality, RNNs assume temporal ordering
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

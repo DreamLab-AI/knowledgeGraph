@@ -1,7 +1,34 @@
+iri:: http://narrativegoldmine.com/infrastructure#MicrosoftWorkTrendsImpact2024
+uri:: urn:visionclaw:concept:infrastructure:microsoft-work-trends-impact-2024
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:microsoft-work-trends-impact-2024
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Microsoft Work Trends Impact 2024
+content-hash:: sha256-12-a9d38455e249
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- This Microsoft  LinkedIn report contains very interesting findings ![2024_Work_Trend_Index_Annual_Report_663d45200a4ad.pdf](../assets/2024_Work_Trend_Index_Annual_Report_663d45200a4ad_1715414237615_0.pdf)
-- | Statistic | Value |
+- ### Definition
+  - Microsoft Work Trends Impact 2024 is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:MicrosoftWorkTrendsImpact2024
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - This Microsoft  LinkedIn report contains very interesting findings ![2024_Work_Trend_Index_Annual_Report_663d45200a4ad.pdf](../assets/2024_Work_Trend_Index_Annual_Report_663d45200a4ad_1715414237615_0.pdf)
+  - | Statistic | Value |
   |-----------|-------|
   | Percentage of global knowledge workers using generative AI | 75% |
   | Percentage of AI users who started using it less than 6 months ago | 46% |
@@ -75,3 +102,7 @@ public:: true
   | How much more likely AI power users are to have received training on prompt writing compared to other respondents | 37% |
   | How much more likely AI power users are to have received training on how to use AI for their role or function compared to other respondents | 35% |
   | How much more likely AI power users are to have received training on specific AI use cases such as writing or analyzing data compared to other respondents | 32% |
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

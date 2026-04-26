@@ -1,0 +1,77 @@
+{
+  "id": "hash-function-bc-0027",
+  "title": "Hash Function",
+  "content": "- ### Definition\n  - One-way data transformation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:HashFunction\n  - owl-role:: Object\n  - owl-inferred:: blockchain:VirtualObject\n  - belongs-to-domain:: [[CryptographicDomain]]\n  - implemented-in-layer:: [[SecurityLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Entity]], [[CryptographicPrimitive]]\n\n- ### Content\n\n  ## Class Declaration\n  Declaration(Class(:HashFunction))\n\n  ## Subclass Relationships\n  SubClassOf(:HashFunction :CryptographicPrimitive)\n  SubClassOf(:HashFunction :BlockchainEntity)\n\n  ## Essential Properties\n  SubClassOf(:HashFunction\n    (ObjectSomeValuesFrom :partOf :Blockchain))\n\n  SubClassOf(:HashFunction\n    (ObjectSomeValuesFrom :hasProperty :Property))\n\n  ## Data Properties\n  DataPropertyAssertion(:hasIdentifier :HashFunction \"BC-0027\"^^xsd:string)\n  DataPropertyAssertion(:hasAuthorityScore :HashFunction \"1.0\"^^xsd:decimal)\n  DataPropertyAssertion(:isFoundational :HashFunction \"true\"^^xsd:boolean)\n\n  ## Object Properties\n  ObjectPropertyAssertion(:enablesFeature :HashFunction :BlockchainFeature)\n  ObjectPropertyAssertion(:relatesTo :HashFunction :RelatedConcept)\n\n  ## Annotations\n  AnnotationAssertion(rdfs:label :HashFunction \"Hash Function\"@en)\n  AnnotationAssertion(rdfs:comment :HashFunction\n    \"One-way data transformation\"@en)\n  AnnotationAssertion(dct:description :HashFunction\n    \"Foundational blockchain concept with formal ontological definition\"@en)\n  AnnotationAssertion(:termID :HashFunction \"BC-0027\")\n  AnnotationAssertion(:priority :HashFunction \"1\"^^xsd:integer)\n  AnnotationAssertion(:category :HashFunction \"cryptographic-foundations\"@en)\n  )\n      ```\n\n  - ## About Hash Function\n\n  - One-way data transformation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.\n  - ### Key Characteristics\n    - 1. **Definitional Property**: Core defining characteristic\n    - 2. **Functional Property**: Operational behavior\n    - 3. **Structural Property**: Compositional elements\n    - 4. **Security Property**: Security guarantees provided\n    - 5. **Performance Property**: Efficiency considerations\n  - ### Technical Components\n    - **Implementation**: How concept is realized technically\n    - **Verification**: Methods for validating correctness\n    - **Interaction**: Relationships with other components\n    - **Constraints**: Technical limitations and requirements\n  - ### Use Cases\n    - **1. Core Blockchain Operation**\n    - **Application**: Fundamental blockchain functionality\n    - **Example**: Practical implementation in major blockchains\n    - **Requirements**: Technical prerequisites\n    - **Benefits**: Value provided to blockchain systems\n  - ### Standards & References\n    - [[ISO/IEC 23257:2021]] - Blockchain and distributed ledger technologies\n    - [[IEEE 2418.1]] - Blockchain and distributed ledger technologies\n    - [[NIST NISTIR]] - Blockchain and distributed ledger technologies\n\n- ### Provenance\n  - sources:: [[ISO/IEC 23257:2021]], [[IEEE 2418.1]], [[NIST NISTIR]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "Blockchain Entity",
+    "CryptographicDomain",
+    "CryptographicPrimitive",
+    "IEEE 2418.1",
+    "ISO/IEC 23257:2021",
+    "NIST NISTIR",
+    "SecurityLayer"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:hash-function-bc-0027",
+    "iri": "http://narrativegoldmine.com/blockchain#HashFunction",
+    "content_hash": "sha256-12-c4c29f1efaae",
+    "legacy_term_id": "BC-0027",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:hash-function-bc-0027",
+    "schema_version": "v2",
+    "term_id": "BC-0027",
+    "preferred_term": "Hash Function",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "One-way data transformation within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "mature",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 1.0,
+    "created": "2025-10-28T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:HashFunction",
+    "owl_role": "Object",
+    "owl_inferred_class": "blockchain:VirtualObject",
+    "is_subclass_of": [
+      "Blockchain Entity",
+      "CryptographicPrimitive"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "CryptographicDomain"
+    ],
+    "implemented_in_layer": [
+      "SecurityLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "ISO/IEC 23257:2021",
+      "IEEE 2418.1",
+      "NIST NISTIR"
+    ],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

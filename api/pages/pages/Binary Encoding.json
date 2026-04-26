@@ -1,44 +1,54 @@
 {
-  "id": "Binary Encoding",
+  "id": "binary-encoding",
   "title": "Binary Encoding",
-  "content": "- ### OntologyBlock\n  id:: binary-encoding-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9800\n\t- source-domain:: mv\n\t- preferred-term:: Binary Encoding\n\t- definition:: A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.\n\t- status:: active\n\t- owl:class:: mv:BinaryEncoding\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: binary-encoding-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Format]]\n\t\t- enables:: [[Data Serialization]], [[Efficient Storage]], [[Network Transmission]]\n\t\t- requires:: [[Schema Definition]], [[Encoding Rules]], [[Parser Implementation]]\n\t\t- related-to:: [[Protocol Buffers]], [[MessagePack]], [[Data Serialization]]\n- ## Technical Details\n\t- **Encoding Approaches**:\n\t\t- **Varint Encoding**: Variable-length encoding where smaller numbers use fewer bytes\n\t\t- **Tag-Length-Value (TLV)**: Structured encoding with field identification\n\t\t- **Zigzag Encoding**: Efficient encoding for signed integers\n\t- **Leading Binary Formats**:\n\t\t- **Protocol Buffers (Protobuf)**: Google's compact format with schema definition language\n\t\t- **Apache Avro**: Row-based format with schema evolution support\n\t\t- **FlatBuffers**: Zero-copy access with aligned table-based encoding\n\t\t- **MessagePack**: JSON-compatible with 10-40% size reduction\n\t\t- **BSON**: Binary JSON for MongoDB and document storage\n\t- **Performance Benefits**:\n\t\t- 10-40% smaller payloads compared to JSON\n\t\t- Faster serialization/deserialization\n\t\t- Language-agnostic cross-platform support\n- ## Applications\n\t- High-throughput message queues\n\t- Microservices communication\n\t- IoT and edge device protocols\n\t- Mobile application data exchange\n\t- AI/ML model parameter storage",
+  "content": "- ### Definition\n  - A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:BinaryEncoding\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Data Format]]\n  - requires:: [[Schema Definition]], [[Encoding Rules]], [[Parser Implementation]]\n  - enables:: [[Data Serialization]], [[Efficient Storage]], [[Network Transmission]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Encoding Approaches**:\n\t\t- **Varint Encoding**: Variable-length encoding where smaller numbers use fewer bytes\n\t\t- **Tag-Length-Value (TLV)**: Structured encoding with field identification\n\t\t- **Zigzag Encoding**: Efficient encoding for signed integers\n  - **Leading Binary Formats**:\n\t\t- **Protocol Buffers (Protobuf)**: Google's compact format with schema definition language\n\t\t- **Apache Avro**: Row-based format with schema evolution support\n\t\t- **FlatBuffers**: Zero-copy access with aligned table-based encoding\n\t\t- **MessagePack**: JSON-compatible with 10-40% size reduction\n\t\t- **BSON**: Binary JSON for MongoDB and document storage\n  - **Performance Benefits**:\n\t\t- 10-40% smaller payloads compared to JSON\n\t\t- Faster serialization/deserialization\n\t\t- Language-agnostic cross-platform support\n  - ## Applications\n  - High-throughput message queues\n  - Microservices communication\n  - IoT and edge device protocols\n  - Mobile application data exchange\n  - AI/ML model parameter storage\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "3D Scene Exchange Protocol (SXP)",
     "glTF (3D File Format)"
   ],
   "wiki_links": [
-    "Encoding Rules",
-    "Data Serialization",
-    "MessagePack",
-    "Network Transmission",
-    "Protocol Buffers",
+    "Computer Vision",
     "Data Format",
-    "metaverse",
-    "Schema Definition",
+    "Data Serialization",
     "Efficient Storage",
-    "Parser Implementation"
+    "Encoding Rules",
+    "Network Transmission",
+    "Parser Implementation",
+    "Schema Definition",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:binary-encoding",
+    "iri": "http://narrativegoldmine.com/spatial-computing#BinaryEncoding",
+    "content_hash": "sha256-12-afcf08794d11",
+    "legacy_term_id": "MV-9800",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:binary-encoding",
+    "schema_version": "v2",
     "term_id": "MV-9800",
     "preferred_term": "Binary Encoding",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#BinaryEncoding",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:BinaryEncoding",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:BinaryEncoding",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Data Format"
@@ -59,26 +69,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Protocol Buffers",
-        "MessagePack",
-        "Data Serialization"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

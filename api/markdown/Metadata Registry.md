@@ -1,201 +1,211 @@
-- ### OntologyBlock
-  id:: metadata-registry-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9960
-	- source-domain:: mv
-	- preferred-term:: Metadata Registry
-	- status:: active
-	- owl:class:: mv:MetadataRegistry
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.
-	- #### Relationships
-	  id:: metadata-registry-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Data Governance]]
-		- related-to:: [[Metadata Standards]]
-		- related-to:: [[Data Cataloguing]]
-		- enables:: [[Enterprise Data Consistency]]
+iri:: http://narrativegoldmine.com/infrastructure#MetadataRegistry
+uri:: urn:visionclaw:concept:infrastructure:metadata-registry
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:metadata-registry
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Metadata Registry
+content-hash:: sha256-12-37a3bc36dd18
+legacy-term-id:: MV-9960
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## ISO/IEC 11179 Standard
+- ### Definition
+  - Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.
 
-### Core Framework
-- Global data element registry
-- Definition guidelines
-- Management rules
-- International standard
-- Cross-industry application
+- ### Semantic Classification
+  - owl-class:: infrastructure:MetadataRegistry
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Key Functions
-- Data sharing support
-- Cataloguing capability
-- Integration enablement
-- Harmonised definitions
-- Business glossaries
+- ### Relationships
+  - is-subclass-of:: [[Data Governance]]
+  - enables:: [[Enterprise Data Consistency]]
 
-## IEEE P2957 Standard
+- ### Content
 
-### Focus Areas
-- Machine-readable formats
-- Data discovery support
-- Data type registry
-- Machine-actionable structures
-- End-point services
+  ## ISO/IEC 11179 Standard
 
-### Value Conversion
-- Type transformation
-- Format translation
-- Interoperability
-- Data consumption
-- Standard compliance
+  ### Core Framework
+  - Global data element registry
+  - Definition guidelines
+  - Management rules
+  - International standard
+  - Cross-industry application
 
-## Industry Recognition
+  ### Key Functions
+  - Data sharing support
+  - Cataloguing capability
+  - Integration enablement
+  - Harmonised definitions
+  - Business glossaries
 
-### 2024 Achievements
-- Gartner Market Guide inclusion
-- Data governance platform category
-- Government implementations
-- Award recognition
-- Enterprise adoption
+  ## IEEE P2957 Standard
 
-### Notable Deployments
-- Metadata.NSW
-- NSW Government
-- ACT AIIA Award
-- Technology Platform recognition
-- Public sector leadership
+  ### Focus Areas
+  - Machine-readable formats
+  - Data discovery support
+  - Data type registry
+  - Machine-actionable structures
+  - End-point services
 
-## Registry Functions
+  ### Value Conversion
+  - Type transformation
+  - Format translation
+  - Interoperability
+  - Data consumption
+  - Standard compliance
 
-### Primary Purposes
-- Consistency assurance
-- Interoperability support
-- Clarity provision
-- Authoritative definitions
-- Usage rule enforcement
+  ## Industry Recognition
 
-### Data Element Management
-- Element registration
-- Definition storage
-- Relationship mapping
-- Version control
-- Deprecation tracking
+  ### 2024 Achievements
+  - Gartner Market Guide inclusion
+  - Data governance platform category
+  - Government implementations
+  - Award recognition
+  - Enterprise adoption
 
-## Enterprise Applications
+  ### Notable Deployments
+  - Metadata.NSW
+  - NSW Government
+  - ACT AIIA Award
+  - Technology Platform recognition
+  - Public sector leadership
 
-### Domain Usage
-- Healthcare data
-- Financial services
-- Government systems
-- Data warehousing
-- Regulatory compliance
+  ## Registry Functions
 
-### Governance Support
-- Standard enforcement
-- Quality monitoring
-- Compliance tracking
-- Audit support
-- Policy management
+  ### Primary Purposes
+  - Consistency assurance
+  - Interoperability support
+  - Clarity provision
+  - Authoritative definitions
+  - Usage rule enforcement
 
-## 2024 Trends
+  ### Data Element Management
+  - Element registration
+  - Definition storage
+  - Relationship mapping
+  - Version control
+  - Deprecation tracking
 
-### AI Integration
-- New asset types
-- Versioning capabilities
-- Constant metadata production
-- AI supply chain tracking
-- Model registry
+  ## Enterprise Applications
 
-### Governance Evolution
-- Data and AI Asset Registry
-- Feature tracking
-- Prompt management
-- Function cataloguing
-- Real-time governance
+  ### Domain Usage
+  - Healthcare data
+  - Financial services
+  - Government systems
+  - Data warehousing
+  - Regulatory compliance
 
-## Quality Challenges
+  ### Governance Support
+  - Standard enforcement
+  - Quality monitoring
+  - Compliance tracking
+  - Audit support
+  - Policy management
 
-### Industry Statistics
-- 59% no quality measurement
-- Critical gap identified
-- Consistency issues
-- Control limitations
-- Improvement needs
+  ## 2024 Trends
 
-### Best Practices
-- Unified framework
-- Standardised approaches
-- Automated discovery
-- Quality improvement
-- Compliance assurance
+  ### AI Integration
+  - New asset types
+  - Versioning capabilities
+  - Constant metadata production
+  - AI supply chain tracking
+  - Model registry
 
-## Technical Architecture
+  ### Governance Evolution
+  - Data and AI Asset Registry
+  - Feature tracking
+  - Prompt management
+  - Function cataloguing
+  - Real-time governance
 
-### Core Components
-- Central repository
-- API services
-- Search interface
-- Admin console
-- Reporting tools
+  ## Quality Challenges
 
-### Integration Points
-- Data catalogs
-- ETL tools
-- BI platforms
-- MDM systems
-- Governance tools
+  ### Industry Statistics
+  - 59% no quality measurement
+  - Critical gap identified
+  - Consistency issues
+  - Control limitations
+  - Improvement needs
 
-## Implementation Approach
+  ### Best Practices
+  - Unified framework
+  - Standardised approaches
+  - Automated discovery
+  - Quality improvement
+  - Compliance assurance
 
-### Setup Process
-- Standard selection
-- Scope definition
-- Stakeholder alignment
-- Tool selection
-- Governance framework
+  ## Technical Architecture
 
-### Ongoing Management
-- Element registration
-- Definition updates
-- Quality monitoring
-- Usage tracking
-- Lifecycle management
+  ### Core Components
+  - Central repository
+  - API services
+  - Search interface
+  - Admin console
+  - Reporting tools
 
-## Benefits
+  ### Integration Points
+  - Data catalogs
+  - ETL tools
+  - BI platforms
+  - MDM systems
+  - Governance tools
 
-### Consistency
-- Unified definitions
-- Standard terminology
-- Cross-system alignment
-- Reduced ambiguity
-- Clear communication
+  ## Implementation Approach
 
-### Efficiency
-- Discovery acceleration
-- Integration simplification
-- Onboarding improvement
-- Maintenance reduction
-- Compliance automation
+  ### Setup Process
+  - Standard selection
+  - Scope definition
+  - Stakeholder alignment
+  - Tool selection
+  - Governance framework
 
-## Future Directions
+  ### Ongoing Management
+  - Element registration
+  - Definition updates
+  - Quality monitoring
+  - Usage tracking
+  - Lifecycle management
 
-### Emerging Capabilities
-- Active metadata
-- Real-time capture
-- AI orchestration
-- Automated application
-- Living asset approach
+  ## Benefits
 
-### Technology Evolution
-- Graph-based registries
-- Semantic capabilities
-- Machine learning
-- Automated discovery
-- Self-service access
+  ### Consistency
+  - Unified definitions
+  - Standard terminology
+  - Cross-system alignment
+  - Reduced ambiguity
+  - Clear communication
 
-## Metadata
+  ### Efficiency
+  - Discovery acceleration
+  - Integration simplification
+  - Onboarding improvement
+  - Maintenance reduction
+  - Compliance automation
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  #### Future Directions
+  ### Emerging Capabilities
+  - Active metadata
+  - Real-time capture
+  - AI orchestration
+  - Automated application
+  - Living asset approach
+
+  ### Technology Evolution
+  - Graph-based registries
+  - Semantic capabilities
+  - Machine learning
+  - Automated discovery
+  - Self-service access
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

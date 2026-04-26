@@ -1,44 +1,36 @@
-- ### OntologyBlock
-  id:: paymenttoken-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#PaymentToken
+uri:: urn:visionclaw:concept:blockchain:payment-token
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:payment-token
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Payment Token
+content-hash:: sha256-12-fa2338aa162d
+legacy-term-id:: BC-0575
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0575
-    - filename-history:: ["BC-0575-paymenttoken.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0575
-    - preferred-term:: Payment Token
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Tokens used for payments.
 
-  - **Definition**
-    - definition:: Tokens used for payments.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:PaymentToken
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:PaymentToken
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Cryptocurrency Token]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Cryptocurrency Token]]
+- ### Content
+  Payment Token — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PaymentToken))
-      (SubClassOf :PaymentToken :CryptocurrencyToken)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PaymentToken "Payment Token"@en)
-      (AnnotationAssertion rdfs:comment :PaymentToken
-        "Tokens used for payments."@en)
-      ```
-
-- ## About Payment Token
-  Tokens used for payments.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

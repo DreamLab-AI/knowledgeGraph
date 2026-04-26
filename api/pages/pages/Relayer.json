@@ -1,65 +1,80 @@
 {
-  "id": "Relayer",
+  "id": "relayer",
   "title": "Relayer",
-  "content": "- ### OntologyBlock\n  id:: relayer-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- source-domain:: bc\n\t- term-id:: BC-8015\n\t- preferred-term:: Relayer\n\t- definition:: Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.\n\t- status:: active\n\t- maturity:: reviewed\n\t- public-access:: true\n\t- belongsToDomain:: [[Blockchain]]\n\t- owl:class:: bc:Relayer\n\n---\nid: BC-1010\ntitle: Relayer\ntype: ConceptNode\ndomain: Blockchain\ncreated: 2025-11-24\nstatus: active\n---\n\n# Relayer\n\n## Definition\n- Infrastructure operator facilitating cross-chain message passing and state verification between blockchains\n- Monitors source chain for events and submits cryptographic proofs to destination chain\n- Provides connectivity layer for interoperability protocols without custodying user assets\n\n## Core Components\n- **Event Listener**: Monitors source chain for cross-chain messages\n- **Proof Generator**: Creates cryptographic proof of source chain state\n- **Transaction Submitter**: Broadcasts proof transactions to destination chain\n- **State Oracle**: Provides verified state information across chains\n\n## Technical Characteristics\n- **Non-Custodial**: Does not hold user funds\n- **Incentive-Compatible**: Economically motivated to relay accurately\n- **Permissionless**: Anyone can operate relayer in most protocols\n- **Redundant**: Multiple relayers ensure liveness and censorship resistance\n\n## Relayer Types\n### Message Relayers\n- Transmit cross-chain messages and events\n- Execute instructions on destination chain\n- Used in general message passing protocols\n\n### State Relayers\n- Relay block headers and state proofs\n- Enable light client verification\n- Used in trustless bridge protocols\n\n### Transaction Relayers\n- Submit transactions on behalf of users\n- Enable gasless transactions (meta-transactions)\n- Used in user experience improvements\n\n## Protocol Examples\n- **IBC Relayers**: Cosmos Inter-Blockchain Communication\n- **Chainlink CCIP**: Cross-Chain Interoperability Protocol relayers\n- **LayerZero Relayers**: Omnichain messaging relayers\n- **Polkadot Relayers**: Parachain message relayers\n\n## Relationships\n- enables:: [[Cross-Chain Bridge]]\n- component-of:: [[Interoperability Protocol]]\n- uses:: [[Light Client]]\n- coordinates-with:: [[Oracle]]\n- implements:: [[Message Passing]]\n\n## Economic Model\n- **Fee-Based**: User pays fee for relaying service\n- **Gas Reimbursement**: Relayer reimbursed for destination chain gas\n- **Subsidy Model**: Protocol subsidizes relayer operations\n- **Staking/Slashing**: Economic security through bonded stake\n\n## Security Considerations\n- Relayer liveness dependency\n- Censorship by colluding relayers\n- DoS attacks on relayer infrastructure\n- Relayer signature key management\n- MEV extraction by relayers\n\n## Operational Requirements\n- Full node access to source and destination chains\n- High availability and low latency infrastructure\n- Sufficient capital for gas fees\n- Monitoring and alerting systems\n- Key management and operational security\n\n## Trust Assumptions\n- **Optimistic Relayers**: Assume honest with fraud proofs\n- **Verified Relayers**: Cryptographic proof validation\n- **Threshold Relayers**: Require m-of-n relayer agreement\n- **Bonded Relayers**: Economic stake slashed for misbehavior\n\n## Performance Metrics\n- Message relay latency\n- Uptime and availability\n- Cost per message relayed\n- Number of supported chains\n- Throughput (messages per second)\n\n## Decentralization Strategies\n- Open relayer networks\n- Incentive mechanisms for diverse operators\n- Slashing for malicious behavior\n- Reputation systems\n- Geographic and entity diversity\n\n## Use Cases\n- Cross-chain token transfers\n- Cross-chain smart contract calls\n- Interchain account management\n- Cross-chain liquidations\n- Multi-chain application synchronization\n\n## Challenges\n- Capital requirements for gas fees\n- Operational complexity across multiple chains\n- Handling chain reorganizations\n- Optimizing for cost vs latency\n- Managing relayer profitability\n\n## Related Concepts\n- [[Cross-Chain Bridge]]\n- [[Light Client]]\n- [[Oracle]]\n- [[Interoperability]]\n\n#blockchain #relayer #interoperability #cross-chain\n\n### Relationships\n- is-subclass-of:: [[Blockchain]]",
+  "content": "- ### Definition\n  - Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Relayer\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n  - enables:: [[Cross-Chain Bridge]]\n  - implements:: [[Message Passing]]\n\n- ### Content\n\n  ## Definition\n  - Infrastructure operator facilitating cross-chain message passing and state verification between blockchains\n  - Monitors source chain for events and submits cryptographic proofs to destination chain\n  - Provides connectivity layer for interoperability protocols without custodying user assets\n\n  ## Core Components\n  - **Event Listener**: Monitors source chain for cross-chain messages\n  - **Proof Generator**: Creates cryptographic proof of source chain state\n  - **Transaction Submitter**: Broadcasts proof transactions to destination chain\n  - **State Oracle**: Provides verified state information across chains\n\n  ## Technical Characteristics\n  - **Non-Custodial**: Does not hold user funds\n  - **Incentive-Compatible**: Economically motivated to relay accurately\n  - **Permissionless**: Anyone can operate relayer in most protocols\n  - **Redundant**: Multiple relayers ensure liveness and censorship resistance\n\n  ## Relayer Types\n  ### Message Relayers\n  - Transmit cross-chain messages and events\n  - Execute instructions on destination chain\n  - Used in general message passing protocols\n\n  ### State Relayers\n  - Relay block headers and state proofs\n  - Enable light client verification\n  - Used in trustless bridge protocols\n\n  ### Transaction Relayers\n  - Submit transactions on behalf of users\n  - Enable gasless transactions (meta-transactions)\n  - Used in user experience improvements\n\n  ## Protocol Examples\n  - **IBC Relayers**: Cosmos Inter-Blockchain Communication\n  - **Chainlink CCIP**: Cross-Chain Interoperability Protocol relayers\n  - **LayerZero Relayers**: Omnichain messaging relayers\n  - **Polkadot Relayers**: Parachain message relayers\n\n  ## Relationships\n  - enables:: [[Cross-Chain Bridge]]\n  - component-of:: [[Interoperability Protocol]]\n  - uses:: [[Light Client]]\n  - coordinates-with:: [[Oracle]]\n  - implements:: [[Message Passing]]\n\n  ## Economic Model\n  - **Fee-Based**: User pays fee for relaying service\n  - **Gas Reimbursement**: Relayer reimbursed for destination chain gas\n  - **Subsidy Model**: Protocol subsidizes relayer operations\n  - **Staking/Slashing**: Economic security through bonded stake\n\n  ## Security Considerations\n  - Relayer liveness dependency\n  - Censorship by colluding relayers\n  - DoS attacks on relayer infrastructure\n  - Relayer signature key management\n  - MEV extraction by relayers\n\n  ## Operational Requirements\n  - Full node access to source and destination chains\n  - High availability and low latency infrastructure\n  - Sufficient capital for gas fees\n  - Monitoring and alerting systems\n  - Key management and operational security\n\n  ## Trust Assumptions\n  - **Optimistic Relayers**: Assume honest with fraud proofs\n  - **Verified Relayers**: Cryptographic proof validation\n  - **Threshold Relayers**: Require m-of-n relayer agreement\n  - **Bonded Relayers**: Economic stake slashed for misbehavior\n\n  ## Performance Metrics\n  - Message relay latency\n  - Uptime and availability\n  - Cost per message relayed\n  - Number of supported chains\n  - Throughput (messages per second)\n\n  ## Decentralization Strategies\n  - Open relayer networks\n  - Incentive mechanisms for diverse operators\n  - Slashing for malicious behavior\n  - Reputation systems\n  - Geographic and entity diversity\n\n  ## Use Cases\n  - Cross-chain token transfers\n  - Cross-chain smart contract calls\n  - Interchain account management\n  - Cross-chain liquidations\n  - Multi-chain application synchronization\n\n  ## Challenges\n  - Capital requirements for gas fees\n  - Operational complexity across multiple chains\n  - Handling chain reorganizations\n  - Optimizing for cost vs latency\n  - Managing relayer profitability\n\n  #### Related Concepts\n  - [[Cross-Chain Bridge]]\n  - [[Light Client]]\n  - [[Oracle]]\n  - [[Interoperability]]\n\n  #blockchain #relayer #interoperability #cross-chain\n\n  ### Relationships\n  - is-subclass-of:: [[Blockchain]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Cross-Platform Interoperability",
     "Light Client"
   ],
   "wiki_links": [
-    "Light Client",
-    "Cross-Chain Bridge",
-    "Oracle",
-    "Interoperability",
     "Blockchain",
+    "Cross-Chain Bridge",
+    "Interoperability",
+    "Interoperability Protocol",
+    "Light Client",
     "Message Passing",
-    "Interoperability Protocol"
+    "Oracle"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:relayer",
+    "iri": "http://narrativegoldmine.com/blockchain#Relayer",
+    "content_hash": "sha256-12-034286bfa38e",
+    "legacy_term_id": "BC-8015",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:relayer",
+    "schema_version": "v2",
     "term_id": "BC-8015",
     "preferred_term": "Relayer",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#Relayer",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Infrastructure operator that facilitates cross-chain message passing by monitoring source chains for events, generating cryptographic proofs of state, and submitting verified transactions to destination chains. Relayers provide non-custodial connectivity for interoperability protocols like IBC, LayerZero, and Chainlink CCIP without holding user assets.",
     "scope_note": null,
     "status": "active",
     "maturity": "reviewed",
-    "version": null,
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:Relayer",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Relayer",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Blockchain"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Cross-Chain Bridge"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
+    "other_relationships": {
+      "implements": [
+        "Message Passing"
       ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
     }
   }
 }

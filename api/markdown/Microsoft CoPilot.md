@@ -1,9 +1,36 @@
+iri:: http://narrativegoldmine.com/infrastructure#MicrosoftCoPilot
+uri:: urn:visionclaw:concept:infrastructure:microsoft-copilot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:microsoft-copilot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Microsoft CoPilot
+content-hash:: sha256-12-827165c22e29
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page automatically published
-- Bill gates has been very bullish on AI since 2017.
-- In 2019, Microsoft became "very, very worried" about Google's capabilities in artificial intelligence, newly unearthed emails show, and that may have been what spurred it to invest in OpenAI.
-	- ```text
+- ### Definition
+  - Microsoft CoPilot is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:MicrosoftCoPilot
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - #Public page automatically published
+  - Bill gates has been very bullish on AI since 2017.
+  - In 2019, Microsoft became "very, very worried" about Google's capabilities in artificial intelligence, newly unearthed emails show, and that may have been what spurred it to invest in OpenAI.
+  - ```text
 	  From: Kevin Scott
 	  Sent: Wednesday, June 12, 2019 7:16:11 AM
 	  To: Satya Nadella; Bill Gates
@@ -14,31 +41,25 @@ public:: true
 	  [Redacted]
 	  We have very smart ML people in Bind, in the vision team, and in the speech team. But the core deep learning teams within each of these bigger teams are very small, and their ambitions have also been constrained, which means that even as we start to feed them resources, they still have to go through a learning process to scale up. And we are multiple years behind the competition in terms of ML scale.
 	  [Redacted]
-	  ```
-- ```text
-  From: Satya Nadella
-  To: Kevin Scott
-  CC: Amy Hood
-  Sent: 6/12/2019 6:02:47 PM
-  Subject: Re: Thoughts on OpenAI
-  Very good email that explains, why I want us to do this… and also why we will then ensure our infra folks execute.
-  ```
-- They now have AI threaded through everything from github, to search, and Office.
-- ![Screenshot 2024-05-08 134100.png](../assets/Screenshot_2024-05-08_134100_1715172122220_0.png){:width 800}
-- {{video https://www.youtube.com/watch?v=SaCVSUbYpVc}}
-- ## GitHub CoPilot
-	- They are billing this as the most radical uplift to Windows ever.
-	- <iframe src="https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/" style="width: 100%; height: 600px"></iframe>
-	- Features for workspaces [GitHub Copilot just got exponentially smarter YouTube](https://www.youtube.com/watch?v=SZVCJRUADc4)
-	- [[Microsoft CoPilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
-- ## Bing CoPilot
-	- Now integrated  partially, globally, with Code Interpreter so it can execute code. https://www.linkedin.com/posts/emollick_finally-more-gpt-4-abilities-are-coming-activity-7148155477418278912-Ffdz?
-	- [Microsoft’s new Copilot Pro brings AI-powered Office features to consumers The Verge](https://www.theverge.com/2024/1/15/24038711/microsoft-copilot-pro-office-ai-apps)
-	- ![r/ChatGPT - Is this as good as the standalone ChatGPT 4 for educational purposes?](https://i.redd.it/lgjjtl5j72xc1.jpeg)
--
-- ## Office365 Co-Pilot
-- # ChatGPT relationship
-	- [OpenAI Is Doomed - Et tu, Microsoft? (semianalysis.com)](https://www.semianalysis.com/p/openai-is-doomed-et-tu-microsoft)
-- ### Sydney
-	- [Microsoft has been secretly testing its Bing chatbot ‘Sydney’ for years The Verge](https://www.theverge.com/2023/2/23/23609942/microsoft-bing-sydney-chatbot-history-ai)
-	-
+  - They now have AI threaded through everything from github, to search, and Office.
+  - ![Screenshot 2024-05-08 134100.png](../assets/Screenshot_2024-05-08_134100_1715172122220_0.png){:width 800}
+  - {{video https://www.youtube.com/watch?v=SaCVSUbYpVc}}
+  - They are billing this as the most radical uplift to Windows ever.
+  - <iframe src="https://blogs.microsoft.com/blog/2024/05/20/introducing-copilot-pcs/" style="width: 100%; height: 600px"></iframe>
+  - Features for workspaces [GitHub Copilot just got exponentially smarter YouTube](https://www.youtube.com/watch?v=SZVCJRUADc4)
+  - [[Microsoft CoPilot]] integration into Office365, first looks [First look at Microsoft 365 Copilot | Paul's Down-Home Page (paulrobichaux.com)](https://paulrobichaux.com/2023/12/14/first-look-at-microsoft-365-copilot/)
+  - Now integrated  partially, globally, with Code Interpreter so it can execute code. https://www.linkedin.com/posts/emollick_finally-more-gpt-4-abilities-are-coming-activity-7148155477418278912-Ffdz?
+  - [Microsoft’s new Copilot Pro brings AI-powered Office features to consumers The Verge](https://www.theverge.com/2024/1/15/24038711/microsoft-copilot-pro-office-ai-apps)
+  - ![r/ChatGPT - Is this as good as the standalone ChatGPT 4 for educational purposes?](https://i.redd.it/lgjjtl5j72xc1.jpeg)
+  - # ChatGPT relationship
+  - [OpenAI Is Doomed - Et tu, Microsoft? (semianalysis.com)](https://www.semianalysis.com/p/openai-is-doomed-et-tu-microsoft)
+  - [Microsoft has been secretly testing its Bing chatbot ‘Sydney’ for years The Verge](https://www.theverge.com/2023/2/23/23609942/microsoft-bing-sydney-chatbot-history-ai)
+
+  - ## GitHub CoPilot
+  - ## Bing CoPilot
+  - ## Office365 Co-Pilot
+  - ### Sydney
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

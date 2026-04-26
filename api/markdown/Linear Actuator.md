@@ -1,46 +1,37 @@
-- ### OntologyBlock
-  id:: linearactuator-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#ElectricLinearActuator
+uri:: urn:visionclaw:concept:robotics:electric-linear-actuator
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:electric-linear-actuator
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Electric Linear Actuator
+content-hash:: sha256-12-0b3d518b1cec
+legacy-term-id:: RB-0174
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+bridges-to:: [[Computer Vision]], [[Digital Twin]]
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0174
-    - filename-history:: ["RB-0174-linearactuator.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0174
-    - preferred-term:: Electric Linear Actuator
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.
 
-  - **Definition**
-    - definition:: Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:LinearActuator
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:LinearActuator
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Electric Actuator]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Electric Actuator]]
+- ### Content
+  Electric Linear Actuator — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :LinearActuator))
-      (SubClassOf :LinearActuator :ElectricActuator)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :LinearActuator "Electric Linear Actuator"@en)
-      (AnnotationAssertion rdfs:comment :LinearActuator
-        "Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion."@en)
-      ```
-
-- ## About Electric Linear Actuator
-  Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.
-  
-  An actuator producing linear motion.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

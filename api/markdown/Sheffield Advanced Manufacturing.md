@@ -1,24 +1,38 @@
-- ### OntologyBlock
-  id:: sheffield-advanced-manufacturing-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: NGM-1001
-	- preferred-term:: Sheffield Advanced Manufacturing
-	- source-domain:: uk-regional
-	- status:: active
-    - public-access:: true
-	- definition:: Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.
-	- maturity:: established
-	- region:: South Yorkshire
-	- focus-areas:: Manufacturing, Materials, Robotics
-	- owl:class:: ngm:SheffieldAdvancedManufacturing
-	- owl:role:: RegionalEcosystem
-	- belongsToDomain:: [[UKTechEcosystem]]
+iri:: http://narrativegoldmine.com/infrastructure#SheffieldAdvancedManufacturing
+uri:: urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:sheffield-advanced-manufacturing
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Sheffield Advanced Manufacturing
+content-hash:: sha256-12-0266838c3b65
+legacy-term-id:: NGM-1001
+status:: active
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.
 
-## Regional Technology Hub
+- ### Semantic Classification
+  - owl-class:: infrastructure:SheffieldAdvancedManufacturing
+  - owl-role:: RegionalEcosystem
+  - belongs-to-domain:: [[UKTechEcosystem]]
 
-- ## Overview
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Regional Technology Hub
+
+  - ## Overview
   - ### Brief history and development
     - Sheffield’s manufacturing heritage dates back to the Industrial Revolution, with a global reputation for steel and toolmaking, driven by local geology and abundant natural resources.
     - The decline of traditional industries in the late 20th century led to regeneration efforts, culminating in the creation of the Advanced Manufacturing Park (AMP) in 2001 on the former Orgreave Colliery site.
@@ -35,7 +49,7 @@
     - Integrated Civil and Infrastructure Research Centre
     - South Yorkshire Mayoral Combined Authority
 
-- ## Technology Focus
+  - ## Technology Focus
   - ### Primary technology sectors
     - Advanced manufacturing
     - Materials science (including speciality steels and alloys)
@@ -58,7 +72,7 @@
     - Teaching Company Scheme (early government-funded industry-academia collaboration)
     - SME support and technology transfer initiatives
 
-- ## Economic Impact
+  - ## Economic Impact
   - ### Employment and growth
     - The AMRC supports over 520 high-value, high-productivity jobs (2021/22).
     - The wider AMID ecosystem attracts significant inward investment and creates employment across advanced manufacturing and related sectors.
@@ -71,7 +85,7 @@
     - The AMRC is a key attractor of foreign direct investment (FDI) and a central part of South Yorkshire’s economic pitch.
     - The regeneration of the AMP has helped the region transition from traditional heavy industry to a knowledge-based, advanced manufacturing economy.
 
-- ## Notable Projects
+  - ## Notable Projects
   - ### Specific examples of innovation
     - Development of the parabolic leaf spring by Tinsley Bridge, now used in over 80% of global truck suspensions.
     - Boeing’s European research and production facility at AMP.
@@ -84,7 +98,7 @@
     - Joint R&D projects between the University of Sheffield and industry leaders.
     - South Yorkshire Investment Zone, co-funded by industry and government.
 
-- ## Future Development
+  - ## Future Development
   - ### Growth plans and strategies
     - Expansion of the AMID as the UK’s largest research-led advanced manufacturing cluster.
     - Continued focus on attracting global investment and fostering innovation in advanced manufacturing, materials, and robotics.
@@ -96,42 +110,33 @@
     - Designation as the UK’s first Investment Zone, providing targeted incentives for advanced manufacturing and innovation.
 
 
-## Related Hubs
+  ## Related Hubs
 
-- [[North England Innovation Corridor]]
-- [[Northern Powerhouse]]
-- [[UK Tech Ecosystem]]
+  - [[North England Innovation Corridor]]
+  - [[Northern Powerhouse]]
+  - [[UK Tech Ecosystem]]
 
+  #### References
+  1. [https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/](https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/)
 
-## References
+  2. [https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/](https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/)
 
-1. [https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/](https://www.mercia.co.uk/the-manufacturing-renaissance-spotlight-on-south-yorkshire/)
+  3. [https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone](https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone)
 
-2. [https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/](https://www.centreforcities.org/reader/parks-and-innovation-lessons-from-sheffields-advanced-manufacturing-park/what-is-the-amp-model/)
+  4. [https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing](https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing)
 
-3. [https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone](https://www.gov.uk/government/news/south-yorkshire-named-as-first-uk-investment-zone)
+  5. [https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/](https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/)
 
-4. [https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing](https://sheffield.ac.uk/city-region/news/economic-impact-and-influence-why-amrc-matters-uk-manufacturing)
+  6. [https://invest.southyorkshire-ca.gov.uk/amid](https://invest.southyorkshire-ca.gov.uk/amid)
 
-5. [https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/](https://britishmanufacturinghistory.uk/2024/07/13/sheffield-manufacturing-history/)
+  7. [https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/](https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/)
 
-6. [https://invest.southyorkshire-ca.gov.uk/amid](https://invest.southyorkshire-ca.gov.uk/amid)
+  8. [https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park](https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park)
 
-7. [https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/](https://just2ce.eu/case-studies/case-study-sheffield-advanced-manufacturing-district/)
+  9. [https://harworthgroup.com/projects/advanced-manufacturing-park/](https://harworthgroup.com/projects/advanced-manufacturing-park/)
 
-8. [https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park](https://en.wikipedia.org/wiki/Advanced_Manufacturing_Park)
+  10. [https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/](https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/)
 
-9. [https://harworthgroup.com/projects/advanced-manufacturing-park/](https://harworthgroup.com/projects/advanced-manufacturing-park/)
-
-10. [https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/](https://www.brookings.edu/articles/an-advanced-manufacturing-innovation-district-grows-in-sheffield-england/)
-
-
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Region**: South Yorkshire, North England
-- **Category**: Regional Technology Ecosystem
-- **Status**: Active
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

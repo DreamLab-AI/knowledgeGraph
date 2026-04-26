@@ -1,352 +1,164 @@
-- ### OntologyBlock
-  id:: encoder-decoder-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0207
-	- preferred-term:: Encoder Decoder Architecture
-	- source-domain:: mv
-	- status:: draft
-- definition:: A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
+iri:: http://narrativegoldmine.com/metaverse#EncoderDecoderArchitecture
+uri:: urn:visionclaw:concept:artificial-intelligence:encoder-decoder-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:encoder-decoder-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Encoder Decoder Architecture
+content-hash:: sha256-12-d20e0f3a47f0
+legacy-term-id:: AI-0207
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Characteristics
+- ### Definition
+  - A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
 
-- **Two-Component Design**: Separate encoder and decoder modules
-- **Representation Bottleneck**: Encoder creates compressed representations
-- **Cross-Attention**: Decoder attends to encoder outputs
-- **Sequence-to-Sequence**: Maps variable-length inputs to outputs
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:EncoderDecoderArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-## Academic Foundations
+- ### Relationships
+  - <!-- No relationships defined -->
 
-**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+- ### Content
+  - A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
 
-**Earlier Foundations**: Sutskever et al., "Sequence to Sequence Learning with Neural Networks" (2014)
+  ## Characteristics
 
-## Technical Context
+  - **Two-Component Design**: Separate encoder and decoder modules
+  - **Representation Bottleneck**: Encoder creates compressed representations
+  - **Cross-Attention**: Decoder attends to encoder outputs
+  - **Sequence-to-Sequence**: Maps variable-length inputs to outputs
 
-The transformer uses an encoder-decoder architecture with multi-head self-attention in both components. This design excels at tasks like machine translation, summarisation, and question answering where input and output sequences differ.
+  ## Academic Foundations
 
-## Ontological Relationships
+  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
 
-- **Broader Term**: Neural Network Architecture
-- **Related Terms**: Encoder, Decoder, Cross-Attention
-- **Examples**: Original Transformer, T5, BART
+  **Earlier Foundations**: Sutskever et al., "Sequence to Sequence Learning with Neural Networks" (2014)
 
-## Usage Context
+  ## Technical Context
 
-"The transformer uses an encoder-decoder architecture with multi-head self-attention in both components."
+  The transformer uses an encoder-decoder architecture with multi-head self-attention in both components. This design excels at tasks like machine translation, summarisation, and question answering where input and output sequences differ.
 
-## OWL Functional Syntax
+  ## Ontological Relationships
 
-```clojure
-(Declaration (Class :EncoderDecoderArchitecture))
-(AnnotationAssertion rdfs:label :EncoderDecoderArchitecture "Encoder-Decoder Architecture"@en)
-(AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-  "Neural network structure with encoder processing input and decoder generating output sequences."@en)
-(AnnotationAssertion :hasSource :EncoderDecoderArchitecture
-  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
+  - **Broader Term**: Neural Network Architecture
+  - **Related Terms**: Encoder, Decoder, Cross-Attention
+  - **Examples**: Original Transformer, T5, BART
 
-;; Taxonomic relationships
-(SubClassOf :EncoderDecoderArchitecture :NeuralNetworkArchitecture)
+  ## Usage Context
 
-;; Required components
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :hasComponent :Encoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :hasComponent :Decoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectExactCardinality 1 :hasComponent :Encoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectExactCardinality 1 :hasComponent :Decoder))
+  "The transformer uses an encoder-decoder architecture with multi-head self-attention in both components."
 
-;; Information flow
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :implementsMechanism :CrossAttention))
-(AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-  "Decoder attends to encoder outputs via cross-attention mechanism"@en)
+  ## OWL Functional Syntax
 
-;; Task suitability
-(DataPropertyAssertion :isSequenceToSequence :EncoderDecoderArchitecture "true"^^xsd:boolean)
-(DataPropertyAssertion :supportsVariableLengthIO :EncoderDecoderArchitecture "true"^^xsd:boolean)
+  ## Characteristics
 
-;; Typical applications
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Machine Translation"@en)
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Summarisation"@en)
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Question Answering"@en)
+  - **Two-Component Design**: Separate encoder and decoder modules
+  - **Representation Bottleneck**: Encoder creates compressed representations
+  - **Cross-Attention**: Decoder attends to encoder outputs
+  - **Sequence-to-Sequence**: Maps variable-length inputs to outputs
 
-;; Example implementations
-(SubClassOf :OriginalTransformer :EncoderDecoderArchitecture)
-(SubClassOf :T5 :EncoderDecoderArchitecture)
-(SubClassOf :BART :EncoderDecoderArchitecture)
-(SubClassOf :PEGASUS :EncoderDecoderArchitecture)
+  ## Academic Foundations
 
-;; Historical context
-(AnnotationAssertion :hasPredecessor :EncoderDecoderArchitecture
-  "Sutskever et al., 'Sequence to Sequence Learning', NIPS 2014"@en)
-```
+  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
 
-## References
+  **Earlier Foundations**: Sutskever et al., "Sequence to Sequence Learning with Neural Networks" (2014)
 
-- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
-- Sutskever, I., et al. (2014). "Sequence to Sequence Learning with Neural Networks". NIPS 2014
+  ## Technical Context
 
----
+  The transformer uses an encoder-decoder architecture with multi-head self-attention in both components. This design excels at tasks like machine translation, summarisation, and question answering where input and output sequences differ.
 
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: mv:EncoderDecoderArchitecture
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-- ## About Encoder Decoder Architecture
-	- A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
+  ## Ontological Relationships
 
-## Characteristics
+  - **Broader Term**: Neural Network Architecture
+  - **Related Terms**: Encoder, Decoder, Cross-Attention
+  - **Examples**: Original Transformer, T5, BART
 
-- **Two-Component Design**: Separate encoder and decoder modules
-- **Representation Bottleneck**: Encoder creates compressed representations
-- **Cross-Attention**: Decoder attends to encoder outputs
-- **Sequence-to-Sequence**: Maps variable-length inputs to outputs
+  ## Usage Context
 
-## Academic Foundations
+  "The transformer uses an encoder-decoder architecture with multi-head self-attention in both components."
 
-**Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
+  ## OWL Functional Syntax
 
-**Earlier Foundations**: Sutskever et al., "Sequence to Sequence Learning with Neural Networks" (2014)
-
-## Technical Context
-
-The transformer uses an encoder-decoder architecture with multi-head self-attention in both components. This design excels at tasks like machine translation, summarisation, and question answering where input and output sequences differ.
-
-## Ontological Relationships
-
-- **Broader Term**: Neural Network Architecture
-- **Related Terms**: Encoder, Decoder, Cross-Attention
-- **Examples**: Original Transformer, T5, BART
-
-## Usage Context
-
-"The transformer uses an encoder-decoder architecture with multi-head self-attention in both components."
-
-## OWL Functional Syntax
-
-```clojure
-(Declaration (Class :EncoderDecoderArchitecture))
-(AnnotationAssertion rdfs:label :EncoderDecoderArchitecture "Encoder-Decoder Architecture"@en)
-(AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-  "Neural network structure with encoder processing input and decoder generating output sequences."@en)
-(AnnotationAssertion :hasSource :EncoderDecoderArchitecture
-  "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
-
-;; Taxonomic relationships
-(SubClassOf :EncoderDecoderArchitecture :NeuralNetworkArchitecture)
-
-;; Required components
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :hasComponent :Encoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :hasComponent :Decoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectExactCardinality 1 :hasComponent :Encoder))
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectExactCardinality 1 :hasComponent :Decoder))
-
-;; Information flow
-(SubClassOf :EncoderDecoderArchitecture
-  (ObjectSomeValuesFrom :implementsMechanism :CrossAttention))
-(AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-  "Decoder attends to encoder outputs via cross-attention mechanism"@en)
-
-;; Task suitability
-(DataPropertyAssertion :isSequenceToSequence :EncoderDecoderArchitecture "true"^^xsd:boolean)
-(DataPropertyAssertion :supportsVariableLengthIO :EncoderDecoderArchitecture "true"^^xsd:boolean)
-
-;; Typical applications
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Machine Translation"@en)
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Summarisation"@en)
-(AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Question Answering"@en)
-
-;; Example implementations
-(SubClassOf :OriginalTransformer :EncoderDecoderArchitecture)
-(SubClassOf :T5 :EncoderDecoderArchitecture)
-(SubClassOf :BART :EncoderDecoderArchitecture)
-(SubClassOf :PEGASUS :EncoderDecoderArchitecture)
-
-;; Historical context
-(AnnotationAssertion :hasPredecessor :EncoderDecoderArchitecture
-  "Sutskever et al., 'Sequence to Sequence Learning', NIPS 2014"@en)
-```
-
-## References
-
-- Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
-- Sutskever, I., et al. (2014). "Sequence to Sequence Learning with Neural Networks". NIPS 2014
-
----
-
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Encoder-Decoder Architecture
-		  
-		  **Term ID**: AI-0207
-		  **Category**: Architecture
-		  **Ontology Version**: 1.0
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
-		  
-		  ## Characteristics
-		  
-		  - **Two-Component Design**: Separate encoder and decoder modules
-		  - **Representation Bottleneck**: Encoder creates compressed representations
-		  - **Cross-Attention**: Decoder attends to encoder outputs
-		  - **Sequence-to-Sequence**: Maps variable-length inputs to outputs
-		  
-		  ## Academic Foundations
-		  
-		  **Primary Source**: Vaswani et al., "Attention Is All You Need", arXiv:1706.03762 (2017)
-		  
-		  **Earlier Foundations**: Sutskever et al., "Sequence to Sequence Learning with Neural Networks" (2014)
-		  
-		  ## Technical Context
-		  
-		  The transformer uses an encoder-decoder architecture with multi-head self-attention in both components. This design excels at tasks like machine translation, summarisation, and question answering where input and output sequences differ.
-		  
-		  ## Ontological Relationships
-		  
-		  - **Broader Term**: Neural Network Architecture
-		  - **Related Terms**: Encoder, Decoder, Cross-Attention
-		  - **Examples**: Original Transformer, T5, BART
-		  
-		  ## Usage Context
-		  
-		  "The transformer uses an encoder-decoder architecture with multi-head self-attention in both components."
-		  
-		  ## OWL Functional Syntax
-		  
-		  ```clojure
-		  (Declaration (Class :EncoderDecoderArchitecture))
-		  (AnnotationAssertion rdfs:label :EncoderDecoderArchitecture "Encoder-Decoder Architecture"@en)
-		  (AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-		    "Neural network structure with encoder processing input and decoder generating output sequences."@en)
-		  (AnnotationAssertion :hasSource :EncoderDecoderArchitecture
-		    "Vaswani et al., 'Attention Is All You Need', arXiv:1706.03762 (2017)"@en)
-		  
-		  ;; Taxonomic relationships
-		  (SubClassOf :EncoderDecoderArchitecture :NeuralNetworkArchitecture)
-		  
-		  ;; Required components
-		  (SubClassOf :EncoderDecoderArchitecture
-		    (ObjectSomeValuesFrom :hasComponent :Encoder))
-		  (SubClassOf :EncoderDecoderArchitecture
-		    (ObjectSomeValuesFrom :hasComponent :Decoder))
-		  (SubClassOf :EncoderDecoderArchitecture
-		    (ObjectExactCardinality 1 :hasComponent :Encoder))
-		  (SubClassOf :EncoderDecoderArchitecture
-		    (ObjectExactCardinality 1 :hasComponent :Decoder))
-		  
-		  ;; Information flow
-		  (SubClassOf :EncoderDecoderArchitecture
-		    (ObjectSomeValuesFrom :implementsMechanism :CrossAttention))
-		  (AnnotationAssertion rdfs:comment :EncoderDecoderArchitecture
-		    "Decoder attends to encoder outputs via cross-attention mechanism"@en)
-		  
-		  ;; Task suitability
-		  (DataPropertyAssertion :isSequenceToSequence :EncoderDecoderArchitecture "true"^^xsd:boolean)
-		  (DataPropertyAssertion :supportsVariableLengthIO :EncoderDecoderArchitecture "true"^^xsd:boolean)
-		  
-		  ;; Typical applications
-		  (AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Machine Translation"@en)
-		  (AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Summarisation"@en)
-		  (AnnotationAssertion :hasTypicalApplication :EncoderDecoderArchitecture "Question Answering"@en)
-		  
-		  ;; Example implementations
-		  (SubClassOf :OriginalTransformer :EncoderDecoderArchitecture)
-		  (SubClassOf :T5 :EncoderDecoderArchitecture)
-		  (SubClassOf :BART :EncoderDecoderArchitecture)
-		  (SubClassOf :PEGASUS :EncoderDecoderArchitecture)
-		  
-		  ;; Historical context
-		  (AnnotationAssertion :hasPredecessor :EncoderDecoderArchitecture
-		    "Sutskever et al., 'Sequence to Sequence Learning', NIPS 2014"@en)
-		  ```
-		  
-		  ## References
-		  
-		  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
+  #### References
+  - Vaswani, A., et al. (2017). "Attention Is All You Need". arXiv:1706.03762
 		  - Sutskever, I., et al. (2014). "Sequence to Sequence Learning with Neural Networks". NIPS 2014
-		  
+
 		  ---
-		  
+
 		  *Ontology Term managed by AI-Grounded Ontology Working Group*
 		  *UK English Spelling Standards Applied*
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
+  - public-access:: true
+  - definition:: A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.
 
 
-# Encoder-Decoder Architecture
+  # Encoder-Decoder Architecture
 
-## Academic Context
+  ## Academic Context
 
-- Foundational neural network paradigm for sequence-to-sequence tasks
+  - Foundational neural network paradigm for sequence-to-sequence tasks
   - Emerged as transformative approach for handling variable-length input and output sequences
   - Enables complex mappings between sequential data domains (translation, summarisation, speech recognition)
   - Architecture separates concerns elegantly: encoding (compression) and decoding (generation)
-- Core innovation: context vector as compressed numerical representation
+  - Core innovation: context vector as compressed numerical representation
   - Captures essential information from input whilst discarding redundancy
   - Allows model to process sequences of arbitrary length
   - Particularly effective when combined with attention mechanisms
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
+  - Industry adoption and implementations
   - Powers major translation services (Google Translate and similar platforms)[2]
   - Enables conversational AI and human-like chatbot systems[2]
   - Fundamental to modern large language model architectures
   - Widely deployed across commercial NLP applications
-- Technical capabilities and limitations
+  - Technical capabilities and limitations
   - Handles variable-length sequences effectively through encoder-decoder separation[1]
   - Learns complex mappings via recurrent neural networks (RNNs, LSTMs, GRUs) or Transformer variants[1][3]
   - Self-attention layers enable contextual understanding of relationships between input elements[3]
   - Encoder-decoder attention mechanism allows decoder to focus on relevant input portions during generation[4]
   - Causally masked self-attention in decoder prevents information leakage from future tokens[4]
-- Standards and frameworks
+  - Standards and frameworks
   - Transformer architecture represents current state-of-the-art implementation[4][5]
   - Multi-head attention mechanisms standardised across implementations
   - Embedding layers (token and positional) now standard practice[5]
   - Cross-attention mechanisms enable sophisticated encoder-decoder interaction
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
+  - Key academic papers and sources
   - Transformer architecture foundations: attention-based encoder-decoder design with multi-head mechanisms[4]
   - Encoder-decoder models for NLP: comprehensive treatment of architecture components and training methodologies[1][3]
   - Recent developments: TreeGPT explores attention-free encoder-decoder variants using pure TreeFFN design[7]
-- Training and optimisation approaches
+  - Training and optimisation approaches
   - Teacher forcing: providing ground truth output tokens during training to stabilise learning[1]
   - Backpropagation through time: weight updates based on temporal gradient propagation[1]
   - Loss functions: cross-entropy and mean squared error for sequence prediction tasks[1]
   - Regularisation: dropout and L1/L2 techniques improve generalisation[1]
   - Optimisation algorithms: Adam and SGD widely employed[1]
 
-## Technical Architecture Details
+  ## Technical Architecture Details
 
-- Encoder component
+  - Encoder component
   - Processes input sequence to extract essential information
   - Produces context vector (compressed representation) from final hidden state[2]
   - For text: RNNs, LSTMs, GRUs capture sequential dependencies[2]
   - For images: CNNs progressively reduce spatial dimensions whilst increasing feature channels[2]
   - Self-attention layer enables focus on contextually important input portions[3]
   - Feed-forward neural network captures complex patterns and relationships[3]
-- Decoder component
+  - Decoder component
   - Receives context vector and generates output sequence step-by-step
   - For text: predicts words based on previous outputs whilst maintaining fluency[2]
   - For images: reconstructs or generates through upsampling and transpose convolutional layers[2]
@@ -356,45 +168,49 @@ The transformer uses an encoder-decoder architecture with multi-head self-attent
   - Causally masked self-attention prevents attending to future tokens[4]
   - Autoregressive generation: samples tokens according to probability distribution, iteratively producing output[4]
 
-## UK Context
+  ## UK Context
 
-- British academic contributions
+  - British academic contributions
   - Significant research contributions from UK universities in transformer and attention mechanism development
   - Active research communities in NLP and deep learning across Russell Group institutions
-- North England innovation
+  - North England innovation
   - Manchester and Leeds host substantial AI research programmes
   - Growing technology sector engagement with encoder-decoder applications in commercial NLP
   - Sheffield and Newcastle contribute to broader machine learning research ecosystem
-- Industrial applications
+  - Industrial applications
   - UK technology companies increasingly adopt encoder-decoder architectures for translation and summarisation services
   - Financial services sector utilises these models for document processing and analysis
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - Attention-free alternatives gaining traction (TreeGPT and similar architectures)[7]
   - Hybrid approaches combining traditional encoder-decoder with novel neural designs
   - Efficiency improvements for deployment on resource-constrained devices
   - Multimodal extensions handling diverse input types (text, image, audio simultaneously)
-- Anticipated challenges
+  - Anticipated challenges
   - Computational cost of training large-scale models remains significant
   - Context vector bottleneck in traditional architectures (though attention mechanisms mitigate this)
   - Interpretability of attention mechanisms still requires substantial research
   - Generalisation to out-of-distribution sequences remains problematic
-- Research priorities
+  - Research priorities
   - More efficient attention mechanisms reducing computational complexity
   - Better handling of extremely long sequences
   - Improved cross-lingual and cross-modal transfer learning
   - Robustness to adversarial inputs and distribution shifts
 
----
+  ---
 
-**Note on improvements made:** The original definition, whilst accurate, understated the architectural sophistication. The revised entry reflects 2025 understanding of encoder-decoder systems, emphasising attention mechanisms and modern Transformer implementations rather than earlier RNN-centric approaches. UK context has been integrated where relevant, though the encoder-decoder architecture remains fundamentally international in its development and deployment. The somewhat amusing reality is that despite decades of neural network research, the basic encoder-decoder principle—compress then expand—remains elegantly simple, even as implementations have grown considerably more sophisticated.
+  **Note on improvements made:** The original definition, whilst accurate, understated the architectural sophistication. The revised entry reflects 2025 understanding of encoder-decoder systems, emphasising attention mechanisms and modern Transformer implementations rather than earlier RNN-centric approaches. UK context has been integrated where relevant, though the encoder-decoder architecture remains fundamentally international in its development and deployment. The somewhat amusing reality is that despite decades of neural network research, the basic encoder-decoder principle—compress then expand—remains elegantly simple, even as implementations have grown considerably more sophisticated.
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

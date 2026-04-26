@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9604-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9604
-	- preferred-term:: Environmental Registry
-	- source-domain:: mv
-	- owl:class:: mv:EnvironmentalRegistry
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Environmental Registry is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#EnvironmentalRegistry
+uri:: urn:visionclaw:concept:spatial-computing:environmental-registry
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:environmental-registry
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Environmental Registry
+content-hash:: sha256-12-b5489abfb79e
+legacy-term-id:: MV-9604
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Environmental Registry is a concept within the metaverse domain. Further enrichment pending.
 
-Environmental Registry represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:EnvironmentalRegistry
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Environmental Registry represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

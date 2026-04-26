@@ -1,21 +1,45 @@
-- ### OntologyBlock
-  id:: mv9691-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9691
-	- preferred-term:: Spatial Data Structure
-	- source-domain:: mv
-	- owl:class:: mv:SpatialDataStructure
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Spatial Data Structure is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#SpatialDataStructure
+uri:: urn:visionclaw:concept:spatial-computing:spatial-data-structure
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:spatial-data-structure
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Spatial Data Structure
+content-hash:: sha256-12-eec4c40f5286
+legacy-term-id:: MV-9147
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - SpatialDataStructure is a concept within the ngm domain.
 
-Spatial Data Structure represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:SpatialDataStructure
+  - owl-role:: Concept
 
-## Related Concepts
+- ### Relationships
+  - <!-- No relationships defined -->
 
-- [[owl:Thing]]
+- ### Content
+  # SpatialDataStructure
+  Spatial Data Structures organize geometric and spatial information enabling efficient queries, collision detection, visibility determination, and spatial reasoning in three-dimensional environments. Fundamental structures include Octrees recursively subdividing 3D space into eight octants creating hierarchical bounding volumes optimal for sparse data, k-d trees partitioning space alternating splitting dimensions optimizing nearest-neighbor and range queries, BSP (Binary Space Partitioning) trees organizing geometry relative to splitting planes historically used for visibility determination, R-trees and variants grouping spatially proximate objects in minimum bounding rectangles suited for databases, and spatial hashing mapping continuous coordinates to discrete grid cells enabling constant-time approximate queries. Modern implementations employ hybrid approaches: loose octrees relaxing strict containment enabling efficient dynamic objects, quadtrees for 2D terrain and navigation meshes, bounding volume hierarchies (BVH) organizing objects in nested boxes accelerating ray tracing, and uniform grids trading memory for speed in dense scenes. Performance optimizations include lazy evaluation deferring construction until needed, incremental updates handling dynamic scenes without full reconstruction, and parallel construction leveraging multi-core processors. Applications span collision detection testing object pairs efficiently, frustum culling removing invisible geometry, ray casting for picking and line-of-sight, and spatial queries finding neighbors for AI and physics.
+  - https://en.wikipedia.org/wiki/Octree - Octree spatial partitioning
+  - https://www.cgal.org/Spatial_searching/index.html - CGAL spatial searching library
+  - https://doc.cgal.org/latest/Spatial_searching/index.html - CGAL spatial data structures
+  - https://www.realtimerendering.com/intersections.html - Real-Time Rendering intersection algorithms
+
+  ## Sources
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

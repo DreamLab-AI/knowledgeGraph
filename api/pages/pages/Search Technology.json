@@ -1,33 +1,44 @@
 {
-  "id": "Search Technology",
+  "id": "search-technology",
   "title": "Search Technology",
-  "content": "- ### OntologyBlock\n  id:: ai9521-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-9521\n\t- preferred-term:: Search Technology\n\t- source-domain:: ai\n\t- owl:class:: ai:SearchTechnology\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Search Technology is a concept within the ai domain. Further enrichment pending.\n\n## Overview\n\nSearch Technology represents an abstract concept in the ai ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - Search Technology is a concept within the ai domain. Further enrichment pending.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:SearchTechnology\n  - owl-role:: concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n\n  ## Overview\n\n  Search Technology represents an abstract concept in the ai ontology hierarchy.\n\n  #### Related Concepts\n  - [[owl:Thing]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "SemanticSearch"
+    "Semantic Search"
   ],
   "wiki_links": [
     "owl:Thing"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:search-technology",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#SearchTechnology",
+    "content_hash": "sha256-12-d4e0054ba8e9",
+    "legacy_term_id": "AI-9521",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:search-technology",
+    "schema_version": "v2",
     "term_id": "AI-9521",
     "preferred_term": "Search Technology",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#SearchTechnology",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
     "definition": "Search Technology is a concept within the ai domain. Further enrichment pending.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:SearchTechnology",
-    "owl_physicality": "abstract",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:SearchTechnology",
     "owl_role": "concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
@@ -39,16 +50,13 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

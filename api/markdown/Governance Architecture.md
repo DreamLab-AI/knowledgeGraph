@@ -1,109 +1,120 @@
-- ### OntologyBlock
-  id:: governance-architecture-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9909
-	- source-domain:: mv
-	- preferred-term:: Governance Architecture
-	- status:: active
-	- owl:class:: mv:GovernanceArchitecture
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven management.
-	- #### Relationships
-	  id:: governance-architecture-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Platform Governance]]
-		- related-to:: [[Governance Token]]
-		- related-to:: [[Smart Contract]]
-		- enables:: [[Decentralised Decision Making]]
+iri:: http://narrativegoldmine.com/metaverse#GovernanceArchitecture
+uri:: urn:visionclaw:concept:artificial-intelligence:governance-architecture
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:governance-architecture
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Governance Architecture
+content-hash:: sha256-12-e1ce36b645d0
+legacy-term-id:: MV-9909
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Governance Models
+- ### Definition
+  - The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven management.
 
-### Centralised Architecture
-- Single entity or corporate management
-- Central server operations
-- Traditional corporate governance structures
-- Conventional online platform model
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:GovernanceArchitecture
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Decentralised Architecture
-- Blockchain technology foundation
-- Distributed management
-- User asset ownership
-- Transparent self-governance
+- ### Relationships
+  - is-subclass-of:: [[Platform Governance]]
+  - enables:: [[Decentralised Decision Making]]
 
-## Technical Components
+- ### Content
 
-### DAO Integration
-- Self-executing smart contracts
-- Encoded governance rules
-- Community collective decision-making
-- Automated rule enforcement
+  ## Governance Models
 
-### Blockchain Foundation
-- Digital asset management (NFTs, cryptocurrencies)
-- Smart contract execution
-- Decentralised marketplace operation
-- Peer-to-peer transaction facilitation
+  ### Centralised Architecture
+  - Single entity or corporate management
+  - Central server operations
+  - Traditional corporate governance structures
+  - Conventional online platform model
 
-## Governance Challenges
+  ### Decentralised Architecture
+  - Blockchain technology foundation
+  - Distributed management
+  - User asset ownership
+  - Transparent self-governance
 
-### Centralisation Risks
-- Concentrated voting power
-- Whale token holder influence
-- Dependency creation
-- Rent extraction behaviour
+  ## Technical Components
 
-### Decentralisation Limitations
-- Blockchain governance necessary but insufficient
-- Open standards required
-- Community participation challenges
-- Decision paralysis risks
+  ### DAO Integration
+  - Self-executing smart contracts
+  - Encoded governance rules
+  - Community collective decision-making
+  - Automated rule enforcement
 
-## Standards and Interoperability
+  ### Blockchain Foundation
+  - Digital asset management (NFTs, cryptocurrencies)
+  - Smart contract execution
+  - Decentralised marketplace operation
+  - Peer-to-peer transaction facilitation
 
-### Technical Standards
-- Image rendering specifications
-- Asset format import/export
-- Forward compatibility protocols
-- Information management systems
+  ## Governance Challenges
 
-### Identity Management
-- Self-Sovereign Identity (SSI)
-- Offline governance protocols
-- Avatar interoperability
-- Data privacy portability
+  ### Centralisation Risks
+  - Concentrated voting power
+  - Whale token holder influence
+  - Dependency creation
+  - Rent extraction behaviour
 
-## Regulatory Considerations
+  ### Decentralisation Limitations
+  - Blockchain governance necessary but insufficient
+  - Open standards required
+  - Community participation challenges
+  - Decision paralysis risks
 
-### Legal Challenges
-- Immutability conflicts with consumer protection
-- Borderlessness complicates jurisdiction
-- Automation reduces accountability
-- Decentralisation limits enforcement
+  ## Standards and Interoperability
 
-### Evolving Framework
-- Cross-jurisdiction complexity
-- Platform-specific governance requirements
-- Controller and processor matrix
-- Overlapping regulatory requirements
+  ### Technical Standards
+  - Image rendering specifications
+  - Asset format import/export
+  - Forward compatibility protocols
+  - Information management systems
 
-## Applications
+  ### Identity Management
+  - Self-Sovereign Identity (SSI)
+  - Offline governance protocols
+  - Avatar interoperability
+  - Data privacy portability
 
-### Platform Types
-- Decentraland DAO governance
-- The Sandbox decision hierarchies
-- Corporate metaverse platforms
-- Hybrid governance models
+  ## Regulatory Considerations
 
-### Sector Implementation
-- Gaming metaverses
-- Enterprise virtual environments
-- Social virtual worlds
-- Educational platforms
+  ### Legal Challenges
+  - Immutability conflicts with consumer protection
+  - Borderlessness complicates jurisdiction
+  - Automation reduces accountability
+  - Decentralisation limits enforcement
 
-## Metadata
+  ### Evolving Framework
+  - Cross-jurisdiction complexity
+  - Platform-specific governance requirements
+  - Controller and processor matrix
+  - Overlapping regulatory requirements
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Applications
+
+  ### Platform Types
+  - Decentraland DAO governance
+  - The Sandbox decision hierarchies
+  - Corporate metaverse platforms
+  - Hybrid governance models
+
+  ### Sector Implementation
+  - Gaming metaverses
+  - Enterprise virtual environments
+  - Social virtual worlds
+  - Educational platforms
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,53 +1,50 @@
-- ### OntologyBlock
-  id:: membership-inference-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0087
-	- preferred-term:: Membership Inference
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
-	- maturity:: draft
-	- owl:class:: mv:MembershipInference
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/metaverse#MembershipInference
+uri:: urn:visionclaw:concept:artificial-intelligence:membership-inference
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:membership-inference
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Membership Inference
+content-hash:: sha256-12-a356e62c0a54
+legacy-term-id:: AI-0087
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## OWL Formal Semantics
+- ### Definition
+  - A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
 
-```clojure
-;; OWL Functional Syntax
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:MembershipInference
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-(Declaration (Class :MembershipInference))
+- ### Relationships
+  - <!-- No relationships defined -->
 
-;; Annotations
-(AnnotationAssertion rdfs:label :MembershipInference "Membership Inference"@en)
-(AnnotationAssertion rdfs:comment :MembershipInference "A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets."@en)
-
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :MembershipInference "AI-0087"^^xsd:string)
-(DataPropertyAssertion :isAITechnology :MembershipInference "true"^^xsd:boolean)
-```
-
-- ## About Membership Inference
-	- A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Content
+  - A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
+  - ### Original Content
 		- ```
-# Membership Inference
-		  
+  # Membership Inference
+
 		  **Term ID**: AI-0087
 		  **Category**: Foundational Concept
 		  **Status**: Active
 		  **Last Updated**: 2025-10-27
-		  
+
 		  ## Definition
-		  
+
 		  A privacy attack that determines whether a specific data point was included in a model's training dataset by analyzing the model's behavior on that input, potentially revealing sensitive information about individuals' participation in datasets.
-		  
+
 		  ## Formal Specification
-		  
+
 		  ```yaml
 		  term: Membership Inference
 		  definition: "Determining if specific data point was in model training set"
@@ -58,145 +55,144 @@
 		  success_metric: membership_prediction_accuracy
 		  defenses: [differential_privacy, regularization, confidence_masking]
 		  ```
-		  
-		  ## Authoritative References
-		  
-		  1. **Shokri et al. (2017)** - "Membership Inference Attacks Against Machine Learning Models" (IEEE S&P)
+
+  #### References
+  1. **Shokri et al. (2017)** - "Membership Inference Attacks Against Machine Learning Models" (IEEE S&P)
 		  2. **MITRE ATLAS** - Technique AML.T0024
 		  3. **GDPR** - Data protection implications
-		  
+
 		  ## How Membership Inference Works
-		  
+
 		  ### Basic Principle
 		  Models tend to:
 		  - Perform better (higher confidence) on training data than unseen data
 		  - Memorize training samples to some degree
-		  
+
 		  ### Attack Method
 		  1. Train "attack model" to distinguish member vs. non-member behavior
 		  2. Features: prediction confidence, loss, output probabilities
 		  3. Predict membership of target sample based on model behavior
-		  
+
 		  ### Attack Setup
 		  ```
 		  Target Model: f(x) → prediction + confidence
 		  Attack Model: g(f(x), x) → {member, non-member}
 		  ```
-		  
+
 		  ## Why This is a Privacy Risk
-		  
+
 		  ### Information Leakage
 		  **Example**: Medical dataset
 		  - Membership inference reveals: "Patient X's data was in mental health study"
 		  - **Impact**: Reveals sensitive information (that person has mental health condition)
-		  
+
 		  **Example**: Location dataset
 		  - Membership reveals: "User Y's location in surveillance dataset"
 		  - **Impact**: Reveals presence at sensitive location
-		  
+
 		  ### Beyond Yes/No
 		  Membership inference can reveal:
 		  - Participation in studies
 		  - Presence in datasets
 		  - Associations with sensitive groups
 		  - Temporal information (when data collected)
-		  
+
 		  ## Factors Affecting Attack Success
-		  
+
 		  ### Model Characteristics
 		  - **Overfitting**: Higher memorization → easier attack
 		  - **Model Capacity**: Larger models may memorize more
 		  - **Training Duration**: Overtraining increases vulnerability
-		  
+
 		  ### Data Characteristics
 		  - **Sample Uniqueness**: Outliers more vulnerable
 		  - **Data Overlap**: Training-test similarity affects distinguishability
-		  
+
 		  ### Attacker Knowledge
 		  - **White-box**: Access to model architecture and weights
 		  - **Black-box**: Query access only
 		  - **Shadow Models**: Train surrogate models for attack training
-		  
+
 		  ## Defenses
-		  
+
 		  ### 1. Differential Privacy
 		  **DP-SGD**: Add calibrated noise during training
 		  - Provable privacy guarantees
 		  - Limits individual sample influence
 		  - **Trade-off**: May reduce utility
-		  
+
 		  ### 2. Regularization
 		  - Prevent overfitting
 		  - L2 regularization, dropout
 		  - **Effect**: Reduces memorization
-		  
+
 		  ### 3. Confidence Masking
 		  - Don't output full probability distribution
 		  - Top-k predictions only
 		  - Rounded confidences
-		  
+
 		  ### 4. Model Ensembling
 		  - Aggregate predictions from multiple models
 		  - Reduces individual sample influence
-		  
+
 		  ### 5. Early Stopping
 		  - Prevent overtraining
 		  - Validation-based stopping
-		  
+
 		  ## Measuring Vulnerability
-		  
+
 		  ### Attack Accuracy
 		  Membership inference classifier performance
-		  
+
 		  ### Attack Advantage
 		  ```
 		  Advantage = TPR(members) - FPR(non-members)
 		  ```
-		  
+
 		  ### Privacy Loss
 		  Information theoretic measures (mutual information)
-		  
+
 		  ## Relationships
-		  
+
 		  - **Type Of**: Adversarial Attack (AI-0084)
 		  - **Threatens**: Privacy (AI-0072), Data Protection (AI-0073)
 		  - **Related To**: Model Inversion (AI-0086)
 		  - **Defended By**: Differential Privacy
-		  
+
 		  ## Real-World Scenarios
-		  
+
 		  1. **Healthcare**: Inferring patient participation in clinical studies
 		  2. **Genomics**: Determining if individual in genetic database
 		  3. **Location Services**: Revealing presence in location datasets
 		  4. **Social Networks**: Inferring membership in sensitive groups
-		  
+
 		  ## Regulatory Implications
-		  
+
 		  **GDPR**: Membership information may be personal data
 		  **Privacy Laws**: Processing of such information may require legal basis
 		  **Research Ethics**: Informed consent for research participation
-		  
+
 		  ## Best Practices
-		  
+
 		  1. **Apply differential privacy** (ε < 1 for strong protection)
 		  2. **Regularize aggressively** to prevent overfitting
 		  3. **Limit output information** (no full probability distributions)
 		  4. **Privacy impact assessment** before deployment
 		  5. **Continuous monitoring** for privacy leakage
 		  6. **User awareness** of privacy risks
-		  
+
 		  ## Related Terms
-		  
+
 		  - Privacy (AI-0072)
 		  - Data Protection (AI-0073)
 		  - Adversarial Attack (AI-0084)
 		  - Model Inversion (AI-0086)
 		  - Differential Privacy
-		  
+
 		  ## Version History
-		  
+
 		  - **1.0** (2025-10-27): Initial definition based on Shokri et al. (2017) and MITRE ATLAS
-		  
+
 		  ```
 
 			- ##### Play to earn revenue models
@@ -217,63 +213,67 @@
 					- Customer Cohort NFTs: early adopters of successful brands would be able to prove the provenance of their enthusiasm for a new product, and this might unlock brand loyalty bonuses. It seems this wouldn’t be a transferable NFT, and is more like the “soulbound” idea advanced by Meta.
 					- Education and Customer Support, think an NFT of a great score on reddit community support forums. A trusted community member badge, but visible in the metaverse. This is somewhat like the web of trust model advanced earlier in the book.
 
-## Academic Context
+  ## Academic Context
 
-- Membership inference is a privacy attack targeting machine learning models, where an adversary attempts to determine whether a specific data point was included in the model’s training dataset by analysing the model’s output behaviour on that input
+  - Membership inference is a privacy attack targeting machine learning models, where an adversary attempts to determine whether a specific data point was included in the model’s training dataset by analysing the model’s output behaviour on that input
   - The attack exploits differences in how models respond to data they have seen during training versus data they have not, often due to overfitting or memorisation effects
   - This can reveal sensitive information about individuals’ participation in datasets, posing risks to privacy and data protection
   - The concept was formally introduced in seminal work by Shokri et al. (2017), which demonstrated the feasibility of such attacks across various model architectures and cloud-based services
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption of machine learning has increased the relevance of membership inference attacks, particularly in sectors handling sensitive personal data such as finance, healthcare, and public services
+  - Industry adoption of machine learning has increased the relevance of membership inference attacks, particularly in sectors handling sensitive personal data such as finance, healthcare, and public services
   - Major cloud providers and AI platforms have implemented mitigation strategies, including differential privacy and model obfuscation, to reduce the risk of membership inference
   - In the UK, organisations such as the Alan Turing Institute and NHS Digital have published guidance on privacy-preserving machine learning, reflecting growing awareness of these threats
   - North England innovation hubs, including the Digital Health Enterprise Zone in Greater Manchester, are actively researching privacy-preserving AI techniques, with some projects focusing on mitigating membership inference in healthcare applications
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
+  - Key academic papers and sources
   - Shokri, R., Stronati, M., Song, C., & Shmatikov, V. (2017). Membership Inference Attacks Against Machine Learning Models. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2017.41. URL: https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf
   - Li, W., & Mittal, P. (2019). Membership Inference Attacks Against Adversarially Robust Deep Learning Models. Proceedings of the 2nd ACM Workshop on Deep Learning and Security. DOI: 10.1145/3338498.3357377. URL: https://www.princeton.edu/~pmittal/publications/liwei-dls19.pdf
   - OWASP Machine Learning Security Top 10 (2023). ML04:2023 Membership Inference Attack. URL: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
   - Nasr, M., Shokri, R., & Houmansadr, A. (2019). Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-Box Inference Attacks. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2019.00042
-- Ongoing research directions
+  - Ongoing research directions
   - Improving attack detection and mitigation techniques, particularly for deep learning models
   - Exploring the intersection of membership inference with synthetic data and federated learning
   - Investigating the effectiveness of differential privacy and regularisation in reducing membership inference risks
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
+  - British contributions and implementations
   - The Alan Turing Institute has published several reports on privacy-preserving machine learning, including guidance on mitigating membership inference attacks
   - NHS Digital has implemented privacy-preserving techniques in its AI-driven healthcare projects, with a focus on protecting patient data from inference attacks
-- North England innovation hubs
+  - North England innovation hubs
   - The Digital Health Enterprise Zone in Greater Manchester is a leading centre for research into privacy-preserving AI, with several projects specifically addressing membership inference in healthcare applications
   - Universities in the region, such as the University of Manchester and Newcastle University, are actively involved in research on privacy-preserving machine learning and have published work on membership inference mitigation
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - Increasing use of differential privacy and model obfuscation techniques to mitigate membership inference risks
   - Growing interest in federated learning and synthetic data as alternative approaches to privacy-preserving machine learning
-- Anticipated challenges
+  - Anticipated challenges
   - Balancing model accuracy with privacy protection, particularly in high-stakes applications such as healthcare and finance
   - Ensuring compliance with evolving data protection regulations, such as the UK GDPR
-- Research priorities
+  - Research priorities
   - Developing more robust and efficient mitigation techniques for membership inference attacks
   - Exploring the intersection of membership inference with other privacy threats, such as model inversion and attribute inference attacks
 
-## References
+  ## References
 
-1. Shokri, R., Stronati, M., Song, C., & Shmatikov, V. (2017). Membership Inference Attacks Against Machine Learning Models. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2017.41. URL: https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf
-2. Li, W., & Mittal, P. (2019). Membership Inference Attacks Against Adversarially Robust Deep Learning Models. Proceedings of the 2nd ACM Workshop on Deep Learning and Security. DOI: 10.1145/3338498.3357377. URL: https://www.princeton.edu/~pmittal/publications/liwei-dls19.pdf
-3. OWASP Machine Learning Security Top 10 (2023). ML04:2023 Membership Inference Attack. URL: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
-4. Nasr, M., Shokri, R., & Houmansadr, A. (2019). Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-Box Inference Attacks. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2019.00042
+  1. Shokri, R., Stronati, M., Song, C., & Shmatikov, V. (2017). Membership Inference Attacks Against Machine Learning Models. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2017.41. URL: https://www.cs.cornell.edu/~shmat/shmat_oak17.pdf
+  2. Li, W., & Mittal, P. (2019). Membership Inference Attacks Against Adversarially Robust Deep Learning Models. Proceedings of the 2nd ACM Workshop on Deep Learning and Security. DOI: 10.1145/3338498.3357377. URL: https://www.princeton.edu/~pmittal/publications/liwei-dls19.pdf
+  3. OWASP Machine Learning Security Top 10 (2023). ML04:2023 Membership Inference Attack. URL: https://owasp.org/www-project-machine-learning-security-top-10/docs/ML04_2023-Membership_Inference_Attack
+  4. Nasr, M., Shokri, R., & Houmansadr, A. (2019). Comprehensive Privacy Analysis of Deep Learning: Passive and Active White-Box Inference Attacks. IEEE Symposium on Security and Privacy. DOI: 10.1109/SP.2019.00042
 
-## Metadata
+  ## Metadata
 
-- Last Updated: 2025-11-11
-- Review Status: Comprehensive editorial review
-- Verification: Academic sources verified
-- Regional Context: UK/North England where applicable
+  - Last Updated: 2025-11-11
+  - Review Status: Comprehensive editorial review
+  - Verification: Academic sources verified
+  - Regional Context: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

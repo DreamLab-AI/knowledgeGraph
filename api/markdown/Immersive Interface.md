@@ -1,130 +1,144 @@
-- ### OntologyBlock
-  id:: immersive-interface-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9925
-	- source-domain:: mv
-	- preferred-term:: Immersive Interface
-	- status:: active
-	- owl:class:: mv:ImmersiveInterface
-	- belongsToDomain:: [[metaverse]]
-	- definition:: User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.
-	- #### Relationships
-	  id:: immersive-interface-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Human-Computer Interface]]
-		- related-to:: [[Hardware Acceleration]]
-		- related-to:: [[Gesture Recognition]]
-		- enables:: [[Natural VR Interaction]]
+iri:: http://narrativegoldmine.com/spatial-computing#ImmersiveInterface
+uri:: urn:visionclaw:concept:spatial-computing:immersive-interface
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:immersive-interface
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Immersive Interface
+content-hash:: sha256-12-a3fdfad2ee80
+legacy-term-id:: MV-9925
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Haptic Interfaces
+- ### Definition
+  - User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input methods that enable natural, intuitive engagement with virtual environments.
 
-### Core Requirements
-- Fast response time
-- Lightweight design
-- Multi-modality (temperature, pressure)
-- Tactile feedback (texture)
-- Kinesthetic feedback (movement)
+- ### Semantic Classification
+  - owl-class:: spatial-computing:ImmersiveInterface
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Research Trends (2024)
-- Wearable haptic systems
-- Soft interface actuation
-- Enhanced feedback richness
-- Improved wearability
+- ### Relationships
+  - is-subclass-of:: [[Human-Computer Interface]]
+  - enables:: [[Natural VR Interaction]]
 
-## Haptic Technology Types
+- ### Content
 
-### Force Feedback
-- Haptic actuators and motors
-- Pressure and motion sensation
-- Physical interaction realism
-- Controller integration
+  ## Haptic Interfaces
 
-### Ultrasound Haptics
-- Ultrasonic wave technology
-- Contactless tactile sensation
-- Mid-air feedback
-- Gesture-based interaction
+  ### Core Requirements
+  - Fast response time
+  - Lightweight design
+  - Multi-modality (temperature, pressure)
+  - Tactile feedback (texture)
+  - Kinesthetic feedback (movement)
 
-### Thermal Haptics
-- Temperature change simulation
-- Environmental realism
-- Material sensation
-- Comfort considerations
+  ### Research Trends (2024)
+  - Wearable haptic systems
+  - Soft interface actuation
+  - Enhanced feedback richness
+  - Improved wearability
 
-## Spatial User Interfaces
+  ## Haptic Technology Types
 
-### Design Principles
-- 3D space information conveyance
-- Natural human behaviour alignment
-- Spatial cognition consideration
-- Intuitive experience creation
+  ### Force Feedback
+  - Haptic actuators and motors
+  - Pressure and motion sensation
+  - Physical interaction realism
+  - Controller integration
 
-### Enhancement Techniques
-- Spatial audio integration
-- Haptic feedback systems
-- Realistic physics simulation
-- Dynamic environment response
+  ### Ultrasound Haptics
+  - Ultrasonic wave technology
+  - Contactless tactile sensation
+  - Mid-air feedback
+  - Gesture-based interaction
 
-## Input Methods
+  ### Thermal Haptics
+  - Temperature change simulation
+  - Environmental realism
+  - Material sensation
+  - Comfort considerations
 
-### Motion-to-Tactile Frameworks
-- Performer motion translation
-- Haptic intensity parameters
-- 3D upper-body feedback
-- Vibrotactile rendering
+  ## Spatial User Interfaces
 
-### Advanced Input
-- Eye tracking control
-- Brain-computer interfaces
-- Voice recognition systems
-- Adaptive controllers
+  ### Design Principles
+  - 3D space information conveyance
+  - Natural human behaviour alignment
+  - Spatial cognition consideration
+  - Intuitive experience creation
 
-## Interface Innovations (2024)
+  ### Enhancement Techniques
+  - Spatial audio integration
+  - Haptic feedback systems
+  - Realistic physics simulation
+  - Dynamic environment response
 
-### 3D Menu Design
-- Hexa-ring menu innovation
-- Three-dimensional approach
-- Enhanced user immersion
-- Traditional 2D improvement
+  ## Input Methods
 
-### Pseudo-Haptic Features
-- Simulated button feedback
-- VR environment enhancement
-- User satisfaction improvement
-- No physical hardware required
+  ### Motion-to-Tactile Frameworks
+  - Performer motion translation
+  - Haptic intensity parameters
+  - 3D upper-body feedback
+  - Vibrotactile rendering
 
-## Accessibility Integration
+  ### Advanced Input
+  - Eye tracking control
+  - Brain-computer interfaces
+  - Voice recognition systems
+  - Adaptive controllers
 
-### Adaptive Controls
-- PlayStation VR2 button remapping
-- Sensitivity adjustment
-- Xbox Adaptive Controller compatibility
-- Meta Quest integration
+  ## Interface Innovations (2024)
 
-### Alternative Input
-- Voice navigation
-- Eye-based control
-- Keyboard alternatives
-- Multiple method support
+  ### 3D Menu Design
+  - Hexa-ring menu innovation
+  - Three-dimensional approach
+  - Enhanced user immersion
+  - Traditional 2D improvement
 
-## Multimodal Interfaces
+  ### Pseudo-Haptic Features
+  - Simulated button feedback
+  - VR environment enhancement
+  - User satisfaction improvement
+  - No physical hardware required
 
-### Skin-Integrated Systems
-- Multi-dimensional tactile signals
-- Direct skin delivery
-- City University of Hong Kong research
-- Enhanced virtual touch
+  ## Accessibility Integration
 
-### Active Haptic Devices
-- Curved origami technology
-- Variable stiffness perception
-- Human-triggered feedback
-- First-person experience
+  ### Adaptive Controls
+  - PlayStation VR2 button remapping
+  - Sensitivity adjustment
+  - Xbox Adaptive Controller compatibility
+  - Meta Quest integration
 
-## Metadata
+  ### Alternative Input
+  - Voice navigation
+  - Eye-based control
+  - Keyboard alternatives
+  - Multiple method support
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Multimodal Interfaces
+
+  ### Skin-Integrated Systems
+  - Multi-dimensional tactile signals
+  - Direct skin delivery
+  - City University of Hong Kong research
+  - Enhanced virtual touch
+
+  ### Active Haptic Devices
+  - Curved origami technology
+  - Variable stiffness perception
+  - Human-triggered feedback
+  - First-person experience
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

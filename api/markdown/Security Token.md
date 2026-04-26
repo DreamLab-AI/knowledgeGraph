@@ -1,49 +1,36 @@
-- ### OntologyBlock
-  id:: securitytoken-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#SecurityToken
+uri:: urn:visionclaw:concept:blockchain:security-token
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:security-token
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Security Token
+content-hash:: sha256-12-71280b28a569
+legacy-term-id:: BC-0513
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0513
-    - filename-history:: ["BC-0513-securitytoken.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0513
-    - preferred-term:: Security Token
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.
 
-  - **Definition**
-    - definition:: A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:SecurityToken
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:SecurityToken
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Fungible Token]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Fungible Token]]
+- ### Content
+  Security Token — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :SecurityToken))
-      (SubClassOf :SecurityToken :FungibleToken)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :SecurityToken "Security Token"@en)
-      (AnnotationAssertion rdfs:comment :SecurityToken
-        "A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges."@en)
-      ```
-
-- ## About Security Token
-  A token designed to represent complete or fractional ownership interests in assets and/or entities. Subject to restrictions based on identity, jurisdiction, and asset category, and regulated by securities laws providing investors with entitlements like dividends, profit-sharing, or voting privileges.
-  
-  Represents equity, real estate, debt, or other securities. Standards like ERC-1400 and ERC-3643 tailored for regulatory compliance.
-  
-  ### Examples
-  - Tokenized company shares, real estate tokens, tokenized bonds
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

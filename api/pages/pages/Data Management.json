@@ -1,7 +1,7 @@
 {
-  "id": "Data Management",
+  "id": "data-management",
   "title": "Data Management",
-  "content": "- ### OntologyBlock\n  id:: data-management-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-0603\n\t- preferred-term:: Data Management\n\t- source-domain:: mv\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.\n\t- owl:class:: mv:DataManagement\n\t- belongsToDomain:: [[Metaverse Technology]]\n\t- #### Relationships\n\t  id:: data-management-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Metaverse Technology]]\n\t\t- is-parent-of:: [[3D Data Format]]\n\t\t- is-parent-of:: [[Asset Management]]\n\t\t- is-parent-of:: [[Metadata Management]]\n\t\t- related-to:: [[Standards]]",
+  "content": "- ### Definition\n  - Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:DataManagement\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Metaverse Technology]]\n\n- ### Relationships\n  - is-subclass-of:: [[Metaverse Technology]]\n  - bridges-to:: [[Blockchain]] (domain: bc) for decentralised data ownership and provenance\n\n- ### Content\n  Data Management — content pending enrichment.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Bim Software",
     "Training Data Repository",
@@ -17,37 +17,44 @@
     "Storage Layer",
     "Schema Registry",
     "Data Provenance",
-    "Metadata Repository",
-    "Data Storage"
+    "Metadata Repository"
   ],
   "wiki_links": [
-    "3D Data Format",
-    "Metaverse Technology",
-    "Standards",
-    "Asset Management",
-    "Metadata Management"
+    "Blockchain",
+    "Metaverse Technology"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:data-management",
+    "iri": "http://narrativegoldmine.com/infrastructure#DataManagement",
+    "content_hash": "sha256-12-0cbb5a35c0c6",
+    "legacy_term_id": "MV-0603",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:data-management",
+    "schema_version": "v2",
     "term_id": "MV-0603",
     "preferred_term": "Data Management",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DataManagement",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
     "definition": "Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments. This includes 3D asset data formats, scene graphs, user interaction data, spatial coordinates, and metadata management for interoperable virtual world content.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DataManagement",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:DataManagement",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Metaverse Technology"
@@ -58,31 +65,19 @@
     "depends_on": [],
     "enables": [],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Metaverse Technology"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "3D Data Format",
-        "Asset Management",
-        "Metadata Management"
-      ],
-      "related-to": [
-        "Standards"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

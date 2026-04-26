@@ -1,63 +1,82 @@
 {
-  "id": "Attention Aware Interaction",
+  "id": "attention-aware-interaction",
   "title": "Attention Aware Interaction",
-  "content": "- ### OntologyBlock\n  id:: attention-aware-interaction-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9781\n\t- source-domain:: mv\n\t- preferred-term:: Attention Aware Interaction\n\t- status:: active\n\t- definition:: Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.\n\t- owl:class:: mv:AttentionAwareInteraction\n\t- belongsToDomain:: [[metaverse]]\n\t- is-subclass-of:: [[Human-Computer Interaction]]\n\t- enables:: [[Foveated Rendering]], [[Gaze-Based Selection]], [[Adaptive Interfaces]]\n\t- requires:: [[Eye Tracking Hardware]], [[Gaze Detection Algorithms]], [[Attention Modeling]]\n\t- #### Relationships\n\t  id:: attention-aware-interaction-relationships\n\t  collapsed:: true\n\n### Technical Details\nKey components include:\n- **Eye Tracking**: Cameras and sensors detecting eye position, pupil dilation, and gaze direction\n- **Gaze-Based Interfaces**: UI systems responding to where users look, enabling hands-free interaction\n- **Foveated Rendering**: High-detail rendering only where user is looking to optimize GPU resources\n- **Dwell Time Activation**: Using gaze duration as an interaction trigger\n\n### UX Considerations\n- **Midas Touch Problem**: Avoiding unintended activations during natural looking behavior\n- **Multimodal Integration**: Combining gaze with voice, gestures, or controllers for robust interaction\n- **Social Presence**: Enabling realistic eye contact in virtual avatars\n\n### Hardware Implementation\nMeta Quest Pro, Apple Vision Pro, and other headsets incorporate eye tracking. Tobii and Pupil Labs provide dedicated eye tracking solutions.",
+  "content": "- ### Definition\n  - Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AttentionAwareInteraction\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - bridges-to:: [[Sensor Input]] (rb)\n  - is-subclass-of:: [[Human-Computer Interaction]]\n  - requires:: [[Eye Tracking Hardware]], [[Gaze Detection Algorithms]], [[Attention Modeling]]\n  - enables:: [[Foveated Rendering]], [[Gaze-Based Selection]], [[Adaptive Interfaces]]\n\n- ### Content\n\n  ### Technical Details\n  Key components include:\n  - **Eye Tracking**: Cameras and sensors detecting eye position, pupil dilation, and gaze direction\n  - **Gaze-Based Interfaces**: UI systems responding to where users look, enabling hands-free interaction\n  - **Foveated Rendering**: High-detail rendering only where user is looking to optimize GPU resources\n  - **Dwell Time Activation**: Using gaze duration as an interaction trigger\n\n  ### UX Considerations\n  - **Midas Touch Problem**: Avoiding unintended activations during natural looking behavior\n  - **Multimodal Integration**: Combining gaze with voice, gestures, or controllers for robust interaction\n  - **Social Presence**: Enabling realistic eye contact in virtual avatars\n\n  ### Hardware Implementation\n  Meta Quest Pro, Apple Vision Pro, and other headsets incorporate eye tracking. Tobii and Pupil Labs provide dedicated eye tracking solutions.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Foveated Rendering",
-    "Human-Computer Interaction",
-    "Attention Modeling",
-    "Gaze-Based Selection",
     "Adaptive Interfaces",
-    "metaverse",
+    "Attention Modeling",
+    "Eye Tracking Hardware",
+    "Foveated Rendering",
     "Gaze Detection Algorithms",
-    "Eye Tracking Hardware"
+    "Gaze-Based Selection",
+    "Human-Computer Interaction",
+    "Sensor Input",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction",
+    "iri": "http://narrativegoldmine.com/metaverse#AttentionAwareInteraction",
+    "content_hash": "sha256-12-1ac40503fbfa",
+    "legacy_term_id": "MV-9781",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:attention-aware-interaction",
+    "schema_version": "v2",
     "term_id": "MV-9781",
     "preferred_term": "Attention Aware Interaction",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#AttentionAwareInteraction",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, AR, and metaverse environments.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:AttentionAwareInteraction",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AttentionAwareInteraction",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Human-Computer Interaction"
+    ],
     "has_part": [],
     "is_part_of": [],
-    "requires": [],
+    "requires": [
+      "Eye Tracking Hardware",
+      "Gaze Detection Algorithms",
+      "Attention Modeling"
+    ],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Foveated Rendering",
+      "Gaze-Based Selection",
+      "Adaptive Interfaces"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Sensor Input"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

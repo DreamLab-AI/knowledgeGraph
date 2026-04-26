@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: parallelrobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#ParallelRobot
+uri:: urn:visionclaw:concept:robotics:parallel-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:parallel-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Parallel Robot
+content-hash:: sha256-12-e7f9816c76cc
+legacy-term-id:: RB-0136
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0136
-    - filename-history:: ["RB-0136-parallelrobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0136
-    - preferred-term:: Parallel Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.
 
-  - **Definition**
-    - definition:: Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:ParallelRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:ParallelRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Manipulator Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Manipulator Robot]]
+- ### Content
+  Parallel Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ParallelRobot))
-      (SubClassOf :ParallelRobot :ManipulatorRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ParallelRobot "Parallel Robot"@en)
-      (AnnotationAssertion rdfs:comment :ParallelRobot
-        "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously."@en)
-      ```
-
-- ## About Parallel Robot
-  Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.
-  
-  A robot where end-effector is connected to base by multiple independent kinematic chains.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,42 +1,47 @@
 {
-  "id": "Standards Compliance",
+  "id": "standards-compliance",
   "title": "Standards Compliance",
-  "content": "- ### OntologyBlock\n  id:: standards-compliance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10071\n\t- source-domain:: mv\n\t- preferred-term:: Standards Compliance\n\t- status:: active\n\t- definition:: The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.\n\t- owl:class:: mv:StandardsCompliance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Standards]]\n\t\t- related-to:: [[Standards Conformance]]\n\t\t- related-to:: [[Technical Standards]]\n\t\t- related-to:: [[Interoperability]]\n\t  id:: standards-compliance-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Standards compliance in the metaverse context ensures that virtual environments, platforms, and technologies adhere to established guidelines and regulations. The Metaverse Standards Forum, founded in 2022 with over 2,600 members including Meta, Microsoft, Google, and NVIDIA, works to develop interoperability standards for an open and inclusive metaverse.\n- ## Technical Details\n\t- ### Key Compliance Categories\n\t\t- **Interoperability Standards**: Enabling different metaverse platforms and technologies to work together seamlessly\n\t\t- **Data Privacy Compliance**: Including GDPR requirements for data collection and processing in virtual environments\n\t\t- **Intellectual Property Law**: Protecting digital assets and virtual creations\n\t\t- **Safety and Conduct Standards**: Ensuring user safety and appropriate behavior guidelines\n\t- ### Standards Organizations\n\t\t- IEEE Standards Association (IEEE SA) develops metaverse-related standards through the Metaverse Standards Committee (CTS/MSC)\n\t\t- Khronos Group maintains glTF and other 3D graphics standards\n\t\t- Web3D Consortium develops standards for interactive 3D graphics\n- ## Applications\n\t- Employee training programs using immersive VR technology\n\t- Cross-platform avatar and asset portability\n\t- GDPR-compliant data handling in virtual worlds\n\t- EU AI Act alignment for metaverse applications",
+  "content": "- ### Definition\n  - The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:StandardsCompliance\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Standards]]\n\n- ### Content\n\n  - ## Overview\n  - Standards compliance in the metaverse context ensures that virtual environments, platforms, and technologies adhere to established guidelines and regulations. The Metaverse Standards Forum, founded in 2022 with over 2,600 members including Meta, Microsoft, Google, and NVIDIA, works to develop interoperability standards for an open and inclusive metaverse.\n  - ## Technical Details\n  - ### Key Compliance Categories\n\t\t- **Interoperability Standards**: Enabling different metaverse platforms and technologies to work together seamlessly\n\t\t- **Data Privacy Compliance**: Including GDPR requirements for data collection and processing in virtual environments\n\t\t- **Intellectual Property Law**: Protecting digital assets and virtual creations\n\t\t- **Safety and Conduct Standards**: Ensuring user safety and appropriate behavior guidelines\n  - ### Standards Organizations\n\t\t- IEEE Standards Association (IEEE SA) develops metaverse-related standards through the Metaverse Standards Committee (CTS/MSC)\n\t\t- Khronos Group maintains glTF and other 3D graphics standards\n\t\t- Web3D Consortium develops standards for interactive 3D graphics\n  - ## Applications\n  - Employee training programs using immersive VR technology\n  - Cross-platform avatar and asset portability\n  - GDPR-compliant data handling in virtual worlds\n  - EU AI Act alignment for metaverse applications\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Standards Conformance",
-    "Standards Validation",
     "Digital Twin Framework",
-    "Compatibility Process",
-    "Technical Standards"
+    "Compatibility Process"
   ],
   "wiki_links": [
-    "Technical Standards",
     "Standards",
-    "Interoperability",
-    "metaverse",
-    "Standards Conformance"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:standards-compliance",
+    "iri": "http://narrativegoldmine.com/metaverse#StandardsCompliance",
+    "content_hash": "sha256-12-1694072ea57c",
+    "legacy_term_id": "MV-10071",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:standards-compliance",
+    "schema_version": "v2",
     "term_id": "MV-10071",
     "preferred_term": "Standards Compliance",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#StandardsCompliance",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "The process of ensuring that systems, processes, products, or services meet the requirements of established technical standards, industry specifications, regulatory frameworks, and governance policies applicable to metaverse and virtual world technologies.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:StandardsCompliance",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:StandardsCompliance",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Standards"
@@ -49,26 +54,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Standards Conformance",
-        "Technical Standards",
-        "Interoperability"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,42 +1,49 @@
 {
-  "id": "Learning Module",
+  "id": "learning-module",
   "title": "Learning Module",
-  "content": "- ### OntologyBlock\n  id:: learning-module-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9944\n\t- source-domain:: mv\n\t- preferred-term:: Learning Module\n\t- status:: active\n\t- owl:class:: mv:LearningModule\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.\n\t- #### Relationships\n\t  id:: learning-module-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Educational Technology]]\n\t\t- related-to:: [[Learning Component]]\n\t\t- related-to:: [[Immersive Learning]]\n\t\t- enables:: [[Structured Training]]\n\n## Healthcare Training Modules\n\n### ACLS Training\n- VR-based multiplayer module\n- Advanced cardiac life support\n- Metaverse environment delivery\n- Simulation supplement\n- Machine or educator guidance\n\n### Module Benefits\n- Immersion and engagement\n- Social connection enabling\n- Shared learning experience\n- Practical skill development\n- Real-time feedback\n\n## Mining Safety Training\n\n### University of Utah Programme\n- Minverso partnership\n- Health and safety training\n- Evacuation training system\n- Public release (Feb 2024)\n- Real-time emergency guidance\n\n### Educational Framework\n- Theoretical knowledge bridging\n- Practical application\n- Underground worker support\n- Emergency preparedness\n- Safety protocol training\n\n## Academic Courses\n\n### University of Surrey (2024/5)\n- VR/AR concepts module\n- Metaverse exploration\n- Technology challenges\n- Industry impact analysis\n- Society considerations\n\n### STEM Education Research\n- MeILE platform usage\n- Community of Inquiry framework\n- Student interaction enhancement\n- Collaboration improvement\n- Avatar and gamification\n\n## Training Effectiveness\n\n### PwC Research Findings\n- 4x more focused learners\n- 275% confidence improvement\n- 4x faster training completion\n- Time and cost savings\n- Skill application readiness\n\n### Business Adoption\n- 51% integrating VR strategy\n- 34% value training benefits\n- Dedicated business lines\n- People development focus\n- Effective skill building\n\n## Module Framework\n\n### Meta-MILE Framework\n- Multi-layered design\n- Immersive environment structure\n- Metaverse infrastructure integration\n- Personalised interactions\n- Social collaboration\n\n### Advanced Components\n- Assessment techniques\n- Personalisation systems\n- Collaboration tools\n- Feedback mechanisms\n- Progress tracking\n\n## Module Types\n\n### Simulation Modules\n- Procedure practice\n- Scenario exploration\n- Skill rehearsal\n- Error-safe learning\n- Repeated practice\n\n### Assessment Modules\n- Knowledge verification\n- Skill evaluation\n- Competency testing\n- Progress measurement\n- Certification preparation\n\n### Collaborative Modules\n- Team exercises\n- Group projects\n- Peer learning\n- Social interaction\n- Communication practice\n\n## Development Considerations\n\n### Content Design\n- Learning objective alignment\n- Engagement optimisation\n- Interactivity integration\n- Feedback loop creation\n- Assessment embedding\n\n### Technical Requirements\n- VR platform compatibility\n- LMS integration\n- Performance optimisation\n- Accessibility support\n- Multi-device delivery\n\n## Industry Applications\n\n### Healthcare\n- Medical procedures\n- Patient communication\n- Emergency response\n- Equipment operation\n- Protocol compliance\n\n### Industrial\n- Safety training\n- Equipment operation\n- Process simulation\n- Emergency evacuation\n- Compliance training\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:LearningModule\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Educational Technology]]\n  - enables:: [[Structured Training]]\n\n- ### Content\n\n  ## Healthcare Training Modules\n\n  ### ACLS Training\n  - VR-based multiplayer module\n  - Advanced cardiac life support\n  - Metaverse environment delivery\n  - Simulation supplement\n  - Machine or educator guidance\n\n  ### Module Benefits\n  - Immersion and engagement\n  - Social connection enabling\n  - Shared learning experience\n  - Practical skill development\n  - Real-time feedback\n\n  ## Mining Safety Training\n\n  ### University of Utah Programme\n  - Minverso partnership\n  - Health and safety training\n  - Evacuation training system\n  - Public release (Feb 2024)\n  - Real-time emergency guidance\n\n  ### Educational Framework\n  - Theoretical knowledge bridging\n  - Practical application\n  - Underground worker support\n  - Emergency preparedness\n  - Safety protocol training\n\n  ## Academic Courses\n\n  ### University of Surrey (2024/5)\n  - VR/AR concepts module\n  - Metaverse exploration\n  - Technology challenges\n  - Industry impact analysis\n  - Society considerations\n\n  ### STEM Education Research\n  - MeILE platform usage\n  - Community of Inquiry framework\n  - Student interaction enhancement\n  - Collaboration improvement\n  - Avatar and gamification\n\n  ## Training Effectiveness\n\n  ### PwC Research Findings\n  - 4x more focused learners\n  - 275% confidence improvement\n  - 4x faster training completion\n  - Time and cost savings\n  - Skill application readiness\n\n  ### Business Adoption\n  - 51% integrating VR strategy\n  - 34% value training benefits\n  - Dedicated business lines\n  - People development focus\n  - Effective skill building\n\n  ## Module Framework\n\n  ### Meta-MILE Framework\n  - Multi-layered design\n  - Immersive environment structure\n  - Metaverse infrastructure integration\n  - Personalised interactions\n  - Social collaboration\n\n  ### Advanced Components\n  - Assessment techniques\n  - Personalisation systems\n  - Collaboration tools\n  - Feedback mechanisms\n  - Progress tracking\n\n  ## Module Types\n\n  ### Simulation Modules\n  - Procedure practice\n  - Scenario exploration\n  - Skill rehearsal\n  - Error-safe learning\n  - Repeated practice\n\n  ### Assessment Modules\n  - Knowledge verification\n  - Skill evaluation\n  - Competency testing\n  - Progress measurement\n  - Certification preparation\n\n  ### Collaborative Modules\n  - Team exercises\n  - Group projects\n  - Peer learning\n  - Social interaction\n  - Communication practice\n\n  ## Development Considerations\n\n  ### Content Design\n  - Learning objective alignment\n  - Engagement optimisation\n  - Interactivity integration\n  - Feedback loop creation\n  - Assessment embedding\n\n  ### Technical Requirements\n  - VR platform compatibility\n  - LMS integration\n  - Performance optimisation\n  - Accessibility support\n  - Multi-device delivery\n\n  ## Industry Applications\n\n  ### Healthcare\n  - Medical procedures\n  - Patient communication\n  - Emergency response\n  - Equipment operation\n  - Protocol compliance\n\n  ### Industrial\n  - Safety training\n  - Equipment operation\n  - Process simulation\n  - Emergency evacuation\n  - Compliance training\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Learning Component",
     "Education Metaverse",
     "AI Agent System",
-    "Learning Resources",
     "Intelligent Virtual Entity"
   ],
   "wiki_links": [
     "Educational Technology",
     "Structured Training",
-    "Learning Component",
-    "metaverse",
-    "Immersive Learning"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:learning-module",
+    "iri": "http://narrativegoldmine.com/spatial-computing#LearningModule",
+    "content_hash": "sha256-12-1949813d5f6a",
+    "legacy_term_id": "MV-9944",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:learning-module",
+    "schema_version": "v2",
     "term_id": "MV-9944",
     "preferred_term": "Learning Module",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#LearningModule",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:LearningModule",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:LearningModule",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Educational Technology"
@@ -51,25 +58,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Learning Component",
-        "Immersive Learning"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

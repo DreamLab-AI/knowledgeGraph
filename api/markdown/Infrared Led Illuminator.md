@@ -1,105 +1,119 @@
-- ### OntologyBlock
-  id:: infrared-led-illuminator-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9930
-	- source-domain:: mv
-	- preferred-term:: Infrared Led Illuminator
-	- status:: active
-	- owl:class:: mv:InfraredLedIlluminator
-	- belongsToDomain:: [[metaverse]]
-	- definition:: LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.
-	- #### Relationships
-	  id:: infrared-led-illuminator-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Infrared Illuminator]]
-		- related-to:: [[Infrared Camera]]
-		- related-to:: [[Eye Tracking System]]
-		- enables:: [[Hand Tracking Enhancement]]
+iri:: http://narrativegoldmine.com/spatial-computing#InfraredLedIlluminator
+uri:: urn:visionclaw:concept:spatial-computing:infrared-led-illuminator
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:infrared-led-illuminator
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Infrared Led Illuminator
+content-hash:: sha256-12-648a1381e05a
+legacy-term-id:: MV-9930
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## XR Headset Integration
+- ### Definition
+  - LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.
 
-### Built-In Hardware
-- Apple Vision Pro: 2 IR illuminators
-- Meta Quest 3S: 2 IR illuminators
-- Six monochromatic IR-sensitive cameras
-- Boost hand tracking in low light
-- Integrated system design
+- ### Semantic Classification
+  - owl-class:: spatial-computing:InfraredLedIlluminator
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Power Considerations
-- Active IR illumination power expensive
-- Optimised systems: one LED active at time
-- Mean power draw: 0.9W for illumination
-- Meta Quest 3 total draw: ~8.6W
-- Battery life impact management
+- ### Relationships
+  - is-subclass-of:: [[Infrared Illuminator]]
+  - enables:: [[Hand Tracking Enhancement]]
 
-## Consumer Accessories
+- ### Content
 
-### PDClnyck Upgraded IR Light
-- Quest 3s, Quest 3, Quest 2 compatible
-- Quest and PSVR2 support
-- Desktop IR fill illuminator
-- Enhanced hand tracking
-- Improved handle sensitivity
+  ## XR Headset Integration
 
-### Orzero IR Illuminator
-- Quest 3 compatible
-- Quest, Quest 2, PSVR2 support
-- No-light disturbance design
-- Increased tracking sensitivity
-- Power adapter included
+  ### Built-In Hardware
+  - Apple Vision Pro: 2 IR illuminators
+  - Meta Quest 3S: 2 IR illuminators
+  - Six monochromatic IR-sensitive cameras
+  - Boost hand tracking in low light
+  - Integrated system design
 
-## Technical Specifications
+  ### Power Considerations
+  - Active IR illumination power expensive
+  - Optimised systems: one LED active at time
+  - Mean power draw: 0.9W for illumination
+  - Meta Quest 3 total draw: ~8.6W
+  - Battery life impact management
 
-### Wavelength Options
-- 850nm semi-covert operation
-- 940nm fully covert operation
-- Matches sensor spectral sensitivity
-- LED vs lamp style devices
-- Infrared-sensitive camera optimised
+  ## Consumer Accessories
 
-### Research Applications
-- Touch detection on surfaces
-- AR glasses corner integration
-- Ray-Ban Meta AI Glasses potential
-- Software update enabled features
-- Single camera + LED configurations
+  ### PDClnyck Upgraded IR Light
+  - Quest 3s, Quest 3, Quest 2 compatible
+  - Quest and PSVR2 support
+  - Desktop IR fill illuminator
+  - Enhanced hand tracking
+  - Improved handle sensitivity
 
-## Future Developments
+  ### Orzero IR Illuminator
+  - Quest 3 compatible
+  - Quest, Quest 2, PSVR2 support
+  - No-light disturbance design
+  - Increased tracking sensitivity
+  - Power adapter included
 
-### Commercial Systems
-- Power optimisation advances
-- Smaller form factor LEDs
-- Higher efficiency components
-- Integrated headset designs
-- Extended battery operation
+  ## Technical Specifications
 
-### Advanced Touch Detection
-- Ad-hoc surface interaction
-- Shadow casting techniques
-- Worn infrared devices
-- Segmentation algorithms
-- XR headset hardware leverage
+  ### Wavelength Options
+  - 850nm semi-covert operation
+  - 940nm fully covert operation
+  - Matches sensor spectral sensitivity
+  - LED vs lamp style devices
+  - Infrared-sensitive camera optimised
 
-## Product Categories
+  ### Research Applications
+  - Touch detection on surfaces
+  - AR glasses corner integration
+  - Ray-Ban Meta AI Glasses potential
+  - Software update enabled features
+  - Single camera + LED configurations
 
-### Desktop Illuminators
-- Room-wide coverage
-- Multiple power options
-- Adjustable brightness
-- Mounting flexibility
-- Wired or battery powered
+  ## Future Developments
 
-### Headset-Mounted
-- Minimal weight addition
-- Direct illumination
-- Portable operation
-- Battery integrated
-- USB-C charging
+  ### Commercial Systems
+  - Power optimisation advances
+  - Smaller form factor LEDs
+  - Higher efficiency components
+  - Integrated headset designs
+  - Extended battery operation
 
-## Metadata
+  ### Advanced Touch Detection
+  - Ad-hoc surface interaction
+  - Shadow casting techniques
+  - Worn infrared devices
+  - Segmentation algorithms
+  - XR headset hardware leverage
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ## Product Categories
+
+  ### Desktop Illuminators
+  - Room-wide coverage
+  - Multiple power options
+  - Adjustable brightness
+  - Mounting flexibility
+  - Wired or battery powered
+
+  ### Headset-Mounted
+  - Minimal weight addition
+  - Direct illumination
+  - Portable operation
+  - Battery integrated
+  - USB-C charging
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

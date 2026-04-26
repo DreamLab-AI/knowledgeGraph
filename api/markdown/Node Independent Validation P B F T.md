@@ -1,48 +1,36 @@
-- ### OntologyBlock
-  id:: nodeindependentvalidationpbft-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#NodeIndependentValidationPBFT
+uri:: urn:visionclaw:concept:blockchain:node-independent-validation-pbft
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:node-independent-validation-pbft
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Node-Independent Validation PBFT
+content-hash:: sha256-12-3f95c52bce13
+legacy-term-id:: BC-0560
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0560
-    - filename-history:: ["BC-0560-nodeindependentvalidationpbft.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0560
-    - preferred-term:: Node-Independent Validation PBFT
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus.
 
-  - **Definition**
-    - definition:: An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:NodeIndependentValidationPBFT
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:NodeIndependentValidationPBFT
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Practical Byzantine Fault Tolerance]]
-    - also-known-as:: V-PBFT
+- ### Content
+  Node-Independent Validation PBFT — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NodeIndependentValidationPBFT))
-      (SubClassOf :NodeIndependentValidationPBFT :PracticalByzantineFaultTolerance)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NodeIndependentValidationPBFT "Node-Independent Validation PBFT"@en)
-      (AnnotationAssertion rdfs:comment :NodeIndependentValidationPBFT
-        "An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus."@en)
-      ```
-
-- ## About Node-Independent Validation PBFT
-  An improved PBFT algorithm based on node-independent validation, enabling more flexible and resilient consensus.
-  
-  ### Historical Context
-  - Published April 2025 in peer-reviewed literature.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

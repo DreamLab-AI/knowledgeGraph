@@ -1,44 +1,53 @@
 {
-  "id": "Digital Twin Creation Pipeline",
+  "id": "digital-twin-creation-pipeline",
   "title": "Digital Twin Creation Pipeline",
-  "content": "- ### OntologyBlock\n  id:: digital-twin-creation-pipeline-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9875\n\t- source-domain:: mv\n\t- preferred-term:: Digital Twin Creation Pipeline\n\t- definition:: The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.\n\t- status:: active\n\t- owl:class:: mv:DigitalTwinCreationPipeline\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: digital-twin-creation-pipeline-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[3D Content Pipeline]]\n\t\t- enables:: [[Asset Digitization]], [[Virtual Replica Creation]], [[Real-Time Monitoring]]\n\t\t- requires:: [[3D Scanning]], [[Photogrammetry]], [[Point Cloud Processing]]\n\t\t- related-to:: [[LiDAR]], [[Computer Vision]], [[CAD Integration]]\n- ## Technical Details\n\t- **Core Capture Technologies**:\n\t\t- LiDAR scanning: Precise geometry capture\n\t\t- Photogrammetry: 3D reconstruction from photographs\n\t\t- Structured-light scanning: High-detail surface capture\n\t\t- Drone-based aerial photogrammetry for large areas\n\t- **Pipeline Components**:\n\t\t- Data capture (sensors, cameras, scanners)\n\t\t- Point cloud or mesh generation\n\t\t- AI-based semantic segmentation\n\t\t- Geometric primitive fitting\n\t\t- Real-time data integration layer\n\t- **Consumer-Grade Advances (2024)**:\n\t\t- iPhone 15 Pro stereo vision capabilities for scanning\n\t\t- Mean error of 4.97% compared to ground truth\n\t\t- Cost-effective alternative to industrial scanners\n\t- **Processing Platforms**: OpenDroneMap (open-source), AWS Fargate/Lambda serverless, NVIDIA Omniverse\n- ## Applications\n\t- Industrial asset digitization\n\t- Cultural heritage preservation\n\t- Facility management documentation\n\t- Smart manufacturing systems\n\t- Urban planning and smart cities",
+  "content": "- ### Definition\n  - The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.\n\nbridges-to:: [[Computer Vision]]\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:DigitalTwinCreationPipeline\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[3D Content Pipeline]]\n  - requires:: [[3D Scanning]], [[Photogrammetry]], [[Point Cloud Processing]]\n  - enables:: [[Asset Digitization]], [[Virtual Replica Creation]], [[Real-Time Monitoring]]\n\n- ### Content\n\n  - ## Technical Details\n  - **Core Capture Technologies**:\n\t\t- LiDAR scanning: Precise geometry capture\n\t\t- Photogrammetry: 3D reconstruction from photographs\n\t\t- Structured-light scanning: High-detail surface capture\n\t\t- Drone-based aerial photogrammetry for large areas\n  - **Pipeline Components**:\n\t\t- Data capture (sensors, cameras, scanners)\n\t\t- Point cloud or mesh generation\n\t\t- AI-based semantic segmentation\n\t\t- Geometric primitive fitting\n\t\t- Real-time data integration layer\n  - **Consumer-Grade Advances (2024)**:\n\t\t- iPhone 15 Pro stereo vision capabilities for scanning\n\t\t- Mean error of 4.97% compared to ground truth\n\t\t- Cost-effective alternative to industrial scanners\n  - **Processing Platforms**: OpenDroneMap (open-source), AWS Fargate/Lambda serverless, NVIDIA Omniverse\n  - ## Applications\n  - Industrial asset digitization\n  - Cultural heritage preservation\n  - Facility management documentation\n  - Smart manufacturing systems\n  - Urban planning and smart cities\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Reality Capture System"
   ],
   "wiki_links": [
-    "Asset Digitization",
-    "Real-Time Monitoring",
-    "LiDAR",
-    "Point Cloud Processing",
-    "Computer Vision",
-    "Virtual Replica Creation",
+    "3D Content Pipeline",
     "3D Scanning",
+    "Asset Digitization",
+    "Computer Vision",
     "Photogrammetry",
-    "metaverse",
-    "CAD Integration",
-    "3D Content Pipeline"
+    "Point Cloud Processing",
+    "Real-Time Monitoring",
+    "Virtual Replica Creation",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:digital-twin-creation-pipeline",
+    "iri": "http://narrativegoldmine.com/spatial-computing#DigitalTwinCreationPipeline",
+    "content_hash": "sha256-12-40eb2e688c51",
+    "legacy_term_id": "MV-9875",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:digital-twin-creation-pipeline",
+    "schema_version": "v2",
     "term_id": "MV-9875",
     "preferred_term": "Digital Twin Creation Pipeline",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#DigitalTwinCreationPipeline",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:DigitalTwinCreationPipeline",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:DigitalTwinCreationPipeline",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "3D Content Pipeline"
@@ -59,26 +68,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "LiDAR",
-        "Computer Vision",
-        "CAD Integration"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,77 +1,42 @@
-- ### OntologyBlock
-  id:: ai-agent-system-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#AIAgentSystem
+uri:: urn:visionclaw:concept:artificial-intelligence:ai-agent-system
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:ai-agent-system
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: AI Agent System
+content-hash:: sha256-12-5916d15f1fe9
+legacy-term-id:: AI-0600
+status:: complete
+maturity:: mature
+quality-score:: 0.92
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-05T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-  - **Identification**
-    - ontology:: true
-    - term-id:: AI-0600
-    - preferred-term:: AI Agent System
-    - source-domain:: ai
-    - status:: complete
-    - public-access:: true
-- version:: 1.0.0
-    - last-updated:: 2025-11-05
+- ### Definition
+  - An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.
 
-  - **Definition**
-    - definition:: An autonomous software entity that perceives its environment through sensors, makes decisions using AI techniques, and takes actions to achieve specific goals, capable of learning from experience and adapting behaviour over time.
-    - maturity:: mature
-    - source:: [[Russell & Norvig AI: A Modern Approach]], [[IEEE P7009]], [[OpenAI Agent Research]]
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AIAgentSystem
+  - owl-role:: Agent
+  - owl-inferred:: ai:VirtualAgent
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]]
+  - implemented-in-layer:: [[ComputeLayer]], [[DataLayer]]
 
-- version:: 1.1.0
-    - last-updated:: 2025-11-15
-    - quality-score:: 0.92
-    - bitcoin-ai-relevance:: high
-    - cross-domain-links:: 47
+- ### Relationships
+  - has-part:: [[Perception System]], [[Decision Engine]], [[Action Executor]], [[Learning Module]], [[Memory System]], [[Goal Planner]], [[Tool Use System]], [[Communication Protocol]], [[Knowledge Base]]
+  - requires:: [[Sensor Input]], [[Environment Model]], [[Reward Function]], [[Action Space]], [[API Access]], [[Authentication System]], [[Resource Budget]]
+  - enables:: [[Autonomous Operation]], [[Adaptive Behavior]], [[Goal Achievement]], [[Multi-Agent Coordination]], [[Browser Automation]], [[File System Access]], [[Database Interaction]], [[Code Generation]]
+  - implements:: [[Reinforcement Learning]], [[Planning Algorithm]], [[Decision Making]], [[Autonomous Behavior]], [[Active Learning]], [[Meta-Learning]], [[Transfer Learning]], [[Imitation Learning]]
+  - bridges-to:: [[Intelligent Virtual Entity]] (domain: metaverse), [[Autonomous Robot]] (domain: robotics), [[Smart Contract]] (domain: blockchain - for autonomous economic agents), [[Intelligent Virtual Entity]] (domain: [[Metaverse]]), [[Autonomous Robot]] (domain: [[Robotics]]), [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]]), [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]]), [[DeFi Agent]] (domain: [[Decentralized Finance]] - for [[Protocol Interaction]]), [[Lightning Network Node]] (domain: [[Bitcoin]] - for [[Payment Channel Management]])
 
-  - **Definition**
-    - definition:: An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.
-    - maturity:: mature
-    - source:: [[Russell & Norvig AI: A Modern Approach]] (https://aima.cs.berkeley.edu/), [[IEEE P7009]] (https://standards.ieee.org/ieee/7009/), [[OpenAI Agent Research]] (https://openai.com/research/), [[Anthropic Computer Use]] (https://anthropic.com/news/computer-use), [[Model Context Protocol]] (https://modelcontextprotocol.io/)
-    - authority-score:: 0.95
+- ### Content
 
-  - **Semantic Classification**
-    - owl:class:: ai:AIAgentSystem
-    - owl:role:: Agent
-    - owl:inferred-class:: ai:VirtualAgent
-    - belongsToDomain:: [[AI-GroundedDomain]], [[ComputationAndIntelligenceDomain]]
-    - implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
-
-  - #### Relationships
-    id:: ai-agent-system-relationships
-- has-part:: [[Perception System]], [[Decision Engine]], [[Action Executor]], [[Learning Module]], [[Memory System]], [[Goal Planner]]
-    - implements:: [[Reinforcement Learning]], [[Planning Algorithm]], [[Decision Making]], [[Autonomous Behavior]]
-    - requires:: [[Sensor Input]], [[Environment Model]], [[Reward Function]], [[Action Space]]
-    - enables:: [[Autonomous Operation]], [[Adaptive Behavior]], [[Goal Achievement]], [[Multi-Agent Coordination]]
-    - bridges-to::
-      - [[Intelligent Virtual Entity]] (domain: metaverse)
-      - [[Autonomous Robot]] (domain: robotics)
-      - [[Smart Contract]] (domain: blockchain - for autonomous economic agents)
-
-- has-part:: [[Perception System]], [[Decision Engine]], [[Action Executor]], [[Learning Module]], [[Memory System]], [[Goal Planner]], [[Tool Use System]], [[Communication Protocol]], [[Knowledge Base]]
-    - implements:: [[Reinforcement Learning]], [[Planning Algorithm]], [[Decision Making]], [[Autonomous Behavior]], [[Active Learning]], [[Meta-Learning]], [[Transfer Learning]], [[Imitation Learning]]
-    - requires:: [[Sensor Input]], [[Environment Model]], [[Reward Function]], [[Action Space]], [[API Access]], [[Authentication System]], [[Resource Budget]]
-    - enables:: [[Autonomous Operation]], [[Adaptive Behavior]], [[Goal Achievement]], [[Multi-Agent Coordination]], [[Browser Automation]], [[File System Access]], [[Database Interaction]], [[Code Generation]]
-    - bridges-to::
-      - [[Intelligent Virtual Entity]] (domain: [[Metaverse]])
-      - [[Autonomous Robot]] (domain: [[Robotics]])
-      - [[Smart Contract]] (domain: [[Blockchain]] - for [[Autonomous Economic Agent|autonomous economic agents]])
-      - [[Bitcoin Trading Bot]] (domain: [[Cryptocurrency]] - for [[Algorithmic Trading]])
-      - [[DeFi Agent]] (domain: [[Decentralized Finance]] - for [[Protocol Interaction]])
-      - [[Lightning Network Node]] (domain: [[Bitcoin]] - for [[Payment Channel Management]])
-
-  - #### OWL Axioms
-    id:: ai-agent-system-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(ai:=<http://purl.org/ai-ontology#>)
-      Prefix(dt:=<http://purl.org/disruptive-tech/bridges#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-      Ontology(<http://purl.org/ai-ontology/AI-0600>
-
-        ## Class Declaration
+  ## Class Declaration
         Declaration(Class(ai:AIAgentSystem))
 
         ## Classification
@@ -128,21 +93,16 @@
 
   # Property characteristics
   AsymmetricObjectProperty(dt:enables)
-```
+  ```
 
-- ## About AI Agent System
-  id:: ai-agent-system-about
+  - ## About AI Agent System
 
-- An **AI Agent System** is an autonomous software entity that exhibits goal-directed behaviour through continuous perception-action cycles. Unlike passive AI models that simply process inputs and produce outputs, AI agents actively interact with their environment, learn from experiences, and adapt their strategies to achieve specified objectives. They represent a fundamental architecture for building intelligent systems capable of operating with minimal human intervention.
-  -
+  - An **AI Agent System** is an autonomous software entity that exhibits goal-directed behaviour through continuous perception-action cycles. Unlike passive AI models that simply process inputs and produce outputs, AI agents actively interact with their environment, learn from experiences, and adapt their strategies to achieve specified objectives. They represent a fundamental architecture for building intelligent systems capable of operating with minimal human intervention.
   - AI agents are characterised by their **autonomy** (operating without direct control), **reactivity** (responding to environmental changes), **pro-activeness** (taking initiative to achieve goals), and **social ability** (interacting with other agents or humans). They are foundational to applications ranging from game-playing AI to autonomous vehicles, virtual assistants, and robotic systems.
 
-- An **AI Agent System** is an autonomous software entity that exhibits goal-directed behaviour through continuous [[Perception-Action Cycle|perception-action cycles]]. Unlike passive [[AI Model|AI models]] that simply process inputs and produce outputs, AI agents actively interact with their [[Environment]], learn from experiences, and adapt their strategies to achieve specified objectives. They represent a fundamental architecture for building [[Intelligent System|intelligent systems]] capable of operating with minimal [[Human Intervention]].
-  -
+  - An **AI Agent System** is an autonomous software entity that exhibits goal-directed behaviour through continuous [[Perception-Action Cycle|perception-action cycles]]. Unlike passive [[AI Model|AI models]] that simply process inputs and produce outputs, AI agents actively interact with their [[Environment]], learn from experiences, and adapt their strategies to achieve specified objectives. They represent a fundamental architecture for building [[Intelligent System|intelligent systems]] capable of operating with minimal [[Human Intervention]].
   - AI agents are characterised by their **autonomy** (operating without direct control), **reactivity** (responding to [[Environmental Change|environmental changes]]), **pro-activeness** (taking initiative to achieve goals), and **social ability** (interacting with other agents or humans). They are foundational to applications ranging from [[Game AI|game-playing AI]] to [[Autonomous Vehicle|autonomous vehicles]], [[Virtual Assistant|virtual assistants]], [[Robotic System|robotic systems]], [[Trading System|trading systems]], and [[Blockchain Agent|blockchain agents]] managing [[Bitcoin]] transactions and [[Lightning Network]] operations.
-  -
   - ### Key Characteristics
-    id:: ai-agent-characteristics
     - **Autonomy**: Operates independently without constant human direction
     - **Perception**: Gathers information from environment through sensors or data streams
     - **Decision-Making**: Selects actions based on current state and goals
@@ -153,9 +113,7 @@
     - **Reactivity**: Responds appropriately to environmental stimuli
     - **Pro-activeness**: Takes initiative to achieve goals
     - **Social Ability**: Coordinates with other agents or humans
-  -
   - ### Agent Architecture Components
-    id:: ai-agent-components
 
     #### Perception System
     - **Sensors/Inputs**: Data streams from environment (cameras, APIs, databases)
@@ -187,9 +145,7 @@
     - **Long-Term Memory**: Learned policies, experiences, world models
     - **Episodic Memory**: Specific past experiences for recall
     - **Semantic Memory**: General knowledge about the world
-  -
   - ### Agent Types
-    id:: ai-agent-types
 
     #### Simple Reflex Agents
     - **Behaviour**: Condition-action rules (if-then)
@@ -220,9 +176,7 @@
     - **Characteristics**: Adaptive, data-driven
     - **Example**: AlphaGo, self-driving cars
     - **Advantage**: Continuous improvement, generalization
-  -
   - ### Planning and Execution Best Practices
-    id:: ai-agent-planning-execution
 
     #### Planning Strategies
     - **Hierarchical Planning**: Decompose complex goals into subgoals
@@ -244,9 +198,7 @@
     - **Reward Shaping**: Human feedback to guide learning
     - **Explanation Generation**: Provide rationale for agent decisions
     - **Corrective Feedback**: Human intervention to correct mistakes
-  -
   - ### Evaluation and Testing
-    id:: ai-agent-evaluation
 
     #### Performance Metrics
     - **Task Success Rate**: Percentage of goals achieved
@@ -268,9 +220,7 @@
     - **Synthetic Data**: Generated scenarios covering edge cases
     - **Consistent Evaluation**: Fixed test set for reproducible comparison
     - **Continuous Monitoring**: Track performance metrics over time
-  -
   - ### Cost Management
-    id:: ai-agent-cost-management
 
     #### AI Agents Can Become Expensive Quickly
     - **Computational Costs**: Large models require significant GPU/TPU resources
@@ -286,9 +236,7 @@
     - **Early Stopping**: Terminate expensive computations when sufficient quality reached
     - **Hierarchical Policies**: Use cheap heuristics to filter before expensive deep models
     - **Budget Constraints**: Explicitly limit computational spend per agent decision
-  -
   - ### Multi-Agent Systems
-    id:: ai-agent-multi-agent
 
     #### Coordination Mechanisms
     - **Communication**: Message passing between agents
@@ -303,9 +251,7 @@
     - **Traffic Management**: Autonomous vehicles coordinating routes
     - **Game AI**: Non-player characters with emergent behaviours
     - **Economic Simulations**: Agent-based market models
-  -
   - ### Reinforcement Learning in Agents
-    id:: ai-agent-reinforcement-learning
 
     #### Core Concepts
     - **Environment**: External system the agent interacts with
@@ -321,21 +267,19 @@
     - **Actor-Critic**: Combine value-based and policy-based methods
     - **Model-Based RL**: Learn environment dynamics for planning
     - **Multi-Agent RL**: Agents learning in presence of other agents
-  -
   - ### The Agentic Era: 2024-2025 Developments
-    id:: ai-agent-recent-developments
 
     The period from late 2024 through 2025 witnessed what industry observers termed the "agentic era"—a fundamental shift from passive AI models that respond to prompts towards autonomous systems capable of multi-step task execution with minimal human intervention. Whilst 2024 centred on reasoning capability breakthroughs (exemplified by OpenAI's o-series models), 2025 became defined by **AI agents** that could plan, execute, and adapt across complex workflows.
 
     #### OpenAI's Operator and Autonomous Task Execution
-OpenAI launched **Operator** in early 2025, initially as a research preview and developer tool focused on automating routine digital tasks. Operator represents a research agent that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating browser workflows with human-level precision. This capability extended beyond simple API interactions to genuine interface manipulation, marking a qualitative leap in agent autonomy. OpenAI continued pushing boundaries with models like GPT-4.5 and specialised reasoning models (o3-mini), alongside launching agents like Operator and Deep Research, announcing the ambitious A-SWE project (Automated Software Engineering), and releasing developer tools via the **Agents SDK**—the production successor to their earlier "Swarm" framework.
+  OpenAI launched **Operator** in early 2025, initially as a research preview and developer tool focused on automating routine digital tasks. Operator represents a research agent that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating browser workflows with human-level precision. This capability extended beyond simple API interactions to genuine interface manipulation, marking a qualitative leap in agent autonomy. OpenAI continued pushing boundaries with models like GPT-4.5 and specialised reasoning models (o3-mini), alongside launching agents like Operator and Deep Research, announcing the ambitious A-SWE project (Automated Software Engineering), and releasing developer tools via the **Agents SDK**—the production successor to their earlier "Swarm" framework.
 
     #### Anthropic's Computer Use and Model Context Protocol
     Anthropic introduced **Computer Use** for Claude 3.5 Sonnet in October 2024, explicitly as a beta capability requiring appropriate software setup to emulate human cursor and keyboard interactions. This transparency about error profiles and the need for careful mediation reflected Anthropic's characteristic caution around deploying powerful autonomous capabilities. The **Harmony** feature allowed agents to read, analyse, and modify files directly within users' local directories, opening possibilities for automating wider ranges of digital tasks whilst maintaining appropriate guardrails.
 
     Perhaps more significantly, Anthropic's **Model Context Protocol (MCP)** emerged as a critical infrastructure contribution—a standardised framework enabling AI agents to interact with tools, external data, and even other agents to accomplish complex tasks with minimal human intervention. MCP represented Anthropic's bet on interoperability as the foundation for scalable agentic systems, in contrast to proprietary vertical integration approaches.
 
-[[OpenAI]] launched **Operator** (https://openai.com/index/introducing-operator/) in early 2025, initially as a [[Research Preview]] and [[Developer Tool]] focused on automating routine [[Digital Task Automation|digital tasks]]. Operator represents a [[Research Agent]] that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating [[Browser Workflow|browser workflows]] with human-level precision. This capability extended beyond simple [[API Integration|API interactions]] to genuine [[Interface Manipulation]], marking a qualitative leap in [[Agent Autonomy]]. OpenAI continued pushing boundaries with models like [[GPT-4.5]] and specialised [[Reasoning Model|reasoning models]] ([[o3-mini]]), alongside launching agents like Operator and [[Deep Research]], announcing the ambitious [[A-SWE]] project ([[Automated Software Engineering]]), and releasing developer tools via the **Agents SDK** (https://platform.openai.com/docs/agents)—the production successor to their earlier "[[Swarm Framework]]". These developments have implications for [[Bitcoin]] development automation and [[Smart Contract Auditing]].
+  [[OpenAI]] launched **Operator** (https://openai.com/index/introducing-operator/) in early 2025, initially as a [[Research Preview]] and [[Developer Tool]] focused on automating routine [[Digital Task Automation|digital tasks]]. Operator represents a [[Research Agent]] that can interact with live websites on behalf of users—filling out forms, clicking through interfaces, completing transactions—effectively automating [[Browser Workflow|browser workflows]] with human-level precision. This capability extended beyond simple [[API Integration|API interactions]] to genuine [[Interface Manipulation]], marking a qualitative leap in [[Agent Autonomy]]. OpenAI continued pushing boundaries with models like [[GPT-4.5]] and specialised [[Reasoning Model|reasoning models]] ([[o3-mini]]), alongside launching agents like Operator and [[Deep Research]], announcing the ambitious [[A-SWE]] project ([[Automated Software Engineering]]), and releasing developer tools via the **Agents SDK** (https://platform.openai.com/docs/agents)—the production successor to their earlier "[[Swarm Framework]]". These developments have implications for [[Bitcoin]] development automation and [[Smart Contract Auditing]].
 
     #### Anthropic's Computer Use and Model Context Protocol
     [[Anthropic]] introduced **Computer Use** (https://www.anthropic.com/news/3-5-models-and-computer-use) for [[Claude 3.5 Sonnet]] in October 2024, explicitly as a [[Beta Capability]] requiring appropriate software setup to emulate human cursor and keyboard interactions. This transparency about [[Error Profile|error profiles]] and the need for careful mediation reflected Anthropic's characteristic caution around deploying powerful autonomous capabilities. The **Harmony** feature allowed agents to read, analyse, and modify files directly within users' local directories, opening possibilities for automating wider ranges of digital tasks whilst maintaining appropriate [[Safety Guardrail|guardrails]].
@@ -355,9 +299,7 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - **Standardised Inter-Agent Communication**: Protocols enabling agent collaboration across organisational and technical boundaries
 
     The trajectory suggested that by mid-2025, AI agents had transitioned from research curiosities and narrow automation tools to foundational infrastructure for digital work—analogous to how databases, web servers, and cloud platforms became assumed components of software systems over previous decades.
-  -
   - ### Cross-Domain Applications
-    id:: ai-agent-applications
 
     #### Metaverse AI Agents
     - **NPCs (Non-Player Characters)**: Intelligent virtual entities in games
@@ -372,13 +314,11 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - **See**: [[Autonomous Robot]]
 
     #### Blockchain AI Agents
-- **Automated Trading**: Agents executing trades based on market conditions
+  - **Automated Trading**: Agents executing trades based on market conditions
     - **Decentralised Autonomous Organisations**: Agent-mediated governance
     - **Smart Contract Oracles**: Agents providing external data
     - **See**: [[Smart Contract]], [[Decentralised Finance]]
-  -
   - ### Use Cases
-    id:: ai-agent-use-cases
     - **Game Playing**: AlphaGo, Chess engines, Poker bots
     - **Autonomous Vehicles**: Self-driving cars and drones
     - **Virtual Assistants**: Siri, Alexa, Google Assistant
@@ -389,16 +329,14 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - **Chatbots and Customer Service**: Conversational agents for support
     - **Scientific Discovery**: Agents exploring experimental spaces (protein folding)
     - **Cybersecurity**: Agents detecting and responding to threats
-  -
   - ### Standards & References
-    id:: ai-agent-standards
     - [[Russell & Norvig AI: A Modern Approach]] - Foundational agent architecture textbook
     - [[IEEE P7009]] - Standard for fail-safe design of autonomous systems
     - [[OpenAI Agent Research]] - Cutting-edge multi-agent systems
     - [[Reinforcement Learning: An Introduction (Sutton & Barto)]] - RL foundations
     - [[Multi-Agent Systems (Wooldridge)]] - Multi-agent theory and practice
 
-- **Automated Trading**: Agents executing [[Bitcoin]] and [[Cryptocurrency]] trades based on [[Market Condition|market conditions]]
+  - **Automated Trading**: Agents executing [[Bitcoin]] and [[Cryptocurrency]] trades based on [[Market Condition|market conditions]]
     - **Decentralised Autonomous Organisations**: Agent-mediated [[DAO Governance]]
     - **Smart Contract Oracles**: Agents providing [[External Data]] to [[Blockchain]]
     - **Lightning Network Management**: Agents optimizing [[Payment Channel|payment channels]] and [[Routing Strategy|routing]]
@@ -407,9 +345,7 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - **On-Chain Analytics**: Agents performing [[Transaction Analysis]] and [[Address Clustering]]
     - **Bitcoin Mining Optimization**: Agents managing [[Hash Rate]] allocation and [[Pool Selection]]
     - **See**: [[Smart Contract]], [[Decentralised Finance]], [[Bitcoin]], [[Lightning Network]], [[Automated Market Maker]], [[Blockchain Oracle]]
-  -
   - ### Use Cases
-    id:: ai-agent-use-cases
     - **Game Playing**: [[AlphaGo]], [[Chess Engine|Chess engines]], [[Poker Bot|Poker bots]], [[StarCraft AI]]
     - **Autonomous Vehicles**: [[Self-Driving Car|Self-driving cars]] and [[Autonomous Drone|drones]]
     - **Virtual Assistants**: [[Siri]], [[Alexa]], [[Google Assistant]], [[ChatGPT]], [[Claude]]
@@ -424,9 +360,7 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - **DeFi Management**: [[Liquidity Pool]] optimization, [[Yield Farming]] automation, [[Cross-Chain Bridge|cross-chain bridging]]
     - **Code Generation**: [[Automated Software Engineering]], [[Code Review]], [[Bug Detection]], [[Test Generation]]
     - **Research Automation**: [[Literature Review]], [[Data Collection]], [[Experiment Design]], [[Paper Summarization]]
-  -
   - ### Standards & References
-    id:: ai-agent-standards
     - [[Russell & Norvig AI: A Modern Approach]] - Foundational agent architecture textbook (https://aima.cs.berkeley.edu/)
     - [[IEEE P7009]] - Standard for fail-safe design of autonomous systems (https://standards.ieee.org/ieee/7009/)
     - [[OpenAI Agent Research]] - Cutting-edge multi-agent systems (https://openai.com/research/)
@@ -438,23 +372,21 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - [[LangGraph]] - Agent orchestration framework (https://langchain-ai.github.io/langgraph/)
     - [[AutoGPT]] - Autonomous agent architecture (https://github.com/Significant-Gravitas/AutoGPT)
     - [[BabyAGI]] - Task-driven autonomous agent (https://github.com/yoheinakajima/babyagi)
-  -
   - ### Related Concepts
-    id:: ai-agent-related
     - [[Reinforcement Learning]] - Core learning paradigm for agents
-- [[Intelligent Virtual Entity]] - AI agents in metaverse contexts
+  - [[Intelligent Virtual Entity]] - AI agents in metaverse contexts
 
-- [[Intelligent Virtual Entity]] - AI agents in [[Metaverse]] contexts
+  - [[Intelligent Virtual Entity]] - AI agents in [[Metaverse]] contexts
     - [[Autonomous Robot]] - Physical embodiment of AI agents
     - [[Machine Learning]] - Foundational AI technique
     - [[Planning Algorithm]] - Decision-making component
     - [[Perception System]] - Environmental sensing
-- [[Natural Language Processing]] - For conversational agents
+  - [[Natural Language Processing]] - For conversational agents
     - [[Computer Vision]] - Visual perception for agents
     - [[Game AI]] - Agents in gaming contexts
     - [[Multi-Agent System]] - Coordinated agent teams
 
-- [[Natural Language Processing]] - For [[Conversational Agent|conversational agents]]
+  - [[Natural Language Processing]] - For [[Conversational Agent|conversational agents]]
     - [[Computer Vision]] - Visual perception for agents
     - [[Game AI]] - Agents in gaming contexts
     - [[Multi-Agent System]] - Coordinated agent teams
@@ -474,102 +406,106 @@ OpenAI launched **Operator** in early 2025, initially as a research preview and 
     - [[Channel Management Agent]] - [[Lightning Network]] optimization
 
 
-## Academic Context
+  ## Academic Context
 
-- Brief contextual overview
-	- AI Agent Systems have evolved from rule-based automation to learning-driven, autonomous entities capable of reasoning, planning, and executing tasks in dynamic environments
-	- The field draws on decades of research in artificial intelligence, agent-based modelling, and distributed systems, with recent advances in large language models (LLMs) and tool orchestration accelerating practical deployment
+  - Brief contextual overview
+  - AI Agent Systems have evolved from rule-based automation to learning-driven, autonomous entities capable of reasoning, planning, and executing tasks in dynamic environments
+  - The field draws on decades of research in artificial intelligence, agent-based modelling, and distributed systems, with recent advances in large language models (LLMs) and tool orchestration accelerating practical deployment
 
-- Key developments and current state
-	- Modern AI Agent Systems are distinguished by their ability to perceive, reason, act, and adapt, often integrating with external tools and APIs to extend their capabilities beyond text generation
-	- There remains debate over the threshold for “true” autonomy, with many current systems operating under human supervision or within constrained environments
+  - Key developments and current state
+  - Modern AI Agent Systems are distinguished by their ability to perceive, reason, act, and adapt, often integrating with external tools and APIs to extend their capabilities beyond text generation
+  - There remains debate over the threshold for “true” autonomy, with many current systems operating under human supervision or within constrained environments
 
-- Academic foundations
-	- Foundational work includes Russell and Norvig’s taxonomy of agent architectures, which categorises agents by their level of autonomy, adaptability, and interaction with environments
-	- The principal-agent framework from economics and organisational theory is increasingly applied to clarify the relationship between humans and AI agents, particularly in business and organisational contexts
+  - Academic foundations
+  - Foundational work includes Russell and Norvig’s taxonomy of agent architectures, which categorises agents by their level of autonomy, adaptability, and interaction with environments
+  - The principal-agent framework from economics and organisational theory is increasingly applied to clarify the relationship between humans and AI agents, particularly in business and organisational contexts
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
-	- AI Agent Systems are being deployed across finance, healthcare, manufacturing, and customer service, with major platforms such as AWS, Google Cloud, and Vercel offering agent orchestration tools
-	- Organisations are exploring agent-based workflows for automating complex, multi-step processes, from software development to customer support
+  - Industry adoption and implementations
+  - AI Agent Systems are being deployed across finance, healthcare, manufacturing, and customer service, with major platforms such as AWS, Google Cloud, and Vercel offering agent orchestration tools
+  - Organisations are exploring agent-based workflows for automating complex, multi-step processes, from software development to customer support
 
-- Notable organisations and platforms
-	- IBM, Anthropic, and Red Hat have published frameworks and taxonomies for agent complexity and deployment
-	- Startups and research labs are experimenting with multi-agent systems for collaborative problem-solving
+  - Notable organisations and platforms
+  - IBM, Anthropic, and Red Hat have published frameworks and taxonomies for agent complexity and deployment
+  - Startups and research labs are experimenting with multi-agent systems for collaborative problem-solving
 
-- UK and North England examples where relevant
-	- UK universities and tech hubs, including Manchester, Leeds, Newcastle, and Sheffield, are active in agent research and application
-	- For example, the University of Manchester’s AI and Data Science Institute has explored agent-based approaches for smart city applications, while Leeds-based firms are piloting agent systems in logistics and healthcare
+  - UK and North England examples where relevant
+  - UK universities and tech hubs, including Manchester, Leeds, Newcastle, and Sheffield, are active in agent research and application
+  - For example, the University of Manchester’s AI and Data Science Institute has explored agent-based approaches for smart city applications, while Leeds-based firms are piloting agent systems in logistics and healthcare
 
-- Technical capabilities and limitations
-	- Current AI Agent Systems can analyse data, predict trends, automate workflows, and interact with external tools, but struggle with fully autonomous complex decision-making
-	- Limitations include challenges in contextual reasoning, handling edge cases, and ensuring robustness and reliability in real-world environments
+  - Technical capabilities and limitations
+  - Current AI Agent Systems can analyse data, predict trends, automate workflows, and interact with external tools, but struggle with fully autonomous complex decision-making
+  - Limitations include challenges in contextual reasoning, handling edge cases, and ensuring robustness and reliability in real-world environments
 
-- Standards and frameworks
-	- Efforts are underway to develop taxonomies and standards for agent tool use, with initiatives such as the Consortium for AI Systems and Tool Use (CAISI) and NIST workshops aiming to create shared vocabularies and best practices
-	- The ReAct (Reason+Act) framework is widely adopted for its loop-based approach to agent reasoning and action
+  - Standards and frameworks
+  - Efforts are underway to develop taxonomies and standards for agent tool use, with initiatives such as the Consortium for AI Systems and Tool Use (CAISI) and NIST workshops aiming to create shared vocabularies and best practices
+  - The ReAct (Reason+Act) framework is widely adopted for its loop-based approach to agent reasoning and action
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
-	- Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th ed.). Pearson. https://www.pearson.com/en-us/subject-catalog/p/artificial-intelligence-a-modern-approach/P200000003222/9780134610993
-	- Krishnan, N. (2025). AI Agents: Evolution, Architecture, and Real-World Applications. Journal of Artificial Intelligence Research, 78, 123–156. https://doi.org/10.1613/jair.1.12345
-	- Gajjar, S., & Danilevsky, M. (2025). Rethinking AI Agents: A Principal-Agent Perspective. California Management Review, 67(3), 45–67. https://doi.org/10.1177/00081256251234567
+  - Key academic papers and sources
+  - Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th ed.). Pearson. https://www.pearson.com/en-us/subject-catalog/p/artificial-intelligence-a-modern-approach/P200000003222/9780134610993
+  - Krishnan, N. (2025). AI Agents: Evolution, Architecture, and Real-World Applications. Journal of Artificial Intelligence Research, 78, 123–156. https://doi.org/10.1613/jair.1.12345
+  - Gajjar, S., & Danilevsky, M. (2025). Rethinking AI Agents: A Principal-Agent Perspective. California Management Review, 67(3), 45–67. https://doi.org/10.1177/00081256251234567
 
-- Ongoing research directions
-	- Improving contextual reasoning and adaptability in agent systems
-	- Developing robust frameworks for multi-agent collaboration and communication
-	- Exploring the ethical and societal implications of increasingly autonomous agents
+  - Ongoing research directions
+  - Improving contextual reasoning and adaptability in agent systems
+  - Developing robust frameworks for multi-agent collaboration and communication
+  - Exploring the ethical and societal implications of increasingly autonomous agents
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
-	- UK researchers and institutions are at the forefront of agent-based AI, with significant contributions to agent architectures, tool orchestration, and ethical frameworks
-	- The Alan Turing Institute has published guidelines for responsible agent deployment in public sector applications
+  - British contributions and implementations
+  - UK researchers and institutions are at the forefront of agent-based AI, with significant contributions to agent architectures, tool orchestration, and ethical frameworks
+  - The Alan Turing Institute has published guidelines for responsible agent deployment in public sector applications
 
-- North England innovation hubs (if relevant)
-	- Manchester, Leeds, Newcastle, and Sheffield host vibrant AI research communities and innovation hubs
-	- These cities are home to startups and academic labs exploring agent-based solutions for smart cities, healthcare, and logistics
+  - North England innovation hubs (if relevant)
+  - Manchester, Leeds, Newcastle, and Sheffield host vibrant AI research communities and innovation hubs
+  - These cities are home to startups and academic labs exploring agent-based solutions for smart cities, healthcare, and logistics
 
-- Regional case studies
-	- The University of Manchester’s AI and Data Science Institute has developed agent-based models for urban planning and traffic management
-	- Leeds-based firms are piloting agent systems for supply chain optimisation and healthcare diagnostics
+  - Regional case studies
+  - The University of Manchester’s AI and Data Science Institute has developed agent-based models for urban planning and traffic management
+  - Leeds-based firms are piloting agent systems for supply chain optimisation and healthcare diagnostics
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
-	- Increased integration of AI Agent Systems with IoT and edge computing
-	- Growth in multi-agent systems for collaborative problem-solving and decision-making
+  - Emerging trends and developments
+  - Increased integration of AI Agent Systems with IoT and edge computing
+  - Growth in multi-agent systems for collaborative problem-solving and decision-making
 
-- Anticipated challenges
-	- Ensuring robustness, reliability, and ethical alignment in increasingly autonomous agents
-	- Addressing the complexity of agent tool orchestration and interoperability
+  - Anticipated challenges
+  - Ensuring robustness, reliability, and ethical alignment in increasingly autonomous agents
+  - Addressing the complexity of agent tool orchestration and interoperability
 
-- Research priorities
-	- Advancing contextual reasoning and adaptability in agent systems
-	- Developing comprehensive standards and taxonomies for agent tool use
-	- Exploring the societal and ethical implications of agent-based AI
+  - Research priorities
+  - Advancing contextual reasoning and adaptability in agent systems
+  - Developing comprehensive standards and taxonomies for agent tool use
+  - Exploring the societal and ethical implications of agent-based AI
 
-## References
+  ## References
 
-1. Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th ed.). Pearson. https://www.pearson.com/en-us/subject-catalog/p/artificial-intelligence-a-modern-approach/P200000003222/9780134610993
-2. Krishnan, N. (2025). AI Agents: Evolution, Architecture, and Real-World Applications. Journal of Artificial Intelligence Research, 78, 123–156. https://doi.org/10.1613/jair.1.12345
-3. Gajjar, S., & Danilevsky, M. (2025). Rethinking AI Agents: A Principal-Agent Perspective. California Management Review, 67(3), 45–67. https://doi.org/10.1177/00081256251234567
-4. Consortium for AI Systems and Tool Use (CAISI). (2025). Workshop Proceedings: Taxonomy of AI Agent Tools. https://caisi.org/workshop-2025
-5. Alan Turing Institute. (2025). Guidelines for Responsible AI Agent Deployment. https://turing.ac.uk/guidelines-ai-agents
-6. University of Manchester AI and Data Science Institute. (2025). Agent-Based Models for Urban Planning. https://manchester.ac.uk/ai-urban-planning
-7. Leeds Innovation Hub. (2025). Agent Systems in Logistics and Healthcare. https://leedsinnovationhub.org/agent-systems
+  1. Russell, S., & Norvig, P. (2020). Artificial Intelligence: A Modern Approach (4th ed.). Pearson. https://www.pearson.com/en-us/subject-catalog/p/artificial-intelligence-a-modern-approach/P200000003222/9780134610993
+  2. Krishnan, N. (2025). AI Agents: Evolution, Architecture, and Real-World Applications. Journal of Artificial Intelligence Research, 78, 123–156. https://doi.org/10.1613/jair.1.12345
+  3. Gajjar, S., & Danilevsky, M. (2025). Rethinking AI Agents: A Principal-Agent Perspective. California Management Review, 67(3), 45–67. https://doi.org/10.1177/00081256251234567
+  4. Consortium for AI Systems and Tool Use (CAISI). (2025). Workshop Proceedings: Taxonomy of AI Agent Tools. https://caisi.org/workshop-2025
+  5. Alan Turing Institute. (2025). Guidelines for Responsible AI Agent Deployment. https://turing.ac.uk/guidelines-ai-agents
+  6. University of Manchester AI and Data Science Institute. (2025). Agent-Based Models for Urban Planning. https://manchester.ac.uk/ai-urban-planning
+  7. Leeds Innovation Hub. (2025). Agent Systems in Logistics and Healthcare. https://leedsinnovationhub.org/agent-systems
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-15
-- **Review Status**: Comprehensive editorial review with Bitcoin-AI integration
-- **Verification**: Academic sources verified, URLs expanded
-- **Regional Context**: UK/North England where applicable
-- **Quality Score**: 0.92
-- **Wiki-Links Added**: 47
-- **Bitcoin-AI Cross-References**: 15
-- **URLs Expanded**: 12
-- **2025 Updates**: Operator, MCP, Computer Use, Agents SDK, Lightning Network integration
+  - **Last Updated**: 2025-11-15
+  - **Review Status**: Comprehensive editorial review with Bitcoin-AI integration
+  - **Verification**: Academic sources verified, URLs expanded
+  - **Regional Context**: UK/North England where applicable
+  - **Quality Score**: 0.92
+  - **Wiki-Links Added**: 47
+  - **Bitcoin-AI Cross-References**: 15
+  - **URLs Expanded**: 12
+  - **2025 Updates**: Operator, MCP, Computer Use, Agents SDK, Lightning Network integration
+
+- ### Provenance
+  - sources:: [[Russell & Norvig AI: A Modern Approach]] (https://aima.cs.berkeley.edu/), [[IEEE P7009]] (https://standards.ieee.org/ieee/7009/), [[OpenAI Agent Research]] (https://openai.com/research/), [[Anthropic Computer Use]] (https://anthropic.com/news/computer-use), [[Model Context Protocol]] (https://modelcontextprotocol.io/)
+  - migration-date:: 2026-04-26T00:00:00Z

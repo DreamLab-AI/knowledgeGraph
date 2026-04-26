@@ -1,50 +1,49 @@
 {
-  "id": "Performance Metrics",
+  "id": "performance-metrics",
   "title": "Performance Metrics",
-  "content": "- ### OntologyBlock\n  id:: performance-metrics-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: AI-0602\n\t- preferred-term:: Performance Metrics\n\t- source-domain:: ai\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Performance Metrics are quantitative measures used to evaluate and compare the effectiveness, accuracy, and efficiency of AI and machine learning systems. These metrics provide standardised ways to assess model quality including accuracy, precision, recall, F1-score, AUC-ROC, and task-specific evaluation criteria.\n\t- owl:class:: ai:PerformanceMetric\n\t- belongsToDomain:: [[Artificial Intelligence]]\n\t- #### Relationships\n\t  id:: performance-metrics-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Artificial Intelligence]]\n\t\t- related-to:: [[Machine Learning]]\n\t\t- is-parent-of:: [[Accuracy]]\n\t\t- is-parent-of:: [[Precision]]\n\t\t- is-parent-of:: [[Recall]]\n\t\t- is-parent-of:: [[F1 Score]]\n\t\t- is-parent-of:: [[AUC]]",
+  "content": "- ### Definition\n  - PerformanceMetrics is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:PerformanceMetrics\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  # PerformanceMetrics\n  PerformanceMetrics represents a key component in Metaverse infrastructure and technology. Research: PerformanceMetrics - FPS tracking, latency measurement, performance analysis\n  - https://www.khronos.org/ - Industry standards\n  - https://www.w3.org/TR/ - Web standards\n  - https://developer.mozilla.org/ - Technical documentation\n\n  ## Sources\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
+    "Human Factors",
     "AI-GroundedDomain",
     "Algorithmic Transparency Index",
     "Telemetry & Analytics",
-    "Performance Optimization",
-    "Benchmark Standard",
-    "Deep Learning",
     "AI Model Card"
   ],
-  "wiki_links": [
-    "Accuracy",
-    "Artificial Intelligence",
-    "AUC",
-    "F1 Score",
-    "Recall",
-    "Machine Learning",
-    "Precision"
-  ],
+  "wiki_links": [],
   "ontology": {
-    "term_id": "AI-0602",
+    "uri": "urn:visionclaw:concept:infrastructure:performance-metrics",
+    "iri": "http://narrativegoldmine.com/infrastructure#PerformanceMetrics",
+    "content_hash": "sha256-12-e2c0647ed554",
+    "legacy_term_id": "MV-9182",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:performance-metrics",
+    "schema_version": "v2",
+    "term_id": "MV-9182",
     "preferred_term": "Performance Metrics",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#PerformanceMetric",
-    "source_domain": "ai",
-    "domain": "ai",
-    "domain_full_name": "Artificial Intelligence",
-    "definition": "Performance Metrics are quantitative measures used to evaluate and compare the effectiveness, accuracy, and efficiency of AI and machine learning systems. These metrics provide standardised ways to assess model quality including accuracy, precision, recall, F1-score, AUC-ROC, and task-specific evaluation criteria.",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "PerformanceMetrics is a concept within the ngm domain.",
     "scope_note": null,
-    "status": "active",
-    "maturity": null,
-    "version": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:PerformanceMetric",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:PerformanceMetrics",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [
-      "Artificial Intelligence"
-    ],
+    "is_subclass_of": [],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
@@ -53,31 +52,13 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
-    "belongs_to_domain": [
-      "Artificial Intelligence"
-    ],
+    "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Machine Learning"
-      ],
-      "is-parent-of": [
-        "Accuracy",
-        "Precision",
-        "Recall",
-        "F1 Score",
-        "AUC"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

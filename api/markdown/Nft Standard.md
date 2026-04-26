@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: nftstandard-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#NFTStandard
+uri:: urn:visionclaw:concept:blockchain:nft-standard
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:nft-standard
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: NFT Standard
+content-hash:: sha256-12-0e8875a86ee6
+legacy-term-id:: BC-0570
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0570
-    - filename-history:: ["BC-0570-nftstandard.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0570
-    - preferred-term:: NFT Standard
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Technical standards for NFTs (ERC-721, ERC-1155, etc.).
 
-  - **Definition**
-    - definition:: Technical standards for NFTs (ERC-721, ERC-1155, etc.).
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:NftStandard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:NftStandard
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - <!-- No relationships defined -->
 
-  - #### Relationships
+- ### Content
+  NFT Standard — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :NftStandard))
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :NftStandard "NFT Standard"@en)
-      (AnnotationAssertion rdfs:comment :NftStandard
-        "Technical standards for NFTs (ERC-721, ERC-1155, etc.)."@en)
-      ```
-
-- ## About NFT Standard
-  Technical standards for NFTs (ERC-721, ERC-1155, etc.).
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

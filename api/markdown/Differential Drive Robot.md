@@ -1,46 +1,45 @@
-- ### OntologyBlock
-  id:: differentialdriverobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#DifferentialDriveRobot
+uri:: urn:visionclaw:concept:robotics:differential-drive-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:differential-drive-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: Differential Drive Robot
+content-hash:: sha256-12-94a33bbe4b6c
+legacy-term-id:: RB-0114
+status:: complete
+maturity:: established
+quality-score:: 0.50
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T00:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0114
-    - filename-history:: ["RB-0114-differentialdriverobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0114
-    - preferred-term:: Differential Drive Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Differential drive robot uses two independently controlled wheels on opposite sides to enable both forward/backward locomotion and in-place rotation, forming the most widely deployed [[Mobile Robot]] architecture. By differentially controlling wheel velocities, the robot achieves holonomic-like manoeuvring from non-holonomic kinematics, making differential drives ubiquitous in research platforms, [[Autonomous Vehicles]], and [[Mobile Manipulation]] systems.
 
-  - **Definition**
-    - definition:: Differential drive robot uses two independently controlled wheels on each side for locomotion and steering.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:DifferentialDriveRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:DifferentialDriveRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - bridges-to:: [[Spatial Computing]]
+  - is-subclass-of:: [[Wheeled Robot]], [[Nonholonomic Robot]]
+  - has-part:: [[Left Drive Motor]], [[Right Drive Motor]], [[Wheel]], [[Caster Wheel]], [[Differential Drive Controller]]
+  - requires:: [[Independent Wheel Motors]], [[Odometry Sensors]], [[Motor Drivers]], [[Power Battery]]
+  - enables:: [[Point Turning]], [[Forward Locomotion]], [[In-Place Rotation]], [[Arc Trajectory Following]]
+  - depends-on:: [[Kinematic Model]], [[Velocity Control]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Wheeled Robot]]
+- ### Content
+  Differential drive kinematics operate through a simple principle: equal wheel speeds produce straight-line motion, whilst unequal speeds produce curved trajectories with the instantaneous centre of rotation located perpendicular to the axle. Setting opposite wheel velocities achieves in-place rotation without forward translation. This mechanical simplicity enables robots like the Pioneer, TurtleBot, and ROS reference platforms to achieve complex manoeuvres using straightforward control algorithms.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :DifferentialDriveRobot))
-      (SubClassOf :DifferentialDriveRobot :WheeledRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :DifferentialDriveRobot "Differential Drive Robot"@en)
-      (AnnotationAssertion rdfs:comment :DifferentialDriveRobot
-        "Differential drive robot uses two independently controlled wheels on each side for locomotion and steering."@en)
-      ```
+  The popularity of differential drive stems from its reliability, low cost, and predictable non-linear dynamics enabling accurate [[Odometry]]-based [[Localisation]]. However, differential drives are non-holonomic systems: the robot cannot move sideways despite having two degrees of freedom available, meaning it cannot simply drive to arbitrary positions in arbitrary orientations but must follow feasible paths respecting kinematic constraints. This restriction necessitates [[Motion Planning]] algorithms like [[Dubins Curves]] and [[Reeds-Shepp Paths]] that respect non-holonomy.
 
-- ## About Differential Drive Robot
-  Differential drive robot uses two independently controlled wheels on each side for locomotion and steering.
-  
-  A wheeled robot with two independently driven wheels.
+  Modern differential drive systems incorporate odometry fusion with [[Inertial Measurement Units]] and [[Visual Odometry]] for improved localisation, [[Skid Control]] to handle slip on compliant terrain, and adaptive control algorithms that estimate wheel friction and adjust motor commands accordingly. Multi-wheeled variants extend the architecture—four-wheel differential drives using paired motors, or three-wheeled configurations balancing stability and footprint. Integration with computer vision enables visually-guided navigation, whilst combinations with robotic arms create mobile manipulation platforms for [[Warehouse Automation]] and [[Service Robotics]].
+
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

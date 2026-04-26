@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: hybridconsensus-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/blockchain#HybridConsensus
+uri:: urn:visionclaw:concept:blockchain:hybrid-consensus
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:hybrid-consensus
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Hybrid Consensus
+content-hash:: sha256-12-bf13bdb0b2be
+legacy-term-id:: BC-0545
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: BC
-    - sequence-number:: 0545
-    - filename-history:: ["BC-0545-hybridconsensus.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: BC-0545
-    - preferred-term:: Hybrid Consensus
-    - source-domain:: bc
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements.
 
-  - **Definition**
-    - definition:: Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: blockchain:HybridConsensus
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-  - **Semantic Classification**
-    - owl:class:: bc:HybridConsensus
-    - belongsToDomain:: [[Blockchain]]
+- ### Relationships
+  - is-subclass-of:: [[Consensus Mechanism]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Consensus Mechanism]]
+- ### Content
+  Hybrid Consensus — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :HybridConsensus))
-      (SubClassOf :HybridConsensus :ConsensusMechanism)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :HybridConsensus "Hybrid Consensus"@en)
-      (AnnotationAssertion rdfs:comment :HybridConsensus
-        "Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements."@en)
-      ```
-
-- ## About Hybrid Consensus
-  Consensus mechanisms combining multiple approaches, typically merging proof-based methods with BFT finality or mixing PoW and PoS elements.
-  
-  Attempts to balance security, performance, and decentralization by leveraging strengths of multiple consensus types.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

@@ -1,57 +1,43 @@
-- ### OntologyBlock
-  id:: neural-3d-generation-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#Neural3DGeneration
+uri:: urn:visionclaw:concept:artificial-intelligence:neural-3d-generation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:neural-3d-generation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Neural 3D Generation
+content-hash:: sha256-12-3de857ea4bf4
+legacy-term-id:: AI-0700
+status:: complete
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.90
+version:: 2.0.0
+created:: 2025-11-05T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - ontology:: true
-    - term-id:: AI-0700
-    - preferred-term:: Neural 3D Generation
-    - source-domain:: ai
-    - status:: complete
-    - public-access:: true
-    - version:: 1.0.0
-    - last-updated:: 2025-11-05
+- ### Definition
+  - AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.
 
-  - **Definition**
-    - definition:: AI-powered creation of three-dimensional geometric models, volumetric representations, and 4D dynamic scenes using neural networks and machine learning techniques, including generative models, neural radiance fields, gaussian splatting, and diffusion-based 3D synthesis.
-    - maturity:: emerging
-    - source:: [[SIGGRAPH AI]], [[OpenAI Point-E]], [[GET3D]], [[NeRF]], [[3D Gaussian Splatting]]
-    - authority-score:: 0.90
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:Neural3DGeneration
+  - owl-role:: Process
+  - owl-inferred:: ai:VirtualProcess
+  - belongs-to-domain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]
+  - implemented-in-layer:: [[ComputeLayer]], [[DataLayer]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:Neural3DGeneration
-    - owl:role:: Process
-    - owl:inferred-class:: ai:VirtualProcess
-    - belongsToDomain:: [[AI-GroundedDomain]], [[CreativeMediaDomain]]
-    - implementedInLayer:: [[ComputeLayer]], [[DataLayer]]
+- ### Relationships
+  - is-subclass-of:: [[Generative AI]], [[3D Content Generation]], [[Procedural Content Generation]]
+  - has-part:: [[Neural Network]], [[Generative Model]], [[3D Representation]], [[Training Pipeline]], [[Rendering Engine]]
+  - requires:: [[Training Data]], [[GPU Compute]], [[3D Asset Dataset]], [[Camera Parameters]]
+  - enables:: [[Rapid Prototyping]], [[Automated 3D Modeling]], [[Virtual Environment Creation]], [[Digital Twin Generation]]
+  - implements:: [[Diffusion Model]], [[Neural Radiance Field]], [[Gaussian Splatting]], [[GAN]], [[VAE]]
+  - bridges-to:: [[3D Model]] (domain: metaverse), [[Digital Twin]] (domain: metaverse), [[Avatar]] (domain: metaverse), [[Virtual World]] (domain: metaverse)
 
-  - #### Relationships
-    id:: neural-3d-generation-relationships
-    - is-subclass-of:: [[Generative AI]], [[3D Content Generation]], [[Procedural Content Generation]]
-    - has-part:: [[Neural Network]], [[Generative Model]], [[3D Representation]], [[Training Pipeline]], [[Rendering Engine]]
-    - implements:: [[Diffusion Model]], [[Neural Radiance Field]], [[Gaussian Splatting]], [[GAN]], [[VAE]]
-    - requires:: [[Training Data]], [[GPU Compute]], [[3D Asset Dataset]], [[Camera Parameters]]
-    - enables:: [[Rapid Prototyping]], [[Automated 3D Modeling]], [[Virtual Environment Creation]], [[Digital Twin Generation]]
-    - bridges-to::
-      - [[3D Model]] (domain: metaverse)
-      - [[Digital Twin]] (domain: metaverse)
-      - [[Avatar]] (domain: metaverse)
-      - [[Virtual World]] (domain: metaverse)
+- ### Content
 
-  - #### OWL Axioms
-    id:: neural-3d-generation-owl-axioms
-    collapsed:: true
-    - ```clojure
-      Prefix(ai:=<http://purl.org/ai-ontology#>)
-      Prefix(mv:=<http://purl.org/metaverse-ontology#>)
-      Prefix(dt:=<http://purl.org/disruptive-tech/bridges#>)
-      Prefix(owl:=<http://www.w3.org/2002/07/owl#>)
-      Prefix(xsd:=<http://www.w3.org/2001/XMLSchema#>)
-      Prefix(rdfs:=<http://www.w3.org/2000/01/rdf-schema#>)
-
-      Ontology(<http://purl.org/ai-ontology/AI-0700>
-
-        ## Class Declaration
+  ## Class Declaration
         Declaration(Class(ai:Neural3DGeneration))
 
         ## Subclass Relationships
@@ -122,17 +108,13 @@
 
   # Property characteristics
   AsymmetricObjectProperty(dt:enables)
-```
+  ```
 
-- ## About Neural 3D Generation
-  id:: neural-3d-generation-about
+  - ## About Neural 3D Generation
 
   - **Neural 3D Generation** represents the frontier of AI-powered 3D content creation, leveraging deep learning to automatically generate three-dimensional models, scenes, and dynamic sequences from minimal input. Unlike traditional 3D modeling that requires manual vertex placement and mesh construction, neural 3D generation uses trained models to synthesize geometry, textures, and spatial relationships from textual descriptions, images, point clouds, or learned latent representations.
-  -
   - This technology democratizes 3D content creation by dramatically reducing the time, skill, and effort required to produce high-quality assets for games, metaverse environments, digital twins, virtual production, and extended reality applications. It combines advances in generative AI, computer vision, and graphics rendering to enable new creative workflows.
-  -
   - ### Key Characteristics
-    id:: neural-3d-generation-characteristics
     - **AI-Powered**: Uses neural networks trained on large 3D datasets
     - **Input Flexibility**: Works from text, images, sketches, or point clouds
     - **Automated**: Minimizes manual modeling effort
@@ -141,9 +123,7 @@
     - **Multimodal**: Combines 2D, 3D, and textual information
     - **Differentiable**: Enables gradient-based optimisation
     - **Scalable**: Generates assets at various levels of detail
-  -
   - ### Core Technologies
-    id:: neural-3d-generation-technologies
 
     #### Neural Radiance Fields (NeRF)
     - **Concept**: Implicit 3D scene representation using neural networks
@@ -202,9 +182,7 @@
       - Virtual environment creation from photographs
       - AR/VR object placement
     - **Link**: [OnePose++ Project](https://zju3dv.github.io/onepose_plus_plus/)
-  -
   - ### 3D Representations
-    id:: neural-3d-generation-representations
 
     #### Explicit Representations
     - **Meshes**: Vertices, edges, faces (polygonal models)
@@ -238,9 +216,7 @@
       - Real-time performance, high quality
     - **Neural Mesh Models**: Learned deformations of template meshes
       - Combines neural and traditional representations
-  -
   - ### 4D Generation (3D + Time)
-    id:: neural-3d-generation-4d
 
     #### Dynamic Scene Generation
     - **Concept**: Generate 3D scenes that evolve over time
@@ -254,9 +230,7 @@
     - **Character Animation**: AI-generated human/creature motion
     - **Physics Simulation**: Neural networks learning dynamics
     - **Trajectory Optimization**: Planning object movements
-  -
   - ### Optimisation and Rendering
-    id:: neural-3d-generation-optimisation
 
     #### LION Optimizer
     - **Purpose**: Efficient training of large 3D generative models
@@ -278,9 +252,7 @@
       - Font rendering in virtual environments
       - User interface design
     - **Flexibility**: Handles meshes with arbitrary topology (holes, handles)
-  -
   - ### Training Pipelines
-    id:: neural-3d-generation-training
 
     #### Data Requirements
     - **3D Asset Datasets**: ShapeNet, Objaverse, 3D scans
@@ -299,9 +271,7 @@
     - **GPU-Intensive**: Most methods require high-end GPUs (A100, H100)
     - **Training Time**: Days to weeks for large models
     - **Inference**: Varies from real-time (Gaussian Splatting) to minutes (NeRF)
-  -
   - ### Applications
-    id:: neural-3d-generation-applications
 
     #### Game Development
     - **Asset Creation**: Rapidly generate props, environments, characters
@@ -331,9 +301,7 @@
     - **Product Visualization**: 3D models from product photos
     - **Virtual Try-On**: AR previews of furniture, clothing
     - **Catalog Automation**: Generate 3D assets at scale
-  -
   - ### Democratization of 3D Content Creation
-    id:: neural-3d-generation-democratization
 
     #### Reducing Barriers to Entry
     - **No 3D Modeling Expertise**: Text or image input instead of manual modeling
@@ -351,9 +319,7 @@
     - **Artist Agency**: Balance automation with creative control
     - **Copyright**: Unclear ownership of AI-generated assets
     - **Homogenization**: Risk of similar-looking AI-generated content
-  -
   - ### 2024-2025 Advances and Commercial Breakthroughs
-    id:: neural-3d-generation-recent-advances
 
     The period from late 2024 through 2025 witnessed remarkable acceleration in neural 3D generation capabilities, with advances spanning academic research, commercial tool development, and open-source infrastructure. What was experimental in 2023 became production-ready tooling deployed across gaming, architecture, product design, and metaverse development.
 
@@ -384,9 +350,7 @@
     As 3D generative AI matured in 2024-2025, it reshaped creativity across multiple disciplines. Gaming studios integrated text-to-3D pipelines for rapid asset prototyping, reducing iteration cycles from weeks to hours. Architectural firms deployed image-to-3D reconstruction for site documentation and conceptual modeling. Product designers used generative models to explore design variations at unprecedented speeds. The metaverse development community leveraged these tools to populate virtual worlds with diverse, detailed environments without prohibitive manual modeling costs.
 
     The trajectory suggested that by mid-2025, neural 3D generation had transitioned from research curiosity to essential infrastructure for any discipline involving 3D content creation—mirroring the impact of generative AI on text and images 18-24 months earlier. The field's rapid maturation established 3D generation as foundational to the next generation of interactive digital experiences, from VR applications to digital twins to autonomous systems requiring 3D scene understanding.
-  -
   - ### Use Cases
-    id:: neural-3d-generation-use-cases
     - **Text-to-3D**: "Generate a wooden medieval chair" → 3D model
     - **Image-to-3D**: Single product photo → full 3D asset
     - **Scene Reconstruction**: Drone footage → navigable 3D environment
@@ -395,9 +359,7 @@
     - **Digital Twin Generation**: Sensor data → real-time 3D simulation
     - **Virtual Set Extension**: Film plate → 3D background for VFX
     - **Archaeological Reconstruction**: Fragment images → complete ancient structure
-  -
   - ### Standards & References
-    id:: neural-3d-generation-standards
     - [[SIGGRAPH AI]] - Premier conference for graphics and AI research
     - [[OpenAI Point-E]] - Fast 3D point cloud generation
     - [[GET3D (NVIDIA)]] - Generative 3D mesh and texture synthesis
@@ -406,9 +368,7 @@
     - [[DreamFusion (Google)]] - Text-to-3D using 2D diffusion
     - [[Shap-E (OpenAI)]] - Conditional 3D generative model
     - [[glTF 2.0]] - Standard 3D asset format for interoperability
-  -
   - ### Related Concepts
-    id:: neural-3d-generation-related
     - [[Generative AI]] - Parent class of AI content generation
     - [[Procedural Content Generation]] - Algorithmic 3D creation
     - [[Generative Design Tool]] - AI-assisted design systems
@@ -424,56 +384,60 @@
     - technique-for:: [[Generative Design Tool]], [[Image Generation]], [[Computer Vision]]
 
     - measured-by:: [[Procedural Content Generation]]
-## Academic Context
+  ## Academic Context
 
-- Neural 3D generation refers to the use of neural networks and AI-driven generative models to create three-dimensional digital content, including objects, scenes, and environments.
+  - Neural 3D generation refers to the use of neural networks and AI-driven generative models to create three-dimensional digital content, including objects, scenes, and environments.
   - Key developments include the integration of neural radiance fields (NeRF), latent diffusion models, and transformer architectures to improve realism, semantic understanding, and generation speed.
   - The academic foundations lie in computer vision, graphics, machine learning, and natural language processing, with a focus on generative adversarial networks (GANs), variational autoencoders (VAEs), and diffusion models for 3D data synthesis.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption is widespread across gaming, film, architecture, virtual and augmented reality, and robotics.
+  - Industry adoption is widespread across gaming, film, architecture, virtual and augmented reality, and robotics.
   - Notable platforms include Luma AI, Masterpiece X, Hyper3D, and NVIDIA Omniverse, which leverage neural rendering and physical AI to produce photorealistic and context-aware 3D models.
   - UK examples include research collaborations and startups in Manchester and Leeds focusing on AI-driven 3D content for digital media and manufacturing.
-- Technical capabilities now allow near real-time text-to-3D generation, image-to-3D reconstruction, and video-to-3D volumetric modelling.
+  - Technical capabilities now allow near real-time text-to-3D generation, image-to-3D reconstruction, and video-to-3D volumetric modelling.
   - Limitations remain in controllability, generation efficiency, and the handling of complex scene semantics.
-- Standards and frameworks are evolving, with increasing emphasis on interoperability, physically based rendering (PBR) textures, and clean mesh topology to facilitate downstream use in various engines and platforms.
+  - Standards and frameworks are evolving, with increasing emphasis on interoperability, physically based rendering (PBR) textures, and clean mesh topology to facilitate downstream use in various engines and platforms.
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources:
+  - Key academic papers and sources:
   - Xu, K., et al. (2024). "CLAY: A Multi-resolution Variational Autoencoder and Latent Diffusion Transformer for 3D Model Generation." *SIGGRAPH 2024*. DOI: 10.1145/XXXXXX
   - Wang, Y., et al. (2025). "Neural Radiance Fields for Real-Time 3D Scene Reconstruction." *IEEE Transactions on Visualization and Computer Graphics*, 31(2), 1234-1248. DOI: 10.1109/TVCG.2025.XXXXXX
   - Chen, L., et al. (2025). "Survey on 3D Scene Generation: Procedural, Neural, Image- and Video-based Methods." *arXiv preprint arXiv:2505.05474*.
-- Ongoing research focuses on improving semantic consistency, generation speed, and integration of physical AI for robotics and autonomous systems.
+  - Ongoing research focuses on improving semantic consistency, generation speed, and integration of physical AI for robotics and autonomous systems.
 
-## UK Context
+  ## UK Context
 
-- British contributions include pioneering research in neural rendering and AI-driven 3D reconstruction at institutions such as the University of Manchester and Newcastle University.
-- North England innovation hubs in Manchester and Leeds are fostering startups that apply neural 3D generation to digital manufacturing, gaming, and cultural heritage preservation.
-- Regional case studies highlight collaborations between academia and industry, such as AI-enhanced 3D modelling for architectural firms in Sheffield and VR content creation studios in Newcastle.
+  - British contributions include pioneering research in neural rendering and AI-driven 3D reconstruction at institutions such as the University of Manchester and Newcastle University.
+  - North England innovation hubs in Manchester and Leeds are fostering startups that apply neural 3D generation to digital manufacturing, gaming, and cultural heritage preservation.
+  - Regional case studies highlight collaborations between academia and industry, such as AI-enhanced 3D modelling for architectural firms in Sheffield and VR content creation studios in Newcastle.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends include:
+  - Emerging trends include:
   - Enhanced context-aware generation that understands complex design intents from natural language prompts.
   - Integration of physical AI for real-world simulation and robotics applications.
   - Expansion of multi-modal inputs combining text, images, and video for richer 3D asset creation.
-- Anticipated challenges involve balancing generation quality with computational efficiency and ensuring ethical use of AI-generated content.
-- Research priorities include improving model controllability, reducing bias in training datasets, and developing open standards for 3D AI content interoperability.
+  - Anticipated challenges involve balancing generation quality with computational efficiency and ensuring ethical use of AI-generated content.
+  - Research priorities include improving model controllability, reducing bias in training datasets, and developing open standards for 3D AI content interoperability.
 
-## References
+  ## References
 
-1. Xu, K., et al. (2024). "CLAY: A Multi-resolution Variational Autoencoder and Latent Diffusion Transformer for 3D Model Generation." *SIGGRAPH 2024*. DOI: 10.1145/XXXXXX
-2. Wang, Y., et al. (2025). "Neural Radiance Fields for Real-Time 3D Scene Reconstruction." *IEEE Transactions on Visualization and Computer Graphics*, 31(2), 1234-1248. DOI: 10.1109/TVCG.2025.XXXXXX
-3. Chen, L., et al. (2025). "Survey on 3D Scene Generation: Procedural, Neural, Image- and Video-based Methods." *arXiv preprint arXiv:2505.05474*.
-4. NVIDIA Research (2025). "Physical AI and Neural Rendering Innovations." *NVIDIA Blog*, August 2025.
-5. SuperAGI (2025). "Future of 3D Modeling: Trends and Innovations in AI-Powered 3D Model Generators for 2025 and Beyond."
+  1. Xu, K., et al. (2024). "CLAY: A Multi-resolution Variational Autoencoder and Latent Diffusion Transformer for 3D Model Generation." *SIGGRAPH 2024*. DOI: 10.1145/XXXXXX
+  2. Wang, Y., et al. (2025). "Neural Radiance Fields for Real-Time 3D Scene Reconstruction." *IEEE Transactions on Visualization and Computer Graphics*, 31(2), 1234-1248. DOI: 10.1109/TVCG.2025.XXXXXX
+  3. Chen, L., et al. (2025). "Survey on 3D Scene Generation: Procedural, Neural, Image- and Video-based Methods." *arXiv preprint arXiv:2505.05474*.
+  4. NVIDIA Research (2025). "Physical AI and Neural Rendering Innovations." *NVIDIA Blog*, August 2025.
+  5. SuperAGI (2025). "Future of 3D Modeling: Trends and Innovations in AI-Powered 3D Model Generators for 2025 and Beyond."
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[SIGGRAPH AI]], [[OpenAI Point-E]], [[GET3D]], [[NeRF]], [[3D Gaussian Splatting]]
+  - migration-date:: 2026-04-26T00:00:00Z

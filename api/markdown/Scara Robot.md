@@ -1,46 +1,36 @@
-- ### OntologyBlock
-  id:: scararobot-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#SCARARobot
+uri:: urn:visionclaw:concept:robotics:scara-robot
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:scara-robot
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: SCARA Robot
+content-hash:: sha256-12-1983aa2fe1ca
+legacy-term-id:: RB-0131
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0131
-    - filename-history:: ["RB-0131-scararobot.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0131
-    - preferred-term:: SCARA Robot
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.
 
-  - **Definition**
-    - definition:: SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:ScaraRobot
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:ScaraRobot
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Industrial Robot]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Industrial Robot]]
+- ### Content
+  SCARA Robot — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ScaraRobot))
-      (SubClassOf :ScaraRobot :IndustrialRobot)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ScaraRobot "SCARA Robot"@en)
-      (AnnotationAssertion rdfs:comment :ScaraRobot
-        "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations."@en)
-      ```
-
-- ## About SCARA Robot
-  SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.
-  
-  Selective Compliance Assembly Robot Arm with two revolute and one prismatic joint.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

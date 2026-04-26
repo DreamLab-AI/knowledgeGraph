@@ -1,127 +1,140 @@
-- ### OntologyBlock
-  id:: transaction-finality-ontology
-  collapsed:: true
-	- ontology:: true
-	- source-domain:: bc
-	- term-id:: BC-8021
-	- preferred-term:: Transaction Finality
-	- status:: active
-	- public-access:: true
-	- definition:: The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).
-	- belongsToDomain:: [[Blockchain]]
-	- owl:class:: bc:TransactionFinality
+iri:: http://narrativegoldmine.com/blockchain#TransactionFinality
+uri:: urn:visionclaw:concept:blockchain:transaction-finality
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:blockchain:transaction-finality
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: blockchain
+preferred-term:: Transaction Finality
+content-hash:: sha256-12-b0a966e74e5a
+legacy-term-id:: BC-8021
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
----
-id: BC-1014
-title: Transaction Finality
-type: ConceptNode
-domain: Blockchain
-created: 2025-11-24
-status: active
----
+- ### Definition
+  - The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants. Finality types include probabilistic (increasing confidence with confirmations), deterministic (explicit protocol guarantee), and economic (cost to revert exceeds benefit).
 
-# Transaction Finality
+- ### Semantic Classification
+  - owl-class:: blockchain:TransactionFinality
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Blockchain]]
 
-## Definition
-- Point at which transaction becomes irreversible and cannot be altered or removed from blockchain
-- Guarantees transaction permanence and settlement certainty for participants
-- Fundamental property determining blockchain suitability for different applications
+- ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+  - depends-on:: [[Consensus Mechanism]]
 
-## Core Concepts
-- **Irreversibility**: Transaction cannot be rolled back or modified
-- **Settlement Guarantee**: Assets definitively transferred
-- **Confidence Level**: Degree of certainty transaction will remain in chain
-- **Time to Finality**: Duration from inclusion to finalization
+- ### Content
 
-## Finality Types
-### [[Probabilistic Finality]]
-- Confidence increases with subsequent block confirmations
-- Never reaches 100% certainty (theoretically)
-- Used in Proof-of-Work systems (Bitcoin, Ethereum PoW)
+  ## Definition
+  - Point at which transaction becomes irreversible and cannot be altered or removed from blockchain
+  - Guarantees transaction permanence and settlement certainty for participants
+  - Fundamental property determining blockchain suitability for different applications
 
-### [[Deterministic Finality]]
-- Transactions finalized through explicit protocol mechanism
-- Absolute guarantee after finalization checkpoint
-- Used in BFT-based consensus (Tendermint, Algorand)
+  ## Core Concepts
+  - **Irreversibility**: Transaction cannot be rolled back or modified
+  - **Settlement Guarantee**: Assets definitively transferred
+  - **Confidence Level**: Degree of certainty transaction will remain in chain
+  - **Time to Finality**: Duration from inclusion to finalization
 
-### Economic Finality
-- Cost to revert exceeds potential gain
-- Probabilistic but economically secured
-- Ethereum Proof-of-Stake uses slashing for economic finality
+  ## Finality Types
+  ### [[Probabilistic Finality]]
+  - Confidence increases with subsequent block confirmations
+  - Never reaches 100% certainty (theoretically)
+  - Used in Proof-of-Work systems (Bitcoin, Ethereum PoW)
 
-## Relationships
-- property-of:: [[Transaction]]
-- depends-on:: [[Consensus Mechanism]]
-- has-types:: [[Probabilistic Finality]], [[Deterministic Finality]]
-- affects:: [[Transaction Confirmation Time]]
-- critical-for:: [[Settlement]]
+  ### [[Deterministic Finality]]
+  - Transactions finalized through explicit protocol mechanism
+  - Absolute guarantee after finalization checkpoint
+  - Used in BFT-based consensus (Tendermint, Algorand)
 
-## Finality by Consensus Type
-| Consensus | Finality Type | Time to Finality |
-|-----------|---------------|------------------|
-| Bitcoin PoW | Probabilistic | ~60 min (6 blocks) |
-| Ethereum PoW | Probabilistic | ~15 min (20-30 blocks) |
-| Ethereum PoS | Economic | ~13 min (2 epochs) |
-| Tendermint | Deterministic | ~6 seconds (1 block) |
-| Algorand | Deterministic | ~4 seconds (1 block) |
-| Solana | Economic | ~13 seconds (32 blocks) |
+  ### Economic Finality
+  - Cost to revert exceeds potential gain
+  - Probabilistic but economically secured
+  - Ethereum Proof-of-Stake uses slashing for economic finality
 
-## Implications
-### For Applications
-- **Payments**: Fast finality enables real-time transactions
-- **DeFi**: Deterministic finality reduces liquidation risks
-- **Cross-Chain**: Finality time affects bridge security/speed
-- **Enterprise**: Regulated industries require strong finality guarantees
+  ## Relationships
+  - property-of:: [[Transaction]]
+  - depends-on:: [[Consensus Mechanism]]
+  - has-types:: [[Probabilistic Finality]], [[Deterministic Finality]]
+  - affects:: [[Transaction Confirmation Time]]
+  - critical-for:: [[Settlement]]
 
-### For Users
-- Confidence in transaction settlement
-- Time to consider transaction "complete"
-- Risk of double-spend or reorganization
+  ## Finality by Consensus Type
+  | Consensus | Finality Type | Time to Finality |
+  |-----------|---------------|------------------|
+  | Bitcoin PoW | Probabilistic | ~60 min (6 blocks) |
+  | Ethereum PoW | Probabilistic | ~15 min (20-30 blocks) |
+  | Ethereum PoS | Economic | ~13 min (2 epochs) |
+  | Tendermint | Deterministic | ~6 seconds (1 block) |
+  | Algorand | Deterministic | ~4 seconds (1 block) |
+  | Solana | Economic | ~13 seconds (32 blocks) |
 
-### For Developers
-- Smart contract interaction patterns
-- Error handling and rollback scenarios
-- Integration with external systems
+  ## Implications
+  ### For Applications
+  - **Payments**: Fast finality enables real-time transactions
+  - **DeFi**: Deterministic finality reduces liquidation risks
+  - **Cross-Chain**: Finality time affects bridge security/speed
+  - **Enterprise**: Regulated industries require strong finality guarantees
 
-## Measurement Metrics
-- **Mean Time to Finality (MTTF)**: Average finalization duration
-- **Confidence Threshold**: Block confirmations for desired certainty
-- **Finality Rate**: Percentage of blocks achieving finality
-- **Reorg Depth**: Historical chain reorganization statistics
+  ### For Users
+  - Confidence in transaction settlement
+  - Time to consider transaction "complete"
+  - Risk of double-spend or reorganization
 
-## Security Considerations
-- Long-range attacks on probabilistic finality
-- Network partition finality implications
-- Checkpoint mechanisms for faster weak subjectivity
-- Slashing penalties for violating finality
+  ### For Developers
+  - Smart contract interaction patterns
+  - Error handling and rollback scenarios
+  - Integration with external systems
 
-## Trade-offs
-### Fast Finality
-- **Pros**: Better UX, real-time applications, cross-chain efficiency
-- **Cons**: May sacrifice decentralization or liveness guarantees
+  ## Measurement Metrics
+  - **Mean Time to Finality (MTTF)**: Average finalization duration
+  - **Confidence Threshold**: Block confirmations for desired certainty
+  - **Finality Rate**: Percentage of blocks achieving finality
+  - **Reorg Depth**: Historical chain reorganization statistics
 
-### Slow Finality
-- **Pros**: Stronger security guarantees, simpler consensus
-- **Cons**: Poor UX, limits application design space
+  ## Security Considerations
+  - Long-range attacks on probabilistic finality
+  - Network partition finality implications
+  - Checkpoint mechanisms for faster weak subjectivity
+  - Slashing penalties for violating finality
 
-## Checkpoint Finality
-- Periodic finalization of earlier blocks
-- Hybrid approach (fast blocks, slow finality)
-- Ethereum Casper FFG: block production + periodic finalization
+  ## Trade-offs
+  ### Fast Finality
+  - **Pros**: Better UX, real-time applications, cross-chain efficiency
+  - **Cons**: May sacrifice decentralization or liveness guarantees
 
-## Attack Vectors
-- **Nothing-at-Stake**: PoS validators signing conflicting chains
-- **Long-Range Attacks**: Rewriting history from genesis
-- **Short-Range Reorgs**: Recent block reorganization
-- **51% Attacks**: Majority control enabling finality violation
+  ### Slow Finality
+  - **Pros**: Stronger security guarantees, simpler consensus
+  - **Cons**: Poor UX, limits application design space
 
-## Related Concepts
-- [[Probabilistic Finality]]
-- [[Deterministic Finality]]
-- [[Consensus Mechanism]]
-- [[Transaction Confirmation]]
+  ## Checkpoint Finality
+  - Periodic finalization of earlier blocks
+  - Hybrid approach (fast blocks, slow finality)
+  - Ethereum Casper FFG: block production + periodic finalization
 
-#blockchain #finality #consensus #security
+  ## Attack Vectors
+  - **Nothing-at-Stake**: PoS validators signing conflicting chains
+  - **Long-Range Attacks**: Rewriting history from genesis
+  - **Short-Range Reorgs**: Recent block reorganization
+  - **51% Attacks**: Majority control enabling finality violation
 
-### Relationships
-- is-subclass-of:: [[Blockchain]]
+  #### Related Concepts
+  - [[Probabilistic Finality]]
+  - [[Deterministic Finality]]
+  - [[Consensus Mechanism]]
+  - [[Transaction Confirmation]]
+
+  #blockchain #finality #consensus #security
+
+  ### Relationships
+  - is-subclass-of:: [[Blockchain]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

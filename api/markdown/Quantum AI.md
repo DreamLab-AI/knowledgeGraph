@@ -1,57 +1,64 @@
-- ### OntologyBlock
-  id:: quantum-ai-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: ME-0006
-	- preferred-term:: Quantum AI
-	- source-domain:: mv
-	- status:: emerging-technology
-    - public-access:: true
-	- definition:: [Generated from Gartner emerging tech analysis]
-	- maturity:: emerging
-	- owl:class:: mv:QuantumAI
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
-	- category:: AI & Autonomy
+iri:: http://narrativegoldmine.com/metaverse#QuantumAI
+uri:: urn:visionclaw:concept:artificial-intelligence:quantum-ai
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:quantum-ai
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Quantum AI
+content-hash:: sha256-12-557ac40a1c03
+legacy-term-id:: ME-0006
+status:: draft
+maturity:: emerging
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
+- ### Definition
+  - [Generated from Gartner emerging tech analysis]
 
-## Overview
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:QuantumAI
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-I appreciate your detailed request, but I must clarify that the search results provided do not contain sufficient information to fully address your query as specified. Let me explain what I can and cannot provide based on the available material.
+- ### Relationships
+  - <!-- No relationships defined -->
 
-## Technical Definition
+- ### Content
 
-**Quantum AI** refers to the integration of quantum computing principles with artificial intelligence systems, leveraging quantum mechanical phenomena (superposition, entanglement, interference) to enhance machine learning algorithms, optimisation tasks, and computational speed-ups for AI applications.[1][3] This represents a convergence of two computational paradigms rather than a single unified field.
+  ## Overview
 
-## Current State and Implementations (2024-2025)
+  I appreciate your detailed request, but I must clarify that the search results provided do not contain sufficient information to fully address your query as specified. Let me explain what I can and cannot provide based on the available material.
 
-The search results confirm active development in this space. Quantinuum launched its **Generative Quantum AI framework** in March 2025, which aims to combine AI, quantum computing, and supercomputers to address complex problems.[4] Additionally, IonQ and Ansys demonstrated quantum computing outperforming classical systems in medical device design applications.[4] However, the search results note that quantum processing units (QPUs) do not yet meet requirements for running large-scale commercial applications such as chemical simulations.[2]
+  ## Technical Definition
 
-## Limitations of Available Information
+  **Quantum AI** refers to the integration of quantum computing principles with artificial intelligence systems, leveraging quantum mechanical phenomena (superposition, entanglement, interference) to enhance machine learning algorithms, optimisation tasks, and computational speed-ups for AI applications.[1][3] This represents a convergence of two computational paradigms rather than a single unified field.
 
-The search results do not contain:
-- Specific information about UK-based quantum AI research or North England implementations
-- Detailed academic papers with full citations on quantum AI specifically
-- Comprehensive future outlook projections for quantum AI
+  ## Current State and Implementations (2024-2025)
 
-To provide the comprehensive overview you've requested—particularly regarding UK context, full academic citations, and Logseq formatting—I would require additional search results focused on UK quantum research institutions, peer-reviewed quantum AI literature, and regional development initiatives.
+  The search results confirm active development in this space. Quantinuum launched its **Generative Quantum AI framework** in March 2025, which aims to combine AI, quantum computing, and supercomputers to address complex problems.[4] Additionally, IonQ and Ansys demonstrated quantum computing outperforming classical systems in medical device design applications.[4] However, the search results note that quantum processing units (QPUs) do not yet meet requirements for running large-scale commercial applications such as chemical simulations.[2]
 
-Would you like me to refocus the answer on what is available, or would you prefer to provide additional search results covering UK quantum research and specific academic publications?
+  ## Limitations of Available Information
 
+  The search results do not contain:
+  - Specific information about UK-based quantum AI research or North England implementations
+  - Detailed academic papers with full citations on quantum AI specifically
+  - Comprehensive future outlook projections for quantum AI
 
-## UK Context
+  To provide the comprehensive overview you've requested—particularly regarding UK context, full academic citations, and Logseq formatting—I would require additional search results focused on UK quantum research institutions, peer-reviewed quantum AI literature, and regional development initiatives.
 
-- British contributions and implementations
+  Would you like me to refocus the answer on what is available, or would you prefer to provide additional search results covering UK quantum research and specific academic publications?
+
+  #### UK Context
+  - British contributions and implementations
   - Research institutions and programmes
   - Industry adoption
   - North England innovation (where relevant)
 
-
-## Metadata
-
-- **Created**: 2025-11-11
-- **Source**: Gartner Emerging Technology Analysis
-- **Category**: AI & Autonomy
-- **Status**: Emerging Technology
-
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

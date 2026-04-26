@@ -1,0 +1,64 @@
+{
+  "id": "blockchain-process",
+  "title": "Blockchain Process",
+  "content": "- ### Definition\n  - BlockchainProcess is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: blockchain/BlockchainProcess\n  - owl-role:: Concept\n\n- ### Relationships\n  - bridges-to:: [[Blockchain]]\n\n- ### Content\n\n  ## Definition\n\n  Blockchain Process represents the operational workflows and procedural mechanisms that govern the functioning of blockchain networks and distributed ledger systems. These processes encompass consensus mechanisms (Proof-of-Work, Proof-of-Stake, Byzantine Fault Tolerance), block validation protocols, transaction verification procedures, and state transition functions that maintain network integrity. Core blockchain processes include mining operations where nodes compete to solve cryptographic puzzles, staking procedures where validators lock tokens to participate in consensus, block propagation across peer-to-peer networks, and chain reorganization protocols that resolve forks. Modern blockchain processes incorporate advanced techniques such as sharding for parallel processing, layer-2 scaling solutions (Lightning Network, Plasma), cross-chain communication protocols (IBC, XCMP), and automated governance mechanisms through on-chain voting systems. The process layer also includes mempool management, transaction ordering algorithms, finality determination, and network upgrade procedures that enable protocol evolution while maintaining backward compatibility. In 2026, blockchain processes increasingly leverage zero-knowledge proofs for privacy-preserving validation, threshold cryptography for distributed key management, and post-quantum cryptographic primitives to ensure long-term security against emerging computational threats.\n\n  #### References\n  - Nakamoto, S. (2008). \"Bitcoin: A Peer-to-Peer Electronic Cash System.\" https://bitcoin.org/bitcoin.pdf\n  - Buterin, V. (2023). \"Ethereum Proof-of-Stake Consensus Specifications.\" https://ethereum.org/en/developers/docs/consensus-mechanisms/pos/\n  - Cosmos Network. (2024). \"Inter-Blockchain Communication Protocol (IBC).\" https://ibcprotocol.org/\n  - Polkadot. (2024). \"Cross-Consensus Message Format (XCM) Specification.\" https://wiki.polkadot.network/docs/learn-xcm\n  - Castro, M. & Liskov, B. (1999). \"Practical Byzantine Fault Tolerance.\" OSDI '99. http://pmg.csail.mit.edu/papers/osdi99.pdf\n  - Hyperledger Foundation. (2024). \"Enterprise Blockchain Process Patterns.\" https://www.hyperledger.org/\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Nft Minting"
+  ],
+  "wiki_links": [
+    "Blockchain"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:blockchain-process",
+    "iri": "https://visionclaw.dreamlab-ai.systems/ns/v2/blockchain#BlockchainProcess",
+    "content_hash": "sha256-12-069608c942b7",
+    "legacy_term_id": "BC-9001",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:blockchain-process",
+    "schema_version": "v2",
+    "term_id": "BC-9001",
+    "preferred_term": "Blockchain Process",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "BlockchainProcess is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "draft",
+    "maturity": "draft",
+    "version": "2.1.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.65,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain/BlockchainProcess",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [
+      "Blockchain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

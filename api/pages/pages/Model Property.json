@@ -1,0 +1,70 @@
+{
+  "id": "model-property",
+  "title": "Model Property",
+  "content": "- ### Definition\n  - A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:ModelProperty\n  - owl-role:: PropertyClass\n  - belongs-to-domain:: [[Artificial Intelligence]]\n\n- ### Relationships\n  - is-subclass-of:: [[AI Concept]]\n  - enables:: [[Model Comparison]]\n\n- ### Content\n\n  - #### Property Types (Inferred by Reasoner)\n\t\t    - Accuracy is-a ModelProperty\n\t\t    - Latency is-a ModelProperty\n\t\t    - Throughput is-a ModelProperty\n\t\t    - Parameter Count is-a ModelProperty\n\t\t    - Context Length is-a ModelProperty\n\t\t    - Memory Footprint is-a ModelProperty\n\t\t    - Inference Cost is-a ModelProperty\n\t\t    - Training Compute is-a ModelProperty\n\t\t- characterises:: [[Machine Learning Model]]\n\t\t- measurable-by:: [[Benchmark]]\n\t\t- enables:: [[Model Comparison]]\n\n  ## Definition\n\n  **ModelProperty** serves as the meta-class for all measurable and descriptive properties of machine learning models. This classification enables structured representation of model characteristics for comparison, selection, and governance purposes.\n\n  ## Property Categories\n\n  ### Performance Properties\n  | Property | Type | Unit | Description |\n  |----------|------|------|-------------|\n  | Accuracy | Metric | % | Correct predictions ratio |\n  | Precision | Metric | % | True positive ratio |\n  | Recall | Metric | % | Sensitivity/TPR |\n  | F1 Score | Metric | 0-1 | Harmonic mean of precision/recall |\n  | Perplexity | Metric | scalar | Language model uncertainty |\n\n  ### Latency Properties\n  | Property | Type | Unit | Description |\n  |----------|------|------|-------------|\n  | Inference Latency | Metric | ms | Time per prediction |\n  | Time to First Token | Metric | ms | Streaming response start |\n  | Tokens per Second | Metric | tok/s | Generation throughput |\n  | Batch Throughput | Metric | req/s | Concurrent request handling |\n\n  ### Architectural Properties\n  | Property | Type | Unit | Description |\n  |----------|------|------|-------------|\n  | Parameter Count | Size | B | Total trainable parameters |\n  | Layer Count | Structure | int | Network depth |\n  | Context Length | Capacity | tokens | Maximum input sequence |\n  | Hidden Dimension | Structure | int | Internal representation size |\n  | Attention Heads | Structure | int | Multi-head attention count |\n\n  ### Operational Properties\n  | Property | Type | Unit | Description |\n  |----------|------|------|-------------|\n  | Memory Footprint | Resource | GB | VRAM/RAM required |\n  | Inference Cost | Economic | $/1M tokens | API pricing |\n  | Training Compute | Resource | FLOP | Total training compute |\n  | Energy Consumption | Resource | kWh | Power requirements |\n\n  ## Usage in Ontology\n\n\n  ## Property Governance\n\n  Model properties support:\n  - **Model Cards**: Standardised documentation\n  - **Benchmarking**: Performance comparison\n  - **Procurement**: Selection criteria\n  - **Regulation**: Compliance verification\n  - **Risk Assessment**: Capability evaluation\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
+  "wiki_links": [
+    "AI Concept",
+    "Artificial Intelligence",
+    "Benchmark",
+    "Machine Learning Model",
+    "Model Comparison"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:model-property",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#ModelProperty",
+    "content_hash": "sha256-12-d38eb844dc1a",
+    "legacy_term_id": "AI-7011",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:model-property",
+    "schema_version": "v2",
+    "term_id": "AI-7011",
+    "preferred_term": "Model Property",
+    "alt_terms": [],
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
+    "definition": "A meta-classification for properties, characteristics, and measurable attributes of machine learning models including performance metrics (accuracy, latency, throughput), architectural properties (parameters, layers, context length), and operational characteristics (memory footprint, inference cost, training requirements).",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "stable",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:ModelProperty",
+    "owl_role": "PropertyClass",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "AI Concept"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "Model Comparison"
+    ],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Artificial Intelligence"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

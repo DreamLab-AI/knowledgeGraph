@@ -1,42 +1,51 @@
 {
-  "id": "Cross Platform Digital Twins",
+  "id": "cross-platform-digital-twins",
   "title": "Cross Platform Digital Twins",
-  "content": "- ### OntologyBlock\n  id:: cross-platform-digital-twins-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9836\n\t- source-domain:: mv\n\t- preferred-term:: Cross Platform Digital Twins\n\t- definition:: Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.\n\t- status:: active\n\t- owl:class:: mv:CrossPlatformDigitalTwins\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: cross-platform-digital-twins-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Digital Twin Technology]]\n\t\t- enables:: [[Collaborative Simulation]], [[Data Integration]], [[Multi-Vendor Ecosystems]]\n\t\t- requires:: [[Interoperability Standards]], [[Universal Scene Description]], [[API Integration]]\n\t\t- related-to:: [[Industrial Digital Twin]], [[Simulation Platform]], [[IoT Integration]]\n- ## Technical Details\n\t- **2024 Milestone**: VERSES AI, NASA JPL, and CSUN demonstrated first cross-platform digital twin interoperability for lunar exploration\n\t\t- Real-time joint testing of lander model (CSUN) and rover DT (JPL)\n\t\t- Cross-platform collaboration between Omniverse and Unity platforms\n\t\t- Used spatial web standard protocols\n\t- **Leading Platforms**:\n\t\t- **NVIDIA Omniverse**: Real-time 3D workflows using Universal Scene Description (USD)\n\t\t- **Microsoft Azure Digital Twins**: DTDL open standard for flexibility and interoperability\n\t- **Key Standards**:\n\t\t- Universal Scene Description (USD) for 3D asset exchange\n\t\t- Digital Twin Definition Language (DTDL)\n\t\t- Spatial web protocols for distributed systems\n\t- **Challenges**: Lack of standardized frameworks slowing vendor interoperability\n- ## Applications\n\t- Multi-agency government projects\n\t- Aerospace mission planning\n\t- Industrial manufacturing coordination\n\t- Smart city management\n\t- Cross-vendor infrastructure monitoring",
+  "content": "- ### Definition\n  - Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CrossPlatformDigitalTwins\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - bridges-to:: [[Computer Vision]]\n  - is-subclass-of:: [[Digital Twin Technology]]\n  - requires:: [[Interoperability Standards]], [[Universal Scene Description]], [[API Integration]]\n  - enables:: [[Collaborative Simulation]], [[Data Integration]], [[Multi-Vendor Ecosystems]]\n\n- ### Content\n\n  - ## Technical Details\n  - **2024 Milestone**: VERSES AI, NASA JPL, and CSUN demonstrated first cross-platform digital twin interoperability for lunar exploration\n\t\t- Real-time joint testing of lander model (CSUN) and rover DT (JPL)\n\t\t- Cross-platform collaboration between Omniverse and Unity platforms\n\t\t- Used spatial web standard protocols\n  - **Leading Platforms**:\n\t\t- **NVIDIA Omniverse**: Real-time 3D workflows using Universal Scene Description (USD)\n\t\t- **Microsoft Azure Digital Twins**: DTDL open standard for flexibility and interoperability\n  - **Key Standards**:\n\t\t- Universal Scene Description (USD) for 3D asset exchange\n\t\t- Digital Twin Definition Language (DTDL)\n\t\t- Spatial web protocols for distributed systems\n  - **Challenges**: Lack of standardized frameworks slowing vendor interoperability\n  - ## Applications\n  - Multi-agency government projects\n  - Aerospace mission planning\n  - Industrial manufacturing coordination\n  - Smart city management\n  - Cross-vendor infrastructure monitoring\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Collaborative Simulation",
-    "Industrial Digital Twin",
-    "Simulation Platform",
-    "Universal Scene Description",
-    "Interoperability Standards",
-    "Data Integration",
-    "metaverse",
     "API Integration",
+    "Collaborative Simulation",
+    "Computer Vision",
+    "Data Integration",
+    "Digital Twin Technology",
+    "Interoperability Standards",
     "Multi-Vendor Ecosystems",
-    "IoT Integration",
-    "Digital Twin Technology"
+    "Universal Scene Description",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CrossPlatformDigitalTwins",
+    "content_hash": "sha256-12-5f096d2848d4",
+    "legacy_term_id": "MV-9836",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:cross-platform-digital-twins",
+    "schema_version": "v2",
     "term_id": "MV-9836",
     "preferred_term": "Cross Platform Digital Twins",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#CrossPlatformDigitalTwins",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible systems.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:CrossPlatformDigitalTwins",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CrossPlatformDigitalTwins",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Digital Twin Technology"
@@ -55,28 +64,19 @@
       "Multi-Vendor Ecosystems"
     ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Computer Vision"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Industrial Digital Twin",
-        "Simulation Platform",
-        "IoT Integration"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

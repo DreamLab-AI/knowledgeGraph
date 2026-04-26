@@ -1,21 +1,44 @@
-- ### OntologyBlock
-  id:: mv9698-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9698
-	- preferred-term:: Strategic Planning
-	- source-domain:: mv
-	- owl:class:: mv:StrategicPlanning
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Strategic Planning is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#StrategicPlanning
+uri:: urn:visionclaw:concept:spatial-computing:strategic-planning
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:strategic-planning
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Strategic Planning
+content-hash:: sha256-12-09098fe97c70
+legacy-term-id:: MV-9698
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Strategic Planning is a concept within the metaverse domain. Further enrichment pending.
 
-Strategic Planning represents an abstract concept in the metaverse ontology hierarchy.
+- ### Semantic Classification
+  - owl-class:: spatial-computing:StrategicPlanning
+  - owl-role:: concept
 
-## Related Concepts
+- ### Relationships
+  - bridges-to:: [[Blockchain]] (domain: bc) for decentralised strategy coordination and governance
 
-- [[owl:Thing]]
+- ### Content
+
+  ## Overview
+
+  Strategic Planning represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

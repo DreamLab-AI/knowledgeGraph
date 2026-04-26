@@ -1,0 +1,75 @@
+{
+  "id": "creative-media-domain",
+  "title": "Creative Media Domain",
+  "content": "- ### Definition\n  - A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:CreativeMediaDomain\n  - owl-role:: Domain\n  - belongs-to-domain:: [[Metaverse Domain]]\n\n- ### Relationships\n  - is-subclass-of:: [[ArtificialIntelligenceDomain]]\n  - enables:: [[AI-Augmented Creativity]]\n  - bridges-to:: [[Metaverse Technology]] (via virtual content creation)\n\n- ### Content\n\n  - #### Member Concepts (Inferred by Reasoner)\n\t\t    - Generative AI is-member-of CreativeMediaDomain\n\t\t    - Text-to-Image is-member-of CreativeMediaDomain\n\t\t    - Text-to-Video is-member-of CreativeMediaDomain\n\t\t    - AI Music Generation is-member-of CreativeMediaDomain\n\t\t    - Procedural Content Generation is-member-of CreativeMediaDomain\n\t\t    - Style Transfer is-member-of CreativeMediaDomain\n\t\t- bridges-to:: [[Metaverse Technology]] (via virtual content creation)\n\t\t- bridges-to:: [[Digital Media]]\n\t\t- bridges-to:: [[Entertainment Industry]]\n\t\t- enables:: [[AI-Augmented Creativity]]\n\n  ## Definition\n\n  The **CreativeMediaDomain** classifies AI concepts that enable or augment creative content production. This domain spans the application of machine learning, generative models, and computational creativity techniques to artistic, entertainment, and media production contexts.\n\n  ## Subdomain Areas\n\n  ### Generative AI\n  - Large Language Models (text generation)\n  - Diffusion Models (image synthesis)\n  - Video Generation Models\n  - Audio/Music Generation\n  - 3D Asset Generation\n\n  ### Computational Creativity\n  - Creative AI systems\n  - Novelty and value generation\n  - Human-AI creative collaboration\n  - Computational aesthetics\n\n  ### Procedural Content\n  - Game asset generation\n  - World building algorithms\n  - Narrative generation\n  - Character design automation\n\n  ### AI-Assisted Workflows\n  - Image editing (inpainting, outpainting)\n  - Video post-production\n  - Music composition assistance\n  - Writing and editing tools\n\n  ## Key Technologies\n\n  | Technology | Application | Examples |\n  |------------|-------------|----------|\n  | Diffusion Models | Image/Video | Stable Diffusion, DALL-E, Sora |\n  | Transformers | Text/Code | GPT-4, Claude, Gemini |\n  | GANs | Style Transfer | StyleGAN, CycleGAN |\n  | Audio Models | Music/Voice | Suno, AIVA, ElevenLabs |\n\n  ## Ethical Considerations\n\n  - Copyright and intellectual property\n  - Deepfake detection and authenticity\n  - Attribution and provenance\n  - Creative labour displacement\n  - Content authenticity standards\n\n  ## Industry Impact\n\n  - Film and television production\n  - Video game development\n  - Advertising and marketing\n  - Music industry\n  - Publishing and journalism\n  - Fine art and NFT markets\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Spatial Audio Scene Description"
+  ],
+  "wiki_links": [
+    "AI-Augmented Creativity",
+    "ArtificialIntelligenceDomain",
+    "Digital Media",
+    "Entertainment Industry",
+    "Metaverse Domain",
+    "Metaverse Technology"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:creative-media-domain",
+    "iri": "http://narrativegoldmine.com/spatial-computing#CreativeMediaDomain",
+    "content_hash": "sha256-12-62fd9fa458e1",
+    "legacy_term_id": "AI-7009",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:creative-media-domain",
+    "schema_version": "v2",
+    "term_id": "AI-7009",
+    "preferred_term": "Creative Media Domain",
+    "alt_terms": [],
+    "domain": "mv",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
+    "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
+    "scope_note": null,
+    "status": "active",
+    "maturity": "stable",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:CreativeMediaDomain",
+    "owl_role": "Domain",
+    "owl_inferred_class": null,
+    "is_subclass_of": [
+      "ArtificialIntelligenceDomain"
+    ],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [
+      "AI-Augmented Creativity"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "Metaverse Technology"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "Metaverse Domain"
+    ],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

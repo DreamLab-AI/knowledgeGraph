@@ -1,67 +1,84 @@
-- ### OntologyBlock
-  id:: dynamic-character-animation-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9887
-	- source-domain:: mv
-	- preferred-term:: Dynamic Character Animation
-	- status:: active
-	- owl:class:: mv:DynamicCharacterAnimation
-	- belongsToDomain:: [[metaverse]]
-	- definition:: Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.
-	- #### Relationships
-	  id:: dynamic-character-animation-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[3D Animation]]
-		- related-to:: [[Avatar System]]
-		- related-to:: [[Motion Capture]]
-		- enables:: [[Immersive Experiences]]
+iri:: http://narrativegoldmine.com/spatial-computing#DynamicCharacterAnimation
+uri:: urn:visionclaw:concept:spatial-computing:dynamic-character-animation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:dynamic-character-animation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Dynamic Character Animation
+content-hash:: sha256-12-513fe31c7ee3
+legacy-term-id:: MV-9887
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Technical Details
+- ### Definition
+  - Real-time procedural animation techniques that enable 3D avatars and characters to move, express, and respond dynamically to user input and environmental stimuli in metaverse environments, utilising motion capture, rigging systems, and AI-driven motion synthesis.
 
-### Core Technologies
-- **Motion Capture**: Recording human movement for realistic avatar animation
-- **Rigging**: Building digital skeletons that control how avatars move, gesture, and express themselves
-- **Keyframe Animation**: Manual animation techniques for precise control
-- **Motion Primitives**: Precomputed basic movements that actors (avatars, robots, vehicles) perform for specific tasks
+- ### Bridge-To
+  - bridges-to:: [[Computer Vision]] (ai)
 
-### Animation Quality Factors
-- Natural facial expressions and body language through proper rigging
-- Real-time response to user actions
-- Programmatic behaviour generation
-- Seamless transitions between animation states
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DynamicCharacterAnimation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### AI Integration
-- NPCs (Non-Player Characters) with greater capacity to understand, respond, and anticipate user needs
-- AI-powered characters interacting with users in real-time
-- Machine learning for adaptive response generation
-- Natural language processing for conversational interactions
+- ### Relationships
+  - is-subclass-of:: [[3D Animation]]
+  - enables:: [[Immersive Experiences]]
 
-## Applications
+- ### Content
 
-### Gaming and Entertainment
-- Inworld AI technology enabling NPCs that learn from user interactions
-- Play-to-earn gaming with dynamic avatar economies
-- Virtual performances and live events
+  ## Technical Details
 
-### Industrial Metaverse
-- Digital twin technology connecting real world to virtual environment
-- Smart manufacturing integration with visible, intelligent production
-- Training simulations with realistic character interactions
+  ### Core Technologies
+  - **Motion Capture**: Recording human movement for realistic avatar animation
+  - **Rigging**: Building digital skeletons that control how avatars move, gesture, and express themselves
+  - **Keyframe Animation**: Manual animation techniques for precise control
+  - **Motion Primitives**: Precomputed basic movements that actors (avatars, robots, vehicles) perform for specific tasks
 
-### Animation Film Creation
-- Multiple performers in VR controlling avatars with natural movements
-- Virtual filming techniques for animation production
-- Metaverse platforms enabling collaborative creative workflows
+  ### Animation Quality Factors
+  - Natural facial expressions and body language through proper rigging
+  - Real-time response to user actions
+  - Programmatic behaviour generation
+  - Seamless transitions between animation states
 
-## 2024 Developments
+  ### AI Integration
+  - NPCs (Non-Player Characters) with greater capacity to understand, respond, and anticipate user needs
+  - AI-powered characters interacting with users in real-time
+  - Machine learning for adaptive response generation
+  - Natural language processing for conversational interactions
 
-- AI becoming the main driver accelerating creative, realistic, and responsive metaverse content
-- Metaverse animation and rigging services enabling personalised dynamic experiences
+  ## Applications
 
-## Metadata
+  ### Gaming and Entertainment
+  - Inworld AI technology enabling NPCs that learn from user interactions
+  - Play-to-earn gaming with dynamic avatar economies
+  - Virtual performances and live events
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### Industrial Metaverse
+  - Digital twin technology connecting real world to virtual environment
+  - Smart manufacturing integration with visible, intelligent production
+  - Training simulations with realistic character interactions
+
+  ### Animation Film Creation
+  - Multiple performers in VR controlling avatars with natural movements
+  - Virtual filming techniques for animation production
+  - Metaverse platforms enabling collaborative creative workflows
+
+  ## 2024 Developments
+
+  - AI becoming the main driver accelerating creative, realistic, and responsive metaverse content
+  - Metaverse animation and rigging services enabling personalised dynamic experiences
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

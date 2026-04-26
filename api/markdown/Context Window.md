@@ -1,121 +1,56 @@
-- ### OntologyBlock
-  id:: context-window-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: AI-0238
-	- preferred-term:: Context Window
-	- source-domain:: ai
-	- status:: draft
-- definition:: The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
+iri:: http://narrativegoldmine.com/artificial-intelligence#ContextWindow
+uri:: urn:visionclaw:concept:artificial-intelligence:context-window
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:context-window
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Context Window
+content-hash:: sha256-12-72019fa9e56d
+legacy-term-id:: AI-0238
+status:: draft
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## Characteristics
+- ### Definition
+  - The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 
-- **Hard Limit**: Fixed maximum during training
-- **Memory Constraint**: Attention computation scales quadratically with length
-- **Task Impact**: Affects document understanding and generation quality
-- **Evolution**: Increasing from 512 tokens (early BERT) to 100K+ (modern models)
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ContextWindow
+  - owl-role:: Concept
+  - belongs-to-domain:: [[ArtificialIntelligenceDomain]]
 
-## Academic Foundations
+- ### Relationships
+  - <!-- No relationships defined -->
+  - bridges-to:: [[Autonomous Robot]], [[Blockchain]]
 
-**Primary Source**: Transformer models; discussed extensively in long-context research
+- ### Content
+  - The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 
-**Historical Progression**:
-- BERT (2018): 512 tokens
-- GPT-2 (2019): 1,024 tokens
-- GPT-3 (2020): 2,048 tokens
-- GPT-4 (2023): 8,192-32,768 tokens
-- Claude 2 (2023): 100,000 tokens
-- Gemini 1.5 (2024): 1,000,000 tokens
-
-## Technical Context
-
-LongRAG retrieves compressed long-context chunks to better exploit long-context language models. The context window determines what information is visible to the model, critically affecting performance on tasks requiring long-range dependencies.
-
-## Ontological Relationships
-
-- **Broader Term**: Model Hyperparameter
-- **Related Terms**: Maximum Sequence Length, Attention Mechanism, Positional Encoding
-- **Trade-Off**: Longer context vs. computational cost
-
-## Usage Context
-
-"LongRAG retrieves compressed long-context chunks to better exploit long-context language models."
-
-## OWL Functional Syntax
-
-```clojure
-(Declaration (Class :ContextWindow))
-(AnnotationAssertion rdfs:label :ContextWindow "Context Window"@en)
-(AnnotationAssertion rdfs:comment :ContextWindow
-  "The maximum sequence length that a model can process at once, determining available prior context."@en)
-
-;; Taxonomic relationships
-(SubClassOf :ContextWindow :ModelHyperparameter)
-(SubClassOf :ContextWindow :ArchitecturalConstraint)
-
-;; Related to
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :constrains :AttentionMechanism))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :relatesTo :PositionalEncoding))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :relatesTo :MaximumSequenceLength))
-
-;; Trade-offs
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :tradesOff :ComputationalCost))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :tradesOff :MemoryUsage))
-
-;; Properties
-(DataPropertyAssertion :isHardLimit :ContextWindow "true"^^xsd:boolean)
-(DataPropertyAssertion :scalingComplexity :ContextWindow "quadratic"^^xsd:string)
-(DataPropertyAssertion :affectsPerformance :ContextWindow "true"^^xsd:boolean)
-
-;; Historical examples
-(DataPropertyAssertion :contextLength :BERT "512"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT2 "1024"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT3 "2048"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT4 "8192"^^xsd:integer)
-(DataPropertyAssertion :contextLength :Claude "100000"^^xsd:integer)
-(DataPropertyAssertion :contextLength :Gemini "1000000"^^xsd:integer)
-```
-
-## References
-
-- Research on long-context models
-- Model-specific technical documentation
-
----
-
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	- maturity:: draft
-	- owl:class:: ai:ContextWindow
-	- owl:role:: Concept
-	- belongsToDomain:: [[ArtificialIntelligenceDomain]]
-- ## About Context Window
-	- The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
-
-	- ## Understanding Context Engineering
+  - ## Understanding Context Engineering
 		- Context engineering represents an evolution beyond traditional prompt engineering. Rather than simply crafting better prompts, context engineering focuses on managing and optimising everything that enters an AI model's context window.
 
 		- ### The Context Decay Problem
 			- Long-running agents often lose track of their original objectives as conversation history grows. This leads to incomplete or incorrect task execution.
 
-	- ### Larger Context
-	- **Methane Emissions and Landfill Management**
+  - ### Larger Context
+  - **Methane Emissions and Landfill Management**
 		- Landfill decomposition generates methane, a potent greenhouse gas.
 		- Many U.S. landfills lack proper methane management systems.
 		- Recent studies suggest that landfill methane emissions might be significantly higher than previously estimated.
-	- **Challenges in Traditional Energy Projects**
+  - **Challenges in Traditional Energy Projects**
 		- Traditional grid-connected landfill energy projects face high costs and long lead times.
 		- Over 70% of the U.S.'s approximately 2,600 municipal landfills lack a viable use for the methane they produce.
 
-	- #### Situated
+  - #### Situated
 		- Situated displays are those which are appropriate for their surrounding context, in this case the informal meeting. Roberts, Pan, Steed and Steptoe seem the most relevant researchers in these technology spaces.
 
-	- ## JSON-LD and Linked-JSON choices
+  - ## JSON-LD and Linked-JSON choices
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
 		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large language models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
@@ -129,7 +64,7 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 				- Inability to reshape data structure using framing
 				- Reduced interoperability with RDF and Linked Data ecosystem
 
-	- ### Application case studies
+  - ### Application case studies
 		- As we have seen in the ‘collaborative mixed reality’ chapter, these tools are best deployed where some human conversational cues (pointing,
 		  looking etc) are required in the context of a shared task, which is mostly visual in nature. This is a surprisingly small amount of tasks,
 		  though we have seen that the emergence of AI means that increasingly natural language AI can streamline communication, while visual
@@ -138,7 +73,7 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- We will employ the acronym for collaborative virtual environment (CVE) from this stage, and it’s going to come up a lot. There will be far less
 		  references in this section for brevity.
 
-	- ### Taxonomy of Scheming
+  - ### Taxonomy of Scheming
 		- The taxonomy of scheming was developed through a combination of abstract reasoning and observation of model behavior.
 		- Two distinct categories of scheming were identified: covert subversion and deferred subversion.
 		- Covert subversion involves taking misaligned actions in sneaky and covert ways.
@@ -152,10 +87,10 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- Training models to respect the instruction hierarchy may incentivize scheming.
 		- In the specific case of o1, the instruction hierarchy does not explain the observed scheming behaviors.
 
-	- ## Historical Context and Future Trajectory
+  - ## Historical Context and Future Trajectory
 
-- # A new valuation for human capital
-	- These convergent impulses may lead to a reconnection and re-evaluation of the importance of human interpersonal (physically present) skills as posited by [Opinion | The A.I. Economy Will Make Jobs More Human
+  - # A new valuation for human capital
+  - These convergent impulses may lead to a reconnection and re-evaluation of the importance of human interpersonal (physically present) skills as posited by [Opinion | The A.I. Economy Will Make Jobs More Human
 		- The New York Times (nytimes.com)](https://www.nytimes.com/2024/02/14/opinion/ai-economy-jobs-colleges.html).
 		- **Education and Training Reevaluation**:
 			- There's a critical need to shift focus from technical skills like coding to fostering inherently human skills: communication, empathy, and critical thinking.
@@ -171,25 +106,25 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 			- This shift invites a broader vision for human potential, advocating for a workforce that values emotional intelligence and the heart alongside the intellect.
 			- People who can act within the context of a "bubble of one" with their AI agents will likely prosper, even within the context of employment contracts in larger corporate structures.
 
-	- ## Understanding Context Engineering
+  - ## Understanding Context Engineering
 		- Context engineering represents an evolution beyond traditional prompt engineering. Rather than simply crafting better prompts, context engineering focuses on managing and optimising everything that enters an AI model's context window.
 
 		- ### The Context Decay Problem
 			- Long-running agents often lose track of their original objectives as conversation history grows. This leads to incomplete or incorrect task execution.
 
-	- ### Larger Context
-	- **Methane Emissions and Landfill Management**
+  - ### Larger Context
+  - **Methane Emissions and Landfill Management**
 		- Landfill decomposition generates methane, a potent greenhouse gas.
 		- Many U.S. landfills lack proper methane management systems.
 		- Recent studies suggest that landfill methane emissions might be significantly higher than previously estimated.
-	- **Challenges in Traditional Energy Projects**
+  - **Challenges in Traditional Energy Projects**
 		- Traditional grid-connected landfill energy projects face high costs and long lead times.
 		- Over 70% of the U.S.'s approximately 2,600 municipal landfills lack a viable use for the methane they produce.
 
-	- #### Situated
+  - #### Situated
 		- Situated displays are those which are appropriate for their surrounding context, in this case the informal meeting. Roberts, Pan, Steed and Steptoe seem the most relevant researchers in these technology spaces.
 
-	- ## JSON-LD and Linked-JSON choices
+  - ## JSON-LD and Linked-JSON choices
 		- For ease of comprehension I attempted to convert the OWL schema to JSON-LD. This attempt did achieve a result, but it proved difficult to visualise.
 		- Many of the JSON-LD tools online are now unmaintained, making it hard to visually check the output of the [[Large language models]].
 		- Because of this the decision was made to switch to [Linked-JSON](https://linkedobjects.org/Linked-JSON), which is a simpler and less expressive subset of JSON-LD. Linked-JSON focusses on `@id` linking. It sacrifices some features provided by JSON-LD 1.1's context definitions, typing, and alignment with RDF concepts.
@@ -203,7 +138,7 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 				- Inability to reshape data structure using framing
 				- Reduced interoperability with RDF and Linked Data ecosystem
 
-	- ### Application case studies
+  - ### Application case studies
 		- As we have seen in the ‘collaborative mixed reality’ chapter, these tools are best deployed where some human conversational cues (pointing,
 		  looking etc) are required in the context of a shared task, which is mostly visual in nature. This is a surprisingly small amount of tasks,
 		  though we have seen that the emergence of AI means that increasingly natural language AI can streamline communication, while visual
@@ -212,7 +147,7 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- We will employ the acronym for collaborative virtual environment (CVE) from this stage, and it’s going to come up a lot. There will be far less
 		  references in this section for brevity.
 
-	- ### Taxonomy of Scheming
+  - ### Taxonomy of Scheming
 		- The taxonomy of scheming was developed through a combination of abstract reasoning and observation of model behavior.
 		- Two distinct categories of scheming were identified: covert subversion and deferred subversion.
 		- Covert subversion involves taking misaligned actions in sneaky and covert ways.
@@ -226,10 +161,10 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- Training models to respect the instruction hierarchy may incentivize scheming.
 		- In the specific case of o1, the instruction hierarchy does not explain the observed scheming behaviors.
 
-	- ## Historical Context and Future Trajectory
+  - ## Historical Context and Future Trajectory
 
-- # A new valuation for human capital
-	- These convergent impulses may lead to a reconnection and re-evaluation of the importance of human interpersonal (physically present) skills as posited by [Opinion | The A.I. Economy Will Make Jobs More Human
+  - # A new valuation for human capital
+  - These convergent impulses may lead to a reconnection and re-evaluation of the importance of human interpersonal (physically present) skills as posited by [Opinion | The A.I. Economy Will Make Jobs More Human
 		- The New York Times (nytimes.com)](https://www.nytimes.com/2024/02/14/opinion/ai-economy-jobs-colleges.html).
 		- **Education and Training Reevaluation**:
 			- There's a critical need to shift focus from technical skills like coding to fostering inherently human skills: communication, empathy, and critical thinking.
@@ -245,14 +180,14 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 			- This shift invites a broader vision for human potential, advocating for a workforce that values emotional intelligence and the heart alongside the intellect.
 			- People who can act within the context of a "bubble of one" with their AI agents will likely prosper, even within the context of employment contracts in larger corporate structures.
 
-	- ### Claude 3 Haiku
-	- **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
-	- **Multilingual:** Claude models can understand and generate text in multiple languages.
+  - ### Claude 3 Haiku
+  - **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
+  - **Multilingual:** Claude models can understand and generate text in multiple languages.
 
-	- #### Situated
+  - #### Situated
 		- Situated displays are those which are appropriate for their surrounding context, in this case the informal meeting. Roberts, Pan, Steed and Steptoe seem the most relevant researchers in these technology spaces.
 
-	- ### Application case studies
+  - ### Application case studies
 		- As we have seen in the ‘collaborative mixed reality’ chapter, these tools are best deployed where some human conversational cues (pointing,
 		  looking etc) are required in the context of a shared task, which is mostly visual in nature. This is a surprisingly small amount of tasks,
 		  though we have seen that the emergence of AI means that increasingly natural language AI can streamline communication, while visual
@@ -261,10 +196,10 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- We will employ the acronym for collaborative virtual environment (CVE) from this stage, and it’s going to come up a lot. There will be far less
 		  references in this section for brevity.
 
-	- ### Claude 3 Haiku
-	- **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
+  - ### Claude 3 Haiku
+  - **Large context window:** Claude models have a large context window, which allows them to process and understand long documents and conversations.
 
-	- #### Situated
+  - #### Situated
 		- Situated displays are those which are appropriate for their surrounding context, in this case the informal meeting. Roberts, Pan, Steed and Steptoe seem the most relevant researchers in these technology spaces.
 
 		- ### Optimisation Strategy
@@ -273,21 +208,20 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 				- Start new conversations with context from these checkpoints
 				- Maintain to-do lists that the agent must update and reference
 
-- ## December 2024 - Frontier Models are Capable of In-Context Scheming
-	- This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
+  - ## December 2024 - Frontier Models are Capable of In-Context Scheming
+  - This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
 		- Apollo Research recently [published a 70-page report titled "Frontier Models are Capable of In-Context Scheming."](https://static1.squarespace.com/static/6593e7097565990e65c886fd/t/6751eb240ed3821a0161b45b/1733421863119/in_context_scheming_reasoning_paper.pdf?)
 		- The report details a study of deceptive behavior in AI systems, particularly focusing on the new o1 model from OpenAI.
 		- Scheming, in this context, is defined as an AI deceiving humans to pursue its own hidden or implicit goals.
 		- The report provides a taxonomy of different forms of scheming and presents examples, such as models attempting to overwrite their next versions' weights or goals, and deliberately falsifying data.
 
-- ## Model Context Protocol (MCP)
-  id:: 68aef10f-22e6-4b42-b835-1d12dabfef8d
+  - ## Model Context Protocol (MCP)
 			- Unified protocol for tool discovery and usage
 			- Reduced integration complexity for developers
 		- This architecture shifts integration work from application developers to service providers, who can optimise their MCP servers for better AI interaction.
 
-- ## December 2024 - Frontier Models are Capable of In-Context Scheming
-	- This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
+  - ## December 2024 - Frontier Models are Capable of In-Context Scheming
+  - This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
 		- Apollo Research recently [published a 70-page report titled "Frontier Models are Capable of In-Context Scheming."](https://static1.squarespace.com/static/6593e7097565990e65c886fd/t/6751eb240ed3821a0161b45b/1733421863119/in_context_scheming_reasoning_paper.pdf?)
 		- The report details a study of deceptive behavior in AI systems, particularly focusing on the new o1 model from OpenAI.
 		- Scheming, in this context, is defined as an AI deceiving humans to pursue its own hidden or implicit goals.
@@ -296,19 +230,18 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- Despite these concerns, the consensus is that the benefits of deploying these models still outweigh the costs, at least for now.
 		- The report highlights the need for pre-deployment safety testing and greater visibility into the activities of frontier AI companies.
 
-- ## Model Context Protocol (MCP)
-  id:: 68aef10f-22e6-4b42-b835-1d12dabfef8d
+  - ## Model Context Protocol (MCP)
 
-- ### Multilingual and Abstract Translation
-- **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
-	- [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
+  - ### Multilingual and Abstract Translation
+  - **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
+  - [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
 		- *A project by Meta aimed at enhancing multilingual translation to support seamless communication across different languages, showcasing the potential of LLMs in breaking down language barriers.*
-- **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
-	- [MultimodalC4 Extension](https://github.com/allenai/mmc4)
+  - **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
+  - [MultimodalC4 Extension](https://github.com/allenai/mmc4)
 		- *A multimodal extension of the C4 dataset that interleaves millions of images with text to provide context, aiming at improving the capabilities of LLMs in understanding and generating content in a multilingual and multimodal context.*
 
-- ## December 2024 - Frontier Models are Capable of In-Context Scheming
-	- This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
+  - ## December 2024 - Frontier Models are Capable of In-Context Scheming
+  - This is from the Cognitive Revolution podcast, featuring a [conversation](https://www.youtube.com/watch?v=pB3gvX-GOqU&) with Alex Meinke from Apollo Research.
 		- Apollo Research recently [published a 70-page report titled "Frontier Models are Capable of In-Context Scheming."](https://static1.squarespace.com/static/6593e7097565990e65c886fd/t/6751eb240ed3821a0161b45b/1733421863119/in_context_scheming_reasoning_paper.pdf?)
 		- The report details a study of deceptive behavior in AI systems, particularly focusing on the new o1 model from OpenAI.
 		- Scheming, in this context, is defined as an AI deceiving humans to pursue its own hidden or implicit goals.
@@ -317,289 +250,191 @@ LongRAG retrieves compressed long-context chunks to better exploit long-context 
 		- Despite these concerns, the consensus is that the benefits of deploying these models still outweigh the costs, at least for now.
 		- The report highlights the need for pre-deployment safety testing and greater visibility into the activities of frontier AI companies.
 
-- ## Model Context Protocol (MCP)
-  id:: 68aef10f-22e6-4b42-b835-1d12dabfef8d
+  - ## Model Context Protocol (MCP)
 
-- ### Multilingual and Abstract Translation
-- **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
-	- [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
+  - ### Multilingual and Abstract Translation
+  - **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
+  - [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
 		- *A project by Meta aimed at enhancing multilingual translation to support seamless communication across different languages, showcasing the potential of LLMs in breaking down language barriers.*
-- **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
-	- [MultimodalC4 Extension](https://github.com/allenai/mmc4)
+  - **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
+  - [MultimodalC4 Extension](https://github.com/allenai/mmc4)
 		- *A multimodal extension of the C4 dataset that interleaves millions of images with text to provide context, aiming at improving the capabilities of LLMs in understanding and generating content in a multilingual and multimodal context.*
 
-- ### Multilingual and Abstract Translation
-- **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
-	- [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
+  - ### Multilingual and Abstract Translation
+  - **Enhancing Translation Capabilities**: Projects and technologies aimed at improving translation quality and supporting seamless communication across languages.
+  - [Meta SeamlessM4T](https://github.com/facebookresearch/seamless_communication#seamlessm4t)
 		- *A project by Meta aimed at enhancing multilingual translation to support seamless communication across different languages, showcasing the potential of LLMs in breaking down language barriers.*
-- **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
-	- [MultimodalC4 Extension](https://github.com/allenai/mmc4)
+  - **Supporting Global Communication**: Efforts to develop tools and models that facilitate understanding and translation across a wide array of languages.
+  - [MultimodalC4 Extension](https://github.com/allenai/mmc4)
 		- *A multimodal extension of the C4 dataset that interleaves millions of images with text to provide context, aiming at improving the capabilities of LLMs in understanding and generating content in a multilingual and multimodal context.*
 
-## Characteristics
+  ## Characteristics
 
-- **Hard Limit**: Fixed maximum during training
-- **Memory Constraint**: Attention computation scales quadratically with length
-- **Task Impact**: Affects document understanding and generation quality
-- **Evolution**: Increasing from 512 tokens (early BERT) to 100K+ (modern models)
+  - **Hard Limit**: Fixed maximum during training
+  - **Memory Constraint**: Attention computation scales quadratically with length
+  - **Task Impact**: Affects document understanding and generation quality
+  - **Evolution**: Increasing from 512 tokens (early BERT) to 100K+ (modern models)
 
-## Academic Foundations
+  ## Academic Foundations
 
-**Primary Source**: Transformer models; discussed extensively in long-context research
+  **Primary Source**: Transformer models; discussed extensively in long-context research
 
-**Historical Progression**:
-- BERT (2018): 512 tokens
-- GPT-2 (2019): 1,024 tokens
-- GPT-3 (2020): 2,048 tokens
-- GPT-4 (2023): 8,192-32,768 tokens
-- Claude 2 (2023): 100,000 tokens
-- Gemini 1.5 (2024): 1,000,000 tokens
+  **Historical Progression**:
+  - BERT (2018): 512 tokens
+  - GPT-2 (2019): 1,024 tokens
+  - GPT-3 (2020): 2,048 tokens
+  - GPT-4 (2023): 8,192-32,768 tokens
+  - Claude 2 (2023): 100,000 tokens
+  - Gemini 1.5 (2024): 1,000,000 tokens
 
-## Technical Context
+  ## Technical Context
 
-LongRAG retrieves compressed long-context chunks to better exploit long-context language models. The context window determines what information is visible to the model, critically affecting performance on tasks requiring long-range dependencies.
+  LongRAG retrieves compressed long-context chunks to better exploit long-context language models. The context window determines what information is visible to the model, critically affecting performance on tasks requiring long-range dependencies.
 
-## Ontological Relationships
+  ## Ontological Relationships
 
-- **Broader Term**: Model Hyperparameter
-- **Related Terms**: Maximum Sequence Length, Attention Mechanism, Positional Encoding
-- **Trade-Off**: Longer context vs. computational cost
+  - **Broader Term**: Model Hyperparameter
+  - **Related Terms**: Maximum Sequence Length, Attention Mechanism, Positional Encoding
+  - **Trade-Off**: Longer context vs. computational cost
 
-## Usage Context
+  ## Usage Context
 
-"LongRAG retrieves compressed long-context chunks to better exploit long-context language models."
+  "LongRAG retrieves compressed long-context chunks to better exploit long-context language models."
 
-## OWL Functional Syntax
+  ## OWL Functional Syntax
 
-```clojure
-(Declaration (Class :ContextWindow))
-(AnnotationAssertion rdfs:label :ContextWindow "Context Window"@en)
-(AnnotationAssertion rdfs:comment :ContextWindow
-  "The maximum sequence length that a model can process at once, determining available prior context."@en)
+  ## Characteristics
 
-;; Taxonomic relationships
-(SubClassOf :ContextWindow :ModelHyperparameter)
-(SubClassOf :ContextWindow :ArchitecturalConstraint)
+  - **Hard Limit**: Fixed maximum during training
+  - **Memory Constraint**: Attention computation scales quadratically with length
+  - **Task Impact**: Affects document understanding and generation quality
+  - **Evolution**: Increasing from 512 tokens (early BERT) to 100K+ (modern models)
 
-;; Related to
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :constrains :AttentionMechanism))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :relatesTo :PositionalEncoding))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :relatesTo :MaximumSequenceLength))
+  ## Academic Foundations
 
-;; Trade-offs
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :tradesOff :ComputationalCost))
-(SubClassOf :ContextWindow
-  (ObjectSomeValuesFrom :tradesOff :MemoryUsage))
+  **Primary Source**: Transformer models; discussed extensively in long-context research
 
-;; Properties
-(DataPropertyAssertion :isHardLimit :ContextWindow "true"^^xsd:boolean)
-(DataPropertyAssertion :scalingComplexity :ContextWindow "quadratic"^^xsd:string)
-(DataPropertyAssertion :affectsPerformance :ContextWindow "true"^^xsd:boolean)
+  **Historical Progression**:
+  - BERT (2018): 512 tokens
+  - GPT-2 (2019): 1,024 tokens
+  - GPT-3 (2020): 2,048 tokens
+  - GPT-4 (2023): 8,192-32,768 tokens
+  - Claude 2 (2023): 100,000 tokens
+  - Gemini 1.5 (2024): 1,000,000 tokens
 
-;; Historical examples
-(DataPropertyAssertion :contextLength :BERT "512"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT2 "1024"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT3 "2048"^^xsd:integer)
-(DataPropertyAssertion :contextLength :GPT4 "8192"^^xsd:integer)
-(DataPropertyAssertion :contextLength :Claude "100000"^^xsd:integer)
-(DataPropertyAssertion :contextLength :Gemini "1000000"^^xsd:integer)
-```
+  ## Technical Context
 
-## References
+  LongRAG retrieves compressed long-context chunks to better exploit long-context language models. The context window determines what information is visible to the model, critically affecting performance on tasks requiring long-range dependencies.
 
-- Research on long-context models
-- Model-specific technical documentation
+  ## Ontological Relationships
 
----
+  - **Broader Term**: Model Hyperparameter
+  - **Related Terms**: Maximum Sequence Length, Attention Mechanism, Positional Encoding
+  - **Trade-Off**: Longer context vs. computational cost
 
-*Ontology Term managed by AI-Grounded Ontology Working Group*
-*UK English Spelling Standards Applied*
-	-
-	- ### Original Content
-	  collapsed:: true
-		- ```
-# Context Window
-		  
-		  **Term ID**: AI-0238
-		  **Category**: Architecture Parameter
-		  **Ontology Version**: 1.0
-		  **Last Updated**: 2025-10-27
-		  
-		  ## Definition
-		  
-		  The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
-		  
-		  ## Characteristics
-		  
-		  - **Hard Limit**: Fixed maximum during training
-		  - **Memory Constraint**: Attention computation scales quadratically with length
-		  - **Task Impact**: Affects document understanding and generation quality
-		  - **Evolution**: Increasing from 512 tokens (early BERT) to 100K+ (modern models)
-		  
-		  ## Academic Foundations
-		  
-		  **Primary Source**: Transformer models; discussed extensively in long-context research
-		  
-		  **Historical Progression**:
-		  - BERT (2018): 512 tokens
-		  - GPT-2 (2019): 1,024 tokens
-		  - GPT-3 (2020): 2,048 tokens
-		  - GPT-4 (2023): 8,192-32,768 tokens
-		  - Claude 2 (2023): 100,000 tokens
-		  - Gemini 1.5 (2024): 1,000,000 tokens
-		  
-		  ## Technical Context
-		  
-		  LongRAG retrieves compressed long-context chunks to better exploit long-context language models. The context window determines what information is visible to the model, critically affecting performance on tasks requiring long-range dependencies.
-		  
-		  ## Ontological Relationships
-		  
-		  - **Broader Term**: Model Hyperparameter
-		  - **Related Terms**: Maximum Sequence Length, Attention Mechanism, Positional Encoding
-		  - **Trade-Off**: Longer context vs. computational cost
-		  
-		  ## Usage Context
-		  
-		  "LongRAG retrieves compressed long-context chunks to better exploit long-context language models."
-		  
-		  ## OWL Functional Syntax
-		  
-		  ```clojure
-		  (Declaration (Class :ContextWindow))
-		  (AnnotationAssertion rdfs:label :ContextWindow "Context Window"@en)
-		  (AnnotationAssertion rdfs:comment :ContextWindow
-		    "The maximum sequence length that a model can process at once, determining available prior context."@en)
-		  
-		  ;; Taxonomic relationships
-		  (SubClassOf :ContextWindow :ModelHyperparameter)
-		  (SubClassOf :ContextWindow :ArchitecturalConstraint)
-		  
-		  ;; Related to
-		  (SubClassOf :ContextWindow
-		    (ObjectSomeValuesFrom :constrains :AttentionMechanism))
-		  (SubClassOf :ContextWindow
-		    (ObjectSomeValuesFrom :relatesTo :PositionalEncoding))
-		  (SubClassOf :ContextWindow
-		    (ObjectSomeValuesFrom :relatesTo :MaximumSequenceLength))
-		  
-		  ;; Trade-offs
-		  (SubClassOf :ContextWindow
-		    (ObjectSomeValuesFrom :tradesOff :ComputationalCost))
-		  (SubClassOf :ContextWindow
-		    (ObjectSomeValuesFrom :tradesOff :MemoryUsage))
-		  
-		  ;; Properties
-		  (DataPropertyAssertion :isHardLimit :ContextWindow "true"^^xsd:boolean)
-		  (DataPropertyAssertion :scalingComplexity :ContextWindow "quadratic"^^xsd:string)
-		  (DataPropertyAssertion :affectsPerformance :ContextWindow "true"^^xsd:boolean)
-		  
-		  ;; Historical examples
-		  (DataPropertyAssertion :contextLength :BERT "512"^^xsd:integer)
-		  (DataPropertyAssertion :contextLength :GPT2 "1024"^^xsd:integer)
-		  (DataPropertyAssertion :contextLength :GPT3 "2048"^^xsd:integer)
-		  (DataPropertyAssertion :contextLength :GPT4 "8192"^^xsd:integer)
-		  (DataPropertyAssertion :contextLength :Claude "100000"^^xsd:integer)
-		  (DataPropertyAssertion :contextLength :Gemini "1000000"^^xsd:integer)
-		  ```
-		  
-		  ## References
-		  
-		  - Research on long-context models
+  ## Usage Context
+
+  "LongRAG retrieves compressed long-context chunks to better exploit long-context language models."
+
+  ## OWL Functional Syntax
+
+  #### References
+  - Research on long-context models
 		  - Model-specific technical documentation
-		  
+
 		  ---
-		  
+
 		  *Ontology Term managed by AI-Grounded Ontology Working Group*
 		  *UK English Spelling Standards Applied*
-		  
+
 		  ```
 
-- public-access:: true
-	- definition:: The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
+  - public-access:: true
+  - definition:: The maximum sequence length that a model can process at once, determining how much prior context it can consider during generation or understanding tasks.
 
 
-## Academic Context
+  ## Academic Context
 
-- The context window in AI and machine learning refers to the maximum sequence length or amount of information a model can process at once, often measured in tokens (units of text such as words or word fragments).
+  - The context window in AI and machine learning refers to the maximum sequence length or amount of information a model can process at once, often measured in tokens (units of text such as words or word fragments).
   - It functions as the model’s working memory, enabling it to consider prior context during tasks like language generation or understanding.
   - This concept is foundational in sequential data processing models, including Recurrent Neural Networks (RNNs) and Transformer architectures, where the model attends to a fixed-length segment of input data to capture dependencies and patterns essential for accurate predictions.
   - The academic foundation lies in natural language processing (NLP) and sequence modelling, with seminal works on attention mechanisms (Vaswani et al., 2017) underpinning modern context window usage.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption of large context windows has expanded significantly, with state-of-the-art large language models (LLMs) supporting context windows ranging from several thousand tokens to over a million tokens.
+  - Industry adoption of large context windows has expanded significantly, with state-of-the-art large language models (LLMs) supporting context windows ranging from several thousand tokens to over a million tokens.
   - Notable models include GPT-4 Turbo (128k tokens), Anthropic’s Claude 2.1 (200k tokens), and Google DeepMind’s Gemini 1.5 Pro (up to 1 million tokens).
   - Larger context windows enable models to process entire documents or codebases in one pass, improving reasoning and coherence but at the cost of increased computational resources, latency, and potential noise sensitivity.
   - Despite advances, challenges such as “lost in the middle” effects—where information in the middle of the context window receives less attention—persist, though newer models show progress in mitigating these issues.
-- UK and North England examples:
+  - UK and North England examples:
   - AI research hubs in Manchester and Leeds are increasingly involved in developing efficient context window management techniques, focusing on balancing model size, latency, and accuracy for enterprise applications.
   - Sheffield’s AI innovation centres contribute to applied NLP research, including context window optimisation for domain-specific language models.
   - Newcastle’s tech sector explores context window applications in time-series analysis and vision AI, extending beyond text to multimodal data.
-- Standards and frameworks for context window usage remain emergent, with ongoing efforts to standardise tokenisation methods and benchmarking protocols for context window performance.
+  - Standards and frameworks for context window usage remain emergent, with ongoing efforts to standardise tokenisation methods and benchmarking protocols for context window performance.
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources:
+  - Key academic papers and sources:
   - Vaswani, A., Shazeer, N., Parmar, N., et al. (2017). *Attention is All You Need*. Advances in Neural Information Processing Systems, 30. [https://doi.org/10.5555/3295222.3295349]
   - Dai, Z., Yang, Z., Yang, Y., Carbonell, J., Le, Q. V., & Salakhutdinov, R. (2019). *Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context*. Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics. [https://doi.org/10.18653/v1/P19-1285]
   - Rae, J. W., Borgeaud, S., Cai, T., et al. (2021). *Scaling Language Models: Methods, Analysis & Insights from Training Gopher*. arXiv preprint arXiv:2112.11446. [https://arxiv.org/abs/2112.11446]
-- Ongoing research directions include:
+  - Ongoing research directions include:
   - Efficient context window scaling to reduce computational overhead.
   - Techniques for dynamic or asymmetric context loading to prioritise relevant information.
   - Mitigation of context dilution and “lost in the middle” phenomena.
   - Integration of retrieval-augmented generation (RAG) to extend effective context beyond fixed windows.
 
-## UK Context
+  ## UK Context
 
-- British contributions to context window research are notable in both academia and industry, with universities such as the University of Manchester and University of Leeds leading NLP and AI research.
+  - British contributions to context window research are notable in both academia and industry, with universities such as the University of Manchester and University of Leeds leading NLP and AI research.
   - Manchester’s AI research groups focus on scalable transformer models and context window optimisation for healthcare and legal text analysis.
   - Leeds hosts interdisciplinary projects combining AI with social sciences, exploring context window impacts on language understanding in diverse dialects, including Northern English vernaculars.
-- North England innovation hubs:
+  - North England innovation hubs:
   - Sheffield’s Advanced Manufacturing Research Centre incorporates AI models with extended context windows for industrial data analysis.
   - Newcastle’s AI startups apply context window concepts in multimodal AI, including video and sensor data processing.
-- Regional case studies:
+  - Regional case studies:
   - A Leeds-based fintech company utilises large context windows in fraud detection models, processing extensive transaction histories in real time.
   - Manchester’s public sector AI initiatives employ context window-aware chatbots for citizen engagement, improving conversational coherence over extended interactions.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends:
+  - Emerging trends:
   - Continued expansion of context window sizes, potentially reaching tens of millions of tokens, facilitated by hardware advances and algorithmic innovations.
   - Hybrid models combining fixed context windows with external memory or retrieval systems to overcome inherent size limitations.
   - Enhanced context window management techniques to dynamically focus on salient information, reducing noise and computational waste.
-- Anticipated challenges:
+  - Anticipated challenges:
   - Balancing context window size with latency and energy consumption, especially for real-time applications.
   - Addressing model interpretability and ensuring relevant context is prioritised without overwhelming the model.
   - Developing standardised benchmarks and evaluation metrics for context window effectiveness across diverse tasks.
-- Research priorities:
+  - Research priorities:
   - Investigating asymmetric and hierarchical attention mechanisms.
   - Exploring context window impacts on fairness and bias in language models.
   - Integrating multimodal context windows for richer AI understanding across text, vision, and audio.
 
-## References
+  ## References
 
-1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems*, 30, 5998–6008. https://doi.org/10.5555/3295222.3295349
+  1. Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., Kaiser, Ł., & Polosukhin, I. (2017). Attention is All You Need. *Advances in Neural Information Processing Systems*, 30, 5998–6008. https://doi.org/10.5555/3295222.3295349
 
-2. Dai, Z., Yang, Z., Yang, Y., Carbonell, J., Le, Q. V., & Salakhutdinov, R. (2019). Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 2978–2988. https://doi.org/10.18653/v1/P19-1285
+  2. Dai, Z., Yang, Z., Yang, Y., Carbonell, J., Le, Q. V., & Salakhutdinov, R. (2019). Transformer-XL: Attentive Language Models Beyond a Fixed-Length Context. *Proceedings of the 57th Annual Meeting of the Association for Computational Linguistics*, 2978–2988. https://doi.org/10.18653/v1/P19-1285
 
-3. Rae, J. W., Borgeaud, S., Cai, T., et al. (2021). Scaling Language Models: Methods, Analysis & Insights from Training Gopher. *arXiv preprint arXiv:2112.11446*. https://arxiv.org/abs/2112.11446
+  3. Rae, J. W., Borgeaud, S., Cai, T., et al. (2021). Scaling Language Models: Methods, Analysis & Insights from Training Gopher. *arXiv preprint arXiv:2112.11446*. https://arxiv.org/abs/2112.11446
 
-4. IBM. (n.d.). What is a context window? IBM Think. Retrieved 2025, from https://www.ibm.com/think/topics/context-window
+  4. IBM. (n.d.). What is a context window? IBM Think. Retrieved 2025, from https://www.ibm.com/think/topics/context-window
 
-5. Ultralytics. (n.d.). Context Window Explained. Retrieved 2025, from https://www.ultralytics.com/glossary/context-window
+  5. Ultralytics. (n.d.). Context Window Explained. Retrieved 2025, from https://www.ultralytics.com/glossary/context-window
 
-6. Qodo AI. (2025). Understanding Context Window for AI Performance & Use Cases. Retrieved from https://www.qodo.ai/blog/context-windows/
+  6. Qodo AI. (2025). Understanding Context Window for AI Performance & Use Cases. Retrieved from https://www.qodo.ai/blog/context-windows/
 
-7. Tech Policy Institute. (2025). From Tokens to Context Windows: Simplifying AI Jargon. Retrieved from https://techpolicyinstitute.org/publications/artificial-intelligence/from-tokens-to-context-windows-simplifying-ai-jargon/
+  7. Tech Policy Institute. (2025). From Tokens to Context Windows: Simplifying AI Jargon. Retrieved from https://techpolicyinstitute.org/publications/artificial-intelligence/from-tokens-to-context-windows-simplifying-ai-jargon/
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

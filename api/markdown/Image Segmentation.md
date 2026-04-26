@@ -1,42 +1,36 @@
-- ### OntologyBlock
-  id:: imagesegmentation-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#ImageSegmentation
+uri:: urn:visionclaw:concept:artificial-intelligence:image-segmentation
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:image-segmentation
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Image Segmentation
+content-hash:: sha256-12-56d87c8d9395
+legacy-term-id:: AI-0853
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0853
-    - filename-history:: ["AI-0853-imagesegmentation.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0853
-    - preferred-term:: Image Segmentation
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Image Segmentation is a concept within the ai domain.
 
-  - **Definition**
-    - definition:: 
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ImageSegmentation
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:ImageSegmentation
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Computer Vision]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Computer Vision]]
+- ### Content
+  Image Segmentation — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :ImageSegmentation))
-      (SubClassOf :ImageSegmentation :ComputerVision)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :ImageSegmentation "Image Segmentation"@en)
-      ```
-
-- ## About Image Segmentation
-  
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

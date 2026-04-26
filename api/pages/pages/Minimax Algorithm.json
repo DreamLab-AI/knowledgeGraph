@@ -1,62 +1,65 @@
 {
-  "id": "Minimax Algorithm",
+  "id": "minimax-algorithm",
   "title": "Minimax Algorithm",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1005\n  - preferred-term:: Minimax Algorithm\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:MinimaxAlgorithm\n\n### Relationships\n- is-subclass-of:: [[Search Algorithms]]\n- is-subclass-of:: [[Game Theory]]\n- skos:related:: [[Alpha-Beta Pruning]]\n- skos:related:: [[Decision Tree]]\n- used-in:: [[Game Playing AI]]\n- enables:: [[Adversarial Search]]\n\n### Definition\nMinimax is a decision-making algorithm used in two-player zero-sum games that determines the optimal move by minimizing the maximum possible loss. It works by recursively exploring the game tree, assuming the opponent will play optimally, and selecting moves that maximize the player's minimum guaranteed outcome.\n\n### Algorithm Principles\n- Maximizing player seeks highest score\n- Minimizing player (opponent) seeks lowest score\n- Recursive depth-first exploration\n- Backpropagation of utility values\n- Assumes perfect opponent play\n\n### Enhancements\n**Alpha-Beta Pruning:**\n- Eliminates branches that won't affect final decision\n- Reduces search space significantly\n- Maintains identical results to full minimax\n\n**Iterative Deepening:**\n- Gradually increases search depth\n- Provides time-bounded responses\n- Improves move ordering\n\n**Transposition Tables:**\n- Cache evaluated positions\n- Avoid redundant calculations\n\n### Applications\n- Chess engines\n- Checkers programs\n- Tic-tac-toe solvers\n- Connect Four\n- General turn-based games\n\n### Limitations\n- Exponential time complexity\n- Requires complete game state information\n- Computationally expensive for deep trees",
-  "backlinks": [
-    "Monte Carlo Tree Search"
-  ],
+  "content": "- ### Definition\n  - Minimax Algorithm is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:MinimaxAlgorithm\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Search Algorithms]]\n  - enables:: [[Adversarial Search]]\n\n- ### Content\n\n  ### Definition\n  Minimax is a decision-making algorithm used in two-player zero-sum games that determines the optimal move by minimizing the maximum possible loss. It works by recursively exploring the game tree, assuming the opponent will play optimally, and selecting moves that maximize the player's minimum guaranteed outcome.\n\n  ### Algorithm Principles\n  - Maximizing player seeks highest score\n  - Minimizing player (opponent) seeks lowest score\n  - Recursive depth-first exploration\n  - Backpropagation of utility values\n  - Assumes perfect opponent play\n\n  ### Enhancements\n  **Alpha-Beta Pruning:**\n  - Eliminates branches that won't affect final decision\n  - Reduces search space significantly\n  - Maintains identical results to full minimax\n\n  **Iterative Deepening:**\n  - Gradually increases search depth\n  - Provides time-bounded responses\n  - Improves move ordering\n\n  **Transposition Tables:**\n  - Cache evaluated positions\n  - Avoid redundant calculations\n\n  ### Applications\n  - Chess engines\n  - Checkers programs\n  - Tic-tac-toe solvers\n  - Connect Four\n  - General turn-based games\n\n  ### Limitations\n  - Exponential time complexity\n  - Requires complete game state information\n  - Computationally expensive for deep trees\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Search Algorithms",
-    "Game Playing AI",
-    "Decision Tree",
-    "Game Theory",
     "Adversarial Search",
-    "Alpha-Beta Pruning"
+    "Search Algorithms"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:minimax-algorithm",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#MinimaxAlgorithm",
+    "content_hash": "sha256-12-f734a5144e19",
+    "legacy_term_id": "AI-1005",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:minimax-algorithm",
+    "schema_version": "v2",
     "term_id": "AI-1005",
     "preferred_term": "Minimax Algorithm",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#MinimaxAlgorithm",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Minimax Algorithm is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:MinimaxAlgorithm",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:MinimaxAlgorithm",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Search Algorithms"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Adversarial Search"
+    ],
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,21 +1,46 @@
-- ### OntologyBlock
-  id:: mv9568-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-9568
-	- preferred-term:: Design Software
-	- source-domain:: mv
-	- owl:class:: mv:DesignSoftware
-	- owl:physicality:: abstract
-	- owl:role:: concept
-	- public-access:: true
-	- status:: draft
-- definition:: Design Software is a concept within the metaverse domain. Further enrichment pending.
+iri:: http://narrativegoldmine.com/spatial-computing#DesignSoftware
+uri:: urn:visionclaw:concept:spatial-computing:design-software
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:design-software
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Design Software
+content-hash:: sha256-12-d5c6641ff723
+legacy-term-id:: MV-9568
+status:: draft
+maturity:: draft
+quality-score:: 0.35
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## Overview
+- ### Definition
+  - Design Software is a concept within the metaverse domain. Further enrichment pending.
 
-Design Software represents an abstract concept in the metaverse ontology hierarchy.
+bridges-to:: [[Computer Vision]]
 
-## Related Concepts
+- ### Semantic Classification
+  - owl-class:: spatial-computing:DesignSoftware
+  - owl-role:: concept
 
-- [[owl:Thing]]
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+
+  ## Overview
+
+  Design Software represents an abstract concept in the metaverse ontology hierarchy.
+
+  #### Related Concepts
+  - [[owl:Thing]]
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

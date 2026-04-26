@@ -1,18 +1,42 @@
+iri:: http://narrativegoldmine.com/infrastructure#ProductAndRiskManagement
+uri:: urn:visionclaw:concept:infrastructure:product-and-risk-management
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:infrastructure:product-and-risk-management
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: infrastructure
+preferred-term:: Product and Risk Management
+content-hash:: sha256-12-0f53dde8eddc
+status:: stub
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
 public:: true
 
-- #Public page
-	- automatically published
-- # Academic science mindset, is business product mindset
-  id:: 659a922a-2c71-4899-b2c6-a6e88ef339fa
-	- Scientific inquiry maps to product management. **Central Role of [[Product Design]] Managers**: Deciding what to do next.
-	- | **Scientific Method** | **Lean Product Development** | **General Product Development** |
+- ### Definition
+  - Product and Risk Management is a concept within the ngm domain.
+
+- ### Semantic Classification
+  - owl-class:: infrastructure:ProductAndRiskManagement
+  - owl-role:: Concept
+
+- ### Relationships
+  - <!-- No relationships defined -->
+
+- ### Content
+  - #Public page
+  - automatically published
+  - # Academic science mindset, is business product mindset
+  - Scientific inquiry maps to product management. **Central Role of [[Product Design]] Managers**: Deciding what to do next.
+  - | **Scientific Method** | **Lean Product Development** | **General Product Development** |
 	  | ---- | ---- | ---- |
 	  | Observe | Build | Where do we want to go (Vision) |
 	  | Hypothesise | Measure | Where are we now (Data/Analysis) |
 	  | Test | Learn | Where should we go next (Strategy) |
-	- ### Risk: [[Politics, Law, Privacy]]
 		- When I started my formal postgraduate machine learning training risks were couched in biases, now this is [[Safety and alignment]], with the UK positioning itself as a global leader. This likely does have impact on your business goals.
-			- #### Mitigate GenAI risks through product management. Maybe don't just be grabby for AI.
 		- **Question 1: Where Do We Want to Go?**
 			- **Vision and Goal Setting**: Defining a clear destination or North Star.
 				- My northstar (as an example) is
@@ -28,12 +52,12 @@ public:: true
 			- Distributed, global, AI enabled infrastructure,
 			- Clearly communicating why,
 			- Building communities to help.
-	- This won't be you and your company, but this is a great time to work out these checklists.
+  - This won't be you and your company, but this is a great time to work out these checklists.
 		- **SWOT Analysis**: Evaluating strengths, weaknesses, opportunities, and threats.
 		- I am trying to build **this** bit of the business journey through these presentations
 		- ![GCh-erEbgAAZS3c](../assets/GCh-erEbgAAZS3c.jpeg){:height 700, :width 400}
-- # Everyone's pivoting to generative AI.
-	- {{twitter https://twitter.com/petergyang/status/1667539634577092609}}
+  - # Everyone's pivoting to generative AI.
+  - {{twitter https://twitter.com/petergyang/status/1667539634577092609}}
 		- [Link to Tweet](https://twitter.com/petergyang/status/1667539634577092609)
 		- But my alarm bells go off when I see:
 			- ? A crowded landscape
@@ -72,3 +96,10 @@ public:: true
 			  4. Is there a moat?
 			  5. Is it overvalued?
 			  7/ I hope these questions also help builders who are thinking of creating new AI products.
+
+  - ### Risk: [[Politics, Law, Privacy]]
+			- #### Mitigate GenAI risks through product management. Maybe don't just be grabby for AI.
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

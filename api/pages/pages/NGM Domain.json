@@ -1,0 +1,151 @@
+{
+  "id": "ngm-domain",
+  "title": "NGM Domain",
+  "content": "- ### Definition\n  - The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts — identity primitives, data governance constructs, semantic web patterns, and integration infrastructure — that do not belong exclusively to any single specialised domain (ai, bc, mv, rb, tc) but are required as shared dependencies by all of them. It corresponds to the `http://narrativegoldmine.com/ontology#` IRI namespace and acts as the backbone against which domain-specific ontologies align their upper-level classes and properties.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:NGMDomain\n  - owl-role:: Concept\n  - owl-inferred:: infrastructure:OntologyRoot\n  - belongs-to-domain:: [[NGM Domain]]\n  - implemented-in-layer:: [[OntologyLayer]], [[InfrastructureLayer]]\n\n- ### Relationships\n  - is-subclass-of:: [[Ontology Namespace]], [[Knowledge Graph Domain]]\n  - has-part:: [[URI Canonicaliser]], [[Solid Pod]], [[VisionClaw Agentic Container]], [[WebAssembly]], [[DID Nostr Identity]], [[Verifiable Credential Surface]]\n  - is-part-of:: [[Narrative Gold Mine Ontology]]\n  - requires:: [[RDF Data Model]], [[OWL 2 Web Ontology Language]], [[JSON-LD Context]]\n  - enables:: [[Cross-Domain Concept Linking]], [[Semantic Interoperability]], [[Federated Knowledge Graph]]\n  - implements:: [[W3C RDF Specification]], [[W3C OWL 2 Specification]], [[W3C JSON-LD 1.1]]\n  - bridges-to:: [[AI Domain]] (domain: ai), [[Blockchain Domain]] (domain: bc), [[Metaverse Domain]] (domain: mv), [[Robotics Domain]] (domain: rb), [[Telecollaboration Domain]] (domain: tc)\n  - depends-on:: [[Logseq Graph Database]], [[VisionClaw JSON-LD Context]]\n\n- ### Content\n\n  The Narrative Gold Mine (NGM) ontology was conceived as a structured knowledge graph capturing the interdependencies between five rapidly evolving technology domains: artificial intelligence, blockchain and distributed ledgers, metaverse and extended reality, robotics, and telecollaboration. As the ontology matured, it became clear that a substantial class of concepts — identity systems, data sovereignty patterns, semantic linking primitives, and cross-cutting integration infrastructure — belonged to none of these five domains exclusively. The NGM Domain namespace was established to house these foundational concepts, preventing them from being arbitrarily assigned to whichever domain first needed them.\n\n  #### Key Characteristics\n\n  - **Cross-Domain Root**: Every domain-specific ontology imports the NGM namespace as its upper-level alignment target, ensuring that owl:Class hierarchies, object properties, and annotation properties are coherent across domain boundaries.\n  - **Infrastructure Concepts**: Core infrastructure that all agent-based systems require — [[URI Canonicaliser]], [[Solid Pod]], [[WebAssembly]], [[DID Nostr Identity]] — resides in the NGM namespace regardless of which domain primarily uses it.\n  - **IRI Namespace**: `http://narrativegoldmine.com/ontology#` is the canonical IRI prefix. URN-style identifiers use `urn:visionclaw:concept:infrastructure:` as the slug namespace.\n  - **JSON-LD Alignment**: The [[VisionClaw JSON-LD Context]] maps NGM property names to their full IRI equivalents, enabling Logseq page properties to round-trip to valid Linked Data without additional transformation.\n  - **Governance**: Changes to the NGM namespace require review against all five domain ontologies to prevent breaking cross-domain concept links, making it the most conservatively versioned part of the knowledge graph.\n\n  #### How It Works\n\n  Within the [[Logseq Graph Database]], NGM Domain concepts appear as markdown pages with `domain:: infrastructure` in their properties. The [[URI Canonicaliser]] uses the preferred-term and domain to mint stable `urn:visionclaw:concept:infrastructure:<slug>` identifiers. These identifiers appear in the `bridges-to::` relationship fields of domain-specific concepts, creating a typed cross-domain link graph. An export pipeline reads these structured properties, resolves WikiLinks to URIs, and generates a valid OWL 2 ontology serialised as JSON-LD, Turtle, or RDF/XML for consumption by reasoners such as HermiT or Pellet.\n\n  The NGM namespace also hosts the metaconcepts that describe the ontology itself: the five domain classes (ai:AIDomain, bc:BlockchainDomain, infrastructure:MetaverseDomain, infrastructure:RoboticsDomain, infrastructure:TelecollaborationDomain) are declared as subclasses of `infrastructure:Domain`, and the relationship types used across the graph (bridges-to, has-part, requires, enables) are declared as `owl:ObjectProperty` instances anchored in the NGM namespace.\n\n  #### Current Landscape\n\n  As of 2026, the NGM knowledge graph contains over 800 pages across the six namespaces (five domain plus NGM root). The QE gap analysis identified the NGM Domain page itself as missing — a foundational self-description that allows other systems (crawlers, reasoners, API clients) to discover the graph's root namespace. Recent additions to the NGM namespace include [[WebAssembly]] (agent execution substrate), [[Solid Pod]] (personal data sovereignty), and [[Nostr Protocol]] (decentralised identity relay), all of which are cross-domain dependencies. The [[VisionClaw Agentic Container]] project consumes NGM concepts at runtime via the [[Model Context Protocol]] tool surface, making the accuracy and completeness of NGM namespace definitions operationally significant.\n\n  #### Cross-Domain Applications\n\n  The NGM Domain acts as the semantic glue across all five specialised domains. A concept such as [[URI Canonicaliser]] is referenced by blockchain credential systems (domain: bc), AI agent identity (domain: ai), and metaverse object addressing (domain: mv) simultaneously. Without the NGM root namespace, these cross-domain references would be ambiguous. The [[Solid Pod]] concept, for example, is used in AI personalisation (agent preference stores), blockchain provenance (linked data receipts), and telecollaboration (shared workspaces), making its placement in the NGM namespace rather than any single domain the correct ontological choice.\n\n  #### Standards and References\n\n  - W3C. (2012). *OWL 2 Web Ontology Language Primer*. https://www.w3.org/TR/owl2-primer/\n  - W3C. (2020). *JSON-LD 1.1*. https://www.w3.org/TR/json-ld11/\n  - W3C. (2014). *RDF 1.1 Concepts and Abstract Syntax*. https://www.w3.org/TR/rdf11-concepts/\n  - Noy, N. F., & McGuinness, D. L. (2001). *Ontology Development 101*. Stanford KSL Technical Report.\n  - DreamLab AI. (2026). *VisionClaw Ontology Page Format v1 (ADR-013)*. Internal specification.\n\n- ### Provenance\n  - sources:: [[W3C OWL 2 Specification]], [[W3C JSON-LD 1.1]], [[VisionClaw ADR-013]], [[Narrative Gold Mine Ontology]]\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "Solid Pod",
+    "Model Context Protocol",
+    "AutoML",
+    "Robot Operating System",
+    "LangChain",
+    "Zero Knowledge Proof",
+    "NGM Domain",
+    "Nostr Protocol",
+    "Gazebo Simulator",
+    "WebAssembly",
+    "WebRTC",
+    "Infrastructure Domain",
+    "Trust and Governance Domain",
+    "OpenXR"
+  ],
+  "wiki_links": [
+    "AI Domain",
+    "Blockchain Domain",
+    "Cross-Domain Concept Linking",
+    "DID Nostr Identity",
+    "Federated Knowledge Graph",
+    "InfrastructureLayer",
+    "JSON-LD Context",
+    "Knowledge Graph Domain",
+    "Logseq Graph Database",
+    "Metaverse Domain",
+    "Model Context Protocol",
+    "NGM Domain",
+    "Narrative Gold Mine Ontology",
+    "Nostr Protocol",
+    "OWL 2 Web Ontology Language",
+    "Ontology Namespace",
+    "OntologyLayer",
+    "RDF Data Model",
+    "Robotics Domain",
+    "Semantic Interoperability",
+    "Solid Pod",
+    "Telecollaboration Domain",
+    "URI Canonicaliser",
+    "Verifiable Credential Surface",
+    "VisionClaw ADR-013",
+    "VisionClaw Agentic Container",
+    "VisionClaw JSON-LD Context",
+    "W3C JSON-LD 1.1",
+    "W3C OWL 2 Specification",
+    "W3C RDF Specification",
+    "WebAssembly"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:infrastructure:ngm-domain",
+    "iri": "http://narrativegoldmine.com/infrastructure#NGMDomain",
+    "content_hash": "sha256-12-5e9c7a2b4d1f",
+    "legacy_term_id": "NGM-ngm-domain",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:ngm-domain",
+    "schema_version": "v2",
+    "term_id": "NGM-ngm-domain",
+    "preferred_term": "NGM Domain",
+    "alt_terms": [],
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts — identity primitives, data governance constructs, semantic web patterns, and integration infrastructure — that do not belong exclusively to any single specialised domain (ai, bc, mv, rb, tc) but are required as shared dependencies by all of them. It corresponds to the `http://narrativegoldmine.com/ontology#` IRI namespace and acts as the backbone against which domain-specific ontologies align their upper-level classes and properties.",
+    "scope_note": null,
+    "status": "complete",
+    "maturity": "established",
+    "version": "1.0.0",
+    "public_access": true,
+    "quality_score": 0.65,
+    "authority_score": 0.75,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T00:00:00Z",
+    "last_updated": "2026-04-26T00:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:NGMDomain",
+    "owl_role": "Concept",
+    "owl_inferred_class": "infrastructure:OntologyRoot",
+    "is_subclass_of": [
+      "Ontology Namespace",
+      "Knowledge Graph Domain"
+    ],
+    "has_part": [
+      "URI Canonicaliser",
+      "Solid Pod",
+      "VisionClaw Agentic Container",
+      "WebAssembly",
+      "DID Nostr Identity",
+      "Verifiable Credential Surface"
+    ],
+    "is_part_of": [
+      "Narrative Gold Mine Ontology"
+    ],
+    "requires": [
+      "RDF Data Model",
+      "OWL 2 Web Ontology Language",
+      "JSON-LD Context"
+    ],
+    "depends_on": [
+      "Logseq Graph Database",
+      "VisionClaw JSON-LD Context"
+    ],
+    "enables": [
+      "Cross-Domain Concept Linking",
+      "Semantic Interoperability",
+      "Federated Knowledge Graph"
+    ],
+    "relates_to": [],
+    "bridges_to": [
+      "AI Domain",
+      "Blockchain Domain",
+      "Metaverse Domain",
+      "Robotics Domain",
+      "Telecollaboration Domain"
+    ],
+    "bridges_from": [],
+    "belongs_to_domain": [
+      "NGM Domain"
+    ],
+    "implemented_in_layer": [
+      "OntologyLayer",
+      "InfrastructureLayer"
+    ],
+    "domain_extensions": {},
+    "source": [
+      "W3C OWL 2 Specification",
+      "W3C JSON-LD 1.1",
+      "VisionClaw ADR-013",
+      "Narrative Gold Mine Ontology"
+    ],
+    "other_relationships": {
+      "implements": [
+        "W3C RDF Specification",
+        "W3C OWL 2 Specification",
+        "W3C JSON-LD 1.1"
+      ]
+    },
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

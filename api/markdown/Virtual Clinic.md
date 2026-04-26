@@ -1,46 +1,64 @@
-- ### OntologyBlock
-  id:: virtual-clinic-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-10108
-	- source-domain:: mv
-	- preferred-term:: Virtual Clinic
-	- status:: active
-	- definition:: A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.
-	- owl:class:: mv:VirtualClinic
-	- belongsToDomain:: [[metaverse]]
-	- #### Relationships
-		- is-subclass-of:: [[Virtual Environment]]
-		- related-to:: [[Telehealth]]
-		- related-to:: [[Digital Health]]
-		- related-to:: [[Remote Patient Monitoring]]
-	  id:: virtual-clinic-relationships
-	  collapsed:: true
-- ## Overview
-	- Virtual clinics are an emerging form of telemedicine that positively impact healthcare accessibility in remote, rural, and underserved areas. Telehealth adoption has grown significantly since the COVID-19 pandemic, with both patients and clinicians reporting high satisfaction. Virtual clinics can decrease wait times and travel costs while providing access to medical expertise regardless of location.
-- ## Technical Details
-	- ### Service Delivery Models
+iri:: http://narrativegoldmine.com/spatial-computing#VirtualClinic
+uri:: urn:visionclaw:concept:spatial-computing:virtual-clinic
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:virtual-clinic
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Virtual Clinic
+content-hash:: sha256-12-65a5f37710f8
+legacy-term-id:: MV-10108
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
+
+- ### Definition
+  - A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.
+
+- ### Semantic Classification
+  - owl-class:: spatial-computing:VirtualClinic
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
+
+- ### Relationships
+  - is-subclass-of:: [[Virtual Environment]]
+
+- ### Content
+
+  - ## Overview
+  - Virtual clinics are an emerging form of telemedicine that positively impact healthcare accessibility in remote, rural, and underserved areas. Telehealth adoption has grown significantly since the COVID-19 pandemic, with both patients and clinicians reporting high satisfaction. Virtual clinics can decrease wait times and travel costs while providing access to medical expertise regardless of location.
+  - ## Technical Details
+  - ### Service Delivery Models
 		- **Synchronous Telehealth**: Real-time video consultations between providers and patients
 		- **Store-and-Forward**: Secure transmission of medical images and data to specialists
 		- **Remote Patient Monitoring**: Continuous tracking of health metrics and vital signs
 		- **mHealth Applications**: Mobile apps for scheduling, messaging, and symptom tracking
-	- ### Technical Requirements
+  - ### Technical Requirements
 		- HIPAA-compliant video platforms
 		- Secure messaging and data encryption
 		- Electronic health record (EHR) integration
 		- Digital prescription capabilities
-	- ### Specialties Supported
+  - ### Specialties Supported
 		- Primary care consultations
 		- Mental health and behavioral therapy
 		- Dermatology (teledermatology)
 		- Radiology (teleradiology)
 		- Chronic disease management
-- ## Applications
-	- Rural and underserved area healthcare access
-	- After-hours urgent care consultations
-	- Follow-up appointments and medication management
-	- Specialist consultations and second opinions
-	- Mental health counseling and therapy sessions
+  - ## Applications
+  - Rural and underserved area healthcare access
+  - After-hours urgent care consultations
+  - Follow-up appointments and medication management
+  - Specialist consultations and second opinions
+  - Mental health counseling and therapy sessions
 
-
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

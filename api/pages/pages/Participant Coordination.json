@@ -1,39 +1,47 @@
 {
-  "id": "Participant Coordination",
+  "id": "participant-coordination",
   "title": "Participant Coordination",
-  "content": "- ### OntologyBlock\n  id:: participant-coordination-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9995\n\t- source-domain:: mv\n\t- preferred-term:: Participant Coordination\n\t- status:: active\n\t- definition:: The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.\n\t- owl:class:: mv:ParticipantCoordination\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t  id:: participant-coordination-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Multi-User Systems]]\n\t\t- related-to:: [[Real-Time Collaboration]]\n\t\t- related-to:: [[Spatial Synchronization]]\n\t\t- related-to:: [[Virtual Collaboration]]\n\t\t- enables:: [[Shared Virtual Experiences]]\n\t- #### Technical Requirements\n\t  collapsed:: true\n\t\t- Real-time pose calculation for each device\n\t\t- Coordinate system synchronization across users\n\t\t- Edge cloud services for low-latency processing\n\t\t- Distributed SLAM for spatial alignment\n\t\t- Anchor-based synchronization mechanisms\n\t- #### Platform Examples\n\t  collapsed:: true\n\t\t- Microsoft Mesh for Teams immersive spaces\n\t\t- Multi-user AR coordination platforms\n\t\t- Real-time document collaboration (Office 365)\n\t\t- Virtual meeting rooms with spatial presence\n\t\t- Research showing blink synchronization predicts team performance",
+  "content": "- ### Definition\n  - The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.\n\n- ### Semantic Classification\n  - owl-class:: spatial-computing:ParticipantCoordination\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Multi-User Systems]]\n  - enables:: [[Shared Virtual Experiences]]\n\n- ### Content\n\n  - #### Technical Requirements\n\t\t- Real-time pose calculation for each device\n\t\t- Coordinate system synchronization across users\n\t\t- Edge cloud services for low-latency processing\n\t\t- Distributed SLAM for spatial alignment\n\t\t- Anchor-based synchronization mechanisms\n  - #### Platform Examples\n\t\t- Microsoft Mesh for Teams immersive spaces\n\t\t- Multi-user AR coordination platforms\n\t\t- Real-time document collaboration (Office 365)\n\t\t- Virtual meeting rooms with spatial presence\n\t\t- Research showing blink synchronization predicts team performance\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Digital Ritual"
   ],
   "wiki_links": [
     "Multi-User Systems",
-    "Virtual Collaboration",
     "Shared Virtual Experiences",
-    "Spatial Synchronization",
-    "metaverse",
-    "Real-Time Collaboration"
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:spatial-computing:participant-coordination",
+    "iri": "http://narrativegoldmine.com/spatial-computing#ParticipantCoordination",
+    "content_hash": "sha256-12-ba1e47049d30",
+    "legacy_term_id": "MV-9995",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:spatial-computing:participant-coordination",
+    "schema_version": "v2",
     "term_id": "MV-9995",
     "preferred_term": "Participant Coordination",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#ParticipantCoordination",
-    "source_domain": "mv",
     "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain_full": "spatial-computing",
+    "source_domain": "spatial-computing",
+    "domain_full_name": "Spatial Computing",
     "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:ParticipantCoordination",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "spatial-computing:ParticipantCoordination",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Multi-User Systems"
@@ -48,26 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Real-Time Collaboration",
-        "Spatial Synchronization",
-        "Virtual Collaboration"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

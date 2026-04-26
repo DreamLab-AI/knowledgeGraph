@@ -1,38 +1,44 @@
 {
-  "id": "Network Component",
+  "id": "network-component",
   "title": "Network Component",
-  "content": "- ### OntologyBlock\n  id:: network-component-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: BC-0604\n\t- preferred-term:: Network Component\n\t- source-domain:: bc\n\t- status:: active\n\t- public-access:: true\n\t- definition:: Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.\n\t- owl:class:: bc:NetworkComponent\n\t- belongsToDomain:: [[Blockchain Technology]]\n\t- #### Relationships\n\t  id:: network-component-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Blockchain Entity]]\n\t\t- is-parent-of:: [[Full Node]]\n\t\t- is-parent-of:: [[Light Node]]\n\t\t- is-parent-of:: [[Validator Node]]\n\t\t- is-parent-of:: [[Bootstrap Node]]\n\t\t- related-to:: [[Blockchain Network]]",
+  "content": "- ### Definition\n  - Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:NetworkComponent\n  - owl-role:: Concept\n  - belongs-to-domain:: [[Blockchain Technology]]\n\n- ### Relationships\n  - is-subclass-of:: [[Blockchain Entity]]\n\n- ### Content\n  Network Component — content pending enrichment.\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [],
   "wiki_links": [
-    "Light Node",
-    "Blockchain Technology",
     "Blockchain Entity",
-    "Bootstrap Node",
-    "Blockchain Network",
-    "Full Node",
-    "Validator Node"
+    "Blockchain Technology"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:network-component",
+    "iri": "http://narrativegoldmine.com/blockchain#NetworkComponent",
+    "content_hash": "sha256-12-d1c61ce291da",
+    "legacy_term_id": "BC-0604",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:network-component",
+    "schema_version": "v2",
     "term_id": "BC-0604",
     "preferred_term": "Network Component",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/blockchain#NetworkComponent",
-    "source_domain": "bc",
     "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
     "domain_full_name": "Blockchain",
     "definition": "Network Component represents the fundamental infrastructure elements that constitute blockchain networks, including different node types, network protocols, and communication layers. These components work together to enable distributed consensus, data replication, and peer-to-peer communication across the blockchain ecosystem.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "bc:NetworkComponent",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:NetworkComponent",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Blockchain Entity"
@@ -45,30 +51,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "Blockchain Technology"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "is-parent-of": [
-        "Full Node",
-        "Light Node",
-        "Validator Node",
-        "Bootstrap Node"
-      ],
-      "related-to": [
-        "Blockchain Network"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

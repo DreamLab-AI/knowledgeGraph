@@ -1,59 +1,36 @@
-- ### OntologyBlock
-  id:: performancestandard-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/robotics#BasedOn
+uri:: urn:visionclaw:concept:robotics:based-on
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:robotics:based-on
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: robotics
+preferred-term:: based on
+content-hash:: sha256-12-f8e5af54b8f9
+legacy-term-id:: RB-0107
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: RB
-    - sequence-number:: 0107
-    - filename-history:: ["RB-0107-performancestandard.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: RB-0107
-    - preferred-term:: based on
-    - source-domain:: rb
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - International standard for quality management systems.
 
-  - **Definition**
-    - definition:: International standard for quality management systems.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: robotics:PerformanceStandard
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Robotics]]
 
-  - **Semantic Classification**
-    - owl:class:: rb:PerformanceStandard
-    - belongsToDomain:: [[Robotics]]
+- ### Relationships
+  - is-subclass-of:: [[Safety Standard]]
 
-  - #### Relationships
-    - is-subclass-of:: [[Robot Standard]]
-    - is-subclass-of:: [[Safety Standard]]
-    - is-subclass-of:: [[Robot Standard]]
-    - is-subclass-of:: [[Robot Standard]]
-    - is-subclass-of:: [[Robot Standard]]
-    - is-subclass-of:: [[Robot Standard]]
-    - is-subclass-of:: [[Robot Standard]]
-    - also-known-as:: Robot Operating System
+- ### Content
+  based on — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :PerformanceStandard))
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      (SubClassOf :PerformanceStandard :SafetyStandard)
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      (SubClassOf :PerformanceStandard :RobotStandard)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :PerformanceStandard "based on"@en)
-      (AnnotationAssertion rdfs:comment :PerformanceStandard
-        "International standard for quality management systems."@en)
-      ```
-
-- ## About based on
-  International standard for quality management systems.
-  
-  Standard that this one is based on or derived from.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z

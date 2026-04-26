@@ -1,34 +1,43 @@
 {
-  "id": "Software Library",
+  "id": "software-library",
   "title": "Software Library",
-  "content": "- ### OntologyBlock\n  id:: mv9689-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: MV-9689\n\t- preferred-term:: Software Library\n\t- source-domain:: mv\n\t- owl:class:: mv:SoftwareLibrary\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Software Library is a concept within the metaverse domain. Further enrichment pending.\n\n## Overview\n\nSoftware Library represents an abstract concept in the metaverse ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - SoftwareLibrary is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: infrastructure:SoftwareLibrary\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  # SoftwareLibrary\n  SoftwareLibrary provides reusable, pre-tested code components accelerating Metaverse development by abstracting common functionality into stable APIs reducing duplication and defects. Graphics libraries include OpenGL/Vulkan/DirectX providing low-level GPU access, Three.js and Babylon.js offering high-level WebGL abstractions for web3D, and glTF loaders parsing standard asset formats. Physics libraries like Bullet, PhysX, and Cannon.js simulate rigid body dynamics, collision detection, and constraints with optimized algorithms. Networking libraries including Mirror, Photon, and WebRTC implementations handle multiplayer synchronization, reliable messaging, and NAT traversal. Mathematics libraries provide vector, matrix, quaternion operations, and geometric utilities optimized for graphics and physics. Audio libraries like OpenAL, Resonance Audio, and Web Audio API enable spatial sound, mixing, and effects processing. Utility libraries address cross-cutting concerns: JSON parsing, compression, cryptography, internationalization, and data structures. Modern package managers (npm, NuGet, Maven) simplify dependency management with version resolution and transitive dependency handling. Open-source ecosystems foster community contribution and scrutiny improving quality and security. Library selection considers licensing terms, platform compatibility, performance characteristics, documentation quality, maintenance activity, and community size. Well-designed libraries maintain stable APIs, comprehensive test coverage, and semantic versioning clearly communicating breaking changes.\n  - https://threejs.org/ - Three.js JavaScript 3D library\n  - https://www.babylonjs.com/ - Babylon.js real-time 3D engine\n  - https://pybullet.org/ - PyBullet physics simulation library\n  - https://www.npmjs.com/ - NPM JavaScript package registry\n\n  ## Sources\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "MathLibrary"
+    "Math Library"
   ],
-  "wiki_links": [
-    "owl:Thing"
-  ],
+  "wiki_links": [],
   "ontology": {
-    "term_id": "MV-9689",
+    "uri": "urn:visionclaw:concept:infrastructure:software-library",
+    "iri": "http://narrativegoldmine.com/infrastructure#SoftwareLibrary",
+    "content_hash": "sha256-12-bd245e56676e",
+    "legacy_term_id": "MV-9144",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:infrastructure:software-library",
+    "schema_version": "v2",
+    "term_id": "MV-9144",
     "preferred_term": "Software Library",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#SoftwareLibrary",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
-    "definition": "Software Library is a concept within the metaverse domain. Further enrichment pending.",
+    "domain": "ngm",
+    "domain_full": "infrastructure",
+    "source_domain": "infrastructure",
+    "domain_full_name": "Infrastructure",
+    "definition": "SoftwareLibrary is a concept within the ngm domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:SoftwareLibrary",
-    "owl_physicality": "abstract",
-    "owl_role": "concept",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "infrastructure:SoftwareLibrary",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -39,16 +48,13 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

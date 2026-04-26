@@ -1,38 +1,47 @@
 {
-  "id": "Monitoring Dashboard",
+  "id": "monitoring-dashboard",
   "title": "Monitoring Dashboard",
-  "content": "- ### OntologyBlock\n  id:: monitoring-dashboard-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-9972\n\t- source-domain:: mv\n\t- preferred-term:: Monitoring Dashboard\n\t- status:: active\n\t- owl:class:: mv:MonitoringDashboard\n\t- belongsToDomain:: [[metaverse]]\n\t- definition:: Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.\n\t- #### Relationships\n\t  id:: monitoring-dashboard-relationships\n\t  collapsed:: true\n\t\t- is-subclass-of:: [[Data Visualisation]]\n\t\t- related-to:: [[Observability Platform]]\n\t\t- related-to:: [[System Monitoring]]\n\t\t- enables:: [[Operational Intelligence]]\n\n## Leading Platforms\n\n### Grafana\n- Open-source visualisation\n- Gartner Magic Quadrant Leader\n- 150+ data source plugins\n- Time series to 3D charts\n- Unified dashboard creation\n\n### Datadog\n- Cloud-based monitoring\n- Application performance\n- Infrastructure visibility\n- Network monitoring\n- Real-time alerts\n\n### Dynatrace\n- Built-in dashboard app\n- Data visualisation\n- Real-time insights\n- Flexible presentation\n- Quick setup\n\n### OpenSearch Dashboards\n- Log visualisation\n- Trace exploration\n- Metrics analysis\n- Piped Processing Language\n- OpenSearch integration\n\n## 2024 Observability Trends\n\n### AI Integration\n- Anomaly detection (76% interest)\n- Predictive insights\n- Dashboard generation\n- Query assistance\n- Automated summaries\n\n### Industry Adoption\n- Integral to operations\n- Performance improvement\n- Toil reduction\n- Cost optimisation\n- Resource efficiency\n\n## Dashboard Best Practices\n\n### Design Principles\n- Clear visual hierarchy\n- Meaningful metrics\n- Actionable insights\n- Consistent layouts\n- User-appropriate views\n\n### Common Mistakes\n- Information overload\n- Too many visualisations\n- Cognitive overwhelm\n- Irrelevant metrics\n- Poor organisation\n\n## Key Metrics\n\n### System Health\n- Latency measurements\n- Error rates\n- Throughput levels\n- Resource utilisation\n- Availability status\n\n### Correlation Capabilities\n- Incident-deployment links\n- Version tracking\n- Infrastructure changes\n- Root cause analysis\n- Trend identification\n\n## Visualisation Types\n\n### Time Series\n- Line charts\n- Area graphs\n- Stacked views\n- Historical trends\n- Forecasting\n\n### Status Displays\n- Gauge charts\n- Heatmaps\n- Status indicators\n- Progress bars\n- Alert panels\n\n### Comparative Views\n- Bar charts\n- Tables\n- Comparison panels\n- Ranking displays\n- Distribution charts\n\n## Implementation\n\n### Data Sources\n- Prometheus metrics\n- Application logs\n- Distributed traces\n- Custom metrics\n- Third-party APIs\n\n### Alert Configuration\n- Threshold alerts\n- Anomaly detection\n- Escalation rules\n- Notification channels\n- On-call integration\n\n## Use Cases\n\n### DevOps\n- CI/CD monitoring\n- Deployment tracking\n- Service health\n- Container metrics\n- Kubernetes clusters\n\n### Business Intelligence\n- KPI tracking\n- Revenue metrics\n- User engagement\n- Conversion rates\n- Growth indicators\n\n### Infrastructure\n- Server monitoring\n- Network traffic\n- Database performance\n- Cloud resources\n- Security events\n\n## Metadata\n\n- **Migration Status**: Enriched via WebSearch 2024-12-27\n- **Last Updated**: 2024-12-27\n- **Review Status**: Research-enriched",
+  "content": "- ### Definition\n  - Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:MonitoringDashboard\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Data Visualisation]]\n  - enables:: [[Operational Intelligence]]\n\n- ### Content\n\n  ## Leading Platforms\n\n  ### Grafana\n  - Open-source visualisation\n  - Gartner Magic Quadrant Leader\n  - 150+ data source plugins\n  - Time series to 3D charts\n  - Unified dashboard creation\n\n  ### Datadog\n  - Cloud-based monitoring\n  - Application performance\n  - Infrastructure visibility\n  - Network monitoring\n  - Real-time alerts\n\n  ### Dynatrace\n  - Built-in dashboard app\n  - Data visualisation\n  - Real-time insights\n  - Flexible presentation\n  - Quick setup\n\n  ### OpenSearch Dashboards\n  - Log visualisation\n  - Trace exploration\n  - Metrics analysis\n  - Piped Processing Language\n  - OpenSearch integration\n\n  ## 2024 Observability Trends\n\n  ### AI Integration\n  - Anomaly detection (76% interest)\n  - Predictive insights\n  - Dashboard generation\n  - Query assistance\n  - Automated summaries\n\n  ### Industry Adoption\n  - Integral to operations\n  - Performance improvement\n  - Toil reduction\n  - Cost optimisation\n  - Resource efficiency\n\n  ## Dashboard Best Practices\n\n  ### Design Principles\n  - Clear visual hierarchy\n  - Meaningful metrics\n  - Actionable insights\n  - Consistent layouts\n  - User-appropriate views\n\n  ### Common Mistakes\n  - Information overload\n  - Too many visualisations\n  - Cognitive overwhelm\n  - Irrelevant metrics\n  - Poor organisation\n\n  ## Key Metrics\n\n  ### System Health\n  - Latency measurements\n  - Error rates\n  - Throughput levels\n  - Resource utilisation\n  - Availability status\n\n  ### Correlation Capabilities\n  - Incident-deployment links\n  - Version tracking\n  - Infrastructure changes\n  - Root cause analysis\n  - Trend identification\n\n  ## Visualisation Types\n\n  ### Time Series\n  - Line charts\n  - Area graphs\n  - Stacked views\n  - Historical trends\n  - Forecasting\n\n  ### Status Displays\n  - Gauge charts\n  - Heatmaps\n  - Status indicators\n  - Progress bars\n  - Alert panels\n\n  ### Comparative Views\n  - Bar charts\n  - Tables\n  - Comparison panels\n  - Ranking displays\n  - Distribution charts\n\n  ## Implementation\n\n  ### Data Sources\n  - Prometheus metrics\n  - Application logs\n  - Distributed traces\n  - Custom metrics\n  - Third-party APIs\n\n  ### Alert Configuration\n  - Threshold alerts\n  - Anomaly detection\n  - Escalation rules\n  - Notification channels\n  - On-call integration\n\n  ## Use Cases\n\n  ### DevOps\n  - CI/CD monitoring\n  - Deployment tracking\n  - Service health\n  - Container metrics\n  - Kubernetes clusters\n\n  ### Business Intelligence\n  - KPI tracking\n  - Revenue metrics\n  - User engagement\n  - Conversion rates\n  - Growth indicators\n\n  ### Infrastructure\n  - Server monitoring\n  - Network traffic\n  - Database performance\n  - Cloud resources\n  - Security events\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Telemetry & Analytics"
   ],
   "wiki_links": [
     "Data Visualisation",
-    "Observability Platform",
-    "metaverse",
-    "System Monitoring",
-    "Operational Intelligence"
+    "Operational Intelligence",
+    "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:monitoring-dashboard",
+    "iri": "http://narrativegoldmine.com/metaverse#MonitoringDashboard",
+    "content_hash": "sha256-12-42cad7cbaaae",
+    "legacy_term_id": "MV-9972",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:monitoring-dashboard",
+    "schema_version": "v2",
     "term_id": "MV-9972",
     "preferred_term": "Monitoring Dashboard",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#MonitoringDashboard",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "Visual interfaces that aggregate and display real-time metrics, logs, and traces from systems and applications, enabling observability, performance tracking, incident detection, and data-driven decision making through unified visualisation platforms.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:MonitoringDashboard",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:MonitoringDashboard",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Data Visualisation"
@@ -47,25 +56,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Observability Platform",
-        "System Monitoring"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

@@ -1,102 +1,115 @@
-- ### OntologyBlock
-  id:: gas-fee-market-ontology
-  collapsed:: true
-	- ontology:: true
-	- public-access:: true
-	- term-id:: MV-9904
-	- source-domain:: mv
-	- preferred-term:: Gas Fee Market
-	- status:: active
-	- owl:class:: mv:GasFeeMarket
-	- belongsToDomain:: [[metaverse]]
-	- definition:: The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.
-	- #### Relationships
-	  id:: gas-fee-market-relationships
-	  collapsed:: true
-		- is-subclass-of:: [[Blockchain Economics]]
-		- related-to:: [[Economic Parameters]]
-		- related-to:: [[Smart Contract]]
-		- impacts:: [[Metaverse Virtual Economy]]
+iri:: http://narrativegoldmine.com/spatial-computing#GasFeeMarket
+uri:: urn:visionclaw:concept:spatial-computing:gas-fee-market
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:spatial-computing:gas-fee-market
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: spatial-computing
+preferred-term:: Gas Fee Market
+content-hash:: sha256-12-28fc22f36666
+legacy-term-id:: MV-9904
+status:: active
+maturity:: draft
+quality-score:: 0.50
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+author-did::
+signature::
+contributors::
+public:: true
 
-## 2024 Market Dynamics
+- ### Definition
+  - The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.
 
-### Ethereum Fee Evolution
-- Average fees dropped to $3.78 by mid-2024
-- Peak on February 9, 2024: 70 gwei average, up to 377 gwei
-- Dencun upgrade (EIP-4844): 95% fee reduction by March 2025
-- Transaction costs now $0.39-$0.65 for token swaps
+- ### Semantic Classification
+  - owl-class:: spatial-computing:GasFeeMarket
+  - owl-role:: Concept
+  - belongs-to-domain:: [[metaverse]]
 
-### Annual Fee Revenue
-- Ethereum 2024 fee revenue: USD 2.48 billion
-- 3% increase from 2023 (USD 2.41 billion)
-- Q1 2024 alone: USD 1.17 billion
-- Monthly range: USD 62.82 - 606.77 million
+- ### Relationships
+  - is-subclass-of:: [[Blockchain Economics]]
 
-## Fee Structure
+- ### Content
 
-### EIP-1559 Mechanism (Since 2021)
-- **Base Fee**: Minimum fee per gas unit, network-adjusted
-- **Priority Fee (Tip)**: Optional tip for validators
-- **Base Fee Burning**: Permanently removed from circulation
-- Fee adjustment based on block utilisation
+  ## 2024 Market Dynamics
 
-### Price Determinants
-- Network congestion levels
-- Block space demand
-- Transaction complexity
-- Time-of-day patterns
+  ### Ethereum Fee Evolution
+  - Average fees dropped to $3.78 by mid-2024
+  - Peak on February 9, 2024: 70 gwei average, up to 377 gwei
+  - Dencun upgrade (EIP-4844): 95% fee reduction by March 2025
+  - Transaction costs now $0.39-$0.65 for token swaps
 
-## Layer 2 Impact
+  ### Annual Fee Revenue
+  - Ethereum 2024 fee revenue: USD 2.48 billion
+  - 3% increase from 2023 (USD 2.41 billion)
+  - Q1 2024 alone: USD 1.17 billion
+  - Monthly range: USD 62.82 - 606.77 million
 
-### EIP-4844 (Dencun Upgrade)
-- Proto-danksharding implementation
-- Layer 2 fees reduced by 90%
-- More efficient data usage
-- Lower on-chain data costs
+  ## Fee Structure
 
-### Popular Layer 2 Solutions
-- Optimistic Rollups
-- zk-Rollups
-- Polygon
-- Arbitrum
+  ### EIP-1559 Mechanism (Since 2021)
+  - **Base Fee**: Minimum fee per gas unit, network-adjusted
+  - **Priority Fee (Tip)**: Optional tip for validators
+  - **Base Fee Burning**: Permanently removed from circulation
+  - Fee adjustment based on block utilisation
 
-## Competitive Landscape
+  ### Price Determinants
+  - Network congestion levels
+  - Block space demand
+  - Transaction complexity
+  - Time-of-day patterns
 
-### Alternative Blockchains
-- Solana 2024 fee growth: 2,838% (USD 750.65 million)
-- Transaction volume spikes causing congestion
-- Lower base fee alternatives
-- Trade-offs between security and cost
+  ## Layer 2 Impact
 
-### Market Share Shifts
-- Ethereum maintains dominance in fee revenue
-- Layer 2 reducing main chain activity
-- ETH supply burn decreased in 2024
-- Growing competitive alternatives
+  ### EIP-4844 (Dencun Upgrade)
+  - Proto-danksharding implementation
+  - Layer 2 fees reduced by 90%
+  - More efficient data usage
+  - Lower on-chain data costs
 
-## Cost Optimisation Strategies
+  ### Popular Layer 2 Solutions
+  - Optimistic Rollups
+  - zk-Rollups
+  - Polygon
+  - Arbitrum
 
-### Timing
-- Off-peak transactions (late night, weekends)
-- Avoid U.S. business hours peaks
-- Monitor gas tracking tools
+  ## Competitive Landscape
 
-### Technical
-- Layer 2 solution usage
-- Transaction batching
-- Smart contract optimisation
-- Gas-efficient contract patterns
+  ### Alternative Blockchains
+  - Solana 2024 fee growth: 2,838% (USD 750.65 million)
+  - Transaction volume spikes causing congestion
+  - Lower base fee alternatives
+  - Trade-offs between security and cost
 
-## Metaverse Applications
+  ### Market Share Shifts
+  - Ethereum maintains dominance in fee revenue
+  - Layer 2 reducing main chain activity
+  - ETH supply burn decreased in 2024
+  - Growing competitive alternatives
 
-### Fee Impact Areas
-- NFT minting and trading
-- Virtual land transactions
-- In-game asset transfers
-- DAO governance participation
+  ## Cost Optimisation Strategies
 
-## Metadata
+  ### Timing
+  - Off-peak transactions (late night, weekends)
+  - Avoid U.S. business hours peaks
+  - Monitor gas tracking tools
 
-- **Migration Status**: Enriched via WebSearch 2024-12-27
-- **Last Updated**: 2024-12-27
-- **Review Status**: Research-enriched
+  ### Technical
+  - Layer 2 solution usage
+  - Transaction batching
+  - Smart contract optimisation
+  - Gas-efficient contract patterns
+
+  ## Metaverse Applications
+
+  ### Fee Impact Areas
+  - NFT minting and trading
+  - Virtual land transactions
+  - In-game asset transfers
+  - DAO governance participation
+
+- ### Provenance
+  - sources::
+  - migration-date:: 2026-04-26T00:00:00Z

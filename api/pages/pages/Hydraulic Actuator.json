@@ -1,35 +1,47 @@
 {
-  "id": "Hydraulic Actuator",
+  "id": "hydraulic-actuator",
   "title": "Hydraulic Actuator",
-  "content": "- ### OntologyBlock\n  id:: rb9513-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- term-id:: RB-9513\n\t- preferred-term:: Hydraulic Actuator\n\t- source-domain:: rb\n\t- owl:class:: rb:HydraulicActuator\n\t- owl:physicality:: abstract\n\t- owl:role:: concept\n\t- public-access:: true\n\t- status:: draft\n- definition:: Hydraulic Actuator is a concept within the robotics domain. Further enrichment pending.\n\n## Overview\n\nHydraulic Actuator represents an abstract concept in the robotics ontology hierarchy.\n\n## Related Concepts\n\n- [[owl:Thing]]",
+  "content": "- ### Definition\n  - HydraulicActuator is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: robotics:HydraulicActuator\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  term-id: RB-9011\n  domain: rb\n  # HydraulicActuator\n  A Hydraulic Actuator converts hydraulic fluid pressure into mechanical motion, providing high force density and power-to-weight ratio for robotic applications requiring substantial actuation forces. These actuators utilize pressurized fluid to drive pistons or hydraulic motors, delivering linear or rotary motion respectively, with force outputs exceeding electric and pneumatic alternatives.\n  Hydraulic actuators consist of fluid pumps, control valves, cylinders or motors, and fluid reservoirs forming closed hydraulic circuits. Proportional and servo valves enable precise flow control for position and force regulation, while accumulators store hydraulic energy for rapid response. The technology offers inherent overload protection through pressure relief valves and provides smooth motion control across the full force range without gear reduction.\n  Applications include heavy-duty industrial manipulators, construction and mining robots, legged robots requiring high torque-to-weight ratios, and large-scale parallel robots for flight simulation. Hydraulic actuators excel in environments requiring robustness, high forces, and resistance to electromagnetic interference. They enable the powerful, dynamic motions characteristic of quadruped robots like Boston Dynamics' BigDog and ATLAS.\n  Modern developments address efficiency improvements through variable displacement pumps, model-based controllers compensating for nonlinear hydraulic dynamics, compact integrated actuator-valve units, and leak detection systems. Research explores electro-hydrostatic actuators eliminating centralized hydraulic power units, biodegradable hydraulic fluids for environmental safety, and energy recuperation systems capturing potential energy during load lowering. Despite maintenance requirements and environmental considerations regarding fluid leaks, hydraulic actuation remains essential for high-force robotic applications where electric alternatives prove inadequate.\n  - Siciliano, B., & Khatib, O. (2016). Springer Handbook of Robotics (2nd ed.). Springer\n  - Semini, C., et al. (2011). \"Design of HyQ – a hydraulically and electrically actuated quadruped robot.\" Proceedings of the Institution of Mechanical Engineers, Part I: Journal of Systems and Control Engineering, 225(6), 831-849\n  - Jelali, M., & Kroll, A. (2003). Hydraulic Servo-systems: Modelling, Identification and Control. Springer\n  - Merritt, H.E. (1967). Hydraulic Control Systems. John Wiley & Sons\n\n  ## Sources\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
     "Hydraulic Cylinder",
     "Hydraulic Motor"
   ],
   "wiki_links": [
-    "owl:Thing"
+    "AI Agent System",
+    "Digital Twin"
   ],
   "ontology": {
-    "term_id": "RB-9513",
+    "uri": "urn:visionclaw:concept:robotics:hydraulic-actuator",
+    "iri": "http://narrativegoldmine.com/robotics#HydraulicActuator",
+    "content_hash": "sha256-12-062676cf775d",
+    "legacy_term_id": "RB-hydraulic-actuator",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:robotics:hydraulic-actuator",
+    "schema_version": "v2",
+    "term_id": "RB-hydraulic-actuator",
     "preferred_term": "Hydraulic Actuator",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/robotics#HydraulicActuator",
-    "source_domain": "rb",
     "domain": "rb",
+    "domain_full": "robotics",
+    "source_domain": "robotics",
     "domain_full_name": "Robotics",
-    "definition": "Hydraulic Actuator is a concept within the robotics domain. Further enrichment pending.",
+    "definition": "HydraulicActuator is a concept within the ngm domain.",
     "scope_note": null,
-    "status": "draft",
-    "maturity": null,
-    "version": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "rb:HydraulicActuator",
-    "owl_physicality": "abstract",
-    "owl_role": "concept",
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "robotics:HydraulicActuator",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [],
     "has_part": [],
@@ -40,16 +52,13 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

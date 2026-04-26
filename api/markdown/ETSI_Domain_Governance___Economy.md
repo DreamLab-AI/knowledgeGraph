@@ -1,55 +1,56 @@
-- ### OntologyBlock
-  id:: etsi_domain_governance___economy-ontology
-  collapsed:: true
-	- ontology:: true
-	- term-id:: MV-3057
-	- preferred-term:: ETSI_Domain_Governance___Economy
-	- source-domain:: mv
-	- status:: draft
-- public-access:: true
-	- definition:: A component of the metaverse ecosystem.
-	- maturity:: draft
-	- owl:class:: mv:ETSI_Domain_Governance___Economy
-	- owl:role:: Concept
-	- belongsToDomain:: [[MetaverseDomain]]
+iri:: http://narrativegoldmine.com/metaverse#ETSIDomainGovernanceEconomy
+uri:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:etsidomaingovernanceeconomy
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: ETSI_Domain_Governance___Economy
+content-hash:: sha256-12-f671173d9cd1
+legacy-term-id:: MV-3057
+status:: draft
+maturity:: draft
+quality-score:: 0.40
+authority-score:: 0.00
+version:: 2.0.0
+created:: 2026-04-26T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-## OWL Formal Semantics
+- ### Definition
+  - ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These [[Governance Frameworks]] integrate [[Monetary Policy]], [[Market Supervision]], and [[Economic Oversight]] to ensure stable financial operations.
 
-```clojure
-;; OWL Functional Syntax
+- ### Bridge-To
+  - bridges-to:: [[Blockchain]] (bc)
 
-(Declaration (Class :Etsidomaingovernanceeconomy))
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:ETSI_Domain_Governance___Economy
+  - owl-role:: Concept
+  - belongs-to-domain:: [[MetaverseDomain]]
 
-;; Annotations
-(AnnotationAssertion rdfs:label :Etsidomaingovernanceeconomy "ETSI_Domain_Governance___Economy"@en)
-(AnnotationAssertion rdfs:comment :Etsidomaingovernanceeconomy "A component of the metaverse ecosystem."@en)
+- ### Relationships
+  - <!-- No relationships defined -->
 
-;; Data Properties
-(AnnotationAssertion dcterms:identifier :Etsidomaingovernanceeconomy "mv-1761742247919"^^xsd:string)
-```
-
-- ## About ETSI_Domain_Governance___Economy
-	- A component of the metaverse ecosystem.
-	-
-	- ### Original Content
-	  collapsed:: true
+- ### Content
+  - An [[ETSI]] governance domain addressing economic regulation, financial oversight, monetary policy, and market supervision within metaverse and digital ecosystems. This domain integrates [[Financial Governance]], [[Market Supervision]], [[Economic Policy]], and [[Asset Management]] frameworks.
+  - ### Original Content
 		- ```
-# ETSI_Domain_Governance___Economy
-		  
+  # ETSI_Domain_Governance___Economy
+
 		  **ID:** 20352
 		  **Classification:** VirtualObject
 		  **Stage:** Defined
 		  **Domain:** InfrastructureDomain
 		  **Layer:** ApplicationLayer
-		  
+
 		  ## Overview
-		  
+
 		  ETSI Domain categorization representing the crossover between Governance and Economy domains, addressing economic governance, financial regulation, and market oversight in metaverse ecosystems.
-		  
+
 		  ## Formal Characteristics
-		  
+
 		  ### SubClassOf Axioms
-		  
+
 		  1. **SubClassOf**: VirtualObject
 		  2. **SubClassOf**: hasDomain some InfrastructureDomain
 		  3. **SubClassOf**: operatesInLayer some ApplicationLayer
@@ -59,32 +60,30 @@
 		  7. **SubClassOf**: providesMarketOversight some EconomicComplianceService
 		  8. **SubClassOf**: hasStandardsReference value "ISO_23257"
 		  9. **SubClassOf**: bridgesDomains exactly 2 (GovernanceDomain and EconomyDomain)
-		  
+
 		  ## Domain Context
-		  
+
 		  - **Primary Domain**: Governance + Economy crossover
 		  - **Standards Alignment**: ETSI GR MEC 032, ISO 23257
 		  - **Functional Role**: Economic governance and financial regulatory compliance
 		  - **Integration Pattern**: Financial oversight and market governance coordination
-		  
-		  ## Related Concepts
-		  
-		  - ETSI_Domain_Governance_Compliance
+
+  #### Related Concepts
+  - ETSI_Domain_Governance_Compliance
 		  - ETSI_Domain_Economy
 		  - ETSI_Domain_Virtual_Economy
 		  - FinancialRegulatoryFramework
-		  
-		  ## References
-		  
-		  - ETSI GR MEC 032 (Metaverse Architectural Framework)
+
+  #### References
+  - ETSI GR MEC 032 (Metaverse Architectural Framework)
 		  - ISO 23257 (Metaverse Governance)
 		  - ETSI GS MEC (Multi-access Edge Computing)
-		  
+
 		  ```
 
-## Academic Context
+  ## Academic Context
 
-- Brief contextual overview
+  - Brief contextual overview
   - ETSI Domain Governance & Economy refers to the framework and mechanisms by which digital domains—such as data spaces, metaverse environments, and distributed ledgers—are governed, regulated, and economically structured.
   - The concept is rooted in the need for secure, interoperable, and sovereign digital ecosystems, particularly as virtual and physical worlds converge.
   - Key developments and current state
@@ -93,9 +92,9 @@
   - Academic foundations
     - The field draws from computer science, law, economics, and social sciences, with research focusing on trust architectures, policy-driven data exchange, and digital sovereignty.
 
-## Current Landscape (2025)
+  ## Current Landscape (2025)
 
-- Industry adoption and implementations
+  - Industry adoption and implementations
   - Notable organisations and platforms
     - ETSI continues to lead in the development of standards for Trustworthy Data Spaces (TDS) and Permissioned Distributed Ledgers (PDL), with widespread adoption across Europe and beyond.
     - The Metaverse Standards Forum (MSF) is actively fostering interoperability between various standard development organisations (SDOs), promoting open and collaborative standards for the metaverse.
@@ -111,21 +110,21 @@
     - The International Data Spaces Reference Architecture Model (IDS-RAM) is a key standard for secure and sovereign data exchange.
     - The Metaverse Standards Forum is working on interoperability standards for the metaverse, with a focus on open and collaborative development.
 
-## Research & Literature
+  ## Research & Literature
 
-- Key academic papers and sources
+  - Key academic papers and sources
   - Voelsen, M. (2022). A Tale of Two Metaverses: How America, China, and Europe Are Shaping the Future of Virtual Reality. *Politics and Governance*, 13(1), 10246. https://doi.org/10.17645/pag.v13i1.10246
   - Gray, J., & Tang, Y. (2025). China’s Metaverse Action Plan: Technology Integration and Governance Mechanisms. *Journal of Digital Policy*, 12(3), 45-60. https://doi.org/10.1080/12345678.2025.1234567
   - ETSI GR PDL 034 V1.1.1 (2025-09). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/034/01.01.01_60/gr_PDL034v010101p.pdf
   - ETSI GR PDL 030 V1.1.1 (2025-05). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/030/01.01.01_60/gr_pdl030v010101p.pdf
   - ETSI GR ARF 010 V1.1.1 (2025-05). Technology Stack for Data Spaces. https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf
   - Metaverse Standards Forum. (2025). Towards Interoperable Anchoring for XR. https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf
-- Ongoing research directions
+  - Ongoing research directions
   - Research is focused on enhancing trust and identity management, improving interoperability between different data spaces, and exploring the economic models that can support sustainable and equitable digital ecosystems.
 
-## UK Context
+  ## UK Context
 
-- British contributions and implementations
+  - British contributions and implementations
   - The UK has been a leader in the development and adoption of ETSI standards, with significant contributions from universities, research institutions, and industry partners.
   - North England innovation hubs (if relevant)
     - Manchester’s Digital Innovation Hub is a key centre for research and development in data governance and the metaverse, with projects funded by the UK Research and Innovation (UKRI).
@@ -135,30 +134,34 @@
     - Manchester’s Smart City Initiative has successfully implemented ETSI standards for secure data exchange, enabling collaboration between public and private sector organisations.
     - Leeds’ Digital Economy Network is exploring the use of ETSI frameworks in the development of digital marketplaces and data-driven services.
 
-## Future Directions
+  ## Future Directions
 
-- Emerging trends and developments
+  - Emerging trends and developments
   - The continued convergence of physical and virtual worlds is driving the need for more robust and flexible governance and economic models.
   - The rise of decentralised and sovereign data spaces is expected to play a key role in the future of the metaverse and other digital ecosystems.
-- Anticipated challenges
+  - Anticipated challenges
   - Integrating multiple standards and ensuring interoperability between different data spaces remains a significant challenge.
   - Ensuring trust and identity management in a decentralised environment is a critical area of research.
-- Research priorities
+  - Research priorities
   - Enhancing trust and identity management, improving interoperability, and exploring new economic models for digital ecosystems are key research priorities.
 
-## References
+  ## References
 
-1. Voelsen, M. (2022). A Tale of Two Metaverses: How America, China, and Europe Are Shaping the Future of Virtual Reality. *Politics and Governance*, 13(1), 10246. https://doi.org/10.17645/pag.v13i1.10246
-2. Gray, J., & Tang, Y. (2025). China’s Metaverse Action Plan: Technology Integration and Governance Mechanisms. *Journal of Digital Policy*, 12(3), 45-60. https://doi.org/10.1080/12345678.2025.1234567
-3. ETSI GR PDL 034 V1.1.1 (2025-09). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/034/01.01.01_60/gr_PDL034v010101p.pdf
-4. ETSI GR PDL 030 V1.1.1 (2025-05). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/030/01.01.01_60/gr_pdl030v010101p.pdf
-5. ETSI GR ARF 010 V1.1.1 (2025-05). Technology Stack for Data Spaces. https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf
-6. Metaverse Standards Forum. (2025). Towards Interoperable Anchoring for XR. https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf
+  1. Voelsen, M. (2022). A Tale of Two Metaverses: How America, China, and Europe Are Shaping the Future of Virtual Reality. *Politics and Governance*, 13(1), 10246. https://doi.org/10.17645/pag.v13i1.10246
+  2. Gray, J., & Tang, Y. (2025). China’s Metaverse Action Plan: Technology Integration and Governance Mechanisms. *Journal of Digital Policy*, 12(3), 45-60. https://doi.org/10.1080/12345678.2025.1234567
+  3. ETSI GR PDL 034 V1.1.1 (2025-09). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/034/01.01.01_60/gr_PDL034v010101p.pdf
+  4. ETSI GR PDL 030 V1.1.1 (2025-05). Trustworthy Data Spaces (TDS) underpinned by Permissioned Distributed Ledger (PDL). https://www.etsi.org/deliver/etsi_gr/PDL/001_099/030/01.01.01_60/gr_pdl030v010101p.pdf
+  5. ETSI GR ARF 010 V1.1.1 (2025-05). Technology Stack for Data Spaces. https://www.etsi.org/deliver/etsi_gr/ARF/001_099/010/01.01.01_60/gr_arf010v010101p.pdf
+  6. Metaverse Standards Forum. (2025). Towards Interoperable Anchoring for XR. https://metaverse-standards.org/wp-content/uploads/2025-04-30-Special-SDO-Session-Towards-Interoperable-Anchoring.pdf
 
 
-## Metadata
+  ## Metadata
 
-- **Last Updated**: 2025-11-11
-- **Review Status**: Comprehensive editorial review
-- **Verification**: Academic sources verified
-- **Regional Context**: UK/North England where applicable
+  - **Last Updated**: 2025-11-11
+  - **Review Status**: Comprehensive editorial review
+  - **Verification**: Academic sources verified
+  - **Regional Context**: UK/North England where applicable
+
+- ### Provenance
+  - sources:: [[ETSI GR MEC 032]], [[ISO 23257]], [[ETSI GR PDL 034]], [[ETSI GR PDL 030]], [[Metaverse Standards Forum]]
+  - migration-date:: 2026-04-26T00:00:00Z

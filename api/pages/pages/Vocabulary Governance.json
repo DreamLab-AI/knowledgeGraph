@@ -1,39 +1,46 @@
 {
-  "id": "Vocabulary Governance",
+  "id": "vocabulary-governance",
   "title": "Vocabulary Governance",
-  "content": "- ### OntologyBlock\n  id:: vocabulary-governance-ontology\n  collapsed:: true\n\t- ontology:: true\n\t- public-access:: true\n\t- term-id:: MV-10160\n\t- source-domain:: mv\n\t- preferred-term:: Vocabulary Governance\n\t- status:: active\n\t- definition:: The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.\n\t- owl:class:: mv:VocabularyGovernance\n\t- belongsToDomain:: [[metaverse]]\n\t- #### Relationships\n\t\t- is-subclass-of:: [[Knowledge Management]]\n\t\t- related-to:: [[Ontology]]\n\t\t- related-to:: [[Interoperability]]\n\t\t- related-to:: [[Standards]]\n\t  id:: vocabulary-governance-relationships\n\t  collapsed:: true\n- ## Overview\n\t- Vocabulary governance establishes frameworks for managing terminology assets that enable semantic interoperability across metaverse platforms. W3C maintains standards including RDF, OWL, SPARQL, and SKOS for semantic web vocabularies. Key standards like ISO 25964 govern thesauri construction and interoperability. The European Committee for Standardisation emphasizes W3C XR Accessibility User Requirements as starting points for cross-domain vocabulary alignment.\n- ## Technical Details\n\t- ### Key Standards\n\t\t- **ISO 25964-1/2**: Thesauri and interoperability with other vocabularies\n\t\t- **ANSI/NISO Z39.19**: Guidelines for monolingual controlled vocabularies\n\t\t- **SBVR**: OMG standard for business vocabularies and rules\n\t\t- **SKOS**: W3C standard for knowledge organization systems\n\t- ### Governance Components\n\t\t- **Role-Based Access**: Managing permissions for viewing, editing, and creating ontologies\n\t\t- **Version Control**: Tracking changes and maintaining audit trails\n\t\t- **Quality Assurance**: Regular reviews for accuracy, consistency, and completeness\n\t\t- **Lifecycle Management**: From creation through maintenance to deprecation\n\t- ### Knowledge Organization Systems\n\t\t- Taxonomies and classification schemes\n\t\t- Thesauri with broader/narrower relationships\n\t\t- Ontologies with formal semantic relationships\n\t\t- Name authorities and topic maps\n- ## Applications\n\t- Cross-platform terminology alignment in metaverse\n\t- Semantic search and content discovery\n\t- Knowledge graph maintenance\n\t- Enterprise taxonomy management\n\t- Interoperability standards development",
+  "content": "- ### Definition\n  - The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:VocabularyGovernance\n  - owl-role:: Concept\n  - belongs-to-domain:: [[metaverse]]\n\n- ### Relationships\n  - is-subclass-of:: [[Knowledge Management]]\n\n- ### Content\n\n  - ## Overview\n  - Vocabulary governance establishes frameworks for managing terminology assets that enable semantic interoperability across metaverse platforms. W3C maintains standards including RDF, OWL, SPARQL, and SKOS for semantic web vocabularies. Key standards like ISO 25964 govern thesauri construction and interoperability. The European Committee for Standardisation emphasizes W3C XR Accessibility User Requirements as starting points for cross-domain vocabulary alignment.\n  - ## Technical Details\n  - ### Key Standards\n\t\t- **ISO 25964-1/2**: Thesauri and interoperability with other vocabularies\n\t\t- **ANSI/NISO Z39.19**: Guidelines for monolingual controlled vocabularies\n\t\t- **SBVR**: OMG standard for business vocabularies and rules\n\t\t- **SKOS**: W3C standard for knowledge organization systems\n  - ### Governance Components\n\t\t- **Role-Based Access**: Managing permissions for viewing, editing, and creating ontologies\n\t\t- **Version Control**: Tracking changes and maintaining audit trails\n\t\t- **Quality Assurance**: Regular reviews for accuracy, consistency, and completeness\n\t\t- **Lifecycle Management**: From creation through maintenance to deprecation\n  - ### Knowledge Organization Systems\n\t\t- Taxonomies and classification schemes\n\t\t- Thesauri with broader/narrower relationships\n\t\t- Ontologies with formal semantic relationships\n\t\t- Name authorities and topic maps\n  - ## Applications\n  - Cross-platform terminology alignment in metaverse\n  - Semantic search and content discovery\n  - Knowledge graph maintenance\n  - Enterprise taxonomy management\n  - Interoperability standards development\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
   "backlinks": [
-    "Vocabulary Services",
     "Digital Ontology Repository"
   ],
   "wiki_links": [
     "Knowledge Management",
-    "Standards",
-    "Interoperability",
-    "Ontology",
     "metaverse"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:vocabulary-governance",
+    "iri": "http://narrativegoldmine.com/metaverse#VocabularyGovernance",
+    "content_hash": "sha256-12-28d24be6d2c9",
+    "legacy_term_id": "MV-10160",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:vocabulary-governance",
+    "schema_version": "v2",
     "term_id": "MV-10160",
     "preferred_term": "Vocabulary Governance",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/metaverse#VocabularyGovernance",
-    "source_domain": "mv",
-    "domain": "mv",
-    "domain_full_name": "Metaverse",
+    "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
+    "domain_full_name": "Artificial Intelligence",
     "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistency and semantic interoperability.",
     "scope_note": null,
     "status": "active",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "mv:VocabularyGovernance",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:VocabularyGovernance",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
     "is_subclass_of": [
       "Knowledge Management"
@@ -46,26 +53,15 @@
     "relates_to": [],
     "bridges_to": [],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [
       "metaverse"
     ],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
-    "other_relationships": {
-      "related-to": [
-        "Ontology",
-        "Interoperability",
-        "Standards"
-      ]
-    },
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

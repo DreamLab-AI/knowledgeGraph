@@ -1,0 +1,62 @@
+{
+  "id": "radicle",
+  "title": "Radicle",
+  "content": "- ### Definition\n  - Radicle is a concept within the ngm domain.\n\n- ### Semantic Classification\n  - owl-class:: blockchain:Radicle\n  - owl-role:: Concept\n\n- ### Relationships\n  - <!-- No relationships defined -->\n\n- ### Content\n  - [Radicle - Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=radicle-ide-plugins-team.radicle)\n  - [FAQ (radicle.xyz)](https://radicle.xyz/faq)\n  - [Radicle (npub.info)](https://app.npub.info/)\n  - The term \"content\" can have multiple meanings depending on the context. Here are the primary interpretations:\n\t  1. **Content Creation**: In the context of marketing and media, content refers to the information, entertainment, or educational material that is created and disseminated through various channels such as blogs, videos, social media, podcasts, and more. This type of content is designed to engage and inform an audience, ultimately helping businesses attract and retain customers.\n\t  2. **Content as Material**: In a broader sense, content can refer to the substance or matter contained within something. For example, the contents of a jar, a book's table of contents, or the principal substance offered by a website.\n\t  3. **Content as Feeling**: Content can also describe a state of satisfaction or happiness, where one's needs or desires are met. For instance, someone might be content with their current situation or find contentment in simple pleasures.\n\t  4. **Newsworthy Content**: In the context of news and media, content refers to information that is deemed newsworthy. This includes determining whether the content surfaces an imminent threat to public health or safety, gives voice to perspectives in a political process, or meets other criteria for newsworthiness.\n\t  Understanding the specific context in which \"content\" is used is crucial to providing a relevant and accurate answer. #[[🤖]]\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [
+    "DAO Tooling"
+  ],
+  "wiki_links": [
+    "🤖"
+  ],
+  "ontology": {
+    "uri": "urn:visionclaw:concept:blockchain:radicle",
+    "iri": "http://narrativegoldmine.com/ontology#Radicle",
+    "content_hash": "sha256-12-4d3bc4dd1557",
+    "legacy_term_id": "BC-radicle",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:blockchain:radicle",
+    "schema_version": "v2",
+    "term_id": "BC-radicle",
+    "preferred_term": "Radicle",
+    "alt_terms": [],
+    "domain": "bc",
+    "domain_full": "blockchain",
+    "source_domain": "blockchain",
+    "domain_full_name": "Blockchain",
+    "definition": "Radicle is a concept within the ngm domain.",
+    "scope_note": null,
+    "status": "stub",
+    "maturity": "draft",
+    "version": "2.0.0",
+    "public_access": true,
+    "quality_score": 0.35,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "blockchain:Radicle",
+    "owl_role": "Concept",
+    "owl_inferred_class": null,
+    "is_subclass_of": [],
+    "has_part": [],
+    "is_part_of": [],
+    "requires": [],
+    "depends_on": [],
+    "enables": [],
+    "relates_to": [],
+    "bridges_to": [],
+    "bridges_from": [],
+    "belongs_to_domain": [],
+    "implemented_in_layer": [],
+    "domain_extensions": {},
+    "source": [],
+    "validation": {
+      "is_valid": true,
+      "errors": []
+    }
+  }
+}

@@ -1,63 +1,68 @@
 {
-  "id": "Automated Planning",
+  "id": "automated-planning",
   "title": "Automated Planning",
-  "content": "- ### OntologyBlock\n  - ontology:: true\n  - public-access:: true\n  - term-id:: AI-1008\n  - preferred-term:: Automated Planning\n  - source-domain:: ai\n  - status:: draft\n  - owl:class:: ai:AutomatedPlanning\n\n### Relationships\n- is-subclass-of:: [[Planning and Scheduling]]\n- is-subclass-of:: [[Artificial Intelligence]]\n- uses:: [[STRIPS]]\n- uses:: [[Search Algorithms]]\n- skos:related:: [[Knowledge Representation]]\n- skos:related:: [[Formal Methods]]\n- enables:: [[Autonomous Systems]]\n\n### Definition\nAutomated planning is the computational study of deliberation processes that generate action sequences to achieve specified goals. It involves representing states, actions, and goals formally, then using algorithmic techniques to synthesize plans that transform initial states into goal states while respecting domain constraints and optimizing objectives.\n\n### Representation Components\n**States:**\n- Propositional/first-order logic\n- State variables\n- Fluents (changing properties)\n\n**Actions:**\n- Preconditions (when applicable)\n- Effects (state changes)\n- Costs/durations\n\n**Goals:**\n- Desired state properties\n- Optimization criteria\n\n### Planning Languages\n- STRIPS (Stanford Research Institute Problem Solver)\n- ADL (Action Description Language)\n- PDDL (Planning Domain Definition Language)\n- RDDL (Relational Dynamic Influence Diagram Language)\n\n### Planning Techniques\n**Graph-based:**\n- Planning graphs\n- GraphPlan algorithm\n\n**State-space Search:**\n- Forward search (progression)\n- Backward search (regression)\n- Heuristic search (Fast Forward, A*)\n\n**Plan-space Search:**\n- Partial-order planning\n- Hierarchical task networks (HTN)\n\n**SAT-based Planning:**\n- Encode as satisfiability problem\n- Use SAT solvers\n\n### Applications\n- Autonomous robot missions\n- Space mission planning (NASA Deep Space 1)\n- Manufacturing process planning\n- Video game AI\n- Logistics and transportation\n- Automated software configuration",
-  "backlinks": [
-    "STRIPS"
-  ],
+  "content": "- ### Definition\n  - Automated Planning is a concept within the ai domain.\n\n- ### Semantic Classification\n  - owl-class:: artificial-intelligence:AutomatedPlanning\n  - owl-role:: Concept\n\n- ### Relationships\n  - is-subclass-of:: [[Planning and Scheduling]]\n  - enables:: [[Autonomous Systems]]\n  - bridges-to:: [[Autonomous Robot]] (domain: rb)\n\n- ### Content\n\n  ### Definition\n  Automated planning is the computational study of deliberation processes that generate action sequences to achieve specified goals. It involves representing states, actions, and goals formally, then using algorithmic techniques to synthesize plans that transform initial states into goal states while respecting domain constraints and optimizing objectives.\n\n  ### Representation Components\n  **States:**\n  - Propositional/first-order logic\n  - State variables\n  - Fluents (changing properties)\n\n  **Actions:**\n  - Preconditions (when applicable)\n  - Effects (state changes)\n  - Costs/durations\n\n  **Goals:**\n  - Desired state properties\n  - Optimization criteria\n\n  ### Planning Languages\n  - STRIPS (Stanford Research Institute Problem Solver)\n  - ADL (Action Description Language)\n  - PDDL (Planning Domain Definition Language)\n  - RDDL (Relational Dynamic Influence Diagram Language)\n\n  ### Planning Techniques\n  **Graph-based:**\n  - Planning graphs\n  - GraphPlan algorithm\n\n  **State-space Search:**\n  - Forward search (progression)\n  - Backward search (regression)\n  - Heuristic search (Fast Forward, A*)\n\n  **Plan-space Search:**\n  - Partial-order planning\n  - Hierarchical task networks (HTN)\n\n  **SAT-based Planning:**\n  - Encode as satisfiability problem\n  - Use SAT solvers\n\n  ### Applications\n  - Autonomous robot missions\n  - Space mission planning (NASA Deep Space 1)\n  - Manufacturing process planning\n  - Video game AI\n  - Logistics and transportation\n  - Automated software configuration\n\n- ### Provenance\n  - sources::\n  - migration-date:: 2026-04-26T00:00:00Z",
+  "backlinks": [],
   "wiki_links": [
-    "Artificial Intelligence",
-    "STRIPS",
-    "Search Algorithms",
+    "Autonomous Robot",
     "Autonomous Systems",
-    "Knowledge Representation",
-    "Formal Methods",
     "Planning and Scheduling"
   ],
   "ontology": {
+    "uri": "urn:visionclaw:concept:artificial-intelligence:automated-planning",
+    "iri": "http://narrativegoldmine.com/artificial-intelligence#AutomatedPlanning",
+    "content_hash": "sha256-12-2717fb00f76d",
+    "legacy_term_id": "AI-1008",
+    "rdf_type": "owl:Class",
+    "same_as": "urn:visionclaw:concept:artificial-intelligence:automated-planning",
+    "schema_version": "v2",
     "term_id": "AI-1008",
     "preferred_term": "Automated Planning",
     "alt_terms": [],
-    "iri": "http://narrativegoldmine.com/ai#AutomatedPlanning",
-    "source_domain": "ai",
     "domain": "ai",
+    "domain_full": "artificial-intelligence",
+    "source_domain": "artificial-intelligence",
     "domain_full_name": "Artificial Intelligence",
-    "definition": null,
+    "definition": "Automated Planning is a concept within the ai domain.",
     "scope_note": null,
     "status": "draft",
-    "maturity": null,
-    "version": null,
+    "maturity": "draft",
+    "version": "2.0.0",
     "public_access": true,
-    "last_updated": null,
-    "authority_score": null,
-    "quality_score": null,
-    "cross_domain_links": null,
-    "owl_class": "ai:AutomatedPlanning",
-    "owl_physicality": null,
-    "owl_role": null,
+    "quality_score": 0.5,
+    "authority_score": 0.0,
+    "created": "2026-04-26T00:00:00Z",
+    "modified": "2026-04-26T13:00:00Z",
+    "last_updated": "2026-04-26T13:00:00Z",
+    "author_did": "",
+    "signature": "",
+    "contributors": "",
+    "migration_date": "2026-04-26T00:00:00Z",
+    "owl_class": "artificial-intelligence:AutomatedPlanning",
+    "owl_role": "Concept",
     "owl_inferred_class": null,
-    "is_subclass_of": [],
+    "is_subclass_of": [
+      "Planning and Scheduling"
+    ],
     "has_part": [],
     "is_part_of": [],
     "requires": [],
     "depends_on": [],
-    "enables": [],
+    "enables": [
+      "Autonomous Systems"
+    ],
     "relates_to": [],
-    "bridges_to": [],
+    "bridges_to": [
+      "Autonomous Robot"
+    ],
     "bridges_from": [],
-    "domain_extensions": {},
     "belongs_to_domain": [],
     "implemented_in_layer": [],
+    "domain_extensions": {},
     "source": [],
     "validation": {
-      "is_valid": false,
-      "errors": [
-        "Missing required property: last-updated",
-        "Missing required property: definition",
-        "Missing required property: owl:physicality",
-        "Missing required property: owl:role",
-        "Missing required property: is-subclass-of (at least one parent class)"
-      ]
+      "is_valid": true,
+      "errors": []
     }
   }
 }

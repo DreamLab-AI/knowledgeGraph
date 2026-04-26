@@ -1,76 +1,37 @@
-- ### OntologyBlock
-  id:: aiengineering-ontology
-  collapsed:: true
+iri:: http://narrativegoldmine.com/artificial-intelligence#GartnerPrediction
+uri:: urn:visionclaw:concept:artificial-intelligence:gartner-prediction
+rdf-type:: owl:Class
+same-as:: urn:visionclaw:concept:artificial-intelligence:gartner-prediction
+type:: owl:Class
+context:: https://visionclaw.dreamlab-ai.systems/ns/v2
+domain:: artificial-intelligence
+preferred-term:: Gartner Prediction
+content-hash:: sha256-12-25bc04ff77d2
+legacy-term-id:: AI-0802
+status:: complete
+maturity:: established
+quality-score:: 0.35
+authority-score:: 0.95
+version:: 2.0.0
+created:: 2025-11-13T00:00:00Z
+modified:: 2026-04-26T13:00:00Z
+public:: true
 
-  - **Identification**
-    - domain-prefix:: AI
-    - sequence-number:: 0802
-    - filename-history:: ["AI-0802-aiengineering.md"]
-    - public-access:: true
-    - ontology:: true
-    - term-id:: AI-0802
-    - preferred-term:: Gartner Prediction
-    - source-domain:: ai
-    - status:: complete
-    - version:: 1.0.0
-    - last-updated:: 2025-11-13
+- ### Definition
+  - Indicates environments where something operates.
 
-  - **Definition**
-    - definition:: Indicates environments where something operates.
-    - maturity:: established
-    - source:: Chimera Prime Research
-    - authority-score:: 0.95
+- ### Semantic Classification
+  - owl-class:: artificial-intelligence:AiEngineering
+  - owl-role:: Concept
+  - belongs-to-domain:: [[Artificial Intelligence]]
 
-  - **Semantic Classification**
-    - owl:class:: ai:AiEngineering
-    - belongsToDomain:: [[Artificial Intelligence]]
+- ### Relationships
+  - is-subclass-of:: [[Artificial Intelligence]]
+  - bridges-to:: [[Edge Computing]] (domain: ngm)
 
-  - #### Relationships
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Ai Engineering]]
-    - is-subclass-of:: [[Generative Ai]]
-    - is-subclass-of:: [[Ai Governance]]
-    - is-subclass-of:: [[Risk]]
-    - is-subclass-of:: [[Risk]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Algorithm]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Generative Ai]]
-    - is-subclass-of:: [[Generative Ai]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Artificial Intelligence]]
-    - is-subclass-of:: [[Machine Learning]]
-    - is-subclass-of:: [[Model]]
-    - is-subclass-of:: [[Artificial Intelligence]]
+- ### Content
+  Gartner Prediction — content pending enrichment.
 
-  - #### OWL Axioms
-    - ```clojure
-      ; Class Declaration
-      (Declaration (Class :AiEngineering))
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :AiEngineering)
-      (SubClassOf :AiEngineering :GenerativeAi)
-      (SubClassOf :AiEngineering :AiGovernance)
-      (SubClassOf :AiEngineering :Risk)
-      (SubClassOf :AiEngineering :Risk)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :Algorithm)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :GenerativeAi)
-      (SubClassOf :AiEngineering :GenerativeAi)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      (SubClassOf :AiEngineering :MachineLearning)
-      (SubClassOf :AiEngineering :Model)
-      (SubClassOf :AiEngineering :ArtificialIntelligence)
-      
-      ; Annotations
-      (AnnotationAssertion rdfs:label :AiEngineering "Gartner Prediction"@en)
-      (AnnotationAssertion rdfs:comment :AiEngineering
-        "Indicates environments where something operates."@en)
-      ```
-
-- ## About Gartner Prediction
-  Indicates environments where something operates.
+- ### Provenance
+  - sources:: Chimera Prime Research
+  - migration-date:: 2026-04-26T00:00:00Z
