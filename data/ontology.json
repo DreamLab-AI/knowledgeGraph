@@ -415,7 +415,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "accountability",
+      "id": "artificial-intelligence-accountability",
       "type": "owl:Class"
     },
     {
@@ -499,7 +499,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "aiartcategorization",
+      "id": "artificial-intelligence-aiartcategorization",
       "type": "owl:Class"
     },
     {
@@ -551,7 +551,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "artificial-intelligence-aitransparencyframework",
+      "id": "aitransparencyframework",
       "type": "owl:Class"
     },
     {
@@ -2635,7 +2635,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "artificial-intelligence-transparency",
+      "id": "transparency",
       "type": "owl:Class"
     },
     {
@@ -4003,7 +4003,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "nftstandard",
+      "id": "blockchain-nftstandard",
       "type": "owl:Class"
     },
     {
@@ -4327,7 +4327,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "sha256",
+      "id": "blockchain-sha256",
       "type": "owl:Class"
     },
     {
@@ -7643,7 +7643,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "iotsensors",
+      "id": "robotics-iotsensors",
       "type": "owl:Class"
     },
     {
@@ -8735,7 +8735,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-ardisplaydevice",
+      "id": "ardisplaydevice",
       "type": "owl:Class"
     },
     {
@@ -8747,7 +8747,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "arscenegraph",
+      "id": "spatial-computing-arscenegraph",
       "type": "owl:Class"
     },
     {
@@ -8911,7 +8911,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "bimsoftware",
+      "id": "spatial-computing-bimsoftware",
       "type": "owl:Class"
     },
     {
@@ -10007,11 +10007,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "spatial-computing-etsidomainimmersive",
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-etsimetaversedomainmodel",
+      "id": "etsimetaversedomainmodel",
       "type": "owl:Class"
     },
     {
@@ -10043,7 +10043,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-extendedrealityxr",
+      "id": "extendedrealityxr",
       "type": "owl:Class"
     },
     {
@@ -10447,7 +10447,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-inclusivexrexperience",
+      "id": "inclusivexrexperience",
       "type": "owl:Class"
     },
     {
@@ -10639,7 +10639,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "levelofdetail",
+      "id": "spatial-computing-levelofdetail",
       "type": "owl:Class"
     },
     {
@@ -11043,7 +11043,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-npcinteraction",
+      "id": "npcinteraction",
       "type": "owl:Class"
     },
     {
@@ -11091,7 +11091,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-owlclasshierarchy",
+      "id": "owlclasshierarchy",
       "type": "owl:Class"
     },
     {
@@ -11167,7 +11167,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "persistentarplacement",
+      "id": "spatial-computing-persistentarplacement",
       "type": "owl:Class"
     },
     {
@@ -11239,7 +11239,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-playtoearn",
+      "id": "playtoearn",
       "type": "owl:Class"
     },
     {
@@ -12707,7 +12707,7 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-virtualsociety",
+      "id": "virtualsociety",
       "type": "owl:Class"
     },
     {
@@ -12747,11 +12747,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "vrcontrollers",
+      "id": "spatial-computing-vrcontrollers",
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-vrrenderingengine",
+      "id": "vrrenderingengine",
       "type": "owl:Class"
     },
     {
@@ -12839,11 +12839,11 @@
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-xrmeetingspace",
+      "id": "xrmeetingspace",
       "type": "owl:Class"
     },
     {
-      "id": "spatial-computing-xrruntimeenvironment",
+      "id": "xrruntimeenvironment",
       "type": "owl:Class"
     },
     {
@@ -13948,7 +13948,7 @@
       }
     },
     {
-      "id": "accountability",
+      "id": "artificial-intelligence-accountability",
       "iri": "http://narrativegoldmine.com/artificial-intelligence#Accountability",
       "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
       "attributes": [
@@ -14294,7 +14294,7 @@
       }
     },
     {
-      "id": "aiartcategorization",
+      "id": "artificial-intelligence-aiartcategorization",
       "iri": "http://narrativegoldmine.com/artificial-intelligence#AiArtCategorization",
       "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
       "attributes": [
@@ -14515,7 +14515,7 @@
       }
     },
     {
-      "id": "artificial-intelligence-aitransparencyframework",
+      "id": "aitransparencyframework",
       "iri": "http://narrativegoldmine.com/artificial-intelligence#AiTransparencyFramework",
       "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
       "attributes": [
@@ -23182,7 +23182,7 @@
       }
     },
     {
-      "id": "artificial-intelligence-transparency",
+      "id": "transparency",
       "iri": "http://narrativegoldmine.com/artificial-intelligence#Transparency",
       "baseIri": "http://narrativegoldmine.com/artificial-intelligence",
       "attributes": [
@@ -28768,7 +28768,7 @@
       }
     },
     {
-      "id": "nftstandard",
+      "id": "blockchain-nftstandard",
       "iri": "http://narrativegoldmine.com/blockchain#NftStandard",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -30113,7 +30113,7 @@
       }
     },
     {
-      "id": "sha256",
+      "id": "blockchain-sha256",
       "iri": "http://narrativegoldmine.com/blockchain#Sha256",
       "baseIri": "http://narrativegoldmine.com/blockchain",
       "attributes": [
@@ -43747,7 +43747,7 @@
       }
     },
     {
-      "id": "iotsensors",
+      "id": "robotics-iotsensors",
       "iri": "http://narrativegoldmine.com/robotics#IotSensors",
       "baseIri": "http://narrativegoldmine.com/robotics",
       "attributes": [
@@ -47989,7 +47989,7 @@
       }
     },
     {
-      "id": "spatial-computing-ardisplaydevice",
+      "id": "ardisplaydevice",
       "iri": "http://narrativegoldmine.com/spatial-computing#ArDisplayDevice",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -48040,7 +48040,7 @@
       }
     },
     {
-      "id": "arscenegraph",
+      "id": "spatial-computing-arscenegraph",
       "iri": "http://narrativegoldmine.com/spatial-computing#ArSceneGraph",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -48717,7 +48717,7 @@
       }
     },
     {
-      "id": "bimsoftware",
+      "id": "spatial-computing-bimsoftware",
       "iri": "http://narrativegoldmine.com/spatial-computing#BimSoftware",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -53196,7 +53196,7 @@
       }
     },
     {
-      "id": "etsidomainimmersive",
+      "id": "spatial-computing-etsidomainimmersive",
       "iri": "http://narrativegoldmine.com/spatial-computing#EtsiDomainImmersive",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -53213,7 +53213,7 @@
       }
     },
     {
-      "id": "spatial-computing-etsimetaversedomainmodel",
+      "id": "etsimetaversedomainmodel",
       "iri": "http://narrativegoldmine.com/spatial-computing#EtsiMetaverseDomainModel",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -53345,7 +53345,7 @@
       }
     },
     {
-      "id": "spatial-computing-extendedrealityxr",
+      "id": "extendedrealityxr",
       "iri": "http://narrativegoldmine.com/spatial-computing#ExtendedRealityXr",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -55004,7 +55004,7 @@
       }
     },
     {
-      "id": "spatial-computing-inclusivexrexperience",
+      "id": "inclusivexrexperience",
       "iri": "http://narrativegoldmine.com/spatial-computing#InclusiveXrExperience",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -55800,7 +55800,7 @@
       }
     },
     {
-      "id": "levelofdetail",
+      "id": "spatial-computing-levelofdetail",
       "iri": "http://narrativegoldmine.com/spatial-computing#LevelOfDetail",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -57486,7 +57486,7 @@
       }
     },
     {
-      "id": "spatial-computing-npcinteraction",
+      "id": "npcinteraction",
       "iri": "http://narrativegoldmine.com/spatial-computing#NpcInteraction",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -57676,7 +57676,7 @@
       }
     },
     {
-      "id": "spatial-computing-owlclasshierarchy",
+      "id": "owlclasshierarchy",
       "iri": "http://narrativegoldmine.com/spatial-computing#OwlClassHierarchy",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -57999,7 +57999,7 @@
       }
     },
     {
-      "id": "persistentarplacement",
+      "id": "spatial-computing-persistentarplacement",
       "iri": "http://narrativegoldmine.com/spatial-computing#PersistentArPlacement",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -58301,7 +58301,7 @@
       }
     },
     {
-      "id": "spatial-computing-playtoearn",
+      "id": "playtoearn",
       "iri": "http://narrativegoldmine.com/spatial-computing#PlayToEarn",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -64388,7 +64388,7 @@
       }
     },
     {
-      "id": "spatial-computing-virtualsociety",
+      "id": "virtualsociety",
       "iri": "http://narrativegoldmine.com/spatial-computing#Virtualsociety",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -64558,7 +64558,7 @@
       }
     },
     {
-      "id": "vrcontrollers",
+      "id": "spatial-computing-vrcontrollers",
       "iri": "http://narrativegoldmine.com/spatial-computing#VrControllers",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -64575,7 +64575,7 @@
       }
     },
     {
-      "id": "spatial-computing-vrrenderingengine",
+      "id": "vrrenderingengine",
       "iri": "http://narrativegoldmine.com/spatial-computing#VrRenderingEngine",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -64942,7 +64942,7 @@
       }
     },
     {
-      "id": "spatial-computing-xrmeetingspace",
+      "id": "xrmeetingspace",
       "iri": "http://narrativegoldmine.com/spatial-computing#XrMeetingSpace",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -64959,7 +64959,7 @@
       }
     },
     {
-      "id": "spatial-computing-xrruntimeenvironment",
+      "id": "xrruntimeenvironment",
       "iri": "http://narrativegoldmine.com/spatial-computing#XrRuntimeEnvironment",
       "baseIri": "http://narrativegoldmine.com/spatial-computing",
       "attributes": [
@@ -65665,7 +65665,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-artificial-intelligence-aitransparencyframework-artificial-intelligence-aigovernance",
+      "id": "subclassof-aitransparencyframework-artificial-intelligence-aigovernance",
       "type": "rdfs:subClassOf"
     },
     {
@@ -66253,7 +66253,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sha256-blockchainentity",
+      "id": "subclassof-blockchain-sha256-blockchainentity",
       "type": "rdfs:subClassOf"
     },
     {
@@ -66665,7 +66665,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-sha256-cryptographicprimitive",
+      "id": "subclassof-blockchain-sha256-cryptographicprimitive",
       "type": "rdfs:subClassOf"
     },
     {
@@ -67681,7 +67681,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-persistentarplacement-spatial-computing-augmentedreality",
+      "id": "subclassof-spatial-computing-persistentarplacement-spatial-computing-augmentedreality",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68041,7 +68041,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-virtualsociety-socialstructure",
+      "id": "subclassof-virtualsociety-socialstructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68177,7 +68177,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-levelofdetail-spatial-computing-metaverse",
+      "id": "subclassof-spatial-computing-levelofdetail-spatial-computing-metaverse",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68577,7 +68577,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-vrcontrollers-spatial-computing-xrhardware",
+      "id": "subclassof-spatial-computing-vrcontrollers-spatial-computing-xrhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68589,7 +68589,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-vrrenderingengine-spatial-computing-gameengine",
+      "id": "subclassof-vrrenderingengine-spatial-computing-gameengine",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68613,11 +68613,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-xrmeetingspace-virtualcollaboration",
+      "id": "subclassof-xrmeetingspace-virtualcollaboration",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-xrruntimeenvironment-spatial-computing-runtimeenvironment",
+      "id": "subclassof-xrruntimeenvironment-spatial-computing-runtimeenvironment",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68681,7 +68681,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-inclusivexrexperience-accessibleexperience",
+      "id": "subclassof-inclusivexrexperience-accessibleexperience",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68773,7 +68773,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-aiartcategorization-artclassification",
+      "id": "subclassof-artificial-intelligence-aiartcategorization-artclassification",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68797,7 +68797,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-ardisplaydevice-displayhardware",
+      "id": "subclassof-ardisplaydevice-displayhardware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68809,7 +68809,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-arscenegraph-spatialdatastructure",
+      "id": "subclassof-spatial-computing-arscenegraph-spatialdatastructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -68921,7 +68921,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-bimsoftware-designsoftware",
+      "id": "subclassof-spatial-computing-bimsoftware-designsoftware",
       "type": "rdfs:subClassOf"
     },
     {
@@ -69233,11 +69233,11 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-etsidomainimmersive-etsistandards",
+      "id": "subclassof-spatial-computing-etsidomainimmersive-etsistandards",
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-etsimetaversedomainmodel-domainmodel",
+      "id": "subclassof-etsimetaversedomainmodel-domainmodel",
       "type": "rdfs:subClassOf"
     },
     {
@@ -69245,7 +69245,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-extendedrealityxr-spatial-computing-immersivetechnology",
+      "id": "subclassof-extendedrealityxr-spatial-computing-immersivetechnology",
       "type": "rdfs:subClassOf"
     },
     {
@@ -69493,7 +69493,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-npcinteraction-gamemechanics",
+      "id": "subclassof-npcinteraction-gamemechanics",
       "type": "rdfs:subClassOf"
     },
     {
@@ -69501,7 +69501,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-spatial-computing-owlclasshierarchy-ontologystructure",
+      "id": "subclassof-owlclasshierarchy-ontologystructure",
       "type": "rdfs:subClassOf"
     },
     {
@@ -70489,7 +70489,7 @@
       "type": "rdfs:subClassOf"
     },
     {
-      "id": "subclassof-iotsensors-internetofthings",
+      "id": "subclassof-robotics-iotsensors-internetofthings",
       "type": "rdfs:subClassOf"
     },
     {
@@ -71972,8 +71972,8 @@
       ]
     },
     {
-      "id": "subclassof-artificial-intelligence-aitransparencyframework-artificial-intelligence-aigovernance",
-      "domain": "artificial-intelligence-aitransparencyframework",
+      "id": "subclassof-aitransparencyframework-artificial-intelligence-aigovernance",
+      "domain": "aitransparencyframework",
       "range": "artificial-intelligence-aigovernance",
       "attributes": [
         "anonymous",
@@ -73295,8 +73295,8 @@
       ]
     },
     {
-      "id": "subclassof-sha256-blockchainentity",
-      "domain": "sha256",
+      "id": "subclassof-blockchain-sha256-blockchainentity",
+      "domain": "blockchain-sha256",
       "range": "blockchainentity",
       "attributes": [
         "anonymous",
@@ -74222,8 +74222,8 @@
       ]
     },
     {
-      "id": "subclassof-sha256-cryptographicprimitive",
-      "domain": "sha256",
+      "id": "subclassof-blockchain-sha256-cryptographicprimitive",
+      "domain": "blockchain-sha256",
       "range": "cryptographicprimitive",
       "attributes": [
         "anonymous",
@@ -76508,8 +76508,8 @@
       ]
     },
     {
-      "id": "subclassof-persistentarplacement-spatial-computing-augmentedreality",
-      "domain": "persistentarplacement",
+      "id": "subclassof-spatial-computing-persistentarplacement-spatial-computing-augmentedreality",
+      "domain": "spatial-computing-persistentarplacement",
       "range": "spatial-computing-augmentedreality",
       "attributes": [
         "anonymous",
@@ -77318,8 +77318,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-virtualsociety-socialstructure",
-      "domain": "spatial-computing-virtualsociety",
+      "id": "subclassof-virtualsociety-socialstructure",
+      "domain": "virtualsociety",
       "range": "socialstructure",
       "attributes": [
         "anonymous",
@@ -77624,8 +77624,8 @@
       ]
     },
     {
-      "id": "subclassof-levelofdetail-spatial-computing-metaverse",
-      "domain": "levelofdetail",
+      "id": "subclassof-spatial-computing-levelofdetail-spatial-computing-metaverse",
+      "domain": "spatial-computing-levelofdetail",
       "range": "spatial-computing-metaverse",
       "attributes": [
         "anonymous",
@@ -78524,8 +78524,8 @@
       ]
     },
     {
-      "id": "subclassof-vrcontrollers-spatial-computing-xrhardware",
-      "domain": "vrcontrollers",
+      "id": "subclassof-spatial-computing-vrcontrollers-spatial-computing-xrhardware",
+      "domain": "spatial-computing-vrcontrollers",
       "range": "spatial-computing-xrhardware",
       "attributes": [
         "anonymous",
@@ -78551,8 +78551,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-vrrenderingengine-spatial-computing-gameengine",
-      "domain": "spatial-computing-vrrenderingengine",
+      "id": "subclassof-vrrenderingengine-spatial-computing-gameengine",
+      "domain": "vrrenderingengine",
       "range": "spatial-computing-gameengine",
       "attributes": [
         "anonymous",
@@ -78605,8 +78605,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-xrmeetingspace-virtualcollaboration",
-      "domain": "spatial-computing-xrmeetingspace",
+      "id": "subclassof-xrmeetingspace-virtualcollaboration",
+      "domain": "xrmeetingspace",
       "range": "virtualcollaboration",
       "attributes": [
         "anonymous",
@@ -78614,8 +78614,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-xrruntimeenvironment-spatial-computing-runtimeenvironment",
-      "domain": "spatial-computing-xrruntimeenvironment",
+      "id": "subclassof-xrruntimeenvironment-spatial-computing-runtimeenvironment",
+      "domain": "xrruntimeenvironment",
       "range": "spatial-computing-runtimeenvironment",
       "attributes": [
         "anonymous",
@@ -78758,8 +78758,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-inclusivexrexperience-accessibleexperience",
-      "domain": "spatial-computing-inclusivexrexperience",
+      "id": "subclassof-inclusivexrexperience-accessibleexperience",
+      "domain": "inclusivexrexperience",
       "range": "accessibleexperience",
       "attributes": [
         "anonymous",
@@ -78965,8 +78965,8 @@
       ]
     },
     {
-      "id": "subclassof-aiartcategorization-artclassification",
-      "domain": "aiartcategorization",
+      "id": "subclassof-artificial-intelligence-aiartcategorization-artclassification",
+      "domain": "artificial-intelligence-aiartcategorization",
       "range": "artclassification",
       "attributes": [
         "anonymous",
@@ -79019,8 +79019,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-ardisplaydevice-displayhardware",
-      "domain": "spatial-computing-ardisplaydevice",
+      "id": "subclassof-ardisplaydevice-displayhardware",
+      "domain": "ardisplaydevice",
       "range": "displayhardware",
       "attributes": [
         "anonymous",
@@ -79046,8 +79046,8 @@
       ]
     },
     {
-      "id": "subclassof-arscenegraph-spatialdatastructure",
-      "domain": "arscenegraph",
+      "id": "subclassof-spatial-computing-arscenegraph-spatialdatastructure",
+      "domain": "spatial-computing-arscenegraph",
       "range": "spatialdatastructure",
       "attributes": [
         "anonymous",
@@ -79298,8 +79298,8 @@
       ]
     },
     {
-      "id": "subclassof-bimsoftware-designsoftware",
-      "domain": "bimsoftware",
+      "id": "subclassof-spatial-computing-bimsoftware-designsoftware",
+      "domain": "spatial-computing-bimsoftware",
       "range": "designsoftware",
       "attributes": [
         "anonymous",
@@ -80000,8 +80000,8 @@
       ]
     },
     {
-      "id": "subclassof-etsidomainimmersive-etsistandards",
-      "domain": "etsidomainimmersive",
+      "id": "subclassof-spatial-computing-etsidomainimmersive-etsistandards",
+      "domain": "spatial-computing-etsidomainimmersive",
       "range": "etsistandards",
       "attributes": [
         "anonymous",
@@ -80009,8 +80009,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-etsimetaversedomainmodel-domainmodel",
-      "domain": "spatial-computing-etsimetaversedomainmodel",
+      "id": "subclassof-etsimetaversedomainmodel-domainmodel",
+      "domain": "etsimetaversedomainmodel",
       "range": "domainmodel",
       "attributes": [
         "anonymous",
@@ -80027,8 +80027,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-extendedrealityxr-spatial-computing-immersivetechnology",
-      "domain": "spatial-computing-extendedrealityxr",
+      "id": "subclassof-extendedrealityxr-spatial-computing-immersivetechnology",
+      "domain": "extendedrealityxr",
       "range": "spatial-computing-immersivetechnology",
       "attributes": [
         "anonymous",
@@ -80585,8 +80585,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-npcinteraction-gamemechanics",
-      "domain": "spatial-computing-npcinteraction",
+      "id": "subclassof-npcinteraction-gamemechanics",
+      "domain": "npcinteraction",
       "range": "gamemechanics",
       "attributes": [
         "anonymous",
@@ -80603,8 +80603,8 @@
       ]
     },
     {
-      "id": "subclassof-spatial-computing-owlclasshierarchy-ontologystructure",
-      "domain": "spatial-computing-owlclasshierarchy",
+      "id": "subclassof-owlclasshierarchy-ontologystructure",
+      "domain": "owlclasshierarchy",
       "range": "ontologystructure",
       "attributes": [
         "anonymous",
@@ -82826,8 +82826,8 @@
       ]
     },
     {
-      "id": "subclassof-iotsensors-internetofthings",
-      "domain": "iotsensors",
+      "id": "subclassof-robotics-iotsensors-internetofthings",
+      "domain": "robotics-iotsensors",
       "range": "internetofthings",
       "attributes": [
         "anonymous",
