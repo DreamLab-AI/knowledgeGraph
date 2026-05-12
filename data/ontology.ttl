@@ -18,17 +18,17 @@
 # VisionClaw v2 Multi-Domain Ontology - OWL2 DL Turtle Format
 # ==============================================================================
 #
-# Generated: 2026-04-26T22:19:57.136038
+# Generated: 2026-05-12T11:47:46.943792
 # Schema:    https://visionclaw.dreamlab-ai.systems/ns/v2
 # Total Terms: 2855
 #
 # Domain Distribution:
-#   Robotics: 274 terms
-#   Artificial Intelligence: 625 terms
-#   Infrastructure: 522 terms
-#   Blockchain: 396 terms
 #   Distributed Collaboration: 70 terms
+#   Blockchain: 396 terms
+#   Infrastructure: 522 terms
+#   Artificial Intelligence: 625 terms
 #   Spatial Computing: 962 terms
+#   Robotics: 274 terms
 #
 # ==============================================================================
 
@@ -40,7 +40,7 @@
     rdfs:label "VisionClaw v2 Multi-Domain Knowledge Ontology"@en ;
     rdfs:comment "Comprehensive ontology with VisionClaw provenance covering Artificial Intelligence, Blockchain, Robotics, Spatial Computing, Distributed Collaboration, and Infrastructure."@en ;
     owl:versionInfo "2.0.0" ;
-    dcterms:created "2026-04-26"^^xsd:date ;
+    dcterms:created "2026-05-12"^^xsd:date ;
     dcterms:creator "Logseq Ontology Tools (VisionClaw v2)" .
 
 # ==============================================================================
