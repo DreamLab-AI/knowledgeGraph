@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:09180c25d9564bb60bc3f869e7718cfd605be538f1b1990d0204d25ae8074498",
+  "title": "sparql",
+  "slug": "sparql",
+  "public": true,
+  "classIri": "urn:ngm:class:sparql",
+  "domain": "infrastructure",
+  "definition": "SPARQL is a W3C-standardised query language and protocol for retrieving and manipulating data stored in RDF triple stores and linked-data endpoints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

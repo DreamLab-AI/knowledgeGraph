@@ -526,7 +526,7 @@ public:: true
         "label": "Legal Entity Identifier"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
@@ -552,7 +552,7 @@ public:: true
         "label": "Open Banking"
       },
       {
-        "@id": "urn:ngm:class:stablecoins",
+        "@id": "urn:ngm:class:stablecoin",
         "label": "Stablecoins"
       },
       {

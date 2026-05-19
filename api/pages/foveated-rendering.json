@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:8004815d1480121c21d0d8f1961aa152129dd1e017c5700fd2f6f795ee0737a4",
+  "title": "foveated rendering",
+  "slug": "foveated-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:foveated-rendering",
+  "domain": "spatial-computing",
+  "definition": "A rendering technique that concentrates computational resources at the viewer's gaze point at full resolution while progressively reducing detail in the peripheral visual field, exploiting eye-tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "attention-aware-interaction",
+      "label": "Attention Aware Interaction"
+    },
+    {
+      "slug": "eye-tracking",
+      "label": "Eye Tracking"
+    },
+    {
+      "slug": "infrared-light-source",
+      "label": "Infrared Light Source"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

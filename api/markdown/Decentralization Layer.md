@@ -124,7 +124,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {

@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:97bbc22869dec7e1e0c5c1587f61a052d139a5d48086cb8f8a137332299c0085",
+  "title": "simultaneous localisation and mapping",
+  "slug": "simultaneous-localisation-and-mapping",
+  "public": true,
+  "classIri": "urn:ngm:class:simultaneous-localisation-and-mapping",
+  "domain": "robotics",
+  "definition": "Simultaneous Localisation and Mapping (SLAM) is a computational technique by which a robot or autonomous agent incrementally builds a map of an unknown environment while concurrently estimating its own position within that map.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

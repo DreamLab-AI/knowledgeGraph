@@ -350,7 +350,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {
@@ -416,7 +416,7 @@ public:: true
         "label": "Liquidity Provider"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
@@ -498,7 +498,7 @@ public:: true
         "label": "IPFS"
       },
       {
-        "@id": "urn:ngm:class:merkle-trees",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Trees"
       },
       {
@@ -506,7 +506,7 @@ public:: true
         "label": "Solidity"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       }
     ],

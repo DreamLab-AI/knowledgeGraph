@@ -550,7 +550,7 @@ public:: true
         "label": "Prompt Encoder Model"
       },
       {
-        "@id": "urn:ngm:class:variational-autoencoder",
+        "@id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {
@@ -658,7 +658,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:comfy-ui-workflow",
+        "@id": "urn:ngm:class:comfy-ui-workflows",
         "label": "ComfyUI Workflow"
       },
       {
@@ -724,7 +724,7 @@ public:: true
         "label": "VFX Previsualisation"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       }
     ],

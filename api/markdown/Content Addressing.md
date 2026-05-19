@@ -222,7 +222,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:decentralised-storage",
+        "@id": "urn:ngm:class:decentralized-storage",
         "label": "Decentralised Storage"
       },
       {

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:8c793ec6eb8a0a603d193ef6722415a9035aa65e9a8f20a826ed2598308db39a",
+  "title": "medical imaging",
+  "slug": "medical-imaging",
+  "public": true,
+  "classIri": "urn:ngm:class:medical-imaging",
+  "domain": "spatial-computing",
+  "definition": "Medical Imaging encompasses technologies and AI techniques used to visualise the interior of the human body for clinical diagnosis, treatment planning, and spatial computing applications in healthcare.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "patent",
+      "label": "Patent"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

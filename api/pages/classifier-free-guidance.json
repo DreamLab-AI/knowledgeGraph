@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:2357c26d415fb946894daa60ac98ec65e9f86a56b04c5461c492744c22bde967",
+  "title": "classifier-free guidance",
+  "slug": "classifier-free-guidance",
+  "public": true,
+  "classIri": "urn:ngm:class:classifier-free-guidance",
+  "domain": "artificial-intelligence",
+  "definition": "Classifier-Free Guidance is a diffusion model sampling technique that improves conditional generation quality by interpolating between conditional and unconditional score estimates without a separate classifier.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "proprietary-ai-video",
+      "label": "Proprietary AI Video"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

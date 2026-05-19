@@ -1304,7 +1304,7 @@ public:: true
         "label": "Discovery Protocol"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -1418,11 +1418,11 @@ public:: true
         "label": "Vector Database"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:mistral",
+        "@id": "urn:ngm:individual:mistral",
         "label": "Mistral"
       }
     ],
@@ -1436,7 +1436,7 @@ public:: true
         "label": "AI Agents"
       },
       {
-        "@id": "urn:ngm:class:autonomous-agents",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {

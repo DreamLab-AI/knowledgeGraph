@@ -526,7 +526,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:attention-mechanisms",
+        "@id": "urn:ngm:class:attention-mechanism",
         "label": "Attention Mechanisms"
       },
       {

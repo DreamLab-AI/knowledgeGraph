@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:750c7cba50e1b31d841552458df675c8f55a1cce408dc1c5e412f1967b99cc54",
+  "title": "openid connect",
+  "slug": "open-id-connect",
+  "public": true,
+  "classIri": "urn:ngm:class:open-id-connect",
+  "domain": "infrastructure",
+  "definition": "OpenID Connect (OIDC) is an identity layer built on top of OAuth 2.0 that enables clients to verify user identity via JSON Web Tokens issued by an authorisation server.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

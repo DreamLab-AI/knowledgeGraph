@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:36d8a08e8e5d3375064631094f94d9b66e6deb7522a134aa1770784d7080dae9",
+  "title": "programmable money",
+  "slug": "programmable-money",
+  "public": true,
+  "classIri": "urn:ngm:class:programmable-money",
+  "domain": "blockchain",
+  "definition": "Programmable Money refers to digital currency encoded with conditional logic\u2014typically via smart contracts\u2014that automatically enforces rules governing its transfer, use, or settlement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "bitcoin-technical-overview",
+      "label": "Bitcoin Technical Overview"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "central-bank-digital-currency-cbdc",
+      "label": "Central Bank Digital Currency (CBDC)"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "digital-currency",
+      "label": "Digital Currency"
+    },
+    {
+      "slug": "digital-money",
+      "label": "Digital Money"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

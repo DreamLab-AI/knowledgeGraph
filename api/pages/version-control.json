@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:347eb54edd53901fb327252c8a9f375864431dfa15a1291e88ab1402c2dcc044",
+  "title": "version control",
+  "slug": "version-control",
+  "public": true,
+  "classIri": "urn:ngm:class:version-control",
+  "domain": "spatial-computing",
+  "definition": "Version control is a system for tracking and managing changes to files and code over time, enabling collaboration, rollback, and parallel development through tools such as Git.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Spatial Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "digital-asset-workflow",
+      "label": "Digital Asset Workflow"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "etsi-domain-data-management-creative-media",
+      "label": "ETSI Domain: Data Management + Creative Media"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "software-development-process",
+      "label": "Software Development Process"
+    }
+  ]
+}

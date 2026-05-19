@@ -132,7 +132,7 @@ public:: true
         "label": "Identity Interoperability"
       },
       {
-        "@id": "urn:ngm:class:trust-frameworks",
+        "@id": "urn:ngm:class:trust-framework",
         "label": "Trust Frameworks"
       }
     ]

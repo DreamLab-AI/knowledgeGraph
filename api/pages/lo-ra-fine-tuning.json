@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:10b4262f336c591721bd13f3633d33e2bbdd1cc83a1fae09e7cf0657d7a53975",
+  "title": "lora fine-tuning",
+  "slug": "lo-ra-fine-tuning",
+  "public": true,
+  "classIri": "urn:ngm:class:lo-ra-fine-tuning",
+  "domain": "artificial-intelligence",
+  "definition": "LoRA (Low-Rank Adaptation) fine-tuning is a parameter-efficient method for adapting large pre-trained models by injecting trainable low-rank decomposition matrices into selected weight layers, drastically reducing trainable parameter count.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    }
+  ]
+}

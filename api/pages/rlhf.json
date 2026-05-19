@@ -1,0 +1,123 @@
+{
+  "id": "urn:visionflow:page:122e80280ffc3a656a4c99cf42bb4e9313ac28970ae8874db00ec3a88268f3de",
+  "title": "rlhf",
+  "slug": "rlhf",
+  "public": true,
+  "classIri": "urn:ngm:class:rlhf",
+  "domain": "artificial-intelligence",
+  "definition": "Reinforcement Learning from Human Feedback (RLHF) is a training methodology that fine-tunes language models using reward signals derived from human preference judgements.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "human-feedback",
+      "label": "Human Feedback"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "overview-of-machine-learning-techniques",
+      "label": "Overview of Machine Learning Techniques"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

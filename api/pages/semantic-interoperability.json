@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:7f35b4c80a57b871f99a3f8da7cada0260fd22bc951bb275418013a9931987cb",
+  "title": "semantic interoperability",
+  "slug": "semantic-interoperability",
+  "public": true,
+  "classIri": "urn:ngm:class:semantic-interoperability",
+  "domain": "spatial-computing",
+  "definition": "Semantic interoperability is the capability of disparate systems to exchange data with shared, unambiguous meaning by aligning data models, ontologies, and vocabularies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Spatial Standards and Interoperability"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "controlled-vocabularies",
+      "label": "Controlled Vocabularies"
+    },
+    {
+      "slug": "digital-ontology-repository",
+      "label": "Digital Ontology Repository"
+    },
+    {
+      "slug": "digital-taxonomy-registry",
+      "label": "Digital Taxonomy Registry"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "metaverse-ontology-schema",
+      "label": "Metaverse Ontology Schema"
+    },
+    {
+      "slug": "ngm-domain",
+      "label": "NGM Domain"
+    }
+  ]
+}

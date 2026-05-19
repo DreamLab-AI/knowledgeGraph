@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:bce7bfa7f95fc64bf73f2def5d1ae3b0aa155e82d50603fa9ad942dee7df5a23",
+  "title": "hugging face diffusers",
+  "slug": "hugging-face-diffusers",
+  "public": true,
+  "classIri": "urn:ngm:class:hugging-face-diffusers",
+  "domain": "artificial-intelligence",
+  "definition": "Hugging Face Diffusers is an open-source library providing modular, pre-trained diffusion model pipelines for image, audio, and video generation tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

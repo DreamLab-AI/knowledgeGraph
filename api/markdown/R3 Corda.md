@@ -570,7 +570,7 @@ public:: true
         "label": "SQL Server"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:individual:docker",
         "label": "Docker"
       }
     ],

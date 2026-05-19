@@ -344,7 +344,7 @@ public:: true
         "label": "GPU Supply Chain"
       },
       {
-        "@id": "urn:ngm:class:regulatory-frameworks",
+        "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Frameworks"
       },
       {
@@ -414,7 +414,7 @@ public:: true
         "label": "Inference Optimisation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -460,7 +460,7 @@ public:: true
         "label": "Mistral AI"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

@@ -624,7 +624,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

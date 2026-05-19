@@ -798,7 +798,7 @@ public:: true
         "label": "ZeroMQ"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:individual:rust",
         "label": "Rust"
       }
     ],

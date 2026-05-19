@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:bda78201fe3f4313a1af0ed0f23eece33edb1c28f582cb670df9bb3ac2974c61",
+  "title": "price oracle",
+  "slug": "price-oracle",
+  "public": true,
+  "classIri": "urn:ngm:class:price-oracle",
+  "domain": "blockchain",
+  "definition": "A smart-contract or off-chain data feed that supplies on-chain protocols with reliable, tamper-resistant market price data for tokens, assets, or other financial instruments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "liquidity-pool",
+      "label": "Liquidity Pool"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stablecoin",
+      "label": "Stablecoin"
+    },
+    {
+      "slug": "token-bonding-curve",
+      "label": "Token Bonding Curve"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

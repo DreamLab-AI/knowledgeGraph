@@ -236,7 +236,7 @@ public:: true
         "label": "JSON-LD 1.1"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {

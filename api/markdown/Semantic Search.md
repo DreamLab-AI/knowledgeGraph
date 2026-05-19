@@ -472,7 +472,7 @@ public:: true
         "label": "Knowledge Base"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graphs",
+        "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graphs"
       },
       {

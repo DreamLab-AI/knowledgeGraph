@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:9604a5831fd480ca6a7355e7980f7e4bd02ba313de31c849e767a2ea700537bb",
+  "title": "oauth 2.0",
+  "slug": "oauth-2-0",
+  "public": true,
+  "classIri": "urn:ngm:class:oauth-2-0",
+  "domain": "infrastructure",
+  "definition": "OAuth 2.0 is an authorisation framework that enables third-party applications to obtain limited access to a user's resources without exposing credentials, using token-based delegation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:4f0ece6fd676dd7db6f6c87a4626bb39bd3542af0b47dc53724259ec04010622",
+  "title": "system prompt",
+  "slug": "system-prompt",
+  "public": true,
+  "classIri": "urn:ngm:class:system-prompt",
+  "domain": "artificial-intelligence",
+  "definition": "A structured instruction block provided to a language model at inference time to establish context, persona, constraints, and behavioural guidelines before any user input is processed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

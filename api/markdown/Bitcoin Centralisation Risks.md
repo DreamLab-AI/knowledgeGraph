@@ -732,7 +732,7 @@ public:: true
         "label": "51% Attack"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -740,7 +740,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:micro-strategy",
+        "@id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       },
       {

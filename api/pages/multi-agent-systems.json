@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:4dde014a50f64498cd0a8fd2844a65a650ef6d22fd036848700061a84063ea48",
+  "title": "multi-agent systems",
+  "slug": "multi-agent-systems",
+  "public": true,
+  "classIri": "urn:ngm:class:multi-agent-systems",
+  "domain": "artificial-intelligence",
+  "definition": "Computational systems composed of multiple autonomous agents that perceive their environment, communicate, and coordinate to solve problems that exceed the capacity of any single agent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-swarm-control",
+      "label": "Decentralized Swarm Control"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "microsoft-copilot",
+      "label": "Microsoft Copilot"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    }
+  ]
+}

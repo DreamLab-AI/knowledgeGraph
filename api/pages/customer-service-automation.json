@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:0451889544c4f12f91126b666cc8648c4fe61d7fae25c86d653893727e962038",
+  "title": "customer service automation",
+  "slug": "customer-service-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:customer-service-automation",
+  "domain": "artificial-intelligence",
+  "definition": "Customer Service Automation applies AI techniques such as conversational agents and intent classification to handle customer enquiries without human agent involvement.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

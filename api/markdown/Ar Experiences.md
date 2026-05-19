@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:ar-display-devices",
+        "@id": "urn:ngm:class:ar-display-device",
         "label": "AR Display Devices"
       },
       {

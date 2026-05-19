@@ -488,7 +488,7 @@ public:: true
         "label": "Data Brokers"
       },
       {
-        "@id": "urn:ngm:class:legal-frameworks",
+        "@id": "urn:ngm:class:legal-framework",
         "label": "Legal Frameworks"
       },
       {
@@ -644,7 +644,7 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

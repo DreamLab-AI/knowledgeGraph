@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:0a49793e1c81370afdf3fe61c617286150d37fc60d4dfa6dc2e54984eae6a26d",
+  "title": "liquid democracy",
+  "slug": "liquid-democracy",
+  "public": true,
+  "classIri": "urn:ngm:class:liquid-democracy",
+  "domain": "blockchain",
+  "definition": "A delegative governance model in which voters may either vote directly on proposals or delegate their voting power transitively to trusted representatives.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    }
+  ]
+}

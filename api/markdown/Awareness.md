@@ -86,7 +86,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:notification-systems",
+        "@id": "urn:ngm:class:notification-system",
         "label": "Notification Systems"
       },
       {

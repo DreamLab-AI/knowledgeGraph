@@ -836,7 +836,7 @@ public:: true
         "label": "Bitcoin Script"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-commitments",
+        "@id": "urn:ngm:class:cryptographic-commitment",
         "label": "Cryptographic Commitments"
       },
       {
@@ -848,7 +848,7 @@ public:: true
         "label": "Taproot"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -866,7 +866,7 @@ public:: true
         "label": "AI Agent Smart Contracts"
       },
       {
-        "@id": "urn:ngm:class:atomic-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swaps"
       },
       {
@@ -938,7 +938,7 @@ public:: true
         "label": "Hash Time-Locked Contracts"
       },
       {
-        "@id": "urn:ngm:class:merkle-proofs",
+        "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proofs"
       },
       {
@@ -946,7 +946,7 @@ public:: true
         "label": "Point Time-Locked Contracts"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -958,7 +958,7 @@ public:: true
         "label": "UTXO Commitments"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       }
     ],
@@ -968,7 +968,7 @@ public:: true
         "label": "Bitcoin Standard"
       },
       {
-        "@id": "urn:ngm:class:de-fi-protocols",
+        "@id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocols"
       },
       {
@@ -980,11 +980,11 @@ public:: true
         "label": "Scaling Solutions"
       },
       {
-        "@id": "urn:ngm:class:state-channels",
+        "@id": "urn:ngm:class:state-channel",
         "label": "State Channels"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {

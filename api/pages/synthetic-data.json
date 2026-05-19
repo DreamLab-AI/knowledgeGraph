@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:5c0b6f26bc4b6472d810c4536bd29644c3be1eaaaf9b88dfe5c5d8d6209f6033",
+  "title": "synthetic data",
+  "slug": "synthetic-data",
+  "public": true,
+  "classIri": "urn:ngm:class:synthetic-data",
+  "domain": "artificial-intelligence",
+  "definition": "Algorithmically generated data that statistically mimics real-world datasets, used to train or evaluate machine-learning models without exposing sensitive information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "training-data",
+      "label": "Training Data"
+    }
+  ]
+}

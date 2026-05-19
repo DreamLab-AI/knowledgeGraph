@@ -654,7 +654,7 @@ public:: true
         "label": "Vyper"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:individual:rust",
         "label": "Rust"
       },
       {
@@ -688,7 +688,7 @@ public:: true
         "label": "Blockchain Network"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {

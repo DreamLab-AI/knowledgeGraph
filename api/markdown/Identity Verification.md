@@ -912,7 +912,7 @@ public:: true
         "label": "Decentralised Identifier"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:fd9038d4781cf931ea1a29bae43c74c8c357b58d28c6bfbbd6eb3a54ff9d93bd",
+  "title": "iosco",
+  "slug": "iosco",
+  "public": true,
+  "classIri": "urn:ngm:class:iosco",
+  "domain": "infrastructure",
+  "definition": "International Organisation of Securities Commissions \u2014 the global standard-setter for securities regulation, issuing principles and recommendations that national regulators adopt for market oversight.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

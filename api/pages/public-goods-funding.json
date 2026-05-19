@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:2f2f467d45ccbfac04b2b13d63f5f19cd6c98fd1d64f94767e98d4ada354cffe",
+  "title": "public goods funding",
+  "slug": "public-goods-funding",
+  "public": true,
+  "classIri": "urn:ngm:class:public-goods-funding",
+  "domain": "blockchain",
+  "definition": "A mechanism for financing non-excludable, non-rival resources by pooling contributions from stakeholders to sustain shared infrastructure and open-source projects.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

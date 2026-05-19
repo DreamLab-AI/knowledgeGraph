@@ -582,7 +582,7 @@ public:: true
         "label": "Bayesian Inference"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {

@@ -722,7 +722,7 @@ public:: true
         "label": "DuckDB"
       },
       {
-        "@id": "urn:ngm:class:graph-databases",
+        "@id": "urn:ngm:class:graph-database",
         "label": "Graph Databases"
       },
       {
@@ -742,7 +742,7 @@ public:: true
         "label": "Time-Series Analysis"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

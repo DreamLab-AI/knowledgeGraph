@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:0938d2a80eb74e9dc381dbc55b6558d6f452d600d3fde5c4d7672a0b119d9b50",
+  "title": "chain-of-thought reasoning",
+  "slug": "chain-of-thought-reasoning",
+  "public": true,
+  "classIri": "urn:ngm:class:chain-of-thought-reasoning",
+  "domain": "artificial-intelligence",
+  "definition": "Chain-of-Thought Reasoning is a prompting strategy that elicits intermediate reasoning steps from large language models, improving accuracy on complex multi-step problems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

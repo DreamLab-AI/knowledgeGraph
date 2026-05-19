@@ -248,15 +248,15 @@ public:: true
         "label": "Agentic Internet"
       },
       {
-        "@id": "urn:ngm:class:android",
+        "@id": "urn:ngm:individual:android",
         "label": "Android"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       }
     ],
@@ -340,7 +340,7 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {

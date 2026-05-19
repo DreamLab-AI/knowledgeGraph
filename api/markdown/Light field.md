@@ -450,7 +450,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {

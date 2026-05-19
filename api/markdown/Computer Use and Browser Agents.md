@@ -644,7 +644,7 @@ public:: true
         "label": "Display Server"
       },
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {

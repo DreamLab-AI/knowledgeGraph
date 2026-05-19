@@ -430,7 +430,7 @@ public:: true
         "label": "Metadata Management"
       },
       {
-        "@id": "urn:ngm:class:open-ai-whisper",
+        "@id": "urn:ngm:individual:open-ai-whisper",
         "label": "Open AI Whisper"
       },
       {

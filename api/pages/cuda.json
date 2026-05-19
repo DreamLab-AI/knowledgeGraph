@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:e636c973d999a634277daa3a43db4adb0e7fde4ef22d47c8e833adb29bd2e99f",
+  "title": "cuda",
+  "slug": "cuda",
+  "public": true,
+  "classIri": "urn:ngm:class:cuda",
+  "domain": "artificial-intelligence",
+  "definition": "CUDA (Compute Unified Device Architecture) is NVIDIA's parallel computing platform and programming model that enables general-purpose computation on GPUs for deep learning and scientific workloads.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "nvidia",
+      "label": "NVIDIA"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:330a2473f89fde85807a0dc55b1c49dff249d255d83a762cce16adea2cabbf7a",
+  "title": "content delivery network",
+  "slug": "content-delivery-network",
+  "public": true,
+  "classIri": "urn:ngm:class:content-delivery-network",
+  "domain": "infrastructure",
+  "definition": "A Content Delivery Network (CDN) is a geographically distributed network of proxy servers and data centres that caches and delivers web content to users from locations closer to them, reducing latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network and Comms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "bandwidth-adaptation",
+      "label": "Bandwidth Adaptation"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "digital-rights-management-extended",
+      "label": "Digital Rights Management (Extended)"
+    },
+    {
+      "slug": "etsi-domain-infrastructure-immersive",
+      "label": "ETSI_Domain_Infrastructure___Immersive"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "metaverse-content-pipeline",
+      "label": "Metaverse Content Pipeline"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "virtual-performance-space",
+      "label": "Virtual Performance Space"
+    },
+    {
+      "slug": "virtual-world",
+      "label": "Virtual World"
+    }
+  ]
+}

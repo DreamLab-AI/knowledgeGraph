@@ -744,7 +744,7 @@ public:: true
         "label": "Autonomous Mobile Robots"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robots",
+        "@id": "urn:ngm:class:collaborative-robot",
         "label": "Collaborative Robots"
       },
       {
@@ -756,7 +756,7 @@ public:: true
         "label": "Exoskeletons"
       },
       {
-        "@id": "urn:ngm:class:industrial-robots",
+        "@id": "urn:ngm:class:industrial-robot",
         "label": "Industrial Robots"
       },
       {
@@ -768,7 +768,7 @@ public:: true
         "label": "Personal Care Robots"
       },
       {
-        "@id": "urn:ngm:class:surgical-robots",
+        "@id": "urn:ngm:class:surgical-robot",
         "label": "Surgical Robots"
       },
       {

@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:b5cd31c950766089ad7321d1b1bcd12a32a1fb69fd838a3930f2f424078b3afc",
+  "title": "legged locomotion",
+  "slug": "legged-locomotion",
+  "public": true,
+  "classIri": "urn:ngm:class:legged-locomotion",
+  "domain": "robotics",
+  "definition": "The study and implementation of robot motion using articulated limbs to traverse unstructured terrain by dynamically managing contact forces and stability.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

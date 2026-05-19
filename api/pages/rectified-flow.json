@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:940a644e7b49751c4360466e303cb654dab85351086145b29d209eef1f0fffda",
+  "title": "rectified flow",
+  "slug": "rectified-flow",
+  "public": true,
+  "classIri": "urn:ngm:class:rectified-flow",
+  "domain": "artificial-intelligence",
+  "definition": "A generative modelling framework that learns straight-line ordinary differential equation trajectories between noise and data distributions, enabling fast, high-quality sampling with fewer NFEs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

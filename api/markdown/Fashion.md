@@ -456,7 +456,7 @@ public:: true
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -520,7 +520,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {

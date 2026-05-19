@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:96537e9db6c06f393c12c91702bbe0a621ea1e0ceb95bec560bb31f206219a1c",
+  "title": "liquidity mining",
+  "slug": "liquidity-mining",
+  "public": true,
+  "classIri": "urn:ngm:class:liquidity-mining",
+  "domain": "blockchain",
+  "definition": "Liquidity mining is a DeFi incentive mechanism in which users earn protocol-issued tokens as rewards for providing liquidity to decentralised exchanges or lending pools.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-market-making",
+      "label": "Automated Market Making"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "economic-mechanism",
+      "label": "Economic Mechanism"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    }
+  ]
+}

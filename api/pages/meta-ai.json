@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:43939d3efb6e942ec13be6e0497fe95ce3a5f93e8fab0bae906ee5c91ed9dc9b",
+  "title": "meta ai",
+  "slug": "meta-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:meta-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Artificial intelligence research and product division of Meta Platforms, responsible for open-weight models such as LLaMA and multimodal systems including ImageBind.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

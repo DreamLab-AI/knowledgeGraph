@@ -108,7 +108,7 @@ public:: true
         "label": "Real-Time Collaboration"
       },
       {
-        "@id": "urn:ngm:class:virtual-meetings",
+        "@id": "urn:ngm:class:virtual-meeting",
         "label": "Virtual Meetings"
       },
       {

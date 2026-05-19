@@ -472,7 +472,7 @@ public:: true
         "label": "Electronic Signature"
       },
       {
-        "@id": "urn:ngm:class:interoperability-standards",
+        "@id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standards"
       },
       {
@@ -562,7 +562,7 @@ public:: true
         "label": "Cryptographic Hash Functions"
       },
       {
-        "@id": "urn:ngm:class:decentralised-identifiers",
+        "@id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralised Identifiers"
       },
       {
@@ -570,7 +570,7 @@ public:: true
         "label": "Optical Character Recognition"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

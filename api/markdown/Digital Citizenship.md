@@ -158,7 +158,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:access-controls",
+        "@id": "urn:ngm:class:access-control",
         "label": "Access Controls"
       },
       {

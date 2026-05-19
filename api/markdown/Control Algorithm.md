@@ -426,7 +426,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -546,7 +546,7 @@ public:: true
         "label": "Aerospace"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

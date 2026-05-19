@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:cdbd065ada7bd47c40208437b5a33b7097670ca19de59a771df00f536746c69d",
+  "title": "automatic speech recognition",
+  "slug": "automatic-speech-recognition",
+  "public": true,
+  "classIri": "urn:ngm:class:automatic-speech-recognition",
+  "domain": "distributed-collaboration",
+  "definition": "Automatic Speech Recognition (ASR) is the technology that converts spoken language into text using acoustic and language models trained on large corpora of transcribed audio.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

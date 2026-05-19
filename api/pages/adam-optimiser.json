@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:107125ffbb1f2fa798fc80d3d0788eb03a95916a95d482dcc5f3771f94df9a83",
+  "title": "adam optimiser",
+  "slug": "adam-optimiser",
+  "public": true,
+  "classIri": "urn:ngm:class:adam-optimiser",
+  "domain": "artificial-intelligence",
+  "definition": "The Adam optimiser is an adaptive gradient descent algorithm that combines momentum and RMSProp to compute per-parameter learning rates, enabling efficient training of deep neural networks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    }
+  ]
+}

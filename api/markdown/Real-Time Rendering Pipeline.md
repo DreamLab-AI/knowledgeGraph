@@ -180,7 +180,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:3-d-models",
+        "@id": "urn:ngm:class:3-d-model",
         "label": "3D Models"
       },
       {
@@ -188,7 +188,7 @@ public:: true
         "label": "Graphics Processing Unit"
       },
       {
-        "@id": "urn:ngm:class:shaders",
+        "@id": "urn:ngm:class:shader",
         "label": "Shaders"
       },
       {

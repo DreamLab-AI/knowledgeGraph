@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:e089e84942af6414b066654f297dfbb11bf84b3e8b46d7252710076aff68d122",
+  "title": "vae",
+  "slug": "vae",
+  "public": true,
+  "classIri": "urn:ngm:class:vae",
+  "domain": "artificial-intelligence",
+  "definition": "Variational Autoencoder \u2014 a generative model that learns a probabilistic latent-space representation of data by jointly optimising a reconstruction loss and a KL-divergence regularisation term.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

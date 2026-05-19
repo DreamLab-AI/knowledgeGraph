@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:063727926233d2c75bc8e2653b3f015d8d1b0a3d83740d49228cdf93e9c06af7",
+  "title": "iec 61508",
+  "slug": "iec-61508",
+  "public": true,
+  "classIri": "urn:ngm:class:iec-61508",
+  "domain": "robotics",
+  "definition": "An international functional-safety standard specifying requirements for electrical, electronic, and programmable electronic safety-related systems across all industries.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Robo Safety and Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

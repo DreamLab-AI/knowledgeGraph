@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:6b135d5dd1315dde25ca61fca4b18252c7b8d950eeb42ebce396dafc29cbe16b",
+  "title": "quadratic funding",
+  "slug": "quadratic-funding",
+  "public": true,
+  "classIri": "urn:ngm:class:quadratic-funding",
+  "domain": "blockchain",
+  "definition": "A public goods funding mechanism where matching funds are allocated proportional to the square root of contributions, amplifying broad community support over large individual donations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "conviction-voting",
+      "label": "Conviction Voting"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "economics",
+      "label": "Economics"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

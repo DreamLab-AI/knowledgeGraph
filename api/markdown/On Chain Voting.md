@@ -646,11 +646,11 @@ public:: true
         "label": "Prediction Market"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {
-        "@id": "urn:ngm:class:zk-snark",
+        "@id": "urn:ngm:class:zk-snarks",
         "label": "ZK-SNARK"
       },
       {
@@ -698,7 +698,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {

@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:b9d90628453938c578c7f826de5e5bd2bcac29e10c5526888384ba74fcea563e",
+  "title": "authentication",
+  "slug": "authentication",
+  "public": true,
+  "classIri": "urn:ngm:class:authentication",
+  "domain": "infrastructure",
+  "definition": "Authentication is the process of verifying the claimed identity of a user, device, or system, typically through credentials, cryptographic proofs, or biometric factors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "digital-identity",
+      "label": "Digital Identity"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "human-robot-interaction",
+      "label": "Human Robot Interaction"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

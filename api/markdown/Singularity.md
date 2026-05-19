@@ -316,7 +316,7 @@ public:: true
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],
@@ -384,7 +384,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

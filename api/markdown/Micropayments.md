@@ -384,7 +384,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -458,7 +458,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "AI Search"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -530,7 +530,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

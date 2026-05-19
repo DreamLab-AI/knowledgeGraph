@@ -248,7 +248,7 @@
         "label": "Centralised Exchange"
       },
       {
-        "id": "urn:ngm:class:decentralised-exchange",
+        "id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {
@@ -260,15 +260,15 @@
         "label": "Spot Bitcoin ETF"
       },
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "id": "urn:ngm:class:ethereum",
+        "id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
-        "id": "urn:ngm:class:micro-strategy",
+        "id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       },
       {

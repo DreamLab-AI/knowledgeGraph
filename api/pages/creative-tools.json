@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:df85c4811110a659adfe0af784607d8bb7723b5d27aaba3c9717ed3c260a3ff5",
+  "title": "creative tools",
+  "slug": "creative-tools",
+  "public": true,
+  "classIri": "urn:ngm:class:creative-tools",
+  "domain": "artificial-intelligence",
+  "definition": "Creative tools are AI-powered software applications that assist or augment human creative processes, including image generation, music composition, video synthesis, and text creation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "etsi-domain-creative-media",
+      "label": "ETSI Domain: Creative Media"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    }
+  ]
+}

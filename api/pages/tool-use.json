@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:e99ae237aa1a711089cb8ed8e69c5e50fa22683eb28d8599054fe110f240f184",
+  "title": "tool use",
+  "slug": "tool-use",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-use",
+  "domain": "artificial-intelligence",
+  "definition": "Tool Use in the context of AI agents refers to the capability of large language models to invoke external APIs, functions, or services to retrieve information or perform actions beyond text generation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    }
+  ]
+}

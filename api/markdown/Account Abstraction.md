@@ -252,7 +252,7 @@ public:: true
         "label": "Signature Verification"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {

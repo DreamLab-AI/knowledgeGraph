@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:ad4a0fead59633fe898ddf4318a77d9a8f2c08ee8f8e30e6e8eb451cb196cf87",
+  "title": "identity and access management",
+  "slug": "identity-and-access-management",
+  "public": true,
+  "classIri": "urn:ngm:class:identity-and-access-management",
+  "domain": "infrastructure",
+  "definition": "A security discipline comprising the policies, technologies, and processes that govern who can access which resources, encompassing authentication, authorisation, and lifecycle management.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "threat-surface-map",
+      "label": "Threat Surface Map"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

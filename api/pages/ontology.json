@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:c205f711aa5d877300e2cdbcb5d060be2e0de276e525c020356210df8836e8e9",
+  "title": "ontology",
+  "slug": "ontology",
+  "public": true,
+  "classIri": "urn:ngm:class:ontology",
+  "domain": "infrastructure",
+  "definition": "A formal, explicit specification of a shared conceptualisation that defines entities, their properties, and the relationships between them within a knowledge domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Infra Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "complete-ontology-index",
+      "label": "COMPLETE ONTOLOGY INDEX"
+    },
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graph",
+      "label": "Knowledge Graph"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-representation",
+      "label": "Knowledge Representation"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    }
+  ]
+}

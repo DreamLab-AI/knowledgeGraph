@@ -436,7 +436,7 @@ public:: true
         "label": "Block Validation"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {

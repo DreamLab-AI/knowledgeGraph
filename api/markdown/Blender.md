@@ -552,7 +552,7 @@ public:: true
         "label": "Model Context Protocol"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -566,7 +566,7 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -582,11 +582,11 @@ public:: true
         "label": "Gaussian Splatting"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
-        "@id": "urn:ngm:class:unreal-engine",
+        "@id": "urn:ngm:individual:unreal-engine",
         "label": "Unreal Engine"
       }
     ],

@@ -1002,7 +1002,7 @@ public:: true
         "label": "AI Agent Asset Ownership"
       },
       {
-        "@id": "urn:ngm:class:atomic-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swaps"
       },
       {
@@ -1166,7 +1166,7 @@ public:: true
         "label": "Bitcoin Layer 3 Ecosystem"
       },
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {

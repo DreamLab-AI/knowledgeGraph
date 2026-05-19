@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:150a087a4ea7179627b7ada6c1c6a39ebe41f10c4b7a4895c03a9b4a762f4dee",
+  "title": "tool schema",
+  "slug": "tool-schema",
+  "public": true,
+  "classIri": "urn:ngm:class:tool-schema",
+  "domain": "artificial-intelligence",
+  "definition": "A tool schema is a structured, machine-readable specification\u2014typically in JSON Schema format\u2014that describes the name, parameters, and expected inputs for a function or API callable by an AI agent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

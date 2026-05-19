@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:91abe910a46462e9454be2db9bb5ba52c94f9a25c0553b441e39940df234378d",
+  "title": "industrialautomation",
+  "slug": "industrial-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-automation",
+  "domain": "robotics",
+  "definition": "The use of control systems, robotics, and information technologies to operate industrial processes and machinery with minimal human intervention, increasing throughput and consistency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robotics-domain",
+      "label": "Robotics Domain"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "robotics-core-concepts",
+      "label": "RoboticsCoreConcepts"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "trajectory-generation",
+      "label": "Trajectory Generation"
+    }
+  ]
+}

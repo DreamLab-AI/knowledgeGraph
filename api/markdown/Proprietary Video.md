@@ -700,7 +700,7 @@ public:: true
         "label": "Digital Cinema"
       },
       {
-        "@id": "urn:ngm:class:regulatory-frameworks",
+        "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Frameworks"
       },
       {
@@ -766,7 +766,7 @@ public:: true
         "label": "Netflix"
       },
       {
-        "@id": "urn:ngm:class:regulatory-frameworks",
+        "@id": "urn:ngm:class:regulatory-framework",
         "label": "Regulatory Frameworks"
       },
       {
@@ -824,11 +824,11 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:apple",
+        "@id": "urn:ngm:individual:apple",
         "label": "Apple"
       },
       {
-        "@id": "urn:ngm:class:google",
+        "@id": "urn:ngm:individual:google",
         "label": "Google"
       }
     ]

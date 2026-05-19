@@ -478,7 +478,7 @@ public:: true
         "label": "Self-Hosted Metaverse"
       },
       {
-        "@id": "urn:ngm:class:virtual-events",
+        "@id": "urn:ngm:class:virtual-event",
         "label": "Virtual Events"
       },
       {

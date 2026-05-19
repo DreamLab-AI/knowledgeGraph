@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:267b944557717480eb5e4155210b9962b25672c64ac4d9a8e41a2576c73dc1a4",
+  "title": "gdpr compliance",
+  "slug": "gdpr-compliance",
+  "public": true,
+  "classIri": "urn:ngm:class:gdpr-compliance",
+  "domain": "infrastructure",
+  "definition": "GDPR Compliance refers to the set of organisational and technical measures required to satisfy the data protection obligations mandated by the EU General Data Protection Regulation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "privacy-impact-assessment-pia",
+      "label": "Privacy Impact Assessment (PIA)"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

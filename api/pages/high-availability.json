@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:df176c97a3231fe6690ec5afa627c2e386bc69aed57dd20db04833dde8aa8502",
+  "title": "high availability",
+  "slug": "high-availability",
+  "public": true,
+  "classIri": "urn:ngm:class:high-availability",
+  "domain": "infrastructure",
+  "definition": "A system design property ensuring continuous operational uptime and minimal service disruption through redundancy, failover mechanisms, and fault-tolerant architecture patterns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "distributed-architecture",
+      "label": "Distributed Architecture"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "infrastructure-layer",
+      "label": "Infrastructure Layer"
+    },
+    {
+      "slug": "scalable-architecture",
+      "label": "Scalable Architecture"
+    }
+  ]
+}

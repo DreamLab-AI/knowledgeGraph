@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:3bec6d6afcc2a42b00574dd30ccf440fd18b7b2323f63514d3ab283ba2a037d4",
+  "title": "prompt injection",
+  "slug": "prompt-injection",
+  "public": true,
+  "classIri": "urn:ngm:class:prompt-injection",
+  "domain": "artificial-intelligence",
+  "definition": "An adversarial attack on large language models in which malicious instructions are embedded in input prompts to override the model's intended behaviour or extract sensitive information.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    }
+  ]
+}

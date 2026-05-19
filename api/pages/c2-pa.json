@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:882e7a1b132625b647dae8abd01cdd4b727b812fce93a9f3a0106510826a0dab",
+  "title": "c2pa",
+  "slug": "c2-pa",
+  "public": true,
+  "classIri": "urn:ngm:class:c2-pa",
+  "domain": "artificial-intelligence",
+  "definition": "C2PA (Coalition for Content Provenance and Authenticity) is an open technical standard that cryptographically binds provenance metadata to media assets to establish trustworthy content origin.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "ai-companions",
+      "label": "AI companions"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

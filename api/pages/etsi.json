@@ -1,0 +1,119 @@
+{
+  "id": "urn:visionflow:page:0944dfd4b4316429b1b3086dde7a699cb7ffd6e17d58acf8cd5a29246d98bf30",
+  "title": "etsi",
+  "slug": "etsi",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi",
+  "domain": "infrastructure",
+  "definition": "ETSI (European Telecommunications Standards Institute) is a not-for-profit organisation that produces globally applicable standards for information and communications technology.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network and Comms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "etsi-domain-governance-compliance",
+      "label": "ETSI_Domain_Governance_Compliance"
+    },
+    {
+      "slug": "etsi-domain-governance-security",
+      "label": "ETSI_Domain_Governance_Security"
+    },
+    {
+      "slug": "etsi-domain-governance-economy",
+      "label": "ETSI_Domain_Governance___Economy"
+    },
+    {
+      "slug": "etsi-domain-governance-ethics",
+      "label": "ETSI_Domain_Governance___Ethics"
+    },
+    {
+      "slug": "etsi-domain-governance-society",
+      "label": "ETSI_Domain_Governance___Society"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "etsi-domain-human-interface-governance",
+      "label": "ETSI_Domain_Human_Interface___Governance"
+    },
+    {
+      "slug": "etsi-domain-human-interface-ux",
+      "label": "ETSI_Domain_Human_Interface___UX"
+    },
+    {
+      "slug": "etsi-domain-immersive-experiences",
+      "label": "ETSI_Domain_Immersive_Experiences"
+    },
+    {
+      "slug": "etsi-domain-infrastructure",
+      "label": "ETSI_Domain_Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:ac56a97b2e4fb216d31cf97f8af50000e5e0727f47f25363f1e20e2ecc0e111e",
+  "title": "json-ld 1.1",
+  "slug": "json-ld-1-1",
+  "public": true,
+  "classIri": "urn:ngm:class:json-ld-1-1",
+  "domain": "artificial-intelligence",
+  "definition": "JSON-LD 1.1 is a W3C specification for encoding Linked Data in JSON format, using contexts to map document terms to IRIs and enabling interoperable, machine-readable semantic data on the web.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "federation-surface",
+      "label": "Federation Surface"
+    },
+    {
+      "slug": "linked-data-encoder",
+      "label": "Linked Data Encoder"
+    },
+    {
+      "slug": "verifiable-credential-surface",
+      "label": "Verifiable Credential Surface"
+    },
+    {
+      "slug": "vision-claw-agentic-container",
+      "label": "VisionClaw Agentic Container"
+    }
+  ]
+}

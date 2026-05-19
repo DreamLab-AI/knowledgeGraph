@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:0f9c78000d9a1e2eb157edeb9da91edf51da0e2f16b94e0ca5d51bf4b46e7695",
+  "title": "data persistence",
+  "slug": "data-persistence",
+  "public": true,
+  "classIri": "urn:ngm:class:data-persistence",
+  "domain": "infrastructure",
+  "definition": "The property of data surviving beyond the lifetime of the process that created it, achieved through durable storage mechanisms such as databases, distributed filesystems, or append-only logs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "data-storage",
+      "label": "Data Storage"
+    },
+    {
+      "slug": "database-system",
+      "label": "Database System"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    },
+    {
+      "slug": "transaction-standard",
+      "label": "Transaction Standard"
+    }
+  ]
+}

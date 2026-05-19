@@ -502,7 +502,7 @@ public:: true
         "label": "Asset Tokenization"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {

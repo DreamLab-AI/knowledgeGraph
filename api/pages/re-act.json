@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:5c27b8c96beeb510cc07992997b76e72daa26170383984b364be7766668e3c33",
+  "title": "react",
+  "slug": "re-act",
+  "public": true,
+  "classIri": "urn:ngm:class:re-act",
+  "domain": "artificial-intelligence",
+  "definition": "ReAct is a prompting paradigm that interleaves reasoning traces and action steps in large language models, enabling them to dynamically plan and execute tasks by alternating between thought and tool use.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    },
+    {
+      "slug": "reasoning",
+      "label": "Reasoning"
+    }
+  ]
+}

@@ -666,7 +666,7 @@ public:: true
         "label": "PostgreSQL"
       },
       {
-        "@id": "urn:ngm:class:protocol-buffers",
+        "@id": "urn:ngm:class:protocol-buffer",
         "label": "Protocol Buffers"
       },
       {

@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:e8daa292ebe8ef4d8b77525cad80b735e0afd1fcdcee995d266088ff9becb4ce",
+  "title": "inertial measurement unit",
+  "slug": "inertial-measurement-unit",
+  "public": true,
+  "classIri": "urn:ngm:class:inertial-measurement-unit",
+  "domain": "robotics",
+  "definition": "An electronic sensor device that measures a body's specific force, angular rate, and magnetic field using accelerometers, gyroscopes, and magnetometers to estimate orientation and motion.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-frame",
+      "label": "AR Frame"
+    },
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "gyroscope",
+      "label": "Gyroscope"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

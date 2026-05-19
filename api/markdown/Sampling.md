@@ -382,7 +382,7 @@ public:: true
         "label": "Uncertainty Quantification"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -394,7 +394,7 @@ public:: true
         "label": "Particle Filter"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -472,11 +472,11 @@ public:: true
         "label": "Checkpoints"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -492,7 +492,7 @@ public:: true
         "label": "Reasoning"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -510,7 +510,7 @@ public:: true
         "label": "Variational Inference"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

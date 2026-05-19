@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:624ecacfed98c6096ec9c4b77a7c8db749dcb7a0e413577f69f437dd1a3b30bf",
+  "title": "fatf",
+  "slug": "fatf",
+  "public": true,
+  "classIri": "urn:ngm:class:fatf",
+  "domain": "infrastructure",
+  "definition": "The Financial Action Task Force (FATF) is an intergovernmental body that sets international standards and promotes policies to combat money laundering, terrorist financing, and related threats to the financial system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "us-regulatory-framework",
+      "label": "US Regulatory Framework"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

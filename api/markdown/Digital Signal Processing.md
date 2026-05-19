@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:algorithms",
+        "@id": "urn:ngm:class:algorithm",
         "label": "Algorithms"
       },
       {
@@ -98,7 +98,7 @@ public:: true
         "label": "DSP Hardware"
       },
       {
-        "@id": "urn:ngm:class:sensors",
+        "@id": "urn:ngm:class:sensor",
         "label": "Sensors"
       }
     ],

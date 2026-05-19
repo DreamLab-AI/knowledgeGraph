@@ -470,7 +470,7 @@ public:: true
         "label": "Retrieval-Augmented Generation"
       },
       {
-        "@id": "urn:ngm:class:open-ai-whisper",
+        "@id": "urn:ngm:individual:open-ai-whisper",
         "label": "OpenAI Whisper"
       }
     ],
@@ -488,11 +488,11 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {

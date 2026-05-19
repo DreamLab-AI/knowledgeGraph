@@ -214,7 +214,7 @@ public:: true
         "label": "Ollama"
       },
       {
-        "@id": "urn:ngm:class:open-ai-whisper",
+        "@id": "urn:ngm:individual:open-ai-whisper",
         "label": "Open AI Whisper"
       },
       {
@@ -222,7 +222,7 @@ public:: true
         "label": "Retrieval Augmented Generation - RAG"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -232,7 +232,7 @@ public:: true
         "label": "Compute Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:individual:docker",
         "label": "Docker"
       },
       {
@@ -286,11 +286,11 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux.1"
       },
       {
@@ -298,11 +298,11 @@ public:: true
         "label": "Ollama"
       },
       {
-        "@id": "urn:ngm:class:open-ai-whisper",
+        "@id": "urn:ngm:individual:open-ai-whisper",
         "label": "Open AI Whisper"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -312,7 +312,7 @@ public:: true
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -320,11 +320,11 @@ public:: true
         "label": "Hardware and Edge"
       },
       {
-        "@id": "urn:ngm:class:llama-3",
+        "@id": "urn:ngm:individual:llama-3",
         "label": "Llama 3"
       },
       {
-        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "@id": "urn:ngm:individual:mistral-and-mixtral",
         "label": "Mistral and Mixtral"
       }
     ],

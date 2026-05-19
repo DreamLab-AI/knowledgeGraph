@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:c34cfb980618ad2dc0c96489456c77cd9a858bc36bead2bfc77206e8028e75ae",
+  "title": "comfyui manager",
+  "slug": "comfy-ui-manager",
+  "public": true,
+  "classIri": "urn:ngm:class:comfy-ui-manager",
+  "domain": "artificial-intelligence",
+  "definition": "ComfyUI Manager is an extension for the ComfyUI node-based image generation interface that provides a built-in package manager for installing, updating, and managing custom nodes and model assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    }
+  ]
+}

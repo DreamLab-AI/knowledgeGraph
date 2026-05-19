@@ -368,7 +368,7 @@ public:: true
         "label": "Low-Latency Computing"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {

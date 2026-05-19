@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:7b80039802e0fd3b0924cf204ef08cef0146bfdf8064bbd7c7ec07f59ea45e31",
+  "title": "openzeppelin governor",
+  "slug": "open-zeppelin-governor",
+  "public": true,
+  "classIri": "urn:ngm:class:open-zeppelin-governor",
+  "domain": "blockchain",
+  "definition": "A modular, audited smart-contract framework for implementing on-chain governance systems compatible with the ERC-20 voting standard on EVM-compatible blockchains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

@@ -522,27 +522,27 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:class:lla-ma",
+        "@id": "urn:ngm:individual:lla-ma",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:class:llama-3",
+        "@id": "urn:ngm:individual:llama-3",
         "label": "Llama 3"
       },
       {
-        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "@id": "urn:ngm:individual:mistral-and-mixtral",
         "label": "Mistral and Mixtral"
       },
       {

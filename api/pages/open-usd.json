@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:5c4ea0e096531dc1295b5be0a0beeb773708fb2edf2d941d9c69a887f44a2fbd",
+  "title": "openusd",
+  "slug": "open-usd",
+  "public": true,
+  "classIri": "urn:ngm:class:open-usd",
+  "domain": "spatial-computing",
+  "definition": "An open-source 3-D scene description framework developed by Pixar and adopted as an industry standard for composing, simulating, and exchanging richly structured 3-D content across tools and pipelines.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "asset-format-standards",
+      "label": "Asset Format Standards"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "language-modeling",
+      "label": "Language Modeling"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    }
+  ]
+}

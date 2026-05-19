@@ -136,7 +136,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:governance-frameworks",
+        "@id": "urn:ngm:class:governance-framework",
         "label": "Governance Frameworks"
       },
       {
@@ -146,7 +146,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:audit-trails",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trails"
       },
       {

@@ -1,0 +1,135 @@
+{
+  "id": "urn:visionflow:page:b8cb100b12807bd8a8267800477ee5ba4bd387e840bbedf02e31787ca9430bb0",
+  "title": "nft",
+  "slug": "nft",
+  "public": true,
+  "classIri": "urn:ngm:class:nft",
+  "domain": "blockchain",
+  "definition": "A Non-Fungible Token (NFT) is a unique cryptographic token on a blockchain that represents provable ownership and provenance of a distinct digital or physical asset.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "BC Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "digital-avatar",
+      "label": "Digital Avatar"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "etsi-domain-virtual-economy",
+      "label": "ETSI_Domain_Virtual_Economy"
+    },
+    {
+      "slug": "etsi-domain-virtual-society",
+      "label": "ETSI_Domain_Virtual_Society"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "portability",
+      "label": "Portability"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "social-vr",
+      "label": "Social VR"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token-standard",
+      "label": "Token Standard"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-asset",
+      "label": "Virtual Asset"
+    },
+    {
+      "slug": "virtual-property-right",
+      "label": "Virtual Property Right"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    },
+    {
+      "slug": "blockchain-core-concepts",
+      "label": "blockchain core concepts"
+    }
+  ]
+}

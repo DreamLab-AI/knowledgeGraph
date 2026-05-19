@@ -316,7 +316,7 @@ public:: true
         "label": "Formal Verification"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graphs",
+        "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graphs"
       },
       {
@@ -414,7 +414,7 @@ public:: true
         "label": "Benchmarks"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graphs",
+        "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graphs"
       },
       {
@@ -452,7 +452,7 @@ public:: true
         "label": "Algorithmic Bias and Variance"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -464,7 +464,7 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {

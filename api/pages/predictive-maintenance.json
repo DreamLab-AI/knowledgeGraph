@@ -117,7 +117,7 @@
     "dependsOn": [],
     "implements": [
       {
-        "id": "urn:ngm:class:convolutional-neural-networks",
+        "id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -173,7 +173,7 @@
         "label": "Siemens Xcelerator"
       },
       {
-        "id": "urn:ngm:class:nvidia-omniverse",
+        "id": "urn:ngm:individual:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       }
     ],

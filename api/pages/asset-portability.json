@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:7ca2e857c66f57936337825921d50fc640097e4bea9df99ac2cc4a618809812d",
+  "title": "asset portability",
+  "slug": "asset-portability",
+  "public": true,
+  "classIri": "urn:ngm:class:asset-portability",
+  "domain": "spatial-computing",
+  "definition": "Asset portability in spatial computing refers to the ability to transfer and render digital assets\u2014such as 3D models, avatars, and environments\u2014across different platforms, engines, and virtual worlds.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Spatial Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-scene-exchange-protocol-sxp",
+      "label": "3D Scene Exchange Protocol (SXP)"
+    },
+    {
+      "slug": "compatibility-process",
+      "label": "Compatibility Process"
+    },
+    {
+      "slug": "compatibility-standards",
+      "label": "Compatibility Standards"
+    },
+    {
+      "slug": "cross-metaverse-commerce",
+      "label": "Cross Metaverse Commerce"
+    },
+    {
+      "slug": "multiverse",
+      "label": "Multiverse"
+    },
+    {
+      "slug": "platform-layer",
+      "label": "Platform Layer"
+    }
+  ]
+}

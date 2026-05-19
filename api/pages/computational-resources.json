@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:9d9664b4168c464cc88c22817b9497e8a9f6e1efcc9be765ce08364a667c322e",
+  "title": "computational resources",
+  "slug": "computational-resources",
+  "public": true,
+  "classIri": "urn:ngm:class:computational-resources",
+  "domain": "spatial-computing",
+  "definition": "The collective hardware and software infrastructure\u2014including processors, memory, and accelerators\u2014required to execute spatial-computing workloads and render immersive environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-development",
+      "label": "AI Development"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "centralized-swarm-control",
+      "label": "Centralized Swarm Control"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -480,7 +480,7 @@ public:: true
         "label": "RSA Signatures"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -502,7 +502,7 @@ public:: true
         "label": "OCSP"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -514,7 +514,7 @@ public:: true
         "label": "Distributed Ledger"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       }
     ],

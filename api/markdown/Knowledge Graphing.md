@@ -531,7 +531,7 @@ public:: true
       "label": "Data Engineering"
     },
     {
-      "@id": "urn:ngm:class:graph-databases",
+      "@id": "urn:ngm:class:graph-database",
       "label": "Graph Databases"
     }
   ],
@@ -730,7 +730,7 @@ public:: true
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -838,11 +838,11 @@ public:: true
         "label": "AML KYC Compliance"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -856,7 +856,7 @@ public:: true
         "label": "ISO GQL Standard"
       },
       {
-        "@id": "urn:ngm:class:open-standards",
+        "@id": "urn:ngm:class:open-standard",
         "label": "Open Standards"
       },
       {

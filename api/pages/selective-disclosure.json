@@ -1,0 +1,95 @@
+{
+  "id": "urn:visionflow:page:13838da731eed02bc2c79e6bfa9c83f7e0f06afee50fda8bdf4036080832e4cd",
+  "title": "selective disclosure",
+  "slug": "selective-disclosure",
+  "public": true,
+  "classIri": "urn:ngm:class:selective-disclosure",
+  "domain": "blockchain",
+  "definition": "Selective Disclosure is a cryptographic capability allowing a credential holder to reveal only a chosen subset of their verified claims to a verifier, preserving privacy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "BC Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attribute-sharing",
+      "label": "Attribute Sharing"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    },
+    {
+      "slug": "verifiable-credential-vc",
+      "label": "Verifiable Credential (VC)"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    },
+    {
+      "slug": "zero-knowledge",
+      "label": "Zero Knowledge"
+    }
+  ]
+}

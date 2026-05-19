@@ -620,7 +620,7 @@ public:: true
         "label": "Depth Estimation"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux.1"
       },
       {
@@ -628,7 +628,7 @@ public:: true
         "label": "Image Generation"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP-Adapter"
       },
       {
@@ -636,7 +636,7 @@ public:: true
         "label": "Pose Estimation"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -658,7 +658,7 @@ public:: true
         "label": "Image-to-Image"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:bea413ac9c90fe3d8ca6af87c3243e14e7b71ddc0b7cc4c702e916cdfedbbb39",
+  "title": "hugging face",
+  "slug": "hugging-face",
+  "public": true,
+  "classIri": "urn:ngm:class:hugging-face",
+  "domain": "artificial-intelligence",
+  "definition": "Hugging Face is an AI company and open-source community that develops and maintains the Transformers library and Hub, providing state-of-the-art NLP and multimodal model implementations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    },
+    {
+      "slug": "transformer",
+      "label": "Transformer"
+    }
+  ]
+}

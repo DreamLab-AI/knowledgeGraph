@@ -776,7 +776,7 @@ public:: true
         "label": "ML-KEM"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {

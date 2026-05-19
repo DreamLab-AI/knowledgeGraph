@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:d7c6d2a2b81e3cca189128dc349302595b37a633d56b15a1b0b6360cfc905ba8",
+  "title": "imu",
+  "slug": "imu",
+  "public": true,
+  "classIri": "urn:ngm:class:imu",
+  "domain": "spatial-computing",
+  "definition": "An Inertial Measurement Unit (IMU) is a sensor module combining accelerometers and gyroscopes\u2014and optionally magnetometers\u2014to measure and report a body's linear and angular motion in spatial-computing devices.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Spatial Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "odometry",
+      "label": "Odometry"
+    },
+    {
+      "slug": "particle-filter",
+      "label": "Particle Filter"
+    },
+    {
+      "slug": "rb-0069-lidar",
+      "label": "rb 0069 lidar"
+    }
+  ]
+}

@@ -474,7 +474,7 @@ public:: true
         "label": "Governance Proposal"
       },
       {
-        "@id": "urn:ngm:class:grant-program",
+        "@id": "urn:ngm:class:grant-programs",
         "label": "Grant Program"
       },
       {
@@ -712,7 +712,7 @@ public:: true
         "label": "Uniswap"
       },
       {
-        "@id": "urn:ngm:class:micro-strategy",
+        "@id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

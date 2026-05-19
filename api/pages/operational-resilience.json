@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:77cd453d4ba365fdb6024d565d93894e8e299e122e7a2e4554d5643e5f87e5c2",
+  "title": "operational resilience",
+  "slug": "operational-resilience",
+  "public": true,
+  "classIri": "urn:ngm:class:operational-resilience",
+  "domain": "infrastructure",
+  "definition": "The capacity of a system or organisation to anticipate, withstand, recover from, and adapt to adverse operational conditions and disruptions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "risk-assessment",
+      "label": "Risk Assessment"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    }
+  ]
+}

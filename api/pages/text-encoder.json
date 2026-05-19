@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:8be7096c1467d6dee43cb2a4dd96ebcd1df950a4e54157effd1b04482be88289",
+  "title": "text encoder",
+  "slug": "text-encoder",
+  "public": true,
+  "classIri": "urn:ngm:class:text-encoder",
+  "domain": "artificial-intelligence",
+  "definition": "A text encoder is a neural network component that maps raw text tokens into dense vector representations capturing semantic and contextual information for downstream tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

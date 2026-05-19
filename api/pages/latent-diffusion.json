@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:ef252b7d913b153bfe65ac035706360f57b507d8b480059bb112eadffb367455",
+  "title": "latent diffusion",
+  "slug": "latent-diffusion",
+  "public": true,
+  "classIri": "urn:ngm:class:latent-diffusion",
+  "domain": "artificial-intelligence",
+  "definition": "Latent Diffusion Models perform the denoising diffusion process in a compressed latent space encoded by a variational autoencoder, substantially reducing computational cost while maintaining high-quality image synthesis.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

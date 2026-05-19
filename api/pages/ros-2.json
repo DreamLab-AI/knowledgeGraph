@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:d69bc7091def0864af11376ead8c3179d5f42b8fcaba303da1dd582fc4463f78",
+  "title": "ros 2",
+  "slug": "ros-2",
+  "public": true,
+  "classIri": "urn:ngm:class:ros-2",
+  "domain": "robotics",
+  "definition": "ROS 2 (Robot Operating System 2) is an open-source middleware framework providing communication, tooling, and libraries for building modular, real-time-capable robot software systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "communication-protocol",
+      "label": "Communication Protocol"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

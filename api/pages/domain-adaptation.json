@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:8c1cc0d1756f25f39bb36dcd6544afacbd245dc0d8342017e46ccfd5d3e40f0c",
+  "title": "domain adaptation",
+  "slug": "domain-adaptation",
+  "public": true,
+  "classIri": "urn:ngm:class:domain-adaptation",
+  "domain": "artificial-intelligence",
+  "definition": "Domain adaptation is a machine learning technique that adjusts a model trained on a source domain to perform effectively on a target domain with a different data distribution, often with limited target-domain supervision.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "appearance-translation",
+      "label": "Appearance Translation"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

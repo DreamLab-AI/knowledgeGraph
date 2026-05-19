@@ -396,11 +396,11 @@ public:: true
         "label": "System Prompts"
       },
       {
-        "@id": "urn:ngm:class:dall-e",
+        "@id": "urn:ngm:individual:dall-e",
         "label": "DALL-E"
       },
       {
-        "@id": "urn:ngm:class:gpt-4",
+        "@id": "urn:ngm:individual:gpt-4",
         "label": "GPT 4"
       },
       {
@@ -524,7 +524,7 @@ public:: true
         "label": "Byte Pair Encoding"
       },
       {
-        "@id": "urn:ngm:class:gpt-4",
+        "@id": "urn:ngm:individual:gpt-4",
         "label": "GPT 4"
       },
       {

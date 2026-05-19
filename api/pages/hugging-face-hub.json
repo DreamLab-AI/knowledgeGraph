@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:04a9404bc93f6ad2421d63206500b12282dfc369d6168d44b21a0bb62701c9ce",
+  "title": "huggingface hub",
+  "slug": "hugging-face-hub",
+  "public": true,
+  "classIri": "urn:ngm:class:hugging-face-hub",
+  "domain": "artificial-intelligence",
+  "definition": "Hugging Face Hub is a centralised platform for hosting, versioning, and sharing machine learning models, datasets, and Spaces under a collaborative open-source ecosystem.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    }
+  ]
+}

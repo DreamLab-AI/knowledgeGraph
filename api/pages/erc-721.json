@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:39d40b1bb24173cd7ad81b104f8aadf2bca503d7a3db5db8b6ccd9146a74cfa5",
+  "title": "erc-721",
+  "slug": "erc-721",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-721",
+  "domain": "blockchain",
+  "definition": "ERC-721 is the Ethereum token standard defining a non-fungible token (NFT) interface where each token has a unique identifier and ownership record on-chain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

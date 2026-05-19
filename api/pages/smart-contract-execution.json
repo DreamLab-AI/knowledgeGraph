@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:e4a7d421235694818ce364d6801d4367628977810b46734b32c548d0caa71af1",
+  "title": "smart contract execution",
+  "slug": "smart-contract-execution",
+  "public": true,
+  "classIri": "urn:ngm:class:smart-contract-execution",
+  "domain": "blockchain",
+  "definition": "The deterministic, on-chain processing of self-enforcing code stored at a blockchain address that automatically executes predefined business logic when invoked by a transaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "nft-renting",
+      "label": "NFT Renting"
+    }
+  ]
+}

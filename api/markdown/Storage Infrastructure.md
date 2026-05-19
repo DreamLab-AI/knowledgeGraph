@@ -398,7 +398,7 @@ public:: true
         "label": "Ceph"
       },
       {
-        "@id": "urn:ngm:class:data-lakes",
+        "@id": "urn:ngm:class:data-lake",
         "label": "Data Lakes"
       },
       {
@@ -478,7 +478,7 @@ public:: true
         "label": "Content Delivery Networks"
       },
       {
-        "@id": "urn:ngm:class:data-lakes",
+        "@id": "urn:ngm:class:data-lake",
         "label": "Data Lakes"
       },
       {
@@ -516,7 +516,7 @@ public:: true
         "label": "Apache Iceberg"
       },
       {
-        "@id": "urn:ngm:class:crdts",
+        "@id": "urn:ngm:class:crdt",
         "label": "CRDTs"
       },
       {
@@ -562,7 +562,7 @@ public:: true
         "label": "Consistent Hashing"
       },
       {
-        "@id": "urn:ngm:class:merkle-trees",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Trees"
       },
       {

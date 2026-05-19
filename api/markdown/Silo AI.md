@@ -194,7 +194,7 @@ public:: true
         "label": "Checkpoints"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

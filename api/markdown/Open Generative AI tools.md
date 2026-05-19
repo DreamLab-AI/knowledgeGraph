@@ -374,11 +374,11 @@ public:: true
         "label": "Quantisation"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -386,15 +386,15 @@ public:: true
         "label": "Fine Tuning"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux.1"
       },
       {
-        "@id": "urn:ngm:class:llama-3",
+        "@id": "urn:ngm:individual:llama-3",
         "label": "Llama 3"
       },
       {
-        "@id": "urn:ngm:class:mistral-and-mixtral",
+        "@id": "urn:ngm:individual:mistral-and-mixtral",
         "label": "Mistral and Mixtral"
       },
       {
@@ -402,7 +402,7 @@ public:: true
         "label": "ollama"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -610,7 +610,7 @@ public:: true
         "label": "CLI Multi-Agent Systems"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

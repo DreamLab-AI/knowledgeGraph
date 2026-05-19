@@ -528,7 +528,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -548,7 +548,7 @@ public:: true
         "label": "Brain Computer Interfaces"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {

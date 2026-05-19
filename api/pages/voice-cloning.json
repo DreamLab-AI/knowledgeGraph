@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:64fa54ded2c38428bcd7f78107c9c06207a60339acf9bb7edfa17cd6c10ed105",
+  "title": "voice cloning",
+  "slug": "voice-cloning",
+  "public": true,
+  "classIri": "urn:ngm:class:voice-cloning",
+  "domain": "artificial-intelligence",
+  "definition": "A speech synthesis technique that uses a short reference audio sample to train or condition a text-to-speech model to reproduce the prosody, timbre, and speaking style of a target speaker.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "deepfakes",
+      "label": "Deepfakes"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

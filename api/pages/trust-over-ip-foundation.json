@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:c0e18e7e06ccc4786f5a65fccbd6fb59d0ed363fe7619e6253711f1367ad8dad",
+  "title": "trust over ip foundation",
+  "slug": "trust-over-ip-foundation",
+  "public": true,
+  "classIri": "urn:ngm:class:trust-over-ip-foundation",
+  "domain": "blockchain",
+  "definition": "The Trust over IP (ToIP) Foundation is a Linux Foundation project that defines a dual-stack architecture combining cryptographic trust at the technical layer with human and legal trust governance frameworks for decentralised identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "hyperledger-indy",
+      "label": "Hyperledger Indy"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    }
+  ]
+}

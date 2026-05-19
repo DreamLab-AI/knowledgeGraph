@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:digital-wallets",
+        "@id": "urn:ngm:class:digital-wallet",
         "label": "Digital Wallets"
       },
       {

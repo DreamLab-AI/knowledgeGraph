@@ -522,7 +522,7 @@ public:: true
         "label": "Disturbance Model"
       },
       {
-        "@id": "urn:ngm:class:feedback-loops",
+        "@id": "urn:ngm:class:feedback-loop",
         "label": "Feedback Loops"
       },
       {
@@ -698,7 +698,7 @@ public:: true
         "label": "Aerospace Engineering"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

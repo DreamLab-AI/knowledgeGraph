@@ -270,7 +270,7 @@ public:: true
         "label": "Computational Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -280,7 +280,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {

@@ -602,7 +602,7 @@ public:: true
         "label": "CLIP"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {
@@ -614,11 +614,11 @@ public:: true
         "label": "Synthetic Media"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:gpt-4",
+        "@id": "urn:ngm:individual:gpt-4",
         "label": "GPT 4"
       },
       {

@@ -746,11 +746,11 @@ public:: true
         "label": "Polkadot"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
@@ -762,7 +762,7 @@ public:: true
         "label": "Lightning Network"
       },
       {
-        "@id": "urn:ngm:class:solana",
+        "@id": "urn:ngm:individual:solana",
         "label": "Solana"
       }
     ],

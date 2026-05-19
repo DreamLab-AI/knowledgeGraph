@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:34e964298298c6ae9c8c59b4ece946dcd58202b7f40f34593ffd6c81c50765e9",
+  "title": "video generation",
+  "slug": "video-generation",
+  "public": true,
+  "classIri": "urn:ngm:class:video-generation",
+  "domain": "artificial-intelligence",
+  "definition": "Video generation is the AI-driven synthesis of temporally coherent video sequences from text prompts, images, or other conditioning inputs using generative models such as diffusion or transformer architectures.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    }
+  ]
+}

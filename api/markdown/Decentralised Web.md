@@ -986,7 +986,7 @@ public:: true
         "label": "QUIC"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -1038,7 +1038,7 @@ public:: true
         "label": "Decentralised Social Media"
       },
       {
-        "@id": "urn:ngm:class:decentralised-storage",
+        "@id": "urn:ngm:class:decentralized-storage",
         "label": "Decentralised Storage"
       },
       {

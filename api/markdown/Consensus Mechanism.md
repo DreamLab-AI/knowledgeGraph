@@ -846,7 +846,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:cross-chain-bridges",
+        "@id": "urn:ngm:class:cross-chain-bridge",
         "label": "Cross-Chain Bridges"
       },
       {

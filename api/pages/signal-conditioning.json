@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:67720b7faaca98f3b1ced286ccd6389035e03ef4021af7e4fea924145d49f72d",
+  "title": "signal conditioning",
+  "slug": "signal-conditioning",
+  "public": true,
+  "classIri": "urn:ngm:class:signal-conditioning",
+  "domain": "robotics",
+  "definition": "The processing of raw sensor outputs\u2014through amplification, filtering, conversion, and isolation\u2014to produce clean, calibrated signals suitable for downstream control and estimation algorithms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accelerometer",
+      "label": "Accelerometer"
+    },
+    {
+      "slug": "analog-to-digital-converter",
+      "label": "Analog To Digital Converter"
+    },
+    {
+      "slug": "current-sensor",
+      "label": "Current Sensor"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    }
+  ]
+}

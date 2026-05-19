@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:c03703b6e5a0d8f20c20f283dc3373cd2a182e259f19c62d9e654c31d5aa616b",
+  "title": "oracle network",
+  "slug": "oracle-network",
+  "public": true,
+  "classIri": "urn:ngm:class:oracle-network",
+  "domain": "blockchain",
+  "definition": "A decentralised infrastructure layer that securely fetches, aggregates, and delivers off-chain real-world data to smart contracts in a tamper-resistant and trust-minimised manner.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "green-blockchain-initiatives",
+      "label": "Green Blockchain Initiatives"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

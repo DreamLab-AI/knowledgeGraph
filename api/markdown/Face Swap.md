@@ -678,7 +678,7 @@ public:: true
         "label": "XSeg"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP-Adapter"
       },
       {

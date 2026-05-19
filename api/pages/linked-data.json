@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:b3a2f4849bbf6ad230b23aa47c0bf05d7ad11e09ccb75a8b58ca1ee05f9aed18",
+  "title": "linked data",
+  "slug": "linked-data",
+  "public": true,
+  "classIri": "urn:ngm:class:linked-data",
+  "domain": "infrastructure",
+  "definition": "A set of best practices for publishing structured data on the Web using URIs, HTTP, and RDF so that data from different sources can be interconnected and queried as a single graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "sparql-examples",
+      "label": "SPARQL EXAMPLES"
+    },
+    {
+      "slug": "semantic-web",
+      "label": "Semantic Web"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:access-controls",
+        "@id": "urn:ngm:class:access-control",
         "label": "Access Controls"
       },
       {

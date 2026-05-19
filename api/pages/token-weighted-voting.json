@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:3f952ebd8bba87024c3b5ab7800ca5879fadf2126b044fc5c17d0f53240c2ea5",
+  "title": "token-weighted voting",
+  "slug": "token-weighted-voting",
+  "public": true,
+  "classIri": "urn:ngm:class:token-weighted-voting",
+  "domain": "blockchain",
+  "definition": "A governance mechanism in which each participant's voting power is proportional to the quantity of governance tokens they hold or have staked.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-legal-structures",
+      "label": "DAO Legal Structures"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    }
+  ]
+}

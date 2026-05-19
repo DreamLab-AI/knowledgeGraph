@@ -592,7 +592,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -624,7 +624,7 @@ public:: true
         "label": "Embodied Minds"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],

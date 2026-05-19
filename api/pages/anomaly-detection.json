@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:4da08aa825f42afd5e35f6ba90108e56ca4416e0109fa552ab28d74993e55b19",
+  "title": "anomaly detection",
+  "slug": "anomaly-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:anomaly-detection",
+  "domain": "artificial-intelligence",
+  "definition": "Anomaly Detection is the machine learning task of identifying data points, patterns, or behaviours that deviate significantly from expected norms, used in fraud detection, security monitoring, and quality control.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-event-stream",
+      "label": "Agent Event Stream"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "real-time-processing",
+      "label": "Real-time Processing"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "time-series-forecasting",
+      "label": "Time Series Forecasting"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:cb7851900af04e0a56c247d692dbbdf5948e8244dbbe31a80f6c1f3c4912b5d6",
+  "title": "education technology",
+  "slug": "education-technology",
+  "public": true,
+  "classIri": "urn:ngm:class:education-technology",
+  "domain": "artificial-intelligence",
+  "definition": "Education technology (EdTech) is the application of digital tools, platforms, and AI-driven systems to enhance teaching, learning, and educational administration.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "cognitive-ai",
+      "label": "Cognitive AI"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    }
+  ]
+}

@@ -538,7 +538,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {

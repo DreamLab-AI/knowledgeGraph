@@ -480,7 +480,7 @@ public:: true
         "label": "Certificate Authority"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {
@@ -572,7 +572,7 @@ public:: true
         "label": "TLS 1.3"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:df772cb57d0dfafb14f45df86e575a3d5e506ead160f271351bb14b2a5c9d098",
+  "title": "validator set",
+  "slug": "validator-set",
+  "public": true,
+  "classIri": "urn:ngm:class:validator-set",
+  "domain": "blockchain",
+  "definition": "A validator set is the collection of nodes in a proof-of-stake or delegated consensus blockchain that are authorised to propose, attest, and finalise new blocks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Blockchain Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-interoperability",
+      "label": "Blockchain Interoperability"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "deterministic-finality",
+      "label": "Deterministic Finality"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

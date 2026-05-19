@@ -504,7 +504,7 @@ public:: true
         "label": "Training Dataset"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -632,11 +632,11 @@ public:: true
         "label": "Generative Image Models"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -644,19 +644,19 @@ public:: true
         "label": "ComfyUI Workflows"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "FLUX.1"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP Adapter"
       },
       {
-        "@id": "urn:ngm:class:midjourney",
+        "@id": "urn:ngm:individual:midjourney",
         "label": "Midjourney"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -686,11 +686,11 @@ public:: true
         "label": "InvokeAI"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "FLUX.1"
       }
     ],

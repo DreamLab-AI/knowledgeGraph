@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:db34f9f4a1cd8c5e2658edee541b489a75e5e53c719498267ee3dfc629d6293f",
+  "title": "websocket",
+  "slug": "web-socket",
+  "public": true,
+  "classIri": "urn:ngm:class:web-socket",
+  "domain": "artificial-intelligence",
+  "definition": "WebSocket is a communication protocol providing full-duplex channels over a single TCP connection, enabling low-latency bidirectional data exchange between clients and servers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "speech-and-voice",
+      "label": "Speech and Voice"
+    },
+    {
+      "slug": "tc-0002-collaborative-document-editing",
+      "label": "tc 0002 collaborative document editing"
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:2bcce3f944e288f2fd6d3779bb656e0a1328b02270059d523d73071b0b11d64a",
+  "title": "game development",
+  "slug": "game-development",
+  "public": true,
+  "classIri": "urn:ngm:class:game-development",
+  "domain": "artificial-intelligence",
+  "definition": "The multidisciplinary practice of designing, programming, and producing interactive software applications, increasingly leveraging AI for procedural content generation and NPC behaviour.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-development",
+      "label": "3D Development"
+    },
+    {
+      "slug": "ai-in-games",
+      "label": "AI in Games"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "rendering-engine",
+      "label": "Rendering Engine"
+    },
+    {
+      "slug": "rust",
+      "label": "Rust"
+    },
+    {
+      "slug": "universal-scene-description",
+      "label": "Universal Scene Description"
+    }
+  ]
+}

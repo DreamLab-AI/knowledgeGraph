@@ -95,7 +95,7 @@ public:: true
       "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:control-systems",
+      "@id": "urn:ngm:class:control-system",
       "label": "Control Systems"
     }
   ],

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:1c8d40a759cd016bafb39c3324afed79b90f23e50485b729aea11d8cca2712e7",
+  "title": "python runtime",
+  "slug": "python-runtime",
+  "public": true,
+  "classIri": "urn:ngm:class:python-runtime",
+  "domain": "artificial-intelligence",
+  "definition": "The interpreter and associated standard library environment that executes Python bytecode, managing memory allocation, garbage collection, and module imports.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    }
+  ]
+}

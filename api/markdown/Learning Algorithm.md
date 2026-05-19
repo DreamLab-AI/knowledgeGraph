@@ -442,7 +442,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-agents",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {
@@ -466,7 +466,7 @@ public:: true
         "label": "Transfer Learning"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -546,7 +546,7 @@ public:: true
         "label": "Monte Carlo Methods"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -590,7 +590,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

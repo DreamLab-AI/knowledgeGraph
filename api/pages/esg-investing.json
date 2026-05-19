@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:9ecd3ef636fbe45bb13f27ad65a5bdedc4ce3d6c7da0c8c106cf6d268b6d9547",
+  "title": "esg investing",
+  "slug": "esg-investing",
+  "public": true,
+  "classIri": "urn:ngm:class:esg-investing",
+  "domain": "blockchain",
+  "definition": "ESG Investing integrates Environmental, Social, and Governance criteria into investment analysis and portfolio construction to assess sustainability and ethical impact alongside financial returns.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "carbon-neutral-blockchain",
+      "label": "Carbon Neutral Blockchain"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "ethical-sourcing",
+      "label": "Ethical Sourcing"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

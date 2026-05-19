@@ -698,7 +698,7 @@ public:: true
         "label": "ARM Holdings"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -748,7 +748,7 @@ public:: true
         "label": "Amazon AWS AI"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

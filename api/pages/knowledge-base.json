@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:e6684f6c66b56af3aee16ee130769ce8e3faa4e8aa23c55e3693e8bfd31d0ec2",
+  "title": "knowledge base",
+  "slug": "knowledge-base",
+  "public": true,
+  "classIri": "urn:ngm:class:knowledge-base",
+  "domain": "artificial-intelligence",
+  "definition": "A knowledge base is a structured repository of domain-specific information, facts, and rules that can be queried or reasoned over by software systems including AI and expert systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "autonomous-agent",
+      "label": "Autonomous Agent"
+    },
+    {
+      "slug": "complete-ontology-index",
+      "label": "COMPLETE ONTOLOGY INDEX"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chatbots",
+      "label": "Chatbots"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "intelligent-virtual-entity",
+      "label": "Intelligent Virtual Entity"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

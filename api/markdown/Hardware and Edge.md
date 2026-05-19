@@ -398,7 +398,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -476,7 +476,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -492,7 +492,7 @@ public:: true
         "label": "AI Adoption"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

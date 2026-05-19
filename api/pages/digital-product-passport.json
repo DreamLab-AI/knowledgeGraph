@@ -1,0 +1,47 @@
+{
+  "id": "urn:visionflow:page:5a43539d5dd0110bff5d6567c737d8d4fb75d2cabcae1be96ef076da6201017d",
+  "title": "digital product passport",
+  "slug": "digital-product-passport",
+  "public": true,
+  "classIri": "urn:ngm:class:digital-product-passport",
+  "domain": "infrastructure",
+  "definition": "A Digital Product Passport is a standardised digital record that captures a product's composition, provenance, sustainability attributes, and lifecycle events to enable circular economy tracking.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    }
+  ]
+}

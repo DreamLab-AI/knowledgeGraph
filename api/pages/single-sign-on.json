@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:1951179249e70072ed6cc2a9b9e800a158ea54a70dc94efb5bd20955ae4fb95a",
+  "title": "single sign-on",
+  "slug": "single-sign-on",
+  "public": true,
+  "classIri": "urn:ngm:class:single-sign-on",
+  "domain": "infrastructure",
+  "definition": "Single Sign-On (SSO) is an authentication scheme that allows a user to log in once and gain access to multiple related but independent software systems without re-entering credentials.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "authentication-service",
+      "label": "Authentication Service"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "federated-credential-exchange",
+      "label": "Federated Credential Exchange"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    }
+  ]
+}

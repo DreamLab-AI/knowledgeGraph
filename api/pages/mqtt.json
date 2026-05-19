@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:046adb88a188465c6ba56443392821e60e97d3806445ba0e9daea6fb7a94271e",
+  "title": "mqtt",
+  "slug": "mqtt",
+  "public": true,
+  "classIri": "urn:ngm:class:mqtt",
+  "domain": "infrastructure",
+  "definition": "A lightweight, publish-subscribe messaging protocol designed for constrained IoT devices and low-bandwidth, high-latency networks, standardised as ISO/IEC 20922.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    }
+  ]
+}

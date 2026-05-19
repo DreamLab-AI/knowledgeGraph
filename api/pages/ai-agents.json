@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:305a6aeb4aba6d867123d9c1a34727aec665594871b66539d10850ee1a33f8c5",
+  "title": "ai agents",
+  "slug": "ai-agents",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-agents",
+  "domain": "artificial-intelligence",
+  "definition": "AI Agents are software entities powered by large language models that autonomously perceive their environment, make decisions, and execute actions through tool use to complete complex tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "taproot-assets",
+      "label": "Taproot Assets"
+    },
+    {
+      "slug": "ecash",
+      "label": "ecash"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

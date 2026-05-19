@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:10be6beef496b89dae799c37bd04e5eba2a6264a0a4d605f5661b50d7dc4d1ea",
+  "title": "computer use",
+  "slug": "computer-use",
+  "public": true,
+  "classIri": "urn:ngm:class:computer-use",
+  "domain": "artificial-intelligence",
+  "definition": "An AI capability enabling language or multimodal models to autonomously perceive and interact with graphical user interfaces, operating systems, and desktop applications to complete tasks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    }
+  ]
+}

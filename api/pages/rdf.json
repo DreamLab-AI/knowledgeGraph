@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:c5b040151cd9877a148b2fbf461e469a23dab6fe77f4dff99eb8ba23cb63260b",
+  "title": "rdf",
+  "slug": "rdf",
+  "public": true,
+  "classIri": "urn:ngm:class:rdf",
+  "domain": "infrastructure",
+  "definition": "The Resource Description Framework (RDF) is a W3C standard data model for representing and exchanging information on the Web as subject-predicate-object triples forming a directed graph.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "domain-ontology",
+      "label": "Domain Ontology"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "logseq",
+      "label": "Logseq"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "ontology-definition",
+      "label": "Ontology Definition"
+    },
+    {
+      "slug": "sparql-examples",
+      "label": "SPARQL EXAMPLES"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    }
+  ]
+}

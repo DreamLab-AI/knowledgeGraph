@@ -546,7 +546,7 @@ public:: true
         "label": "AI Avatar Synthesis"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {
@@ -656,7 +656,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

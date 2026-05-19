@@ -448,7 +448,7 @@ public:: true
         "label": "Jailbreaking"
       },
       {
-        "@id": "urn:ngm:class:meta-platforms",
+        "@id": "urn:ngm:individual:meta-platforms",
         "label": "Meta Platforms"
       },
       {

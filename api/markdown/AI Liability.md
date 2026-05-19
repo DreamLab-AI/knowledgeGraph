@@ -632,7 +632,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {

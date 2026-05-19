@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:f6c3848fc2ab9188dd2c563828019be7cee4e269f5438c19f5173f79898e9ee6",
+  "title": "tendermint",
+  "slug": "tendermint",
+  "public": true,
+  "classIri": "urn:ngm:class:tendermint",
+  "domain": "blockchain",
+  "definition": "A Byzantine fault-tolerant consensus engine implementing a partially synchronous, leader-based protocol that provides instant finality and is the consensus core of the Cosmos SDK.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "distributed-decision-making",
+      "label": "Distributed Decision Making"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "sustainable-consensus",
+      "label": "Sustainable Consensus"
+    }
+  ]
+}

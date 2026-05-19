@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:b2da3287945ae81d9a90578212c19ece865e56772ec1dd485a02eb8557aa8e5d",
+  "title": "icml",
+  "slug": "icml",
+  "public": true,
+  "classIri": "urn:ngm:class:icml",
+  "domain": "artificial-intelligence",
+  "definition": "ICML (International Conference on Machine Learning) is one of the leading annual academic venues for machine learning research, covering theory, algorithms, and applications.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "feed-forward-network",
+      "label": "Feed Forward Network"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    }
+  ]
+}

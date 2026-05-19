@@ -58,7 +58,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:control-systems",
+        "@id": "urn:ngm:class:control-system",
         "label": "Control Systems"
       }
     ]

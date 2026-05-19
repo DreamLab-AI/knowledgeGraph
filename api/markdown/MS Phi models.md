@@ -474,7 +474,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:microsoft-copilot",
+        "@id": "urn:ngm:individual:microsoft-copilot",
         "label": "Microsoft Copilot"
       },
       {
@@ -576,7 +576,7 @@ public:: true
         "label": "Ethical AI"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

@@ -418,7 +418,7 @@ public:: true
         "label": "API Gateway"
       },
       {
-        "@id": "urn:ngm:class:midjourney",
+        "@id": "urn:ngm:individual:midjourney",
         "label": "Midjourney"
       },
       {

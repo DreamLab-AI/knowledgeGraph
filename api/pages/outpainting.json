@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:289c559ecb9aecc3539a8c95bcd8775bf6668aa9c40f1c5af7872ee09591d52f",
+  "title": "outpainting",
+  "slug": "outpainting",
+  "public": true,
+  "classIri": "urn:ngm:class:outpainting",
+  "domain": "artificial-intelligence",
+  "definition": "Outpainting is a generative AI technique that extends an existing image beyond its original borders by synthesising contextually coherent new content in the surrounding canvas area.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

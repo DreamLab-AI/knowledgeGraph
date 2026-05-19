@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:ec6c298d55c911a0be64fe22dce5ddcf885b1cdca2584cd9730b08d62bb40dd7",
+  "title": "flow matching",
+  "slug": "flow-matching",
+  "public": true,
+  "classIri": "urn:ngm:class:flow-matching",
+  "domain": "artificial-intelligence",
+  "definition": "A generative modelling approach that trains a neural network to learn the vector field of a continuous normalising flow by directly regressing on target flow paths between distributions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

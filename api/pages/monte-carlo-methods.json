@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:9423be33ec352eb5190a1923005f3c7a8d1159c1e436422061b2c75039366d38",
+  "title": "monte carlo methods",
+  "slug": "monte-carlo-methods",
+  "public": true,
+  "classIri": "urn:ngm:class:monte-carlo-methods",
+  "domain": "artificial-intelligence",
+  "definition": "A class of computational algorithms that use repeated random sampling to estimate numerical results for problems involving probability distributions or high-dimensional integrals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

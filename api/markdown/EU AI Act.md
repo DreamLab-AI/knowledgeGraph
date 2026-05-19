@@ -690,7 +690,7 @@ public:: true
         "label": "General Purpose AI"
       },
       {
-        "@id": "urn:ngm:class:high-risk-ai-systems",
+        "@id": "urn:ngm:class:high-risk-ai-system",
         "label": "High-Risk AI Systems"
       },
       {
@@ -698,7 +698,7 @@ public:: true
         "label": "Algorithmic Transparency Reports"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],

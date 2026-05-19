@@ -436,7 +436,7 @@ public:: true
         "label": "Inference Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -544,7 +544,7 @@ public:: true
         "label": "Agentic Browser"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {

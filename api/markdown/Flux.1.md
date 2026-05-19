@@ -696,7 +696,7 @@ public:: true
         "label": "T5-XXL"
       },
       {
-        "@id": "urn:ngm:class:variational-autoencoder",
+        "@id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {
@@ -900,7 +900,7 @@ public:: true
         "label": "SwarmUI"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP-Adapter"
       }
     ],

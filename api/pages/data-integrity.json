@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:57c9ba2faa70b21fde3310821564ac45570bc40dd856b336f210d39c230b47b9",
+  "title": "data integrity",
+  "slug": "data-integrity",
+  "public": true,
+  "classIri": "urn:ngm:class:data-integrity",
+  "domain": "infrastructure",
+  "definition": "The assurance that data remains accurate, consistent, and unaltered during storage, transmission, and processing, typically enforced through checksums, hashing, or cryptographic proofs.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-algorithm",
+      "label": "Consensus Algorithm"
+    },
+    {
+      "slug": "cryptographic-hash",
+      "label": "Cryptographic Hash"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-forensics-framework",
+      "label": "Digital Forensics Framework"
+    },
+    {
+      "slug": "digital-signatures",
+      "label": "Digital Signatures"
+    },
+    {
+      "slug": "hash-function",
+      "label": "Hash Function"
+    },
+    {
+      "slug": "verification-report",
+      "label": "VERIFICATION REPORT"
+    }
+  ]
+}

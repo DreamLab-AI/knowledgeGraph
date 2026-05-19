@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:daf7b98b75e5decf2a7e84b63764f604ac9a7d6ace56639ca6af6ae34ca87802",
+  "title": "trusted execution environment",
+  "slug": "trusted-execution-environment",
+  "public": true,
+  "classIri": "urn:ngm:class:trusted-execution-environment",
+  "domain": "infrastructure",
+  "definition": "A hardware-isolated, tamper-resistant secure enclave that executes code and processes sensitive data independently from the main operating system.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cross-chain-bridge",
+      "label": "Cross-Chain Bridge"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

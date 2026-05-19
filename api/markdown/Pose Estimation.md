@@ -524,7 +524,7 @@ public:: true
         "label": "Camera Calibration"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -682,7 +682,7 @@ public:: true
         "label": "Animation Pipeline"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

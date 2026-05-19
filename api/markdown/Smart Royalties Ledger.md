@@ -160,7 +160,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:identity-system",
+        "@id": "urn:ngm:class:identity-systems",
         "label": "Identity System"
       },
       {

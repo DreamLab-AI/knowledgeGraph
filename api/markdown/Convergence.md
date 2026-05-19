@@ -404,7 +404,7 @@ public:: true
         "label": "Moore's Law"
       },
       {
-        "@id": "urn:ngm:class:open-standards",
+        "@id": "urn:ngm:class:open-standard",
         "label": "Open Standards"
       },
       {
@@ -414,7 +414,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -478,7 +478,7 @@ public:: true
         "label": "Edge Computing"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

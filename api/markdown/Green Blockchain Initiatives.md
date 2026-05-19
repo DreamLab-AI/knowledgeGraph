@@ -656,11 +656,11 @@ public:: true
         "label": "Carbon Neutral Blockchain"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:solana",
+        "@id": "urn:ngm:individual:solana",
         "label": "Solana"
       },
       {

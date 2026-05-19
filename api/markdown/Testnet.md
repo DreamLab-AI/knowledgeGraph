@@ -496,11 +496,11 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:consensus-rules",
+        "@id": "urn:ngm:class:consensus-rule",
         "label": "Consensus Rules"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {
@@ -562,7 +562,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:merkle-trees",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Trees"
       },
       {

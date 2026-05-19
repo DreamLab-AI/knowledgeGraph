@@ -506,7 +506,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -604,15 +604,15 @@ public:: true
         "label": "Whisper"
       },
       {
-        "@id": "urn:ngm:class:bert",
+        "@id": "urn:ngm:individual:bert",
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:class:claude",
+        "@id": "urn:ngm:individual:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {
@@ -620,15 +620,15 @@ public:: true
         "label": "GPT"
       },
       {
-        "@id": "urn:ngm:class:lla-ma",
+        "@id": "urn:ngm:individual:lla-ma",
         "label": "LLaMA"
       },
       {
-        "@id": "urn:ngm:class:mistral",
+        "@id": "urn:ngm:individual:mistral",
         "label": "Mistral"
       },
       {
-        "@id": "urn:ngm:class:t5",
+        "@id": "urn:ngm:individual:t5",
         "label": "T5"
       }
     ],

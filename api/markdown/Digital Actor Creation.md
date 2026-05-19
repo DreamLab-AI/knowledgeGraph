@@ -104,7 +104,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       },
       {

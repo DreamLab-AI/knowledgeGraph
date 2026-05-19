@@ -332,7 +332,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -348,13 +348,13 @@ public:: true
         "label": "Labelled Training Data"
       },
       {
-        "@id": "urn:ngm:class:loss-functions",
+        "@id": "urn:ngm:class:loss-function",
         "label": "Loss Functions"
       }
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -440,7 +440,7 @@ public:: true
         "label": "3D Reconstruction"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],

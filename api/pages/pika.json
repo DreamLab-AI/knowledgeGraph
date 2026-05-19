@@ -33,7 +33,7 @@
         "label": "Text Encoder"
       },
       {
-        "id": "urn:ngm:class:variational-autoencoder",
+        "id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {
@@ -219,7 +219,7 @@
         "label": "CLIP"
       },
       {
-        "id": "urn:ngm:class:deepfake",
+        "id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

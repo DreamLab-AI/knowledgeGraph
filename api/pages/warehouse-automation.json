@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:f3529ec4e4f007224dea0394fac9881f8f90de50c2801c1ab550bd57fb4a266a",
+  "title": "warehouse automation",
+  "slug": "warehouse-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:warehouse-automation",
+  "domain": "robotics",
+  "definition": "The application of robotic systems, autonomous mobile robots, and automated conveyor or storage technologies to mechanise goods handling, sorting, and fulfilment in warehouses.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "humanoid-robot",
+      "label": "Humanoid Robot"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robotics",
+      "label": "Robotics"
+    },
+    {
+      "slug": "task-planning",
+      "label": "Task Planning"
+    }
+  ]
+}

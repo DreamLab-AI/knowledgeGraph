@@ -570,7 +570,7 @@ public:: true
         "label": "Decentralized Application"
       },
       {
-        "@id": "urn:ngm:class:decentralized-web",
+        "@id": "urn:ngm:class:decentralised-web",
         "label": "Decentralized Web"
       },
       {

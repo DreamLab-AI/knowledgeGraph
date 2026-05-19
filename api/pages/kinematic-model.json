@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:984c991198cacc314317c69220ee5f627b637a3b9b66ae332f4635cb9f8539f0",
+  "title": "kinematicmodel",
+  "slug": "kinematic-model",
+  "public": true,
+  "classIri": "urn:ngm:class:kinematic-model",
+  "domain": "robotics",
+  "definition": "A mathematical description of the geometry of a robot's motion\u2014relating joint variables to end-effector position and orientation\u2014without considering the forces or torques that cause motion.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "admittance-control",
+      "label": "Admittance Control"
+    },
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "forward-kinematics",
+      "label": "Forward Kinematics"
+    },
+    {
+      "slug": "inverse-kinematics",
+      "label": "Inverse Kinematics"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:bad52d71b46526d7aeb4881af8b61edbe32b82e13cab8384404f7144313c9b94",
+  "title": "vector database",
+  "slug": "vector-database",
+  "public": true,
+  "classIri": "urn:ngm:class:vector-database",
+  "domain": "artificial-intelligence",
+  "definition": "A vector database is a specialised data store optimised for indexing and querying high-dimensional embedding vectors using approximate nearest-neighbour algorithms for similarity search.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

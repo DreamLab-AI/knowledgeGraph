@@ -595,7 +595,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:autonomous-systems",
+      "@id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous Systems"
     }
   ],
@@ -620,7 +620,7 @@ public:: true
     ],
     "partOf": [
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {

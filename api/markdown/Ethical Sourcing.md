@@ -778,7 +778,7 @@ public:: true
         "label": "Satellite Monitoring"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

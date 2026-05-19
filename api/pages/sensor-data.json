@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:c167dada1a0093eb0972f2da8b47bfafdc65c15b1e6c79d547481a21a5902cd7",
+  "title": "sensor data",
+  "slug": "sensor-data",
+  "public": true,
+  "classIri": "urn:ngm:class:sensor-data",
+  "domain": "spatial-computing",
+  "definition": "Raw or pre-processed measurements produced by physical transducers such as cameras, LiDAR, IMUs, or microphones that encode environmental state for perception and decision systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-twin-creation",
+      "label": "Digital Twin Creation"
+    },
+    {
+      "slug": "feedback-mechanism",
+      "label": "Feedback Mechanism"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "robot-learning",
+      "label": "Robot Learning"
+    },
+    {
+      "slug": "spatial-computing-layer",
+      "label": "Spatial Computing Layer"
+    }
+  ]
+}

@@ -536,7 +536,7 @@ public:: true
         "label": "Hardware Security Module"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -704,7 +704,7 @@ public:: true
         "label": "Digital Signature"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {

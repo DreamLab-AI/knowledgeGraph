@@ -502,11 +502,11 @@ public:: true
         "label": "Bundle Adjustment"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
-        "@id": "urn:ngm:class:graph-neural-networks",
+        "@id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Networks"
       },
       {
@@ -546,7 +546,7 @@ public:: true
         "label": "Search and Rescue Robotics"
       },
       {
-        "@id": "urn:ngm:class:service-robots",
+        "@id": "urn:ngm:class:service-robot",
         "label": "Service Robots"
       },
       {

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:175b07592c12c426fb32620bc73ae7e1c02cc0969ed419a02a48801f4117b834",
+  "title": "differentiable architecture",
+  "slug": "differentiable-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:differentiable-architecture",
+  "domain": "artificial-intelligence",
+  "definition": "A neural network design paradigm in which discrete structural choices such as layer type or connectivity are relaxed to continuous variables so the architecture itself can be optimised via gradient descent.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    }
+  ]
+}

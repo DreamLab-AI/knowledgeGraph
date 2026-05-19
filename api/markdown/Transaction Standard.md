@@ -176,7 +176,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:atomic-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swaps"
       },
       {

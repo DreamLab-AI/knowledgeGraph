@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:86ec8e1163c7bcfdda121786b1c5d812b0f06e1212bd204c6f57dbeeb872d3c9",
+  "title": "retroactive public goods funding",
+  "slug": "retroactive-public-goods-funding",
+  "public": true,
+  "classIri": "urn:ngm:class:retroactive-public-goods-funding",
+  "domain": "blockchain",
+  "definition": "Retroactive Public Goods Funding is a mechanism that rewards contributors to open-source or public-benefit projects after demonstrated impact, rather than speculative upfront grants.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

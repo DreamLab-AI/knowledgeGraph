@@ -51,7 +51,7 @@ public:: true
       "label": "AI Model Architecture"
     },
     {
-      "@id": "urn:ngm:class:foundation-models",
+      "@id": "urn:ngm:individual:foundation-models",
       "label": "Foundation Models"
     }
   ],

@@ -176,11 +176,11 @@ public:: true
         "label": "Cryptographic Signature"
       },
       {
-        "@id": "urn:ngm:class:decentralized-identifier",
+        "@id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralized Identifier"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {

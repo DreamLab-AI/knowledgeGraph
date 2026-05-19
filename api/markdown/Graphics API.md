@@ -626,7 +626,7 @@ public:: true
         "label": "CAD Software"
       },
       {
-        "@id": "urn:ngm:class:game-engines",
+        "@id": "urn:ngm:class:game-engine",
         "label": "Game Engines"
       },
       {
@@ -668,7 +668,7 @@ public:: true
         "label": "W3C"
       },
       {
-        "@id": "urn:ngm:class:apple",
+        "@id": "urn:ngm:individual:apple",
         "label": "Apple"
       }
     ]

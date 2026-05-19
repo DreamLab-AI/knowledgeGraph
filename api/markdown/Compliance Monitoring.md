@@ -750,7 +750,7 @@ public:: true
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:knowledge-graphs",
+        "@id": "urn:ngm:class:knowledge-graph",
         "label": "Knowledge Graphs"
       },
       {

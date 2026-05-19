@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:dde74c3fa51c364b693fede4663924b04412f7465ca0a8c5a7981e2be40c81c8",
+  "title": "did document",
+  "slug": "did-document",
+  "public": true,
+  "classIri": "urn:ngm:class:did-document",
+  "domain": "blockchain",
+  "definition": "A JSON-LD resource associated with a Decentralised Identifier that contains cryptographic public keys, authentication methods, and service endpoints enabling verifiable, self-sovereign identity interactions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "decentralized-identity-did",
+      "label": "Decentralized Identity (DID)"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

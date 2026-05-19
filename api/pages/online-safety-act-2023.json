@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:d90391cf1e795225affc7046d6129b0cd995db8a2e87c64df7172d5c6cdedcec",
+  "title": "online safety act 2023",
+  "slug": "online-safety-act-2023",
+  "public": true,
+  "classIri": "urn:ngm:class:online-safety-act-2023",
+  "domain": "artificial-intelligence",
+  "definition": "UK legislation that imposes duties of care on online platforms to protect users from illegal and harmful content, with enforcement powers granted to the communications regulator Ofcom.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "death-of-the-internet",
+      "label": "Death of the Internet"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-society-harms",
+      "label": "Digital Society Harms"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "meta-platforms",
+      "label": "Meta Platforms"
+    }
+  ]
+}

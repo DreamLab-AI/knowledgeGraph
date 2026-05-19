@@ -560,7 +560,7 @@ public:: true
         "label": "Model Based Control"
       },
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:individual:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       },
       {

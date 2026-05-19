@@ -255,7 +255,7 @@
         "label": "Lightning Network"
       },
       {
-        "id": "urn:ngm:class:micro-strategy",
+        "id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ],
@@ -328,7 +328,7 @@
         "label": "Bitcoin Mining"
       },
       {
-        "id": "urn:ngm:class:micro-strategy",
+        "id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ]

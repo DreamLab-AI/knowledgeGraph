@@ -324,11 +324,11 @@ public:: true
         "label": "Xcode"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "@id": "urn:ngm:class:vision-pro",
+        "@id": "urn:ngm:individual:vision-pro",
         "label": "Vision Pro"
       }
     ],
@@ -406,7 +406,7 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],

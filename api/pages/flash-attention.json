@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:d45020a4a9f47679ba837f4975301c064ac0e0751059c0a2da55fa75c803d0c9",
+  "title": "flash attention",
+  "slug": "flash-attention",
+  "public": true,
+  "classIri": "urn:ngm:class:flash-attention",
+  "domain": "artificial-intelligence",
+  "definition": "Flash Attention is an IO-aware exact attention algorithm that reorders computations to minimise GPU high-bandwidth memory reads and writes, substantially reducing the memory footprint and wall-clock time of transformer attention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

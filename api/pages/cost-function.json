@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:168122e0a1ee7f4b39cf2ede8e7acc4713aa5d9ca5047bc2bb3e55252aa98284",
+  "title": "cost function",
+  "slug": "cost-function",
+  "public": true,
+  "classIri": "urn:ngm:class:cost-function",
+  "domain": "robotics",
+  "definition": "A mathematical function that quantifies the discrepancy between the current and desired states of a robotic system, guiding optimisation of control policies or trajectories.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "a-star-algorithm",
+      "label": "A-Star Algorithm"
+    },
+    {
+      "slug": "control-algorithm",
+      "label": "Control Algorithm"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    },
+    {
+      "slug": "optimal-control",
+      "label": "Optimal Control"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    }
+  ]
+}

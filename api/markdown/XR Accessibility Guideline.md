@@ -118,7 +118,7 @@ public:: true
         "label": "Design Recommendation"
       },
       {
-        "@id": "urn:ngm:class:implementation-example",
+        "@id": "urn:ngm:class:implementation-examples",
         "label": "Implementation Example"
       }
     ],

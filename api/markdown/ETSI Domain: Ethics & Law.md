@@ -118,7 +118,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:ethical-frameworks",
+        "@id": "urn:ngm:class:ethical-framework",
         "label": "Ethical Frameworks"
       },
       {

@@ -534,7 +534,7 @@ public:: true
         "label": "In-Context Learning"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -634,7 +634,7 @@ public:: true
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {

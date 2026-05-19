@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:f83fe7e1292b30b8bbdde05bf6905bf374ecf95374aef31ea8876f3e814cab78",
+  "title": "network connectivity",
+  "slug": "network-connectivity",
+  "public": true,
+  "classIri": "urn:ngm:class:network-connectivity",
+  "domain": "blockchain",
+  "definition": "Network Connectivity refers to the capacity of nodes, devices, or systems to establish reliable data communication links within or across networks, underpinning distributed applications and blockchain peer discovery.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "BC Network Component"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-scrapers",
+      "label": "AI Scrapers"
+    },
+    {
+      "slug": "bitcoin-mining",
+      "label": "Bitcoin Mining"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "edge-computing-node",
+      "label": "Edge Computing Node"
+    },
+    {
+      "slug": "edge-mesh-network",
+      "label": "Edge Mesh Network"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    },
+    {
+      "slug": "sovereign-mesh",
+      "label": "Sovereign Mesh"
+    },
+    {
+      "slug": "storage-layer",
+      "label": "Storage Layer"
+    }
+  ]
+}

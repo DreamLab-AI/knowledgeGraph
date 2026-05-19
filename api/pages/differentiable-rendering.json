@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:351ab365a4ee5b06a9f8d384304c2d5162e764028a2454652caf238373171b02",
+  "title": "differentiable rendering",
+  "slug": "differentiable-rendering",
+  "public": true,
+  "classIri": "urn:ngm:class:differentiable-rendering",
+  "domain": "artificial-intelligence",
+  "definition": "Differentiable rendering is a class of rendering algorithms that compute gradients of image outputs with respect to scene parameters, enabling gradient-based optimisation for 3D reconstruction and neural scene representation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-gaussian-splatting",
+      "label": "3D Gaussian Splatting"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:c1472135b14c77c8bef98e73f70208325fa0dcf1e6bd668ae9b31a9cea295fe7",
+  "title": "controller",
+  "slug": "controller",
+  "public": true,
+  "classIri": "urn:ngm:class:controller",
+  "domain": "robotics",
+  "definition": "In robotics, a computational module that processes sensor feedback and generates actuator commands to achieve desired system states according to a control law or policy.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

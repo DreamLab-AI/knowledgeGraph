@@ -640,7 +640,7 @@ public:: true
         "label": "Yoshua Bengio"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

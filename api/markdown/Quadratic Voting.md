@@ -520,7 +520,7 @@ public:: true
         "label": "Commit-Reveal Scheme"
       },
       {
-        "@id": "urn:ngm:class:merkle-proofs",
+        "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proofs"
       },
       {
@@ -634,7 +634,7 @@ public:: true
         "label": "Gitcoin Passport"
       },
       {
-        "@id": "urn:ngm:class:merkle-proofs",
+        "@id": "urn:ngm:class:merkle-proof",
         "label": "Merkle Proofs"
       },
       {

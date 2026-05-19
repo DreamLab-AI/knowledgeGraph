@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:683889669e4aa4989501a92f452ef21f4638aec85a08bf1f788b8edd72d4695c",
+  "title": "ai policy",
+  "slug": "ai-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-policy",
+  "domain": "artificial-intelligence",
+  "definition": "AI policy refers to the set of government strategies, guidelines, and regulatory frameworks that govern research priorities, deployment standards, and societal impacts of artificial intelligence.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "singularity",
+      "label": "Singularity"
+    }
+  ]
+}

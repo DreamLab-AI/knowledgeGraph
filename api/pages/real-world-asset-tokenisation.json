@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:5d498a1a6f5ada2d4e6b420ab4a5c806ef62271e753b8ed01a0425d308602b39",
+  "title": "real-world asset tokenisation",
+  "slug": "real-world-asset-tokenisation",
+  "public": true,
+  "classIri": "urn:ngm:class:real-world-asset-tokenisation",
+  "domain": "blockchain",
+  "definition": "Real-world asset tokenisation is the process of creating on-chain digital representations of physical or financial assets\u2014such as real estate, bonds, or commodities\u2014to enable fractional ownership and programmable transfer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asset-registry",
+      "label": "Asset Registry"
+    },
+    {
+      "slug": "carbon-credit-tracking",
+      "label": "Carbon Credit Tracking"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stable-coins",
+      "label": "Stable Coins"
+    }
+  ]
+}

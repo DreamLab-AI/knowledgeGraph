@@ -94,7 +94,7 @@ public:: true
         "label": "Content Preservation"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {

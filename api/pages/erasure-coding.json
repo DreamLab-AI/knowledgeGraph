@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:747074333cac8a1a956e067886cb8e02aad428dc94758cbe57aa9694dd207224",
+  "title": "erasure coding",
+  "slug": "erasure-coding",
+  "public": true,
+  "classIri": "urn:ngm:class:erasure-coding",
+  "domain": "infrastructure",
+  "definition": "A data protection technique that encodes information into redundant fragments distributed across nodes such that the original data can be reconstructed from any sufficient subset of fragments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "data-layer",
+      "label": "Data Layer"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "storage-infrastructure",
+      "label": "Storage Infrastructure"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

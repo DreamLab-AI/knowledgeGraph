@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:2636f474758044ad9a823e14c65511e8b8dd25f2445e919135eb0bb0420d5394",
+  "title": "erc-1155",
+  "slug": "erc-1155",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-1155",
+  "domain": "blockchain",
+  "definition": "An Ethereum token standard that enables a single smart contract to manage multiple token types, both fungible and non-fungible, within one efficient, batch-transferable interface.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "fractionalized-nft",
+      "label": "Fractionalized NFT"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "tokenization",
+      "label": "Tokenization"
+    }
+  ]
+}

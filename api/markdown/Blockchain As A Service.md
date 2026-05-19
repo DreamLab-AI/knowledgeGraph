@@ -844,7 +844,7 @@ public:: true
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
@@ -902,7 +902,7 @@ public:: true
         "label": "REST API"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:individual:docker",
         "label": "Docker"
       }
     ],
@@ -912,7 +912,7 @@ public:: true
         "label": "API Management"
       },
       {
-        "@id": "urn:ngm:class:cbdc",
+        "@id": "urn:ngm:class:cbdcs",
         "label": "CBDC"
       },
       {
@@ -924,7 +924,7 @@ public:: true
         "label": "DevOps"
       },
       {
-        "@id": "urn:ngm:class:digital-assets",
+        "@id": "urn:ngm:class:digital-asset",
         "label": "Digital Assets"
       },
       {
@@ -932,7 +932,7 @@ public:: true
         "label": "Distributed Ledger Technology"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:ae8383ab3ff5bec77d746ea32c2e48929c34f928b33b2f1ed13df054e603d385",
+  "title": "sustainabilityreporting",
+  "slug": "sustainability-reporting",
+  "public": true,
+  "classIri": "urn:ngm:class:sustainability-reporting",
+  "domain": "blockchain",
+  "definition": "Sustainability reporting is the practice of disclosing an organisation's environmental, social, and governance (ESG) performance data to stakeholders in accordance with recognised frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-environmental-impact-assessment",
+      "label": "Blockchain Environmental Impact Assessment"
+    },
+    {
+      "slug": "carbon-credit-token",
+      "label": "Carbon Credit Token"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "environmental-impact-metric",
+      "label": "Environmental Impact Metric"
+    },
+    {
+      "slug": "environmental-sustainability-label",
+      "label": "Environmental Sustainability Label"
+    },
+    {
+      "slug": "renewable-energy-certificates",
+      "label": "Renewable Energy Certificates"
+    }
+  ]
+}

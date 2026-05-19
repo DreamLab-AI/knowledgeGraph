@@ -94,7 +94,7 @@ public:: true
         "label": "Computational Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:neural-network-architectures",
+        "@id": "urn:ngm:class:neural-network-architecture",
         "label": "Neural Network Architectures"
       },
       {

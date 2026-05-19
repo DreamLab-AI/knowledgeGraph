@@ -60,7 +60,7 @@
     ],
     "requires": [
       {
-        "id": "urn:ngm:class:bitcoin",
+        "id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -137,7 +137,7 @@
     "bridgesTo": [],
     "uses": [
       {
-        "id": "urn:ngm:class:zero-knowledge-proofs",
+        "id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {
@@ -175,7 +175,7 @@
         "label": "AI Adoption"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -216,7 +216,7 @@
         "label": "AI Search"
       },
       {
-        "id": "urn:ngm:class:anthropic-claude",
+        "id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

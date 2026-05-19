@@ -1,0 +1,211 @@
+{
+  "id": "urn:visionflow:page:c9e380e718a618734f76570f8947ec6e19e80c9a90cf4f0f853744b2221e3a1a",
+  "title": "gpu compute",
+  "slug": "gpu-compute",
+  "public": true,
+  "classIri": "urn:ngm:class:gpu-compute",
+  "domain": "artificial-intelligence",
+  "definition": "GPU Compute refers to the use of Graphics Processing Units for massively parallel numerical computation, enabling high-throughput training and inference of deep learning models.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "attention",
+      "label": "Attention"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "deep-learning",
+      "label": "Deep Learning"
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "label": "Deepfakes and fraudulent content"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "generative-ai",
+      "label": "Generative AI"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "graphics-api",
+      "label": "Graphics API"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "image-and-video-restoration",
+      "label": "Image and Video Restoration"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "large-language-models",
+      "label": "Large Language Models"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "meta-ar-engine",
+      "label": "Meta AR engine"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "music-and-audio",
+      "label": "Music and Audio"
+    },
+    {
+      "slug": "neural-3-d-generation",
+      "label": "Neural 3D Generation"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

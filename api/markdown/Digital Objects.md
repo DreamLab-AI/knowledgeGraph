@@ -526,7 +526,7 @@ public:: true
         "label": "Resolution Endpoint"
       },
       {
-        "@id": "urn:ngm:class:transferable-rights",
+        "@id": "urn:ngm:class:transferable-right",
         "label": "Transferable Rights"
       },
       {
@@ -698,7 +698,7 @@ public:: true
         "label": "Digital Art"
       },
       {
-        "@id": "urn:ngm:class:digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       },
       {

@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:ce962a79e3e366ebecdd960a8db24db601a48587204d1d49dfdc0c135c5fdb36",
+  "title": "fasb asu 2023-08",
+  "slug": "fasb-asu-2023-08",
+  "public": true,
+  "classIri": "urn:ngm:class:fasb-asu-2023-08",
+  "domain": "blockchain",
+  "definition": "FASB ASU 2023-08 is a US accounting standard update that requires entities to measure cryptocurrency assets at fair value with changes recognised in net income each reporting period.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-etf",
+      "label": "Bitcoin ETF"
+    },
+    {
+      "slug": "bitcoin-environmental-issues",
+      "label": "Bitcoin Environmental Issues"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "micro-strategy",
+      "label": "MicroStrategy"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    }
+  ]
+}

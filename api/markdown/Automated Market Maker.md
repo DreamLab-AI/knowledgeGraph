@@ -86,7 +86,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:liquidity-pools",
+        "@id": "urn:ngm:class:liquidity-pool",
         "label": "Liquidity Pools"
       },
       {

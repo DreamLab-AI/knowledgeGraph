@@ -180,7 +180,7 @@ public:: true
         "label": "Consent Registry"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-key",
+        "@id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Key"
       },
       {

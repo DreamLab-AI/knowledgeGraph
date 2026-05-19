@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:017733179652ed5f277bbbfb38d3b1d5289082de56f88cd4a4c1f9fc80fc28b9",
+  "title": "iso 10218",
+  "slug": "iso-10218",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-10218",
+  "domain": "robotics",
+  "definition": "An international safety standard specifying requirements for the design, construction, and testing of industrial robots and integrated robot systems to protect operators and bystanders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Robotics Safety and Standards"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "force-control",
+      "label": "Force Control"
+    },
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

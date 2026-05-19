@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:f582fc644a2894ee8886085bec2a446ed47fee75c21f23fa500135c6680f973b",
+  "title": "anti-money laundering",
+  "slug": "anti-money-laundering",
+  "public": true,
+  "classIri": "urn:ngm:class:anti-money-laundering",
+  "domain": "infrastructure",
+  "definition": "Anti-Money Laundering (AML) encompasses the laws, regulations, and procedures designed to prevent criminals from disguising illegally obtained funds as legitimate income.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-compliance",
+      "label": "Blockchain Compliance"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "fatfrecommendations",
+      "label": "FATFRecommendations"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    }
+  ]
+}

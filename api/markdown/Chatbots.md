@@ -283,7 +283,7 @@ public:: true
       "label": "AI Application"
     },
     {
-      "@id": "urn:ngm:class:dialogue-systems",
+      "@id": "urn:ngm:class:dialogue-system",
       "label": "Dialogue Systems"
     },
     {
@@ -436,15 +436,15 @@ public:: true
         "label": "Voice Interfaces"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:claude",
+        "@id": "urn:ngm:individual:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       }
     ],

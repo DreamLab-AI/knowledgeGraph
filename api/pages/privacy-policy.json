@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:d92443f92af063b1a5ec8f2261488c1e02a9457e023c14e4e948b1c61a3231d6",
+  "title": "privacy policy",
+  "slug": "privacy-policy",
+  "public": true,
+  "classIri": "urn:ngm:class:privacy-policy",
+  "domain": "infrastructure",
+  "definition": "A formal legal document that discloses how an organisation collects, processes, stores, shares, and protects personal data in compliance with applicable privacy regulations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consent-management",
+      "label": "Consent Management"
+    },
+    {
+      "slug": "data-anonymization-pipeline",
+      "label": "Data Anonymization Pipeline"
+    },
+    {
+      "slug": "privacy-filter",
+      "label": "Privacy Filter"
+    },
+    {
+      "slug": "right-to-be-forgotten",
+      "label": "Right to Be Forgotten"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

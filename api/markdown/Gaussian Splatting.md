@@ -538,7 +538,7 @@ public:: true
         "label": "Spatial Computing System"
       },
       {
-        "@id": "urn:ngm:class:vision-pro",
+        "@id": "urn:ngm:individual:vision-pro",
         "label": "Vision Pro"
       }
     ],

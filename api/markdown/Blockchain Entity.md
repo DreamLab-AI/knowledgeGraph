@@ -150,7 +150,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:cryptographic-key",
+        "@id": "urn:ngm:class:cryptographic-keys",
         "label": "Cryptographic Key"
       },
       {

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:e5112895b62ebd62591ee4115b806dd0a07cef8e2fa8891bbe7fa9a595884abe",
+  "title": "european commission",
+  "slug": "european-commission",
+  "public": true,
+  "classIri": "urn:ngm:class:european-commission",
+  "domain": "blockchain",
+  "definition": "The executive body of the European Union responsible for proposing legislation, implementing decisions, and upholding EU treaties across member states.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Blockchain Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "robot-standard",
+      "label": "Robot Standard"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

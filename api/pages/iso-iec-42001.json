@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:7d21b7006e188e2435d049cbf6973645f8b09287cdb8ff6991638adcfbb5284a",
+  "title": "iso iec 42001",
+  "slug": "iso-iec-42001",
+  "public": true,
+  "classIri": "urn:ngm:class:iso-iec-42001",
+  "domain": "artificial-intelligence",
+  "definition": "ISO/IEC 42001 is an international management system standard that specifies requirements for establishing, implementing, and continually improving an AI management system within organisations.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "ai-governance-framework",
+      "label": "AI Governance Framework"
+    },
+    {
+      "slug": "ai-liability",
+      "label": "AI Liability"
+    },
+    {
+      "slug": "ai-model-card",
+      "label": "AI Model Card"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "accountable-party",
+      "label": "Accountable Party"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "google-deep-mind",
+      "label": "Google DeepMind"
+    },
+    {
+      "slug": "proprietary-large-language-models",
+      "label": "Proprietary Large Language Models"
+    },
+    {
+      "slug": "redress-procedure",
+      "label": "Redress Procedure"
+    },
+    {
+      "slug": "regulatory-compliance",
+      "label": "Regulatory Compliance"
+    }
+  ]
+}

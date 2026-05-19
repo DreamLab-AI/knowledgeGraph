@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:442573c37724695c5c73f3a357ead696a4073bd2f73b02788be36451e3e7d37b",
+  "title": "quantisation",
+  "slug": "quantisation",
+  "public": true,
+  "classIri": "urn:ngm:class:quantisation",
+  "domain": "artificial-intelligence",
+  "definition": "Quantisation is the process of reducing the numerical precision of a neural network's weights and activations to lower bit-widths, trading minimal accuracy loss for reduced memory footprint and faster inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "checkpoints",
+      "label": "Checkpoints"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "groq",
+      "label": "Groq"
+    },
+    {
+      "slug": "hunyuan-video",
+      "label": "Hunyuan Video"
+    },
+    {
+      "slug": "lo-ra-do-ra-etc",
+      "label": "LoRA DoRA etc"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "model-optimisation-and-performance",
+      "label": "Model Optimisation and Performance"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    }
+  ]
+}

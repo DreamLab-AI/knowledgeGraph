@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:658d44d65e8b9a3b5fa5667ef22b33f69a40569a3f3b300c0e1e3ee9ca7e68fd",
+  "title": "eip-1559",
+  "slug": "eip-1559",
+  "public": true,
+  "classIri": "urn:ngm:class:eip-1559",
+  "domain": "blockchain",
+  "definition": "An Ethereum Improvement Proposal that reformed the transaction fee market by introducing a base fee burned each block and an optional priority tip paid to block producers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Blockchain Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-finance-de-fi",
+      "label": "Decentralized Finance (DeFi)"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "liquidity-provision",
+      "label": "Liquidity Provision"
+    },
+    {
+      "slug": "nft-minting",
+      "label": "NFT Minting"
+    },
+    {
+      "slug": "proof-of-work",
+      "label": "Proof Of Work"
+    },
+    {
+      "slug": "token-economics-domain",
+      "label": "Token Economics Domain"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    }
+  ]
+}

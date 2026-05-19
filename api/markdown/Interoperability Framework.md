@@ -126,7 +126,7 @@ public:: true
         "label": "API Specifications"
       },
       {
-        "@id": "urn:ngm:class:data-formats",
+        "@id": "urn:ngm:class:data-format",
         "label": "Data Formats"
       },
       {

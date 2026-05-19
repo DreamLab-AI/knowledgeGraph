@@ -299,7 +299,7 @@ public:: true
       "label": "DeFi and Economics"
     },
     {
-      "@id": "urn:ngm:class:bitcoin",
+      "@id": "urn:ngm:individual:bitcoin",
       "label": "Bitcoin"
     }
   ],
@@ -410,7 +410,7 @@ public:: true
         "label": "Bitcoin Value Proposition"
       },
       {
-        "@id": "urn:ngm:class:micro-strategy",
+        "@id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ],
@@ -538,7 +538,7 @@ public:: true
         "label": "CBDC Frameworks"
       },
       {
-        "@id": "urn:ngm:class:micro-strategy",
+        "@id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

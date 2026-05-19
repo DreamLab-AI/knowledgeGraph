@@ -140,7 +140,7 @@ public:: true
         "label": "Caching Infrastructure"
       },
       {
-        "@id": "urn:ngm:class:database-systems",
+        "@id": "urn:ngm:class:database-system",
         "label": "Database Systems"
       },
       {

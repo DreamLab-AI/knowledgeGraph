@@ -311,7 +311,7 @@ public:: true
       "label": "Governance and Regulation"
     },
     {
-      "@id": "urn:ngm:class:decentralised-governance",
+      "@id": "urn:ngm:class:decentralized-governance",
       "label": "Decentralised Governance"
     },
     {

@@ -138,7 +138,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:metadata-schemas",
+        "@id": "urn:ngm:class:metadata-schema",
         "label": "Metadata Schemas"
       },
       {

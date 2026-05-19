@@ -522,7 +522,7 @@ public:: true
         "label": "Agent Memory"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -552,7 +552,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {

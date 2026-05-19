@@ -718,7 +718,7 @@ public:: true
         "label": "TouchDesigner"
       },
       {
-        "@id": "urn:ngm:class:blender",
+        "@id": "urn:ngm:individual:blender",
         "label": "Blender"
       },
       {
@@ -756,7 +756,7 @@ public:: true
         "label": "Wan 2.1"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux 1"
       },
       {

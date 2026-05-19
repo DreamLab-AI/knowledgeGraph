@@ -447,7 +447,7 @@ public:: true
       "label": "Path Planning"
     },
     {
-      "@id": "urn:ngm:class:autonomous-systems",
+      "@id": "urn:ngm:class:autonomous-system",
       "label": "Autonomous Systems"
     }
   ],
@@ -526,7 +526,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {
@@ -602,7 +602,7 @@ public:: true
         "label": "IMU"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -636,7 +636,7 @@ public:: true
         "label": "Visual Language Navigation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

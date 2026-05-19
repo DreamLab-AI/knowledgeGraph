@@ -566,7 +566,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:autonomous-agents",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {
@@ -648,7 +648,7 @@ public:: true
         "label": "Existential Risk"
       },
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {

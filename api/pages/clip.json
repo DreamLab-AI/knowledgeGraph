@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:67905ad3cc2dd52b1f5f6a6d2814de0396618b29b4238b9af5207aeb69936e6d",
+  "title": "clip",
+  "slug": "clip",
+  "public": true,
+  "classIri": "urn:ngm:class:clip",
+  "domain": "artificial-intelligence",
+  "definition": "CLIP (Contrastive Language-Image Pre-training) is a multimodal neural network trained by OpenAI to learn visual concepts from natural language supervision, enabling zero-shot image classification.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "fashion",
+      "label": "Fashion"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "perception-system",
+      "label": "Perception System"
+    },
+    {
+      "slug": "pika",
+      "label": "Pika"
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "label": "Segmentation and Identification"
+    },
+    {
+      "slug": "stable-diffusion-training",
+      "label": "Stable Diffusion Training"
+    },
+    {
+      "slug": "stable-diffusion",
+      "label": "Stable Diffusion"
+    }
+  ]
+}

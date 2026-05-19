@@ -758,7 +758,7 @@ public:: true
         "label": "3D Gaussian Splatting"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

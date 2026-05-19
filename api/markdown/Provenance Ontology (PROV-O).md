@@ -202,7 +202,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:audit-trails",
+        "@id": "urn:ngm:class:audit-trail",
         "label": "Audit Trails"
       },
       {

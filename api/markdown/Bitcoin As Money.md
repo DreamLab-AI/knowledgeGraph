@@ -644,7 +644,7 @@ public:: true
         "label": "Price Stability Analysis"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
@@ -776,11 +776,11 @@ public:: true
         "label": "Sound Money"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {
-        "@id": "urn:ngm:class:micro-strategy",
+        "@id": "urn:ngm:individual:micro-strategy",
         "label": "MicroStrategy"
       }
     ],

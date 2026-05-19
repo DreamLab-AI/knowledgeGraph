@@ -1,0 +1,87 @@
+{
+  "id": "urn:visionflow:page:11a4a60b518bf24989d481468076e5d5982884626aed9faeb35b8576fcd223e1",
+  "title": "python",
+  "slug": "python",
+  "public": true,
+  "classIri": "urn:ngm:class:python",
+  "domain": "artificial-intelligence",
+  "definition": "A high-level, dynamically typed, general-purpose programming language widely used in AI and data science due to its extensive library ecosystem and readable syntax.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "cli-multi-agent-systems",
+      "label": "CLI Multi-Agent Systems"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "gpt-engineer",
+      "label": "GPT Engineer"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "procedural-and-hybrid-4-d",
+      "label": "Procedural and Hybrid 4D"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "rust",
+      "label": "Rust"
+    },
+    {
+      "slug": "fast-ai",
+      "label": "fast.ai"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -402,7 +402,7 @@ public:: true
         "label": "Cross-DCC Interoperability"
       },
       {
-        "@id": "urn:ngm:class:digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       },
       {
@@ -492,15 +492,15 @@ public:: true
         "label": "Houdini"
       },
       {
-        "@id": "urn:ngm:class:blender",
+        "@id": "urn:ngm:individual:blender",
         "label": "Blender"
       },
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:individual:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       },
       {
-        "@id": "urn:ngm:class:unreal-engine",
+        "@id": "urn:ngm:individual:unreal-engine",
         "label": "Unreal Engine"
       }
     ],
@@ -522,7 +522,7 @@ public:: true
         "label": "Industrial Simulation"
       },
       {
-        "@id": "urn:ngm:class:metaverse-platforms",
+        "@id": "urn:ngm:class:metaverse-platform",
         "label": "Metaverse Platforms"
       },
       {

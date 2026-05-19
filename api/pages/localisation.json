@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:2709daa33c3a13581cd149ecf89229599e2c4c585e53dd067b6ec2493162fb1f",
+  "title": "localisation",
+  "slug": "localisation",
+  "public": true,
+  "classIri": "urn:ngm:class:localisation",
+  "domain": "robotics",
+  "definition": "Localisation in robotics is the process by which a robot estimates its position and orientation within a known or unknown environment using sensor data and probabilistic inference.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Robo Navigation and Planning"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "autonomous-navigation",
+      "label": "Autonomous Navigation"
+    },
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "sensor-fusion",
+      "label": "Sensor Fusion"
+    },
+    {
+      "slug": "translation",
+      "label": "Translation"
+    }
+  ]
+}

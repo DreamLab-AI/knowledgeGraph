@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:dc8cc42a4a025ed3c31e7f2598cff08cb06a451d0ab548fe9a3bf0893764749a",
+  "title": "hardware security module",
+  "slug": "hardware-security-module",
+  "public": true,
+  "classIri": "urn:ngm:class:hardware-security-module",
+  "domain": "infrastructure",
+  "definition": "A Hardware Security Module (HSM) is a dedicated tamper-resistant hardware device that generates, stores, and manages cryptographic keys and performs sensitive cryptographic operations in a secure enclave.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "consortium-blockchain",
+      "label": "Consortium Blockchain"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "enterprise-smart-contracts",
+      "label": "Enterprise Smart Contracts"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "multi-sig-governance",
+      "label": "Multi Sig Governance"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:4f8cceeed9bbb8fe9715bd6c87d1aa5e9c920f8974060e6a755a24ea065709e7",
+  "title": "zero trust architecture",
+  "slug": "zero-trust-architecture",
+  "public": true,
+  "classIri": "urn:ngm:class:zero-trust-architecture",
+  "domain": "infrastructure",
+  "definition": "Zero Trust Architecture is a cybersecurity model that eliminates implicit trust within a network perimeter, requiring continuous verification of every user, device, and workload regardless of location.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-workplace-platform",
+      "label": "Digital Workplace Platform"
+    },
+    {
+      "slug": "etsi-domain-identity-and-trust",
+      "label": "ETSI Domain Identity and Trust"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "trust-framework",
+      "label": "Trust Framework"
+    }
+  ]
+}

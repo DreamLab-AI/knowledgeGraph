@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:845516ec99f3fcde192ba507bb82cc802ebdf343f5aa5a3f4bb314e21467aace",
+  "title": "erc-20",
+  "slug": "erc-20",
+  "public": true,
+  "classIri": "urn:ngm:class:erc-20",
+  "domain": "blockchain",
+  "definition": "ERC-20 is the Ethereum token standard that defines a common interface for fungible tokens, enabling interoperability between wallets, exchanges, and smart contracts.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "ethereum",
+      "label": "Ethereum"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "interoperability",
+      "label": "Interoperability"
+    },
+    {
+      "slug": "layer2",
+      "label": "Layer2"
+    },
+    {
+      "slug": "rgb-and-client-side-validation",
+      "label": "RGB and Client Side Validation"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "token",
+      "label": "Token"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

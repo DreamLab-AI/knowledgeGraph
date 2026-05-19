@@ -580,7 +580,7 @@ public:: true
         "label": "WebSocket"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -724,7 +724,7 @@ public:: true
         "label": "ComfyUI Workflows"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux.1"
       },
       {
@@ -740,7 +740,7 @@ public:: true
         "label": "LoRA"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],

@@ -138,7 +138,7 @@ public:: true
         "label": "Homomorphic Encryption"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {
@@ -152,7 +152,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {

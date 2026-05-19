@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:3570bfc45572465daa408567c8c0fc520264168d17918eadee9a3a9034604737",
+  "title": "pid control",
+  "slug": "pid-control",
+  "public": true,
+  "classIri": "urn:ngm:class:pid-control",
+  "domain": "robotics",
+  "definition": "PID control is a feedback control algorithm that computes a corrective output by combining proportional, integral, and derivative terms of the error signal to regulate a system variable toward a desired setpoint.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "control-system",
+      "label": "Control System"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "derivative-control",
+      "label": "Derivative Control"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robot-control",
+      "label": "Robot Control"
+    }
+  ]
+}

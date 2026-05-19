@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:f1d62d30e9ddf973bc12d2f329597564f7e7f92d52c631fa965e4f1cec9a3297",
+  "title": "homomorphic encryption",
+  "slug": "homomorphic-encryption",
+  "public": true,
+  "classIri": "urn:ngm:class:homomorphic-encryption",
+  "domain": "infrastructure",
+  "definition": "Homomorphic encryption is a cryptographic scheme that allows computation to be performed directly on ciphertext, producing an encrypted result that matches the outcome of operations on the plaintext.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptographic-system",
+      "label": "Cryptographic System"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "privacy-preserving-analytics",
+      "label": "Privacy Preserving Analytics"
+    },
+    {
+      "slug": "privacy-preserving-blockchain",
+      "label": "Privacy Preserving Blockchain"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

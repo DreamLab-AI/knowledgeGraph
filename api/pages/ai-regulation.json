@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:fb7a3b96efea65440b152191bc128fdce8c9bdc86d9a330228b9d8cabb75d0da",
+  "title": "ai regulation",
+  "slug": "ai-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-regulation",
+  "domain": "artificial-intelligence",
+  "definition": "AI regulation encompasses laws, standards, and policies imposed by governments and regulatory bodies to govern the development, deployment, and use of artificial intelligence systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "competition-in-ai",
+      "label": "Competition in AI"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "jailbreaking",
+      "label": "Jailbreaking"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    }
+  ]
+}

@@ -824,7 +824,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:class:logseq",
+        "@id": "urn:ngm:individual:logseq",
         "label": "Logseq"
       }
     ],

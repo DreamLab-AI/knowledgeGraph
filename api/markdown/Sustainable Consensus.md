@@ -546,7 +546,7 @@ public:: true
         "label": "BLS Signature Aggregation"
       },
       {
-        "@id": "urn:ngm:class:merkle-trees",
+        "@id": "urn:ngm:class:merkle-tree",
         "label": "Merkle Trees"
       },
       {
@@ -610,7 +610,7 @@ public:: true
         "label": "Green Finance"
       },
       {
-        "@id": "urn:ngm:class:smart-contract-platforms",
+        "@id": "urn:ngm:class:smart-contract-platform",
         "label": "Smart Contract Platforms"
       },
       {

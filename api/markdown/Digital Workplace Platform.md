@@ -666,7 +666,7 @@ public:: true
         "label": "Employee Wellbeing"
       },
       {
-        "@id": "urn:ngm:class:knowledge-management-systems",
+        "@id": "urn:ngm:class:knowledge-management-system",
         "label": "Knowledge Management Systems"
       },
       {

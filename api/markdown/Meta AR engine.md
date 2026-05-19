@@ -672,7 +672,7 @@ public:: true
         "label": "Collision Detection"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "Depth Estimation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -706,7 +706,7 @@ public:: true
         "label": "AI companions"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {

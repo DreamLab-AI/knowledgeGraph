@@ -384,7 +384,7 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

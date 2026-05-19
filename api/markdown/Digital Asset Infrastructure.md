@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:cryptographic-systems",
+        "@id": "urn:ngm:class:cryptographic-system",
         "label": "Cryptographic Systems"
       },
       {

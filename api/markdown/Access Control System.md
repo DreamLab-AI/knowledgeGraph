@@ -688,7 +688,7 @@ public:: true
         "label": "Authentication"
       },
       {
-        "@id": "urn:ngm:class:cryptographic-primitives",
+        "@id": "urn:ngm:class:cryptographic-primitive",
         "label": "Cryptographic Primitives"
       },
       {

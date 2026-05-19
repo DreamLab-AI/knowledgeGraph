@@ -476,7 +476,7 @@ public:: true
         "label": "BIP-342"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -566,7 +566,7 @@ public:: true
         "label": "Lightning Channels"
       },
       {
-        "@id": "urn:ngm:class:schnorr-signatures",
+        "@id": "urn:ngm:class:schnorr-signature",
         "label": "Schnorr Signatures"
       },
       {
@@ -588,7 +588,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:atomic-swaps",
+        "@id": "urn:ngm:class:atomic-swap",
         "label": "Atomic Swaps"
       },
       {
@@ -626,7 +626,7 @@ public:: true
         "label": "AI Agent Economies"
       },
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {

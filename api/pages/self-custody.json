@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:2f973d4b1671f4311b39c4f28e9543696d17496aa54a3a5740f67ad5f5fe0cee",
+  "title": "self-custody",
+  "slug": "self-custody",
+  "public": true,
+  "classIri": "urn:ngm:class:self-custody",
+  "domain": "blockchain",
+  "definition": "Self-custody is the practice of individuals directly controlling their own private keys and digital assets without relying on a third-party custodian.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin-as-money",
+      "label": "Bitcoin As Money"
+    },
+    {
+      "slug": "bitcoin-centralisation-risks",
+      "label": "Bitcoin Centralisation Risks"
+    },
+    {
+      "slug": "bitcoin-value-proposition",
+      "label": "Bitcoin Value Proposition"
+    },
+    {
+      "slug": "bitcoin-related-links",
+      "label": "Bitcoin related links"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cashu",
+      "label": "Cashu"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "decentralized-exchange",
+      "label": "Decentralized Exchange"
+    },
+    {
+      "slug": "digital-asset-risks",
+      "label": "Digital Asset Risks"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    }
+  ]
+}

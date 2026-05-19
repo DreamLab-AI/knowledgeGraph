@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:bce4f9af16963df7295d7795c874c6f52a56adca35aaec8500214abbcf681440",
+  "title": "fca",
+  "slug": "fca",
+  "public": true,
+  "classIri": "urn:ngm:class:fca",
+  "domain": "blockchain",
+  "definition": "The Financial Conduct Authority (FCA) is the UK regulatory body responsible for overseeing financial markets, protecting consumers, and setting conduct standards for firms including those using blockchain and digital assets.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "aml-kyc-compliance",
+      "label": "AML KYC Compliance"
+    },
+    {
+      "slug": "adversarial-robustness",
+      "label": "Adversarial Robustness"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "consumer-protection",
+      "label": "Consumer Protection"
+    },
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "esg-reporting",
+      "label": "ESG Reporting"
+    },
+    {
+      "slug": "enterprise-token-standards",
+      "label": "Enterprise Token Standards"
+    },
+    {
+      "slug": "licensing-requirements",
+      "label": "Licensing Requirements"
+    },
+    {
+      "slug": "private-blockchain",
+      "label": "Private Blockchain"
+    },
+    {
+      "slug": "r3-corda",
+      "label": "R3 Corda"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    },
+    {
+      "slug": "securities-regulation",
+      "label": "Securities Regulation"
+    },
+    {
+      "slug": "stablecoin-regulation",
+      "label": "Stablecoin Regulation"
+    },
+    {
+      "slug": "travel-rule",
+      "label": "Travel Rule"
+    },
+    {
+      "slug": "value-transfer",
+      "label": "Value Transfer"
+    }
+  ]
+}

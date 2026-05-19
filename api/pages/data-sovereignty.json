@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:3c9a504241c37bb603d0f0a22ecf0875c83de59eb7033b433a462c6dcc5b19de",
+  "title": "data sovereignty",
+  "slug": "data-sovereignty",
+  "public": true,
+  "classIri": "urn:ngm:class:data-sovereignty",
+  "domain": "infrastructure",
+  "definition": "Data sovereignty is the principle that digital data is subject to the laws and governance of the nation or jurisdiction in which it is collected or processed.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Infra Legal and Regulatory"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cross-border-compliance",
+      "label": "Cross Border Compliance"
+    },
+    {
+      "slug": "data-protection",
+      "label": "Data Protection"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralised-file-storage",
+      "label": "Decentralised file storage"
+    },
+    {
+      "slug": "decentralization-layer",
+      "label": "Decentralization Layer"
+    },
+    {
+      "slug": "digital-rights",
+      "label": "Digital Rights"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "solid-pod",
+      "label": "Solid Pod"
+    },
+    {
+      "slug": "solid",
+      "label": "Solid"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:e152337e4e85aa3e81482f0ce329aec7bfad531413fe53fef84f1f0d4165caee",
+  "title": "calibration",
+  "slug": "calibration",
+  "public": true,
+  "classIri": "urn:ngm:class:calibration",
+  "domain": "robotics",
+  "definition": "Calibration in robotics and sensing is the process of determining or correcting the intrinsic and extrinsic parameters of sensors, cameras, or actuators to ensure accurate measurement and alignment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Robot Perception"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "force-torque-sensor",
+      "label": "Force Torque Sensor"
+    },
+    {
+      "slug": "human-interface-device",
+      "label": "Human Interface Device"
+    },
+    {
+      "slug": "infrared-sensor",
+      "label": "InfraredSensor"
+    },
+    {
+      "slug": "kinematics-model",
+      "label": "Kinematics Model"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "position-control",
+      "label": "PositionControl"
+    }
+  ]
+}

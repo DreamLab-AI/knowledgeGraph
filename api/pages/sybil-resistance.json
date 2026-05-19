@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:126edcd69ada3ae107b583cb18badbc88909ce560b8ea7c88194149699b77344",
+  "title": "sybil resistance",
+  "slug": "sybil-resistance",
+  "public": true,
+  "classIri": "urn:ngm:class:sybil-resistance",
+  "domain": "blockchain",
+  "definition": "Sybil resistance is the ability of a distributed network to withstand attacks in which a single adversary creates multiple fake identities to subvert reputation or consensus mechanisms.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "BC Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "dao-analytics",
+      "label": "DAO Analytics"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralized-governance",
+      "label": "Decentralized Governance"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "quadratic-voting",
+      "label": "Quadratic Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    }
+  ]
+}

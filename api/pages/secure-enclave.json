@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:374d200bedb320f596fb7ecc0ac8d660412260b31e5ae87bdc7bfbcc3462c8b1",
+  "title": "secure enclave",
+  "slug": "secure-enclave",
+  "public": true,
+  "classIri": "urn:ngm:class:secure-enclave",
+  "domain": "infrastructure",
+  "definition": "A hardware-isolated execution environment within a processor that protects cryptographic keys and sensitive computations from the host operating system and other software.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "apple",
+      "label": "Apple"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:9cf99620b37708af1e3bc507bcb62c64a043a7052e7bf39696f0ec0512fd54e2",
+  "title": "json-rpc",
+  "slug": "json-rpc",
+  "public": true,
+  "classIri": "urn:ngm:class:json-rpc",
+  "domain": "artificial-intelligence",
+  "definition": "A stateless, transport-agnostic remote procedure call protocol that encodes requests and responses as JSON objects, widely used in blockchain node APIs and AI tool-calling interfaces.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

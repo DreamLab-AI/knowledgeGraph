@@ -714,7 +714,7 @@ public:: true
         "label": "Unity ML-Agents"
       },
       {
-        "@id": "urn:ngm:class:unreal-engine",
+        "@id": "urn:ngm:individual:unreal-engine",
         "label": "Unreal Engine"
       }
     ],

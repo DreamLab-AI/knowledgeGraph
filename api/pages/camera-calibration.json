@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:4d205f656b51406028ac92d8fa77de795c4d4f0e9432ea6e8d3af0610b88af80",
+  "title": "camera calibration",
+  "slug": "camera-calibration",
+  "public": true,
+  "classIri": "urn:ngm:class:camera-calibration",
+  "domain": "spatial-computing",
+  "definition": "Camera Calibration is the process of estimating intrinsic and extrinsic camera parameters to correct lens distortion and establish the geometric relationship between 3D world coordinates and 2D image pixels.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "SC Display and Rendering"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-reconstruction",
+      "label": "3D Reconstruction"
+    },
+    {
+      "slug": "ar-registration",
+      "label": "AR Registration"
+    },
+    {
+      "slug": "calibration-target",
+      "label": "Calibration Target"
+    },
+    {
+      "slug": "camera-parameters",
+      "label": "Camera Parameters"
+    },
+    {
+      "slug": "camera",
+      "label": "Camera"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "gaussian-splatting",
+      "label": "Gaussian Splatting"
+    },
+    {
+      "slug": "light-field",
+      "label": "Light field"
+    },
+    {
+      "slug": "motion-capture-rig",
+      "label": "Motion Capture Rig"
+    },
+    {
+      "slug": "photogrammetry",
+      "label": "Photogrammetry"
+    },
+    {
+      "slug": "pose-estimation",
+      "label": "Pose Estimation"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    }
+  ]
+}

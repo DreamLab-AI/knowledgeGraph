@@ -452,7 +452,7 @@ public:: true
         "label": "Contextual Bandits"
       },
       {
-        "@id": "urn:ngm:class:graph-neural-networks",
+        "@id": "urn:ngm:class:graph-neural-network",
         "label": "Graph Neural Networks"
       },
       {
@@ -540,7 +540,7 @@ public:: true
         "label": "EU AI Act"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],

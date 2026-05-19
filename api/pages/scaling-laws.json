@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:52b7fa328c8474bd2b3ff81865a009c339287470aaffc604bfba7fa5b10110c1",
+  "title": "scaling laws",
+  "slug": "scaling-laws",
+  "public": true,
+  "classIri": "urn:ngm:class:scaling-laws",
+  "domain": "artificial-intelligence",
+  "definition": "Empirical power-law relationships that describe how model performance on held-out loss varies predictably with compute budget, parameter count, and dataset size.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "california-ai-bill",
+      "label": "California AI bill"
+    },
+    {
+      "slug": "emergence",
+      "label": "Emergence"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "training-and-fine-tuning",
+      "label": "Training and fine tuning"
+    }
+  ]
+}

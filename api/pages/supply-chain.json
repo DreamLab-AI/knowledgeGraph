@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:3f412634a4ea9da04b558d0e32b0062a692e41a1c1d10f0c5c707f14440392ce",
+  "title": "supply chain",
+  "slug": "supply-chain",
+  "public": true,
+  "classIri": "urn:ngm:class:supply-chain",
+  "domain": "infrastructure",
+  "definition": "A supply chain is the end-to-end network of organisations, processes, and information flows involved in producing and delivering a product from raw material sourcing to the final consumer.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "blockchain-oracle",
+      "label": "Blockchain Oracle"
+    },
+    {
+      "slug": "carbon-footprint-measurement",
+      "label": "Carbon Footprint Measurement"
+    },
+    {
+      "slug": "circular-economy",
+      "label": "Circular Economy"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "smart-contract",
+      "label": "Smart Contract"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

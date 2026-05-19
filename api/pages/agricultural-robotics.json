@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:d7970a92f03717b5a31febadd8dcc49c0f1a37751e6ec733ded170bdb146b11c",
+  "title": "agricultural robotics",
+  "slug": "agricultural-robotics",
+  "public": true,
+  "classIri": "urn:ngm:class:agricultural-robotics",
+  "domain": "robotics",
+  "definition": "The application of robotic systems to automate farming operations such as planting, harvesting, and crop monitoring.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robo Robot Type"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "ground-robot",
+      "label": "Ground Robot"
+    },
+    {
+      "slug": "mobile-robot-platform",
+      "label": "Mobile Robot Platform"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

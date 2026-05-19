@@ -438,7 +438,7 @@ public:: true
         "label": "Fine Tuning"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {

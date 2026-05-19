@@ -574,7 +574,7 @@ public:: true
         "label": "GHG Protocol Accounting"
       },
       {
-        "@id": "urn:ngm:class:renewable-energy-certificate",
+        "@id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificate"
       },
       {
@@ -604,7 +604,7 @@ public:: true
         "label": "Energy Audit"
       },
       {
-        "@id": "urn:ngm:class:renewable-energy-certificate",
+        "@id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificate"
       },
       {
@@ -730,7 +730,7 @@ public:: true
         "label": "KlimaDAO"
       },
       {
-        "@id": "urn:ngm:class:renewable-energy-certificate",
+        "@id": "urn:ngm:class:renewable-energy-certificates",
         "label": "Renewable Energy Certificate"
       },
       {
@@ -792,11 +792,11 @@ public:: true
         "label": "Blockchain"
       },
       {
-        "@id": "urn:ngm:class:cardano",
+        "@id": "urn:ngm:individual:cardano",
         "label": "Cardano"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
@@ -804,7 +804,7 @@ public:: true
         "label": "Smart Contract"
       },
       {
-        "@id": "urn:ngm:class:solana",
+        "@id": "urn:ngm:individual:solana",
         "label": "Solana"
       }
     ],

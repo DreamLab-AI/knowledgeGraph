@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:d694d81e0716ed3837f317c1defe1747e30ef895531a772f621a908ca1a5d6b1",
+  "title": "ens",
+  "slug": "ens",
+  "public": true,
+  "classIri": "urn:ngm:class:ens",
+  "domain": "blockchain",
+  "definition": "The Ethereum Name Service (ENS) is a decentralised, on-chain naming system mapping human-readable .eth domain names to Ethereum addresses and other distributed resources.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Blockchain Protocol and Consensus"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-application",
+      "label": "Blockchain Application"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "delegate-democracy",
+      "label": "Delegate Democracy"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "reputation-system",
+      "label": "Reputation System"
+    },
+    {
+      "slug": "snapshot-voting",
+      "label": "Snapshot Voting"
+    },
+    {
+      "slug": "tokenomics-governance",
+      "label": "Tokenomics Governance"
+    },
+    {
+      "slug": "treasury-management",
+      "label": "Treasury Management"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "web3",
+      "label": "Web3"
+    }
+  ]
+}

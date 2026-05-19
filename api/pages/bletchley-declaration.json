@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:160038e9c04a80ed94cac2f1ef69031cfdf4a543ef4dcdf612541475db61abd9",
+  "title": "bletchley declaration",
+  "slug": "bletchley-declaration",
+  "public": true,
+  "classIri": "urn:ngm:class:bletchley-declaration",
+  "domain": "artificial-intelligence",
+  "definition": "The Bletchley Declaration is the 2023 international agreement signed at the AI Safety Summit in which participating nations committed to cooperative risk assessment and governance of frontier AI systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "asia-pacific-regulation",
+      "label": "Asia Pacific Regulation"
+    },
+    {
+      "slug": "safety-and-alignment",
+      "label": "Safety and alignment"
+    }
+  ]
+}

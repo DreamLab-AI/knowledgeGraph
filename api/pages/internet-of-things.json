@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:16b312e9599a87e412d1eb1456e0a3a936ec64962d05c352192c43e4de1383ef",
+  "title": "internet of things",
+  "slug": "internet-of-things",
+  "public": true,
+  "classIri": "urn:ngm:class:internet-of-things",
+  "domain": "infrastructure",
+  "definition": "The Internet of Things (IoT) is a network of physical devices embedded with sensors, software, and connectivity that collect and exchange data with other systems over the internet.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network and Comms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "adoption-of-convergent-technologies",
+      "label": "Adoption of Convergent Technologies"
+    },
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "cold-chain-monitoring",
+      "label": "Cold Chain Monitoring"
+    },
+    {
+      "slug": "conflict-mineral-tracking",
+      "label": "Conflict Mineral Tracking"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "digital-objects",
+      "label": "Digital Objects"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "food-safety-blockchain",
+      "label": "Food Safety Blockchain"
+    },
+    {
+      "slug": "hardware-and-edge",
+      "label": "Hardware and Edge"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "io-t-sensors",
+      "label": "Io T Sensors"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "luxury-goods-authentication",
+      "label": "Luxury Goods Authentication"
+    },
+    {
+      "slug": "pharmaceutical-traceability",
+      "label": "Pharmaceutical Traceability"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "provenance-tracking",
+      "label": "Provenance Tracking"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

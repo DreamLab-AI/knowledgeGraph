@@ -1616,7 +1616,7 @@ public:: true
         "label": "Stranded Gas"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {

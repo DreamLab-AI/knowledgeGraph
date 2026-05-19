@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:b42cd20f13fa64c023551dec2737e38a50cd8d02cf21561853aa97c371fd161f",
+  "title": "autonomous driving",
+  "slug": "autonomous-driving",
+  "public": true,
+  "classIri": "urn:ngm:class:autonomous-driving",
+  "domain": "artificial-intelligence",
+  "definition": "Autonomous driving is the capability of a vehicle to sense its environment and navigate without human input, integrating perception, prediction, and planning AI subsystems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "image-segmentation",
+      "label": "Image Segmentation"
+    },
+    {
+      "slug": "imitation-learning",
+      "label": "Imitation Learning"
+    },
+    {
+      "slug": "model-based-control",
+      "label": "Model Based Control"
+    }
+  ]
+}

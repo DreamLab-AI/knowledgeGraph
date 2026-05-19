@@ -170,7 +170,7 @@ public:: true
         "label": "Proposal Mechanism"
       },
       {
-        "@id": "urn:ngm:class:voting-system",
+        "@id": "urn:ngm:class:voting-systems",
         "label": "Voting System"
       },
       {

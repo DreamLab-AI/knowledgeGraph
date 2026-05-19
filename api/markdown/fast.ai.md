@@ -614,7 +614,7 @@ public:: true
         "label": "Adam Optimiser"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -664,11 +664,11 @@ public:: true
         "label": "ULMFiT"
       },
       {
-        "@id": "urn:ngm:class:bert",
+        "@id": "urn:ngm:individual:bert",
         "label": "BERT"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -698,7 +698,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-training",
+        "@id": "urn:ngm:individual:stable-diffusion-training",
         "label": "Stable Diffusion Training"
       }
     ],

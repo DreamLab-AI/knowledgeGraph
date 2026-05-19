@@ -462,7 +462,7 @@ public:: true
         "label": "Pretrained Diffusion U-Net"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -558,7 +558,7 @@ public:: true
         "label": "Subject-Driven Generation"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "FLUX.1"
       }
     ],
@@ -588,7 +588,7 @@ public:: true
         "label": "PuLID"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

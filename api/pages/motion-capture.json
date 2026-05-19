@@ -82,7 +82,7 @@
     ],
     "enables": [
       {
-        "id": "urn:ngm:class:digital-human",
+        "id": "urn:ngm:class:digital-humans",
         "label": "Digital Human"
       },
       {
@@ -167,7 +167,7 @@
         "label": "Cinematics"
       },
       {
-        "id": "urn:ngm:class:digital-twins",
+        "id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       },
       {

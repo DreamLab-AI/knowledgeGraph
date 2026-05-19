@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:3d5f4f95cdb1cdfc71014efa1a669fd42599a0ce2000d914a409e48bccaed584",
+  "title": "ed25519",
+  "slug": "ed25519",
+  "public": true,
+  "classIri": "urn:ngm:class:ed25519",
+  "domain": "blockchain",
+  "definition": "A high-performance elliptic-curve digital signature scheme based on the Twisted Edwards curve over the prime field GF(2^255-19), providing 128-bit security.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptocurrency",
+      "label": "Cryptocurrency"
+    },
+    {
+      "slug": "cryptographic-domain",
+      "label": "Cryptographic Domain"
+    },
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-signature",
+      "label": "Digital Signature"
+    },
+    {
+      "slug": "hyperledger-iroha",
+      "label": "Hyperledger Iroha"
+    }
+  ]
+}

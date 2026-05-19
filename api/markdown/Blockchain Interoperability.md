@@ -686,7 +686,7 @@ public:: true
         "label": "Threshold Signature Scheme"
       },
       {
-        "@id": "urn:ngm:class:zk-snark",
+        "@id": "urn:ngm:class:zk-snarks",
         "label": "ZK-SNARK"
       }
     ],

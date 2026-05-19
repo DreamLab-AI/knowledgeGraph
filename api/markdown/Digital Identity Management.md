@@ -114,7 +114,7 @@ public:: true
         "label": "Credential Storage"
       },
       {
-        "@id": "urn:ngm:class:identity-providers",
+        "@id": "urn:ngm:class:identity-provider",
         "label": "Identity Providers"
       },
       {

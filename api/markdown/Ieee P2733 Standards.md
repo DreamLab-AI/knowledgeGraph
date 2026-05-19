@@ -66,7 +66,7 @@ public:: true
   "relations": {
     "enables": [
       {
-        "@id": "urn:ngm:class:safe-immersive-experiences",
+        "@id": "urn:ngm:class:safe-immersive-experience",
         "label": "Safe Immersive Experiences"
       }
     ]

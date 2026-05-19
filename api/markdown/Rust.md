@@ -466,7 +466,7 @@ public:: true
         "label": "Memory Management"
       },
       {
-        "@id": "urn:ngm:class:operating-systems",
+        "@id": "urn:ngm:class:operating-system",
         "label": "Operating Systems"
       },
       {
@@ -476,7 +476,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:blockchain-networks",
+        "@id": "urn:ngm:class:blockchain-network",
         "label": "Blockchain Networks"
       },
       {

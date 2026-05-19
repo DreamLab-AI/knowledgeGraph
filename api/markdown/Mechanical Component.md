@@ -942,11 +942,11 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:collaborative-robots",
+        "@id": "urn:ngm:class:collaborative-robot",
         "label": "Collaborative Robots"
       },
       {
-        "@id": "urn:ngm:class:humanoid-robots",
+        "@id": "urn:ngm:class:humanoid-robot",
         "label": "Humanoid Robots"
       },
       {

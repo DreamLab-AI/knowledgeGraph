@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:a84ef85dc839f82779e70eca64303e9428fe83331e64338e2a1093c968435a48",
+  "title": "architectural visualisation",
+  "slug": "architectural-visualisation",
+  "public": true,
+  "classIri": "urn:ngm:class:architectural-visualisation",
+  "domain": "spatial-computing",
+  "definition": "Architectural visualisation is the process of creating two- or three-dimensional images or animations showing the attributes of a proposed architectural design using spatial computing technologies.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "SC Content and Assets"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blender",
+      "label": "Blender"
+    },
+    {
+      "slug": "control-net-and-similar-spatial-conditioning-systems",
+      "label": "ControlNet and Similar Spatial Conditioning Systems"
+    },
+    {
+      "slug": "dall-e",
+      "label": "DALL\u00b7E"
+    },
+    {
+      "slug": "midjourney",
+      "label": "Midjourney"
+    },
+    {
+      "slug": "mixed-reality",
+      "label": "Mixed Reality"
+    },
+    {
+      "slug": "ray-tracing",
+      "label": "Ray Tracing"
+    },
+    {
+      "slug": "rendering-pipeline",
+      "label": "Rendering Pipeline"
+    },
+    {
+      "slug": "vision-pro",
+      "label": "Vision Pro"
+    }
+  ]
+}

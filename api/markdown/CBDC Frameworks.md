@@ -588,7 +588,7 @@ public:: true
         "label": "AML CFT Framework"
       },
       {
-        "@id": "urn:ngm:class:api-standards",
+        "@id": "urn:ngm:class:api-standard",
         "label": "API Standards"
       },
       {
@@ -714,7 +714,7 @@ public:: true
         "label": "Near Field Communication"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {
@@ -784,7 +784,7 @@ public:: true
         "label": "Project Nexus"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {

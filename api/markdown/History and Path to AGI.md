@@ -410,7 +410,7 @@ public:: true
         "label": "AI Safety Research"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -458,7 +458,7 @@ public:: true
         "label": "GPU Compute"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -496,7 +496,7 @@ public:: true
         "label": "Artificial General Intelligence"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {

@@ -538,11 +538,11 @@ public:: true
         "label": "CNC Machine Tools"
       },
       {
-        "@id": "urn:ngm:class:collaborative-robots",
+        "@id": "urn:ngm:class:collaborative-robot",
         "label": "Collaborative Robots"
       },
       {
-        "@id": "urn:ngm:class:delta-robots",
+        "@id": "urn:ngm:class:delta-robot",
         "label": "Delta Robots"
       },
       {
@@ -554,7 +554,7 @@ public:: true
         "label": "Manufacturing Robots"
       },
       {
-        "@id": "urn:ngm:class:scara-robots",
+        "@id": "urn:ngm:class:scara-robot",
         "label": "SCARA Robots"
       }
     ],

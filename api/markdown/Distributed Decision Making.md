@@ -318,7 +318,7 @@ public:: true
         "label": "Conflict Resolution"
       },
       {
-        "@id": "urn:ngm:class:consensus-protocols",
+        "@id": "urn:ngm:class:consensus-protocol",
         "label": "Consensus Protocols"
       },
       {
@@ -426,7 +426,7 @@ public:: true
         "label": "Token-Weighted Voting"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero-Knowledge Proofs"
       },
       {

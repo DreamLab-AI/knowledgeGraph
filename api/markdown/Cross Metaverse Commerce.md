@@ -90,7 +90,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:interoperability-standards",
+        "@id": "urn:ngm:class:interoperability-standard",
         "label": "Interoperability Standards"
       },
       {

@@ -148,7 +148,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:communication-protocols",
+        "@id": "urn:ngm:class:communication-protocol",
         "label": "Communication Protocols"
       },
       {

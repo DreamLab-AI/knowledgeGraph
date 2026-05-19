@@ -652,7 +652,7 @@ public:: true
         "label": "Code-switching"
       },
       {
-        "@id": "urn:ngm:class:dialogue-systems",
+        "@id": "urn:ngm:class:dialogue-system",
         "label": "Dialogue Systems"
       },
       {

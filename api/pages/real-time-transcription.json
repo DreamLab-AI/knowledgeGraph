@@ -1,0 +1,43 @@
+{
+  "id": "urn:visionflow:page:c7d780c1116ed1424077406e7497d22ced3ec188efb9be0b1789f0cb13baa4a8",
+  "title": "real-time transcription",
+  "slug": "real-time-transcription",
+  "public": true,
+  "classIri": "urn:ngm:class:real-time-transcription",
+  "domain": "artificial-intelligence",
+  "definition": "Automated speech recognition processing in which audio is converted to text with sub-second latency, enabling live captioning, voice interfaces, and streaming analytics.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "call-centres",
+      "label": "Call Centres"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    }
+  ]
+}

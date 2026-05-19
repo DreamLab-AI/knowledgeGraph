@@ -150,7 +150,7 @@ public:: true
   "relations": {
     "requires": [
       {
-        "@id": "urn:ngm:class:proximity-sensors",
+        "@id": "urn:ngm:class:proximity-sensor",
         "label": "Proximity Sensors"
       },
       {

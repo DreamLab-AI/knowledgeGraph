@@ -400,7 +400,7 @@ public:: true
         "label": "Backbone Network"
       },
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -536,7 +536,7 @@ public:: true
         "label": "AI Diagram Tools"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {

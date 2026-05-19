@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:b0515c3530385ed70aab8811467b5cd73ad2007389384959e3d232f8a1fabf60",
+  "title": "fraud detection",
+  "slug": "fraud-detection",
+  "public": true,
+  "classIri": "urn:ngm:class:fraud-detection",
+  "domain": "infrastructure",
+  "definition": "The application of statistical models, machine learning, and rule-based systems to identify anomalous transactions or behaviours indicative of deception or unauthorised activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "compliance-monitoring",
+      "label": "Compliance Monitoring"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "identity-graph",
+      "label": "Identity Graph"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

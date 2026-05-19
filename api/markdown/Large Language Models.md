@@ -243,7 +243,7 @@ public:: true
       "label": "Neural Network"
     },
     {
-      "@id": "urn:ngm:class:foundation-models",
+      "@id": "urn:ngm:individual:foundation-models",
       "label": "Foundation Models"
     }
   ],

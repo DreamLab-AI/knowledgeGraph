@@ -606,7 +606,7 @@ public:: true
         "label": "USD"
       },
       {
-        "@id": "urn:ngm:class:rust",
+        "@id": "urn:ngm:individual:rust",
         "label": "Rust"
       }
     ],
@@ -616,7 +616,7 @@ public:: true
         "label": "5G"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

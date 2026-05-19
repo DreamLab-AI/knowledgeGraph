@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:bafbceee7dedb3238c4f42be9d91d438cb0dda6f2b156b661b5e0dcb6a3b28cb",
+  "title": "server-sent events",
+  "slug": "server-sent-events",
+  "public": true,
+  "classIri": "urn:ngm:class:server-sent-events",
+  "domain": "artificial-intelligence",
+  "definition": "Server-Sent Events (SSE) is a W3C standard for a unidirectional server-to-client streaming protocol over HTTP, enabling real-time push notifications without WebSocket overhead.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "api-gateway",
+      "label": "API Gateway"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "presence-indicator",
+      "label": "Presence Indicator"
+    }
+  ]
+}

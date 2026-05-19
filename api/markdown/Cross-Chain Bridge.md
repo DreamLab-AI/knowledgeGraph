@@ -662,7 +662,7 @@ public:: true
         "label": "Trusted Execution Environment"
       },
       {
-        "@id": "urn:ngm:class:zk-snark",
+        "@id": "urn:ngm:class:zk-snarks",
         "label": "ZK-SNARK"
       }
     ],

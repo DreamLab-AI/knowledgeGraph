@@ -712,7 +712,7 @@ public:: true
     ],
     "relatedTo": [
       {
-        "@id": "urn:ngm:class:cbdc",
+        "@id": "urn:ngm:class:cbdcs",
         "label": "CBDC"
       },
       {

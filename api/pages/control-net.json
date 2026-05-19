@@ -1,0 +1,99 @@
+{
+  "id": "urn:visionflow:page:2de396bbeea0c70bf93100e93dfe9d92fa26049d72f4df6e1d4c8ed496f96fc4",
+  "title": "controlnet",
+  "slug": "control-net",
+  "public": true,
+  "classIri": "urn:ngm:class:control-net",
+  "domain": "artificial-intelligence",
+  "definition": "ControlNet is a neural network architecture that adds conditional spatial control (e.g., edge maps, depth maps, poses) to pre-trained diffusion models via zero-convolution layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-upscaling-and-super-resolution",
+      "label": "AI Upscaling and Super-Resolution"
+    },
+    {
+      "slug": "ai-video",
+      "label": "AI Video"
+    },
+    {
+      "slug": "animate-diff",
+      "label": "AnimateDiff"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "comfy-ui-for-fashion-and-brands",
+      "label": "comfy-ui-for-fashion-and-brands"
+    },
+    {
+      "slug": "comfy-ui",
+      "label": "ComfyUI"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "face-swap",
+      "label": "Face Swap"
+    },
+    {
+      "slug": "flux-1",
+      "label": "Flux.1"
+    },
+    {
+      "slug": "fooocus",
+      "label": "Fooocus"
+    },
+    {
+      "slug": "ip-adapter",
+      "label": "IP-Adapter"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "kohya-dreambooth-and-similar",
+      "label": "KOHYA Dreambooth and similar"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "virtual-production",
+      "label": "Virtual Production"
+    }
+  ]
+}

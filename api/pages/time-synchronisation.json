@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:72e8acf107890f1823f678be03eadcd539f58e0f4d26f198bfd69018c7ba4a56",
+  "title": "time synchronisation",
+  "slug": "time-synchronisation",
+  "public": true,
+  "classIri": "urn:ngm:class:time-synchronisation",
+  "domain": "infrastructure",
+  "definition": "The process of coordinating clocks across distributed systems to maintain a consistent notion of time, typically via protocols such as NTP or PTP.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Infra Network and Comms"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "access-control-system",
+      "label": "Access Control System"
+    },
+    {
+      "slug": "distributed-computing",
+      "label": "Distributed Computing"
+    },
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "exteroceptive-sensor",
+      "label": "Exteroceptive Sensor"
+    },
+    {
+      "slug": "fault-tolerance",
+      "label": "Fault Tolerance"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    }
+  ]
+}

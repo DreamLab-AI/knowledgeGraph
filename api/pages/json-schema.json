@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:74a768d7036d710fd0ea30187617badf67dd205c711c24e8cc659c277accb9e3",
+  "title": "json schema",
+  "slug": "json-schema",
+  "public": true,
+  "classIri": "urn:ngm:class:json-schema",
+  "domain": "artificial-intelligence",
+  "definition": "JSON Schema is a declarative vocabulary that allows annotation and validation of JSON documents by specifying their required structure, data types, and constraints.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "diagrams-as-code",
+      "label": "Diagrams as Code"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "metadata-standard",
+      "label": "Metadata Standard"
+    },
+    {
+      "slug": "model-context-protocol",
+      "label": "Model Context Protocol"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "gl-tf-3-d-file-format",
+      "label": "glTF (3D File Format)"
+    }
+  ]
+}

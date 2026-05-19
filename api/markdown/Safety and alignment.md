@@ -352,7 +352,7 @@ public:: true
         "label": "Evaluation Benchmarks"
       },
       {
-        "@id": "urn:ngm:class:governance-frameworks",
+        "@id": "urn:ngm:class:governance-framework",
         "label": "Governance Frameworks"
       },
       {
@@ -460,7 +460,7 @@ public:: true
         "label": "AI Risks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

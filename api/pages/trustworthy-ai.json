@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:7af2b065b005d471f55fd101475b5f13f417cb4a3a3278b2127193cf4f0f1d19",
+  "title": "trustworthy ai",
+  "slug": "trustworthy-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:trustworthy-ai",
+  "domain": "artificial-intelligence",
+  "definition": "An AI system designed and operated according to principles of lawfulness, robustness, fairness, transparency, and human oversight, as defined by regulatory frameworks such as the EU AI Act.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risk-management",
+      "label": "AI Risk Management"
+    },
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "eu-ai-act",
+      "label": "EU AI Act"
+    },
+    {
+      "slug": "ethical-ai",
+      "label": "Ethical AI"
+    },
+    {
+      "slug": "responsible-ai",
+      "label": "Responsible AI"
+    }
+  ]
+}

@@ -678,15 +678,15 @@ public:: true
         "label": "Microsoft Immersive Reader"
       },
       {
-        "@id": "urn:ngm:class:claude",
+        "@id": "urn:ngm:individual:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:class:gpt-4",
+        "@id": "urn:ngm:individual:gpt-4",
         "label": "GPT 4"
       },
       {

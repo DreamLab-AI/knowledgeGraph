@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:f6243e3f2c156210d1ead9b3a6c1cc665652ca76743b45b431905d288e59a34d",
+  "title": "bundle adjustment",
+  "slug": "bundle-adjustment",
+  "public": true,
+  "classIri": "urn:ngm:class:bundle-adjustment",
+  "domain": "artificial-intelligence",
+  "definition": "A non-linear least-squares optimisation technique in computer vision and photogrammetry that simultaneously refines 3-D structure and camera pose estimates to minimise reprojection error.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "motion-capture",
+      "label": "Motion Capture"
+    },
+    {
+      "slug": "scene-capture-and-reconstruction",
+      "label": "Scene Capture and Reconstruction"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

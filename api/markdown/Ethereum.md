@@ -744,7 +744,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {

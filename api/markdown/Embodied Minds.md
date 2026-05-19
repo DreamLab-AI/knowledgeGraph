@@ -544,7 +544,7 @@ public:: true
         "label": "Sensorimotor Coupling"
       },
       {
-        "@id": "urn:ngm:class:sensors",
+        "@id": "urn:ngm:class:sensor",
         "label": "Sensors"
       }
     ],
@@ -666,7 +666,7 @@ public:: true
         "label": "Assistive Robotics"
       },
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

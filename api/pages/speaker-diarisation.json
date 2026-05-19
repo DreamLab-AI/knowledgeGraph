@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:eadbe29d30b27882f835f0d40b8a42085d2961d179c2420cfcd3d012e22adc8f",
+  "title": "speaker diarisation",
+  "slug": "speaker-diarisation",
+  "public": true,
+  "classIri": "urn:ngm:class:speaker-diarisation",
+  "domain": "distributed-collaboration",
+  "definition": "Speaker diarisation is the process of automatically segmenting an audio stream and labelling each segment with the identity of the speaker who produced it.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "DC Communication"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "asynchronous-video",
+      "label": "Asynchronous Video"
+    },
+    {
+      "slug": "automated-podcasting",
+      "label": "Automated Podcasting"
+    },
+    {
+      "slug": "meeting-ai-assistant",
+      "label": "Meeting AI Assistant"
+    },
+    {
+      "slug": "meeting-recording",
+      "label": "Meeting Recording"
+    },
+    {
+      "slug": "open-ai-whisper",
+      "label": "Open AI Whisper"
+    },
+    {
+      "slug": "real-time-translation",
+      "label": "Real-time Translation"
+    }
+  ]
+}

@@ -326,7 +326,7 @@ public:: true
         "label": "Proof Method"
       },
       {
-        "@id": "urn:ngm:class:verifiable-credential",
+        "@id": "urn:ngm:class:verifiable-credentials",
         "label": "Verifiable Credential"
       },
       {
@@ -336,7 +336,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:decentralised-identifiers",
+        "@id": "urn:ngm:class:decentralized-identifiers",
         "label": "Decentralised Identifiers"
       },
       {

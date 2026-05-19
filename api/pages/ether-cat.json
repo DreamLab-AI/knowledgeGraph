@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:8f0c16cae49c3489e1d4a6e1927a0199e186f520cf759b7cb0fedd4190880c52",
+  "title": "ethercat",
+  "slug": "ether-cat",
+  "public": true,
+  "classIri": "urn:ngm:class:ether-cat",
+  "domain": "robotics",
+  "definition": "An Ethernet-based fieldbus protocol designed for deterministic, real-time communication between industrial controllers and actuators with sub-microsecond synchronisation.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "industrial-robot",
+      "label": "Industrial Robot"
+    },
+    {
+      "slug": "motion-control",
+      "label": "Motion Control"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    },
+    {
+      "slug": "robotics-platform",
+      "label": "Robotics Platform"
+    }
+  ]
+}

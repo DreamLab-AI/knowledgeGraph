@@ -483,7 +483,7 @@ public:: true
       "label": "Consortium Blockchain"
     },
     {
-      "@id": "urn:ngm:class:ethereum",
+      "@id": "urn:ngm:individual:ethereum",
       "label": "Ethereum"
     }
   ],

@@ -1,0 +1,115 @@
+{
+  "id": "urn:visionflow:page:5f19700bfc48e4736116c984e3a4e43fdf120c463c310f455e8d51962680611b",
+  "title": "user experience",
+  "slug": "user-experience",
+  "public": true,
+  "classIri": "urn:ngm:class:user-experience",
+  "domain": "spatial-computing",
+  "definition": "The holistic quality of a person's interaction with a spatial-computing system, encompassing usability, comfort, immersion, and satisfaction across hardware, software, and content dimensions.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Spatial Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "ai-user",
+      "label": "AI User"
+    },
+    {
+      "slug": "accessibility",
+      "label": "Accessibility"
+    },
+    {
+      "slug": "accessible-experience",
+      "label": "Accessible Experience"
+    },
+    {
+      "slug": "accuracy",
+      "label": "Accuracy"
+    },
+    {
+      "slug": "application-layer",
+      "label": "Application Layer"
+    },
+    {
+      "slug": "artificial-intelligence",
+      "label": "Artificial Intelligence"
+    },
+    {
+      "slug": "cross-platform-identity",
+      "label": "Cross-Platform Identity"
+    },
+    {
+      "slug": "etsi-domain-human-interface",
+      "label": "ETSI_Domain_Human_Interface"
+    },
+    {
+      "slug": "feature-importance",
+      "label": "Feature Importance"
+    },
+    {
+      "slug": "high-risk-ai-system",
+      "label": "High Risk AI System"
+    },
+    {
+      "slug": "image-generation",
+      "label": "Image Generation"
+    },
+    {
+      "slug": "interaction-domain",
+      "label": "Interaction Domain"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "lightning-and-similar-l2",
+      "label": "Lightning and Similar L2"
+    },
+    {
+      "slug": "model-performance",
+      "label": "Model Performance"
+    },
+    {
+      "slug": "performance-optimization",
+      "label": "Performance Optimization"
+    },
+    {
+      "slug": "product-design",
+      "label": "Product Design"
+    },
+    {
+      "slug": "trust-in-automation",
+      "label": "Trust in Automation"
+    }
+  ]
+}

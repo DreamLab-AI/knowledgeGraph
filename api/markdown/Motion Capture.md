@@ -418,7 +418,7 @@ public:: true
     ],
     "enables": [
       {
-        "@id": "urn:ngm:class:digital-human",
+        "@id": "urn:ngm:class:digital-humans",
         "label": "Digital Human"
       },
       {
@@ -522,7 +522,7 @@ public:: true
         "label": "Cinematics"
       },
       {
-        "@id": "urn:ngm:class:digital-twins",
+        "@id": "urn:ngm:class:digital-twin",
         "label": "Digital Twins"
       },
       {

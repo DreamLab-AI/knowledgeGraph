@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:02b7a9405d000f53524ef388fab0c7a4d010acc13519f30fed6a8de8fbebd708",
+  "title": "visual odometry",
+  "slug": "visual-odometry",
+  "public": true,
+  "classIri": "urn:ngm:class:visual-odometry",
+  "domain": "artificial-intelligence",
+  "definition": "A technique for estimating an agent's ego-motion and trajectory by analysing sequential images from one or more cameras, serving as a lightweight alternative to GPS or wheel encoders.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "depth-estimation",
+      "label": "Depth Estimation"
+    },
+    {
+      "slug": "differential-drive-robot",
+      "label": "Differential Drive Robot"
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "label": "Lens and Camera Calibration"
+    },
+    {
+      "slug": "navigation",
+      "label": "Navigation"
+    },
+    {
+      "slug": "slam",
+      "label": "SLAM"
+    },
+    {
+      "slug": "spatial-anchor",
+      "label": "Spatial Anchor"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    },
+    {
+      "slug": "topological-map",
+      "label": "Topological Map"
+    }
+  ]
+}

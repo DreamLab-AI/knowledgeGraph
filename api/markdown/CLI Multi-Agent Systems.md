@@ -291,7 +291,7 @@ public:: true
       "label": "Agentic Workflow"
     },
     {
-      "@id": "urn:ngm:class:autonomous-agents",
+      "@id": "urn:ngm:class:autonomous-agent",
       "label": "Autonomous Agents"
     }
   ],
@@ -332,7 +332,7 @@ public:: true
     ],
     "requires": [
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
@@ -438,7 +438,7 @@ public:: true
         "label": "Python"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:individual:docker",
         "label": "Docker"
       },
       {
@@ -452,7 +452,7 @@ public:: true
         "label": "AutoGen"
       },
       {
-        "@id": "urn:ngm:class:autonomous-agents",
+        "@id": "urn:ngm:class:autonomous-agent",
         "label": "Autonomous Agents"
       },
       {

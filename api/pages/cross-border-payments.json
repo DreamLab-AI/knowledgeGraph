@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:17c3de930e64201dd248a70d56ff6b75444b8c6fa2ffc188520f18c85afd90c4",
+  "title": "cross-border payments",
+  "slug": "cross-border-payments",
+  "public": true,
+  "classIri": "urn:ngm:class:cross-border-payments",
+  "domain": "blockchain",
+  "definition": "Cross-Border Payments are financial transactions that originate in one country and are settled in another, increasingly facilitated by blockchain rails to reduce cost, latency, and intermediary friction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "BC DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bitcoin",
+      "label": "Bitcoin"
+    },
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "cbdc-frameworks",
+      "label": "CBDC Frameworks"
+    },
+    {
+      "slug": "cbdcs",
+      "label": "CBDCs"
+    },
+    {
+      "slug": "digital-payment-system",
+      "label": "Digital Payment System"
+    },
+    {
+      "slug": "distributed-ledger",
+      "label": "Distributed Ledger"
+    },
+    {
+      "slug": "money",
+      "label": "Money"
+    },
+    {
+      "slug": "quorum-blockchain",
+      "label": "Quorum Blockchain"
+    }
+  ]
+}

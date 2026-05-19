@@ -1,0 +1,63 @@
+{
+  "id": "urn:visionflow:page:b6ef334de334d9180e3305c0271c2f8fa98e95f3c7e9e81a0f04eca5ffcef68d",
+  "title": "embedding model",
+  "slug": "embedding-model",
+  "public": true,
+  "classIri": "urn:ngm:class:embedding-model",
+  "domain": "artificial-intelligence",
+  "definition": "An embedding model is a neural network trained to map discrete or high-dimensional inputs\u2014such as text, images, or graphs\u2014into dense, continuous vector representations that preserve semantic relationships.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-search",
+      "label": "AI Search"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "hyper-personalisation",
+      "label": "Hyper personalisation"
+    },
+    {
+      "slug": "lang-chain",
+      "label": "LangChain"
+    },
+    {
+      "slug": "retrieval-augmented-generation-rag",
+      "label": "Retrieval Augmented Generation - RAG"
+    },
+    {
+      "slug": "semantic-search",
+      "label": "Semantic Search"
+    }
+  ]
+}

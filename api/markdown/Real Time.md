@@ -451,7 +451,7 @@ public:: true
       "label": "Computing and Cloud"
     },
     {
-      "@id": "urn:ngm:class:operating-systems",
+      "@id": "urn:ngm:class:operating-system",
       "label": "Operating Systems"
     },
     {
@@ -526,7 +526,7 @@ public:: true
         "label": "Automotive Control"
       },
       {
-        "@id": "urn:ngm:class:autonomous-systems",
+        "@id": "urn:ngm:class:autonomous-system",
         "label": "Autonomous Systems"
       },
       {
@@ -638,7 +638,7 @@ public:: true
     ],
     "supports": [
       {
-        "@id": "urn:ngm:class:autonomous-vehicles",
+        "@id": "urn:ngm:class:autonomous-vehicle",
         "label": "Autonomous Vehicles"
       },
       {

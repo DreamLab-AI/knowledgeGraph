@@ -479,7 +479,7 @@ public:: true
       "label": "AI Technique"
     },
     {
-      "@id": "urn:ngm:class:neural-networks",
+      "@id": "urn:ngm:class:neural-network",
       "label": "Neural Networks"
     },
     {
@@ -586,7 +586,7 @@ public:: true
         "label": "Code Generation"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -662,7 +662,7 @@ public:: true
         "label": "Cognitive AI"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],
@@ -706,11 +706,11 @@ public:: true
         "label": "Agents"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -718,11 +718,11 @@ public:: true
         "label": "Evaluation benchmarks and leaderboards"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       },
       {
-        "@id": "urn:ngm:class:grok",
+        "@id": "urn:ngm:individual:grok",
         "label": "Grok"
       }
     ],

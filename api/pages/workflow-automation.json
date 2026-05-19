@@ -1,0 +1,67 @@
+{
+  "id": "urn:visionflow:page:48c27e2fdfe048df611b2007b93536b9375c3f62958e9a0dc73003697da650e1",
+  "title": "workflow automation",
+  "slug": "workflow-automation",
+  "public": true,
+  "classIri": "urn:ngm:class:workflow-automation",
+  "domain": "artificial-intelligence",
+  "definition": "Workflow automation is the use of software, including AI-driven orchestration, to execute a series of tasks or business processes with minimal human intervention.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "compliance-control",
+      "label": "Compliance Control"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "gpts-and-custom-assistants",
+      "label": "GPTs and Custom Assistants"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    }
+  ]
+}

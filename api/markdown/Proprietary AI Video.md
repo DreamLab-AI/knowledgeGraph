@@ -326,7 +326,7 @@ public:: true
         "label": "Model Optimisation and Performance"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
@@ -344,7 +344,7 @@ public:: true
         "label": "Diffusion Models"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
@@ -434,7 +434,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -442,7 +442,7 @@ public:: true
         "label": "Attention"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -458,11 +458,11 @@ public:: true
         "label": "Latent Space"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion-training",
+        "@id": "urn:ngm:individual:stable-diffusion-training",
         "label": "Stable Diffusion Training"
       },
       {
@@ -488,7 +488,7 @@ public:: true
         "label": "AI Video"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
@@ -500,11 +500,11 @@ public:: true
         "label": "Deepfakes and fraudulent content"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       },
       {

@@ -484,7 +484,7 @@ public:: true
         "label": "Text Encoder"
       },
       {
-        "@id": "urn:ngm:class:variational-autoencoder",
+        "@id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {
@@ -614,7 +614,7 @@ public:: true
         "label": "CLIP"
       },
       {
-        "@id": "urn:ngm:class:deepfake",
+        "@id": "urn:ngm:class:deepfakes",
         "label": "Deepfake"
       },
       {

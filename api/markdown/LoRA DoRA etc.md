@@ -331,7 +331,7 @@ public:: true
       "label": "Model Adaptation"
     },
     {
-      "@id": "urn:ngm:class:neural-networks",
+      "@id": "urn:ngm:class:neural-network",
       "label": "Neural Networks"
     }
   ],
@@ -474,7 +474,7 @@ public:: true
         "label": "Rank Decomposition"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
@@ -510,11 +510,11 @@ public:: true
         "label": "Llama"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
@@ -526,7 +526,7 @@ public:: true
         "label": "Natural Language Processing"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -544,7 +544,7 @@ public:: true
         "label": "Microsoft Research"
       },
       {
-        "@id": "urn:ngm:class:nvidia",
+        "@id": "urn:ngm:individual:nvidia",
         "label": "NVIDIA"
       }
     ]

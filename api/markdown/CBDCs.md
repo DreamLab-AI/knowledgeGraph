@@ -702,7 +702,7 @@ public:: true
     ],
     "uses": [
       {
-        "@id": "urn:ngm:class:api-standards",
+        "@id": "urn:ngm:class:api-standard",
         "label": "API Standards"
       },
       {
@@ -714,7 +714,7 @@ public:: true
         "label": "Privacy Enhancing Technologies"
       },
       {
-        "@id": "urn:ngm:class:zero-knowledge-proofs",
+        "@id": "urn:ngm:class:zero-knowledge-proof",
         "label": "Zero Knowledge Proofs"
       },
       {

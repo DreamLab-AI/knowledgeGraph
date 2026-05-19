@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:8a4313c0d8a7a59ac4839449416255bc5dd6bdf149014fcaee2244361c1ec17e",
+  "title": "etsi domain taxonomy",
+  "slug": "etsi-domain-taxonomy",
+  "public": true,
+  "classIri": "urn:ngm:class:etsi-domain-taxonomy",
+  "domain": "artificial-intelligence",
+  "definition": "The ETSI Domain Taxonomy is a classification framework developed by the European Telecommunications Standards Institute for organising AI standards and technical specifications across application domains.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "etsi-domain-ai-creative-media",
+      "label": "ETSI Domain AI + Creative Media"
+    },
+    {
+      "slug": "etsi-domain-ai-data-mgmt",
+      "label": "ETSI Domain AI + Data Mgmt"
+    },
+    {
+      "slug": "etsi-domain-ai-governance",
+      "label": "ETSI Domain AI + Governance"
+    },
+    {
+      "slug": "etsi-domain-ai-human-interface",
+      "label": "ETSI Domain AI + Human Interface"
+    },
+    {
+      "slug": "etsi-domain-ai",
+      "label": "ETSI Domain AI"
+    },
+    {
+      "slug": "etsi-domain-application-creative",
+      "label": "ETSI Domain Application + Creative"
+    },
+    {
+      "slug": "etsi-domain-application-education",
+      "label": "ETSI Domain Application + Education"
+    },
+    {
+      "slug": "etsi-domain-application-health",
+      "label": "ETSI Domain Application + Health"
+    },
+    {
+      "slug": "etsi-domain-application-industry",
+      "label": "ETSI Domain Application + Industry"
+    },
+    {
+      "slug": "etsi-domain-application-tourism",
+      "label": "ETSI Domain Application + Tourism"
+    }
+  ]
+}

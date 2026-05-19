@@ -194,7 +194,7 @@ public:: true
         "label": "Real-Time Communication"
       },
       {
-        "@id": "urn:ngm:class:virtual-workspaces",
+        "@id": "urn:ngm:class:virtual-workspace",
         "label": "Virtual Workspaces"
       },
       {

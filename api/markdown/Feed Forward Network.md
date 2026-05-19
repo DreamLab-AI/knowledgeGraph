@@ -432,11 +432,11 @@ public:: true
         "label": "Diffusion Model"
       },
       {
-        "@id": "urn:ngm:class:large-language-model",
+        "@id": "urn:ngm:class:large-language-models",
         "label": "Large Language Model"
       },
       {
-        "@id": "urn:ngm:class:variational-autoencoder",
+        "@id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {

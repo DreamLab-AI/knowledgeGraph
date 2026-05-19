@@ -466,7 +466,7 @@ public:: true
         "label": "Timer"
       },
       {
-        "@id": "urn:ngm:class:voting-system",
+        "@id": "urn:ngm:class:voting-systems",
         "label": "Voting System"
       },
       {

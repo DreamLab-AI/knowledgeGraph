@@ -436,7 +436,7 @@ public:: true
     ],
     "implements": [
       {
-        "@id": "urn:ngm:class:convolutional-neural-networks",
+        "@id": "urn:ngm:class:convolutional-neural-network",
         "label": "Convolutional Neural Networks"
       },
       {
@@ -490,7 +490,7 @@ public:: true
         "label": "Siemens Xcelerator"
       },
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:individual:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       }
     ],

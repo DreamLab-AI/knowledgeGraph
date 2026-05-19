@@ -684,11 +684,11 @@ public:: true
         "label": "Blind Signature Scheme"
       },
       {
-        "@id": "urn:ngm:class:hash-functions",
+        "@id": "urn:ngm:class:hash-function",
         "label": "Hash Functions"
       },
       {
-        "@id": "urn:ngm:class:bitcoin",
+        "@id": "urn:ngm:individual:bitcoin",
         "label": "Bitcoin"
       },
       {

@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:8db3db9533ef49f996f27dbe90b381569d49d4cfdc42abe866203b4070c69c69",
+  "title": "industrial iot",
+  "slug": "industrial-io-t",
+  "public": true,
+  "classIri": "urn:ngm:class:industrial-io-t",
+  "domain": "infrastructure",
+  "definition": "Industrial IoT (IIoT) is the application of internet-connected sensors, actuators, and analytics to industrial machinery and processes to enable real-time monitoring, automation, and predictive maintenance.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communications"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "edge-computing",
+      "label": "Edge Computing"
+    },
+    {
+      "slug": "io-t-sensor-network",
+      "label": "IoT Sensor Network"
+    },
+    {
+      "slug": "nvidia-omniverse",
+      "label": "NVIDIA Omniverse"
+    },
+    {
+      "slug": "physical-layer",
+      "label": "Physical Layer"
+    },
+    {
+      "slug": "predictive-maintenance",
+      "label": "Predictive Maintenance"
+    },
+    {
+      "slug": "real-time",
+      "label": "Real Time"
+    }
+  ]
+}

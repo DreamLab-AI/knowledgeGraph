@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:d2609a8f60a2f494e5e3adefb6ace7f9da994aaeef719fb9e09e10cf1e1881b5",
+  "title": "rest api",
+  "slug": "rest-api",
+  "public": true,
+  "classIri": "urn:ngm:class:rest-api",
+  "domain": "artificial-intelligence",
+  "definition": "A REST API (Representational State Transfer Application Programming Interface) is a web service interface that uses stateless HTTP requests and standard verbs to expose resources in a uniform, scalable manner.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "blockchain-as-a-service",
+      "label": "Blockchain As A Service"
+    },
+    {
+      "slug": "collaborative-whiteboard",
+      "label": "Collaborative Whiteboard"
+    },
+    {
+      "slug": "comfy-ui-client",
+      "label": "ComfyUI Client"
+    },
+    {
+      "slug": "comfy-ui-workflows",
+      "label": "ComfyUI Workflows"
+    },
+    {
+      "slug": "digital-twin-interop-protocol",
+      "label": "Digital Twin Interop Protocol"
+    },
+    {
+      "slug": "home-assistant",
+      "label": "Home Assistant"
+    },
+    {
+      "slug": "metadata-management",
+      "label": "Metadata Management"
+    },
+    {
+      "slug": "model-control-protocols-like-mcp",
+      "label": "Model Control Protocols like MCP"
+    },
+    {
+      "slug": "proprietary-image-generation",
+      "label": "Proprietary Image Generation"
+    },
+    {
+      "slug": "regulatory-reporting",
+      "label": "Regulatory Reporting"
+    }
+  ]
+}

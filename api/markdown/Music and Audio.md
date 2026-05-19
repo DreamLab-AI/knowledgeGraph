@@ -528,7 +528,7 @@ public:: true
         "label": "Residual Vector Quantisation"
       },
       {
-        "@id": "urn:ngm:class:variational-autoencoder",
+        "@id": "urn:ngm:class:variational-autoencoders",
         "label": "Variational Autoencoder"
       },
       {

@@ -424,7 +424,7 @@ public:: true
         "label": "Community Ownership"
       },
       {
-        "@id": "urn:ngm:class:daos",
+        "@id": "urn:ngm:class:dao",
         "label": "DAOs"
       },
       {
@@ -548,7 +548,7 @@ public:: true
         "label": "Community Treasury"
       },
       {
-        "@id": "urn:ngm:class:de-fi-protocols",
+        "@id": "urn:ngm:class:de-fi-protocol",
         "label": "DeFi Protocols"
       },
       {

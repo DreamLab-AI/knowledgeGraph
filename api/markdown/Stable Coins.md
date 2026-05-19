@@ -538,11 +538,11 @@ public:: true
         "label": "Tron Network"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {
-        "@id": "urn:ngm:class:solana",
+        "@id": "urn:ngm:individual:solana",
         "label": "Solana"
       }
     ],
@@ -582,7 +582,7 @@ public:: true
         "label": "DeFi"
       },
       {
-        "@id": "urn:ngm:class:decentralised-exchange",
+        "@id": "urn:ngm:class:decentralized-exchange",
         "label": "Decentralised Exchange"
       },
       {

@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:9da73c01b094f65c28d6307d30d127d99818e4b8c5a71a9316fc2c6e187ec179",
+  "title": "openid foundation",
+  "slug": "open-id-foundation",
+  "public": true,
+  "classIri": "urn:ngm:class:open-id-foundation",
+  "domain": "blockchain",
+  "definition": "The OpenID Foundation is an international non-profit organisation that promotes and protects OpenID identity technologies by developing open standards for decentralised digital identity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "BC Governance and Regulation"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "agentic-internet",
+      "label": "Agentic Internet"
+    },
+    {
+      "slug": "decentralized-identifiers",
+      "label": "Decentralized Identifiers"
+    },
+    {
+      "slug": "digital-identity-wallet",
+      "label": "Digital Identity Wallet"
+    },
+    {
+      "slug": "distributed-identity",
+      "label": "Distributed Identity"
+    },
+    {
+      "slug": "identity-federation",
+      "label": "Identity Federation"
+    },
+    {
+      "slug": "identity-management-system",
+      "label": "Identity Management System"
+    },
+    {
+      "slug": "identity-provider-id-p",
+      "label": "Identity Provider (IdP)"
+    },
+    {
+      "slug": "identity-provider",
+      "label": "Identity Provider"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-framework-policy",
+      "label": "Trust Framework Policy"
+    },
+    {
+      "slug": "verifiable-credentials",
+      "label": "Verifiable Credentials"
+    }
+  ]
+}

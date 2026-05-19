@@ -1,0 +1,75 @@
+{
+  "id": "urn:visionflow:page:425edd11c26ae24d6726f66925c024ad7978400bd4ebb10bc943854ab93b3778",
+  "title": "actuator",
+  "slug": "actuator",
+  "public": true,
+  "classIri": "urn:ngm:class:actuator",
+  "domain": "robotics",
+  "definition": "An actuator is an electromechanical or hydraulic device that converts control signals into physical motion or force to drive a robot's joints or effectors.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Robo Actuation and Control"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "closed-loop-control",
+      "label": "Closed-Loop Control"
+    },
+    {
+      "slug": "control-theory",
+      "label": "Control Theory"
+    },
+    {
+      "slug": "feedback-loop",
+      "label": "Feedback Loop"
+    },
+    {
+      "slug": "hydraulic-actuator",
+      "label": "Hydraulic Actuator"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "mechanical-component",
+      "label": "Mechanical Component"
+    },
+    {
+      "slug": "open-loop-control",
+      "label": "Open-Loop Control"
+    },
+    {
+      "slug": "pneumatic-actuator",
+      "label": "Pneumatic Actuator"
+    },
+    {
+      "slug": "proprioceptive-sensor",
+      "label": "Proprioceptive Sensor"
+    },
+    {
+      "slug": "robot-hardware",
+      "label": "Robot Hardware"
+    }
+  ]
+}

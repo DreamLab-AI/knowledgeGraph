@@ -1,0 +1,59 @@
+{
+  "id": "urn:visionflow:page:e4f4cc89d5f38d59122d4cb8da50375987d4fdb979103504c0808099c3bbdd91",
+  "title": "grouped query attention",
+  "slug": "grouped-query-attention",
+  "public": true,
+  "classIri": "urn:ngm:class:grouped-query-attention",
+  "domain": "artificial-intelligence",
+  "definition": "Grouped Query Attention (GQA) is a transformer attention variant that partitions query heads into groups sharing a single key-value head, reducing memory bandwidth and inference latency.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "grok",
+      "label": "Grok"
+    },
+    {
+      "slug": "llama-3",
+      "label": "Llama 3"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    },
+    {
+      "slug": "open-generative-ai-tools",
+      "label": "Open Generative AI tools"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    }
+  ]
+}

@@ -584,7 +584,7 @@ public:: true
         "label": "Zigbee Radio Dongle"
       },
       {
-        "@id": "urn:ngm:class:docker",
+        "@id": "urn:ngm:individual:docker",
         "label": "Docker"
       }
     ],
@@ -718,7 +718,7 @@ public:: true
         "label": "Zigbee2MQTT"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {

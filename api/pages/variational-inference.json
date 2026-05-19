@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:104df893f86b2e0166b59b213e588e2a0a375cc43658f92a9e355c8c542852fa",
+  "title": "variational inference",
+  "slug": "variational-inference",
+  "public": true,
+  "classIri": "urn:ngm:class:variational-inference",
+  "domain": "artificial-intelligence",
+  "definition": "Variational inference is a Bayesian machine learning method that approximates complex posterior distributions using a simpler parameterised family by optimising the evidence lower bound (ELBO).",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "bayes-filter",
+      "label": "Bayes Filter"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "embodied-minds",
+      "label": "Embodied Minds"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "inpainting",
+      "label": "Inpainting"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "sampling",
+      "label": "Sampling"
+    },
+    {
+      "slug": "stochastic-process",
+      "label": "Stochastic Process"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

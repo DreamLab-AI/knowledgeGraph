@@ -982,7 +982,7 @@ public:: true
         "label": "Generative AI"
       },
       {
-        "@id": "urn:ngm:class:google-deep-mind",
+        "@id": "urn:ngm:individual:google-deep-mind",
         "label": "Google DeepMind"
       },
       {
@@ -990,7 +990,7 @@ public:: true
         "label": "Large Language Models"
       },
       {
-        "@id": "urn:ngm:class:mistral",
+        "@id": "urn:ngm:individual:mistral",
         "label": "Mistral"
       },
       {

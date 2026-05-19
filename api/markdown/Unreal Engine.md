@@ -556,7 +556,7 @@ public:: true
         "label": "Motion Capture Rig"
       },
       {
-        "@id": "urn:ngm:class:nvidia-omniverse",
+        "@id": "urn:ngm:individual:nvidia-omniverse",
         "label": "NVIDIA Omniverse"
       }
     ],

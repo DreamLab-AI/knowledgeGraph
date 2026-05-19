@@ -1,0 +1,51 @@
+{
+  "id": "urn:visionflow:page:c3b09addf34a022dcffb6eee7565f252b4c9eae90d0d0e915aaf71b8a4e00672",
+  "title": "instruction following",
+  "slug": "instruction-following",
+  "public": true,
+  "classIri": "urn:ngm:class:instruction-following",
+  "domain": "artificial-intelligence",
+  "definition": "A language model capability to accurately parse and execute explicit user directives within a prompt, including multi-step tasks, format constraints, and conditional logic.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "chat-gpt",
+      "label": "ChatGPT"
+    },
+    {
+      "slug": "direct-preference-optimization",
+      "label": "Direct Preference Optimization"
+    },
+    {
+      "slug": "model-training",
+      "label": "Model Training"
+    },
+    {
+      "slug": "prompt-engineering",
+      "label": "Prompt Engineering"
+    }
+  ]
+}

@@ -1,0 +1,103 @@
+{
+  "id": "urn:visionflow:page:03ea62f430893a5f9234b5662908d7509085c303667af13417b74e7dc16f2fa8",
+  "title": "drug discovery",
+  "slug": "drug-discovery",
+  "public": true,
+  "classIri": "urn:ngm:class:drug-discovery",
+  "domain": "artificial-intelligence",
+  "definition": "Drug Discovery is the AI-assisted process of identifying and optimising candidate therapeutic compounds, leveraging machine learning to predict molecular properties, protein structures, and biological activity.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-agent-system",
+      "label": "AI Agent System"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "convergence",
+      "label": "Convergence"
+    },
+    {
+      "slug": "diffusion-models",
+      "label": "Diffusion Models"
+    },
+    {
+      "slug": "foundation-models",
+      "label": "Foundation Models"
+    },
+    {
+      "slug": "generative-adversarial-networks",
+      "label": "Generative Adversarial Networks"
+    },
+    {
+      "slug": "graph-database",
+      "label": "Graph Database"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "knowledge-graphing",
+      "label": "Knowledge Graphing"
+    },
+    {
+      "slug": "learning-algorithm",
+      "label": "Learning Algorithm"
+    },
+    {
+      "slug": "medical-ai",
+      "label": "Medical AI"
+    },
+    {
+      "slug": "probabilistic-model",
+      "label": "Probabilistic Model"
+    },
+    {
+      "slug": "recurrent-neural-network",
+      "label": "Recurrent Neural Network"
+    },
+    {
+      "slug": "transformers",
+      "label": "Transformers"
+    },
+    {
+      "slug": "variational-autoencoders",
+      "label": "Variational Autoencoders"
+    }
+  ]
+}

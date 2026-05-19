@@ -1,0 +1,71 @@
+{
+  "id": "urn:visionflow:page:e424a7d45cfa66ab146afd8b0675ebd7d890e9ecc437e0f2641f50b8b476398a",
+  "title": "agentic ai",
+  "slug": "agentic-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:agentic-ai",
+  "domain": "artificial-intelligence",
+  "definition": "Agentic AI refers to AI systems that autonomously plan, reason, and execute multi-step tasks by calling tools and taking actions in an environment to achieve specified goals.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-adoption",
+      "label": "AI Adoption"
+    },
+    {
+      "slug": "agent-frameworks",
+      "label": "Agent Frameworks"
+    },
+    {
+      "slug": "agents",
+      "label": "Agents"
+    },
+    {
+      "slug": "computer-use-and-browser-agents",
+      "label": "Computer Use and Browser Agents"
+    },
+    {
+      "slug": "context-engineering",
+      "label": "Context Engineering"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "function-calling",
+      "label": "Function Calling"
+    },
+    {
+      "slug": "prime-intellect",
+      "label": "Prime Intellect"
+    },
+    {
+      "slug": "telecollaboration-and-telepresence",
+      "label": "Telecollaboration and Telepresence"
+    }
+  ]
+}

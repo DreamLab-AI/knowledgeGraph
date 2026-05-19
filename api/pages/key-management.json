@@ -1,0 +1,79 @@
+{
+  "id": "urn:visionflow:page:c5ec2a68c38dde9acb579ecc65f5eeadc34176bc8ec41974494c9a07343f79f6",
+  "title": "key management",
+  "slug": "key-management",
+  "public": true,
+  "classIri": "urn:ngm:class:key-management",
+  "domain": "infrastructure",
+  "definition": "Key management encompasses the policies, procedures, and systems for generating, distributing, storing, rotating, and revoking cryptographic keys throughout their lifecycle.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Infra Security and Identity"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "cryptography-security-and-privacy",
+      "label": "Cryptography Security and Privacy"
+    },
+    {
+      "slug": "cyber-security-and-cryptography",
+      "label": "Cyber Security and Cryptography"
+    },
+    {
+      "slug": "digital-asset-infrastructure",
+      "label": "Digital Asset Infrastructure"
+    },
+    {
+      "slug": "etsi-domain-data-management-security",
+      "label": "ETSI Domain: Data Management + Security"
+    },
+    {
+      "slug": "non-repudiation",
+      "label": "Non-Repudiation"
+    },
+    {
+      "slug": "privacy-enhancing-computation-pec",
+      "label": "Privacy-Enhancing Computation (PEC)"
+    },
+    {
+      "slug": "proprietary-video",
+      "label": "Proprietary Video"
+    },
+    {
+      "slug": "self-sovereign-identity",
+      "label": "Self Sovereign Identity"
+    },
+    {
+      "slug": "trust-infrastructure",
+      "label": "Trust Infrastructure"
+    },
+    {
+      "slug": "wallet",
+      "label": "Wallet"
+    },
+    {
+      "slug": "x402-and-l402-payment-protocols",
+      "label": "x402 and l402 payment protocols"
+    }
+  ]
+}

@@ -480,7 +480,7 @@ public:: true
         "label": "Embedding Model"
       },
       {
-        "@id": "urn:ngm:class:foundation-model",
+        "@id": "urn:ngm:individual:foundation-model",
         "label": "Foundation Model"
       },
       {
@@ -558,15 +558,15 @@ public:: true
         "label": "GPT-5"
       },
       {
-        "@id": "urn:ngm:class:claude",
+        "@id": "urn:ngm:individual:claude",
         "label": "Claude"
       },
       {
-        "@id": "urn:ngm:class:gemini",
+        "@id": "urn:ngm:individual:gemini",
         "label": "Gemini"
       },
       {
-        "@id": "urn:ngm:class:gpt-4",
+        "@id": "urn:ngm:individual:gpt-4",
         "label": "GPT 4"
       }
     ],
@@ -584,15 +584,15 @@ public:: true
         "label": "Agent Frameworks"
       },
       {
-        "@id": "urn:ngm:class:anthropic-claude",
+        "@id": "urn:ngm:individual:anthropic-claude",
         "label": "Anthropic Claude"
       },
       {
-        "@id": "urn:ngm:class:chat-gpt",
+        "@id": "urn:ngm:individual:chat-gpt",
         "label": "ChatGPT"
       },
       {
-        "@id": "urn:ngm:class:microsoft-copilot",
+        "@id": "urn:ngm:individual:microsoft-copilot",
         "label": "Microsoft Copilot"
       },
       {

@@ -516,7 +516,7 @@ public:: true
         "label": "Distributed Computing"
       },
       {
-        "@id": "urn:ngm:class:ethereum",
+        "@id": "urn:ngm:individual:ethereum",
         "label": "Ethereum"
       },
       {

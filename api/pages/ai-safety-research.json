@@ -1,0 +1,55 @@
+{
+  "id": "urn:visionflow:page:477e017f402770d17ffed1cfcfd5cfb46d584f710f37a9ab09a7b8164fbec695",
+  "title": "ai safety research",
+  "slug": "ai-safety-research",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-safety-research",
+  "domain": "artificial-intelligence",
+  "definition": "An interdisciplinary field studying techniques and frameworks to ensure that AI systems behave safely, reliably, and in accordance with human values as they become more capable.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-risks",
+      "label": "AI Risks"
+    },
+    {
+      "slug": "anthropic-claude",
+      "label": "Anthropic Claude"
+    },
+    {
+      "slug": "artificial-general-intelligence",
+      "label": "Artificial General Intelligence"
+    },
+    {
+      "slug": "google",
+      "label": "Google"
+    },
+    {
+      "slug": "history-and-path-to-agi",
+      "label": "History and Path to AGI"
+    }
+  ]
+}

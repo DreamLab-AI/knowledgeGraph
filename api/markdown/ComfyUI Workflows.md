@@ -548,11 +548,11 @@ public:: true
         "label": "Python Runtime"
       },
       {
-        "@id": "urn:ngm:class:comfy-ui",
+        "@id": "urn:ngm:individual:comfy-ui",
         "label": "ComfyUI"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -672,7 +672,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -680,7 +680,7 @@ public:: true
         "label": "ControlNet and Similar Spatial Conditioning Systems"
       },
       {
-        "@id": "urn:ngm:class:flux-1",
+        "@id": "urn:ngm:individual:flux-1",
         "label": "Flux.1"
       },
       {
@@ -696,11 +696,11 @@ public:: true
         "label": "Inpainting"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP-Adapter"
       },
       {
-        "@id": "urn:ngm:class:stable-diffusion",
+        "@id": "urn:ngm:individual:stable-diffusion",
         "label": "Stable Diffusion"
       }
     ],
@@ -726,7 +726,7 @@ public:: true
         "label": "AI Upscaling and Super-Resolution"
       },
       {
-        "@id": "urn:ngm:class:animate-diff",
+        "@id": "urn:ngm:individual:animate-diff",
         "label": "AnimateDiff"
       },
       {
@@ -734,7 +734,7 @@ public:: true
         "label": "Inpainting"
       },
       {
-        "@id": "urn:ngm:class:ip-adapter",
+        "@id": "urn:ngm:individual:ip-adapter",
         "label": "IP-Adapter"
       },
       {

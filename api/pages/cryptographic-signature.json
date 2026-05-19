@@ -1,0 +1,83 @@
+{
+  "id": "urn:visionflow:page:e892f51563266cdc9350411dc64c8cb9e20e7b354ae84edda36f4abafe42ae9a",
+  "title": "cryptographic signature",
+  "slug": "cryptographic-signature",
+  "public": true,
+  "classIri": "urn:ngm:class:cryptographic-signature",
+  "domain": "blockchain",
+  "definition": "A cryptographic signature is a mathematical scheme that provides authenticity and non-repudiation by allowing a sender to attach a unique, verifiable proof of origin to a message or transaction.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "BC Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "stub",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "byzantine-fault-tolerance",
+      "label": "Byzantine Fault Tolerance"
+    },
+    {
+      "slug": "consensus-mechanism",
+      "label": "Consensus Mechanism"
+    },
+    {
+      "slug": "dao-tooling",
+      "label": "DAO Tooling"
+    },
+    {
+      "slug": "decentralised-web",
+      "label": "Decentralised Web"
+    },
+    {
+      "slug": "decentralized-exchange-dex",
+      "label": "Decentralized Exchange (DEX)"
+    },
+    {
+      "slug": "governance-token",
+      "label": "Governance Token"
+    },
+    {
+      "slug": "identity-verification",
+      "label": "Identity Verification"
+    },
+    {
+      "slug": "loyalty-token",
+      "label": "Loyalty Token"
+    },
+    {
+      "slug": "on-chain-voting",
+      "label": "On Chain Voting"
+    },
+    {
+      "slug": "reputation-data",
+      "label": "Reputation Data"
+    },
+    {
+      "slug": "universal-manifest",
+      "label": "Universal Manifest"
+    },
+    {
+      "slug": "user-consent-token",
+      "label": "User Consent Token"
+    }
+  ]
+}

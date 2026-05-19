@@ -170,7 +170,7 @@ public:: true
   "relations": {
     "hasPart": [
       {
-        "@id": "urn:ngm:class:economic-system",
+        "@id": "urn:ngm:class:economic-systems",
         "label": "Economic System"
       },
       {

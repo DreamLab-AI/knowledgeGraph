@@ -594,7 +594,7 @@ public:: true
         "label": "Inverse Dynamics Model"
       },
       {
-        "@id": "urn:ngm:class:neural-networks",
+        "@id": "urn:ngm:class:neural-network",
         "label": "Neural Networks"
       },
       {
@@ -640,7 +640,7 @@ public:: true
         "label": "Vision Language Action Models"
       },
       {
-        "@id": "urn:ngm:class:foundation-models",
+        "@id": "urn:ngm:individual:foundation-models",
         "label": "Foundation Models"
       }
     ],
