@@ -148,7 +148,7 @@ public:: true
   "@id": "urn:ngm:class:resilience-metric",
   "@type": "Class",
   "label": "Resilience Metric",
-  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, [[RecoveryTimeObjective|recovery time objectives]], and failure rates that de...",
+  "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, RecoveryTimeObjective|recovery time objectives, and failure rates that de...",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

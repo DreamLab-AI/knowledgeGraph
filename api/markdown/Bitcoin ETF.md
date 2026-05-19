@@ -632,7 +632,7 @@ public:: true
   "@id": "urn:ngm:class:bitcoin-etf",
   "@type": "Class",
   "label": "Bitcoin ETF",
-  "definition": "A Bitcoin ETF (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of [[Bitcoin]] (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional broke...",
+  "definition": "A Bitcoin ETF (Bitcoin Exchange-Traded Fund) is a regulated, exchange-listed pooled investment vehicle providing investors fungible share-based exposure to the spot price of Bitcoin (or, in the case of futures-based variants, to rolling CME Bitcoin futures contracts) through traditional broke...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

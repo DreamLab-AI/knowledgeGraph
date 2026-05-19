@@ -372,7 +372,7 @@ public:: true
   "@id": "urn:ngm:class:identity-management-system",
   "@type": "Class",
   "label": "Identity Management System",
-  "definition": "An [[Identity Management System]] (IdM/IAM — Identity and Access Management) is a comprehensive technology framework that governs the full lifecycle of digital identities—creation, provisioning, authentication, authorisation, federation, delegation, and decommissioning—across enterprise, cloud, c...",
+  "definition": "An Identity Management System (IdM/IAM — Identity and Access Management) is a comprehensive technology framework that governs the full lifecycle of digital identities—creation, provisioning, authentication, authorisation, federation, delegation, and decommissioning—across enterprise, cloud, c...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

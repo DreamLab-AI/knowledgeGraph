@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proof-of-work",
   "domain": "blockchain",
-  "definition": "[[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.",
+  "definition": "Computational puzzle consensus mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain-entity",

@@ -172,7 +172,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-human-interface",
   "@type": "Class",
   "label": "ETSI_Domain_Human_Interface",
-  "definition": "An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]].",
+  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within VirtualEnvironment|virtual environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -300,7 +300,7 @@ public:: true
   "@id": "urn:ngm:class:generative-ai",
   "@type": "Class",
   "label": "Generative AI",
-  "definition": "[[Generative AI]] encompasses [[Machine Learning]] systems capable of creating new content across modalities including text, images, audio, video, and code through [[Neural Networks]] trained on large datasets.",
+  "definition": "Generative AI encompasses Machine Learning systems capable of creating new content across modalities including text, images, audio, video, and code through Neural Networks trained on large datasets.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

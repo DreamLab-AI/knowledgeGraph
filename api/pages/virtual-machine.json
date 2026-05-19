@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:virtual-machine",
   "domain": "infrastructure",
-  "definition": "A virtual machine in blockchain contexts is a runtime environment executing [[SmartContract|smart contracts]] deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications.",
+  "definition": "A virtual machine in blockchain contexts is a runtime environment executing SmartContract|smart contracts deterministically, translating high-level contract code into low-level operations whilst enforcing resource limits and preventing unauthorised state modifications.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computing-infrastructure",

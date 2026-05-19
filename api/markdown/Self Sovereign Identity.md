@@ -512,7 +512,7 @@ public:: true
   "@id": "urn:ngm:class:self-sovereign-identity",
   "@type": "Class",
   "label": "Self Sovereign Identity",
-  "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm — first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) — where individuals hold and control cryptographically verifiable credentials in their own [[Digital Wallet]] r...",
+  "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm — first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) — where individuals hold and control cryptographically verifiable credentials in their own Digital Wallet r...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

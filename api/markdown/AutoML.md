@@ -276,7 +276,7 @@ public:: true
   "@id": "urn:ngm:class:auto-ml",
   "@type": "Class",
   "label": "AutoML",
-  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, [[Neural Architecture Search]] (NAS), hyp...",
+  "definition": "Automated Machine Learning (AutoML) is the discipline and associated tooling that automates the end-to-end pipeline of applying machine learning to real-world problems — encompassing automated data pre-processing, feature engineering, algorithm selection, Neural Architecture Search (NAS), hyp...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -264,7 +264,7 @@ public:: true
   "@id": "urn:ngm:class:verifiable-credential-surface",
   "@type": "Class",
   "label": "Verifiable Credential Surface",
-  "definition": "A standardised [[JSON-LD 1.1]] surface (S3) for issuing and storing [[W3C Verifiable Credentials 2.0|W3C VC 2.0]] credentials signed by agents' [[DID Nostr Identity|did:nostr]] DIDs using [[Schnorr Signature|Schnorr signatures]] over [[JCS Canonicalisation|JCS-canonicalised]] payloads, enabling v...",
+  "definition": "A standardised JSON-LD 1.1 surface (S3) for issuing and storing W3C Verifiable Credentials 2.0|W3C VC 2.0 credentials signed by agents' DID Nostr Identity|did:nostr DIDs using Schnorr Signature|Schnorr signatures over JCS Canonicalisation|JCS-canonicalised payloads, enabling v...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:gps",
   "domain": "robotics",
-  "definition": "GPS (Global Positioning System) - A satellite-based [[Navigation System]] that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 ...",
+  "definition": "GPS (Global Positioning System) - A satellite-based Navigation System that determines the absolute geographical location of a robot, providing latitude, longitude, and altitude data for large-scale autonomous navigation, outdoor delivery, and trajectory planning with typical accuracy of 5-15 ...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:navigation-system",

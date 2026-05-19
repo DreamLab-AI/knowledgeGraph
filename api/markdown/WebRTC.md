@@ -288,7 +288,7 @@ public:: true
   "@id": "urn:ngm:class:web-rtc",
   "@type": "Class",
   "label": "WebRTC",
-  "definition": "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (`getUserMedia`, `RTCPeerConnection`, `RTCDataChannel`), combining [[ICE...",
+  "definition": "WebRTC (Web Real-Time Communication) is a W3C and IETF co-standardised open framework that enables peer-to-peer exchange of audio, video, and arbitrary data between web browsers and native applications using a JavaScript API (getUserMedia, RTCPeerConnection, RTCDataChannel), combining [[ICE...",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [

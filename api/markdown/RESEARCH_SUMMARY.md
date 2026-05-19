@@ -140,7 +140,7 @@ public:: true
   "@id": "urn:ngm:class:research-summary",
   "@type": "Class",
   "label": "RESEARCH_SUMMARY",
-  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across [[Metaverse]], [[Blockchain]], [[ArtificialIntelligence]], and [[Robotics]] domains.",
+  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across Metaverse, Blockchain, ArtificialIntelligence, and Robotics domains.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -448,7 +448,7 @@ public:: true
   "@id": "urn:ngm:class:identity-provider",
   "@type": "Class",
   "label": "Identity Provider",
-  "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals — humans, service accounts, devices, and workloads — and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, oper...",
+  "definition": "An Identity Provider (IdP) is a specialised security system that authenticates principals — humans, service accounts, devices, and workloads — and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, oper...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

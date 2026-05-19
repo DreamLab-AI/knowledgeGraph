@@ -696,7 +696,7 @@ public:: true
   "@id": "urn:ngm:class:hyperledger-indy",
   "@type": "Class",
   "label": "Hyperledger Indy",
-  "definition": "Hyperledger Indy is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the [[Linux Foundation]]-resident [[Hyperledger Foundation]] (now consolidated under the LF Decentralized Trust umbrella since June 2024) that provides the canonical reference implem...",
+  "definition": "Hyperledger Indy is the purpose-built, permissioned, Byzantine-fault-tolerant distributed-ledger project hosted by the Linux Foundation-resident Hyperledger Foundation (now consolidated under the LF Decentralized Trust umbrella since June 2024) that provides the canonical reference implem...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

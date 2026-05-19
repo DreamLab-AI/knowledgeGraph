@@ -580,7 +580,7 @@ public:: true
   "@id": "urn:ngm:class:hyperledger-iroha",
   "@type": "Class",
   "label": "Hyperledger Iroha",
-  "definition": "Hyperledger Iroha is a general-purpose permissioned Byzantine-fault-tolerant [[Distributed Ledger]] framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the [[Hyperledger]] Foundation (now Linux Foundation Decentralised Trust) ...",
+  "definition": "Hyperledger Iroha is a general-purpose permissioned Byzantine-fault-tolerant Distributed Ledger framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the Hyperledger Foundation (now Linux Foundation Decentralised Trust) ...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

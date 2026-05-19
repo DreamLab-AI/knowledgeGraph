@@ -3,16 +3,11 @@
   "title": "BERT",
   "slug": "bert",
   "public": true,
-  "classIri": "urn:ngm:class:bert",
+  "classIri": "urn:ngm:individual:bert",
   "domain": "artificial-intelligence",
   "definition": "Bidirectional Encoder Representations from Transformers: a transformer-based model designed to pre-train deep bidirectional representations from unlabelled text by jointly conditioning on both left and right context in all layers.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

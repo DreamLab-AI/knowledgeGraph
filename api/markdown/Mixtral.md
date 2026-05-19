@@ -121,24 +121,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:mixtral",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:mixtral",
+  "@type": "Individual",
   "label": "Mixtral",
   "definition": "A Sparse Mixture of Experts language model with 8 expert networks where each token is routed to 2 experts, achieving 47B total parameters whilst maintaining 13B active parameters per token for efficient inference.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
 }
 ```
 

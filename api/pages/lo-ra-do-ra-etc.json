@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:lo-ra-do-ra-etc",
   "domain": "artificial-intelligence",
-  "definition": "Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks \u2014 particularly [[Large Language Models]] and diffusion models \u2014 to downstream tasks by updating only a small fraction (0.01\u2013) of total model parameters rather...",
+  "definition": "Parameter-Efficient Fine-Tuning (PEFT) is a family of machine learning techniques enabling adaptation of large pre-trained neural networks \u2014 particularly Large Language Models and diffusion models \u2014 to downstream tasks by updating only a small fraction (0.01\u2013) of total model parameters rather...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:model-adaptation",

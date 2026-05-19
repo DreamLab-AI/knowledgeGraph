@@ -3,16 +3,11 @@
   "title": "android",
   "slug": "android",
   "public": true,
-  "classIri": "urn:ngm:class:android",
+  "classIri": "urn:ngm:individual:android",
   "domain": "infrastructure",
   "definition": "android is a technology infrastructure concept and a type of Operating System.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:operating-system",
-      "label": "Operating System"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

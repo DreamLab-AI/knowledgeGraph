@@ -160,7 +160,7 @@ public:: true
   "@id": "urn:ngm:class:exoskeleton-robot",
   "@type": "Class",
   "label": "Exoskeleton Robot",
-  "definition": "Exoskeleton Robot - A wearable robotic framework that augments human strength and endurance by providing motorised [[Joint Support]] and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
+  "definition": "Exoskeleton Robot - A wearable robotic framework that augments human strength and endurance by providing motorised Joint Support and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

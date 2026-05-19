@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:grant-programs",
   "domain": "blockchain",
-  "definition": "Crucial resource allocation mechanisms through which [[DAO|DAOs]] deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap ) to retroactive public goods funding ([[Optimism]] ) to inn...",
+  "definition": "Crucial resource allocation mechanisms through which DAO|DAOs deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap ) to retroactive public goods funding (Optimism ) to inn...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

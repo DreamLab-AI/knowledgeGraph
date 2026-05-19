@@ -428,7 +428,7 @@ public:: true
   "@id": "urn:ngm:class:chat-gpt",
   "@type": "Class",
   "label": "ChatGPT",
-  "definition": "ChatGPT is a conversational AI assistant developed by [[OpenAI]] and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned [[Large Language Models]] accessible to general consumers via a web interface, achieving 100 monthly active users within 6...",
+  "definition": "ChatGPT is a conversational AI assistant developed by OpenAI and publicly launched on 30 November 2022, representing the first large-scale deployment of instruction-tuned Large Language Models accessible to general consumers via a web interface, achieving 100 monthly active users within 6...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

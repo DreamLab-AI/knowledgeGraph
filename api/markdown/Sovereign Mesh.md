@@ -272,7 +272,7 @@ public:: true
   "@id": "urn:ngm:class:sovereign-mesh",
   "@type": "Class",
   "label": "Sovereign Mesh",
-  "definition": "A peer-to-peer agent network where each node is identified by a [[DID Nostr Identity|did:nostr:<pubkey>]] DIDs and communicates via [[Nostr Relay|Nostr relays]], enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting ea...",
+  "definition": "A peer-to-peer agent network where each node is identified by a DID Nostr Identity|did:nostr:<pubkey> DIDs and communicates via Nostr Relay|Nostr relays, enabling decentralised agent discovery, gossip, and work distribution without a centralised broker or coordinator, whilst respecting ea...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

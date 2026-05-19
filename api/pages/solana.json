@@ -3,16 +3,11 @@
   "title": "Solana",
   "slug": "solana",
   "public": true,
-  "classIri": "urn:ngm:class:solana",
+  "classIri": "urn:ngm:individual:solana",
   "domain": "blockchain",
   "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding TPS.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
   "maturity": "established",
   "relationships": {

@@ -200,7 +200,7 @@ public:: true
   "@id": "urn:ngm:class:aiethics",
   "@type": "Class",
   "label": "AIEthics",
-  "definition": "A framework of ical principles and governance structures ensuring responsible development, deployment, and oversight of [[Artificial Intelligence]] systems in compliance with societal values.",
+  "definition": "A framework of ical principles and governance structures ensuring responsible development, deployment, and oversight of Artificial Intelligence systems in compliance with societal values.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [

@@ -152,7 +152,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-human-interface-governance",
   "@type": "Class",
   "label": "ETSI_Domain_Human_Interface___Governance",
-  "definition": "An [[ETSI]] subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in [[VirtualEnvironment|virtual environments]].",
+  "definition": "An ETSI subdomain addressing governance mechanisms, policy frameworks, and institutional structures governing human-centric systems in VirtualEnvironment|virtual environments.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {

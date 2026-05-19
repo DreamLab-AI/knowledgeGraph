@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:waste-management",
   "domain": "blockchain",
-  "definition": "Waste management via blockchain leverages distributed ledgers and [[SmartContract|smart contracts]] to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the [[CircularEconomy|circular economy]] lifecycle.",
+  "definition": "Waste management via blockchain leverages distributed ledgers and SmartContract|smart contracts to create transparent, immutable records of waste generation, segregation, collection, and processing throughout the CircularEconomy|circular economy lifecycle.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

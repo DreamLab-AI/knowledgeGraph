@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:api-gateway",
   "domain": "infrastructure",
-  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a [[Distributed System|distributed]] or [[Microservices|microservices]] backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentic...",
+  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a Distributed System|distributed or Microservices|microservices backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentic...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cloud-native-component",

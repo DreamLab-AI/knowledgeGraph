@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:access-control-system",
   "domain": "infrastructure",
-  "definition": "An [[Access Control System]] is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines wher a subject (human user, service account, autonomous agent, device) is permitted to perform a r...",
+  "definition": "An Access Control System is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines wher a subject (human user, service account, autonomous agent, device) is permitted to perform a r...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:authorisation-mechanism",

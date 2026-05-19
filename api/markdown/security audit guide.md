@@ -136,7 +136,7 @@ public:: true
   "@id": "urn:ngm:class:security-audit-guide",
   "@type": "Class",
   "label": "security audit guide",
-  "definition": "A comprehensive procedural guide establishing standards, modologies, and frameworks for conducting security audits of [[Blockchain|blockchain systems]], [[SmartContract|smart contracts]], and [[Cryptography|cryptographic infrastructure]].",
+  "definition": "A comprehensive procedural guide establishing standards, modologies, and frameworks for conducting security audits of Blockchain|blockchain systems, SmartContract|smart contracts, and Cryptography|cryptographic infrastructure.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

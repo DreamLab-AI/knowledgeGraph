@@ -160,7 +160,7 @@ public:: true
   "@id": "urn:ngm:class:end-effector",
   "@type": "Class",
   "label": "End Effector",
-  "definition": "End Effector - A task-specific tool or manipulator mounted at the [[Robot Wrist]] that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
+  "definition": "End Effector - A task-specific tool or manipulator mounted at the Robot Wrist that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

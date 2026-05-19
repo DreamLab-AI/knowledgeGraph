@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:collaborative-operation",
   "domain": "robotics",
-  "definition": "Collaborative Operation - Coordinated execution of tasks between [[Human Operators]] and [[Robotic Systems]] within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
+  "definition": "Collaborative Operation - Coordinated execution of tasks between Human Operators and Robotic Systems within the same workspace, governed by safety protocols, task allocation mechanisms, and real-time communication to achieve shared objectives.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:robotics",

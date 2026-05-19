@@ -3,32 +3,6 @@
   "title": "namespace1/page1",
   "slug": "namespace1-page1",
   "public": true,
-  "classIri": "urn:ngm:class:namespace1-page1",
-  "domain": "infrastructure",
-  "definition": "namespace1/page1 is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

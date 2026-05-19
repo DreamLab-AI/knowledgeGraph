@@ -232,7 +232,7 @@ public:: true
   "@id": "urn:ngm:class:data-pipeline",
   "@type": "Class",
   "label": "Data Pipeline",
-  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs.",
+  "definition": "A series of connected data processing stages orchestrating Data Ingestion, Data Transformation, Quality Assurance, and Data Delivery to produce actionable analytical outputs.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [

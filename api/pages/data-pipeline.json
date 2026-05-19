@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:data-pipeline",
   "domain": "infrastructure",
-  "definition": "A series of connected data processing stages orchestrating [[Data Ingestion]], [[Data Transformation]], [[Quality Assurance]], and [[Data Delivery]] to produce actionable analytical outputs.",
+  "definition": "A series of connected data processing stages orchestrating Data Ingestion, Data Transformation, Quality Assurance, and Data Delivery to produce actionable analytical outputs.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infrastructure",

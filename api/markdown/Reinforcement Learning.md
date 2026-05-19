@@ -152,7 +152,7 @@ public:: true
   "@id": "urn:ngm:class:reinforcement-learning",
   "@type": "Class",
   "label": "Reinforcement Learning",
-  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal [[BC-0452-policy|policies]] through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
+  "definition": "Reinforcement learning is a machine learning paradigm in which agents learn optimal BC-0452-policy|policies through interaction with an environment, receiving reward signals for actions and iteratively improving their decision-making through trial and error.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [

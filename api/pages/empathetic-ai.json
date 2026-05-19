@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:empathetic-ai",
   "domain": "artificial-intelligence",
-  "definition": "Empathetic AI is a subfield of [[Affective Computing]] and [[Human-Computer Interaction]] concerned with computational systems that perceive, model, and respond to human affective states \u2014 including emotions, sentiment, stress, mood, and social cues \u2014 to produce contextually appropriate, emotiona...",
+  "definition": "Empathetic AI is a subfield of Affective Computing and Human-Computer Interaction concerned with computational systems that perceive, model, and respond to human affective states \u2014 including emotions, sentiment, stress, mood, and social cues \u2014 to produce contextually appropriate, emotiona...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:affective-computing",

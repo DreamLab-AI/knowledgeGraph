@@ -456,7 +456,7 @@ public:: true
   "@id": "urn:ngm:class:liquidity-provision",
   "@type": "Class",
   "label": "Liquidity Provision",
-  "definition": "Liquidity Provision is the decentralised financial mechanism whereby cryptocurrency holders deposit paired or single-asset collateral into [[Automated Market Maker]] smart-contract pools to enable continuous permissionless [[Token Swap]] without traditional counterparties or order books, earning ...",
+  "definition": "Liquidity Provision is the decentralised financial mechanism whereby cryptocurrency holders deposit paired or single-asset collateral into Automated Market Maker smart-contract pools to enable continuous permissionless Token Swap without traditional counterparties or order books, earning ...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

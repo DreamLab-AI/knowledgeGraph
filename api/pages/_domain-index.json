@@ -9619,11 +9619,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "424",
-      "title": "424",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "6-g-network-slice",
       "title": "6G Network Slice",
       "qualityScore": 0.35
@@ -10416,11 +10411,6 @@
     {
       "slug": "graph-search",
       "title": "Graph Search",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "host-january-17th-presentation",
-      "title": "HOST January 17th Presentation",
       "qualityScore": 0.35
     },
     {
@@ -11454,18 +11444,8 @@
       "qualityScore": 0.3
     },
     {
-      "slug": "tele002telecollaboration",
-      "title": "TELE002telecollaboration",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "tele020virtualrealitytelepresence",
       "title": "TELE020virtualrealitytelepresence",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "todo",
-      "title": "TODO",
       "qualityScore": 0.35
     },
     {
@@ -11566,11 +11546,6 @@
     {
       "slug": "trust-infrastructure",
       "title": "Trust Infrastructure",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "tuesday-11th-of-june-frame-reporting",
-      "title": "Tuesday 11th of June FRAME reporting",
       "qualityScore": 0.35
     },
     {
@@ -11809,26 +11784,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "hls-aiin-architecture-1759130414634-0",
-      "title": "hls__AIinARCHITECTURE_1759130414634_0",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "hls-aiin-architecture-1759152504700-0",
-      "title": "hls__AIinARCHITECTURE_1759152504700_0",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "hls-cave-system-quote-1759150983216-0",
-      "title": "hls__CaveSystemQuote_1759150983216_0",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "hls-dream-lab-cumbria-1759151307438-0",
-      "title": "hls__DreamLabCumbria_1759151307438_0",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "house",
       "title": "house",
       "qualityScore": 0.5
@@ -11871,21 +11826,6 @@
     {
       "slug": "mermaid",
       "title": "mermaid",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "misc-podcast-onboarding",
-      "title": "misc podcast onboarding",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "namespace1-page1",
-      "title": "namespace1/page1",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "namespace1-page2",
-      "title": "namespace1/page2",
       "qualityScore": 0.35
     },
     {
@@ -13213,11 +13153,6 @@
     {
       "slug": "opcodes",
       "title": "Opcodes",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "orphan-block",
-      "title": "Orphan Block",
       "qualityScore": 0.5
     },
     {

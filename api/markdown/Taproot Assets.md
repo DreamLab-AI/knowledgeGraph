@@ -492,7 +492,7 @@ public:: true
   "@id": "urn:ngm:class:taproot-assets",
   "@type": "Class",
   "label": "Taproot Assets",
-  "definition": "Taproot Assets (formerly Taro, renamed mid-2022) is a Bitcoin-native asset-issuance and transfer protocol developed by [[Lightning Labs]], formally specified in BIPs 327-330, that enables arbitrary fungible tokens, non-fungible tokens, and stablecoins to be issued on the Bitcoin base layer using ...",
+  "definition": "Taproot Assets (formerly Taro, renamed mid-2022) is a Bitcoin-native asset-issuance and transfer protocol developed by Lightning Labs, formally specified in BIPs 327-330, that enables arbitrary fungible tokens, non-fungible tokens, and stablecoins to be issued on the Bitcoin base layer using ...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

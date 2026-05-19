@@ -103,30 +103,6 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:tele002telecollaboration",
-  "@type": "Class",
-  "label": "TELE002telecollaboration",
-  "definition": "TELE002telecollaboration is a technology infrastructure concept and a type of Realtime Collaboration.",
-  "domain": "infrastructure",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:realtime-collaboration",
-      "label": "Realtime Collaboration"
-    }
-  ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:annotation:link-resolutions:tele002telecollaboration:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
@@ -146,7 +122,6 @@ public:: true
   }
 }
 ```
-
 
 - ### Definition
   - TELE002telecollaboration is a concept within the ngm domain.

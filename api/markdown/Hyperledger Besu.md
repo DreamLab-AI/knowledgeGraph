@@ -176,7 +176,7 @@ public:: true
   "@id": "urn:ngm:class:hyperledger-besu",
   "@type": "Class",
   "label": "Hyperledger Besu",
-  "definition": "Enterprise-grade ereum client developed by [[Hyperledger Foundation]] supporting both public and private blockchain deployments with multiple consensus mechanisms—[[ProofOfWork]], [[ProofOfAuthority]], [[Practical Byzantine Fault Tolerance|PBFT]].",
+  "definition": "Enterprise-grade ereum client developed by Hyperledger Foundation supporting both public and private blockchain deployments with multiple consensus mechanisms—ProofOfWork, ProofOfAuthority, Practical Byzantine Fault Tolerance|PBFT.",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:cryptographic-protocol",
   "domain": "infrastructure",
-  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives.",
+  "definition": "Cryptographic-Protocol encompasses mathematical frameworks and algorithmic procedures securing blockchain through cryptographic primitives.",
   "subClassOf": [],
   "entityType": "Class",
   "qualityScore": 0.55,

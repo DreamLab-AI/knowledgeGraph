@@ -156,7 +156,7 @@ public:: true
   "@id": "urn:ngm:class:implementation-examples",
   "@type": "Class",
   "label": "implementation examples",
-  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including [[SmartContractExamples|smart contract implementations]], [[NFTContracts|NFT contract patterns]], and [[Met...",
+  "definition": "Implementation examples in metaverse and blockchain contexts are concrete, production-ready code samples demonstrating how theoretical concepts translate into functioning systems, including SmartContractExamples|smart contract implementations, NFTContracts|NFT contract patterns, and [[Met...",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -460,7 +460,7 @@ public:: true
   "@id": "urn:ngm:class:collaborative-whiteboard",
   "@type": "Class",
   "label": "Collaborative Whiteboard",
-  "definition": "A Collaborative Whiteboard is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with [[CRDT]]-based (Conflict-free Replicated Data Type) or Operational...",
+  "definition": "A Collaborative Whiteboard is a shared infinite-canvas digital workspace enabling real-time multi-user drawing, diagramming, sticky-note placement, voting, and structured ideation, delivered through web or native applications with CRDT-based (Conflict-free Replicated Data Type) or Operational...",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [

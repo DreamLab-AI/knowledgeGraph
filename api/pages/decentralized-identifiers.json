@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralized-identifiers",
   "domain": "blockchain",
-  "definition": "A [[W3C]]-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form `did:<mod>:<mod-specific-id>` controlled directly by their subjects without dependency on c...",
+  "definition": "A W3C-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form did:<mod>:<mod-specific-id> controlled directly by their subjects without dependency on c...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptographic-identifier",

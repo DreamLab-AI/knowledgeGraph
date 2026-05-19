@@ -100,24 +100,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:hisense-a9",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:hisense-a9",
+  "@type": "Individual",
   "label": "Hisense A9",
   "definition": "Hisense A9 is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ]
 }
 ```
 

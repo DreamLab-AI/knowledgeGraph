@@ -741,22 +741,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:flux-1",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:flux-1",
+  "@type": "Individual",
   "label": "Flux.1",
-  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Ro...",
+  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by Black Forest Labs from 1 August 2024, designed and trained by a founding team comprising the original core authors of Stable Diffusion and the Latent Diffusion Model line (Ro...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:multimodal-diffusion-transformer",
-      "label": "Multimodal Diffusion Transformer"
-    },
-    {
-      "@id": "urn:ngm:class:rectified-flow-model",
-      "label": "Rectified Flow Model"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -1028,7 +1018,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:multimodal-diffusion-transformer",
+      "label": "Multimodal Diffusion Transformer"
+    },
+    {
+      "@id": "urn:ngm:class:rectified-flow-model",
+      "label": "Rectified Flow Model"
+    }
+  ]
 }
 ```
 

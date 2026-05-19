@@ -516,7 +516,7 @@ public:: true
   "@id": "urn:ngm:class:navigation",
   "@type": "Class",
   "label": "Navigation",
-  "definition": "[[Navigation]] is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents — ground robots, aerial vehicles, autonomous cars, and embodied AI systems — to move reliably from a start configuration to a goal state throu...",
+  "definition": "Navigation is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents — ground robots, aerial vehicles, autonomous cars, and embodied AI systems — to move reliably from a start configuration to a goal state throu...",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [

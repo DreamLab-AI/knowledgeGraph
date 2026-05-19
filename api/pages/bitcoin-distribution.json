@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-distribution",
   "domain": "blockchain",
-  "definition": "Bitcoin Distribution is the sub-field of [[Blockchain]] economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provabl...",
+  "definition": "Bitcoin Distribution is the sub-field of Blockchain economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provabl...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:bitcoin",

@@ -664,7 +664,7 @@ public:: true
   "@id": "urn:ngm:class:conviction-voting",
   "@type": "Class",
   "label": "Conviction Voting",
-  "definition": "Conviction Voting is a continuous-time, conviction-weighted decentralised governance mechanism — originally formalised by [[Block Science]] researchers Jeff Emmett, Michael Zargham and Jessica Zartler in the 2019 working paper Conviction Voting: A Novel Continuous Decision Making Alternative to G...",
+  "definition": "Conviction Voting is a continuous-time, conviction-weighted decentralised governance mechanism — originally formalised by Block Science researchers Jeff Emmett, Michael Zargham and Jessica Zartler in the 2019 working paper Conviction Voting: A Novel Continuous Decision Making Alternative to G...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

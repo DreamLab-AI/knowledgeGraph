@@ -480,7 +480,7 @@ public:: true
   "@id": "urn:ngm:class:kohya-dreambooth-and-similar",
   "@type": "Class",
   "label": "KOHYA Dreambooth and similar",
-  "definition": "Ecosystem of open-source toolchains, training modologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale [[Diffusion Models]] — principally [[Stable Diffusion]] 1.x/2.x, SDXL, and [[FLUX.1]] — through parameter-efficient adaptation techni...",
+  "definition": "Ecosystem of open-source toolchains, training modologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale Diffusion Models — principally Stable Diffusion 1.x/2.x, SDXL, and FLUX.1 — through parameter-efficient adaptation techni...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

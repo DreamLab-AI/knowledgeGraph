@@ -449,22 +449,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:blender",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:blender",
+  "@type": "Individual",
   "label": "Blender",
   "definition": "Blender is a free, open-source, cross-platform 3D computer graphics software suite developed by the Blender Foundation (Amsterdam) and maintained by a global community of thousands of contributors, providing a fully integrated production pipeline covering 3D polygonal modelling, digital sculpting...",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:3-d-and-4-d",
-      "label": "3D and 4D"
-    },
-    {
-      "@id": "urn:ngm:class:rendering-engine",
-      "label": "Rendering Engine"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -736,7 +726,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:3-d-and-4-d",
+      "label": "3D and 4D"
+    },
+    {
+      "@id": "urn:ngm:class:rendering-engine",
+      "label": "Rendering Engine"
+    }
+  ]
 }
 ```
 

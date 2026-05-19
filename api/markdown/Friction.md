@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:friction",
   "@type": "Class",
   "label": "Friction",
-  "definition": "Friction - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting [[Joint Efficiency]], [[Motor Performance]], and [[Motion Accuracy]] in roboti...",
+  "definition": "Friction - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting Joint Efficiency, Motor Performance, and Motion Accuracy in roboti...",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

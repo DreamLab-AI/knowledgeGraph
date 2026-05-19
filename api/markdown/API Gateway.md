@@ -732,7 +732,7 @@ public:: true
   "@id": "urn:ngm:class:api-gateway",
   "@type": "Class",
   "label": "API Gateway",
-  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a [[Distributed System|distributed]] or [[Microservices|microservices]] backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentic...",
+  "definition": "Infrastructure component serving as the unified northbound entry point for client requests into a Distributed System|distributed or Microservices|microservices backend, providing cross-cutting policy enforcement (request routing across hundreds-to-thousands of upstream services, authentic...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

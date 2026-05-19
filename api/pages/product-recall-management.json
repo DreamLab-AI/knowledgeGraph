@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:product-recall-management",
   "domain": "blockchain",
-  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by [[Walmart]] (6 days \u2192 2.2 seconds mango tracing),...",
+  "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by Walmart (6 days \u2192 2.2 seconds mango tracing),...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

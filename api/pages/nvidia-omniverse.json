@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:nvidia-omniverse",
   "domain": "spatial-computing",
-  "definition": "NVIDIA Omniverse is a [[]]-centric, physically accurate [[simulation]] and [[digital twin]] platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and ...",
+  "definition": "NVIDIA Omniverse is a [[]]-centric, physically accurate simulation and digital twin platform developed by NVIDIA Corporation providing libraries, microservices, cloud APIs, and applications enabling developers, enterprises, and industrial operators to build, simulate, collaborate on, and ...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:3-d-platform",

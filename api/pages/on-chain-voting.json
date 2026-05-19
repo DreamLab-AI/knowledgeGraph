@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:on-chain-voting",
   "domain": "blockchain",
-  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling [[DAO]] participants to cast votes that are immutably recorded on public ledgers and automatically executed through [[Smart Contract|smart contracts]] without human intermediaries\u2014deployed across [[Uniswap]], [[Compou...",
+  "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries\u2014deployed across Uniswap, [[Compou...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:cryptography-security-and-privacy",

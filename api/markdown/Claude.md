@@ -173,24 +173,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:claude",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:claude",
+  "@type": "Individual",
   "label": "Claude",
   "definition": "A family of large language models developed by Anthropic, trained using Constitutional AI and RLHF to be helpful, harmless, and honest, with strong performance on reasoning, coding, and extended context tasks.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:large-language-models",
+      "label": "Large Language Models"
+    }
+  ]
 }
 ```
 

@@ -152,7 +152,7 @@ public:: true
   "@id": "urn:ngm:class:decentralized-autonomous-organization",
   "@type": "Class",
   "label": "Decentralized Autonomous Organization",
-  "definition": "An organisational entity operating through [[Smart Contracts]], [[Distributed Governance]], and community voting mechanisms without centralised authority or hierarchical control.",
+  "definition": "An organisational entity operating through Smart Contracts, Distributed Governance, and community voting mechanisms without centralised authority or hierarchical control.",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

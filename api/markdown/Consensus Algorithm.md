@@ -236,7 +236,7 @@ public:: true
   "@id": "urn:ngm:class:consensus-algorithm",
   "@type": "Class",
   "label": "Consensus Algorithm",
-  "definition": "Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority.",
+  "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority.",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

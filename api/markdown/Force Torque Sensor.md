@@ -172,7 +172,7 @@ public:: true
   "@id": "urn:ngm:class:force-torque-sensor",
   "@type": "Class",
   "label": "Force Torque Sensor",
-  "definition": "Force-Torque Sensor - A multi-axis transducer mounted on the [[Robot Wrist]] that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling [[Force Feedback]], [[Contact Detection]], and [[Compliance Control]] in precision manipulation.",
+  "definition": "Force-Torque Sensor - A multi-axis transducer mounted on the Robot Wrist that measures three-dimensional forces and torques (6-DoF) exerted during interaction with objects or humans, enabling Force Feedback, Contact Detection, and Compliance Control in precision manipulation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

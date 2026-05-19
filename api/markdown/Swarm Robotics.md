@@ -208,7 +208,7 @@ public:: true
   "@id": "urn:ngm:class:swarm-robotics",
   "@type": "Class",
   "label": "Swarm Robotics",
-  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and [[DecentralizedControl|decentralised control]] without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
+  "definition": "Swarm robotics employs large numbers of simple, autonomous agents that exhibit sophisticated collective behaviours through local interactions and DecentralizedControl|decentralised control without centralised coordination, inspired by biological swarms like ant colonies and bird flocks.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

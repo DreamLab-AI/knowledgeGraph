@@ -488,7 +488,7 @@ public:: true
   "@id": "urn:ngm:class:california-ai-bill",
   "@type": "Class",
   "label": "California AI bill",
-  "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale [[Frontier Models]] — most prominently Senate Bill 1047 (SB 1047...",
+  "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale Frontier Models — most prominently Senate Bill 1047 (SB 1047...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

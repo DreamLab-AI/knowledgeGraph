@@ -152,7 +152,7 @@ public:: true
   "@id": "urn:ngm:class:complete-hri-terms-reference",
   "@type": "Class",
   "label": "COMPLETE_HRI_TERMS_REFERENCE",
-  "definition": "A structured terminology reference documenting standardised vocabulary for [[Human-Robot Interaction]], encompassing [[Communication Protocols]], [[Behavioural Patterns]], and [[Engagement Modalities]].",
+  "definition": "A structured terminology reference documenting standardised vocabulary for Human-Robot Interaction, encompassing Communication Protocols, Behavioural Patterns, and Engagement Modalities.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

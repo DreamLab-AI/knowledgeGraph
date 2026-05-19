@@ -736,7 +736,7 @@ public:: true
   "@id": "urn:ngm:class:cryptocurrency",
   "@type": "Class",
   "label": "Cryptocurrency",
-  "definition": "Cryptocurrency is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by [[Public-Key Cryptography]] and a permissionless [[Consensus Mechanism]] operated by a [[Peer-to-Peer Network]] of independent nodes, such that no centr...",
+  "definition": "Cryptocurrency is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by Public-Key Cryptography and a permissionless Consensus Mechanism operated by a Peer-to-Peer Network of independent nodes, such that no centr...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

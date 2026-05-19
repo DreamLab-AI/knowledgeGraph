@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:compute-infrastructure",
   "domain": "infrastructure",
-  "definition": "[[Compute Infrastructure]] in the artificial intelligence era denotes the integrated stack of accelerated silicon, high-bandwidth interconnect fabrics, multi-megawatt power and cooling plant, and orchestration software that hosts the training and inference of frontier neural-network models at ind...",
+  "definition": "Compute Infrastructure in the artificial intelligence era denotes the integrated stack of accelerated silicon, high-bandwidth interconnect fabrics, multi-megawatt power and cooling plant, and orchestration software that hosts the training and inference of frontier neural-network models at ind...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:computing-infrastructure",

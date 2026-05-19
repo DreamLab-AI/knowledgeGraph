@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsidomain-classification",
   "domain": "artificial-intelligence",
-  "definition": "A taxonomy and classification scheme from the [[European Telecommunications Standards Institute]] categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination.",
+  "definition": "A taxonomy and classification scheme from the European Telecommunications Standards Institute categorising technology domains, standards, and governance areas to enable systematic organisation and cross-domain coordination.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:artificial-intelligence",

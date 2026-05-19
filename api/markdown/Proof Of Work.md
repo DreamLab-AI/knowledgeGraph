@@ -696,7 +696,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-work",
   "@type": "Class",
   "label": "Proof Of Work",
-  "definition": "[[Computational puzzle]] [[consensus mechanism]] within [[blockchain]] systems, providing essential functionality for [[distributed ledger]] technology operations and properties.",
+  "definition": "Computational puzzle consensus mechanism within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -177,22 +177,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:cardano",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:cardano",
+  "@type": "Individual",
   "label": "Cardano",
   "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-protocol",
-      "label": "Blockchain Protocol"
-    },
-    {
-      "@id": "urn:ngm:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -242,7 +232,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:blockchain-protocol",
+      "label": "Blockchain Protocol"
+    },
+    {
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ]
 }
 ```
 

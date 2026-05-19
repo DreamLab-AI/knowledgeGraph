@@ -168,7 +168,7 @@ public:: true
   "@id": "urn:ngm:class:gyroscope",
   "@type": "Class",
   "label": "Gyroscope",
-  "definition": "Gyroscope - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling [[Attitude Estimation]], [[Roll/Pitch/Yaw Measurement]], and [[Orientation Tracking]] for balance control and [[Inertial Navigation]] in aerial and mobile robots.",
+  "definition": "Gyroscope - An angular velocity sensor that detects rotation rates about three orthogonal axes, enabling Attitude Estimation, Roll/Pitch/Yaw Measurement, and Orientation Tracking for balance control and Inertial Navigation in aerial and mobile robots.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

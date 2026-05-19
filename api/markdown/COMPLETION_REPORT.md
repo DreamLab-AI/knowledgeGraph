@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:completion-report",
   "@type": "Class",
   "label": "COMPLETION_REPORT",
-  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed [[Project]] or [[Work Package]].",
+  "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed Project or Work Package.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

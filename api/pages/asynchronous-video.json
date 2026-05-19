@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:asynchronous-video",
   "domain": "distributed-collaboration",
-  "definition": "Asynchronous video is a [[Distributed Collaboration]] communication modality in which recorded video messages \u2014 combining screen capture, webcam footage, audio narration, and on-screen annotation \u2014 are produced by a sender and consumed by recipients independently of the sender's presence, elimina...",
+  "definition": "Asynchronous video is a Distributed Collaboration communication modality in which recorded video messages \u2014 combining screen capture, webcam footage, audio narration, and on-screen annotation \u2014 are produced by a sender and consumed by recipients independently of the sender's presence, elimina...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-workplace-technology",

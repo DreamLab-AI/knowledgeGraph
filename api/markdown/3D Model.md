@@ -172,7 +172,7 @@ public:: true
   "@id": "urn:ngm:class:3-d-model",
   "@type": "Class",
   "label": "3D Model",
-  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as [[3D File Format]].",
+  "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as 3D File Format.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -132,34 +132,6 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:orphan-block",
-  "@type": "Class",
-  "label": "Orphan Block",
-  "definition": "Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "domain": "blockchain",
-  "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "@id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
-    }
-  ],
-  "quality": 0.5,
-  "provenance": {
-    "attributedTo": "did:nostr:jjohare",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R1Explicit"
-  }
-}
-```
-
-```json-ld
-{
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:annotation:link-resolutions:orphan-block:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
@@ -215,7 +187,6 @@ public:: true
   }
 }
 ```
-
 
 - ### Definition
   - Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.

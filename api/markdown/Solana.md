@@ -113,24 +113,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:solana",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:solana",
+  "@type": "Individual",
   "label": "Solana",
   "definition": "A high-performance blockchain platform combining Proof-of-History (PoH) with Proof-of-Stake consensus, enabling parallel transaction processing for exceptional throughput exceeding TPS.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
   "quality": 0.35,
   "provenance": {
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:smart-contract-platform",
+      "label": "Smart Contract Platform"
+    }
+  ]
 }
 ```
 

@@ -180,7 +180,7 @@ public:: true
   "@id": "urn:ngm:class:accessible-experience",
   "@type": "Class",
   "label": "Accessible Experience",
-  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and [[Accessible Design]] principles.",
+  "definition": "An Accessible Experience is a virtual environment or application delivering equivalent functionality and engagement to users with disabilities through multimodal access pathways, assistive technology integration, and Accessible Design principles.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

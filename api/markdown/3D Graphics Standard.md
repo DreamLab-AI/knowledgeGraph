@@ -180,7 +180,7 @@ public:: true
   "@id": "urn:ngm:class:3-d-graphics-standard",
   "@type": "Class",
   "label": "3D Graphics Standard",
-  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like [[OpenGL]], [[DirectX]], and [[Vulkan]], shader languages, and coordinate system conventions.",
+  "definition": "3D Graphics Standards are technical specifications and conventions governing the representation, rendering, and interchange of three-dimensional visual data, including APIs like OpenGL, DirectX, and Vulkan, shader languages, and coordinate system conventions.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

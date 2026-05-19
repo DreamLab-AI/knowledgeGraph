@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-avatar",
   "domain": "spatial-computing",
-  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]].",
+  "definition": "A digital representation of a user or entity within Virtual Environments, exhibiting Embodied Presence, Visual Customisation, and Behavioural Agency.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:virtual-representation",

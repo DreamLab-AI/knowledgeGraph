@@ -256,7 +256,7 @@ public:: true
   "@id": "urn:ngm:class:open-webui-and-pipelines",
   "@type": "Class",
   "label": "Open Webui and Pipelines",
-  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, + GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote [[Large Language Models]] through a polished conversational UI, supporting [[Ollama]] ...",
+  "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, + GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote Large Language Models through a polished conversational UI, supporting Ollama ...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

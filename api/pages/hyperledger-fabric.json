@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:hyperledger-fabric",
   "domain": "blockchain",
-  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential systems through [[PrivateChannels]], [[SmartContract|chaincode]], and pluggable consensus mechanisms.",
+  "definition": "Permissioned blockchain framework enabling enterprise consortia to build modular, confidential systems through PrivateChannels, SmartContract|chaincode, and pluggable consensus mechanisms.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

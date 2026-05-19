@@ -424,7 +424,7 @@ public:: true
   "@id": "urn:ngm:class:stablecoin-regulation",
   "@type": "Class",
   "label": "Stablecoin Regulation",
-  "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to [[Cryptocurrency|cryptocurrency tokens]] designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five con...",
+  "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to Cryptocurrency|cryptocurrency tokens designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five con...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

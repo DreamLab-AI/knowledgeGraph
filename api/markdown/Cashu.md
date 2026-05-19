@@ -704,7 +704,7 @@ public:: true
   "@id": "urn:ngm:class:cashu",
   "@type": "Class",
   "label": "Cashu",
-  "definition": "Cashu is a free and open-source Chaumian ecash protocol designed for Bitcoin and the [[Lightning Network]], first released in October 2022 by the pseudonymous developer Calle (alias @calle), a PhD physicist and Bitcoin developer.",
+  "definition": "Cashu is a free and open-source Chaumian ecash protocol designed for Bitcoin and the Lightning Network, first released in October 2022 by the pseudonymous developer Calle (alias @calle), a PhD physicist and Bitcoin developer.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

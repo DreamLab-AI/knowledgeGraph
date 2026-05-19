@@ -3,16 +3,11 @@
   "title": "Claude",
   "slug": "claude",
   "public": true,
-  "classIri": "urn:ngm:class:claude",
+  "classIri": "urn:ngm:individual:claude",
   "domain": "artificial-intelligence",
   "definition": "A family of large language models developed by Anthropic, trained using Constitutional AI and RLHF to be helpful, harmless, and honest, with strong performance on reasoning, coding, and extended context tasks.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

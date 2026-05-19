@@ -448,7 +448,7 @@ public:: true
   "@id": "urn:ngm:class:vircadia",
   "@type": "Class",
   "label": "Vircadia",
-  "definition": "Vircadia is an open-source, community-governed, self-hostable [[Metaverse]] platform forked from [[High Fidelity]]'s codebase under the Apache 2.0 licence, providing a federated architecture for persistent, spatially-aware virtual worlds with support for desktop and [[VR Headsets]] clients, posit...",
+  "definition": "Vircadia is an open-source, community-governed, self-hostable Metaverse platform forked from High Fidelity's codebase under the Apache 2.0 licence, providing a federated architecture for persistent, spatially-aware virtual worlds with support for desktop and VR Headsets clients, posit...",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [

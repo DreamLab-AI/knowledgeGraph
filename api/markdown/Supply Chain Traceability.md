@@ -160,7 +160,7 @@ public:: true
   "@id": "urn:ngm:class:supply-chain-traceability",
   "@type": "Class",
   "label": "Supply Chain Traceability",
-  "definition": "Supply chain traceability employs [[BlockchainTechnology|blockchain]] and [[SmartContract|smart contracts]] to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
+  "definition": "Supply chain traceability employs BlockchainTechnology|blockchain and SmartContract|smart contracts to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

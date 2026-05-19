@@ -228,7 +228,7 @@ public:: true
   "@id": "urn:ngm:class:did-nostr-identity",
   "@type": "Class",
   "label": "DID Nostr Identity",
-  "definition": "A [[W3C DID Core|W3C Decentralised Identifier]] (did:nostr:<pubkey>) binding a [[VisionClaw Agentic Container|VisionClaw agent]] to its [[BIP-340 Schnorr Keypair|BIP-340 x-only public key]], enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a c...",
+  "definition": "A W3C DID Core|W3C Decentralised Identifier (did:nostr:<pubkey>) binding a VisionClaw Agentic Container|VisionClaw agent to its BIP-340 Schnorr Keypair|BIP-340 x-only public key, enabling cryptographic proof of identity, self-sovereign key management, and inter-agent trust without a c...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

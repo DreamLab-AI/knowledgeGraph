@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:aerial-robot",
   "domain": "robotics",
-  "definition": "Aerial Robot - An autonomous or remotely operated aircraft equipped with [[Sensors]], [[Actuators]], and [[Navigation Systems]] for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
+  "definition": "Aerial Robot - An autonomous or remotely operated aircraft equipped with Sensors, Actuators, and Navigation Systems for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:mobile-robot",

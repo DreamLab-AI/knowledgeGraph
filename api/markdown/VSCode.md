@@ -113,24 +113,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:vscode",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:vscode",
+  "@type": "Individual",
   "label": "VSCode",
   "definition": "VSCode is a technology infrastructure concept and a type of infrastructure.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:infrastructure",
+      "label": "infrastructure"
+    }
+  ]
 }
 ```
 

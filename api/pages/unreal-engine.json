@@ -3,16 +3,11 @@
   "title": "Unreal Engine",
   "slug": "unreal-engine",
   "public": true,
-  "classIri": "urn:ngm:class:unreal-engine",
+  "classIri": "urn:ngm:individual:unreal-engine",
   "domain": "spatial-computing",
-  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform \u2014 simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service \u2014 whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized mic...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:creative-tools",
-      "label": "creative-tools"
-    }
-  ],
-  "entityType": "Class",
+  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform \u2014 simultaneously a Game Engine, a virtual production environment, a simulation framework, and a scalable cloud-streaming service \u2014 whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized mic...",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

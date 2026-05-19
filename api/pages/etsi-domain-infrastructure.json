@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-infrastructure",
   "domain": "infrastructure",
-  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale.",
+  "definition": "An ETSI governance domain governing foundational systems, networks, and computational resources enabling Metaverse platforms at scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:infrastructure",

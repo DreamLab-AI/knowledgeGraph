@@ -1508,7 +1508,7 @@ public:: true
   "@id": "urn:ngm:class:bitcoin-mining",
   "@type": "Class",
   "label": "Bitcoin Mining",
-  "definition": "Bitcoin Mining is the [[proof-of-work]] [[Nakamoto consensus]] process by which the [[Bitcoin]] [[blockchain]] is extended, secured, and monetised through competitive computation of [[SHA-256]] double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad...",
+  "definition": "Bitcoin Mining is the proof-of-work Nakamoto consensus process by which the Bitcoin blockchain is extended, secured, and monetised through competitive computation of SHA-256 double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

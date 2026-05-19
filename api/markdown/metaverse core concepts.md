@@ -208,7 +208,7 @@ public:: true
   "@id": "urn:ngm:class:metaverse-core-concepts",
   "@type": "Class",
   "label": "metaverse core concepts",
-  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies ([[Augmented Reality]], [[Spatial Computing]], [[Haptic Feedback]]), virtual environments ([[Virtual World]], [[Social VR]], [[Digital Twin]]), digital identity and assets ...",
+  "definition": "A comprehensive framework encompassing foundational concepts and technologies enabling the metaverse: immersive technologies (Augmented Reality, Spatial Computing, Haptic Feedback), virtual environments (Virtual World, Social VR, Digital Twin), digital identity and assets ...",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -212,7 +212,7 @@ public:: true
   "@id": "urn:ngm:class:differential-kinematics",
   "@type": "Class",
   "label": "Differential Kinematics",
-  "definition": "Differential kinematics maps velocities between [[Robot Joint]] space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators.",
+  "definition": "Differential kinematics maps velocities between Robot Joint space and task-space (Cartesian) coordinates using the Jacobian matrix, enabling velocity-level analysis and control of robot manipulators.",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [

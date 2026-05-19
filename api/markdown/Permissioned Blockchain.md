@@ -176,7 +176,7 @@ public:: true
   "@id": "urn:ngm:class:permissioned-blockchain",
   "@type": "Class",
   "label": "Permissioned Blockchain",
-  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable [[Consensus Mechanism|consensus mechanisms]], enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintainin...",
+  "definition": "A restricted-access distributed ledger controlled by known participants using predefined permissions and pluggable Consensus Mechanism|consensus mechanisms, enabling organisations to leverage blockchain technology's immutability, transparency, and smart contract capabilities whilst maintainin...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

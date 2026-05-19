@@ -464,7 +464,7 @@ public:: true
   "@id": "urn:ngm:class:private-blockchain",
   "@type": "Class",
   "label": "Private Blockchain",
-  "definition": "A permissioned [[Blockchain]] network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
+  "definition": "A permissioned Blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

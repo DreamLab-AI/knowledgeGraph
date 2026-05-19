@@ -3,36 +3,6 @@
   "title": "Orphan Block",
   "slug": "orphan-block",
   "public": true,
-  "classIri": "urn:ngm:class:orphan-block",
-  "domain": "blockchain",
-  "definition": "Valid block not in longest chain within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:blockchain-entity",
-      "label": "Blockchain Entity"
-    },
-    {
-      "id": "urn:ngm:class:distributed-data-structure",
-      "label": "DistributedDataStructure"
-    }
-  ],
-  "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "established",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
-  },
   "wikilinks": [
     {
       "slug": "ieee-2418-1",

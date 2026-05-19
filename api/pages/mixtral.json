@@ -3,16 +3,11 @@
   "title": "Mixtral",
   "slug": "mixtral",
   "public": true,
-  "classIri": "urn:ngm:class:mixtral",
+  "classIri": "urn:ngm:individual:mixtral",
   "domain": "artificial-intelligence",
   "definition": "A Sparse Mixture of Experts language model with 8 expert networks where each token is routed to 2 experts, achieving 47B total parameters whilst maintaining 13B active parameters per token for efficient inference.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:large-language-models",
-      "label": "Large Language Models"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

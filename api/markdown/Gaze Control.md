@@ -212,7 +212,7 @@ public:: true
   "@id": "urn:ngm:class:gaze-control",
   "@type": "Class",
   "label": "Gaze Control",
-  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural [[Human-Robot Interaction]].",
+  "definition": "Gaze control regulates robot eye and head movement to establish, maintain, and redirect visual attention toward objects and people, conveying robot intent and facilitating natural Human-Robot Interaction.",
   "domain": "robotics",
   "maturity": "emerging",
   "subClassOf": [

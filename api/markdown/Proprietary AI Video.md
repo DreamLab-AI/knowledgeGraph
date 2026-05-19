@@ -352,7 +352,7 @@ public:: true
   "@id": "urn:ngm:class:proprietary-ai-video",
   "@type": "Class",
   "label": "Proprietary AI Video",
-  "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated [[Generative AI]] systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons,...",
+  "definition": "Proprietary AI Video denotes the class of closed-source, commercially operated Generative AI systems that synthesise temporally-coherent moving imagery conditioned on text prompts, reference images, existing video clips, audio signals, or structured control inputs (depth maps, pose skeletons,...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

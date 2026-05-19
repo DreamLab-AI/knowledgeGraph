@@ -160,7 +160,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-identity-and-trust",
   "@type": "Class",
   "label": "ETSI Domain Identity and Trust",
-  "definition": "An [[ETSI]] governance domain establishing identity management, authentication, and trust infrastructure for [[VirtualEnvironment|virtual environments]].",
+  "definition": "An ETSI governance domain establishing identity management, authentication, and trust infrastructure for VirtualEnvironment|virtual environments.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [

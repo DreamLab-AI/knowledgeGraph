@@ -844,7 +844,7 @@ public:: true
   "@id": "urn:ngm:class:ai-agent-system",
   "@type": "Class",
   "label": "AI Agent System",
-  "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time.",
+  "definition": "An autonomous software entity that perceives its environment through Sensor Input|sensors, makes decisions using AI Techniques, and takes actions to achieve specific goals, capable of Machine Learning|learning from experience and adapting Adaptive Behavior|behaviour over time.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -1,12 +1,12 @@
 {
   "total_pages": 2816,
-  "pages_with_ontology": 2793,
+  "pages_with_ontology": 2780,
   "public_pages": 2794,
-  "total_issues": 457,
+  "total_issues": 444,
   "errors": 0,
-  "warnings": 457,
+  "warnings": 444,
   "by_code": {
-    "MULTI_PARENT": 457
+    "MULTI_PARENT": 444
   },
   "issues": [
     {
@@ -208,12 +208,6 @@
       "message": "Multiple parents (2): Generalisation Theory, Model Evaluation"
     },
     {
-      "path": "AnimateDiff.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Latent Diffusion, Text-to-Video"
-    },
-    {
       "path": "Anthropic Claude.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -344,12 +338,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Economic Philosophy, Store of Value"
-    },
-    {
-      "path": "Blender.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): 3D and 4D, Rendering Engine"
     },
     {
       "path": "Block Header.md",
@@ -538,12 +526,6 @@
       "message": "Multiple parents (2): Climate-Aligned Finance, Green Infrastructure"
     },
     {
-      "path": "Cardano.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Blockchain Protocol, Smart Contract Platform"
-    },
-    {
       "path": "Cashu.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -668,12 +650,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Fashion Technology, ComfyUI"
-    },
-    {
-      "path": "ComfyUI.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Diffusion Model Runtime, Inference Orchestrator"
     },
     {
       "path": "Competition in AI.md",
@@ -1192,12 +1168,6 @@
       "message": "Multiple parents (2): Business Logic Code, Multi-Party Agreement"
     },
     {
-      "path": "Ethereum.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Decentralised Computing Platform, Layer 1 Blockchain"
-    },
-    {
       "path": "Ethical Sourcing.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1268,12 +1238,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, NetworkComponent"
-    },
-    {
-      "path": "Flux.1.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Multimodal Diffusion Transformer, Rectified Flow Model"
     },
     {
       "path": "Fooocus.md",
@@ -1498,12 +1462,6 @@
       "message": "Multiple parents (2): Bipedal Robot, Embodied Agent"
     },
     {
-      "path": "Hunyuan Video.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Diffusion Transformer, Generative Video Model"
-    },
-    {
       "path": "Hydraulic Actuator.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1526,12 +1484,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Enterprise Blockchain Framework, Hyperledger Project"
-    },
-    {
-      "path": "IP-Adapter.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Cross-Attention Module, Diffusion Model Adapter"
     },
     {
       "path": "Identity Management System.md",
@@ -1732,12 +1684,6 @@
       "message": "Multiple parents (2): Applied Machine Learning, Combinatorial Optimization"
     },
     {
-      "path": "Logseq.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Local-First Software, Note-Taking Application"
-    },
-    {
       "path": "Longest Chain Rule.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -1856,12 +1802,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Blockchain Entity, EconomicMechanism"
-    },
-    {
-      "path": "Mistral and Mixtral.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Open Source AI, Transformer Architecture"
     },
     {
       "path": "Mixed Reality.md",
@@ -2044,12 +1984,6 @@
       "message": "Multiple parents (2): Computer Vision System, Imaging Parameters"
     },
     {
-      "path": "Orphan Block.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Blockchain Entity, DistributedDataStructure"
-    },
-    {
       "path": "Output.md",
       "severity": "warning",
       "code": "MULTI_PARENT",
@@ -2096,12 +2030,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Communications Engineering, Hardware Layer"
-    },
-    {
-      "path": "Pika.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Creative AI Tool, Generative AI Product"
     },
     {
       "path": "Pneumatic Actuator.md",
@@ -2378,12 +2306,6 @@
       "severity": "warning",
       "code": "MULTI_PARENT",
       "message": "Multiple parents (2): Embedded System, Simulation Environment"
-    },
-    {
-      "path": "Rust.md",
-      "severity": "warning",
-      "code": "MULTI_PARENT",
-      "message": "Multiple parents (2): Compiled Language, Concurrent Programming Language"
     },
     {
       "path": "SHA-256.md",

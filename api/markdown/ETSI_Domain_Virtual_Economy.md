@@ -304,7 +304,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-virtual-economy",
   "@type": "Class",
   "label": "ETSI_Domain_Virtual_Economy",
-  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets...",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through CryptoToken|crypto tokens, Cryptocurrency|cryptocurrencies, CentralBankDigitalCurrency|CBDCs, and [[DigitalAsset|digital assets...",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

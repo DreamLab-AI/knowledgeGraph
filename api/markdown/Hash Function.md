@@ -536,7 +536,7 @@ public:: true
   "@id": "urn:ngm:class:hash-function",
   "@type": "Class",
   "label": "Hash Function",
-  "definition": "A [[Hash Function]] is a deterministic computational mapping H: {0,1}* → {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n ∈ {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
+  "definition": "A Hash Function is a deterministic computational mapping H: {0,1}* → {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n ∈ {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

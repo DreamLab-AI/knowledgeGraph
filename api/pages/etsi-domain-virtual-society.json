@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-virtual-society",
   "domain": "spatial-computing",
-  "definition": "A standardization domain within the [[ETSI]] focused on virtual society technologies, encompassing metaverse ecosystems, [[XR (Extended Reality)]], [[digital identity]], and interoperable virtual worlds.",
+  "definition": "A standardization domain within the ETSI focused on virtual society technologies, encompassing metaverse ecosystems, XR (Extended Reality), digital identity, and interoperable virtual worlds.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",

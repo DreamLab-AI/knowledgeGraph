@@ -380,7 +380,7 @@ public:: true
   "@id": "urn:ngm:class:vision-claw-agentic-container",
   "@type": "Class",
   "label": "VisionClaw Agentic Container",
-  "definition": "A [[Sovereign Mesh|sovereign, manifest-driven]] agentic runtime container that orchestrates [[DID Nostr Identity|DID Nostr]] agents across a decentralised [[Peer-to-Peer Network|peer-to-peer network]], enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
+  "definition": "A Sovereign Mesh|sovereign, manifest-driven agentic runtime container that orchestrates DID Nostr Identity|DID Nostr agents across a decentralised Peer-to-Peer Network|peer-to-peer network, enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

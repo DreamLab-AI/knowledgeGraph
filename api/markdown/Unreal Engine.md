@@ -377,18 +377,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:unreal-engine",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:unreal-engine",
+  "@type": "Individual",
   "label": "Unreal Engine",
-  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform — simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service — whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized mic...",
+  "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform — simultaneously a Game Engine, a virtual production environment, a simulation framework, and a scalable cloud-streaming service — whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized mic...",
   "domain": "spatial-computing",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:creative-tools",
-      "label": "creative-tools"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -668,7 +662,13 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:creative-tools",
+      "label": "creative-tools"
+    }
+  ]
 }
 ```
 

@@ -168,7 +168,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-governance-economy",
   "@type": "Class",
   "label": "ETSI_Domain_Governance___Economy",
-  "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These [[Governance Frameworks]] integrate [[Monetary Policy]], [[Market Supervision]], and [[Economic Oversight]] to ensure stable financial operations.",
+  "definition": "ETSI domain intersection addressing economic governance, financial regulation, and market oversight mechanisms within metaverse ecosystems. These Governance Frameworks integrate Monetary Policy, Market Supervision, and Economic Oversight to ensure stable financial operations.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {

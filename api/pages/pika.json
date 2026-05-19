@@ -3,20 +3,11 @@
   "title": "Pika",
   "slug": "pika",
   "public": true,
-  "classIri": "urn:ngm:class:pika",
+  "classIri": "urn:ngm:individual:pika",
   "domain": "artificial-intelligence",
   "definition": "Pika (operated by Pika Labs Inc.) is a San Francisco-based generative artificial intelligence company founded in April 2023 by Stanford computer-science PhD candidates Demi Guo (CEO, formerly Harvard mathematics, Stanford CS, alumna of Facebook AI Research, Google Brain, Microsoft Bing, Quora and...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:creative-ai-tool",
-      "label": "Creative AI Tool"
-    },
-    {
-      "id": "urn:ngm:class:generative-ai-product",
-      "label": "Generative AI Product"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

@@ -820,7 +820,7 @@ public:: true
   "@id": "urn:ngm:class:identity-verification",
   "@type": "Class",
   "label": "Identity Verification",
-  "definition": "[[Identity Verification]] (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim — that a specific natural person or legal entity is who they purport to be — by collecting evide...",
+  "definition": "Identity Verification (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim — that a specific natural person or legal entity is who they purport to be — by collecting evide...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

@@ -700,7 +700,7 @@ public:: true
   "@id": "urn:ngm:class:bitcoin-value-proposition",
   "@type": "Class",
   "label": "Bitcoin Value Proposition",
-  "definition": "Bitcoin Value Proposition is the aggregate set of economic, monetary, and philosophical arguments that justify holding, using, or building on [[Bitcoin]] as a distinct and superior form of money, property, or network infrastructure.",
+  "definition": "Bitcoin Value Proposition is the aggregate set of economic, monetary, and philosophical arguments that justify holding, using, or building on Bitcoin as a distinct and superior form of money, property, or network infrastructure.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

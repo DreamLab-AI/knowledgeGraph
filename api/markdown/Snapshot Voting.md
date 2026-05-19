@@ -588,7 +588,7 @@ public:: true
   "@id": "urn:ngm:class:snapshot-voting",
   "@type": "Class",
   "label": "Snapshot Voting",
-  "definition": "Snapshot Voting is the dominant off-chain gasless governance infrastructure operated by Snapshot Labs that enables [[DecentralizedAutonomousOrganization|decentralised autonomous organisations]] and [[DeFi]] protocols to conduct binding-or-advisory governance polls without spending [[GasFees|gas]]...",
+  "definition": "Snapshot Voting is the dominant off-chain gasless governance infrastructure operated by Snapshot Labs that enables DecentralizedAutonomousOrganization|decentralised autonomous organisations and DeFi protocols to conduct binding-or-advisory governance polls without spending GasFees|gas...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

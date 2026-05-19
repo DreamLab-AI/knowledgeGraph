@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:treasury-management",
   "domain": "blockchain",
-  "definition": "Treasury management in [[Blockchain Network|blockchain]] and [[DAO|decentralised autonomous organisation]] (DAO) contexts encompasses the governance-directed custody, allocation, diversification, yield generation, and reporting of organisational funds held in [[Smart Contract|smart contract]]-con...",
+  "definition": "Treasury management in Blockchain Network|blockchain and DAO|decentralised autonomous organisation (DAO) contexts encompasses the governance-directed custody, allocation, diversification, yield generation, and reporting of organisational funds held in Smart Contract|smart contract-con...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:corporate-finance",

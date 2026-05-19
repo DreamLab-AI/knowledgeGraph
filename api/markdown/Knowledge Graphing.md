@@ -588,7 +588,7 @@ public:: true
   "@id": "urn:ngm:class:knowledge-graphing",
   "@type": "Class",
   "label": "Knowledge Graphing",
-  "definition": "Knowledge Graphing is the discipline and computational framework for constructing, enriching, storing, querying, and reasoning over structured semantic knowledge encoded as a graph of typed entities (nodes) and directed typed relationships (edges), spanning formal [[Semantic Web]] standards (RDF/...",
+  "definition": "Knowledge Graphing is the discipline and computational framework for constructing, enriching, storing, querying, and reasoning over structured semantic knowledge encoded as a graph of typed entities (nodes) and directed typed relationships (edges), spanning formal Semantic Web standards (RDF/...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sparql-examples",
   "domain": "spatial-computing",
-  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in [[RDF|Resource Description Framework]] format, enabling structured queries across linked data and knowledge graphs at massive scale.",
+  "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in RDF|Resource Description Framework format, enabling structured queries across linked data and knowledge graphs at massive scale.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:semantic-web-standards",

@@ -148,7 +148,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-governance-society",
   "@type": "Class",
   "label": "ETSI_Domain_Governance___Society",
-  "definition": "An [[ETSI]] governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.",
+  "definition": "An ETSI governance domain addressing societal impacts, inclusion, community wellbeing, and cultural considerations for metaverse and digital infrastructure.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {

@@ -228,7 +228,7 @@ public:: true
   "@id": "urn:ngm:class:linked-data-encoder",
   "@type": "Class",
   "label": "Linked Data Encoder",
-  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into [[JSON-LD 1.1]] format using pinned, versioned [[JSON-LD Context|W3C JSON-LD contexts]], enabling standardised [[Federation Surface|federation surfaces]] (S1–S11) that are queryable, linkable, and mac...",
+  "definition": "A semantic encoding pipeline that transforms agent state, credentials, events, and metadata into JSON-LD 1.1 format using pinned, versioned JSON-LD Context|W3C JSON-LD contexts, enabling standardised Federation Surface|federation surfaces (S1–S11) that are queryable, linkable, and mac...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

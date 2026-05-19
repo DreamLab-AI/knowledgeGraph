@@ -168,7 +168,7 @@ public:: true
   "@id": "urn:ngm:class:accelerometer",
   "@type": "Class",
   "label": "Accelerometer",
-  "definition": "Accelerometer - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure [[Motion]], [[Orientation]], and [[Vibration]] for real-time feedback control and navigation.",
+  "definition": "Accelerometer - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure Motion, Orientation, and Vibration for real-time feedback control and navigation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

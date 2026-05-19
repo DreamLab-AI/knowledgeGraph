@@ -417,22 +417,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:logseq",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:logseq",
+  "@type": "Individual",
   "label": "Logseq",
   "definition": "Logseq is a privacy-first, open-source, local-first personal knowledge management (PKM) platform built on a block-based outliner architecture, implemented primarily in ClojureScript with a DataScript in-memory Datalog query engine, providing bidirectional linking, hierarchical namespaces, propert...",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:local-first-software",
-      "label": "Local-First Software"
-    },
-    {
-      "@id": "urn:ngm:class:note-taking-application",
-      "label": "Note-Taking Application"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -740,7 +730,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:local-first-software",
+      "label": "Local-First Software"
+    },
+    {
+      "@id": "urn:ngm:class:note-taking-application",
+      "label": "Note-Taking Application"
+    }
+  ]
 }
 ```
 

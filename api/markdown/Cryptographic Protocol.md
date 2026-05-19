@@ -216,7 +216,7 @@ public:: true
   "@id": "urn:ngm:class:cryptographic-protocol",
   "@type": "Class",
   "label": "Cryptographic Protocol",
-  "definition": "[[Cryptographic-Protocol]] encompasses mathematical frameworks and algorithmic procedures securing [[blockchain]] through cryptographic primitives.",
+  "definition": "Cryptographic-Protocol encompasses mathematical frameworks and algorithmic procedures securing blockchain through cryptographic primitives.",
   "domain": "infrastructure",
   "maturity": "draft",
   "relations": {

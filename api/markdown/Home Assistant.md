@@ -536,7 +536,7 @@ public:: true
   "@id": "urn:ngm:class:home-assistant",
   "@type": "Class",
   "label": "Home Assistant",
-  "definition": "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including [[Zigbee Protocol]], [[Z-Wave Protocol]], [[Matter Prot...",
+  "definition": "Home Assistant is a free and open-source home automation platform written in Python (backend) and TypeScript (frontend), enabling local-first integration and control of heterogeneous smart-home devices and services across protocols including Zigbee Protocol, Z-Wave Protocol, [[Matter Prot...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

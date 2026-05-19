@@ -568,7 +568,7 @@ public:: true
   "@id": "urn:ngm:class:cross-border-compliance",
   "@type": "Class",
   "label": "Cross Border Compliance",
-  "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law ([[GDPR]], [[UK GDPR]], [[CCPA]], [[PIPL]], [[DPDPA 2023]]), AI regu...",
+  "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law (GDPR, UK GDPR, CCPA, PIPL, DPDPA 2023), AI regu...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

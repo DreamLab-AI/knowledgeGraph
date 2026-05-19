@@ -256,7 +256,7 @@ public:: true
   "@id": "urn:ngm:class:sovereign-keyset",
   "@type": "Class",
   "label": "Sovereign Keyset",
-  "definition": "The cryptographic key material ([[BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair]]) held securely by each [[VisionClaw Agentic Container|VisionClaw agent]], used to prove identity via [[DID Nostr Identity|did:nostr]] DIDs, sign [[Verifiable Credential Surface|verifiable credentials]], authentica...",
+  "definition": "The cryptographic key material (BIP-340 Schnorr Keypair|BIP-340 Schnorr keypair) held securely by each VisionClaw Agentic Container|VisionClaw agent, used to prove identity via DID Nostr Identity|did:nostr DIDs, sign Verifiable Credential Surface|verifiable credentials, authentica...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

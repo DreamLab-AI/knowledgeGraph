@@ -121,24 +121,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bert",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:bert",
+  "@type": "Individual",
   "label": "BERT",
   "definition": "Bidirectional Encoder Representations from Transformers: a transformer-based model designed to pre-train deep bidirectional representations from unlabelled text by jointly conditioning on both left and right context in all layers.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R5DomainRootFallback"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:artificial-intelligence",
+      "label": "artificial-intelligence"
+    }
+  ]
 }
 ```
 

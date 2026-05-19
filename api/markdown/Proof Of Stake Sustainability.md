@@ -292,7 +292,7 @@ public:: true
   "@id": "urn:ngm:class:proof-of-stake-sustainability",
   "@type": "Class",
   "label": "Proof Of Stake Sustainability",
-  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of [[Proof of Stake]] consensus mechanisms that make them a viable long-term alternative to energy-intensive [[Proof of Work]] systems.",
+  "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of Proof of Stake consensus mechanisms that make them a viable long-term alternative to energy-intensive Proof of Work systems.",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

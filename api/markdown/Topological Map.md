@@ -444,7 +444,7 @@ public:: true
   "@id": "urn:ngm:class:topological-map",
   "@type": "Class",
   "label": "Topological Map",
-  "definition": "[[Topological Map]] is a graph-structured spatial abstraction used in [[Mobile Robot Navigation]] and [[Autonomous Navigation]], representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coord...",
+  "definition": "Topological Map is a graph-structured spatial abstraction used in Mobile Robot Navigation and Autonomous Navigation, representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coord...",
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [

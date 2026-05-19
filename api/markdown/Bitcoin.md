@@ -1105,18 +1105,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:bitcoin",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:bitcoin",
+  "@type": "Individual",
   "label": "Bitcoin",
   "definition": "The first decentralised peer-to-peer electronic cash system and cryptocurrency, implementing proof-of-work consensus, a fixed 21 coin supply cap, and the UTXO transaction model, serving as the foundational reference implementation for blockchain technology.",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:payment-system",
-      "label": "Payment System"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -1186,7 +1180,13 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:payment-system",
+      "label": "Payment System"
+    }
+  ]
 }
 ```
 

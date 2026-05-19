@@ -232,7 +232,7 @@ public:: true
   "@id": "urn:ngm:class:autonomous-robot",
   "@type": "Class",
   "label": "Autonomous Robot",
-  "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using [[Artificial Intelligence]] and [[Autonomous Navigation]].",
+  "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using Artificial Intelligence and Autonomous Navigation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

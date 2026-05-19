@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:zero-knowledge",
   "domain": "spatial-computing",
-  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through [[InteractiveProtocol|interactive protocols]] or [[NIZKProof|non-interactiv...",
+  "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or [[NIZKProof|non-interactiv...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:privacy-enhancing-computation-pec",

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:sustainable-consensus",
   "domain": "blockchain",
-  "definition": "Sustainable consensus mechanisms are distributed agreement protocols designed for [[Blockchain Network|blockchain]] and distributed ledger systems that achieve Byzantine fault-tolerant finality whilst minimising energy consumption, carbon emissions, and physical resource expenditure\u2014contrasting s...",
+  "definition": "Sustainable consensus mechanisms are distributed agreement protocols designed for Blockchain Network|blockchain and distributed ledger systems that achieve Byzantine fault-tolerant finality whilst minimising energy consumption, carbon emissions, and physical resource expenditure\u2014contrasting s...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:climate-technology",

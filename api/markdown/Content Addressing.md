@@ -244,7 +244,7 @@ public:: true
   "@id": "urn:ngm:class:content-addressing",
   "@type": "Class",
   "label": "Content Addressing",
-  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its [[Content Hash|cryptographic content hash]] (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling [[VisionClaw Agentic Container|VisionClaw]] artefacts (credentials, receip...",
+  "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its Content Hash|cryptographic content hash (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling VisionClaw Agentic Container|VisionClaw artefacts (credentials, receip...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-immersive-experiences",
   "domain": "spatial-computing",
-  "definition": "An [[ETSI]] governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including [[VirtualReality]], [[AugmentedReality]], [[ExtendedReality]], and [[SpatialComputing]].",
+  "definition": "An ETSI governance domain encompassing technologies, standards, and practices for creating immersive digital experiences including VirtualReality, AugmentedReality, ExtendedReality, and SpatialComputing.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",

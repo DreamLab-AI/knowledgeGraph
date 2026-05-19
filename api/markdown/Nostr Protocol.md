@@ -292,7 +292,7 @@ public:: true
   "@id": "urn:ngm:class:nostr-protocol",
   "@type": "Class",
   "label": "Nostr Protocol",
-  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with [[Schnorr Signatures|Schnorr signatures]] over the [[secp256k1]] elliptic curve and broadcast them to any number of s...",
+  "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with Schnorr Signatures|Schnorr signatures over the secp256k1 elliptic curve and broadcast them to any number of s...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

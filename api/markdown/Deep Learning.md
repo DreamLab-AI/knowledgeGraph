@@ -264,7 +264,7 @@ public:: true
   "@id": "urn:ngm:class:deep-learning",
   "@type": "Class",
   "label": "Deep Learning",
-  "definition": "[[Deep Learning]] is a subset of [[Machine Learning]] based on [[Artificial Neural Networks]] with multiple layers (depth) that learn hierarchical representations of data through [[Backpropagation]] and [[Gradient Descent]].",
+  "definition": "Deep Learning is a subset of Machine Learning based on Artificial Neural Networks with multiple layers (depth) that learn hierarchical representations of data through Backpropagation and Gradient Descent.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

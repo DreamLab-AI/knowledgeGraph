@@ -448,7 +448,7 @@ public:: true
   "@id": "urn:ngm:class:tokenomics-governance",
   "@type": "Class",
   "label": "Tokenomics Governance",
-  "definition": "Tokenomics governance is the discipline integrating token-economic design with decentralised decision-making mechanisms, defining how [[Governance Token]] holders in [[DeFi]] and [[DAO]] protocols gain, exercise, and lose voting power whilst simultaneously participating as economic stakeholders t...",
+  "definition": "Tokenomics governance is the discipline integrating token-economic design with decentralised decision-making mechanisms, defining how Governance Token holders in DeFi and DAO protocols gain, exercise, and lose voting power whilst simultaneously participating as economic stakeholders t...",
   "domain": "blockchain",
   "maturity": "established",
   "relations": {

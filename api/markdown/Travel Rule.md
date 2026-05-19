@@ -432,7 +432,7 @@ public:: true
   "@id": "urn:ngm:class:travel-rule",
   "@type": "Class",
   "label": "Travel Rule",
-  "definition": "The Travel Rule (formally [[Financial Action Task Force|FATF]] Recommendation 16) is an anti-money-laundering regulatory requirement mandating that [[Virtual Asset Service Provider|Virtual Asset Service Providers]] (VASPs) and custodial financial institutions collect, verify, and transmit origina...",
+  "definition": "The Travel Rule (formally Financial Action Task Force|FATF Recommendation 16) is an anti-money-laundering regulatory requirement mandating that Virtual Asset Service Provider|Virtual Asset Service Providers (VASPs) and custodial financial institutions collect, verify, and transmit origina...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

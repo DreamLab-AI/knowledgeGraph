@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:predictive-maintenance",
   "domain": "artificial-intelligence",
-  "definition": "[[Predictive Maintenance]] (PdM) is a condition-based maintenance strategy that uses continuous or periodic monitoring of physical asset health signals\u2014vibration, temperature, acoustic emission, current draw, oil particle count, ultrasound, and corrosion metrics\u2014combined with machine learning inf...",
+  "definition": "Predictive Maintenance (PdM) is a condition-based maintenance strategy that uses continuous or periodic monitoring of physical asset health signals\u2014vibration, temperature, acoustic emission, current draw, oil particle count, ultrasound, and corrosion metrics\u2014combined with machine learning inf...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:asset-health-management",

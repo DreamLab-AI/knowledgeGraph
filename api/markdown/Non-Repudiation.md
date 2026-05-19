@@ -420,7 +420,7 @@ public:: true
   "@id": "urn:ngm:class:non-repudiation",
   "@type": "Class",
   "label": "Non-Repudiation",
-  "definition": "[[Non-Repudiation]] is a foundational [[Information Security]] property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
+  "definition": "Non-Repudiation is a foundational Information Security property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

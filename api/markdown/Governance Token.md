@@ -1148,7 +1148,7 @@ public:: true
   "@id": "urn:ngm:class:governance-token",
   "@type": "Class",
   "label": "Governance Token",
-  "definition": "Governance Token is a class of ERC-20 (or equivalent chain-native) fungible cryptographic asset that confers programmable voting rights and protocol decision-making authority over a [[Decentralised Autonomous Organisation]] or smart-contract protocol, unbundling political control (one-token-one-v...",
+  "definition": "Governance Token is a class of ERC-20 (or equivalent chain-native) fungible cryptographic asset that confers programmable voting rights and protocol decision-making authority over a Decentralised Autonomous Organisation or smart-contract protocol, unbundling political control (one-token-one-v...",
   "domain": "blockchain",
   "maturity": "established",
   "relations": {

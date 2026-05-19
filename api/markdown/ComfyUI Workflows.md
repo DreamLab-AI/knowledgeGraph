@@ -544,7 +544,7 @@ public:: true
   "@id": "urn:ngm:class:comfy-ui-workflows",
   "@type": "Class",
   "label": "ComfyUI Workflows",
-  "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for [[Stable Diffusion]] and broader generative AI inference, implemented within the [[ComfyUI]] open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations...",
+  "definition": "ComfyUI Workflows are node-based directed acyclic graph (DAG) pipelines for Stable Diffusion and broader generative AI inference, implemented within the ComfyUI open-source graphical interface developed by comfyanonymous (first commit January 2023), in which discrete processing operations...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -3,16 +3,11 @@
   "title": "VSCode",
   "slug": "vscode",
   "public": true,
-  "classIri": "urn:ngm:class:vscode",
+  "classIri": "urn:ngm:individual:vscode",
   "domain": "infrastructure",
   "definition": "VSCode is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

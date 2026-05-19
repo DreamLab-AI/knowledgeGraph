@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:collision-avoidance",
   "@type": "Class",
   "label": "Collision Avoidance",
-  "definition": "Collision Avoidance - An active safety mechanism using [[Sensors]] (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify [[Robot Trajectories]] to prevent unintended contact with people, equipment, or structures.",
+  "definition": "Collision Avoidance - An active safety mechanism using Sensors (lidar, ultrasonic, vision) and path planning algorithms to detect obstacles and dynamically modify Robot Trajectories to prevent unintended contact with people, equipment, or structures.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

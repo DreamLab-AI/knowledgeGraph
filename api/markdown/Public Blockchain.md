@@ -148,7 +148,7 @@ public:: true
   "@id": "urn:ngm:class:public-blockchain",
   "@type": "Class",
   "label": "Public Blockchain",
-  "definition": "Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including [[Bitcoin]], [[ereum]], and [[Cardano]], providing [[Censorship Resistance]], [[Immutability]], and [[User Sovereignty]] whilst sac...",
+  "definition": "Permissionless, decentralised blockchain networks enabling unrestricted transaction participation and transparent validation without centralised authority, including Bitcoin, ereum, and Cardano, providing Censorship Resistance, Immutability, and User Sovereignty whilst sac...",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [

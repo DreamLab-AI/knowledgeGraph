@@ -192,7 +192,7 @@ public:: true
   "@id": "urn:ngm:class:cryptography",
   "@type": "Class",
   "label": "Cryptography",
-  "definition": "[[Cryptography]] is the mathematical science of transforming information through [[encryption]], ensuring confidentiality, authenticity, and integrity in digital communications and [[blockchain]] systems.",
+  "definition": "Cryptography is the mathematical science of transforming information through encryption, ensuring confidentiality, authenticity, and integrity in digital communications and blockchain systems.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [

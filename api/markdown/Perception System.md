@@ -656,7 +656,7 @@ public:: true
   "@id": "urn:ngm:class:perception-system",
   "@type": "Class",
   "label": "Perception System",
-  "definition": "A Perception System is the sensor processing and environmental understanding component of [[Autonomous Systems]] that interprets raw [[Sensor Data]] to build a coherent representation of the surrounding environment, including [[Object Detection]], [[Classification]], [[Tracking]], [[Localization]...",
+  "definition": "A Perception System is the sensor processing and environmental understanding component of Autonomous Systems that interprets raw Sensor Data to build a coherent representation of the surrounding environment, including Object Detection, Classification, Tracking, [[Localization]...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -228,7 +228,7 @@ public:: true
   "@id": "urn:ngm:class:agent-event-stream",
   "@type": "Class",
   "label": "Agent Event Stream",
-  "definition": "A real-time telemetry stream (surface S6) that emits [[ActivityStream|ActivityStreams]]-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and or...",
+  "definition": "A real-time telemetry stream (surface S6) that emits ActivityStream|ActivityStreams-based JSON-LD events for agent lifecycle events (birth, startup, activity, completion, error, termination) via WebSocket, Nostr relay, or message queue, enabling external monitoring systems, dashboards, and or...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

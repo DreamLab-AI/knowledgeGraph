@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-human-interface",
   "domain": "spatial-computing",
-  "definition": "An [[ETSI]] governance domain addressing user interaction design, accessibility, and human-computer interfaces within [[VirtualEnvironment|virtual environments]].",
+  "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within VirtualEnvironment|virtual environments.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",

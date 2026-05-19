@@ -396,7 +396,7 @@ public:: true
   "@id": "urn:ngm:class:training-and-fine-tuning",
   "@type": "Class",
   "label": "Training and fine tuning",
-  "definition": "Fine-tuning is the post-pre-training adaptation of a large neural network — typically a transformer-based [[Foundation Models]] or [[Large Language Models]] — to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated dataset...",
+  "definition": "Fine-tuning is the post-pre-training adaptation of a large neural network — typically a transformer-based Foundation Models or Large Language Models — to narrower task distributions or behavioural objectives by continuing gradient-based optimisation on comparatively small, curated dataset...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

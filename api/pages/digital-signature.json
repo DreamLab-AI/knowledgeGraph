@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:digital-signature",
   "domain": "blockchain",
-  "definition": "A [[Digital Signature]] is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature \u03c3 that Verify(pk, m,...",
+  "definition": "A Digital Signature is a cryptographic primitive consisting of three probabilistic polynomial-time algorithms (KeyGen, Sign, Verify) operating over an asymmetric keypair (sk, pk) such that, for any message m drawn from the message space M, Sign(sk, m) produces a signature \u03c3 that Verify(pk, m,...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:asymmetric-cryptography",

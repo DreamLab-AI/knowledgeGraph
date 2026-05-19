@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:research-summary",
   "domain": "spatial-computing",
-  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across [[Metaverse]], [[Blockchain]], [[ArtificialIntelligence]], and [[Robotics]] domains.",
+  "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across Metaverse, Blockchain, ArtificialIntelligence, and Robotics domains.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",

@@ -524,7 +524,7 @@ public:: true
   "@id": "urn:ngm:class:death-of-the-internet",
   "@type": "Class",
   "label": "Death of the Internet",
-  "definition": "Death of the Internet is a concept cluster in the ics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse.",
+  "definition": "Death of the Internet is a concept cluster in the ics-society and Media Theory domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

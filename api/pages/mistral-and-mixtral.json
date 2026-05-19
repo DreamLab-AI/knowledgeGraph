@@ -3,20 +3,11 @@
   "title": "Mistral and Mixtral",
   "slug": "mistral-and-mixtral",
   "public": true,
-  "classIri": "urn:ngm:class:mistral-and-mixtral",
+  "classIri": "urn:ngm:individual:mistral-and-mixtral",
   "domain": "artificial-intelligence",
   "definition": "Mistral and Mixtral constitute the model family produced by Mistral AI SAS representing Europe's leading independent large language model research laboratory and the primary European challenger to US-dominated foundation model providers (OpenAI, Anthropic, Google DeepMind).",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:open-source-ai",
-      "label": "Open Source AI"
-    },
-    {
-      "id": "urn:ngm:class:transformer-architecture",
-      "label": "Transformer Architecture"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

@@ -124,30 +124,6 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:host-january-17th-presentation",
-  "@type": "Class",
-  "label": "HOST January 17th Presentation",
-  "definition": "HOST January 17th Presentation is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:annotation:link-resolutions:host-january-17th-presentation:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
@@ -198,7 +174,6 @@ public:: true
   }
 }
 ```
-
 
 - ### Definition
   - HOST January 17th Presentation is a concept within the ngm domain.

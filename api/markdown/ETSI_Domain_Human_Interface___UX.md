@@ -168,7 +168,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-human-interface-ux",
   "@type": "Class",
   "label": "ETSI_Domain_Human_Interface___UX",
-  "definition": "An [[ETSI]] subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in [[VirtualEnvironment|immersive digital environments]].",
+  "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in VirtualEnvironment|immersive digital environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

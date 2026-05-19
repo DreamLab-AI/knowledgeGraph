@@ -3,20 +3,11 @@
   "title": "AnimateDiff",
   "slug": "animate-diff",
   "public": true,
-  "classIri": "urn:ngm:class:animate-diff",
+  "classIri": "urn:ngm:individual:animate-diff",
   "domain": "artificial-intelligence",
-  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models\u2014principally [[Stable Diffusion]] and its community derivatives\u2014without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Man...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:latent-diffusion",
-      "label": "Latent Diffusion"
-    },
-    {
-      "id": "urn:ngm:class:text-to-video",
-      "label": "Text-to-Video"
-    }
-  ],
-  "entityType": "Class",
+  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models\u2014principally Stable Diffusion and its community derivatives\u2014without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Man...",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

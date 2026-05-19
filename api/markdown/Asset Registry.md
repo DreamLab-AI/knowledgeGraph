@@ -328,7 +328,7 @@ public:: true
   "@id": "urn:ngm:class:asset-registry",
   "@type": "Class",
   "label": "Asset Registry",
-  "definition": "An [[Asset Registry]] is a cryptographically-secured, on-chain or hybrid on/off-chain system for recording, authenticating, and transferring legal ownership rights and provenance metadata for real-world or digital assets, implemented through [[Smart Contracts]], [[Distributed Ledger]] infrastruct...",
+  "definition": "An Asset Registry is a cryptographically-secured, on-chain or hybrid on/off-chain system for recording, authenticating, and transferring legal ownership rights and provenance metadata for real-world or digital assets, implemented through Smart Contracts, Distributed Ledger infrastruct...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

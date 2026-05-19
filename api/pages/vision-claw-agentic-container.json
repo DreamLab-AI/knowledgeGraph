@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:vision-claw-agentic-container",
   "domain": "artificial-intelligence",
-  "definition": "A [[Sovereign Mesh|sovereign, manifest-driven]] agentic runtime container that orchestrates [[DID Nostr Identity|DID Nostr]] agents across a decentralised [[Peer-to-Peer Network|peer-to-peer network]], enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
+  "definition": "A Sovereign Mesh|sovereign, manifest-driven agentic runtime container that orchestrates DID Nostr Identity|DID Nostr agents across a decentralised Peer-to-Peer Network|peer-to-peer network, enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:ai-agent-system",

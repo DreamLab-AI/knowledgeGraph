@@ -516,7 +516,7 @@ public:: true
   "@id": "urn:ngm:class:digital-asset-risks",
   "@type": "Class",
   "label": "Digital Asset Risks",
-  "definition": "Comprehensive analysis of risks associated with digital assets, particularly [[Bitcoin]], encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
+  "definition": "Comprehensive analysis of risks associated with digital assets, particularly Bitcoin, encompassing technical vulnerabilities, regulatory challenges, geopolitical concerns, financial stability threats, and systemic implications for global monetary systems",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

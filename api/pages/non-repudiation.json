@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:non-repudiation",
   "domain": "infrastructure",
-  "definition": "[[Non-Repudiation]] is a foundational [[Information Security]] property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
+  "definition": "Non-Repudiation is a foundational Information Security property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:digital-evidence",

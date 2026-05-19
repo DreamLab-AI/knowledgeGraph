@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:reputation-system",
   "domain": "blockchain",
-  "definition": "A [[Reputation System]] is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless [[Blockchain]] environments, spanning algorithmic trust propagation architect...",
+  "definition": "A Reputation System is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless Blockchain environments, spanning algorithmic trust propagation architect...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:decentralised-governance",

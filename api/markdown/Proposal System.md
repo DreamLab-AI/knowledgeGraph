@@ -212,7 +212,7 @@ public:: true
   "@id": "urn:ngm:class:proposal-system",
   "@type": "Class",
   "label": "Proposal System",
-  "definition": "Multi-stage governance workflows enabling [[DAO]] community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), [[Snapshot]] signalling, and binding [[OnChainVoting|on-chain exe...",
+  "definition": "Multi-stage governance workflows enabling DAO community members to initiate, discuss, deliberate, vote upon, and execute protocol changes through structured processes combining off-chain deliberation (forums, governance calls), Snapshot signalling, and binding [[OnChainVoting|on-chain exe...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

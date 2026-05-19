@@ -176,7 +176,7 @@ public:: true
   "@id": "urn:ngm:class:ar-registration",
   "@type": "Class",
   "label": "AR Registration",
-  "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through [[Computer Vision]], [[Sensor Input]], and tracking algorithms.",
+  "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through Computer Vision, Sensor Input, and tracking algorithms.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

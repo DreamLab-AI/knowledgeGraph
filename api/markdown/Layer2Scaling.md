@@ -244,7 +244,7 @@ public:: true
   "@id": "urn:ngm:class:layer2-scaling",
   "@type": "Class",
   "label": "Layer2Scaling",
-  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, [[PaymentChannels]], {{Sidechains}}) that batch and settle to base layer (ereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through [[CryptographicProof|cryptographic proofs]].",
+  "definition": "Off-chain scaling solutions executing transactions on secondary networks ({{Rollups}}, PaymentChannels, {{Sidechains}}) that batch and settle to base layer (ereum mainnet), reducing transaction costs 100-1000x whilst maintaining security through CryptographicProof|cryptographic proofs.",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

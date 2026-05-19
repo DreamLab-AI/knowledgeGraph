@@ -300,7 +300,7 @@ public:: true
   "@id": "urn:ngm:class:large-language-models",
   "@type": "Class",
   "label": "Large Language Models",
-  "definition": "[[Large Language Models]] (LLMs) are [[Foundation Models]] with s to s of parameters trained on massive text corpora using [[Transformer]] architectures and [[Self-Supervised Learning]], capable of performing diverse [[Natural Language Processing]] tasks through [[Few-Shot Learning]], [[Zero-Shot...",
+  "definition": "Large Language Models (LLMs) are Foundation Models with s to s of parameters trained on massive text corpora using Transformer architectures and Self-Supervised Learning, capable of performing diverse Natural Language Processing tasks through Few-Shot Learning, [[Zero-Shot...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -156,7 +156,7 @@ public:: true
   "@id": "urn:ngm:class:impedance-control",
   "@type": "Class",
   "label": "Impedance Control",
-  "definition": "Impedance Control - A [[Hybrid Control]] strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
+  "definition": "Impedance Control - A Hybrid Control strategy that dynamically modulates a robot's mechanical compliance (stiffness and damping) to establish compliant contact with objects or humans, enabling safe interaction and force regulation without explicit force feedback in some configurations.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

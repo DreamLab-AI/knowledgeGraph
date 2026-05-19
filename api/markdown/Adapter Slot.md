@@ -248,7 +248,7 @@ public:: true
   "@id": "urn:ngm:class:adapter-slot",
   "@type": "Class",
   "label": "Adapter Slot",
-  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a [[VisionClaw Agentic Container|VisionClaw agent]] interacts with its environment: [[Solid Pod Storage|Pod (persistent storage)]], [[Agent Memory|Memory (episodic and semantic)]], [[Agent Event Stream|Ev...",
+  "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a VisionClaw Agentic Container|VisionClaw agent interacts with its environment: Solid Pod Storage|Pod (persistent storage), Agent Memory|Memory (episodic and semantic), [[Agent Event Stream|Ev...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

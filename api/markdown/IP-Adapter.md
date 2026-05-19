@@ -493,22 +493,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ip-adapter",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ip-adapter",
+  "@type": "Individual",
   "label": "IP-Adapter",
   "definition": "IP-Adapter (Image Prompt Adapter) is a lightweight (parameter) cross-attention conditioning module for pretrained text-to-image diffusion models introduced by Hu Ye, Jun Zhang, Sibo Liu, Xiao Han, and Wei Yang at Tencent AI Lab in August 2023 (arXiv:2308.06721 \"IP-Adapter: Text Compatible Image P...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:cross-attention-module",
-      "label": "Cross-Attention Module"
-    },
-    {
-      "@id": "urn:ngm:class:diffusion-model-adapter",
-      "label": "Diffusion Model Adapter"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -708,7 +698,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:cross-attention-module",
+      "label": "Cross-Attention Module"
+    },
+    {
+      "@id": "urn:ngm:class:diffusion-model-adapter",
+      "label": "Diffusion Model Adapter"
+    }
+  ]
 }
 ```
 

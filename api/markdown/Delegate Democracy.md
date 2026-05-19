@@ -680,7 +680,7 @@ public:: true
   "@id": "urn:ngm:class:delegate-democracy",
   "@type": "Class",
   "label": "Delegate Democracy",
-  "definition": "Delegate Democracy (also known as liquid democracy, delegative democracy, or proxy democracy) is a hybrid political and organisational governance model — formalised in modern computer-mediated form by [[Bryan Ford]] in his 2002 paper Delegative Democracy (Yale, later Swiss EPFL) and intellectuall...",
+  "definition": "Delegate Democracy (also known as liquid democracy, delegative democracy, or proxy democracy) is a hybrid political and organisational governance model — formalised in modern computer-mediated form by Bryan Ford in his 2002 paper Delegative Democracy (Yale, later Swiss EPFL) and intellectuall...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -300,7 +300,7 @@ public:: true
   "@id": "urn:ngm:class:web-assembly",
   "@type": "Class",
   "label": "WebAssembly",
-  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside [[Web Browser]] sandboxes and server-side ru...",
+  "definition": "WebAssembly (Wasm) is a binary instruction format for a stack-based virtual machine, standardised by the W3C, that provides a portable compilation target for high-level languages such as C, C++, Rust, and Go, enabling near-native execution speed inside Web Browser sandboxes and server-side ru...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

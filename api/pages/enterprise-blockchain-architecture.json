@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:enterprise-blockchain-architecture",
   "domain": "blockchain",
-  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by [[Hyperledger F...",
+  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing Consensus Mechanism|consensus mechanisms, Smart Contract|smart contracts, and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by [[Hyperledger F...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:smart-contract-platform",

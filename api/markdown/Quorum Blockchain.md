@@ -548,7 +548,7 @@ public:: true
   "@id": "urn:ngm:class:quorum-blockchain",
   "@type": "Class",
   "label": "Quorum Blockchain",
-  "definition": "An enterprise-grade permissioned [[ereum]] fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence and open-sourced under Apache 2.0 that extends the ereum protocol with private transaction envelopes managed by the [[Tessera]] privacy manager (successor to Constellation, implemented v...",
+  "definition": "An enterprise-grade permissioned ereum fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence and open-sourced under Apache 2.0 that extends the ereum protocol with private transaction envelopes managed by the Tessera privacy manager (successor to Constellation, implemented v...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

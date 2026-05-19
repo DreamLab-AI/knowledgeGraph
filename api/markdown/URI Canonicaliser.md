@@ -224,7 +224,7 @@ public:: true
   "@id": "urn:ngm:class:uri-canonicaliser",
   "@type": "Class",
   "label": "URI Canonicaliser",
-  "definition": "The canonical URI minting and resolution engine implementing the [[VisionClaw Agentic Container|VisionClaw]] urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...",
+  "definition": "The canonical URI minting and resolution engine implementing the VisionClaw Agentic Container|VisionClaw urn:visionclaw: grammar (ADR-013, R1–R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

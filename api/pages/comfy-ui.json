@@ -3,20 +3,11 @@
   "title": "ComfyUI",
   "slug": "comfy-ui",
   "public": true,
-  "classIri": "urn:ngm:class:comfy-ui",
+  "classIri": "urn:ngm:individual:comfy-ui",
   "domain": "artificial-intelligence",
   "definition": "ComfyUI is an open-source, node-based graphical workflow editor and inference runtime for diffusion-model image, video and audio generation, created by the pseudonymous developer comfyanonymous (Comfy Org) and first released in January 2023 as a graph/canvas alternative to the form-based Stable D...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:diffusion-model-runtime",
-      "label": "Diffusion Model Runtime"
-    },
-    {
-      "id": "urn:ngm:class:inference-orchestrator",
-      "label": "Inference Orchestrator"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

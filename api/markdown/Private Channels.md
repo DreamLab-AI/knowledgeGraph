@@ -168,7 +168,7 @@ public:: true
   "@id": "urn:ngm:class:private-channels",
   "@type": "Class",
   "label": "Private Channels",
-  "definition": "Confidential transaction subsets in [[PermissionedBlockchain|permissioned blockchains]] where designated participants conduct transactions invisibly to other network members, implementing [[Encryption|encryption]] and [[AccessControl|access control]] to segregate sensitive business data whilst ma...",
+  "definition": "Confidential transaction subsets in PermissionedBlockchain|permissioned blockchains where designated participants conduct transactions invisibly to other network members, implementing Encryption|encryption and AccessControl|access control to segregate sensitive business data whilst ma...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

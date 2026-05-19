@@ -232,7 +232,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-infrastructure",
   "@type": "Class",
   "label": "ETSI_Domain_Infrastructure",
-  "definition": "An [[ETSI]] governance domain governing foundational systems, networks, and computational resources enabling [[Metaverse]] platforms at scale.",
+  "definition": "An ETSI governance domain governing foundational systems, networks, and computational resources enabling Metaverse platforms at scale.",
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [

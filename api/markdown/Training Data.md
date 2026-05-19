@@ -420,7 +420,7 @@ public:: true
   "@id": "urn:ngm:class:training-data",
   "@type": "Class",
   "label": "Training Data",
-  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of [[Machine Learning]] and [[Foundation Models]] to optimise model parameters via gradient-...",
+  "definition": "Training data encompasses all curated, collected, and pre-processed corpora of examples — text, images, audio, video, structured records, code, and synthetic artefacts — ingested during the learning phase of Machine Learning and Foundation Models to optimise model parameters via gradient-...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

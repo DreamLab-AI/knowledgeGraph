@@ -188,7 +188,7 @@ public:: true
   "@id": "urn:ngm:class:agricultural-robot",
   "@type": "Class",
   "label": "Agricultural Robot",
-  "definition": "Agricultural Robot - A semi-autonomous or fully autonomous platform equipped with [[Precision Agriculture Sensors]], [[Manipulation Modules]], and [[Crop Analysis Systems]] for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising s...",
+  "definition": "Agricultural Robot - A semi-autonomous or fully autonomous platform equipped with Precision Agriculture Sensors, Manipulation Modules, and Crop Analysis Systems for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising s...",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

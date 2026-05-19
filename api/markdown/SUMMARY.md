@@ -148,7 +148,7 @@ public:: true
   "@id": "urn:ngm:class:summary",
   "@type": "Class",
   "label": "SUMMARY",
-  "definition": "The metaverse represents a convergent technological paradigm combining [[VirtualReality|virtual reality]], [[AugmentedReality|augmented reality]], and [[ExtendedReality|extended reality]] to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
+  "definition": "The metaverse represents a convergent technological paradigm combining VirtualReality|virtual reality, AugmentedReality|augmented reality, and ExtendedReality|extended reality to create persistent, 3D virtual shared environments enabling user interaction, economic transactions, and so...",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

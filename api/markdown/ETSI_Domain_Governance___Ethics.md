@@ -156,7 +156,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-governance-ethics",
   "@type": "Class",
   "label": "ETSI_Domain_Governance___Ethics",
-  "definition": "An [[ETSI]] governance domain addressing ical principles, values alignment, responsible innovation, and fairness frameworks for metaverse and digital systems.",
+  "definition": "An ETSI governance domain addressing ical principles, values alignment, responsible innovation, and fairness frameworks for metaverse and digital systems.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "relations": {

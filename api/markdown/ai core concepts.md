@@ -216,7 +216,7 @@ public:: true
   "@id": "urn:ngm:class:ai-core-concepts",
   "@type": "Class",
   "label": "ai core concepts",
-  "definition": "Core artificial intelligence concepts encompass foundational frameworks and modologies enabling intelligent systems: [[MachineLearning|machine learning]] paradigms ([[SupervisedLearning|supervised]], [[UnsupervisedLearning|unsupervised]], [[ReinforcementLearning|reinforcement]]), neural architect...",
+  "definition": "Core artificial intelligence concepts encompass foundational frameworks and modologies enabling intelligent systems: MachineLearning|machine learning paradigms (SupervisedLearning|supervised, UnsupervisedLearning|unsupervised, ReinforcementLearning|reinforcement), neural architect...",
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [

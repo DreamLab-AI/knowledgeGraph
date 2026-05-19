@@ -152,7 +152,7 @@ public:: true
   "@id": "urn:ngm:class:etsi-domain-reality-capture",
   "@type": "Class",
   "label": "ETSI_Domain_Reality_Capture",
-  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic [[DigitalTwin|digital twins]] for metaverse and immersive environments.",
+  "definition": "ETSI technical framework enabling digital reconstruction of physical environments and objects through 3D scanning, photogrammetry, sensor fusion, and motion capture to create semantic DigitalTwin|digital twins for metaverse and immersive environments.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

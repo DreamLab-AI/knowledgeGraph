@@ -396,7 +396,7 @@ public:: true
   "@id": "urn:ngm:class:energy-and-power",
   "@type": "Class",
   "label": "Energy and Power",
-  "definition": "Energy and Power, within the [[Infrastructure]] domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to [[AI Data Centres]], [[Bitcoin Mining]] operations, and the bro...",
+  "definition": "Energy and Power, within the Infrastructure domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to AI Data Centres, Bitcoin Mining operations, and the bro...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

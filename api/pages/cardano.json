@@ -3,20 +3,11 @@
   "title": "Cardano",
   "slug": "cardano",
   "public": true,
-  "classIri": "urn:ngm:class:cardano",
+  "classIri": "urn:ngm:individual:cardano",
   "domain": "blockchain",
   "definition": "A research-driven blockchain platform using the mathematically-verified Ouroboros Proof-of-Stake consensus protocol. Features layered architecture separating settlement and computation layers, written in Haskell with Plutus for smart contracts.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:blockchain-protocol",
-      "label": "Blockchain Protocol"
-    },
-    {
-      "id": "urn:ngm:class:smart-contract-platform",
-      "label": "Smart Contract Platform"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "established",
   "relationships": {

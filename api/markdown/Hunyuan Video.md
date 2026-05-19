@@ -573,22 +573,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:hunyuan-video",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:hunyuan-video",
+  "@type": "Individual",
   "label": "Hunyuan Video",
   "definition": "Hunyuan Video (HunyuanVideo) is Tencent's open-weights text-to-video diffusion foundation model released December 2024 under a custom non-commercial community licence, comprising 13 parameters trained via Flow Matching on a curated multi--clip video corpus and architected as a Causal 3D Variation...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:diffusion-transformer",
-      "label": "Diffusion Transformer"
-    },
-    {
-      "@id": "urn:ngm:class:generative-video-model",
-      "label": "Generative Video Model"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -844,7 +834,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:diffusion-transformer",
+      "label": "Diffusion Transformer"
+    },
+    {
+      "@id": "urn:ngm:class:generative-video-model",
+      "label": "Generative Video Model"
+    }
+  ]
 }
 ```
 

@@ -3,32 +3,6 @@
   "title": "misc podcast onboarding",
   "slug": "misc-podcast-onboarding",
   "public": true,
-  "classIri": "urn:ngm:class:misc-podcast-onboarding",
-  "domain": "infrastructure",
-  "definition": "misc podcast onboarding is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "entityType": "Class",
-  "qualityScore": 0.5,
-  "maturity": "draft",
-  "relationships": {
-    "hasPart": [],
-    "requires": [],
-    "enables": [],
-    "dependsOn": [],
-    "implements": [],
-    "contrastsWith": [],
-    "bridgesTo": [],
-    "uses": [],
-    "supports": [],
-    "standardizedBy": [],
-    "partOf": [],
-    "relatedTo": []
-  },
   "wikilinks": [],
   "backlinks": []
 }

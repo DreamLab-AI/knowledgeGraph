@@ -568,7 +568,7 @@ public:: true
   "@id": "urn:ngm:class:dao-analytics",
   "@type": "Class",
   "label": "DAO Analytics",
-  "definition": "Specialised data analysis and business intelligence infrastructure providing quantitative insight into [[Decentralised Autonomous Organisation]] performance across governance participation, treasury health, delegate accountability, proposal lifecycle dynamics, sybil resistance, and ecosystem-wide...",
+  "definition": "Specialised data analysis and business intelligence infrastructure providing quantitative insight into Decentralised Autonomous Organisation performance across governance participation, treasury health, delegate accountability, proposal lifecycle dynamics, sybil resistance, and ecosystem-wide...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:us-regulatory-framework",
   "domain": "blockchain",
-  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where [[SEC|Securities and Exchange Commission]] applies securities law to tokens, [[FinCEN|Financial Crimes Enforcement Network]] supervises money transmission and [[AMLKYCCompliance|anti-money laundering]], the [[...",
+  "definition": "US cryptocurrency regulation operates through a fragmented multi-agency framework where SEC|Securities and Exchange Commission applies securities law to tokens, FinCEN|Financial Crimes Enforcement Network supervises money transmission and AMLKYCCompliance|anti-money laundering, the [[...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

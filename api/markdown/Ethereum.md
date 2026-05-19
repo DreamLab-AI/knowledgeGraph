@@ -597,22 +597,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:ethereum",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:ethereum",
+  "@type": "Individual",
   "label": "Ethereum",
   "definition": "ereum is the leading general-purpose, Turing-complete, smart-contract-enabled public blockchain — conceived by Russian-Canadian programmer Vitalik Buterin in a November 2013 whitepaper titled \"ereum: A Next-Generation Smart Contract and Decentralized Application Platform\" circulated at the Bitcoi...",
   "domain": "blockchain",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:decentralised-computing-platform",
-      "label": "Decentralised Computing Platform"
-    },
-    {
-      "@id": "urn:ngm:class:layer-1-blockchain",
-      "label": "Layer 1 Blockchain"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -912,7 +902,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:decentralised-computing-platform",
+      "label": "Decentralised Computing Platform"
+    },
+    {
+      "@id": "urn:ngm:class:layer-1-blockchain",
+      "label": "Layer 1 Blockchain"
+    }
+  ]
 }
 ```
 

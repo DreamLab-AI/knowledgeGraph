@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:verification-report",
   "@type": "Class",
   "label": "VERIFICATION REPORT",
-  "definition": "A verification report documents systematic assessment results confirming that [[OntologyAssets|ontologies]], [[KnowledgeGraph|knowledge graphs]], and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
+  "definition": "A verification report documents systematic assessment results confirming that OntologyAssets|ontologies, KnowledgeGraph|knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

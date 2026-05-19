@@ -368,7 +368,7 @@ public:: true
   "@id": "urn:ngm:class:lightning-network",
   "@type": "Class",
   "label": "Lightning Network",
-  "definition": "The [[Lightning Network]] is a [[Layer 2 Scaling]] protocol for [[Bitcoin]] enabling instant, high-throughput off-chain payments through a mesh of bidirectional [[Payment Channel Network]] channels anchored on the [[Bitcoin Technical Overview]] base layer.",
+  "definition": "The Lightning Network is a Layer 2 Scaling protocol for Bitcoin enabling instant, high-throughput off-chain payments through a mesh of bidirectional Payment Channel Network channels anchored on the Bitcoin Technical Overview base layer.",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

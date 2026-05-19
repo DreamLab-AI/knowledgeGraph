@@ -3,20 +3,11 @@
   "title": "Ethereum",
   "slug": "ethereum",
   "public": true,
-  "classIri": "urn:ngm:class:ethereum",
+  "classIri": "urn:ngm:individual:ethereum",
   "domain": "blockchain",
   "definition": "ereum is the leading general-purpose, Turing-complete, smart-contract-enabled public blockchain \u2014 conceived by Russian-Canadian programmer Vitalik Buterin in a November 2013 whitepaper titled \"ereum: A Next-Generation Smart Contract and Decentralized Application Platform\" circulated at the Bitcoi...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:decentralised-computing-platform",
-      "label": "Decentralised Computing Platform"
-    },
-    {
-      "id": "urn:ngm:class:layer-1-blockchain",
-      "label": "Layer 1 Blockchain"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

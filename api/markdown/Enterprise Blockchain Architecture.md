@@ -160,7 +160,7 @@ public:: true
   "@id": "urn:ngm:class:enterprise-blockchain-architecture",
   "@type": "Class",
   "label": "Enterprise Blockchain Architecture",
-  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing [[Consensus Mechanism|consensus mechanisms]], [[Smart Contract|smart contracts]], and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by [[Hyperledger F...",
+  "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing Consensus Mechanism|consensus mechanisms, Smart Contract|smart contracts, and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance—exemplified by [[Hyperledger F...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

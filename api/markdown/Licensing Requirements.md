@@ -352,7 +352,7 @@ public:: true
   "@id": "urn:ngm:class:licensing-requirements",
   "@type": "Class",
   "label": "Licensing Requirements",
-  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level [[MoneyTransmitterLicense|money transmitter licences]] (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
+  "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level MoneyTransmitterLicense|money transmitter licences (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
   "domain": "blockchain",
   "maturity": "draft",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:feedback-control",
   "domain": "robotics",
-  "definition": "Feedback Control - A closed-loop control mechanism in which [[Sensor]] measurements of actual system state are continuously compared against desired [[Setpoints]], and control actions are adjusted in real time to minimise error and maintain stable, accurate [[Robot Behaviour]].",
+  "definition": "Feedback Control - A closed-loop control mechanism in which Sensor measurements of actual system state are continuously compared against desired Setpoints, and control actions are adjusted in real time to minimise error and maintain stable, accurate Robot Behaviour.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:control-theory",

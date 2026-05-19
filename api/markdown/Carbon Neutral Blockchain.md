@@ -616,7 +616,7 @@ public:: true
   "@id": "urn:ngm:class:carbon-neutral-blockchain",
   "@type": "Class",
   "label": "Carbon Neutral Blockchain",
-  "definition": "Carbon Neutral Blockchain is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: (1) Consensus mechanism transition: Adoption of low-energy [[Consensus Mechanisms]] — pre-eminently [[...",
+  "definition": "Carbon Neutral Blockchain is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: (1) Consensus mechanism transition: Adoption of low-energy Consensus Mechanisms — pre-eminently [[...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

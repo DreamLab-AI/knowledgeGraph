@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:death-of-the-internet",
   "domain": "artificial-intelligence",
-  "definition": "Death of the Internet is a concept cluster in the ics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse.",
+  "definition": "Death of the Internet is a concept cluster in the ics-society and Media Theory domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:information-integrity",

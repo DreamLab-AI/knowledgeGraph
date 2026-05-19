@@ -668,7 +668,7 @@ public:: true
   "@id": "urn:ngm:class:enterprise-smart-contracts",
   "@type": "Class",
   "label": "Enterprise Smart Contracts",
-  "definition": "Enterprise smart contracts are self-executing code artefacts deployed on permissioned [[Distributed Ledger Technology]] platforms — [[Hyperledger Fabric]] chaincode (Go/Node.js/Java), [[R3 Corda]] CorDapps (Kotlin/JVM), [[Quorum Blockchain]] and [[Hyperledger Besu]] (EVM permissioned with Tessera...",
+  "definition": "Enterprise smart contracts are self-executing code artefacts deployed on permissioned Distributed Ledger Technology platforms — Hyperledger Fabric chaincode (Go/Node.js/Java), R3 Corda CorDapps (Kotlin/JVM), Quorum Blockchain and Hyperledger Besu (EVM permissioned with Tessera...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

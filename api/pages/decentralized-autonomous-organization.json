@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:decentralized-autonomous-organization",
   "domain": "blockchain",
-  "definition": "An organisational entity operating through [[Smart Contracts]], [[Distributed Governance]], and community voting mechanisms without centralised authority or hierarchical control.",
+  "definition": "An organisational entity operating through Smart Contracts, Distributed Governance, and community voting mechanisms without centralised authority or hierarchical control.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

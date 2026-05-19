@@ -940,7 +940,7 @@ public:: true
   "@id": "urn:ngm:class:decentralized-identifiers",
   "@type": "Class",
   "label": "Decentralized Identifiers",
-  "definition": "A [[W3C]]-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form `did:<mod>:<mod-specific-id>` controlled directly by their subjects without dependency on c...",
+  "definition": "A W3C-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form did:<mod>:<mod-specific-id> controlled directly by their subjects without dependency on c...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

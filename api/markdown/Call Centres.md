@@ -424,7 +424,7 @@ public:: true
   "@id": "urn:ngm:class:call-centres",
   "@type": "Class",
   "label": "Call Centres",
-  "definition": "Call Centres (contact centres — the operationally preferred modern term reflecting multichannel reality) are coordinated operational environments in which human agents and increasingly autonomous [[AI Agents]] handle inbound and outbound customer communications across voice, chat, email, social m...",
+  "definition": "Call Centres (contact centres — the operationally preferred modern term reflecting multichannel reality) are coordinated operational environments in which human agents and increasingly autonomous AI Agents handle inbound and outbound customer communications across voice, chat, email, social m...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

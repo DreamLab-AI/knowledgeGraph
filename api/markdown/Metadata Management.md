@@ -396,7 +396,7 @@ public:: true
   "@id": "urn:ngm:class:metadata-management",
   "@type": "Class",
   "label": "Metadata Management",
-  "definition": "[[Metadata Management]] encompasses the discipline, tooling, standards, and governance processes required to systematically capture, store, classify, version, discover, and operationalise descriptive, structural, and administrative information about data assets, pipelines, models, and services ac...",
+  "definition": "Metadata Management encompasses the discipline, tooling, standards, and governance processes required to systematically capture, store, classify, version, discover, and operationalise descriptive, structural, and administrative information about data assets, pipelines, models, and services ac...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

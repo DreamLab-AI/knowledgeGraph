@@ -99,30 +99,6 @@ public:: true
 
 ```json-ld
 {
-  "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:hls-dream-lab-cumbria-1759151307438-0",
-  "@type": "Class",
-  "label": "hls__DreamLabCumbria_1759151307438_0",
-  "definition": "hls__DreamLabCumbria_1759151307438_0 is a technology infrastructure concept and a type of infrastructure.",
-  "domain": "infrastructure",
-  "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "quality": 0.35,
-  "provenance": {
-    "attributedTo": "did:nostr:lcr-swarm",
-    "generatedAt": "2026-05-18T07:12:05Z",
-    "inferenceRule": "R5DomainRootFallback"
-  }
-}
-```
-
-```json-ld
-{
   "@context": "https://narrativegoldmine.com/context/v1.jsonld",
   "@id": "urn:visionflow:annotation:link-resolutions:hls-dream-lab-cumbria-1759151307438-0:776c802a9fc9",
   "@type": "vc:LinkResolutionsAnnotation",
@@ -142,7 +118,6 @@ public:: true
   }
 }
 ```
-
 
 - ### Definition
   - hls__DreamLabCumbria_1759151307438_0 is a concept within the ngm domain.

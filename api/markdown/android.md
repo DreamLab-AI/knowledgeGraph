@@ -100,24 +100,24 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:android",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:android",
+  "@type": "Individual",
   "label": "android",
   "definition": "android is a technology infrastructure concept and a type of Operating System.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:operating-system",
-      "label": "Operating System"
-    }
-  ],
   "quality": 0.5,
   "provenance": {
     "attributedTo": "did:nostr:lcr-swarm",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R4SemanticSimilarity"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:operating-system",
+      "label": "Operating System"
+    }
+  ]
 }
 ```
 

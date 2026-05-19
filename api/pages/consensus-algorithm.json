@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:consensus-algorithm",
   "domain": "blockchain",
-  "definition": "Distributed computational protocol ensuring all participants in a [[Blockchain Network]] agree on the canonical transaction history and current state without centralised authority.",
+  "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority.",
   "subClassOf": [
     {
       "id": "urn:ngm:class:blockchain",

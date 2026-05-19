@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:bitcoin-as-money",
   "domain": "blockchain",
-  "definition": "Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher [[Bitcoin]] \u2014 the fixed-supply, decentralised, proof-of-work-secured digital commodity created by [[Satoshi Nakamoto]] \u2014 satisfies the classical three functions of money: medium of exchang...",
+  "definition": "Bitcoin As Money is the analytical framework within monetary economics and philosophy that interrogates wher Bitcoin \u2014 the fixed-supply, decentralised, proof-of-work-secured digital commodity created by Satoshi Nakamoto \u2014 satisfies the classical three functions of money: medium of exchang...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:austrian-economics",

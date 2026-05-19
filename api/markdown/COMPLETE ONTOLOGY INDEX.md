@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:complete-ontology-index",
   "@type": "Class",
   "label": "COMPLETE ONTOLOGY INDEX",
-  "definition": "A comprehensive reference catalog documenting and interconnecting all [[Ontology]] terms, [[Semantic Classifications]], and [[Knowledge Relationships]] across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire [[Knowledge Base]].",
+  "definition": "A comprehensive reference catalog documenting and interconnecting all Ontology terms, Semantic Classifications, and Knowledge Relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire Knowledge Base.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

@@ -377,22 +377,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:rust",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:rust",
+  "@type": "Individual",
   "label": "Rust",
   "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft,...",
   "domain": "infrastructure",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:compiled-language",
-      "label": "Compiled Language"
-    },
-    {
-      "@id": "urn:ngm:class:concurrent-programming-language",
-      "label": "Concurrent Programming Language"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -616,7 +606,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:compiled-language",
+      "label": "Compiled Language"
+    },
+    {
+      "@id": "urn:ngm:class:concurrent-programming-language",
+      "label": "Concurrent Programming Language"
+    }
+  ]
 }
 ```
 

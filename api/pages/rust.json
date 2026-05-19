@@ -3,20 +3,11 @@
   "title": "Rust",
   "slug": "rust",
   "public": true,
-  "classIri": "urn:ngm:class:rust",
+  "classIri": "urn:ngm:individual:rust",
   "domain": "infrastructure",
   "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft,...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:compiled-language",
-      "label": "Compiled Language"
-    },
-    {
-      "id": "urn:ngm:class:concurrent-programming-language",
-      "label": "Concurrent Programming Language"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

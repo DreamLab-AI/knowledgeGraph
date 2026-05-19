@@ -489,22 +489,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:animate-diff",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:animate-diff",
+  "@type": "Individual",
   "label": "AnimateDiff",
-  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models—principally [[Stable Diffusion]] and its community derivatives—without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Man...",
+  "definition": "AnimateDiff is a plug-and-play framework for animating personalised text-to-image diffusion models—principally Stable Diffusion and its community derivatives—without requiring model-specific retraining, introduced by Yuwei Guo, Ceyuan Yang, Anyi Rao, Zhengyang Liang, Yaohui Wang, Yu Qiao, Man...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:latent-diffusion",
-      "label": "Latent Diffusion"
-    },
-    {
-      "@id": "urn:ngm:class:text-to-video",
-      "label": "Text-to-Video"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -728,7 +718,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:latent-diffusion",
+      "label": "Latent Diffusion"
+    },
+    {
+      "@id": "urn:ngm:class:text-to-video",
+      "label": "Text-to-Video"
+    }
+  ]
 }
 ```
 

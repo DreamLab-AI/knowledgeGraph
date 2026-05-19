@@ -164,7 +164,7 @@ public:: true
   "@id": "urn:ngm:class:backlash",
   "@type": "Class",
   "label": "Backlash",
-  "definition": "Backlash - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising [[Precision]], [[Repeatability]], and [[Accuracy]] in robotic manipulation.",
+  "definition": "Backlash - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising Precision, Repeatability, and Accuracy in robotic manipulation.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

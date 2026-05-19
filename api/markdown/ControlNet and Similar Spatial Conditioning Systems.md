@@ -524,7 +524,7 @@ public:: true
   "@id": "urn:ngm:class:control-net-and-similar-spatial-conditioning-systems",
   "@type": "Class",
   "label": "ControlNet and Similar Spatial Conditioning Systems",
-  "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image [[Diffusion Models]] with fine-grained spatial and semantic control signals—enabling deterministic structural guidance over ge...",
+  "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image Diffusion Models with fine-grained spatial and semantic control signals—enabling deterministic structural guidance over ge...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:proprietary-large-language-models",
   "domain": "artificial-intelligence",
-  "definition": "Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed [[Foundation Models]] trained on multi--token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial lic...",
+  "definition": "Proprietary Large Language Models (PLLMs) are closed-weight, commercially deployed Foundation Models trained on multi--token corpora by well-resourced AI laboratories, where model weights, training data composition, and architectural specifics are withheld from the public under commercial lic...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:transformer-architecture",

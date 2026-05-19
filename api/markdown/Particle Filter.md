@@ -420,7 +420,7 @@ public:: true
   "@id": "urn:ngm:class:particle-filter",
   "@type": "Class",
   "label": "Particle Filter",
-  "definition": "ParticleFilter denotes a class of [[Sequential Monte Carlo]] (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i...",
+  "definition": "ParticleFilter denotes a class of Sequential Monte Carlo (SMC) algorithms that approximate the posterior probability distribution bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the hidden state x_t of a stochastic dynamical system by maintaining a weighted empirical measure {(x_t^(i), w_t^(i))}_{i...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

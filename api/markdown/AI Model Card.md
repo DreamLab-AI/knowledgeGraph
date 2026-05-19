@@ -296,7 +296,7 @@ public:: true
   "@id": "urn:ngm:class:ai-model-card",
   "@type": "Class",
   "label": "AI Model Card",
-  "definition": "A structured documentation format that describes an [[AI Model]]'s purpose, [[Performance Metrics]], limitations, [[ical Considerations]], and appropriate [[Use Case|use cases]] to promote [[Transparency]] and [[Responsible AI Deployment|responsible deployment]].",
+  "definition": "A structured documentation format that describes an AI Model's purpose, Performance Metrics, limitations, ical Considerations, and appropriate Use Case|use cases to promote Transparency and Responsible AI Deployment|responsible deployment.",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

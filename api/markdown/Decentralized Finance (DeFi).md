@@ -400,7 +400,7 @@ public:: true
   "@id": "urn:ngm:class:decentralized-finance-de-fi",
   "@type": "Class",
   "label": "Decentralized Finance (DeFi)",
-  "definition": "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally [[ereum]] but increasingly on [[Layer 2 Networks]] (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional finan...",
+  "definition": "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally ereum but increasingly on Layer 2 Networks (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional finan...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

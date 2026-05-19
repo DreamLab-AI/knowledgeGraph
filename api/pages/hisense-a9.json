@@ -3,16 +3,11 @@
   "title": "Hisense A9",
   "slug": "hisense-a9",
   "public": true,
-  "classIri": "urn:ngm:class:hisense-a9",
+  "classIri": "urn:ngm:individual:hisense-a9",
   "domain": "infrastructure",
   "definition": "Hisense A9 is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.35,
   "maturity": "draft",
   "relationships": {

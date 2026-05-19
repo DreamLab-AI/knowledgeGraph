@@ -688,7 +688,7 @@ public:: true
   "@id": "urn:ngm:class:consensus-mechanism",
   "@type": "Class",
   "label": "Consensus Mechanism",
-  "definition": "A [[Consensus Mechanism]] is a [[Distributed Algorithm]] enabling a population of independent, potentially adversarial nodes communicating over an unreliable network to agree on a single, totally-ordered sequence of state transitions (a replicated log) such that all honest participants eventually...",
+  "definition": "A Consensus Mechanism is a Distributed Algorithm enabling a population of independent, potentially adversarial nodes communicating over an unreliable network to agree on a single, totally-ordered sequence of state transitions (a replicated log) such that all honest participants eventually...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

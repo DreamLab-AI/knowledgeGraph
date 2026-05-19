@@ -220,7 +220,7 @@ public:: true
   "@id": "urn:ngm:class:teleoperation",
   "@type": "Class",
   "label": "Teleoperation",
-  "definition": "Teleoperation is remote control of [[AutonomousRobot|robots and physical systems]] by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
+  "definition": "Teleoperation is remote control of AutonomousRobot|robots and physical systems by human operators in real-time, enabling task execution in hazardous, distant, or inaccessible environments whilst maintaining human supervision and decision-making authority.",
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [

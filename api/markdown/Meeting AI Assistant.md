@@ -444,7 +444,7 @@ public:: true
   "@id": "urn:ngm:class:meeting-ai-assistant",
   "@type": "Class",
   "label": "Meeting AI Assistant",
-  "definition": "An AI-powered software agent that attends synchronous and asynchronous [[Virtual Meetings]] either as an autonomous bot participant or as capability embedded within a [[Meeting Platform]], providing continuous [[Automated Transcription]] via large-vocabulary [[Automatic Speech Recognition]] (ASR)...",
+  "definition": "An AI-powered software agent that attends synchronous and asynchronous Virtual Meetings either as an autonomous bot participant or as capability embedded within a Meeting Platform, providing continuous Automated Transcription via large-vocabulary Automatic Speech Recognition (ASR)...",
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [

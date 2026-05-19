@@ -593,22 +593,12 @@ public:: true
 ```json-ld
 {
   "@context": "https://narrativegoldmine.com/ns/v2.jsonld",
-  "@id": "urn:ngm:class:comfy-ui",
-  "@type": "Class",
+  "@id": "urn:ngm:individual:comfy-ui",
+  "@type": "Individual",
   "label": "ComfyUI",
   "definition": "ComfyUI is an open-source, node-based graphical workflow editor and inference runtime for diffusion-model image, video and audio generation, created by the pseudonymous developer comfyanonymous (Comfy Org) and first released in January 2023 as a graph/canvas alternative to the form-based Stable D...",
   "domain": "artificial-intelligence",
   "maturity": "established",
-  "subClassOf": [
-    {
-      "@id": "urn:ngm:class:diffusion-model-runtime",
-      "label": "Diffusion Model Runtime"
-    },
-    {
-      "@id": "urn:ngm:class:inference-orchestrator",
-      "label": "Inference Orchestrator"
-    }
-  ],
   "relations": {
     "hasPart": [
       {
@@ -872,7 +862,17 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "instanceOf": [
+    {
+      "@id": "urn:ngm:class:diffusion-model-runtime",
+      "label": "Diffusion Model Runtime"
+    },
+    {
+      "@id": "urn:ngm:class:inference-orchestrator",
+      "label": "Inference Orchestrator"
+    }
+  ]
 }
 ```
 

@@ -3,20 +3,11 @@
   "title": "Flux.1",
   "slug": "flux-1",
   "public": true,
-  "classIri": "urn:ngm:class:flux-1",
+  "classIri": "urn:ngm:individual:flux-1",
   "domain": "artificial-intelligence",
-  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by [[Black Forest Labs]] from 1 August 2024, designed and trained by a founding team comprising the original core authors of [[Stable Diffusion]] and the [[Latent Diffusion Model]] line (Ro...",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:multimodal-diffusion-transformer",
-      "label": "Multimodal Diffusion Transformer"
-    },
-    {
-      "id": "urn:ngm:class:rectified-flow-model",
-      "label": "Rectified Flow Model"
-    }
-  ],
-  "entityType": "Class",
+  "definition": "Flux.1 (stylised FLUX.1) is a family of large-scale rectified-flow text-to-image generative models released by Black Forest Labs from 1 August 2024, designed and trained by a founding team comprising the original core authors of Stable Diffusion and the Latent Diffusion Model line (Ro...",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.52,
   "maturity": "established",
   "relationships": {

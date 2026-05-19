@@ -3,16 +3,11 @@
   "title": "T5",
   "slug": "t5",
   "public": true,
-  "classIri": "urn:ngm:class:t5",
+  "classIri": "urn:ngm:individual:t5",
   "domain": "artificial-intelligence",
   "definition": "Text-to-Text Transfer Transformer: a unified framework that converts all NLP tasks into a text-to-text format, using an encoder-decoder architecture with a span-corruption pre-training objective.",
-  "subClassOf": [
-    {
-      "id": "urn:ngm:class:natural-language-processing",
-      "label": "Natural Language Processing"
-    }
-  ],
-  "entityType": "Class",
+  "subClassOf": [],
+  "entityType": "Individual",
   "qualityScore": 0.5,
   "maturity": "draft",
   "relationships": {

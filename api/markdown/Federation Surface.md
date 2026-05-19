@@ -244,7 +244,7 @@ public:: true
   "@id": "urn:ngm:class:federation-surface",
   "@type": "Class",
   "label": "Federation Surface",
-  "definition": "A standardised [[JSON-LD 1.1]] encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge grap...",
+  "definition": "A standardised JSON-LD 1.1 encoding surface (S1–S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge grap...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

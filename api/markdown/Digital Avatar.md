@@ -224,7 +224,7 @@ public:: true
   "@id": "urn:ngm:class:digital-avatar",
   "@type": "Class",
   "label": "Digital Avatar",
-  "definition": "A digital representation of a user or entity within [[Virtual Environments]], exhibiting [[Embodied Presence]], [[Visual Customisation]], and [[Behavioural Agency]].",
+  "definition": "A digital representation of a user or entity within Virtual Environments, exhibiting Embodied Presence, Visual Customisation, and Behavioural Agency.",
   "domain": "spatial-computing",
   "maturity": "draft",
   "subClassOf": [

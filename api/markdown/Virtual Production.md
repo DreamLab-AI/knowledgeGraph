@@ -2336,7 +2336,7 @@ public:: true
   "@id": "urn:ngm:class:virtual-production",
   "@type": "Class",
   "label": "Virtual Production",
-  "definition": "Real-time filmmaking technique combining [[LED Volume]] stages, [[game engine]] rendering, and [[in-camera visual effects]] (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
+  "definition": "Real-time filmmaking technique combining LED Volume stages, game engine rendering, and in-camera visual effects (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [

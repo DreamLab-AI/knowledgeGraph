@@ -548,7 +548,7 @@ public:: true
   "@id": "urn:ngm:class:smart-contract",
   "@type": "Class",
   "label": "Smart Contract",
-  "definition": "A [[Smart Contract]] is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted interme...",
+  "definition": "A Smart Contract is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted interme...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

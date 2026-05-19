@@ -284,7 +284,7 @@ public:: true
   "@id": "urn:ngm:class:lang-chain",
   "@type": "Class",
   "label": "LangChain",
-  "definition": "LangChain is an open-source Python and TypeScript framework for composing [[Large Language Model]] applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified ...",
+  "definition": "LangChain is an open-source Python and TypeScript framework for composing Large Language Model applications as chains of modular components — prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents — providing a unified ...",
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [

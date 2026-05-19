@@ -772,7 +772,7 @@ public:: true
   "@id": "urn:ngm:class:decentralized-exchange",
   "@type": "Class",
   "label": "Decentralized Exchange",
-  "definition": "A Decentralized Exchange (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of [[Smart Contract]] state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or oper...",
+  "definition": "A Decentralized Exchange (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of Smart Contract state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or oper...",
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [

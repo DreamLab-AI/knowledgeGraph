@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:etsi-domain-virtual-economy",
   "domain": "spatial-computing",
-  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through [[CryptoToken|crypto tokens]], [[Cryptocurrency|cryptocurrencies]], [[CentralBankDigitalCurrency|CBDCs]], and [[DigitalAsset|digital assets...",
+  "definition": "ETSI domain encompassing economic systems, digital assets, and financial mechanisms enabling value exchange within metaverse and virtual environments through CryptoToken|crypto tokens, Cryptocurrency|cryptocurrencies, CentralBankDigitalCurrency|CBDCs, and [[DigitalAsset|digital assets...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:spatial-computing",

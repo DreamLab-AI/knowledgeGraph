@@ -236,7 +236,7 @@ public:: true
   "@id": "urn:ngm:class:privacy-filter",
   "@type": "Class",
   "label": "Privacy Filter",
-  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to [[Nostr Relay|Nostr relays]] or [[Federation Surface|federation surfaces]], redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and le...",
+  "definition": "A sidecar service (ADR-008) that sanitises agent outputs before emission to Nostr Relay|Nostr relays or Federation Surface|federation surfaces, redacting personally identifiable information (PII), secrets, and regulated data, whilst maintaining data utility for downstream consumers and le...",
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [

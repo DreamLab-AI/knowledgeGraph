@@ -5,7 +5,7 @@
   "public": true,
   "classIri": "urn:ngm:class:carbon-credit-tracking",
   "domain": "blockchain",
-  "definition": "Carbon Credit Tracking is the application of [[Blockchain]] and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim ...",
+  "definition": "Carbon Credit Tracking is the application of Blockchain and distributed ledger technology to record, verify, transfer, and permanently retire carbon emission reduction credits across their full lifecycle \u2014 from project origination through third-party verification to final environmental claim ...",
   "subClassOf": [
     {
       "id": "urn:ngm:class:carbon-markets",
