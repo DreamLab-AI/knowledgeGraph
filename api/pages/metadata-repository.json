@@ -8,6 +8,10 @@
   "definition": "Storage systems that centralise metadata from diverse data sources, providing unified access to technical, business, and operational metadata for data discovery, cataloguing, lineage tracking, and governance across enterprise environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }

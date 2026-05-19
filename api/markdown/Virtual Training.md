@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#VirtualTraining
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:virtual-training
 public:: true
 
 # Virtual Training
@@ -22,86 +19,19 @@ public:: true
       "vc:label": "Workforce Development"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-3e71d8207ed5"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#VirtualTraining"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "MV-10151"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Virtual Training"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:virtual-training"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:virtual-training"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -120,6 +50,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
     {
       "@id": "urn:ngm:class:workforce-development",
       "label": "Workforce Development"
@@ -156,9 +90,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:3ddb9a17214dbb1ec81d3c2cf67614c77156612637faf468d5e1da2b56167e35@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

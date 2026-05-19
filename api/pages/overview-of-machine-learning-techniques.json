@@ -8,6 +8,10 @@
   "definition": "Overview of Machine Learning Techniques is a artificial intelligence concept and a type of Deep Learning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }

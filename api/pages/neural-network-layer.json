@@ -8,6 +8,10 @@
   "definition": "Neural Network Layer is a type of Neural Network Component in the artificial intelligence domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
     }

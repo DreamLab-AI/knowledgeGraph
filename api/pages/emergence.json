@@ -8,6 +8,10 @@
   "definition": "Emergence is the cross-disciplinary phenomenon in which qualitatively novel structures, behaviours, capabilities or properties arise at a higher level of organisation in a system as a non-trivial collective consequence of the interactions among its lower-level constituents, where the macro-level ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:collective-behaviour",
       "label": "Collective Behaviour"
     },

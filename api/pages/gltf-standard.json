@@ -8,6 +8,10 @@
   "definition": "Graphics Library Transmission Format (glTF) is a royalty-free, open interoperable 3D asset format developed by Khronos Group, designed for efficient runtime transmission and loading of 3D scenes across native and web-based engines, serving as a foundational standard for metaverse asset interopera...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:3-d-asset-standard",
       "label": "3D Asset Standard"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#PerceptionSystem
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:perception-system
 public:: true
 
 # Perception System
@@ -562,86 +559,19 @@ public:: true
       "vc:label": "Transformer"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-2a2fbedb35f2"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#PerceptionSystem"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0349"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Perception System"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:perception-system"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:perception-system"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -660,6 +590,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
     {
       "@id": "urn:ngm:class:autonomous-systems",
       "label": "Autonomous Systems"
@@ -1409,9 +1343,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bd0bfbc7dd717f26c234302f3ad8716f40ba0eccf8ff38963c53eb9921c69f00@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

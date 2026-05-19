@@ -8,6 +8,10 @@
   "definition": "Sensors are devices and systems that enable robots to perceive and measure their environment through the detection of physical phenomena.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component"
     }

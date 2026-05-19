@@ -8,6 +8,10 @@
   "definition": "Call Centres (contact centres \u2014 the operationally preferred modern term reflecting multichannel reality) are coordinated operational environments in which human agents and increasingly autonomous AI Agents handle inbound and outbound customer communications across voice, chat, email, social m...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:customer-service-automation",
       "label": "Customer Service Automation"
     },

@@ -8,6 +8,10 @@
   "definition": "An Accountable Party is an individual, organization, or role bearing responsibility for specific aspects of an AI system's development, deployment, operation, or outcomes, with corresponding obligations to ensure compliance with governance principles, regulatory requirements, and ical standards.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }

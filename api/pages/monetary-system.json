@@ -8,6 +8,10 @@
   "definition": "The comprehensive framework of institutions, regulations, and mechanisms governing money creation, distribution, and management within an economy, now evolving to incorporate digital currencies, CBDCs, and blockchain-based financial systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:financial-system",
       "label": "Financial System"
     }

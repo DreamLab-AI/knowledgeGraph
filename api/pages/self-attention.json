@@ -8,6 +8,10 @@
   "definition": "An attention mechanism where every token in a sequence attends to every other token in the same sequence, allowing the model to capture intra-sequence dependencies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:transformer",
       "label": "Transformer"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#TrainingAndFineTuning
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:training-and-fine-tuning
 public:: true
 
 # Training and fine tuning
@@ -294,94 +291,19 @@ public:: true
       "vc:label": "Transformer Architecture"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-69d6455aaf24"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "domain-correction",
-      "vc:value": "infrastructure -> artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#TrainingAndFineTuning"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0820"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T15:45:00Z"
-    },
-    {
-      "vc:key": "owl-class",
-      "vc:value": "artificial-intelligence:TrainingAndFineTuning"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Training and fine tuning"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:training-and-fine-tuning"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:training-and-fine-tuning"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6cfc59620c45aecd43e8d8d3599588f0bf31533c0ae33e8c1c8b3c9e7e7e381d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -400,6 +322,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
     {
       "@id": "urn:ngm:class:model-training",
       "label": "Model Training"
@@ -1014,9 +940,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6cfc59620c45aecd43e8d8d3599588f0bf31533c0ae33e8c1c8b3c9e7e7e381d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

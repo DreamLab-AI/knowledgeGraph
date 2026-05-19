@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AISearch
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-search
 public:: true
 
 # AI Search
@@ -338,94 +335,19 @@ public:: true
       "vc:label": "Transformer Architecture"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Generative Search, Answer Engine, Conversational Search, Retrieval-Augmented Search, AI-Powered Search, LLM Search"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Retrieval-Augmented Generation]], [[Information Retrieval]], [[Digital Twin]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-7e91b3a40f12"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AISearch"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-1188"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T19:20:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "AI Search"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-search"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-search"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b2924181ffc87faab9ae434d10dfc9f7621096c767494507a1e3cb6dc5e4c984@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -444,6 +366,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
     {
       "@id": "urn:ngm:class:question-answering-system",
       "label": "Question Answering System"
@@ -1125,9 +1051,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:b2924181ffc87faab9ae434d10dfc9f7621096c767494507a1e3cb6dc5e4c984@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

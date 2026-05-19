@@ -8,6 +8,10 @@
   "definition": "An educational experience using VR, AR, or MR technologies that transports students to locations they could not otherwise visit, enabling immersive learning through 360-degree environments, interactive simulations, and experiential content without leaving the classroom.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

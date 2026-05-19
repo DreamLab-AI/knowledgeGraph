@@ -8,8 +8,8 @@
   "definition": "Interdisciplinary field studying how humans and robots communicate, collaborate, and interact safely and effectively in shared physical and virtual spaces.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
   "entityType": "Class",

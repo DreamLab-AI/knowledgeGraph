@@ -8,6 +8,10 @@
   "definition": "Comprehensive ecosystem of physical and logical systems that provide durable, scalable, and performant data retention, retrieval, and replication across distributed computing environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
     }

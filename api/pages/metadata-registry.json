@@ -8,6 +8,10 @@
   "definition": "Centralised systems for managing metadata according to standards like ISO/IEC 11179, providing authoritative definitions, usage rules, and data element descriptions to ensure consistency, interoperability, and governance across enterprise data systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-governance",
       "label": "Data Governance"
     }

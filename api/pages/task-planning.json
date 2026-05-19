@@ -8,6 +8,10 @@
   "definition": "Task Planning is the computational sub-field of artificial intelligence and robotics concerned with automatically synthesising finite sequences of discrete actions \u2014 called plans \u2014 that transform a given initial world state into a state satisfying a specified goal condition, subject to action pre...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:automated-planning",
       "label": "Automated Planning"
     },

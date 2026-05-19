@@ -8,6 +8,10 @@
   "definition": "An immersive digital experience that enables users to explore museum collections, exhibitions, and cultural heritage sites through VR, AR, 360-degree imagery, or interactive 3D environments, providing global access to art and artifacts regardless of physical location.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-tour",
       "label": "Virtual Tour"
     }

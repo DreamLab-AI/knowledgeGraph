@@ -8,6 +8,10 @@
   "definition": "Layered framework defining functional components and interfaces for metaverse systems to interoperate at network, data, and application levels.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "Feedforward Neural Network is a artificial intelligence concept and a type of Network Architecture.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:network-architecture",
       "label": "Network Architecture"
     }

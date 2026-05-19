@@ -8,8 +8,8 @@
   "definition": "An intermediate training phase where a pre-trained model undergoes additional pre-training on domain-specific or task-relevant data before fine-tuning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

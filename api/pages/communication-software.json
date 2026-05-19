@@ -8,6 +8,10 @@
   "definition": "Software applications and platforms that enable real-time interaction, collaboration, and social connection within virtual environments and metaverse spaces, including immersive video conferencing, spatial audio, avatar-based communication, and AI-enhanced translation and transcription services t...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:collaboration-technology",
       "label": "Collaboration Technology"
     }

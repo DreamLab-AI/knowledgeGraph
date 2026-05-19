@@ -8,6 +8,10 @@
   "definition": "An algorithmic technique used in vector databases to find data points most similar to a query vector by computing distance metrics like cosine similarity or Euclidean distance, with approximate mods (ANN) trading minor accuracy for millisecond-scale retrieval from s of objects.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:search-algorithm",
       "label": "Search Algorithm"
     }

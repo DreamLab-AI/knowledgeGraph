@@ -8,6 +8,10 @@
   "definition": "A comprehensive legal responsibility framework for virtual worlds that defines liability attribution, responsibility allocation, and harm redress mechanisms across platforms, users, AI agents, and content creators in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

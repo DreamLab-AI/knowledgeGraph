@@ -8,6 +8,10 @@
   "definition": "The computational process of finding a feasible path for a robot to move from a start configuration to a goal configuration while avoiding obstacles and satisfying constraints. It determines a sequence of configurations connecting start to goal in the robot's configuration space.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning"
     }

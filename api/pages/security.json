@@ -8,8 +8,8 @@
   "definition": "The protection of AI systems and their components against unauthorized access, manipulation, disruption, or exploitation, encompassing confidentiality, integrity, and availability of data, models, and infrastructure throughout the AI lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

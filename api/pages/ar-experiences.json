@@ -8,6 +8,10 @@
   "definition": "AR Experiences are interactive augmented reality applications that overlay digital content onto the physical world in real-time through smartphones, tablets, or AR headsets, enabling enhanced visualization, contextual information display, and immersive interaction with virtual objects anchored in...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:immersive-technology-applications",
       "label": "Immersive Technology Applications"
     }

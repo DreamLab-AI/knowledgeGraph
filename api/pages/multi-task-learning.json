@@ -8,8 +8,8 @@
   "definition": "A machine learning paradigm where a model is trained simultaneously on multiple related tasks, sharing representations across tasks to improve generalization and efficiency. Multi-task learning leverages task relatedness to learn better features than training on each task independently.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

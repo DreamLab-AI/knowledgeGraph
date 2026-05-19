@@ -8,6 +8,10 @@
   "definition": "Regulatory framework governing international movement of personal and sensitive data across jurisdictions, ensuring privacy protection through adequacy assessments and safeguarding mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }

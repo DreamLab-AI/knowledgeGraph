@@ -8,8 +8,8 @@
   "definition": "Metaverse Ontology is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

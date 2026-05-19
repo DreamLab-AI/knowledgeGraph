@@ -8,6 +8,10 @@
   "definition": "A W3C recommendation providing an RDF-based data model for representing thesauri, taxonomies, classification schemes, and other structured controlled vocabularies, enabling publication and linking of knowledge organization systems on the semantic web through standardized concepts and relationships.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System"
     }

@@ -8,6 +8,10 @@
   "definition": "A distributed software architecture pattern that decomposes applications into independent, loosely coupled services communicating via APIs, enabling high concurrency, scalability, and resilience through containerisation technologies like Docker and orchestration platforms like Kubernetes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "Economics, as applied to the digital and AI-driven era, is the systematic study of how scarce resources are allocated through markets, institutions, and mechanisms when the primary inputs and outputs are information goods, algorithmic capabilities, autonomous agents, and cryptographic assets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:behavioural-economics",
       "label": "Behavioural Economics"
     },

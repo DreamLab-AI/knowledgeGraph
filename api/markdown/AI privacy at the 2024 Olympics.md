@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/ontology#AIPrivacyAtThe2024Olympics
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-privacy-at-the-2024-olympics
 public:: true
 
 # AI privacy at the 2024 Olympics
@@ -22,82 +19,15 @@ public:: true
       "vc:label": "Cryptography"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-3d5a41643b52"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/ontology#AIPrivacyAtThe2024Olympics"
-    },
-    {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T17:00:00Z"
-    },
     {
       "vc:key": "preferred-term",
       "vc:value": "AI privacy at the 2024 Olympics"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-privacy-at-the-2024-olympics"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "stub"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-privacy-at-the-2024-olympics"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:85bf315228efb901f35d0148cc0d48bab0eae44d1e7e22c3e966540a248c8149@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -117,8 +47,8 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "quality": 0.5,
@@ -152,9 +82,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:85bf315228efb901f35d0148cc0d48bab0eae44d1e7e22c3e966540a248c8149@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

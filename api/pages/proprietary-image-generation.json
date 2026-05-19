@@ -8,6 +8,10 @@
   "definition": "Proprietary Image Generation refers to the class of closed-source, commercially operated text-to-image and multimodal-to-image generative AI systems whose model weights, training data, and inference pipelines are withheld from public release, typically delivered as API endpoints or subscription i...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:commercial-ai-systems",
       "label": "Commercial AI Systems"
     },

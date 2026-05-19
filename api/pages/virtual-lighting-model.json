@@ -8,6 +8,10 @@
   "definition": "Mathematical description of light behavior for rendering realistic illumination in 3D scenes, simulating light emission, transport, and surface interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:photorealistic-rendering",
       "label": "Photorealistic Rendering"
     }

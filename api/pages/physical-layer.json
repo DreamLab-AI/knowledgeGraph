@@ -8,6 +8,10 @@
   "definition": "The Physical Layer (OSI Layer 1) is the foundational stratum of the Open Systems Interconnection reference model defined in ISO/IEC 7498-1 and ITU-T X.200, responsible for raw transmission and reception of unstructured bit streams over a physical communication medium.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:communications-engineering",
       "label": "Communications Engineering"
     },

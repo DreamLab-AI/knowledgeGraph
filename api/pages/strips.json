@@ -8,6 +8,10 @@
   "definition": "STRIPS is a artificial intelligence concept and a type of Knowledge Representation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:knowledge-representation",
       "label": "Knowledge Representation"
     }

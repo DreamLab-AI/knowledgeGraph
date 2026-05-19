@@ -8,6 +8,10 @@
   "definition": "3D Development encompasses the modologies, tools, and workflows for creating, iterating, and deploying three-dimensional digital assets and environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:software-development",
       "label": "Software Development"
     }

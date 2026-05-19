@@ -8,6 +8,10 @@
   "definition": "A telemedicine platform that enables clinicians to provide health services by connecting with patients through virtual means, offering remote consultations, diagnosis, treatment recommendations, and follow-up care using HIPAA-compliant video and digital communication technologies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

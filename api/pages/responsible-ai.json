@@ -8,6 +8,10 @@
   "definition": "The practice of designing, developing, deploying, and operating artificial intelligence systems with explicit attention to their societal impacts, ical implications, and potential harms, incorporating accountability mechanisms, stakeholder engagement, risk management, transparency, and governance...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }

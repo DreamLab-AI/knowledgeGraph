@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/ontology#SiloAI
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:silo-ai
 public:: true
 
 # Silo AI
@@ -138,86 +135,19 @@ public:: true
       "vc:label": "Natural Language Processing"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-e45c6b275db8"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/ontology#SiloAI"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-5110"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Silo AI"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:silo-ai"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:silo-ai"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a49336b6e9fdbc1862add4eaae4d777d04c423f73a86e77a94e2aa55190545dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -591,9 +521,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a49336b6e9fdbc1862add4eaae4d777d04c423f73a86e77a94e2aa55190545dc@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

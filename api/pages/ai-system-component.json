@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-system-component",
   "domain": "artificial-intelligence",
   "definition": "AI System Component refers to the modular functional units that constitute a complete artificial intelligence system. These components include data ingestion pipelines, feature engineering modules, model training infrastructure, inference engines, monitoring systems, and user interfaces.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

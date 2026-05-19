@@ -8,6 +8,10 @@
   "definition": "Umbrella term encompassing all immersive technologies including Augmented Reality (AR), Virtual Reality (VR), and Mixed Reality (MR), representing the full spectrum from entirely physical to entirely virtual environments and all hybrid states between.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:immersive-technology",
       "label": "Immersive Technology"
     }

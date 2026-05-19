@@ -8,6 +8,10 @@
   "definition": "The NGM Domain is the cross-domain root ontology namespace of the Narrative Gold Mine knowledge graph, encompassing foundational concepts \u2014 identity primitives, data governance constructs, semantic web patterns, and integration infrastructure \u2014 that do not belong exclusively to any single special...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:knowledge-graph-domain",
       "label": "Knowledge Graph Domain"
     },

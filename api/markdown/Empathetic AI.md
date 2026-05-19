@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#EmpatheticAI
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:empathetic-ai
 public:: true
 
 # Empathetic AI
@@ -378,86 +375,19 @@ public:: true
       "vc:label": "Transformer Architecture"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-81c9ff94a343"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#EmpatheticAI"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0741"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T09:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Empathetic AI"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:empathetic-ai"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:empathetic-ai"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b1b7d222ae732804f731b388563a120814a086b88efb65995e37e1376290248@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -476,6 +406,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
     {
       "@id": "urn:ngm:class:affective-computing",
       "label": "Affective Computing"
@@ -1159,9 +1093,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8b1b7d222ae732804f731b388563a120814a086b88efb65995e37e1376290248@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

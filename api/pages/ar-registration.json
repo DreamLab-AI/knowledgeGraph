@@ -8,6 +8,10 @@
   "definition": "AR Registration is the spatial alignment process that anchors virtual content to real-world coordinates through Computer Vision, Sensor Input, and tracking algorithms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     },

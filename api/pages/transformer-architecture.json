@@ -8,6 +8,10 @@
   "definition": "A neural network architecture based solely on attention mechanisms, dispensing with recurrence and convolutions entirely, designed for sequence-to-sequence tasks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
     }

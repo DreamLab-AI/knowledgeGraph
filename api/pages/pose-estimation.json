@@ -8,6 +8,10 @@
   "definition": "Pose estimation is the computational task of inferring the spatial configuration\u2014position, orientation, and joint angles\u2014of a body or rigid object from image or video data, spanning 2D keypoint localisation on the image plane (pixel-coordinate skeleton graphs), 3D joint position regression in cam...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:perception",
       "label": "Perception"
     },

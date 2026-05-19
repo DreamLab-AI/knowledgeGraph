@@ -8,8 +8,8 @@
   "definition": "Blockchain-based systems employing immutable distributed ledgers, IoT sensors, and smart contracts to create comprehensive audit trails tracking product journeys from origin to consumer, enabling reduction in tracing time (7 days to 2.2 seconds), combating \u00a330 counterfeit markets, and supporting ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

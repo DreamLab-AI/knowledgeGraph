@@ -8,6 +8,10 @@
   "definition": "A parameter-efficient fine-tuning mod that freezes pre-trained weights and injects trainable low-rank decomposition matrices into each layer of the transformer, dramatically reducing trainable parameters whilst maintaining performance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:parameter-efficient-fine-tuning",
       "label": "Parameter Efficient Fine-Tuning"
     }

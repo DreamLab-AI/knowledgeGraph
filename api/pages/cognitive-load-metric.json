@@ -8,8 +8,8 @@
   "definition": "Quantitative measure of mental effort required during virtual interaction tasks, typically assessed using standardized scales like NASA-TLX.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

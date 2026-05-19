@@ -8,6 +8,10 @@
   "definition": "Responsible AI Principles are foundational ical commitments and normative guidelines that govern AI system design, development, deployment, and monitoring to ensure beneficial, fair, and rights-respecting outcomes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

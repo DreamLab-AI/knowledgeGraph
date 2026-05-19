@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#FastSpatialQueries
-legacy_uri:: urn:visionclaw:concept:spatial-computing:fast-spatial-queries
 public:: true
 
 # Fast Spatial Queries
@@ -26,98 +23,19 @@ public:: true
       "vc:label": "Spatial Computing"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-337e99e5ca86"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#FastSpatialQueries"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "MV-9901"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Fast Spatial Queries"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:fast-spatial-queries"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:fast-spatial-queries"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -137,8 +55,8 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "relations": {
@@ -185,9 +103,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d601892dc395a78b9394b45e0d8b948d201bd59f0da8fc77650db2d8ecc85961@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

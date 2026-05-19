@@ -8,6 +8,10 @@
   "definition": "AI Video, alternatively termed generative video, neural video synthesis, text-to-video (T2V), and image-to-video (I2V), denotes the class of deep generative models and engineering systems that synthesise temporally-coherent moving imagery conditioned on natural-language prompts, reference images,...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:deep-generative-model",
       "label": "Deep Generative Model"
     },

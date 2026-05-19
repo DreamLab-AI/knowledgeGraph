@@ -8,6 +8,10 @@
   "definition": "AI Risk Management is the systematic process of identifying, assessing, mitigating, and monitoring risks associated with artificial intelligence systems throughout their lifecycle, integrating AI-specific considerations into broader enterprise risk management frameworks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:risk-management",
       "label": "Risk Management"
     }

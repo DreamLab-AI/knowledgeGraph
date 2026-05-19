@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#DisruptiveTechDomain
-legacy_uri:: urn:visionclaw:concept:infrastructure:disruptive-tech-domain
 public:: true
 
 # Disruptive Tech Domain
@@ -38,86 +35,19 @@ public:: true
       "vc:label": "Domain"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-f3f8183a6256"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#DisruptiveTechDomain"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "NGM-0020"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "stable"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Disruptive Tech Domain"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:disruptive-tech-domain"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:disruptive-tech-domain"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2fab2c700d0e18c6d0d71f23c9e46089067ec838bb829625b24f148b59dba320@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -136,6 +66,10 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
     {
       "@id": "urn:ngm:class:domain",
       "label": "Domain"
@@ -206,9 +140,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2fab2c700d0e18c6d0d71f23c9e46089067ec838bb829625b24f148b59dba320@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

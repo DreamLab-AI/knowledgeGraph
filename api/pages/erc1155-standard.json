@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:erc1155-standard",
   "domain": "blockchain",
   "definition": "Multi-token standard supporting both fungible and non-fungible tokens in a single contract.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

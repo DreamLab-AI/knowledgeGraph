@@ -8,6 +8,10 @@
   "definition": "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaver...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:property-rights",
       "label": "Property Rights"
     }

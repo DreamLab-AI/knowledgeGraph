@@ -8,6 +8,10 @@
   "definition": "EMC standard ensures robots neither emit electromagnetic interference that disrupts other equipment nor experience susceptibility to external electromagnetic noise that degrades performance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }

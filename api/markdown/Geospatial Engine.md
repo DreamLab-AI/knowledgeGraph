@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#GeospatialEngine
-legacy_uri:: urn:visionclaw:concept:spatial-computing:geospatial-engine
 public:: true
 
 # Geospatial Engine
@@ -26,98 +23,19 @@ public:: true
       "vc:label": "Spatial Computing"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-24d6e6711f16"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#GeospatialEngine"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "MV-9906"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Geospatial Engine"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:geospatial-engine"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:geospatial-engine"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -137,8 +55,8 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "relations": {
@@ -185,9 +103,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f4a319a9a383b7e9d58c1df9af652f11280d96e7e07d961a19d87d89bfa243c5@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

@@ -8,6 +8,10 @@
   "definition": "Small neural network modules inserted between transformer layers that are trained whilst keeping the original model frozen. Adapter modules provide a parameter-efficient way to adapt pre-trained models to new tasks by learning task-specific transformations without modifying the base model.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:learning-module",
       "label": "Learning Module"
     }

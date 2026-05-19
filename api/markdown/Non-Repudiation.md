@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/security#NonRepudiation
-legacy_uri:: urn:visionclaw:concept:security:non-repudiation
 public:: true
 
 # Non-Repudiation
@@ -326,86 +323,19 @@ public:: true
       "vc:label": "Zero Knowledge Proof"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-nonrepudiation-phase6-enriched"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "security"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/security#NonRepudiation"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "SC-0041"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T10:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Non-Repudiation"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:security:non-repudiation"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:security:non-repudiation"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:79340c24cfa30fa123e6aa3b1aa680a81167df21652058068926388375802ee4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -424,6 +354,10 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
     {
       "@id": "urn:ngm:class:digital-evidence",
       "label": "Digital Evidence"
@@ -1082,9 +1016,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:79340c24cfa30fa123e6aa3b1aa680a81167df21652058068926388375802ee4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

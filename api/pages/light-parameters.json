@@ -8,6 +8,10 @@
   "definition": "Configurable settings that control virtual lighting behaviour in VR and metaverse environments, including intensity, colour temperature, bounce calculations, shadow quality, and reflection properties that determine visual realism and immersion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:rendering-technology",
       "label": "Rendering Technology"
     }

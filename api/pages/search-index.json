@@ -8,6 +8,10 @@
   "definition": "A data structure that maps terms, embeddings, or attributes to document locations, enabling rapid retrieval of relevant content from large metaverse asset catalogues through inverted indexes, vector indexes, or hybrid approaches.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:data-structure",
       "label": "Data Structure"
     }

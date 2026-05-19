@@ -8,6 +8,10 @@
   "definition": "Google DeepMind is the artificial general intelligence research laboratory of Alphabet Inc., headquartered at S2 Handyside Building, King's Cross, London with ~staff and additional sites in Mountain View, Zurich, Paris, Montreal and Tel Aviv, formed in April 2023 through the formal merger of Deep...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-research-laboratory",
       "label": "AI Research Laboratory"
     },

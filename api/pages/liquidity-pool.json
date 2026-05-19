@@ -8,6 +8,10 @@
   "definition": "A smart contract-governed reserve of paired cryptocurrency tokens that enables decentralized trading through automated market-making algorithms, providing continuous liquidity without traditional order books.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
     }

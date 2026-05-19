@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#Stacking
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:stacking
 public:: true
 
 # Stacking
@@ -18,86 +15,19 @@ public:: true
       "vc:label": "Ensemble Methods"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-accffffe9cd7"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#Stacking"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-1017"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Stacking"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:stacking"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:stacking"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e6123f64d04b8e0a9e0d40963b3bc95fe0ef7117242806a56c5e5ee4f2d25664@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -116,6 +46,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "draft",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
     {
       "@id": "urn:ngm:class:ensemble-methods",
       "label": "Ensemble Methods"
@@ -147,9 +81,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:e6123f64d04b8e0a9e0d40963b3bc95fe0ef7117242806a56c5e5ee4f2d25664@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

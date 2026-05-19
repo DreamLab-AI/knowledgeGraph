@@ -8,8 +8,8 @@
   "definition": "Architecture is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

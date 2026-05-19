@@ -8,6 +8,10 @@
   "definition": "The application of virtual reality technology for clinical therapeutic purposes, including treatment of mental health conditions, pain management, rehabilitation, and behavioral health interventions through immersive, interactive digital environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-reality-applications",
       "label": "Virtual Reality Applications"
     }

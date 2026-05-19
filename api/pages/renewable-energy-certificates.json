@@ -8,6 +8,10 @@
   "definition": "Digital or blockchain-tokenized instruments that certify the generation of one megawatt-hour (MWh) of electricity from renewable energy sources, providing transparent, immutable proof of renewable energy consumption for carbon accounting, sustainability reporting, and regulatory compliance, with ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:carbon-credit",
       "label": "CarbonCredit"
     },

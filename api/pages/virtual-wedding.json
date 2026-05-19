@@ -8,6 +8,10 @@
   "definition": "A marriage ceremony conducted in virtual environments or metaverse platforms where participants are represented by digital avatars, enabling global attendance, customizable virtual venues, and unique digital elements like NFT wedding gifts, often requiring accompaniment by legal proceedings for o...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-event",
       "label": "Virtual Event"
     }

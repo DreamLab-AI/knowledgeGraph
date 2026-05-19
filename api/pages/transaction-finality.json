@@ -8,8 +8,8 @@
   "definition": "The point at which a blockchain transaction becomes irreversible and cannot be altered or removed, providing settlement certainty for participants.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

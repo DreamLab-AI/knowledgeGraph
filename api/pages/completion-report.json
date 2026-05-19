@@ -8,8 +8,8 @@
   "definition": "A formal documentation artefact summarising the outcomes, achievements, and validation status of a completed Project or Work Package.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

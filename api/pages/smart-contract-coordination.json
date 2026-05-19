@@ -8,6 +8,10 @@
   "definition": "\"The use of blockchain smart contracts\u2014self-executing programs stored on distributed ledgers\u2014to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execut...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
     }

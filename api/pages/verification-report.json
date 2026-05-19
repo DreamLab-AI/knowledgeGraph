@@ -8,8 +8,8 @@
   "definition": "A verification report documents systematic assessment results confirming that OntologyAssets|ontologies, KnowledgeGraph|knowledge graphs, and metaverse infrastructure meet specified quality standards and functional requirements through automated and manual validation procedures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

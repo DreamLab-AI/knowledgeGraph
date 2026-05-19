@@ -8,6 +8,10 @@
   "definition": "range finder is a robotics and autonomous systems concept and a type of Exteroceptive Sensor.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     }

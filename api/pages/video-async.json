@@ -8,6 +8,10 @@
   "definition": "Asynchronous video communication allowing users to record, share, and view video messages at their convenience, combining visual richness with time flexibility.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
     }

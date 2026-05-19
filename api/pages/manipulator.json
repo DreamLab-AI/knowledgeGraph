@@ -8,6 +8,10 @@
   "definition": "A manipulator is a robot consisting of a series of segments, typically moving in a serial or parallel kinematic chain, with an end-effector for performing tasks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:robot",
       "label": "Robot"
     }

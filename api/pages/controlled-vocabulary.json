@@ -8,6 +8,10 @@
   "definition": "A restricted list of standardized terms or phrases used within a specific domain for consistent cataloging, tagging, and indexing, where users may only apply terms from the approved list to ensure uniform description and enable reliable information retrieval across systems and platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:information-architecture",
       "label": "Information Architecture"
     }

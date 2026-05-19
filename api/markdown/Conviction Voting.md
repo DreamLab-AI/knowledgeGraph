@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#ConvictionVoting
-legacy_uri:: urn:visionclaw:concept:blockchain:conviction-voting
 public:: true
 
 # Conviction Voting
@@ -562,94 +559,19 @@ public:: true
       "vc:label": "Quadratic Voting"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Continuous Conviction Voting, CCV, Conviction-Weighted Governance, Time-Weighted Token Voting"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[DAO Governance]], [[Token Engineering]], [[Public Goods Funding]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-5e05b9397b85"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#ConvictionVoting"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0467"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T18:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Conviction Voting"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:conviction-voting"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:conviction-voting"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d277a94f19dcef45df4da9822ece13ed73219ee543b4dc8e9e2ad33ac1908e16@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -668,6 +590,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
     {
       "@id": "urn:ngm:class:continuous-decision-making",
       "label": "Continuous Decision-Making"
@@ -1589,9 +1515,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:d277a94f19dcef45df4da9822ece13ed73219ee543b4dc8e9e2ad33ac1908e16@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

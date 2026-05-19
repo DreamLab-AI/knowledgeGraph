@@ -8,6 +8,10 @@
   "definition": "Stereo camera uses two lenses to capture images for 3D depth estimation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:camera",
       "label": "Camera"
     }

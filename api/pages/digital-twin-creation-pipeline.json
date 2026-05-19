@@ -8,6 +8,10 @@
   "definition": "The systematic workflow and technology stack for generating digital twins, combining 3D scanning techniques such as LiDAR, photogrammetry, and structured-light scanning with AI processing to create accurate virtual replicas of physical assets, environments, or systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:3-d-content-pipeline",
       "label": "3D Content Pipeline"
     }

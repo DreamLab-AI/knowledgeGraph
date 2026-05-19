@@ -8,6 +8,10 @@
   "definition": "Prompt Engineering is the systematic discipline of designing, structuring, and optimising natural language or structured inputs (prompts) to elicit desired behaviours, outputs, and reasoning traces from large language models (LLMs) and other generative AI systems, spanning a hierarchy of techniqu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:in-context-learning",
       "label": "In-Context Learning"
     },

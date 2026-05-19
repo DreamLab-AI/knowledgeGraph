@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:byzantine-fault-tolerant-system",
   "domain": "infrastructure",
   "definition": "Byzantine Fault Tolerant System is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

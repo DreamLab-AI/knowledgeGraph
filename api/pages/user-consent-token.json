@@ -8,8 +8,8 @@
   "definition": "A cryptographically verifiable digital token that represents and enforces user consent for data processing, collection, sharing, or participation in virtual environments with granular permission controls and revocation mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

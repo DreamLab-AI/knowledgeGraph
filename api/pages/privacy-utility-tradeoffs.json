@@ -8,8 +8,8 @@
   "definition": "Privacy-Utility Tradeoffs represent the fundamental tension in privacy-preserving AI between privacy preservation (protecting sensitive information through techniques like differential privacy, anonymization, or encryption) and model utility (maintaining accuracy, precision, recall, and other per...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

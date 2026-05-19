@@ -8,6 +8,10 @@
   "definition": "XML and RDF syntax constructs that associate short prefix identifiers with full namespace URIs, enabling the use of qualified names (QNames) to abbreviate long IRIs into human-readable yet machine-processable references in semantic web documents.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:semantic-web-standards",
       "label": "Semantic Web Standards"
     }

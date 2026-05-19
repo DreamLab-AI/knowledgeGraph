@@ -8,6 +8,10 @@
   "definition": "A guaranteed bandwidth component in the Metaverse domain that enables gNetworkSlice.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:network-quality-metric",
       "label": "Network Quality Metric"
     }

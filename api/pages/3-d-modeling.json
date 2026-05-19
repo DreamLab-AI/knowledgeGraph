@@ -8,6 +8,10 @@
   "definition": "3D Modeling is the artistic and technical discipline of creating three-dimensional digital forms using specialised software tools.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-art",
       "label": "Digital Art"
     },

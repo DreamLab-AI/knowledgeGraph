@@ -8,6 +8,10 @@
   "definition": "3DAnimation is a spatial computing concept and a type of Animation Technique.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:animation-technique",
       "label": "Animation Technique"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#OmnidirectionalRobot
-legacy_uri:: urn:visionclaw:concept:robotics:omnidirectional-robot
 public:: true
 
 # Omnidirectional Robot
@@ -22,86 +19,19 @@ public:: true
       "vc:label": "Wheeled Robot"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-7b4e4020b38c"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-13T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#OmnidirectionalRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0116"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "established"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Omnidirectional Robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:omnidirectional-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:omnidirectional-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2ead0039f60059513184d25371bdeaed581db8880e873ac8fd109ac2856d5e5d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -120,6 +50,10 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
     {
       "@id": "urn:ngm:class:wheeled-robot",
       "label": "Wheeled Robot"
@@ -156,9 +90,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2ead0039f60059513184d25371bdeaed581db8880e873ac8fd109ac2856d5e5d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

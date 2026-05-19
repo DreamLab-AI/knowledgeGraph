@@ -8,6 +8,10 @@
   "definition": "Economic principle in virtual worlds where digital land parcels are artificially limited to create value and drive virtual real estate markets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

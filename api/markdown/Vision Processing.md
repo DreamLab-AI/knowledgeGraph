@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#VisionProcessing
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:vision-processing
 public:: true
 
 # Vision Processing
@@ -13,82 +10,15 @@ public:: true
   "title": "Vision Processing",
   "vc:public": true,
   "vc:outboundWikilinks": [],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-6c68366d8b1f"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#VisionProcessing"
-    },
-    {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
     {
       "vc:key": "preferred-term",
       "vc:value": "Vision Processing"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:vision-processing"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "stub"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:vision-processing"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cc1468dca384a7e568db3dc498c11bdff7a24fd68a2f4decf756e98750dbfdb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -132,9 +62,6 @@ public:: true
   "vc:resolutions": [],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cc1468dca384a7e568db3dc498c11bdff7a24fd68a2f4decf756e98750dbfdb1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

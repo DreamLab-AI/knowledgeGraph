@@ -8,6 +8,10 @@
   "definition": "Generative AI encompasses Machine Learning systems capable of creating new content across modalities including text, images, audio, video, and code through Neural Networks trained on large datasets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }

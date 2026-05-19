@@ -8,6 +8,10 @@
   "definition": "Procedurally generated or algorithmically created variations of digital content that produce distinct, individualized versions of assets, experiences, or environments, often used in NFTs and generative art to ensure scarcity and uniqueness.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:generative-content",
       "label": "Generative Content"
     }

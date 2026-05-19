@@ -8,6 +8,10 @@
   "definition": "3D Content Generation refers to the computational process of creating three-dimensional digital content through algorithmic and AI-driven mods.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities
-legacy_uri:: urn:visionclaw:concept:infrastructure:liverpool-smart-cities
 public:: true
 
 # Liverpool Smart Cities
@@ -26,86 +23,19 @@ public:: true
       "vc:label": "UK Tech Ecosystem"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-62a2c1e95fc0"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#LiverpoolSmartCities"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "NGM-1003"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "established"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Liverpool Smart Cities"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:liverpool-smart-cities"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:liverpool-smart-cities"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -125,8 +55,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "quality": 0.5,
@@ -165,9 +95,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5a2038a6574999ad18a1fbe5cc444b436115a9ad5cddf0530454c1db904c7885@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

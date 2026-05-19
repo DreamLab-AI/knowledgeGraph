@@ -8,8 +8,8 @@
   "definition": "Diversity Non-Discrimination and Fairness is a trustworthiness dimension ensuring AI systems avoid unfair bias, ensure equitable treatment across demographic groups, implement accessibility and universal design, and enable inclusive stakeholder participation throughout development and deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

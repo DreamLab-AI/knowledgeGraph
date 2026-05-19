@@ -8,6 +8,10 @@
   "definition": "Decentralised Web (dWeb) is the architectural counter-movement to platform-consolidated Web 2.0, comprising the family of protocols, data models, identity primitives and economic mechanisms that re-establish the original distributed character of the internet by replacing location-addressed client...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:open-protocol",
       "label": "Open Protocol"
     },

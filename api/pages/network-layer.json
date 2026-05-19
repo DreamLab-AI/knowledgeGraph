@@ -8,6 +8,10 @@
   "definition": "Architectural layer governing communication protocols, packet routing, congestion control, and network topology. Provides reliable end-to-end message delivery, bandwidth management, and quality-of-service guarantees for distributed narrative systems across heterogeneous networks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:architectural-layer",
       "label": "ArchitecturalLayer"
     }

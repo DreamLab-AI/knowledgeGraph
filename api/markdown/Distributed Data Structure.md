@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#DistributedDataStructure
-legacy_uri:: urn:visionclaw:concept:blockchain:distributed-data-structure
 public:: true
 
 # Distributed Data Structure
@@ -70,86 +67,19 @@ public:: true
       "vc:label": "Transaction Pool"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-cf457d275d86"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-08T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#DistributedDataStructure"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "PC-0002"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Distributed Data Structure"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:distributed-data-structure"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:distributed-data-structure"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -168,6 +98,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
@@ -264,9 +198,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8a377f5a601817c1050815529951de2e5ce159bacdd87c387217d1a0fd104043@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

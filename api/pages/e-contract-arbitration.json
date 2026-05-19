@@ -8,8 +8,8 @@
   "definition": "Online dispute resolution process specifically designed for resolving conflicts arising from smart contract execution, code interpretation, or automated transaction failures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

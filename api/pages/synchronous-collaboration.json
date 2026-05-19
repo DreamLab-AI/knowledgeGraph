@@ -8,6 +8,10 @@
   "definition": "\"Real-time interaction mode where distributed participants engage simultaneously through technology-mediated channels, enabling immediate feedback, spontaneous ideation, and social presence comparable to co-located teamwork.\"",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:tc-0001-telecollaboration-domain",
       "label": "TC-0001-telecollaboration-domain"
     }

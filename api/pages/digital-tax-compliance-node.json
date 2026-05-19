@@ -8,6 +8,10 @@
   "definition": "Digital Tax Compliance Node is a type of Virtual Economy Infrastructure in the artificial intelligence domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy-infrastructure",
       "label": "Virtual Economy Infrastructure"
     }

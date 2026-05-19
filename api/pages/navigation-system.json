@@ -8,8 +8,8 @@
   "definition": "Navigation System is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "entityType": "Class",

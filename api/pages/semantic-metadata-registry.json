@@ -8,6 +8,10 @@
   "definition": "A centralized catalog managing structured metadata schemas, controlled vocabularies, and semantic relationships to enable consistent asset description, cross-platform interoperability, and intelligent discovery.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:metadata-registry",
       "label": "Metadata Registry"
     }

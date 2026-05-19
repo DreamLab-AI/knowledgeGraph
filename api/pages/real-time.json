@@ -8,6 +8,10 @@
   "definition": "Real-Time Computing is the discipline of designing computing systems, operating environments, and algorithmic frameworks in which program correctness depends not only on the logical result of computation but also on the time at which those results are produced, enforcing temporal constraints \u2014 de...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:operating-systems",
       "label": "Operating Systems"
     },

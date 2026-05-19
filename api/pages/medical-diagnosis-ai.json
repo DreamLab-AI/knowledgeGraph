@@ -8,6 +8,10 @@
   "definition": "Medical Diagnosis AI refers to artificial intelligence systems that automate or assist in the diagnostic process by analysing patient symptoms, medical history, laboratory results, imaging findings, and other clinical data to generate differential diagnoses, diagnostic hypotheses, and diagnostic ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:medical-ai",
       "label": "Medical AI"
     }

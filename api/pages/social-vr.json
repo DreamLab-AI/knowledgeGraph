@@ -8,6 +8,10 @@
   "definition": "Social VR encompasses immersive virtual reality experiences specifically designed for real-time social interaction and collaboration among multiple users within shared persistent virtual spaces, leveraging avatar-based presence and synchronised communication.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-reality",
       "label": "Virtual Reality"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ComfyUI
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:comfy-ui
 public:: true
 
 # ComfyUI
@@ -494,94 +491,19 @@ public:: true
       "vc:label": "Transformer Architecture"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Comfy UI, Comfy, ComfyUI Desktop, comfyanonymous/ComfyUI"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Stable Diffusion]], [[Generative AI]], [[Diffusion Models]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-c8d1b9a4f3e2"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ComfyUI"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-1138"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T14:01:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "ComfyUI"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:comfy-ui"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:comfy-ui"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5da590bc428435dc4adf8f8539aa900de8833a0a6b1e58df99e15694bb11510a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -1488,9 +1410,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5da590bc428435dc4adf8f8539aa900de8833a0a6b1e58df99e15694bb11510a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

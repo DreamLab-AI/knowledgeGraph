@@ -8,8 +8,8 @@
   "definition": "The foundational ETSI technical and architectural framework enabling trustworthy, sovereign data exchange within metaverse and digital ecosystems through decentralised data spaces, spatial intelligence integration, and policy-driven governance standards.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

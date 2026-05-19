@@ -8,6 +8,10 @@
   "definition": "A physically accurate digital twin representation of a manufacturing facility that enables modeling, simulation, analysis, and optimization of production processes, resources, and operations without requiring physical prototypes or pilot plants.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }

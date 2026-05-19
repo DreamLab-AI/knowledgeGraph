@@ -8,6 +8,10 @@
   "definition": "Tokenomic mechanisms that calculate and allocate staking rewards, validator incentives, and participation benefits within blockchain networks through mathematically designed emission schedules and fee distribution protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:tokenomics",
       "label": "Tokenomics"
     }

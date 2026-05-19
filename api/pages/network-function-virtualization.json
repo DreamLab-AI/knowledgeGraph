@@ -8,6 +8,10 @@
   "definition": "A network architecture approach that decouples network functions from proprietary hardware by deploying them as virtual machines or containers on commercial off-the-shelf servers, enabling flexible, scalable network services without vendor lock-in.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:network-architecture",
       "label": "Network Architecture"
     }

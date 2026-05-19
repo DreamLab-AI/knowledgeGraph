@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:economic-mechanism",
   "domain": "blockchain",
   "definition": "An Economic Mechanism is a structured system of incentives, penalties, and resource allocation rules designed to align participant behavior with desired network outcomes in blockchain ecosystems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

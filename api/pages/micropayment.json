@@ -8,6 +8,10 @@
   "definition": "Very small electronic payment processed automatically within digital environments for low-value transactions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:digital-wallet",
       "label": "Digital Wallet"
     }

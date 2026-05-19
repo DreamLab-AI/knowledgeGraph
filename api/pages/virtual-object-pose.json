@@ -8,6 +8,10 @@
   "definition": "The position, orientation, and scale of a 3D object within a virtual environment, typically represented as translation (X, Y, Z coordinates), rotation (quaternion or Euler angles), and scale values that define how the object exists in 3D space.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
     }

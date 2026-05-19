@@ -8,6 +8,10 @@
   "definition": "A persistent, synchronous three-dimensional digital environment where unlimited users interact simultaneously through avatars, featuring continuous data persistence for identity, assets, and social relationships across sessions while supporting real-time rendering and cross-platform access.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

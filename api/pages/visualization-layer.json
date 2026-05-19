@@ -8,8 +8,8 @@
   "definition": "Graphics and rendering systems responsible for displaying virtual environments, objects, and interfaces through advanced rendering pipelines and visual processing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "entityType": "Class",

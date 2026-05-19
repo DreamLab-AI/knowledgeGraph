@@ -8,6 +8,10 @@
   "definition": "Regulatory Reporting is the structured, machine-readable submission of financial transaction data, prudential metrics, operational incidents, and suspicious-activity indicators to supervisory authorities under legally mandated frameworks, spanning the full spectrum from trade-level derivatives re...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:supervisory-technology",
       "label": "Supervisory Technology"
     },

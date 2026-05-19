@@ -8,6 +8,10 @@
   "definition": "Machine Translation (MT) is the automated conversion of natural language text or speech from a source language into semantically and pragmatically equivalent target language output, evolving from rule-based symbolic approaches (RBMT, 1950s-1990s) through statistical phrase-based models (SMT, Mose...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:computational-linguistics",
       "label": "Computational Linguistics"
     },

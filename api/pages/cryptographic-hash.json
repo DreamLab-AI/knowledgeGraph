@@ -8,8 +8,8 @@
   "definition": "Deterministic mathematical function transforming arbitrary input data into fixed-length output ensuring data integrity verification and tamper detection through collision resistance properties.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "Fundamental rights and freedoms inherent to all human beings as recognised in international instruments including the Universal Declaration of Human Rights, which AI systems must respect and protect throughout their lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

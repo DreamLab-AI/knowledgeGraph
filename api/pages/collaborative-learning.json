@@ -8,6 +8,10 @@
   "definition": "An educational approach where learners work toger in virtual environments, metaverse platforms, or VR spaces to achieve shared learning goals through social interaction, knowledge co-construction, and collective problem-solving enabled by immersive and embodied digital experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:educational-methodology",
       "label": "Educational Methodology"
     }

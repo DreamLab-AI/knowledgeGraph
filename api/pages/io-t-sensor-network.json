@@ -8,6 +8,10 @@
   "definition": "A distributed system of spatially separated, resource-constrained sensing devices\u2014each comprising a sensor element, microcontroller, radio transceiver, and power source\u2014interconnected through heterogeneous wireless protocols to collect, process, and transmit physical-world measurements toward gat...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:networked-embedded-systems",
       "label": "Networked Embedded Systems"
     },

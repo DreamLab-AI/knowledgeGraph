@@ -8,6 +8,10 @@
   "definition": "Edge Computing is a distributed computing paradigm that relocates computation, storage, and intelligence from centralised hyperscale data centres towards the topological extremities of the network \u2014 into base stations, on-premises micro data centres, customer-premises gateways, vehicles, industri...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:decentralised-architecture",
       "label": "Decentralised Architecture"
     },

@@ -8,6 +8,10 @@
   "definition": "The process of aligning virtual coordinate frames with physical world references in AR/VR systems, including camera calibration for video see-through displays and optical calibration for see-through displays, ensuring accurate registration of digital content with the real environment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:ar-registration",
       "label": "AR Registration"
     }

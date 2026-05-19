@@ -8,6 +8,10 @@
   "definition": "Convergence Concept is a technology infrastructure concept and a type of Collaboration.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:collaboration",
       "label": "Collaboration"
     }

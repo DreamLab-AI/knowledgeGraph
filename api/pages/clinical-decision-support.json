@@ -8,6 +8,10 @@
   "definition": "Clinical Decision Support (CDS) refers to AI systems that provide healthcare professionals with patient-specific assessments, recommendations, and information to support clinical decision-making at the point of care.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:healthcare-analytics",
       "label": "Healthcare Analytics"
     }

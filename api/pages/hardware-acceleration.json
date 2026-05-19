@@ -8,6 +8,10 @@
   "definition": "The use of specialised hardware components, particularly GPUs and dedicated processors, to offload computationally intensive rendering, physics simulation, and AI workloads from the CPU, enabling real-time performance essential for immersive VR/AR metaverse experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }

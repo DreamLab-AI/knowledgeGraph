@@ -8,6 +8,10 @@
   "definition": "Blockchain technology addressing the \u00a3400-450 global counterfeit luxury market (of all luxury goods) through immutable digital certificates of authenticity, NFC-enabled provenance records, and cryptographic verification that cannot be physically replicated.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:provenance-tracking",
       "label": "Provenance Tracking"
     }

@@ -8,6 +8,10 @@
   "definition": "Proof of Stake Sustainability refers to the environmental, economic, and governance characteristics of Proof of Stake consensus mechanisms that make them a viable long-term alternative to energy-intensive Proof of Work systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:environmental-technology",
       "label": "Environmental Technology"
     },

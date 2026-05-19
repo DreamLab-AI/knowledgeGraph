@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:blockchain-governance",
   "domain": "blockchain",
   "definition": "Blockchain Governance refers to the mechanisms, processes, and structures through which decisions are made about the development, operation, and evolution of blockchain networks and protocols.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

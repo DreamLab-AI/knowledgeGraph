@@ -8,6 +8,10 @@
   "definition": "The measurement, collection, analysis, and reporting of data about learners in immersive VR and metaverse educational environments, enabling understanding of learning processes, performance prediction, and adaptive content delivery.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

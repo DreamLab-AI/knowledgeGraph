@@ -8,6 +8,10 @@
   "definition": "Software platforms and tools enabling artists to create, manipulate, and distribute visual art using digital technologies, including generative AI systems, 3D modeling software, and NFT minting platforms that facilitate artistic expression and commerce in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:creative-software",
       "label": "Creative Software"
     }

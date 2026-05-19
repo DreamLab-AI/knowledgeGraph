@@ -8,6 +8,10 @@
   "definition": "Delta robot employs parallel kinematics where three or more kinematic chains connect actuators to an end-effector platform, constraining motion through parallelogram linkages to pure translation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:parallel-robots",
       "label": "Parallel Robots"
     },

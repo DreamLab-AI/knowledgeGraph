@@ -8,6 +8,10 @@
   "definition": "A unified reference frame system for positioning objects in three-dimensional virtual or mixed reality environments, including geographically-anchored poses (GeoPose) tied to Earth coordinates and local coordinate systems for scene-relative object placement with support for coordinate transformat...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:coordinate-system",
       "label": "Coordinate System"
     }

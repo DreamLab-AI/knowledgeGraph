@@ -8,6 +8,10 @@
   "definition": "Technical specifications and protocols for recording immutable ownership history and authenticity verification of digital assets through blockchain-based token IDs, contract addresses, and metadata that establish chain of custody from creation to present ownership.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-standards",
       "label": "Digital Asset Standards"
     }

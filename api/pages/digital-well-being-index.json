@@ -8,6 +8,10 @@
   "definition": "Composite indicator assessing psychological, social, physical, and temporal impacts of extended virtual engagement, providing quantitative measures of healthy metaverse usage patterns.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

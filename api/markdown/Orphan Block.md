@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#OrphanBlock
-legacy_uri:: urn:visionclaw:concept:blockchain:orphan-block
 public:: true
 
 # Orphan Block
@@ -42,86 +39,19 @@ public:: true
       "vc:label": "DistributedDataStructure"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-4eaadf1cdc23"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-10-28T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#OrphanBlock"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0016"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Orphan Block"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:orphan-block"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:orphan-block"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92b5d7336f0cc97f7166f3fcb624bd66f98c81ec0c8bfaad2460c54073131141@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -177,9 +107,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92b5d7336f0cc97f7166f3fcb624bd66f98c81ec0c8bfaad2460c54073131141@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

@@ -8,6 +8,10 @@
   "definition": "Organisations and individuals developing, deploying or operating AI systems should be accountable for their proper functioning in accordance with OECD AI Principles and applicable legal frameworks, based on their roles, context and ability to act.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:policy-framework",
       "label": "Policy Framework"
     }

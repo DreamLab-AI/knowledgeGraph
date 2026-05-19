@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:community-standards",
   "domain": "spatial-computing",
   "definition": "The rules, guidelines, and behavioral norms established for virtual environments and metaverse platforms that govern user conduct, content creation, and social interactions, often enforced through technical standards, governance frameworks, and moderation systems to ensure safety, inclusivity, an...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

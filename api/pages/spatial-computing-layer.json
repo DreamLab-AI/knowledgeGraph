@@ -8,6 +8,10 @@
   "definition": "Computational layer linking digital and physical spaces through 3D mapping and context-aware processing for spatial awareness and interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:infrastructure-layer",
       "label": "Infrastructure Layer"
     }

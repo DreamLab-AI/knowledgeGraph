@@ -8,6 +8,10 @@
   "definition": "A software layer that connects operating systems, applications, and services by providing common capabilities such as API management, message routing, authentication, and data integration to enable seamless communication between diverse systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:software-infrastructure",
       "label": "Software Infrastructure"
     }

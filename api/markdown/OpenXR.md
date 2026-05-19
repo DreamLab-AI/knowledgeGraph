@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#Openxr
-legacy_uri:: urn:visionclaw:concept:spatial-computing:openxr
 public:: true
 
 # OpenXR
@@ -178,98 +175,19 @@ public:: true
       "vc:label": "WebRTC"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.78"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-6c1e4a8d3f9b"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#Openxr"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": ""
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "established"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "OpenXR"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.60"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:openxr"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:openxr"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "1.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -288,6 +206,10 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
     {
       "@id": "urn:ngm:class:extended-reality-api",
       "label": "Extended Reality API"
@@ -611,9 +533,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f3a3d83daa5b319f1d191f031e2ed10212058ff0d7545d83bf1bc6c388185e88@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

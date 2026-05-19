@@ -8,8 +8,8 @@
   "definition": "A subword tokenisation algorithm that iteratively merges the most frequent pairs of characters or character sequences to build a vocabulary, originally developed for data compression.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

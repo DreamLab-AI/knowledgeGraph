@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#CyberSecurityAndCryptography
-legacy_uri:: urn:visionclaw:concept:infrastructure:cyber-security-and-cryptography
 public:: true
 
 # Cyber Security and Cryptography
@@ -374,86 +371,19 @@ public:: true
       "vc:label": "Secure Multi-Party Computation"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-31b2949cd492"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#CyberSecurityAndCryptography"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "IF-0412"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T10:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Cyber Security and Cryptography"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:cyber-security-and-cryptography"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:cyber-security-and-cryptography"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2ba57912d41f3643b9a483e86dfd43ee3998fa0cbabbea4286f228f8d764800@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -472,6 +402,10 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
     {
       "@id": "urn:ngm:class:network-security",
       "label": "Network Security"
@@ -1258,9 +1192,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a2ba57912d41f3643b9a483e86dfd43ee3998fa0cbabbea4286f228f8d764800@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

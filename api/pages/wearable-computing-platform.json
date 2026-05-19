@@ -8,6 +8,10 @@
   "definition": "Hardware and software ecosystems for body-worn computing devices including smartwatches, smart glasses, fitness trackers, and XR headsets, providing operating systems, development frameworks, and connectivity infrastructure for continuous personal computing and metaverse interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:computing-platform",
       "label": "Computing Platform"
     }

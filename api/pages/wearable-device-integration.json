@@ -8,6 +8,10 @@
   "definition": "The technical processes and protocols for connecting wearable computing devices with metaverse platforms, enterprise systems, and cloud services, enabling seamless data exchange, cross-device synchronization, and coordinated multi-device experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:system-integration",
       "label": "System Integration"
     }

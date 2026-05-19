@@ -8,6 +8,10 @@
   "definition": "Collaborative Document Editing - Real-time or asynchronous shared editing technology enabling multiple distributed users to simultaneously create, modify, and comment on digital documents with live synchronization and version control.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:knowledge-co-creation",
       "label": "Knowledge Co-Creation"
     },

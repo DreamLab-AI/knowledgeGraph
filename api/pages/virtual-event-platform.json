@@ -8,6 +8,10 @@
   "definition": "Software platforms that enable hosting digital events in metaverse environments, supporting conferences, exhibitions, concerts, and networking through immersive 3D spaces with avatar-based attendance, interactive features, and real-time collaboration tools.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

@@ -8,6 +8,10 @@
   "definition": "Performance optimization is the systematic process of enhancing the efficiency, speed, and effectiveness of software systems by tuning code, algorithms, and resource utilization to minimize response time and maximize throughput.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:optimization-technique",
       "label": "Optimization Technique"
     }

@@ -8,6 +8,10 @@
   "definition": "The ability of an AI system to maintain consistent, correct, and safe performance across diverse operating conditions, including unexpected inputs, environmental variations, and adversarial perturbations, without catastrophic failure or significant degradation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }

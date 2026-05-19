@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:metaverse-governance-and-safeguarding",
   "domain": "spatial-computing",
   "definition": "Metaverse governance and safeguarding is a spatial computing concept and a type of Metaverse.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

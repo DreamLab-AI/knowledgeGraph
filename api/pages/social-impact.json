@@ -8,8 +8,8 @@
   "definition": "The effects\u2014positive and negative, intended and unintended\u2014that AI systems have on individuals, communities, societies and social structures including employment, education, social cohesion, cultural practices and power distributions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

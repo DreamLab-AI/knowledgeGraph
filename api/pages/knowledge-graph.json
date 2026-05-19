@@ -8,8 +8,8 @@
   "definition": "A semantic knowledge network that represents entities, relationships, and attributes as an interconnected graph structure, enabling advanced reasoning, inference, and knowledge discovery across metaverse systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

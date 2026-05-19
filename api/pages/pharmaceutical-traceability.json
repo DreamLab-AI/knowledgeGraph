@@ -8,8 +8,8 @@
   "definition": "Blockchain-based pharmaceutical supply chain systems employing unit-level serialization, immutable audit trails, and automated verification to combat the \u00a3200 counterfeit medicine market causing over 1 deaths annually, enabling DSCSA and EU FMD regulatory compliance, supporting MediLedger Network...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

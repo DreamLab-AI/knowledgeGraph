@@ -8,6 +8,10 @@
   "definition": "OpenAI Whisper is a large-scale, weakly-supervised, encoder-decoder Transformer architecture for automatic speech recognition (ASR) and speech translation, introduced by Alec Radford, Jong Wook Kim, Tao Xu, Greg Brockman, Christine McLeavey, and Ilya Sutskever at OpenAI in September 2022 in the p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:automatic-speech-recognition",
       "label": "Automatic Speech Recognition"
     },

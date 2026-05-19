@@ -8,6 +8,10 @@
   "definition": "Augmented Connected Workforce is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }

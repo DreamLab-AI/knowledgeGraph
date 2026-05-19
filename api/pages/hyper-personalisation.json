@@ -8,6 +8,10 @@
   "definition": "Hyper personalisation is the application of real-time behavioural signals, rich first-party identity data, and AI/ML inference \u2014 spanning collaborative filtering, content-based filtering, hybrid ensemble models, transformer-based sequential recommendation, reinforcement-learning-from-feedback loo...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:behavioural-ai",
       "label": "Behavioural AI"
     },

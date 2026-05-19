@@ -8,6 +8,10 @@
   "definition": "Software layer that mediates between applications and underlying services or infrastructure to enable communication, resource access, and interoperability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }

@@ -8,6 +8,10 @@
   "definition": "Open Generative AI tools is the ecosystem of openly licensed or openly released generative AI models, fine-tuning pipelines, inference infrastructure, and community-distribution platforms that collectively enable practitioners to download, modify, deploy, and share large-scale foundation models f...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:ai-ecosystem",
       "label": "AI Ecosystem"
     },

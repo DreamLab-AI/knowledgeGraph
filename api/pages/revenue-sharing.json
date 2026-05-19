@@ -8,6 +8,10 @@
   "definition": "Blockchain-enabled distribution mechanisms that automatically allocate earnings between creators, platforms, and stakeholders through smart contracts, with NFT royalties providing perpetual income streams for digital asset creators in metaverse economies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:creator-economy",
       "label": "Creator Economy"
     }

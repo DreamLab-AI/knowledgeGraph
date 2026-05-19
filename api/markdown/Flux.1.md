@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#FluxImageGenerationModelFamily
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:flux
 public:: true
 
 # Flux.1
@@ -642,94 +639,19 @@ public:: true
       "vc:label": "Style Transfer"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "FLUX.1, Flux, Black Forest Labs Flux, BFL Flux, Flux.1 [pro], Flux.1 [dev], Flux.1 [schnell], Flux.1.1 [pro], Flux.1 Kontext, Flux Tools"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Diffusion Model]], [[ComfyUI]], [[Generative AI]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-3fb6b4cc9b46"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#FluxImageGenerationModelFamily"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-1063"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T20:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Flux.1"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:flux"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:flux"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1baf3cc1aab2c0865f4839071dfff49c758b4ab5b6d4bb7d6cc9569c9b24019a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -1829,9 +1751,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:1baf3cc1aab2c0865f4839071dfff49c758b4ab5b6d4bb7d6cc9569c9b24019a@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

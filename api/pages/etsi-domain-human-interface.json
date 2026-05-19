@@ -8,8 +8,8 @@
   "definition": "An ETSI governance domain addressing user interaction design, accessibility, and human-computer interfaces within VirtualEnvironment|virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

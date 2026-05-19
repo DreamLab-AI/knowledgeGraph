@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:networking-standard",
   "domain": "infrastructure",
   "definition": "Networking Standard is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

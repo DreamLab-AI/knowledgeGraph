@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:3-d-scene-exchange-protocol-sxp",
   "domain": "spatial-computing",
   "definition": "Open standards framework enabling interoperable transfer of complete 3D scene graphs including geometric meshes (polygon topology vertex positions normals texture coordinates with indexed triangle lists optimized for GPU rendering), physically-based rendering (PBR) material systems (metallic-roug...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

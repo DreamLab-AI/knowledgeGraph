@@ -8,6 +8,10 @@
   "definition": "The engagement of citizens in democratic processes and public decision-making through digital platforms, virtual environments, and emerging technologies including metaverse spaces, blockchain voting systems, and AI-enhanced deliberation tools that enable new forms of collective governance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:democratic-engagement",
       "label": "Democratic Engagement"
     }

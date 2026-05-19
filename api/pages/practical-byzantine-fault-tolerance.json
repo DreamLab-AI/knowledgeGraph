@@ -8,6 +8,10 @@
   "definition": "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }

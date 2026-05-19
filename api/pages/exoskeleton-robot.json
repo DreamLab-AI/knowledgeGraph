@@ -8,12 +8,12 @@
   "definition": "Exoskeleton Robot - A wearable robotic framework that augments human strength and endurance by providing motorised Joint Support and force amplification, reducing musculoskeletal strain during heavy lifting, hazardous material handling, or prolonged repetitive tasks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:wearable-robotics",
-      "label": "Wearable Robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:wearable-robotics",
+      "label": "Wearable Robotics"
     }
   ],
   "entityType": "Class",

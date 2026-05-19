@@ -8,6 +8,10 @@
   "definition": "Strings of data used in cryptographic algorithms to encrypt, decrypt, sign, or verify data, serving as the secret parameters that transform plaintext to ciphertext and vice versa.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }

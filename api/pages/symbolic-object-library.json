@@ -8,6 +8,10 @@
   "definition": "A collection or repository of standardized 3D digital objects, assets, and components designed for use across metaverse platforms, including models, textures, animations, and interactive elements that can be shared and reused in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

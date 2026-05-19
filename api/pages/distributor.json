@@ -8,8 +8,8 @@
   "definition": "A natural or legal person in the supply chain, other than the provider or the importer, that makes an AI system available on the Union market.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

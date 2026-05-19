@@ -8,6 +8,10 @@
   "definition": "Scene Graph Format is a spatial computing concept and a type of Scene Graph.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:scene-graph",
       "label": "Scene Graph"
     }

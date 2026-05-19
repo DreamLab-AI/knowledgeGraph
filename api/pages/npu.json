@@ -8,6 +8,10 @@
   "definition": "Neural Processing Unit, specialized hardware accelerators designed specifically for artificial neural network computations, optimized for AI inference and training.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:ai-hardware",
       "label": "AI Hardware"
     }

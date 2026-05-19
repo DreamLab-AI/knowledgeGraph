@@ -8,6 +8,10 @@
   "definition": "Attention is a differentiable content-based addressing mechanism for neural networks that computes a weighted combination of value vectors according to learned compatibility scores between a query vector and a set of key vectors, formalised in its most influential form as Scaled Dot-Product Atten...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:differentiable-memory",
       "label": "Differentiable Memory"
     },

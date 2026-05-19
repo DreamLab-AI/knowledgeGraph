@@ -8,6 +8,10 @@
   "definition": "The synchronization and management of multiple users interacting within shared virtual environments, requiring real-time pose tracking, coordinate system alignment, and collaborative state management to enable seamless multi-user experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:multi-user-systems",
       "label": "Multi-User Systems"
     }

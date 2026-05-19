@@ -8,6 +8,10 @@
   "definition": "Resilience metrics are quantitative and qualitative measurements assessing system robustness, fault tolerance, and recovery capabilities within digital and physical infrastructure, encompassing availability percentages, RecoveryTimeObjective|recovery time objectives, and failure rates that de...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems"
     }

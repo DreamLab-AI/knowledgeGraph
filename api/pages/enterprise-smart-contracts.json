@@ -8,6 +8,10 @@
   "definition": "Enterprise smart contracts are self-executing code artefacts deployed on permissioned Distributed Ledger Technology platforms \u2014 Hyperledger Fabric chaincode (Go/Node.js/Java), R3 Corda CorDapps (Kotlin/JVM), Quorum Blockchain and Hyperledger Besu (EVM permissioned with Tessera...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:business-logic-code",
       "label": "Business Logic Code"
     },

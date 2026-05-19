@@ -8,6 +8,10 @@
   "definition": "An extension of the attention mechanism that allows the model to jointly attend to information from different representation subspaces at different positions, using multiple attention heads in parallel.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }

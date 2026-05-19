@@ -8,8 +8,8 @@
   "definition": "A hierarchical taxonomic framework organizing the fundamental conceptual domains within robotics science and engineering, comprising ten core subdomains structured into four primary categories\u2014autonomous systems (encompassing independent robotic platforms implementing path planning algorithms suc...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

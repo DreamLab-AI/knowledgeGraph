@@ -8,6 +8,10 @@
   "definition": "Tactile sensor provides touch sensing capability similar to human fingertips.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:exteroceptive-sensor",
       "label": "Exteroceptive Sensor"
     }

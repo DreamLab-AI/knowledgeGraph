@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:accessibility-standard",
   "domain": "spatial-computing",
   "definition": "Specification ensuring equitable access to virtual content and experiences for users with diverse abilities and disabilities.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

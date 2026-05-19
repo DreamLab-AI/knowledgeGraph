@@ -8,6 +8,10 @@
   "definition": "Decoding-enhanced BERT with Disentangled Attention: an improved BERT architecture that uses disentangled attention (separating content and position) and an enhanced mask decoder for better performance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:language-modeling",
       "label": "Language Modeling"
     }

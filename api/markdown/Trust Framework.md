@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/identity-governance#TrustFramework
-legacy_uri:: urn:visionclaw:concept:identity-governance:trust-framework
 public:: true
 
 # Trust Framework
@@ -302,86 +299,19 @@ public:: true
       "vc:label": "Verifiable Credentials"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-tf9a4b7c2d1e"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "identity-governance"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/identity-governance#TrustFramework"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "IF-0031"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T10:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Trust Framework"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:identity-governance:trust-framework"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:identity-governance:trust-framework"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -400,6 +330,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
     {
       "@id": "urn:ngm:class:certification-scheme",
       "label": "Certification Scheme"
@@ -1020,9 +954,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:185e370082082ff31326faecf3113db8bb54a8e82bfbfd7112941c13e8b28190@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

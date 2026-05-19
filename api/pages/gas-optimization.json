@@ -8,8 +8,8 @@
   "definition": "Gas optimization is the systematic reduction of computational resources required for smart contract execution on blockchain networks, achieved through efficient storage patterns, opcode selection, data structure design, and batching strategies to minimise transaction costs and improve economic vi...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

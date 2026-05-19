@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#XRTestingInfrastructure
-legacy_uri:: urn:visionclaw:concept:infrastructure:xr-testing-infrastructure
 public:: true
 
 # XR Testing Infrastructure
@@ -22,86 +19,19 @@ public:: true
       "vc:label": "Testing Infrastructure"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-6ee7af58f7ae"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#XRTestingInfrastructure"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "MV-10174"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "XR Testing Infrastructure"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:xr-testing-infrastructure"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:xr-testing-infrastructure"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -120,6 +50,10 @@ public:: true
   "domain": "infrastructure",
   "maturity": "draft",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
     {
       "@id": "urn:ngm:class:testing-infrastructure",
       "label": "Testing Infrastructure"
@@ -156,9 +90,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ed3bee47af05bac3ab36517c3f1b91844e448762dab2742ea35769b2ba7a67e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

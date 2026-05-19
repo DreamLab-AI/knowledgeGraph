@@ -8,6 +8,10 @@
   "definition": "Technical Architecture Framework is a type of Definitions and frameworks for Metaverse in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:definitions-and-frameworks-for-metaverse",
       "label": "Definitions and frameworks for Metaverse"
     }

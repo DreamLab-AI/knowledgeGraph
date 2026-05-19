@@ -8,6 +8,10 @@
   "definition": "Distributed decision making encompasses the full spectrum of collective and algorithmic processes by which multiple autonomous agents, nodes, organisations, or individuals arrive at binding or coordinating choices without relying on a single central authority.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:collective-intelligence",
       "label": "Collective Intelligence"
     },

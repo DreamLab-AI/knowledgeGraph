@@ -8,6 +8,10 @@
   "definition": "Development environments and SDKs built on engines like Unity and Unreal that provide tools, APIs, and frameworks for creating immersive 3D applications, virtual worlds, and blockchain-integrated experiences for the metaverse.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:development-platform",
       "label": "Development Platform"
     }

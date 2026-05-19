@@ -8,8 +8,8 @@
   "definition": "A Blockchain Entity is the foundational abstract conceptual class representing any distinct component, construct, or participant within a blockchain ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

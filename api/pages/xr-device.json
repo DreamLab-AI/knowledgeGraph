@@ -8,6 +8,10 @@
   "definition": "Hardware equipment designed to create or enhance extended reality experiences, encompassing virtual reality headsets, augmented reality glasses, mixed reality displays, haptic feedback systems, and motion tracking sensors that enable immersive interaction with digital content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }

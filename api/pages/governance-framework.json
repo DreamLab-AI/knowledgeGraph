@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:governance-framework",
   "domain": "artificial-intelligence",
   "definition": "A governance framework is a structured system of policies, processes, procedures, and controls that organisations use to align their technology resources and operations with business objectives.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "emerging",

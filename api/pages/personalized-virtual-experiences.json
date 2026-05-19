@@ -8,6 +8,10 @@
   "definition": "AI-driven customization of virtual environments, content, and interactions based on individual user preferences, behaviors, and interests, enabling tailored journeys through metaverse spaces with adaptive storytelling, avatars, and content recommendations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-experience",
       "label": "Virtual Experience"
     }

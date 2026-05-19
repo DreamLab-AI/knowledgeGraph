@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:erc1400-standard",
   "domain": "blockchain",
   "definition": "Security token standard with compliance controls and transfer restrictions.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

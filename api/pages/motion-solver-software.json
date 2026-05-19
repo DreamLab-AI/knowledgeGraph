@@ -8,6 +8,10 @@
   "definition": "Specialized software that uses multibody dynamics and physics-based algorithms to calculate reaction forces, torques, velocities, accelerations, and motor behaviors for mechanical systems and animated characters, enabling accurate simulation of rigid and flexible body movements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:simulation-software",
       "label": "Simulation Software"
     }

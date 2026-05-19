@@ -8,6 +8,10 @@
   "definition": "A digital representation of an entity encompassing personally identifiable information, behavioral data, credentials, and authentication attributes that enables individuals and organizations to establish presence, ownership, and trust within virtual environments, blockchain networks, and metavers...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:identity",
       "label": "Identity"
     }

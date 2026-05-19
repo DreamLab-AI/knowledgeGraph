@@ -8,8 +8,8 @@
   "definition": "The BlockchainDomain represents the comprehensive knowledge domain of blockchain and distributed ledger technologies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

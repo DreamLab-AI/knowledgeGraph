@@ -8,8 +8,8 @@
   "definition": "Synthetic Data Generation is a artificial intelligence concept and a type of artificial-intelligence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

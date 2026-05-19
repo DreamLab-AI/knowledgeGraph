@@ -8,6 +8,10 @@
   "definition": "Blockchain-based electoral systems employing cryptographic verification, end-to-end verifiability, and distributed ledger technology to enable secure voting whilst facing critical security challenges identified by MIT research showing vulnerabilities allowing vote alteration, academic consensus o...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:blockchain-governance",
       "label": "Blockchain Governance"
     }

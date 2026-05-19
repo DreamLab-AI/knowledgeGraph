@@ -8,6 +8,10 @@
   "definition": "Depth Estimation is the computer vision task of recovering per-pixel distance from a camera (or a virtual viewpoint) to the surfaces of a 3D scene, producing a depth map D(u,v) \u2208 \u211d\u207a aligned to an image I(u,v) that encodes scene geometry needed for 3D reconstruction, robotic perception, augmented-...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:3-d-perception",
       "label": "3D Perception"
     },

@@ -8,6 +8,10 @@
   "definition": "Music and Audio (AI-driven) is a domain within artificial intelligence encompassing the generation, transformation, classification, and production of musical audio using deep generative models, large language models conditioned on audio, latent diffusion architectures, and audio-language foundati...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:audio-signal-processing",
       "label": "Audio Signal Processing"
     },

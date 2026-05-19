@@ -8,6 +8,10 @@
   "definition": "A standardised JSON-LD 1.1 encoding surface (S1\u2013S11) that exposes agent state, credentials, events, and work metadata in a queryable, linkable format, enabling federated consumption by heterogeneous external systems (monitoring dashboards, compliance audits, blockchain oracles, knowledge grap...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:middleware-layer",
       "label": "Middleware Layer"
     }

@@ -8,8 +8,8 @@
   "definition": "A systematic assessment document verifying ontology compliance, data quality, and structural integrity across knowledge graphs and semantic systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

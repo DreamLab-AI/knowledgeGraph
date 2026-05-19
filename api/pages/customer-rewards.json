@@ -8,6 +8,10 @@
   "definition": "Loyalty program systems that use blockchain technology and tokenization to create tradeable, interoperable digital rewards, enabling customers to earn, exchange, and redeem tokens across multiple platforms and businesses while providing brands with transparent, fraud-resistant, and cost-effective...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:loyalty-programs",
       "label": "Loyalty Programs"
     }

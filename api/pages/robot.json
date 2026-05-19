@@ -8,8 +8,8 @@
   "definition": "A robot is an actuated mechanism programmable in two or more axes with a degree of autonomy, moving within its environment, to perform intended tasks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Synchronous Execution is a computational model where operations are performed sequentially, with each operation blocking until completion before the next operation begins.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }

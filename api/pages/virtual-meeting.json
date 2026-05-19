@@ -8,6 +8,10 @@
   "definition": "Virtual Meeting refers to synchronous gatherings of participants using video conferencing, spatial computing, or immersive technologies to collaborate remotely.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }

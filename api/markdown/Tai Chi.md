@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#TaiChi
-legacy_uri:: urn:visionclaw:concept:infrastructure:tai-chi
 public:: true
 
 # Tai Chi
@@ -18,82 +15,15 @@ public:: true
       "vc:label": "Research Tools"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-96b5f822932a"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#TaiChi"
-    },
-    {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
     {
       "vc:key": "preferred-term",
       "vc:value": "Tai Chi"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:tai-chi"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "stub"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:tai-chi"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ac5c957df7dd809f67aac1ad6ecf05cbacb2e98d4b78f16988d80d96e5a02d9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -113,8 +43,8 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "@id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "quality": 0.35,
@@ -143,9 +73,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ac5c957df7dd809f67aac1ad6ecf05cbacb2e98d4b78f16988d80d96e5a02d9b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

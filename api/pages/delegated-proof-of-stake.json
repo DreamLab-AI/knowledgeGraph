@@ -8,6 +8,10 @@
   "definition": "A PoS variant where network participants have the right to delegate the production of new blocks to a fixed number of delegates (witnesses), with users determining delegates via democratic voting mechanism weighted by locked tokens.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }

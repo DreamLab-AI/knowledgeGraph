@@ -8,6 +8,10 @@
   "definition": "The assignment of clear responsibilities for AI system development, deployment, and outcomes, coupled with mechanisms for oversight, redress, and remediation, ensuring that actors can be held answerable for system impacts and failures.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }

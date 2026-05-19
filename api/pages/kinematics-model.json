@@ -8,6 +8,10 @@
   "definition": "KinematicsModel is a mathematical representation of the geometric relationships between a robot's joint configuration space and its end-effector pose in Cartesian workspace coordinates, abstracting away forces and inertial effects to describe pure motion geometry.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:geometric-model",
       "label": "Geometric Model"
     },

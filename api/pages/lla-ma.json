@@ -8,8 +8,8 @@
   "definition": "Large Language Model Meta AI: a collection of foundation language models ranging from 7B to 65B parameters, designed to be efficient and performant whilst using only publicly available data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

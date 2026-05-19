@@ -8,6 +8,10 @@
   "definition": "A financial distribution model where allocation, payment calculations, and disbursements are openly visible and verifiable by all stakeholders, often implemented through smart contracts that automatically distribute earnings according to predefined rules.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:revenue-distribution",
       "label": "Revenue Distribution"
     }

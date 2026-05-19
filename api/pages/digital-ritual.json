@@ -8,6 +8,10 @@
   "definition": "A structured virtual ceremonial process that recreates, adapts, or innovates traditional ritual practices in metaverse environments, enabling communities to perform symbolic cultural, religious, or social ceremonies through coordinated digital performances, shared virtual spaces, and meaningful p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-community-practice",
       "label": "Virtual Community Practice"
     }

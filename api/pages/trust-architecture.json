@@ -8,6 +8,10 @@
   "definition": "The structural framework of protocols, technologies, and governance mechanisms that establish, verify, and maintain trust relationships between users, platforms, and services in decentralized digital environments and metaverse ecosystems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:security-architecture",
       "label": "Security Architecture"
     }

@@ -8,8 +8,8 @@
   "definition": "Computational process for validating the origin, authenticity, and chain of custody of digital assets through metadata analysis and distributed ledger records.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

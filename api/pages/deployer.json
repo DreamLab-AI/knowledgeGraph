@@ -8,6 +8,10 @@
   "definition": "Deployer is a type of Digital Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }

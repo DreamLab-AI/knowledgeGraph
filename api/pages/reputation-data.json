@@ -8,6 +8,10 @@
   "definition": "A structured dataset containing historical records of user behavior, transaction outcomes, peer feedback, and trust metrics used to calculate reputation scores in peer-to-peer systems and virtual communities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:reputation-system",
       "label": "Reputation System"
     }

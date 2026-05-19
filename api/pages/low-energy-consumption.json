@@ -8,6 +8,10 @@
   "definition": "Energy consumption level characteristic of PoS and BFT mechanisms requiring minimal computational resources (less than PoW).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:blockchain-energy-consumption",
       "label": "Blockchain Energy Consumption"
     }

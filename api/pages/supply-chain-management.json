@@ -8,6 +8,10 @@
   "definition": "Supply Chain Management in blockchain contexts refers to the application of distributed ledger technology for tracking, verifying, and managing the flow of goods, services, and information across supply networks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }

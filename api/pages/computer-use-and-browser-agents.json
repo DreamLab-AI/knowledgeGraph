@@ -8,6 +8,10 @@
   "definition": "Computer Use and Browser Agents are a class of agentic AI systems that operate graphical user interfaces, web browsers, and operating systems by perceiving the screen through vision-language models (VLMs), planning actions in natural language, and emitting low-level input events (mouse coordinate...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:intelligent-system",
       "label": "Intelligent System"
     },

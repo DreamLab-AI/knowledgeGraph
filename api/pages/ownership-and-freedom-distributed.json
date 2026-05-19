@@ -8,6 +8,10 @@
   "definition": "principle of distributing control and governance of assets or data rather than centralising it in a single authority.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

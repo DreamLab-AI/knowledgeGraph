@@ -8,6 +8,10 @@
   "definition": "A 3D User Interface (3DUI) is an interactive control system within three-dimensional virtual environments enabling users to manipulate objects, navigate spaces, and access functionality through spatial gestures, hand tracking, gaze-based selection, and voice commands.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:interaction-design",
       "label": "Interaction Design"
     },

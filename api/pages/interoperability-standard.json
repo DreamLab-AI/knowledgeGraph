@@ -8,6 +8,10 @@
   "definition": "Formal specifications and protocols that enable different metaverse platforms, XR devices, and virtual environments to exchange data and operate toger seamlessly, including OpenXR, glTF, and emerging standards from the Metaverse Standards Forum.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

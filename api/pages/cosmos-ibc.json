@@ -8,6 +8,10 @@
   "definition": "Inter-Blockchain Communication protocol that enables different blockchain networks to exchange data and tokens, providing trustless interoperability in the Cosmos ecosystem.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:cross-chain-communication",
       "label": "Cross-Chain Communication"
     },

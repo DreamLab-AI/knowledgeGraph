@@ -8,6 +8,10 @@
   "definition": "Semi-Supervised Learning is a artificial intelligence concept and a type of Machine Learning. that enables Data-Efficient Learning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#HumanRights
-legacy_uri:: urn:visionclaw:concept:spatial-computing:human-rights
 public:: true
 
 # Human Rights
@@ -70,98 +67,19 @@ public:: true
       "vc:label": "Human Centred Values"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-1b1acfbb472c"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-13T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#HumanRights"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0166"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Human Rights"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:human-rights"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "revised"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:human-rights"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -181,8 +99,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "@id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "relations": {
@@ -296,9 +214,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5e505690331b3d1a36517c97f676e9e17d9ca3bf69c3c1718496c0d2ccef8604@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

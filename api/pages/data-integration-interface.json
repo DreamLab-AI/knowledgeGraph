@@ -8,6 +8,10 @@
   "definition": "A standardized set of protocols, rules, and formats for unifying and mediating data flows across heterogeneous platforms, enabling seamless data exchange and interoperability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }

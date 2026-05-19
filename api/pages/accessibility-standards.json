@@ -8,6 +8,10 @@
   "definition": "Accessibility Standards for the metaverse and extended reality (XR) encompass guidelines, technical specifications, and design principles that ensure virtual environments, interfaces, and interactions are usable by people with diverse disabilities including visual, auditory, physical, cognitive, ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:design-standards",
       "label": "Design Standards"
     }

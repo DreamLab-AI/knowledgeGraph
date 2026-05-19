@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#AiRiskRegister
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:ai-risk-register
 public:: true
 
 # AI Risk Register
@@ -38,86 +35,19 @@ public:: true
       "vc:label": "Smart Contract"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-6bfb15bd62cb"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-10-29T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#AiRiskRegister"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0394"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "AI Risk Register"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-risk-register"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:ai-risk-register"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31e94f647b29938388a199e0c7d7d647f86577da08b1f97065058713335cb4c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -136,6 +66,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
     {
       "@id": "urn:ngm:class:ai-risk-management",
       "label": "AI Risk Management"
@@ -192,9 +126,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:31e94f647b29938388a199e0c7d7d647f86577da08b1f97065058713335cb4c6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

@@ -8,6 +8,10 @@
   "definition": "An AR Frame is a head-worn optical see-through augmented reality platform integrating a transparent or semi-transparent microdisplay (typically a microOLED, LCoS, or holographic waveguide projecting 480p-1080p imagery onto a combiner lens of 20\u00b0-50\u00b0 diagonal field-of-view), onboard processing (AR...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:ar-hardware",
       "label": "AR Hardware"
     },

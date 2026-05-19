@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#3DSceneExchangeProtocolSXP
-legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-scene-exchange-protocol-sxp
 public:: true
 
 # 3D Scene Exchange Protocol (SXP)
@@ -346,98 +343,19 @@ public:: true
       "vc:label": "Universal Scene Description"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.86"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-2324d9d6aa92"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#3DSceneExchangeProtocolSXP"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "MV-4005"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "3D Scene Exchange Protocol (SXP)"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-scene-exchange-protocol-sxp"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-scene-exchange-protocol-sxp"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7547c4f32919fdf486ed225dde8e0f190297e3dd8710395261bc9f0bf8b4df91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -630,7 +548,13 @@ public:: true
     "attributedTo": "did:nostr:jjohare",
     "generatedAt": "2026-05-18T07:12:05Z",
     "inferenceRule": "R1Explicit"
-  }
+  },
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ]
 }
 ```
 
@@ -1061,9 +985,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7547c4f32919fdf486ed225dde8e0f190297e3dd8710395261bc9f0bf8b4df91@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

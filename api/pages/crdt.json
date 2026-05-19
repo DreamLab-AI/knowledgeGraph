@@ -8,6 +8,10 @@
   "definition": "Conflict-free Replicated Data Types (CRDTs) are a family of data structures with mathematically proven convergence guarantees that allow multiple distributed replicas to be independently modified without requiring coordination, locks, or a consensus protocol, and which automatically merge to a si...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:commutative-data-structure",
       "label": "Commutative Data Structure"
     },

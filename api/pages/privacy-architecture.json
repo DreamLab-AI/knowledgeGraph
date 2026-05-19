@@ -8,6 +8,10 @@
   "definition": "A systematic design framework that embeds data protection principles into software systems from inception, incorporating privacy-by-design modologies, access controls, anonymization techniques, and compliance mechanisms to safeguard personal information.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "A theoretical framework introduced by Milgram and Kishino describing the continuous spectrum between purely physical reality and fully virtual environments, with augmented reality and augmented virtuality as intermediate mixed reality states along this scale.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:xr-framework",
       "label": "XR Framework"
     }

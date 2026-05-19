@@ -8,8 +8,8 @@
   "definition": "Structural layer that distributes data and control across nodes to reduce central dependence and increase trust through P2P networking, blockchain, and distributed consensus mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

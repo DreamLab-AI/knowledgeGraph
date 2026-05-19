@@ -8,6 +8,10 @@
   "definition": "A contiguous region of memory used to temporarily store binary data during transfer, processing, or rendering operations, serving as an intermediary between data sources and destinations in graphics pipelines, network communications, and computational workflows.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-structure",
       "label": "Data Structure"
     }

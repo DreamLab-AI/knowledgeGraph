@@ -8,6 +8,10 @@
   "definition": "Fashion, as an AI-application domain, encompasses the convergence of machine learning, computer vision, generative models, and blockchain supply-chain infrastructure with the global apparel, luxury, and textile industries, valued at approximately 1.7 and forecast to reach 2.1 by 2030 .",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:creative-industries",
       "label": "Creative Industries"
     },

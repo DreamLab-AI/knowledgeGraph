@@ -8,6 +8,10 @@
   "definition": "Established guidelines, rules, and best practices that govern the creation of technical documentation, including structure, formatting conventions, terminology usage, delivery mods, and presentation to ensure consistency, clarity, and accuracy across all content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

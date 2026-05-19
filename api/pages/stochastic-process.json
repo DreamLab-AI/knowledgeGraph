@@ -8,6 +8,10 @@
   "definition": "A stochastic process is a mathematically rigorous framework for describing the probabilistic evolution of a system over time (or another index set), defined formally as a collection of random variables {X_t : t \u2208 T} all defined on a common probability space (\u03a9, \u2131, \u2119) and indexed by a parameter se...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:dynamical-system",
       "label": "Dynamical System"
     },

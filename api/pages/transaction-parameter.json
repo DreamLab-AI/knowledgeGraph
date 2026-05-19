@@ -8,6 +8,10 @@
   "definition": "Configuration values that define the execution characteristics of a blockchain transaction, including gas limit, gas price, nonce, and other parameters that determine transaction priority, cost, and computational resources allocated.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
     }

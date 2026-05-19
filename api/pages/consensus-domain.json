@@ -8,8 +8,8 @@
   "definition": "The Consensomain represents a specialized sub-domain within blockchain technology that encompasses all consensus mechanisms, distributed agreement protocols, and coordination systems that enable decentralized networks to achieve consistent state without trusted central authorities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

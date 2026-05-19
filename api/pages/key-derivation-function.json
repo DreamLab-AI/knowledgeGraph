@@ -8,8 +8,8 @@
   "definition": "A cryptographic algorithm that derives one or more secret keys from a master secret using a pseudo-random function, transforming human-readable passwords or seed phrases into cryptographically secure key material while enabling hierarchical key generation and deterministic wallet recovery in bloc...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",

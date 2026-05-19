@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#VelocityControl
-legacy_uri:: urn:visionclaw:concept:robotics:velocitycontrol
 public:: true
 
 # VelocityControl
@@ -150,86 +147,19 @@ public:: true
       "vc:label": "ServoControl"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.90"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-d6cc3cbedd76"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#VelocityControl"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0115"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "VelocityControl"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:velocitycontrol"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:velocitycontrol"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ad07f69a9b70c56365508eae6f73464d7111d0f6c176666f7bb4e7462755d363@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -249,8 +179,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "relations": {
@@ -534,9 +464,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ad07f69a9b70c56365508eae6f73464d7111d0f6c176666f7bb4e7462755d363@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

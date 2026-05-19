@@ -8,6 +8,10 @@
   "definition": "Subjective experience of feeling connected to and aware of other people in a mediated communication environment, fostering social interactions and relationships.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:presence",
       "label": "Presence"
     }

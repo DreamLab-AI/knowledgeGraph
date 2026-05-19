@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:robot-standard",
   "domain": "robotics",
   "definition": "RobotStandard is a normative technical instrument \u2014 a specification, guideline, or regulation \u2014 issued by a recognised standards development organisation (SDO) or regulatory body to define mandatory or voluntary safety requirements, performance criteria, interoperability protocols, and terminolog...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",

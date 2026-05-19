@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#IotAiIntegration
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:iot-ai-integration
 public:: true
 
 # IoT AI Integration
@@ -22,86 +19,19 @@ public:: true
       "vc:label": "ConceptualLayer"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-49d855a6b607"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-10-29T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#IotAiIntegration"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0438"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "IoT AI Integration"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:iot-ai-integration"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:iot-ai-integration"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7650921f0d815f5f1b0913e90cade6398328346f775a4b8b2290da14c3c787d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -121,8 +51,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "@id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "quality": 0.35,
@@ -156,9 +86,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f7650921f0d815f5f1b0913e90cade6398328346f775a4b8b2290da14c3c787d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

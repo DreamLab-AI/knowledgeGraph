@@ -8,6 +8,10 @@
   "definition": "Meeting Transcription is a artificial intelligence concept and a type of Speech Recognition.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:speech-recognition",
       "label": "Speech Recognition"
     }

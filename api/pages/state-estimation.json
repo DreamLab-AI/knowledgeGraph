@@ -8,6 +8,10 @@
   "definition": "State Estimation encompasses the algorithms and techniques used to infer the internal state of a robotic system from noisy sensor measurements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }

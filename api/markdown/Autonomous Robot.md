@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#AutonomousRobot
-legacy_uri:: urn:visionclaw:concept:robotics:autonomous-robot
 public:: true
 
 # Autonomous Robot
@@ -134,90 +131,19 @@ public:: true
       "vc:label": "VirtualWorld"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[AI Agent System]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-ea98a37eb2a9"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#AutonomousRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-3006"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Autonomous Robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.40"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:autonomous-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:autonomous-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb5877d510d32a48a6f82d27ad0ac55811e4a4c6a8575bb75a2ba192660ac929@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -237,8 +163,8 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "quality": 0.4,
@@ -412,9 +338,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cb5877d510d32a48a6f82d27ad0ac55811e4a4c6a8575bb75a2ba192660ac929@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

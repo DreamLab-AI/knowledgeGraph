@@ -8,6 +8,10 @@
   "definition": "State space control uses modern control theory with state feedback.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:feedback-control",
       "label": "Feedback Control"
     }

@@ -8,8 +8,8 @@
   "definition": "Activity of systematically checking wher systems, components, or implementations satisfy specified requirements, standards, and compliance criteria through verification testing and quality assurance procedures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:knowledge-representation",
   "domain": "artificial-intelligence",
   "definition": "Knowledge Representation in AI involves the formal encoding of information about the world in a computationally tractable format that enables reasoning, inference, and decision-making.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

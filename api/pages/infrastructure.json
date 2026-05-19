@@ -5,11 +5,16 @@
   "public": true,
   "classIri": "urn:ngm:class:infrastructure",
   "domain": "infrastructure",
-  "definition": "infrastructure is a technology infrastructure concept and a type of owl:Thing.",
-  "subClassOf": [],
+  "definition": "Top-level domain category for infrastructure concepts in the NarrativeGoldmine ontology.",
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
   "entityType": "Class",
-  "qualityScore": 0.35,
-  "maturity": "draft",
+  "qualityScore": 0.0,
+  "maturity": "established",
   "relationships": {
     "hasPart": [],
     "requires": [],

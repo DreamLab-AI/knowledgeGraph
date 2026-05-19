@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#BreakoutRoom
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:breakout-room
 public:: true
 
 # Breakout Room
@@ -278,90 +275,19 @@ public:: true
       "vc:label": "WebRTC"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Collaborative Whiteboard]], [[Meeting AI Assistant]], [[Presence Indicator]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-14-b4e9c2f71a30"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-01-15T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#BreakoutRoom"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "DC-0042"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T10:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Breakout Room"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:breakout-room"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:breakout-room"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f248722e63f9c7ed3c5bc338d938e5eeb011524aecc59050b39d41f6b001d128@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -380,6 +306,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
     {
       "@id": "urn:ngm:class:collaborative-learning-infrastructure",
       "label": "Collaborative Learning Infrastructure"
@@ -950,9 +880,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f248722e63f9c7ed3c5bc338d938e5eeb011524aecc59050b39d41f6b001d128@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

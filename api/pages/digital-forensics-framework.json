@@ -8,6 +8,10 @@
   "definition": "A structured modology and toolset for identifying, preserving, analysing, and documenting digital evidence from computing systems, networks, and virtual environments to support cybersecurity investigations, legal proceedings, and incident response within metaverse and blockchain contexts.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:cybersecurity",
       "label": "Cybersecurity"
     }

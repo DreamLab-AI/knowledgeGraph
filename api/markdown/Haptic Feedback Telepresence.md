@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#HapticFeedbackTelepresence
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:haptic-feedback-telepresence
 public:: true
 
 # Haptic Feedback Telepresence
@@ -34,90 +31,19 @@ public:: true
       "vc:label": "TELE-001-telepresence"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Autonomous Robot]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-fc72e736c55d"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#HapticFeedbackTelepresence"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-0203"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "developing"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Haptic Feedback Telepresence"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:haptic-feedback-telepresence"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:haptic-feedback-telepresence"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:912ef84907d23f21e6048b431075e3406305897b4affff0b3780dbcaf1a59672@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -136,6 +62,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
     {
       "@id": "urn:ngm:class:haptic-technology",
       "label": "Haptic Technology"
@@ -187,9 +117,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:912ef84907d23f21e6048b431075e3406305897b4affff0b3780dbcaf1a59672@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

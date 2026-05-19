@@ -8,8 +8,8 @@
   "definition": "A database system (DBMS - Database Management System) is software that enables users to define, create, maintain, and control access to structured collections of data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

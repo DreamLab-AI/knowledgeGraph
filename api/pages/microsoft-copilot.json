@@ -8,6 +8,10 @@
   "definition": "Microsoft Copilot is a family of generative AI products and platform services developed by Microsoft Corporation, unified under the \"Copilot\" brand umbrella from 2023 onwards following Microsoft's cumulative investment in OpenAI (initial subsequent rounds 2021-2023), deployed across five principa...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:code-generation",
       "label": "Code Generation"
     },

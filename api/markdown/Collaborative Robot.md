@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#CollaborativeRobot
-legacy_uri:: urn:visionclaw:concept:robotics:collaborative-robot
 public:: true
 
 # Collaborative Robot
@@ -70,86 +67,19 @@ public:: true
       "vc:label": "Telecollaboration"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.15"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-c3251318bcaa"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#CollaborativeRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0856"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T17:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Collaborative Robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.62"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:collaborative-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:collaborative-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -169,12 +99,12 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:industrial-robot",
-      "label": "Industrial Robot"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "@id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     }
   ],
   "relations": {
@@ -304,9 +234,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fd8546d726d5fc6a9164c784efa83cc7f491ef33dc35ff3caa9b6ebf871f11cf@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

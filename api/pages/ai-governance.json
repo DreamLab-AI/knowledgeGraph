@@ -8,6 +8,10 @@
   "definition": "AI Governance encompasses the policies, frameworks, standards, and institutional mechanisms for overseeing the responsible development, deployment, and use of artificial intelligence technologies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }

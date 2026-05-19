@@ -8,6 +8,10 @@
   "definition": "The buying and selling of verified carbon credits on voluntary and compliance markets through exchanges and over-the-counter transactions, enabling price discovery, liquidity provision, and efficient allocation of climate finance to emission reduction projects.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-trading",
       "label": "Environmental Trading"
     }

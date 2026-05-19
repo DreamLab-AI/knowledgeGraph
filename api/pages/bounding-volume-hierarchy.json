@@ -8,6 +8,10 @@
   "definition": "A tree-structured acceleration data structure that recursively organizes geometric objects within nested bounding volumes, enabling efficient spatial queries, collision detection, and ray-scene intersection testing by rapidly culling large portions of geometry that cannot intersect with a query.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:spatial-data-structure",
       "label": "Spatial Data Structure"
     }

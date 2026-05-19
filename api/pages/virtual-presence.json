@@ -8,6 +8,10 @@
   "definition": "The psychological experience of being there within a virtual place or situation, encompassing spatial presence (sense of location), social presence (connection with others), and self-presence (embodiment in virtual form), achieved through telepresence technologies and immersive environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:telepresence",
       "label": "Telepresence"
     }

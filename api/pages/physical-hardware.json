@@ -8,6 +8,10 @@
   "definition": "The tangible computing devices and peripherals required for metaverse and XR experiences, including VR headsets, AR glasses, haptic devices, motion controllers, and supporting infrastructure like GPUs and networking equipment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:hardware",
       "label": "Hardware"
     }

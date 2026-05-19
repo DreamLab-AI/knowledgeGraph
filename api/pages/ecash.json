@@ -8,6 +8,10 @@
   "definition": "ecash is a blockchain and distributed systems concept and a type of Payment System.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:payment-system",
       "label": "Payment System"
     }

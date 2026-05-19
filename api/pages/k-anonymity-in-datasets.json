@@ -8,6 +8,10 @@
   "definition": "k-Anonymity in Datasets is a privacy-preserving property ensuring that each record in a dataset is indistinguishable from at least k-1 other records with respect to quasi-identifiers (attributes that could potentially identify individuals when combined, such as age, gender, zip code), preventing ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:privacy-preserving-analytics",
       "label": "Privacy Preserving Analytics"
     }

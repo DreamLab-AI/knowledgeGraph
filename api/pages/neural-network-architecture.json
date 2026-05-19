@@ -8,8 +8,8 @@
   "definition": "Neural network architecture defines the structural organization of artificial neurons into layers and the connectivity patterns between them, determining how the network processes and transforms input data through weighted connections and activation functions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

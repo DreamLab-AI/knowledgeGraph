@@ -8,6 +8,10 @@
   "definition": "Medical Imaging AI encompasses artificial intelligence systems designed to analyse, interpret, and enhance medical images including radiological scans, pathology slides, and other diagnostic imaging modalities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:vision-processing",
       "label": "Vision Processing"
     }

@@ -8,6 +8,10 @@
   "definition": "Production technique blending real and virtual scenes using XR and real-time rendering for film, broadcast, and immersive content creation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:rendering-technique",
       "label": "Rendering Technique"
     }

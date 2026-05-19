@@ -8,8 +8,8 @@
   "definition": "A technique for locking virtual objects to specific physical locations using environmental mapping, enabling persistent placement of digital content that maintains consistent position and orientation relative to real-world surfaces across sessions and devices through SLAM-based tracking and cloud...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

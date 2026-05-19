@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:xr-accessibility-standards",
   "domain": "spatial-computing",
   "definition": "Guidelines, best practices, and technical specifications for making extended reality experiences accessible to users with disabilities, addressing visual, auditory, motor, cognitive, and vestibular impairments through inclusive design principles and assistive technology compatibility.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

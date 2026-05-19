@@ -8,6 +8,10 @@
   "definition": "R3 Corda is a purpose-built permissioned distributed ledger platform designed exclusively for regulated financial services, implementing a \"need-to-know\" peer-to-peer architecture in which transaction data is shared solely amongst parties with legitimate business interest, eliminating global stat...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:financial-services-technology",
       "label": "Financial Services Technology"
     },

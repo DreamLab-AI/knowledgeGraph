@@ -8,6 +8,10 @@
   "definition": "The craft and practice of creating narratives where story events can be experienced in multiple sequences through branching paths, player choices, or temporal manipulation, commonly used in video games, interactive fiction, and immersive experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:storytelling",
       "label": "Storytelling"
     }

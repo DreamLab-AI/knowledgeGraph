@@ -8,6 +8,10 @@
   "definition": "A visual interface and monitoring system that provides real-time visibility into regulatory compliance status, risk metrics, and audit trails across blockchain networks and digital platforms, enabling organizations to track adherence to legal requirements, detect anomalies, and demonstrate compli...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:regulatory-technology",
       "label": "Regulatory Technology"
     }

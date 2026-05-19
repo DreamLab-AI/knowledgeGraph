@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-development-tools",
   "domain": "artificial-intelligence",
   "definition": "AI Development Tools comprise the software frameworks, libraries, platforms, and integrated development environments designed to facilitate the creation, training, deployment, and maintenance of artificial intelligence systems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

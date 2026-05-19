@@ -8,6 +8,10 @@
   "definition": "A managed storage and access system for digital objects, assets, and metadata designed to ensure long-term preservation, discoverability, and integrity of digital content through standardised ingest, storage, and retrieval processes supporting metaverse archives and institutional collections.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }

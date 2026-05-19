@@ -8,6 +8,10 @@
   "definition": "Speech Recognition is a type of Natural Language Processing in the artificial intelligence domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

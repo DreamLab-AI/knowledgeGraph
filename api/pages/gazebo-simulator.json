@@ -8,6 +8,10 @@
   "definition": "Gazebo Simulator (now branded Gz Sim following the Open Robotics / Intrinsic rebranding) is an open-source, physics-accurate 3D robotics simulator providing rigid-body dynamics (via ODE, Bullet, DART, or Simbody), sensor simulation (cameras, LiDAR, IMU, GPS), and a plugin architecture for custom ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:physics-simulator",
       "label": "Physics Simulator"
     },

@@ -8,6 +8,10 @@
   "definition": "Model Training is the end-to-end computational process by which a neural network's parameters are iteratively adjusted through gradient-based optimisation over large corpora so that the network acquires generalisable representations, task-specific capabilities, and aligned behavioural policies su...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:neural-networks",
       "label": "Neural Networks"
     },

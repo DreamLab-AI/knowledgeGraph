@@ -8,6 +8,10 @@
   "definition": "Blockchain architectures and cryptographic protocol suites that conceal transaction metadata \u2014 sender identity, recipient identity, transferred amounts, and smart contract state \u2014 whilst preserving network verifiability, immutability, and auditability for authorised parties through an ensemble of...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:privacy-technology",
       "label": "Privacy Technology"
     },

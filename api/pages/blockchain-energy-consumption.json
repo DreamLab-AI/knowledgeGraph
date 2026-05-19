@@ -8,6 +8,10 @@
   "definition": "The electrical power and computational resources consumed by blockchain networks during transaction validation, block creation, and network security operations, varying significantly across consensus mechanisms from energy-intensive Proof-of-Work (Bitcoin: ~140 TWh/year, global electricity) to en...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:blockchain-performance",
       "label": "BlockchainPerformance"
     },

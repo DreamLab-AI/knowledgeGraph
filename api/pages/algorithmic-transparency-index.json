@@ -8,6 +8,10 @@
   "definition": "A structured metrics framework for measuring and evaluating the explainability, documentation, and disclosure levels of AI algorithms and automated decision-making systems across multiple transparency dimensions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-framework",
       "label": "AI Governance Framework"
     }

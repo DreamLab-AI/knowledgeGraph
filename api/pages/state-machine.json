@@ -8,6 +8,10 @@
   "definition": "StateMachine is a computational abstraction \u2014 rooted in automata theory and formal language theory \u2014 representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state \u00d7 inpu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:automata-theory",
       "label": "Automata Theory"
     },

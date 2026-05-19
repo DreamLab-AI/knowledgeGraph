@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/artificial-intelligence#NeuralNetworkComponent
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:neural-network-component
 public:: true
 
 # Neural Network Component
@@ -18,86 +15,19 @@ public:: true
       "vc:label": "Artificial Intelligence"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-04aeebaf4d97"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-13T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/artificial-intelligence#NeuralNetworkComponent"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-0805"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "established"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Neural Network Component"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-network-component"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:neural-network-component"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cc68f39833219b0c67a7b75ec78ebd6e2a939531c4aa90c5fe3a3497e033a180@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -117,8 +47,8 @@ public:: true
   "maturity": "established",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "quality": 0.35,
@@ -147,9 +77,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:cc68f39833219b0c67a7b75ec78ebd6e2a939531c4aa90c5fe3a3497e033a180@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

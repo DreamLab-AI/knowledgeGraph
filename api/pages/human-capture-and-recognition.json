@@ -8,6 +8,10 @@
   "definition": "Techniques for digitally acquiring and interpreting human appearance, motion, and biometric data for use in virtual and augmented environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:reality-capture",
       "label": "Reality Capture"
     }

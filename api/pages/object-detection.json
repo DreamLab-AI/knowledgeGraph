@@ -8,6 +8,10 @@
   "definition": "Object Detection is the computer vision task of identifying and localising multiple objects within an image by predicting bounding boxes and class labels for each detected instance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }

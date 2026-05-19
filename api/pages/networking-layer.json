@@ -8,6 +8,10 @@
   "definition": "Communication systems that connect components and users across distributed metaverse environments through network protocols and software.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:infrastructure-architecture",
       "label": "Infrastructure Architecture"
     }

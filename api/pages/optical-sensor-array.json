@@ -8,6 +8,10 @@
   "definition": "A multi-element optical sensing arrangement comprising spatially distributed photodetectors\u2014including CCD (Charge-Coupled Device) arrays, CMOS (Complementary Metal-Oxide-Semiconductor) image sensors, SPAD (Single-Photon Avalanche Diode) arrays, InGaAs infrared arrays, avalanche photodiode (APD) a...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:computer-vision-system",
       "label": "Computer Vision System"
     },

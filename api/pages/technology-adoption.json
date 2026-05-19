@@ -8,8 +8,8 @@
   "definition": "The process by which individuals, organizations, and societies integrate new technologies into their workflows, practices, and systems, encompassing awareness, etrial, implementation, and sustained use across AI, blockchain, metaverse, and robotics domains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
     }
   ],
   "entityType": "Class",

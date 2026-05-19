@@ -8,8 +8,8 @@
   "definition": "\"A theoretical framework positing that communication media vary in their capacity to convey rich information through multiple cues, immediate feedback, language variety, and personal focus, predicting that richer media enable more effective communication of complex, ambiguous information whilst l...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
     }
   ],
   "entityType": "Class",

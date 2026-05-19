@@ -8,6 +8,10 @@
   "definition": "A consensus mechanism where pre-approved validators (authorities) with verified identities are authorized to validate transactions and create blocks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-based-consensus",
       "label": "Proof-Based Consensus"
     }

@@ -8,6 +8,10 @@
   "definition": "The Lightning Network is a Layer 2 Scaling protocol for Bitcoin enabling instant, high-throughput off-chain payments through a mesh of bidirectional Payment Channel Network channels anchored on the Bitcoin Technical Overview base layer.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:layer-2-scaling",
       "label": "Layer 2 Scaling"
     },

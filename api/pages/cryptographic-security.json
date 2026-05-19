@@ -8,6 +8,10 @@
   "definition": "Cryptographic Security is a type of Security Framework in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:security-framework",
       "label": "Security Framework"
     }

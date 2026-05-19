@@ -8,6 +8,10 @@
   "definition": "ProprioceptiveSensor is a transducer or sensing system that measures a robot's internal physical state \u2014 encompassing joint angle, angular velocity, linear and angular acceleration, motor torque, drive current, strain, and contact force \u2014 without reference to external landmarks or environmental f...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:control-feedback-element",
       "label": "Control Feedback Element"
     },

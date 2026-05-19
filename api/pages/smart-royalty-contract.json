@@ -8,6 +8,10 @@
   "definition": "A programmable blockchain contract that automatically enforces royalty payment terms, calculates compensation amounts, and triggers distributions to creators and rights holders upon qualifying transactions in NFT and digital asset ecosystems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:royalty-mechanism",
       "label": "Royalty Mechanism"
     }

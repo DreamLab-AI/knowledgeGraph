@@ -8,6 +8,10 @@
   "definition": "Graph Neural Network is a artificial intelligence concept and a type of Neural Network.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:neural-network",
       "label": "Neural Network"
     }

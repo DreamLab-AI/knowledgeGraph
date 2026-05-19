@@ -8,6 +8,10 @@
   "definition": "Differential drive robot uses two independently controlled wheels on opposite sides to enable both forward/backward locomotion and in-place rotation, forming the most widely deployed Mobile Robot architecture.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:nonholonomic-robot",
       "label": "Nonholonomic Robot"
     },

@@ -8,6 +8,10 @@
   "definition": "Light field is a foundational concept in computational optics and computer graphics describing the complete distribution of light rays travelling through free space in all directions at all points, formalised by Adelson and Bergen (1991) as the 7-dimensional plenoptic function P(Vx, Vy, Vz, \u03b8, \u03c6,...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:image-based-rendering",
       "label": "Image Based Rendering"
     },

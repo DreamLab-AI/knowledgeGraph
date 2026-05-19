@@ -8,6 +8,10 @@
   "definition": "Neural network architecture introduced by Vaswani et al.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:sequence-modelling",
       "label": "Sequence Modelling"
     },

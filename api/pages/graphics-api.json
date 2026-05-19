@@ -8,6 +8,10 @@
   "definition": "A Graphics API (Application Programming Interface) is a standardised software interface mediating between application code and Graphics Processing Unit (GPU) hardware, exposing primitives for command submission, shader compilation, resource allocation, synchronisation, and frame presentation acro...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:application-programming-interface",
       "label": "Application Programming Interface"
     },

@@ -8,8 +8,8 @@
   "definition": "A comprehensive 3D digital representation of a building or infrastructure asset created through Building Information Modeling, containing geometric data, material specifications, and functional characteristics that enable visualization, simulation, quantity take-offs, and clash detection througho...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:software-architecture",
   "domain": "artificial-intelligence",
   "definition": "Software Architecture for AI systems defines high-level structural patterns, component interactions, and design principles for building scalable, maintainable, and robust artificial intelligence applications.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

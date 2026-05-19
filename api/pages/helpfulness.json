@@ -8,6 +8,10 @@
   "definition": "An alignment objective ensuring AI systems provide useful, relevant, and informative responses to user queries. Helpfulness represents a key dimension of AI utility that must be balanced against harmlessness and honesty.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
     }

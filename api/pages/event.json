@@ -8,6 +8,10 @@
   "definition": "A significant occurrence at a specific point in time that represents a change in system state, triggers a process, or carries information between components.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:temporal-entity",
       "label": "Temporal Entity"
     }

@@ -8,6 +8,10 @@
   "definition": "Bandwidth adaptation is the real-time, algorithmic process by which a media transmission system continuously measures available network capacity and dynamically adjusts encoding parameters \u2014 bitrate, resolution, frame rate, codec profile, and layer selection \u2014 to maintain the highest achievable [...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:adaptive-bitrate-streaming",
       "label": "Adaptive Bitrate Streaming"
     },

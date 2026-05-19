@@ -8,6 +8,10 @@
   "definition": "AI Adoption is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems \u2014 classical machine learning, deep learning, foundation models, generative AI and agentic AI \u2014 into produ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:organisational-change",
       "label": "Organisational Change"
     },

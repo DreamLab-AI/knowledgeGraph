@@ -8,6 +8,10 @@
   "definition": "Digital 3D assets existing within virtual environments that users can interact with, own, trade, and customize, including avatars, wearables, furniture, vehicles, and environmental elements, often represented as NFTs for verifiable ownership in blockchain-based metaverses.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

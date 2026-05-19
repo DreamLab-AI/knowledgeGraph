@@ -8,8 +8,8 @@
   "definition": "Model Compression for Edge is the systematic application of techniques reducing neural network computational requirements, memory footprint, and inference latency to enable deployment on resource-constrained edge devices while maintaining acceptable accuracy levels through quantization, pruning, ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

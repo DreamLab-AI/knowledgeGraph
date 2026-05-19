@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#Localization
-legacy_uri:: urn:visionclaw:concept:robotics:localization
 public:: true
 
 # Localization
@@ -94,86 +91,19 @@ public:: true
       "vc:label": "State Estimation"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.97"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-85e8a5c2d31e"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-24T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#Localization"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-1013"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Localization"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:localization"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:localization"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:81be4debf253d6d69b31dd806f0434d062e8a8bd5cfb876f19625ae27809d4d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -192,6 +122,10 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
     {
       "@id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
@@ -354,9 +288,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:81be4debf253d6d69b31dd806f0434d062e8a8bd5cfb876f19625ae27809d4d2@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

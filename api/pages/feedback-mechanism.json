@@ -8,6 +8,10 @@
   "definition": "Mod providing sensory response to user actions through haptic, audio, and visual channels to enhance interaction fidelity and user experience in immersive environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:immersive-experience-pipeline",
       "label": "Immersive Experience Pipeline"
     }

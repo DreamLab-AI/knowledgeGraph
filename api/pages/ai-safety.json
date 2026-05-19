@@ -8,6 +8,10 @@
   "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

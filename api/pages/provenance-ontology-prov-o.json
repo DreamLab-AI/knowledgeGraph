@@ -8,8 +8,8 @@
   "definition": "W3C standard ontology for representing and interchanging provenance information, capturing the origin, attribution, derivation, and lifecycle of digital entities through formal Entity-Activity-Agent relationships.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

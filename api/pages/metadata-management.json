@@ -8,6 +8,10 @@
   "definition": "Metadata Management encompasses the discipline, tooling, standards, and governance processes required to systematically capture, store, classify, version, discover, and operationalise descriptive, structural, and administrative information about data assets, pipelines, models, and services ac...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-quality",
       "label": "Data Quality"
     },

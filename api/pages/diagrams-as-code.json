@@ -8,6 +8,10 @@
   "definition": "Diagrams as Code (DaC) is a software-engineering discipline and tooling category in which technical diagrams (architecture, sequence, state, deployment, entity-relationship, Gantt, wireframe, timing, dataflow) are authored as plain-text source artefacts in a constrained, machine-readable grammar ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:declarative-specification",
       "label": "Declarative Specification"
     },

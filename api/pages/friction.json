@@ -8,6 +8,10 @@
   "definition": "Friction - The resistive force generated when surfaces slide or attempt to slide relative to one another, characterised by Coulomb friction (kinetic and static coefficients) and viscous damping, significantly impacting Joint Efficiency, Motor Performance, and Motion Accuracy in roboti...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:physics-modelling",
       "label": "Physics Modelling"
     },

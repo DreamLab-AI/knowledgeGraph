@@ -8,6 +8,10 @@
   "definition": "Web3 is a blockchain-anchored paradigm for the decentralised web, first coined by ereum co-founder Gavin Wood in his April 2014 essay \"DApps: What Web 3.0 Looks Like\", that reconceives the internet as a zero-trust interaction system eliminating the need to trust any individual institution or plat...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:decentralised-finance",
       "label": "Decentralised Finance"
     },

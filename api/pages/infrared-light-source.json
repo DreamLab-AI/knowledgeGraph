@@ -8,6 +8,10 @@
   "definition": "Emission devices providing infrared wavelength light for VR/AR tracking applications, encompassing LEDs, illuminators, and integrated headset components that enable eye tracking, position detection, and hand gesture recognition in extended reality systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:tracking-hardware",
       "label": "Tracking Hardware"
     }

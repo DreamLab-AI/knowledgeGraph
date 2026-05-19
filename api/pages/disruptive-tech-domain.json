@@ -8,6 +8,10 @@
   "definition": "A cross-cutting classification domain identifying technologies with transformative potential that significantly alter markets, industries, or societal practices.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:domain",
       "label": "Domain"
     }

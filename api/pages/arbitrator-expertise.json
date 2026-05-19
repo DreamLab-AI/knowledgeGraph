@@ -8,6 +8,10 @@
   "definition": "Arbitrator Expertise in blockchain and digital asset contexts refers to the specialized technical knowledge, legal background, and industry experience required by neutral decision-makers to understand distributed ledger technology, smart contracts, tokenomics, and crypto-asset classification for ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:professional-qualification",
       "label": "Professional Qualification"
     }

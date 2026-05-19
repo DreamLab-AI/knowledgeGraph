@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:distributed-protocol",
   "domain": "blockchain",
   "definition": "A Distributed Protocol is a formally specified set of rules, message formats, and procedures governing communication, coordination, and state synchronization among independent nodes in a distributed network without centralized control.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

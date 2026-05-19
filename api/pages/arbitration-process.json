@@ -8,6 +8,10 @@
   "definition": "Arbitration Process in the blockchain and metaverse context refers to structured dispute resolution procedures using smart contracts and decentralized technologies, encompassing both on-chain mechanisms with automatic award enforcement and off-chain proceedings with traditional arbitral framework...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:alternative-dispute-resolution",
       "label": "Alternative Dispute Resolution"
     }

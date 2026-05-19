@@ -8,6 +8,10 @@
   "definition": "Training Hardware is a artificial intelligence concept and a type of High-Performance Computing. that enables Neural Network Training.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:high-performance-computing",
       "label": "High-Performance Computing"
     }

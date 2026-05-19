@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#VirtualOfficeSpaces
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces
 public:: true
 
 # Virtual Office Spaces
@@ -46,86 +43,19 @@ public:: true
       "vc:label": "Virtual Environment"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-1bb4495e6ff8"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#VirtualOfficeSpaces"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-0301"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "developing"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Virtual Office Spaces"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:virtual-office-spaces"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -144,6 +74,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
     {
       "@id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
@@ -210,9 +144,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:5cdea061f6584c6c3693467f5042a8af59e731d4fe610cda767c816f37dd4c4c@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

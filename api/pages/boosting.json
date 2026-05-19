@@ -8,6 +8,10 @@
   "definition": "Boosting is a artificial intelligence concept and a type of Ensemble Mods.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:ensemble-methods",
       "label": "Ensemble Methods"
     }

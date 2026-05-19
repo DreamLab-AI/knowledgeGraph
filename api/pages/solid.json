@@ -8,6 +8,10 @@
   "definition": "Solid (Social Linked Data) is an open-source, W3C-specification-grounded decentralised web architecture conceived by Sir Tim Berners-Lee at MIT CSAIL (Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory) commercialised through the startup Inrupt and steer...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:data-sovereignty",
       "label": "Data Sovereignty"
     },

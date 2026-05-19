@@ -8,6 +8,10 @@
   "definition": "The first state machine replication protocol with linear view transformation complexity and optimistic responsiveness, simplifying PBFT for better performance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }

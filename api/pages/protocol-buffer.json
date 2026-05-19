@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:protocol-buffer",
   "domain": "infrastructure",
   "definition": "Protocol Buffer is a technology infrastructure concept and a type of Data Format.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

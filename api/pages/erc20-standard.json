@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:erc20-standard",
   "domain": "blockchain",
   "definition": "Technical standard for fungible tokens on ereum, defining required mods and events for token contracts.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

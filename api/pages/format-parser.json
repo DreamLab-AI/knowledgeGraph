@@ -8,6 +8,10 @@
   "definition": "Software components that interpret and convert various 3D asset file formats into internal representations for metaverse platforms, enabling interoperability between content creation tools and runtime environments whilst preserving geometry, materials, animations, and metadata.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-processing",
       "label": "Data Processing"
     }

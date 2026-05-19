@@ -8,6 +8,10 @@
   "definition": "The Technological Singularity is a hypothesised future point at which artificial intelligence surpasses human cognitive capacity in all economically and strategically relevant domains, triggering a phase transition in civilisational development so rapid and so structurally discontinuous that extr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:existential-risk",
       "label": "Existential Risk"
     },

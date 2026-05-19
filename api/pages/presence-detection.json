@@ -8,8 +8,8 @@
   "definition": "Presence Detection is a spatial computing concept and a type of spatial-computing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:trust-and-governance-domain",
   "domain": "artificial-intelligence",
   "definition": "The Trust and Governance Domain provides an ontological framework for trust relationships, accountability mechanisms, and governance structures in digital systems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "emerging",

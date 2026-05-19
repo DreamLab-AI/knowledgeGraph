@@ -8,6 +8,10 @@
   "definition": "A Sovereign Mesh|sovereign, manifest-driven agentic runtime container that orchestrates DID Nostr Identity|DID Nostr agents across a decentralised Peer-to-Peer Network|peer-to-peer network, enabling autonomous agents to operate with verifiable credentials, pluggable adapters, and cont...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }

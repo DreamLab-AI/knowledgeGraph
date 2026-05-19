@@ -8,8 +8,8 @@
   "definition": "The Infrastructure Domain provides an ontological framework for ICT infrastructure configuration items, resources, and resource groups common across IT service management systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

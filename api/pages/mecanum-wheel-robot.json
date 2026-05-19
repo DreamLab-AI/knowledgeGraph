@@ -8,6 +8,10 @@
   "definition": "Mecanum robot uses four mecanum wheels with angled rollers enabling true omnidirectional movement.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:omnidirectional-robot",
       "label": "Omnidirectional Robot"
     }

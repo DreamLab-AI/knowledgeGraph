@@ -8,8 +8,8 @@
   "definition": "Physical hardware or software system capturing human motion for animation or simulation through cameras, markers, sensors, and tracking infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

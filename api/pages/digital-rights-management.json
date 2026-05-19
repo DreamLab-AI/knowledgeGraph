@@ -8,6 +8,10 @@
   "definition": "Technology systems and protocols that control access to, distribution of, and usage rights for digital content including media, software, and virtual assets, increasingly leveraging blockchain and smart contracts for transparent, decentralised rights enforcement and automated royalty distribution.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:content-protection",
       "label": "Content Protection"
     }

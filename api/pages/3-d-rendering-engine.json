@@ -8,6 +8,10 @@
   "definition": "A 3D rendering engine is software that converts three-dimensional geometric data into two-dimensional images through processes including lighting calculation, texture mapping, and rasterisation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics"
     }

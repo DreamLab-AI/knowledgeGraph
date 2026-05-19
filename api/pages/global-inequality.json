@@ -8,6 +8,10 @@
   "definition": "Global Inequality is the systematic, multi-dimensional divergence in life chances, material resources, political power, and technological access experienced by individuals, households, communities, and nations across the world economic order \u2014 encompassing income inequality (the Gini coefficient ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:development-economics",
       "label": "Development Economics"
     },

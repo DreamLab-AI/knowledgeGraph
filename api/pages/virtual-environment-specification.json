@@ -8,6 +8,10 @@
   "definition": "Technical standards and requirements documents that define the parameters, capabilities, and constraints of virtual environments, including rendering requirements, interaction models, physics simulation rules, and interoperability protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

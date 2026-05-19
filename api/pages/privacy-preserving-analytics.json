@@ -8,6 +8,10 @@
   "definition": "Privacy Preserving Analytics (PPA) is a cross-disciplinary field at the intersection of cryptography, statistics, and data engineering concerned with enabling quantitative analysis of datasets containing sensitive personal or proprietary information without exposing the underlying individual-leve...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:data-analysis",
       "label": "Data Analysis"
     },

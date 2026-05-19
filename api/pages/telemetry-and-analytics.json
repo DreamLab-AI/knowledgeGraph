@@ -8,8 +8,8 @@
   "definition": "Systematic collection and analysis of usage and performance data from metaverse applications and platforms to enable monitoring, optimization, and decision-making.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

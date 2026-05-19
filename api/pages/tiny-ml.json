@@ -8,6 +8,10 @@
   "definition": "TinyML is machine learning deployment on extremely resource-constrained microcontrollers with memory measured in kilobytes (typically 256KB RAM, 1MB flash storage), power consumption in milliwatts (under 1mW idle, a few mW active), and processing measured in MHz (typically 16-80MHz ARM Cortex-M c...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:deep-learning",
       "label": "Deep Learning"
     }

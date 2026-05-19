@@ -8,8 +8,8 @@
   "definition": "The MiddlewareLayer represents the abstraction level of integration components, orchestration systems, abstraction layers, API implementations, and coordination services that bridge between different system layers, domains, or components in blockchain and distributed systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

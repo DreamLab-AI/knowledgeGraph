@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#DifferentialDriveRobot
-legacy_uri:: urn:visionclaw:concept:robotics:differential-drive-robot
 public:: true
 
 # Differential Drive Robot
@@ -142,86 +139,19 @@ public:: true
       "vc:label": "Wheeled Robot"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-94a33bbe4b6c"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-13T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#DifferentialDriveRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0114"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "established"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Differential Drive Robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:differential-drive-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:differential-drive-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eff297084954925b5310c9967aaa118ab6a93b4c9858386607595b7298b0853e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -240,6 +170,10 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
     {
       "@id": "urn:ngm:class:nonholonomic-robot",
       "label": "Nonholonomic Robot"
@@ -490,9 +424,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eff297084954925b5310c9967aaa118ab6a93b4c9858386607595b7298b0853e@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

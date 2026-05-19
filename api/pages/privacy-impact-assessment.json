@@ -8,8 +8,8 @@
   "definition": "Privacy Impact Assessment is a structured eprocess identifying, analyzing, and mitigating privacy risks associated with data processing activities, particularly AI systems handling personal information, ensuring compliance with data protection regulations and protecting individual privacy rights.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

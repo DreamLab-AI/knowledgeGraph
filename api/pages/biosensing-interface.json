@@ -8,6 +8,10 @@
   "definition": "Physical sensor hardware system that detects physiological signals such as heart rate, electroencephalography (EEG), galvanic skin response (GSR), and electromyography (EMG) to enable real-time adaptation of virtual interaction and user experience.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
       "id": "urn:ngm:class:sensor-system",
       "label": "Sensor System"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/infrastructure#IotSensorNetwork
-legacy_uri:: urn:visionclaw:concept:infrastructure:iot-sensor-network
 public:: true
 
 # IoT Sensor Network
@@ -346,94 +343,19 @@ public:: true
       "vc:label": "TinyML"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Internet of Things Sensor Network, Wireless Sensor Network, WSN, IIoT Sensor Network, Pervasive Sensor Network, Connected Sensor Fabric"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Edge Computing]], [[Smart Cities]], [[Industrial IoT]], [[Digital Twin]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-c530a3acde2f"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "infrastructure"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/infrastructure#IotSensorNetwork"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "IF-1042"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T10:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "IoT Sensor Network"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:infrastructure:iot-sensor-network"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:infrastructure:iot-sensor-network"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8dea837d3bb6f8f758884a6d408bd6362a01717a6ec0c557310875b611f0635b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -452,6 +374,10 @@ public:: true
   "domain": "infrastructure",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
     {
       "@id": "urn:ngm:class:networked-embedded-systems",
       "label": "Networked Embedded Systems"
@@ -1179,9 +1105,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:8dea837d3bb6f8f758884a6d408bd6362a01717a6ec0c557310875b611f0635b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

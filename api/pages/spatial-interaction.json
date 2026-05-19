@@ -8,6 +8,10 @@
   "definition": "The design and implementation of user input mods within extended reality environments that enable natural manipulation of virtual objects through gestures, eye tracking, voice commands, and physical movement in three-dimensional space.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human Computer Interaction"
     }

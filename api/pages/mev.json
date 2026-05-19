@@ -8,8 +8,8 @@
   "definition": "Maximal Extractable Value (MEV) represents the profit that block producers can extract through strategic transaction ordering, inclusion, or exclusion within blocks, arising from their privileged position to control execution sequencing in blockchain networks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
     }
   ],
   "entityType": "Class",

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:unsupervised-learning",
   "domain": "artificial-intelligence",
   "definition": "Unsupervised Learning discovers hidden patterns, structures, and representations in unlabeled data without explicit supervision.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

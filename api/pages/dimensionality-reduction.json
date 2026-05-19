@@ -8,6 +8,10 @@
   "definition": "Dimensionality Reduction is a artificial intelligence concept and a type of Unsupervised Learning. that enables Data Visualization.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:unsupervised-learning",
       "label": "Unsupervised Learning"
     }

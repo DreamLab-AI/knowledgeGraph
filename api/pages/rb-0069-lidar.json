@@ -8,6 +8,10 @@
   "definition": "A remote sensing technology that measures distances by emitting laser pulses and calculating time-of-flight to generate precise three-dimensional point clouds of the surrounding environment, enabling robots and autonomous vehicles to perceive and navigate physical space with centimetre-level accu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:lidar",
       "label": "Lidar"
     }

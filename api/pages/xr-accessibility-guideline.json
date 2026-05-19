@@ -8,6 +8,10 @@
   "definition": "Design recommendations and best practices ensuring XR applications and immersive experiences are usable by people with diverse abilities and disabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:accessibility-standard",
       "label": "Accessibility Standard"
     }

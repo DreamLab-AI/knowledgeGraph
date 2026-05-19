@@ -8,8 +8,8 @@
   "definition": "The responsible stewardship of natural resources and environmental systems in AI development and deployment, minimising ecological harm whilst potentially leveraging AI to address environmental challenges including climate change, biodiversity loss and resource depletion.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

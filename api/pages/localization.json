@@ -8,6 +8,10 @@
   "definition": "The process of determining a mobile robot's position and orientation (pose) within a known or unknown environment using sensor measurements and a map or environmental model. It answers the question \"Where am I?\"",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }

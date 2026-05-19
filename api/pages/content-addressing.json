@@ -8,6 +8,10 @@
   "definition": "The fundamental principle (R1 in ADR-013) that derives a resource's URI deterministically from its Content Hash|cryptographic content hash (SHA-256), ensuring immutability, tamper-detection, and deduplication, enabling VisionClaw Agentic Container|VisionClaw artefacts (credentials, receip...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
     }

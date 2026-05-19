@@ -8,6 +8,10 @@
   "definition": "Sentiment Analysis is the NLP task of determining the emotional tone, attitude, or opinion expressed in text, classifying content as positive, negative, or neutral, and extracting fine-grained emotional attributes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

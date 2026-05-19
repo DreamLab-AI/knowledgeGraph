@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ParticleFilter
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:particle-filter
 public:: true
 
 # Particle Filter
@@ -318,94 +315,19 @@ public:: true
       "vc:label": "Wheeled Robot"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Sequential Monte Carlo, SMC, Bootstrap Filter, SIR Filter, Sampling Importance Resampling, Monte Carlo Filter, Condensation Algorithm"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Bayes Filter]], [[SLAM]], [[Autonomous Navigation]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-pf42585f0601"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ParticleFilter"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "AI-9020"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T11:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Particle Filter"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:particle-filter"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:particle-filter"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6ce502c10ecf48276cbb77466ede8cc9c93a131fb173e7dc562466356cc7f6f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -424,6 +346,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
     {
       "@id": "urn:ngm:class:monte-carlo-method",
       "label": "Monte Carlo Method"
@@ -1060,9 +986,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:6ce502c10ecf48276cbb77466ede8cc9c93a131fb173e7dc562466356cc7f6f8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

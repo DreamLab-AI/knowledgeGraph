@@ -8,6 +8,10 @@
   "definition": "ONTOLOGY_TECHNICAL_DETAILS is a technology infrastructure concept and a type of Blockchain Entity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:record-keeping-system",
       "label": "Record-Keeping System"
     },

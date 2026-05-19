@@ -8,6 +8,10 @@
   "definition": "Surgical Robot is a robotics and autonomous systems concept and a type of Service Robot.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:service-robot",
       "label": "Service Robot"
     }

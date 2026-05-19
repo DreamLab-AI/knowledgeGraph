@@ -8,6 +8,10 @@
   "definition": "\"The use of shared virtual replicas of physical assets, processes, or environments as collaborative workspaces where geographically distributed teams simultaneously inspect, analyse, simulate, and modify digital representations synchronised with real-world counterparts through sensor data streams...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }

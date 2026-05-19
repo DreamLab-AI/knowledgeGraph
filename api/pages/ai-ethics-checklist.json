@@ -8,6 +8,10 @@
   "definition": "Structured verification process evaluating fairness, accountability, transparency, and ical compliance of AI systems against established governance frameworks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-framework",
       "label": "AI Governance Framework"
     }

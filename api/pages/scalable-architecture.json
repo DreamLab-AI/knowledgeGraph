@@ -8,6 +8,10 @@
   "definition": "System designs that maintain performance and availability as user demand grows, employing horizontal scaling, load balancing, distributed computing, and cloud-native patterns to support expanding metaverse populations and concurrent interactions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

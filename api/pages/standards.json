@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:standards",
   "domain": "spatial-computing",
   "definition": "Established tools, protocols, formats, services, and specifications that support the creation, operation, continuous improvement, and common use of metaverse technologies, enabling interoperability between disparate systems, platforms, and applications.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

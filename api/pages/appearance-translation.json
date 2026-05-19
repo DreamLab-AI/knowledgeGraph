@@ -8,6 +8,10 @@
   "definition": "Appearance Translation refers to neural style transfer and image-to-image translation techniques that use deep learning to transform the visual style of images or video while preserving semantic content, enabling artistic stylization, domain adaptation, and visual content transformation across di...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:neural-image-processing",
       "label": "Neural Image Processing"
     }

@@ -8,6 +8,10 @@
   "definition": "SCARA robot has selective compliance in X-Y plane and rigidity in Z-axis for fast assembly operations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:industrial-robot",
       "label": "Industrial Robot"
     }

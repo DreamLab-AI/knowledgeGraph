@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:pattern-recognition",
   "domain": "artificial-intelligence",
   "definition": "Pattern Recognition is the automated identification of regularities, structures, and categories in data using machine learning algorithms.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

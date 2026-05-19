@@ -8,8 +8,8 @@
   "definition": "A software or hardware interface that stores cryptographic private keys and enables users to manage cryptocurrency assets, sign transactions, and interact with blockchain networks securely.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

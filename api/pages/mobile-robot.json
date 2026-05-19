@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:mobile-robot",
   "domain": "robotics",
   "definition": "A mobile robot is a robot with locomotion capabilities that enable it to move within its working environment.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

@@ -8,6 +8,10 @@
   "definition": "Nostr (Notes and Other Stuff Transmitted by Relays) is a minimalist open protocol for censorship-resistant, decentralised messaging and identity, in which clients sign events with Schnorr Signatures|Schnorr signatures over the secp256k1 elliptic curve and broadcast them to any number of s...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:decentralised-communication-protocol",
       "label": "Decentralised Communication Protocol"
     }

@@ -8,6 +8,10 @@
   "definition": "Increasing token supply within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },

@@ -8,6 +8,10 @@
   "definition": "A 3D Model is a digital representation of a three-dimensional object or environment constructed from vertices, edges, faces, and materials, encoded in formats such as 3D File Format.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

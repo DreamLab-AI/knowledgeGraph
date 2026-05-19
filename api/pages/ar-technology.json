@@ -8,6 +8,10 @@
   "definition": "AR Technology encompasses the hardware, software, and algorithmic systems enabling real-time digital content overlay on physical environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
     }

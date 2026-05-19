@@ -8,8 +8,8 @@
   "definition": "Virtual assets are digital items with economic value within MetaversePlatforms|metaverse environments, spanning NFT|non-fungible tokens representing unique digital collectibles, Avatar|avatars and avatar customisations, VirtualRealEstate|virtual real estate, and",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

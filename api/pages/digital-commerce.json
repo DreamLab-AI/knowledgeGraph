@@ -8,6 +8,10 @@
   "definition": "Digital Commerce is a type of Digital Asset Ecosystem in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-ecosystem",
       "label": "Digital Asset Ecosystem"
     }

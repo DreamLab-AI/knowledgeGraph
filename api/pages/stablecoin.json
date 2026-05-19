@@ -8,6 +8,10 @@
   "definition": "A cryptocurrency whose value is algorithmically or institutionally pegged to a reserve asset to maintain price stability, enabling reliable medium of exchange and store of value in virtual economies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:crypto-token",
       "label": "Crypto Token"
     }

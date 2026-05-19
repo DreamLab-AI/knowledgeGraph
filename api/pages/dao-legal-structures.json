@@ -8,6 +8,10 @@
   "definition": "DAO Legal Structures are the corpus of statutory wrappers, jurisdictional incorporation regimes, and bespoke entity forms \u2014 spanning US state limited-liability companies, US state unincorporated nonprofit associations, offshore foundation companies, Swiss associations and foundations, Liechtenste...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:corporate-forms",
       "label": "Corporate Forms"
     },

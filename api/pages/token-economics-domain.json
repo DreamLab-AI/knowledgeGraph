@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:token-economics-domain",
   "domain": "blockchain",
   "definition": "The TokenEconomicsDomain represents a specialized sub-domain within blockchain technology that encompasses economic mechanisms, incentive structures, token systems, and monetary models that govern blockchain ecosystems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

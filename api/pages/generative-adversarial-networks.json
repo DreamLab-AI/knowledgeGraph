@@ -8,6 +8,10 @@
   "definition": "Generative Adversarial Networks (GANs) are a class of deep generative models introduced by Ian Goodfellow and colleagues at the University of Montreal framing density estimation as a two-player zero-sum minimax game between a generator network G:Z\u2192X mapping samples from a low-dimensional latent p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:adversarial-learning-system",
       "label": "Adversarial Learning System"
     },

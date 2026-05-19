@@ -8,6 +8,10 @@
   "definition": "Blockchain-based ownership and property rights for digital land parcels in metaverse platforms, represented as NFTs that serve as digital deeds providing proof of ownership, development rights, and transferability of virtual real estate assets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-property-rights",
       "label": "Digital Property Rights"
     }

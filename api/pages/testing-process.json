@@ -8,6 +8,10 @@
   "definition": "Systematic execution of verification and validation operations to detect faults, verify functionality, and ensure quality standards in metaverse systems and applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:quality-assurance",
       "label": "Quality Assurance"
     }

@@ -8,6 +8,10 @@
   "definition": "Remote Pair Programming is a synchronous collaborative software-development practice in which two developers\u2014one acting as driver (typing) and one as navigator (reviewing, guiding, strategising)\u2014share a single logical programming environment across geographically separated workstations, communica...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:agile-software-development",
       "label": "Agile Software Development"
     },

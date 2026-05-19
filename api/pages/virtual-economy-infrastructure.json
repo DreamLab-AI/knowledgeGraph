@@ -8,6 +8,10 @@
   "definition": "The collection of technologies, platforms, and systems essential for creating, managing, and sustaining economic activities within metaverse environments, including blockchain networks, payment systems, marketplaces, and decentralized finance protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

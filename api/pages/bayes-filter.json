@@ -8,6 +8,10 @@
   "definition": "BayesFilter denotes the canonical recursive probabilistic framework for sequential state estimation in partially-observable stochastic dynamical systems, computing at each timestep the posterior belief bel(x_t) = p(x_t | z_{1:t}, u_{1:t}) over the latent system state x_t conditioned on the full h...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:probabilistic-filter",
       "label": "Probabilistic Filter"
     },

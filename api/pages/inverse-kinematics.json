@@ -8,6 +8,10 @@
   "definition": "The process of determining the joint parameters (angles or displacements) required to place a robot's end-effector at a desired position and orientation in Cartesian space. It maps from task space to joint space.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:kinematics",
       "label": "Kinematics"
     }

@@ -8,6 +8,10 @@
   "definition": "Polar robot has rotary base, elevated rotary shoulder, and telescoping arm creating spherical workspace.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:industrial-robot",
       "label": "Industrial Robot"
     }

@@ -8,8 +8,8 @@
   "definition": "The number of transformer layers (encoder and/or decoder) stacked in a model, determining the number of sequential transformations applied to representations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "The comprehensive network of interconnected technologies, platforms, and stakeholders that enable digital twin deployment, including IoT sensors, edge computing, cloud platforms, AI analytics, and visualisation systems working toger to create, maintain, and derive value from virtual replicas of p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:technology-ecosystem",
       "label": "Technology Ecosystem"
     }

@@ -8,6 +8,10 @@
   "definition": "The mathematical and computational techniques for representing, transforming, and manipulating signals in digital form, enabling real-time audio processing, video enhancement, spatial audio for VR/AR, and sensor data analysis critical for immersive metaverse experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:signal-processing",
       "label": "Signal Processing"
     }

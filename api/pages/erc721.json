@@ -8,8 +8,8 @@
   "definition": "The ereum non-fungible token standard for unique digital assets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",

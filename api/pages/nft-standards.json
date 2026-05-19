@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:nft-standards",
   "domain": "blockchain",
   "definition": "NFT Standards is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

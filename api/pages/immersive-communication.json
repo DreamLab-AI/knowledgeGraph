@@ -8,6 +8,10 @@
   "definition": "Immersive Communication refers to communication systems and experiences that leverage extended reality (XR) technologies to create highly engaging, spatially-aware interaction environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }

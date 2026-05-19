@@ -8,6 +8,10 @@
   "definition": "The potential for AI systems to cause adverse effects on individuals, groups, organizations, communities, or society, arising from technical failures, security vulnerabilities, biased outcomes, privacy violations, or unintended consequences of system design, deployment, or operation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:risk-management",
       "label": "Risk Management"
     }

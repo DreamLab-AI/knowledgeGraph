@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-metadata",
   "domain": "artificial-intelligence",
   "definition": "AI Metadata encompasses the descriptive information, provenance data, and contextual attributes associated with artificial intelligence models, datasets, and computational artifacts.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

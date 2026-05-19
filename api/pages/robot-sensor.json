@@ -8,8 +8,8 @@
   "definition": "Robot Sensor - Robot Sensor in robotics systems",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
     }
   ],
   "entityType": "Class",

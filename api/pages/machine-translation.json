@@ -8,6 +8,10 @@
   "definition": "Machine Translation is the automated translation of text or speech from one natural language to another using neural network models, particularly transformer-based sequence-to-sequence architectures.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

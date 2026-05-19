@@ -8,8 +8,8 @@
   "definition": "Language Translation is a type of Distributed Collaboration in the distributed collaboration domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
     }
   ],
   "entityType": "Class",

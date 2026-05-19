@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#Inflation
-legacy_uri:: urn:visionclaw:concept:blockchain:inflation
 public:: true
 
 # Inflation
@@ -42,86 +39,19 @@ public:: true
       "vc:label": "TokenEconomicsDomain"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.95"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-ae65f873c3d5"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-10-28T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#Inflation"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0102"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Inflation"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:inflation"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:inflation"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:775422fe8c9268a8f037132ad121b7b69c2c0b772305f687a2b2454c7d2dd26b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -140,6 +70,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
     {
       "@id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
@@ -205,9 +139,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:775422fe8c9268a8f037132ad121b7b69c2c0b772305f687a2b2454c7d2dd26b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

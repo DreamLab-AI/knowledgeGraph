@@ -8,6 +8,10 @@
   "definition": "The detection and simulation of contact between virtual objects and real-world elements in mixed reality environments, enabling realistic interactions, haptic feedback, and safety boundaries that prevent users from colliding with physical obstacles while immersed in virtual experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
     }

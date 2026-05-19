@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#Tc0003TelepresenceRobot
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:tc-0003-telepresence-robot
 public:: true
 
 # tc 0003 telepresence robot
@@ -358,86 +355,19 @@ public:: true
       "vc:label": "Virtual Training"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-a13147678458"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#Tc0003TelepresenceRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-0003"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "emerging"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "tc 0003 telepresence robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:tc-0003-telepresence-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:tc-0003-telepresence-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:561a1f6bc37429c1a0d7c8d0bbad229ff4dd6cfd8f663735953c0f39cfaae246@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -456,6 +386,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
     {
       "@id": "urn:ngm:class:telepresence-technology",
       "label": "Telepresence Technology"
@@ -972,9 +906,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:561a1f6bc37429c1a0d7c8d0bbad229ff4dd6cfd8f663735953c0f39cfaae246@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:etsi-domain-infrastructure-governance",
   "domain": "artificial-intelligence",
   "definition": "ETSI governance framework and mechanisms overseeing infrastructure domains through trust domain separation, policy enforcement, and security management implementing local policy control across distributed network components.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.4,
   "maturity": "draft",

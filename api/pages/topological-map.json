@@ -8,6 +8,10 @@
   "definition": "Topological Map is a graph-structured spatial abstraction used in Mobile Robot Navigation and Autonomous Navigation, representing environments as discrete nodes (places, waypoints, landmarks) connected by edges (traversable paths, transitions) rather than storing explicit metric coord...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:cognitive-map",
       "label": "Cognitive Map"
     },

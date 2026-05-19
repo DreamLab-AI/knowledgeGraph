@@ -8,8 +8,8 @@
   "definition": "On-Device Learning is machine learning model training and adaptation occurring directly on end-user devices (smartphones, tablets, embedded systems) using local data without transmitting raw data to cloud servers, enabling personalized model adaptation, privacy preservation, and offline functiona...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

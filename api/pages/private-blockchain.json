@@ -8,8 +8,8 @@
   "definition": "A permissioned Blockchain network where access, participation, and validation rights are restricted to authorized entities, typically used in enterprise and consortium settings with controlled governance and enhanced privacy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

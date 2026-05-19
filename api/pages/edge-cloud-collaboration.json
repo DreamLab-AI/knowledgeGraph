@@ -8,8 +8,8 @@
   "definition": "Edge-Cloud Collaboration is a hybrid architecture dynamically partitioning AI workloads between resource-constrained edge devices and powerful cloud infrastructure, optimizing end-to-end latency, bandwidth utilization, energy consumption, and accuracy through adaptive offloading, model splitting,...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

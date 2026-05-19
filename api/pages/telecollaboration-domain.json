@@ -8,6 +8,10 @@
   "definition": "\"The domain of knowledge encompassing technology-mediated collaboration, distributed teamwork, remote presence systems, and virtual cooperation platforms enabling humans to work toger effectively across geographical and temporal boundaries.\"",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }

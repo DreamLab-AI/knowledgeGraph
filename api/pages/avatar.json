@@ -8,6 +8,10 @@
   "definition": "Digital representation of a person or agent used to interact within a virtual environment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

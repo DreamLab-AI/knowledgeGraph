@@ -8,8 +8,8 @@
   "definition": "System that produces context-sensitive sound effects algorithmically in real-time, generating audio content through computational rules rather than playing back pre-recorded samples.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

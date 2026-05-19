@@ -8,6 +8,10 @@
   "definition": "AI safety and alignment is the interdisciplinary research programme and engineering practice concerned with ensuring that artificial intelligence systems \u2014 particularly large language models and future general AI \u2014 behave in accordance with human intentions, values, and oversight mechanisms acros...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:existential-risk-research",
       "label": "Existential Risk Research"
     },

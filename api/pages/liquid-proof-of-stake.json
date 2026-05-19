@@ -8,6 +8,10 @@
   "definition": "A PoS variant allowing token holders to delegate their staking rights to validators (bakers) while retaining token ownership and liquidity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }

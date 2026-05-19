@@ -8,6 +8,10 @@
   "definition": "A comprehensive security visualization and inventory framework that identifies, catalogs, and models all potential attack vectors, vulnerability exposure points, and threat entry paths across network, application, data, identity, and infrastructure layers of a system.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-and-spatial-risks",
       "label": "Metaverse and Spatial Risks"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:distributed-collaboration",
   "domain": "distributed-collaboration",
   "definition": "Distributed Collaboration is a foundational concept in distributed collaboration that serves as a classification parent for 19 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "A Fault Tolerance System is a design framework enabling a distributed system to continue correct operation despite the occurrence of component failures, network disruptions, or malicious behavior by subset of participants.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }

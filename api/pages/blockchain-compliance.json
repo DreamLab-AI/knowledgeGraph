@@ -8,6 +8,10 @@
   "definition": "The framework of regulatory requirements, technical controls, and operational procedures ensuring blockchain systems and crypto-asset service providers comply with applicable laws including AML/KYC, GDPR, securities regulations, and jurisdiction-specific mandates while maintaining transparency an...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:regulatory-compliance",
       "label": "Regulatory Compliance"
     }

@@ -8,6 +8,10 @@
   "definition": "Rack and pinion actuator converts rotary motion to linear via gear mechanism.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:electric-linear-actuator",
       "label": "Electric Linear Actuator"
     }

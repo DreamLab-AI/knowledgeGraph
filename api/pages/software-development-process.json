@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:software-development-process",
   "domain": "artificial-intelligence",
   "definition": "Software Development Process for AI encompasses modologies, workflows, and best practices for building, testing, deploying, and maintaining machine learning systems. This includes agile AI development, data-centric workflows, experiment tracking, model validation protocols, and MLOps practices.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

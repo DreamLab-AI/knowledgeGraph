@@ -8,6 +8,10 @@
   "definition": "The configurable variables and constraints that govern virtual economy behaviour in metaverse environments, including token supply mechanisms, transaction fees, inflation rates, and reward structures that shape economic interactions between users and digital assets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

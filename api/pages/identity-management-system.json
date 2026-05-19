@@ -8,6 +8,10 @@
   "definition": "An Identity Management System (IdM/IAM \u2014 Identity and Access Management) is a comprehensive technology framework that governs the full lifecycle of digital identities\u2014creation, provisioning, authentication, authorisation, federation, delegation, and decommissioning\u2014across enterprise, cloud, c...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:zero-trust-architecture",
       "label": "Zero Trust Architecture"
     },

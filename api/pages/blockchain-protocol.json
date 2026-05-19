@@ -8,6 +8,10 @@
   "definition": "Foundational rule set governing distributed ledger system operation comprising consensus mechanisms (algorithmic procedures enabling network-wide agreement on canonical state without centralized authority including Proof of Work PoW SHA-256 hash puzzles requiring computational expenditure Bitcoin...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:peer-to-peer-protocol",
       "label": "Peer-to-Peer Protocol"
     },

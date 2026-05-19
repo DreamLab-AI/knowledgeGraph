@@ -8,6 +8,10 @@
   "definition": "Cost of attack vs reward within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:economic-mechanism",
       "label": "EconomicMechanism"
     }

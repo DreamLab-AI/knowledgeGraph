@@ -8,6 +8,10 @@
   "definition": "Pid Controller is a type of Feedback Control in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:rb-0047-feedback-control",
       "label": "rb 0047 feedback control"
     }

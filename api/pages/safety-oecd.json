@@ -8,8 +8,8 @@
   "definition": "AI systems should operate safely without causing unacceptable risk of physical or psychological harm to people, property or the environment, with appropriate safeguards to prevent, detect and respond to hazardous failures throughout the AI lifecycle.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

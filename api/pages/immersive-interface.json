@@ -8,6 +8,10 @@
   "definition": "User interaction systems for VR, AR, and metaverse applications encompassing spatial user interfaces, haptic feedback devices, gesture recognition, voice control, and multimodal input mods that enable natural, intuitive engagement with virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interface",
       "label": "Human-Computer Interface"
     }

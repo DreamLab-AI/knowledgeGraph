@@ -8,6 +8,10 @@
   "definition": "An optimized SBFT protocol using Distributed Key Generation (DKG) technology and BLS aggregate signature scheme for enhanced scalability with dynamic node management.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
       "label": "Practical Byzantine Fault Tolerance"
     }

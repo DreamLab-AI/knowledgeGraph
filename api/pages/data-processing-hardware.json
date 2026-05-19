@@ -8,6 +8,10 @@
   "definition": "The computing infrastructure including GPUs, CPUs, specialized accelerators, and edge computing devices that power metaverse applications, virtual reality experiences, and immersive environments, providing the massive processing capabilities required for real-time 3D rendering, AI inference, and ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }

@@ -8,6 +8,10 @@
   "definition": "wheeled mobile robot is a robotics and autonomous systems concept and a type of Mobile Robot.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:mobile-robot",
       "label": "Mobile Robot"
     }

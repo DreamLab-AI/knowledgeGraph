@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:financial-regulation",
   "domain": "blockchain",
   "definition": "Financial Regulation is a foundational concept in blockchain that serves as a classification parent for 4 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "Regularisation is a artificial intelligence concept and a type of Machine Learning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

@@ -8,8 +8,8 @@
   "definition": "Profile Management is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

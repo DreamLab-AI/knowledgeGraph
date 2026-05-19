@@ -8,6 +8,10 @@
   "definition": "Subjective experience of embodiment and self-location in a mediated environment, feeling that one's virtual representation is an extension of oneself.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:presence",
       "label": "Presence"
     }

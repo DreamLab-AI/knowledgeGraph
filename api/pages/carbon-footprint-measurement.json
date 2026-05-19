@@ -8,6 +8,10 @@
   "definition": "Systematic quantitative modology for calculating the total greenhouse gas (GHG) emissions attributable to an organisation, product, service, or activity across its full operational and value-chain scope, expressed in tonnes of carbon dioxide equivalent (tCO\u2082e), applying IPCC Sixth Assessment Repo...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:climate-risk-management",
       "label": "Climate Risk Management"
     },

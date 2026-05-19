@@ -8,6 +8,10 @@
   "definition": "AI ics addresses the moral principles, values, and guidelines governing the design, development, deployment, and use of artificial intelligence systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }

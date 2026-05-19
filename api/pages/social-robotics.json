@@ -8,6 +8,10 @@
   "definition": "A field of robotics focused on designing robots capable of interacting and communicating with humans and other autonomous agents in a socially acceptable manner, following social rules, norms, and expectations of human interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
       "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human-Robot Interaction"
     }

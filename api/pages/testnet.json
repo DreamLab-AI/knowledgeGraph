@@ -8,6 +8,10 @@
   "definition": "Blockchain testnet is a parallel blockchain network maintained by protocol developers and validators that mirrors the structure, consensus rules, and transaction semantics of a production mainnet whilst operating in a sandboxed environment with free or faucet-dispensed native tokens (typically 1 ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:protocol-implementation",
       "label": "Protocol Implementation"
     },

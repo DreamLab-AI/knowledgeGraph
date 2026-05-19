@@ -8,6 +8,10 @@
   "definition": "The longest sequence of tokens that a model can process in a single forward pass, constrained by positional encoding scheme and computational resources.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

@@ -8,6 +8,10 @@
   "definition": "\"The payment of remote workers, freelancers, or distributed team members in cryptocurrency (Bitcoin, ereum, stablecoins) rather than traditional fiat currency, enabling borderless, instant, low-fee transactions that bypass traditional banking systems whilst providing financial inclusion for unban...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }

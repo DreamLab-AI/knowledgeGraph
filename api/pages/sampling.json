@@ -8,6 +8,10 @@
   "definition": "Sampling is the family of computational and statistical procedures that draw representative or informative values from probability distributions \u2014 ranging from classical Markov chain Monte Carlo mods (Metropolis-Hastings, Gibbs, Hamiltonian Monte Carlo, NUTS) and sequential mods (Sequential Monte...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:numerical-methods",
       "label": "Numerical Methods"
     },

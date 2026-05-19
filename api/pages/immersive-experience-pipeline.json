@@ -8,6 +8,10 @@
   "definition": "The end-to-end workflow for creating, processing, and delivering XR content, encompassing concept design, 3D asset creation, game engine integration, optimisation, platform deployment, and cloud streaming to produce immersive virtual experiences for metaverse applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:content-production-workflow",
       "label": "Content Production Workflow"
     }

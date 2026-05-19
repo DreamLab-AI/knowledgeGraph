@@ -8,6 +8,10 @@
   "definition": "Human tracking and SLAM capture is a robotics and autonomous systems concept and a type of Sensor Technology.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:sensor-technology",
       "label": "Sensor Technology"
     }

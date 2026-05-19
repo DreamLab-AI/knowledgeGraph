@@ -8,6 +8,10 @@
   "definition": "Governance design patterns in decentralized autonomous organizations that distribute authority across distinct functional roles, preventing concentration of control through checks and balances between proposal creation, voting, execution, and oversight functions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:dao-governance",
       "label": "DAO Governance"
     }

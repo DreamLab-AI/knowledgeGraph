@@ -8,6 +8,10 @@
   "definition": "AI should benefit people and planet by augmenting human capabilities, enhancing creativity, advancing inclusion of underrepresented populations, reducing economic, social and geographical inequalities, and protecting natural environments, thereby invigorating inclusive growth, sustainable develop...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:policy-enforcement",
       "label": "Policy Enforcement"
     }

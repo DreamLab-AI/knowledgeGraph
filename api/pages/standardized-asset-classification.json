@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:standardized-asset-classification",
   "domain": "artificial-intelligence",
   "definition": "Systematic taxonomies and frameworks for categorizing digital assets including cryptocurrencies, NFTs, and metaverse tokens based on characteristics such as issuance mod, value mechanism, rights conferred, fungibility, and redemption properties.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

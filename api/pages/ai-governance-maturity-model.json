@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-governance-maturity-model",
   "domain": "artificial-intelligence",
   "definition": "AI Governance Maturity Model is an assessment framework that defines progressive maturity levels for AI governance capabilities across multiple dimensions, enabling organizations to evaluate current practices, identify gaps, benchmark against peers, and guide continuous improvement toward trustwo...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

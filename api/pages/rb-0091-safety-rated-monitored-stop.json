@@ -8,6 +8,10 @@
   "definition": "safety rated monitored stop is a robotics and autonomous systems concept and a type of Robot Safety.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:robot-safety",
       "label": "Robot Safety"
     }

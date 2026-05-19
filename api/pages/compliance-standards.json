@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:compliance-standards",
   "domain": "artificial-intelligence",
   "definition": "The regulatory requirements, technical specifications, and legal frameworks that govern operations within virtual environments and metaverse platforms, encompassing data privacy, intellectual property, consumer protection, and conduct standards that organizations must adhere to when operating in ...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

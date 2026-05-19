@@ -8,6 +8,10 @@
   "definition": "SPARQL is a semantic query language and protocol for querying and manipulating data stored in RDF|Resource Description Framework format, enabling structured queries across linked data and knowledge graphs at massive scale.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:semantic-web-standards",
       "label": "Semantic Web Standards"
     }

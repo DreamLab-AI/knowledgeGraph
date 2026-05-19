@@ -8,6 +8,10 @@
   "definition": "Compliance Control is an enterprise governance mechanism comprising the policies, procedures, automated tests, and continuous monitoring activities that an organisation deploys to demonstrate, document, and enforce adherence to regulatory obligations, internal standards, and contractual requireme...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:enterprise-risk-management",
       "label": "Enterprise Risk Management"
     },

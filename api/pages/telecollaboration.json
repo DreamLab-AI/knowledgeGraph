@@ -8,8 +8,8 @@
   "definition": "\"The process of individuals or groups working toger towards shared goals across geographical distances through technology-mediated communication and coordination tools, integrating synchronous and asynchronous interaction modalities to achieve collaborative outcomes comparable to or exceeding co-...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
     }
   ],
   "entityType": "Class",

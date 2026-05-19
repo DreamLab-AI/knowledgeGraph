@@ -8,6 +8,10 @@
   "definition": "Newton-Euler mod applies F=ma and \u03c4=I\u03b1 to each link recursively.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:robot-dynamics",
       "label": "Robot Dynamics"
     }

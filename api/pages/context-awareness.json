@@ -8,8 +8,8 @@
   "definition": "The capability of computing systems to sense, interpret, and respond to environmental conditions, user state, situational factors, and contextual information to dynamically adapt behavior and deliver personalized experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

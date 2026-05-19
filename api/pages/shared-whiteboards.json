@@ -8,6 +8,10 @@
   "definition": "\"Digital canvases in telepresence platforms enabling distributed team members to simultaneously draw, write, annotate, and manipulate visual content (text, images, diagrams, sticky notes) in real-time, replicating physical whiteboard collaboration dynamics through multi-user synchronisation and p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }

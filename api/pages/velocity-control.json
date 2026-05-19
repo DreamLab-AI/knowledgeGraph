@@ -8,8 +8,8 @@
   "definition": "A closed-loop feedback control strategy that regulates the rate of change of position (linear velocity v in m/s or angular velocity \u03c9 in rad/s) of a robotic actuator, motor shaft, conveyor system, or mobile robot platform by continuously measuring actual velocity via tachometers (\u00b1full-scale accu...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

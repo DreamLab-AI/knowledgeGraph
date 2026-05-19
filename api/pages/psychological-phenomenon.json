@@ -8,6 +8,10 @@
   "definition": "Psychological Phenomenon is a technology infrastructure concept and a type of Humans, Avatars Character.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:humans-avatars-character",
       "label": "Humans, Avatars , Character"
     }

@@ -8,6 +8,10 @@
   "definition": "Fooocus is an open-source desktop image-generation interface for Stable Diffusion XL released in August 2023 by Lvmin Zhang (GitHub handle lllyasviel, originator of ControlNet, IC-Light, Forge, Paints-Undo, FramePack and OmniControl), conceived as a deliberate philosophical and ergonomic reaction...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:gradio-application",
       "label": "Gradio Application"
     },

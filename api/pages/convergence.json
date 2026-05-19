@@ -8,6 +8,10 @@
   "definition": "Technological Convergence is the macro-level process by which previously distinct technologies, disciplines, and sociotechnical systems merge, overlap, and mutually reinforce to produce qualitatively new capabilities, applications, and social configurations that none of the converging components ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:general-purpose-technology",
       "label": "General Purpose Technology"
     },

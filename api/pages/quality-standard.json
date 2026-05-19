@@ -8,6 +8,10 @@
   "definition": "Quality standard defines requirements for quality management in robot manufacturing and deployment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }

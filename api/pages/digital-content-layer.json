@@ -8,6 +8,10 @@
   "definition": "An architectural abstraction within metaverse and spatial computing systems that organizes and manages digital assets, 3D objects, interactive media, and user-generated content as discrete layers that can be rendered, composed, and manipulated independently within virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }

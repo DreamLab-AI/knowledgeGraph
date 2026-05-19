@@ -8,8 +8,8 @@
   "definition": "A self-supervised learning framework that learns visual representations through contrastive learning with data augmentation. A linear classifier on SimCLR representations achieves top-1 accuracy, matching supervised ResNet-50 performance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

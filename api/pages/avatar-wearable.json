@@ -8,6 +8,10 @@
   "definition": "Digital clothing, accessories, and cosmetic items that can be equipped by avatars in virtual environments, often tradeable as digital assets or NFTs.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

@@ -8,6 +8,10 @@
   "definition": "Mathematical Science is a type of Machine Learning in the artificial intelligence domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

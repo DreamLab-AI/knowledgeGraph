@@ -8,8 +8,8 @@
   "definition": "Privacy by Design is a proactive privacy framework and GDPR requirement (Article 25) mandating that data protection be embedded into system architecture, business practices, and technologies from inception rather than bolted on as afterthought, implementing privacy as default setting and core fun...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

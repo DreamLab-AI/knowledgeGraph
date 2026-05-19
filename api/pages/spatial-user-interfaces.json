@@ -8,8 +8,8 @@
   "definition": "Three-dimensional interaction systems enabling users to engage with digital content through spatially-aware mods including hand gestures, gaze tracking, and voice commands, designed for natural movement within AR, VR, and mixed reality environments with consideration for user comfort zones and 6D...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

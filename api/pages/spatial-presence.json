@@ -8,6 +8,10 @@
   "definition": "The psychological state of feeling physically located within a virtual environment, experiencing the sense of \"being there\" despite technological mediation, influenced by place illusion (perceived location), plausibility illusion (believable events), and temporal presence (immediacy of experience).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:vr-psychology",
       "label": "VR Psychology"
     }

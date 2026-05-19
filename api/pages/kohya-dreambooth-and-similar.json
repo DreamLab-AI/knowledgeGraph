@@ -8,6 +8,10 @@
   "definition": "Ecosystem of open-source toolchains, training modologies, dataset-preparation pipelines, and community infrastructure enabling efficient fine-tuning of large-scale Diffusion Models \u2014 principally Stable Diffusion 1.x/2.x, SDXL, and FLUX.1 \u2014 through parameter-efficient adaptation techni...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:diffusion-models",
       "label": "Diffusion Models"
     },

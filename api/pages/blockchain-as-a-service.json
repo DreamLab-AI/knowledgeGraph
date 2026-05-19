@@ -8,6 +8,10 @@
   "definition": "Blockchain as a Service (BaaS) is a managed cloud delivery model in which a third-party provider provisions, operates, and maintains the distributed ledger infrastructure, consensus-node orchestration, cryptographic identity services, smart contract deployment pipelines, and monitoring tooling re...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:cloud-service-model",
       "label": "Cloud Service Model"
     },

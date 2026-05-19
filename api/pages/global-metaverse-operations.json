@@ -8,6 +8,10 @@
   "definition": "The international coordination and management of metaverse platforms across jurisdictions, encompassing cross-border infrastructure deployment, regulatory compliance, interoperability standards, and unified user experiences that enable seamless virtual world access regardless of geographic location.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-infrastructure",
       "label": "Metaverse Infrastructure"
     }

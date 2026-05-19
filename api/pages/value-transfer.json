@@ -8,6 +8,10 @@
   "definition": "The mechanism and process by which economic value, rights, or utility are exchanged between parties across physical, digital, and virtual domains, encompassing monetary systems, token-based systems, resource allocation, and rights transfer protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }

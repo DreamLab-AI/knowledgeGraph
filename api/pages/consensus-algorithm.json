@@ -8,8 +8,8 @@
   "definition": "Distributed computational protocol ensuring all participants in a Blockchain Network agree on the canonical transaction history and current state without centralised authority.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

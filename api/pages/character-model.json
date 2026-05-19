@@ -8,8 +8,8 @@
   "definition": "A 3D digital representation of a character consisting of a polygonal mesh, textures, and materials, designed with clean topology optimized for animation and real-time rendering, serving as the foundation for rigging, skinning, and character animation workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

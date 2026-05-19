@@ -8,6 +8,10 @@
   "definition": "An AI-driven approach that analyzes and predicts user behavior patterns from digital interactions including clicks, browsing patterns, movement trajectories, and gaze tracking, enabling automated decision-making and personalized experiences through machine learning and pattern recognition.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

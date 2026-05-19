@@ -8,6 +8,10 @@
   "definition": "Trust and Safety (T&S) is the professional discipline, operational infrastructure, and regulatory framework that governs the detection, review, enforcement, and remediation of harmful content and abusive behaviour across digital platforms, encompassing the full spectrum from child sexual abuse ma...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:online-safety",
       "label": "Online Safety"
     },

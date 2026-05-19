@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:59a2652785e955ed5868bb42f470fd1c0b5f3d276fa58114c6afa4a8ba44f8b4",
+  "title": "Safety and Standards",
+  "slug": "robo-safety-and-standards",
+  "public": true,
+  "classIri": "urn:ngm:class:robo-safety-and-standards",
+  "domain": "robotics",
+  "definition": "Intermediate taxonomy category for safety and standards concepts within the robotics domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robotics",
+      "label": "Robotics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

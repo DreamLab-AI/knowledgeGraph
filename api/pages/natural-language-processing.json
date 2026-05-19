@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:natural-language-processing",
   "domain": "artificial-intelligence",
   "definition": "Natural Language Processing (NLP) is the subfield of AI focused on enabling computers to understand, interpret, generate, and manipulate human language.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

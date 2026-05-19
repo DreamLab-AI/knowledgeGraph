@@ -8,6 +8,10 @@
   "definition": "Force Control is the family of robotic control paradigms that regulate the contact force and/or torque exerted by a manipulator, end-effector, joint or whole-body system on its environment rather than (or in addition to) regulating Cartesian or joint position, formalised through a closed-loop rel...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:cyber-physical-control",
       "label": "Cyber-Physical Control"
     },

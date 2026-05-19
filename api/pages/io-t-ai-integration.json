@@ -8,8 +8,8 @@
   "definition": "IoT AI Integration synergizes Internet of Things sensor networks with embedded machine learning, enabling intelligent autonomous decision-making directly on IoT devices without requiring centralized cloud processing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

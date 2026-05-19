@@ -8,6 +8,10 @@
   "definition": "Scientific investigation of mental health applications within virtual reality and metaverse environments, examining therapeutic benefits for conditions including PTSD, anxiety, and depression, while assessing potential risks such as addiction and attention impairment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:research-methods",
       "label": "Research Methods"
     }

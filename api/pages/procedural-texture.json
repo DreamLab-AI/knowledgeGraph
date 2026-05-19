@@ -8,6 +8,10 @@
   "definition": "Algorithmically generated pattern used to simulate surface detail without stored images, computed on-demand using mathematical functions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:render-pipeline",
       "label": "Render Pipeline"
     }

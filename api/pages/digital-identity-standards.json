@@ -8,6 +8,10 @@
   "definition": "The technical specifications, protocols, and frameworks established by standards bodies such as W3C and ISO that define interoperable formats for digital identifiers, verifiable credentials, and authentication mechanisms enabling secure identity management across metaverse platforms and decentral...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

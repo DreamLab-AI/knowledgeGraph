@@ -8,6 +8,10 @@
   "definition": "Spatial computing platforms that enable users to create and interact within immersive 3D virtual environments as digital avatars, supporting social interaction, community building, collaborative activities, and shared experiences across geographic boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

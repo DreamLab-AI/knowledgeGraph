@@ -8,6 +8,10 @@
   "definition": "Semantic Segmentation is the computer vision task of assigning a class label to every pixel in an image, partitioning the image into semantically meaningful regions without distinguishing between individual object instances.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }

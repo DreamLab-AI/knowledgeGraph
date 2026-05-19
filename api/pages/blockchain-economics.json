@@ -8,6 +8,10 @@
   "definition": "Blockchain Economics is a type of Token Economics in the blockchain domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:token-economics",
       "label": "Token Economics"
     }

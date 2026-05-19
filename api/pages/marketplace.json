@@ -8,6 +8,10 @@
   "definition": "Digital platform enabling discovery, exchange, and transaction of virtual goods, services, and assets within or across metaverse systems through listing, escrow, and reputation mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

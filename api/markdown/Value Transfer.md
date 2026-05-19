@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#ValueTransfer
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:value-transfer
 public:: true
 
 # Value Transfer
@@ -838,86 +835,19 @@ public:: true
       "vc:label": "Virtual Economy"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "1.0"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-71df9490e063"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2025-11-05T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#ValueTransfer"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "DT-0001"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Value Transfer"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:value-transfer"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "complete"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:value-transfer"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:88eee08f9e6364fa7c3272c861c433ea02ea6ecd650e450be4aa3de300fe532f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -936,6 +866,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
     {
       "@id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
@@ -2056,9 +1990,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:88eee08f9e6364fa7c3272c861c433ea02ea6ecd650e450be4aa3de300fe532f@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

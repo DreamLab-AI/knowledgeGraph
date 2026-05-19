@@ -8,6 +8,10 @@
   "definition": "AI Risk Register is a structured repository that systematically documents, tracks, and manages identified risks associated with AI systems throughout their lifecycle, recording risk descriptions, severity assessments, likelihood es, assigned ownership, mitigation strategies, and current status to...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-risk-management",
       "label": "AI Risk Management"
     }

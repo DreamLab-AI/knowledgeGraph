@@ -8,6 +8,10 @@
   "definition": "safety standard is a robotics and autonomous systems concept and a type of Robot Standard.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:robot-standard",
       "label": "Robot Standard"
     }

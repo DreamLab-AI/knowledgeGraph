@@ -8,6 +8,10 @@
   "definition": "Specialized hardware designed to run AI inference workloads locally on edge devices, optimized for low power consumption and real-time performance without cloud connectivity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:ai-hardware",
       "label": "AI Hardware"
     }

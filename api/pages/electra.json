@@ -8,8 +8,8 @@
   "definition": "Efficiently Learning an Encoder that Classifies Token Replacements Accurately: a pre-training approach that trains a discriminator to detect replaced tokens rather than reconstructing masked inputs, improving sample efficiency.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

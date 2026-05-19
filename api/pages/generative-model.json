@@ -8,6 +8,10 @@
   "definition": "Machine learning models that can generate new data samples by learning the underlying distribution of training data, including architectures like GANs, VAEs, diffusion models, and transformers.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

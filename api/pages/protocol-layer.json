@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:protocol-layer",
   "domain": "infrastructure",
   "definition": "The ProtocolLayer represents the abstraction level of protocol specifications, implementations, communication standards, distributed algorithms, and coordination mechanisms that define how system components interact in blockchain and distributed systems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

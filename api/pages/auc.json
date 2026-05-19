@@ -8,6 +8,10 @@
   "definition": "Area Under the Curve (AUC), specifically the area under the Receiver Operating Characteristic (ROC) curve (ROC-AUC or AUROC), is a single scalar performance metric for binary classifiers representing the probability that the model ranks a randomly chosen positive instance higher than a randomly c...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

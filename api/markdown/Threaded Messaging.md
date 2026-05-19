@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#ThreadedMessaging
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:threaded-messaging
 public:: true
 
 # Threaded Messaging
@@ -34,90 +31,19 @@ public:: true
       "vc:label": "TelecollaborationDomain"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Virtual Workspace]], [[Lightning Network]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-bea573b5919a"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#ThreadedMessaging"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-9001"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "mature"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Threaded Messaging"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:threaded-messaging"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:threaded-messaging"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0b96025270d184284eae2d39d06cadf7e18b3481d72cdeb5f3ddafcc81d331b1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -136,6 +62,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
     {
       "@id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
@@ -187,9 +117,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:0b96025270d184284eae2d39d06cadf7e18b3481d72cdeb5f3ddafcc81d331b1@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

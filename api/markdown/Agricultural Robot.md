@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#AgriculturalRobot
-legacy_uri:: urn:visionclaw:concept:robotics:agricultural-robot
 public:: true
 
 # Agricultural Robot
@@ -90,90 +87,19 @@ public:: true
       "vc:label": "Soft Robotics"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.11"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Smart Contract]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-83ef68b85293"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#AgriculturalRobot"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0015"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T20:11:27Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Agricultural Robot"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.53"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:agricultural-robot"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:agricultural-robot"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -193,12 +119,12 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:mobile-robot",
-      "label": "Mobile Robot"
+      "@id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "@id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "@id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     }
   ],
   "relations": {
@@ -361,9 +287,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eb41de9e248ceea9db14169c1c97469af59cdb1a30cf95b004fa24d7b8a10d07@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

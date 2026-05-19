@@ -8,8 +8,8 @@
   "definition": "The process of generating unpredictable and statistically random values for cryptographic operations, serving as a critical security primitive for key generation, nonces, and protocol initialization, distinguishing between true randomness from physical entropy sources and pseudo-randomness from d...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",

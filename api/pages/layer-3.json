@@ -8,8 +8,8 @@
   "definition": "Application-specific blockchain layer built atop Layer 2 scaling solutions, providing customized execution environments for specialized use cases such as gaming, DeFi, and enterprise applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

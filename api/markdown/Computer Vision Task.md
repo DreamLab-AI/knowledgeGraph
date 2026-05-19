@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ComputerVisionTask
-legacy_uri:: urn:visionclaw:concept:artificial-intelligence:computer-vision-task
 public:: true
 
 # Computer Vision Task
@@ -22,90 +19,19 @@ public:: true
       "vc:label": "ComputerVision"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Blockchain]] (bc), [[AI Agent System]] (ai), or [[Digital Twin]] (mv)"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-25524e5baf13"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "artificial-intelligence"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2/artificial-intelligence#ComputerVisionTask"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "NGM-7007"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "reviewed"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Computer Vision Task"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:computer-vision-task"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:artificial-intelligence:computer-vision-task"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ab16e2471ee57a5c27a5bc8324e113849e4da6cb94f62dd7ea3e2b5c97084722@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -125,8 +51,8 @@ public:: true
   "maturity": "emerging",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "@id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "quality": 0.35,
@@ -160,9 +86,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:ab16e2471ee57a5c27a5bc8324e113849e4da6cb94f62dd7ea3e2b5c97084722@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

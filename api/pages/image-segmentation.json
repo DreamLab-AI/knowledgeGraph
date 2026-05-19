@@ -8,6 +8,10 @@
   "definition": "Image Segmentation is a foundational computer vision task that partitions a digital image into multiple discrete, semantically meaningful regions or segments, assigning each pixel (or group of pixels) a label that represents its category, instance identity, or both, enabling downstream systems to...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:structured-prediction",
       "label": "Structured Prediction"
     },

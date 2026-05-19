@@ -8,6 +8,10 @@
   "definition": "A vendor-agnostic reference specification for evaluating and comparing system performance, establishing standardized metrics and modologies that enable fair, repeatable, and meaningful comparisons across computing systems, processes, or technologies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

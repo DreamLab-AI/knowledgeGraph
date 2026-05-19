@@ -8,6 +8,10 @@
   "definition": "A Cross-Chain Bridge is a protocol-level interoperability artefact \u2014 comprising on-chain smart contracts on each connected blockchain plus an off-chain attestation, relay, or proving infrastructure \u2014 that enables the trust-minimised transfer of fungible tokens, non-fungible tokens, arbitrary mess...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:asset-transfer-mechanism",
       "label": "Asset Transfer Mechanism"
     },

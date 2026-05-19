@@ -8,6 +8,10 @@
   "definition": "Face Swap is the family of computer vision techniques that transfers the identity of a source face onto a target image, video frame, or live stream while preserving the target's pose, expression, illumination, occlusions, and surrounding scene context, formalised as the conditional generation pro...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:face-manipulation",
       "label": "Face Manipulation"
     },

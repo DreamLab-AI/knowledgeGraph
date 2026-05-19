@@ -8,6 +8,10 @@
   "definition": "Technology that determines the position and orientation of objects in three-dimensional space using six degrees of freedom (6DoF), enabling precise tracking of headsets, controllers, and body movements through inside-out or outside-in sensor configurations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:motion-tracking",
       "label": "Motion Tracking"
     }

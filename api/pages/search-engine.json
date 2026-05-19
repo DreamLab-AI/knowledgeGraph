@@ -8,6 +8,10 @@
   "definition": "Software systems that crawl, index, and retrieve digital content based on user queries, using algorithms for relevance ranking, natural language processing, and increasingly semantic understanding to connect users with metaverse assets and experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
     }

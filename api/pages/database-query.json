@@ -8,6 +8,10 @@
   "definition": "Database Query is a type of Data Management in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }

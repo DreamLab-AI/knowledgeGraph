@@ -8,6 +8,10 @@
   "definition": "International Organization for Standardization specifications applicable to metaverse, VR, and AR technologies, including health and safety guidelines, 3D representation standards, avatar specifications, and mixed reality frameworks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

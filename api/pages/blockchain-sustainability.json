@@ -8,8 +8,8 @@
   "definition": "The practice of designing, operating, and evolving blockchain networks to minimize environmental impact through energy-efficient consensus mechanisms, renewable energy integration, and carbon offset strategies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

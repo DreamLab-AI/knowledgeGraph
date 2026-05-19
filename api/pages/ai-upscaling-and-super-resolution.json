@@ -8,6 +8,10 @@
   "definition": "AI-powered techniques for enhancing image and video resolution using deep learning models to generate high-resolution outputs from low-resolution inputs, including super-resolution, interpolation, and detail enhancement",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative AI"
     }

@@ -8,6 +8,10 @@
   "definition": "An alignment objective ensuring AI systems provide truthful and accurate information, avoiding false claims and acknowledging uncertainty when appropriate. Honesty (also called truthfulness) represents a critical dimension of trustworthy AI alongside helpfulness and harmlessness.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:artificial-intelligence",
   "domain": "artificial-intelligence",
   "definition": "Artificial Intelligence is a artificial intelligence concept and a type of owl:Thing. that enables Autonomous Systems, Decision Support. comprising Computer Vision, Deep Learning.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "owl:Thing",
+      "label": "Thing"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

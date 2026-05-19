@@ -8,6 +8,10 @@
   "definition": "A storytelling approach where events are presented out of chronological order or where audience choices create branching paths through the narrative, allowing multiple ways to experience story events based on interactions and decisions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:narrative-structure",
       "label": "Narrative Structure"
     }

@@ -8,6 +8,10 @@
   "definition": "Immersive virtual venue environment designed for hosting live performances, concerts, theater productions, events, and social gatherings with real-time audience interaction and multimedia presentation capabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-reality",
       "label": "Virtual Reality"
     }

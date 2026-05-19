@@ -8,6 +8,10 @@
   "definition": "Cyber Security and Cryptography is the integrated discipline governing the confidentiality, integrity, availability, and authenticity of digital information systems through mathematical cryptographic primitives, protocol engineering, and systemic security architecture.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:network-security",
       "label": "Network Security"
     },

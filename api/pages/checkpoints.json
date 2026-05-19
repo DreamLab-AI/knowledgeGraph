@@ -8,6 +8,10 @@
   "definition": "Checkpoints are serialised snapshots of a machine-learning model's complete trainable state \u2014 weight tensors, optimiser moment accumulators, learning-rate schedules, gradient scalers, random-number-generator seeds, and epoch/step counters \u2014 persisted to durable storage at regular intervals during...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:model-serialisation",
       "label": "Model Serialisation"
     },

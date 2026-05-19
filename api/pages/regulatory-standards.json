@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:regulatory-standards",
   "domain": "spatial-computing",
   "definition": "Legal and compliance frameworks governing metaverse and extended reality platforms, including data protection (GDPR), artificial intelligence (EU AI Act), digital services (DSA), and accessibility requirements that ensure user rights protection in immersive environments.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

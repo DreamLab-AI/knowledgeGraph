@@ -8,8 +8,8 @@
   "definition": "A design principle and architectural quality ensuring that software, systems, or protocols can operate independently of specific hardware architectures or platform implementations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

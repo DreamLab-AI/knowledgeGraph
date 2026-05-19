@@ -8,6 +8,10 @@
   "definition": "Cryptography Security and Privacy denotes the cross-disciplinary infrastructure layer combining mathematical primitives (symmetric encryption AES-GCM/ChaCha20-Poly1305/ASCON-128 NIST lightweight finalist February 2023, hash functions SHA-2/SHA-3 Keccak/BLAKE3 throughput 6.8 GB/s single-thread, pa...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:computer-science",
       "label": "Computer Science"
     },

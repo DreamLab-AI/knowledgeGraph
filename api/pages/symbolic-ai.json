@@ -8,8 +8,8 @@
   "definition": "Artificial intelligence based on symbolic representations of problems, logic, and search algorithms, also known as Good Old-Fashioned AI (GOFAI).",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

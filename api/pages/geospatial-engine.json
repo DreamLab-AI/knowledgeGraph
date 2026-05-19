@@ -8,8 +8,8 @@
   "definition": "Software platforms that stream, render, and process large volumes of geographic and 3D spatial data in real-time for metaverse applications, enabling digital twins of real-world locations, location-based experiences, and integration between physical geography and virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

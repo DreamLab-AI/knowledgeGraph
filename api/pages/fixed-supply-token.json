@@ -8,6 +8,10 @@
   "definition": "A token with a predetermined maximum supply that cannot be exceeded, often with emission schedule governing distribution over time.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }

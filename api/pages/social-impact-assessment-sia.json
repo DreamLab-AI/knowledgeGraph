@@ -8,6 +8,10 @@
   "definition": "Systematic eof potential social consequences of metaverse deployment on communities, stakeholder groups, and societal well-being.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

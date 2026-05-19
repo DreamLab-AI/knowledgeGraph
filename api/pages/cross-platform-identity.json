@@ -8,6 +8,10 @@
   "definition": "Cross-platform identity refers to the capability of linking and managing a user's electronic identity and attributes across multiple distinct systems, platforms, and organisational boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }

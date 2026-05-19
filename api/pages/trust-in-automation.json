@@ -8,6 +8,10 @@
   "definition": "The psychological state in which a human user accepts vulnerability to an automated system's actions based on expectations that the system will perform appropriately to achieve the user's goals, despite uncertainty and the possibility of negative consequences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
       "id": "urn:ngm:class:human-factors",
       "label": "Human Factors"
     }

@@ -8,8 +8,8 @@
   "definition": "Blockchain applications addressing ical sourcing challenges for 3TG minerals (tin, tantalum, tungsten, gold) used in electronics, ensuring minerals don't finance armed conflict or human rights abuses in DRC and adjoining regions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

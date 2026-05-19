@@ -8,6 +8,10 @@
   "definition": "Algorithmic Bias and Variance denotes the canonical decomposition of supervised-learning generalisation error into three orthogonal components \u2014 squared bias, variance, and irreducible noise \u2014 formalised by Geman, Bienenstock & Doursat (1992) as Err(x) = E[(y \u2212 f\u0302(x))\u00b2] = (E[f\u0302(x)] \u2212 f(x))\u00b2 + E[(...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:generalisation-theory",
       "label": "Generalisation Theory"
     },

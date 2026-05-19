@@ -8,6 +8,10 @@
   "definition": "Technology for determining the six-degrees-of-freedom (6DOF) position and orientation of devices, controllers, or body parts in three-dimensional space, using visual-inertial SLAM, stereo cameras, and IMU sensors for precise real-time tracking in VR, AR, and mixed reality applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:motion-tracking",
       "label": "Motion Tracking"
     }

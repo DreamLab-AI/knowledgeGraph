@@ -8,8 +8,8 @@
   "definition": "The foundational architectural mechanism ensuring data, state, and identity continuity across sessions, platforms, and time within metaverse ecosystems through distributed databases, blockchain ledgers, and file systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

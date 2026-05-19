@@ -8,6 +8,10 @@
   "definition": "Structural frameworks and technical designs enabling seamless communication and data exchange between disparate metaverse platforms, virtual worlds, and XR devices through standardised protocols, APIs, and data formats.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:technical-architecture",
       "label": "Technical Architecture"
     }

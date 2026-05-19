@@ -8,6 +8,10 @@
   "definition": "Activation Function is a artificial intelligence concept and a type of Neural Network Component.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
     }

@@ -8,6 +8,10 @@
   "definition": "An integrated 3D model of built assets synchronized with real-time construction, operational, and maintenance data, enabling lifecycle management from design through decommissioning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }

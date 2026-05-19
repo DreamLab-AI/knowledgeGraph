@@ -8,6 +8,10 @@
   "definition": "A configuration variable set before training that controls the learning process but is not learned from data. Examples include learning rate, batch size, and number of layers.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

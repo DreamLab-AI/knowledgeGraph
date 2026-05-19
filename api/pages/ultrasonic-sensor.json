@@ -8,6 +8,10 @@
   "definition": "Ultrasonic Sensor is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }

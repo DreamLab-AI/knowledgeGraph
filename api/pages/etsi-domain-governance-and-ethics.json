@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:etsi-domain-governance-and-ethics",
   "domain": "infrastructure",
   "definition": "Crossover domain for ETSI metaverse categorisation addressing ical governance frameworks, responsible decision-making processes, and value-aligned organisational structures.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

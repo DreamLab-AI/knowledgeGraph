@@ -8,8 +8,8 @@
   "definition": "Information provided by human evaluators about model outputs, typically in the form of rankings, ratings, demonstrations, or corrections.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

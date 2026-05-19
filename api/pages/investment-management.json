@@ -8,6 +8,10 @@
   "definition": "Investment Management is a type of Digital Asset in the blockchain domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

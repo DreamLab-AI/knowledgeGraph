@@ -8,6 +8,10 @@
   "definition": "A production environment surrounded by LED walls and floors displaying real-time computer-generated imagery, enabling in-camera visual effects for film, television, and broadcast production where digital backgrounds react to camera movement and can be manipulated during live filming.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:production-facility",
       "label": "Production Facility"
     }

@@ -8,6 +8,10 @@
   "definition": "The mechanisms and opportunities enabling users to engage in economic activities within metaverse environments, including earning, spending, trading, and governance participation through cryptocurrency, NFTs, and decentralised autonomous organisation (DAO) structures.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

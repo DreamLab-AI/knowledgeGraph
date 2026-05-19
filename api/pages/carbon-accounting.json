@@ -8,6 +8,10 @@
   "definition": "The systematic process of measuring, recording, and reporting an organization's greenhouse gas emissions across direct operations (Scope 1), purchased energy (Scope 2), and value chain activities (Scope 3), expressed in CO2 equivalent units to quantify climate impact and enable reduction strategies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-accounting",
       "label": "Environmental Accounting"
     }

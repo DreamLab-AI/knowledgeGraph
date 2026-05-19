@@ -8,6 +8,10 @@
   "definition": "Physics simulation of liquid and gas dynamics using computational fluid dynamics (CFD) techniques to model realistic water, smoke, and atmospheric effects in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

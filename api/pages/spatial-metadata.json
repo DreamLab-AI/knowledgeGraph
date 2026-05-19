@@ -8,6 +8,10 @@
   "definition": "Descriptive information about geospatial and 3D content documenting location, coordinate system, projection, quality, lineage, and distribution attributes, following standards such as ISO 19115 and FGDC CSDGM to enable discovery, eand interoperability of spatial data resources.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:geospatial-information",
       "label": "Geospatial Information"
     }

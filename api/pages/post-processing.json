@@ -8,6 +8,10 @@
   "definition": "Post Processing is a spatial computing concept and a type of Visual Effects.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }

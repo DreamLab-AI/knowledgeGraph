@@ -8,8 +8,8 @@
   "definition": "Metaverse Application is a type of Distributed Collaboration in the distributed collaboration domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
     }
   ],
   "entityType": "Class",

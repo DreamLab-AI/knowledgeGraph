@@ -8,8 +8,8 @@
   "definition": "A neural network connection that adds the input of a layer to its output, enabling gradient flow in deep networks and facilitating training of very deep architectures.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

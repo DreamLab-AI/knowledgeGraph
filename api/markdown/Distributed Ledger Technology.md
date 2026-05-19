@@ -6,7 +6,7 @@
   "title": "Distributed Ledger Technology",
   "vc:slug": "distributed-ledger-technology",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Distributed Ledger Technology is a foundational concept in blockchain that serves as a classification parent for 6 related concepts in the ontology.",
   "domain": "blockchain",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    }
+  ]
 }
 ```
 

@@ -8,6 +8,10 @@
   "definition": "Processes used to determine wher development products conform to requirements and wher the final product satisfies its intended use and user needs, confirming that the correct product was built to meet stakeholder goals.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

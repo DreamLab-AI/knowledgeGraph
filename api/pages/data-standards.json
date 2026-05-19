@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:data-standards",
   "domain": "spatial-computing",
   "definition": "Data Standards is a spatial computing concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

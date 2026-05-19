@@ -8,8 +8,8 @@
   "definition": "A small neural network layer or module added on top of a pre-trained model to adapt it for specific downstream tasks. Task-specific heads process the pre-trained model's representations to produce task-appropriate outputs (classifications, spans, sequences, etc.).",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

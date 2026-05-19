@@ -1369,6 +1369,36 @@
       "slug": "rb-0105-speed-and-separation-monitoring",
       "title": "rb 0105 speed and separation monitoring",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "robo-actuation-and-control",
+      "title": "Actuation and Control",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "robo-human-robot-interaction",
+      "title": "Human-Robot Interaction",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "robo-navigation-and-planning",
+      "title": "Navigation and Planning",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "robo-perception",
+      "title": "Perception and Sensing",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "robo-robot-type",
+      "title": "Robot Type",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "robo-safety-and-standards",
+      "title": "Safety and Standards",
+      "qualityScore": 0.0
     }
   ],
   "artificial-intelligence": [
@@ -4816,6 +4846,31 @@
       "slug": "ai-core-concepts",
       "title": "ai core concepts",
       "qualityScore": 0.4
+    },
+    {
+      "slug": "ai-application",
+      "title": "AI Application",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-governance-and-ethics",
+      "title": "AI Governance and Ethics",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-model-architecture",
+      "title": "AI Model Architecture",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-research-area",
+      "title": "AI Research Area",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "ai-technique",
+      "title": "AI Technique",
+      "qualityScore": 0.0
     },
     {
       "slug": "fast-ai",
@@ -9265,6 +9320,36 @@
       "qualityScore": 0.4
     },
     {
+      "slug": "sc-content-and-assets",
+      "title": "Content and Assets",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "sc-display-and-rendering",
+      "title": "Display and Rendering",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "sc-governance-and-safety",
+      "title": "Governance and Safety",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "sc-interaction",
+      "title": "Interaction Technology",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "sc-platform-and-environment",
+      "title": "Platform and Environment",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "sc-standards-and-interop",
+      "title": "Standards and Interoperability",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "security-audit-guide",
       "title": "security audit guide",
       "qualityScore": 0.5
@@ -9585,6 +9670,26 @@
       "slug": "web-rtc",
       "title": "WebRTC",
       "qualityScore": 0.6
+    },
+    {
+      "slug": "dc-communication",
+      "title": "Communication Technology",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-protocol-and-infra",
+      "title": "Protocol and Infrastructure",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-telepresence",
+      "title": "Telepresence",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "dc-workspace-tools",
+      "title": "Workspace Tools",
+      "qualityScore": 0.0
     },
     {
       "slug": "tc-0002-collaborative-document-editing",
@@ -11789,9 +11894,39 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "infra-computing-and-cloud",
+      "title": "Computing and Cloud",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "infra-data-management",
+      "title": "Data Management",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "infra-legal-and-regulatory",
+      "title": "Legal and Regulatory",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "infra-network-and-comms",
+      "title": "Network and Communication",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "infra-security-and-identity",
+      "title": "Security and Identity",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "infra-software-engineering",
+      "title": "Software Engineering",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "infrastructure",
-      "title": "infrastructure",
-      "qualityScore": 0.35
+      "title": "Infrastructure",
+      "qualityScore": 0.0
     },
     {
       "slug": "jing",
@@ -13779,6 +13914,36 @@
       "slug": "zero-knowledge-proof",
       "title": "Zero-Knowledge Proof",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "bc-cryptographic-primitive",
+      "title": "Cryptographic Primitive",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "bc-defi-and-economics",
+      "title": "DeFi and Economics",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "bc-governance-and-regulation",
+      "title": "Governance and Regulation",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "bc-network-component",
+      "title": "Network Component",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "bc-protocol-and-consensus",
+      "title": "Protocol and Consensus",
+      "qualityScore": 0.0
+    },
+    {
+      "slug": "bc-token-and-asset",
+      "title": "Token and Asset",
+      "qualityScore": 0.0
     },
     {
       "slug": "cypherpunk",

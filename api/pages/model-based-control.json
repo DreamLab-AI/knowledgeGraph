@@ -8,6 +8,10 @@
   "definition": "Model Based Control (MBC) is a class of control-system design paradigms in which an explicit mathematical model of the plant's dynamics \u2014 encoding kinematics, inertia tensors, contact forces, aerodynamics, or learned neural representations \u2014 is embedded within the controller to predict, plan, and...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:predictive-control",
       "label": "Predictive Control"
     },

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:content-moderation-standards",
   "domain": "spatial-computing",
   "definition": "The policies, technologies, and practices used to monitor, review, and regulate user-generated content and behavior within virtual environments and metaverse platforms, addressing challenges unique to immersive spaces including harassment, hate speech, and harmful conduct that require both tradit...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

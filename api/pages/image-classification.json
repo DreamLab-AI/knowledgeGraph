@@ -8,8 +8,8 @@
   "definition": "Image Classification is the computer vision task of assigning a categorical label to an entire image from a predefined set of classes, determining what is depicted in the image as a whole.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

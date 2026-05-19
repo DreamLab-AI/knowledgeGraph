@@ -8,6 +8,10 @@
   "definition": "Regulatory frameworks and technical specifications governing the environmental sustainability of metaverse infrastructure, including energy efficiency requirements for data centres, carbon footprint disclosure mandates, and e-waste management guidelines for XR hardware.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

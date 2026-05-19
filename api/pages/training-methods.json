@@ -8,8 +8,8 @@
   "definition": "Training Mods encompass the techniques and algorithms used to teach machine learning models to perform specific tasks by adjusting model parameters based on training data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

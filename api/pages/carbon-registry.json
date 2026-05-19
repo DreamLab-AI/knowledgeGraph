@@ -8,6 +8,10 @@
   "definition": "A centralized database system that tracks the issuance, ownership, transfer, and retirement of carbon credits, assigning unique serial numbers to each credit for full lifecycle traceability and preventing double-counting across voluntary and compliance carbon markets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-registry",
       "label": "Environmental Registry"
     }

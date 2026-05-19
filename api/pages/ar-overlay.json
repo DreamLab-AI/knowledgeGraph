@@ -8,6 +8,10 @@
   "definition": "AR Overlay refers to the digital layer of virtual elements including holograms, data visualizations, animations, and 3D objects that are spatially anchored and rendered over the user's view of the physical world in augmented reality systems, creating a seamless blend of virtual and real content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:digital-display-layer",
       "label": "Digital Display Layer"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:bayesian-inference",
   "domain": "artificial-intelligence",
   "definition": "Bayesian Inference is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

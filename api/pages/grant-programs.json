@@ -8,8 +8,8 @@
   "definition": "Crucial resource allocation mechanisms through which DAO|DAOs deploy governance treasuries worth s to ecosystem development, public goods funding, protocol research, and community initiatives\u2014ranging from prospective grants (Uniswap ) to retroactive public goods funding (Optimism ) to inn...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

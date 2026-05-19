@@ -8,6 +8,10 @@
   "definition": "Behavioral patterns of avatars and NPCs, often driven by AI/ML.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

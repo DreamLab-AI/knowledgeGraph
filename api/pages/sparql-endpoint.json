@@ -8,6 +8,10 @@
   "definition": "A sparql endpoint component in the Metaverse domain that required by ProvenanceOntologyProvO.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-access-interface",
       "label": "Data Access Interface"
     }

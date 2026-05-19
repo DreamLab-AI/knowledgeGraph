@@ -8,6 +8,10 @@
   "definition": "2D LiDAR scans single horizontal or vertical plane for obstacle detection.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:lidar",
       "label": "Lidar"
     }

@@ -8,6 +8,10 @@
   "definition": "The canonical URI minting and resolution engine implementing the VisionClaw Agentic Container|VisionClaw urn:visionclaw: grammar (ADR-013, R1\u2013R3 rules) for stable, content-addressed, and scope-bearing identifiers, enabling deterministic roundtrip serialisation and cryptographic verification o...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:identity-systems",
       "label": "Identity Systems"
     }

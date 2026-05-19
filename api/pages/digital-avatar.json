@@ -8,6 +8,10 @@
   "definition": "A digital representation of a user or entity within Virtual Environments, exhibiting Embodied Presence, Visual Customisation, and Behavioural Agency.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:virtual-representation",
       "label": "Virtual Representation"
     }

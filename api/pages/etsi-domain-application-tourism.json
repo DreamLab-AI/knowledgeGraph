@@ -8,6 +8,10 @@
   "definition": "Cross-domain marker for metaverse application components focused on tourism and hospitality including virtual tours, destination previews, cultural heritage experiences, and travel planning platforms in immersive environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy"
     }

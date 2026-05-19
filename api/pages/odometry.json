@@ -8,6 +8,10 @@
   "definition": "The estimation of a mobile robot's position and orientation (pose) over time by integrating motion measurements from wheel encoders, IMUs, or visual sensors. It provides relative position estimates based on incremental motion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:state-estimation",
       "label": "State Estimation"
     }

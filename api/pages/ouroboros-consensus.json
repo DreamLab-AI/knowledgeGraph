@@ -8,6 +8,10 @@
   "definition": "A mathematically-verified PoS consensus protocol using slot leaders to validate transactions and add blocks. Divides time into epochs and slots, with stake pools randomly selected as slot leaders.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }

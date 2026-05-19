@@ -8,6 +8,10 @@
   "definition": "A power supply unit (PSU) is an internal hardware component that converts alternating current (AC) from mains electricity into regulated low-voltage direct current (DC) required by computing equipment's internal components including motherboard, CPU, GPU, and storage devices.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#DecentralizedExchange
-legacy_uri:: urn:visionclaw:concept:blockchain:decentralized-exchange
 public:: true
 
 # Decentralized Exchange
@@ -670,94 +667,19 @@ public:: true
       "vc:label": "Token Standard"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "DEX, Decentralised Exchange, On-Chain Exchange, Non-Custodial Exchange, Automated Market Maker Exchange, AMM DEX, Order-Book DEX"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Centralized Exchange]], [[Financial Markets]], [[Decentralised Finance]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-21-7b3d9a4f1c2e"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#DecentralizedExchange"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-1217"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T13:45:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Decentralized Exchange"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.54"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:decentralized-exchange"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:decentralized-exchange"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eba5df47bd83180382865541866780a342016d85fce8d0fbdd9de2b08cf45da3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -776,6 +698,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
     {
       "@id": "urn:ngm:class:decentralised-finance-primitive",
       "label": "Decentralised Finance Primitive"
@@ -1880,9 +1806,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:eba5df47bd83180382865541866780a342016d85fce8d0fbdd9de2b08cf45da3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

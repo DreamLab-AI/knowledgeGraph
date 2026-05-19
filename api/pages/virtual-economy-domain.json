@@ -8,6 +8,10 @@
   "definition": "The conceptual and technical framework encompassing all economic activities within metaverse environments, including NFT marketplaces, virtual real estate trading, digital goods commerce, cryptocurrency transactions, and tokenized asset exchanges that operate through blockchain-verified ownership...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy"
     }

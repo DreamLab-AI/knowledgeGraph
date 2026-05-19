@@ -8,8 +8,8 @@
   "definition": "Tactile sensory technology providing physical sensations to enhance virtual experiences through actuators integrated into controllers, gloves, and body suits.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

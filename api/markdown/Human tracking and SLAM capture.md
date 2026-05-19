@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#HumanTrackingAndSLAMCapture
-legacy_uri:: urn:visionclaw:concept:robotics:human-tracking-and-slam-capture
 public:: true
 
 # Human tracking and SLAM capture
@@ -13,82 +10,15 @@ public:: true
   "title": "Human tracking and SLAM capture",
   "vc:public": true,
   "vc:outboundWikilinks": [],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-e76220403c84"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#HumanTrackingAndSLAMCapture"
-    },
-    {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
     {
       "vc:key": "preferred-term",
       "vc:value": "Human tracking and SLAM capture"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:human-tracking-and-slam-capture"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "stub"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:human-tracking-and-slam-capture"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a6165d3e89a0f5333c88ae7c44537c14570f61efaf22a24a7eef46ae079f6d93@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -107,6 +37,10 @@ public:: true
   "domain": "robotics",
   "maturity": "draft",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
     {
       "@id": "urn:ngm:class:sensor-technology",
       "label": "Sensor Technology"
@@ -132,9 +66,6 @@ public:: true
   "vc:resolutions": [],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:a6165d3e89a0f5333c88ae7c44537c14570f61efaf22a24a7eef46ae079f6d93@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

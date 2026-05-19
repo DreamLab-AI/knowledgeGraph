@@ -8,6 +8,10 @@
   "definition": "A decentralised identity authentication and management framework leveraging blockchain technology and self-sovereign identity (SSI) principles to enable secure, privacy-preserving user authentication across multiple metaverse platforms without relying on centralised credential storage.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }

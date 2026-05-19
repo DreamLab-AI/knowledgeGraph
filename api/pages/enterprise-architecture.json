@@ -8,6 +8,10 @@
   "definition": "A strategic framework for aligning business processes, information systems, and technology infrastructure with organisational goals, increasingly incorporating metaverse technologies such as XR, digital twins, and AI to enable digital transformation and persistent virtual work environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

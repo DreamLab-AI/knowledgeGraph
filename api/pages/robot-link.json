@@ -8,8 +8,8 @@
   "definition": "A rigid mechanical structural component in a robotic manipulator or kinematic chain that connects two consecutive joints and transmits motion and forces between them, characterized by fixed geometric and inertial properties including length, mass, center of mass location, and inertia tensor, desc...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

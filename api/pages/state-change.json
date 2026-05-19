@@ -8,8 +8,8 @@
   "definition": "A transition from one defined state to another within a system, component, or entity, representing how systems evolve through discrete or continuous modifications to their properties.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

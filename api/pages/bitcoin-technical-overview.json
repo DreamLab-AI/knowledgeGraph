@@ -8,6 +8,10 @@
   "definition": "Bitcoin Technical Overview is the canonical ontological concept encapsulating the complete technical architecture of the Bitcoin protocol \u2014 the first decentralised, permissionless, proof-of-work secured, UTXO-based peer-to-peer electronic cash system described by Satoshi Nakamoto in the 2008 whit...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:peer-to-peer-network",
       "label": "Peer To Peer Network"
     }

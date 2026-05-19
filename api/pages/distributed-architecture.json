@@ -8,6 +8,10 @@
   "definition": "Network design pattern allowing multi-node operation of a shared virtual world with coordinated state management across geographic or logical boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

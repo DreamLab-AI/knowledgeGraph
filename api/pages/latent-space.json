@@ -8,6 +8,10 @@
   "definition": "latent space is a artificial intelligence concept and a type of Generative Model.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
     }

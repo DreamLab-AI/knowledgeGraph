@@ -8,6 +8,10 @@
   "definition": "Delegate Democracy (also known as liquid democracy, delegative democracy, or proxy democracy) is a hybrid political and organisational governance model \u2014 formalised in modern computer-mediated form by Bryan Ford in his 2002 paper Delegative Democracy (Yale, later Swiss EPFL) and intellectuall...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:collective-decision-making",
       "label": "Collective Decision Making"
     },

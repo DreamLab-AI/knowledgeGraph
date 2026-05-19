@@ -8,6 +8,10 @@
   "definition": "The mechanisms and systems enabling citizens to engage in collective decision-making processes within virtual environments, digital governance platforms, and metaverse communities, encompassing voting, deliberation, and civic engagement through immersive technologies and decentralized governance ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-governance",
       "label": "Digital Governance"
     }

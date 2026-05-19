@@ -8,6 +8,10 @@
   "definition": "Software platforms that deliver, track, and manage educational content and training programmes, increasingly integrating with VR, AR, and metaverse technologies through SCORM, xAPI, and LTI standards to enable immersive learning experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

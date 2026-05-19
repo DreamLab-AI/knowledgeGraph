@@ -8,6 +8,10 @@
   "definition": "Societal and Environmental Wellbeing is a trustworthiness dimension ensuring AI systems consider broader impacts on communities, environment, democratic processes, and human flourishing beyond immediate functional objectives, promoting sustainable development and social cohesion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

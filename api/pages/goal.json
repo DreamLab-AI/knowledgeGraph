@@ -8,6 +8,10 @@
   "definition": "Goal is a artificial intelligence concept and a type of Objective.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:objective",
       "label": "Objective"
     }

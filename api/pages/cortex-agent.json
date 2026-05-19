@@ -8,6 +8,10 @@
   "definition": "Cortex Agent is a class of enterprise agentic AI system that orchestrates multi-step reasoning and action across both structured and unstructured data sources within a governed cloud data platform, with Snowflake Cortex Agents (General Availability November 4, 2025) as the dominant production ins...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:agentic-internet",
       "label": "Agentic Internet"
     },

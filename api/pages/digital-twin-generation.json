@@ -8,6 +8,10 @@
   "definition": "The automated or semi-automated process of creating digital twin models using AI, machine learning, and advanced 3D capture technologies, enabling rapid production of virtual replicas with reduced manual effort and accelerated deployment timelines for industrial and enterprise applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:automated-modeling",
       "label": "Automated Modeling"
     }

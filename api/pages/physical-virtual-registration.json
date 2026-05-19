@@ -8,8 +8,8 @@
   "definition": "The process of aligning and synchronizing virtual content with physical world coordinates using spatial tracking, computer vision, and sensor fusion to ensure accurate overlay of digital objects in augmented reality environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

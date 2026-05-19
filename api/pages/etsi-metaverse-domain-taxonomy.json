@@ -8,6 +8,10 @@
   "definition": "A hierarchical classification system developed by ETSI organising metaverse concepts, technologies, and services into structured categories, enabling consistent terminology, clear domain boundaries, and interoperable standards development across the telecommunications and immersive technology ind...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:taxonomy",
       "label": "Taxonomy"
     }

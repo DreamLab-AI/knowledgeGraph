@@ -8,6 +8,10 @@
   "definition": "An imaging sensor device that captures visual information in robotics systems, enabling computer vision applications including object detection, SLAM, 3D reconstruction, visual servoing, and semantic scene understanding through various modalities (RGB, depth, thermal, event-based) and technologie...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:visual-perception",
       "label": "VisualPerception"
     },

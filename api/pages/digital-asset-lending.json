@@ -8,8 +8,8 @@
   "definition": "Financial services enabling cryptocurrency holders to lend their digital assets to borrowers through centralized platforms or decentralized protocols, earning interest yields while providing liquidity for trading, leverage, and other financial activities secured by collateralized positions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

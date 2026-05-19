@@ -8,6 +8,10 @@
   "definition": "Mixed reality (MR) is the perceptual and computational regime occupying the central span of the Milgram-Kishino Reality-Virtuality Continuum (1994, IEICE Transactions on Information Systems E77-D:12, 1321-1329), wherein real-world physical objects and digitally synthesised content coexist, intera...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:immersive-computing",
       "label": "Immersive Computing"
     },

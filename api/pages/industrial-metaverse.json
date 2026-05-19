@@ -8,6 +8,10 @@
   "definition": "A virtual platform integrating digital twin technology, simulation environments, and collaborative workspaces for manufacturing operations, supply chain management, remote equipment control, and industrial training across geographically distributed facilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-application-platform",
       "label": "Metaverse Application Platform"
     }

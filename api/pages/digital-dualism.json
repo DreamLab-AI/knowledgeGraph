@@ -8,6 +8,10 @@
   "definition": "Digital Dualism is a type of Metaverse in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

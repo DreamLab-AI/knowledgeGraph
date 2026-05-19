@@ -8,8 +8,8 @@
   "definition": "An ETSI governance domain establishing identity management, authentication, and trust infrastructure for VirtualEnvironment|virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

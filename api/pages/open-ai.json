@@ -8,6 +8,10 @@
   "definition": "OpenAI is an American artificial intelligence company founded in December 2015, known for developing the GPT family of large language models, DALL-E image generation, and the Sora video model.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:aicompanies",
       "label": "AICompanies"
     }

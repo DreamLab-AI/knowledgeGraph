@@ -8,6 +8,10 @@
   "definition": "A paradigm shift in ereum account architecture standardized through ERC-4337 (March 2023) enabling smart contract wallets with programmable transaction validation logic, decoupled gas payment mechanisms, and flexible account recovery, eliminating the distinction between externally owned accounts ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
     }

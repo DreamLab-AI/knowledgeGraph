@@ -8,6 +8,10 @@
   "definition": "Knowhere is a technology infrastructure concept and a type of Tracking Technology.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:tracking-technology",
       "label": "Tracking Technology"
     }

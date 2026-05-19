@@ -8,6 +8,10 @@
   "definition": "Financial Infrastructure is a type of Economic Layer in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:economic-layer",
       "label": "Economic Layer"
     }

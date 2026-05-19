@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#3dGaussianSplatting
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting
 public:: true
 
 # 3D Gaussian Splatting
@@ -42,90 +39,19 @@ public:: true
       "vc:label": "TELE-060-instant-ngp"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Computer Vision]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-961d0e7e912b"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#3dGaussianSplatting"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-0051"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "developing"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "3D Gaussian Splatting"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:3d-gaussian-splatting"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -144,6 +70,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
     {
       "@id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
       "label": "TELE-050-neural-rendering-telepresence"
@@ -219,9 +149,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:f32f0472a5ee16559fe85eb785fa81ec86cd50b3fe51d1d813e71a88fc87fac7@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

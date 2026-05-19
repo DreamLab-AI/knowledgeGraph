@@ -8,6 +8,10 @@
   "definition": "Security model requiring continuous verification of all entities and transactions with least-privilege access enforcement, eliminating implicit trust within metaverse network boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:security-architecture",
       "label": "Security Architecture"
     }

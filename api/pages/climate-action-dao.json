@@ -8,6 +8,10 @@
   "definition": "A decentralized autonomous organization (DAO) governed by blockchain-based smart contracts and token-weighted voting that coordinates collective action toward climate change mitigation, adaptation, and environmental sustainability through transparent, democratic mechanisms for funding climate pro...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:collective-governance",
       "label": "CollectiveGovernance"
     },

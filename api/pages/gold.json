@@ -8,6 +8,10 @@
   "definition": "Gold (chemical symbol Au, atomic number 79, ISO currency code XAU) is a dense, corrosion-resistant transition metal that has served as the pre-eminent monetary commodity for at least years and \u20132026 occupies a unique dual role as both the world's third-largest reserve asset by value (approximatel...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:commodity",
       "label": "Commodity"
     },

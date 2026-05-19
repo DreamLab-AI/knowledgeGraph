@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/spatial-computing#3DRenderingEngine
-legacy_uri:: urn:visionclaw:concept:spatial-computing:3d-rendering-engine
 public:: true
 
 # 3D Rendering Engine
@@ -34,102 +31,19 @@ public:: true
       "vc:label": "Metaverse"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "author-did",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Digital Twin]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-1e2a42d6e979"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "contributors",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "spatial-computing"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/spatial-computing#3DRenderingEngine"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "NGM-7009"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "3D Rendering Engine"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.35"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-rendering-engine"
-    },
-    {
-      "vc:key": "signature",
-      "vc:value": ""
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:spatial-computing:3d-rendering-engine"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -148,6 +62,10 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
     {
       "@id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics"
@@ -215,9 +133,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7b69cf2eebf4fa2f94e06700a99939b86a173c98ac1e150078bd91ce00b46eb6@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

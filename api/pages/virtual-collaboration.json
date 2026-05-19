@@ -8,6 +8,10 @@
   "definition": "A 3D virtual immersive environment where employees interact using avatar identities, perform work tasks, and engage in real-time teamwork through metaverse-enabled workspaces featuring interactive whiteboards, document sharing, and spatial presence capabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-workspace",
       "label": "Virtual Workspace"
     }

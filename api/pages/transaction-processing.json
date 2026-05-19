@@ -8,6 +8,10 @@
   "definition": "Transaction Processing is a technology infrastructure concept and a type of Blockchain Transaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:blockchain-transaction",
       "label": "Blockchain Transaction"
     }

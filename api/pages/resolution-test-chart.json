@@ -8,6 +8,10 @@
   "definition": "Standardized calibration patterns such as ISO 12233 charts used to measure and validate the optical resolution, colour accuracy, and image quality of displays in virtual reality and augmented reality headsets through computational analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:calibration-tools",
       "label": "Calibration Tools"
     }

@@ -8,6 +8,10 @@
   "definition": "An integrated technology foundation providing common services, APIs, and infrastructure for developing, deploying, and running applications, including cloud-native platforms, container orchestration systems, and internal developer platforms that abstract underlying complexity while enabling scala...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:technology-infrastructure",
       "label": "Technology Infrastructure"
     }

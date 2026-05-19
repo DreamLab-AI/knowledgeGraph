@@ -8,8 +8,8 @@
   "definition": "Regulatory authorisation mandates for virtual asset service providers ranging from state-level MoneyTransmitterLicense|money transmitter licences (-capital) to jurisdictional crypto licences (Dubai VARA, UK FCA, EU MiCA) requiring operational standards, custody controls, KYC procedures, and o...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

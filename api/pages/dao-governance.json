@@ -8,6 +8,10 @@
   "definition": "DAO governance refers to the decision-making structures and voting mechanisms within Decentralised Autonomous Organisations, enabling token holders to collectively govern protocol parameters, treasury allocations, and organisational direction through on-chain and off-chain processes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:community-governance",
       "label": "Community Governance"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:3-dasset-standard",
   "domain": "infrastructure",
   "definition": "3DAssetStandard is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

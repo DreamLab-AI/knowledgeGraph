@@ -8,6 +8,10 @@
   "definition": "A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing-core",
       "label": "Spatial Computing"
     }

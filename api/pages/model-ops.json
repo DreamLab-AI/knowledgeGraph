@@ -8,6 +8,10 @@
   "definition": "End-to-end governance and lifecycle management of AI models.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:gartner-prediction",
       "label": "Gartner Prediction"
     }

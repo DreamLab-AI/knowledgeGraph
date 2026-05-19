@@ -8,8 +8,8 @@
   "definition": "The total number of trainable parameters in a neural network, serving as a primary measure of model size and capacity, typically ranging from s to hundreds of s in modern language models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

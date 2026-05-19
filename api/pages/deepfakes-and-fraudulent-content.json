@@ -8,6 +8,10 @@
   "definition": "Deepfakes and fraudulent content denote synthetic audio, image, video and text artefacts produced by deep generative models (notably GAN-based face-swap pipelines DeepFaceLab/Faceswap/StyleGAN3, diffusion-based face-conditioning ReActor/Roop/InstantID/PhotoMaker/IP-Adapter-Face, lip-sync video ge...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:generative-ai-misuse",
       "label": "Generative AI Misuse"
     },

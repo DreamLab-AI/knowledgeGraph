@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:legal-framework",
   "domain": "infrastructure",
   "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "emerging",

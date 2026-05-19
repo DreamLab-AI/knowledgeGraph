@@ -8,6 +8,10 @@
   "definition": "Non-player characters with AI-driven behavior.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-humans",
       "label": "Digital Humans"
     }

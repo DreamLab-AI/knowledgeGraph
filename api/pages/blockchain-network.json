@@ -8,6 +8,10 @@
   "definition": "A Blockchain Network is a permissionless or permissioned peer-to-peer (P2P) overlay network through which participating nodes collectively maintain, validate, and propagate a shared append-only ledger (the blockchain) without relying on any central coordinator, achieving agreement through a deter...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:fault-tolerant-system",
       "label": "Fault Tolerant System"
     },

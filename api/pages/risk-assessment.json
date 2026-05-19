@@ -8,6 +8,10 @@
   "definition": "Risk Assessment is the systematic, evidence-based process of identifying, analysing, and evaluating hazards, vulnerabilities, and adverse-outcome chains across complex sociotechnical systems, forming the core analytical activity within broader Risk Management programmes aligned to",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:audit",
       "label": "Audit"
     },

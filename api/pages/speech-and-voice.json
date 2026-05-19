@@ -8,6 +8,10 @@
   "definition": "Speech and Voice AI is the computational subdomain of artificial intelligence encompassing mods for producing, recognising, transforming, cloning, and reasoning over human speech audio signals, implemented through neural architectures ranging from WaveNet autoregressive dilated convolutional voco...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:audio-processing",
       "label": "Audio Processing"
     },

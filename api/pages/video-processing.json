@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:video-processing",
   "domain": "artificial-intelligence",
   "definition": "Video Processing in AI involves computational analysis, understanding, and manipulation of video data using machine learning and computer vision techniques.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

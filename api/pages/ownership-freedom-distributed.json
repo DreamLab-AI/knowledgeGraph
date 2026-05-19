@@ -8,6 +8,10 @@
   "definition": "A socio-technical paradigm establishing user sovereignty through decentralized control mechanisms, cryptographic ownership proofs, and distributed governance models.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

@@ -8,6 +8,10 @@
   "definition": "The foundational technology domain encompassing persistent, synchronous 3D virtual worlds, augmented reality environments, spatial computing platforms, and immersive internet infrastructure that enable shared experiences with interoperable digital assets, persistent identity systems, and real-tim...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }

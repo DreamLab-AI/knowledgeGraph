@@ -8,6 +8,10 @@
   "definition": "An intelligent autonomous entity within a video game or virtual environment that exhibits goal-directed behavior, adapts to player actions, and creates engaging interactive experiences through AI techniques including behavior trees, reinforcement learning, and procedural generation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     },

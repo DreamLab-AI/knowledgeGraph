@@ -8,6 +8,10 @@
   "definition": "Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surf...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:light-transport",
       "label": "Light Transport"
     },

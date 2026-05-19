@@ -8,6 +8,10 @@
   "definition": "A defined spatial coordinate or addressable place within a virtual environment, representing specific positions, areas, or destinations that users can navigate to, reference, and interact with in metaverse platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

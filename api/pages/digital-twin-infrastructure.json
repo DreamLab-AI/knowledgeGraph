@@ -8,6 +8,10 @@
   "definition": "The foundational computing, networking, and data management systems required to deploy and operate digital twins at scale, encompassing cloud platforms, edge computing nodes, IoT gateways, and the connectivity fabric that enables real-time data flow between physical assets and their virtual count...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }

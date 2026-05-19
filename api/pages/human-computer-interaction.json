@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:human-computer-interaction",
   "domain": "artificial-intelligence",
   "definition": "Human-Computer Interaction (HCI) in the AI context examines the design, eand implementation of interactive systems that incorporate artificial intelligence capabilities. This interdisciplinary field addresses usability, accessibility, user experience, and cognitive aspects of AI-powered interfaces.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

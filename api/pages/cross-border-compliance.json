@@ -8,6 +8,10 @@
   "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law (GDPR, UK GDPR, CCPA, PIPL, DPDPA 2023), AI regu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:compliance-programs",
       "label": "Compliance Programs"
     },

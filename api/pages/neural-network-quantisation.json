@@ -8,8 +8,8 @@
   "definition": "Neural Network Quantization is a model compression technique reducing numerical precision of weights and activations from floating-point (FP32, FP16) to lower-bit integer representations (INT8, INT4, binary) decreasing memory footprint, improving inference speed through efficient integer arithmet...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

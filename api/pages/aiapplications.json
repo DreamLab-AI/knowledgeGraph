@@ -8,8 +8,8 @@
   "definition": "A domain classification encompassing the practical deployment and use cases of artificial intelligence systems across industries, including autonomous systems, decision support, content generation, predictive analytics, and intelligent automation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "A virtual platform enabling users to explore, preview, and experience tourist destinations, cultural sites, and travel experiences through immersive digital environments, supporting sustainable tourism and accessibility to remote or restricted locations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

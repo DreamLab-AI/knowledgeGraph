@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:6d98c2e5ab4349fef2aadcbbdbfc013494f4f22e1356ffed1963905663b3910c",
+  "title": "Data Management",
+  "slug": "infra-data-management",
+  "public": true,
+  "classIri": "urn:ngm:class:infra-data-management",
+  "domain": "infrastructure",
+  "definition": "Intermediate taxonomy category for data management concepts within the infrastructure domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

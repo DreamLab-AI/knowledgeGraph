@@ -8,8 +8,8 @@
   "definition": "A Self-Driving Car is an autonomous passenger vehicle capable of sensing its environment and operating with minimal or no human input, employing AI-driven perception, decision-making, and control systems to navigate roads, comply with traffic regulations, and transport occupants safely.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

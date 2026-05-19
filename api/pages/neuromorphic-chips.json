@@ -8,6 +8,10 @@
   "definition": "Neuromorphic Chips is a artificial intelligence concept and a type of Inference Hardware. that enables Ultra-Low-Power AI.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:inference-hardware",
       "label": "Inference Hardware"
     }

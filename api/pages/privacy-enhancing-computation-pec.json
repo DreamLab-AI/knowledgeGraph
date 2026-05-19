@@ -8,8 +8,8 @@
   "definition": "Computational techniques that enable data processing and analysis while preserving privacy through cryptographic mods such as homomorphic encryption, secure multi-party computation, and differential privacy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "A three-dimensional geometric representation of real-world environments created through spatial mapping, where surfaces are reconstructed as interconnected polygonal meshes to enable accurate placement and occlusion of virtual objects in augmented reality applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

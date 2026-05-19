@@ -8,6 +8,10 @@
   "definition": "A Solid Pod (Personal Online Data store) is a W3C Linked Data Platform-compliant personal data vault that gives individuals and organisations sovereign control over their own data by hosting it at a user-chosen location and exposing it through a standards-based access control layer (WAC or ACP), ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:linked-data-platform-resource",
       "label": "Linked Data Platform Resource"
     },

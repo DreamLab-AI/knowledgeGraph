@@ -8,6 +8,10 @@
   "definition": "Sustainable consensus mechanisms are distributed agreement protocols designed for Blockchain Network|blockchain and distributed ledger systems that achieve Byzantine fault-tolerant finality whilst minimising energy consumption, carbon emissions, and physical resource expenditure\u2014contrasting s...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:climate-technology",
       "label": "Climate Technology"
     },

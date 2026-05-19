@@ -8,6 +8,10 @@
   "definition": "AR Scene Graph is a hierarchical data structure used in augmented reality to represent and organize spatial relationships between virtual objects, real-world elements, and their transformations, enabling context-aware placement, semantic understanding, and natural interaction between digital cont...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:spatial-data-structure",
       "label": "Spatial Data Structure"
     }

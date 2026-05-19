@@ -8,6 +8,10 @@
   "definition": "Blockchain Scalability encompasses the technical solutions and architectural approaches designed to increase the transaction throughput, reduce latency, and improve the efficiency of blockchain networks while maintaining security and decentralisation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:protocol-architecture",
       "label": "Protocol Architecture"
     },

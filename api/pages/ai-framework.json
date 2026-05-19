@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-framework",
   "domain": "artificial-intelligence",
   "definition": "AI Framework denotes a comprehensive software architecture that provides reusable code, design patterns, and infrastructure for developing artificial intelligence applications.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

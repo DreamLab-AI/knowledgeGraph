@@ -8,8 +8,8 @@
   "definition": "Computing infrastructure encompasses the physical and virtual resources required for building, running, and delivering applications and services, including servers, storage systems, networking equipment, power systems, and cooling facilities housed in data centers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

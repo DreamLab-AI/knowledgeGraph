@@ -8,6 +8,10 @@
   "definition": "AML KYC Compliance is the composite regulatory and operational discipline by which obligated entities \u2014 banks, payment institutions, e-money issuers, brokers, insurers, accountants, lawyers, art dealers, casinos, real-estate agents, virtual-asset service providers (VASPs / crypto-asset service pr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:anti-financial-crime-regime",
       "label": "Anti-Financial Crime Regime"
     },

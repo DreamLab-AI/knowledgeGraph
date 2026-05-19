@@ -8,6 +8,10 @@
   "definition": "The interconnected network of platforms, protocols, services, and participants that collectively enable the creation, storage, exchange, and utilization of blockchain-based digital assets including cryptocurrencies, tokens, NFTs, and tokenized real-world assets across decentralized and centralize...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-economy",
       "label": "Digital Economy"
     }

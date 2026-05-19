@@ -8,6 +8,10 @@
   "definition": "An automated workflow process that transforms digital data or assets from one format, schema, or representation to another, enabling interoperability and compatibility across heterogeneous systems and platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-processing",
       "label": "Data Processing"
     }

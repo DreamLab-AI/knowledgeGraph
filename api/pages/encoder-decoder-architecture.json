@@ -8,8 +8,8 @@
   "definition": "A neural network structure consisting of an encoder that processes the input sequence and a decoder that generates the output sequence, commonly used in sequence-to-sequence tasks.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

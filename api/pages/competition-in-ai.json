@@ -8,6 +8,10 @@
   "definition": "Competition in AI is the multi-dimensional race dynamics \u2014 geopolitical, corporate, research, and regulatory \u2014 through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial i...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:geopolitics",
       "label": "Geopolitics"
     },

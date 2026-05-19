@@ -8,6 +8,10 @@
   "definition": "An automated tracking and distribution system that records creator royalty obligations, calculates payment amounts, and executes compensation transfers for digital content and NFT sales in virtual economy environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:economic-layer",
       "label": "Economic Layer"
     }

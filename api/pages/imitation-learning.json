@@ -8,6 +8,10 @@
   "definition": "Imitation Learning (IL), also termed Learning from Demonstration (LfD) or Programming by Demonstration (PbD), is the sequential-decision-making paradigm in which an autonomous agent acquires a policy \u03c0(a|s) mapping observations to actions by mimicking expert demonstrations rather than by maximisi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:learning-from-demonstration",
       "label": "Learning from Demonstration"
     },

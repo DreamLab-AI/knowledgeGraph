@@ -8,6 +8,10 @@
   "definition": "Computer Vision is the field of artificial intelligence concerned with enabling machines to interpret, understand, and process visual information from the world, emulating human visual perception capabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:vision-processing",
       "label": "Vision Processing"
     }

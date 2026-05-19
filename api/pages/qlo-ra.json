@@ -8,6 +8,10 @@
   "definition": "An extension of LoRA that combines 4-bit quantisation with low-rank adaptation, enabling fine-tuning of very large models (65B+ parameters) on consumer-grade GPUs.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:parameter-efficient-fine-tuning",
       "label": "Parameter Efficient Fine-Tuning"
     }

@@ -8,6 +8,10 @@
   "definition": "tactile sensing is a robotics and autonomous systems concept and a type of Tactile Sensor.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:tactile-sensor",
       "label": "Tactile Sensor"
     }

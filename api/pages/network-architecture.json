@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:network-architecture",
   "domain": "artificial-intelligence",
   "definition": "Network Architecture in AI refers to the structural design of neural networks, defining the arrangement of layers, connections, and computational units.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "Attention Aware Interaction refers to human-computer interaction techniques that leverage eye tracking, gaze detection, and attention modeling to understand user focus and adapt interfaces accordingly, enabling foveated rendering, gaze-based selection, and contextual content presentation in VR, A...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human-Computer Interaction"
     }

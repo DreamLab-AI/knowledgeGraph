@@ -8,6 +8,10 @@
   "definition": "Technical and business infrastructure connecting primary asset creation with resale marketplaces, enabling liquidity for digital collectibles, virtual real estate, and NFTs through automated royalty distribution and cross-platform trading protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-trading",
       "label": "Digital Asset Trading"
     }

@@ -8,8 +8,8 @@
   "definition": "The ETSI functional domain classification addressing the intersection of Interoperability and Creative domains within metaverse and extended reality ecosystems, encompassing technical standards, protocols, and frameworks that enable creative digital content\u2014including three-dimensional models, tex...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
     }
   ],
   "entityType": "Class",

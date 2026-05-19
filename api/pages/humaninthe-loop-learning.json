@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:humaninthe-loop-learning",
   "domain": "artificial-intelligence",
   "definition": "A concept in artificial intelligence related to Humaninthe Loop Learning.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "A formal disclosure document or notification that informs users about data collection practices, processing purposes, privacy policies, and their rights regarding personal information handling in digital platforms and metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:privacy-disclosure",
       "label": "Privacy Disclosure"
     }

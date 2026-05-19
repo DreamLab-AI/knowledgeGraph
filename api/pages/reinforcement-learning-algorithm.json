@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:reinforcement-learning-algorithm",
   "domain": "artificial-intelligence",
   "definition": "Reinforcement Learning Algorithms enable agents to learn optimal decision-making policies through interaction with environments, guided by reward signals.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

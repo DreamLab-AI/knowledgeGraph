@@ -8,8 +8,8 @@
   "definition": "A game design paradigm featuring large-scale virtual environments with non-linear progression, extensive player freedom, emergent gameplay, and exploratory mechanics that allow users to interact with the world in diverse ways beyond predetermined narrative paths.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

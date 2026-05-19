@@ -8,8 +8,8 @@
   "definition": "Federated Edge Learning combines distributed machine learning with edge computing, enabling collaborative model training across decentralized edge devices while keeping training data locally on-device.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

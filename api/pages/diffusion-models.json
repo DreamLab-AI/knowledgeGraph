@@ -8,6 +8,10 @@
   "definition": "Diffusion Models are a class of deep generative models that learn the data distribution p_data(x) by reversing a fixed forward Markov noising process q(x_t | x_{t-1}) that progressively corrupts data x_0 with Gaussian noise across T timesteps until x_T \u2248 N(0,I), then training a neural denoiser \u03b5_...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:latent-variable-model",
       "label": "Latent Variable Model"
     },

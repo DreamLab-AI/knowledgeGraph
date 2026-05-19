@@ -8,6 +8,10 @@
   "definition": "Swarm robotics control architecture where a central controller coordinates all robot agents, providing global optimisation but creating a single point of failure.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:centralized-control-architecture",
       "label": "Centralized Control Architecture"
     },

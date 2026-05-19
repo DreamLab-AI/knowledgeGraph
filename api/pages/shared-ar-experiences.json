@@ -8,6 +8,10 @@
   "definition": "Collaborative augmented reality interactions enabling multiple users to simultaneously view and interact with digital content overlaid on shared physical environments, supporting real-time synchronization of virtual objects across devices for social connection and joint activities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }

@@ -8,6 +8,10 @@
   "definition": "Data structure optimized for efficient storage, retrieval, and querying of 3D spatial objects within virtual worlds using hierarchical geometric partitioning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:spatial-data-structure",
       "label": "Spatial Data Structure"
     }

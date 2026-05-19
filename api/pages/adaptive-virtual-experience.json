@@ -8,6 +8,10 @@
   "definition": "Adaptive Virtual Experience refers to AI-driven immersive environments that dynamically adjust content, difficulty, pacing, and presentation in real-time based on user behavior, preferences, physiological responses, and interaction patterns to deliver personalized and engaging virtual reality exp...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-reality-experience",
       "label": "Virtual Reality Experience"
     }

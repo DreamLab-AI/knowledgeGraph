@@ -8,6 +8,10 @@
   "definition": "The architectural blueprint and standards-based modology for implementing digital twins within enterprise and industrial contexts, defining the layered structure from IoT foundation through application layer, and ensuring interoperability across cyber-physical systems and industrial metaverse pla...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:enterprise-architecture",
       "label": "Enterprise Architecture"
     }

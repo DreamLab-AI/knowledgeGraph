@@ -8,6 +8,10 @@
   "definition": "The exchange, purchase, and sale of digital assets including cryptocurrencies, NFTs, virtual land, in-game items, and other tokenized value through marketplaces, exchanges, and peer-to-peer transactions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

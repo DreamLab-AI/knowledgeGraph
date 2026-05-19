@@ -8,8 +8,8 @@
   "definition": "A cross-cutting domain encompassing AI-enabled creative content generation, including generative art, synthetic media, procedural content creation, AI-assisted design, computational creativity, and the intersection of artificial intelligence with artistic and media production workflows.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "The structural design and configuration of neural networks and machine learning systems, encompassing layer arrangements, activation functions, and connection patterns that determine how models process information and learn from data.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

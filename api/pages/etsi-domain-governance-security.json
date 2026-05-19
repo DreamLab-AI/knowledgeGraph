@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:etsi-domain-governance-security",
   "domain": "artificial-intelligence",
   "definition": "ETSI domain crossover representing security governance policies, risk management frameworks, and compliance enforcement across metaverse infrastructure and services. These Security Governance Systems coordinate Access Controls, Threat Management, and Compliance Verification.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.4,
   "maturity": "draft",

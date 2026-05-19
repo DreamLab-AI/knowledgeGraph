@@ -8,6 +8,10 @@
   "definition": "The process of making AI systems' behaviour and goals consistent with human values, preferences, and intentions. AI alignment encompasses technical mods and research aimed at ensuring AI systems act in accordance with human interests, even as they become more capable.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }

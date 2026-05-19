@@ -8,6 +8,10 @@
   "definition": "Tokens providing access to services.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:cryptocurrency-token",
       "label": "Cryptocurrency Token"
     }

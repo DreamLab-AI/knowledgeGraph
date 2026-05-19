@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:open-source-software",
   "domain": "infrastructure",
   "definition": "Open Source Software is a foundational concept in infrastructure that serves as a classification parent for 6 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

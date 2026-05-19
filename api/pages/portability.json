@@ -8,8 +8,8 @@
   "definition": "The capability for seamless migration of digital assets, identities, and experiences across heterogeneous virtual platforms through standardised formats metadata schemas, and blockchain bridges\u2014enabling users to transfer avatars, digital goods, and social connections without vendor lock-in, exemp...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

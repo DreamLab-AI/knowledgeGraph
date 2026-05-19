@@ -8,6 +8,10 @@
   "definition": "The structural design and organization of user interface components, interaction patterns, and navigation systems that enable users to interact with metaverse platforms and virtual environments across different devices and modalities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "CLI multi-agent systems are software architectures in which networks of autonomous AI agents operate natively within command-line and terminal environments, coordinating to decompose, plan, and execute complex long-horizon tasks through tool invocation, sandboxed code execution, inter-agent messa...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:agentic-workflow",
       "label": "Agentic Workflow"
     },

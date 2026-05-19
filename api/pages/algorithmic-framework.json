@@ -8,6 +8,10 @@
   "definition": "A algorithmic framework component in the Artificial Intelligence domain that required by ProceduralContentGeneration.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:ai-framework",
       "label": "AI Framework"
     }

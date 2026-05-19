@@ -8,8 +8,8 @@
   "definition": "Fairness Accuracy Tradeoffs represent the fundamental tension in machine learning between maximizing predictive accuracy and satisfying fairness constraints, characterized by the Pareto frontier of achievable (accuracy, fairness) pairs where improving one objective typically requires sacrificing ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

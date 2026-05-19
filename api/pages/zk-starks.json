@@ -8,6 +8,10 @@
   "definition": "Zero-Knowledge Scalable Transparent Arguments of Knowledge - a cryptographic proof system that enables verification of computations without revealing underlying data, featuring transparency through no trusted setup requirement, quantum resistance, and efficient scalability for large witness sizes...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:zero-knowledge-proof",
       "label": "Zero Knowledge Proof"
     }

@@ -8,6 +8,10 @@
   "definition": "The buying, selling, and exchange of cryptocurrencies, tokens, and other blockchain-based assets through centralised exchanges, decentralised protocols, and over-the-counter markets using various order types, trading strategies, and execution mechanisms to achieve price discovery and liquidity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:financial-trading",
       "label": "Financial Trading"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:supervised-learning",
   "domain": "artificial-intelligence",
   "definition": "Supervised Learning is the machine learning paradigm where models learn from labeled training data to predict outputs for new, unseen inputs. The learning algorithm finds patterns mapping input features to target labels, guided by a loss function measuring prediction errors.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "AI Search (also termed generative search, answer engine, conversational search, or retrieval-augmented search) is the class of web-scale information-access systems that pair a large language model (LLM) with a live retrieval layer over web indexes, document stores, or proprietary corpora to produ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:question-answering-system",
       "label": "Question Answering System"
     },

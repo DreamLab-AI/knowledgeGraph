@@ -8,6 +8,10 @@
   "definition": "Adoption of Convergent Technologies is the socio-technical process by which enterprises, governments, consumers and communities progressively integrate interoperating stacks of mutually reinforcing deep-technology families \u2014 artificial intelligence (including foundation models, generative AI and ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:socio-technical-transition",
       "label": "Socio-Technical Transition"
     },

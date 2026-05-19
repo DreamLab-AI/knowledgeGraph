@@ -8,6 +8,10 @@
   "definition": "Tracking Hardware is a type of Tracking Technology in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:tracking-technology",
       "label": "Tracking Technology"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:metaverse-safety-protocol",
   "domain": "spatial-computing",
   "definition": "Procedures and safeguards ensuring physical and psychological safety of users during immersive metaverse experiences.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

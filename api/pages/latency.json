@@ -8,6 +8,10 @@
   "definition": "Virtual performance metric representing the time delay between a user action and corresponding system response within networked immersive environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:quality-of-service",
       "label": "Quality of Service"
     }

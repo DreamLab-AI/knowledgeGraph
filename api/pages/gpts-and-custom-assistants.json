@@ -8,6 +8,10 @@
   "definition": "GPTs and Custom Assistants are a family of user-configured task-specific applications built on top of foundation large language models in which a vendor exposes a no-code or low-code authoring surface that lets a user, an enterprise administrator, or a third-party developer compose a persistent a...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:llm-application",
       "label": "LLM Application"
     },

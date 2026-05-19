@@ -8,6 +8,10 @@
   "definition": "Peer-to-peer marketplace enabling direct token swaps and digital asset trading through smart contracts without centralized intermediaries or custodial control.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:smart-contract",
       "label": "Smart Contract"
     }

@@ -8,8 +8,8 @@
   "definition": "The number of unique tokens in a model's tokenisation scheme, balancing expressiveness with computational efficiency, typically ranging from to tokens in modern language models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

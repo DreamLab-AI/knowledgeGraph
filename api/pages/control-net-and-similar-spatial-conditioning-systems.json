@@ -8,6 +8,10 @@
   "definition": "ControlNet and similar spatial conditioning systems constitute a family of neural network architectures and adapter frameworks that augment large pretrained text-to-image Diffusion Models with fine-grained spatial and semantic control signals\u2014enabling deterministic structural guidance over ge...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:conditional-image-generation",
       "label": "Conditional Image Generation"
     },

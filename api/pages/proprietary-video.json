@@ -8,6 +8,10 @@
   "definition": "Proprietary Video denotes the class of video coding formats, digital rights management (DRM) systems, adaptive bitrate streaming protocols, and broadcast transmission standards whose specification, licensing, or enforcement mechanism is controlled by a corporation, patent pool, or standards body ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:broadcast-standards",
       "label": "Broadcast Standards"
     },

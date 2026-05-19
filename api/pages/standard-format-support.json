@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:standard-format-support",
   "domain": "spatial-computing",
   "definition": "Implementation of standardized data formats enabling interoperability across metaverse platforms, including 3D asset formats like glTF (ISO/IEC 12113:2022), Universal Scene Description and 3D Tiles for seamless exchange of geometry, materials, animations, and scene descriptions between diverse sy...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

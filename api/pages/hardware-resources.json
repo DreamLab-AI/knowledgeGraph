@@ -8,6 +8,10 @@
   "definition": "The physical computing infrastructure required for metaverse access and operation, encompassing VR/AR headsets, computing devices, display technologies, tracking sensors, and connectivity hardware that collectively enable immersive virtual experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:computing-infrastructure",
       "label": "Computing Infrastructure"
     }

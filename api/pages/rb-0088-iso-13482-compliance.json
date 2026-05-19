@@ -8,6 +8,10 @@
   "definition": "iso 13482 compliance is a robotics and autonomous systems concept and a type of Functional Safety.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:functional-safety",
       "label": "Functional Safety"
     }

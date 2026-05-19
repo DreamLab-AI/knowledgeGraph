@@ -8,6 +8,10 @@
   "definition": "Mechanisms, architectures, and toolchains that translate declarative security and governance rules into runtime decisions\u2014permitting, denying, mutating, or auditing operations across compute, data, network, and AI systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:access-control",
       "label": "Access Control"
     },

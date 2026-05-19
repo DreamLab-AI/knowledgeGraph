@@ -8,8 +8,8 @@
   "definition": "Scene Understanding is the high-level semantic interpretation of visual and sensor data to comprehend the structure, context, objects, relationships, and dynamics of an environment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

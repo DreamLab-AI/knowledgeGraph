@@ -8,8 +8,8 @@
   "definition": "Independent blockchain connected to a parent blockchain via a two-way peg mechanism that operates with its own consensus and validation rules while enabling asset transfers between chains, providing scalability and experimental capabilities without impacting the main chain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

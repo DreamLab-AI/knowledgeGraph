@@ -8,6 +8,10 @@
   "definition": "Time orecasting (TSF) is the domain of statistical and machine learning mods that predict future values of ordered sequential observations indexed by time, encompassing classical statistical approaches (ARIMA \u2014 AutoRegressive Integrated Moving Average \u2014 modelling the s a linear combination of its...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:probabilistic-forecasting",
       "label": "Probabilistic Forecasting"
     },

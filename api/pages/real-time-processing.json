@@ -8,8 +8,8 @@
   "definition": "Real-time Processing is a computational model where data is processed immediately upon arrival or generation, with minimal latency between input and output.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     },
     {
       "id": "urn:ngm:class:data-processing",

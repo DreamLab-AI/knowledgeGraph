@@ -8,6 +8,10 @@
   "definition": "speed and separation monitoring is a robotics and autonomous systems concept and a type of Light Curtain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:light-curtain",
       "label": "Light Curtain"
     }

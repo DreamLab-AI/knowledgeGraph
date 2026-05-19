@@ -8,6 +8,10 @@
   "definition": "Manipulator robot is a robot with articulated mechanical arms designed to perform manipulation tasks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:robot",
       "label": "Robot"
     }

@@ -8,6 +8,10 @@
   "definition": "A regression performance metric representing the average magnitude of errors between predicted and actual values, calculated as the arithmetic mean of absolute differences between predictions and ground truth across all instances, providing an intuitive measure of prediction accuracy in the same ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:model-performance",
       "label": "Model Performance"
     }

@@ -8,6 +8,10 @@
   "definition": "Client side DCO is a technology infrastructure concept and a type of Decentralised Web.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:decentralised-web",
       "label": "Decentralised Web"
     }

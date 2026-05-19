@@ -8,6 +8,10 @@
   "definition": "Process of executing mutual exchange of non-fungible tokens between participants using atomic smart contract transactions that ensure simultaneous bilateral asset transfer.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

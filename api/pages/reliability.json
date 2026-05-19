@@ -8,8 +8,8 @@
   "definition": "The degree to which an AI system performs its intended function consistently and accurately over time and across repeated operations, producing predictable and dependable results under specified conditions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

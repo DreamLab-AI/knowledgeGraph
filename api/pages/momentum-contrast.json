@@ -8,8 +8,8 @@
   "definition": "A contrastive learning framework that maintains a large and consistent dictionary of encoded samples using a momentum-updated encoder, enabling effective contrastive learning with many negatives. MoCo provides stable comparison targets through the momentum encoder.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

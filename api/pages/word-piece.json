@@ -8,8 +8,8 @@
   "definition": "A subword tokenisation mod that merges character sequences based on likelihood maximisation rather than frequency, used in BERT and related models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

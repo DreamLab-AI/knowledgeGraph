@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:robotics-control",
   "domain": "artificial-intelligence",
   "definition": "Robotics Control integrates artificial intelligence with robotic systems to enable autonomous navigation, manipulation, perception, and task execution.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

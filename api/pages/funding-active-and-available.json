@@ -8,6 +8,10 @@
   "definition": "Funding (active and available) is a technology infrastructure concept and a type of Resource Management.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:resource-management",
       "label": "Resource Management"
     }

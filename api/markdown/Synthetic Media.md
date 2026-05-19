@@ -6,7 +6,7 @@
   "title": "Synthetic Media",
   "vc:slug": "synthetic-media",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Synthetic Media is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
   "domain": "infrastructure",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ]
 }
 ```
 

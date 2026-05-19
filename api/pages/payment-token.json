@@ -8,6 +8,10 @@
   "definition": "Payment Token is a type of Cryptocurrency Token in the blockchain domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:cryptocurrency-token",
       "label": "Cryptocurrency Token"
     }

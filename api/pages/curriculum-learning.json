@@ -8,8 +8,8 @@
   "definition": "A training strategy that presents examples to the model in a meaningful order, typically from easy to difficult, mimicking how humans learn. Curriculum learning can improve convergence speed, final performance, and generalization by structuring the learning progression.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

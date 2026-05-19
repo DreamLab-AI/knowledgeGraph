@@ -8,6 +8,10 @@
   "definition": "Metaverse Classification is a type of Etsi Metaverse Domain Taxonomy in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "Etsi Metaverse Domain Taxonomy"
     }

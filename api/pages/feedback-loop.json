@@ -8,6 +8,10 @@
   "definition": "Feedback Loop is a cybernetic and control-theoretic structure in which the output of a system is routed back as input to influence its subsequent behaviour, producing closed-loop regulation, amplification, learning, or instability depending on the loop's sign, gain, delay, and phase characteristi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:circular-causality",
       "label": "Circular Causality"
     },

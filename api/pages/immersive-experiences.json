@@ -8,6 +8,10 @@
   "definition": "Digital interactions utilising VR, AR, and mixed reality technologies to create engaging, interactive environments that generate a sense of presence and participation, spanning gaming, education, enterprise collaboration, and consumer applications within metaverse platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-experience",
       "label": "Digital Experience"
     }

@@ -8,6 +8,10 @@
   "definition": "A distributed storage infrastructure distributing data across peer-to-peer networks rather than centralised data centres, enabling data persistence, redundancy, and access without single points of failure.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

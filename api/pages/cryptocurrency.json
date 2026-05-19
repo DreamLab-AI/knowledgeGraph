@@ -8,6 +8,10 @@
   "definition": "Cryptocurrency is a class of bearer-style digital assets whose unit ownership, issuance schedule, and transaction history are jointly secured by Public-Key Cryptography and a permissionless Consensus Mechanism operated by a Peer-to-Peer Network of independent nodes, such that no centr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:cryptoasset",
       "label": "Cryptoasset"
     },

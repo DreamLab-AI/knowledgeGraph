@@ -8,6 +8,10 @@
   "definition": "International standard for quality management systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:safety-standard",
       "label": "Safety Standard"
     }

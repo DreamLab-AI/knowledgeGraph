@@ -8,6 +8,10 @@
   "definition": "Quantitative measures indicating the relative contribution or influence of individual input features on a machine learning model's predictions, enabling identification of the most critical variables driving model outputs.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }

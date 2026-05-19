@@ -8,6 +8,10 @@
   "definition": "Cryptocurrency Storage is a blockchain and distributed systems concept and a type of Digital Wallet.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:digital-wallet",
       "label": "Digital Wallet"
     }

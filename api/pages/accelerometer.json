@@ -8,6 +8,10 @@
   "definition": "Accelerometer - A microelectromechanical sensor (MEMS) that detects changes in velocity and gravity along three orthogonal axes, enabling robots to measure Motion, Orientation, and Vibration for real-time feedback control and navigation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }

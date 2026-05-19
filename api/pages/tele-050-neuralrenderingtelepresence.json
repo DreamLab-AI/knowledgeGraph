@@ -8,6 +8,10 @@
   "definition": "TELE 050 neuralrenderingtelepresence is a type of TELE 001 telepresence in the distributed collaboration domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:tele-001-telepresence",
       "label": "TELE 001 telepresence"
     }

@@ -8,6 +8,10 @@
   "definition": "Scene Optimization is a spatial computing concept and a type of Render Pipeline.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:render-pipeline",
       "label": "Render Pipeline"
     }

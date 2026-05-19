@@ -8,6 +8,10 @@
   "definition": "Distributed Identity (used interchangeably with decentralised identity and self-sovereign identity / SSI) is the architectural paradigm in which natural persons, legal entities, devices and digital objects own and present cryptographically-verifiable identifiers and attribute claims without depen...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:privacy-preserving-technology",
       "label": "Privacy-Preserving Technology"
     },

@@ -8,6 +8,10 @@
   "definition": "An enterprise-grade permissioned ereum fork, initiated by JPMorgan Chase's Blockchain Centre of Excellence and open-sourced under Apache 2.0 that extends the ereum protocol with private transaction envelopes managed by the Tessera privacy manager (successor to Constellation, implemented v...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:consortium-blockchain",
       "label": "Consortium Blockchain"
     },

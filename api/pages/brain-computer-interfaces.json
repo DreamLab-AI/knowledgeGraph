@@ -8,6 +8,10 @@
   "definition": "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cer...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:assistive-technology",
       "label": "Assistive Technology"
     },

@@ -8,8 +8,8 @@
   "definition": "Identity management in blockchain contexts refers to the systems and protocols enabling individuals and organisations to create, control, and verify digital identities without reliance on centralised authorities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

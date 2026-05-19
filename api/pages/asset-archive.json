@@ -8,6 +8,10 @@
   "definition": "Asset Archive is a digital repository system for long-term storage, management, and preservation of 3D models, textures, animations, and other virtual world components, incorporating provenance tracking, version control, and standardized formats to ensure accessibility and interoperability across...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-repository",
       "label": "Digital Repository"
     }

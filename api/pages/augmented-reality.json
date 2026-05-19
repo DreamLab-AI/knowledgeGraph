@@ -8,6 +8,10 @@
   "definition": "Augmented Reality (AR) is a technology that overlays digital content onto the real world in real-time, enhancing users' perception of their physical environment through smartphones, head-mounted displays, or smart glasses.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:extended-reality",
       "label": "Extended Reality"
     }

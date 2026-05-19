@@ -8,6 +8,10 @@
   "definition": "Strategies and technologies for preserving digital assets, metaverse content, and cultural heritage data over extended periods (10+ years), using durable storage media, format migration protocols, and AI-enhanced preservation systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-preservation",
       "label": "Digital Preservation"
     }

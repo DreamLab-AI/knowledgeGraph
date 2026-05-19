@@ -8,6 +8,10 @@
   "definition": "Democratic Engagement is a type of Metaverse and Telecollaboration in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-and-telecollaboration",
       "label": "Metaverse and Telecollaboration"
     }

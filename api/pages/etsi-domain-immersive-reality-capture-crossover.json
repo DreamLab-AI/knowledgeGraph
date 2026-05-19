@@ -8,6 +8,10 @@
   "definition": "Domain categorization marker indicating metaverse systems operating at the intersection of immersive interaction capabilities and reality capture technologies for photorealistic virtual environment creation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-model",
       "label": "Etsi Metaverse Domain Model"
     }

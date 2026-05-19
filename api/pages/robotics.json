@@ -8,8 +8,8 @@
   "definition": "Robotics is the interdisciplinary field encompassing the design, construction, operation, and application of robots and automated systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:automation",
-      "label": "Automation"
+      "id": "owl:Thing",
+      "label": "Thing"
     }
   ],
   "entityType": "Class",

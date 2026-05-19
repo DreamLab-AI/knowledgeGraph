@@ -8,6 +8,10 @@
   "definition": "A conceptual framework developed by ETSI defining the structural organisation, functional components, and interaction patterns of metaverse systems, providing a standardised reference architecture for telecommunications infrastructure supporting persistent, interconnected virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:domain-model",
       "label": "Domain Model"
     }

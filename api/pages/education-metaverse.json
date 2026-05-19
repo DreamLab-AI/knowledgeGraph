@@ -8,8 +8,8 @@
   "definition": "A virtual platform that provides immersive educational experiences through interconnected digital learning environments, enabling collaborative instruction, skills development, and knowledge transfer across distributed participants.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

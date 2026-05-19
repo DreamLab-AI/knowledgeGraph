@@ -8,6 +8,10 @@
   "definition": "Algorithmic Transparency Reports are periodic public disclosures that document AI system characteristics, performance metrics, governance practices, and accountability mechanisms to ensure public accountability, promote stakeholder trust, and address societal concerns about algorithmic decision-m...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

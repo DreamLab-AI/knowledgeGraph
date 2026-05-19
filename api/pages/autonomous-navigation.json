@@ -8,6 +8,10 @@
   "definition": "Autonomous Navigation encompasses the complete system capability for a robot or autonomous agent to move from one location to another without human guidance, integrating perception, localisation, mapping, path planning, obstacle avoidance, and control.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:autonomous-agent",
       "label": "Autonomous Agent"
     }

@@ -8,6 +8,10 @@
   "definition": "Policies, technologies, and practices designed to safeguard users' privacy, data, and safety on digital platforms, encompassing regulatory compliance, privacy-enhancing technologies, and platform safety features that protect against data misuse, harassment, and harmful content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-safety",
       "label": "Digital Safety"
     }

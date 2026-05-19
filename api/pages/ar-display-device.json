@@ -8,6 +8,10 @@
   "definition": "AR Display Device encompasses hardware systems including smart glasses, headsets, and head-mounted displays that superimpose computer-generated imagery onto the user's view of the real world through optical technologies such as waveguides, birdbath optics, holographic displays, and metasurfaces.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:display-hardware",
       "label": "Display Hardware"
     }

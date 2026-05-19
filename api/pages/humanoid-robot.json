@@ -8,6 +8,10 @@
   "definition": "A humanoid robot is an autonomous or semi-autonomous mechanical system whose overall morphology, kinematic chain, and sensorimotor organisation deliberately mirrors the human body plan: a vertical torso supported on two bipedal legs, bilateral upper limbs terminating in multi-fingered end-effecto...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:bipedal-robot",
       "label": "Bipedal Robot"
     },

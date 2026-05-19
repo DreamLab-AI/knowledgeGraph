@@ -8,6 +8,10 @@
   "definition": "Affective computing technologies integrated into metaverse systems that identify users emotional cues through facial expressions, body language, and voice tones, enabling context-aware, meaningful interactions that enhance genuine human-like experiences in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:human-computer-interaction",
       "label": "Human-Computer Interaction"
     }

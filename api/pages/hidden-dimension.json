@@ -8,6 +8,10 @@
   "definition": "The dimensionality of the internal representations in a neural network, determining the capacity of each layer to encode information, typically denoted as d_model in transformers.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:hyperparameter",
       "label": "Hyperparameter"
     }

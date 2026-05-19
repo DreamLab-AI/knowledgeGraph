@@ -8,6 +8,10 @@
   "definition": "Specialized computing components including CPUs, GPUs, and accelerators that execute computational operations for graphics rendering, artificial intelligence workloads, and real-time data processing in immersive digital environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:physical-hardware",
       "label": "Physical Hardware"
     }

@@ -8,6 +8,10 @@
   "definition": "Digital Workplace Platform (DWP) is an integrated software environment \u2014 combining communication, collaboration, content management, workflow automation, and people analytics into a unified, identity-governed ecosystem \u2014 that serves as the primary operational substrate for distributed knowledge-w...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:cloud-platform",
       "label": "Cloud Platform"
     },

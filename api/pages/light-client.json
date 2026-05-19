@@ -8,6 +8,10 @@
   "definition": "Resource-efficient blockchain client that validates block headers and uses cryptographic proofs (Merkle proofs, state proofs) to verify transaction inclusion without downloading full blockchain state.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:node",
       "label": "Node"
     }

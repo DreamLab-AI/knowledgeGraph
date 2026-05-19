@@ -8,6 +8,10 @@
   "definition": "Comprehensive dataset describing behavioral, emotional, cognitive, and social traits derived from virtual interactions, enabling personalized experiences and psychological research in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:psychological-research",
       "label": "Psychological Research"
     }

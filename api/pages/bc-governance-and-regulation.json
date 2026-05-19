@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:738274bfded05335b1eae27d92c80dd0b513abf9f49e962ba35619b877744271",
+  "title": "Governance and Regulation",
+  "slug": "bc-governance-and-regulation",
+  "public": true,
+  "classIri": "urn:ngm:class:bc-governance-and-regulation",
+  "domain": "blockchain",
+  "definition": "Intermediate taxonomy category for governance and regulation concepts within the blockchain domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:blockchain",
+      "label": "Blockchain"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

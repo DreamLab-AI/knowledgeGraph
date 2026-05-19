@@ -8,6 +8,10 @@
   "definition": "A Digital Identity Wallet is a software application \u2014 typically running on a smartphone, secure element, or cloud-hosted enclave \u2014 that stores, manages, and selectively presents cryptographically signed digital credentials (verifiable credentials, mobile driving licences, electronic identity atte...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-key-container",
       "label": "Cryptographic Key Container"
     },

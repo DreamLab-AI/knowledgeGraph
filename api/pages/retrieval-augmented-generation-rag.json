@@ -8,6 +8,10 @@
   "definition": "Retrieval Augmented Generation (RAG) is a neural architecture paradigm that augments large language model generation with dynamic retrieval of non-parametric external knowledge at inference time, enabling factually grounded, up-to-date, and citation-traceable responses without retraining model we...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:knowledge-intensive-nlp",
       "label": "Knowledge-Intensive NLP"
     },

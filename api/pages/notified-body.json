@@ -8,6 +8,10 @@
   "definition": "A conformity assessment body notified under the AI Act and other relevant EU harmonisation legislation, responsible for performing third-party conformity assessment of certain high-risk AI systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:regulatory-framework",
       "label": "Regulatory Framework"
     }

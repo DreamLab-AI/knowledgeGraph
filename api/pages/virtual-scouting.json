@@ -8,6 +8,10 @@
   "definition": "The process of exploring and evaluating potential filming locations or virtual production environments using digital tools, VR headsets, 360-degree cameras, and game engines, enabling filmmakers to navigate through locations remotely, compose shots, set up scene blocking, and make creative decisi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:pre-production",
       "label": "Pre-Production"
     }

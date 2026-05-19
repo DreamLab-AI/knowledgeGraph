@@ -8,6 +8,10 @@
   "definition": "Product Design is the multidisciplinary creative and engineering practice of conceiving, planning, and producing goods, digital interfaces, and services that satisfy user needs, business objectives, and manufacturing or deployment constraints \u2014 integrating human-centred research mods, aesthetic j...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:creative-practice",
       "label": "Creative Practice"
     },

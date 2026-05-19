@@ -8,6 +8,10 @@
   "definition": "Digital Curation Platform is a type of Digital Asset Management in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }

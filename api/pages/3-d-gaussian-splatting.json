@@ -8,6 +8,10 @@
   "definition": "\"A neural rendering technique that represents 3D scenes as collections of s of 3D Gaussian primitives with learnable positions, colours, opacities, and covariances, enabling photorealistic real-time rendering at 100+ frames per second through GPU-accelerated rasterisation, revolutionising telepre...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:tele-050-neural-rendering-telepresence",
       "label": "TELE-050-neural-rendering-telepresence"
     }

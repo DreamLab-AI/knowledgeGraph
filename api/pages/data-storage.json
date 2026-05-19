@@ -8,6 +8,10 @@
   "definition": "Data storage encompasses the systems, technologies, and architectures used to capture, retain, and retrieve digital information for ongoing and future use.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:infrastructure-component",
       "label": "Infrastructure Component"
     }

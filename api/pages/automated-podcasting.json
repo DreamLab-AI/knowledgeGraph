@@ -8,6 +8,10 @@
   "definition": "Automated Podcasting is the application of artificial intelligence, machine learning, and generative systems to partially or fully automate the end-to-end podcast production pipeline\u2014spanning script generation, synthetic voice synthesis, AI-driven audio editing, automated transcription, show-note...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-audio",
       "label": "AI Audio"
     },

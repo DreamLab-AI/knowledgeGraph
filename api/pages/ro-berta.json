@@ -8,8 +8,8 @@
   "definition": "Robustly Optimised BERT Approach: an optimised version of BERT that removes next sentence prediction, trains with larger batches and learning rates, and uses dynamic masking to improve performance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

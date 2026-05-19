@@ -8,6 +8,10 @@
   "definition": "Software libraries and development environments such as TensorFlow and PyTorch that provide tools, APIs, and abstractions for building, training, and deploying machine learning models used in metaverse AI applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:ai-development-tools",
       "label": "AI Development Tools"
     }

@@ -8,6 +8,10 @@
   "definition": "Digital infrastructure that embeds imperceptible markers into media content to establish provenance, authenticate ownership, detect tampering, and identify AI-generated content, supporting content credentials standards like C2PA for verifiable digital asset tracking.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:content-authentication",
       "label": "Content Authentication"
     }

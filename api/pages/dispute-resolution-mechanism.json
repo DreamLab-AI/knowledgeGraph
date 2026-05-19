@@ -8,6 +8,10 @@
   "definition": "Agreed process and framework for resolving conflicts between metaverse participants through mediation, arbitration, or other structured resolution mods.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }

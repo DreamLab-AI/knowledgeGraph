@@ -8,6 +8,10 @@
   "definition": "A systematic process or system for reviewing, filtering, and managing user-generated content to enforce community standards, legal requirements, and platform policies while balancing freedom of expression with safety and compliance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }

@@ -8,6 +8,10 @@
   "definition": "OpenXR is the Khronos Group's open, royalty-free API standard for cross-platform access to extended reality (XR) hardware \u2014 encompassing virtual reality (VR) headsets, augmented reality (AR) glasses, and mixed reality (MR) devices \u2014 that defines a unified application-to-runtime interface, elimina...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:extended-reality-api",
       "label": "Extended Reality API"
     },

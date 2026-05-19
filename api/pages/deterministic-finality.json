@@ -8,8 +8,8 @@
   "definition": "Transaction finality achieved through explicit protocol mechanisms in BFT-based consensus systems, providing absolute mathematical guarantee that finalized blocks cannot be reverted.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

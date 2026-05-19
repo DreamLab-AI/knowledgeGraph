@@ -8,6 +8,10 @@
   "definition": "The collective technologies comprising virtual reality (VR), augmented reality (AR), mixed reality (MR), and extended reality (XR) that create digital experiences blending physical and virtual environments, enabling user presence and interaction within computer-generated or enhanced spaces.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-technology",
       "label": "Digital Technology"
     }

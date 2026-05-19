@@ -8,6 +8,10 @@
   "definition": "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:immersive-experience",
       "label": "Immersive Experience"
     }

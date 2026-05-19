@@ -8,6 +8,10 @@
   "definition": "LangChain is an open-source Python and TypeScript framework for composing Large Language Model applications as chains of modular components \u2014 prompt templates, LLM wrappers, output parsers, memory stores, retrieval augmented generation pipelines, and tool-calling agents \u2014 providing a unified ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:agent-orchestration-framework",
       "label": "Agent Orchestration Framework"
     },

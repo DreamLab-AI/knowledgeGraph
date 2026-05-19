@@ -8,6 +8,10 @@
   "definition": "A simulated camera system in virtual production environments that captures real-time virtual scenes, enabling filmmakers to visualize and shoot CG environments as if using a physical camera with real-world lens and movement characteristics.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:virtual-production",
       "label": "Virtual Production"
     }

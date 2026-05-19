@@ -8,8 +8,8 @@
   "definition": "Blockchain Transaction is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "The structural framework defining decision-making processes, authority distribution, and rule enforcement mechanisms within metaverse platforms, encompassing both centralised corporate governance models and decentralised blockchain-based systems using DAOs and smart contracts for community-driven...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:platform-governance",
       "label": "Platform Governance"
     }

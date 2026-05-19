@@ -8,6 +8,10 @@
   "definition": "Interfaces is a technology infrastructure concept and a type of User Interface.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }

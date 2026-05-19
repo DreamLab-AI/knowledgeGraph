@@ -8,6 +8,10 @@
   "definition": "Software tools and platform features that enable guardians to monitor, filter, and limit children's access to digital content, applications, and online interactions, using AI-powered content analysis and customizable restrictions to promote safe technology use.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-safety",
       "label": "Digital Safety"
     }

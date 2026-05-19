@@ -8,6 +8,10 @@
   "definition": "Framework of rules and decision-making processes defining authority and accountability within a metaverse ecosystem.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-framework",
       "label": "AI Governance Framework"
     }

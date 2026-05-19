@@ -8,6 +8,10 @@
   "definition": "The comprehensive international standards established by the Financial Action Task Force (FATF)\u2014an intergovernmental policy-making body founded at the July 1989 G7 Summit in Paris comprising 40 member jurisdictions and 2 regional organizations coordinating with 9 FATF-Style Regional Bodies (FSRBs...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:aml-kyc-compliance",
       "label": "AML KYC Compliance"
     }

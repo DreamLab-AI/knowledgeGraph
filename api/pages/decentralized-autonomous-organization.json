@@ -8,8 +8,8 @@
   "definition": "An organisational entity operating through Smart Contracts, Distributed Governance, and community voting mechanisms without centralised authority or hierarchical control.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

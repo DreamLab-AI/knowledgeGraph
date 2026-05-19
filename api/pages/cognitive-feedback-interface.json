@@ -8,8 +8,8 @@
   "definition": "Adaptive interface system that dynamically adjusts information flow and interaction modalities based on real-time assessment of user cognitive state, attention levels, and mental workload.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

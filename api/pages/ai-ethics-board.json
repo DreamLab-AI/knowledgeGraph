@@ -8,6 +8,10 @@
   "definition": "AI ics Board is a multidisciplinary oversight committee comprising technical experts, icists, legal professionals, domain specialists, and stakeholder representatives, responsible for conducting ical reviews of AI systems, providing guidance on ical dilemmas, and exercising veto authority over AI...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

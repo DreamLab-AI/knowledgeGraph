@@ -8,6 +8,10 @@
   "definition": "Cross-chain asset transfer protocol where tokens are locked in a smart contract on the source chain and equivalent wrapped tokens are minted on the destination chain, maintaining a 1:1 backing ratio.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:de-fi-protocol",
       "label": "De Fi Protocol"
     }

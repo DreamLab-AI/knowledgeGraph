@@ -8,6 +8,10 @@
   "definition": "DC servo motor combines a direct-current electric motor with integrated or external feedback control electronics to enable precise position, velocity, or torque regulation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:electric-motor",
       "label": "Electric Motor"
     },

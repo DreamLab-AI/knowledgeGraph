@@ -8,6 +8,10 @@
   "definition": "Systems and interfaces that enable users to find relevant content, assets, experiences, and other users within metaverse platforms through keyword search, semantic queries, recommendations, and spatial exploration mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:information-retrieval",
       "label": "Information Retrieval"
     }

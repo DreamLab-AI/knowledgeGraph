@@ -8,6 +8,10 @@
   "definition": "A Cryptographic System is an integrated framework of mathematical algorithms, protocols, and mechanisms designed to provide information security properties including confidentiality, integrity, authentication, and non-repudiation in adversarial environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }

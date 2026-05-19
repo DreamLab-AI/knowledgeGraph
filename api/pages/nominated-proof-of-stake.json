@@ -8,6 +8,10 @@
   "definition": "A PoS variant where token holders nominate validators for block creation, with elected validators producing blocks while nominators share rewards and slashing risks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }

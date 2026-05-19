@@ -8,6 +8,10 @@
   "definition": "The principle that all persons, institutions and entities, including AI systems and their operators, are accountable to laws that are publicly promulgated, equally enforced, independently adjudicated and consistent with international human rights norms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }

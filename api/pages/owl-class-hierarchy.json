@@ -8,6 +8,10 @@
   "definition": "The taxonomic structure of classes and subclasses defined in the Web Ontology Language (OWL) that organizes concepts into inheritance relationships, enabling automated reasoning, consistency checking, and inference of implicit knowledge in semantic web applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:ontology-structure",
       "label": "Ontology Structure"
     }

@@ -8,6 +8,10 @@
   "definition": "Pathology AI comprises artificial intelligence systems for automated analysis of histopathology slides, cytology specimens, and other pathological images.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:medical-imaging-ai",
       "label": "Medical Imaging AI"
     }

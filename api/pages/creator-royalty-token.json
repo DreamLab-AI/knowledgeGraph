@@ -8,6 +8,10 @@
   "definition": "Token granting its holder a share of ongoing from creative works, enabling automated royalty distribution and fractional ownership of intellectual property income streams.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

@@ -8,6 +8,10 @@
   "definition": "Interpretability techniques applied after a machine learning model has been trained, providing explanations for model behaviour and predictions without modifying the model's architecture or requiring retraining.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }

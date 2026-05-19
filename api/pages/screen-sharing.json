@@ -8,6 +8,10 @@
   "definition": "Screen sharing is the real-time capture and transmission of a computing device's visual display output \u2014 encompassing full-desktop, application-window, browser-tab, and mobile-device viewports \u2014 to one or more remote participants over a network, enabling synchronous visual communication of interf...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:remote-desktop-technology",
       "label": "Remote Desktop Technology"
     },

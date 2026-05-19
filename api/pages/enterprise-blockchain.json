@@ -8,8 +8,8 @@
   "definition": "Enterprise blockchain refers to permissioned distributed ledger platforms designed specifically for business use cases, providing organisations with controlled access, enhanced privacy, and regulatory compliance capabilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

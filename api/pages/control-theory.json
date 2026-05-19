@@ -8,6 +8,10 @@
   "definition": "Control Theory is the interdisciplinary mathematical framework for analysing and synthesising dynamical systems that automatically regulate themselves toward desired behaviour in the presence of disturbances, model uncertainty, sensor noise, and parameter variation, formalising the closed-loop fe...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:control-engineering",
       "label": "Control Engineering"
     },

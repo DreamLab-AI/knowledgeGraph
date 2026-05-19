@@ -8,6 +8,10 @@
   "definition": "Digital twin systems designed for interoperability across different software platforms and environments, enabling real-time data exchange, collaborative simulation, and unified virtual representations of physical assets or processes that can be accessed and manipulated from multiple compatible sy...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin-technology",
       "label": "Digital Twin Technology"
     }

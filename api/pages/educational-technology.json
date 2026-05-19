@@ -8,6 +8,10 @@
   "definition": "Educational Technology in the metaverse context encompasses the tools, platforms, and modologies for delivering learning experiences in immersive virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-technology",
       "label": "Metaverse Technology"
     }

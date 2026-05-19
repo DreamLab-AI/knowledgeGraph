@@ -8,6 +8,10 @@
   "definition": "An ical Framework is a structured set of moral principles, values, and reasoning mods that guide the development, deployment, and use of AI systems to ensure they respect human dignity, promote well-being, and avoid harm.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }

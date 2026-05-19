@@ -8,8 +8,8 @@
   "definition": "Privacy-Preserving Data Mining is a research field and set of techniques enabling extraction of useful knowledge patterns from datasets while protecting sensitive information and preventing disclosure of individual records, balancing utility of discovered patterns with privacy protection of under...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

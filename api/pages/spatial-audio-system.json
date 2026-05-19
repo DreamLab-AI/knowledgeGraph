@@ -8,6 +8,10 @@
   "definition": "An integrated audio technology framework creating three-dimensional soundscapes for VR, AR, and metaverse applications by simulating sound direction, distance, and environmental acoustics, enabling realistic audio experiences that respond dynamically to user movement and head orientation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:immersive-audio-technology",
       "label": "Immersive Audio Technology"
     }

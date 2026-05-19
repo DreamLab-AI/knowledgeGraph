@@ -8,6 +8,10 @@
   "definition": "The capability for heterogeneous blockchain networks, software platforms, and distributed systems to communicate, exchange data, and transfer value seamlessly without centralized intermediaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:next-generation-mobile",
       "label": "Next Generation Mobile"
     }

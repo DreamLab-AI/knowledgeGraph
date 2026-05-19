@@ -8,8 +8,8 @@
   "definition": "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

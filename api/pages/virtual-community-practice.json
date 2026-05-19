@@ -8,6 +8,10 @@
   "definition": "The modologies, norms, and behaviors that govern how members interact, collaborate, and build relationships within virtual community platforms, including governance structures, social conventions, and collective practices that shape online community culture.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:community-governance",
       "label": "Community Governance"
     }

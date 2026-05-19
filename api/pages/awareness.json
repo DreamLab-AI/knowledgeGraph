@@ -8,6 +8,10 @@
   "definition": "Awareness in metaverse contexts refers to systems and mechanisms that provide users with perception of other participants, environmental changes, and relevant contextual information in shared virtual spaces, supporting presence, social interaction, and collaborative activities through visual, aud...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:social-computing",
       "label": "Social Computing"
     }

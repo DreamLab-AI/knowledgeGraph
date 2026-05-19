@@ -8,6 +8,10 @@
   "definition": "Threat Actor is a blockchain and distributed systems concept and a type of Attack Vector.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:attack-vector",
       "label": "Attack Vector"
     }

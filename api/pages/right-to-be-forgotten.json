@@ -8,6 +8,10 @@
   "definition": "A privacy right framework enabling individuals to request deletion or removal of personal data from online platforms and databases, with verification and audit mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }

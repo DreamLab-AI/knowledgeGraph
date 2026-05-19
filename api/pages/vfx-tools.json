@@ -8,6 +8,10 @@
   "definition": "VFX Tools is a type of Visual Effects in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }

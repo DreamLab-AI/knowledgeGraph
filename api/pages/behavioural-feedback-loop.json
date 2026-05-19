@@ -8,8 +8,8 @@
   "definition": "Recurring cycle where user actions influence environment responses which in turn modify subsequent user behavior through adaptive learning and reinforcement mechanisms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

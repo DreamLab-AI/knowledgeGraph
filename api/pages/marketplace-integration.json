@@ -8,6 +8,10 @@
   "definition": "Systems and APIs that connect metaverse platforms with NFT marketplaces, e-commerce platforms, and digital asset trading systems, enabling seamless buying, selling, and trading of virtual goods, real estate, and collectibles.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-commerce",
       "label": "Digital Commerce"
     }

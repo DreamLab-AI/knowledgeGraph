@@ -8,6 +8,10 @@
   "definition": "A distinctive visual pattern or fiducial placed in physical environments to enable computer vision systems to track position, orientation, and pose for augmented reality applications, including QR codes, AprilTags, ARTags, and custom image targets that serve as reference points for overlaying dig...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:ar-technology",
       "label": "AR Technology"
     }

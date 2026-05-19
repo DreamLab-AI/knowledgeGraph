@@ -8,6 +8,10 @@
   "definition": "Design modologies for creating accessible VR, AR, and metaverse experiences that accommodate diverse user abilities, including those with visual, auditory, motor, and cognitive disabilities, ensuring equitable access through alternative input mods, adaptive interfaces, and assistive technology in...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:accessible-design",
       "label": "Accessible Design"
     }

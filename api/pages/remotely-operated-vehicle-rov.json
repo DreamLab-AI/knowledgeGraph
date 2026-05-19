@@ -8,6 +8,10 @@
   "definition": "ROV is tered underwater robot controlled remotely via cable providing power and communications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:underwater-robot",
       "label": "Underwater Robot"
     }

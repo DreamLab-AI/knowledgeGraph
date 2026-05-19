@@ -8,6 +8,10 @@
   "definition": "A systematic, independent examination and eof an artificial intelligence system's design, development processes, deployment procedures, operational performance, documentation, governance arrangements, and compliance with applicable requirements, conducted by qualified assessors to verify conformi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }

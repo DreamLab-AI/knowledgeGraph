@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/distributed-collaboration#AugmentedRealityCollaboration
-legacy_uri:: urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration
 public:: true
 
 # Augmented Reality Collaboration
@@ -62,90 +59,19 @@ public:: true
       "vc:label": "TELE-001-telepresence"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.00"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Computer Vision]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-73721de2f65e"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "distributed-collaboration"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/distributed-collaboration#AugmentedRealityCollaboration"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "TC-0021"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "developing"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T13:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Augmented Reality Collaboration"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.50"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "active"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:distributed-collaboration:augmented-reality-collaboration"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -164,6 +90,10 @@ public:: true
   "domain": "distributed-collaboration",
   "maturity": "emerging",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
     {
       "@id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
@@ -264,9 +194,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:92d2fd79cd61c3ad3816059dede0a192fd3322860afc527aeaf756c1e73237f4@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

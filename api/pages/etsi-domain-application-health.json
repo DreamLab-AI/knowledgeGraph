@@ -8,8 +8,8 @@
   "definition": "Cross-domain marker for metaverse application components focused on healthcare and wellness including telemedicine platforms, medical training simulations, therapeutic VR applications, and health monitoring systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

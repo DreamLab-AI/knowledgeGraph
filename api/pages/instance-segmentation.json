@@ -8,6 +8,10 @@
   "definition": "Instance Segmentation extends object detection by predicting precise pixel-level masks for each individual object instance, combining object detection with semantic segmentation to delineate exact boundaries of distinct objects.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }

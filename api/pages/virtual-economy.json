@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:virtual-economy",
   "domain": "blockchain",
   "definition": "Virtual Economy is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

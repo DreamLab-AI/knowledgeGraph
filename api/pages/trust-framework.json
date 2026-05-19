@@ -8,6 +8,10 @@
   "definition": "Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ec...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:certification-scheme",
       "label": "Certification Scheme"
     },

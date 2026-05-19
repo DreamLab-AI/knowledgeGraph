@@ -8,6 +8,10 @@
   "definition": "A sampling-based path planning algorithm that incrementally builds a tree of collision-free configurations by randomly sampling the configuration space and connecting samples to the nearest existing tree node. It efficiently explores high-dimensional spaces and is probabilistically complete.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:rb-1016-path-planning",
       "label": "RB-1016-path-planning"
     }

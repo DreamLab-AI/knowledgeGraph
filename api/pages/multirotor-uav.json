@@ -8,6 +8,10 @@
   "definition": "Multirotor UAV achieves lift through multiple propellers driven by motors.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:aerial-robot",
       "label": "Aerial Robot"
     }

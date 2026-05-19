@@ -8,6 +8,10 @@
   "definition": "An optoelectronic sensor device that detects electromagnetic radiation in the infrared spectrum (wavelengths approximately 700 nanometers to 1 millimeter) to measure heat emission, enable proximity detection, support autonomous navigation, or facilitate object recognition in robotic systems, empl...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:optoelectronic-device",
       "label": "OptoelectronicDevice"
     },

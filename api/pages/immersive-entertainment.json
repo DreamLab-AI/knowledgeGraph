@@ -8,6 +8,10 @@
   "definition": "Entertainment experiences leveraging VR, AR, and mixed reality technologies to create interactive, participatory content that transforms audiences from passive spectators into active participants within gaming, theme parks, live events, and digital experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-entertainment",
       "label": "Digital Entertainment"
     }

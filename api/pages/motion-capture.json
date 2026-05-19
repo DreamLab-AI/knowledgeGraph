@@ -8,6 +8,10 @@
   "definition": "Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time \u2014 translating real-world kinematic data i...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:animation",
       "label": "Animation"
     },

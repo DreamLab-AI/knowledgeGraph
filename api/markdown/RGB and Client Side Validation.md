@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#RGBAndClientSideValidation
-legacy_uri:: urn:visionclaw:concept:blockchain:rgb-and-client-side-validation
 public:: true
 
 # RGB and Client Side Validation
@@ -854,94 +851,19 @@ public:: true
       "vc:label": "zero-knowledge proof"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "RGB Protocol, Client-Side Validation, RGB Smart Contracts, Layer 3 Bitcoin, CSV Protocol, LNP/BP Smart Contracts"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Blockchain]], [[Digital Twin]], [[Bitcoin]], [[Lightning Network]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-97c28dcfb3eb"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#RGBAndClientSideValidation"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0003"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "RGB and Client Side Validation"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.54"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:rgb-and-client-side-validation"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:rgb-and-client-side-validation"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bfb4b3df596ba59987d6199be20eb25c7b1c15fa9c9d033c1e4ad5cebed7c215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -960,6 +882,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
     {
       "@id": "urn:ngm:class:client-side-validation-theory",
       "label": "Client-Side Validation Theory"
@@ -2354,9 +2280,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:bfb4b3df596ba59987d6199be20eb25c7b1c15fa9c9d033c1e4ad5cebed7c215@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

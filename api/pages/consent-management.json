@@ -8,8 +8,8 @@
   "definition": "System for recording and enforcing user permissions for data collection, processing, and sharing across metaverse platforms, ensuring compliance with privacy regulations and user autonomy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
     }
   ],
   "entityType": "Class",

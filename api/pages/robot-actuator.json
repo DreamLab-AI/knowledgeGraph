@@ -8,6 +8,10 @@
   "definition": "Robot Actuator is a type of Hardware Component in the robotics domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component"
     }

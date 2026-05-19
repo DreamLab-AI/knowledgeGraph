@@ -8,6 +8,10 @@
   "definition": "A data integration approach that creates a virtual abstraction layer enabling users and applications to access, query, and integrate data from multiple disparate sources as a single unified system without physically moving or replicating the underlying data, supporting real-time access and reduci...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-integration",
       "label": "Data Integration"
     }

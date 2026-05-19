@@ -8,6 +8,10 @@
   "definition": "A systematic emodology for measuring, analyzing, and reporting the environmental consequences of blockchain network operations, encompassing energy consumption measurement (electricity usage per transaction, annual network consumption), carbon emissions calculation (CO\u2082e from electricity generati...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:life-cycle-assessment",
       "label": "LifeCycleAssessment"
     },

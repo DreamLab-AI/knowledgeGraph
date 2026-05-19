@@ -8,8 +8,8 @@
   "definition": "A functional domain classification within the European Telecommunications Standards Institute (ETSI) metaverse technical architecture framework (GS MEC 003, GS ARF 003) that encompasses the foundational technological infrastructure required to deliver immersive experiences including extended real...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

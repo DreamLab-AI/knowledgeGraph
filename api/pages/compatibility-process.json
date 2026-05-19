@@ -8,6 +8,10 @@
   "definition": "Systematic procedure for ensuring that digital assets, applications, and systems conform to common standards, protocols, and specifications to enable seamless exchange, integration, and interoperability across metaverse platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:compatibility-standards",
       "label": "Compatibility Standards"
     }

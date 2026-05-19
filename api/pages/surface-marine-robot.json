@@ -8,6 +8,10 @@
   "definition": "Surface marine robot operates on water surface like unmanned surface vessels.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:marine-robot",
       "label": "Marine Robot"
     }

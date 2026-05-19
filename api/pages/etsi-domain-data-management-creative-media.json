@@ -8,8 +8,8 @@
   "definition": "Crossover domain for ETSI metaverse categorisation addressing data infrastructure supporting creative content workflows, asset management, and version control systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

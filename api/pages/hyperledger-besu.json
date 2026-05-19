@@ -8,8 +8,8 @@
   "definition": "Enterprise-grade ereum client developed by Hyperledger Foundation supporting both public and private blockchain deployments with multiple consensus mechanisms\u2014ProofOfWork, ProofOfAuthority, Practical Byzantine Fault Tolerance|PBFT.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

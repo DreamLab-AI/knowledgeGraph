@@ -8,6 +8,10 @@
   "definition": "Context Engineering is the systems-level discipline of designing, curating, compressing, and orchestrating the information delivered into a Large Language Model's context window across a multi-step agentic loop, popularised between mid-2024 and mid-2025 by Walden Yan (Cognition AI's \"Don't Build ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:agent-engineering",
       "label": "Agent Engineering"
     },

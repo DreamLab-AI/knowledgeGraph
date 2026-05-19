@@ -8,6 +8,10 @@
   "definition": "The networking technologies and protocols that enable seamless communication, data synchronization, and user interaction across distributed virtual environments, including real-time streaming, peer-to-peer networks, and cross-platform interoperability systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

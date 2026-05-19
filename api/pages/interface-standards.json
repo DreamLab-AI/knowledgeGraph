@@ -8,6 +8,10 @@
   "definition": "Technical specifications and protocols that define how metaverse components, systems, and services communicate and interoperate, encompassing XR device interfaces, data exchange formats, and cross-platform communication requirements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

@@ -8,6 +8,10 @@
   "definition": "ComfyUI Client refers collectively to the suite of client-side interfaces, API layers, and software components that communicate with a running ComfyUI server\u2014the open-source, node-based diffusion model inference engine created by comfyanonymous (GitHub user) and released in January 2023\u2014enabling ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:api-client",
       "label": "API Client"
     },

@@ -8,8 +8,8 @@
   "definition": "Economic model and gameplay process where users gain real-world value through virtual participation, task completion, and reward distribution mechanisms that convert in-game achievements into tradeable assets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

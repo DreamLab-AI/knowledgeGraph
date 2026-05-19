@@ -8,8 +8,8 @@
   "definition": "Motion Planning extends path planning by incorporating robot dynamics, control constraints, and time-parametrisation to generate dynamically feasible trajectories that account for velocity, acceleration, jerk, and actuator limitations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
     }
   ],
   "entityType": "Class",

@@ -8,8 +8,8 @@
   "definition": "Power-Efficient AI optimizes machine learning systems to minimize energy consumption during inference and training, critical for battery-powered edge devices, IoT sensors, and mobile platforms requiring extended deployment lifetimes.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

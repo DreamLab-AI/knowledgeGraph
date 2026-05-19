@@ -8,6 +8,10 @@
   "definition": "AI companions are a class of consumer-facing conversational artificial intelligence systems explicitly designed and marketed to form ongoing affective, social, and parasocial relationships with individual human users\u2014distinct from task-oriented assistants (Siri, Alexa, Google Assistant) that opti...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:affective-computing-system",
       "label": "Affective Computing System"
     },

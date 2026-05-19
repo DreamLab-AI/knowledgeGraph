@@ -8,6 +8,10 @@
   "definition": "Technologies and protocols enabling secure exchange of data between parties while protecting sensitive information through techniques such as differential privacy, secure multi-party computation, federated learning, and synthetic data generation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-sharing",
       "label": "Data Sharing"
     }

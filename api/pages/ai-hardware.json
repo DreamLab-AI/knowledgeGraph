@@ -8,6 +8,10 @@
   "definition": "AI Hardware encompasses specialized computing hardware designed to accelerate artificial intelligence and machine learning workloads, including GPUs, TPUs, NPUs, and other AI accelerators optimized for training neural networks and running inference at scale.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:computer-hardware",
       "label": "Computer Hardware"
     }

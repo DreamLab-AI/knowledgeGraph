@@ -8,6 +8,10 @@
   "definition": "The exchange of digital and traditional financial assets through centralized exchanges (CEXs), decentralized exchanges (DEXs), and hybrid platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:financial-services",
       "label": "Financial Services"
     }

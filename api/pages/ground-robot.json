@@ -8,6 +8,10 @@
   "definition": "Ground robot is a mobile robotic platform that operates on terrestrial surfaces using wheeled, tracked, legged, or hybrid locomotion systems to navigate structured and unstructured environments while executing purposeful tasks \u2014 including material transport, environmental inspection, search and r...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:autonomous-systems",
       "label": "Autonomous Systems"
     },

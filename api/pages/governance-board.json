@@ -8,6 +8,10 @@
   "definition": "An oversight body responsible for strategic decision-making and policy enforcement within metaverse organisations, evolving from traditional corporate board structures to decentralised autonomous organisation (DAO) models where token holders collectively govern through transparent on-chain voting...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:governance-architecture",
       "label": "Governance Architecture"
     }

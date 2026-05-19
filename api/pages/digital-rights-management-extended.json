@@ -8,6 +8,10 @@
   "definition": "Digital Rights Management (Extended) is a type of Virtual Economy Domain in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy-domain",
       "label": "Virtual Economy Domain"
     }

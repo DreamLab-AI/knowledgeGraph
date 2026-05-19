@@ -8,6 +8,10 @@
   "definition": "Accessibility is the systematic property of digital products, services, environments and information systems being perceivable, operable, understandable and robust (POUR) for the widest possible range of users including those with permanent disabilities temporary impairments (broken arm, post-sur...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:design-principle",
       "label": "Design Principle"
     },

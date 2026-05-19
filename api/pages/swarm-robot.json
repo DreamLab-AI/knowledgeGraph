@@ -8,6 +8,10 @@
   "definition": "Swarm Robot is a robotics and autonomous systems concept and a type of Autonomous Robot.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:autonomous-robot",
       "label": "Autonomous Robot"
     }

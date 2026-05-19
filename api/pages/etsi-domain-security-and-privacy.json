@@ -8,6 +8,10 @@
   "definition": "ETSI security and privacy framework protecting metaverse ecosystems through comprehensive controls spanning cryptography, access management, data governance, and compliance measures.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

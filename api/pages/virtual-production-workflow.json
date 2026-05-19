@@ -8,6 +8,10 @@
   "definition": "The end-to-end process for creating film and television content using virtual production techniques, integrating pre-visualization, virtual art department asset creation, real-time game engine rendering, LED volume shooting, and post-production refinement in a non-linear pipeline where VFX work b...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:production-pipeline",
       "label": "Production Pipeline"
     }

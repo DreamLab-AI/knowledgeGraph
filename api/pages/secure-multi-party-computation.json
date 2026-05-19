@@ -8,6 +8,10 @@
   "definition": "Secure Multi-Party Computation is a cryptographic protocol enabling multiple parties to jointly compute functions over their combined private inputs without revealing individual inputs to other participants or trusted third parties, ensuring that only the final output is disclosed while intermedi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }

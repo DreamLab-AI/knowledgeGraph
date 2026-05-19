@@ -8,8 +8,8 @@
   "definition": "Language Modeling is the fundamental NLP task of learning probability distributions over sequences of words or tokens to predict the likelihood of text sequences and generate plausible continuations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

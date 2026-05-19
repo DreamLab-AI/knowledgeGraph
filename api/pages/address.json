@@ -8,6 +8,10 @@
   "definition": "Public key-derived identifier within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },

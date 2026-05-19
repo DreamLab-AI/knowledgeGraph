@@ -8,6 +8,10 @@
   "definition": "Rotary encoder measures shaft angle and direction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:encoder",
       "label": "Encoder"
     }

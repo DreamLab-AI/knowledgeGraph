@@ -8,6 +8,10 @@
   "definition": "Accessible Design is the practice of creating virtual environments and interactions usable by people with diverse disabilities, incorporating universal design principles from conception through implementation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:inclusive-design",
       "label": "Inclusive Design"
     },

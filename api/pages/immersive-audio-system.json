@@ -8,6 +8,10 @@
   "definition": "Audio technologies enabling three-dimensional soundscapes in virtual environments through spatial audio processing, binaural rendering, and head-related transfer functions (HRTF), creating realistic acoustic experiences that respond to user position and movement within VR, AR, and metaverse appli...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:audio-technology",
       "label": "Audio Technology"
     }

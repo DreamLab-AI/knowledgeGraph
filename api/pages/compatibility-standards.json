@@ -8,6 +8,10 @@
   "definition": "Technical specifications and protocols that enable interoperability between different metaverse platforms, virtual environments, and digital systems, including asset formats, communication protocols, and interface standards that allow seamless user experiences across multiple platforms without ve...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

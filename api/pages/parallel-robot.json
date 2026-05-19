@@ -8,6 +8,10 @@
   "definition": "Parallel robot has end-effector directly connected to base by multiple separate linkages working simultaneously.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:manipulator-robot",
       "label": "Manipulator Robot"
     }

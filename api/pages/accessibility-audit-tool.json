@@ -8,8 +8,8 @@
   "definition": "An automated software utility that verifies compliance with accessibility standards (such as WCAG) in XR environments, identifying barriers for users with disabilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

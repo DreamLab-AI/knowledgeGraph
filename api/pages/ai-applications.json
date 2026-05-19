@@ -8,8 +8,8 @@
   "definition": "AI Applications represent domain-specific implementations of artificial intelligence technologies across various industries and use cases.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

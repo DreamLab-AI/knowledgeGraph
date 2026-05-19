@@ -8,8 +8,8 @@
   "definition": "Robot Safety - Robot Safety in robotics systems",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
     }
   ],
   "entityType": "Class",

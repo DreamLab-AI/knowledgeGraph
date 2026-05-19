@@ -8,6 +8,10 @@
   "definition": "A nation's authority to control its monetary policy, currency issuance, and financial systems, increasingly challenged by digital currencies and defended through initiatives like Central Bank Digital Currencies (CBDCs) that assert state control over the evolving digital economy.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:economic-governance",
       "label": "Economic Governance"
     }

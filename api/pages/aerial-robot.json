@@ -8,12 +8,12 @@
   "definition": "Aerial Robot - An autonomous or remotely operated aircraft equipped with Sensors, Actuators, and Navigation Systems for performing surveillance, inspection, delivery, and environmental monitoring tasks in three-dimensional airspace with minimal human intervention.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mobile-robot",
-      "label": "Mobile Robot"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Software and hardware layer encompassing devices and modalities that connect users physically and sensorily to immersive environments, managing interaction design and user experience.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:interaction-domain",
       "label": "Interaction Domain"
     }

@@ -8,6 +8,10 @@
   "definition": "Telecollaboration and Telepresence Domain is a distributed collaboration concept and a type of Telecollaboration. that enables DistributedWork.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:telecollaboration",
       "label": "Telecollaboration"
     }

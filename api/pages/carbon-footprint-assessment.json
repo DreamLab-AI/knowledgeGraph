@@ -8,6 +8,10 @@
   "definition": "A comprehensive emodology that quantifies total greenhouse gas emissions associated with a product, service, or organization across its entire lifecycle using Life Cycle Assessment principles, expressed in CO2 equivalent units to identify emission hotspots and reduction opportunities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-assessment",
       "label": "Environmental Assessment"
     }

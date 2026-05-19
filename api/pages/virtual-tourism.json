@@ -8,6 +8,10 @@
   "definition": "The use of VR, AR, and metaverse technologies to explore travel destinations remotely, enabling users to experience locations, hotels, and attractions virtually before booking or as an alternative to physical travel, particularly for those with physical, economic, or accessibility constraints.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:tourism-industry",
       "label": "Tourism Industry"
     }

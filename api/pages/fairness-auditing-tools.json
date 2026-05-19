@@ -8,8 +8,8 @@
   "definition": "Fairness Auditing Tools are software libraries, platforms, and frameworks designed to detect, measure, and mitigate algorithmic bias in AI systems through automated analysis, visualization, and intervention capabilities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

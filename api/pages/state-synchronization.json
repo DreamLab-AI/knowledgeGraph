@@ -8,6 +8,10 @@
   "definition": "The process of maintaining consistent, coherent representations of virtual world state across distributed clients, servers, and edge nodes through continuous replication, conflict resolution, and consistency protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:distributed-system-architecture",
       "label": "Distributed System Architecture"
     }

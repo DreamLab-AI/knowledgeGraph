@@ -8,6 +8,10 @@
   "definition": "LED-based infrared light sources integrated into or used alongside VR/AR headsets to provide illumination for tracking systems, featuring compact form factors, low power consumption, and wavelengths optimised for camera sensor detection.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:infrared-illuminator",
       "label": "Infrared Illuminator"
     }

@@ -8,6 +8,10 @@
   "definition": "A governance approach that involves citizens and stakeholders directly in the formulation, design, and eof public policies through mechanisms such as citizen advisory boards, deliberative assemblies, and digital participation platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:democratic-governance",
       "label": "Democratic Governance"
     }

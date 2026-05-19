@@ -8,8 +8,8 @@
   "definition": "A non-fungible token whose ownership has been divided into multiple fungible token shares, enabling collective ownership and enhanced liquidity of high-value unique digital assets.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

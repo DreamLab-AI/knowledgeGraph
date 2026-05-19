@@ -8,6 +8,10 @@
   "definition": "Digital Constitution is a type of Virtual Society in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:virtual-society",
       "label": "Virtual Society"
     }

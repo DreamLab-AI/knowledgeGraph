@@ -8,6 +8,10 @@
   "definition": "Inpainting is the computational task of plausibly reconstructing missing, occluded, masked or unwanted regions of an image or video so the completed output appears coherent with the surrounding (known) context, originally formalised in the digital domain by Bertalmio, Sapiro, Caselles and Ballest...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:image-editing",
       "label": "Image Editing"
     },

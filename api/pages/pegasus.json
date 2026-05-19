@@ -8,6 +8,10 @@
   "definition": "Pre-training with Extracted Gap-sentences for Abstractive SUmmarization: a pre-training approach specifically designed for abstractive summarisation that masks and predicts entire sentences rather than individual tokens.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

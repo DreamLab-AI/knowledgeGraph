@@ -8,6 +8,10 @@
   "definition": "Micropayments are electronic payment transactions with values typically below \u2014 often in the sub-cent to sub-dollar range \u2014 enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the co...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:digital-finance",
       "label": "Digital Finance"
     },

@@ -8,6 +8,10 @@
   "definition": "A cryptographic protocol that enables one party (the prover) to prove to another party (the verifier) that a statement is true without revealing any information beyond the validity of the statement itself.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }

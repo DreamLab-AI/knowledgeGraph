@@ -8,6 +8,10 @@
   "definition": "Archaeological Site Reconstruction refers to the use of 3D modeling, photogrammetry, LiDAR, and virtual reality technologies to create accurate digital representations of ancient sites, enabling study, documentation, preservation, and immersive public access to cultural heritage through realistic...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-heritage",
       "label": "Digital Heritage"
     }

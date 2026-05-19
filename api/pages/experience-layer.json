@@ -8,8 +8,8 @@
   "definition": "User-facing architectural layer responsible for rendering immersive content, managing user interactions, and delivering cohesive UX/UI across metaverse environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Specifications and guidelines that define consistent patterns, components, and interactions for user interfaces in metaverse and XR environments, ensuring usability, accessibility, and cross-platform consistency.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

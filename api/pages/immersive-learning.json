@@ -8,6 +8,10 @@
   "definition": "Educational approaches utilising VR, AR, and metaverse technologies to create engaging, interactive learning environments that enable experiential skill development, realistic scenario simulation, and enhanced knowledge retention through presence-based educational experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

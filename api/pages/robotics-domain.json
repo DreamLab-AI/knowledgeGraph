@@ -8,6 +8,10 @@
   "definition": "The Robotics Domain encompasses intelligent machines and automated systems, providing a formal ontological framework for knowledge representation, autonomous reasoning, and robotic behaviors.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }

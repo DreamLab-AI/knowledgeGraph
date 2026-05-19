@@ -8,6 +8,10 @@
   "definition": "System property denoting the capability of a computing or distributed system to continue providing correct service in the presence of component failures, encompassing the formal failure-model taxonomy enumerated by Cristian (fail-stop, fail-silent, omission, crash-recovery, timing, Byzantine arbi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:dependability",
       "label": "Dependability"
     },

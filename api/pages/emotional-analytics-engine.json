@@ -8,8 +8,8 @@
   "definition": "AI module analyzing affective states from facial, voice, or physiological data to enable adaptive agent responses and affective computing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

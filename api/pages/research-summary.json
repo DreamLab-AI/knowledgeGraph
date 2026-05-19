@@ -8,8 +8,8 @@
   "definition": "A comprehensive synthesis document aggregating research findings, literature reviews, and academic insights across Metaverse, Blockchain, ArtificialIntelligence, and Robotics domains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

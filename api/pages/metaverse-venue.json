@@ -8,6 +8,10 @@
   "definition": "Virtual 3D spaces within metaverse platforms designed to host events, conferences, exhibitions, and social gatherings, enabling global participation through customisable avatars and interactive environments that transcend physical location constraints.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

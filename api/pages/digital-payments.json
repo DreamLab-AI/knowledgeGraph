@@ -8,6 +8,10 @@
   "definition": "Electronic monetary transactions executed through digital channels including blockchain networks, mobile wallets, and online platforms, enabling the transfer of value for virtual goods, services, and assets within metaverse economies and across traditional e-commerce systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:financial-transactions",
       "label": "Financial Transactions"
     }

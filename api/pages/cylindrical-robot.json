@@ -8,6 +8,10 @@
   "definition": "Cylindrical robot employs one rotary joint (azimuth) and two prismatic joints (radial and vertical) that produce a cylindrical workspace, enabling efficient reach over rectangular work envelopes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:coordinate-robots",
       "label": "Coordinate Robots"
     },

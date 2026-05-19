@@ -8,6 +8,10 @@
   "definition": "Formal specifications and technical guidelines established by standards bodies to ensure interoperability, consistency, and quality across metaverse platforms, encompassing terminology, data formats, interfaces, and ical considerations for immersive technology development.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

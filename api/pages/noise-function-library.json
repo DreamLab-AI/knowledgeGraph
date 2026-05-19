@@ -8,6 +8,10 @@
   "definition": "A software library providing coherent noise generation algorithms like Perlin, simplex, value, and Voronoi noise for procedural content generation in computer graphics, enabling the creation of natural-looking textures, terrain, and visual effects without manual authoring.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:graphics-library",
       "label": "Graphics Library"
     }

@@ -8,6 +8,10 @@
   "definition": "Breakout rooms are temporary, parallel sub-session spaces embedded within a primary virtual meeting or conferencing environment that partition a large group of participants into smaller, purpose-bounded clusters for focused collaborative work, deliberation, or learning activities, enabling concur...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:collaborative-learning-infrastructure",
       "label": "Collaborative Learning Infrastructure"
     },

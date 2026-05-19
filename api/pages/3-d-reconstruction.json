@@ -8,6 +8,10 @@
   "definition": "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including Computer Vision, photogrammetry, and Structure-from-Motion (SfM).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }

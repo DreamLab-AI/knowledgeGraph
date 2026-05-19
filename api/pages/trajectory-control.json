@@ -8,6 +8,10 @@
   "definition": "Trajectory control tracks desired time-varying position, velocity, and acceleration profiles.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:motion-control",
       "label": "Motion Control"
     }

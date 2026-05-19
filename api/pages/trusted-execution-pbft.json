@@ -8,6 +8,10 @@
   "definition": "A parallel Byzantine Fault Tolerance protocol leveraging Trusted Execution Environments (TEEs), utilizing a Unique Sequential Identifier Generator (USIG) based on Intel Software Guard Extensions (SGX).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:practical-byzantine-fault-tolerance",
       "label": "Practical Byzantine Fault Tolerance"
     }

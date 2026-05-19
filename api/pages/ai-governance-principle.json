@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-governance-principle",
   "domain": "artificial-intelligence",
   "definition": "Ai Governance Principle is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

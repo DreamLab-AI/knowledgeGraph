@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:programming-language",
   "domain": "artificial-intelligence",
   "definition": "Programming Languages for AI are formal languages designed to express algorithms, models, and computations for artificial intelligence applications.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

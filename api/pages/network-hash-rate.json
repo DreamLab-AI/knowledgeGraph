@@ -8,6 +8,10 @@
   "definition": "Total computational power within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },

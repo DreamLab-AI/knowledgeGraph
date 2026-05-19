@@ -8,8 +8,8 @@
   "definition": "Physical hardware component enabling user input or feedback in immersive systems through controllers, sensors, and actuators.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

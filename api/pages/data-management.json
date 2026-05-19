@@ -8,6 +8,10 @@
   "definition": "Data Management in metaverse contexts refers to the handling, storage, organisation, and governance of the diverse data types generated within virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:metaverse-technology",
       "label": "Metaverse Technology"
     }

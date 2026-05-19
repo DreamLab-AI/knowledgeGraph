@@ -8,6 +8,10 @@
   "definition": "AI Transparency Framework encompasses governance structures, technical standards, and regulatory requirements that ensure artificial intelligence systems are explainable, interpretable, and accountable, enabling stakeholders to understand AI decision-making processes, limitations, and potential i...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "AI Governance"
     }

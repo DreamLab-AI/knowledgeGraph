@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#BitcoinValueProposition
-legacy_uri:: urn:visionclaw:concept:blockchain:bitcoin-value-proposition
 public:: true
 
 # Bitcoin Value Proposition
@@ -598,94 +595,19 @@ public:: true
       "vc:label": "Taproot Assets"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Bitcoin Value Case, BTC Value Argument, Bitcoin Economic Rationale, Why Bitcoin"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Bitcoin]], [[Sound Money]], [[Digital Scarcity]], [[Store of Value]], [[Monetary Policy]], [[Inflation Hedge]], [[Financial Sovereignty]], [[Network Effects]], [[Hyperbitcoinization]], [[Austrian Economics]], [[Gold]], [[CBDCs]], [[Fiat Currency]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-b9f4c821e73d"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#BitcoinValueProposition"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-1109"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T14:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Bitcoin Value Proposition"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:bitcoin-value-proposition"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:bitcoin-value-proposition"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7159378bd00ec6046078a6ed3354077b007454d67169097fe3ceefa09bf6f3b8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -704,6 +626,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
     {
       "@id": "urn:ngm:class:economic-philosophy",
       "label": "Economic Philosophy"
@@ -1770,9 +1696,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7159378bd00ec6046078a6ed3354077b007454d67169097fe3ceefa09bf6f3b8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

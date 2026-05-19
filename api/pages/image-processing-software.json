@@ -8,6 +8,10 @@
   "definition": "Software systems that acquire, process, analyse, and visualise digital images for metaverse applications, employing computer vision algorithms for user tracking, environment creation, gesture recognition, 3D reconstruction, and real-time visual enhancement in virtual and augmented reality environ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:computer-vision-system",
       "label": "Computer Vision System"
     }

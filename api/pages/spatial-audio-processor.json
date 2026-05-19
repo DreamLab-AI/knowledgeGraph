@@ -8,6 +8,10 @@
   "definition": "Hardware or software component that renders three-dimensional sound using Head-Related Transfer Functions (HRTFs) and binaural synthesis, processing audio signals to simulate directional sound sources at specific positions in virtual space with real-time head tracking integration for immersive au...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:audio-processing-system",
       "label": "Audio Processing System"
     }

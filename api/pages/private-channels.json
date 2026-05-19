@@ -8,8 +8,8 @@
   "definition": "Confidential transaction subsets in PermissionedBlockchain|permissioned blockchains where designated participants conduct transactions invisibly to other network members, implementing Encryption|encryption and AccessControl|access control to segregate sensitive business data whilst ma...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

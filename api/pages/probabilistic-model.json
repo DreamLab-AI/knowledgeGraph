@@ -8,6 +8,10 @@
   "definition": "ProbabilisticModel is an owl:Class within the artificial-intelligence domain representing any computational or mathematical framework that explicitly represents uncertainty over random variables through probability distributions, enabling principled inference, prediction, and decision-making unde...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:statistical-learning",
       "label": "Statistical Learning"
     },

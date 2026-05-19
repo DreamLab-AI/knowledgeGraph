@@ -8,6 +8,10 @@
   "definition": "Blockchain Interoperability is the technical and economic capability for distinct, sovereign blockchain networks to securely communicate state, transfer assets, invoke smart contracts, and propagate consensus across heterogeneous trust domains without relinquishing each chain's independent finali...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:network-interoperability",
       "label": "Network Interoperability"
     },

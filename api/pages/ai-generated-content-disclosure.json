@@ -8,6 +8,10 @@
   "definition": "Mandatory transparency requirement specifying that content created wholly or partially by AI systems must be explicitly labeled with origin metadata for user awareness and regulatory compliance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-transparency-framework",
       "label": "AI Transparency Framework"
     }

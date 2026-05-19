@@ -8,8 +8,8 @@
   "definition": "Software layer managing computational resources and orchestration for rendering, simulation, physics, AI processing, and real-time processing within metaverse systems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

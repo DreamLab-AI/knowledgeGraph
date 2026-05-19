@@ -8,6 +8,10 @@
   "definition": "A platform for organizing event attendees through registration, invitation management, check-in tracking, and real-time attendance monitoring, providing tools for ticketing, payment processing, and post-event analytics.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:event-management",
       "label": "Event Management"
     }

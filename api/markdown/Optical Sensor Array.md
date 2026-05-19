@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#OpticalSensorArray
-legacy_uri:: urn:visionclaw:concept:robotics:optical-sensor-array
 public:: true
 
 # Optical Sensor Array
@@ -258,94 +255,19 @@ public:: true
       "vc:label": "XR Hardware"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "image sensor array, focal-plane array, FPA, CCD array, CMOS image sensor, photodetector array, SPAD array, ToF sensor array"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Spatial Computing]], [[Computer Vision]], [[Depth Sensing]], [[Eye Tracking]], [[Lidar]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-977f7372c900"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#OpticalSensorArray"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-4000"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T00:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Optical Sensor Array"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:optical-sensor-array"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:optical-sensor-array"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fe19cde1430c88d22167325c6cee32e05cc8dd39c26dce0acf2570db06861967@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -364,6 +286,10 @@ public:: true
   "domain": "robotics",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
     {
       "@id": "urn:ngm:class:computer-vision-system",
       "label": "Computer Vision System"
@@ -997,9 +923,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:fe19cde1430c88d22167325c6cee32e05cc8dd39c26dce0acf2570db06861967@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

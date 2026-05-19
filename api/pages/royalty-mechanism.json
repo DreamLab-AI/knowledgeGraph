@@ -8,6 +8,10 @@
   "definition": "Automated process ensuring creators receive compensation when their assets are resold or used in secondary markets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-rights-management",
       "label": "Digital Rights Management"
     }

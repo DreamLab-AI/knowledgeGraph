@@ -8,6 +8,10 @@
   "definition": "The systematic recording and analysis of user interactions, behaviors, and activities within virtual environments, capturing data on movements, communications, transactions, and engagement patterns for analytics, compliance, and experience optimization.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:data-analytics",
       "label": "Data Analytics"
     }

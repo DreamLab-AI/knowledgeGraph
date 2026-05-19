@@ -8,6 +8,10 @@
   "definition": "The physical devices and display technologies that render visual content for virtual, augmented, and mixed reality experiences, including VR headsets, AR glasses, and related optical systems that create immersive visual interfaces for metaverse applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:hardware",
       "label": "Hardware"
     }

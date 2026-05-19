@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/human-computer-interaction#Accessibility
-legacy_uri:: urn:visionclaw:concept:human-computer-interaction:accessibility
 public:: true
 
 # Accessibility
@@ -406,94 +403,19 @@ public:: true
       "vc:label": "Web Standards"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "a11y, Digital Accessibility, Inclusive Design (overlapping), Web Accessibility, ICT Accessibility"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Telecollaboration]], [[Inclusive Design]], [[Universal Design]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-5053629d688e"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "human-computer-interaction"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/human-computer-interaction#Accessibility"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "HCI-1042"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T20:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Accessibility"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:human-computer-interaction:accessibility"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:human-computer-interaction:accessibility"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ad0ec25e96f3333a038762e1b3db2adbecbd213320296335bde9deacf636cb8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -512,6 +434,10 @@ public:: true
   "domain": "spatial-computing",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
     {
       "@id": "urn:ngm:class:design-principle",
       "label": "Design Principle"
@@ -1278,9 +1204,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:7ad0ec25e96f3333a038762e1b3db2adbecbd213320296335bde9deacf636cb8@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

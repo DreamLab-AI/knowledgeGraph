@@ -8,6 +8,10 @@
   "definition": "Discrete units of virtual real estate within metaverse platforms, represented as NFTs that provide proof of ownership for programmable digital spaces where users can build, socialise, host events, and conduct commercial activities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-asset",
       "label": "Virtual Asset"
     }

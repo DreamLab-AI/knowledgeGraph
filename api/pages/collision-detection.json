@@ -8,6 +8,10 @@
   "definition": "Collision Detection is the computational discipline of determining when two or more geometric primitives, rigid bodies, deformable meshes, articulated kinematic chains, or volumetric fields occupy overlapping regions of a shared spatial domain, decomposed canonically into a broad phase that rapid...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:physics-simulation",
       "label": "Physics Simulation"
     }

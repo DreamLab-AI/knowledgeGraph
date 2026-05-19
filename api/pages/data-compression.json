@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:data-compression",
   "domain": "artificial-intelligence",
   "definition": "Data Compression in AI involves reducing the size of datasets, models, and computational representations while preserving essential information.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

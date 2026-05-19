@@ -8,8 +8,8 @@
   "definition": "A structured metadata object that documents the origin, ownership history, authenticity verification, and cultural context of cultural artifacts, artworks, or digital cultural assets to establish legitimacy and preserve heritage lineage.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

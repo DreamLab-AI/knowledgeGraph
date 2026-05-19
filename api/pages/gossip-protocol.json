@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:gossip-protocol",
   "domain": "blockchain",
   "definition": "Information propagation mod within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

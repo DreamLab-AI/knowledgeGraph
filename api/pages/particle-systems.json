@@ -8,6 +8,10 @@
   "definition": "The collective infrastructure and tooling for creating and managing particle-based visual effects in game engines and VFX software, encompassing emitter configuration, physics integration, and real-time or offline rendering pipelines.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:vfx-tools",
       "label": "VFX Tools"
     }

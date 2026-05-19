@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:asynchronous-communication",
   "domain": "infrastructure",
   "definition": "Asynchronous Communication is a foundational concept in infrastructure that serves as a classification parent for 3 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "A reinforcement learning algorithm that updates policies through incremental steps whilst constraining how much the policy can change, preventing destabilising updates. PPO is the standard RL algorithm used in RLHF for optimising language models based on reward model feedback.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:reinforcement-learning",
       "label": "Reinforcement Learning"
     }

@@ -8,6 +8,10 @@
   "definition": "Documented specifications and reference materials that establish measurement accuracy requirements, traceability to national standards, and systematic procedures for aligning sensors, displays, and imaging systems to known reference values in XR and computer vision applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

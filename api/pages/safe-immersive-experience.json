@@ -8,6 +8,10 @@
   "definition": "Design principles and technical safeguards that protect users from physical harm, psychological distress, and privacy violations in virtual and augmented reality environments through content moderation, comfort settings, and safety boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:user-safety",
       "label": "User Safety"
     }

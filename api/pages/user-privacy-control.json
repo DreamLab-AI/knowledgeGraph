@@ -8,6 +8,10 @@
   "definition": "A user privacy control component in the Artificial Intelligence domain that enables RightToBeForgotten.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:privacy-mechanism",
       "label": "Privacy Mechanism"
     }

@@ -8,6 +8,10 @@
   "definition": "A medium of exchange, unit of account, and store of value accepted within an economic system, encompassing physical currency, digital money, cryptocurrencies, and virtual currency forms that facilitate economic activity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:cryptocurrency",
       "label": "Cryptocurrency"
     }

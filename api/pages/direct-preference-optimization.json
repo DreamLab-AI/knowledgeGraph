@@ -8,6 +8,10 @@
   "definition": "Direct Preference Optimization (DPO) is a preference-based language model alignment algorithm introduced by Rafael Rafailov, Archit Sharma, Eric Mitchell, Stefano Ermon, Christopher D.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:implicit-reward-modelling",
       "label": "Implicit Reward Modelling"
     },

@@ -8,6 +8,10 @@
   "definition": "Network protocol software that enables decentralised, self-healing communication in mesh networks through dynamic routing algorithms, supporting IoT deployments, distributed systems, and metaverse infrastructure connectivity.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

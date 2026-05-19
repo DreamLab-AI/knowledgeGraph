@@ -8,6 +8,10 @@
   "definition": "The ETSI technical domain addressing standardisation of immersive technologies including virtual reality, augmented reality, and mixed reality systems, encompassing network requirements, quality of experience metrics, and interoperability specifications for XR applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:etsi-standards",
       "label": "ETSI Standards"
     }

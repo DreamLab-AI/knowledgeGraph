@@ -8,6 +8,10 @@
   "definition": "The economic mechanism governing blockchain transaction costs, where users bid with gas fees to prioritise transaction processing, creating a market-based system essential for metaverse operations including NFT trades, smart contract execution, and virtual asset transfers.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:blockchain-economics",
       "label": "Blockchain Economics"
     }

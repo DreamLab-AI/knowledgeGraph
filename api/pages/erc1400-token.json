@@ -8,6 +8,10 @@
   "definition": "A security token standard tailored for regulatory compliance, providing transfer restrictions, document management, and compliance hooks for securities law requirements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:security-token",
       "label": "Security Token"
     }

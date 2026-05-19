@@ -8,8 +8,8 @@
   "definition": "National authority responsible for carrying out market surveillance activities on AI systems, including inspections, testing, enforcement, and ensuring compliance with EU AI Act requirements within a Member State.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

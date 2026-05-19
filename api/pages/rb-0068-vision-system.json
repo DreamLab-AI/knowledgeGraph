@@ -8,6 +8,10 @@
   "definition": "vision system is a robotics and autonomous systems concept and a type of Robotics Systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }

@@ -8,6 +8,10 @@
   "definition": "Grok is the family of large language models developed by xAI, the AI laboratory founded in July 2023 by Elon Musk toger with researchers Igor Babuschkin (ex-DeepMind, ex-OpenAI), Tony Wu (ex-Google Brain), Christian Szegedy (Inception/BatchNorm co-author, ex-Google), Yuhuai \"Tony\" Wu (ex-Google, ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:frontier-model",
       "label": "Frontier Model"
     },

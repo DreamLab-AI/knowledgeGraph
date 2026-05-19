@@ -8,8 +8,8 @@
   "definition": "A machine learning paradigm that learns from comparative judgments (e.g., \"A is better than B\") rather than absolute labels or demonstrations.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

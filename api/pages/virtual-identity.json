@@ -8,6 +8,10 @@
   "definition": "A digital representation encompassing behaviours, preferences, movements, actions, and decisions made in digital spaces, extending beyond 3D avatars to include representation, data, and identification across AR, VR, MR, and web platforms using decentralized identity technologies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:digital-identity",
       "label": "Digital Identity"
     }

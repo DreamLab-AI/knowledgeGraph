@@ -8,6 +8,10 @@
   "definition": "Light Detection and Ranging technology that creates precise 3D spatial maps by emitting laser pulses and measuring return times, enabling accurate environment capture for VR/AR applications, metaverse development, and spatial computing.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:spatial-mapping-technology",
       "label": "Spatial Mapping Technology"
     }

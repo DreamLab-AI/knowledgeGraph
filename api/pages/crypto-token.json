@@ -8,8 +8,8 @@
   "definition": "A blockchain-based programmable token representing assets, rights, or utility within a decentralized system, with transferability governed by smart contract logic.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",

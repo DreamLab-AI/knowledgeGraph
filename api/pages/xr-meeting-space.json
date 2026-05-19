@@ -8,6 +8,10 @@
   "definition": "Virtual collaboration environments accessed through extended reality devices that enable remote participants to interact as avatars or volumetric representations in shared 3D spaces, supporting meetings, presentations, design reviews, and team collaboration with spatial audio and gesture-based co...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-collaboration",
       "label": "Virtual Collaboration"
     }

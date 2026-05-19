@@ -8,6 +8,10 @@
   "definition": "Player Two is a technology infrastructure concept and a type of Collaboration Platform.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:collaboration-platform",
       "label": "Collaboration Platform"
     }

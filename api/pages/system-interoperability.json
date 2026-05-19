@@ -8,6 +8,10 @@
   "definition": "System interoperability is the ability of different information technology systems, applications, and devices to exchange data, interpret shared information, and use it in a mutually useful way without requiring special translation or middleware.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:system-capability",
       "label": "System Capability"
     }

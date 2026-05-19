@@ -8,8 +8,8 @@
   "definition": "Soft robotics actuator using shape memory alloys that change shape when heated, enabling lightweight and compact actuation for compliant robots.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

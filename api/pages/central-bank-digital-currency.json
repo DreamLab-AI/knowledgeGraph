@@ -8,6 +8,10 @@
   "definition": "A digital form of sovereign fiat money issued directly by a nation's central bank, representing a liability of the monetary authority that can serve as legal tender for retail payments or wholesale settlement, distinct from commercial bank deposits and decentralized cryptocurrencies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:digital-currency",
       "label": "Digital Currency"
     }

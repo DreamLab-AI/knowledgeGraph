@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:api-standard",
   "domain": "infrastructure",
   "definition": "Specification defining how independent software components communicate within metaverse systems, establishing protocols and data formats for interoperability.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

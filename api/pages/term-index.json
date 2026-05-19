@@ -8,8 +8,8 @@
   "definition": "A term index is a comprehensive reference catalogue mapping domain terminology, identifiers, and conceptual relationships within ontologies, enabling discovery and navigation of complex knowledge spaces across metaverse, blockchain, and robotics ecosystems.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

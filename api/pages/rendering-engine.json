@@ -8,6 +8,10 @@
   "definition": "A rendering engine is software that generates 2D images or animations from 3D scene descriptions through rasterisation, ray tracing, or hybrid approaches.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:computer-graphics",
       "label": "Computer Graphics"
     }

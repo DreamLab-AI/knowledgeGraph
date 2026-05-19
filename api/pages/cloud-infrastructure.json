@@ -8,8 +8,8 @@
   "definition": "Cloud infrastructure is a computing model that provides on-demand access to virtualized computing resources including servers, storage, networking, and platform services delivered over the internet.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

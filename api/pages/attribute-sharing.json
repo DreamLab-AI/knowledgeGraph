@@ -8,6 +8,10 @@
   "definition": "Attribute Sharing refers to identity federation mechanisms that enable selective disclosure of user credentials and identity attributes across metaverse platforms and blockchain applications, using Self-Sovereign Identity (SSI) principles and decentralized identifiers to maintain user control whi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }

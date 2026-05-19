@@ -8,6 +8,10 @@
   "definition": "Communication mod enabling control and conversation through speech recognition, natural language understanding, and text-to-speech synthesis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:interaction-domain",
       "label": "Interaction Domain"
     }

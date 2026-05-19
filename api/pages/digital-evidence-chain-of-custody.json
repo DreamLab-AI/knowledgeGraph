@@ -8,6 +8,10 @@
   "definition": "Digital Evidence Chain of Custody is a type of Legal Framework in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }

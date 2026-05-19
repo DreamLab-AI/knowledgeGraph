@@ -8,6 +8,10 @@
   "definition": "A data augmentation technique that creates virtual training examples by linearly interpolating pairs of examples and their labels. Mixup improves generalisation, calibration, and robustness by training on convex combinations of training samples.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:data-augmentation-strategies",
       "label": "Data Augmentation Strategies"
     }

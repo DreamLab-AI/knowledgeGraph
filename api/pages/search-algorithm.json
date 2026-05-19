@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:search-algorithm",
   "domain": "artificial-intelligence",
   "definition": "Search Algorithms in AI systematically explore solution spaces to find optimal or satisfactory solutions to problems. Classical algorithms include uninformed search (breadth-first, depth-first, uniform-cost) and informed search (A*, greedy best-first, beam search).",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

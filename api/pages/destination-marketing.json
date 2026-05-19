@@ -8,6 +8,10 @@
   "definition": "The strategic promotion of physical or virtual locations using immersive technologies, AR/VR experiences, and digital twin representations to attract visitors, investors, and residents by showcasing destinations through interactive 3D visualizations and metaverse presence.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-marketing",
       "label": "Digital Marketing"
     }

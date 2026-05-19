@@ -8,6 +8,10 @@
   "definition": "Text Generation is the NLP task of producing coherent, contextually appropriate natural language text using neural language models, including applications such as story generation, article writing, code generation, and creative content production.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:language-modeling",
       "label": "Language Modeling"
     }

@@ -8,6 +8,10 @@
   "definition": "Algorithmic Accountability is a responsibility framework that ensures AI systems and their developers are answerable for the decisions, outcomes, and impacts produced by algorithmic processes, including mechanisms for redress, transparency, and oversight.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:aigovernance-principle",
       "label": "AIGovernancePrinciple"
     },

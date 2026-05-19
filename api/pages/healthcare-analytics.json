@@ -8,6 +8,10 @@
   "definition": "Healthcare Analytics applies artificial intelligence and data science to healthcare data for population health management, operational efficiency optimisation, clinical outcome prediction, resource allocation, and healthcare policy decision-making.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

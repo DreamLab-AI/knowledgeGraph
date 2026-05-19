@@ -8,6 +8,10 @@
   "definition": "Monte Carlo Tree Search is a artificial intelligence concept and a type of Search Algorithms. that enables Game Playing AI.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:search-algorithms",
       "label": "Search Algorithms"
     }

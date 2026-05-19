@@ -8,6 +8,10 @@
   "definition": "Cognitive AI is the family of artificial-intelligence systems built around cognitively-plausible architectures that explicitly model the components and information-flow of human cognition \u2014 working memory, declarative and procedural long-term memory, perception-action loops, attention, production...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:hybrid-ai",
       "label": "Hybrid AI"
     },

@@ -8,6 +8,10 @@
   "definition": "Immersive storytelling techniques employed in metaverse learning environments that place learners within engaging storylines, utilising narrative transportation to make complex concepts more approachable and significantly improve learning outcomes through active participation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:immersive-learning",
       "label": "Immersive Learning"
     }

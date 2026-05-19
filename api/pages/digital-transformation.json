@@ -8,6 +8,10 @@
   "definition": "The comprehensive integration of digital technologies across all areas of business and society, fundamentally changing how organisations operate, deliver value, and engage with customers through technologies such as AI, cloud computing, IoT, and immersive platforms including the metaverse.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:organizational-change",
       "label": "Organizational Change"
     }

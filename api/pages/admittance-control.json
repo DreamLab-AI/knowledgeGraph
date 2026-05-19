@@ -8,6 +8,10 @@
   "definition": "Force control strategy where robotic systems respond to external forces by producing proportional motion governed by virtual admittance parameters (mass, damping, stiffness), enabling compliant physical interaction with uncertain or variable environments by regulating position/velocity trajectori...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:force-control",
       "label": "Force Control"
     },

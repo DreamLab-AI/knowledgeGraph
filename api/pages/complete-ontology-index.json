@@ -8,6 +8,10 @@
   "definition": "A comprehensive reference catalog documenting and interconnecting all Ontology terms, Semantic Classifications, and Knowledge Relationships across multiple domains and knowledge graphs. This index enables discovery, navigation, and semantic reasoning across the entire Knowledge Base.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:metaverse-ontology",
       "label": "Metaverse Ontology"
     }

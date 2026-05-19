@@ -8,6 +8,10 @@
   "definition": "\"The use of virtual reality head-mounted displays and immersive 3D environments to enable remote participants to experience shared virtual spaces with stereoscopic vision, spatial audio, head tracking, and avatar embodiment, creating a subjective sense of co-location despite geographical separati...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:tele-001-telepresence",
       "label": "TELE-001-telepresence"
     }

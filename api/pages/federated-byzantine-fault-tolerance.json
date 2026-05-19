@@ -8,6 +8,10 @@
   "definition": "A consensus mechanism enhancing scalability, speed, and security of blockchain networks by using a trusted set of federated nodes for consensus rather than the entire network.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }

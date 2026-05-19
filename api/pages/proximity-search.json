@@ -8,6 +8,10 @@
   "definition": "Geospatial query algorithms that locate nearby points of interest within a specified radius using coordinate-based indexing mods such as geohashing and quadtree structures for efficient location-based service applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:geospatial-technology",
       "label": "Geospatial Technology"
     }

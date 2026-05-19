@@ -8,6 +8,10 @@
   "definition": "A digital sovereign entity existing within metaverse platforms that offers forms of virtual citizenship, governance structures, economic systems, and legal frameworks, potentially providing e-residency, digital identity, and participation in virtual economies independent of geographic territory.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-governance",
       "label": "Digital Governance"
     }

@@ -8,6 +8,10 @@
   "definition": "The independent third-party audit process that validates an organization's carbon neutrality claims by verifying emission calculations, reduction measures, and offset quality against established standards such as ISO 14068-1 and PAS 2060.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-verification",
       "label": "Environmental Verification"
     }

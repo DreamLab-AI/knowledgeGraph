@@ -8,6 +8,10 @@
   "definition": "Generative neural network architecture combining autoencoders with variational inference for probabilistic latent space modeling and data generation",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:generative-model",
       "label": "Generative Model"
     }

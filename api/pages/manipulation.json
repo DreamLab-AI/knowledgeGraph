@@ -8,6 +8,10 @@
   "definition": "Manipulation in robotics refers to the ability of robotic systems to physically interact with and control objects in their environment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:robotics-systems",
       "label": "Robotics Systems"
     }

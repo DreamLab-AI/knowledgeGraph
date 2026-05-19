@@ -8,6 +8,10 @@
   "definition": "A computer graphics technique that simulates fuzzy, chaotic, or fluid phenomena by managing large numbers of small graphical objects with properties like position, velocity, color, and lifetime, controlled by emitters and affected by forces to create effects like fire, smoke, water, and magical e...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:visual-effects",
       "label": "Visual Effects"
     }

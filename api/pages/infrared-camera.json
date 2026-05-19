@@ -8,6 +8,10 @@
   "definition": "Imaging devices that capture infrared light wavelengths for VR/AR tracking applications, enabling position tracking, eye tracking, hand gesture recognition, and movement detection in immersive environments through dedicated IR-sensitive sensors and algorithms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:tracking-hardware",
       "label": "Tracking Hardware"
     }

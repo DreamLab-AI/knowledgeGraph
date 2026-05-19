@@ -8,6 +8,10 @@
   "definition": "Electric linear actuator converts rotary motion to linear motion using screw, belt, or rack-pinion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:electric-actuator",
       "label": "Electric Actuator"
     }

@@ -8,6 +8,10 @@
   "definition": "Real-time rendering is the sub-field of computer graphics focused on producing and analyzing images at interactive frame rates, typically using a graphics processing unit (GPU) to transform 3D scene data into 2D display output within milliseconds.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:three-dimensional-graphics",
       "label": "Three Dimensional Graphics"
     }

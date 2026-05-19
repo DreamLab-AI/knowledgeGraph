@@ -8,6 +8,10 @@
   "definition": "Quadruped robot walks on four legs with gaits inspired by mammals like dogs or cats.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:legged-robot",
       "label": "Legged Robot"
     }

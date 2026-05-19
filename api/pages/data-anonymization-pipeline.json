@@ -8,6 +8,10 @@
   "definition": "An automated, multi-stage process that systematically removes, masks, or generalizes personally identifiable information (PII) from datasets to protect individual privacy while preserving data utility for analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:data-protection",
       "label": "Data Protection"
     }

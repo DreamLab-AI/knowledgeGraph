@@ -8,6 +8,10 @@
   "definition": "Coordinated set of standards and specifications enabling interaction between heterogeneous systems in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:metaverse-architecture",
       "label": "Metaverse Architecture"
     }

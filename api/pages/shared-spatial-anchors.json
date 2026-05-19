@@ -8,8 +8,8 @@
   "definition": "Cloud-based reference points that lock virtual objects to specific physical locations, enabling multiple users across different devices to perceive digital content in the same position and orientation relative to the real-world environment for collaborative mixed reality experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

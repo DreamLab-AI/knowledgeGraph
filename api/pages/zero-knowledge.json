@@ -8,6 +8,10 @@
   "definition": "Zero-knowledge proofs are cryptographic techniques enabling one party to prove knowledge of information to another without revealing the information itself, establishing mathematical certainty about claim validity through InteractiveProtocol|interactive protocols or",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:privacy-enhancing-computation-pec",
       "label": "Privacy-Enhancing Computation (PEC)"
     }

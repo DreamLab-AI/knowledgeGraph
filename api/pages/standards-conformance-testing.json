@@ -8,6 +8,10 @@
   "definition": "Testing or verification activities that determine wher a process, product, or service complies with the requirements of a specification, technical standard, contract, or regulation, verifying that implementations faithfully meet specified requirements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

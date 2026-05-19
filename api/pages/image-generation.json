@@ -8,8 +8,8 @@
   "definition": "Image Generation is the synthesis of realistic or stylised images using generative AI models including Generative Adversarial Networks (GANs), Variational Autoencoders (VAEs), and Diffusion Models.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "entityType": "Class",

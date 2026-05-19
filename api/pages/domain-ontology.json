@@ -8,6 +8,10 @@
   "definition": "A Domain Ontology is a formal, explicit, machine-readable specification of a shared conceptualisation restricted to a delimited subject domain (clinical medicine, financial instruments, cultural heritage, manufacturing robotics, gene products, scholarly publications, e-commerce products), followi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:conceptual-model",
       "label": "Conceptual Model"
     },

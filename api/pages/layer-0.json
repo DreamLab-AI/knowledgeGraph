@@ -8,8 +8,8 @@
   "definition": "Foundation blockchain infrastructure layer providing cross-chain communication protocols, shared security mechanisms, and modular consensus abstraction to enable interoperability between multiple Layer 1 blockchains.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

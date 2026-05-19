@@ -8,8 +8,8 @@
   "definition": "A strategy for adjusting the learning rate during training according to a predefined or adaptive schedule. Learning rate schedules improve convergence and final performance by using higher rates early for rapid progress and lower rates later for fine-tuning.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

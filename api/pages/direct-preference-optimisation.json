@@ -8,8 +8,8 @@
   "definition": "An alignment mod that directly uses preference data to fine-tune language models without training a separate reward model or using reinforcement learning, offering a simpler alternative to RLHF.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

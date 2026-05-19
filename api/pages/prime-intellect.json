@@ -8,6 +8,10 @@
   "definition": "Prime Intellect is an open-source decentralised AI research organisation and GPU compute marketplace founded by Vincent Weisser (CEO, formerly co-founder of VitaDAO and AI lead at Molecule biopharma) and Johannes Hagemann headquartered in San Francisco, operating on 4M total funding across three ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:decentralised-ai",
       "label": "Decentralised AI"
     },

@@ -8,6 +8,10 @@
   "definition": "Legal and regulatory demarcations applicable to metaverse and virtual world governance, addressing the complex challenge of determining which laws apply when virtual activities span multiple physical jurisdictions with no clear territorial boundaries.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }

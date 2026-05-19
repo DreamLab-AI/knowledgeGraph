@@ -8,6 +8,10 @@
   "definition": "A constraint based design component in the Artificial Intelligence domain that enables GenerativeDesignTool.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:ai-system-component",
       "label": "AI System Component"
     }

@@ -8,6 +8,10 @@
   "definition": "An Access Control System is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines wher a subject (human user, service account, autonomous agent, device) is permitted to perform a r...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:authorisation-mechanism",
       "label": "Authorisation Mechanism"
     },

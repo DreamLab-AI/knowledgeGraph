@@ -8,6 +8,10 @@
   "definition": "multimodal is a artificial intelligence concept and a type of Multimodal AI.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:multimodal-ai",
       "label": "Multimodal AI"
     }

@@ -8,8 +8,8 @@
   "definition": "Verification in knowledge systems is the process of confirming that information, claims, and digital artefacts meet specified standards for accuracy, completeness, and compliance with constraints through CryptographicProofs|cryptographic verification,",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

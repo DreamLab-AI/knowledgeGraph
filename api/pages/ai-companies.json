@@ -8,6 +8,10 @@
   "definition": "AI Companies is the population-level concept comprising commercial and non-profit organisations whose principal economic activity is the research, development, productisation, deployment, distribution, or infrastructure-provision of artificial intelligence technologies\u2014spanning the 2024-2026 indu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:commercial-enterprise",
       "label": "Commercial Enterprise"
     },

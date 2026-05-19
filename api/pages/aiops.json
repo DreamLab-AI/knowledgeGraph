@@ -8,8 +8,8 @@
   "definition": "AIOps is a artificial intelligence concept and a type of Artificial Intelligence.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

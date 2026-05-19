@@ -8,6 +8,10 @@
   "definition": "Linear encoder measures linear displacement.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:encoder",
       "label": "Encoder"
     }

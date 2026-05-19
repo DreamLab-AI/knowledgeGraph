@@ -8,8 +8,8 @@
   "definition": "Supply chain blockchain refers to the application of distributed ledger technology to track, trace, and verify the provenance of goods as they move through supply chain networks from raw materials to end consumers.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

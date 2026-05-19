@@ -8,6 +8,10 @@
   "definition": "Cryptographically verifiable, blockchain-recorded governance mechanism enabling DAO participants to cast votes that are immutably recorded on public ledgers and automatically executed through Smart Contract|smart contracts without human intermediaries\u2014deployed across Uniswap,",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:cryptography-security-and-privacy",
       "label": "Cryptography Security and Privacy"
     },

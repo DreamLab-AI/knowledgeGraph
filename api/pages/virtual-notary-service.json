@@ -8,6 +8,10 @@
   "definition": "Autonomous agent providing cryptographic attestation, timestamping, and verification services for digital documents and transactions through distributed ledger anchoring and automated certification protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }

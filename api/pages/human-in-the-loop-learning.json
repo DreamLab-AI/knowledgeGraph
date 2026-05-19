@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:human-in-the-loop-learning",
   "domain": "artificial-intelligence",
   "definition": "Human-in-the-Loop Learning integrates human expertise into the machine learning process through iterative feedback, active learning, and collaborative intelligence.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

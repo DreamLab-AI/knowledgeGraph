@@ -8,8 +8,8 @@
   "definition": "\"The use of artificial intelligence-powered natural language processing to automatically translate spoken or written communication between languages during live telepresence interactions with sub-second latency, enabling cross-lingual collaboration without human interpreters through neural machin...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
     }
   ],
   "entityType": "Class",

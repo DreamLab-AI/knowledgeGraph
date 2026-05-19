@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#InstantValueSettlement
-legacy_uri:: urn:visionclaw:concept:blockchain:instant-value-settlement
 public:: true
 
 # Instant value settlement
@@ -178,94 +175,19 @@ public:: true
       "vc:label": "Treasury Management"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "T+0 settlement, real-time settlement, atomic settlement, instant payment, real-time gross settlement, RTP, fast payment, instant finality, payment immediacy, T+0 atomic finality"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Bitcoin]], [[Stable Coins]], [[Lightning Network]], [[Smart Contract]], [[CBDCs]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-1b38757cf868"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#InstantValueSettlement"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-1201"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T09:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Instant value settlement"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:instant-value-settlement"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:instant-value-settlement"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2204293ba02129623237e0785d1ae26d596540f49d4921a1f1d7f84c314d9ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -284,6 +206,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
     {
       "@id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
@@ -801,9 +727,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2204293ba02129623237e0785d1ae26d596540f49d4921a1f1d7f84c314d9ee3@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

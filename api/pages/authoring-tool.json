@@ -8,6 +8,10 @@
   "definition": "Software application for creating or editing immersive content, including 3D models, environments, interactions, and multimedia assets for metaverse experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-content-creation",
       "label": "Digital Content Creation"
     }

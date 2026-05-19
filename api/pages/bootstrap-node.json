@@ -8,6 +8,10 @@
   "definition": "Network entry point node within blockchain systems, providing essential functionality for distributed ledger technology operations and properties.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     },

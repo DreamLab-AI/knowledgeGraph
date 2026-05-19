@@ -8,6 +8,10 @@
   "definition": "Audio Parameters are the configurable settings and properties defining spatial audio behavior in virtual environments, including source position, direction, attenuation, room acoustics, HRTF profiles, and rendering parameters that enable realistic 3D sound experiences in VR, AR, and metaverse app...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:audio-configuration",
       "label": "Audio Configuration"
     }

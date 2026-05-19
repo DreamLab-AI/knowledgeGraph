@@ -8,6 +8,10 @@
   "definition": "Tracked robot uses continuous tracks providing superior traction on rough terrain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:ground-robot",
       "label": "Ground Robot"
     }

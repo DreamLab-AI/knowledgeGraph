@@ -8,6 +8,10 @@
   "definition": "hand guiding is a robotics and autonomous systems concept and a type of Human Robot Interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
       "id": "urn:ngm:class:human-robot-interaction",
       "label": "Human Robot Interaction"
     }

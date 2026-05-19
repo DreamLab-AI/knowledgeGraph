@@ -8,6 +8,10 @@
   "definition": "An event involving an AI system that causes or has the potential to cause harm to individuals, property, environment, or fundamental rights, including malfunctions, security breaches, bias-driven discrimination, privacy violations, or unintended consequences requiring investigation and remediation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-risk",
       "label": "AI Risk"
     }

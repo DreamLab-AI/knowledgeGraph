@@ -8,8 +8,8 @@
   "definition": "Bidirectional and Auto-Regressive Transformers: a denoising autoencoder for pre-training sequence-to-sequence models, combining bidirectional encoding (like BERT) with autoregressive decoding (like GPT).",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

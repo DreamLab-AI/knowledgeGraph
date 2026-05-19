@@ -8,8 +8,8 @@
   "definition": "Panoptic Segmentation unifies semantic segmentation and instance segmentation by assigning every pixel both a class label and an instance ID, providing a complete scene understanding with \"thing\" classes (countable objects) and \"stuff\" classes (amorphous regions).",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

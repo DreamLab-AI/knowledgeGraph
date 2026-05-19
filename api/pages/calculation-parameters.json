@@ -8,6 +8,10 @@
   "definition": "Configurable variables and settings that control the behavior, accuracy, and performance of computational simulations and models, including solver options, convergence criteria, time steps, and optimization constraints that fine-tune simulation outputs.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:configuration-setting",
       "label": "Configuration Setting"
     }

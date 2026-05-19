@@ -8,6 +8,10 @@
   "definition": "Collective decision-making mechanism where the cost of casting n votes on any single proposal equals n\u00b2 voice credits, formalising preference-intensity revelation whilst resisting plutocratic capture \u2014 developed by Steven Lalley and E.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:governance-protocol",
       "label": "Governance Protocol"
     },

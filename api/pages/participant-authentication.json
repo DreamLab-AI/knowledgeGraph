@@ -8,6 +8,10 @@
   "definition": "The process of verifying the identity of users in virtual environments, events, and metaverse platforms through mods including multi-factor authentication, biometrics, blockchain-based identity, and AI-powered verification to prevent impersonation and ensure secure access.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:identity-management",
       "label": "Identity Management"
     }

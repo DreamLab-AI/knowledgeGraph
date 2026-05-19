@@ -8,6 +8,10 @@
   "definition": "Industrial Robot is a reprogrammable, automatically controlled manipulator programmable in three or more axes, fixed in place or mobile, for use in industrial automation applications as defined by ISO 8373:2012.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:manufacturing-automation",
       "label": "Manufacturing Automation"
     },

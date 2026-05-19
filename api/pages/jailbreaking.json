@@ -8,6 +8,10 @@
   "definition": "Jailbreaking of large language models (LLMs) is the practice of crafting inputs\u2014prompts, instruction sequences, encoded payloads, or multi-turn conversational strategies\u2014that cause a model to produce outputs that circumvent its safety training, content policies, or alignment objectives.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:adversarial-machine-learning",
       "label": "Adversarial Machine Learning"
     },

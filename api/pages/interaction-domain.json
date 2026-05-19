@@ -8,8 +8,8 @@
   "definition": "The Interaction Domain encompasses the ontological framework for human-computer interaction (HCI) phenomena, including interactive computer systems, user interfaces, user actions, and the processes by which interactions occur.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

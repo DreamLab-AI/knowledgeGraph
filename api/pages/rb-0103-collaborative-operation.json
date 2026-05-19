@@ -8,6 +8,10 @@
   "definition": "collaborative operation is a robotics and autonomous systems concept and a type of Collaborative Operation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    },
+    {
       "id": "urn:ngm:class:collaborative-operation",
       "label": "Collaborative Operation"
     }

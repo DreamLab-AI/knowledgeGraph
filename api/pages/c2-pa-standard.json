@@ -8,6 +8,10 @@
   "definition": "An open technical standard developed by the Coalition for Content Provenance and Authenticity that establishes cryptographically-signed Content Credentials to certify the origin, history, and authenticity of digital media, functioning like a tamper-evident nutrition label for digital content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

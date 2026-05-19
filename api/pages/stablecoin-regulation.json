@@ -8,6 +8,10 @@
   "definition": "Stablecoin regulation is the corpus of statutory, administrative, and supervisory rules that national and supranational authorities apply to Cryptocurrency|cryptocurrency tokens designed to maintain stable value relative to fiat currencies, commodities, or baskets of assets, spanning five con...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:crypto-regulation",
       "label": "Crypto Regulation"
     },

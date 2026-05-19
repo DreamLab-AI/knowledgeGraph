@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:democratic-governance",
   "domain": "infrastructure",
   "definition": "Democratic Governance is an infrastructure concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "Stable Coins (stablecoins) are blockchain-native digital tokens engineered to maintain stable value relative to an external reference asset \u2014 most commonly the US dollar at 1:1 parity \u2014 through one of four primary stabilisation mechanisms: (i) fiat-collateralised custody, where off-chain reserves...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:financial-instrument",
       "label": "Financial Instrument"
     },

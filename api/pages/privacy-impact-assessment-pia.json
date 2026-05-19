@@ -8,8 +8,8 @@
   "definition": "Systematic eprocess that identifies and assesses privacy risks arising from the processing of personal data in metaverse systems, ensuring compliance with data protection regulations and ical standards.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

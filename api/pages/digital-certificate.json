@@ -8,6 +8,10 @@
   "definition": "A cryptographic credential issued by a Certificate Authority that validates the identity of entities, authenticates users, and secures transactions within virtual environments, metaverse platforms, and blockchain networks through public key infrastructure and verifiable attestations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-security",
       "label": "Digital Security"
     }

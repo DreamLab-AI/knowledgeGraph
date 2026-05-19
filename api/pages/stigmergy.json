@@ -8,6 +8,10 @@
   "definition": "Indirect coordination mechanism in swarm robotics where agents communicate through environmental modifications, enabling emergent collective behavior without direct communication.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:swarm-robotics",
       "label": "Swarm Robotics"
     }

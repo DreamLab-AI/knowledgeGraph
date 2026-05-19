@@ -8,6 +8,10 @@
   "definition": "Distributed Computing is a computational paradigm in which networked autonomous nodes (processes, machines, datacentres or geographic regions) coordinate through message passing over partially synchronous networks to solve problems no single node can solve alone or to scale capacity beyond a sing...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:concurrent-computing",
       "label": "Concurrent Computing"
     },

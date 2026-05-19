@@ -8,6 +8,10 @@
   "definition": "The Travel Rule (formally Financial Action Task Force|FATF Recommendation 16) is an anti-money-laundering regulatory requirement mandating that Virtual Asset Service Provider|Virtual Asset Service Providers (VASPs) and custodial financial institutions collect, verify, and transmit origina...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:anti-money-laundering",
       "label": "Anti-Money Laundering"
     },

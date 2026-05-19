@@ -8,6 +8,10 @@
   "definition": "A probabilistic localization algorithm that represents the robot's belief about its position using a set of weighted particles (samples), where each particle represents a hypothesis of the robot's pose. It implements a particle filter to recursively estimate the robot's pose distribution.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:rb-1013-localization",
       "label": "RB-1013-localization"
     }

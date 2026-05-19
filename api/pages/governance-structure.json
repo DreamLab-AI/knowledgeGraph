@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:governance-structure",
   "domain": "infrastructure",
   "definition": "A governance structure is the formal arrangement of authority, accountability, decision-making rights, and control mechanisms within an organisation, system, protocol, or jurisdiction that determines how strategic direction is set, resources are allocated, obligations are enforced, and stakeholde...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.52,
   "maturity": "established",

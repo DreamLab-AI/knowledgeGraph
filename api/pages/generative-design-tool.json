@@ -8,8 +8,8 @@
   "definition": "AI-assisted software application that produces optimized 3D designs from functional constraints using machine learning and computational algorithms.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

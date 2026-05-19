@@ -8,6 +8,10 @@
   "definition": "A PoS variant that randomly selects validators from all stakers proportional to their stake weight, without delegation mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:proof-of-stake",
       "label": "Proof of Stake"
     }

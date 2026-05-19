@@ -8,8 +8,8 @@
   "definition": "A training technique where the learning rate starts small and gradually increases at the beginning of training to stabilise optimisation. Warmup is standard practice for training large transformer models, preventing instability from large gradients early in training.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "AR and VR tracking technique that uses predefined visual patterns such as QR codes, April tags, ArUco markers, and fiducial markers to determine device position and orientation for accurate digital content overlay.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:spatial-tracking-technology",
       "label": "Spatial Tracking Technology"
     }

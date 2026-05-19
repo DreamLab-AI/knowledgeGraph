@@ -8,6 +8,10 @@
   "definition": "The foundational technical framework supporting metaverse platforms, comprising cloud computing, edge networks, distributed systems, and computing power networks that enable scalable, low-latency delivery of immersive virtual experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:technical-architecture",
       "label": "Technical Architecture"
     }

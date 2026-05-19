@@ -8,8 +8,8 @@
   "definition": "Robot navigation strategies that account for social norms, human comfort, and contextual appropriateness when moving through human-populated environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
     }
   ],
   "entityType": "Class",

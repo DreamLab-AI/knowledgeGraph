@@ -8,8 +8,8 @@
   "definition": "A fine-tuning technique that trains language models to follow natural language instructions by training on diverse instruction-response pairs. Instruction tuning enables models to generalise to new tasks described through instructions without task-specific training data.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

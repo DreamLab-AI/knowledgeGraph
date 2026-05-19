@@ -8,6 +8,10 @@
   "definition": "Capability for autonomous self-improvement.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:neural-network-component",
       "label": "Neural Network Component"
     }

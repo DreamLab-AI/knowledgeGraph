@@ -8,6 +8,10 @@
   "definition": "The layered technical framework defining metaverse infrastructure, encompassing network connectivity, computing resources, spatial computing, creator tools, interaction protocols, and economic systems that enable persistent virtual worlds.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

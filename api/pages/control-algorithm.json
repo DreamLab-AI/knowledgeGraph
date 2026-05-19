@@ -8,6 +8,10 @@
   "definition": "ControlAlgorithm is a formalised mathematical and computational procedure that generates actuator commands to drive a dynamic system from its current state toward a desired target state, exploiting feedback from sensors, an internal model of the plant, or learned approximations of system dynamics...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:dynamical-systems",
       "label": "Dynamical Systems"
     },

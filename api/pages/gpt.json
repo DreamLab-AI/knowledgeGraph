@@ -8,8 +8,8 @@
   "definition": "Generative Pre-trained Transformer: an autoregressive language model that uses transformer decoder architecture and is pre-trained on large text corpora using next-token prediction.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

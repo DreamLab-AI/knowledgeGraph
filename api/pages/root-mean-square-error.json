@@ -8,6 +8,10 @@
   "definition": "A regression performance metric representing the square root of the average squared differences between predicted and actual values, calculated by taking the mean of squared prediction errors and then applying the square root, providing a measure of prediction accuracy in the same units as the ta...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:mean-absolute-error",
       "label": "Mean Absolute Error"
     }

@@ -8,6 +8,10 @@
   "definition": "Coding support is a technology infrastructure concept and a type of Software Engineering.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:software-engineering",
       "label": "Software Engineering"
     }

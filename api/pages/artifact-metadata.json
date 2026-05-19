@@ -8,6 +8,10 @@
   "definition": "Artifact Metadata refers to structured descriptive, administrative, and provenance information associated with digital assets and cultural objects, particularly in NFT and blockchain contexts, documenting ownership history, authenticity, cultural significance, and preservation status for verifica...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-metadata",
       "label": "Digital Metadata"
     }

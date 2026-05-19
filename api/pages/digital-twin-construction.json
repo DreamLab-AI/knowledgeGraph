@@ -8,6 +8,10 @@
   "definition": "The application of digital twin technology within the architecture, engineering, and construction (AEC) industry, extending BIM capabilities through real-time sensor integration and IoT connectivity to create dynamic virtual replicas of buildings and infrastructure throughout their lifecycle.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }

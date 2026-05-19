@@ -8,6 +8,10 @@
   "definition": "Protocols and mechanisms that enable communication and data transfer between different blockchain networks, facilitating interoperability and cross-chain applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:interoperability-protocol",
       "label": "Interoperability Protocol"
     },

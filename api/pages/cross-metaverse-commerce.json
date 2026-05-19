@@ -8,6 +8,10 @@
   "definition": "Economic activities and transactions that span multiple metaverse platforms and virtual worlds, enabled by interoperability standards, blockchain-based digital assets, and unified digital identity systems that allow users to buy, sell, trade, and transfer value seamlessly across different virtual...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

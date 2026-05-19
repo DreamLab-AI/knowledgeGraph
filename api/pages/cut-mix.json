@@ -8,8 +8,8 @@
   "definition": "A data augmentation technique that creates training examples by cutting and pasting patches between images, with labels mixed proportionally to the patch areas. CutMix improves model robustness and localisation ability by forcing attention to less discriminative regions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

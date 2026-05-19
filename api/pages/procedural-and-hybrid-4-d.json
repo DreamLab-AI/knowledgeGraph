@@ -8,6 +8,10 @@
   "definition": "Procedural and Hybrid 4D is a compound domain in graphics and creative tooling that unifies two convergent paradigms: (1) procedural generation \u2014 the algorithmic, rule-driven construction of geometry, materials, animation, simulation, and environment data using mathematical operations rather than...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:3-d-modelling",
       "label": "3D Modelling"
     },

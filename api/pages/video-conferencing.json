@@ -8,6 +8,10 @@
   "definition": "\"Real-time audio-visual communication technology enabling multiple geographically distributed participants to see and hear each other simultaneously through internet-connected devices, supporting face-to-face interaction across distances.\"",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:tc-0010-synchronous-collaboration",
       "label": "TC-0010-Synchronous-Collaboration"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:data-structure",
   "domain": "artificial-intelligence",
   "definition": "Data Structures in AI represent the organizational schemes for efficiently storing, accessing, and manipulating data used in machine learning algorithms.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

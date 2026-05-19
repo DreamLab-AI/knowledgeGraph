@@ -8,8 +8,8 @@
   "definition": "Precision Medicine utilises artificial intelligence to tailor medical treatment to individual patient characteristics, integrating genomic data, clinical information, lifestyle factors, and environmental data to predict treatment response, identify optimal therapies, and stratify patient populati...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

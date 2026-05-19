@@ -8,8 +8,8 @@
   "definition": "\"The conceptual and technical integration between robotics systems and telepresence technologies, where remote operators experience physical presence in distant real-world locations through robot-mediated perception and action, combining robotic manipulation capabilities with telepresence social ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
     }
   ],
   "entityType": "Class",

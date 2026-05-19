@@ -8,6 +8,10 @@
   "definition": "A precision test pattern used for camera and imaging system calibration, including color charts, resolution targets, and geometric patterns that enable accurate measurement of color reproduction, distortion, magnification, and spatial frequency response in optical systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:calibration-equipment",
       "label": "Calibration Equipment"
     }

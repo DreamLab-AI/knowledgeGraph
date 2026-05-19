@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:cryptographic-protocol",
   "domain": "infrastructure",
   "definition": "Cryptographic-Protocol encompasses mathematical frameworks and algorithmic procedures securing blockchain through cryptographic primitives.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.55,
   "maturity": "draft",

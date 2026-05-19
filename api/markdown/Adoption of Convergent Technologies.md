@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/ethics-society#AdoptionOfConvergentTechnologies
-legacy_uri:: urn:visionclaw:concept:ethics-society:adoption-of-convergent-technologies
 public:: true
 
 # Adoption of Convergent Technologies
@@ -414,94 +411,19 @@ public:: true
       "vc:label": "Web3"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Convergent Tech Adoption, Technology Convergence Diffusion, NBIC Convergence Adoption, Deep Tech Adoption, Converging Technologies Diffusion, Multi-Technology Adoption, Stack Convergence Adoption, Technology Integration Diffusion"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[AI Adoption]], [[Blockchain Network]], [[AR Frame]], [[Agent Frameworks]], [[Agentic Internet]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-22697fce749a"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "ethics-society"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/ethics-society#AdoptionOfConvergentTechnologies"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "ES-1001"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-17T09:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Adoption of Convergent Technologies"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:ethics-society:adoption-of-convergent-technologies"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:ethics-society:adoption-of-convergent-technologies"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dcdc8eb3887e2d82dfc29d544da7168437f4b2ad82203ae91884a443b7ac9f99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -520,6 +442,10 @@ public:: true
   "domain": "artificial-intelligence",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
     {
       "@id": "urn:ngm:class:socio-technical-transition",
       "label": "Socio-Technical Transition"
@@ -1352,9 +1278,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:dcdc8eb3887e2d82dfc29d544da7168437f4b2ad82203ae91884a443b7ac9f99@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

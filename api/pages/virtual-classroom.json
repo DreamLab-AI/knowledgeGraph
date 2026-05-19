@@ -8,6 +8,10 @@
   "definition": "An online learning environment that replicates a traditional classroom's interactive experience without physical boundaries, leveraging education technology to connect students and instructors through real-time engagement, collaboration tools, and shared learning materials.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

@@ -8,8 +8,8 @@
   "definition": "A CAD design modology that uses algorithms and adjustable parameters to generate and modify complex 3D geometry, enabling flexible, constraint-driven design where changes to input values automatically propagate throughout the model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Cyber Security and Military denotes the doctrinal, organisational, technical and operational fusion of cyberspace as a recognised warfighting domain alongside land, sea, air and space \u2014 codified by NATO at the 2016 Warsaw Summit declaration that cyberspace is \"a domain of operations in which NATO...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:cyber-operations",
       "label": "Cyber Operations"
     },

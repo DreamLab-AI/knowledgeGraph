@@ -6,7 +6,7 @@
   "title": "Embedded Systems",
   "vc:slug": "embedded-systems",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Embedded Systems is a foundational concept in robotics that serves as a classification parent for 4 related concepts in the ontology.",
   "domain": "robotics",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    }
+  ]
 }
 ```
 

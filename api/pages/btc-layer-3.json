@@ -8,6 +8,10 @@
   "definition": "Layer 3 (Bitcoin Layer 3) designates the application-layer stratum of the Bitcoin protocol stack \u2014 a collection of protocols, virtual machines, asset-issuance systems, and programmability frameworks constructed atop Layer 2 scaling networks (principally the Lightning Network and emerging",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:application-layer-protocol",
       "label": "Application Layer Protocol"
     },

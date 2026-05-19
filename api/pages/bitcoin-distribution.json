@@ -8,6 +8,10 @@
   "definition": "Bitcoin Distribution is the sub-field of Blockchain economics that measures, models, and interprets the allocation of Bitcoin's circulating supply across identifiable holder categories \u2014 individuals, corporations, governments, miners, exchanges, custodians, and the permanently lost or provabl...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:bitcoin",
       "label": "Bitcoin"
     }

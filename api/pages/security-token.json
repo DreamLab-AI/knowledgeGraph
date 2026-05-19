@@ -8,6 +8,10 @@
   "definition": "A token designed to represent complete or fractional ownership interests in assets and/or entities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }

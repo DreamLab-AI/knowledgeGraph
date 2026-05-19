@@ -8,6 +8,10 @@
   "definition": "force torque sensor is a robotics and autonomous systems concept and a type of Force Torque Sensor.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:force-torque-sensor",
       "label": "Force Torque Sensor"
     }

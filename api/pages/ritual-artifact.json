@@ -8,6 +8,10 @@
   "definition": "Digital objects within virtual worlds that hold cultural, spiritual, or ceremonial significance, often represented as NFTs enabling communities to preserve and share cultural heritage through blockchain-verified authenticity and ownership.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-heritage",
       "label": "Digital Heritage"
     }

@@ -8,6 +8,10 @@
   "definition": "ereum's PoS consensus combining Casper FFG (finality gadget) with LMD GHOST (fork choice rule). Validators directly stake er without delegation mechanism.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:hybrid-consensus",
       "label": "Hybrid Consensus"
     }

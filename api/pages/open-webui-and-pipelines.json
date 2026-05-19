@@ -8,6 +8,10 @@
   "definition": "Open WebUI (formerly Ollama WebUI, created by Tim Jaeryang Baek, first released October 2023, + GitHub stars by mid-2025) is a self-hosted, ChatGPT-equivalent web interface for interacting with local and remote Large Language Models through a polished conversational UI, supporting Ollama ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:chatbots",
       "label": "Chatbots"
     },

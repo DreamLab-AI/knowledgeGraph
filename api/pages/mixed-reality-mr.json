@@ -8,8 +8,8 @@
   "definition": "Interactive environment where physical and digital elements coexist, interact bidirectionally, and dynamically influence each other in real time with advanced occlusion, lighting, and physics simulation creating seamless blended experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

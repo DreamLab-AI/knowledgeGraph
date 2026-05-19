@@ -8,6 +8,10 @@
   "definition": "Multi-signature (multi-sig) governance is a cryptographic threshold-signature scheme requiring m-of-n authorised keyholders to co-sign a transaction or message before it executes, eliminating single points of failure in digital-asset control and enabling graduated, committee-based decision-making...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:committee-governance",
       "label": "Committee Governance"
     }

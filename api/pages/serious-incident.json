@@ -8,6 +8,10 @@
   "definition": "An incident or malfunctioning of an AI system that directly or indirectly leads to death, serious health damage, serious disruption of critical infrastructure, or serious fundamental rights infringements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-and-spatial-risks",
       "label": "Metaverse and Spatial Risks"
     }

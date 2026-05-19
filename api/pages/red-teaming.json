@@ -8,8 +8,8 @@
   "definition": "The practice of deliberately attempting to elicit harmful, biased, or undesired outputs from AI systems to identify vulnerabilities and weaknesses.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

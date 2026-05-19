@@ -8,6 +8,10 @@
   "definition": "A convergent network of persistent, synchronous 3D virtual worlds, augmented reality environments, and internet platforms that enable shared spatial computing experiences with interoperable digital assets, persistent identity, and real-time social interaction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:multiverse",
       "label": "Multiverse"
     }

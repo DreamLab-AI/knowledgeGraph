@@ -8,6 +8,10 @@
   "definition": "A distributed computing paradigm that positions computational resources closer to end-user devices such as VR headsets and AR glasses, reducing latency, improving responsiveness, and enabling scalable metaverse experiences by offloading processing from centralised cloud servers.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:distributed-system-architecture",
       "label": "Distributed System Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "A feed-forward network (FFN) is a class of artificial neural network in which information propagates strictly in one direction \u2014 from input nodes through one or more hidden layers to output nodes \u2014 with no feedback cycles, recurrent connections, or lateral synapses between units at the same layer.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:differentiable-programming",
       "label": "Differentiable Programming"
     },

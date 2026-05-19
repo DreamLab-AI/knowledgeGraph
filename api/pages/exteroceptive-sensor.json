@@ -8,6 +8,10 @@
   "definition": "Exteroceptive sensors are robot perception transducers that measure information about the external environment surrounding the robot rather than its internal kinematic, dynamic, or energetic state, providing the raw signals from which obstacle maps, semantic scene representations, object poses, t...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:environmental-sensor",
       "label": "Environmental Sensor"
     },

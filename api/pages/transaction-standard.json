@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:transaction-standard",
   "domain": "spatial-computing",
   "definition": "A protocol defining secure exchange of digital assets and services within virtual economies, specifying message formats, authentication mechanisms, settlement procedures, and integrity guarantees.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

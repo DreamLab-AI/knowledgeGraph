@@ -8,6 +8,10 @@
   "definition": "The process of creating 3D virtual environments for metaverse platforms, games, and simulations using tools ranging from no-code platforms to professional game engines, enabling the construction of immersive digital spaces with customizable assets, terrain, and interactive elements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:3-d-design",
       "label": "3D Design"
     }

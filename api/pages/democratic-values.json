@@ -8,6 +8,10 @@
   "definition": "Principles and practices of democratic governance including pluralism, participatory decision-making, transparent governance, electoral integrity, free formation of political will and protection of civic space, which AI systems should respect and strengthen rather than undermine.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:policy-enforcement",
       "label": "Policy Enforcement"
     }

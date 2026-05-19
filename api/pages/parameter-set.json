@@ -8,6 +8,10 @@
   "definition": "A collection of configurable values that define the behavior, appearance, or operation of a system, algorithm, or model, allowing users to store, recall, and modify settings to achieve different outputs or modes of operation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:configuration",
       "label": "Configuration"
     }

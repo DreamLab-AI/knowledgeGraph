@@ -8,6 +8,10 @@
   "definition": "Bias in Large Language Models is the systematic skew in the outputs, representations, and decisions of transformer-based foundation models (GPT-4o/4.5, Claude 3.5/4 Sonnet/Opus, Gemini 1.5/2.0 Pro, Llama 3/4, Mistral Large, Qwen 2.5, DeepSeek-V3) toward particular social groups, viewpoints, langu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:representational-harm",
       "label": "Representational Harm"
     },

@@ -8,6 +8,10 @@
   "definition": "Decentralised file storage denotes a class of infrastructure protocols and networks that disaggregate object/blob persistence across geographically distributed, mutually untrusting node operators using content-addressing, cryptographic accountability, and (in most implementations) crypto-economic...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:content-addressed-storage",
       "label": "Content-Addressed Storage"
     },

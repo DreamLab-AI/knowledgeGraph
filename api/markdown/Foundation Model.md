@@ -6,7 +6,7 @@
   "title": "Foundation Model",
   "vc:slug": "foundation-model",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```

@@ -8,6 +8,10 @@
   "definition": "safety integrity level is a robotics and autonomous systems concept and a type of Cobot Safety Levels.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:cobot-safety-levels",
       "label": "Cobot Safety Levels"
     }

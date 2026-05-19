@@ -8,6 +8,10 @@
   "definition": "A verified document representing the reduction or removal of one metric ton of CO2 equivalent emissions, issued by recognized standards bodies after independent validation that confirms the underlying project's additionality, permanence, and measurability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-certificate",
       "label": "Environmental Certificate"
     }

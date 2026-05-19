@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:information-security",
   "domain": "artificial-intelligence",
   "definition": "Information Security in AI addresses the protection of data, models, and AI systems from unauthorized access, adversarial attacks, privacy breaches, and malicious exploitation.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

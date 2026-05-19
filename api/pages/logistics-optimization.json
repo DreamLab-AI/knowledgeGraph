@@ -8,6 +8,10 @@
   "definition": "Logistics optimisation is the application of artificial intelligence, machine learning, and classical operations research to minimise cost, transit time, carbon, and service-failure risk across physical goods movement networks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:applied-machine-learning",
       "label": "Applied Machine Learning"
     },

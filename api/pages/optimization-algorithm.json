@@ -8,6 +8,10 @@
   "definition": "Optimization Algorithm is a artificial intelligence concept and a type of Algorithm.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:algorithm",
       "label": "Algorithm"
     }

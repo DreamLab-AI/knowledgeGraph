@@ -6,7 +6,7 @@
   "title": "Extended Reality",
   "vc:slug": "extended-reality",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Extended Reality is a foundational concept in spatial computing that serves as a classification parent for 3 related concepts in the ontology.",
   "domain": "spatial-computing",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ]
 }
 ```
 

@@ -8,6 +8,10 @@
   "definition": "Network Components are the physical and virtual hardware devices that comprise telecommunications and computer network infrastructure, enabling network connectivity, communication, and data routing between users, devices, applications, and the internet.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

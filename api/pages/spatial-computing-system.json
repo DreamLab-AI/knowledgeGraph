@@ -8,6 +8,10 @@
   "definition": "An integrated computing platform that seamlessly merges digital content with physical environments, exemplified by Apple Vision Pro with its M2 and R1 chips, enabling interaction through eye tracking, hand gestures, and voice while displaying content on micro-OLED displays with spatial positionin...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:mixed-reality-platform",
       "label": "Mixed Reality Platform"
     }

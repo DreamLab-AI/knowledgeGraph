@@ -8,6 +8,10 @@
   "definition": "Lidar is a type of Sensor in the robotics domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:sensor",
       "label": "Sensor"
     }

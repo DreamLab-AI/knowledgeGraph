@@ -8,6 +8,10 @@
   "definition": "A Dialogue System (conversational AI system) is an AI application that engages in natural language conversations with users through text or speech, managing multi-turn interactions, maintaining conversational context, and executing task-oriented or open-domain dialogues.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

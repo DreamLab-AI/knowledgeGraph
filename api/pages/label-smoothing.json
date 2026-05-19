@@ -8,8 +8,8 @@
   "definition": "A regularisation technique that replaces hard one-hot labels with soft targets by allocating small probability mass to incorrect classes. Label smoothing prevents overconfident predictions and improves model calibration and generalisation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

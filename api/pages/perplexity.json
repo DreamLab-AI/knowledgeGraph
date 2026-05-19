@@ -8,6 +8,10 @@
   "definition": "perplexity is a technology infrastructure concept and a type of infrastructure.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

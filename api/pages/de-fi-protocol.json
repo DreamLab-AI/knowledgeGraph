@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:de-fi-protocol",
   "domain": "blockchain",
   "definition": "A blockchain-based financial application providing decentralized financial services via smart contracts.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.4,
   "maturity": "draft",

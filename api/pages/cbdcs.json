@@ -8,6 +8,10 @@
   "definition": "Central Bank Digital Currencies (CBDCs) are sovereign digital money issued directly by a nation's central bank, representing a liability of the issuing central bank rather than a commercial bank or private institution, denominated in the official unit of account and designed to function as legal ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:central-bank-money",
       "label": "Central Bank Money"
     },

@@ -8,8 +8,8 @@
   "definition": "Crossover domain for ETSI metaverse categorisation addressing data preservation and management systems for cultural heritage digitisation, archival, and accessibility.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

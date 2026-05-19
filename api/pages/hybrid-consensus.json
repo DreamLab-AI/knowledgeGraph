@@ -8,6 +8,10 @@
   "definition": "Consensus mechanisms combining multiple approaches, typically merging proof-based mods with BFT finality or mixing PoW and PoS elements.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:consensus-mechanism",
       "label": "Consensus Mechanism"
     }

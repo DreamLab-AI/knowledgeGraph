@@ -8,6 +8,10 @@
   "definition": "A signal processing architecture that uses modulator signals to dynamically control carrier signal parameters like pitch, amplitude, and timbre over time, enabling expressive sound synthesis and complex audio effects through techniques such as FM, AM, and envelope modulation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:audio-system",
       "label": "Audio System"
     }

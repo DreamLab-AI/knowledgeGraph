@@ -8,6 +8,10 @@
   "definition": "Digital Taxonomy Registry is a type of Metadata Repository in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:metadata-repository",
       "label": "Metadata Repository"
     }

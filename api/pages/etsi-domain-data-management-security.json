@@ -8,6 +8,10 @@
   "definition": "Crossover domain for ETSI metaverse categorisation addressing secure data storage, encrypted databases, access control systems, and data protection mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "ETSI Metaverse Domain Taxonomy"
     }

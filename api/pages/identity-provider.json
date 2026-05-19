@@ -8,6 +8,10 @@
   "definition": "An Identity Provider (IdP) is a specialised security system that authenticates principals \u2014 humans, service accounts, devices, and workloads \u2014 and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, oper...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:security-infrastructure",
       "label": "Security Infrastructure"
     },

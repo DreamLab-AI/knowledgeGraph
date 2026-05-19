@@ -8,6 +8,10 @@
   "definition": "Archival Standards encompass frameworks, specifications, and best practices for long-term digital preservation, including metadata standards (PREMIS, METS), reference models (OAIS), and storage technologies that ensure digital content remains accessible, authentic, and interpretable across techno...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:preservation-standards",
       "label": "Preservation Standards"
     }

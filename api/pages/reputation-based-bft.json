@@ -8,6 +8,10 @@
   "definition": "A BFT algorithm incorporating a reputation model to evaluate the operations of each node in the consensus process, giving higher weight to nodes with better historical behavior.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:byzantine-fault-tolerance",
       "label": "Byzantine Fault Tolerance"
     }

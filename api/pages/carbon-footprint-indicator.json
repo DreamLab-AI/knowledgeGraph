@@ -8,6 +8,10 @@
   "definition": "A quantitative environmental performance metric that measures and tracks an organization's greenhouse gas emissions in CO2 equivalent units, serving as a key sustainability KPI for monitoring progress toward emission reduction targets and enabling comparative analysis across operations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:environmental-kpi",
       "label": "Environmental KPI"
     }

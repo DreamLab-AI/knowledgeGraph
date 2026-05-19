@@ -8,6 +8,10 @@
   "definition": "Systematic investigation of user behaviors, needs, preferences, and experiences in metaverse environments through qualitative and quantitative mods to inform design decisions and improve virtual world experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:research-methods",
       "label": "Research Methods"
     }

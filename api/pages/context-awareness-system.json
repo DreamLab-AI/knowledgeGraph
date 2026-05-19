@@ -8,6 +8,10 @@
   "definition": "A technology framework that captures, processes, and interprets contextual information about users and their environments using IoT sensors, location tracking, and AI analytics to enable adaptive services, personalized experiences, and intelligent decision-making in virtual and physical spaces.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:intelligent-systems",
       "label": "Intelligent Systems"
     }

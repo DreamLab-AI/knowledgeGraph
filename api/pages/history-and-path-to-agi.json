@@ -8,6 +8,10 @@
   "definition": "History and Path to AGI is the intellectual and institutional chronicle of artificial intelligence research from its philosophical origins through contemporary frontier AI development, tracing the succession of paradigms, breakthroughs, and failures that collectively constitute the discipline's t...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:ai-research",
       "label": "AI Research"
     },

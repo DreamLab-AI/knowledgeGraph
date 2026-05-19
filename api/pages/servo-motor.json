@@ -8,6 +8,10 @@
   "definition": "Servo motor provides precise position, velocity, and torque control.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:electric-motor",
       "label": "Electric Motor"
     }

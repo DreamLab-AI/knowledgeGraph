@@ -8,6 +8,10 @@
   "definition": "Hand Tracking is a real-time computational pipeline that continuously estimates the three-dimensional position, orientation, and articulation state of one or both human hands from sensor input, delivering a skeletal or parametric representation of all fingers and joints at interactive framerates ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:gesture-recognition",
       "label": "Gesture Recognition"
     },

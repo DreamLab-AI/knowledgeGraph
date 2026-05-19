@@ -8,6 +8,10 @@
   "definition": "Domain categorisation for data management, storage, analytics, AI/ML systems, and intelligence capabilities processing information in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-model",
       "label": "Etsi Metaverse Domain Model"
     }

@@ -8,6 +8,10 @@
   "definition": "Testing modology that deliberately attempts to cause AI system failures through adversarial inputs, edge cases, and challenging scenarios. Adversarial testing helps identify robustness issues, safety vulnerabilities, and alignment failures before deployment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-safety",
       "label": "AI Safety"
     }

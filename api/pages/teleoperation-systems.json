@@ -8,6 +8,10 @@
   "definition": "\"Robotic control systems enabling human operators to command and manipulate remote robots through intuitive interfaces, transmitting operator intentions to robot actuators whilst providing sensory feedback (visual, auditory, haptic) from the robot to the operator, creating bidirectional human-mac...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:robotic-telepresence",
       "label": "Robotic Telepresence"
     }

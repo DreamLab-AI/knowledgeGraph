@@ -8,8 +8,8 @@
   "definition": "\"The conceptual and technical integration between metaverse virtual environments and telepresence technologies, where participants experience remote presence in persistent 3D virtual worlds through immersive XR platforms, combining metaverse spatial computing infrastructure with telepresence soci...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
     }
   ],
   "entityType": "Class",

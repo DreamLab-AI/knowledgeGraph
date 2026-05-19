@@ -8,6 +8,10 @@
   "definition": "The professional oversight and administration of cryptocurrency portfolios, tokenized assets, and blockchain-based investments through systematic strategies, risk management frameworks, and fiduciary practices to optimise returns and preserve capital for individuals and institutions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:investment-management",
       "label": "Investment Management"
     }

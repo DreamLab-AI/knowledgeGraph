@@ -8,8 +8,8 @@
   "definition": "A royalty-free, open-standard 3D asset transmission format developed by Khronos Group that efficiently specifies scene structure, geometry, materials, animations, and other properties for real-time rendering.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
     }
   ],
   "entityType": "Class",

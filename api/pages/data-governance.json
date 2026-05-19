@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:data-governance",
   "domain": "artificial-intelligence",
   "definition": "Data Governance is an artificial intelligence concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

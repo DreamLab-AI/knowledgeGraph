@@ -8,6 +8,10 @@
   "definition": "Technical Robustness and Safety is a trustworthiness dimension ensuring AI systems perform reliably under varied conditions, resist adversarial attacks, implement fallback mechanisms for graceful degradation, and maintain safety throughout their operational lifecycle.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-trustworthiness-dimensions",
       "label": "AI Trustworthiness Dimensions"
     }

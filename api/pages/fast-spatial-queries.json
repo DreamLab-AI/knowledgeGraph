@@ -8,8 +8,8 @@
   "definition": "Optimised algorithms and data structures enabling rapid retrieval and processing of three-dimensional location-based data in metaverse environments, supporting real-time collision detection, proximity searches, visibility calculations, and spatial indexing for interactive virtual world experiences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "Spatial Computing"
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
     }
   ],
   "entityType": "Class",

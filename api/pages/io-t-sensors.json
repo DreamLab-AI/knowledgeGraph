@@ -8,6 +8,10 @@
   "definition": "IoT Sensors are networked sensing devices that collect physical and environmental data (temperature, pressure, motion, humidity, vibration, etc.) and transmit it via internet protocols to edge or cloud systems for processing and analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:internet-of-things",
       "label": "Internet of Things"
     }

@@ -8,6 +8,10 @@
   "definition": "Specialized real-time graphics software that generates stereoscopic imagery for virtual reality headsets, optimizing frame rates, latency, and visual fidelity while managing the unique requirements of immersive display including foveated rendering, reprojection, and lens distortion correction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:game-engine",
       "label": "Game Engine"
     }

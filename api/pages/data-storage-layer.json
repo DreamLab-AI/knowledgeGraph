@@ -8,6 +8,10 @@
   "definition": "Software layer managing persistent storage, retrieval, and lifecycle of digital assets, metadata, world state, user data, and transactional records in metaverse systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-layer",
       "label": "Data Layer"
     }

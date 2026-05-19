@@ -8,8 +8,8 @@
   "definition": "Physical hardware device that captures and verifies biometric traits (fingerprints, iris patterns, facial geometry) to bind digital identities to authenticated users.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

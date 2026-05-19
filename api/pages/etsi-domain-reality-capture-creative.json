@@ -8,6 +8,10 @@
   "definition": "ETSI framework for real-time digital performance capture and creative content generation enabling actors, performers, and creators to capture expressive movements, facial animations, and embodied interactions for metaverse avatars and immersive experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-performance-capture",
       "label": "Digital Performance Capture"
     }

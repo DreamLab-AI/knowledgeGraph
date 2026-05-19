@@ -8,8 +8,8 @@
   "definition": "The capability of an AI system to maintain correct and consistent behavior when subjected to adversarial examples\u2014inputs intentionally crafted with small, often imperceptible perturbations designed to cause misclassification or incorrect outputs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "\"Persistent virtual reality or metaverse environments designed as professional workspaces where distributed teams gather as avatars to collaborate, attend meetings, use shared whiteboards, and navigate 3D office layouts, replicating physical office spatial dynamics whilst enabling global remote p...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-workspace-tools",
+      "label": "Workspace Tools"
+    },
+    {
       "id": "urn:ngm:class:virtual-environment",
       "label": "Virtual Environment"
     }

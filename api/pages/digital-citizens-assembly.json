@@ -8,6 +8,10 @@
   "definition": "Digital Citizens' Assembly is a type of Metaverse governance and safeguarding in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

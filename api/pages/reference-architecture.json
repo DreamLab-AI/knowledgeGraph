@@ -8,6 +8,10 @@
   "definition": "A standardized architectural template that provides proven structural frameworks and design patterns for building scalable, resilient enterprise applications, establishing shared vocabulary and best practices across development teams.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture"
     }

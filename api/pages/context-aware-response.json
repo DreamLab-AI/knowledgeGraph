@@ -8,8 +8,8 @@
   "definition": "An AI-driven capability in metaverse and virtual environments that enables systems to generate dynamic, personalized responses based on real-time understanding of user context, including location, activity, preferences, social environment, and interaction history, utilizing large language models ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

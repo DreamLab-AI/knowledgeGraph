@@ -8,6 +8,10 @@
   "definition": "Education and AI (Artificial Intelligence in Education, AIED) denotes the deployment of machine-learning systems\u2014intelligent tutoring systems (ITS) such as Carnegie Learning Mathia at 600K+ US students across + districts, ALEKS at 25M+ cumulative users Knewton (acquired Wiley 2019 for ~after rais...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:applied-ai",
       "label": "Applied AI"
     },

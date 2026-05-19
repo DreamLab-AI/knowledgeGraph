@@ -8,6 +8,10 @@
   "definition": "The hardware, software, and modological frameworks for validating extended reality applications, including automated testing tools, motion capture systems, user testing labs, performance profiling equipment, and simulation environments for quality assurance of VR, AR, and MR experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:testing-infrastructure",
       "label": "Testing Infrastructure"
     }

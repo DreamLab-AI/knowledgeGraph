@@ -8,8 +8,8 @@
   "definition": "Drug Discovery AI encompasses artificial intelligence systems that accelerate pharmaceutical research and development through automated molecular design, virtual screening, target identification, toxicity prediction, and clinical trial optimisation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

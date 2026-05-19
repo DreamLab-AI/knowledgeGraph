@@ -8,6 +8,10 @@
   "definition": "A digital token granting repeat-use or membership rewards within a metaverse ecosystem, enabling customer engagement, brand loyalty programs, and tokenized incentive mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:loyalty-programs",
       "label": "Loyalty Programs"
     }

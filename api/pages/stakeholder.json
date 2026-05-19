@@ -8,6 +8,10 @@
   "definition": "Any individual, group, organisation, or entity that has an interest in, is affected by, influences, or holds rights regarding an artificial intelligence system throughout its lifecycle, including those who develop, deploy, operate, use, regulate, are impacted by, or hold accountability for AI sys...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:regulatory-framework",
       "label": "Regulatory Framework"
     }

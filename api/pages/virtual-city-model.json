@@ -8,6 +8,10 @@
   "definition": "A digital representation of an urban environment including buildings, infrastructure, terrain, and dynamic elements, used for urban planning, simulation, gaming, and metaverse world-building based on real or imagined cities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin",
       "label": "Digital Twin"
     }

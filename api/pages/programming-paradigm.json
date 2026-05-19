@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:programming-paradigm",
   "domain": "artificial-intelligence",
   "definition": "Programming Paradigms in AI represent fundamental styles and approaches to structuring code for artificial intelligence systems. Key paradigms include imperative (procedural, object-oriented), declarative (functional, logic-based), and differentiable programming.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

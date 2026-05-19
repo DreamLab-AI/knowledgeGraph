@@ -8,6 +8,10 @@
   "definition": "A training paradigm where a larger, more capable \"teacher\" model guides the training of a smaller \"student\" model. Teacher-student training transfers knowledge from the teacher's learned representations or predictions to improve student model performance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:training-method",
       "label": "Training Method"
     }

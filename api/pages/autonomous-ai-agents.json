@@ -8,6 +8,10 @@
   "definition": "Autonomous AI Agents is a type of AI Agent System in the artificial intelligence domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-agent-system",
       "label": "AI Agent System"
     }

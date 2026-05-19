@@ -8,6 +8,10 @@
   "definition": "Reasoning in artificial intelligence encompasses the computational processes by which systems derive conclusions, formulate plans, solve problems, and generate explanations from knowledge, data, and prior context.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:formal-verification",
       "label": "Formal Verification"
     },

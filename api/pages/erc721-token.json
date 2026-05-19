@@ -8,6 +8,10 @@
   "definition": "A non-fungible token implementing the ERC-721 standard, a free, open standard for building unique tokens on ereum blockchain with trackable ownership via token identification numbers and ownerOf function.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:non-fungible-token",
       "label": "Non Fungible Token"
     }

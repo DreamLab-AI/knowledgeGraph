@@ -8,6 +8,10 @@
   "definition": "A Reputation System is a decentralised computational infrastructure for aggregating verifiable behavioural signals about network participants into quantified trust scores that enable social coordination in trustless Blockchain environments, spanning algorithmic trust propagation architect...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:decentralised-governance",
       "label": "Decentralised Governance"
     },

@@ -8,12 +8,12 @@
   "definition": "End Effector - A task-specific tool or manipulator mounted at the Robot Wrist that physically interacts with the environment (gripper, welder, drill, camera), translating robotic control commands into productive work through mechanical, electrical, or pneumatic actuation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mechanical-component",
-      "label": "Mechanical Component"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:mechanical-component",
+      "label": "Mechanical Component"
     }
   ],
   "entityType": "Class",

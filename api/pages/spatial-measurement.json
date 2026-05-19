@@ -8,6 +8,10 @@
   "definition": "Technology for determining distances, depths, and dimensional properties in physical and virtual environments using sensors such as Time-of-Flight cameras, structured light sensors, and LiDAR, enabling accurate 3D surface mapping, obstacle detection, and gesture tracking in AR/VR applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:depth-sensing",
       "label": "Depth Sensing"
     }

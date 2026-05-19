@@ -8,8 +8,8 @@
   "definition": "The vector representation of a token or sequence at any layer in a neural network, encoding contextualised information learned by the model.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "A standardized abstraction layer that provides consistent interfaces for accessing diverse XR hardware devices, including VR headsets, AR glasses, haptic controllers, and tracking systems, enabling cross-platform application development.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:hardware-abstraction",
       "label": "Hardware Abstraction"
     }

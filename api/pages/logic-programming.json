@@ -8,6 +8,10 @@
   "definition": "Programming paradigm based on formal logic, where programs are expressed as sets of logical statements and inference rules.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:programming-paradigm",
       "label": "Programming Paradigm"
     }

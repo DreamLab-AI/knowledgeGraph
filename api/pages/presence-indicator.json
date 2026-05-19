@@ -8,6 +8,10 @@
   "definition": "A presence indicator is a real-time signal encoding a user's availability, attention, and engagement state in a collaborative system, enabling other participants to determine the optimal channel and urgency of communication before initiating contact.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:ambient-awareness",
       "label": "Ambient Awareness"
     },

@@ -8,6 +8,10 @@
   "definition": "AI Liability is the body of legal doctrine, statutory regime, regulatory practice and emerging case law that allocates civil responsibility for personal injury, property damage, economic loss, discrimination, privacy invasion and consequential harm caused by artificial intelligence systems\u2014encomp...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:civil-liability",
       "label": "Civil Liability"
     },

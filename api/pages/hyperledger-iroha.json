@@ -8,6 +8,10 @@
   "definition": "Hyperledger Iroha is a general-purpose permissioned Byzantine-fault-tolerant Distributed Ledger framework originally designed by Soramitsu (Tokyo, Japan) in collaboration with Hitachi, NTT Data and Colu, contributed to the Hyperledger Foundation (now Linux Foundation Decentralised Trust) ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:enterprise-blockchain-framework",
       "label": "Enterprise Blockchain Framework"
     },

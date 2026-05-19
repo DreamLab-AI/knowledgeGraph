@@ -8,6 +8,10 @@
   "definition": "The process of copying and maintaining data across multiple nodes, servers, or locations in distributed systems to ensure consistency, availability, and fault tolerance, using consensus algorithms like Paxos, Raft, and Byzantine Fault Tolerant protocols to coordinate state across decentralized ne...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:distributed-systems",
       "label": "Distributed Systems"
     }

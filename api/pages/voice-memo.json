@@ -8,6 +8,10 @@
   "definition": "Asynchronous audio communication allowing users to record and share voice messages, providing richer context than text while maintaining time flexibility.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
     }

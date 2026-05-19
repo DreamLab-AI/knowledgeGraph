@@ -8,6 +8,10 @@
   "definition": "A closed-loop feedback control modology that commands a robotic manipulator, actuator, or motion platform to achieve and maintain a desired spatial position or angular orientation by continuously measuring the actual position via encoders, resolvers, or external sensing systems (vision, LIDAR), c...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:servo-system",
       "label": "ServoSystem"
     },

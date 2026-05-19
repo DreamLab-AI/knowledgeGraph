@@ -8,6 +8,10 @@
   "definition": "Collaborative practices and platforms within metaverse environments that facilitate the exchange of information, expertise, and learning experiences among users through immersive virtual spaces, avatars, and AI-enhanced interactions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:collaborative-technology",
       "label": "Collaborative Technology"
     }

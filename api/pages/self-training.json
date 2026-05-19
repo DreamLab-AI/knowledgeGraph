@@ -8,6 +8,10 @@
   "definition": "A semi-supervised learning technique where a model is iteratively improved by training on its own high-confidence predictions on unlabelled data. Self-training enables learning from large amounts of unlabelled data by using the model's own predictions as pseudo-labels.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:semi-supervised-learning",
       "label": "Semi-Supervised Learning"
     }

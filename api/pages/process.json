@@ -8,6 +8,10 @@
   "definition": "A coordinated sequence of activities, state changes, and events that transforms inputs into outputs to achieve a specific goal or outcome.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:temporal-entity",
       "label": "Temporal Entity"
     }

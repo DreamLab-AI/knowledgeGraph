@@ -8,8 +8,8 @@
   "definition": "A tokenisation approach that breaks words into smaller meaningful units, balancing vocabulary size with the ability to represent rare words and novel compositions.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

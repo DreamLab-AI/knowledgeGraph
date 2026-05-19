@@ -8,6 +8,10 @@
   "definition": "The capability of digital systems to understand and adapt to a user's current situation, including their location, activity, preferences, device capabilities, and environmental factors to provide personalized and relevant experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:context-aware-computing",
       "label": "Context-Aware Computing"
     }

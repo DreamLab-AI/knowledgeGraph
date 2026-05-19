@@ -8,6 +8,10 @@
   "definition": "Latency characteristic where consensus adds less than one millisecond to transaction confirmation time.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:transaction-confirmation",
       "label": "Transaction Confirmation"
     }

@@ -8,6 +8,10 @@
   "definition": "An authentication service is a system component that verifies the identity of users, devices, or applications attempting to access protected resources.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:security-service",
       "label": "Security Service"
     }

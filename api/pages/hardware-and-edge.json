@@ -8,6 +8,10 @@
   "definition": "Hardware and Edge refers to the integrated class of specialised silicon architectures, embedded compute platforms, and distributed inference runtimes designed to execute artificial intelligence workloads at or near the point of data generation, without mandatory dependence on centralised cloud da...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:neural-processing-unit",
       "label": "Neural Processing Unit"
     },

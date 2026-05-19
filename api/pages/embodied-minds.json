@@ -8,6 +8,10 @@
   "definition": "Embodied Minds denotes the theoretical and engineering position that genuine cognition, intelligence and meaning-making cannot be reduced to disembodied symbol manipulation or text-token prediction but instead arises from the dynamic, sensorimotor coupling of a physical body with a structured env...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:situated-cognition",
       "label": "Situated Cognition"
     },

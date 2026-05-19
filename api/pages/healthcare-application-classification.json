@@ -8,6 +8,10 @@
   "definition": "A taxonomy framework categorising metaverse healthcare applications by technology type (AR, VR, lifelogging, mirror world), use case (telemedicine, training, therapy), and end user (patient, clinician), enabling systematic eand deployment of immersive medical technologies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:healthcare-technology",
       "label": "Healthcare Technology"
     }

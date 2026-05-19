@@ -8,8 +8,8 @@
   "definition": "Blockchain-based systems employing security tokens (ERC-3643, ERC-1400, ERC-20 standards) to represent fractional ownership interests in real estate properties, enabling automated dividend distribution through smart contracts, reducing investment minimums from tens of thousands to \u00a350, and creati...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
     }
   ],
   "entityType": "Class",

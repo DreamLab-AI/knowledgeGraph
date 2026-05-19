@@ -8,6 +8,10 @@
   "definition": "Centralized repository for storing, managing, and serving machine learning features, ensuring consistency between training and inference while enabling feature reuse across models.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:machine-learning-pipeline",
       "label": "Machine Learning Pipeline"
     }

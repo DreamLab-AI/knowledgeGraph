@@ -8,6 +8,10 @@
   "definition": "The human rights and freedoms applicable to digital contexts including privacy, data protection, freedom of expression, access to information, and digital ownership within virtual environments, metaverse platforms, and online spaces, increasingly codified through international frameworks and nati...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:human-rights",
       "label": "Human Rights"
     }

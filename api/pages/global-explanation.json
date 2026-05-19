@@ -8,6 +8,10 @@
   "definition": "Interpretability techniques that characterise the overall behaviour, decision-making patterns, and feature importance of a machine learning model across its entire input space, rather than explaining individual predictions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:explainability",
       "label": "Explainability"
     }

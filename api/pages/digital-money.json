@@ -8,6 +8,10 @@
   "definition": "Any form of monetary value existing purely in electronic format, encompassing e-money, central bank digital currencies, cryptocurrencies, and stablecoins, that can be stored, transferred, and transacted electronically across payment networks, metaverse economies, and blockchain systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:financial-instruments",
       "label": "Financial Instruments"
     }

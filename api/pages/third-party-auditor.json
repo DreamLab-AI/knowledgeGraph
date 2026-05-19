@@ -8,6 +8,10 @@
   "definition": "An independent security firm or organization that conducts comprehensive reviews of smart contracts, blockchain protocols, and digital systems to identify vulnerabilities, ensure code quality, and verify compliance before deployment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:security-services",
       "label": "Security Services"
     }

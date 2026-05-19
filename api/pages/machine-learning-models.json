@@ -8,6 +8,10 @@
   "definition": "Categories and types of machine learning algorithms including classification models, regression models, clustering algorithms, and neural networks, each designed for specific prediction and pattern recognition tasks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

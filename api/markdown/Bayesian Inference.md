@@ -6,7 +6,7 @@
   "title": "Bayesian Inference",
   "vc:slug": "bayesian-inference",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Bayesian Inference is a foundational concept in artificial intelligence that serves as a classification parent for 3 related concepts in the ontology.",
   "domain": "artificial-intelligence",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ]
 }
 ```
 

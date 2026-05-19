@@ -8,6 +8,10 @@
   "definition": "Centralized repository that stores structured and unstructured data at scale in its native format, enabling big data analytics and machine learning workloads.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:etsi-domain-data-management-ai",
       "label": "ETSI Domain: Data Management + AI"
     }

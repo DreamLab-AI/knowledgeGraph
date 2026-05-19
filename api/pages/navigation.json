@@ -8,6 +8,10 @@
   "definition": "Navigation is the autonomous discipline integrating localisation, mapping, path planning, motion control, and semantic interpretation to enable agents \u2014 ground robots, aerial vehicles, autonomous cars, and embodied AI systems \u2014 to move reliably from a start configuration to a goal state throu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:path-planning",
       "label": "Path Planning"
     },

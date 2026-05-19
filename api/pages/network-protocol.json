@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:network-protocol",
   "domain": "distributed-collaboration",
   "definition": "A network protocol is a set of established rules that specify how to format, send, and receive data between networked devices, enabling diverse communication systems to interact using standard procedures.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "emerging",

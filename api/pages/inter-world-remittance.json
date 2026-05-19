@@ -8,8 +8,8 @@
   "definition": "Inter-world Remittance is a blockchain and distributed systems concept and a type of Blockchain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
     }
   ],
   "entityType": "Class",

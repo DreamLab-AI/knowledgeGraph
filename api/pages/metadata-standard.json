@@ -8,6 +8,10 @@
   "definition": "A formal specification defining the structure, semantics, format, and rules for describing data about data, ensuring consistent interpretation and interoperability across systems and domains.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

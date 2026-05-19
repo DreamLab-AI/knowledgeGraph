@@ -8,6 +8,10 @@
   "definition": "An optimal recursive Bayesian filter that estimates the state of a linear dynamic system from a series of noisy measurements. It minimizes the mean squared error of the estimated state by combining predictions with measurements using weighted averaging based on uncertainty.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:bayes-filter",
       "label": "Bayes Filter"
     },

@@ -8,6 +8,10 @@
   "definition": "Agents are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:intelligent-system",
       "label": "Intelligent System"
     },

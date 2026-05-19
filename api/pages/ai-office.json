@@ -8,8 +8,8 @@
   "definition": "Commission body established as the centre of AI expertise forming the foundation for a single European AI governance system, with primary responsibility for supervising general-purpose AI models and coordinating market surveillance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

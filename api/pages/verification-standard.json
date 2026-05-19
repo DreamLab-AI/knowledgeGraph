@@ -8,6 +8,10 @@
   "definition": "Specifications and protocols that define how digital identities, credentials, and claims are validated and authenticated in metaverse environments, ensuring trust and security through cryptographic proofs and standardized verification processes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

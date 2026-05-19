@@ -8,6 +8,10 @@
   "definition": "A digital tool or software application that estimates greenhouse gas emissions from activities such as energy consumption, transportation, and production by applying standardized emission factors to user-provided data, enabling individuals and organizations to quantify and understand their carbon...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:sustainability-tool",
       "label": "Sustainability Tool"
     }

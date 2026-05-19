@@ -8,6 +8,10 @@
   "definition": "The legal frameworks, governance structures, and policy mechanisms designed to regulate behavior, protect rights, and ensure safety within metaverse platforms and virtual world environments, encompassing intellectual property, data privacy, content moderation, and cross-jurisdictional enforcement...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:digital-governance",
       "label": "Digital Governance"
     }

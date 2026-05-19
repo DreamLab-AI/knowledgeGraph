@@ -8,6 +8,10 @@
   "definition": "A regularisation technique that adds a penalty proportional to the magnitude of weights to the loss function, encouraging smaller weight values. Weight decay (L2 regularisation) prevents overfitting by limiting model complexity and promoting simpler solutions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning-technique",
       "label": "Machine Learning Technique"
     }

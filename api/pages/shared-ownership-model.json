@@ -8,6 +8,10 @@
   "definition": "A blockchain-enabled framework for fractional ownership of high-value assets through tokenization, allowing multiple parties to hold proportional stakes in real estate, digital art, intellectual property, or virtual assets with automated governance via smart contracts.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:asset-tokenization",
       "label": "Asset Tokenization"
     }

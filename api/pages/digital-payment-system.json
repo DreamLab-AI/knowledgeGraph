@@ -8,6 +8,10 @@
   "definition": "The integrated infrastructure of protocols, platforms, and financial instruments enabling secure monetary transactions within metaverse environments, encompassing cryptocurrency payments, stablecoin transfers, fiat gateways, and smart contract-based payment automation for virtual goods and servic...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
     }

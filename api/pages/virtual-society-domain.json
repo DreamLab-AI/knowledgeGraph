@@ -8,6 +8,10 @@
   "definition": "The social, cultural, and governance frameworks that emerge within metaverse environments, encompassing virtual communities, digital citizenship, social interactions through avatars, cultural events, and the ical and regulatory considerations governing behavior and rights in persistent virtual wo...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-society",
       "label": "Digital Society"
     }

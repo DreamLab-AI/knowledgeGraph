@@ -8,6 +8,10 @@
   "definition": "Decentralised swarm control distributes decision-making across all robot agents, where each robot computes commands based solely on local sensor information and direct communication with neighbouring agents.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:swarm-robotics",
       "label": "Swarm Robotics"
     }

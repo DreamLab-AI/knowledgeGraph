@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:dao-governance-for-telecollaboration",
   "domain": "distributed-collaboration",
   "definition": "\"The application of decentralised autonomous organisation (DAO) governance mechanisms\u2014token-weighted voting, proposal systems, treasury management\u2014to coordinate geographically distributed teams through on-chain decision-making, enabling democratic, transparent collaboration without centralised ma...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "emerging",

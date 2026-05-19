@@ -8,8 +8,8 @@
   "definition": "Disruptive Technology refers to innovations that create new markets and value networks by initially targeting simple applications at the bottom of the market with more accessible and affordable solutions, then relentlessly moving upmarket to eventually displace established market-leading firms, p...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

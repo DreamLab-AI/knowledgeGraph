@@ -8,6 +8,10 @@
   "definition": "The understanding and knowledge that users possess about digital systems, privacy practices, security risks, and their rights when interacting with metaverse platforms and virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:user-education",
       "label": "User Education"
     }

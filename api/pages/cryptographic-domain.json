@@ -8,6 +8,10 @@
   "definition": "The CryptographicDomain represents a specialized sub-domain within blockchain technology that encompasses all cryptographic primitives, protocols, and mechanisms essential to distributed ledger systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:public-key-infrastructure",
       "label": "Public Key Infrastructure"
     }

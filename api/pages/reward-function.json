@@ -8,6 +8,10 @@
   "definition": "A mathematical formulation in reinforcement learning that maps state-action pairs to scalar values, guiding AI agent behaviour toward desired outcomes in game environments, virtual worlds, and autonomous systems through feedback signals.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:reinforcement-learning",
       "label": "Reinforcement Learning"
     }

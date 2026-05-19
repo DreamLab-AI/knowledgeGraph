@@ -8,6 +8,10 @@
   "definition": "A tabular visualisation and analytical tool summarising the performance of a classification model by displaying the counts or proportions of predictions cross-tabulated against actual class labels, typically organised with predicted classes as columns and actual classes as rows (or vice versa), e...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

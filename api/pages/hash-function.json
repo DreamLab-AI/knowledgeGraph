@@ -8,6 +8,10 @@
   "definition": "A Hash Function is a deterministic computational mapping H: {0,1}* \u2192 {0,1}^n from arbitrary-length input strings (preimages, messages) to fixed-length output strings (digests, hashes, fingerprints) of n bits (typically n \u2208 {128, 160, 224, 256, 384, 512}), whose security and utility derive fro...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:compression-function",
       "label": "Compression Function"
     },

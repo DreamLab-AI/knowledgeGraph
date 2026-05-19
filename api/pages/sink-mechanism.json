@@ -8,6 +8,10 @@
   "definition": "Sink Mechanism is a blockchain and distributed systems concept and a type of Virtual Economy.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

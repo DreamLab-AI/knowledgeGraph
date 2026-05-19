@@ -8,12 +8,8 @@
   "definition": "A blockchain is a distributed, cryptographically-secured data structure consisting of an ordered chain of blocks, where each block contains a cryptographic hash of the previous block, a timestamp, and transaction data, maintained through a consensus mechanism across a peer-to-peer network without...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:cryptographic-system",
-      "label": "Cryptographic System"
-    },
-    {
-      "id": "urn:ngm:class:distributed-data-structure",
-      "label": "Distributed Data Structure"
+      "id": "owl:Thing",
+      "label": "Thing"
     }
   ],
   "entityType": "Class",

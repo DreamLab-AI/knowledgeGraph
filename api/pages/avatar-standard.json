@@ -8,6 +8,10 @@
   "definition": "Avatar Standard refers to technical specifications defining file formats, data structures, rigging conventions, and metadata schemas for 3D humanoid avatars, particularly the VRM format built on glTF 2.0 that enables cross-platform avatar interoperability in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:technical-standard",
       "label": "Technical Standard"
     }

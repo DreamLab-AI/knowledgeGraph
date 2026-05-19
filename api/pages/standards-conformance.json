@@ -8,6 +8,10 @@
   "definition": "The state or process of meeting the requirements specified in a technical standard, specification, or guideline, ensuring that a product, process, or system aligns with internal or industry-specific standards for interoperability, quality, and compatibility.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

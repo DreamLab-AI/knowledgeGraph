@@ -8,6 +8,10 @@
   "definition": "GPT Engineer is an open-source agentic software-development framework initiated by Anton Osika in June 2023 that autonomously transforms a natural-language specification into a working multi-file codebase through a sequential loop of specification elicitation, file-level planning, code generation...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-adoption",
       "label": "AI Adoption"
     },

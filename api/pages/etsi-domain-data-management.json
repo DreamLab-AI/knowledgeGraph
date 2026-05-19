@@ -8,8 +8,8 @@
   "definition": "Domain marker for ETSI metaverse categorisation covering data storage, processing, synchronisation, and lifecycle management for distributed virtual environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
     }
   ],
   "entityType": "Class",

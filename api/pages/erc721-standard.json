@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:erc721-standard",
   "domain": "blockchain",
   "definition": "Technical standard for non-fungible tokens on ereum, defining unique token identification and ownership tracking.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

@@ -8,6 +8,10 @@
   "definition": "Asynchronous communication pattern where messages are organized into conversation threads, enabling contextual discussions and reducing notification overload.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:asynchronous-collaboration",
       "label": "Asynchronous Collaboration"
     }

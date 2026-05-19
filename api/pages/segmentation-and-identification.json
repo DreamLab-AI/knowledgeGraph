@@ -8,6 +8,10 @@
   "definition": "Segmentation and Identification is a foundational computer vision subdomain encompassing the computational processes of partitioning digital images and video frames into semantically meaningful regions and assigning categorical or instance-level identities to those regions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:image-analysis",
       "label": "Image Analysis"
     },

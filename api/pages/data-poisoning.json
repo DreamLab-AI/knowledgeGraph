@@ -8,6 +8,10 @@
   "definition": "A training-time adversarial attack where malicious actors inject, modify, or manipulate training data to compromise model integrity, causing targeted misclassifications, backdoor triggers, or general performance degradation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:adversarial-attack",
       "label": "Adversarial Attack"
     }

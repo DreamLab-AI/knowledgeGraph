@@ -8,6 +8,10 @@
   "definition": "Agentic Internet is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents \u2014 rather than human users clicking through browsers \u2014 discover services, negotiate terms, exchange data and settle value on behalf of principals (hu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:agent-oriented-computing",
       "label": "Agent-Oriented Computing"
     },

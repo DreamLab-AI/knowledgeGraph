@@ -8,6 +8,10 @@
   "definition": "Reflective or active tracking points placed on subjects for optical motion capture systems, typically 12-15mm diameter for full-body capture, enabling precise position tracking at frame rates from 120fps to fps for animation, biomechanics, and performance analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:motion-capture-technology",
       "label": "Motion Capture Technology"
     }

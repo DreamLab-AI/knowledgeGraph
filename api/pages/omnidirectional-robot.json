@@ -8,6 +8,10 @@
   "definition": "Omnidirectional robot uses mecanum wheels or omniwheels for holonomic motion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:wheeled-robot",
       "label": "Wheeled Robot"
     }

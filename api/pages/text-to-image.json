@@ -8,6 +8,10 @@
   "definition": "Text-to-Image is a artificial intelligence concept and a type of Generative Ai.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:generative-ai",
       "label": "Generative Ai"
     }

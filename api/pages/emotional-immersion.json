@@ -8,6 +8,10 @@
   "definition": "Psychological absorption and empathetic engagement experienced during virtual interaction, characterized by affective resonance with virtual content and reduced awareness of physical surroundings.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:immersion",
       "label": "Immersion"
     }

@@ -8,6 +8,10 @@
   "definition": "A token that can represent both fungible and non-fungible properties, typically starting as fungible but becoming non-fungible under certain conditions, or representing classes of interchangeable assets.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:token",
       "label": "Token"
     }

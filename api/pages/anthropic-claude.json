@@ -8,6 +8,10 @@
   "definition": "Anthropic is an American artificial-intelligence safety and research company incorporated in Delaware as a Public Benefit Corporation (PBC) and headquartered in San Francisco, founded by Dario Amodei (CEO, former VP of Research at OpenAI), his sister Daniela Amodei (President), and seven addition...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:ai-safety-organization",
       "label": "AI Safety Organization"
     },

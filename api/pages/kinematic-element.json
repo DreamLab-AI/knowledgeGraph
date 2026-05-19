@@ -8,8 +8,8 @@
   "definition": "Kinematic Element is a type of Robotics in the robotics domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

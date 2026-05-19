@@ -8,8 +8,8 @@
   "definition": "Algorithmic creation of 3D objects, textures, environments, or complete scenes using computational rules, mathematical functions, or AI models rather than manual authoring.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

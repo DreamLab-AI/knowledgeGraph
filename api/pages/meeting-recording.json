@@ -8,6 +8,10 @@
   "definition": "Persistent capture and archival of synchronous virtual or physical meetings\u2014comprising video, audio, screen share, and transcript streams\u2014stored in cloud platforms or on-premises repositories for asynchronous playback, compliance audit, onboarding, and AI-mediated analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:meeting-documentation",
       "label": "Meeting Documentation"
     },

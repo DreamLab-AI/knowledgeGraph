@@ -6,7 +6,7 @@
   "title": "Distributed Collaboration",
   "vc:slug": "distributed-collaboration",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -20,7 +20,13 @@
   "definition": "Distributed Collaboration is a foundational concept in distributed collaboration that serves as a classification parent for 19 related concepts in the ontology.",
   "domain": "distributed-collaboration",
   "maturity": "draft",
-  "quality": 0.3
+  "quality": 0.3,
+  "subClassOf": [
+    {
+      "@id": "owl:Thing",
+      "label": "Thing"
+    }
+  ]
 }
 ```
 

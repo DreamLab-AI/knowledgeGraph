@@ -8,6 +8,10 @@
   "definition": "Super-Resolution is the process of enhancing the resolution and quality of low-resolution images by predicting and synthesising high-frequency details using deep learning models.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:image-generation",
       "label": "Image Generation"
     }

@@ -8,6 +8,10 @@
   "definition": "A token designed to maintain stable value by pegging to external assets like fiat currencies, commodities, or using algorithmic mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }

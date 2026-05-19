@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:identity-standards",
   "domain": "infrastructure",
   "definition": "Identity Standards is an infrastructure concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

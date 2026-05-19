@@ -8,6 +8,10 @@
   "definition": "Cold chain monitoring is an integrated infrastructure discipline encompassing sensor networks, communication protocols, data management platforms, and provenance-recording systems that collectively maintain, verify, and audit temperature-controlled conditions for perishable goods across the entir...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:compliance-infrastructure",
       "label": "Compliance Infrastructure"
     },

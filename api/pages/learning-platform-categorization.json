@@ -8,6 +8,10 @@
   "definition": "A learning platform categorization component in the Metaverse domain that enables EtsiDomainApplicationEducation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse-classification",
       "label": "Metaverse Classification"
     }

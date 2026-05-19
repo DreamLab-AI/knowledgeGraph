@@ -8,6 +8,10 @@
   "definition": "A set of W3C specifications including RDF (Resource Description Framework) and OWL (Web Ontology Language) that enable machine-readable data interchange, knowledge representation, and automated reasoning across distributed web applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:web-standards",
       "label": "Web Standards"
     }

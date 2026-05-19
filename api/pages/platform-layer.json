@@ -8,8 +8,8 @@
   "definition": "Architectural tier providing core platform services including identity, world state management, and asset services upon which metaverse applications are built.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

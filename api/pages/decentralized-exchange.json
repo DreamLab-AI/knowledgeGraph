@@ -8,6 +8,10 @@
   "definition": "A Decentralized Exchange (DEX) is a peer-to-peer cryptoasset trading protocol implemented as a set of Smart Contract state machines on one or more public blockchains that enables non-custodial atomic swaps between digital assets without a centralised matching engine, custodial wallet, or oper...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:decentralised-finance-primitive",
       "label": "Decentralised Finance Primitive"
     },

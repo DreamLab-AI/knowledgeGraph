@@ -8,6 +8,10 @@
   "definition": "Modular educational elements designed for metaverse and XR training environments, including interactive simulations, 3D models, assessment tools, and collaborative spaces that can be combined to create comprehensive immersive learning experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

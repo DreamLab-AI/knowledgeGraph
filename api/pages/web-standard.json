@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:web-standard",
   "domain": "infrastructure",
   "definition": "Web Standard is a technology infrastructure concept and a type of infrastructure.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

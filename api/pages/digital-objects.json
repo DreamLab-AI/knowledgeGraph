@@ -8,6 +8,10 @@
   "definition": "Digital Objects is an umbrella ontology concept covering three closely-related but historically distinct senses of \"an addressable, transferable, identifiable unit of digital content\": (1) Digital Object Architecture (DOA), the formal information-infrastructure paradigm proposed by Robert E.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:digital-artefact",
       "label": "Digital Artefact"
     },

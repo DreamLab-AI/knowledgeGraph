@@ -8,6 +8,10 @@
   "definition": "Pretrained Model is a artificial intelligence concept and a type of Model.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:model",
       "label": "Model"
     }

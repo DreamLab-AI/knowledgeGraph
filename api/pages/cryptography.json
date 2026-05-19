@@ -8,6 +8,10 @@
   "definition": "Cryptography is the mathematical science of transforming information through encryption, ensuring confidentiality, authenticity, and integrity in digital communications and blockchain systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-security",
       "label": "Cryptographic Security"
     }

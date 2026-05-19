@@ -8,6 +8,10 @@
   "definition": "A Redress Procedure is a formalized mechanism enabling individuals or groups adversely affected by AI system decisions to challenge those decisions, seek explanations, request human review, and obtain remedies including correction, compensation, or policy changes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }

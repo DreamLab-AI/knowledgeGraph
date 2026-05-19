@@ -8,6 +8,10 @@
   "definition": "Testing Infrastructure is a type of Quality Assurance in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
+    },
+    {
       "id": "urn:ngm:class:quality-assurance",
       "label": "quality-assurance"
     }

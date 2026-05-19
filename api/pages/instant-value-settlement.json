@@ -8,6 +8,10 @@
   "definition": "Instant value settlement is the process by which the transfer of economic value between counterparties \u2014 wher central-bank fiat currency, commercial bank money, tokenised deposits, stablecoins, securities, or programmable digital money \u2014 is completed in real time (sub-second to at most a few seco...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:financial-infrastructure",
       "label": "Financial Infrastructure"
     },

@@ -8,8 +8,8 @@
   "definition": "cypherpunk is a blockchain and distributed systems concept and a type of blockchain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
     }
   ],
   "entityType": "Class",

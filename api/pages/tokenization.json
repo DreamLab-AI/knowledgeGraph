@@ -8,6 +8,10 @@
   "definition": "Process of representing real-world or virtual assets as digital tokens on a blockchain through cryptographic mechanisms and smart contract protocols.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }

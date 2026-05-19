@@ -8,6 +8,10 @@
   "definition": "Avatar System is the integrated technical architecture for creating, customizing, animating, and rendering digital representations of users in virtual environments, encompassing character models, animation systems, facial expression rigs, physics simulations, and real-time rendering pipelines.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-character-system",
       "label": "Virtual Character System"
     }

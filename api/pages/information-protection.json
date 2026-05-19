@@ -8,8 +8,8 @@
   "definition": "Information Protection is a type of Blockchain in the blockchain domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
     }
   ],
   "entityType": "Class",

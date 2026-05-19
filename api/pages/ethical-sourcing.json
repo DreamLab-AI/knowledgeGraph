@@ -8,6 +8,10 @@
   "definition": "ical Sourcing is the corporate and institutional procurement discipline that selects, qualifies and monitors suppliers across multi-tier global supply chains against verifiable human rights, labour, environmental and anti-corruption standards \u2014 operationalised through codified frameworks (",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:corporate-social-responsibility",
       "label": "Corporate Social Responsibility"
     },

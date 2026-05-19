@@ -8,6 +8,10 @@
   "definition": "Distributed database infrastructure using cryptographic consensus mechanisms to maintain immutable, tamper-resistant records across decentralised peer-to-peer networks without centralised authority.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

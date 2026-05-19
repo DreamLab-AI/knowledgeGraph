@@ -8,6 +8,10 @@
   "definition": "MS Phi models is Microsoft Research's family of small language models (SLMs) demonstrating that carefully curated, textbook-quality synthetic training data can achieve state-of-the-art performance at parameter counts one to two orders of magnitude smaller than frontier large language models, esta...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:general-purpose-ai-model",
       "label": "General Purpose AI Model"
     },

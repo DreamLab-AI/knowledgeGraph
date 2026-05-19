@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:consensus-protocol",
   "domain": "blockchain",
   "definition": "Consensus Protocol is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

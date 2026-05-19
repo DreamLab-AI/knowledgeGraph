@@ -8,6 +8,10 @@
   "definition": "Technical infrastructure and APIs that provide access to controlled vocabularies, taxonomies, and ontologies, enabling applications to retrieve, search, and validate terminology for consistent semantic interpretation across metaverse platforms and knowledge systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:knowledge-management",
       "label": "Knowledge Management"
     }

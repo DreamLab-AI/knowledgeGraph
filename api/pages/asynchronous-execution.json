@@ -8,6 +8,10 @@
   "definition": "Asynchronous Execution is a artificial intelligence concept and a type of Execution Model.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:execution-model",
       "label": "Execution Model"
     }

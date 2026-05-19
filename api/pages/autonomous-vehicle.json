@@ -8,8 +8,8 @@
   "definition": "An Autonomous Vehicle is a self-driving vehicle capable of navigating and operating without human intervention, employing artificial intelligence for perception, localisation, path planning, motion control, and decision-making.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "entityType": "Class",

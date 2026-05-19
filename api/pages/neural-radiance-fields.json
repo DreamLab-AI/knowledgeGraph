@@ -8,6 +8,10 @@
   "definition": "\"A neural rendering technique representing 3D scenes as continuous volumetric functions encoded by multilayer perceptrons, mapping 5D coordinates (3D position + 2D viewing direction) to colour and density, enabling photorealistic novel view synthesis from sparse input photographs through volumetr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
+    },
+    {
       "id": "urn:ngm:class:real-time-rendering-pipeline",
       "label": "Real-Time Rendering Pipeline"
     }

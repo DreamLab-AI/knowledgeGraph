@@ -8,6 +8,10 @@
   "definition": "A self-supervised learning approach that learns representations by contrasting positive pairs (similar samples) against negative pairs (dissimilar samples).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

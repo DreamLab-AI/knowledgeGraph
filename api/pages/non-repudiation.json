@@ -8,6 +8,10 @@
   "definition": "Non-Repudiation is a foundational Information Security property and legal-technical assurance mechanism that renders it cryptographically and evidentially impossible for a party that originated, received, or approved a message, transaction, or data object to subsequently deny that partici...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:digital-evidence",
       "label": "Digital Evidence"
     },

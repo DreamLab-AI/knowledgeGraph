@@ -8,6 +8,10 @@
   "definition": "An algorithmic process that computes quantitative reputation scores by aggregating behavioral data, applying weighted scoring functions, implementing temporal decay, and evaluating threshold conditions to generate trust indicators for entities in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

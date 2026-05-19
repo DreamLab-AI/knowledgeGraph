@@ -8,6 +8,10 @@
   "definition": "The application of domestic and international taxation principles, regulations, and compliance frameworks to transactions involving cryptocurrency and digital assets, encompassing capital gains taxation income taxation value-added tax and goods-and-services tax treatment (e), whilst purchases of ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:blockchain-compliance",
       "label": "Blockchain Compliance"
     }

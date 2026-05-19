@@ -8,6 +8,10 @@
   "definition": "Machine learning paradigm where algorithms actively select which unlabeled examples from large data pools to query for human annotation rather than passively accepting randomly labeled datasets, optimizing informativeness through query strategies (uncertainty sampling selecting least-confident pr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:data-efficient-learning",
       "label": "Data-Efficient Learning"
     },

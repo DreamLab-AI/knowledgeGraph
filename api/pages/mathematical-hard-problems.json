@@ -8,6 +8,10 @@
   "definition": "Computationally intractable mathematical problems that form the security foundation of cryptographic systems, including integer factorisation, discrete logarithm, lattice problems, and other NP-hard challenges used in blockchain and digital security.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-security",
       "label": "Cryptographic Security"
     }

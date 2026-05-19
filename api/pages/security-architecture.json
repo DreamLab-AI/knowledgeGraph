@@ -8,6 +8,10 @@
   "definition": "A comprehensive framework defining security controls, policies, and technologies protecting metaverse infrastructure, user data, and digital assets through defence-in-depth strategies including authentication, encryption, access control, and threat monitoring.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:system-architecture",
       "label": "System Architecture"
     }

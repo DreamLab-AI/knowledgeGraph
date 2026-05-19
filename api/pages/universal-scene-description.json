@@ -8,6 +8,10 @@
   "definition": "Universal Scene Description is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:asset-pipeline",
       "label": "Asset Pipeline"
     },

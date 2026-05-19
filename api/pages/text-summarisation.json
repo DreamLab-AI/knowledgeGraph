@@ -8,6 +8,10 @@
   "definition": "Text Summarisation is the NLP task of producing concise, coherent summaries that capture the essential information from longer documents or document collections.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:natural-language-processing",
       "label": "Natural Language Processing"
     }

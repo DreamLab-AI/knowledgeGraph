@@ -8,6 +8,10 @@
   "definition": "Artificial General Intelligence (AGI) denotes a hypothesised class of computational systems whose cognitive competence is broad rather than narrow \u2014 capable of matching or exceeding human performance across the full distribution of economically and intellectually significant tasks rather than exc...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:foundation-model-capability",
       "label": "Foundation Model Capability"
     },

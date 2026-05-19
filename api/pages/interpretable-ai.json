@@ -8,8 +8,8 @@
   "definition": "Machine learning models and systems whose internal decision-making processes are inherently transparent and understandable to humans without requiring additional post-hoc explanation techniques.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

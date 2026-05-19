@@ -8,6 +8,10 @@
   "definition": "The systems, processes, and technologies for creating, maintaining, and verifying digital representations of individuals and entities across virtual environments, incorporating self-sovereign identity principles, decentralized identifiers, and verifiable credentials for secure cross-platform auth...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:identity-systems",
       "label": "Identity Systems"
     }

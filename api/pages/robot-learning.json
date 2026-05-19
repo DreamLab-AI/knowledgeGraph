@@ -8,8 +8,8 @@
   "definition": "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforceme...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     }
   ],
   "entityType": "Class",

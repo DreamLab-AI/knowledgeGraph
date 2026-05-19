@@ -8,6 +8,10 @@
   "definition": "RoboticsPlatform is an integrated hardware\u2013software\u2013middleware ecosystem providing standardised communication layers, hardware abstraction, simulation environments, motion-planning stacks, real-time control loops, and cloud-edge orchestration that collectively reduce engineering effort for robot ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:embedded-system",
       "label": "Embedded System"
     },

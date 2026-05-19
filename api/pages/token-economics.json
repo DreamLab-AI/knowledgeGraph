@@ -8,6 +8,10 @@
   "definition": "Tokenomics is the study and design of the economic systems governing cryptocurrency tokens, encompassing supply mechanics (inflation/deflation), distribution schedules, utility functions, governance rights, and incentive structures that determine token value, network security, and sustainable eco...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:blockchain-core",
       "label": "Blockchain"
     }

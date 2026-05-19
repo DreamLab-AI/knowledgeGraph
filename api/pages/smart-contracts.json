@@ -8,8 +8,8 @@
   "definition": "Self-executing programs stored on a blockchain that automatically enforce and execute the terms of an agreement when predetermined conditions are met, eliminating the need for intermediaries and enabling trustless, transparent, and immutable transaction automation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     },
     {
       "id": "urn:ngm:class:distributed-computing",

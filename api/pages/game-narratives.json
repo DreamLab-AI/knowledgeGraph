@@ -8,6 +8,10 @@
   "definition": "Interactive storytelling frameworks within metaverse gaming environments featuring branching storylines, player-driven plot progression, and adaptive narratives that evolve based on collective player decisions, creating dynamic and personalised gaming experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:interactive-storytelling",
       "label": "Interactive Storytelling"
     }

@@ -8,6 +8,10 @@
   "definition": "The end-to-end workflow for creating film and television content using real-time rendering, LED volumes, motion capture, and game engine technology, integrating pre-visualization, on-set virtual environments, and in-camera visual effects to replace traditional post-production VFX processes.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:virtual-production",
       "label": "Virtual Production"
     }

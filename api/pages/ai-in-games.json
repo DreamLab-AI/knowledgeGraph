@@ -8,6 +8,10 @@
   "definition": "AI in Games is the interdisciplinary research and engineering field encompassing the design, implementation, and study of computational systems that perceive, decide, learn, and generate within interactive entertainment software, spanning classical symbolic techniques (finite-state machines FSM d...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:entertainment-technology",
       "label": "Entertainment Technology"
     },

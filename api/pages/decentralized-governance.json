@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:decentralized-governance",
   "domain": "blockchain",
   "definition": "Decentralized Governance is a class of collective decision-making systems in which authority, rule-setting, and enforcement mechanisms are distributed across a network of participants rather than concentrated in a single central actor, implemented through formal on-chain voting protocols (token-w...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.54,
   "maturity": "established",

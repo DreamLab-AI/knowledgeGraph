@@ -8,6 +8,10 @@
   "definition": "computed torque control is a robotics and autonomous systems concept and a type of Model Based Control.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:model-based-control",
       "label": "Model Based Control"
     }

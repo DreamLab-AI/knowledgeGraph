@@ -8,8 +8,8 @@
   "definition": "A mechanism that controls which positions in a sequence can attend to which other positions, typically implemented by adding large negative values before softmax to effectively zero out unwanted attention weights.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

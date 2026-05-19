@@ -8,6 +8,10 @@
   "definition": "A governance model where rules, processes, decisions, and their enforcement are openly visible, verifiable, and accessible to all stakeholders, typically implemented through blockchain technology, public smart contracts, and open data practices.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:governance",
       "label": "Governance"
     }

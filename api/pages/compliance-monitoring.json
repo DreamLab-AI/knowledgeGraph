@@ -8,6 +8,10 @@
   "definition": "Compliance Monitoring is the continuous, automated oversight of systems, processes, people, and data flows to verify ongoing adherence to applicable regulatory requirements, internal policies, contractual obligations, and technical standards across the full operational surface area of an organisa...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:automated-compliance",
       "label": "Automated Compliance"
     },

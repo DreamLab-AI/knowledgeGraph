@@ -8,6 +8,10 @@
   "definition": "A best-first informed search algorithm developed by Peter Hart, Nils Nilsson, and Bertram Raphael that finds the optimal path between nodes in a weighted graph by combining actual accumulated cost from the start node (g-score representing precise path cost traversed thus far) with admissible heur...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:search-algorithms",
       "label": "Search Algorithms"
     }

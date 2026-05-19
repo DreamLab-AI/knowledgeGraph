@@ -8,6 +8,10 @@
   "definition": "The abbreviated reference for the Artificial Intelligence Domain, serving as a top-level ontological classification for all AI-related concepts including mods, systems, applications, and governance frameworks within the knowledge graph.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }

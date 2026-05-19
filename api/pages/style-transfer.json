@@ -8,6 +8,10 @@
   "definition": "Style Transfer is the technique of applying the artistic style of one image (style image) to the content of another image (content image), creating a new image that combines content from one source with the aesthetic style of another.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:image-to-image-translation",
       "label": "Image to Image Translation"
     }

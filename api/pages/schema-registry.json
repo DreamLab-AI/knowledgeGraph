@@ -8,6 +8,10 @@
   "definition": "A centralized service that stores, validates, and manages data schemas for event streaming and API contracts, ensuring compatibility and evolution of data formats across distributed metaverse systems and microservices.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-management",
       "label": "Data Management"
     }

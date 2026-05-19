@@ -8,6 +8,10 @@
   "definition": "Techniques that create modified versions of training examples to increase dataset diversity and model robustness. Data augmentation strategies apply transformations that preserve label semantics whilst introducing variation, improving generalisation and reducing overfitting.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

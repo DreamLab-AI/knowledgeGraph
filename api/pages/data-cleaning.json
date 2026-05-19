@@ -8,6 +8,10 @@
   "definition": "Data Cleaning is a artificial intelligence concept and a type of Data Preprocessing. that enables Data Analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:data-preprocessing",
       "label": "Data Preprocessing"
     }

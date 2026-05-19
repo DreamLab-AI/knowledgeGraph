@@ -8,6 +8,10 @@
   "definition": "RGB and Client-Side Validation (CSV) is a Bitcoin-native Layer 3 smart contract system and cryptographic architecture invented by Dr. Peter Todd (foundational client-side validation theory, 2016\u20132019) and brought to production implementation by Dr.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:client-side-validation-theory",
       "label": "Client-Side Validation Theory"
     },

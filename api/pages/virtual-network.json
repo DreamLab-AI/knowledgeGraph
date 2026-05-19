@@ -8,6 +8,10 @@
   "definition": "A software-defined network infrastructure that creates logical network segments over physical hardware, enabling isolated, configurable communication channels for metaverse platforms, cloud services, and distributed applications through technologies like VLANs, VPNs, and network slicing.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

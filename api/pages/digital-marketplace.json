@@ -8,6 +8,10 @@
   "definition": "Digital Marketplace is a type of E Commerce in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:e-commerce",
       "label": "E-Commerce"
     }

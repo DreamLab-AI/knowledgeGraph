@@ -8,6 +8,10 @@
   "definition": "The foundational technology stack comprising blockchain networks, node infrastructure, custody systems, key management solutions, and integration APIs that enable secure creation, storage, transfer, and management of digital assets across institutional and retail applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:digital-infrastructure",
       "label": "Digital Infrastructure"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/robotics#FeedbackControl
-legacy_uri:: urn:visionclaw:concept:robotics:feedback-control
 public:: true
 
 # Feedback Control
@@ -74,86 +71,19 @@ public:: true
       "vc:label": "Sensor"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.16"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-94fe14d5fb54"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "robotics"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/robotics#FeedbackControl"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "RB-0834"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-04-26T15:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Feedback Control"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.61"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:robotics:feedback-control"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "draft"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:robotics:feedback-control"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.0.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -173,12 +103,12 @@ public:: true
   "maturity": "draft",
   "subClassOf": [
     {
-      "@id": "urn:ngm:class:control-theory",
-      "label": "Control Theory"
+      "@id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     },
     {
-      "@id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "@id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     }
   ],
   "relations": {
@@ -317,9 +247,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:37638d35291c215791ff76ba2dec4231569f8a574964fb4ac752e678f6827d7d@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

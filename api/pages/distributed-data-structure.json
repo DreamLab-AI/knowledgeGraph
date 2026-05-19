@@ -8,6 +8,10 @@
   "definition": "A Distributed Data Structure is an abstract organizational framework for storing, managing, and accessing data across multiple networked computing nodes without centralized coordination.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:blockchain-entity",
       "label": "Blockchain Entity"
     }

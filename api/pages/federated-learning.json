@@ -8,6 +8,10 @@
   "definition": "Distributed machine learning paradigm enabling collaborative model training across decentralized data sources without centralizing sensitive information.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:distributed-computing",
       "label": "Distributed Computing"
     }

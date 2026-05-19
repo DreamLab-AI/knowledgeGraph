@@ -8,6 +8,10 @@
   "definition": "Supply chain traceability employs BlockchainTechnology|blockchain and SmartContract|smart contracts to create immutable, transparent records of product journey from origin through manufacturing, distribution, and final delivery, enabling verification of authenticity and compliance at each...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:blockchain-application",
       "label": "Blockchain Application"
     }

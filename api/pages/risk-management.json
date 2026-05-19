@@ -8,8 +8,8 @@
   "definition": "The coordinated activities to direct and control an AI system with regard to risk, encompassing risk identification, assessment, treatment, monitoring, and communication throughout the AI lifecycle to minimize potential adverse effects while maximizing benefits.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

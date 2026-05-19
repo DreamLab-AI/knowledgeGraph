@@ -8,6 +8,10 @@
   "definition": "Carbon Neutral Blockchain is any distributed ledger infrastructure that achieves net-zero or carbon-negative lifecycle greenhouse gas emissions through one or more of three principal mechanisms: (1) Consensus mechanism transition: Adoption of low-energy Consensus Mechanisms \u2014 pre-eminently",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:climate-aligned-finance",
       "label": "Climate-Aligned Finance"
     },

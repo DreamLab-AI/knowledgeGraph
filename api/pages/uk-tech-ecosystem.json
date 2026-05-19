@@ -8,6 +8,10 @@
   "definition": "The United Kingdom's technology industry landscape, ranked as Europe's leading tech ecosystem with a combined market of 2 and over VC-backed startups.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:technology-industry",
       "label": "Technology Industry"
     }

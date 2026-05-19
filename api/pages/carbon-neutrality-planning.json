@@ -8,6 +8,10 @@
   "definition": "The strategic process of developing a comprehensive roadmap to achieve net-zero greenhouse gas emissions, encompassing emission measurement, science-based reduction targets, interim milestones, decarbonization actions, and residual emission neutralization through permanent carbon removal.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:strategic-planning",
       "label": "Strategic Planning"
     }

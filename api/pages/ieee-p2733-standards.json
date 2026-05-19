@@ -8,6 +8,10 @@
   "definition": "IEEE standards development efforts addressing virtual reality, extended reality, and metaverse technologies, including specifications for VR sickness reduction (IEEE 3079-2020), comfort requirements, and ical design practices that ensure safe and accessible immersive experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:xr-technical-standard",
       "label": "XR Technical Standard"
     }

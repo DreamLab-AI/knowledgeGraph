@@ -8,8 +8,8 @@
   "definition": "Edge AI for Smart Cities deploys machine learning intelligence across distributed urban infrastructure\u2014smart cameras, IoT sensors, edge gateways\u2014enabling real-time autonomous city systems without centralized cloud processing.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
     }
   ],
   "entityType": "Class",

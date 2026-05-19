@@ -8,8 +8,8 @@
   "definition": "Software entity capable of acting autonomously to achieve goals within a metaverse, exhibiting goal-directed behavior, decision-making, and adaptive responses without continuous human intervention.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

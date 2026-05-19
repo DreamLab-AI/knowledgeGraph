@@ -8,6 +8,10 @@
   "definition": "3DAsset is a spatial computing concept and a type of Digital Asset Management.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }

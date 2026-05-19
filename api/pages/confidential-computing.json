@@ -8,8 +8,8 @@
   "definition": "Confidential Computing is a hardware-based security paradigm protecting data in use by isolating computation within trusted execution environments (TEEs) backed by processor security extensions, ensuring that sensitive data and code remain encrypted and protected even from privileged software, op...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

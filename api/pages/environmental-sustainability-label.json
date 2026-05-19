@@ -8,6 +8,10 @@
   "definition": "Certification process and label indicating compliance with environmental sustainability standards for digital infrastructure, energy consumption, and carbon footprint in metaverse operations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }

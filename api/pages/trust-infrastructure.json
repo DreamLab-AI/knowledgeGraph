@@ -8,8 +8,8 @@
   "definition": "Foundational systems providing authentication, authorisation, encryption, and trust establishment mechanisms. Enables secure interaction between participants in distributed narrative systems through cryptographic protocols, identity verification, and access control policies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "Infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

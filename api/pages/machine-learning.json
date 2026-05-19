@@ -8,6 +8,10 @@
   "definition": "Machine Learning is a concept in artificial intelligence.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:artificial-intelligence-core",
       "label": "Artificial Intelligence"
     }

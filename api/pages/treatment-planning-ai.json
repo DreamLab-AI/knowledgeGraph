@@ -8,6 +8,10 @@
   "definition": "Treatment Planning AI encompasses artificial intelligence systems that optimise therapeutic interventions through automated treatment selection, dosage optimisation, radiation therapy planning, surgical planning, and personalised care pathway design.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:medical-ai",
       "label": "Medical AI"
     }

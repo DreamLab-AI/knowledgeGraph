@@ -8,6 +8,10 @@
   "definition": "Organizations developing technical standards for metaverse technologies, including IEEE (Metaverse Standards Committee), W3C (Immersive Web Working Group), ISO/IEC (3D formats), ITU (telecommunications), and the Metaverse Standards Forum coordinating member organizations for interoperability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards-organization",
       "label": "Standards Organization"
     }

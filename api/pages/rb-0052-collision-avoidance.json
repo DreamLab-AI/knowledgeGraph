@@ -8,6 +8,10 @@
   "definition": "collision avoidance is a robotics and autonomous systems concept and a type of Motion Planning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-navigation-and-planning",
+      "label": "Navigation and Planning"
+    },
+    {
       "id": "urn:ngm:class:motion-planning",
       "label": "Motion Planning"
     }

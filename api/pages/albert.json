@@ -8,8 +8,8 @@
   "definition": "A Lite BERT: a parameter-efficient variant of BERT that uses factorised embedding parameterisation and cross-layer parameter sharing to reduce model size whilst maintaining or improving performance.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

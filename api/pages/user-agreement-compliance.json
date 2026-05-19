@@ -8,8 +8,8 @@
   "definition": "Process ensuring user actions within a metaverse platform adhere to declared policies, terms of service, and acceptable use guidelines.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

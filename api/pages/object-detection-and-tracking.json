@@ -8,8 +8,8 @@
   "definition": "Object Detection and Tracking combines spatial object localisation with temporal tracking to identify, classify, and follow objects across video frames or sensor streams.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

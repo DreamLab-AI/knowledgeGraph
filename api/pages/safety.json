@@ -8,8 +8,8 @@
   "definition": "The condition whereby an AI system operates without causing unacceptable risk of physical injury, harm to human health or well-being, damage to property, or harm to the environment, achieved through hazard identification, risk assessment, and implementation of appropriate safeguards.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

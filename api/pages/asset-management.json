@@ -8,6 +8,10 @@
   "definition": "The professional management of digital and traditional assets through strategies including portfolio construction, risk management, custody, and performance optimization.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    },
+    {
       "id": "urn:ngm:class:financial-services",
       "label": "Financial Services"
     }

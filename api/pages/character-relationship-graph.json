@@ -8,6 +8,10 @@
   "definition": "A network data structure representing narrative characters as vertices and their interactions or relationships as edges, used to model social dynamics, drive procedural story generation, and analyze narrative structure through graph theory and social network analysis.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:social-network-graph",
       "label": "Social Network Graph"
     }

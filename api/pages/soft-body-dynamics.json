@@ -8,6 +8,10 @@
   "definition": "Physics simulation of deformable objects like cloth, flesh, or elastic materials, modeling realistic deformation and dynamic behavior in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

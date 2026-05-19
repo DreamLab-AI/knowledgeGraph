@@ -8,8 +8,8 @@
   "definition": "A parameter-efficient fine-tuning technique that prepends trainable continuous vectors (prefixes) to the key and value matrices at each transformer layer, whilst keeping the pre-trained model parameters frozen.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

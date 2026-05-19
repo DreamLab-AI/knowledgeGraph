@@ -8,6 +8,10 @@
   "definition": "Centralised digital asset repositories that store, organise, and manage media files including 3D models, textures, audio, video, and immersive content for metaverse applications, with metadata tagging and search capabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-management",
       "label": "Digital Asset Management"
     }

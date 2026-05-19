@@ -8,8 +8,8 @@
   "definition": "Blockchain-based clinical trial management systems employing immutable audit trails, smart contracts for protocol compliance, and cryptographic verification to ensure data integrity, prevent fraud, enable patient recruitment improvements, and provide FDA 21 CFR Part 11 compliant tamper-proof reco...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

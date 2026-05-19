@@ -8,6 +8,10 @@
   "definition": "A Graph Database is a specialised data management system representing data as a network of nodes (vertices) connected by relationships (edges) carrying their own properties and semantics, contrasted with relational databases that scatter relationships across foreign-key joins, organised aroun...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-management-system",
       "label": "Data Management System"
     },

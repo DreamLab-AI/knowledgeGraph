@@ -8,6 +8,10 @@
   "definition": "Analog To Digital Converter (ADC) is an electronic component that converts continuous analog signals such as sound, light, or voltage into discrete digital representations through sampling, quantization, and encoding processes, enabling digital processing, storage, and transmission of real-world ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:signal-processing-hardware",
       "label": "Signal Processing Hardware"
     }

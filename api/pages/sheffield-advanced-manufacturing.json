@@ -8,8 +8,8 @@
   "definition": "Sheffield's advanced manufacturing hub specialising in materials science, robotics, and Industry 4.0 technologies.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

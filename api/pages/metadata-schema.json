@@ -8,6 +8,10 @@
   "definition": "A structured specification defining metadata elements, their semantics, syntax, and relationships for describing and managing information resources.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-standard",
       "label": "Data Standard"
     }

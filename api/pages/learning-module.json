@@ -8,6 +8,10 @@
   "definition": "Self-contained educational units within VR and metaverse training systems that provide structured learning experiences, including interactive simulations, assessments, and collaborative activities designed for specific skill development objectives.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

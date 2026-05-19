@@ -8,8 +8,8 @@
   "definition": "AI-driven representation within a virtual world that responds adaptively to users and context, combining perception, reasoning, learning, and interaction capabilities to create sophisticated virtual presences.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
     }
   ],
   "entityType": "Class",

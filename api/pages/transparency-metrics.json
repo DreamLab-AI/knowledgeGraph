@@ -8,6 +8,10 @@
   "definition": "Quantitative and qualitative measures used to assess and communicate the openness, accountability, and visibility of governance, operations, and decision-making processes in digital platforms, DAOs, and metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:governance",
       "label": "Governance"
     }

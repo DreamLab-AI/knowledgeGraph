@@ -8,6 +8,10 @@
   "definition": "Specialised data analysis and business intelligence infrastructure providing quantitative insight into Decentralised Autonomous Organisation performance across governance participation, treasury health, delegate accountability, proposal lifecycle dynamics, sybil resistance, and ecosystem-wide...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:analytics-platforms",
       "label": "Analytics Platforms"
     },

@@ -8,6 +8,10 @@
   "definition": "Regulatory Compliance in AI contexts refers to the adherence to legal requirements, statutory obligations, and regulatory standards governing the development, deployment, and operation of artificial intelligence systems within specific jurisdictions or sectors.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance-principle",
       "label": "AI Governance Principle"
     }

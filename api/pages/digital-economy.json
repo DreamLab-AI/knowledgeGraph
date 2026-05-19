@@ -8,6 +8,10 @@
   "definition": "The interconnected system of economic activities, transactions, and value creation occurring through digital platforms, blockchain networks, and virtual environments, encompassing cryptocurrency markets, NFT trading, virtual real estate, and the tokenised exchange of goods and services in the met...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:economic-systems",
       "label": "Economic Systems"
     }

@@ -8,6 +8,10 @@
   "definition": "An emerging form of e-commerce (V-commerce) that enables buying and selling of goods and services within virtual reality environments, including virtual storefronts, enhanced product visualization, social shopping experiences, and immersive customer-product interactions in metaverse platforms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:digital-fabrication",
   "domain": "artificial-intelligence",
   "definition": "Digital Fabrication in the AI context refers to the integration of artificial intelligence with additive manufacturing, CNC machining, and automated production technologies.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

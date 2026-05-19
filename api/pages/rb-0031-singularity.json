@@ -8,6 +8,10 @@
   "definition": "singularity is a robotics and autonomous systems concept and a type of Robot.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:robot",
       "label": "Robot"
     }

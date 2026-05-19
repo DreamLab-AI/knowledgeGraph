@@ -8,6 +8,10 @@
   "definition": "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

@@ -8,6 +8,10 @@
   "definition": "The continuous or periodic involvement of competent human actors in the governance, development, deployment, and operation of artificial intelligence systems, exercising meaningful control, judgment, and intervention capabilities to ensure AI system decisions and actions remain aligned with human...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

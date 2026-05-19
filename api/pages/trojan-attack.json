@@ -8,8 +8,8 @@
   "definition": "A backdoor attack on AI models, often emphasizing supply chain compromise, where a pre-trained model or training pipeline is maliciously modified to contain hidden triggers that cause specific attacker-defined behaviors when activated, while maintaining normal performance otherwise.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "The networking infrastructure components that enable connectivity and data transmission for metaverse applications, including routers, switches, access points, edge computing devices, and 5G equipment required for low-latency immersive experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

@@ -8,6 +8,10 @@
   "definition": "AI Origin Declaration refers to technical standards and regulatory requirements for disclosing when digital content has been generated or substantially modified by artificial intelligence, encompassing watermarking, metadata embedding, and provenance tracking systems that enable verification of c...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:content-authenticity",
       "label": "Content Authenticity"
     }

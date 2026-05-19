@@ -6,7 +6,7 @@
   "title": "Diffusion Model",
   "vc:slug": "diffusion-model",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```
@@ -25,6 +25,12 @@
     {
       "@id": "urn:ngm:class:diffusion-models",
       "label": "Diffusion Models"
+    }
+  ],
+  "subClassOf": [
+    {
+      "@id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ]
 }

@@ -8,6 +8,10 @@
   "definition": "Adaptive Virtual World describes a metaverse environment that uses procedural generation, AI-driven content creation, and real-time user behavior analysis to dynamically evolve landscapes, structures, weather patterns, NPCs, and game mechanics in response to collective and individual user actions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-world",
       "label": "Virtual World"
     }

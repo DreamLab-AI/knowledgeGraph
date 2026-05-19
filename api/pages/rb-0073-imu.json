@@ -8,6 +8,10 @@
   "definition": "imu is a robotics and autonomous systems concept and a type of Proprioceptive Sensor.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:proprioceptive-sensor",
       "label": "Proprioceptive Sensor"
     }

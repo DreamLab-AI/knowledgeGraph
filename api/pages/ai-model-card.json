@@ -8,8 +8,8 @@
   "definition": "A structured documentation format that describes an AI Model's purpose, Performance Metrics, limitations, ical Considerations, and appropriate Use Case|use cases to promote Transparency and Responsible AI Deployment|responsible deployment.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Data Minimisation is a privacy principle and GDPR requirement (Article 5(1)(c)) mandating that personal data collection and processing be limited to what is adequate, relevant, and necessary for specified purposes, reducing privacy risks by avoiding accumulation of excessive data that could be mi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:privacy-and-data-governance",
       "label": "Privacy and Data Governance"
     }

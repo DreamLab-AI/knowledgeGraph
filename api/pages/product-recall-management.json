@@ -8,8 +8,8 @@
   "definition": "Blockchain-powered systems enabling rapid, precise product recall execution through immutable supply chain traceability, reducing recall scope by 70-whilst accelerating contamination source identification from days to seconds, deployed at scale by Walmart (6 days \u2192 2.2 seconds mango tracing),...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

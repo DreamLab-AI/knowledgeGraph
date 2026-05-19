@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:xr-technical-standard",
   "domain": "spatial-computing",
   "definition": "XR Technical Standard is a spatial computing concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

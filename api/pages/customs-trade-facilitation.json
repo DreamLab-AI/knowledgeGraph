@@ -8,6 +8,10 @@
   "definition": "The systematic application of digital infrastructure \u2014 blockchain distributed ledgers, AI-driven risk engines, smart contracts, and interoperable single-window platforms \u2014 to reduce friction in cross-border trade whilst maintaining regulatory compliance for customs authorities and economic operat...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:digital-customs",
       "label": "Digital Customs"
     },

@@ -8,6 +8,10 @@
   "definition": "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale Frontier Models \u2014 most prominently Senate Bill 1047 (SB 1047...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:frontier-model-governance",
       "label": "Frontier Model Governance"
     },

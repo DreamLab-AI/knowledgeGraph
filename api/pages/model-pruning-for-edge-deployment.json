@@ -8,8 +8,8 @@
   "definition": "Model Pruning for Edge Deployment systematically removes redundant weights and neurons from neural networks, reducing model size and computational requirements while maintaining sufficient accuracy for edge inference.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

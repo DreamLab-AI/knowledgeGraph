@@ -8,6 +8,10 @@
   "definition": "The top-level ontological domain classification encompassing all concepts related to artificial intelligence, including research modologies, system architectures, learning paradigms, application domains, and governance frameworks for intelligent computational systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    },
+    {
       "id": "urn:ngm:class:technology-domain",
       "label": "Technology Domain"
     }

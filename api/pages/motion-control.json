@@ -8,6 +8,10 @@
   "definition": "MotionControl is the discipline governing the coordinated generation and execution of actuator commands that transform high-level kinematic or task-space specifications into precise, smooth, and dynamically consistent robot motion through the integrated chain of trajectory generation, servo-loop ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:industrial-automation",
       "label": "Industrial Automation"
     },

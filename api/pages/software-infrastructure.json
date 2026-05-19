@@ -8,8 +8,8 @@
   "definition": "Software Infrastructure is a type of Infrastructure in the infrastructure domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-software-engineering",
+      "label": "Software Engineering"
     }
   ],
   "entityType": "Class",

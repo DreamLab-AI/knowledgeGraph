@@ -8,6 +8,10 @@
   "definition": "Technical specifications defining how data is structured, encoded, and exchanged across metaverse platforms and 3D applications, including standards like glTF for efficient 3D asset transmission and Universal Scene Description for complex scene composition and collaboration.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:technical-standards",
       "label": "Technical Standards"
     }

@@ -8,8 +8,8 @@
   "definition": "performance level is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "The capability to understand, explain, and interpret the decision-making processes within AI and machine learning models, encompassing explainability, interpretability, and accountability requirements essential for responsible AI deployment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-ethics",
       "label": "AI Ethics"
     }

@@ -8,8 +8,8 @@
   "definition": "Service Robot is a robotics and autonomous systems concept and a type of robotics.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "entityType": "Class",

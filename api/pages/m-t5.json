@@ -8,6 +8,10 @@
   "definition": "Multilingual T5: a massively multilingual variant of T5 pre-trained on the mC4 corpus covering 101 languages, using the same text-to-text framework as T5.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:foundation-models",
       "label": "Foundation Models"
     }

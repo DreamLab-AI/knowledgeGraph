@@ -8,6 +8,10 @@
   "definition": "A collaborative knowledge repository enabling multiple agents or users to exchange, integrate, and query structured information using semantic web technologies, providing a common understanding of domain concepts through ontologies and linked data standards.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:knowledge-management-system",
       "label": "Knowledge Management System"
     }

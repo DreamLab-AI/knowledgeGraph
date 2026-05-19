@@ -8,6 +8,10 @@
   "definition": "Body of law, regulation, and enforcement mechanisms protecting individuals from unfair, deceptive, or abusive commercial practices \u2014 spanning statutory rights, enforcement agencies, complaint and redress processes, and product liability standards \u2014 now substantially reshaped by digital markets, A...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:competition-law",
       "label": "Competition Law"
     },

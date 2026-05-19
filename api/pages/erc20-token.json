@@ -8,6 +8,10 @@
   "definition": "A fungible token implementing the ERC-20 standard on ereum blockchain. The most widely used ereum token standard providing uniform API for token operations within smart contracts.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:fungible-token",
       "label": "Fungible Token"
     }

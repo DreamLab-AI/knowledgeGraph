@@ -8,6 +8,10 @@
   "definition": "Consortium Blockchain is a permissioned distributed ledger architecture in which a pre-approved set of legally distinct organisations jointly operates the validator infrastructure, governs the protocol rules, and controls the read/write access matrix \u2014 occupying a deliberate middle position in th...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:federated-system",
       "label": "Federated System"
     },

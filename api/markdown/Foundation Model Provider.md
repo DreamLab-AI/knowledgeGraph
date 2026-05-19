@@ -6,7 +6,7 @@
   "title": "Foundation Model Provider",
   "vc:slug": "foundation-model-provider",
   "vc:public": true,
-  "vc:schemaVersion": 3,
+  "vc:schemaVersion": 2,
   "vc:outboundWikilinks": []
 }
 ```

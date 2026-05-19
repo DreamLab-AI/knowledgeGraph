@@ -8,6 +8,10 @@
   "definition": "Advanced Driver Assistance Systems (ADAS) are electronic systems that assist vehicle operators with driving and parking functions through automated technologies including adaptive cruise control, lane keeping assist, automatic emergency braking, blind spot detection, and parking assistance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:autonomous-vehicle",
       "label": "Autonomous Vehicle"
     }

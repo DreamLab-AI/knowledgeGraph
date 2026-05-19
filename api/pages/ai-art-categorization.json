@@ -8,6 +8,10 @@
   "definition": "AI Art Categorization encompasses taxonomies, classification systems, and machine learning mods for organizing, labeling, and evaluating AI-generated and AI-assisted artworks based on creation modology, style, medium, aesthetic properties, and the degree of autonomous system involvement in the cr...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:art-classification",
       "label": "Art Classification"
     }

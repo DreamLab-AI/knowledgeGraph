@@ -8,6 +8,10 @@
   "definition": "A permissioned token standard for security tokens with on-chain identity verification and compliance rules, enabling compliant transfer restrictions based on investor identity and jurisdiction.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:security-token",
       "label": "Security Token"
     }

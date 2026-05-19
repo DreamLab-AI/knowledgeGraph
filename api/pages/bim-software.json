@@ -8,6 +8,10 @@
   "definition": "Specialized applications for Building Information Modeling that enable the generation, management, and collaboration on digital representations of physical and functional characteristics of buildings and infrastructure, supporting the entire asset lifecycle from design through construction to ope...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:design-software",
       "label": "Design Software"
     }

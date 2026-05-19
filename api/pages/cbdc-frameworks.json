@@ -8,6 +8,10 @@
   "definition": "CBDC Frameworks are the integrated bodies of technical specifications, regulatory governance structures, design principles, and interoperability standards that central banks and international monetary institutions use to research, pilot, and deploy Central Bank Digital Currencies \u2014 sovereign digi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:central-bank-infrastructure",
       "label": "Central Bank Infrastructure"
     },

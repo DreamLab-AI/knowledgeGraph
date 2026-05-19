@@ -8,8 +8,8 @@
   "definition": "An alignment objective ensuring AI systems avoid generating outputs that could cause harm, including toxic, dangerous, misleading, or unical content. Harmlessness represents a key dimension of AI safety alongside helpfulness and honesty.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

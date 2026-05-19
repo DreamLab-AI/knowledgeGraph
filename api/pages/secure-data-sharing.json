@@ -8,6 +8,10 @@
   "definition": "Cryptographic and access control mechanisms that enable controlled exchange of sensitive information between parties in metaverse environments while maintaining confidentiality, integrity, and regulatory compliance through encryption and permissioned access.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:data-security",
       "label": "Data Security"
     }

@@ -8,6 +8,10 @@
   "definition": "A digital representation of value that is typically unregulated, issued and controlled by its developers, used and accepted electronically among members of a specific virtual community, including in-game currencies, platform tokens, and convertible digital currencies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-asset",
       "label": "Digital Asset"
     }

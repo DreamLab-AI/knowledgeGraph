@@ -8,8 +8,8 @@
   "definition": "Search Algorithms is a artificial intelligence concept and a type of Artificial Intelligence. that enables Pathfinding, Planning and Scheduling.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

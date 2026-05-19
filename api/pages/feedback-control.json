@@ -8,12 +8,12 @@
   "definition": "Feedback Control - A closed-loop control mechanism in which Sensor measurements of actual system state are continuously compared against desired Setpoints, and control actions are adjusted in real time to minimise error and maintain stable, accurate Robot Behaviour.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:control-theory",
-      "label": "Control Theory"
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:control-theory",
+      "label": "Control Theory"
     }
   ],
   "entityType": "Class",

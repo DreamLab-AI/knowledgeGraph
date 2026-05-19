@@ -8,8 +8,8 @@
   "definition": "Knowledge Management is a type of Spatial Computing in the spatial computing domain.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
     }
   ],
   "entityType": "Class",

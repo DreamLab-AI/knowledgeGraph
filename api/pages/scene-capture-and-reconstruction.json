@@ -8,6 +8,10 @@
   "definition": "Scene Capture and Reconstruction is a fundamental computer-vision and spatial-computing discipline concerned with recovering complete geometric, radiometric, and semantic representations of physical environments from sensor observations \u2014 primarily calibrated multi-view photographs, RGB-D frames,...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "computer-vision"
     }

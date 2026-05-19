@@ -8,8 +8,8 @@
   "definition": "An AI model that displays significant generality and is capable of competently performing a wide range of distinct tasks regardless of the way the model is placed on the market.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

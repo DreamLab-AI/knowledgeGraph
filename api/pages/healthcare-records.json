@@ -8,8 +8,8 @@
   "definition": "Blockchain-based electronic health record systems employing immutable distributed ledgers, smart contracts for consent management, and cryptographic security measures to enable secure patient data sharing, interoperability across healthcare providers, and patient-controlled access whilst maintain...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

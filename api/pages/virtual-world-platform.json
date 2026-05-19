@@ -8,6 +8,10 @@
   "definition": "A software ecosystem that enables users to create, explore, and interact within persistent 3D virtual environments, encompassing both centralized platforms like Roblox and Fortnite, and blockchain-based decentralized platforms like Decentraland and The Sandbox that feature user-owned digital asse...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-platform",
       "label": "Digital Platform"
     }

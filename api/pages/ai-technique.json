@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:f54bbfd5d3caf65c7f7e02ad4ba6a77af66f34e1f2057d89c0d561740f5a9ed5",
+  "title": "AI Technique",
+  "slug": "ai-technique",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-technique",
+  "domain": "artificial-intelligence",
+  "definition": "Intermediate taxonomy category for ai technique concepts within the artificial intelligence domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:artificial-intelligence",
+      "label": "Artificial Intelligence"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

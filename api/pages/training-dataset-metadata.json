@@ -8,8 +8,8 @@
   "definition": "A training dataset metadata component in the Artificial Intelligence domain that required by AiModelCard.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

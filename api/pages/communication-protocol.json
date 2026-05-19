@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:communication-protocol",
   "domain": "robotics",
   "definition": "Communication protocol defines message formats, transmission rules, addressing schemes, and error-handling procedures that enable robots and computational systems to reliably exchange information over wired or wireless channels.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:robo-human-robot-interaction",
+      "label": "Human-Robot Interaction"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "established",

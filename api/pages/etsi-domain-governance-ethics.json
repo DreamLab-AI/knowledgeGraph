@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:etsi-domain-governance-ethics",
   "domain": "artificial-intelligence",
   "definition": "An ETSI governance domain addressing ical principles, values alignment, responsible innovation, and fairness frameworks for metaverse and digital systems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.4,
   "maturity": "draft",

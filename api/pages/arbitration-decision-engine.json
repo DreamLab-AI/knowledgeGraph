@@ -8,6 +8,10 @@
   "definition": "Arbitration Decision Engine is an AI-powered or smart contract-based automated system that evaluates evidence, applies predetermined rules, and renders decisions in dispute resolution processes, functioning as an oracle that can trigger smart contract modifications and enable self-enforcing arbit...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:automated-dispute-resolution",
       "label": "Automated Dispute Resolution"
     }

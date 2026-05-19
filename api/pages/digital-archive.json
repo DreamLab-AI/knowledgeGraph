@@ -8,6 +8,10 @@
   "definition": "A systematic collection and preservation system for digital assets, cultural artifacts, documents, and media using distributed storage, metadata standards, and immersive access technologies to ensure long-term accessibility and discovery within virtual environments and knowledge management systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-preservation",
       "label": "Digital Preservation"
     }

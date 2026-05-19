@@ -8,6 +8,10 @@
   "definition": "Bioterrorism (biological terrorism) is the deliberate use, threat, or weaponisation of pathogenic microorganisms (bacteria, viruses, fungi, prions), biological toxins, or genetically engineered agents by state or non-state actors to cause mass casualties, generate fear, coerce governments, or des...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:biosecurity",
       "label": "Biosecurity"
     },

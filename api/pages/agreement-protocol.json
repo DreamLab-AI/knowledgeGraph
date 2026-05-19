@@ -8,6 +8,10 @@
   "definition": "An Agreement Protocol is a distributed protocol specifically designed to enable multiple independent nodes to reach consensus on a single value, decision, or sequence of events despite the presence of failures, network asynchrony, and potentially malicious participants.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    },
+    {
       "id": "urn:ngm:class:distributed-protocol",
       "label": "Distributed Protocol"
     }

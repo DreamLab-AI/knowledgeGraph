@@ -8,6 +8,10 @@
   "definition": "Function Calling (also termed tool use or tool invocation) is the capability of large language models to emit structured requests selecting and parameterising external functions described to them via JSON-Schema tool definitions, with the application layer executing the selected tools and returni...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:agentic-capability",
       "label": "Agentic Capability"
     },

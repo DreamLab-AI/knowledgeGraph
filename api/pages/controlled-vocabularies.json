@@ -8,6 +8,10 @@
   "definition": "Standardized sets of terms, phrases, and hierarchical relationships used to describe and organize information within knowledge management systems, databases, and metadata schemas, ensuring consistent indexing, retrieval, and interoperability across digital platforms and virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:knowledge-organization",
       "label": "Knowledge Organization"
     }

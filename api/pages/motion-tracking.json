@@ -8,6 +8,10 @@
   "definition": "Motion tracking is a technology that captures and records the movement of objects, bodies, or body parts in physical space, translating this data into digital representations for use in VR/AR systems, animation, and metaverse applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:xr-input-technologies",
       "label": "XR Input Technologies"
     }

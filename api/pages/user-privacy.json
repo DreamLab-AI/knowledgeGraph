@@ -8,6 +8,10 @@
   "definition": "User Privacy is a technology infrastructure concept and a type of Privacy Framework.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:privacy-framework",
       "label": "Privacy Framework"
     }

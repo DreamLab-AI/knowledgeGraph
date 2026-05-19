@@ -8,6 +8,10 @@
   "definition": "A math library component in the Metaverse domain that required by PhysicsEngine.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:software-library",
       "label": "Software Library"
     }

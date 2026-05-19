@@ -8,6 +8,10 @@
   "definition": "A structured approach to designing stakeholder engagement processes that establish goals, principles, mods, and mechanisms for involving citizens, communities, or users in decision-making, governance, and collaborative activities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }

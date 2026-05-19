@@ -1,0 +1,34 @@
+{
+  "id": "urn:visionflow:page:2f4ead10a1b8289cd4f5cbe3cd62fdefd80e4c4f56a0e04733c9aaa25432b93e",
+  "title": "Security and Identity",
+  "slug": "infra-security-and-identity",
+  "public": true,
+  "classIri": "urn:ngm:class:infra-security-and-identity",
+  "domain": "infrastructure",
+  "definition": "Intermediate taxonomy category for security and identity concepts within the infrastructure domain.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infrastructure",
+      "label": "Infrastructure"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "established",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

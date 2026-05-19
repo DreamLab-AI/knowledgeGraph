@@ -8,6 +8,10 @@
   "definition": "A comprehensive EU regulation establishing legal framework for digital services accountability, content moderation requirements, platform transparency obligations, and user protection measures across online intermediaries, marketplaces, and social platforms, with implications for metaverse and vi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:digital-regulation",
       "label": "Digital Regulation"
     }

@@ -8,8 +8,8 @@
   "definition": "Differential Privacy is a mathematical framework providing provable privacy guarantees by adding carefully calibrated noise to data queries or model outputs, ensuring that the presence or absence of any single individual's data has negligible impact on analysis results.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
     }
   ],
   "entityType": "Class",

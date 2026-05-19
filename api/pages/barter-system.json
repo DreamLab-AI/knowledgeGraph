@@ -8,6 +8,10 @@
   "definition": "A decentralized exchange mechanism enabling peer-to-peer trading of goods, services, or digital assets without monetary intermediaries, enhanced in digital contexts through blockchain-based matching algorithms and smart contracts that solve the traditional \"double coincidence of wants\" problem.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:exchange-mechanism",
       "label": "Exchange Mechanism"
     }

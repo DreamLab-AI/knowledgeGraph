@@ -8,6 +8,10 @@
   "definition": "The administration of cryptographic keys throughout their lifecycle, including generation, storage, distribution, rotation, backup, recovery, and destruction, ensuring the security and availability of keying material while preventing unauthorized access or compromise.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    },
+    {
       "id": "urn:ngm:class:cryptography",
       "label": "Cryptography"
     }

@@ -8,6 +8,10 @@
   "definition": "Mobile manipulator integrates locomotion with manipulation capabilities.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:hybrid-robot",
       "label": "Hybrid Robot"
     }

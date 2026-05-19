@@ -8,6 +8,10 @@
   "definition": "\"The use of blockchain distributed ledger technology, smart contracts, and cryptocurrency systems to coordinate, govern, and compensate geographically distributed teams, enabling trustless collaboration through cryptographic verification, automated enforcement of agreements, and transparent recor...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-protocol-and-infra",
+      "label": "Protocol and Infrastructure"
+    },
+    {
       "id": "urn:ngm:class:tele-002-telecollaboration",
       "label": "TELE-002-telecollaboration"
     }

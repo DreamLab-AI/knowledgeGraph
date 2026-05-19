@@ -8,6 +8,10 @@
   "definition": "Adversarial Attacks are malicious techniques that exploit vulnerabilities in machine learning models by deliberately crafting deceptive input data to cause incorrect predictions, misclassifications, or unintended behaviors, often through subtle perturbations imperceptible to humans but significan...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:ai-security-threats",
       "label": "AI Security Threats"
     }

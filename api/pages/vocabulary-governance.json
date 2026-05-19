@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:vocabulary-governance",
   "domain": "artificial-intelligence",
   "definition": "The policies, processes, and organizational structures for managing controlled vocabularies, taxonomies, thesauri, and ontologies throughout their lifecycle, including version control, role-based access permissions, quality assurance, and collaborative maintenance to ensure terminology consistenc...",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

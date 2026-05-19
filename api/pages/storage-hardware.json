@@ -8,6 +8,10 @@
   "definition": "A storage hardware component in the Metaverse domain that required by DataStorageLayer.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:hardware-component",
       "label": "Hardware Component"
     }

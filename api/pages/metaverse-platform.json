@@ -8,6 +8,10 @@
   "definition": "Virtual world environments such as Roblox, Fortnite, Decentraland, and VRChat that provide persistent, shared spaces for social interaction, gaming, commerce, and creative expression with varying degrees of decentralisation and user-generated content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-world",
       "label": "Virtual World"
     }

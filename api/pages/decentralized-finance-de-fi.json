@@ -8,6 +8,10 @@
   "definition": "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks\u2014principally ereum but increasingly on Layer 2 Networks (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)\u2014that replicates and extends traditional finan...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-protocols",
       "label": "Cryptographic Protocols"
     },

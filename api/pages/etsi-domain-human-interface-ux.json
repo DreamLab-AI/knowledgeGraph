@@ -8,8 +8,8 @@
   "definition": "An ETSI subdomain focusing on user experience design, usability engineering, and interaction paradigms optimising satisfaction, efficiency, and accessibility in VirtualEnvironment|immersive digital environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
     }
   ],
   "entityType": "Class",

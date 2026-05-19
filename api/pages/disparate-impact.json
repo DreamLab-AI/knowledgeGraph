@@ -8,6 +8,10 @@
   "definition": "Disparate Impact is a legal doctrine and form of indirect discrimination that occurs when facially neutral policies, practices, or algorithmic systems disproportionately affect protected groups, regardless of intent to discriminate.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-fairness",
       "label": "AI Fairness"
     }

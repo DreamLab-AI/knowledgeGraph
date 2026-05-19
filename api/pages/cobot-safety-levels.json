@@ -8,6 +8,10 @@
   "definition": "Standardized safety classifications and requirements for collaborative robots (cobots) operating in shared workspaces with humans, defining protection measures, risk assessments, and operational modes to ensure safe human-robot interaction according to ISO/TS 15066.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
+    },
+    {
       "id": "urn:ngm:class:safety-standard",
       "label": "Safety Standard"
     }

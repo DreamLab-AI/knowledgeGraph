@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:heuristic-methods",
   "domain": "artificial-intelligence",
   "definition": "Heuristic Mods in AI are problem-solving approaches that employ practical, experience-based techniques to find satisfactory solutions when optimal solutions are computationally infeasible.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

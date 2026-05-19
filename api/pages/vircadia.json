@@ -8,6 +8,10 @@
   "definition": "Vircadia is an open-source, community-governed, self-hostable Metaverse platform forked from High Fidelity's codebase under the Apache 2.0 licence, providing a federated architecture for persistent, spatially-aware virtual worlds with support for desktop and VR Headsets clients, posit...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:social-vr",
       "label": "Social VR"
     },

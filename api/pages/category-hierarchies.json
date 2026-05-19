@@ -8,6 +8,10 @@
   "definition": "A structured classification system that organizes concepts, objects, or information into parent-child relationships forming a tree-like taxonomy, enabling logical navigation from broad categories to specific subcategories for knowledge organization and content management.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System"
     }

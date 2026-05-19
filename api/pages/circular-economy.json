@@ -8,6 +8,10 @@
   "definition": "Systemic economic model that eliminates waste and keeps materials, components, and products in use at their highest value for as long as possible through restorative and regenerative design, distinguished from the linear \"take-make-dispose\" paradigm by organising economic activity around three fo...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:economic-model",
       "label": "Economic Model"
     },

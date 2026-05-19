@@ -8,6 +8,10 @@
   "definition": "Set of rules and requirements governing participant behavior, accountability, and interoperability in federated digital identity ecosystems within metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:metaverse-governance-and-safeguarding",
       "label": "Metaverse governance and safeguarding"
     }

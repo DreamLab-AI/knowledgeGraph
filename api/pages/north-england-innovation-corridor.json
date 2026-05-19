@@ -8,8 +8,8 @@
   "definition": "The collaborative innovation corridor spanning Manchester, Leeds, Liverpool, Sheffield, and Newcastle, forming the Northern Powerhouse technology ecosystem.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

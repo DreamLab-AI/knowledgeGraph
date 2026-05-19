@@ -8,6 +8,10 @@
   "definition": "Module is a artificial intelligence concept and a type of Component.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:component",
       "label": "Component"
     }

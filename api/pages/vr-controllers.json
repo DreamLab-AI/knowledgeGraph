@@ -8,6 +8,10 @@
   "definition": "Handheld input devices designed for virtual reality systems that enable users to interact with virtual environments through motion tracking, buttons, triggers, and haptic feedback, providing intuitive manipulation of virtual objects and navigation through immersive spaces.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }

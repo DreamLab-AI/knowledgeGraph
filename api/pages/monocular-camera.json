@@ -8,6 +8,10 @@
   "definition": "Monocular camera uses single lens to capture 2D images.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:camera",
       "label": "Camera"
     }

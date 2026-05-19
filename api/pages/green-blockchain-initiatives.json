@@ -8,6 +8,10 @@
   "definition": "Green Blockchain Initiatives encompass the coordinated technological, economic, and governance efforts aimed at eliminating or materially reducing the environmental footprint of distributed ledger systems, spanning four principal intervention vectors: (1) consensus mechanism replacement \u2014 transit...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:esg",
       "label": "ESG"
     },

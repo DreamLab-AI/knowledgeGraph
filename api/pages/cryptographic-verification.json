@@ -8,6 +8,10 @@
   "definition": "Cryptographic Verification is a type of Cryptographic System in the infrastructure domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
+    },
+    {
       "id": "urn:ngm:class:cryptographic-system",
       "label": "Cryptographic System"
     }

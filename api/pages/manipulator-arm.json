@@ -8,6 +8,10 @@
   "definition": "A multi-jointed mechanical or virtual robotic arm integrated with avatars or immersive systems to enable precise object manipulation and physical interaction within virtual or mixed reality environments through control systems, haptic feedback, and inverse kinematics algorithms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:avatar-wearable",
       "label": "Avatar Wearable"
     }

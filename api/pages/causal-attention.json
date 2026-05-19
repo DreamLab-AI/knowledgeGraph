@@ -8,6 +8,10 @@
   "definition": "An attention mechanism where each position can only attend to earlier positions in the sequence, preventing information flow from future tokens, essential for autoregressive generation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }

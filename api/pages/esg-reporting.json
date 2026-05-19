@@ -8,6 +8,10 @@
   "definition": "ESG Reporting is the composite corporate disclosure discipline by which obligated and voluntary entities \u2014 listed companies, large private undertakings, banks, insurers, asset managers, investment funds and a rapidly expanding perimeter of public-interest organisations \u2014 measure, assure and publi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:non-financial-reporting",
       "label": "Non-Financial Reporting"
     },

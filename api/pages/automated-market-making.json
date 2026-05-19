@@ -8,6 +8,10 @@
   "definition": "Automated Market Making is the practice and modology of operating decentralized exchange protocols that use algorithmic pricing and liquidity pools to facilitate permissionless trading, encompassing pool design, fee structures, capital efficiency optimization, and impermanent loss mitigation stra...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:de-fi-operations",
       "label": "DeFi Operations"
     }

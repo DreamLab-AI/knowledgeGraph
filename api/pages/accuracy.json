@@ -8,6 +8,10 @@
   "definition": "A classification performance metric representing the proportion of correct predictions made by an artificial intelligence model across all instances in a dataset, calculated as the ratio of the sum of true positives and true negatives to the total number of predictions, providing an aggregate mea...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

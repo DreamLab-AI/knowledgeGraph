@@ -8,6 +8,10 @@
   "definition": "DAO Tooling is the integrated software stack of governance platforms, treasury custodians, execution oracles, deliberation forums, identity primitives, analytics layers, and compensation rails that operationalises decentralised autonomous organisations as functioning socio-technical institutions ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:coordination-technology",
       "label": "Coordination Technology"
     },

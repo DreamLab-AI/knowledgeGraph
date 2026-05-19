@@ -8,6 +8,10 @@
   "definition": "Fine-tuning specifically aimed at improving AI system safety, reducing harmful outputs, and enhancing alignment with safety principles. Safety fine-tuning typically follows general capability training and uses safety-focused datasets and objectives.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-alignment",
       "label": "AI Alignment"
     }

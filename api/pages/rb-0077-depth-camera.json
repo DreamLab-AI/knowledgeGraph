@@ -8,6 +8,10 @@
   "definition": "depth camera is a robotics and autonomous systems concept and a type of Camera.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:camera",
       "label": "Camera"
     }

@@ -8,6 +8,10 @@
   "definition": "Formal specifications, protocols, and guidelines that define how metaverse technologies, components, and systems should operate and interact, ensuring interoperability, quality, and compatibility across different platforms and implementations.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:standards",
       "label": "Standards"
     }

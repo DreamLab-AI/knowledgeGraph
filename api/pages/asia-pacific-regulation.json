@@ -8,6 +8,10 @@
   "definition": "Asia Pacific Regulation denotes the polycentric, jurisdictionally heterogeneous body of AI, generative-AI, algorithmic, and digital-technology law operating across the Asia-Pacific region between 2023 and 2026, comprising statutory regimes, administrative measures, soft-law guidance, supervisory ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:cross-border-ai-law",
       "label": "Cross-Border AI Law"
     },

@@ -8,6 +8,10 @@
   "definition": "Computer Vision System is a type of Computer Vision in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:computer-vision",
       "label": "Computer Vision"
     }

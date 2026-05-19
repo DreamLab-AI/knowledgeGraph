@@ -8,6 +8,10 @@
   "definition": "Lens and Camera Calibration is the systematic metrology process of estimating the full set of geometric and photometric parameters that govern image formation in a camera-lens system, enabling precise bidirectional mapping between three-dimensional world coordinates and two-dimensional image pixe...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:geometric-camera-models",
       "label": "Geometric Camera Models"
     },

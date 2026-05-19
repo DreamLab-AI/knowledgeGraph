@@ -8,6 +8,10 @@
   "definition": "The Robot Operating System (ROS / ROS 2) is an open-source middleware framework providing a structured communication layer, tool ecosystem, and package repository for robotic software development, enabling modular composition of perception, planning, and actuation subsystems through a publish-sub...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:publish-subscribe-framework",
       "label": "Publish-Subscribe Framework"
     },

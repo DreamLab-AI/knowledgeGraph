@@ -8,12 +8,12 @@
   "definition": "Functional Safety - The discipline of designing, implementing, and verifying safety-critical control systems (per IEC 61508, ISO 26262) to ensure robots fail safely and prevent hazardous failures that could harm humans, equipment, or processes through systematic risk assessment and redundancy.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:safety-engineering",
-      "label": "Safety Engineering"
+      "id": "urn:ngm:class:robo-safety-and-standards",
+      "label": "Safety and Standards"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:safety-engineering",
+      "label": "Safety Engineering"
     }
   ],
   "entityType": "Class",

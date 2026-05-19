@@ -8,6 +8,10 @@
   "definition": "The process of creating a hierarchical skeleton of interconnected bones and joints within a 3D character model, along with control systems and deformation rules, enabling animators to manipulate the mesh through inverse kinematics and forward kinematics for realistic movement.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:animation-technique",
       "label": "Animation Technique"
     }

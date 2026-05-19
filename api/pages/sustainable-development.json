@@ -8,8 +8,8 @@
   "definition": "AI should contribute to the United Nations Sustainable Development Goals by addressing global challenges including climate change, resource depletion, biodiversity loss, and environmental degradation whilst ensuring development meets present needs without compromising future generations' ability ...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

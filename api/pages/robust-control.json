@@ -8,6 +8,10 @@
   "definition": "Robust Control is a type of Control Algorithms in the spatial computing domain.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:control-algorithms",
       "label": "ControlAlgorithms"
     }

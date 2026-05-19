@@ -8,6 +8,10 @@
   "definition": "An attention mechanism that computes attention weights using the dot product of queries and keys, scaled by the square root of the key dimension, followed by a softmax normalisation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:attention-mechanism",
       "label": "Attention Mechanism"
     }

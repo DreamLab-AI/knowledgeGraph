@@ -8,6 +8,10 @@
   "definition": "A head-mounted display device that delivers immersive visual and audio experiences for virtual reality, augmented reality, or mixed reality applications, featuring integrated displays, tracking sensors, audio systems, and processing capabilities for rendering digital content in the user's field o...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:xr-hardware",
       "label": "XR Hardware"
     }

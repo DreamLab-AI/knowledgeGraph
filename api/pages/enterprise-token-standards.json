@@ -8,6 +8,10 @@
   "definition": "Enterprise Token Standards are the family of blockchain token specifications engineered to represent regulated financial instruments \u2014 equities, bonds, money-market fund units, real estate, private-equity interests, structured products, regulated stablecoins and central-bank-backed deposit tokens...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-standard",
       "label": "Digital Asset Standard"
     }

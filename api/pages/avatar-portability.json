@@ -8,6 +8,10 @@
   "definition": "Avatar Portability is the capability to transfer digital avatar representations between different metaverse platforms, applications, and virtual worlds while maintaining visual fidelity, customization, and associated digital assets, enabled by standardized formats and interoperability frameworks.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-portability",
       "label": "Digital Asset Portability"
     }

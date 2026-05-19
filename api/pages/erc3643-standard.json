@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:erc3643-standard",
   "domain": "blockchain",
   "definition": "Permissioned token standard with on-chain identity verification for regulatory compliance.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

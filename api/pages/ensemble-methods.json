@@ -8,6 +8,10 @@
   "definition": "Ensemble Mods is a artificial intelligence concept and a type of Machine Learning. that enables Model Combination.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:machine-learning",
       "label": "Machine Learning"
     }

@@ -8,6 +8,10 @@
   "definition": "Software framework providing core functionality for rendering, physics, and interaction in real-time 3D environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:software-platform",
       "label": "Software Platform"
     }

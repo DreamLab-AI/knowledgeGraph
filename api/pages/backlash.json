@@ -8,6 +8,10 @@
   "definition": "Backlash - The non-linear loss of motion in a mechanical transmission system caused by gaps, tolerances, or wear between gears, joints, or actuators, compromising Precision, Repeatability, and Accuracy in robotic manipulation.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:robot-dynamics",
       "label": "Robot Dynamics"
     }

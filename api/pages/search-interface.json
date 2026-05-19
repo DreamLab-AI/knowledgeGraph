@@ -8,6 +8,10 @@
   "definition": "User-facing components that enable query input, result presentation, and navigation through search results in metaverse platforms, including text fields, voice input, spatial gestures, and augmented reality overlays for asset and experience discovery.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction Technology"
+    },
+    {
       "id": "urn:ngm:class:user-interface",
       "label": "User Interface"
     }

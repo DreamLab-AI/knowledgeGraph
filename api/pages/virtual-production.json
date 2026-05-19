@@ -8,6 +8,10 @@
   "definition": "Real-time filmmaking technique combining LED Volume stages, game engine rendering, and in-camera visual effects (ICVFX) to create photorealistic virtual environments during live-action production, enabling directors to see final composited imagery on set",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:real-time-rendering",
       "label": "Real Time Rendering"
     }

@@ -8,6 +8,10 @@
   "definition": "A digital 3D representation of objects, characters, environments, or systems created using computer graphics software for use in metaverse platforms, simulations, games, and virtual production, including static assets, animated models, and procedurally generated content.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:3-d-asset",
       "label": "3D Asset"
     }

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#CarbonCreditTracking
-legacy_uri:: urn:visionclaw:concept:blockchain:carbon-credit-tracking
 public:: true
 
 # Carbon Credit Tracking
@@ -466,94 +463,19 @@ public:: true
       "vc:label": "Tokenisation"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Tokenised Carbon Credits, Blockchain Carbon Registry, On-Chain Carbon Markets, Carbon Token Tracking, DLT Carbon Provenance, TCO2, BCT, Carbon Credit Tokenisation"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Tokenisation]], [[Sustainability]], [[Environmental Finance]], [[Smart Contracts]], [[MRV]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-783c47089a1d"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#CarbonCreditTracking"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0450"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T14:30:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Carbon Credit Tracking"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:carbon-credit-tracking"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:carbon-credit-tracking"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2bffcae77127ace01e24f2316e3bbafec035ee003460f995f0acd17574b4323b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -572,6 +494,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
     {
       "@id": "urn:ngm:class:carbon-markets",
       "label": "Carbon Markets"
@@ -1413,9 +1339,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:2bffcae77127ace01e24f2316e3bbafec035ee003460f995f0acd17574b4323b@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

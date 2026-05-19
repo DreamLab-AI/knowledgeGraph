@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:peerto-peer-protocol",
   "domain": "blockchain",
   "definition": "Peerto Peer Protocol is a blockchain concept.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

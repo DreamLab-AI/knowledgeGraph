@@ -8,6 +8,10 @@
   "definition": "Animation technique that computes object motion through real-time simulation of physical forces, gravity, collisions, and dynamics to create realistic movement and interactions.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:real-time-rendering",
       "label": "Real Time Rendering"
     }

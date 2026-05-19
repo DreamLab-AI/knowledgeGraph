@@ -8,6 +8,10 @@
   "definition": "An MoE variant with a trainable gating network that selects only a sparse combination of experts for each example, dramatically increasing model capacity whilst maintaining computational efficiency. Sparsely-gated MoE enables models with up to 137 parameters with manageable inference costs.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    },
+    {
       "id": "urn:ngm:class:model-architecture",
       "label": "Model Architecture"
     }

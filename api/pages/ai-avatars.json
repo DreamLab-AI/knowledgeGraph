@@ -8,8 +8,8 @@
   "definition": "\"Virtual representations of human users generated and animated by artificial intelligence systems, employing machine learning models to synthesise photorealistic appearance, facial expressions, body movements, and speech from sensor inputs or user intentions, enabling realistic telepresence witho...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:distributed-collaboration",
-      "label": "distributed-collaboration"
+      "id": "urn:ngm:class:dc-telepresence",
+      "label": "Telepresence"
     }
   ],
   "entityType": "Class",

@@ -1,6 +1,3 @@
-schema_version:: 1
-legacy_iri:: http://narrativegoldmine.com/blockchain#HyperledgerIroha
-legacy_uri:: urn:visionclaw:concept:blockchain:hyperledger-iroha
 public:: true
 
 # Hyperledger Iroha
@@ -478,94 +475,19 @@ public:: true
       "vc:label": "WebAssembly"
     }
   ],
-  "vc:schemaVersion": 1,
+  "vc:schemaVersion": 2,
   "vc:legacyProperties": [
-    {
-      "vc:key": "alternative-terms",
-      "vc:value": "Iroha, Iroha 2, Hyperledger Iroha v2, Soramitsu Iroha"
-    },
-    {
-      "vc:key": "authority-score",
-      "vc:value": "0.87"
-    },
-    {
-      "vc:key": "bridges-to",
-      "vc:value": "[[Hyperledger]], [[Central Bank Digital Currency]], [[Sumeragi Consensus]], [[Bakong]]"
-    },
-    {
-      "vc:key": "content-hash",
-      "vc:value": "sha256-12-e2508c1cd4ba"
-    },
-    {
-      "vc:key": "context",
-      "vc:value": "https://visionclaw.dreamlab-ai.systems/ns/v2"
-    },
-    {
-      "vc:key": "created",
-      "vc:value": "2026-04-26T00:00:00Z"
-    },
-    {
-      "vc:key": "domain",
-      "vc:value": "blockchain"
-    },
-    {
-      "vc:key": "iri",
-      "vc:value": "http://narrativegoldmine.com/blockchain#HyperledgerIroha"
-    },
     {
       "vc:key": "legacy-term-id",
       "vc:value": "BC-0436"
     },
     {
-      "vc:key": "maturity",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "modified",
-      "vc:value": "2026-05-16T20:00:00Z"
-    },
-    {
       "vc:key": "preferred-term",
       "vc:value": "Hyperledger Iroha"
-    },
-    {
-      "vc:key": "public",
-      "vc:value": "true"
-    },
-    {
-      "vc:key": "quality-score",
-      "vc:value": "0.52"
-    },
-    {
-      "vc:key": "rdf-type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "same-as",
-      "vc:value": "urn:visionclaw:concept:blockchain:hyperledger-iroha"
-    },
-    {
-      "vc:key": "status",
-      "vc:value": "production-ready"
-    },
-    {
-      "vc:key": "type",
-      "vc:value": "owl:Class"
-    },
-    {
-      "vc:key": "uri",
-      "vc:value": "urn:visionclaw:concept:blockchain:hyperledger-iroha"
-    },
-    {
-      "vc:key": "version",
-      "vc:value": "2.1.0"
     }
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:jjohare"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:322f3784529d03474c3cee060176cac3dd0f74a4b7523250e3a0251b3956d745@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",
@@ -584,6 +506,10 @@ public:: true
   "domain": "blockchain",
   "maturity": "established",
   "subClassOf": [
+    {
+      "@id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
     {
       "@id": "urn:ngm:class:enterprise-blockchain-framework",
       "label": "Enterprise Blockchain Framework"
@@ -1452,9 +1378,6 @@ public:: true
   ],
   "prov:wasAttributedTo": {
     "@id": "did:nostr:lcr-swarm"
-  },
-  "prov:wasDerivedFrom": {
-    "@id": "urn:visionflow:page:322f3784529d03474c3cee060176cac3dd0f74a4b7523250e3a0251b3956d745@776c802a9fc9058c7e99ea02bf84643a0b6cd2be"
   },
   "prov:generatedAtTime": {
     "@value": "2026-05-18T07:12:05Z",

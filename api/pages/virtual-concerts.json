@@ -8,6 +8,10 @@
   "definition": "Live musical performances conducted in metaverse or virtual reality environments where virtual avatars perform on virtual stages synced to music, enabling immersive concert experiences accessible globally through VR headsets, gaming platforms, or streaming services.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-event",
       "label": "Virtual Event"
     }

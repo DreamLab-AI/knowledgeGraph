@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:technology-domain",
   "domain": "infrastructure",
   "definition": "The foundational meta-domain encompassing all technology-related knowledge domains within the Narrative Gold Mine ontology, serving as the top-level classification for artificial intelligence, blockchain, metaverse, robotics, and telecollaboration systems.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

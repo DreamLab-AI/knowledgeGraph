@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:internet-infrastructure",
   "domain": "artificial-intelligence",
   "definition": "Internet Infrastructure for AI encompasses the networking protocols, distributed systems, edge computing platforms, and content delivery networks that enable large-scale deployment and operation of AI services.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

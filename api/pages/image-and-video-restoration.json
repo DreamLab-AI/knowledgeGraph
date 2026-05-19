@@ -8,6 +8,10 @@
   "definition": "Image and Video Restoration is a computational imaging discipline within the artificial-intelligence and computer-vision domain concerned with recovering high-quality, perceptually faithful visual content from degraded observations, where degradation encompasses noise corruption (Gaussian/Poisson...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:image-processing",
       "label": "Image Processing"
     },

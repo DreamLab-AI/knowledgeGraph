@@ -8,6 +8,10 @@
   "definition": "The process of dynamically coordinating, allocating, and balancing computational tasks between edge nodes and cloud infrastructure to optimize latency, resource utilization, and quality of experience for immersive metaverse applications.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:edge-computing-architecture",
       "label": "Edge Computing Architecture"
     }

@@ -8,6 +8,10 @@
   "definition": "Quadcopter is a four-rotor VTOL aircraft.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:multirotor-uav",
       "label": "Multirotor UAV"
     }

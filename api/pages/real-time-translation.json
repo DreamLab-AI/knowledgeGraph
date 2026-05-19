@@ -8,6 +8,10 @@
   "definition": "Real-time translation is the automatic conversion of spoken or written language content into one or more target languages with latency low enough to sustain live human communication, defined operationally as end-to-end processing delay below milliseconds for speech-to-speech pipelines and below 5...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:dc-communication",
+      "label": "Communication Technology"
+    },
+    {
       "id": "urn:ngm:class:accessibility-tools",
       "label": "Accessibility Tools"
     },

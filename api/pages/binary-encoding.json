@@ -8,6 +8,10 @@
   "definition": "A data representation format that converts information into sequences of binary digits (0s and 1s) for efficient storage, transmission, and processing, offering compact machine-friendly representations that optimize bandwidth, reduce latency, and enable cross-platform data exchange.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    },
+    {
       "id": "urn:ngm:class:data-format",
       "label": "Data Format"
     }

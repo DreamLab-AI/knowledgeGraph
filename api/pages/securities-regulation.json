@@ -8,6 +8,10 @@
   "definition": "The legal and regulatory frameworks determining wher digital assets \u2014 cryptocurrency tokens, stablecoins, security tokens, DeFi protocol interests, NFTs, and AI-generated financial instruments \u2014 qualify as securities requiring registration, disclosure, and ongoing compliance obligations across mu...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:capital-markets-regulation",
       "label": "Capital Markets Regulation"
     },

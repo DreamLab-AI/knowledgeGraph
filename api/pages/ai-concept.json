@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:ai-concept",
   "domain": "artificial-intelligence",
   "definition": "AI Concept represents the fundamental theoretical constructs and abstract principles that underpin artificial intelligence systems. This includes core notions such as intelligence representation, learning paradigms, reasoning mechanisms, and cognitive architectures.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

@@ -8,6 +8,10 @@
   "definition": "Permissioned, enterprise-grade blockchain infrastructure implementing Consensus Mechanism|consensus mechanisms, Smart Contract|smart contracts, and governance frameworks for organisations requiring controlled participation, privacy, and regulatory compliance\u2014exemplified by",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:smart-contract-platform",
       "label": "Smart Contract Platform"
     }

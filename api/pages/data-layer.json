@@ -8,6 +8,10 @@
   "definition": "Data Layer is the architectural tier within a layered, n-tier, hexagonal, or modular system responsible for the durable persistence, transactional integrity, indexed retrieval, replication, and abstraction of stateful data \u2014 encompassing both the enterprise-architecture sense (the data access lay...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:architectural-layer",
       "label": "Architectural Layer"
     },

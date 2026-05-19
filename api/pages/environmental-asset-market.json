@@ -8,6 +8,10 @@
   "definition": "Blockchain-enabled trading platforms for environmental assets including carbon credits, renewable energy certificates, and biodiversity offsets, utilising tokenisation and smart contracts to enhance transparency, prevent double-counting, and enable fractional ownership of sustainability instruments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-market",
       "label": "Digital Asset Market"
     }

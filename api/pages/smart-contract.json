@@ -8,6 +8,10 @@
   "definition": "A Smart Contract is a self-executing digital program deployed on a blockchain that encodes contractual terms, business logic, and state-transition rules directly in code, automatically enforcing obligations when predetermined on-chain conditions are satisfied without requiring trusted interme...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:digital-agreement",
       "label": "Digital Agreement"
     },

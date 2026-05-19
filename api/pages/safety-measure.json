@@ -8,6 +8,10 @@
   "definition": "Safety Measure is a artificial intelligence concept and a type of Ai Governance.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-governance",
       "label": "Ai Governance"
     }

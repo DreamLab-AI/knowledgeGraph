@@ -8,8 +8,8 @@
   "definition": "Current Sensor - An electrical measurement device (Hall effect, fluxgate, or shunt-based) that detects current flow in motor circuits and power systems, enabling Motor Torque Estimation, Fault Detection, and Energy Monitoring in autonomous robots.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
     },
     {
       "id": "urn:ngm:class:sensor",

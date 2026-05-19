@@ -8,6 +8,10 @@
   "definition": "Standardized measurement equipment and instruments for assessing visual performance parameters of XR displays, including colorimeters, photometers, and specialised testing hardware.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:xr-testing-infrastructure",
       "label": "XR Testing Infrastructure"
     }

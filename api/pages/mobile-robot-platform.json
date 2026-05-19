@@ -8,6 +8,10 @@
   "definition": "A Mobile Robot Platform is an integrated mechatronic base that provides locomotion, power, computing, and sensor-mounting infrastructure upon which higher-level autonomy stacks\u2014perception, planning, and control\u2014are deployed.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:cyber-physical-system",
       "label": "Cyber Physical System"
     },

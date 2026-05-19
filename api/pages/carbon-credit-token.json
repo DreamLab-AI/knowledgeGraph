@@ -8,6 +8,10 @@
   "definition": "Digital token representing verified carbon-offset value tradeable across platforms for emissions reduction and environmental sustainability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy",
       "label": "Virtual Economy"
     }

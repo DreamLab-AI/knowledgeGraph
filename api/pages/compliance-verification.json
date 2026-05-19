@@ -8,6 +8,10 @@
   "definition": "Compliance verification in blockchain contexts encompasses the automated and manual processes for ensuring that cryptoasset transactions, service providers, and participants adhere to regulatory requirements including Know Your Customer (KYC), Anti-Money Laundering (AML), sanctions screening, and...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:compliance-monitoring",
       "label": "Compliance Monitoring"
     }

@@ -8,6 +8,10 @@
   "definition": "A control system where the control action is independent of the output. The system executes pre-programmed commands without feedback from sensors to verify if the desired state was achieved.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-actuation-and-control",
+      "label": "Actuation and Control"
+    },
+    {
       "id": "urn:ngm:class:control-system",
       "label": "Control System"
     }

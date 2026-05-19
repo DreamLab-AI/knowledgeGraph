@@ -8,8 +8,8 @@
   "definition": "AI should enhance human and societal well-being by augmenting human capabilities, enriching quality of life, supporting physical and mental health, enabling meaningful work, strengthening social connections, and contributing to flourishing individuals and communities.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:spatial-computing",
-      "label": "spatial-computing"
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
     }
   ],
   "entityType": "Class",

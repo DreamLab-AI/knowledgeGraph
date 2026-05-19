@@ -8,6 +8,10 @@
   "definition": "Avatar Customization is the practice of modifying and personalizing digital avatar attributes including physical features, clothing, accessories, animations, and expressions to create unique virtual representations that reflect user identity and preferences in metaverse environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-personalization",
       "label": "Digital Personalization"
     }

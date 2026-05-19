@@ -8,6 +8,10 @@
   "definition": "An architectural style organizing software as loosely coupled, interoperable services that communicate through standardized interfaces, enabling modular composition of metaverse functionality through reusable components and well-defined contracts.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:software-architecture",
       "label": "Software Architecture"
     }

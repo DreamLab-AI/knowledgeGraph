@@ -8,6 +8,10 @@
   "definition": "The continuous bidirectional data exchange between physical industrial assets and their virtual replicas in the industrial metaverse, enabling real-time monitoring, predictive maintenance, and scenario testing through IoT sensor integration and cloud-based rendering.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-twin-technology",
       "label": "Digital Twin Technology"
     }

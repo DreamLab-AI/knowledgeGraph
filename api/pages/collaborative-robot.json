@@ -8,12 +8,12 @@
   "definition": "Collaborative Robot (cobot) - A lightweight robotic arm engineered to operate safely alongside human workers, combining force/torque sensing, reduced kinetic energy, and speed limitations to enable Human-Robot Collaboration in shared manufacturing and assembly environments.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:industrial-robot",
-      "label": "Industrial Robot"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:industrial-robot",
+      "label": "Industrial Robot"
     }
   ],
   "entityType": "Class",

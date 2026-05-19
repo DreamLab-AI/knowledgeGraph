@@ -8,6 +8,10 @@
   "definition": "A classification performance metric representing the proportion of actual positive instances that an artificial intelligence model correctly identifies, calculated as the ratio of true positives to all actual positives (true positives plus false negatives), measuring the model's completeness in d...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:token-standard",
   "domain": "blockchain",
   "definition": "Technical specification defining rules, interfaces, and functions that smart contract tokens must implement to ensure interoperability within a blockchain ecosystem.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "emerging",

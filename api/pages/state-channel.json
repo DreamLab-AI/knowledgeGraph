@@ -8,8 +8,8 @@
   "definition": "State channels are Layer 2 scaling solutions enabling off-chain interactions between participants through signed state updates, requiring only on-chain transactions for channel opening, closing, and dispute resolution, thereby achieving instant finality and near-zero marginal transaction costs.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "Semantic search is a retrieval paradigm that understands the meaning and intent of queries and documents rather than relying solely on lexical keyword overlap, deploying continuous vector representations of text\u2014produced by neural encoder models that compress sentences into dense embedding spaces...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-application",
+      "label": "AI Application"
+    },
+    {
       "id": "urn:ngm:class:knowledge-retrieval",
       "label": "Knowledge Retrieval"
     },

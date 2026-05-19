@@ -8,6 +8,10 @@
   "definition": "3D LiDAR generates three-dimensional point cloud of environment.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-perception",
+      "label": "Perception and Sensing"
+    },
+    {
       "id": "urn:ngm:class:lidar",
       "label": "Lidar"
     }

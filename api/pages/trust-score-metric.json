@@ -8,6 +8,10 @@
   "definition": "A quantitative measurement representing an entity's trustworthiness, credibility, or risk level, expressed as a numerical value with associated confidence intervals and time validity, used to inform authorization decisions, transaction approvals, and access control policies.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-governance-and-safety",
+      "label": "Governance and Safety"
+    },
+    {
       "id": "urn:ngm:class:trust-infrastructure",
       "label": "Trust Infrastructure"
     }

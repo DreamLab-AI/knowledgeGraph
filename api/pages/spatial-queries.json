@@ -8,6 +8,10 @@
   "definition": "Database queries that select geographic features based on location or spatial relationships such as intersection, containment, proximity, and adjacency, implemented using R-tree spatial indexing and filter-refine strategies per OGC Simple Features and SQL/MM Spatial standards.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:database-query",
       "label": "Database Query"
     }

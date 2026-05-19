@@ -8,8 +8,8 @@
   "definition": "A pluggable interface architecture (ADR-005) providing five standardised slots through which a VisionClaw Agentic Container|VisionClaw agent interacts with its environment: Solid Pod Storage|Pod (persistent storage), Agent Memory|Memory (episodic and semantic),",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

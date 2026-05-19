@@ -8,8 +8,8 @@
   "definition": "Sovereign digital currency issued and backed by a central bank for use in retail or wholesale payment systems, functioning as legal tender in digital form.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
     }
   ],
   "entityType": "Class",

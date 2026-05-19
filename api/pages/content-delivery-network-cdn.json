@@ -8,6 +8,10 @@
   "definition": "A geographically distributed network of proxy servers and data centers designed to provide high availability, high performance, and low latency content delivery by caching content closer to end-users.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-network-and-comms",
+      "label": "Network and Communication"
+    },
+    {
       "id": "urn:ngm:class:network-infrastructure",
       "label": "Network Infrastructure"
     }

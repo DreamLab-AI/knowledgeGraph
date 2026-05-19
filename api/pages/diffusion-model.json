@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:diffusion-model",
   "domain": "artificial-intelligence",
   "definition": "Diffusion Model is a foundational concept in artificial intelligence that serves as a classification parent for 5 related concepts in the ontology.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.3,
   "maturity": "draft",

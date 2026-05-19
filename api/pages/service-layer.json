@@ -8,6 +8,10 @@
   "definition": "Collection of reusable services exposed via APIs for identity, assets, physics, and analytics that enable application functionality and interoperability in virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:spatial-computing-layer",
       "label": "Spatial Computing Layer"
     }

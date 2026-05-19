@@ -8,8 +8,8 @@
   "definition": "Extract, Transform, Load pipeline that automates the process of moving data from source systems, transforming it for analysis, and loading it into target data stores.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "Artificial Intelligence"
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
     }
   ],
   "entityType": "Class",

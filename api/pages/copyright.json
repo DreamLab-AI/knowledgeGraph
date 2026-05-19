@@ -8,6 +8,10 @@
   "definition": "copyright is a technology infrastructure concept and a type of Legal Framework.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-legal-and-regulatory",
+      "label": "Legal and Regulatory"
+    },
+    {
       "id": "urn:ngm:class:legal-framework",
       "label": "Legal Framework"
     }

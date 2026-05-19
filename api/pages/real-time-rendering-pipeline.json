@@ -8,6 +8,10 @@
   "definition": "Sequence of GPU processes converting 3D scene data into visual frames at interactive rates (typically 30-120+ FPS).",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:render-pipeline",
       "label": "Render Pipeline"
     }

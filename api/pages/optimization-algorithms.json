@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:optimization-algorithms",
   "domain": "artificial-intelligence",
   "definition": "Optimization Algorithms in AI are mathematical procedures for minimizing or maximizing objective functions, central to training machine learning models. Gradient-based mods (SGD, Adam, RMSprop, AdaGrad) iteratively update model parameters to minimize loss functions.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "draft",

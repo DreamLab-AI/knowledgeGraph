@@ -8,6 +8,10 @@
   "definition": "Agent Frameworks are software libraries, runtimes, and orchestration platforms that compose large language models (LLMs) with tool-use, memory, planning, and inter-agent communication into autonomous or semi-autonomous systems capable of multi-step goal pursuit, encompassing single-agent harnesse...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:cat-ai-infrastructure",
+      "label": "AI Infrastructure (Category)"
+    },
+    {
       "id": "urn:ngm:class:llm-orchestration",
       "label": "LLM Orchestration"
     },

@@ -8,6 +8,10 @@
   "definition": "Data handling practices that are openly disclosed to users, providing clear information about what data is collected, how it is processed, who has access, and for what purposes, enabling informed consent and accountability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:infra-data-management",
+      "label": "Data Management"
+    },
+    {
       "id": "urn:ngm:class:data-processing",
       "label": "Data Processing"
     }

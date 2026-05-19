@@ -8,6 +8,10 @@
   "definition": "Mechanisms and policies in virtual economies to regulate the creation and distribution of virtual currency, preventing value depreciation and economic instability.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:metaverse",
       "label": "Metaverse"
     }

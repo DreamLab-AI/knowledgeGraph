@@ -8,6 +8,10 @@
   "definition": "An individual or organisational entity responsible for the operational management, monitoring, and control of an artificial intelligence system during its deployment and use, including activities such as configuring system parameters, overseeing system performance, responding to incidents, coordi...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:ai-deployment",
       "label": "AI Deployment"
     }

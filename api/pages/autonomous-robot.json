@@ -8,8 +8,8 @@
   "definition": "A robotic system equipped with sensors, processing units, and actuators that operates independently to perform tasks without direct human control, using Artificial Intelligence and Autonomous Navigation.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "robotics"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     }
   ],
   "entityType": "Class",

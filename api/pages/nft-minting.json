@@ -8,6 +8,10 @@
   "definition": "NFT Minting is the on-chain or deferred off-chain process by which a unique, indivisible, and cryptographically authenticated digital token\u2014a non-fungible token\u2014is created and permanently recorded on a distributed ledger, establishing irrevocable provenance, ownership, and transferability for a l...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:digital-asset-creation",
       "label": "Digital Asset Creation"
     },

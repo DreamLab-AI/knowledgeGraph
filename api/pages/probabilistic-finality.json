@@ -8,8 +8,8 @@
   "definition": "Probabilistic finality is a transaction confirmation model characteristic of longest-chain consensus mechanisms where confidence in transaction irreversibility increases exponentially with block depth, approaching but never reaching absolute certainty, with reversal probability decaying as (q/p)^...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:blockchain",
-      "label": "Blockchain"
+      "id": "urn:ngm:class:bc-protocol-and-consensus",
+      "label": "Protocol and Consensus"
     }
   ],
   "entityType": "Class",

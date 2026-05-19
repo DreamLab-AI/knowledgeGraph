@@ -8,6 +8,10 @@
   "definition": "A virtual society component in the Metaverse domain that enables VirtualWorld.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:social-structure",
       "label": "Social Structure"
     }

@@ -8,6 +8,10 @@
   "definition": "Economic model where communities issue tokens representing reputation, participation value, or creator-fan relationships, enabling decentralized governance and value distribution.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:virtual-economy-domain",
       "label": "Virtual Economy Domain"
     }

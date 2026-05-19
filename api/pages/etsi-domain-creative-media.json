@@ -8,6 +8,10 @@
   "definition": "Domain marker for ETSI metaverse categorisation covering creative content production, 3D modelling, rendering, and multimedia authoring for virtual environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:etsi-metaverse-domain-taxonomy",
       "label": "ETSI Metaverse Domain Taxonomy"
     }

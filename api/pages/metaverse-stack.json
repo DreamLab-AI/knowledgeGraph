@@ -8,6 +8,10 @@
   "definition": "The comprehensive layered technology framework encompassing hardware, network infrastructure, spatial computing, decentralisation, creator economy, discovery, and experience layers that toger enable the creation and operation of persistent virtual world environments.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:technology-stack",
       "label": "Technology Stack"
     }

@@ -8,8 +8,8 @@
   "definition": "Risk specific to high-impact capabilities of general-purpose AI models with significant impact on the Union market due to reach, or actual or foreseeable negative effects on public health, safety, fundamental rights, environment, democracy, or rule of law.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
     }
   ],
   "entityType": "Class",

@@ -8,6 +8,10 @@
   "definition": "A network of interconnected but distinct metaverses and virtual worlds that enable cross-platform identity, asset portability, and interoperability while maintaining individual world sovereignty and distinct governance models.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:spatial-web",
       "label": "Spatial Web"
     }

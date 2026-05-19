@@ -8,6 +8,10 @@
   "definition": "Stewart platform uses six prismatic actuators attached in pairs to baseplate and top plate via universal joints.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
+    },
+    {
       "id": "urn:ngm:class:parallel-robot",
       "label": "Parallel Robot"
     }

@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:latency-management-protocol",
   "domain": "spatial-computing",
   "definition": "A systematic process for monitoring, measuring, and minimizing network delay in interactive metaverse sessions through adaptive techniques including traffic prioritization, predictive buffering, and dynamic routing optimization.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-standards-and-interop",
+      "label": "Standards and Interoperability"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.35,
   "maturity": "established",

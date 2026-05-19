@@ -8,8 +8,8 @@
   "definition": "A neural network architecture that relies on self-attention mechanisms rather than recurrence or convolution to process sequential data in parallel, serving as the foundation for modern large language models including GPT, BERT, and their successors.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-model-architecture",
+      "label": "AI Model Architecture"
     }
   ],
   "entityType": "Class",

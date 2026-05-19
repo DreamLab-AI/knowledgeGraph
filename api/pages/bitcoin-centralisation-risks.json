@@ -8,6 +8,10 @@
   "definition": "Bitcoin Centralisation Risks refers to the ensemble of systemic vulnerabilities arising from the progressive concentration of economic power, computational control, physical infrastructure, custody arrangements, development authority, and payment routing within Bitcoin's nominally decentralised e...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-governance-and-regulation",
+      "label": "Governance and Regulation"
+    },
+    {
       "id": "urn:ngm:class:blockchain-governance-risk",
       "label": "Blockchain Governance Risk"
     },

@@ -8,6 +8,10 @@
   "definition": "Automated Planning is a artificial intelligence concept and a type of Planning and Scheduling. that enables Autonomous Systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:planning-and-scheduling",
       "label": "Planning and Scheduling"
     }

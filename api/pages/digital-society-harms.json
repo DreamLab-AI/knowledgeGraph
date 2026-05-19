@@ -8,6 +8,10 @@
   "definition": "Digital Society Harms is the catalogue of empirically documented and structurally anticipated negative impacts arising from the deployment of digital, algorithmic, and AI systems at population scale across information, psychological, economic, social, human-rights, child-safety, environmental, an...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:sociotechnical-risk",
       "label": "Sociotechnical Risk"
     },

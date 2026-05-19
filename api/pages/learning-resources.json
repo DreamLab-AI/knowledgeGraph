@@ -8,6 +8,10 @@
   "definition": "Educational materials and content designed for delivery through VR, AR, and metaverse platforms, including 3D models, interactive simulations, virtual environments, and AI-generated adaptive content for immersive learning experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:educational-technology",
       "label": "Educational Technology"
     }

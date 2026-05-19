@@ -8,6 +8,10 @@
   "definition": "A classification performance metric representing the harmonic mean of precision and recall, providing a single score that balances a model's ability to avoid false positives (precision) with its ability to avoid false negatives (recall), calculated to give equal weight to both metrics whilst pena...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:evaluation-metric",
       "label": "Evaluation Metric"
     }

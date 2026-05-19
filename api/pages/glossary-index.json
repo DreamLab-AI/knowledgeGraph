@@ -8,6 +8,10 @@
   "definition": "A centralized terminology reference system that aggregates, defines, and cross-references all metaverse concepts with their synonyms, abbreviations, and semantic relationships, serving as the human-readable interface to the formal ontology schema.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:knowledge-organization-system",
       "label": "Knowledge Organization System"
     }

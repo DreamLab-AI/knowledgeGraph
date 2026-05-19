@@ -8,6 +8,10 @@
   "definition": "A language-independent tokenisation library that treats input as a raw stream and learns subword units directly from raw text without pre-tokenisation, enabling purely end-to-end systems.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:tokenisation",
       "label": "Tokenisation"
     }

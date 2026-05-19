@@ -8,8 +8,8 @@
   "definition": "Computer vision tasks are specific computational problems that machines solve using visual data, including image classification (assigning labels to images), object detection (locating and identifying objects with bounding boxes), semantic segmentation (pixel-wise classification), and instance se...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:artificial-intelligence",
-      "label": "artificial-intelligence"
+      "id": "urn:ngm:class:ai-research-area",
+      "label": "AI Research Area"
     }
   ],
   "entityType": "Class",

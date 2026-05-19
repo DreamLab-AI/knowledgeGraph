@@ -8,6 +8,10 @@
   "definition": "A decentralized application (dApp) that runs on a blockchain or peer-to-peer network rather than centralized servers, combining smart contract backend logic with frontend interfaces to provide enhanced security, transparency, censorship resistance, and zero downtime through distributed execution.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-network-component",
+      "label": "Network Component"
+    },
+    {
       "id": "urn:ngm:class:distributed-application",
       "label": "Distributed Application"
     }

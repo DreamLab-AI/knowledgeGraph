@@ -6,7 +6,12 @@
   "classIri": "urn:ngm:class:x402-and-l402-payment-protocols",
   "domain": "blockchain",
   "definition": "x402 and l402 payment protocols is a blockchain and distributed systems concept and a type of blockchain.",
-  "subClassOf": [],
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
   "entityType": "Class",
   "qualityScore": 0.5,
   "maturity": "draft",

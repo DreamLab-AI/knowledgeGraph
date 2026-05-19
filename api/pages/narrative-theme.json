@@ -8,6 +8,10 @@
   "definition": "The underlying message, central idea, or motif that pervades a story and shapes public perception, constructed through selective framing, language choices, and emphasis on particular details to guide audience interpretation of events, characters, and meaning.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:narrative-structure",
       "label": "Narrative Structure"
     }

@@ -8,6 +8,10 @@
   "definition": "A multi-token standard offering semi-fungibility where tokens represent classes of interchangeable assets. Bundles multiple assets (fungible and non-fungible) in one smart contract for efficient gas usage and reduced network congestion.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:bc-token-and-asset",
+      "label": "Token and Asset"
+    },
+    {
       "id": "urn:ngm:class:semi-fungible-token",
       "label": "Semi-Fungible Token"
     }

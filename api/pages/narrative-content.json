@@ -8,6 +8,10 @@
   "definition": "Digital storytelling material that combines video, audio, images, text, and interactive elements to create immersive narrative experiences, enabling audiences to engage with stories through multiple media formats and increasingly through participatory technologies like VR, AR, and interactive video.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-content-and-assets",
+      "label": "Content and Assets"
+    },
+    {
       "id": "urn:ngm:class:digital-content",
       "label": "Digital Content"
     }

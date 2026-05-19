@@ -8,12 +8,12 @@
   "definition": "Agricultural Robot - A semi-autonomous or fully autonomous platform equipped with Precision Agriculture Sensors, Manipulation Modules, and Crop Analysis Systems for performing field operations including planting, selective weeding, harvesting, and health monitoring whilst minimising s...",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:mobile-robot",
-      "label": "Mobile Robot"
+      "id": "urn:ngm:class:robo-robot-type",
+      "label": "Robot Type"
     },
     {
-      "id": "urn:ngm:class:robotics",
-      "label": "Robotics"
+      "id": "urn:ngm:class:mobile-robot",
+      "label": "Mobile Robot"
     }
   ],
   "entityType": "Class",

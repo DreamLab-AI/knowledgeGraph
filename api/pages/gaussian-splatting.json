@@ -8,6 +8,10 @@
   "definition": "Novel view synthesis and 3D scene representation technique introduced by Kerbl, Kopanas, Leimk\u00fchler and Drettakis at SIGGRAPH 2023 (INRIA Sophia Antlis), representing scenes as explicit collections of s of anisotropic 3D Gaussian primitives \u2014 each defined by a 3D mean position \u03bc \u2208 \u211d\u00b3, a 3\u00d73 covar...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-display-and-rendering",
+      "label": "Display and Rendering"
+    },
+    {
       "id": "urn:ngm:class:3-d-scene-reconstruction",
       "label": "3D Scene Reconstruction"
     },

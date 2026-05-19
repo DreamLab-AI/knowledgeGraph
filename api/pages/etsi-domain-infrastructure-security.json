@@ -8,8 +8,8 @@
   "definition": "ETSI infrastructure security framework safeguarding immersive digital environments through distributed network functions, identity management enhancements, and privacy-preserving mechanisms tailored for metaverse and edge computing applications.",
   "subClassOf": [
     {
-      "id": "urn:ngm:class:infrastructure",
-      "label": "infrastructure"
+      "id": "urn:ngm:class:infra-security-and-identity",
+      "label": "Security and Identity"
     }
   ],
   "entityType": "Class",

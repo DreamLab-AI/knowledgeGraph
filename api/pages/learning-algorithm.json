@@ -8,6 +8,10 @@
   "definition": "LearningAlgorithm is a computational procedure that enables a model or agent to improve task performance through exposure to data or environmental interaction, encompassing the full spectrum of paradigms \u2014 supervised learning unsupervised learning (discovering latent structure in unlabelled data ...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-technique",
+      "label": "AI Technique"
+    },
+    {
       "id": "urn:ngm:class:computational-intelligence",
       "label": "Computational Intelligence"
     },

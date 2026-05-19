@@ -8,6 +8,10 @@
   "definition": "The capability to anchor augmented reality content at specific real-world locations that persists across sessions and devices, using cloud-stored spatial anchors and environmental mapping to enable shared, location-based AR experiences.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:augmented-reality",
       "label": "Augmented Reality"
     }

@@ -8,6 +8,10 @@
   "definition": "A digital representation of a physical object, system, or environment created through 3D modeling, photogrammetry, or scanning technologies, serving as a static or dynamic copy for visualization, simulation, analysis, and testing purposes without the real-time data connectivity that characterizes...",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    },
+    {
       "id": "urn:ngm:class:digital-model",
       "label": "Digital Model"
     }

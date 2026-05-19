@@ -8,6 +8,10 @@
   "definition": "Crossover domain for ETSI metaverse categorisation addressing organisational governance structures, compliance verification systems, and regulatory adherence mechanisms.",
   "subClassOf": [
     {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    },
+    {
       "id": "urn:ngm:class:governance-framework",
       "label": "Governance Framework"
     }
