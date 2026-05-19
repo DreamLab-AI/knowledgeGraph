@@ -4,7 +4,7 @@
   "slug": "segmentation-and-identification",
   "public": true,
   "classIri": "urn:visionflow:owl:class:segmentation-and-identification",
-  "domain": "computer-vision",
+  "domain": "artificial-intelligence",
   "definition": "Segmentation and Identification is a foundational computer vision subdomain encompassing the computational processes of partitioning digital images and video frames into semantically meaningful regions and assigning categorical or instance-level identities to those regions. It spans four classical problem formulations \u2014 semantic segmentation (assigning a class label to every pixel without distinguishing object instances), instance segmentation (delineating each individual object occurrence with a unique mask), panoptic segmentation (unifying semantic and instance pipelines to produce a comprehensive scene parse where every pixel is assigned both a class and optionally an instance identity), and promptable/interactive segmentation (producing masks on demand from sparse user cues such as points, boxes, or free-form text) \u2014 as well as the emerging open-vocabulary paradigm in which arbitrary user-specified categories replace fixed taxonomies at inference time. Modern segmentation architectures exploit transformer-based masked-attention mechanisms (Mask2Former CVPR 2022, SegFormer NeurIPS 2021), convolutional encoder-decoder backbones (DeepLab V3+, U-Net), region-proposal networks (Mask",
   "subClassOf": [
     {

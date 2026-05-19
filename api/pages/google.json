@@ -4,7 +4,7 @@
   "slug": "google",
   "public": true,
   "classIri": "urn:visionflow:owl:class:google",
-  "domain": "organisation",
+  "domain": "infrastructure",
   "definition": "**Google LLC** (trading as **Google**, parent corporation **Alphabet Inc.**, NASDAQ: GOOGL/GOOG) is an American multinational technology conglomerate founded in September 1998 by Larry Page and Sergey Brin at Stanford University, headquartered in Mountain View, California (Googleplex), that has emerged by 2024-2026 as the most consequential full-stack [[Artificial General Intelligence]] research and deployment organisation on earth \u2014 uniquely possessing vertically integrated capability across AI research ([[Google DeepMind]], post-April 2023 merger of Google Brain and DeepMind), frontier model development ([[Gemini]] model family 1.0 through 3.1 as of 2026), on-device silicon ([[Tensor Chip]] G-series SoCs), cloud-scale custom accelerators (TPU v5/v6 Trillium), internet-scale data infrastructure (Search, YouTube, Gmail, Maps, [[Android]] \u2014 six products with over two billion users each), cloud hyperscaling ([[Cloud Computing]] Google Cloud Platform, AI Hypercomputer), and consumer AI surfaces ([[Anthropic Claude]] analogue: Gemini assistant, [[NotebookLM]], AI Overviews). Google simultaneously faces the most significant antitrust enforcement actions in the tech industry since United",
   "subClassOf": [
     {

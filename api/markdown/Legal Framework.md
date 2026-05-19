@@ -136,12 +136,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:legal-framework",
   "@type": "OntologyClass",
   "label": "Legal Framework",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:regulatory-framework",
-      "vc:label": "Regulatory Framework"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "infrastructure",
   "vc:status": "active",
   "vc:maturity": "reviewed",

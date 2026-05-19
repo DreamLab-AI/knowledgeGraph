@@ -4,7 +4,7 @@
   "slug": "accessibility",
   "public": true,
   "classIri": "urn:visionflow:owl:class:accessibility",
-  "domain": "human-computer-interaction",
+  "domain": "spatial-computing",
   "definition": "Accessibility is the systematic property of digital products, services, environments and information systems being perceivable, operable, understandable and robust (POUR) for the widest possible range of users including those with permanent disabilities (blindness, low vision, deafness/hard-of-hearing, motor impairments such as paralysis/tremor/limb difference, cognitive/learning disabilities, neurodiversity, speech impairments, photosensitive epilepsy), temporary impairments (broken arm, post-surgery recovery, eye dilation, ear infection, migraine, concussion), and situational limitations (bright sunlight reducing screen contrast, noisy environments masking audio cues, one-handed use whilst carrying objects, limited bandwidth/older hardware, non-native language proficiency), implemented through a stack of normative standards (W3C Web Content Accessibility Guidelines WCAG 2.0/2.1/2.2 published October 2023 introducing nine new success criteria including 2.4.11 Focus Not Obscured, 2.5.7 Dragging Movements, 2.5.8 Target Size Minimum 24\u00d724 CSS pixels, 3.2.6 Consistent Help, 3.3.7 Redundant Entry, 3.3.8/3.3.9 Accessible Authentication; WCAG 3.0 Silver draft introducing outcome-based sc",
   "subClassOf": [
     {

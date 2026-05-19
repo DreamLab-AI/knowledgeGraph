@@ -4,7 +4,7 @@
   "slug": "unreal-engine",
   "public": true,
   "classIri": "urn:visionflow:owl:class:unreal-engine",
-  "domain": "creative-tools",
+  "domain": "spatial-computing",
   "definition": "Unreal Engine is Epic Games' professional real-time 3D creation platform \u2014 simultaneously a [[Game Engine]], a virtual production environment, a simulation framework, and a scalable cloud-streaming service \u2014 whose fifth major generation (UE5, released April 2022) introduced Nanite virtualized micropolygon geometry (enabling film-quality assets with billions of polygons rendered in real time through a hierarchical cluster-based DAG with software rasterisation that outperforms hardware rasterisation for sub-pixel triangles), Lumen fully dynamic global illumination and reflections (ray-marched scene distance-fields and surface-cache radiosity achieving hardware ray-tracing quality on non-RTX hardware, with HWRT path available on NVIDIA RTX / AMD RDNA 2+), Chaos physics and destruction (XPBD unified solver for rigid body, cloth, soft body, fluid, vehicle, and hair simulation), World Partition streaming open-world system (automated cell-based streaming replacing manual level-streaming volumes, supporting 1 km\u00b2 to continental-scale environments with One File Per Actor OFPA for multi-user collaboration), and MetaHuman Creator (browser-based 4D-scan-grounded parametric digital-human author",
   "subClassOf": [
     {

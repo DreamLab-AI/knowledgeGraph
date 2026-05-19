@@ -554,7 +554,7 @@ public:: true
       "vc:label": "Photogrammetry"
     }
   ],
-  "vc:sourceDomain": "computer-vision",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

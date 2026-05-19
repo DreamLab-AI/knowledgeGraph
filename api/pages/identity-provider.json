@@ -4,7 +4,7 @@
   "slug": "identity-provider",
   "public": true,
   "classIri": "urn:visionflow:owl:class:identity-provider",
-  "domain": "security",
+  "domain": "infrastructure",
   "definition": "An [[Identity Provider]] (IdP) is a specialised security system that authenticates principals \u2014 humans, service accounts, devices, and workloads \u2014 and issues cryptographically signed tokens or assertions that downstream service providers accept as proof of identity and authorised attributes, operating within trust frameworks governed by open federation protocols ([[SAML]] 2.0, [[OAuth]] 2.0, [[OpenID Connect]] 1.0/FAPI 2.0, [[SCIM]] 2.0) and implementing credential lifecycle management (registration, provisioning, [[Multi-Factor Authentication|multi-factor authentication]], session management, credential rotation, revocation) across B2E (business-to-employee) workforce environments, B2C (business-to-consumer) customer-facing deployments, B2B federation spanning organisational boundaries, and M2M (machine-to-machine) workload identity. The commercial IdP market is dominated by Okta (22,000+ customers, $2.25B FY2026 revenue), Microsoft Entra ID (formerly Azure Active Directory, 700M+ tenants, 1.3B monthly active users), Auth0 (acquired by Okta 2021, $6.5B, developer-focused), Ping Identity (acquired by Thales 2023, $2.8B, enterprise), ForgeRock (acquired by Ping Identity/Thales 2023,",
   "subClassOf": [
     {

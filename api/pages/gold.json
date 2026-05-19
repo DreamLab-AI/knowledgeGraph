@@ -4,7 +4,7 @@
   "slug": "gold",
   "public": true,
   "classIri": "urn:visionflow:owl:class:gold",
-  "domain": "economics",
+  "domain": "blockchain",
   "definition": "Gold (chemical symbol Au, atomic number 79, ISO currency code XAU) is a dense, corrosion-resistant transition metal that has served as the pre-eminent monetary commodity for at least 5,000 years and in 2024\u20132026 occupies a unique dual role as both the world's third-largest reserve asset by value (approximately $18\u201322 trillion in aggregate above-ground stock at $2,300\u2013$3,200/oz 2024\u20132026 spot range) and the emerging ontological anchor for a new generation of gold-backed digital tokens, gold-collateralised stablecoins, and tokenised bullion products within the AI-blockchain convergence layer, functioning across five principal markets: (1) the London Bullion Market Association (LBMA) over-the-counter unallocated and allocated spot market centred on London Good Delivery bars (400 troy oz \u00b110%, minimum 99.5% fineness, assayer hallmark, chain-of-custody documentation per LBMA Responsible Gold Guidance 7th Ed. 2023) clearing approximately $35\u201350 billion per day through the London Gold Market Fixing mechanism now replaced by the ICE Benchmark Administration LBMA Gold Price twice-daily auction; (2) COMEX futures and options at the CME Group New York, the world's largest gold derivatives ven",
   "subClassOf": [
     {

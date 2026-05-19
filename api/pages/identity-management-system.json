@@ -4,7 +4,7 @@
   "slug": "identity-management-system",
   "public": true,
   "classIri": "urn:visionflow:owl:class:identity-management-system",
-  "domain": "security",
+  "domain": "infrastructure",
   "definition": "An [[Identity Management System]] (IdM/IAM \u2014 Identity and Access Management) is a comprehensive technology framework that governs the full lifecycle of digital identities\u2014creation, provisioning, authentication, authorisation, federation, delegation, and decommissioning\u2014across enterprise, cloud, customer-facing, and sovereign digital ecosystems. IAM platforms integrate multiple protocol layers working in concert: [[SAML 2.0]] (Security Assertion Markup Language, OASIS 2005) for enterprise SSO federation via XML-based assertions exchanged between Identity Providers (IdPs) and Service Providers (SPs), enabling the browser-redirect federation flows that replaced costly per-application credential stores across the enterprise SaaS landscape 2010-2020; [[OpenID Connect]] (OIDC 1.0, OpenID Foundation 2014) layering JSON-based identity semantics atop [[OAuth 2.0]] (RFC 6749/6750, IETF 2012) for delegated authorisation, where OAuth 2.0 governs resource access delegation and OIDC adds the standardised ID token (JWT, RFC 7519) conveying authenticated user attributes; [[SCIM 2.0]] (System for Cross-domain Identity Management, RFC 7642-7644, IETF 2015) providing a REST+JSON API for automated pro",
   "subClassOf": [
     {

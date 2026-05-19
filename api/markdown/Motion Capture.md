@@ -446,7 +446,7 @@ public:: true
       "vc:label": "Spatial Computing"
     }
   ],
-  "vc:sourceDomain": "creative-tools",
+  "vc:sourceDomain": "spatial-computing",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

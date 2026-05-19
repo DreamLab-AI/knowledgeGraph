@@ -123,10 +123,6 @@
         "label": "Soulbound Token"
       },
       {
-        "id": "urn:visionflow:owl:class:creator-economy",
-        "label": "Creator Economy"
-      },
-      {
         "id": "urn:visionflow:owl:class:digital-ownership",
         "label": "Digital Ownership"
       },

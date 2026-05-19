@@ -4,7 +4,7 @@
   "slug": "real-time",
   "public": true,
   "classIri": "urn:visionflow:owl:class:real-time",
-  "domain": "computer-science",
+  "domain": "infrastructure",
   "definition": "Real-Time Computing is the discipline of designing computing systems, operating environments, and algorithmic frameworks in which program correctness depends not only on the logical result of computation but also on the time at which those results are produced, enforcing temporal constraints \u2014 deadlines, periods, jitter bounds \u2014 as first-class correctness conditions alongside functional specifications. A real-time system fails not merely when it produces wrong output but equally when it produces correct output too late: deadline violations in a cardiac pacemaker controller, engine control unit, fly-by-wire flight surface actuator, or nuclear plant safety monitor are catastrophic, making temporal determinism as safety-critical as logical correctness. The field partitions constraints into three canonical tiers established by Buttazzo (1st ed. 1997, 4th ed. 2024): hard real-time where any deadline miss constitutes total system failure (utility function drops discontinuously to \u2212\u221e at deadline d; aeroengine FADEC, autonomous-vehicle AEB), firm real-time where late results have zero value but do not cause system failure (multimedia frame rendering, industrial batch reporting), and soft r",
   "subClassOf": [
     {

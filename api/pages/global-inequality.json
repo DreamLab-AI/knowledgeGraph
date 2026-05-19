@@ -4,7 +4,7 @@
   "slug": "global-inequality",
   "public": true,
   "classIri": "urn:visionflow:owl:class:global-inequality",
-  "domain": "ethics-society",
+  "domain": "artificial-intelligence",
   "definition": "Global Inequality is the systematic, multi-dimensional divergence in life chances, material resources, political power, and technological access experienced by individuals, households, communities, and nations across the world economic order \u2014 encompassing income inequality (the Gini coefficient measuring distributional spread from 0 perfect equality to 1 maximum concentration), wealth inequality (asset and capital ownership skewed far more steeply than income flows, with the top 10% of global households owning 76% of total household wealth while the bottom 50% holds 2%), digital and compute inequality (differential access to hardware, bandwidth, training data, and AI inference capacity), opportunity inequality (intergenerational mobility, educational attainment, access to health systems and legal protections), gender inequality (persistent labour market, pay, and asset gaps), and climate-inequality intersections (low-income populations bearing disproportionate exposure to environmental shocks they did not cause). The field integrates distributional economics, political economy, social stratification sociology, development economics, and computational social science to analyse how ",
   "subClassOf": [
     {

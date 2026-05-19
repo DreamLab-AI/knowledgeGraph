@@ -342,10 +342,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:compliance-verification",
       "vc:label": "Compliance Verification"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:non-repudiation",
-      "vc:label": "Non-Repudiation"
     }
   ],
   "vc:dependsOn": [

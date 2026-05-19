@@ -534,7 +534,7 @@ public:: true
       "vc:label": "Safety Critical Systems"
     }
   ],
-  "vc:sourceDomain": "computer-science",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

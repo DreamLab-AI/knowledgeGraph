@@ -152,12 +152,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:token-economics",
   "@type": "OntologyClass",
   "label": "Token Economics",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:blockchain-economics",
-      "vc:label": "Blockchain Economics"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "blockchain",
   "vc:status": "active",
   "vc:maturity": "reviewed",

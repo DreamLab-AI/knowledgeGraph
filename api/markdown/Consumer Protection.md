@@ -526,7 +526,7 @@ public:: true
       "vc:label": "Platform Governance"
     }
   ],
-  "vc:sourceDomain": "regulation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

@@ -414,7 +414,7 @@ public:: true
       "vc:label": "Digital Asset"
     }
   ],
-  "vc:sourceDomain": "economics",
+  "vc:sourceDomain": "blockchain",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

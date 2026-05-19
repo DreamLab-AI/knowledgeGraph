@@ -4,7 +4,7 @@
   "slug": "ray-tracing",
   "public": true,
   "classIri": "urn:visionflow:owl:class:ray-tracing",
-  "domain": "graphics-rendering",
+  "domain": "spatial-computing",
   "definition": "Ray Tracing is a physically-based light-transport simulation technique in computer graphics that generates images by casting rays from a virtual camera through each image-plane pixel into a three-dimensional scene, recursively computing colour values by evaluating ray-geometry intersections, surface shading at hit points, and secondary-ray spawning for mirror reflections, refractions through transmissive materials, hard and soft shadows, indirect diffuse bounces, and complex global-illumination phenomena such as caustics and participating-media scattering; the technique is grounded mathematically in the rendering equation introduced by James T. Kajiya (SIGGRAPH 1986): L\u2092(x,\u03c9) = L\u2091(x,\u03c9) + \u222b_\u03a9 f_r(x,\u03c9\u1d62,\u03c9) L\u1d62(x,\u03c9\u1d62) (\u03c9\u1d62\u00b7n\u0302) d\u03c9\u1d62, where L\u2092 is outgoing radiance at surface point x in direction \u03c9, L\u2091 is emitted radiance, f_r the bidirectional reflectance distribution function (BRDF) encoding material appearance, the hemisphere integral \u222b_\u03a9 accumulates incoming radiance L\u1d62 from all directions \u03c9\u1d62 weighted by the BRDF and cosine foreshortening factor (\u03c9\u1d62\u00b7n\u0302), and L\u1d62 is itself the outgoing radiance of whatever surface or medium the incoming ray intersects, making the equation recursive; in prac",
   "subClassOf": [
     {

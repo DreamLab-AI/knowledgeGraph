@@ -93,10 +93,6 @@
         "label": "Service Discovery"
       },
       {
-        "id": "urn:visionflow:owl:class:access-control-system",
-        "label": "Access Control System"
-      },
-      {
         "id": "urn:visionflow:owl:class:identity-provider",
         "label": "Identity Provider"
       }

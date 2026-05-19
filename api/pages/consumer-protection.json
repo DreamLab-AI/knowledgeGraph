@@ -4,7 +4,7 @@
   "slug": "consumer-protection",
   "public": true,
   "classIri": "urn:visionflow:owl:class:consumer-protection",
-  "domain": "regulation",
+  "domain": "infrastructure",
   "definition": "Body of law, regulation, and enforcement mechanisms protecting individuals from unfair, deceptive, or abusive commercial practices \u2014 spanning statutory rights, enforcement agencies, complaint and redress processes, and product liability standards \u2014 now substantially reshaped by digital markets, AI-generated content, algorithmic pricing, platform dark patterns, and AI product liability. Key contemporary instruments include the UK [[Digital Markets Competition and Consumers Act 2024]] (DMCC), the [[EU Consumer Rights Directive]] (amended), [[FTC]] AI guidance (2024\u20132026), [[CMA]] strategic market status investigations, and the EU [[AI Act]] product-safety overlay. [[Consumer Protection]] interfaces with [[Competition Law]], [[Data Protection]], [[Product Liability]], [[Financial Regulation]], and [[AI Governance]] across all major jurisdictions. The legal architecture rests on four pillars: information obligations (requiring traders to disclose material facts); substantive rights (guaranteeing minimum standards of quality and fairness regardless of contract terms); enforcement powers (enabling agencies and courts to sanction violations and compel redress); and systemic intervention (",
   "subClassOf": [
     {

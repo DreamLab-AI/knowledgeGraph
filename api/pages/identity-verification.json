@@ -4,7 +4,7 @@
   "slug": "identity-verification",
   "public": true,
   "classIri": "urn:visionflow:owl:class:identity-verification",
-  "domain": "security",
+  "domain": "infrastructure",
   "definition": "[[Identity Verification]] (IDV, often used interchangeably with identity proofing for the one-time onboarding event) is the trust-establishment process by which a relying party tests an identity claim \u2014 that a specific natural person or legal entity is who they purport to be \u2014 by collecting evidence and reducing the probability of impersonation to a level commensurate with the risk of the relationship, combining (i) [[Document Verification]] of government-issued credentials ([[Passport]], [[Driving Licence]], national ID card) through OCR, MRZ parsing, security-feature inspection (hologram, microprint, ultraviolet/infrared response, intaglio printing), and chip-data extraction over [[Near-Field Communication|NFC]] under [[ICAO 9303]] for [[ePassport|e-passports]], (ii) [[Biometric Verification]] binding the document holder to the live applicant through [[Face Match|selfie-to-document face match]], [[Fingerprint Recognition]], [[Iris Recognition]], [[Palm Vein Recognition]], [[Voice Biometrics]] or [[Behavioural Biometrics]], (iii) [[Liveness Detection]] (active \u2014 head turns, blinks, smile; passive \u2014 texture, depth from focus, 3D structure-from-motion, micro-expression analysis) def",
   "subClassOf": [
     {

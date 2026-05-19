@@ -538,7 +538,7 @@ public:: true
       "vc:label": "Technology Adoption"
     }
   ],
-  "vc:sourceDomain": "ethics-society",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

@@ -4,7 +4,7 @@
   "slug": "adoption-of-convergent-technologies",
   "public": true,
   "classIri": "urn:visionflow:owl:class:adoption-of-convergent-technologies",
-  "domain": "ethics-society",
+  "domain": "artificial-intelligence",
   "definition": "**Adoption of Convergent Technologies** is the socio-technical process by which enterprises, governments, consumers and communities progressively integrate interoperating stacks of mutually reinforcing deep-technology families \u2014 artificial intelligence (including foundation models, generative AI and agentic AI), distributed ledger / blockchain infrastructure, extended-reality (XR) platforms (AR, VR, MR), Internet of Things (IoT) sensor-actuator networks, and biotechnology / synthetic biology \u2014 into workflows, products, services and governance structures in ways that create multiplicative rather than additive capability gains, constituting a phenomenon distinct from single-technology adoption and demanding theoretical frameworks capable of modelling the interdependencies, complementarities and co-evolutionary dynamics that characterise multi-technology convergence.",
   "subClassOf": [
     {

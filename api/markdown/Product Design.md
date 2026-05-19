@@ -462,7 +462,7 @@ public:: true
       "vc:label": "Human-Computer Interaction"
     }
   ],
-  "vc:sourceDomain": "creative-process",
+  "vc:sourceDomain": "spatial-computing",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

@@ -26,10 +26,6 @@
       {
         "id": "urn:visionflow:owl:class:digital-signature",
         "label": "Digital-Signature"
-      },
-      {
-        "id": "urn:visionflow:owl:class:hash-function",
-        "label": "Hash-Function"
       }
     ],
     "enables": [

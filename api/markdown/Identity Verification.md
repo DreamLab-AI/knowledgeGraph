@@ -842,7 +842,7 @@ public:: true
       "vc:label": "Compliance Control"
     }
   ],
-  "vc:sourceDomain": "security",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

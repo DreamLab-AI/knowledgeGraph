@@ -844,12 +844,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:ai-agent-system",
   "@type": "OntologyClass",
   "label": "AI Agent System",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:agent-frameworks",
-      "vc:label": "Agent Frameworks"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "complete",
   "vc:maturity": "mature",

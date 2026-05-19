@@ -4,7 +4,7 @@
   "slug": "deepfakes-and-fraudulent-content",
   "public": true,
   "classIri": "urn:visionflow:owl:class:deepfakes-and-fraudulent-content",
-  "domain": "society",
+  "domain": "artificial-intelligence",
   "definition": "**Deepfakes and fraudulent content** denote synthetic audio, image, video and text artefacts produced by deep generative models (notably GAN-based face-swap pipelines DeepFaceLab/Faceswap/StyleGAN3, diffusion-based face-conditioning ReActor/Roop/InstantID/PhotoMaker/IP-Adapter-Face, lip-sync video generators Wav2Lip/MuseTalk/LatentSync/KEEP/HeyGen-EMO real-time avatars, voice cloning systems ElevenLabs/Resemble AI/PlayHT/OpenAI Voice Engine/Cartesia Sonic/Meta Voicebox, and full-body avatar platforms DeepMotion/Synthesia/HeyGen/D-ID/Hour One) deployed without consent or disclosure to impersonate real persons, fabricate non-consensual intimate imagery (NCII), execute social-engineering attacks against enterprises and consumers, manipulate elections, and produce fraudulent identity documents \u2014 emerging as a distinct socio-technical threat category in late 2017 when the r/deepfakes subreddit (banned February 2018) demonstrated that autoencoder face-swap pipelines previously confined to VFX studios could be replicated on consumer GPUs, accelerated through the 2018-2022 release of open-source pipelines DeepFaceLab (sf-editor1) and FaceSwap (deepfakes/faceswap) trained on celebrity datas",
   "subClassOf": [
     {

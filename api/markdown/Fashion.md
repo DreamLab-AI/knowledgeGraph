@@ -410,7 +410,7 @@ public:: true
       "vc:label": "Supply Chain Management"
     }
   ],
-  "vc:sourceDomain": "application",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

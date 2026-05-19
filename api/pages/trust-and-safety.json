@@ -4,7 +4,7 @@
   "slug": "trust-and-safety",
   "public": true,
   "classIri": "urn:visionflow:owl:class:trust-and-safety",
-  "domain": "ethics-society",
+  "domain": "artificial-intelligence",
   "definition": "Trust and Safety (T&S) is the professional discipline, operational infrastructure, and regulatory framework that governs the detection, review, enforcement, and remediation of harmful content and abusive behaviour across digital platforms, encompassing the full spectrum from child sexual abuse material (CSAM) detection and terrorist content removal through election integrity protection, hate speech moderation, fraud prevention, and platform integrity operations, implemented through a layered architecture combining automated classifiers (PhotoDNA perceptual hashing for known CSAM matching generating robust 1152-bit signatures that survive image transformations via DCT-based processing, Hive Moderation VLM detecting 40+ policy violation classes through Moderation 11B fine-tuned on Llama 3.2 11B Vision, Sightengine covering 110+ moderation classes with 99.2% F1 on specific categories, large platform proprietary transformer-based classifiers, and LLM-based moderation emerging as the next-generation paradigm surpassing traditional NLP on nuanced policy violations per Springer 2025 review), human review pipelines (outsourced moderation operations in Philippines, Kenya, Colombia, and Indi",
   "subClassOf": [
     {

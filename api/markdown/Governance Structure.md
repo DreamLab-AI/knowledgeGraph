@@ -370,7 +370,7 @@ public:: true
       "vc:label": "Trust Framework"
     }
   ],
-  "vc:sourceDomain": "regulation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

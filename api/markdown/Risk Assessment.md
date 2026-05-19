@@ -450,7 +450,7 @@ public:: true
       "vc:label": "Risk Management"
     }
   ],
-  "vc:sourceDomain": "governance",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

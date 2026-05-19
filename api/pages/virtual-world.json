@@ -6,12 +6,7 @@
   "classIri": "urn:visionflow:owl:class:virtual-world",
   "domain": "spatial-computing",
   "definition": "A self-contained digital environment with persistent state, spatial properties, user interaction capabilities, and internal rules that simulate physical or fantastical worlds, providing a shared space for multiple users to interact with each other and digital objects.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:metaverse-platform",
-      "label": "Metaverse Platform"
-    }
-  ],
+  "subClassOf": [],
   "qualityScore": 0.35,
   "authorityScore": 0.0,
   "maturity": "mature",

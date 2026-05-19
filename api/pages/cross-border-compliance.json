@@ -4,7 +4,7 @@
   "slug": "cross-border-compliance",
   "public": true,
   "classIri": "urn:visionflow:owl:class:cross-border-compliance",
-  "domain": "regulation",
+  "domain": "infrastructure",
   "definition": "Multi-jurisdictional regulatory compliance framework governing organisations operating across national boundaries, requiring simultaneous adherence to overlapping and often conflicting legal regimes including data protection law ([[GDPR]], [[UK GDPR]], [[CCPA]], [[PIPL]], [[DPDPA 2023]]), AI regulation ([[EU AI Act]] extraterritorial scope, [[OECD AI Principles]]), financial regulation ([[MiCA]], [[FATF Travel Rule]], [[Bank Secrecy Act]]), and trade rules, whilst managing [[Jurisdictional Differences]], [[Regulatory Harmonisation]] gaps, [[Data Sovereignty]] conflicts, and cross-border [[Enforcement Coordination]]. Cross-border compliance represents one of the most structurally complex domains in modern governance: organisations serving customers in multiple countries must simultaneously satisfy legal frameworks designed in isolation, enforced by independent authorities, and frequently imposing contradictory obligations \u2014 for instance the EU's [[GDPR]] may prohibit transferring personal data to a jurisdiction where the US [[CLOUD Act]] compels disclosure of the same data. The costs of multi-jurisdictional compliance reach $50\u2013150 million annually for major digital platforms, whils",
   "subClassOf": [
     {

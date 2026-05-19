@@ -394,7 +394,7 @@ public:: true
       "vc:label": "Security Architecture"
     }
   ],
-  "vc:sourceDomain": "security",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

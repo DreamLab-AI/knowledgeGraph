@@ -4,7 +4,7 @@
   "slug": "rust",
   "public": true,
   "classIri": "urn:visionflow:owl:class:rust",
-  "domain": "software",
+  "domain": "infrastructure",
   "definition": "Rust is a statically-typed, compiled systems programming language developed initially by Mozilla Research engineer Graydon Hoare (2006-2009), stabilised at version 1.0 in May 2015, and governed since February 2021 by the independent Rust Foundation (Amazon Web Services, Google, Huawei, Microsoft, and Mozilla as platinum founding members), whose central technical innovation is a compile-time ownership-and-borrowing memory model that eliminates the entire class of memory-safety errors \u2014 null-pointer dereferences, use-after-free, double-free, data races, buffer overflows \u2014 without a garbage collector or runtime overhead, achieving the dual objectives of C/C++-grade throughput (typically within 5% of equivalent C on CPU-bound benchmarks, LLVM code generation, zero-cost abstractions) and memory safety guarantees previously reachable only through managed runtimes (Java, Go, C#) that impose GC pause latencies of 1-50 ms incompatible with hard-real-time or kernel contexts. The ownership system enforces three invariants at compile time via the borrow checker: (i) every value has exactly one owner whose scope determines the value's lifetime; (ii) at any moment a value may have either one exc",
   "subClassOf": [
     {

@@ -840,10 +840,6 @@ public:: true
       "vc:label": "Service Discovery"
     },
     {
-      "@id": "urn:visionflow:owl:class:access-control-system",
-      "vc:label": "Access Control System"
-    },
-    {
       "@id": "urn:visionflow:owl:class:identity-provider",
       "vc:label": "Identity Provider"
     }

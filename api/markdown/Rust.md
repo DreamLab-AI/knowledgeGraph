@@ -402,7 +402,7 @@ public:: true
       "vc:label": "Systems Programming Language"
     }
   ],
-  "vc:sourceDomain": "software",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

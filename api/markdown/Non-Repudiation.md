@@ -442,7 +442,7 @@ public:: true
       "vc:label": "Legal Framework"
     }
   ],
-  "vc:sourceDomain": "security",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

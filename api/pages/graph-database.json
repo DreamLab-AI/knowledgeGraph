@@ -4,7 +4,7 @@
   "slug": "graph-database",
   "public": true,
   "classIri": "urn:visionflow:owl:class:graph-database",
-  "domain": "data",
+  "domain": "infrastructure",
   "definition": "A [[Graph Database]] is a specialised data management system representing data as a network of nodes (vertices) connected by relationships (edges) carrying their own properties and semantics, contrasted with relational databases that scatter relationships across foreign-key joins, organised around three dominant data models (labelled property graph LPG popularised by Neo4j 2007 where nodes and edges both carry typed labels and property maps, supporting Cypher / GQL / Gremlin; W3C Semantic Web RDF triple store decomposing data into subject-predicate-object triples queried via SPARQL 1.1 and reasoned over with OWL 2 / SHACL; hypergraph and generalised relation models where a single edge connects any number of nodes, exemplified by HyperGraphDB and OpenCog AtomSpace), implemented through **index-free adjacency** where each node stores direct pointers to its neighbours yielding O(1) per-hop traversal cost independent of graph size\u2014Neo4j benchmarks demonstrate 1,000\u00d7 speedups on 4-7 hop friend-of-friend queries over PostgreSQL on a 1M-node graph, with the advantage widening exponentially with depth, dominating a $3.5-4.5B 2025 graph database market projected to reach $10-14B by 2030 at ",
   "subClassOf": [
     {

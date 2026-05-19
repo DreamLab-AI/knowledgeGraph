@@ -426,7 +426,7 @@ public:: true
       "vc:label": "Scene Understanding"
     }
   ],
-  "vc:sourceDomain": "computer-vision",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

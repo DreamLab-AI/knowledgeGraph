@@ -550,7 +550,7 @@ public:: true
       "vc:label": "Media Theory"
     }
   ],
-  "vc:sourceDomain": "ethics-society",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

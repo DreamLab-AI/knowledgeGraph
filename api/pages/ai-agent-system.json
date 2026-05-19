@@ -6,12 +6,7 @@
   "classIri": "urn:visionflow:owl:class:ai-agent-system",
   "domain": "artificial-intelligence",
   "definition": "An autonomous software entity that perceives its environment through [[Sensor Input|sensors]], makes decisions using [[AI Techniques]], and takes actions to achieve specific goals, capable of [[Machine Learning|learning]] from experience and adapting [[Adaptive Behavior|behaviour]] over time. In 2025, AI agents have evolved to include [[Multi-Agent System|multi-agent coordination]], [[Tool Use]], [[Browser Automation]], and [[Blockchain Integration]] capabilities.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:agent-frameworks",
-      "label": "Agent Frameworks"
-    }
-  ],
+  "subClassOf": [],
   "qualityScore": 0.92,
   "authorityScore": 0.95,
   "maturity": "mature",

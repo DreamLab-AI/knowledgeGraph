@@ -570,7 +570,7 @@ public:: true
       "vc:label": "Physically-Based Rendering"
     }
   ],
-  "vc:sourceDomain": "graphics-rendering",
+  "vc:sourceDomain": "spatial-computing",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

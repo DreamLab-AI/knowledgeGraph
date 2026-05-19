@@ -4,7 +4,7 @@
   "slug": "product-design",
   "public": true,
   "classIri": "urn:visionflow:owl:class:product-design",
-  "domain": "creative-process",
+  "domain": "spatial-computing",
   "definition": "Product Design is the multidisciplinary creative and engineering practice of conceiving, planning, and producing goods, digital interfaces, and services that satisfy user needs, business objectives, and manufacturing or deployment constraints \u2014 integrating human-centred research methods, aesthetic judgement, functional specification, materials selection, and iterative prototyping across the entire lifecycle from ideation through to market launch and post-launch refinement. In the AI era (2024\u20132026) the discipline has been substantially transformed by generative AI tools that automate or accelerate rote creative tasks: text-to-UI systems (Vercel V0, Galileo AI, Uizard) generate functional interface scaffolding from natural-language prompts; topology-optimisation and generative design engines (Autodesk Fusion 360 Generative Design, nTopology) explore structural solution spaces orders of magnitude larger than human designers can manually survey; large multimodal models produce concept sketches, design variants, and manufacturing simulations on demand; and design-system toolchains (Figma AI, Material Design 3, IBM Carbon 11, Shopify Polaris 12) propagate design tokens, component specif",
   "subClassOf": [
     {

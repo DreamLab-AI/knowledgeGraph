@@ -4,7 +4,7 @@
   "slug": "apple",
   "public": true,
   "classIri": "urn:visionflow:owl:class:apple",
-  "domain": "organisation",
+  "domain": "infrastructure",
   "definition": "**Apple Inc.** (NASDAQ: AAPL, founded 1976 by Steve Jobs, Steve Wozniak, and Ronald Wayne in Cupertino, California; reincorporated 1977; UK engineering headquarters at Battersea Power Station, London since 2021) is the world's highest-market-capitalisation technology corporation (~$3.0-3.5T USD through 2024-2026) and a pivotal multi-dimensional actor in the AI/XR/agentic ontology by virtue of five interlocking strategic capabilities that collectively distinguish it from both pure-software AI laboratories and cloud-only competitors: (1) **Apple Silicon** \u2014 a vertically integrated system-on-chip stack spanning the M-series (Mac/iPad/Vision Pro) and A-series (iPhone/iPad) lineage, designed in-house as ARM architectural licensees and manufactured at TSMC 3nm nodes, embedding Neural Engine cores delivering 11-38+ TOPS of dedicated AI inference per chip generation alongside CPU performance cores with built-in ML accelerators and a GPU unified-memory architecture optimised for large-model KV-cache access patterns, enabling transformer-based language models with 3B-13B parameters to run entirely on-device without server dependency across 2024-2026 hardware generations; (2) **Apple Intellig",
   "subClassOf": [
     {

@@ -4,7 +4,7 @@
   "slug": "digital-society-harms",
   "public": true,
   "classIri": "urn:visionflow:owl:class:digital-society-harms",
-  "domain": "society",
+  "domain": "artificial-intelligence",
   "definition": "Digital Society Harms is the catalogue of empirically documented and structurally anticipated negative impacts arising from the deployment of digital, algorithmic, and AI systems at population scale across information, psychological, economic, social, human-rights, child-safety, environmental, and labour dimensions, formalised through overlapping taxonomies (Ofcom Online Safety Act 2023 Schedule 5 priority illegal harms \u2014 child sexual exploitation and abuse CSEA, terrorism, suicide/self-harm content, dishonest content/fraud, controlling or coercive behaviour, harassment/stalking, hate, intimate-image abuse, drugs/weapons; Schedule 6 priority harms to children \u2014 pornography, abuse/hate, bullying, violent content, harmful substances, body-stigma content, dangerous-stunts content; Schedule 7 user-empowerment categories \u2014 suicide/self-harm content adults can opt out of; Ada Lovelace Institute Harms Framework 2022 distinguishing allocative/representational/quality-of-service/loss-of-liberty/social-system harms; MIT AI Risk Repository Slattery et al. August 2024 cataloguing 700+ unique risks across 23 source documents and 7 risk taxonomies covering causal factors entity/intent/timing and",
   "subClassOf": [
     {

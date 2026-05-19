@@ -4,7 +4,7 @@
   "slug": "procedural-and-hybrid-4-d",
   "public": true,
   "classIri": "urn:visionflow:owl:class:procedural-and-hybrid-4-d",
-  "domain": "graphics-creative-tools",
+  "domain": "spatial-computing",
   "definition": "Procedural and Hybrid 4D is a compound domain in graphics and creative tooling that unifies two convergent paradigms: (1) procedural generation \u2014 the algorithmic, rule-driven construction of geometry, materials, animation, simulation, and environment data using mathematical operations rather than hand-crafted assets; and (2) the fourth-dimensional extension of 3D representations into the temporal axis, producing time-varying volumetric content (4D = 3D spatial + 1D time) applicable to dynamic scene reconstruction, physics simulation, generative animation, and real-time interactive worlds. In practice these paradigms are inseparable: modern production pipelines (Houdini SideFX with Mantra/Karma/Solaris USD, Blender Geometry Nodes, Unreal Engine PCG, Unity Muse) apply procedural rules that inherently encode temporal variation \u2014 cloth simulations, fluid solvers, crowd systems, and growing botanical structures are all procedural functions of time. The field spans commercial DCC tools (digital content creation), open-source research frameworks (Infinigen, instant-ngp, OpenUSD), academic neural representations (NeRF, 3D Gaussian Splatting, 4DGS, SDF hybrid models), and AI-driven hybrid p",
   "subClassOf": [
     {

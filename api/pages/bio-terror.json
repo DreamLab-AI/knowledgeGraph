@@ -4,7 +4,7 @@
   "slug": "bio-terror",
   "public": true,
   "classIri": "urn:visionflow:owl:class:bio-terror",
-  "domain": "risk",
+  "domain": "infrastructure",
   "definition": "Bioterrorism (biological terrorism) is the deliberate use, threat, or weaponisation of pathogenic microorganisms (bacteria, viruses, fungi, prions), biological toxins, or genetically engineered agents by state or non-state actors to cause mass casualties, generate fear, coerce governments, or destabilise critical infrastructure, operating at the intersection of biosecurity governance, dual-use life science research, international arms control law, pandemic preparedness, and \u2014 increasingly \u2014 AI-enabled biotechnology risk. The threat spectrum ranges from Category A agents (Bacillus anthracis anthrax spores, variola smallpox virus, Yersinia pestis plague, botulinum toxin, Ebola and Marburg haemorrhagic fevers, Francisella tularensis tularaemia \u2014 classified by CDC as highest-priority due to ease of dissemination, high mortality, and mass casualty potential) through Category B agents (Brucella species, Coxiella burnetii Q-fever, Ricin toxin, Staphylococcal enterotoxin B, Salmonella and Shigella food-borne threats achieving 751 casualties in the 1984 Rajneeshee Oregon attack \u2014 the first confirmed US bioterrorism incident) to Category C emerging threats including engineered pandemic influ",
   "subClassOf": [
     {

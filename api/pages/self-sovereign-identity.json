@@ -4,7 +4,7 @@
   "slug": "self-sovereign-identity",
   "public": true,
   "classIri": "urn:visionflow:owl:class:self-sovereign-identity",
-  "domain": "identity",
+  "domain": "blockchain",
   "definition": "Self-Sovereign Identity (SSI) is an identity management paradigm \u2014 first articulated as a systematic framework by Christopher Allen in \"The Path to Self-Sovereign Identity\" (April 2016) \u2014 where individuals hold and control cryptographically verifiable credentials in their own [[Digital Wallet]] rather than depending on [[Centralised Identity]] providers or [[Federated Identity]] intermediaries such as corporate identity providers, national databases, or single-sign-on brokers. SSI rests on three interdependent W3C open standards: [[Decentralized Identifiers]] (DID Core 1.0 became a W3C Recommendation in July 2022; v1.1 in Working Draft as of 2026), [[Verifiable Credentials]] (VC Data Model v2.0 became a W3C Recommendation in May 2025), and the DIDComm v2 secure messaging protocol maintained by the [[Decentralized Identity Foundation]]; these three layers together enable cryptographic proof of identity claims without requiring centralised databases or online validation calls to the issuing authority. Trust roots are anchored to [[Verifiable Data Registry]] infrastructure spanning permissioned ledgers ([[Hyperledger Indy]] underlying the [[Sovrin Network]]), public blockchains ([[Bit",
   "subClassOf": [
     {

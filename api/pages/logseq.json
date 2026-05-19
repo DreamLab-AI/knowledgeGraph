@@ -4,7 +4,7 @@
   "slug": "logseq",
   "public": true,
   "classIri": "urn:visionflow:owl:class:logseq",
-  "domain": "software",
+  "domain": "infrastructure",
   "definition": "Logseq is a privacy-first, open-source, local-first personal knowledge management (PKM) platform built on a block-based outliner architecture, implemented primarily in ClojureScript with a DataScript in-memory Datalog query engine, providing bidirectional linking, hierarchical namespaces, property-based metadata, advanced Datalog queries, graph visualisation, spaced repetition flashcards, PDF annotation, whiteboards, and a rich plugin API across desktop (Electron), web, and mobile (Capacitor) deployment surfaces. Originally released publicly in 2020 by Tienson Qin as an open-source, local-first alternative to Roam Research, Logseq stores knowledge as human-readable plain-text Markdown or Org-mode files on the user's local device (file-graph mode), giving users full data sovereignty through direct file-system ownership and compatibility with any text editor or version control system. A major architectural transition has been underway since 2023 toward a Database (DB) version that persists block-level data in SQLite via WebAssembly (WASM), enabling fine-grained block timestamps, real-time collaboration (RTC) synchronisation via CRDTs, structured property types with schema validation,",
   "subClassOf": [
     {

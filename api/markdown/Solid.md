@@ -438,7 +438,7 @@ public:: true
       "vc:label": "Web Standards"
     }
   ],
-  "vc:sourceDomain": "protocol",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

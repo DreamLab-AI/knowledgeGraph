@@ -136,12 +136,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:ai-governance",
   "@type": "OntologyClass",
   "label": "AI Governance",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:ai-governance-framework",
-      "vc:label": "AI Governance Framework"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "draft",
   "vc:maturity": "draft",

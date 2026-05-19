@@ -422,7 +422,7 @@ public:: true
       "vc:label": "Distributed Computing"
     }
   ],
-  "vc:sourceDomain": "computer-science",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

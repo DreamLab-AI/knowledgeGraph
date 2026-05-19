@@ -510,7 +510,7 @@ public:: true
       "vc:label": "Platform Governance"
     }
   ],
-  "vc:sourceDomain": "society",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

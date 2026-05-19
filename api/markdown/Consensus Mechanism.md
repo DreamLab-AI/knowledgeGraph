@@ -702,10 +702,6 @@ public:: true
       "vc:label": "Distributed Algorithm"
     },
     {
-      "@id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "vc:label": "Byzantine Fault Tolerance"
-    },
-    {
       "@id": "urn:visionflow:owl:class:state-machine-replication",
       "vc:label": "State Machine Replication"
     }

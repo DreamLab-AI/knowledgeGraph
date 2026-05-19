@@ -582,7 +582,7 @@ public:: true
       "vc:label": "Warfighting Domain"
     }
   ],
-  "vc:sourceDomain": "security",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

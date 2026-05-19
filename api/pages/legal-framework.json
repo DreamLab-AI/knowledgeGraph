@@ -6,12 +6,7 @@
   "classIri": "urn:visionflow:owl:class:legal-framework",
   "domain": "infrastructure",
   "definition": "A legal framework for technology systems comprises the body of laws, regulations, and legal requirements that govern the development, deployment, and operation of information technology. It establishes obligations for data protection, privacy, security, and compliance, defining the legal boundaries within which organisations must operate when processing personal data, deploying AI systems, and conducting digital operations.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:regulatory-framework",
-      "label": "Regulatory Framework"
-    }
-  ],
+  "subClassOf": [],
   "qualityScore": 0.5,
   "authorityScore": 0.0,
   "maturity": "reviewed",

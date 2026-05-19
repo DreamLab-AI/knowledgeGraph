@@ -136,12 +136,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:machine-learning",
   "@type": "OntologyClass",
   "label": "Machine Learning",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:learning-algorithm",
-      "vc:label": "Learning Algorithm"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "draft",
   "vc:maturity": "draft",

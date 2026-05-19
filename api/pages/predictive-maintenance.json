@@ -4,7 +4,7 @@
   "slug": "predictive-maintenance",
   "public": true,
   "classIri": "urn:visionflow:owl:class:predictive-maintenance",
-  "domain": "industrial-ai",
+  "domain": "artificial-intelligence",
   "definition": "[[Predictive Maintenance]] (PdM) is a condition-based maintenance strategy that uses continuous or periodic monitoring of physical asset health signals\u2014vibration, temperature, acoustic emission, current draw, oil particle count, ultrasound, and corrosion metrics\u2014combined with machine learning inference to forecast Remaining Useful Life (RUL) and schedule targeted maintenance interventions precisely when degradation trajectories indicate imminent failure, eliminating both reactive breakdown costs and the over-maintenance waste of time-interval schedules. Core technical pillars include: (1) **IIoT sensor integration** \u2014 wireless and wired condition monitoring nodes (Yokogawa Sushi Sensor WS100 Bluetooth Low Energy, Augury Halo vibration+temperature+magnetic+ultrasound MEMS sensors, SKF IMx series, Emerson AMS 6500 ATG) delivering 10 kHz\u201350 kHz vibration streams or compressed feature vectors via MQTT/OPC-UA to edge gateways then cloud historians; (2) **signal processing** \u2014 Fast Fourier Transform (FFT) converting raw acceleration time-series into frequency spectra revealing bearing defect frequencies (BPFI, BPFO, BSF, FTF derivable from bearing geometry and shaft speed), envelope anal",
   "subClassOf": [
     {

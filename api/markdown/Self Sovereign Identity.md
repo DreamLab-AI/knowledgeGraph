@@ -538,7 +538,7 @@ public:: true
       "vc:label": "Trust Framework"
     }
   ],
-  "vc:sourceDomain": "identity",
+  "vc:sourceDomain": "blockchain",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

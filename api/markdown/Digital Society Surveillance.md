@@ -502,7 +502,7 @@ public:: true
       "vc:label": "Privacy"
     }
   ],
-  "vc:sourceDomain": "ethics-society",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

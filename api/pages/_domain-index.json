@@ -2079,6 +2079,12 @@
       "authorityScore": 0.88
     },
     {
+      "slug": "adoption-of-convergent-technologies",
+      "title": "Adoption of Convergent Technologies",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "adversarial-attack",
       "title": "Adversarial Attack",
       "qualityScore": 0.5,
@@ -2877,6 +2883,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "death-of-the-internet",
+      "title": "Death of the Internet",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "decision-transparency",
       "title": "Decision Transparency",
       "qualityScore": 0.35,
@@ -2893,6 +2905,12 @@
       "title": "Deep Learning",
       "qualityScore": 0.91,
       "authorityScore": 0.96
+    },
+    {
+      "slug": "deepfakes-and-fraudulent-content",
+      "title": "Deepfakes and fraudulent content",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "deepfakes",
@@ -2953,6 +2971,18 @@
       "title": "Digital Services Act",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "digital-society-harms",
+      "title": "Digital Society Harms",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "digital-society-surveillance",
+      "title": "Digital Society Surveillance",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "digital-tax-compliance-node",
@@ -3525,6 +3555,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "global-inequality",
+      "title": "Global Inequality",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "goal",
       "title": "Goal",
       "qualityScore": 0.5,
@@ -3935,6 +3971,12 @@
     {
       "slug": "learning-algorithm",
       "title": "Learning Algorithm",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "lens-and-camera-calibration",
+      "title": "Lens and Camera Calibration",
       "qualityScore": 0.52,
       "authorityScore": 0.87
     },
@@ -4605,6 +4647,12 @@
       "authorityScore": 0.95
     },
     {
+      "slug": "pose-estimation",
+      "title": "Pose Estimation",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "post-hoc-explanation",
       "title": "Post Hoc Explanation",
       "qualityScore": 0.5,
@@ -4633,6 +4681,12 @@
       "title": "Predictive Analytics",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "predictive-maintenance",
+      "title": "Predictive Maintenance",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "predictive-personalization",
@@ -5031,6 +5085,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "scene-capture-and-reconstruction",
+      "title": "Scene Capture and Reconstruction",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "search-algorithm",
       "title": "Search Algorithm",
       "qualityScore": 0.35,
@@ -5047,6 +5107,12 @@
       "title": "Search Technology",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "segmentation-and-identification",
+      "title": "Segmentation and Identification",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "self-attention",
@@ -5535,6 +5601,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "trust-and-safety",
+      "title": "Trust and Safety",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "trustworthy-ai-framework",
       "title": "Trustworthy AI Framework",
       "qualityScore": 0.35,
@@ -5799,6 +5871,12 @@
       "title": "Accessibility Standards",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "accessibility",
+      "title": "Accessibility",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "accessible-design",
@@ -6141,6 +6219,12 @@
       "title": "Biometric Binding Mechanism",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "blender",
+      "title": "Blender",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "bounding-volume-hierarchy",
@@ -8165,6 +8249,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "light-field",
+      "title": "Light field",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "local-explanation",
       "title": "Local Explanation",
       "qualityScore": 0.5,
@@ -8457,6 +8547,12 @@
       "title": "Motion Capture Technology",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "motion-capture",
+      "title": "Motion Capture",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "motion-markers",
@@ -9047,10 +9143,22 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "procedural-and-hybrid-4-d",
+      "title": "Procedural and Hybrid 4D",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "processing-hardware",
       "title": "Processing Hardware",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "product-design",
+      "title": "Product Design",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "production-design",
@@ -9149,6 +9257,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "ray-tracing",
+      "title": "Ray Tracing",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "raycast-system",
       "title": "Raycast System",
       "qualityScore": 0.35,
@@ -9243,6 +9357,12 @@
       "title": "Rendering Engine",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "rendering-pipeline",
+      "title": "Rendering Pipeline",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "rendering-technique",
@@ -10155,6 +10275,18 @@
       "title": "Universal Manifest",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "universal-scene-description",
+      "title": "Universal Scene Description",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "unreal-engine",
+      "title": "Unreal Engine",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "user-awareness",
@@ -11361,6 +11493,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "access-control-system",
+      "title": "Access Control System",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "access-control",
       "title": "Access Control",
       "qualityScore": 0.5,
@@ -11377,6 +11515,12 @@
       "title": "Adapter Slot",
       "qualityScore": 0.89,
       "authorityScore": 0.91
+    },
+    {
+      "slug": "apple",
+      "title": "Apple",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "asset-management",
@@ -11401,6 +11545,12 @@
       "title": "Avatar Interoperability",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "bio-terror",
+      "title": "Bio Terror",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "blockchain-gaming",
@@ -11493,6 +11643,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "compliance-control",
+      "title": "Compliance Control",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "compliance-monitoring",
       "title": "Compliance Monitoring",
       "qualityScore": 0.52,
@@ -11553,6 +11709,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "consumer-protection",
+      "title": "Consumer Protection",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "consumer-tools-for-smes",
       "title": "Consumer Tools for SMEs",
       "qualityScore": 0.5,
@@ -11587,6 +11749,12 @@
       "title": "Credential Format Standard",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "cross-border-compliance",
+      "title": "Cross Border Compliance",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "cross-domain-bridge",
@@ -11645,6 +11813,12 @@
     {
       "slug": "cyber-security-and-cryptography",
       "title": "Cyber Security and Cryptography",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "cyber-security-and-military",
+      "title": "Cyber Security and Military",
       "qualityScore": 0.52,
       "authorityScore": 0.87
     },
@@ -12135,6 +12309,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "fashion",
+      "title": "Fashion",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "fault-tolerance",
       "title": "Fault Tolerance",
       "qualityScore": 0.52,
@@ -12213,6 +12393,24 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "google",
+      "title": "Google",
+      "qualityScore": 0.54,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "governance-structure",
+      "title": "Governance Structure",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
+      "slug": "graph-database",
+      "title": "Graph Database",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "graph-search",
       "title": "Graph Search",
       "qualityScore": 0.35,
@@ -12267,6 +12465,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "identity-management-system",
+      "title": "Identity Management System",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "identity-management",
       "title": "Identity Management",
       "qualityScore": 0.5,
@@ -12279,6 +12483,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "identity-provider",
+      "title": "Identity Provider",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "identity-standards",
       "title": "Identity Standards",
       "qualityScore": 0.35,
@@ -12289,6 +12499,12 @@
       "title": "Identity Systems",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "identity-verification",
+      "title": "Identity Verification",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "identity",
@@ -12471,6 +12687,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "logseq",
+      "title": "Logseq",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "manchester-tech-cluster",
       "title": "Manchester Tech Cluster",
       "qualityScore": 0.5,
@@ -12601,6 +12823,12 @@
       "title": "Node based visual interfaces",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "non-repudiation",
+      "title": "Non-Repudiation",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "north-england-innovation-corridor",
@@ -13059,6 +13287,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "real-time",
+      "title": "Real Time",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "real-time-rendering",
       "title": "Real-Time Rendering",
       "qualityScore": 0.5,
@@ -13099,6 +13333,12 @@
       "title": "Regulatory Framework",
       "qualityScore": 0.5,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "regulatory-reporting",
+      "title": "Regulatory Reporting",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "remarkable",
@@ -13161,6 +13401,12 @@
       "authorityScore": 0.0
     },
     {
+      "slug": "risk-assessment",
+      "title": "Risk Assessment",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "robin-hanson",
       "title": "Robin Hanson",
       "qualityScore": 0.35,
@@ -13207,6 +13453,12 @@
       "title": "Runtime Environment",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "rust",
+      "title": "Rust",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "should",
@@ -13341,6 +13593,12 @@
       "authorityScore": 0.78
     },
     {
+      "slug": "solid",
+      "title": "Solid",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "some-legacy-linked-json",
       "title": "Some legacy Linked-JSON",
       "qualityScore": 0.5,
@@ -13363,6 +13621,12 @@
       "title": "Standards Body",
       "qualityScore": 0.35,
       "authorityScore": 0.0
+    },
+    {
+      "slug": "state-machine",
+      "title": "State Machine",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
     },
     {
       "slug": "state-space-and-other-approaches",
@@ -15083,6 +15347,12 @@
       "authorityScore": 0.95
     },
     {
+      "slug": "gold",
+      "title": "Gold",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "gossip-protocol",
       "title": "Gossip Protocol",
       "qualityScore": 0.5,
@@ -15917,6 +16187,12 @@
       "authorityScore": 0.95
     },
     {
+      "slug": "self-sovereign-identity",
+      "title": "Self Sovereign Identity",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "selfish-mining",
       "title": "Selfish Mining",
       "qualityScore": 0.5,
@@ -16211,6 +16487,12 @@
       "authorityScore": 0.87
     },
     {
+      "slug": "trust-framework",
+      "title": "Trust Framework",
+      "qualityScore": 0.52,
+      "authorityScore": 0.87
+    },
+    {
       "slug": "trusted-execution-pbft",
       "title": "Trusted Execution PBFT",
       "qualityScore": 0.35,
@@ -16335,334 +16617,6 @@
       "title": "x402 and l402 payment protocols",
       "qualityScore": 0.5,
       "authorityScore": 0.0
-    }
-  ],
-  "security": [
-    {
-      "slug": "access-control-system",
-      "title": "Access Control System",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "cyber-security-and-military",
-      "title": "Cyber Security and Military",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "identity-management-system",
-      "title": "Identity Management System",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "identity-provider",
-      "title": "Identity Provider",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "identity-verification",
-      "title": "Identity Verification",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "non-repudiation",
-      "title": "Non-Repudiation",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "human-computer-interaction": [
-    {
-      "slug": "accessibility",
-      "title": "Accessibility",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "ethics-society": [
-    {
-      "slug": "adoption-of-convergent-technologies",
-      "title": "Adoption of Convergent Technologies",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "death-of-the-internet",
-      "title": "Death of the Internet",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "digital-society-surveillance",
-      "title": "Digital Society Surveillance",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "global-inequality",
-      "title": "Global Inequality",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "trust-and-safety",
-      "title": "Trust and Safety",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "organisation": [
-    {
-      "slug": "apple",
-      "title": "Apple",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "google",
-      "title": "Google",
-      "qualityScore": 0.54,
-      "authorityScore": 0.87
-    }
-  ],
-  "risk": [
-    {
-      "slug": "bio-terror",
-      "title": "Bio Terror",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "creative-tools": [
-    {
-      "slug": "blender",
-      "title": "Blender",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "motion-capture",
-      "title": "Motion Capture",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "universal-scene-description",
-      "title": "Universal Scene Description",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "unreal-engine",
-      "title": "Unreal Engine",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "governance": [
-    {
-      "slug": "compliance-control",
-      "title": "Compliance Control",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "risk-assessment",
-      "title": "Risk Assessment",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "regulation": [
-    {
-      "slug": "consumer-protection",
-      "title": "Consumer Protection",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "cross-border-compliance",
-      "title": "Cross Border Compliance",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "governance-structure",
-      "title": "Governance Structure",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "regulatory-reporting",
-      "title": "Regulatory Reporting",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "society": [
-    {
-      "slug": "deepfakes-and-fraudulent-content",
-      "title": "Deepfakes and fraudulent content",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "digital-society-harms",
-      "title": "Digital Society Harms",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "application": [
-    {
-      "slug": "fashion",
-      "title": "Fashion",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "economics": [
-    {
-      "slug": "gold",
-      "title": "Gold",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "data": [
-    {
-      "slug": "graph-database",
-      "title": "Graph Database",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "computer-vision": [
-    {
-      "slug": "lens-and-camera-calibration",
-      "title": "Lens and Camera Calibration",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "pose-estimation",
-      "title": "Pose Estimation",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "scene-capture-and-reconstruction",
-      "title": "Scene Capture and Reconstruction",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "segmentation-and-identification",
-      "title": "Segmentation and Identification",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "graphics-computer-vision": [
-    {
-      "slug": "light-field",
-      "title": "Light field",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "software": [
-    {
-      "slug": "logseq",
-      "title": "Logseq",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "rust",
-      "title": "Rust",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "industrial-ai": [
-    {
-      "slug": "predictive-maintenance",
-      "title": "Predictive Maintenance",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "graphics-creative-tools": [
-    {
-      "slug": "procedural-and-hybrid-4-d",
-      "title": "Procedural and Hybrid 4D",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "creative-process": [
-    {
-      "slug": "product-design",
-      "title": "Product Design",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "graphics-rendering": [
-    {
-      "slug": "ray-tracing",
-      "title": "Ray Tracing",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "rendering-pipeline",
-      "title": "Rendering Pipeline",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "computer-science": [
-    {
-      "slug": "real-time",
-      "title": "Real Time",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    },
-    {
-      "slug": "state-machine",
-      "title": "State Machine",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "identity": [
-    {
-      "slug": "self-sovereign-identity",
-      "title": "Self Sovereign Identity",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "protocol": [
-    {
-      "slug": "solid",
-      "title": "Solid",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
-    }
-  ],
-  "identity-governance": [
-    {
-      "slug": "trust-framework",
-      "title": "Trust Framework",
-      "qualityScore": 0.52,
-      "authorityScore": 0.87
     }
   ]
 }

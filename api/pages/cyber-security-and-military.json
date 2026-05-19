@@ -4,7 +4,7 @@
   "slug": "cyber-security-and-military",
   "public": true,
   "classIri": "urn:visionflow:owl:class:cyber-security-and-military",
-  "domain": "security",
+  "domain": "infrastructure",
   "definition": "Cyber Security and Military denotes the doctrinal, organisational, technical and operational fusion of cyberspace as a recognised warfighting domain alongside land, sea, air and space \u2014 codified by NATO at the 2016 Warsaw Summit declaration that cyberspace is \"a domain of operations in which NATO must defend itself as effectively as it does in the air, on land, and at sea\" and reaffirmed by the 2022 Strategic Concept and 2023 Vilnius Communiqu\u00e9 endorsement of the Virtual Cyber Incident Support Capability (VCISC) \u2014 encompassing the spectrum of state-level activities (defensive cyberspace operations DCO, offensive cyberspace operations OCO, intelligence preparation of the cyber environment, computer network exploitation CNE, information operations IO, electromagnetic spectrum operations) conducted by uniformed military commands (US Cyber Command USCYBERCOM elevated to unified combatant command 2018 with 133-team Cyber Mission Force CMF reaching full operational capability 2018 and authorised end strength ~6,200 personnel growing to 14,000 by 2028 under CYBERCOM 2.0; UK National Cyber Force NCF stood up 2020 as a partnership between GCHQ/MOD/SIS/Dstl with permanent HQ at Samlesbury La",
   "subClassOf": [
     {

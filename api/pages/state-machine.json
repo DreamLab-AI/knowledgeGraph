@@ -4,7 +4,7 @@
   "slug": "state-machine",
   "public": true,
   "classIri": "urn:visionflow:owl:class:state-machine",
-  "domain": "computer-science",
+  "domain": "infrastructure",
   "definition": "StateMachine is a computational abstraction \u2014 rooted in automata theory and formal language theory \u2014 representing a system whose behaviour is determined by a finite (or structured infinite) set of discrete states, a defined alphabet of inputs or events, a transition function mapping (state \u00d7 input) \u2192 next-state, and optionally an output function. Formally, a deterministic finite automaton (DFA) is the quintuple M = (Q, \u03a3, \u03b4, q\u2080, F) where Q is the finite non-empty set of states, \u03a3 the input alphabet, \u03b4: Q \u00d7 \u03a3 \u2192 Q the total transition function, q\u2080 \u2208 Q the start state, and F \u2286 Q the set of accepting states; the machine accepts string w \u2208 \u03a3* iff \u03b4*(q\u2080, w) \u2208 F where \u03b4* is the extension of \u03b4 to strings. Moore machines extend this to a sextuple (Q, \u03a3, \u0394, \u03b4, \u03bb, q\u2080) where \u0394 is the output alphabet and \u03bb: Q \u2192 \u0394 the state-output function, so outputs depend only on current state; Mealy machines restructure as (Q, \u03a3, \u0394, \u03b4, \u03bb, q\u2080) with \u03bb: Q \u00d7 \u03a3 \u2192 \u0394 so outputs depend on both state and current input, giving strictly equivalent expressiveness to Moore machines under bisimulation but with more compact representations for many transducers. Nondeterministic finite automata (NFA) replace \u03b4 with \u0394: Q \u00d7 \u03a3",
   "subClassOf": [
     {

@@ -4,7 +4,7 @@
   "slug": "access-control-system",
   "public": true,
   "classIri": "urn:visionflow:owl:class:access-control-system",
-  "domain": "security",
+  "domain": "infrastructure",
   "definition": "An [[Access Control System]] is the assemblage of policies, decision engines, enforcement points, identity providers, attribute sources, audit pipelines, and cryptographic primitives that determines whether a subject (human user, service account, autonomous agent, device) is permitted to perform a requested operation (read, write, execute, delegate, administer) against a protected resource (file, record, API endpoint, kernel object, physical door, network flow), evaluated through a formal authorisation model spanning Discretionary Access Control (DAC, owner-driven ACLs as in POSIX/NTFS), Mandatory Access Control (MAC, lattice-based confidentiality enforced by [[Bell-LaPadula Model]] no-read-up/no-write-down, integrity by [[Biba Model]] no-read-down/no-write-up, conflict-of-interest by [[Brewer-Nash Model]] Chinese Wall, transaction integrity by [[Clark-Wilson Model]] well-formed transactions and separation of duty), Role-Based Access Control (RBAC, ANSI INCITS 359-2012 four-level RBAC0-RBAC3 with role hierarchies, constraints, sessions, deployed in 78%+ enterprise IAM stacks via Active Directory security groups, Okta groups, AWS IAM roles), Attribute-Based Access Control (ABAC, NIS",
   "subClassOf": [
     {

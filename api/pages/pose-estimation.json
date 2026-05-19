@@ -4,7 +4,7 @@
   "slug": "pose-estimation",
   "public": true,
   "classIri": "urn:visionflow:owl:class:pose-estimation",
-  "domain": "computer-vision",
+  "domain": "artificial-intelligence",
   "definition": "Pose estimation is the computational task of inferring the spatial configuration\u2014position, orientation, and joint angles\u2014of a body or rigid object from image or video data, spanning 2D keypoint localisation on the image plane (pixel-coordinate skeleton graphs), 3D joint position regression in camera or world coordinates, 6-Degrees-of-Freedom (6DoF) rigid object pose (3D translation + 3D rotation), and parametric human mesh recovery yielding dense surface models from statistical body shape priors (SMPL, SMPL-X), applied across robotics grasping and manipulation, extended/mixed reality avatar animation, medical rehabilitation monitoring, sports biomechanics analytics, autonomous vehicle pedestrian prediction, and creative content generation, achieved through architectural families spanning bottom-up multi-person keypoint detectors (OpenPose CMU 2019 achieving 40 FPS on COCO body+hand+face, MediaPipe BlazePose 2020-2025 running real-time on mobile devices at 30+ FPS with 33 full-body landmarks, RTMPose 2024 MMDet-based RTM architecture achieving 91.4 AP on COCO and 73 ms inference on CPU), top-down single-person refiners (HRNet 2019, ViTPose 2022, DWPose 2023 distilled from DWPose-L a",
   "subClassOf": [
     {

@@ -430,7 +430,7 @@ public:: true
       "vc:label": "Machine Learning"
     }
   ],
-  "vc:sourceDomain": "industrial-ai",
+  "vc:sourceDomain": "artificial-intelligence",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

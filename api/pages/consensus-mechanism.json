@@ -20,10 +20,6 @@
       "label": "Distributed Algorithm"
     },
     {
-      "id": "urn:visionflow:owl:class:byzantine-fault-tolerance",
-      "label": "Byzantine Fault Tolerance"
-    },
-    {
       "id": "urn:visionflow:owl:class:state-machine-replication",
       "label": "State Machine Replication"
     }

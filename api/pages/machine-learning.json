@@ -6,12 +6,7 @@
   "classIri": "urn:visionflow:owl:class:machine-learning",
   "domain": "artificial-intelligence",
   "definition": "",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:learning-algorithm",
-      "label": "Learning Algorithm"
-    }
-  ],
+  "subClassOf": [],
   "qualityScore": 0.5,
   "authorityScore": 0.0,
   "maturity": "draft",

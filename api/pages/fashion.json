@@ -4,7 +4,7 @@
   "slug": "fashion",
   "public": true,
   "classIri": "urn:visionflow:owl:class:fashion",
-  "domain": "application",
+  "domain": "infrastructure",
   "definition": "Fashion, as an AI-application domain, encompasses the convergence of machine learning, computer vision, generative models, and blockchain supply-chain infrastructure with the global apparel, luxury, and textile industries, valued at approximately USD 1.7 trillion in 2024 and forecast to reach USD 2.1 trillion by 2030 (Euromonitor International). The domain transforms every phase of the fashion value chain \u2014 from creative conception through digital prototyping, production scheduling, personalised retail, virtual try-on, post-sale authentication, and end-of-life sustainability accounting \u2014 into a data-driven, AI-augmented operation. Generative AI systems, principally diffusion models including Stable Diffusion XL (SDXL 1.0, Stability AI 2023), Midjourney v6, and Adobe Firefly (Firefly Image 3, May 2024), enable designers to produce photorealistic moodboards, textile pattern variants, and entire lookbook spreads in hours rather than weeks; research by McKinsey and Company (State of Fashion 2025) estimates AI-assisted design tooling compresses the concept-to-sample cycle by 40\u201360%, with LVMH reporting internally that its AI design assistant reduced first-sample iteration time from four",
   "subClassOf": [
     {

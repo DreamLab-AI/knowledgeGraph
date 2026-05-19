@@ -4,7 +4,7 @@
   "slug": "regulatory-reporting",
   "public": true,
   "classIri": "urn:visionflow:owl:class:regulatory-reporting",
-  "domain": "regulation",
+  "domain": "infrastructure",
   "definition": "**Regulatory Reporting** is the structured, machine-readable submission of financial transaction data, prudential metrics, operational incidents, and suspicious-activity indicators to supervisory authorities under legally mandated frameworks, spanning the full spectrum from trade-level derivatives reporting under **EMIR Refit 2024** (Commission Delegated Regulation (EU) 2022/1855, effective 29 April 2024, redesigning 203 reportable fields, introducing the ISO 20022 XML message standard for collateral and margin data, mandating LEI-based UTI (Unique Trade Identifier) generation at trade level and mandating reconciliation logic through DTCC Derivatives Repository, REGIS-TR, and Bloomberg Trade Repository), to market-abuse-targeted **MiFID II RTS 22 transaction reporting** (Commission Delegated Regulation (EU) 2017/590, amended by ESMA MiFIR Review proposals CP 2023, requiring T+1 submission of 65 data fields including ISINs, trading-venue MIC codes, counterparty LEIs, execution timestamps to millisecond precision, quantity, price, and decision-maker reference data to ARM/APAs via FIX 5.0/FIXML, XML Schema or CSV protocols), to prudential capital adequacy submissions under **CRR III C",
   "subClassOf": [
     {

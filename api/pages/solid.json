@@ -4,7 +4,7 @@
   "slug": "solid",
   "public": true,
   "classIri": "urn:visionflow:owl:class:solid",
-  "domain": "protocol",
+  "domain": "infrastructure",
   "definition": "Solid (Social Linked Data) is an open-source, W3C-specification-grounded decentralised web architecture conceived by Sir Tim Berners-Lee at MIT CSAIL (Massachusetts Institute of Technology Computer Science and Artificial Intelligence Laboratory) in 2015, commercialised through the startup Inrupt (co-founded 2018 by Berners-Lee and John Bruce), and steered from October 2024 by the Open Data Institute (ODI) as an open-standard ecosystem initiative. The protocol inverts the dominant application-centric model of the web\u2014in which user data is captured and silo'd within application provider databases (Meta, Google, Amazon, healthcare records systems)\u2014by mandating that data sovereignty resides with the user. Each person, organisation, or automated agent is assigned one or more **Pods** (Personal Online Data Stores): tamper-evident, standards-compliant storage vaults that can be hosted anywhere on the web (self-hosted, third-party provider, enterprise deployment) while remaining interoperable with any Solid-compliant application. Applications access Pod data through fine-grained, consent-driven permissions rather than owning data outright, enabling a person to simultaneously share health r",
   "subClassOf": [
     {

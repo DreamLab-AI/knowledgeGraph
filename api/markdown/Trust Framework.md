@@ -414,7 +414,7 @@ public:: true
       "vc:label": "Governance Framework"
     }
   ],
-  "vc:sourceDomain": "identity-governance",
+  "vc:sourceDomain": "blockchain",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

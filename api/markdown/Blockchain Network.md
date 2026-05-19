@@ -692,10 +692,6 @@ public:: true
       "vc:label": "Byzantine Fault Tolerance"
     },
     {
-      "@id": "urn:visionflow:owl:class:consensus-mechanism",
-      "vc:label": "Consensus Mechanism"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-signature",
       "vc:label": "Digital Signature"
     },

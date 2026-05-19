@@ -326,7 +326,7 @@ public:: true
       "vc:label": "Cloud Computing"
     }
   ],
-  "vc:sourceDomain": "organisation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

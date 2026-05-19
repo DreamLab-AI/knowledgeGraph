@@ -370,7 +370,7 @@ public:: true
       "vc:label": "AI Companies"
     }
   ],
-  "vc:sourceDomain": "organisation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

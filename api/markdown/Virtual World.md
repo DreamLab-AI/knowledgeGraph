@@ -236,12 +236,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:virtual-world",
   "@type": "OntologyClass",
   "label": "Virtual World",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:metaverse-platform",
-      "vc:label": "Metaverse Platform"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "spatial-computing",
   "vc:status": "draft",
   "vc:maturity": "mature",

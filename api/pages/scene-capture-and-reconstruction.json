@@ -4,7 +4,7 @@
   "slug": "scene-capture-and-reconstruction",
   "public": true,
   "classIri": "urn:visionflow:owl:class:scene-capture-and-reconstruction",
-  "domain": "computer-vision",
+  "domain": "artificial-intelligence",
   "definition": "Scene Capture and Reconstruction is a fundamental computer-vision and spatial-computing discipline concerned with recovering complete geometric, radiometric, and semantic representations of physical environments from sensor observations \u2014 primarily calibrated multi-view photographs, RGB-D frames, LiDAR point clouds, or combinations thereof \u2014 spanning a spectrum of algorithmic families: classical photogrammetric Structure-from-Motion (SfM) pipelines (COLMAP Sch\u00f6nberger & Frahm 2016 applying exhaustive SIFT feature matching, incremental bundle adjustment, and dense Multi-View Stereo to produce textured mesh models deployed at survey, archaeological, and forensic scale); commercial photogrammetry platforms (RealityCapture \u2014 acquired by Epic Games in 2023 \u2014 achieving photorealistic mesh-and-texture output from thousands of images in under an hour on consumer GPU hardware with LiDAR fusion capability; Agisoft Metashape used across 15,000+ surveying, cultural-heritage, and AEC installations globally; Polycam iPhone/iPad LiDAR app with 5M+ downloads offering one-tap NeRF and Gaussian Splat export; Luma AI Genie offering browser-based NeRF capture and the world's first commercially availab",
   "subClassOf": [
     {

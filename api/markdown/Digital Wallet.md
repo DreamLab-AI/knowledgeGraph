@@ -140,12 +140,7 @@ public:: true
   "@id": "urn:visionflow:owl:class:digital-wallet",
   "@type": "OntologyClass",
   "label": "Digital Wallet",
-  "subClassOf": [
-    {
-      "@id": "urn:visionflow:owl:class:cryptocurrency-storage",
-      "vc:label": "Cryptocurrency Storage"
-    }
-  ],
+  "subClassOf": [],
   "vc:sourceDomain": "blockchain",
   "vc:status": "active",
   "vc:maturity": "draft",

@@ -4,7 +4,7 @@
   "slug": "death-of-the-internet",
   "public": true,
   "classIri": "urn:visionflow:owl:class:death-of-the-internet",
-  "domain": "ethics-society",
+  "domain": "artificial-intelligence",
   "definition": "**Death of the Internet** is a concept cluster in the ethics-society and [[Media Theory]] domains capturing the convergent degradation of the public World Wide Web as a space for authentic human knowledge-exchange, discovery, and democratic discourse. The cluster synthesises four interlocking phenomena operating on different timescales and through different causal mechanisms, yet mutually reinforcing in their combined effect on [[Information Integrity]] and [[Digital Society Surveillance]]: **(1) The Dead Internet Theory** \u2014 originally a 2021 fringe hypothesis posted anonymously on Agora Road forum, now substantially corroborated empirically, proposing that the majority of online activity is driven by bots, automated content systems, algorithmic feeds, and state and corporate manipulation rather than genuine human-to-human interaction. The theory predicts that organic, serendipitous human discourse has been displaced by choreographed, commercially or politically motivated automated activity that mimics the appearance of human engagement whilst serving radically different incentive structures. By 2024, empirical measurement had validated the core claim: Imperva's Bad Bot Report 2024",
   "subClassOf": [
     {

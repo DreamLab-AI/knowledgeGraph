@@ -6,12 +6,7 @@
   "classIri": "urn:visionflow:owl:class:ai-safety",
   "domain": "artificial-intelligence",
   "definition": "AI Safety is the field of research and practice focused on ensuring that artificial intelligence systems operate safely, reliably, and in alignment with human values and intentions. It encompasses techniques for preventing unintended harm, maintaining robust behaviour under uncertainty, and ensuring systems remain controllable and predictable throughout their operational lifecycle.",
-  "subClassOf": [
-    {
-      "id": "urn:visionflow:owl:class:ai-alignment",
-      "label": "AI Alignment"
-    }
-  ],
+  "subClassOf": [],
   "qualityScore": 0.35,
   "authorityScore": 0.0,
   "maturity": "draft",

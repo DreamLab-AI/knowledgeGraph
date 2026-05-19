@@ -566,10 +566,6 @@ public:: true
       "vc:label": "Soulbound Token"
     },
     {
-      "@id": "urn:visionflow:owl:class:creator-economy",
-      "vc:label": "Creator Economy"
-    },
-    {
       "@id": "urn:visionflow:owl:class:digital-ownership",
       "vc:label": "Digital Ownership"
     },

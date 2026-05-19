@@ -232,10 +232,6 @@ public:: true
     {
       "@id": "urn:visionflow:owl:class:digital-signature",
       "vc:label": "Digital-Signature"
-    },
-    {
-      "@id": "urn:visionflow:owl:class:hash-function",
-      "vc:label": "Hash-Function"
     }
   ],
   "vc:enables": [

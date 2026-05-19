@@ -458,7 +458,7 @@ public:: true
       "vc:label": "Visual Effects"
     }
   ],
-  "vc:sourceDomain": "graphics-creative-tools",
+  "vc:sourceDomain": "spatial-computing",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

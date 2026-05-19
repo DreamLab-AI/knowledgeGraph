@@ -426,7 +426,7 @@ public:: true
       "vc:label": "Regulatory Technology"
     }
   ],
-  "vc:sourceDomain": "regulation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

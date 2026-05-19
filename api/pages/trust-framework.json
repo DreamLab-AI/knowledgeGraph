@@ -4,7 +4,7 @@
   "slug": "trust-framework",
   "public": true,
   "classIri": "urn:visionflow:owl:class:trust-framework",
-  "domain": "identity-governance",
+  "domain": "blockchain",
   "definition": "Structured normative architecture that defines the policies, technical standards, legal rules, certification requirements, and governance mechanisms enabling organisations and individuals to establish, assert, verify, and maintain digital trust relationships across participating entities in an ecosystem. A trust framework specifies what constitutes acceptable identity evidence, which credential types are recognised, which assurance levels are required for given transaction risk profiles, how accreditation of service providers is achieved, and which revocation and audit obligations apply. Trust frameworks operate simultaneously as governance instruments (defining legal and contractual obligations), technical specifications (defining interoperable protocols and data formats), and certification schemes (mandating conformity assessment by accredited bodies). Modern trust frameworks address identity assurance across the full digital identity lifecycle \u2014 identity proofing (binding a claimed identity to a real-world person or entity), authenticator management (controlling the authentication mechanisms used subsequently), and federation (communicating verified identity assertions across or",
   "subClassOf": [
     {

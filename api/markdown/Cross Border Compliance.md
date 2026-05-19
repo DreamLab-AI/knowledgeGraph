@@ -590,7 +590,7 @@ public:: true
       "vc:label": "Regulatory Governance"
     }
   ],
-  "vc:sourceDomain": "regulation",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

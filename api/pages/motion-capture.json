@@ -4,7 +4,7 @@
   "slug": "motion-capture",
   "public": true,
   "classIri": "urn:visionflow:owl:class:motion-capture",
-  "domain": "creative-tools",
+  "domain": "spatial-computing",
   "definition": "Motion Capture (mocap) is a technology domain and production pipeline discipline encompassing hardware, software, and algorithmic systems that record the position, orientation, and movement of bodies, objects, or faces in three-dimensional space over time \u2014 translating real-world kinematic data into digital skeletal or surface representations that animate characters, avatars, [[Digital Human]] entities, and objects in film, television, [[Games]], virtual reality, biomechanical research, sports science, and robotics. The field spans four primary capture modalities: optical marker-based systems ([[OptiTrack]], [[Vicon]], [[Qualisys]]) deploying retroreflective markers tracked by infrared camera arrays at 100\u20132,000 frames per second achieving sub-millimetre positional accuracy; markerless video-based systems ([[DeepLabCut]], [[MediaPipe]], Move.ai, Plask) applying deep convolutional neural networks and multi-view geometry to extract pose estimates from ordinary RGB footage without physical markers; inertial measurement unit (IMU) suits ([[Xsens]] MVN Animate, [[Rokoko]] Smartsuit Pro II, Movella) embedding accelerometers, gyroscopes, and magnetometers directly on the performer's body ",
   "subClassOf": [
     {

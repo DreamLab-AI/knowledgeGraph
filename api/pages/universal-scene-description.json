@@ -4,7 +4,7 @@
   "slug": "universal-scene-description",
   "public": true,
   "classIri": "urn:visionflow:owl:class:universal-scene-description",
-  "domain": "creative-tools",
+  "domain": "spatial-computing",
   "definition": "Universal Scene Description (USD / OpenUSD) is an open-source, extensible framework originally developed by Pixar Animation Studios and released as open source in 2016 under the Modified Apache 2.0 licence, providing a unified file format family and programmatic scene-graph API for describing, composing, simulating, and collaborating on three-dimensional scenes at production scale. The system expresses rich hierarchical scene data\u2014geometry, materials, lighting, cameras, skeletal animation, physics, and custom domain schemas\u2014through a unified data model in which every authored value is an \"opinion\" that participates in a deterministic composition algorithm called the LIVRPS strength-ordering stack (Local overrides, Inherits, Variants, References, Payloads, Specializes). Composition arcs\u2014sublayers, references, payloads, variants, inherits, and specializes\u2014let pipelines decompose complex productions into thousands of independently maintained asset files that are composited non-destructively at resolve time without modifying source data. The layering architecture underpins an entire industrial workflow paradigm: a model department authors base geometry layers; rigging, shading, lightin",
   "subClassOf": [
     {

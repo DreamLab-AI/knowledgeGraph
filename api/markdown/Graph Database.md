@@ -674,7 +674,7 @@ public:: true
       "vc:label": "Persistent Data Store"
     }
   ],
-  "vc:sourceDomain": "data",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {

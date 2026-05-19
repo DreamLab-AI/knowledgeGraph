@@ -93,10 +93,6 @@
         "label": "Byzantine Fault Tolerance"
       },
       {
-        "id": "urn:visionflow:owl:class:consensus-mechanism",
-        "label": "Consensus Mechanism"
-      },
-      {
         "id": "urn:visionflow:owl:class:digital-signature",
         "label": "Digital Signature"
       },

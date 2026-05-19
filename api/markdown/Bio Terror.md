@@ -538,7 +538,7 @@ public:: true
       "vc:label": "AI Risks"
     }
   ],
-  "vc:sourceDomain": "risk",
+  "vc:sourceDomain": "infrastructure",
   "vc:status": "production-ready",
   "vc:maturity": "production-ready",
   "vc:definedIn": {
