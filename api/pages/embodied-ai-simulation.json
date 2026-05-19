@@ -1,0 +1,61 @@
+{
+  "id": "urn:visionflow:page:2393d60158f0b0924db7a2dd3a21817f0a38b0794781a65d1753e63805f74b6b",
+  "title": "embodied ai simulation",
+  "slug": "embodied-ai-simulation",
+  "public": true,
+  "classIri": "urn:ngm:class:embodied-ai-simulation",
+  "domain": "spatial-computing",
+  "definition": "Use of physically accurate virtual environments as training grounds for embodied AI agents and robotic systems. Sim-to-real transfer leverages spatial computing platforms (NVIDIA Omniverse, Isaac Gym, Habitat) to generate synthetic training data, test robot behaviours, and validate control policies before physical deployment.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-platform-and-environment",
+      "label": "Platform and Environment"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:robo-actuation-and-control",
+        "label": "Actuation and Control"
+      }
+    ],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:robot-learning",
+        "label": "Robot Learning"
+      },
+      {
+        "id": "urn:ngm:class:robo-navigation-and-planning",
+        "label": "Navigation and Planning"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:nvidia-omniverse",
+        "label": "NVIDIA Omniverse"
+      },
+      {
+        "id": "urn:ngm:class:virtual-environment",
+        "label": "Virtual Environment"
+      },
+      {
+        "id": "urn:ngm:class:synthetic-data",
+        "label": "Synthetic Data"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

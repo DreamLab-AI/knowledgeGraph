@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:9d22faec8213815706b56aec4aa27e25736dc1eaa81b9911dfdec6188a04f6cb",
+  "title": "quantum threat to cryptography",
+  "slug": "quantum-threat-to-cryptography",
+  "public": true,
+  "classIri": "urn:ngm:class:quantum-threat-to-cryptography",
+  "domain": "blockchain",
+  "definition": "Existential risk to public-key cryptographic systems (ECDSA, RSA) from sufficiently powerful quantum computers capable of running Shor's algorithm. Q-Day\u2014the point at which quantum advantage breaks deployed cryptography\u2014threatens the security foundations of blockchain networks, TLS, and digital identity systems.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:post-quantum-cryptography",
+        "label": "Post-Quantum Cryptography"
+      },
+      {
+        "id": "urn:ngm:class:quantum-computing",
+        "label": "Quantum Computing"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

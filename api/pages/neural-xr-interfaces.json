@@ -1,0 +1,48 @@
+{
+  "id": "urn:visionflow:page:33d9029ae992dc6df65c0197e5ced0413693c274745017abd05441ce80a48ec9",
+  "title": "neural xr interfaces",
+  "slug": "neural-xr-interfaces",
+  "public": true,
+  "classIri": "urn:ngm:class:neural-xr-interfaces",
+  "domain": "spatial-computing",
+  "definition": "Direct neural input modalities for spatial computing systems, ranging from non-invasive EMG wristbands and EEG headsets to invasive brain-computer interfaces. Bridges neurotechnology with XR interaction paradigms, enabling thought-driven navigation, selection, and manipulation in virtual and augmented environments.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:sc-interaction",
+      "label": "Interaction"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:brain-computer-interfaces",
+        "label": "Brain-Computer Interfaces"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:eye-tracking",
+        "label": "Eye Tracking"
+      },
+      {
+        "id": "urn:ngm:class:hand-tracking",
+        "label": "Hand Tracking"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

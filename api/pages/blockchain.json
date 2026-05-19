@@ -1144,10 +1144,6 @@
       "label": "Domain"
     },
     {
-      "slug": "dr-john-o-hare",
-      "label": "Dr John O'Hare"
-    },
-    {
       "slug": "dynamic-scalable-bft",
       "label": "Dynamic Scalable BFT"
     },
@@ -1394,10 +1390,6 @@
     {
       "slug": "interface",
       "label": "Interface"
-    },
-    {
-      "slug": "introduction-to-me",
-      "label": "introduction-to-me"
     },
     {
       "slug": "key-derivation-function",

@@ -1,0 +1,53 @@
+{
+  "id": "urn:visionflow:page:3f2b6eed48512f6bc95f127a76736ffbf828d5d295fd16588528cb5904ba49d0",
+  "title": "zero-knowledge machine learning",
+  "slug": "zero-knowledge-machine-learning",
+  "public": true,
+  "classIri": "urn:ngm:class:zero-knowledge-machine-learning",
+  "domain": "blockchain",
+  "definition": "Cryptographic techniques enabling verification that a machine learning model executed correctly on specific inputs without revealing model weights, training data, or private inputs. ZKML bridges zero-knowledge proofs and machine learning, allowing on-chain verification of off-chain AI inference with privacy guarantees.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-cryptographic-primitive",
+      "label": "Cryptographic Primitive"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      }
+    ],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:zero-knowledge-proof",
+        "label": "Zero-Knowledge Proof"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:machine-learning",
+        "label": "Machine Learning"
+      },
+      {
+        "id": "urn:ngm:class:ai-technique",
+        "label": "AI Technique"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": []
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

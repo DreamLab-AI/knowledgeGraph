@@ -1,0 +1,52 @@
+{
+  "id": "urn:visionflow:page:3ddfbfdff970a949f61a9d58e2f217238ce5ae4286d9993d9e1d6862fd86930f",
+  "title": "ai energy scarcity",
+  "slug": "ai-energy-scarcity",
+  "public": true,
+  "classIri": "urn:ngm:class:ai-energy-scarcity",
+  "domain": "infrastructure",
+  "definition": "Systemic infrastructure bottleneck where exponential growth in AI training and inference compute demand outstrips available energy supply and grid capacity. Drives hyperscaler investment in dedicated power generation including small modular reactors (SMRs) and nuclear recommissioning, while creating geopolitical competition for compute sovereignty.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:infra-computing-and-cloud",
+      "label": "Computing and Cloud"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:bitcoin-mining",
+        "label": "Bitcoin Mining"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:energy-and-power",
+        "label": "Energy and Power"
+      },
+      {
+        "id": "urn:ngm:class:large-language-models",
+        "label": "Large Language Models"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

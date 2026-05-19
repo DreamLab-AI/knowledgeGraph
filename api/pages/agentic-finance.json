@@ -1,0 +1,57 @@
+{
+  "id": "urn:visionflow:page:1d9df013fec80ec39316f4425ad7c82a9f090cac0a833519dfd4ab7f7c6daee3",
+  "title": "agentic finance",
+  "slug": "agentic-finance",
+  "public": true,
+  "classIri": "urn:ngm:class:agentic-finance",
+  "domain": "blockchain",
+  "definition": "Infrastructure enabling autonomous AI agents to hold cryptographic wallets, provision compute resources, negotiate contracts, and transact with other agents or humans without intermediaries. AgentFi bridges decentralised finance protocols with agentic AI systems, creating machine-to-machine economic coordination layers.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:bc-defi-and-economics",
+      "label": "DeFi and Economics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [
+      {
+        "id": "urn:ngm:class:decentralized-finance-de-fi",
+        "label": "Decentralized Finance (DeFi)"
+      },
+      {
+        "id": "urn:ngm:class:micropayments",
+        "label": "Micropayments"
+      }
+    ],
+    "implements": [],
+    "contrastsWith": [],
+    "bridgesTo": [
+      {
+        "id": "urn:ngm:class:agentic-internet",
+        "label": "Agentic Internet"
+      },
+      {
+        "id": "urn:ngm:class:ai-application",
+        "label": "AI Application"
+      }
+    ],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:smart-contract",
+        "label": "Smart Contract"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": []
+}

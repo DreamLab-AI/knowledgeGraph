@@ -324,6 +324,20 @@ ngm:agentic-alliance a owl:Class ;
     vc:slug "agentic-alliance" ;
     vc:sourceDomain "artificial-intelligence" .
 
+ngm:agentic-finance a owl:Class ;
+    rdfs:label "Agentic Finance"@en ;
+    rdfs:comment "Infrastructure enabling autonomous AI agents to hold cryptographic wallets, provision compute resources, negotiate contracts, and transact with other agents or humans without intermediaries. AgentFi bridges decentralised finance protocols with agentic AI systems, creating machine-to-machine economic coordination layers."@en ;
+    skos:broader ngm:bc-defi-and-economics ;
+    vc:bridgesTo ngm:agentic-internet,
+        ngm:ai-application ;
+    vc:dependsOn ngm:decentralized-finance-de-fi,
+        ngm:micropayments ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:smart-contract ;
+    vc:slug "agentic-finance" ;
+    vc:sourceDomain "blockchain" .
+
 ngm:agentic-mycelia a owl:Class ;
     rdfs:label "Agentic Mycelia"@en ;
     rdfs:comment "Agentic Mycelia is a artificial intelligence concept and a type of Agent Frameworks."@en ;
@@ -438,6 +452,19 @@ ngm:ai-documentation-standards a owl:Class ;
     vc:qualityScore "0.35"^^xsd:float ;
     vc:slug "ai-documentation-standards" ;
     vc:sourceDomain "artificial-intelligence" .
+
+ngm:ai-energy-scarcity a owl:Class ;
+    rdfs:label "AI Energy Scarcity"@en ;
+    rdfs:comment "Systemic infrastructure bottleneck where exponential growth in AI training and inference compute demand outstrips available energy supply and grid capacity. Drives hyperscaler investment in dedicated power generation including small modular reactors (SMRs) and nuclear recommissioning, while creating geopolitical competition for compute sovereignty."@en ;
+    skos:broader ngm:infra-computing-and-cloud ;
+    vc:contrastsWith ngm:bitcoin-mining ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:competition-in-ai,
+        ngm:energy-and-power,
+        ngm:large-language-models ;
+    vc:slug "ai-energy-scarcity" ;
+    vc:sourceDomain "infrastructure" .
 
 ngm:ai-ethics-board a owl:Class ;
     rdfs:label "AI Ethics Board"@en ;
@@ -3816,15 +3843,6 @@ ngm:double-spending a owl:Class ;
     vc:slug "double-spending" ;
     vc:sourceDomain "blockchain" .
 
-ngm:dr-john-o-hare a owl:Class ;
-    rdfs:label "Dr John O'Hare"@en ;
-    rdfs:comment "Dr John O'Hare is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:slug "dr-john-o-hare" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:dr-o-hare-writing-for-log-seq a owl:Class ;
     rdfs:label "Dr O'Hare Writing for LogSeq"@en ;
     rdfs:comment "Dr O'Hare Writing for LogSeq is a technology infrastructure concept and a type of infrastructure."@en ;
@@ -4028,6 +4046,21 @@ ngm:email-search a owl:Class ;
     vc:slug "email-search" ;
     vc:sourceDomain "infrastructure" .
 
+ngm:embodied-ai-simulation a owl:Class ;
+    rdfs:label "Embodied AI Simulation"@en ;
+    rdfs:comment "Use of physically accurate virtual environments as training grounds for embodied AI agents and robotic systems. Sim-to-real transfer leverages spatial computing platforms (NVIDIA Omniverse, Isaac Gym, Habitat) to generate synthetic training data, test robot behaviours, and validate control policies before physical deployment."@en ;
+    skos:broader ngm:sc-platform-and-environment ;
+    vc:bridgesTo ngm:robo-navigation-and-planning,
+        ngm:robot-learning ;
+    vc:enables ngm:robo-actuation-and-control ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:nvidia-omniverse,
+        ngm:synthetic-data,
+        ngm:virtual-environment ;
+    vc:slug "embodied-ai-simulation" ;
+    vc:sourceDomain "spatial-computing" .
+
 ngm:emc-standard a owl:Class ;
     rdfs:label "EMC Standard"@en ;
     rdfs:comment "EMC standard ensures robots neither emit electromagnetic interference that disrupts other equipment nor experience susceptibility to external electromagnetic noise that degrades performance."@en ;
@@ -4148,81 +4181,6 @@ ngm:empathetic-ai a owl:Class ;
         ngm:multimodal-fusion,
         ngm:sentiment-lexicons,
         ngm:transformer-architecture .
-
-ngm:energy-and-power a owl:Class ;
-    rdfs:label "Energy and Power"@en ;
-    rdfs:comment "Energy and Power, within the Infrastructure domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to AI Data Centres, Bitcoin Mining operations, and the bro..."@en ;
-    rdfs:subClassOf ngm:critical-infrastructure,
-        ngm:grid-infrastructure ;
-    skos:broader ngm:infra-computing-and-cloud ;
-    vc:enables ngm:ai-adoption,
-        ngm:ai-data-centres,
-        ngm:bitcoin-mining,
-        ngm:competition-in-ai,
-        ngm:digital-economy,
-        ngm:electrification,
-        ngm:hyperscaler-operations,
-        ngm:net-zero-targets ;
-    vc:hasPart ngm:battery-storage,
-        ngm:bitcoin-mining,
-        ngm:carbon-intensity,
-        ngm:data-centre,
-        ngm:demand-response,
-        ngm:grid-connection,
-        ngm:nuclear-energy,
-        ngm:power-purchase-agreement,
-        ngm:renewable-energy,
-        ngm:smart-grid,
-        ngm:transmission-network,
-        ngm:water-cooling ;
-    vc:implements ngm:behind-the-meter-generation,
-        ngm:capacity-markets,
-        ngm:carbon-offsetting,
-        ngm:demand-response,
-        ngm:power-purchase-agreements,
-        ngm:renewable-energy-certificates,
-        ngm:small-modular-reactors ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:ai-adoption,
-        ngm:bitcoin-mining,
-        ngm:blockchain-network,
-        ngm:brain-computer-interfaces,
-        ngm:carbon-credit-tracking,
-        ngm:cloud-computing,
-        ngm:cognitive-ai,
-        ngm:competition-in-ai,
-        ngm:data-centre ;
-    vc:requires ngm:balancing-services,
-        ngm:capacity-market,
-        ngm:demand-forecasting,
-        ngm:generation-capacity,
-        ngm:grid-connection-queue,
-        ngm:grid-infrastructure,
-        ngm:transmission-network ;
-    vc:slug "energy-and-power" ;
-    vc:sourceDomain "infrastructure" ;
-    vc:standardizedBy ngm:epri-standards,
-        ngm:ferc-regulations,
-        ngm:iea-electricity-reports,
-        ngm:ieee-power-standards,
-        ngm:national-grid-eso,
-        ngm:ofgem,
-        ngm:sbti-net-zero-standard ;
-    vc:supports ngm:agent-frameworks,
-        ngm:agentic-internet,
-        ngm:anthropic-claude,
-        ngm:artificial-intelligence,
-        ngm:bitcoin-technical-overview,
-        ngm:blockchain-network,
-        ngm:chat-gpt ;
-    vc:uses ngm:battery-energy-storage,
-        ngm:green-hydrogen,
-        ngm:nuclear-energy,
-        ngm:offshore-wind,
-        ngm:pumped-hydro-storage,
-        ngm:small-modular-reactors,
-        ngm:solar-pv .
 
 ngm:enterprise-blockchain-architecture a owl:Class ;
     rdfs:label "Enterprise Blockchain Architecture"@en ;
@@ -5469,15 +5427,6 @@ ngm:generative-ai-engineering a owl:Class ;
     vc:slug "generative-ai-engineering" ;
     vc:sourceDomain "artificial-intelligence" .
 
-ngm:geopolitical-hot-takes a owl:Class ;
-    rdfs:label "Geopolitical hot takes"@en ;
-    rdfs:comment "Geopolitical hot takes is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-legal-and-regulatory ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:slug "geopolitical-hot-takes" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:git-hub-actions a owl:Class ;
     rdfs:label "Git Hub Actions"@en ;
     rdfs:comment "Git Hub Actions is a technology infrastructure concept and a type of infrastructure."@en ;
@@ -6469,15 +6418,6 @@ ngm:jing a owl:Class ;
     vc:slug "jing" ;
     vc:sourceDomain "infrastructure" .
 
-ngm:josh-carp-notion a owl:Class ;
-    rdfs:label "Josh Carp Notion"@en ;
-    rdfs:comment "Josh Carp Notion is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:slug "josh-carp-notion" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:jupyter-like-behaviour-within-a-page a owl:Class ;
     rdfs:label "Jupyter like behaviour within a page"@en ;
     rdfs:comment "Jupyter like behaviour within a page is a technology infrastructure concept and a type of infrastructure."@en ;
@@ -6664,15 +6604,6 @@ ngm:layoff-tracker-and-threatened-roles a owl:Class ;
     vc:maturity "draft" ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "layoff-tracker-and-threatened-roles" ;
-    vc:sourceDomain "infrastructure" .
-
-ngm:lead-poisoning-hypothesis a owl:Class ;
-    rdfs:label "Lead Poisoning Hypothesis"@en ;
-    rdfs:comment "Lead Poisoning Hypothesis is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:slug "lead-poisoning-hypothesis" ;
     vc:sourceDomain "infrastructure" .
 
 ngm:lead-screw-actuator a owl:Class ;
@@ -7942,6 +7873,18 @@ ngm:neural-networking a owl:Class ;
     vc:qualityScore "0.35"^^xsd:float ;
     vc:slug "neural-networking" ;
     vc:sourceDomain "artificial-intelligence" .
+
+ngm:neural-xr-interfaces a owl:Class ;
+    rdfs:label "Neural XR Interfaces"@en ;
+    rdfs:comment "Direct neural input modalities for spatial computing systems, ranging from non-invasive EMG wristbands and EEG headsets to invasive brain-computer interfaces. Bridges neurotechnology with XR interaction paradigms, enabling thought-driven navigation, selection, and manipulation in virtual and augmented environments."@en ;
+    skos:broader ngm:sc-interaction ;
+    vc:bridgesTo ngm:brain-computer-interfaces ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:eye-tracking,
+        ngm:hand-tracking ;
+    vc:slug "neural-xr-interfaces" ;
+    vc:sourceDomain "spatial-computing" .
 
 ngm:neuromorphic-chip a owl:Class ;
     rdfs:label "Neuromorphic Chip"@en ;
@@ -9900,6 +9843,18 @@ ngm:quantum-network-node a owl:Class ;
         ngm:vibration-isolation ;
     vc:slug "quantum-network-node" ;
     vc:sourceDomain "spatial-computing" .
+
+ngm:quantum-threat-to-cryptography a owl:Class ;
+    rdfs:label "Quantum Threat to Cryptography"@en ;
+    rdfs:comment "Existential risk to public-key cryptographic systems (ECDSA, RSA) from sufficiently powerful quantum computers capable of running Shor's algorithm. Q-Day—the point at which quantum advantage breaks deployed cryptography—threatens the security foundations of blockchain networks, TLS, and digital identity systems."@en ;
+    skos:broader ngm:bc-cryptographic-primitive ;
+    vc:contrastsWith ngm:post-quantum-cryptography ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:post-quantum-cryptography,
+        ngm:quantum-computing ;
+    vc:slug "quantum-threat-to-cryptography" ;
+    vc:sourceDomain "blockchain" .
 
 ngm:quaternion-math a owl:Class ;
     rdfs:label "Quaternion Math"@en ;
@@ -12012,15 +11967,6 @@ ngm:sink-mechanism a owl:Class ;
     vc:slug "sink-mechanism" ;
     vc:sourceDomain "blockchain" .
 
-ngm:sleep a owl:Class ;
-    rdfs:label "sleep"@en ;
-    rdfs:comment "sleep is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:slug "sleep" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:smart-contract-coordination a owl:Class ;
     rdfs:label "Smart Contract Coordination"@en ;
     rdfs:comment "\"The use of blockchain smart contracts—self-executing programs stored on distributed ledgers—to automate coordination, task allocation, payment distribution, and milestone verification in distributed teams, enabling trustless collaboration through cryptographically enforced agreements that execut..."@en ;
@@ -12662,15 +12608,6 @@ ngm:taxonomic-framework a owl:Class ;
     vc:qualityScore "0.35"^^xsd:float ;
     vc:slug "taxonomic-framework" ;
     vc:sourceDomain "robotics" .
-
-ngm:taylor-swift-is-venice a owl:Class ;
-    rdfs:label "Taylor Swift is Venice"@en ;
-    rdfs:comment "Taylor Swift is Venice is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:slug "taylor-swift-is-venice" ;
-    vc:sourceDomain "infrastructure" .
 
 ngm:tc-0002-collaborative-document-editing a owl:Class ;
     rdfs:label "tc 0002 collaborative document editing"@en ;
@@ -13753,15 +13690,6 @@ ngm:verification-report a owl:Class ;
     vc:slug "verification-report" ;
     vc:sourceDomain "spatial-computing" .
 
-ngm:vesuvian-scrolls a owl:Class ;
-    rdfs:label "Vesuvian Scrolls"@en ;
-    rdfs:comment "Vesuvian Scrolls is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-software-engineering ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:slug "vesuvian-scrolls" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:vibe-coding a owl:Class ;
     rdfs:label "Vibe Coding"@en ;
     rdfs:comment "Vibe Coding is a technology infrastructure concept and a type of Software Engineering."@en ;
@@ -14472,6 +14400,19 @@ ngm:zero-knowledge a owl:Class ;
     vc:qualityScore "0.4"^^xsd:float ;
     vc:slug "zero-knowledge" ;
     vc:sourceDomain "spatial-computing" .
+
+ngm:zero-knowledge-machine-learning a owl:Class ;
+    rdfs:label "Zero-Knowledge Machine Learning"@en ;
+    rdfs:comment "Cryptographic techniques enabling verification that a machine learning model executed correctly on specific inputs without revealing model weights, training data, or private inputs. ZKML bridges zero-knowledge proofs and machine learning, allowing on-chain verification of off-chain AI inference with privacy guarantees."@en ;
+    skos:broader ngm:bc-cryptographic-primitive ;
+    vc:bridgesTo ngm:ai-technique,
+        ngm:machine-learning ;
+    vc:dependsOn ngm:zero-knowledge-proof ;
+    vc:enables ngm:decentralized-finance-de-fi ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:slug "zero-knowledge-machine-learning" ;
+    vc:sourceDomain "blockchain" .
 
 ngm:zero-knowledge-proof-zkp a owl:Class ;
     rdfs:label "Zero-Knowledge Proof (ZKP)"@en ;
@@ -20798,6 +20739,81 @@ ngm:emotional-immersion a owl:Class ;
     vc:slug "emotional-immersion" ;
     vc:sourceDomain "spatial-computing" .
 
+ngm:energy-and-power a owl:Class ;
+    rdfs:label "Energy and Power"@en ;
+    rdfs:comment "Energy and Power, within the Infrastructure domain, denotes the integrated sociotechnical system governing the generation, transmission, distribution, storage, and consumption of electrical energy in contexts directly relevant to AI Data Centres, Bitcoin Mining operations, and the bro..."@en ;
+    rdfs:subClassOf ngm:critical-infrastructure,
+        ngm:grid-infrastructure ;
+    skos:broader ngm:infra-computing-and-cloud ;
+    vc:enables ngm:ai-adoption,
+        ngm:ai-data-centres,
+        ngm:bitcoin-mining,
+        ngm:competition-in-ai,
+        ngm:digital-economy,
+        ngm:electrification,
+        ngm:hyperscaler-operations,
+        ngm:net-zero-targets ;
+    vc:hasPart ngm:battery-storage,
+        ngm:bitcoin-mining,
+        ngm:carbon-intensity,
+        ngm:data-centre,
+        ngm:demand-response,
+        ngm:grid-connection,
+        ngm:nuclear-energy,
+        ngm:power-purchase-agreement,
+        ngm:renewable-energy,
+        ngm:smart-grid,
+        ngm:transmission-network,
+        ngm:water-cooling ;
+    vc:implements ngm:behind-the-meter-generation,
+        ngm:capacity-markets,
+        ngm:carbon-offsetting,
+        ngm:demand-response,
+        ngm:power-purchase-agreements,
+        ngm:renewable-energy-certificates,
+        ngm:small-modular-reactors ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:ai-adoption,
+        ngm:bitcoin-mining,
+        ngm:blockchain-network,
+        ngm:brain-computer-interfaces,
+        ngm:carbon-credit-tracking,
+        ngm:cloud-computing,
+        ngm:cognitive-ai,
+        ngm:competition-in-ai,
+        ngm:data-centre ;
+    vc:requires ngm:balancing-services,
+        ngm:capacity-market,
+        ngm:demand-forecasting,
+        ngm:generation-capacity,
+        ngm:grid-connection-queue,
+        ngm:grid-infrastructure,
+        ngm:transmission-network ;
+    vc:slug "energy-and-power" ;
+    vc:sourceDomain "infrastructure" ;
+    vc:standardizedBy ngm:epri-standards,
+        ngm:ferc-regulations,
+        ngm:iea-electricity-reports,
+        ngm:ieee-power-standards,
+        ngm:national-grid-eso,
+        ngm:ofgem,
+        ngm:sbti-net-zero-standard ;
+    vc:supports ngm:agent-frameworks,
+        ngm:agentic-internet,
+        ngm:anthropic-claude,
+        ngm:artificial-intelligence,
+        ngm:bitcoin-technical-overview,
+        ngm:blockchain-network,
+        ngm:chat-gpt ;
+    vc:uses ngm:battery-energy-storage,
+        ngm:green-hydrogen,
+        ngm:nuclear-energy,
+        ngm:offshore-wind,
+        ngm:pumped-hydro-storage,
+        ngm:small-modular-reactors,
+        ngm:solar-pv .
+
 ngm:enterprise-smart-contracts a owl:Class ;
     rdfs:label "Enterprise Smart Contracts"@en ;
     rdfs:comment "Enterprise smart contracts are self-executing code artefacts deployed on permissioned Distributed Ledger Technology platforms — Hyperledger Fabric chaincode (Go/Node.js/Java), R3 Corda CorDapps (Kotlin/JVM), Quorum Blockchain and Hyperledger Besu (EVM permissioned with Tessera..."@en ;
@@ -25140,27 +25156,6 @@ ngm:robot-actuator a owl:Class ;
     vc:slug "robot-actuator" ;
     vc:sourceDomain "robotics" ;
     vc:uses ngm:robotics .
-
-ngm:robot-learning a owl:Class ;
-    rdfs:label "Robot Learning"@en ;
-    rdfs:comment "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforceme..."@en ;
-    skos:broader ngm:robo-actuation-and-control ;
-    vc:enables ngm:adaptive-control,
-        ngm:autonomous-navigation,
-        ngm:manipulation,
-        ngm:skill-acquisition ;
-    vc:hasPart ngm:imitation-learning,
-        ngm:reinforcement-learning,
-        ngm:self-supervised-learning,
-        ngm:transfer-learning ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:requires ngm:compute-resources,
-        ngm:sensor-data,
-        ngm:simulation-environment,
-        ngm:training-data ;
-    vc:slug "robot-learning" ;
-    vc:sourceDomain "robotics" .
 
 ngm:robotic-telepresence a owl:Class ;
     rdfs:label "Robotic Telepresence"@en ;
@@ -31313,6 +31308,27 @@ ngm:robot-control a owl:Class ;
     vc:slug "robot-control" ;
     vc:sourceDomain "robotics" .
 
+ngm:robot-learning a owl:Class ;
+    rdfs:label "Robot Learning"@en ;
+    rdfs:comment "The application of machine learning algorithms and artificial intelligence techniques to enable robots to acquire new skills, adapt to changing environments, and improve performance through experience, encompassing supervised learning (imitation learning, learning from demonstration), reinforceme..."@en ;
+    skos:broader ngm:robo-actuation-and-control ;
+    vc:enables ngm:adaptive-control,
+        ngm:autonomous-navigation,
+        ngm:manipulation,
+        ngm:skill-acquisition ;
+    vc:hasPart ngm:imitation-learning,
+        ngm:reinforcement-learning,
+        ngm:self-supervised-learning,
+        ngm:transfer-learning ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.5"^^xsd:float ;
+    vc:requires ngm:compute-resources,
+        ngm:sensor-data,
+        ngm:simulation-environment,
+        ngm:training-data ;
+    vc:slug "robot-learning" ;
+    vc:sourceDomain "robotics" .
+
 ngm:royalty-distribution a owl:Class ;
     rdfs:label "Royalty Distribution"@en ;
     rdfs:comment "Automated royalty payments via smart contracts."@en ;
@@ -36609,29 +36625,6 @@ ngm:positional-encoding a owl:Class ;
     vc:slug "positional-encoding" ;
     vc:sourceDomain "spatial-computing" .
 
-ngm:post-quantum-cryptography a owl:Class ;
-    rdfs:label "Post-Quantum Cryptography"@en ;
-    rdfs:comment "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era."@en ;
-    skos:broader ngm:infra-security-and-identity ;
-    vc:enables ngm:digital-signatures,
-        ngm:long-term-data-protection,
-        ngm:quantum-resistant-encryption,
-        ngm:secure-key-exchange ;
-    vc:hasPart ngm:code-based-cryptography,
-        ngm:hash-based-signatures,
-        ngm:isogeny-based-cryptography,
-        ngm:lattice-based-cryptography,
-        ngm:multivariate-cryptography ;
-    vc:isPartOf ngm:cryptographic-infrastructure,
-        ngm:security-protocol ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:requires ngm:algorithm-implementation,
-        ngm:cryptographic-key-management,
-        ngm:random-number-generation ;
-    vc:slug "post-quantum-cryptography" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:practical-byzantine-fault-tolerance a owl:Class ;
     rdfs:label "Practical Byzantine Fault Tolerance"@en ;
     rdfs:comment "A consensus algorithm providing high-performance Byzantine state machine replication, processing thousands of requests per second with sub-millisecond latency increases. Designed for asynchronous systems with low latency optimization."@en ;
@@ -36672,15 +36665,6 @@ ngm:public-key a owl:Class ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "public-key" ;
     vc:sourceDomain "blockchain" .
-
-ngm:quantum-computing a owl:Class ;
-    rdfs:label "Quantum Computing"@en ;
-    rdfs:comment "Quantum Computing is a technology infrastructure concept and a type of infrastructure."@en ;
-    skos:broader ngm:infra-computing-and-cloud ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:slug "quantum-computing" ;
-    vc:sourceDomain "infrastructure" .
 
 ngm:random-number-generation a owl:Class ;
     rdfs:label "Random Number Generation"@en ;
@@ -36988,6 +36972,19 @@ ngm:social-vr a owl:Class ;
     vc:qualityScore "0.4"^^xsd:float ;
     vc:slug "social-vr" ;
     vc:sourceDomain "spatial-computing" .
+
+ngm:sovereign-ai a owl:Class ;
+    rdfs:label "Sovereign AI"@en ;
+    rdfs:comment "National strategies for building indigenous AI capabilities—foundational models trained on sovereign data using domestically controlled compute infrastructure—to reduce dependence on foreign hyperscaler platforms. Encompasses government investment in national AI compute clusters, local language models, and data governance frameworks."@en ;
+    skos:broader ngm:ai-governance-and-ethics ;
+    vc:contrastsWith ngm:open-source-ai ;
+    vc:maturity "emerging" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:relatedTo ngm:ai-regulation,
+        ngm:competition-in-ai,
+        ngm:open-source-ai ;
+    vc:slug "sovereign-ai" ;
+    vc:sourceDomain "artificial-intelligence" .
 
 ngm:state-machine a owl:Class ;
     rdfs:label "State Machine"@en ;
@@ -38779,6 +38776,15 @@ ngm:provenance-verification a owl:Class ;
     vc:slug "provenance-verification" ;
     vc:sourceDomain "spatial-computing" .
 
+ngm:quantum-computing a owl:Class ;
+    rdfs:label "Quantum Computing"@en ;
+    rdfs:comment "Quantum Computing is a technology infrastructure concept and a type of infrastructure."@en ;
+    skos:broader ngm:infra-computing-and-cloud ;
+    vc:maturity "draft" ;
+    vc:qualityScore "0.35"^^xsd:float ;
+    vc:slug "quantum-computing" ;
+    vc:sourceDomain "infrastructure" .
+
 ngm:robotics-systems a owl:Class ;
     rdfs:label "Robotics Systems"@en ;
     rdfs:comment "The foundational technology domain encompassing autonomous and semi-autonomous mechanical systems, including manipulators, mobile robots, humanoids, and collaborative robots (cobots), along with their control systems, sensors, actuators, kinematics, and the integration of perception, planning, an..."@en ;
@@ -39590,72 +39596,6 @@ ngm:data-storage a owl:Class ;
     vc:slug "data-storage" ;
     vc:sourceDomain "infrastructure" .
 
-ngm:decentralized-finance-de-fi a owl:Class ;
-    rdfs:label "Decentralized Finance (DeFi)"@en ;
-    rdfs:comment "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally ereum but increasingly on Layer 2 Networks (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional finan..."@en ;
-    rdfs:subClassOf ngm:cryptographic-protocols,
-        ngm:token-economy ;
-    skos:broader ngm:bc-defi-and-economics ;
-    vc:enables ngm:atomic-composability,
-        ngm:on-chain-governance,
-        ngm:permissionless-lending,
-        ngm:programmable-money,
-        ngm:tokenised-real-world-assets,
-        ngm:trustless-trading,
-        ngm:yield-optimisation ;
-    vc:hasPart ngm:automated-market-maker,
-        ngm:decentralised-exchange,
-        ngm:flash-loans,
-        ngm:governance-token,
-        ngm:lending-protocol,
-        ngm:liquidity-mining,
-        ngm:liquidity-pool,
-        ngm:mev,
-        ngm:oracle,
-        ngm:rwa-tokenisation,
-        ngm:stablecoin,
-        ngm:yield-farming ;
-    vc:implements ngm:algorithmic-stablecoin,
-        ngm:automated-market-maker,
-        ngm:concentrated-liquidity,
-        ngm:flash-loan-arbitrage,
-        ngm:liquidity-mining-incentives,
-        ngm:overcollateralised-lending ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:asset-registry,
-        ngm:bitcoin-technical-overview,
-        ngm:blockchain-network,
-        ngm:btc-layer-3,
-        ngm:carbon-neutral-blockchain,
-        ngm:cbdc-frameworks ;
-    vc:requires ngm:collateral,
-        ngm:cryptographic-oracle,
-        ngm:ethereum,
-        ngm:gas-fees,
-        ngm:liquidity-provider,
-        ngm:public-blockchain,
-        ngm:smart-contracts ;
-    vc:slug "decentralized-finance-de-fi" ;
-    vc:sourceDomain "blockchain" ;
-    vc:standardizedBy ngm:eip-1559,
-        ngm:erc-20-token-standard,
-        ngm:fatf-guidance-on-virtual-assets,
-        ngm:iosco-de-fi-report-2023,
-        ngm:mi-ca-regulation ;
-    vc:supports ngm:asset-registry,
-        ngm:bitcoin-as-money,
-        ngm:blockchain-as-a-service,
-        ngm:blockchain-interoperability,
-        ngm:carbon-credit-tracking,
-        ngm:cbdcs ;
-    vc:uses ngm:chainlink,
-        ngm:evm,
-        ngm:ipfs,
-        ngm:merkle-trees,
-        ngm:solidity,
-        ngm:zero-knowledge-proofs .
-
 ngm:decentralized-identifiers a owl:Class ;
     rdfs:label "Decentralized Identifiers"@en ;
     rdfs:comment "A W3C-standardised URI scheme (DID Core v1.0 Recommendation 19 July 2022, v1.1 Working Draft progressing through 2024-2025) defining globally unique cryptographically verifiable identifiers of the form did:<mod>:<mod-specific-id> controlled directly by their subjects without dependency on c..."@en ;
@@ -40445,6 +40385,29 @@ ngm:pose-estimation a owl:Class ;
         ngm:smpl-body-model,
         ngm:vi-t-backbone .
 
+ngm:post-quantum-cryptography a owl:Class ;
+    rdfs:label "Post-Quantum Cryptography"@en ;
+    rdfs:comment "Cryptographic algorithms and protocols designed to be resistant to attacks from both classical and quantum computers, protecting secure communications in the post-quantum era."@en ;
+    skos:broader ngm:infra-security-and-identity ;
+    vc:enables ngm:digital-signatures,
+        ngm:long-term-data-protection,
+        ngm:quantum-resistant-encryption,
+        ngm:secure-key-exchange ;
+    vc:hasPart ngm:code-based-cryptography,
+        ngm:hash-based-signatures,
+        ngm:isogeny-based-cryptography,
+        ngm:lattice-based-cryptography,
+        ngm:multivariate-cryptography ;
+    vc:isPartOf ngm:cryptographic-infrastructure,
+        ngm:security-protocol ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.35"^^xsd:float ;
+    vc:requires ngm:algorithm-implementation,
+        ngm:cryptographic-key-management,
+        ngm:random-number-generation ;
+    vc:slug "post-quantum-cryptography" ;
+    vc:sourceDomain "infrastructure" .
+
 ngm:presence a owl:Class ;
     rdfs:label "Presence"@en ;
     rdfs:comment "Perceptual state in which a user feels located inside a virtual or mixed environment, experiencing spatial, social, and self presence."@en ;
@@ -41025,70 +40988,6 @@ ngm:bitcoin-etf a owl:Class ;
         ngm:fidelity-digital-assets,
         ngm:gemini-custody,
         ngm:multi-signature-wallets .
-
-ngm:bitcoin-mining a owl:Class ;
-    rdfs:label "Bitcoin Mining"@en ;
-    rdfs:comment "Bitcoin Mining is the proof-of-work Nakamoto consensus process by which the Bitcoin blockchain is extended, secured, and monetised through competitive computation of SHA-256 double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad..."@en ;
-    rdfs:subClassOf ngm:cryptographic-mining,
-        ngm:industrial-process ;
-    skos:broader ngm:bc-protocol-and-consensus ;
-    vc:enables ngm:bitcoin-issuance,
-        ngm:blockchain-security,
-        ngm:demand-response-services,
-        ngm:double-spend-prevention,
-        ngm:permissionless-settlement,
-        ngm:transaction-confirmation ;
-    vc:hasPart ngm:asic,
-        ngm:block-header,
-        ngm:coinbase-transaction,
-        ngm:difficulty-target,
-        ngm:mempool,
-        ngm:merkle-tree,
-        ngm:mining-pool,
-        ngm:nonce-search,
-        ngm:sha-256-hashing ;
-    vc:implements ngm:coinbase-reward-distribution,
-        ngm:difficulty-adjustment-algorithm,
-        ngm:halving-schedule,
-        ngm:longest-chain-rule,
-        ngm:nakamoto-consensus ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:ai-hpc-pivot,
-        ngm:asic-manufacturer,
-        ngm:bitcoin,
-        ngm:demand-response,
-        ngm:halving,
-        ngm:hash-rate,
-        ngm:mining-pool,
-        ngm:renewable-energy,
-        ngm:stranded-gas ;
-    vc:requires ngm:asic-hardware,
-        ngm:bitcoin-full-node,
-        ngm:cooling-system,
-        ngm:electricity,
-        ngm:network-connectivity,
-        ngm:stratum-protocol ;
-    vc:slug "bitcoin-mining" ;
-    vc:sourceDomain "blockchain" ;
-    vc:standardizedBy ngm:bip-34,
-        ngm:bip-9,
-        ngm:bip-91,
-        ngm:bitcoin-core-reference-implementation,
-        ngm:cbeci-methodology,
-        ngm:stratum-v2-specification ;
-    vc:supports ngm:bitcoin-network-security,
-        ngm:decentralisation,
-        ngm:energy-grid-stability,
-        ngm:sound-money,
-        ngm:stranded-energy-monetisation ;
-    vc:uses ngm:double-hashing,
-        ngm:hashboards,
-        ngm:immersion-cooling,
-        ngm:merkle-root-construction,
-        ngm:sha-256,
-        ngm:stratum-v1,
-        ngm:stratum-v2 .
 
 ngm:camera a owl:Class ;
     rdfs:label "Camera"@en ;
@@ -42309,6 +42208,70 @@ ngm:authentication-service a owl:Class ;
     vc:slug "authentication-service" ;
     vc:sourceDomain "infrastructure" .
 
+ngm:bitcoin-mining a owl:Class ;
+    rdfs:label "Bitcoin Mining"@en ;
+    rdfs:comment "Bitcoin Mining is the proof-of-work Nakamoto consensus process by which the Bitcoin blockchain is extended, secured, and monetised through competitive computation of SHA-256 double-hash preimages whose output, interpreted as a 256-bit unsigned integer, falls below a network-ad..."@en ;
+    rdfs:subClassOf ngm:cryptographic-mining,
+        ngm:industrial-process ;
+    skos:broader ngm:bc-protocol-and-consensus ;
+    vc:enables ngm:bitcoin-issuance,
+        ngm:blockchain-security,
+        ngm:demand-response-services,
+        ngm:double-spend-prevention,
+        ngm:permissionless-settlement,
+        ngm:transaction-confirmation ;
+    vc:hasPart ngm:asic,
+        ngm:block-header,
+        ngm:coinbase-transaction,
+        ngm:difficulty-target,
+        ngm:mempool,
+        ngm:merkle-tree,
+        ngm:mining-pool,
+        ngm:nonce-search,
+        ngm:sha-256-hashing ;
+    vc:implements ngm:coinbase-reward-distribution,
+        ngm:difficulty-adjustment-algorithm,
+        ngm:halving-schedule,
+        ngm:longest-chain-rule,
+        ngm:nakamoto-consensus ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:ai-hpc-pivot,
+        ngm:asic-manufacturer,
+        ngm:bitcoin,
+        ngm:demand-response,
+        ngm:halving,
+        ngm:hash-rate,
+        ngm:mining-pool,
+        ngm:renewable-energy,
+        ngm:stranded-gas ;
+    vc:requires ngm:asic-hardware,
+        ngm:bitcoin-full-node,
+        ngm:cooling-system,
+        ngm:electricity,
+        ngm:network-connectivity,
+        ngm:stratum-protocol ;
+    vc:slug "bitcoin-mining" ;
+    vc:sourceDomain "blockchain" ;
+    vc:standardizedBy ngm:bip-34,
+        ngm:bip-9,
+        ngm:bip-91,
+        ngm:bitcoin-core-reference-implementation,
+        ngm:cbeci-methodology,
+        ngm:stratum-v2-specification ;
+    vc:supports ngm:bitcoin-network-security,
+        ngm:decentralisation,
+        ngm:energy-grid-stability,
+        ngm:sound-money,
+        ngm:stranded-energy-monetisation ;
+    vc:uses ngm:double-hashing,
+        ngm:hashboards,
+        ngm:immersion-cooling,
+        ngm:merkle-root-construction,
+        ngm:sha-256,
+        ngm:stratum-v1,
+        ngm:stratum-v2 .
+
 ngm:california-ai-bill a owl:Class ;
     rdfs:label "California AI bill"@en ;
     rdfs:comment "California AI bill is the collective designation for a sequence of California state legislative instruments enacted or proposed between 2023 and 2026 to regulate the development, deployment, and disclosure obligations of large-scale Frontier Models — most prominently Senate Bill 1047 (SB 1047..."@en ;
@@ -42759,6 +42722,72 @@ ngm:dc-workspace-tools a owl:Class,
     vc:slug "dc-workspace-tools" ;
     vc:sourceDomain "distributed-collaboration" .
 
+ngm:decentralized-finance-de-fi a owl:Class ;
+    rdfs:label "Decentralized Finance (DeFi)"@en ;
+    rdfs:comment "Decentralized Finance (DeFi) is an open, permissionless financial ecosystem built on public blockchain networks—principally ereum but increasingly on Layer 2 Networks (Arbitrum, Optimism, Base) and rival Layer 1s (Solana, Avalanche, BNB Chain)—that replicates and extends traditional finan..."@en ;
+    rdfs:subClassOf ngm:cryptographic-protocols,
+        ngm:token-economy ;
+    skos:broader ngm:bc-defi-and-economics ;
+    vc:enables ngm:atomic-composability,
+        ngm:on-chain-governance,
+        ngm:permissionless-lending,
+        ngm:programmable-money,
+        ngm:tokenised-real-world-assets,
+        ngm:trustless-trading,
+        ngm:yield-optimisation ;
+    vc:hasPart ngm:automated-market-maker,
+        ngm:decentralised-exchange,
+        ngm:flash-loans,
+        ngm:governance-token,
+        ngm:lending-protocol,
+        ngm:liquidity-mining,
+        ngm:liquidity-pool,
+        ngm:mev,
+        ngm:oracle,
+        ngm:rwa-tokenisation,
+        ngm:stablecoin,
+        ngm:yield-farming ;
+    vc:implements ngm:algorithmic-stablecoin,
+        ngm:automated-market-maker,
+        ngm:concentrated-liquidity,
+        ngm:flash-loan-arbitrage,
+        ngm:liquidity-mining-incentives,
+        ngm:overcollateralised-lending ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:asset-registry,
+        ngm:bitcoin-technical-overview,
+        ngm:blockchain-network,
+        ngm:btc-layer-3,
+        ngm:carbon-neutral-blockchain,
+        ngm:cbdc-frameworks ;
+    vc:requires ngm:collateral,
+        ngm:cryptographic-oracle,
+        ngm:ethereum,
+        ngm:gas-fees,
+        ngm:liquidity-provider,
+        ngm:public-blockchain,
+        ngm:smart-contracts ;
+    vc:slug "decentralized-finance-de-fi" ;
+    vc:sourceDomain "blockchain" ;
+    vc:standardizedBy ngm:eip-1559,
+        ngm:erc-20-token-standard,
+        ngm:fatf-guidance-on-virtual-assets,
+        ngm:iosco-de-fi-report-2023,
+        ngm:mi-ca-regulation ;
+    vc:supports ngm:asset-registry,
+        ngm:bitcoin-as-money,
+        ngm:blockchain-as-a-service,
+        ngm:blockchain-interoperability,
+        ngm:carbon-credit-tracking,
+        ngm:cbdcs ;
+    vc:uses ngm:chainlink,
+        ngm:evm,
+        ngm:ipfs,
+        ngm:merkle-trees,
+        ngm:solidity,
+        ngm:zero-knowledge-proofs .
+
 ngm:digital-ownership a owl:Class ;
     rdfs:label "Digital Ownership"@en ;
     rdfs:comment "The cryptographically verified right to possess, control, and transfer digital assets including NFTs, virtual real estate, in-game items, and tokenised content, established through blockchain technology and smart contracts that provide immutable proof of authenticity and provenance within metaver..."@en ;
@@ -42807,34 +42836,6 @@ ngm:extended-reality a owl:Class ;
     vc:maturity "draft" ;
     vc:qualityScore "0.3"^^xsd:float ;
     vc:slug "extended-reality" ;
-    vc:sourceDomain "spatial-computing" .
-
-ngm:eye-tracking a owl:Class ;
-    rdfs:label "Eye Tracking"@en ;
-    rdfs:comment "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices."@en ;
-    rdfs:subClassOf ngm:infrared-camera ;
-    skos:broader ngm:sc-interaction ;
-    vc:enables ngm:attention-analytics,
-        ngm:eye-gesture-control,
-        ngm:foveated-rendering,
-        ngm:gaze-based-interaction,
-        ngm:vergence-accommodation-matching ;
-    vc:hasPart ngm:calibration-system,
-        ngm:hot-mirror,
-        ngm:image-sensor,
-        ngm:infrared-camera,
-        ngm:infrared-led-illuminator,
-        ngm:pupil-detection-algorithm ;
-    vc:isPartOf ngm:human-computer-interaction-framework,
-        ngm:perceptual-computing-system ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.35"^^xsd:float ;
-    vc:requires ngm:high-speed-camera,
-        ngm:infrared-light-source,
-        ngm:low-latency-data-bus,
-        ngm:optical-calibration-target,
-        ngm:real-time-processing-unit ;
-    vc:slug "eye-tracking" ;
     vc:sourceDomain "spatial-computing" .
 
 ngm:gaussian-splatting a owl:Class ;
@@ -44149,6 +44150,34 @@ ngm:depth-estimation a owl:Class ;
         ngm:structured-light,
         ngm:time-of-flight-camera .
 
+ngm:eye-tracking a owl:Class ;
+    rdfs:label "Eye Tracking"@en ;
+    rdfs:comment "Physical sensor hardware that measures gaze direction, pupil dilation, and eye movements to enable foveated rendering, attention analytics, and natural interaction in XR devices."@en ;
+    rdfs:subClassOf ngm:infrared-camera ;
+    skos:broader ngm:sc-interaction ;
+    vc:enables ngm:attention-analytics,
+        ngm:eye-gesture-control,
+        ngm:foveated-rendering,
+        ngm:gaze-based-interaction,
+        ngm:vergence-accommodation-matching ;
+    vc:hasPart ngm:calibration-system,
+        ngm:hot-mirror,
+        ngm:image-sensor,
+        ngm:infrared-camera,
+        ngm:infrared-led-illuminator,
+        ngm:pupil-detection-algorithm ;
+    vc:isPartOf ngm:human-computer-interaction-framework,
+        ngm:perceptual-computing-system ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.35"^^xsd:float ;
+    vc:requires ngm:high-speed-camera,
+        ngm:infrared-light-source,
+        ngm:low-latency-data-bus,
+        ngm:optical-calibration-target,
+        ngm:real-time-processing-unit ;
+    vc:slug "eye-tracking" ;
+    vc:sourceDomain "spatial-computing" .
+
 ngm:feedback-loop a owl:Class ;
     rdfs:label "Feedback Loop"@en ;
     rdfs:comment "Feedback Loop is a cybernetic and control-theoretic structure in which the output of a system is routed back as input to influence its subsequent behaviour, producing closed-loop regulation, amplification, learning, or instability depending on the loop's sign, gain, delay, and phase characteristi..."@en ;
@@ -44287,69 +44316,6 @@ ngm:graph-database a owl:Class ;
         ngm:replication,
         ngm:sharding,
         ngm:vector-embedding .
-
-ngm:hand-tracking a owl:Class ;
-    rdfs:label "Hand Tracking"@en ;
-    rdfs:comment "Hand Tracking is a real-time computational pipeline that continuously estimates the three-dimensional position, orientation, and articulation state of one or both human hands from sensor input, delivering a skeletal or parametric representation of all fingers and joints at interactive framerates ..."@en ;
-    rdfs:subClassOf ngm:gesture-recognition,
-        ngm:pose-estimation ;
-    skos:broader ngm:ai-application ;
-    vc:enables ngm:air-typing,
-        ngm:gesture-recognition,
-        ngm:pinch-interaction,
-        ngm:robotic-teleoperation,
-        ngm:sign-language-recognition,
-        ngm:surgical-training-simulation,
-        ngm:touchless-hci,
-        ngm:xr-interaction ;
-    vc:hasPart ngm:confidence-estimator,
-        ngm:depth-sensor,
-        ngm:hand-skeleton-model,
-        ngm:keypoint-detector,
-        ngm:kinematic-constraint-model,
-        ngm:landmark-regressor,
-        ngm:palm-detector,
-        ngm:temporal-filter ;
-    vc:implements ngm:apple-vision-os-hand-input,
-        ngm:mano-model,
-        ngm:media-pipe-hands,
-        ngm:meta-hand-tracking-sdk,
-        ngm:ultraleap-sdk,
-        ngm:web-xr-hand-input-api ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:augmented-reality,
-        ngm:brain-computer-interfaces,
-        ngm:leap-motion,
-        ngm:media-pipe,
-        ngm:mixed-reality,
-        ngm:object-detection,
-        ngm:pose-estimation,
-        ngm:virtual-reality ;
-    vc:requires ngm:annotated-hand-dataset,
-        ngm:calibration-data,
-        ngm:camera-sensor,
-        ngm:convolutional-neural-network,
-        ngm:depth-sensor,
-        ngm:real-time-processing ;
-    vc:slug "hand-tracking" ;
-    vc:sourceDomain "artificial-intelligence" ;
-    vc:standardizedBy ngm:iso-9241-ergonomics-of-human-system-interaction,
-        ngm:open-xr-hand-tracking-extension,
-        ngm:w3-c-web-xr-hand-input-api ;
-    vc:supports ngm:accessibility-technology,
-        ngm:apple-vision-pro,
-        ngm:digital-twin,
-        ngm:extended-reality,
-        ngm:meta-quest,
-        ngm:robotic-surgery,
-        ngm:sign-language-recognition ;
-    vc:uses ngm:electromyography,
-        ngm:infrared-illumination,
-        ngm:stereo-vision,
-        ngm:structured-light,
-        ngm:time-of-flight-sensor,
-        ngm:transformer-architecture .
 
 ngm:identity-management-system a owl:Class ;
     rdfs:label "Identity Management System"@en ;
@@ -45112,6 +45078,69 @@ ngm:gradient-descent a owl:Class ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "gradient-descent" ;
     vc:sourceDomain "artificial-intelligence" .
+
+ngm:hand-tracking a owl:Class ;
+    rdfs:label "Hand Tracking"@en ;
+    rdfs:comment "Hand Tracking is a real-time computational pipeline that continuously estimates the three-dimensional position, orientation, and articulation state of one or both human hands from sensor input, delivering a skeletal or parametric representation of all fingers and joints at interactive framerates ..."@en ;
+    rdfs:subClassOf ngm:gesture-recognition,
+        ngm:pose-estimation ;
+    skos:broader ngm:ai-application ;
+    vc:enables ngm:air-typing,
+        ngm:gesture-recognition,
+        ngm:pinch-interaction,
+        ngm:robotic-teleoperation,
+        ngm:sign-language-recognition,
+        ngm:surgical-training-simulation,
+        ngm:touchless-hci,
+        ngm:xr-interaction ;
+    vc:hasPart ngm:confidence-estimator,
+        ngm:depth-sensor,
+        ngm:hand-skeleton-model,
+        ngm:keypoint-detector,
+        ngm:kinematic-constraint-model,
+        ngm:landmark-regressor,
+        ngm:palm-detector,
+        ngm:temporal-filter ;
+    vc:implements ngm:apple-vision-os-hand-input,
+        ngm:mano-model,
+        ngm:media-pipe-hands,
+        ngm:meta-hand-tracking-sdk,
+        ngm:ultraleap-sdk,
+        ngm:web-xr-hand-input-api ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:augmented-reality,
+        ngm:brain-computer-interfaces,
+        ngm:leap-motion,
+        ngm:media-pipe,
+        ngm:mixed-reality,
+        ngm:object-detection,
+        ngm:pose-estimation,
+        ngm:virtual-reality ;
+    vc:requires ngm:annotated-hand-dataset,
+        ngm:calibration-data,
+        ngm:camera-sensor,
+        ngm:convolutional-neural-network,
+        ngm:depth-sensor,
+        ngm:real-time-processing ;
+    vc:slug "hand-tracking" ;
+    vc:sourceDomain "artificial-intelligence" ;
+    vc:standardizedBy ngm:iso-9241-ergonomics-of-human-system-interaction,
+        ngm:open-xr-hand-tracking-extension,
+        ngm:w3-c-web-xr-hand-input-api ;
+    vc:supports ngm:accessibility-technology,
+        ngm:apple-vision-pro,
+        ngm:digital-twin,
+        ngm:extended-reality,
+        ngm:meta-quest,
+        ngm:robotic-surgery,
+        ngm:sign-language-recognition ;
+    vc:uses ngm:electromyography,
+        ngm:infrared-illumination,
+        ngm:stereo-vision,
+        ngm:structured-light,
+        ngm:time-of-flight-sensor,
+        ngm:transformer-architecture .
 
 ngm:hardware-and-edge a owl:Class ;
     rdfs:label "Hardware and Edge"@en ;
@@ -45896,16 +45925,6 @@ ngm:utxo-model a owl:Class ;
     vc:slug "utxo-model" ;
     vc:sourceDomain "blockchain" .
 
-ngm:virtual-environment a owl:Class ;
-    rdfs:label "Virtual Environment"@en ;
-    rdfs:comment "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays."@en ;
-    rdfs:subClassOf ngm:metaverse ;
-    skos:broader ngm:sc-platform-and-environment ;
-    vc:maturity "draft" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:slug "virtual-environment" ;
-    vc:sourceDomain "spatial-computing" .
-
 ngm:3-d-reconstruction a owl:Class ;
     rdfs:label "3D Reconstruction"@en ;
     rdfs:comment "3D Reconstruction is the computational process of recovering three-dimensional geometric and structural information from multiple 2D images or sensor data (such as LiDAR or depth cameras) using techniques including Computer Vision, photogrammetry, and Structure-from-Motion (SfM)."@en ;
@@ -46461,6 +46480,16 @@ ngm:treasury-management a owl:Class ;
         ngm:safe-multisig,
         ngm:snapshot-voting,
         ngm:tres-finance .
+
+ngm:virtual-environment a owl:Class ;
+    rdfs:label "Virtual Environment"@en ;
+    rdfs:comment "A simulated three-dimensional (3D) digital space created with computer hardware and software that enables users to explore, interact, and experience an immersive surrounding approximating reality, accessed through devices such as VR headsets, AR glasses, or standard displays."@en ;
+    rdfs:subClassOf ngm:metaverse ;
+    skos:broader ngm:sc-platform-and-environment ;
+    vc:maturity "draft" ;
+    vc:qualityScore "0.5"^^xsd:float ;
+    vc:slug "virtual-environment" ;
+    vc:sourceDomain "spatial-computing" .
 
 ngm:virtual-production a owl:Class ;
     rdfs:label "Virtual Production"@en ;
@@ -47392,67 +47421,6 @@ ngm:inpainting a owl:Class ;
         ngm:gated-convolution,
         ngm:partial-convolution .
 
-ngm:micropayments a owl:Class ;
-    rdfs:label "Micropayments"@en ;
-    rdfs:comment "Micropayments are electronic payment transactions with values typically below — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the co..."@en ;
-    rdfs:subClassOf ngm:digital-finance,
-        ngm:payment-systems ;
-    skos:broader ngm:infra-computing-and-cloud ;
-    vc:enables ngm:agentic-internet,
-        ngm:agents,
-        ngm:cli-multi-agent-systems,
-        ngm:creator-economy,
-        ngm:financial-inclusion,
-        ngm:io-t ;
-    vc:hasPart ngm:cashu,
-        ngm:ecash,
-        ngm:fedimint,
-        ngm:lightning-and-similar-l2,
-        ngm:nostr-protocol,
-        ngm:nostr-zaps,
-        ngm:payment-channel,
-        ngm:stacker-news ;
-    vc:implements ngm:blockchain-as-a-service,
-        ngm:btc-layer-3,
-        ngm:cashu,
-        ngm:fedimint,
-        ngm:lightning-and-similar-l2,
-        ngm:nostr-protocol ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:ai-search,
-        ngm:anthropic-claude,
-        ngm:bitcoin-as-money,
-        ngm:bitcoin-etf,
-        ngm:bitcoin-value-proposition,
-        ngm:blockchain-interoperability,
-        ngm:btc-layer-3,
-        ngm:money ;
-    vc:requires ngm:bitcoin,
-        ngm:bitcoin-technical-overview,
-        ngm:blockchain-network,
-        ngm:cryptography,
-        ngm:smart-contracts ;
-    vc:slug "micropayments" ;
-    vc:sourceDomain "infrastructure" ;
-    vc:standardizedBy ngm:aml-kyc-compliance,
-        ngm:blockchain-interoperability,
-        ngm:cbdc-frameworks,
-        ngm:lightning-and-similar-l2,
-        ngm:nostr-protocol ;
-    vc:supports ngm:agents,
-        ngm:ai-adoption,
-        ngm:anthropic-claude,
-        ngm:competition-in-ai,
-        ngm:nostr-protocol,
-        ngm:stacker-news ;
-    vc:uses ngm:cashu,
-        ngm:cbdc-frameworks,
-        ngm:cbdcs,
-        ngm:lightning-and-similar-l2,
-        ngm:nostr-protocol,
-        ngm:zero-knowledge-proofs .
-
 ngm:multimodal-ai a owl:Class ;
     rdfs:label "Multimodal AI"@en ;
     rdfs:comment "Multimodal AI is a type of Artificial Intelligence in the artificial intelligence domain."@en ;
@@ -47699,6 +47667,67 @@ ngm:etsi-metaverse-domain-taxonomy a owl:Class ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "etsi-metaverse-domain-taxonomy" ;
     vc:sourceDomain "spatial-computing" .
+
+ngm:micropayments a owl:Class ;
+    rdfs:label "Micropayments"@en ;
+    rdfs:comment "Micropayments are electronic payment transactions with values typically below — often in the sub-cent to sub-dollar range — enabling granular, per-use monetisation of digital goods, services, API calls, data streams, and creative content at a price granularity previously impractical due to the co..."@en ;
+    rdfs:subClassOf ngm:digital-finance,
+        ngm:payment-systems ;
+    skos:broader ngm:infra-computing-and-cloud ;
+    vc:enables ngm:agentic-internet,
+        ngm:agents,
+        ngm:cli-multi-agent-systems,
+        ngm:creator-economy,
+        ngm:financial-inclusion,
+        ngm:io-t ;
+    vc:hasPart ngm:cashu,
+        ngm:ecash,
+        ngm:fedimint,
+        ngm:lightning-and-similar-l2,
+        ngm:nostr-protocol,
+        ngm:nostr-zaps,
+        ngm:payment-channel,
+        ngm:stacker-news ;
+    vc:implements ngm:blockchain-as-a-service,
+        ngm:btc-layer-3,
+        ngm:cashu,
+        ngm:fedimint,
+        ngm:lightning-and-similar-l2,
+        ngm:nostr-protocol ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:ai-search,
+        ngm:anthropic-claude,
+        ngm:bitcoin-as-money,
+        ngm:bitcoin-etf,
+        ngm:bitcoin-value-proposition,
+        ngm:blockchain-interoperability,
+        ngm:btc-layer-3,
+        ngm:money ;
+    vc:requires ngm:bitcoin,
+        ngm:bitcoin-technical-overview,
+        ngm:blockchain-network,
+        ngm:cryptography,
+        ngm:smart-contracts ;
+    vc:slug "micropayments" ;
+    vc:sourceDomain "infrastructure" ;
+    vc:standardizedBy ngm:aml-kyc-compliance,
+        ngm:blockchain-interoperability,
+        ngm:cbdc-frameworks,
+        ngm:lightning-and-similar-l2,
+        ngm:nostr-protocol ;
+    vc:supports ngm:agents,
+        ngm:ai-adoption,
+        ngm:anthropic-claude,
+        ngm:competition-in-ai,
+        ngm:nostr-protocol,
+        ngm:stacker-news ;
+    vc:uses ngm:cashu,
+        ngm:cbdc-frameworks,
+        ngm:cbdcs,
+        ngm:lightning-and-similar-l2,
+        ngm:nostr-protocol,
+        ngm:zero-knowledge-proofs .
 
 ngm:predictive-maintenance a owl:Class ;
     rdfs:label "Predictive Maintenance"@en ;
@@ -48036,82 +48065,6 @@ ngm:autonomous-navigation a owl:Class ;
     vc:slug "autonomous-navigation" ;
     vc:sourceDomain "spatial-computing" .
 
-ngm:brain-computer-interfaces a owl:Class ;
-    rdfs:label "Brain Computer Interfaces"@en ;
-    rdfs:comment "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cer..."@en ;
-    rdfs:subClassOf ngm:assistive-technology,
-        ngm:biomedical-device ;
-    skos:broader ngm:infra-computing-and-cloud ;
-    vc:enables ngm:closed-loop-neuromodulation,
-        ngm:cognitive-augmentation,
-        ngm:communication-for-locked-in-patients,
-        ngm:direct-neural-control,
-        ngm:motor-restoration,
-        ngm:neurofeedback-therapy,
-        ngm:sensory-restoration,
-        ngm:speech-restoration ;
-    vc:hasPart ngm:analog-to-digital-converter,
-        ngm:battery-or-inductive-power-link,
-        ngm:biocompatible-encapsulation,
-        ngm:microelectrode-array,
-        ngm:neural-decoder,
-        ngm:signal-amplifier,
-        ngm:spike-sorter,
-        ngm:stimulation-driver,
-        ngm:surgical-robot,
-        ngm:wireless-telemetry-module ;
-    vc:implements ngm:action-potential-recording,
-        ngm:closed-loop-control,
-        ngm:electrocorticography,
-        ngm:electroencephalography,
-        ngm:functional-near-infrared-spectroscopy,
-        ngm:intracortical-microstimulation,
-        ngm:local-field-potential-recording ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:ai-agent-system,
-        ngm:augmented-reality,
-        ngm:cognitive-enhancement,
-        ngm:cyborg,
-        ngm:neuromodulation,
-        ngm:neuroprosthetics,
-        ngm:neurorights,
-        ngm:wearable-computing ;
-    vc:requires ngm:biocompatible-materials,
-        ngm:clinical-trial-infrastructure,
-        ngm:informed-consent,
-        ngm:low-noise-analog-electronics,
-        ngm:machine-learning-decoder,
-        ngm:neurosurgical-procedure,
-        ngm:real-time-computing,
-        ngm:regulatory-approval ;
-    vc:slug "brain-computer-interfaces" ;
-    vc:sourceDomain "infrastructure" ;
-    vc:standardizedBy ngm:bci-society,
-        ngm:eu-medical-device-regulation,
-        ngm:fda-bci-guidance-2021,
-        ngm:ieee-2731,
-        ngm:ieee-3209,
-        ngm:iso-14708-active-implantable-medical-devices,
-        ngm:unesco-neurotech-recommendation ;
-    vc:supports ngm:als-communication,
-        ngm:locked-in-syndrome-communication,
-        ngm:parkinson-s-disease-treatment,
-        ngm:refractory-epilepsy-treatment,
-        ngm:spinal-cord-injury-recovery,
-        ngm:stroke-rehabilitation,
-        ngm:tetraplegia-rehabilitation,
-        ngm:treatment-resistant-depression ;
-    vc:uses ngm:common-spatial-patterns,
-        ngm:independent-component-analysis,
-        ngm:kalman-filter,
-        ngm:linear-discriminant-analysis,
-        ngm:mamba-state-space-model,
-        ngm:recurrent-neural-network,
-        ngm:riemannian-geometry,
-        ngm:transformer-architecture,
-        ngm:wiener-filter .
-
 ngm:deep-learning a owl:Class ;
     rdfs:label "Deep Learning"@en ;
     rdfs:comment "Deep Learning is a subset of Machine Learning based on Artificial Neural Networks with multiple layers (depth) that learn hierarchical representations of data through Backpropagation and Gradient Descent."@en ;
@@ -48336,6 +48289,82 @@ ngm:bias-in-large-language-models a owl:Class ;
         ngm:wino-queer,
         ngm:word-embedding-association-test .
 
+ngm:brain-computer-interfaces a owl:Class ;
+    rdfs:label "Brain Computer Interfaces"@en ;
+    rdfs:comment "Brain-Computer Interfaces (BCIs), also termed brain-machine interfaces (BMIs) or direct neural interfaces, are biomedical and neurotechnological systems establishing a direct, real-time bidirectional or unidirectional communication channel between the central nervous system (predominantly the cer..."@en ;
+    rdfs:subClassOf ngm:assistive-technology,
+        ngm:biomedical-device ;
+    skos:broader ngm:infra-computing-and-cloud ;
+    vc:enables ngm:closed-loop-neuromodulation,
+        ngm:cognitive-augmentation,
+        ngm:communication-for-locked-in-patients,
+        ngm:direct-neural-control,
+        ngm:motor-restoration,
+        ngm:neurofeedback-therapy,
+        ngm:sensory-restoration,
+        ngm:speech-restoration ;
+    vc:hasPart ngm:analog-to-digital-converter,
+        ngm:battery-or-inductive-power-link,
+        ngm:biocompatible-encapsulation,
+        ngm:microelectrode-array,
+        ngm:neural-decoder,
+        ngm:signal-amplifier,
+        ngm:spike-sorter,
+        ngm:stimulation-driver,
+        ngm:surgical-robot,
+        ngm:wireless-telemetry-module ;
+    vc:implements ngm:action-potential-recording,
+        ngm:closed-loop-control,
+        ngm:electrocorticography,
+        ngm:electroencephalography,
+        ngm:functional-near-infrared-spectroscopy,
+        ngm:intracortical-microstimulation,
+        ngm:local-field-potential-recording ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:ai-agent-system,
+        ngm:augmented-reality,
+        ngm:cognitive-enhancement,
+        ngm:cyborg,
+        ngm:neuromodulation,
+        ngm:neuroprosthetics,
+        ngm:neurorights,
+        ngm:wearable-computing ;
+    vc:requires ngm:biocompatible-materials,
+        ngm:clinical-trial-infrastructure,
+        ngm:informed-consent,
+        ngm:low-noise-analog-electronics,
+        ngm:machine-learning-decoder,
+        ngm:neurosurgical-procedure,
+        ngm:real-time-computing,
+        ngm:regulatory-approval ;
+    vc:slug "brain-computer-interfaces" ;
+    vc:sourceDomain "infrastructure" ;
+    vc:standardizedBy ngm:bci-society,
+        ngm:eu-medical-device-regulation,
+        ngm:fda-bci-guidance-2021,
+        ngm:ieee-2731,
+        ngm:ieee-3209,
+        ngm:iso-14708-active-implantable-medical-devices,
+        ngm:unesco-neurotech-recommendation ;
+    vc:supports ngm:als-communication,
+        ngm:locked-in-syndrome-communication,
+        ngm:parkinson-s-disease-treatment,
+        ngm:refractory-epilepsy-treatment,
+        ngm:spinal-cord-injury-recovery,
+        ngm:stroke-rehabilitation,
+        ngm:tetraplegia-rehabilitation,
+        ngm:treatment-resistant-depression ;
+    vc:uses ngm:common-spatial-patterns,
+        ngm:independent-component-analysis,
+        ngm:kalman-filter,
+        ngm:linear-discriminant-analysis,
+        ngm:mamba-state-space-model,
+        ngm:recurrent-neural-network,
+        ngm:riemannian-geometry,
+        ngm:transformer-architecture,
+        ngm:wiener-filter .
+
 ngm:byzantine-fault-tolerance a owl:Class ;
     rdfs:label "Byzantine Fault Tolerance"@en ;
     rdfs:comment "The feature of a distributed network to reach consensus on the same value even when some nodes fail to respond or respond with incorrect information. Enables networks to function correctly despite malicious or faulty nodes comprising less than one-third of the network."@en ;
@@ -48365,17 +48394,6 @@ ngm:merkle-tree a owl:Class ;
     vc:maturity "established" ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "merkle-tree" ;
-    vc:sourceDomain "blockchain" .
-
-ngm:zero-knowledge-proof a owl:Class ;
-    rdfs:label "Zero-Knowledge Proof"@en ;
-    rdfs:comment "Privacy-preserving verification within blockchain systems, providing essential functionality for distributed ledger technology operations and properties."@en ;
-    rdfs:subClassOf ngm:blockchain-entity,
-        ngm:cryptographic-primitive ;
-    skos:broader ngm:bc-cryptographic-primitive ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.5"^^xsd:float ;
-    vc:slug "zero-knowledge-proof" ;
     vc:sourceDomain "blockchain" .
 
 ngm:ai-liability a owl:Class ;
@@ -48744,6 +48762,17 @@ ngm:slam a owl:Class ;
     vc:qualityScore "0.4"^^xsd:float ;
     vc:slug "slam" ;
     vc:sourceDomain "spatial-computing" .
+
+ngm:zero-knowledge-proof a owl:Class ;
+    rdfs:label "Zero-Knowledge Proof"@en ;
+    rdfs:comment "Privacy-preserving verification within blockchain systems, providing essential functionality for distributed ledger technology operations and properties."@en ;
+    rdfs:subClassOf ngm:blockchain-entity,
+        ngm:cryptographic-primitive ;
+    skos:broader ngm:bc-cryptographic-primitive ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.5"^^xsd:float ;
+    vc:slug "zero-knowledge-proof" ;
+    vc:sourceDomain "blockchain" .
 
 ngm:api-gateway a owl:Class ;
     rdfs:label "API Gateway"@en ;
@@ -49729,16 +49758,6 @@ ngm:risk-assessment a owl:Class ;
         ngm:red-teaming,
         ngm:scenario-analysis .
 
-ngm:robo-navigation-and-planning a owl:Class,
-        skos:Concept ;
-    rdfs:label "Navigation and Planning"@en ;
-    rdfs:comment "Intermediate taxonomy category for navigation and planning concepts within the robotics domain."@en ;
-    skos:broader ngm:robotics ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "robo-navigation-and-planning" ;
-    vc:sourceDomain "robotics" .
-
 ngm:cryptographic-primitive a owl:Class ;
     rdfs:label "Cryptographic Primitive"@en ;
     rdfs:comment "The fundamental building blocks of cryptography upon which more complex cryptographic algorithms, protocols, and systems are constructed."@en ;
@@ -49787,6 +49806,16 @@ ngm:public-key-infrastructure a owl:Class ;
     vc:qualityScore "0.35"^^xsd:float ;
     vc:slug "public-key-infrastructure" ;
     vc:sourceDomain "blockchain" .
+
+ngm:robo-navigation-and-planning a owl:Class,
+        skos:Concept ;
+    rdfs:label "Navigation and Planning"@en ;
+    rdfs:comment "Intermediate taxonomy category for navigation and planning concepts within the robotics domain."@en ;
+    skos:broader ngm:robotics ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:slug "robo-navigation-and-planning" ;
+    vc:sourceDomain "robotics" .
 
 ngm:robo-safety-and-standards a owl:Class,
         skos:Concept ;
@@ -50132,68 +50161,6 @@ ngm:consensus-protocol a owl:Class ;
     vc:slug "consensus-protocol" ;
     vc:sourceDomain "blockchain" .
 
-ngm:competition-in-ai a owl:Class ;
-    rdfs:label "Competition in AI"@en ;
-    rdfs:comment "Competition in AI is the multi-dimensional race dynamics — geopolitical, corporate, research, and regulatory — through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial i..."@en ;
-    rdfs:subClassOf ngm:geopolitics,
-        ngm:industrial-competition ;
-    skos:broader ngm:ai-governance-and-ethics ;
-    vc:enables ngm:ai-policy,
-        ngm:ai-sovereignty,
-        ngm:economic-competitiveness,
-        ngm:national-security-advantage,
-        ngm:technological-leadership ;
-    vc:hasPart ngm:ai-chips,
-        ngm:ai-investment,
-        ngm:ai-regulation,
-        ngm:ai-safety,
-        ngm:benchmark-evaluation,
-        ngm:compute-access,
-        ngm:export-controls,
-        ngm:frontier-models,
-        ngm:open-source-ai,
-        ngm:talent-concentration ;
-    vc:implements ngm:antitrust-oversight,
-        ngm:benchmark-evaluation,
-        ngm:compute-governance,
-        ngm:export-controls,
-        ngm:open-model-licensing,
-        ngm:responsible-scaling-policy ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:ai-chips,
-        ngm:ai-investment,
-        ngm:ai-regulation,
-        ngm:anthropic,
-        ngm:frontier-models,
-        ngm:geopolitics,
-        ngm:google-deep-mind,
-        ngm:meta-ai,
-        ngm:mistral-ai,
-        ngm:open-ai ;
-    vc:requires ngm:ai-research-talent,
-        ngm:capital-markets,
-        ngm:cloud-infrastructure,
-        ngm:gpu-supply-chain,
-        ngm:regulatory-frameworks,
-        ngm:training-data ;
-    vc:slug "competition-in-ai" ;
-    vc:sourceDomain "artificial-intelligence" ;
-    vc:standardizedBy ngm:eu-ai-act,
-        ngm:ieee-standards-association,
-        ngm:iso-iec-jtc-1-sc-42,
-        ngm:nist-ai-risk-management-framework ;
-    vc:supports ngm:ai-adoption,
-        ngm:ai-policy,
-        ngm:ai-sovereignty,
-        ngm:innovation-ecosystems,
-        ngm:national-ai-strategies ;
-    vc:uses ngm:agentic-ai-systems,
-        ngm:foundation-models,
-        ngm:inference-optimisation,
-        ngm:mixture-of-experts,
-        ngm:reinforcement-learning-from-human-feedback .
-
 ngm:agents a owl:Class ;
     rdfs:label "Agents"@en ;
     rdfs:comment "Agents are autonomous or semi-autonomous computational systems that perceive an environment through sensors (text inputs, vision encoders, structured tool responses, multimodal streams), reason or plan over an internal model of that environment, and act upon it through actuators (function calls, ..."@en ;
@@ -50334,6 +50301,68 @@ ngm:training-data a owl:Class ;
         ngm:open-rail,
         ngm:synthetic-data .
 
+ngm:competition-in-ai a owl:Class ;
+    rdfs:label "Competition in AI"@en ;
+    rdfs:comment "Competition in AI is the multi-dimensional race dynamics — geopolitical, corporate, research, and regulatory — through which nation-states, hyperscaler enterprises, independent laboratories, open-source collectives, and frontier-model providers compete for technological leadership in artificial i..."@en ;
+    rdfs:subClassOf ngm:geopolitics,
+        ngm:industrial-competition ;
+    skos:broader ngm:ai-governance-and-ethics ;
+    vc:enables ngm:ai-policy,
+        ngm:ai-sovereignty,
+        ngm:economic-competitiveness,
+        ngm:national-security-advantage,
+        ngm:technological-leadership ;
+    vc:hasPart ngm:ai-chips,
+        ngm:ai-investment,
+        ngm:ai-regulation,
+        ngm:ai-safety,
+        ngm:benchmark-evaluation,
+        ngm:compute-access,
+        ngm:export-controls,
+        ngm:frontier-models,
+        ngm:open-source-ai,
+        ngm:talent-concentration ;
+    vc:implements ngm:antitrust-oversight,
+        ngm:benchmark-evaluation,
+        ngm:compute-governance,
+        ngm:export-controls,
+        ngm:open-model-licensing,
+        ngm:responsible-scaling-policy ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:ai-chips,
+        ngm:ai-investment,
+        ngm:ai-regulation,
+        ngm:anthropic,
+        ngm:frontier-models,
+        ngm:geopolitics,
+        ngm:google-deep-mind,
+        ngm:meta-ai,
+        ngm:mistral-ai,
+        ngm:open-ai ;
+    vc:requires ngm:ai-research-talent,
+        ngm:capital-markets,
+        ngm:cloud-infrastructure,
+        ngm:gpu-supply-chain,
+        ngm:regulatory-frameworks,
+        ngm:training-data ;
+    vc:slug "competition-in-ai" ;
+    vc:sourceDomain "artificial-intelligence" ;
+    vc:standardizedBy ngm:eu-ai-act,
+        ngm:ieee-standards-association,
+        ngm:iso-iec-jtc-1-sc-42,
+        ngm:nist-ai-risk-management-framework ;
+    vc:supports ngm:ai-adoption,
+        ngm:ai-policy,
+        ngm:ai-sovereignty,
+        ngm:innovation-ecosystems,
+        ngm:national-ai-strategies ;
+    vc:uses ngm:agentic-ai-systems,
+        ngm:foundation-models,
+        ngm:inference-optimisation,
+        ngm:mixture-of-experts,
+        ngm:reinforcement-learning-from-human-feedback .
+
 ngm:robotics a owl:Class,
         skos:Concept ;
     rdfs:label "Robotics"@en ;
@@ -50384,83 +50413,6 @@ ngm:transformer-architecture a owl:Class ;
     vc:qualityScore "0.5"^^xsd:float ;
     vc:slug "transformer-architecture" ;
     vc:sourceDomain "artificial-intelligence" .
-
-ngm:agentic-internet a owl:Class ;
-    rdfs:label "Agentic Internet"@en ;
-    rdfs:comment "Agentic Internet is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (hu..."@en ;
-    rdfs:subClassOf ngm:agent-oriented-computing,
-        ngm:sociotechnical-system ;
-    skos:broader ngm:ai-research-area ;
-    vc:enables ngm:agentic-search,
-        ngm:api-first-web,
-        ngm:autonomous-workflows,
-        ngm:cross-vendor-agent-interoperability,
-        ngm:long-horizon-task-execution,
-        ngm:machine-to-machine-commerce,
-        ngm:personal-ai,
-        ngm:programmatic-service-composition ;
-    vc:hasPart ngm:a2-a-protocol,
-        ngm:agent-identity,
-        ngm:agent-marketplace,
-        ngm:agent-orchestrator,
-        ngm:agent-runtime,
-        ngm:agentic-commerce-layer,
-        ngm:browser-agent,
-        ngm:capability-token,
-        ngm:model-context-protocol,
-        ngm:tool-registry ;
-    vc:implements ngm:capability-discovery,
-        ngm:elicitation,
-        ngm:function-calling,
-        ngm:json-rpc,
-        ngm:server-sent-events,
-        ngm:streaming-responses,
-        ngm:task-lifecycle-management,
-        ngm:tool-schema ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.52"^^xsd:float ;
-    vc:relatedTo ngm:agentic-economy,
-        ngm:ai-agents,
-        ngm:ai-search,
-        ngm:autonomous-agents,
-        ngm:browser-use,
-        ngm:computer-use,
-        ngm:internet-of-agents,
-        ngm:multi-agent-systems,
-        ngm:zero-click-search ;
-    vc:requires ngm:authentication,
-        ngm:authorisation,
-        ngm:discovery-protocol,
-        ngm:large-language-model,
-        ngm:persistent-memory,
-        ngm:reasoning-engine,
-        ngm:tool-use,
-        ngm:transport-layer ;
-    vc:slug "agentic-internet" ;
-    vc:sourceDomain "artificial-intelligence" ;
-    vc:standardizedBy ngm:agntcy,
-        ngm:anthropic,
-        ngm:ietf,
-        ngm:linux-foundation,
-        ngm:open-id-foundation,
-        ngm:trust-over-ip-foundation,
-        ngm:w3-c ;
-    vc:supports ngm:booking-agents,
-        ngm:coding-copilots,
-        ngm:customer-service-automation,
-        ngm:personal-assistants,
-        ngm:procurement-agents,
-        ngm:research-agents,
-        ngm:shopping-agents,
-        ngm:software-engineering-agents ;
-    vc:uses ngm:anthropic-claude,
-        ngm:embeddings,
-        ngm:google-gemini,
-        ngm:meta-llama,
-        ngm:mistral,
-        ngm:open-ai-gpt,
-        ngm:retrieval-augmented-generation,
-        ngm:vector-database .
 
 ngm:ai-risks a owl:Class ;
     rdfs:label "AI Risks"@en ;
@@ -50539,6 +50491,83 @@ ngm:ai-risks a owl:Class ;
         ngm:mechanistic-interpretability,
         ngm:risk-registers,
         ngm:threat-intelligence .
+
+ngm:agentic-internet a owl:Class ;
+    rdfs:label "Agentic Internet"@en ;
+    rdfs:comment "Agentic Internet is the emerging substrate of protocols, identity primitives, payment rails and discovery mechanisms over which autonomous AI agents — rather than human users clicking through browsers — discover services, negotiate terms, exchange data and settle value on behalf of principals (hu..."@en ;
+    rdfs:subClassOf ngm:agent-oriented-computing,
+        ngm:sociotechnical-system ;
+    skos:broader ngm:ai-research-area ;
+    vc:enables ngm:agentic-search,
+        ngm:api-first-web,
+        ngm:autonomous-workflows,
+        ngm:cross-vendor-agent-interoperability,
+        ngm:long-horizon-task-execution,
+        ngm:machine-to-machine-commerce,
+        ngm:personal-ai,
+        ngm:programmatic-service-composition ;
+    vc:hasPart ngm:a2-a-protocol,
+        ngm:agent-identity,
+        ngm:agent-marketplace,
+        ngm:agent-orchestrator,
+        ngm:agent-runtime,
+        ngm:agentic-commerce-layer,
+        ngm:browser-agent,
+        ngm:capability-token,
+        ngm:model-context-protocol,
+        ngm:tool-registry ;
+    vc:implements ngm:capability-discovery,
+        ngm:elicitation,
+        ngm:function-calling,
+        ngm:json-rpc,
+        ngm:server-sent-events,
+        ngm:streaming-responses,
+        ngm:task-lifecycle-management,
+        ngm:tool-schema ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.52"^^xsd:float ;
+    vc:relatedTo ngm:agentic-economy,
+        ngm:ai-agents,
+        ngm:ai-search,
+        ngm:autonomous-agents,
+        ngm:browser-use,
+        ngm:computer-use,
+        ngm:internet-of-agents,
+        ngm:multi-agent-systems,
+        ngm:zero-click-search ;
+    vc:requires ngm:authentication,
+        ngm:authorisation,
+        ngm:discovery-protocol,
+        ngm:large-language-model,
+        ngm:persistent-memory,
+        ngm:reasoning-engine,
+        ngm:tool-use,
+        ngm:transport-layer ;
+    vc:slug "agentic-internet" ;
+    vc:sourceDomain "artificial-intelligence" ;
+    vc:standardizedBy ngm:agntcy,
+        ngm:anthropic,
+        ngm:ietf,
+        ngm:linux-foundation,
+        ngm:open-id-foundation,
+        ngm:trust-over-ip-foundation,
+        ngm:w3-c ;
+    vc:supports ngm:booking-agents,
+        ngm:coding-copilots,
+        ngm:customer-service-automation,
+        ngm:personal-assistants,
+        ngm:procurement-agents,
+        ngm:research-agents,
+        ngm:shopping-agents,
+        ngm:software-engineering-agents ;
+    vc:uses ngm:anthropic-claude,
+        ngm:embeddings,
+        ngm:google-gemini,
+        ngm:meta-llama,
+        ngm:mistral,
+        ngm:open-ai-gpt,
+        ngm:retrieval-augmented-generation,
+        ngm:vector-database .
 
 ngm:regulatory-compliance a owl:Class ;
     rdfs:label "Regulatory Compliance"@en ;
@@ -50741,16 +50770,6 @@ ngm:generative-ai a owl:Class ;
     vc:slug "generative-ai" ;
     vc:sourceDomain "artificial-intelligence" .
 
-ngm:bc-cryptographic-primitive a owl:Class,
-        skos:Concept ;
-    rdfs:label "Cryptographic Primitive"@en ;
-    rdfs:comment "Intermediate taxonomy category for cryptographic primitive concepts within the blockchain domain."@en ;
-    skos:broader ngm:blockchain ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "bc-cryptographic-primitive" ;
-    vc:sourceDomain "blockchain" .
-
 ngm:ai-adoption a owl:Class ;
     rdfs:label "AI Adoption"@en ;
     rdfs:comment "AI Adoption is the multi-dimensional socio-technical process by which organisations, sectors, national economies and individual workers progressively integrate artificial-intelligence systems — classical machine learning, deep learning, foundation models, generative AI and agentic AI — into produ..."@en ;
@@ -50931,14 +50950,14 @@ ngm:robo-perception a owl:Class,
     vc:slug "robo-perception" ;
     vc:sourceDomain "robotics" .
 
-ngm:bc-defi-and-economics a owl:Class,
+ngm:bc-cryptographic-primitive a owl:Class,
         skos:Concept ;
-    rdfs:label "DeFi and Economics"@en ;
-    rdfs:comment "Intermediate taxonomy category for defi and economics concepts within the blockchain domain."@en ;
+    rdfs:label "Cryptographic Primitive"@en ;
+    rdfs:comment "Intermediate taxonomy category for cryptographic primitive concepts within the blockchain domain."@en ;
     skos:broader ngm:blockchain ;
     vc:maturity "established" ;
     vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "bc-defi-and-economics" ;
+    vc:slug "bc-cryptographic-primitive" ;
     vc:sourceDomain "blockchain" .
 
 ngm:infra-network-and-comms a owl:Class,
@@ -50950,6 +50969,16 @@ ngm:infra-network-and-comms a owl:Class,
     vc:qualityScore "0.0"^^xsd:float ;
     vc:slug "infra-network-and-comms" ;
     vc:sourceDomain "infrastructure" .
+
+ngm:bc-defi-and-economics a owl:Class,
+        skos:Concept ;
+    rdfs:label "DeFi and Economics"@en ;
+    rdfs:comment "Intermediate taxonomy category for defi and economics concepts within the blockchain domain."@en ;
+    skos:broader ngm:blockchain ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:slug "bc-defi-and-economics" ;
+    vc:sourceDomain "blockchain" .
 
 ngm:machine-learning a owl:Class ;
     rdfs:label "Machine Learning"@en ;
@@ -51131,16 +51160,6 @@ ngm:bc-governance-and-regulation a owl:Class,
     vc:slug "bc-governance-and-regulation" ;
     vc:sourceDomain "blockchain" .
 
-ngm:infra-data-management a owl:Class,
-        skos:Concept ;
-    rdfs:label "Data Management"@en ;
-    rdfs:comment "Intermediate taxonomy category for data management concepts within the infrastructure domain."@en ;
-    skos:broader ngm:infrastructure ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "infra-data-management" ;
-    vc:sourceDomain "infrastructure" .
-
 ngm:infra-legal-and-regulatory a owl:Class,
         skos:Concept ;
     rdfs:label "Legal and Regulatory"@en ;
@@ -51149,6 +51168,16 @@ ngm:infra-legal-and-regulatory a owl:Class,
     vc:maturity "established" ;
     vc:qualityScore "0.0"^^xsd:float ;
     vc:slug "infra-legal-and-regulatory" ;
+    vc:sourceDomain "infrastructure" .
+
+ngm:infra-data-management a owl:Class,
+        skos:Concept ;
+    rdfs:label "Data Management"@en ;
+    rdfs:comment "Intermediate taxonomy category for data management concepts within the infrastructure domain."@en ;
+    skos:broader ngm:infrastructure ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:slug "infra-data-management" ;
     vc:sourceDomain "infrastructure" .
 
 ngm:blockchain a owl:Class,
@@ -51320,16 +51349,6 @@ ngm:large-language-models a owl:Class ;
     vc:slug "large-language-models" ;
     vc:sourceDomain "artificial-intelligence" .
 
-ngm:sc-interaction a owl:Class,
-        skos:Concept ;
-    rdfs:label "Interaction Technology"@en ;
-    rdfs:comment "Intermediate taxonomy category for interaction technology concepts within the spatial computing domain."@en ;
-    skos:broader ngm:spatial-computing ;
-    vc:maturity "established" ;
-    vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "sc-interaction" ;
-    vc:sourceDomain "spatial-computing" .
-
 ngm:ai-model-architecture a owl:Class,
         skos:Concept ;
     rdfs:label "AI Model Architecture"@en ;
@@ -51349,6 +51368,16 @@ ngm:robo-robot-type a owl:Class,
     vc:qualityScore "0.0"^^xsd:float ;
     vc:slug "robo-robot-type" ;
     vc:sourceDomain "robotics" .
+
+ngm:sc-interaction a owl:Class,
+        skos:Concept ;
+    rdfs:label "Interaction Technology"@en ;
+    rdfs:comment "Intermediate taxonomy category for interaction technology concepts within the spatial computing domain."@en ;
+    skos:broader ngm:spatial-computing ;
+    vc:maturity "established" ;
+    vc:qualityScore "0.0"^^xsd:float ;
+    vc:slug "sc-interaction" ;
+    vc:sourceDomain "spatial-computing" .
 
 ngm:smart-contract a owl:Class ;
     rdfs:label "Smart Contract"@en ;
@@ -51474,15 +51503,15 @@ ngm:bc-protocol-and-consensus a owl:Class,
     vc:slug "bc-protocol-and-consensus" ;
     vc:sourceDomain "blockchain" .
 
-ngm:robo-actuation-and-control a owl:Class,
+ngm:infra-software-engineering a owl:Class,
         skos:Concept ;
-    rdfs:label "Actuation and Control"@en ;
-    rdfs:comment "Intermediate taxonomy category for actuation and control concepts within the robotics domain."@en ;
-    skos:broader ngm:robotics ;
+    rdfs:label "Software Engineering"@en ;
+    rdfs:comment "Intermediate taxonomy category for software engineering concepts within the infrastructure domain."@en ;
+    skos:broader ngm:infrastructure ;
     vc:maturity "established" ;
     vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "robo-actuation-and-control" ;
-    vc:sourceDomain "robotics" .
+    vc:slug "infra-software-engineering" ;
+    vc:sourceDomain "infrastructure" .
 
 ngm:blockchain-entity a owl:Class ;
     rdfs:label "Blockchain Entity"@en ;
@@ -51506,15 +51535,15 @@ ngm:blockchain-entity a owl:Class ;
     vc:slug "blockchain-entity" ;
     vc:sourceDomain "blockchain" .
 
-ngm:infra-software-engineering a owl:Class,
+ngm:robo-actuation-and-control a owl:Class,
         skos:Concept ;
-    rdfs:label "Software Engineering"@en ;
-    rdfs:comment "Intermediate taxonomy category for software engineering concepts within the infrastructure domain."@en ;
-    skos:broader ngm:infrastructure ;
+    rdfs:label "Actuation and Control"@en ;
+    rdfs:comment "Intermediate taxonomy category for actuation and control concepts within the robotics domain."@en ;
+    skos:broader ngm:robotics ;
     vc:maturity "established" ;
     vc:qualityScore "0.0"^^xsd:float ;
-    vc:slug "infra-software-engineering" ;
-    vc:sourceDomain "infrastructure" .
+    vc:slug "robo-actuation-and-control" ;
+    vc:sourceDomain "robotics" .
 
 ngm:infra-computing-and-cloud a owl:Class,
         skos:Concept ;

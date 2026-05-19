@@ -640,10 +640,6 @@
       "label": "Graph Neural Network"
     },
     {
-      "slug": "introduction-to-me",
-      "label": "introduction-to-me"
-    },
-    {
       "slug": "knowledge-distillation",
       "label": "Knowledge Distillation"
     },

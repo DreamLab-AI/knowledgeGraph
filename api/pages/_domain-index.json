@@ -2773,6 +2773,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "embodied-ai-simulation",
+      "title": "Embodied AI Simulation",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "emotion-aware-interaction",
       "title": "Emotion Aware Interaction",
       "qualityScore": 0.5
@@ -3851,6 +3856,11 @@
       "slug": "networking-layer",
       "title": "Networking Layer",
       "qualityScore": 0.35
+    },
+    {
+      "slug": "neural-xr-interfaces",
+      "title": "Neural XR Interfaces",
+      "qualityScore": 0.0
     },
     {
       "slug": "neuromorphic-computing",
@@ -5870,6 +5880,11 @@
       "qualityScore": 0.35
     },
     {
+      "slug": "ai-energy-scarcity",
+      "title": "AI Energy Scarcity",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "aicafev6",
       "title": "AICafev6",
       "qualityScore": 0.5
@@ -6450,11 +6465,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "dr-john-o-hare",
-      "title": "Dr John O'Hare",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "dr-o-hare-writing-for-log-seq",
       "title": "Dr O'Hare Writing for LogSeq",
       "qualityScore": 0.5
@@ -6625,11 +6635,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "geopolitical-hot-takes",
-      "title": "Geopolitical hot takes",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "git-hub-actions",
       "title": "Git Hub Actions",
       "qualityScore": 0.5
@@ -6795,11 +6800,6 @@
       "qualityScore": 0.35
     },
     {
-      "slug": "josh-carp-notion",
-      "title": "Josh Carp Notion",
-      "qualityScore": 0.5
-    },
-    {
       "slug": "jupyter-like-behaviour-within-a-page",
       "title": "Jupyter like behaviour within a page",
       "qualityScore": 0.35
@@ -6827,11 +6827,6 @@
     {
       "slug": "layoff-tracker-and-threatened-roles",
       "title": "Layoff tracker and threatened roles",
-      "qualityScore": 0.5
-    },
-    {
-      "slug": "lead-poisoning-hypothesis",
-      "title": "Lead Poisoning Hypothesis",
       "qualityScore": 0.5
     },
     {
@@ -7700,11 +7695,6 @@
       "qualityScore": 0.5
     },
     {
-      "slug": "taylor-swift-is-venice",
-      "title": "Taylor Swift is Venice",
-      "qualityScore": 0.35
-    },
-    {
       "slug": "technical-history-extended-cv",
       "title": "Technical History (extended CV)",
       "qualityScore": 0.5
@@ -7843,11 +7833,6 @@
       "slug": "verifiable-data-registry",
       "title": "Verifiable Data Registry",
       "qualityScore": 0.5
-    },
-    {
-      "slug": "vesuvian-scrolls",
-      "title": "Vesuvian Scrolls",
-      "qualityScore": 0.35
     },
     {
       "slug": "vibe-coding",
@@ -8107,11 +8092,6 @@
     {
       "slug": "relighting",
       "title": "relighting",
-      "qualityScore": 0.35
-    },
-    {
-      "slug": "sleep",
-      "title": "sleep",
       "qualityScore": 0.35
     },
     {
@@ -11152,6 +11132,11 @@
       "qualityScore": 0.5
     },
     {
+      "slug": "sovereign-ai",
+      "title": "Sovereign AI",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "sparse-mixture-of-experts",
       "title": "Sparse Mixture of Experts",
       "qualityScore": 0.5
@@ -12014,6 +11999,11 @@
       "slug": "agent",
       "title": "Agent",
       "qualityScore": 0.5
+    },
+    {
+      "slug": "agentic-finance",
+      "title": "Agentic Finance",
+      "qualityScore": 0.0
     },
     {
       "slug": "agreement-protocol",
@@ -13456,6 +13446,11 @@
       "qualityScore": 0.52
     },
     {
+      "slug": "quantum-threat-to-cryptography",
+      "title": "Quantum Threat to Cryptography",
+      "qualityScore": 0.0
+    },
+    {
       "slug": "quorum-blockchain",
       "title": "Quorum Blockchain",
       "qualityScore": 0.52
@@ -13879,6 +13874,11 @@
       "slug": "web3",
       "title": "Web3",
       "qualityScore": 0.52
+    },
+    {
+      "slug": "zero-knowledge-machine-learning",
+      "title": "Zero-Knowledge Machine Learning",
+      "qualityScore": 0.0
     },
     {
       "slug": "zero-knowledge-proof",

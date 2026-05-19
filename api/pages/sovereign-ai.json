@@ -1,0 +1,65 @@
+{
+  "id": "urn:visionflow:page:8490b32f2d115a12554783c8dc46d9e8bc1064d364d51f227a07ee6b20a9cd28",
+  "title": "sovereign ai",
+  "slug": "sovereign-ai",
+  "public": true,
+  "classIri": "urn:ngm:class:sovereign-ai",
+  "domain": "artificial-intelligence",
+  "definition": "National strategies for building indigenous AI capabilities\u2014foundational models trained on sovereign data using domestically controlled compute infrastructure\u2014to reduce dependence on foreign hyperscaler platforms. Encompasses government investment in national AI compute clusters, local language models, and data governance frameworks.",
+  "subClassOf": [
+    {
+      "id": "urn:ngm:class:ai-governance-and-ethics",
+      "label": "AI Governance and Ethics"
+    }
+  ],
+  "entityType": "Class",
+  "qualityScore": 0.0,
+  "maturity": "emerging",
+  "relationships": {
+    "hasPart": [],
+    "requires": [],
+    "enables": [],
+    "dependsOn": [],
+    "implements": [],
+    "contrastsWith": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      }
+    ],
+    "bridgesTo": [],
+    "uses": [],
+    "supports": [],
+    "standardizedBy": [],
+    "partOf": [],
+    "relatedTo": [
+      {
+        "id": "urn:ngm:class:open-source-ai",
+        "label": "Open-Source AI"
+      },
+      {
+        "id": "urn:ngm:class:competition-in-ai",
+        "label": "Competition in AI"
+      },
+      {
+        "id": "urn:ngm:class:ai-regulation",
+        "label": "AI Regulation"
+      }
+    ]
+  },
+  "wikilinks": [],
+  "backlinks": [
+    {
+      "slug": "ai-companies",
+      "label": "AI Companies"
+    },
+    {
+      "slug": "compute-infrastructure",
+      "label": "Compute Infrastructure"
+    },
+    {
+      "slug": "mistral-and-mixtral",
+      "label": "Mistral and Mixtral"
+    }
+  ]
+}
